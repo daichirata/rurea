@@ -38,6 +38,8 @@ class Rurema
 
 private
   def search
+    return [STATUS[:not_found], "version #{version} does not exist."] unless db_exist?
+
     if params_valid? && (refes = search_reference) && refes.present?
       if refes.multiple?
         if @num
@@ -99,7 +101,6 @@ private
     File.join(rurema_path, 'bitclust')
   end
 
-
   def bitclust_bin
     File.join(bitclust_path, 'bin', 'bitclust')
   end
@@ -110,6 +111,10 @@ private
 
   def db_path
     File.join(rurema_path, 'db', version)
+  end
+
+  def db_exist?
+    File.exists?(File.join(rurema_path, 'db', version))
   end
 
   def refm_src_path
