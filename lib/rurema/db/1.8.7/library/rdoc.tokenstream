@@ -1,0 +1,7 @@
+requires=
+classes=TokenStream
+methods=
+sublibraries=
+is_sublibrary=true
+
+トークンを管理するためのサブライブラリです。

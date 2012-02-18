@@ -1,0 +1,8 @@
+requires=
+classes=Open3
+methods=
+sublibraries=
+is_sublibrary=false
+
+プログラムを実行し、そのプロセスの標準入力・標準出力・
+標準エラー出力にパイプをつなぎます。

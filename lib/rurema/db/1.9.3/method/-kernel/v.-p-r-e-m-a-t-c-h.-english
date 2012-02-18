@@ -1,0 +1,15 @@
+names=PREMATCH
+visibility=public
+kind=added
+
+--- $PREMATCH -> String | nil
+
+[[m:$`]] ¤ÎÊÌÌ¾
+
+  require "English"
+
+  str = 'hoge,foo,bar,hee,hoo'
+
+  /foo/ =~ str
+  p $PREMATCH  #=> "hoge,"
+

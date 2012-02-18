@@ -1,0 +1,7 @@
+requires=
+classes=
+methods=Gem/c.SHA1.rubygems.digest.sha1
+sublibraries=
+is_sublibrary=true
+
+[[c:Digest::SHA1]] をラップするためのライブラリです。

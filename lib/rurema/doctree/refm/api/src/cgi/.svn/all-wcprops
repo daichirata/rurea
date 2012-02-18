@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/rurema/!svn/ver/4782/doctree/trunk/refm/api/src/cgi
+END
+util.rd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4770/doctree/trunk/refm/api/src/cgi/util.rd
+END
+session.rd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/rurema/!svn/ver/4332/doctree/trunk/refm/api/src/cgi/session.rd
+END
+html.rd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4782/doctree/trunk/refm/api/src/cgi/html.rd
+END
+core.rd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4281/doctree/trunk/refm/api/src/cgi/core.rd
+END
+cookie.rd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4279/doctree/trunk/refm/api/src/cgi/cookie.rd
+END

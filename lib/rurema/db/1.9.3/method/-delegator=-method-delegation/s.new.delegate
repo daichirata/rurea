@@ -1,0 +1,11 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(obj) -> object
+
+委譲先のオブジェクトを設定します。
+
+@param obj 委譲先のオブジェクト
+
+

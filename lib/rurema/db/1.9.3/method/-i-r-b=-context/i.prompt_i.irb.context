@@ -1,0 +1,9 @@
+names=prompt_i
+visibility=public
+kind=defined
+
+--- prompt_i
+@todo
+
+通常のプロンプトを表現するフォーマット文字列を返します。
+

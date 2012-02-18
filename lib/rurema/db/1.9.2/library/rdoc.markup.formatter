@@ -1,0 +1,7 @@
+requires=rdoc.markup
+classes=RDoc=Markup=Formatter
+methods=
+sublibraries=
+is_sublibrary=true
+
+RDoc 形式のドキュメントを整形するためのサブライブラリです。

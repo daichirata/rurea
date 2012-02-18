@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4792/doctree/trunk/refm/api/src/rdoc/parser
+END
+ruby.rd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/rurema/!svn/ver/4790/doctree/trunk/refm/api/src/rdoc/parser/ruby.rd
+END
+ruby_tools.rd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/rurema/!svn/ver/4792/doctree/trunk/refm/api/src/rdoc/parser/ruby_tools.rd
+END
+c.rd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/4790/doctree/trunk/refm/api/src/rdoc/parser/c.rd
+END
+perl.rd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/rurema/!svn/ver/4792/doctree/trunk/refm/api/src/rdoc/parser/perl.rd
+END
+f95.rd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/rurema/!svn/ver/4790/doctree/trunk/refm/api/src/rdoc/parser/f95.rd
+END
+simple.rd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/rurema/!svn/ver/4790/doctree/trunk/refm/api/src/rdoc/parser/simple.rd
+END

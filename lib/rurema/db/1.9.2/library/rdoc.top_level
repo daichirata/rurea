@@ -1,0 +1,7 @@
+requires=
+classes=RDoc=TopLevel
+methods=
+sublibraries=
+is_sublibrary=true
+
+[[c:RDoc::TopLevel]] を定義するサブライブラリです。

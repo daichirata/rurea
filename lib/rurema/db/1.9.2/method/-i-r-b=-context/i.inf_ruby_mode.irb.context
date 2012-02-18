@@ -1,0 +1,11 @@
+names=inf_ruby_mode,inf_ruby_mode=
+visibility=public
+kind=defined
+
+--- inf_ruby_mode
+--- inf_ruby_mode=(bool)
+@todo
+
+inf-ruby-mode 用のプロンプト表示を行なうかどうかを表します。
+デフォルト値は false です。
+

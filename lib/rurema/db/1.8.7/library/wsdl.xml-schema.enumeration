@@ -1,0 +1,7 @@
+requires=wsdl.info
+classes=WSDL=XMLSchema=Enumeration
+methods=
+sublibraries=
+is_sublibrary=true
+
+

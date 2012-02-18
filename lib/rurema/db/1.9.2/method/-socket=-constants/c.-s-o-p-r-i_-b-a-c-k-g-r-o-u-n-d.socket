@@ -1,0 +1,9 @@
+names=SOPRI_BACKGROUND,SOPRI_INTERACTIVE,SOPRI_NORMAL
+visibility=public
+kind=defined
+
+--- SOPRI_BACKGROUND
+--- SOPRI_INTERACTIVE
+--- SOPRI_NORMAL
+@todo
+

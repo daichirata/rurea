@@ -1,0 +1,11 @@
+names=asin
+visibility=public
+kind=defined
+
+--- asin(z) -> Float | Complex
+
+z の逆正弦関数の値をラジアンで返します。
+
+@param z 数値
+
+

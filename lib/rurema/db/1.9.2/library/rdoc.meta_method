@@ -1,0 +1,7 @@
+requires=
+classes=RDoc=MetaMethod
+methods=
+sublibraries=
+is_sublibrary=true
+
+[[c:RDoc::MetaMethod]] を定義するサブライブラリです。

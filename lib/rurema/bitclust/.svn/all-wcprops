@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/rurema/!svn/ver/5044/bitclust/trunk
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rurema/!svn/ver/4963/bitclust/trunk/Rakefile
+END
+server.exe
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/rurema/!svn/ver/2912/bitclust/trunk/server.exe
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rurema/!svn/ver/5044/bitclust/trunk/ChangeLog
+END
+config.ru
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rurema/!svn/ver/3351/bitclust/trunk/config.ru
+END
+standalone.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/rurema/!svn/ver/4889/bitclust/trunk/standalone.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/rurema/!svn/ver/1664/bitclust/trunk/README
+END
+setup.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/rurema/!svn/ver/4446/bitclust/trunk/setup.rb
+END
+packer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rurema/!svn/ver/4968/bitclust/trunk/packer.rb
+END
+server.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rurema/!svn/ver/4422/bitclust/trunk/server.rb
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/rurema/!svn/ver/4867/bitclust/trunk/Gemfile
+END
+config.in
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/rurema/!svn/ver/4493/bitclust/trunk/config.in
+END
+config.ru.sample
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rurema/!svn/ver/3402/bitclust/trunk/config.ru.sample
+END
+server.exy
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/rurema/!svn/ver/2912/bitclust/trunk/server.exy
+END
+view.cgi
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/rurema/!svn/ver/34/bitclust/trunk/view.cgi
+END
+bitclust.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rurema/!svn/ver/5042/bitclust/trunk/bitclust.gemspec
+END

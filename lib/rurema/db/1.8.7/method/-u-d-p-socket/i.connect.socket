@@ -1,0 +1,9 @@
+names=connect
+visibility=public
+kind=defined
+
+--- connect(host, port)
+@todo
+
+ソケットを host の port に connect します。
+

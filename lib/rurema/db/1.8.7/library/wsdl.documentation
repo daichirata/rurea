@@ -1,0 +1,7 @@
+requires=wsdl.info
+classes=WSDL=Documentation
+methods=
+sublibraries=
+is_sublibrary=true
+
+

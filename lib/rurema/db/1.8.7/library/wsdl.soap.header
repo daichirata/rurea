@@ -1,0 +1,7 @@
+requires=wsdl.info
+classes=WSDL=SOAP=Header
+methods=
+sublibraries=
+is_sublibrary=true
+
+

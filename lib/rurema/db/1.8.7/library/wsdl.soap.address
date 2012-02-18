@@ -1,0 +1,7 @@
+requires=wsdl.info
+classes=WSDL=SOAP=Address
+methods=
+sublibraries=
+is_sublibrary=true
+
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rurema/!svn/ver/5040/doctree/trunk/refm/api/src/yaml
+END
+stream.rd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/rurema/!svn/ver/4848/doctree/trunk/refm/api/src/yaml/stream.rd
+END
+tag.rd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4847/doctree/trunk/refm/api/src/yaml/tag.rd
+END
+Kernel
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4861/doctree/trunk/refm/api/src/yaml/Kernel
+END
+constants.rd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/4846/doctree/trunk/refm/api/src/yaml/constants.rd
+END
+store.rd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4599/doctree/trunk/refm/api/src/yaml/store.rd
+END
+stringio.rd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/4845/doctree/trunk/refm/api/src/yaml/stringio.rd
+END
+basenode.rd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/4913/doctree/trunk/refm/api/src/yaml/basenode.rd
+END
+dbm.rd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/5040/doctree/trunk/refm/api/src/yaml/dbm.rd
+END
+ypath.rd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4859/doctree/trunk/refm/api/src/yaml/ypath.rd
+END
+rubytypes.rd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/5010/doctree/trunk/refm/api/src/yaml/rubytypes.rd
+END
+YAML.inside
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/4929/doctree/trunk/refm/api/src/yaml/YAML.inside
+END
+yamlnode.rd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/4912/doctree/trunk/refm/api/src/yaml/yamlnode.rd
+END
+error.rd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4866/doctree/trunk/refm/api/src/yaml/error.rd
+END

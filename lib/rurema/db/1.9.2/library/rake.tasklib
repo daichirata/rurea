@@ -1,0 +1,7 @@
+requires=rake
+classes=Rake=TaskLib
+methods=
+sublibraries=
+is_sublibrary=true
+
+タスクのライブラリを作成するためのベースとなるクラスを扱うライブラリです。

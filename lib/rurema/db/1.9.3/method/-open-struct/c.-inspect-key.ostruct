@@ -1,0 +1,7 @@
+names=InspectKey
+visibility=protected 
+kind=defined
+
+--- InspectKey
+
+内部的に使用する定数です。

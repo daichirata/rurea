@@ -1,0 +1,7 @@
+requires=
+classes=CGI=Cookie
+methods=
+sublibraries=
+is_sublibrary=true
+
+HTTP クッキーを利用するためのクラスを定義したライブラリです。

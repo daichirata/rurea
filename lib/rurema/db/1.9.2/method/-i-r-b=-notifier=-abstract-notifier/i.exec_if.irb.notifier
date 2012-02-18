@@ -1,0 +1,6 @@
+names=exec_if
+visibility=public
+kind=defined
+
+--- exec_if{|base_notifier| ... }
+

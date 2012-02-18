@@ -1,0 +1,11 @@
+names=g
+visibility=public
+kind=defined
+
+--- g -> OpenSSL::BN
+DH 公開鍵暗号の鍵パラメータ g を返します。
+
+この値は生成元と呼ばれます。
+
+@see [[m:OpenSSL::PKey::DH#g=]]
+

@@ -1,0 +1,7 @@
+requires=
+classes=RDoc=Attr
+methods=
+sublibraries=
+is_sublibrary=true
+
+[[c:RDoc::Attr]] を定義するサブライブラリです。

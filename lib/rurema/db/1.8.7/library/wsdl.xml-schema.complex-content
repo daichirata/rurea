@@ -1,0 +1,7 @@
+requires=wsdl.info,xsd.namedelements
+classes=WSDL=XMLSchema=ComplexContent
+methods=
+sublibraries=
+is_sublibrary=true
+
+

@@ -1,0 +1,7 @@
+requires=wsdl.info,xsd.namedelements
+classes=WSDL=Service
+methods=
+sublibraries=
+is_sublibrary=true
+
+

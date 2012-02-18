@@ -1,0 +1,12 @@
+names=do_not_reverse_lookup,do_not_reverse_lookup=
+visibility=public
+kind=defined
+
+--- do_not_reverse_lookup
+--- do_not_reverse_lookup=(bool)
+@todo
+
+アドレスからホスト名への逆引きの設定をソケットごとに設定します。
+初期値はソケットを生成したときの
+BasicSocket.do_not_reverse_lookup になります。
+

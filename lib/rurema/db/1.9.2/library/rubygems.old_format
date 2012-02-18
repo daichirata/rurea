@@ -1,0 +1,9 @@
+requires=
+classes=Gem=OldFormat
+methods=
+sublibraries=
+is_sublibrary=true
+
+RubyGems の Gem ファイルの内部構造を扱うためのライブラリです。
+
+@see [[lib:rubygems/format]]

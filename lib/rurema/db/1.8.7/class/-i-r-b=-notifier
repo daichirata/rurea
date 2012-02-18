@@ -1,0 +1,9 @@
+type=module
+superclass=
+included=
+extended=Exception2MessageMapper
+library=irb.notifier
+aliases=
+aliasof=
+
+

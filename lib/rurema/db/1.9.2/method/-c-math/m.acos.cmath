@@ -1,0 +1,11 @@
+names=acos
+visibility=public
+kind=defined
+
+--- acos(z) -> Float | Complex
+
+z の逆余弦関数の値をラジアンで返します。
+
+@param z 数値
+
+

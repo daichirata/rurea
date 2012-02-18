@@ -1,0 +1,6 @@
+names=printf
+visibility=public
+kind=defined
+
+--- printf(format, *opts)
+

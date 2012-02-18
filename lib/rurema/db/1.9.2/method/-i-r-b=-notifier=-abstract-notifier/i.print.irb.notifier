@@ -1,0 +1,6 @@
+names=print
+visibility=public
+kind=defined
+
+--- print(*opts)
+

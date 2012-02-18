@@ -1,0 +1,12 @@
+names=gcd2
+visibility=public
+kind=added
+
+--- gcd2(int)
+@todo
+
+Îã:
+
+  12.gcd2 8
+  # => 4
+

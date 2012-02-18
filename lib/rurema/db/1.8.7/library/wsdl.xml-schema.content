@@ -1,0 +1,7 @@
+requires=wsdl.info
+classes=WSDL=XMLSchema=Content
+methods=
+sublibraries=
+is_sublibrary=true
+
+

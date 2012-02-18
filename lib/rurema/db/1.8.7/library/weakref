@@ -1,0 +1,7 @@
+requires=
+classes=WeakRef,WeakRef=RefError
+methods=
+sublibraries=
+is_sublibrary=false
+
+weak reference を実現します。

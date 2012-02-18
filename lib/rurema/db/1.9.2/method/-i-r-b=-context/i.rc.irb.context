@@ -1,0 +1,10 @@
+names=rc
+visibility=public
+kind=defined
+
+--- rc
+@todo
+
+~/.irbrc を読み込んでいたら true を返します。
+読み込んでいなければ false を返します。
+

@@ -1,0 +1,10 @@
+names=REFERER_LOG_FORMAT
+visibility=public
+kind=defined
+
+--- REFERER_LOG_FORMAT -> String
+
+Apache のアクセスログで一般的に使われるリファラの形式を表す以下の文字列です。
+
+  "%{Referer}i -> %U"
+

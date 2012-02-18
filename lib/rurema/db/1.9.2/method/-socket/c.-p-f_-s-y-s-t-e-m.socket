@@ -1,0 +1,11 @@
+names=PF_SYSTEM
+visibility=public
+kind=defined
+
+--- PF_SYSTEM
+@todo
+
+[[m:Socket.open]] の第三引数 protocol に使用します。
+
+@see [[m:Socket.open]]
+

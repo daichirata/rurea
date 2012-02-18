@@ -1,0 +1,9 @@
+names=hash
+visibility=public
+kind=defined
+
+--- hash    -> Integer
+
+自身の [[m:Object#object_id]] を返します。
+これは [[c:Object]] クラスで定義されたデフォルトの動作です。
+

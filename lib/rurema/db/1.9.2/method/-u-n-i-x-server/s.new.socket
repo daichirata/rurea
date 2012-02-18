@@ -1,0 +1,11 @@
+names=new,open
+visibility=public
+kind=defined
+
+--- open(path)
+--- new(path)
+@todo
+
+path で指定したパス名を用いて接続を受け付けるソケットを返
+します。
+

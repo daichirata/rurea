@@ -1,0 +1,8 @@
+requires=
+classes=RDoc=Context,RDoc=Context=Section
+methods=
+sublibraries=
+is_sublibrary=true
+
+[[c:RDoc::Context]] と [[c:RDoc::Context::Section]] を定義するサブライ
+ブラリです。

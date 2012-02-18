@@ -1,0 +1,7 @@
+requires=
+classes=
+methods=IRB/s.print_usage.irb.help
+sublibraries=
+is_sublibrary=true
+
+irb コマンドのヘルプを表示するためのライブラリです。

@@ -1,0 +1,7 @@
+requires=wsdl.info
+classes=WSDL=Port
+methods=
+sublibraries=
+is_sublibrary=true
+
+

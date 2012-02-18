@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/rurema/!svn/ver/4884/bitclust/trunk/tools
+END
+bc-classes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rurema/!svn/ver/1488/bitclust/trunk/tools/bc-classes.rb
+END
+bc-ancestors.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rurema/!svn/ver/3572/bitclust/trunk/tools/bc-ancestors.rb
+END
+update-database.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rurema/!svn/ver/3001/bitclust/trunk/tools/update-database.rb
+END
+statrefm.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rurema/!svn/ver/1087/bitclust/trunk/tools/statrefm.rb
+END
+bc-methods.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rurema/!svn/ver/4017/bitclust/trunk/tools/bc-methods.rb
+END
+ToDoHistory
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rurema/!svn/ver/1894/bitclust/trunk/tools/ToDoHistory
+END
+bc-tohtml.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/rurema/!svn/ver/4493/bitclust/trunk/tools/bc-tohtml.rb
+END
+bc-tochm.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rurema/!svn/ver/3442/bitclust/trunk/tools/bc-tochm.rb
+END
+bc-preproc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rurema/!svn/ver/2268/bitclust/trunk/tools/bc-preproc.rb
+END
+bc-list.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rurema/!svn/ver/1488/bitclust/trunk/tools/bc-list.rb
+END
+forall-ruby.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/rurema/!svn/ver/4664/bitclust/trunk/tools/forall-ruby.rb
+END
+stattodo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rurema/!svn/ver/3440/bitclust/trunk/tools/stattodo.rb
+END
+bc-convert.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rurema/!svn/ver/4493/bitclust/trunk/tools/bc-convert.rb
+END
+bc-checkparams.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4124/bitclust/trunk/tools/bc-checkparams.rb
+END
+gencatalog.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/rurema/!svn/ver/3017/bitclust/trunk/tools/gencatalog.rb
+END
+bc-tohtmlpackage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4884/bitclust/trunk/tools/bc-tohtmlpackage.rb
+END
+bc-rdoc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rurema/!svn/ver/4007/bitclust/trunk/tools/bc-rdoc.rb
+END
+check-signature.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rurema/!svn/ver/3008/bitclust/trunk/tools/check-signature.rb
+END

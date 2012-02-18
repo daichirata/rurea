@@ -1,0 +1,68 @@
+= class SizedQueue < Queue
+
+サイズの最大値を指定できる [[c:Queue]] です。
+
+=== 例
+
+[[ruby-list:283]] より。q をサイズ 1 の SizedQueue オブジェクトに
+することによって、入力される行と出力される行が同じ順序になります。
+q = [] にすると入力と違った順序で行が出力されます。
+
+  require 'thread'
+
+  q = SizedQueue.new(1)
+
+  th = Thread.start {
+    while line = q.pop
+      print line
+    end
+  }
+
+  while l = gets
+    q.push(l)
+  end
+  q.push(l)
+
+  th.join
+
+== Class Methods
+
+--- new(max) -> SizedQueue
+SizedQueue オブジェクトを生成します。
+
+@param max キューのサイズの最大値です。
+
+== Instance Methods
+
+--- max -> Fixnum
+キューの最大サイズを返します。
+
+--- max=(n)
+キューの最大サイズを設定します。
+
+@param n キューの最大サイズを指定します。
+
+--- push(obj) -> ()
+--- <<(obj)   -> ()
+--- enq(obj)  -> ()
+
+キューに与えられたオブジェクトを追加します。
+
+キューのサイズが [[m:SizedQueue#max]] に達している場合は、
+キューのサイズが [[m:SizedQueue#max]] より小さくなるまで他のスレッドに実行を譲ります。
+その後、キューに与えられたオブジェクトを追加します。
+
+@param obj キューに追加したいオブジェクトを指定します。
+
+@see  [[m:Queue#push]]
+
+--- pop(non_block = false)   -> object
+--- shift(non_block = false) -> object
+--- deq(non_block = false)   -> object
+
+キューからひとつ値を取り出します。
+キューに push しようと待っているスレッドがあれば、実行を再開させます。
+
+@param non_block true を与えると、キューが空の時に例外 [[c:ThreadError]] が発生します。
+
+@see [[m:Queue#pop]]

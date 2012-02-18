@@ -1,0 +1,10 @@
+names=new,open
+visibility=public
+kind=defined
+
+--- open([socktype])
+--- new([socktype])
+@todo
+
+新しい UDP ソケットを返します。
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/rurema/!svn/ver/4960/bitclust/trunk/test
+END
+test_rdcompiler.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/rurema/!svn/ver/4777/bitclust/trunk/test/test_rdcompiler.rb
+END
+test_entry.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/rurema/!svn/ver/4841/bitclust/trunk/test/test_entry.rb
+END
+test_nameutils.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rurema/!svn/ver/3426/bitclust/trunk/test/test_nameutils.rb
+END
+test_methodsignature.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/3546/bitclust/trunk/test/test_methodsignature.rb
+END
+run_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/rurema/!svn/ver/4489/bitclust/trunk/test/run_test.rb
+END
+test_refsdatabase.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4872/bitclust/trunk/test/test_refsdatabase.rb
+END
+test_rrdparser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rurema/!svn/ver/2857/bitclust/trunk/test/test_rrdparser.rb
+END
+test_methoddatabase.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rurema/!svn/ver/3642/bitclust/trunk/test/test_methoddatabase.rb
+END
+test_libraryentry.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4689/bitclust/trunk/test/test_libraryentry.rb
+END
+test_preprocessor.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4780/bitclust/trunk/test/test_preprocessor.rb
+END
+test_simplesearcher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rurema/!svn/ver/3643/bitclust/trunk/test/test_simplesearcher.rb
+END
+test_bitclust.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/rurema/!svn/ver/4960/bitclust/trunk/test/test_bitclust.rb
+END
+test_functiondatabase.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/3977/bitclust/trunk/test/test_functiondatabase.rb
+END

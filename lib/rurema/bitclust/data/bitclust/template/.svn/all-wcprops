@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/rurema/!svn/ver/5044/bitclust/trunk/data/bitclust/template
+END
+method
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/3986/bitclust/trunk/data/bitclust/template/method
+END
+library
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/rurema/!svn/ver/5044/bitclust/trunk/data/bitclust/template/library
+END
+class
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/4841/bitclust/trunk/data/bitclust/template/class
+END
+doc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/rurema/!svn/ver/3986/bitclust/trunk/data/bitclust/template/doc
+END
+function
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/rurema/!svn/ver/3986/bitclust/trunk/data/bitclust/template/function
+END
+search
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/3986/bitclust/trunk/data/bitclust/template/search
+END
+library-index
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/rurema/!svn/ver/3986/bitclust/trunk/data/bitclust/template/library-index
+END
+class-index
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/rurema/!svn/ver/3986/bitclust/trunk/data/bitclust/template/class-index
+END
+function-index
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/rurema/!svn/ver/3986/bitclust/trunk/data/bitclust/template/function-index
+END
+opensearchdescription
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/rurema/!svn/ver/3370/bitclust/trunk/data/bitclust/template/opensearchdescription
+END
+layout
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/4095/bitclust/trunk/data/bitclust/template/layout
+END

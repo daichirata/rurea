@@ -1,0 +1,7 @@
+requires=
+classes=PStore,PStore=Error
+methods=
+sublibraries=
+is_sublibrary=false
+
+Rubyのオブジェクトを外部ファイルに格納するためのライブラリです。

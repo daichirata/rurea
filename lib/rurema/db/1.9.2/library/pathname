@@ -1,0 +1,7 @@
+requires=
+classes=Pathname
+methods=Kernel/i.Pathname.pathname
+sublibraries=
+is_sublibrary=false
+
+パス名をオブジェクト指向らしく扱うためのライブラリです。

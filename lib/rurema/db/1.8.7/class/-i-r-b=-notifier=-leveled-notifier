@@ -1,0 +1,9 @@
+type=class
+superclass=IRB=Notifier=AbstractNotifier
+included=
+extended=
+library=irb.notifier
+aliases=
+aliasof=
+
+

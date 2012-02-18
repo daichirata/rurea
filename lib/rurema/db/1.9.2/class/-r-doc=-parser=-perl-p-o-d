@@ -1,0 +1,9 @@
+type=class
+superclass=RDoc=Parser
+included=
+extended=
+library=rdoc.parser.perl
+aliases=
+aliasof=
+
+Perl のソースコードを解析するためのクラスです。

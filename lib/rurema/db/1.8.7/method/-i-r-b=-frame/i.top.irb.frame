@@ -1,0 +1,10 @@
+names=top
+visibility=public
+kind=defined
+
+--- top(n = 0)
+@todo
+
+上からn番目のコンテキストを取り出します。
+n は 0 が最上位になります。
+

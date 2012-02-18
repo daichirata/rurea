@@ -1,0 +1,11 @@
+names=back_trace_limit
+visibility=public
+kind=defined
+
+--- back_trace_limit
+@todo
+
+バックトレース表示をバックトレースの頭から n,
+後ろから n だけ行なう.
+デフォルトは 16.
+

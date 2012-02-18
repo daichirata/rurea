@@ -1,0 +1,11 @@
+names=SOCK_DGRAM
+visibility=public
+kind=defined
+
+--- SOCK_DGRAM
+@todo
+
+[[m:Socket.open]] の第二引数 type に使用します。
+
+@see [[m:Socket.open]]
+

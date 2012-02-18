@@ -1,0 +1,7 @@
+requires=
+classes=RDoc=Alias
+methods=
+sublibraries=
+is_sublibrary=true
+
+[[c:RDoc::Alias]] を定義するサブライブラリです。

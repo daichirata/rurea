@@ -1,0 +1,2 @@
+.ENCODING_SPEC_RE	IRB::MagickFile.ENCODING_SPEC_RE
+.open	IRB::MagickFile.open

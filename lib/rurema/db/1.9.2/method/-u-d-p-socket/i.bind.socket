@@ -1,0 +1,9 @@
+names=bind
+visibility=public
+kind=defined
+
+--- bind(host, port)
+@todo
+
+ソケットを host の port に結合します。
+

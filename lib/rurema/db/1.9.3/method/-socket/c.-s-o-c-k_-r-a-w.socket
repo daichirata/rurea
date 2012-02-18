@@ -1,0 +1,11 @@
+names=SOCK_RAW
+visibility=public
+kind=defined
+
+--- SOCK_RAW
+@todo
+
+[[m:Socket.open]] の第二引数 type に使用します。
+
+@see [[m:Socket.open]]
+

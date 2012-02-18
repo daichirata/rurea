@@ -1,0 +1,11 @@
+names=asinh
+visibility=public
+kind=defined
+
+--- asinh(z) -> Float | Complex
+
+z の逆双曲線正弦関数の値を返します。
+
+@param z 数値
+
+

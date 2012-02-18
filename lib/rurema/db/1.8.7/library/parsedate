@@ -1,0 +1,7 @@
+requires=
+classes=ParseDate
+methods=
+sublibraries=
+is_sublibrary=false
+
+日付を解析します。

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/rurema/!svn/ver/4856/doctree/trunk/refm/api/src/psych
+END
+set.rd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/set.rd
+END
+stream.rd
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/stream.rd
+END
+coder.rd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/coder.rd
+END
+omap.rd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/omap.rd
+END
+parser.rd
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/rurema/!svn/ver/4852/doctree/trunk/refm/api/src/psych/parser.rd
+END
+handler.rd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/rurema/!svn/ver/4852/doctree/trunk/refm/api/src/psych/handler.rd
+END
+scalar_scanner.rd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/scalar_scanner.rd
+END
+deprecated.rd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/deprecated.rd
+END
+visitors.rd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/visitors.rd
+END
+tree_builder.rd
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/tree_builder.rd
+END
+core_ext.rd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/rurema/!svn/ver/4856/doctree/trunk/refm/api/src/psych/core_ext.rd
+END
+nodes.rd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/nodes.rd
+END
+streaming.rd
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/streaming.rd
+END
+json.rd
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/rurema/!svn/ver/4851/doctree/trunk/refm/api/src/psych/json.rd
+END
