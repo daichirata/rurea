@@ -1,6 +1,9 @@
 $:.unshift File.dirname(__FILE__)
 require 'lib/rurema'
+require 'rspec/core/rake_task'
 
+RSpec::Core::RakeTask.new(:spec)
+task :default => :spec
 
 namespace :init do
   task "r187" do
@@ -19,7 +22,6 @@ namespace :init do
     end
   end
 end
-
 
 namespace :update do
   task "r187" do

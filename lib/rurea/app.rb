@@ -5,6 +5,7 @@ module Rurea
     end
 
     not_found do
+      content_type :json
       { :status => 400, :result => "Bad Request: query error." }.to_json
     end
 
