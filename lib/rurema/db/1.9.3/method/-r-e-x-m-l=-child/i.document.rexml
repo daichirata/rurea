@@ -1,9 +1,0 @@
-names=document
-visibility=public
-kind=defined
-
---- document -> REXML::Document | nil
-そのノードが属する document ([[c:REXML::Document]]) を返します。
-
-属する document が存在しない場合は nil を返します。
-

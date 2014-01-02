@@ -1,8 +1,0 @@
-names=-@
-visibility=public
-kind=defined
-
---- -@ -> BigDecimal
-
-self の符号を反転させたものを返します。
-

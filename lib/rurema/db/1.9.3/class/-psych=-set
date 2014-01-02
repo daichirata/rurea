@@ -1,9 +1,0 @@
-type=class
-superclass=Hash
-included=
-extended=
-library=psych
-aliases=
-aliasof=
-
-YAML の unordered set を表すクラスです。

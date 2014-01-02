@@ -1,9 +1,0 @@
-names=>=
-visibility=public
-kind=defined
-
---- >=(other) -> bool
-
-self が other より大きいか等しい場合に true を、そうでない場合に false
-を返します。
-

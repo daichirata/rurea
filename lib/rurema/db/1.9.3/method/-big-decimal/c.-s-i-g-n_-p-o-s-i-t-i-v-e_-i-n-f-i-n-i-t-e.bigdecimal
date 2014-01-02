@@ -1,8 +1,0 @@
-names=SIGN_POSITIVE_INFINITE
-visibility=public
-kind=defined
-
---- SIGN_POSITIVE_INFINITE -> Fixnum
-
-正の無限大に対応する [[m:BigDecimal#sign]] の値を返します。
-

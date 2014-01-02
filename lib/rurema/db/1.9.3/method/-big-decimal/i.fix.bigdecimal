@@ -1,8 +1,0 @@
-names=fix
-visibility=public
-kind=defined
-
---- fix -> BigDecimal
-
-self の整数部分を新しい [[c:BigDecimal]] オブジェクトにして返します。
-

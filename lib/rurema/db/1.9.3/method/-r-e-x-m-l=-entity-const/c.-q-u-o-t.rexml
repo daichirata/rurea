@@ -1,7 +1,0 @@
-names=QUOT
-visibility=public
-kind=defined
-
---- QUOT -> REXML::Entity
-「&quot;」「"」というエンティティを表わすオブジェクト。
-

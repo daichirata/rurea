@@ -1,8 +1,0 @@
-names=empty?
-visibility=public
-kind=defined
-
---- empty? -> bool
-子要素を持たない場合に true を返します。
-
-

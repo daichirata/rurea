@@ -1,9 +1,0 @@
-names=system
-visibility=public
-kind=defined
-
---- system -> String | nil
-DTD のシステム識別子を返します。
-
-DTD が外部サブセットを含んでいない場合は nil を返します。
-

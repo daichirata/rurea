@@ -1,9 +1,0 @@
-names=here?
-visibility=public
-kind=defined
-
---- here?(uri) -> bool
-uri がカレントサーバに紐付けられたものであれば真を返します。
-
-@see [[m:DRb.#current_server]]
-

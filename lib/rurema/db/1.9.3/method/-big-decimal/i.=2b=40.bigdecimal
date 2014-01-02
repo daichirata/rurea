@@ -1,8 +1,0 @@
-names=+@
-visibility=public
-kind=defined
-
---- +@ -> self
-
-self を返します。
-

@@ -1,7 +1,0 @@
-names=APOS
-visibility=public
-kind=defined
-
---- APOS
-「&apos;」「'」というエンティティを表わすオブジェクト。
-

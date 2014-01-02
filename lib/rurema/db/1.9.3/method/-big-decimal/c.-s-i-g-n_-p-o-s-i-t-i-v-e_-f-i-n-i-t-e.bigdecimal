@@ -1,8 +1,0 @@
-names=SIGN_POSITIVE_FINITE
-visibility=public
-kind=defined
-
---- SIGN_POSITIVE_FINITE -> Fixnum
-
-正の値に対応する [[m:BigDecimal#sign]] の値を返します。
-

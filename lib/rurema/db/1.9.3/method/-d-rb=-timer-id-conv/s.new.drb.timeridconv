@@ -1,9 +1,0 @@
-names=new
-visibility=public
-kind=defined
-
---- new(timeout=600) -> DRb::TimerIdConv
-TimerIdConv のインスタンスを生成して返します。
-
-@param timeout to_id で識別子に変換してからオブジェクトがGCされないことが保証される秒数
-

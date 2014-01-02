@@ -1,21 +1,21 @@
 class Rurema
-  STATUS =
-    { :complete => 200, :still => 202, :not_found => 404 }
 
-  class << self
+  RUBY_VERSIONS = [
+    '1.9.3',
+    '2.0.0',
+    '2.1.0'
+  ]
 
-    def init(version)
-      new(version).init
-    end
+  STATUS = {
+    :complete  => 200,
+    :still     => 202,
+    :not_found => 404
+  }
 
-    def update
-      new(version).update
-    end
+  SVN_URL = "http://jp.rubyist.net/svn/rurema"
 
-    def search(version, query = "", num = nil)
-      new(version, query, num).send(:search)
-    end
-
+  def self.search(version, query = "", num = nil)
+    new(version, query, num).send(:search)
   end
 
   def initialize(version, query = "", num = nil)
@@ -24,34 +24,57 @@ class Rurema
     @num = (num && (num.to_i > 0) ? num.to_i : num)
   end
 
+  attr_reader :version
+
   def init
-    system %.svn co -rHEAD #{svn_url}/doctree/trunk #{doc_path}.
-    system %.svn co -rHEAD #{svn_url}/bitclust/trunk #{bitclust_path}.
-    system %.#{bitclust_bin} -d #{db_path} init version=#{version} encoding=utf-8.
-    system %.#{bitclust_bin} -d #{db_path} update --stdlibtree=#{refm_src_path}.
+    unless doc_path_exists?
+      system %.svn co -rHEAD #{SVN_URL}/doctree/trunk #{doc_path}.
+    end
+
+    unless bitclust_path_exists?
+      system %.svn co -rHEAD #{SVN_URL}/bitclust/trunk #{bitclust_path}.
+    end
+
+    unless db_path_exists?
+      system %.#{bitclust_bin} -d #{db_path} init version=#{version} encoding=utf-8.
+      system %.#{bitclust_bin} -d #{db_path} update --stdlibtree=#{refm_src_path}.
+    end
   end
 
   def update
+    unless doc_path_exists?
+      raise "#{doc_path} not exists."
+    end
+
+    unless db_path_exists?
+      raise "#{db_path} not exists."
+    end
+
     system %.svn up #{doc_path}.
     system %.#{bitclust_bin} -d #{db_path} update --stdlibtree=#{refm_src_path}.
   end
 
-private
+  private
+
   def search
-    if params_valid? && (refes = search_reference) && refes.present?
-      if refes.multiple?
-        if @num
-          set_query(refes[@num])
-          search
-        else
-          [STATUS[:still], refes.with_index_value]
-        end
-      else
-        [STATUS[:complete], refes.value]
-      end
-    else
-      [STATUS[:not_found], no_such_class_or_number]
+    unless db_path_exists?
+      return [STATUS[:not_found], ruby_version_not_found]
     end
+
+    unless params_valid? && (refes = search_reference) && refes.present?
+      return [STATUS[:not_found], no_such_class_or_number]
+    end
+
+    unless refes.multiple?
+      return [STATUS[:complete], refes.value]
+    end
+
+    unless @num
+      return [STATUS[:still], refes.with_index_value]
+    end
+
+    set_query(refes[@num])
+    search
   end
 
   def search_reference
@@ -75,30 +98,25 @@ private
     @query = query
   end
 
-  def no_such_class_or_number
-    "no such class or number: #{@query || @q_buffer} #{@num}"
-  end
-
-  def svn_url
-    "http://jp.rubyist.net/svn/rurema"
-  end
-
   def rurema_path
     File.expand_path(File.join(File.dirname(__FILE__) , 'rurema'))
-  end
-
-  def version
-    @version
   end
 
   def doc_path
     File.join(rurema_path, 'doctree')
   end
 
+  def doc_path_exists?
+    File.exists?(doc_path)
+  end
+
   def bitclust_path
     File.join(rurema_path, 'bitclust')
   end
 
+  def bitclust_path_exists?
+    File.exists?(bitclust_path)
+  end
 
   def bitclust_bin
     File.join(bitclust_path, 'bin', 'bitclust')
@@ -112,8 +130,20 @@ private
     File.join(rurema_path, 'db', version)
   end
 
+  def db_path_exists?
+    File.exists?(db_path)
+  end
+
   def refm_src_path
     File.join(doc_path, 'refm', 'api', 'src')
+  end
+
+  def no_such_class_or_number
+    "no such class or number: #{@query || @q_buffer} #{@num}"
+  end
+
+  def ruby_version_not_found
+    "version #{version} does not exist."
   end
 
   class Refe

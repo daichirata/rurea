@@ -23,7 +23,7 @@ describe Rurea::App do
     end
 
     describe '/:version/:method' do
-      before { get '/1.9.2/each' }
+      before { get '/1.9.3/each' }
 
       it "should return normal if it was the correct access" do
         last_response.should be_ok
@@ -41,14 +41,14 @@ describe Rurea::App do
 
       context 'when more than one candidate does not exist. it' do
         it "should return status 202" do
-          get '/1.9.2/Array.each'
+          get '/1.9.3/Array.each'
           JSON.parse(last_response.body)['status'].should == 200
         end
       end
     end
 
     describe '/:version/:method/:num' do
-      before { get '/1.9.2/each/1' }
+      before { get '/1.9.3/each/1' }
 
       it "should return normal if it was the correct access" do
         last_response.should be_ok
@@ -68,7 +68,7 @@ describe Rurea::App do
     context 'but the URL is wrong' do
       describe '/:version/:method' do
         it "when the candidate does not exist. should return status 404" do
-          get '/1.9.2/Ary.each'
+          get '/1.9.3/Ary.each'
           last_response.body.should ==
             {"status"=>404,"result"=>"no such class or number: Ary.each "}.to_json
         end
@@ -82,7 +82,7 @@ describe Rurea::App do
 
       describe '/:version/:method/:num' do
         it "when the candidate does not exist. should return status 404" do
-          get '/1.9.2/each/100000'
+          get '/1.9.3/each/100000'
           last_response.body.should ==
             {"status"=>404,"result"=>"no such class or number: each 100000"}.to_json
         end

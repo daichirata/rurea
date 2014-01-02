@@ -1,9 +1,0 @@
-names=server
-visibility=public
-kind=defined
-
---- server -> DRb::DRbServer
-通信に利用しているサーバを返します。
-
-[[m:DRb::ExtServ.new]] で指定した [[c:DRb::DRbServer]] を返します。
-

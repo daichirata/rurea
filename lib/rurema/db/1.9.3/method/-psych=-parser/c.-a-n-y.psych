@@ -1,7 +1,0 @@
-names=ANY
-visibility=public
-kind=defined
-
---- ANY -> Integer
-「任意の」エンコーディングを意味します。
-
