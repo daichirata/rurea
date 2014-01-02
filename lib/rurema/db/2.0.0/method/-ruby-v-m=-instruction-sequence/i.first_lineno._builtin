@@ -1,0 +1,23 @@
+names=first_lineno
+visibility=public
+kind=defined
+
+--- first_lineno -> Integer
+
+self が表す命令シーケンスの 1 行目の行番号を返します。
+
+例:irb で実行した場合
+
+  RubyVM::InstructionSequence.compile('num = 1 + 2').first_lineno
+  # => 1
+
+例2:
+
+  # /tmp/method.rb
+  require "foo-library"
+  def foo
+    p :foo
+  end
+
+  RubyVM::InstructionSequence.of(method(:foo)).first_lineno
+  # => 2

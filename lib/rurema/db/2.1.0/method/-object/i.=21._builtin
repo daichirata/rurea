@@ -1,0 +1,14 @@
+names=!
+visibility=public
+kind=defined
+
+--- !~(other) -> bool
+
+自身が other とマッチしない事を判定します。
+
+self#=~(obj) を反転した結果と同じ結果を返します。
+
+@param other 判定するオブジェクトを指定します。
+
+@see [[m:Object#=~]]
+

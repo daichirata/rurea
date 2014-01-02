@@ -1,0 +1,7 @@
+names=__drburi
+visibility=public
+kind=defined
+
+--- __drburi -> String|nil
+リモートオブジェクトの URI を返します。
+

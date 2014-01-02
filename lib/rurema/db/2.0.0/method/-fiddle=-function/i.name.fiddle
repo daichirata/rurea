@@ -1,0 +1,11 @@
+names=name
+visibility=public
+kind=defined
+
+--- name -> nil | String
+関数の名前を返します。
+
+名前が定義されていない場合は nil を返します。
+
+@see [[m:Fiddle::Function.new]]
+

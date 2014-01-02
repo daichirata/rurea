@@ -1,0 +1,7 @@
+names=TYPE_DOUBLE
+visibility=public
+kind=defined
+
+--- TYPE_DOUBLE -> Integer
+C の double 型を表す定数。
+

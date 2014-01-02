@@ -1,0 +1,25 @@
+names=empty
+visibility=public
+kind=defined
+
+--- empty(row_size=0, column_size=0) -> Matrix
+要素を持たない行列を返します。
+
+「要素を持たない」とは、行数もしくは列数が0の行列のことです。
+
+row_size 、 column_size のいずれか一方は0である必要があります。
+
+  m = Matrix.empty(2, 0)
+  m == Matrix[ [], [] ]
+  # => true
+  n = Matrix.empty(0, 3)
+  n == Matrix.columns([ [], [], [] ])
+  # => true
+  m * n
+  # => Matrix[[0, 0, 0], [0, 0, 0]]
+
+@param row_size 行列の行数
+@param column_size 行列の列数
+@raise ArgumentError row_size, column_size が両方とも0でない場合に発生します
+
+

@@ -1,0 +1,14 @@
+names=eql?
+visibility=public
+kind=defined
+
+--- eql?(other) -> bool
+
+self と other のクラスが等しくかつ同じ値である場合に true を返します。
+そうでない場合に false を返します。
+
+@param other self と比較したい数値。
+
+  (1 << 64) == (1 << 64).to_f    # => true
+  (1 << 64).eql?((1 << 64).to_f) # => false
+

@@ -1,0 +1,13 @@
+names=each
+visibility=public
+kind=defined
+
+--- each -> Enumerator
+--- each{|node| ... } -> ()
+
+self のノードをルートとする部分木の各ノードを引数として
+ブロックを呼び出します。
+
+ブロックを省略した場合は上のような繰り返しをする [[c:Enumerator]]
+オブジェクトを返します。
+

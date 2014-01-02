@@ -1,0 +1,11 @@
+names=implicit_end=
+visibility=public
+kind=defined
+
+--- implicit_end=(bool)
+ドキュメントが implicit に終わっているかどうかを設定します。
+
+@param bool ドキュメントが implicit に終わっているかどうかの設定値
+@see [[m:Psych::Nodes::Document#implicit_end]]
+
+

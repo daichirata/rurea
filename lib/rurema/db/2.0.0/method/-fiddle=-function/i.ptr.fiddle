@@ -1,0 +1,9 @@
+names=ptr
+visibility=public
+kind=defined
+
+--- ptr -> Integer | Fiddle::Function
+関数ポインタを返します。
+
+[[m:Fiddle::Function.new]] の第1引数として指定したものを返します。
+

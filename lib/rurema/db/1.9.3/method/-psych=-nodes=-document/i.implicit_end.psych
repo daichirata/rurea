@@ -1,0 +1,11 @@
+names=implicit_end
+visibility=public
+kind=defined
+
+--- implicit_end -> bool
+ドキュメントが implicit に終わっているかどうかを返します。
+
+オブジェクト生成時のデフォルト値は true です。
+
+@see [[m:Psych::Nodes::Document#implicit_end=]]
+

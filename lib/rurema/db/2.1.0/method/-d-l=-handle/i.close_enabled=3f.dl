@@ -1,0 +1,12 @@
+names=close_enabled?
+visibility=public
+kind=defined
+
+--- close_enabled? -> bool 
+
+GC によるオブジェクトの回収時に self をクローズする([[m:DL::Handle#close]])
+かどうかを真偽値で返します。
+
+
+@see [[m:DL::Handle#enable_close]], [[m:DL::Handle#disable_close]]
+

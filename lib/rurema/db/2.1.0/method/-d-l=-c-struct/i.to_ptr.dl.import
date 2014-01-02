@@ -1,0 +1,7 @@
+names=to_ptr
+visibility=public
+kind=defined
+
+--- to_ptr -> DL::CPtr
+保持している構造体へのポインタを返します。
+

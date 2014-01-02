@@ -1,0 +1,7 @@
+names=SIZEOF_SIZE_T
+visibility=public
+kind=defined
+
+--- SIZEOF_SIZE_T -> Integer
+Cでの sizeof(size_t) の値
+

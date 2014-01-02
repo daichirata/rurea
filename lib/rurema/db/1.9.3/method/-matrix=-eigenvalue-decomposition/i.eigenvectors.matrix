@@ -1,0 +1,7 @@
+names=eigenvectors
+visibility=public
+kind=defined
+
+--- eigenvectors -> [Vector]
+右固有ベクトルを配列で返します。
+

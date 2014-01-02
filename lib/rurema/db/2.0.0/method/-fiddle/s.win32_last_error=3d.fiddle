@@ -1,0 +1,13 @@
+names=win32_last_error=
+visibility=public
+kind=defined
+
+--- win32_last_error=(errno)
+[[m:Fiddle.win32_last_error]] で返される値を設定します。
+
+errno は fiddle が設定するのでユーザはこのメソッドを使わないでください。
+
+このメソッドは Windows 環境でのみ定義されています。
+
+@param errno 設定する errno
+

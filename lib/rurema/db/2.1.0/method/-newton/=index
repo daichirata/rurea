@@ -1,0 +1,9 @@
+.nlsolve	Newton.#nlsolve
+.norm	Newton.#norm
+#dfdxi	Jacobian.#dfdxi
+#isEqual	Jacobian.#isEqual
+#jacobian	Jacobian.#jacobian
+#ludecomp	LUSolve.#ludecomp
+#lusolve	LUSolve.#lusolve
+#nlsolve	Newton.#nlsolve
+#norm	Newton.#norm

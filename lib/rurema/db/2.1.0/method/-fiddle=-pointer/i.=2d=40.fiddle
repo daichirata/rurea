@@ -1,0 +1,24 @@
+names=-@,ref
+visibility=public
+kind=defined
+
+--- ref   -> Fiddle::Pointer
+--- -@    -> Fiddle::Pointer
+
+自身を指す Pointer オブジェクトを返します。
+C 言語におけるポインタへのアドレス演算子の適用 &p と同じです。
+
+この返り値には、free 関数がセットされず、size は 0 とされます。
+
+例:
+
+ require 'fiddle'
+ 
+ s = 'abc'
+ cptr = Fiddle::Pointer[s]
+ cref = cptr.ref
+ p cref.to_s(4).unpack('l*')[0]  #=> 136121648
+ p cptr.to_i                     #=> 136121648
+ p cref.ptr.to_s                 #=> "abc"
+
+

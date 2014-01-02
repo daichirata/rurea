@@ -1,0 +1,11 @@
+names=rank_e
+visibility=public
+kind=defined
+
+--- rank_e -> Fixnum
+
+階数 (rank) を返します。
+
+このメソッドは obsolete です。[[m:Matrix#rank]] を代わりに
+使ってください。
+

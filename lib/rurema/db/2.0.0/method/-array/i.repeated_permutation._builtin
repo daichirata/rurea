@@ -1,0 +1,29 @@
+names=repeated_permutation
+visibility=public
+kind=defined
+
+--- repeated_permutation(n) { |p| ... } -> Array
+--- repeated_permutation(n)             -> Enumerator
+
+サイズ n の重複順列をすべて生成し，それを引数としてブロックを実行します。
+
+得られる順列の順序は保証されません。ブロックなしで呼び出されると， 順列
+を生成する Enumerator オブジェクトを返します。
+
+@param n 生成する配列のサイズを整数で指定します。。
+         整数以外のオブジェクトを指定した場合は to_int メソッドによる暗
+         黙の型変換を試みます。
+
+@raise TypeError 引数に整数以外の(暗黙の型変換が行えない)オブジェクトを
+                 指定した場合に発生します。
+
+例:
+
+    a = [1, 2]
+    a.repeated_permutation(1).to_a  #=> [[1], [2]]
+    a.repeated_permutation(2).to_a  #=> [[1,1],[1,2],[2,1],[2,2]]
+    a.repeated_permutation(3).to_a  #=> [[1,1,1],[1,1,2],[1,2,1],[1,2,2],
+                                    #    [2,1,1],[2,1,2],[2,2,1],[2,2,2]]
+    a.repeated_permutation(0).to_a  #=> [[]] # one permutation of length 0
+
+@see [[m:Array#repeated_combination]], [[m:Array#permutation]]

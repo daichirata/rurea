@@ -1,0 +1,11 @@
+names=anchor=
+visibility=public
+kind=defined
+
+--- anchor=(val)
+alias が指す先の anchor を変更します。
+
+@param val 設定する anchor 
+@see [[m:Psych::Nodes::Alias#anchor]],
+     [[m:Psych::Nodes::Alias.new]],
+

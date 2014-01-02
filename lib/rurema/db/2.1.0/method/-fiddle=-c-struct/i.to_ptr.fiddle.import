@@ -1,0 +1,7 @@
+names=to_ptr
+visibility=public
+kind=defined
+
+--- to_ptr -> Fiddle::Pointer
+保持している構造体へのポインタを返します。
+

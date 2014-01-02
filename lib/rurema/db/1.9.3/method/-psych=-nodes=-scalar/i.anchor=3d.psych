@@ -1,0 +1,11 @@
+names=anchor=
+visibility=public
+kind=defined
+
+--- anchor=(a) 
+scalar に付加された anchor を変更します。
+
+@param a 設定する anchor
+@see [[m:Psych::Nodes::Scalar#anchor]],
+     [[m:Psych::Nodes::Scalar.new]]
+

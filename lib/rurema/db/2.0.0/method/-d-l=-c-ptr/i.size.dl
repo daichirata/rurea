@@ -1,0 +1,11 @@
+names=size
+visibility=public
+kind=defined
+
+--- size        -> Integer
+自身の指す領域のサイズを返します。
+
+基本的には [[m:DL::CPtr.new]] で指定したサイズが返されます。
+[[m:DL::CPtr.to_ptr]] で文字列を変換したときは、そのバイト数が返されます。
+[[m:DL::CPtr#size=]] でこの値を変更することができます。
+

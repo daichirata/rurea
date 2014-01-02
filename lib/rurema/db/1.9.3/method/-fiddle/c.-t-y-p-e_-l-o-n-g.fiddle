@@ -1,0 +1,9 @@
+names=TYPE_LONG
+visibility=public
+kind=defined
+
+--- TYPE_LONG -> Integer
+C の long 型を表します。
+
+@see [[m:Fiddle::Function.new]]
+

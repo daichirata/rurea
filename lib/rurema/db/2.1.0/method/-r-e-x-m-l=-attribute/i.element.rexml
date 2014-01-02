@@ -1,0 +1,8 @@
+names=element
+visibility=public
+kind=defined
+
+--- element -> REXML::Element
+その属性が属する要素を返します。
+
+

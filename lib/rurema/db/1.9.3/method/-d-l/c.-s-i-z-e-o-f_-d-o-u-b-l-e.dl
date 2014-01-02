@@ -1,0 +1,7 @@
+names=SIZEOF_DOUBLE
+visibility=public
+kind=defined
+
+--- SIZEOF_DOUBLE -> Integer
+Cでの sizeof(double) の値
+

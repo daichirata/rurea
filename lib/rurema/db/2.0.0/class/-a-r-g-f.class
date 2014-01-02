@@ -1,0 +1,9 @@
+type=class
+superclass=Object
+included=
+extended=Enumerable
+library=_builtin
+aliases=
+aliasof=
+
+[[c:ARGF]] を表すクラスです。

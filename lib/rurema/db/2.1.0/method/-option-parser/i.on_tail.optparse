@@ -1,0 +1,28 @@
+names=on_tail
+visibility=public
+kind=defined
+
+--- on_tail(*arg, &block) -> self
+
+オプションを取り扱うためのブロックを自身の持つリストの最後に登録します。
+
+--version や --help の説明をサマリの最後に表示したい時に便利です。
+
+@param arg [[m:OptionParser#on]] と同様です。
+
+@param block [[m:OptionParser#on]] と同様です。
+
+例:
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+
+  opts.on_tail("--version", "Show version") do
+    puts OptionParser::Version.join('.')
+    exit
+  end
+
+@see [[m:OptionParser#on]], [[m:OptionParser#on_head]]
+

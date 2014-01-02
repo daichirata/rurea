@@ -1,0 +1,12 @@
+names=style=
+visibility=public
+kind=defined
+
+--- style=(sty)
+mapping の style を設定します。
+
+@param sty 設定する style 
+
+@see [[m:Psych::Nodes::Mapping#style]],
+     [[m:Psych::Nodes::Mapping.new]]
+

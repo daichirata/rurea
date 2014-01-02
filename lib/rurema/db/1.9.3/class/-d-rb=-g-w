@@ -1,0 +1,15 @@
+type=class
+superclass=Object
+included=
+extended=
+library=drb.gw
+aliases=
+aliasof=
+
+drb 通信中継のためのゲートウェイです。
+
+中継プロセス上のこのオブジェクトに、各リモートプロセスが
+中継を望むオブジェクトを登録します。そして別のプロセスがそれを取りだすことで
+(中継された)通信を開始します。インターフェースは [[c:Hash]] に似ています。
+
+詳しくは [[lib:drb/gw]] の例を見てください。

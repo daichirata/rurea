@@ -1,0 +1,16 @@
+names=label
+visibility=public
+kind=defined
+
+--- label -> String
+
+self が表すフレームのラベルを返します。通常、メソッド名、クラス名、モ
+ジュール名などで構成されます。
+
+例: [[c:Thread::Backtrace::Location]] の例1を用いた例
+
+  loc = c(0..1).first
+  loc.label # => "a"
+
+@see [[m:Thread::Backtrace::Location#base_label]]
+

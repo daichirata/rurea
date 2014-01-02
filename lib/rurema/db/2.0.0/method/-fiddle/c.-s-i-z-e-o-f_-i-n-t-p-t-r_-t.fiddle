@@ -1,0 +1,7 @@
+names=SIZEOF_INTPTR_T
+visibility=public
+kind=defined
+
+--- SIZEOF_INTPTR_T -> Integer
+Cでの sizeof(intptr_t) の値
+

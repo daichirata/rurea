@@ -1,0 +1,10 @@
+names=version
+visibility=public
+kind=defined
+
+--- version -> [Integer]
+YAML ドキュメントのバージョンを返します。
+
+@see [[m:Psych::Nodes::Document#version=]],
+     [[m:Psych::Nodes::Document.new]]
+

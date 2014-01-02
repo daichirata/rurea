@@ -1,0 +1,11 @@
+names=streaming?
+visibility=public
+kind=defined
+
+--- streaming? -> bool
+
+handler が streaming handler であるならば真を返すように
+override してください。
+
+デフォルトでは false を返します。
+

@@ -1,0 +1,10 @@
+names=tag
+visibility=public
+kind=defined
+
+--- tag -> String|nil
+mapping に付加された tag を返します。
+
+@see [[m:Psych::Nodes::Mapping#tag=]],
+     [[m:Psych::Nodes::Mapping.new]]
+

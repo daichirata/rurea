@@ -1,0 +1,10 @@
+names=style
+visibility=public
+kind=defined
+
+--- style -> Integer
+mapping の style を返します。
+
+@see [[m:Psych::Nodes::Mapping#style=]],
+     [[m:Psych::Nodes::Mapping.new]]
+

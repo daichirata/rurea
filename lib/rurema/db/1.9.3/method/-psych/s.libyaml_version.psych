@@ -1,0 +1,11 @@
+names=libyaml_version
+visibility=public
+kind=defined
+
+--- libyaml_version -> [Integer, Integer, Integer]
+libyaml のバージョンを返します。
+
+[major, minor patch-level] という 3 つの整数からなる配列を返します。
+
+@see [[m:Psych::LIBYAML_VERSION]]
+

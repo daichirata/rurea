@@ -1,0 +1,7 @@
+names=ALIGN_SIZE_T
+visibility=public
+kind=defined
+
+--- ALIGN_SIZE_T -> Integer
+C の構造体における size_t のアライメントの値。
+

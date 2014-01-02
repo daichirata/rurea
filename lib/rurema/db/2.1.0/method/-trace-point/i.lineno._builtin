@@ -1,0 +1,10 @@
+names=lineno
+visibility=public
+kind=defined
+
+--- lineno -> Integer
+
+発生したイベントの行番号を返します。
+
+@raise RuntimeError イベントフックの外側で実行した場合に発生します。
+

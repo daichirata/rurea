@@ -1,0 +1,11 @@
+type=class
+superclass=Object
+included=
+extended=
+library=fiddle
+aliases=
+aliasof=
+
+オープンされたダイナミックライブラリを表すクラスです。
+
+[[man:dlopen(3)]] が返すハンドラーのラッパーです。

@@ -1,0 +1,11 @@
+names=drop_while
+visibility=public
+kind=defined
+
+--- drop_while -> Enumerator::Lazy
+--- drop_while {|item| ... } -> Enumerator::Lazy
+
+[[m:Enumerable#drop_while]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+@see [[m:Enumerable#drop_while]]
+

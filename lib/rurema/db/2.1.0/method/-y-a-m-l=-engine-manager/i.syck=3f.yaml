@@ -1,0 +1,8 @@
+names=syck?
+visibility=public
+kind=defined
+
+--- syck? -> bool
+
+常に false を返します。
+

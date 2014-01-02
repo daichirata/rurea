@@ -1,0 +1,10 @@
+names=det_e,determinant_e
+visibility=public
+kind=defined
+
+--- determinant_e -> Rational | Float
+--- det_e -> Rational | Float
+
+不正な値を返します。
+[[m:Matrix#determinant]] を代わりに使ってください。
+

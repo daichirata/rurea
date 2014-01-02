@@ -1,0 +1,12 @@
+names=anchor=
+visibility=public
+kind=defined
+
+--- anchor=(a)
+mapping に付加する anchor を設定します。
+
+@param a 設定する anchor
+@see [[m:Psych::Nodes::Mapping#anchor]],
+     [[m:Psych::Nodes::Mapping.new]]
+
+

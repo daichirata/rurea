@@ -1,0 +1,11 @@
+names=parse
+visibility=public
+kind=defined
+
+--- parse(yaml) -> self
+
+YAML ドキュメントをパースし、イベントハンドラに
+イベントを逐次通知します。
+
+@see [[m:Psych::Parser.new]], [[c:Psych::Handler]], [[m:Psych::Parser#handler]]
+

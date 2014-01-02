@@ -1,0 +1,7 @@
+names=ALIGN_LONG_LONG
+visibility=public
+kind=defined
+
+--- ALIGN_LONG_LONG -> Integer
+C の構造体における long long のアライメントの値。
+

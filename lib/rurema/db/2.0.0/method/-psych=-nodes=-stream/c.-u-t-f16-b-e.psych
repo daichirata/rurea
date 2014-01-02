@@ -1,0 +1,11 @@
+names=UTF16BE
+visibility=public
+kind=defined
+
+--- UTF16BE -> Integer
+UTF16BE エンコーディングを表します。
+
+[[m:Psych::Parser::UTF16BE]] と同じ値です。
+
+@see [[m:Psych::Nodes::Stream.new]]
+

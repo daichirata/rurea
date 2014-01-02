@@ -1,0 +1,34 @@
+names=extern
+visibility=public
+kind=defined
+
+--- extern(signature, *opts) -> DL::Function
+
+[[m:DL::Importer#dlload]] で取り込んだライブラリから
+C の関数をインポートします。
+
+インポートした関数はそのモジュールにモジュール関数として定義されます。
+
+signature で関数の名前とシネグチャを指定します。例えば
+"int strcmp(char*, char*)" のように指定することができます。
+
+opts には :stdcall もしくは :cdecl を渡すことができ、
+呼出規約を明示することができます。
+
+@return インポートした関数を表す [[c:DL::Function]] オブジェクトを返します。
+
+@param signature 関数の名前とシネグチャ
+@param opts オプション
+
+例
+  require 'dl/import'
+  
+  module M
+    extern DL::Importer
+    dlload "libc.so.6"
+    extern "int strcmp(char*, char*)"
+  end
+   
+  M.strcmp("abc", "abc") # => 0
+  M.strcmp("abc", "abd") # => -1
+

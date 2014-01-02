@@ -1,0 +1,11 @@
+names=size
+visibility=public
+kind=defined
+
+--- size -> Integer | Float::INFINITY | nil
+
+範囲内の要素数を返します。始端、終端のいずれかのオブジェクトが
+[[c:Numeric]] のサブクラスのオブジェクトではない場合には nil を返します。
+
+  (10..20).size    # => 11
+  ("a".."z").size  # => nil

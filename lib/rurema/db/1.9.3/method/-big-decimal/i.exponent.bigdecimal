@@ -1,0 +1,8 @@
+names=exponent
+visibility=public
+kind=defined
+
+--- exponent -> Integer
+
+self の指数部を整数値で返します。
+

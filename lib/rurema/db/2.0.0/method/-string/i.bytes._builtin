@@ -1,0 +1,17 @@
+names=bytes
+visibility=public
+kind=defined
+
+--- bytes               -> [Integer]
+--- bytes {|byte| ... } -> self
+
+文字列の各バイトを数値の配列で返します。(self.each_byte.to_a と同じです)
+
+  "str".bytes # => [115, 116, 114]
+
+ブロックが指定された場合は [[m:String#each_byte]] と同じように動作しま
+す。ただし obsolete のため、ブロックを指定する場合は
+[[m:String#each_byte]] を使用してください。
+
+@see [[m:String#each_byte]]
+

@@ -1,0 +1,30 @@
+names=absolute_path
+visibility=public
+kind=defined
+
+--- absolute_path -> String | nil
+
+self が表す命令シーケンスの絶対パスを返します。
+
+self を文字列から作成していた場合は nil を返します。
+
+例1:irb で実行した場合
+
+  iseq = RubyVM::InstructionSequence.compile('num = 1 + 2')
+  # => <RubyVM::InstructionSequence:<compiled>@<compiled>>
+  iseq.absolute_path
+  # => nil
+
+例2: [[m:RubyVM::InstructionSequence.compile_file]] を使用した場合
+
+  # /tmp/method.rb
+  def hello
+    puts "hello, world"
+  end
+
+  # irb
+  > iseq = RubyVM::InstructionSequence.compile_file('/tmp/method.rb')
+  > iseq.absolute_path # => "/tmp/method.rb"
+
+@see [[m:RubyVM::InstructionSequence#path]]
+

@@ -1,0 +1,34 @@
+names=attribute_of
+visibility=public
+kind=defined
+
+--- attribute_of(element, attribute) -> String | nil
+DTD 内の属性リスト宣言で、 element という名前の要素の attribute という
+名前の属性のデフォルト値を返します。
+
+elementという名前の要素の属性値は宣言されていない、
+elementという名前の要素にはattributeという名前の属性が宣言されていない、
+もしくはデフォルト値が宣言されていない、のいずれかの場合は nil を返します。
+
+@param element 要素名(文字列)
+@param attribute 属性名(文字列)
+
+==== 例
+  require 'rexml/document'
+  
+  doctype = REXML::Document.new(<<EOS).doctype
+  <!DOCTYPE books [
+  <!ELEMENT book (comment)>
+  <!ELEMENT comment (#PCDATA)>
+  <!ATTLIST book
+            author CDATA #REQUIRED
+            title CDATA #REQUIRED
+            publisher CDATA "foobar publisher">
+  ]>
+  EOS
+  
+  p doctype.attribute_of("book", "publisher") # => "foobar publisher"
+  p doctype.attribute_of("bar", "foo") # => nil
+  p doctype.attribute_of("book", "baz") # => nil
+  p doctype.attribute_of("book", "title") # => nil
+

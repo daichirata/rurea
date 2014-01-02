@@ -1,0 +1,8 @@
+names=OPTS
+visibility=public
+kind=defined
+
+--- OPTS -> [String]
+
+[[c:RubyVM]] のビルドオプションの一覧を返します。
+

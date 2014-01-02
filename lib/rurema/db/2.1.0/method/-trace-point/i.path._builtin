@@ -1,0 +1,10 @@
+names=path
+visibility=public
+kind=defined
+
+--- path -> String
+
+イベントが発生したファイルのパスを返します。
+
+@raise RuntimeError イベントフックの外側で実行した場合に発生します。
+

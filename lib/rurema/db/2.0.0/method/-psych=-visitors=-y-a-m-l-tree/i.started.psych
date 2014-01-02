@@ -1,0 +1,11 @@
+names=started,started?
+visibility=public
+kind=defined
+
+--- started -> bool
+--- started? -> bool
+[[m:Psych::Visitors::YAMLTree#start]] をすでに呼び出しているならば
+真を返します。
+
+まだならば偽を返します。
+

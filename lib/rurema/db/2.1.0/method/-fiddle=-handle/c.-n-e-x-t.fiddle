@@ -1,0 +1,9 @@
+names=NEXT
+visibility=public
+kind=defined
+
+--- NEXT -> Fiddle::Handle
+RTLD_NEXT で表わされる疑似ハンドルを表します。
+
+詳しくは [[man:dlsym(3)]] を参照してください。
+

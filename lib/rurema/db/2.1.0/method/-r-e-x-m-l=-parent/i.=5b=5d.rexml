@@ -1,0 +1,9 @@
+names=[]
+visibility=public
+kind=defined
+
+--- [](index) -> REXML::Child | nil
+子ノード列上の index で指定された場所のノードを返します。
+
+範囲外を指定した場合は nil を返します。
+

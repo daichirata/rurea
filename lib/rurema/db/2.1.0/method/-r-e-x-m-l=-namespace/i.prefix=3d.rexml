@@ -1,0 +1,10 @@
+names=prefix=
+visibility=public
+kind=defined
+
+--- prefix=(value)
+prefix (前置修飾子) を設定します。
+
+@param value prefix文字列
+@see [[m:REXML::Namespace#prefix]]
+

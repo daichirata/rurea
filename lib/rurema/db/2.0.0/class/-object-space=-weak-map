@@ -1,0 +1,11 @@
+type=class
+superclass=Object
+included=
+extended=
+library=_builtin
+aliases=
+aliasof=
+
+GC の対象になるオブジェクトへの weak reference を持つクラスです。主に
+[[c:WeakRef]] クラスの内部で使用されるため、[[lib:weakref]] ライブラリ
+経由で使用してください。

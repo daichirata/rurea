@@ -1,0 +1,33 @@
+names=BigDecimal
+visibility=public
+kind=added
+
+--- BigDecimal(s) -> BigDecimal
+--- BigDecimal(s, n) -> BigDecimal
+
+引数 s で指定した値を表す BigDecimal オブジェクトを生成します。
+
+詳しくは [[m:BigDecimal.new]] を参照してください。
+
+@param s 数値を文字列、[[c:Fixnum]]、[[c:Bignum]]、[[c:Float]]、
+         [[c:Rational]]、[[c:BigDecimal]] オブジェクトのいずれかで指定
+         します。
+
+@param n 有効桁数を整数で指定します。
+
+@raise TypeError s に 文字列、[[c:Fixnum]]、[[c:Bignum]]、[[c:Float]]、
+                 [[c:Rational]]、[[c:BigDecimal]] 以外のオブジェクトを
+                 指定した場合に発生します。
+
+@raise TypeError n に [[c:Fixnum]] 以外のオブジェクトを指定した場合に発
+                 生します。
+
+@raise ArgumentError s に [[c:Float]] オブジェクトを指定し、n に
+                     [[m:Float::DIG]] 以上の値を指定した場合に発生します。
+                     また、s に [[c:Float]]、[[c:Rational]] オブジェク
+                     トを指定し、n を省略した場合に発生します。
+
+@raise ArgumentError n に負の数を指定した場合に発生します。
+
+@see [[m:BigDecimal.new]]
+

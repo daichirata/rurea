@@ -1,0 +1,10 @@
+names=FLOW
+visibility=public
+kind=defined
+
+--- FLOW -> Integer
+flow style を表します。
+
+@see [[m:Psych::Nodes::Sequence.new]],
+     [[m:Psych::Nodes::Sequence#style]],
+

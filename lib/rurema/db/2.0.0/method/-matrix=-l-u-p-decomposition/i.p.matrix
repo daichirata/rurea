@@ -1,0 +1,7 @@
+names=p
+visibility=public
+kind=defined
+
+--- p -> Matrix
+LUP分解の置換行列部分を返します。
+

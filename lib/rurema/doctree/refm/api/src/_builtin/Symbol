@@ -1,0 +1,379 @@
+= class Symbol < Object
+#@since 1.9.1
+include Comparable
+#@end
+#@#インターンされた文字列
+シンボルを表すクラス。シンボルは任意の文字列と一対一に対応するオブジェクトです。
+
+文字列の代わりに用いることもできますが、必ずしも文字列と同じ振る舞いをするわけではありません。
+同じ内容のシンボルはかならず同一のオブジェクトです。
+
+シンボルオブジェクトは以下のようなリテラルで得られます。
+#@#リテラル-シンボルリテラルへのリンク貼る
+
+  :symbol
+  :'symbol'
+  %s!symbol! # %記法
+
+生成されたシンボルの一覧は [[m:Symbol.all_symbols]] で得られます。
+一番目のリテラルでシンボルを表す場合、`:' の後に
+は識別子、メソッド名(`!',`?',`=' などの接尾辞を含む)、変数名
+(`$'などの接頭辞を含む)、再定義できる演算子のいずれかに適合する
+ものしか書くことはできません(そうでなければ文法エラーになります)。
+そうでない文字列をシンボルにしたい場合は残りの表記か [[m:String#intern]] を使用してください。
+
+#@#どの形式でもシンボルはヌル文字('\0')を含むことはできません。
+#@#↑1.9では可能。調べる
+
+#@# 1.9では空文字列もシンボルにできる
+
+=== シンボルの実装と用途
+==== 実装
+Rubyの内部実装では、メソッド名や変数名、定数名、クラス名など
+の`名前'を整数で管理しています。これは名前を直接文字列として処理するよりも
+速度面で有利だからです。そしてその整数をRubyのコード上で表現したものがシンボルです。
+
+シンボルは、ソース上では文字列のように見え、内部では整数として扱われる、両者を仲立ちするような存在です。
+#@#表現を変える？
+
+名前を管理するという役割上、シンボルと文字列は一対一に対応します。
+また、文字列と違い、immutable (変更不可)であり、同値ならば必ず同一です。
+
+  p "abc" == "abc" #=> true
+  p "abc".equal?("abc") #=> false
+  p :abc == :abc #=> true
+  p :abc.equal?(:abc) #=> true ←同値ならば同一
+
+==== 用途
+実用面では、シンボルは文字の意味を明確にします。`名前'を指し示す時など、
+文字列そのものが必要なわけではない時に用います。
+
+#@#プログラム内部でしか使わない文字列
+
+  * ハッシュのキー { :key => "value" }
+  * アクセサの引数で渡すインスタンス変数名 attr_reader :name
+  * メソッド引数で渡すメソッド名 __send__ :to_s
+  * C の enum 的な使用 (値そのものは無視してよい場合)
+
+シンボルを使うメリットは
+
+  * 新しく文字列を生成しない分やや効率がよく、比較も高速。
+  * 文字の意味がはっきりするのでコードが読みやすくなる
+  * immutable なので内容を書き換えられる心配がない
+#@#タイプ量が少ない
+
+大抵のメソッドはシンボルの代わりに文字列を引数として渡すこともできるようになっています。
+
+#@since 1.9.1
+[[c:Symbol]] クラスのメソッドには、[[c:String]] クラスのメソッドと同名で似た働きをするものもあります。
+#@end
+
+== Class Methods
+
+#@since 1.8.0
+--- all_symbols -> [Symbol]
+
+定義済みの全てのシンボルオブジェクトの配列を返します。
+
+    p Symbol.all_symbols #=> [:RUBY_PLATFORM, :RUBY_VERSION, ...]
+
+リテラルで表記したシンボルのうち、コンパイル時に値が決まるものはその時に生成されます。
+それ以外の式展開を含むリテラルや、メソッドで表記されたものは式の評価時に生成されます。
+(何にも使われないシンボルは最適化により生成されないことがあります)
+
+  def number
+    'make_3'
+  end
+  
+  p Symbol.all_symbols.select{|sym|sym.to_s.include? 'make'}
+  #=> [:make_1, :make_2]
+  
+  re  = #確実に生成されるように代入操作を行う
+  :make_1,
+  :'make_2',
+  :"#{number}",
+  'make_4'.intern
+  
+  p Symbol.all_symbols.select{|sym|sym.to_s.include? 'make'}
+  #=> [:make_1, :make_2, :make_3, :make_4]
+
+#@end
+
+== Instance Methods
+
+#@since 1.9.1
+--- intern -> self
+#@end
+#@since 1.8.0
+--- to_sym -> self
+self を返します。
+
+@see [[m:String#intern]]
+#@end
+
+
+--- id2name -> String
+--- to_s -> String
+
+シンボルに対応する文字列を返します。
+
+逆に、文字列に対応するシンボルを得るには
+[[m:String#intern]] を使います。
+
+  p :foo.id2name  # => "foo"
+  p :foo.id2name.intern == :foo  # => true
+  
+@see [[m:String#intern]]
+
+#@until 1.9.1
+--- to_i -> Integer
+--- to_int -> Integer
+
+シンボルに対応する整数を返します。
+
+このメソッドで得られる整数は、内部実装で名前の管理に使われています。
+オブジェクトに対応する整数( [[m:Object#object_id]] で得ら
+れます)と Symbol に対応する整数は別のものです。
+
+#@if ("1.8.0" > version)
+逆にこの整数から対応するシンボルを得るには
+[[m:Fixnum#id2name]] を使って一旦文字列を得る必要が
+あります。
+#@else
+逆にこの整数から対応するシンボルを得るには
+[[m:Fixnum#to_sym]] が使えます
+#@end
+
+   id = :foo.to_i
+   p id                  #=> 8881
+#@if ("1.8.0" > version)
+   p id.id2name.intern   #=> :foo
+#@else
+   p id.to_sym           #=> :foo
+#@end
+
+#@if ("1.8.0" > version)
+@see [[m:Fixnum#id2name]]
+#@else
+@see [[m:Fixnum#to_sym]]
+#@end
+#@end
+
+#@since 1.8.7
+--- to_proc -> Proc
+self に対応する Proc オブジェクトを返します。
+
+生成される Proc オブジェクトを呼びだす([[m:Proc#call]])と、
+その第一引数の self という名前のメソッドを
+残りの引数を渡して呼びだされます。
+
+  :to_i.to_proc["ff", 16]  # => 255
+  (1..3).collect(&:to_s)  #=> ["1", "2", "3"]
+  (1..3).inject(&:+)      #=> 6
+
+#@end
+
+#@since 1.9.1
+--- ==(other)        -> true | false
+
+other が同じシンボルの時に真を返します。
+そうでない場合は偽を返します。
+
+@param other 比較対象のシンボルを指定します。
+
+--- succ -> Symbol
+--- next -> Symbol
+
+シンボルに対応する文字列の「次の」文字列に対応するシンボルを返します。
+
+(self.to_s.next.intern と同じです。)
+
+  :a.next   # => :b
+  :foo.next # => :fop
+
+@see [[m:String#succ]]
+
+--- <=>(other) -> -1 | 0 | 1
+
+self と other のシンボルに対応する文字列を ASCII コード順で比較して、
+self が大きい時には正の整数、等しい時には 0、小さい時には負の整数を返し
+ます。
+
+@param other 比較対象のシンボルを指定します。
+
+  p :aaa <=> :xxx  # => -1
+  p :aaa <=> :aaa  # => 0
+  p :xxx <=> :aaa  # => 1
+
+@see [[m:String#<=>]]
+
+--- casecmp(other) -> -1 | 0 | 1
+
+[[m:Symbol#<=>]] と同様にシンボルに対応する文字列の順序を比較しますが、
+アルファベットの大文字小文字の違いを無視します。
+
+@param other 比較対象のシンボルを指定します。
+
+  p :a <=> :A      # => 1
+  p :a.casecmp(:A) # => 0
+
+@see [[m:String#casecmp]]
+
+--- =~(other) -> Integer | nil
+--- match(other) -> Integer | nil
+
+正規表現 other とのマッチを行います。
+
+(self.to_s =~ other と同じです。)
+
+@param other 比較対象のシンボルを指定します。
+
+@return マッチが成功すればマッチした位置のインデックスを、そうでなければ nil を返します。
+
+  p :foo =~ /foo/    # => 0
+  p :foobar =~ /bar/ # => 3
+  p :foo =~ /bar/    # => nil
+
+@see [[m:String#=~]], [[m:String#match]]
+
+--- [](nth) -> String | nil
+--- slice(nth) -> String | nil
+
+nth 番目の文字を返します。
+
+(self.to_s[nth] と同じです。)
+
+@param nth 文字の位置を表す整数を指定します。
+
+  :foo[0] # => "f"
+  :foo[1] # => "o"
+  :foo[2] # => "o"
+
+--- [](nth, len) -> String | nil
+--- slice(nth, len) -> String | nil
+
+nth 番目から長さ len の部分文字列を新しく作って返します。
+
+(self.to_s[nth, len] と同じです。)
+
+@param nth 文字の位置を表す整数を指定します。
+@param len 文字列の長さを指定します。
+
+  :foo[1, 2] # => "oo"
+
+--- [](substr) -> String | nil
+--- slice(substr) -> String | nil
+
+self が substr を含む場合、一致した文字列を新しく作って返します。
+
+(self.to_s[substr] と同じです。)
+
+--- [](regexp, nth = 0) -> String | nil
+--- slice(regexp, nth = 0) -> String | nil
+
+正規表現 regexp の nth 番目の括弧にマッチする最初の部分文字列を返します。
+
+(self.to_s[regexp, nth] と同じです。)
+
+@param regexp 正規表現を指定します。
+
+@param nth 取得したい正規表現レジスタのインデックスを指定します。
+
+  :foobar[/bar/] # => "bar"
+  :foobarbaz[/(ba.)(ba.)/, 0] # => "barbaz"
+  :foobarbaz[/(ba.)(ba.)/, 1] # => "bar"
+  :foobarbaz[/(ba.)(ba.)/, 2] # => "baz"
+
+--- [](range) -> String | nil
+--- slice(range) -> String | nil
+
+rangeで指定したインデックスの範囲に含まれる部分文字列を返します。
+
+(self.to_s[range] と同じです。)
+
+@param range 取得したい文字列の範囲を示す [[c:Range]] オブジェクトを指定します。
+
+  :foo[0..1] # => "fo"
+
+@see [[m:String#[] ]], [[m:String#slice]]
+
+--- length -> Integer
+--- size -> Integer
+
+シンボルに対応する文字列の長さを返します。
+
+(self.to_s.length と同じです。)
+
+  :foo.length #=> 3
+
+@see [[m:String#length]], [[m:String#size]]
+
+--- empty? -> bool
+
+自身が :"" (length が 0 のシンボル)かどうかを返します。
+
+  :"".empty?  #=> true
+  :foo.empty? #=> false
+
+@see [[m:String#empty?]]
+
+--- upcase -> Symbol
+
+小文字を大文字に変換したシンボルを返します。
+
+(self.to_s.upcase.intern と同じです。)
+
+  :foo.upcase #=> :FOO
+
+@see [[m:String#upcase]]
+
+--- downcase -> Symbol
+
+大文字を小文字に変換したシンボルを返します。
+
+(self.to_s.downcase.intern と同じです。)
+
+  :FOO.downcase #=> :foo
+
+@see [[m:String#downcase]]
+
+--- capitalize -> Symbol
+
+シンボルに対応する文字列の先頭の文字を大文字に、残りを小文字に変更した
+シンボルを返します。
+
+(self.to_s.capitalize.intern と同じです。)
+
+  :foobar.capitalize     #=> :Foobar
+  :fooBar.capitalize     #=> :Foobar
+  :FOOBAR.capitalize     #=> :Foobar
+  :"foobar--".capitalize # => "Foobar--"
+
+@see [[m:String#capitalize]]
+
+--- swapcase -> Symbol
+
+'A' から 'Z' までのアルファベット大文字を小文字に、'a' から 'z' までの
+アルファベット小文字を大文字に変更したシンボルを返します。
+
+(self.to_s.swapcase.intern と同じです。)
+
+  p :ABCxyz.swapcase   # => :abcXYZ
+  p :Access.swapcase   # => :aCCESS
+
+@see [[m:String#swapcase]]
+
+--- encoding   -> Encoding
+
+シンボルに対応する文字列のエンコーディング情報を表現した [[c:Encoding]] オブ
+ジェクトを返します。
+
+@see [[m:String#encoding]]
+
+#@end
+
+--- inspect    -> String
+
+自身を人間に読みやすい文字列にして返します。
+
+  :fred.inspect   #=> ":fred"

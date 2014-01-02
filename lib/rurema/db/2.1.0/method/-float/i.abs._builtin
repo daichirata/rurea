@@ -1,0 +1,14 @@
+names=abs,magnitude
+visibility=public
+kind=defined
+
+--- abs        -> Float
+--- magnitude  -> Float
+
+自身の絶対値を返します。
+
+例:
+
+   34.56.abs     #=> 34.56
+  -34.56.abs     #=> 34.56
+

@@ -1,0 +1,19 @@
+names=/
+visibility=public
+kind=defined
+
+--- /(m) -> Matrix
+
+self に行列 m の逆行列を右から乗じた行列を返します。
+
+@param m 逆行列を右から乗算する行列。可逆行列でselfと乗算可能な行列を指定します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 次元が合わない場合に発生します
+@raise ExceptionForMatrix::ErrNotRegular m が正則でない場合に発生します
+
+--- /(other) -> Matrix
+
+self の各成分を数 other で割った行列を返します。
+
+@param other self の各成分を割る [[c:Numeric]] オブジェクトを指定します。
+

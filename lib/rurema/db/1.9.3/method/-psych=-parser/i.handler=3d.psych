@@ -1,0 +1,10 @@
+names=handler=
+visibility=public
+kind=defined
+
+--- handler=(val)
+イベントハンドラをセットします。
+
+@param val セットするハンドラ
+@see [[m:Psych::Parser#handler=]]
+

@@ -1,0 +1,10 @@
+names=save_limit
+visibility=public
+kind=defined
+
+--- save_limit { ... } -> object
+
+現在の [[m:BigDecimal.limit]] の設定を保存してブロックを評価します。ブ
+ロック中で変更した設定はブロックの評価後に復元されます。
+
+ブロックの評価結果を返します。

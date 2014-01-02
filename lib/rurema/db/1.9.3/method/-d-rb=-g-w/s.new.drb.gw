@@ -1,0 +1,7 @@
+names=new
+visibility=public
+kind=defined
+
+--- new -> DRb::GW
+新たな GW オブジェクトを生成します。
+

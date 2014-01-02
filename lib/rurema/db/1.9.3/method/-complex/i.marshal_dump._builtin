@@ -1,0 +1,12 @@
+names=marshal_dump
+visibility=public
+kind=defined
+
+--- marshal_dump -> Array
+
+[[m:Complex#marshal_load]] で復元可能な配列を返します。
+
+[注意] このメソッドは 2.0 で private メソッドに変更されました。
+
+@see [[m:Complex#marshal_load]]
+

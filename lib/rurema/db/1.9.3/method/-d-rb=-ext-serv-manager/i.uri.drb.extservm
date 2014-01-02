@@ -1,0 +1,11 @@
+names=uri
+visibility=public
+kind=defined
+
+--- uri -> String|nil
+サービス起動時にプロセスを spawn する時に渡す URI を返します。
+
+デフォルトは nil で、これは [[m:DRb.#uri]] を用いることを意味します。
+
+@see [[m:DRb::ExtServManager#uri=]]
+

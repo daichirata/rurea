@@ -1,0 +1,16 @@
+names=sqrt
+visibility=public
+kind=defined
+
+--- sqrt(n) -> BigDecimal
+
+self の有効桁 n 桁の平方根 (n の平方根ではありません) をニュートン法で
+計算します。
+
+@param n 有効桁数を整数で指定します。
+
+@raise TypeError n に [[c:Fixnum]] 以外のオブジェクトを指定した場合に発
+                 生します。
+
+@raise ArgumentError n に負の数を指定した場合に発生します。
+

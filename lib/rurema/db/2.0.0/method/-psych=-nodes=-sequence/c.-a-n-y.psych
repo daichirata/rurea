@@ -1,0 +1,13 @@
+names=ANY
+visibility=public
+kind=defined
+
+--- ANY -> Integer
+「任意」のスタイルを意味します。
+
+emitter が適当に style を決めます。
+
+@see [[m:Psych::Nodes::Sequence.new]],
+     [[m:Psych::Nodes::Sequence#style]],
+     [[m:Psych::Handler#start_sequence]]
+

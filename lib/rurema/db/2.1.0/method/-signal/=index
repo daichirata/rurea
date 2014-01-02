@@ -1,0 +1,6 @@
+.list	Signal.#list
+.signame	Signal.#signame
+.trap	Signal.#trap
+#list	Signal.#list
+#signame	Signal.#signame
+#trap	Signal.#trap

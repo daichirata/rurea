@@ -1,0 +1,14 @@
+type=class
+superclass=Object
+included=
+extended=
+library=dl.import
+aliases=
+aliasof=
+
+C の共用体を表すクラスです。
+
+このクラスは直接は使わず、[[m:DL::Importer#union]] を用いて
+このクラスを継承したクラスを生成し、それを利用します。
+
+[[m:DL::CStruct]] と同様の構造をしています。詳しくはそちらを見てください。

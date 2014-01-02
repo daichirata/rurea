@@ -1,0 +1,11 @@
+names=finished,finished?
+visibility=public
+kind=defined
+
+--- finished -> bool
+--- finished? -> bool
+[[m:Psych::Visitors::YAMLTree#finish]] をすでに呼び出しているならば
+真を返します。
+
+まだならば偽を返します。
+

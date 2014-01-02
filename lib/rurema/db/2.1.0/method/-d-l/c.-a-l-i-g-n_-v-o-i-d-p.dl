@@ -1,0 +1,7 @@
+names=ALIGN_VOIDP
+visibility=public
+kind=defined
+
+--- ALIGN_VOIDP -> Integer
+C の構造体における void* のアライメントの値。
+

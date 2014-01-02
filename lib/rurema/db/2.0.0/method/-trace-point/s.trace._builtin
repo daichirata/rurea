@@ -1,0 +1,20 @@
+names=trace
+visibility=public
+kind=defined
+
+--- trace(*events) {|obj| ... } -> TracePoint
+
+新しい [[c:TracePoint]] オブジェクトを作成して自動的にトレースを開始し
+ます。[[m:TracePoint.new]] のコンビニエンスメソッドです。
+
+@param events トレースするイベントを [[c:String]] か [[c:Symbol]] で任
+              意の数指定します。指定できる値については
+              [[m:TracePoint.new]] を参照してください。
+
+  trace = TracePoint.trace(:call) { |tp| [tp.lineno, tp.event] }
+  # => #<TracePoint:0x007f786a452448>
+
+  trace.enabled? # => true
+
+@raise ThreadError ブロックを指定しなかった場合に発生します。
+

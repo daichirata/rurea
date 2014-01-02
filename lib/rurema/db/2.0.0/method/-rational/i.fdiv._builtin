@@ -1,0 +1,20 @@
+names=fdiv
+visibility=public 
+kind=defined
+
+--- fdiv(other) -> Float
+
+self を other で割った商を [[c:Float]] で返します。
+other に虚数を指定することは出来ません。
+
+@param other 自身を割る数
+
+例:
+
+  Rational(2, 3).fdiv(1)   # => 0.6666666666666666
+  Rational(2, 3).fdiv(0.5) # => 1.3333333333333333
+  Rational(2).fdiv(3)      # => 0.6666666666666666
+  
+  Rational(1).fdiv(Complex(1, 0))  # => 1.0
+  Rational(1).fdiv(Complex(0, 1))  # => RangeError
+

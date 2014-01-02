@@ -1,0 +1,31 @@
+type=class
+superclass=REXML=Child
+included=
+extended=
+library=rexml
+aliases=
+aliasof=
+
+DTD 内の宣言でパラメータ実体参照を使って宣言が
+されているものを表わすクラスです。
+
+例えば、以下の DTD 宣言における %HTMLsymbol が
+それにあたります。
+  <!ENTITY % HTMLsymbol PUBLIC
+     "-//W3C//ENTITIES Symbols for XHTML//EN"
+     "xhtml-symbol.ent">
+  %HTMLsymbol;
+==== 例
+  require 'rexml/document'
+  
+  doctype = REXML::Document.new(<<EOS).doctype
+  <!DOCTYPE xhtml [
+    <!ENTITY % HTMLsymbol PUBLIC
+       "-//W3C//ENTITIES Symbols for XHTML//EN"
+       "xhtml-symbol.ent">
+    %HTMLsymbol;
+  ]>
+  EOS
+  
+  p doctype.children.find_all{|child| REXML::ExternalEntity === child }.map(&:to_s)
+  # => ["%HTMLsymbol;"]

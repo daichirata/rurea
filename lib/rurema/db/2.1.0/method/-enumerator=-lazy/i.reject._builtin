@@ -1,0 +1,12 @@
+names=reject
+visibility=public
+kind=defined
+
+--- reject {|item| ... } -> Enumerator::Lazy
+
+[[m:Enumerable#reject]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+@raise ArgumentError ブロックを指定しなかった場合に発生します。
+
+@see [[m:Enumerable#reject]]
+

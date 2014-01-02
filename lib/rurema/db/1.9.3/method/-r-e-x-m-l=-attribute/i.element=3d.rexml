@@ -1,0 +1,9 @@
+names=element=
+visibility=public
+kind=defined
+
+--- element=(element)
+self が属する要素を変更します。
+
+@param element 変更先の要素([[c:REXML::Element]])
+

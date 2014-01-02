@@ -1,0 +1,25 @@
+names=cycle
+visibility=public
+kind=defined
+
+--- cycle(n=nil) {|obj| block } -> nil
+--- cycle(n=nil) -> Enumerator
+
+配列の全要素を n 回(nilの場合は無限に)繰り返しブロックを呼びだします。
+
+ブロックを省略した場合は、以上のような繰り返しを行う
+[[c:Enumerator]]
+を返します。
+
+@param n 繰り返したい回数を整数で指定します。
+         整数以外のオブジェクトを指定した場合は to_int メソッドによる暗
+         黙の型変換を試みます。
+
+@raise TypeError 引数に整数以外の(暗黙の型変換が行えない)オブジェクトを
+                 指定した場合に発生します。
+
+例:
+
+   a = ["a", "b", "c"]
+   a.cycle {|x| puts x }  # print, a, b, c, a, b, c,.. forever.
+

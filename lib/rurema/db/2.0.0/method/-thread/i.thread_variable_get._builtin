@@ -1,0 +1,32 @@
+names=thread_variable_get
+visibility=public
+kind=defined
+
+--- thread_variable_get(key) -> object | nil
+
+引数 key で指定した名前のスレッドローカル変数を返します。
+
+[注意]: [[m:Thread#[] ]] でセットしたローカル変数(Fiber ローカル変数)と
+異なり、Fiber を切り替えても同じ変数を返す事に注意してください。
+
+例:
+
+  Thread.new {
+    Thread.current.thread_variable_set("foo", "bar") # スレッドローカル
+    Thread.current["foo"] = "bar"                    # Fiber ローカル
+
+    Fiber.new {
+      Fiber.yield [
+        Thread.current.thread_variable_get("foo"), # スレッドローカル
+        Thread.current["foo"],                     # Fiber ローカル
+      ]
+    }.resume
+  }.join.value # => ['bar', nil]
+
+この例の "bar" は [[m:Thread#thread_variable_get]] により得られ
+た値で、nil は[[m:Thread#[] ]] により得られた値です。
+
+@see [[m:Thread#thread_variable_set]], [[m:Thread#[] ]]
+
+@see [[url:http://jp.rubyist.net/magazine/?0041-200Special-note#l16]]
+

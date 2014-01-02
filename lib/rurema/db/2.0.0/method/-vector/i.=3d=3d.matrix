@@ -1,0 +1,13 @@
+names===,eql?
+visibility=public
+kind=defined
+
+--- ==(v) -> bool
+--- eql?(v) -> bool
+
+自分自身と引数 v を比較し、true/false を返します。
+
+@param v 比較対象ベクトル
+
+
+

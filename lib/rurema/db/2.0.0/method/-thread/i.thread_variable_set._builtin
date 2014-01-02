@@ -1,0 +1,15 @@
+names=thread_variable_set
+visibility=public
+kind=defined
+
+--- thread_variable_set(key, value)
+
+引数 key で指定した名前のスレッドローカル変数に引数 value をセットしま
+す。
+
+[注意]: [[m:Thread#[] ]] でセットしたローカル変数(Fiber ローカル変数)と
+異なり、セットした変数は Fiber を切り替えても共通で使える事に注意してく
+ださい。
+
+@see [[m:Thread#thread_variable_get]], [[m:Thread#[] ]]
+

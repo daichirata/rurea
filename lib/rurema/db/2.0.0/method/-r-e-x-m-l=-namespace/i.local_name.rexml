@@ -1,0 +1,8 @@
+names=local_name,name
+visibility=public
+kind=defined
+
+--- name -> String
+--- local_name -> String
+prefix を含まない「ローカルな」名前を返します。
+

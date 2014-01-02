@@ -1,0 +1,8 @@
+.clear	GC::Profiler.clear
+.disable	GC::Profiler.disable
+.enable	GC::Profiler.enable
+.enabled?	GC::Profiler.enabled?
+.raw_data	GC::Profiler.raw_data
+.report	GC::Profiler.report
+.result	GC::Profiler.result
+.total_time	GC::Profiler.total_time

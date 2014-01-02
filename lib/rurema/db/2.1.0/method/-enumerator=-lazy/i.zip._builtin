@@ -1,0 +1,14 @@
+names=zip
+visibility=public
+kind=defined
+
+--- zip(*lists)  -> Enumerator::Lazy
+--- zip(*lists) {|v1, v2, ...| ... } -> nil
+
+[[m:Enumerable#zip]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+ただし一貫性のため、ブロック付きで呼び出した場合は Enumerable#zip と
+同じ挙動になります。
+
+@see [[m:Enumerable#zip]]
+

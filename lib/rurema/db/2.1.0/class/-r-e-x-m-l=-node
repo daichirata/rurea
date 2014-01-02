@@ -1,0 +1,11 @@
+type=module
+superclass=
+included=
+extended=
+library=rexml
+aliases=
+aliasof=
+
+XML tree 上のノードを表すモジュール。
+
+このモジュールは他の rexml のクラスに include されることで利用されます。

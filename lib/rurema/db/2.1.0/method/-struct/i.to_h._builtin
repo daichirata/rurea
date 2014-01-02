@@ -1,0 +1,15 @@
+names=to_h
+visibility=public
+kind=defined
+
+--- to_h -> Hash
+
+self のメンバ名([[c:Symbol]])と値の組を [[c:Hash]] にして返します。
+
+  Customer = Struct.new(:name, :address, :zip)
+  Customer.new("Joe Smith", "123 Maple, Anytown NC", 12345).to_h
+  # => {:name=>"Joe Smith", :address=>"123 Maple, Anytown NC", :zip=>12345}
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。

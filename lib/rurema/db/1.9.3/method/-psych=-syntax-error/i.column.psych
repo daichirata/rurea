@@ -1,0 +1,7 @@
+names=column
+visibility=public
+kind=defined
+
+--- column -> Integer
+エラーが生じた行内の位置を返します。
+

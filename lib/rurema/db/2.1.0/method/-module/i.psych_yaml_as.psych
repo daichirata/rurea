@@ -1,0 +1,17 @@
+names=psych_yaml_as,yaml_as
+visibility=public
+kind=added
+
+--- yaml_as(tag) -> ()
+--- psych_yaml_as(tag) -> ()
+
+クラスと tag の間を関連付けます。
+
+これによって tag 付けされた YAML ドキュメントを Ruby のオブジェクトに
+変換したりその逆をしたりすることができます。
+
+この method は deprecated です。 [[m:Object.yaml_tag]] を
+かわりに使ってください。
+
+@param tag 対象のクラスに関連付けるタグの文字列
+

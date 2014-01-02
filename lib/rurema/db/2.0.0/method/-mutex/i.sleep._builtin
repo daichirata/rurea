@@ -1,0 +1,15 @@
+names=sleep
+visibility=public
+kind=defined
+
+--- sleep(timeout = nil)    -> self
+
+与えられた秒数の間スリープしてからロックを解放します。
+
+@param timeout スリープする秒数を指定します。省略するとスリープし続けます。
+
+@raise ThreadError 自身がカレントスレッドによってロックされていない場合に発生します。
+
+[注意] 2.0 以降ではスリープ中でも、シグナルを受信した場合などに実行が再
+開(spurious wakeup)される場合がある点に注意してください。
+

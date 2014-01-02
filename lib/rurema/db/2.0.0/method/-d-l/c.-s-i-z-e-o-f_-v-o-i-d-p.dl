@@ -1,0 +1,7 @@
+names=SIZEOF_VOIDP
+visibility=public
+kind=defined
+
+--- SIZEOF_VOIDP -> Integer
+Cでの sizeof(void*) の値
+

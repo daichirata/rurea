@@ -1,0 +1,6 @@
+names=column
+visibility=public
+kind=defined
+
+--- column -> Integer
+行の先頭からの文字数。

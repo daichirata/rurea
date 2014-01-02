@@ -1,0 +1,7 @@
+names=to_i
+visibility=public
+kind=defined
+
+--- to_i -> Integer
+保持している構造体の先頭アドレスを整数で返します。
+

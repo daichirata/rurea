@@ -1,0 +1,12 @@
+names=thread
+visibility=public
+kind=defined
+
+--- thread -> Thread|nil
+プライマリサーバが動作しているスレッドを返します。
+
+プライマリサーバが存在しない場合は nil を返します。
+
+@see [[m:DRb.#primary_server]]
+
+

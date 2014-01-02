@@ -1,0 +1,9 @@
+type=class
+superclass=Hash
+included=
+extended=
+library=psych
+aliases=
+aliasof=
+
+YAML の ordered mapping を表すクラスです。

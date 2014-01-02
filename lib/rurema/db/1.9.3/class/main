@@ -1,0 +1,14 @@
+type=object
+superclass=
+included=
+extended=
+library=_builtin
+aliases=
+aliasof=
+
+トップレベルでの self を表すオブジェクトです。
+
+main では参照できない事に注意してください。トップレベルで self から参照してください。
+
+トップレベルで定義したメソッドは main オブジェクトの private メソッドと
+して定義されます。

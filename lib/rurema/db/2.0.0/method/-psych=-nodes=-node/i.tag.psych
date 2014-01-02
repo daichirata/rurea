@@ -1,0 +1,21 @@
+names=tag
+visibility=public
+kind=defined
+
+--- tag -> String | nil
+ノードに付加されたタグを返します。
+
+タグが付加されていない場合は nil を返します。
+
+  ast = Psych.parse(<<EOS)
+  ----
+  - !!str a
+  - b
+  EOS
+  
+  p ast.root.children[0].value  # => "a"
+  p ast.root.children[0].tag    # => "tag:yaml.org,2002:str"
+  
+  p ast.root.children[1].value  # => "b"
+  p ast.root.children[1].tag    # => nil
+

@@ -1,0 +1,9 @@
+names=orthogonal?
+visibility=public
+kind=defined
+
+--- orthogonal? -> bool
+行列が直交行列ならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+

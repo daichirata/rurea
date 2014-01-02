@@ -1,0 +1,24 @@
+names=prefixes
+visibility=public
+kind=defined
+
+--- prefixes -> [String]
+self の中で宣言されている prefix の集合を
+文字列の配列で返します。
+
+self が属する要素より上位の要素で定義されているものは含みません。
+
+==== 例
+  require 'rexml/document'
+  
+  doc = REXML::Document.new(<<EOS)
+  <root xmlns:foo="http://example.org/foo"
+        xmlns:bar="http://example.org/bar">
+    <a foo:att='1' bar:att='2' att='&lt;'/>
+  </root>
+  EOS  
+  a = doc.get_elements("/root/a").first
+  
+  p doc.root.attributes.prefixes # => ["foo", "bar"]
+  p a.attributes.prefixes # => []
+

@@ -1,0 +1,17 @@
+names=chars
+visibility=public
+kind=defined
+
+--- chars                 -> [String]
+--- chars {|cstr| block } -> self
+
+文字列の各文字を文字列の配列で返します。(self.each_char.to_a と同じです)
+
+  "hello世界".chars # => ["h", "e", "l", "l", "o", "世", "界"]
+
+ブロックが指定された場合は [[m:String#each_char]] と同じように動作しま
+す。ただし obsolete のため、ブロックを指定する場合は
+[[m:String#each_char]] を使用してください。
+
+@see [[m:String#each_char]]
+

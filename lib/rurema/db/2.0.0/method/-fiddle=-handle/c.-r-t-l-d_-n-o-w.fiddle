@@ -1,0 +1,10 @@
+names=RTLD_NOW
+visibility=public
+kind=defined
+
+--- RTLD_NOW -> Integer
+dlopen のフラグ RTLD_NOW を表す定数です。
+
+[[m:DL::Handle.new]] の flags として用います。
+
+詳しくは [[man:dlopen(3)]] を見てください。

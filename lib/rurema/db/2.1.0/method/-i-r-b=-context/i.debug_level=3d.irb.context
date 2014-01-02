@@ -1,0 +1,13 @@
+names=debug_level=
+visibility=public
+kind=defined
+
+--- debug_level=(val)
+
+irb のデバッグレベルを val に設定します。
+
+.irbrc ファイル中で IRB.conf[:DEBUG_LEVEL] を設定する事でも同様の操作
+が行えます。
+
+@see [[m:IRB::Context#debug_level]], [[m:IRB::Context#debug?]]
+

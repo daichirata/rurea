@@ -1,0 +1,27 @@
+names=collect_concat,flat_map
+visibility=public
+kind=defined
+
+--- flat_map {|item| ... } -> Enumerator::Lazy
+--- collect_concat {|item| ... } -> Enumerator::Lazy
+
+ブロックの実行結果をひとつに繋げたものに対してイテレートするような
+Enumerator::Lazy のインスタンスを返します。
+
+  ["foo", "bar"].lazy.flat_map {|i| i.each_char.lazy}.force
+  #=> ["f", "o", "o", "b", "a", "r"]
+
+ブロックの返した値 x は、以下の場合にのみ分解され、連結されます。
+
+ * x が配列であるか、to_ary メソッドを持つとき
+ * x が each および force メソッドを持つ (例：Enumerator::Lazy) とき
+
+それ以外のときは、x は分解されず、そのままの値として使われます。
+
+  [{a:1}, {b:2}].lazy.flat_map {|i| i}.force
+  #=> [{:a=>1}, {:b=>2}]
+
+@raise ArgumentError ブロックを指定しなかった場合に発生します。
+
+@see [[m:Enumerable#flat_map]]
+

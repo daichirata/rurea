@@ -1,0 +1,25 @@
+names=insert
+visibility=public
+kind=defined
+
+--- insert(nth, *val)    -> self
+
+インデックス nth の要素の直前(nth が負の場合は直後)に第 2 引数以降の値を挿入します。
+引数 val を一つも指定しなければ何もしません。
+
+@param nth val を挿入する位置を整数で指定します。
+           整数以外のオブジェクトを指定した場合は to_int メソッドによる
+           暗黙の型変換を試みます。
+
+@param val 自身に挿入するオブジェクトを指定します。
+
+@raise TypeError 引数に整数以外の(暗黙の型変換が行えない)オブジェクトを
+                 指定した場合に発生します。
+
+    ary = [1, 2, 3]
+    ary.insert(2, "a", "b")
+    p ary                  # => [1, 2, "a", "b", 3]
+    ary.insert(-2, "X")
+    p ary                  # => [1, 2, "a", "b", "X", 3]
+
+

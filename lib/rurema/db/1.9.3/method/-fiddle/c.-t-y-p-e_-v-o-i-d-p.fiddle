@@ -1,0 +1,12 @@
+names=TYPE_VOIDP
+visibility=public
+kind=defined
+
+--- TYPE_VOIDP -> Integer
+C の void* 型を表します。
+
+fiddle や dl 上では、すべてのポインタは void* であると
+見なされます。
+
+@see [[m:Fiddle::Function.new]]
+

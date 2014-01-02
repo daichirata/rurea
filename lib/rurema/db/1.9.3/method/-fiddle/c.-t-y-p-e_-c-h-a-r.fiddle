@@ -1,0 +1,9 @@
+names=TYPE_CHAR
+visibility=public
+kind=defined
+
+--- TYPE_CHAR -> Integer
+C の char 型を表します。
+
+@see [[m:Fiddle::Function.new]]
+

@@ -1,0 +1,10 @@
+names=implicit
+visibility=public
+kind=defined
+
+--- implicit -> bool
+ドキュメントが implicit に始まっているかどうかを返します。
+
+@see [[m:Psych::Nodes::Document#implicit=]],
+     [[m:Psych::Nodes::Document.new]]
+

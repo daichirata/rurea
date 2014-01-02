@@ -1,0 +1,9 @@
+names=BUILD_RUBY_PLATFORM
+visibility=public
+kind=defined
+
+--- BUILD_RUBY_PLATFORM -> String
+ビルドに用いた ruby のプラットフォームを表す文字列。
+
+通常、[[m:Object::RUBY_PLATFORM]] と同じ。
+

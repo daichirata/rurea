@@ -1,0 +1,12 @@
+names=base_label
+visibility=public
+kind=defined
+
+--- base_label -> String
+
+self が表すフレームの基本ラベルを返します。通常、
+[[m:Thread::Backtrace::Location#label]] から修飾を取り除いたもので構成
+されます。
+
+@see [[m:Thread::Backtrace::Location#label]]
+

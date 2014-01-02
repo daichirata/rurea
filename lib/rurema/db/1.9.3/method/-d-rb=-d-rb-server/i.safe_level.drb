@@ -1,0 +1,8 @@
+names=safe_level
+visibility=public
+kind=defined
+
+--- safe_level -> Integer
+サーバのセーフレベルを返します。
+
+

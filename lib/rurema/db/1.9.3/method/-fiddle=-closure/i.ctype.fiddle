@@ -1,0 +1,7 @@
+names=ctype
+visibility=public
+kind=defined
+
+--- ctype -> Integer 
+返り値の型を返します。
+

@@ -1,0 +1,15 @@
+names=path
+visibility=public
+kind=defined
+
+--- path -> String
+
+self が表すフレームのファイル名を返します。
+
+例: [[c:Thread::Backtrace::Location]] の例1を用いた例
+
+  loc = c(0..1).first
+  loc.path # => "caller_locations.rb"
+
+@see [[m:Thread::Backtrace::Location#absolute_path]]
+

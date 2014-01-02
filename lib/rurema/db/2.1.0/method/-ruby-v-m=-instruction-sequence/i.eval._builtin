@@ -1,0 +1,10 @@
+names=eval
+visibility=public
+kind=defined
+
+--- eval -> object
+
+self の命令シーケンスを評価してその結果を返します。
+
+    RubyVM::InstructionSequence.compile("1 + 2").eval # => 3
+

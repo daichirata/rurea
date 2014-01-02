@@ -1,0 +1,11 @@
+names=[]=
+visibility=public 
+kind=defined
+
+--- []=(key, value)
+
+引数 key から引数 value への参照を作成します。
+
+@param key 参照元のオブジェクトを指定します。
+
+@param value 参照先のオブジェクトを指定します。

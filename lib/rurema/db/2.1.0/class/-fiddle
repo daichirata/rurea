@@ -1,0 +1,12 @@
+type=module
+superclass=
+included=
+extended=
+library=fiddle
+aliases=
+aliasof=
+
+[[lib:fiddle]] の名前空間をなすモジュールです。
+
+UNIX の [[man:dlopen(3)]] や Windows の LoadLibrary() 
+などのダイナミックリンカへの低レベルなインターフェースを提供するモジュールです。

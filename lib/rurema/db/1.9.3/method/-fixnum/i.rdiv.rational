@@ -1,0 +1,11 @@
+names=rdiv
+visibility=public
+kind=added
+
+--- rdiv(other) -> Rational | Float | Complex
+
+self を other で割った商を返します。
+[[m:Numeric#quo]] のエイリアスです。
+
+@param other 割る数
+

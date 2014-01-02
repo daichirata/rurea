@@ -1,0 +1,12 @@
+names=indentation=
+visibility=public
+kind=defined
+
+--- indentation=(level)
+インデントのレベルを指定します。
+
+1 から 9 までの整数で指定します。
+
+@param level インデントレベル
+@see [[m:Psych::Emitter#indentation]]
+

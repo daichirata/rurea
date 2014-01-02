@@ -1,0 +1,8 @@
+names=FNM_EXTGLOB
+visibility=public
+kind=defined
+
+--- FNM_EXTGLOB -> Integer
+{} 内のコンマで区切られた文字列の組合せにマッチするようになります。
+[[m:File.fnmatch]] で使用します。
+

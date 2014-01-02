@@ -1,0 +1,9 @@
+names=-@
+visibility=public
+kind=defined
+
+--- -@    -> Integer
+
+単項演算子の - です。
+self の符号を反転させたものを返します。
+

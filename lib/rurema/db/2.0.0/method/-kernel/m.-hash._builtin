@@ -1,0 +1,19 @@
+names=Hash
+visibility=public
+kind=defined
+
+--- Hash(arg) -> Hash
+
+引数 arg で指定したオブジェクトを to_hash メソッドを呼び出す事で
+[[c:Hash]] オブジェクトに変換します。nil か [] を指定した場合は空の
+[[c:Hash]] オブジェクトを返します。
+
+@param arg 変換対象のオブジェクトを指定します。
+
+  Hash([])          # => {}
+  Hash(nil)         # => nil
+  Hash(key: :value) # => {:key => :value}
+  Hash([1, 2, 3])   # => TypeError
+
+@raise TypeError 変換できないオブジェクトを指定した場合に発生します。
+

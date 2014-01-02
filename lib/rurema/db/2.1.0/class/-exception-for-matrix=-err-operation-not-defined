@@ -1,0 +1,9 @@
+type=class
+superclass=StandardError
+included=
+extended=
+library=matrix
+aliases=
+aliasof=
+
+演算時にクラスが適切でない場合に発生する例外です。

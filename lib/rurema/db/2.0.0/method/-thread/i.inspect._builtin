@@ -1,0 +1,8 @@
+names=inspect
+visibility=public
+kind=defined
+
+--- inspect -> String
+
+自身を人間が読める形式に変換した文字列を返します。
+

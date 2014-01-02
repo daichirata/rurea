@@ -1,0 +1,10 @@
+names=tag
+visibility=public
+kind=defined
+
+--- tag -> String|nil
+scalar に付加された tag を返します。
+
+@see [[m:Psych::Nodes::Scalar#tag=]],
+     [[m:Psych::Nodes::Scalar.new]]
+

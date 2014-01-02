@@ -1,0 +1,1160 @@
+= class Matrix < Object
+#@since 1.9.2
+include Enumerable
+#@end
+#@#[2002-04-03]  by [[unknown:すす|URL:mailto:sugawah@attglobal.net]]
+
+数[[c:Numeric]]を要素とする行列を扱うクラスです。
+
+行列
+
+m * n 個の数a(i,j)を
+
+  [ a(0,0) a(0,1) a(0,2)  a(0,3) ... a(0,n-1)   ]
+  [ a(1,0) a(1,1) a(1,2)  a(1,3) ... a(1,n-1)   ]
+  [ a(2,0) a(2,1) a(2,2)  a(2,3) ... a(2,n-1)   ]
+  [                                             ]
+  [ a(m-1,0)                         a(m-1,n-1) ]
+
+のように、縦横の表にあらわしたものを(m,n)型の行列といいます。
+m=nの行列をm次の正方行列(square matrix)といいます。
+インデックスは 0 から始まることに注意してください。
+
+上からi番目の横の数の並びを第i行(the i-th row)、
+左からj番目の縦の数の並びを第j列(the j-th column)といいます。
+
+(m,n)型行列は、
+大きさnの行(横)ベクトルをm個縦に並べたものとみなすこともできますし、
+大きさmの列(縦)ベクトルをn個横に並べたものとみなすこともできます。
+
+第i行、第j列にある数a(i,j)を(i,j)要素(the (i,j)-th element)といいます。
+
+i=jの要素a(i,j)を対角要素(diagonal element)、
+それ以外の要素を非対角要素(nondiagonal element)といいます。
+
+
+#@#使い方 Usage
+
+#@# [[c:Matrix]]クラスを使うためには、require 'matrix'する必要がある。
+
+#@#  require 'matrix'
+
+=== Complex クラスとの併用
+
+require 'complex'することによって、
+Matrixオブジェクトの要素は[[c:Complex]]クラスに拡張されます。
+多くのメソッドは、この拡張されたMatrixクラスでも、期待通りに動作します。
+
+次の例は、各要素を共役複素数に置換するメソッド Matrix#conjugate です。
+
+  require 'matrix'
+  require 'complex'
+  
+  class Matrix
+    def conjugate
+      collect{|e| e.conjugate }
+    end
+  end
+
+
+== Class Methods
+--- [](*rows) -> Matrix
+
+rows[i] を第 i 行とする行列を生成します。
+
+@param rows 行列の要素を数の配列の配列として渡します。
+
+例:
+
+  m = Matrix[[11, 12], [21, 22]]
+  p m  #=> Matrix[[11, 12], [21, 22]]
+       #   [11, 12]
+       #   [21, 22] 
+
+--- rows(rows, copy = true) -> Matrix
+
+引数 rows を行ベクトルの列とする行列を生成します。
+
+引数 copy が偽(false)ならば、rows の複製を行いません。
+
+例:
+
+  require 'matrix'
+
+  a1 = [1, 2, 3]
+  a2 = [10, 15, 20]
+
+  m = Matrix.rows([a1, a2], false) # 配列を複製せずに行列を生成
+  p m #=> Matrix[[1, 2, 3], [10, 15, 20]]
+  a2[1] = 1000 # 配列のデータを変更
+  p m #=> Matrix[[1, 2, 3], [10, 1000, 20]]
+
+@param rows 配列の配列
+@param copy 配列を複製するかどうかを真偽値で指定
+
+--- columns(columns) -> Matrix
+
+引数 columns を列ベクトルの集合とする行列を生成します。
+
+@param columns 配列の配列を渡します。
+
+===== 注意
+
+[[m:Matrix.rows]] との違いは引数として渡す配列の配列を列ベクトルの配列とみなして行列を生成します。
+
+例:
+
+  require 'matrix'
+
+  a1 = [1, 2, 3]
+  a2 = [4, 5, 6]
+  a3 = [-1, -2, -3]
+
+  # 配列を行ベクトルとして生成
+  m = Matrix.rows([a1, a2, a3], true)
+  p m #=> Matrix[[1, 2, 3], [4, 5, 6], [-1, -2, -3]]
+      # 行列としてのイメージ =>  [ 1,  2,  3]
+      #                          [ 4,  5,  6]
+      #                          [-1, -2, -3]
+
+  # 配列を列ベクトルとして生成
+  m = Matrix.columns([a1, a2, a3])
+  p m #=> Matrix[[1, 4, -1], [2, 5, -2], [3, 6, -3]]
+      # 行列としてのイメージ =>  [1, 4, -1]
+      #                          [2, 5, -2]
+      #                          [3, 6, -3]
+
+
+--- diagonal(*values) -> Matrix
+
+対角要素がvaluesで、非対角要素が全て0であるような
+正方行列を生成します。
+
+@param values 行列の対角要素
+
+===== 注意
+
+valuesに一次元Arrayを1個指定すると、そのArrayを唯一の要素とした1×1の行列が生成されます。
+
+例:
+  require 'matrix'
+
+  m = Matrix.diagonal(1, 2, 3)
+  p m # => Matrix[[1, 0, 0], [0, 2, 0], [0, 0, 3]]
+  a = [1,2,3]
+  m = Matrix.diagonal(a)
+  p m # => Matrix[[[1, 2, 3]]]
+
+
+--- scalar(n, value) -> Matrix
+
+対角要素が全てvalue(数)で、非対角要素が全て0であるようなn次の正方行列を生成します。
+
+@param n     生成する行列の次元
+@param value 生成する行列の対角要素の値
+
+例:
+  require 'matrix'
+
+  m = Matrix.scalar(3, 2.5)
+  p m # => Matrix[[2.5, 0, 0], [0, 2.5, 0], [0, 0, 2.5]]
+ 
+--- identity(n) -> Matrix
+--- unit(n) -> Matrix
+--- I(n) -> Matrix
+
+n次の単位行列を生成します。
+
+@param n 単位行列の次元
+
+単位行列とは、対角要素が全て1で非対角要素が全て0であるような行列のことです。
+
+--- zero(n) -> Matrix
+
+n × n の零行列（要素が全て 0 の行列）を生成して返します。
+ 
+@param n 生成する正方零行列の次数
+
+#@since 1.9.2
+--- empty(row_size=0, column_size=0) -> Matrix
+要素を持たない行列を返します。
+
+「要素を持たない」とは、行数もしくは列数が0の行列のことです。
+
+row_size 、 column_size のいずれか一方は0である必要があります。
+
+  m = Matrix.empty(2, 0)
+  m == Matrix[ [], [] ]
+  # => true
+  n = Matrix.empty(0, 3)
+  n == Matrix.columns([ [], [], [] ])
+  # => true
+  m * n
+  # => Matrix[[0, 0, 0], [0, 0, 0]]
+
+@param row_size 行列の行数
+@param column_size 行列の列数
+@raise ArgumentError row_size, column_size が両方とも0でない場合に発生します
+
+#@end
+
+--- row_vector(row) -> Matrix
+
+要素がrowの(1,n)型の行列(行ベクトル)を生成します。
+
+@param row (1,n)型の行列として生成する[[c:Vector]] [[c:Array]] オブジェクト
+
+--- column_vector(column) -> Matrix
+
+要素がcolumnの(n,1)型の行列(列ベクトル)を生成します。
+
+@param column (n,1)型の行列として生成する[[c:Vector]] [[c:Array]] オブジェクト
+
+#@since 1.9.2
+--- build(row_size, column_size = row_size) {|row, col| ... } -> Matrix
+--- build(row_size, column_size = row_size) -> Enumerable
+
+row_size×column_sizeの行列をブロックの返り値から生成します。
+
+行列の各要素の位置がブロックに渡され、それの返り値が行列の要素となります。
+
+ブロックを省略した場合は [[c:Enumerator]] を返します。
+
+  m = Matrix.build(2, 4) {|row, col| col - row }
+    => Matrix[[0, 1, 2, 3], [-1, 0, 1, 2]]
+  m = Matrix.build(3) { rand }
+    => a 3x3 matrix with random elements
+
+@param row_size 行列の行数
+@param column_size 行列の列数
+
+#@end
+== Instance Methods
+--- [](i, j) -> ()
+#@if (version >= "1.9.1")
+--- element(i, j) -> ()
+--- component(i, j) -> ()
+#@end
+
+(i,j)要素を返します。
+#@since 1.9.2
+行列の範囲外の値を指定した場合には nil を返します。
+#@end
+
+@param i 要素の行成分を0オリジンで指定します。
+@param j 要素の列成分を0オリジンで指定します。
+
+#@until 1.9.2
+===== 注意
+
+行成分に[[m:Matrix#row_size]]より大きな値を指定した場合には例外が発生します。
+列成分に[[m:Matrix#column_size]]より大きな値を指定した場合にはnilを返します。
+
+#@end
+例:
+  a1 = [1, 2, 3]
+  a2 = [10, 15, 20]
+  a3 = [-1, 2, 1.5]
+  m = Matrix[a1, a2, a3]
+
+  p m[0, 0] #=> 1
+  p m[1, 1] #=> 15
+  p m[1, 2] #=> 20
+  p m[1, 3] #=> nil
+
+--- row_size -> Fixnum
+
+行列の行数を返します。
+
+--- column_size -> Fixnum
+
+行列の列数を返します。
+
+#@since 1.9.3
+--- index(value, selector = :all) -> [Integer, Integer] | nil
+--- index(selector = :all){|e| ... } -> [Integer, Integer] | nil
+--- index(selector = :all) -> Enumerator
+--- find_index(value, selector = :all) -> [Integer, Integer] | nil
+--- find_index(selector = :all){|e| ... } -> [Integer, Integer] | nil
+--- find_index(selector = :all) -> Enumerator
+
+指定した値と一致する要素の位置を [row, column] という配列で返します。
+ブロックを与えた場合は各要素を引数としてブロックを呼び出し、
+返り値が真であった要素の位置を返します。
+
+複数の位置で値が一致する/ブロックが真を返す、場合は最初
+に見つかった要素の位置を返します。
+
+selector で行列のどの部分を探すかを指定します。この引数の意味は
+[[m:Matrix#each]] を参照してください。
+
+  Matrix[ [1,2], [3,4] ].index(&:even?) # => [0, 1]
+  Matrix[ [1,1], [1,1] ].index(1, :strict_lower) # => [1, 0]
+
+value を指定せず、さらにブロックを省略した場合、
+[[c:Enumerator]] を返します。
+
+@param value 探索する値
+@param selector 探索範囲
+
+#@end
+
+#@since 1.9.2
+--- each(which = :all) {|e| ... } -> self
+--- each(which = :all) -> Enumerator
+
+行列の各要素を引数としてブロックを呼び出します。
+
+0行目、1行目、…という順番で処理します。
+which に以下の [[c:Symbol]] を指定することで
+引数として使われる要素を限定することができます。
+  * :all - すべての要素(デフォルト)
+  * :diagonal - 対角要素
+  * :off_diagonal 対角要素以外
+  * :lower 対角成分とそれより下側の部分
+  * :upper対角成分とそれより上側の部分
+  * :strict_lower 対角成分の下側
+  * :strict_upper 対角成分の上側
+
+ブロックを省略した場合、 [[c:Enumerator]] を返します。
+
+  Matrix[ [1,2], [3,4] ].each { |e| puts e }
+  # => prints the numbers 1 to 4
+  Matrix[ [1,2], [3,4] ].each(:strict_lower).to_a # => [3]
+
+@param which どの要素に対してブロックを呼び出すのかを [[c:Symbol]] で指定します
+@see [[m:Matrix#each_with_index]]
+
+--- each_with_index(which = :all) {|e, row, col| ... }  -> self
+--- each_with_index(which = :all) -> Enumerator
+
+行列の各要素をその位置とともに引数としてブロックを呼び出します。
+
+which で処理する要素の範囲を指定することができます。
+[[m:Matrix#each]] と同じなのでそちらを参照してください。
+
+ブロックを省略した場合、 [[c:Enumerator]] を返します。
+
+  Matrix[ [1,2], [3,4] ].each_with_index do |e, row, col|
+    puts "#{e} at #{row}, #{col}"
+  end
+    # => 1 at 0, 0
+    # => 2 at 0, 1
+    # => 3 at 1, 0
+    # => 4 at 1, 1
+
+@param which どの要素に対してブロックを呼び出すのかを [[c:Symbol]] で指定します
+@see [[m:Matrix#each]]
+
+#@end
+--- minor(from_row, row_size, from_col, col_size) -> Matrix
+--- minor(from_row..to_row, from_col..to_col) -> Matrix
+
+selfの部分行列を返します。
+
+自分自身の部分行列を返します。
+ただし、パラメータは次の方法で指定します。
+  (1) 開始行番号, 行の大きさ, 開始列番号, 列の大きさ
+  (2) 開始行番号..終了行番号, 開始列番号..終了列番号
+
+@param from_row 部分行列の開始行(0オリジンで指定)
+@param row_size 部分行列の行サイズ
+@param from_col 部分行列の開始列(0オリジンで指定)
+@param col_size 部分行列の列サイズ
+
+例:
+
+  a1 = [ 1,  2,  3,  4,  5]
+  a2 = [11, 12, 13, 14, 15]
+  a3 = [21, 22, 23, 24, 25]
+  a4 = [31, 32, 33, 34, 35]
+  a5 = [51, 52, 53, 54, 55]
+  m = Matrix[a1, a2, a3, a4, a5]
+
+  p m.minor(0, 2, 1, 2) #=> Matrix[[2, 3], [12, 13]]
+
+#@#--- []=(i,j,x)
+#@#(i,j)要素をxに変更する。
+#@#
+#@#このメソッドは、matrix.rbに定義されていない。
+#@#以下に、その定義と使用例を示す。
+#@#
+#@#  require 'matrix'
+#@#
+#@#  class Matrix
+#@#    def []=(i,j,x)
+#@#      @rows[i][j]=x
+#@#    end
+#@#  end
+#@#
+#@#  m=Matrix[[11,12],[21,22]]
+#@#  m[1,1]=-1
+#@#  p m #=> Matrix[[11,12],[21,-1]]
+
+--- *(m) -> Matrix | Vector
+
+self に行列またはベクトル m を右から乗じた行列を返します。
+
+m が [[c:Vector]] オブジェクトなら返り値も [[c:Vector]] オブジェクトになります。
+
+@param m 右からの乗算が定義可能な行列やベクトルを指定します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 次元が合わない場合に発生します
+
+--- *(other) -> Matrix
+
+self の各成分に数 other を掛けた行列を返します。
+
+@param other self の各成分に掛ける [[c:Numeric]] オブジェクトを指定します。
+
+--- +(m) -> Matrix
+
+self に行列 m を加算した行列を返します。
+self の column_size が 1 なら [[c:Vector]] オブジェクトも指定出来ます。
+
+@param m 加算する行列。加算可能な行列やベクトルを指定します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 次元が合わない場合に発生します
+
+--- -(m) -> Matrix
+
+self から行列mを減算した行列を返します。
+self の column_size が 1 なら [[c:Vector]] オブジェクトも指定出来ます。
+
+@param m 減算する行列。減算可能な行列やベクトルを指定します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 次元が合わない場合に発生します
+
+--- /(m) -> Matrix
+
+self に行列 m の逆行列を右から乗じた行列を返します。
+
+@param m 逆行列を右から乗算する行列。可逆行列でselfと乗算可能な行列を指定します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 次元が合わない場合に発生します
+@raise ExceptionForMatrix::ErrNotRegular m が正則でない場合に発生します
+
+--- /(other) -> Matrix
+
+self の各成分を数 other で割った行列を返します。
+
+@param other self の各成分を割る [[c:Numeric]] オブジェクトを指定します。
+
+--- inverse -> Matrix
+--- inv -> Matrix
+
+逆行列を返します。
+
+#@until 1.9.1
+===== 注意
+
+要素に整数を含む場合、正しい答を返さないかも知れません。
+
+  p Matrix[[2, 1], [3, 2]].inv         #=> Matrix[[0, 0], [1, 0]]
+  
+  p Matrix[[2.0, 1.0], [3.0, 2.0]].inv #=> Matrix[[2.0, -1.0], [-3.0, 2.0]]
+
+#@end
+--- **(n) -> Matrix
+
+self の n 乗を返します。
+
+@param n べき数の指定
+@raise ExceptionForMatrix::ErrNotRegular n が 0 以下で、行列が正則でない場合に発生します
+#@if (version < "1.9.1")
+--- determinant -> Fixnum | Float
+--- det -> Fixnum | Float
+#@else
+--- determinant -> Rational | Float
+--- det -> Rational | Float
+#@end
+
+行列式 (determinant) の値を返します。
+
+#@until 1.9.2
+self が正方行列ではない場合は0を返します。
+#@else
+@raise ExceptionForMatrix::ErrDimensionMismatch 正方行列でない場合に発生します
+#@end
+
+#@until 1.9.1
+===== 注意
+
+要素に整数を含む場合、正しい答を返さないかも知れません。
+
+ p Matrix[[2, 1], [-1, 2]].det #=> 6
+ 
+ p Matrix[[2.0, 1.0], [-1.0, 2.0]].det #=> 5.0
+#@end
+
+#@since 1.9.1
+--- determinant_e -> Rational | Float
+--- det_e -> Rational | Float
+
+#@since 1.9.2
+不正な値を返します。
+[[m:Matrix#determinant]] を代わりに使ってください。
+#@# TODO: trunk では修正済み(Bug #7228)
+
+#@else
+行列式 (determinant) を返します。
+
+ユークリッドアルゴリズムに基づいて行列式を計算します。
+行列の全成分が整数([[c:Integer]])の場合は正しい値を返します。
+成分に[[c:Float]]があった場合には正しい値を返さないかもしれません。
+
+#@end
+#@end
+--- rank -> Fixnum
+
+階数 (rank) を返します。
+
+selfの行列の階数(rank)を返します。
+行列の成分が[[c:Float]]の場合は正しい値を返さない場合があります。
+その場合は行列成分に [[c:Rational]]
+#@since 1.9.2
+もしくは [[c:BigDecimal]]
+#@end
+を使用してください。
+
+#@until 1.9.1
+行列の成分が [[c:Integer]] の場合も正しく動作しない場合があります。
+  require 'matrix'
+  m=Matrix[[2, 6], [1, 3]]
+  m.rank # => 2
+#@end
+
+#@since 1.9.1
+--- rank_e -> Fixnum
+
+階数 (rank) を返します。
+
+#@since 1.9.2
+このメソッドは obsolete です。[[m:Matrix#rank]] を代わりに
+使ってください。
+
+#@else
+ユークリッドアルゴリズムに基づいて階数(rank)を計算します。
+行列の全成分が整数([[c:Integer]])の場合は正しい値を返します。
+成分に[[c:Float]]があった場合には正しい値を返さないかもしれません。
+
+#@end
+#@end
+--- trace -> Fixnum | Float | Rational
+--- tr -> Fixnum | Float | Rational
+
+トレース (trace) を返します。
+
+行列のトレース (trace) とは、対角要素の和です。
+
+例:
+  Matrix[[7,6], [3,9]].trace #=> 16
+
+trace は正方行列でのみ定義されます。
+
+#@since 1.9.2
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+#@end
+
+--- transpose -> Matrix
+--- t -> Matrix
+
+転置行列 (transpose matrix) を返します。
+
+self を[[c:Matrix]]のオブジェクトで、(m,n)型行列としたとき a(j,i) を (i,j) 要素とする (n,m) 型行列を返します。
+
+#@since 1.9.2
+--- row(i) -> Vector | nil
+--- row(i) {|x| ... } -> self
+#@else
+--- row(i) -> Vector
+--- row(i) {|x| ... } -> ()
+#@end
+
+i 番目の行を [[c:Vector]] オブジェクトで返します。
+#@since 1.9.2
+i 番目の行が存在しない場合は nil を返します。
+#@else
+i 番目の行が存在しない場合は例外 TypeError が発生します。
+#@end
+ブロックが与えられた場合はその行の各要素についてブロックを繰り返します。
+
+[[c:Vector]] オブジェクトは [[c:Matrix]] オブジェクトとの演算の際には列ベクトルとして扱われることに注意してください。
+
+@param i 行の位置を指定します。
+         先頭の行が 0 番目になります。i の値が負の時には末尾から
+         のインデックスと見倣します。末尾の行が -1 番目になります。
+
+例:
+  a1 = [1, 2, 3]
+  a2 = [10, 15, 20]
+  a3 = [-1, -2, 1.5]
+  m = Matrix[a1, a2, a3]
+
+  p m.row(1) #=> Vector[10, 15, 20]
+ 
+  cnt = 0
+  m.row(0) { |x|
+    cnt = cnt + x
+  }
+  p cnt #=> 6
+
+#@since 1.9.2
+--- column(j) -> Vector | nil
+--- column(j) {|x| ... } -> self
+#@else
+--- column(j) -> Vector
+--- column(j) {|x| ... } -> ()
+#@end
+
+j 番目の列を [[c:Vector]] オブジェクトで返します。
+#@since 1.9.2
+j 番目の列が存在しない場合は nil を返します。
+#@else
+j 番目の列が存在しない場合は Vector[nil] を返します。
+#@end
+ブロックが与えられた場合はその列の各要素についてブロックを繰り返します。
+
+
+@param j 列の位置を指定します。
+         先頭の列が 0 番目になります。j の値が負の時には末尾から
+         のインデックスと見倣します。末尾の列が -1 番目になります。
+
+例:
+  a1 = [ 1,  2,   3]
+  a2 = [10, 15,  20]
+  a3 = [-1, -2, 1.5]
+  m = Matrix[a1, a2, a3]
+
+  p m.column(1) #=> Vector[2, 15, -2]
+ 
+  cnt = 0
+  m.column(0) { |x|
+    cnt = cnt + x
+  }
+  p cnt #=> 24.5
+
+--- collect {|x| ... } -> Matrix
+--- map {|x| ... } -> Matrix
+
+行列の各要素に対してブロックの適用を繰り返した結果を、要素として持つ行列を生成します。
+
+例:
+  a1 = [ 1,  2,   3]
+  a2 = [10, 15,  20]
+  a3 = [-1, -2, 1.5]
+  m = Matrix[a1, a2, a3]
+
+  # 行列mのすべての要素に100を加える。
+  p m.collect { |x|
+    x + 100
+  } #=> Matrix[[101, 102, 103], [110, 115, 120], [99, 98, 101.5]]
+
+#@since 1.9.2
+--- empty? -> bool
+行列が要素を持たないならば真を返します。
+
+要素を持たないとは、行数か列数のいずれかが0であることを意味します。
+
+@see [[m:Matrix.empty]]
+
+--- real? -> bool
+行列の全要素が実([[m:Numeric#real?]])であれば真を返します。
+
+Complexオブジェクトを要素に持つ場合は虚部が0でも偽を返します。
+
+例:
+
+ Matrix[[1, 0], [0, 1]].real? #=> true
+ Matrix[[Complex(0, 1), 0], [0, 1]].real? #=> false
+ # 要素が実数であっても Complex オブジェクトなら偽を返す。
+ Matrix[[Complex(1, 0), 0], [0, 1]].real? #=> false
+
+#@end
+--- regular? -> bool
+
+行列が正方で正則なら真を、特異なら偽を返します。
+
+行列が正則であるとは、正方行列であり、かつ、その逆行列が存在することです。
+行列式が0でないことと同値です。
+
+#@until 1.9.1
+正方行列でない場合には偽を返します。
+#@else
+正方行列でない場合には例外 ExceptionForMatrix::ErrDimensionMismatch を
+発生させます。
+#@end
+
+例:
+  a1 = [ 1,  2,  3]
+  a2 = [10, 15, 20]
+  a3 = [-1, -2, 1.5]
+  m = Matrix[a1, a2, a3]
+  p m.regular? #=> true
+
+  a1 = [ 1,  2,  3]
+  a2 = [10, 15, 20]
+  a3 = [-1, -2, -3]
+  m = Matrix[a1, a2, a3]
+  p m.regular? #=> false
+
+  a1 = [ 1,  2,  3]
+  a2 = [10, 15, 20]
+  a3 = [-1, -2, 1.5]
+  a4 = [1, 1, 1]
+  m = Matrix[a1, a2, a3, a4]
+#@until 1.9.1
+  p m.regular? #=> false
+#@else
+  p m.regular? #=> raise ExceptionForMatrix::ErrDimensionMismatch
+#@end
+
+#@since 1.9.2
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+#@end
+
+--- singular? -> bool
+
+行列が正方で特異なら真を/正則なら偽を返します。
+
+行列が特異(singular)であるとは、正則でないことです。
+行列式が0であること同値です。
+
+#@since 1.9.2
+正方行列でない場合には例外 ExceptionForMatrix::ErrDimensionMismatch を
+発生させます。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+#@else
+正方行列でない場合には真を返します。
+#@end
+
+--- square? -> bool
+
+正方行列であるなら、真を返します。
+
+--- ==(other) -> bool
+--- eql?(other) -> bool
+
+自分自身と other を比較し、同値であれば真(true)を返します。
+
+@param other 比較対称のオブジェクト
+
+#@since 1.9.3
+--- diagonal? -> bool
+行列が対角行列ならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+
+--- hermitian? -> bool
+#@since 2.0.0
+行列がエルミートならば真を返します。
+#@else
+行列がエルミートならば真を返します。
+対角成分をチェックしないバグがあり、エルミートでないのに真を返す場合があります。
+2.0.0 で修正されました。
+#@end
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+
+--- lower_triangular? -> bool
+行列が下三角行列ならば真を返します。
+
+--- normal? -> bool
+行列が正規行列ならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+
+--- orthogonal? -> bool
+行列が直交行列ならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+
+--- permutation? -> bool
+行列が置換行列ならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+
+--- symmetric? -> bool
+行列が対称ならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+
+--- unitary? -> bool
+行列がユニタリならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+
+--- upper_triangular? -> bool
+行列が上三角行列ならば真を返します。
+
+--- zero? -> bool
+行列が零行列ならば真を返します。
+
+#@end
+
+--- row_vectors -> [Vector]
+
+自分自身を行ベクトルの配列として返します。
+
+例:
+  a1 = [ 1,  2,  3]
+  a2 = [10, 15, 20]
+  a3 = [-1, -2, 1.5]
+  m = Matrix[a1, a2, a3]
+
+  p m.row_vectors #=> [Vector[1, 2, 3], Vector[10, 15, 20], Vector[-1, -2, 1.5]]
+
+--- column_vectors -> [Vector]
+
+自分自身を列ベクトルの配列として返します。
+
+例:
+  a1 = [ 1,  2,  3]
+  a2 = [10, 15, 20]
+  a3 = [-1, -2, 1.5]
+  m = Matrix[a1, a2, a3]
+
+  p m.row_vectors #=> [Vector[1, 10, -1], Vector[2, 15, -2], Vector[3, 20, 1.5]]
+
+--- to_a -> Array
+
+自分自身を[[c:Array]]に変換したものを返します。
+
+行ベクトルを配列([[c:Array]])としたものの配列(つまり配列の配列)として返します。
+
+例:
+  a1 = [ 1,  2,  3]
+  a2 = [10, 15, 20]
+  a3 = [-1, -2, 1.5]
+  m = Matrix[a1, a2, a3]
+
+  p m.to_a #=> [[1, 2, 3], [10, 15, 20], [-1, -2, 1.5]]
+
+
+#@if (version >= "1.9.1")
+
+--- elements_to_f -> Matrix
+各要素を浮動小数点数 [[c:Float]] に変換した行列を返します。
+
+#@since 1.9.2
+このメソッドは deprecated です。 map(&:to_f) を使ってください。
+#@end
+
+--- elements_to_i -> Matrix
+各要素を整数 [[c:Integer]] に変換した行列を返します。
+
+#@since 1.9.2
+このメソッドは deprecated です。 map(&:to_i) を使ってください。
+#@end
+
+--- elements_to_r -> Matrix
+各要素を有理数 [[c:Rational]] に変換した行列を返します。
+
+#@since 1.9.2
+このメソッドは deprecated です。 map(&:to_r) を使ってください。
+#@end
+
+#@end
+
+#@# bc-rdoc: detected missing name: new
+#@# --- new(init_method, *argv)
+#@# 
+#@# This method is used by the other methods that create matrices,
+#@# and is of no use to general users.
+#@# bc-methods -r matrix Matrix で見つからなかった。okkez
+
+#@since 1.9.3
+--- round(ndigits = 0) -> Matrix
+行列の各要素を指定した桁数で丸めた行列を返します。
+
+@see [[m:Float#round]]
+
+#@end
+
+#@since 1.9.2
+--- conjugate -> Matrix
+--- conj -> Matrix
+
+複素共役を取った行列を返します。
+
+  Matrix[[Complex(1,2), Complex(0,1), 0], [1, 2, 3]]
+    => 1+2i   i  0
+          1   2  3
+  Matrix[[Complex(1,2), Complex(0,1), 0], [1, 2, 3]].conjugate
+    => 1-2i  -i  0
+          1   2  3
+
+--- imaginary -> Matrix
+--- imag -> Matrix
+
+行列の虚部を返します。
+
+  Matrix[[Complex(1,2), Complex(0,1), 0], [1, 2, 3]]
+  #  => 1+2i  i  0
+  #        1  2  3
+  Matrix[[Complex(1,2), Complex(0,1), 0], [1, 2, 3]].imaginary
+  #  =>   2i  i  0
+  #        0  0  0
+--- real -> Matrix
+
+行列の実部を返します。
+
+Returns the real part of the matrix.
+
+  Matrix[[Complex(1,2), Complex(0,1), 0], [1, 2, 3]]
+  #  => 1+2i  i  0
+  #        1  2  3
+  Matrix[[Complex(1,2), Complex(0,1), 0], [1, 2, 3]].real
+  #  =>    1  0  0
+  #        1  2  3
+
+--- rectangular -> [Matrix, Matrix]
+--- rect -> [Matrix, Matrix]
+行列を実部と虚部に分解したものを返します。
+
+
+  m.rect == [m.real, m.imag]  # ==> true for all matrices m
+
+@see [[m:Matrix#imaginary]], [[m:Matrix#real]]
+
+#@end
+--- coerce(other) -> Array
+他の数値オブジェクトとの変換を行います。
+
+他の数値オブジェクトを[[c:Matrix::Scalar]]のオブジェクトに変換し、selfとの組を配列として返します。
+
+@param other 変換する数値オブジェクト
+
+例:
+  a1 = [1, 2]
+  a2 = [-1.25, 2.2]
+  m = Matrix[a1, a2]
+  r = Rational(1, 2)
+  p m.coerce(r) #=> [#<Matrix::Scalar:0x832df18 @value=(1/2)>, Matrix[[1, 2], [-1.25, 2.2]]]
+
+#@until 1.9.2
+#@# bc-rdoc: detected missing name: compare_by_row_vectors
+--- compare_by_row_vectors(rows) -> bool
+
+自分自身([[c:Matrix]])を配列の配列([[c:Array]])とみなして引数rowsと比較します。
+
+@param rows 比較対象の配列の配列
+@return selfを配列の配列とみなしたときに引数rowと等しい時にtrue, それ以外にはfalseを返します。
+
+例:
+  a1 = [1, 2]
+  a2 = [-1.25, 2.2]
+  m = Matrix[a1, a2] # 行列
+  rows = Array[a1, a2] # 配列の配列
+  p m.compare_by_row_vectors(rows) #=> true
+
+#@end
+#@# bc-rdoc: detected missing name: inverse_from
+#@# このメソッドは 1.9.2 以降では public でないが、1.9.1以前でも
+#@# 見せないほうがよいか？
+#@# --- inverse_from(src) -> Matrix
+#@# 
+#@# 行列1次方程式の解(の行列)を返します。
+#@# 
+#@# 行列1次方程式の解(の行列)を返します。
+#@# 行列の関として src * X = self となるような行列Xを返します。
+#@# #@# srcが正則行列ではないでは場合には、ExceptionForMatrix::ErrNotRegularの例外が発生します。
+#@# 
+#@# ===== 注意
+#@# 
+#@# inverse_fromメソッドは破壊的なメソッドです。
+#@# 
+#@# 例:
+#@#   a1 = [1, 2]
+#@#   a2 = [3, 4.5]
+#@#   m = Matrix[a1, a2]
+#@# 
+#@#   b1 = [1, 0]
+#@#   b2 = [-1, 1]
+#@#   n = Matrix[b1, b2]
+#@# 
+#@#   p x = m.inverse_from(n) #=> Matrix[[1, 2.0], [4, 6.5]]
+#@#   p m #=> Matrix[[1, 2.0], [4, 6.5]]
+#@#   p n * x #=> Matrix[[1, 2.0], [3, 4.5]]
+
+#@since 1.9.3
+--- eigen -> Matrix::EigenvalueDecomposition
+--- eigensystem -> Matrix::EigenvalueDecomposition
+行列の固有値と左右の固有ベクトルを保持したオブジェクトを返します。
+
+[[c:Matrix::EigenvalueDecomposition]] は to_ary を定義しているため、
+多重代入によって3つの行列(右固有ベクトル、固有値行列、左固有ベクトル)
+を得ることができます。
+これを [V, D, W] と書くと、
+(元の行列が対角化可能ならば)、
+D は対角行列で、 self == V*D*W, V = W.inverse を満たします。
+D のそれぞれの対角成分が行列の固有値です。
+
+  m = Matrix[[1, 2], [3, 4]]
+  v, d, v_inv = m.eigensystem
+  d.diagonal? # => true
+  v.inv == v_inv # => true
+  (v * d * v_inv).round(5) == m # => true
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+@see [[c:Matrix::EigenvalueDecomposition]]
+
+--- lup -> Matrix::LUPDecomposition
+--- lup_decomposition -> Matrix::LUPDecomposition
+行列の LUP 分解を保持したオブジェクトを返します。
+
+[[c:Matrix::LUPDecomposition]] は to_ary を定義しているため、
+多重代入によって3つの行列(下三角行列、上三角行列、置換行列)
+を得ることができます。これを [L, U, P] と書くと、
+L*U = P*self を満たします。
+
+  a = Matrix[[1, 2], [3, 4]]
+  l, u, p = a.lup
+  l.lower_triangular? # => true
+  u.upper_triangular? # => true
+  p.permutation?      # => true
+  l * u == p * a      # => true
+  a.lup.solve([2, 5]) # => Vector[(1/1), (1/2)]
+
+@see [[c:Matrix::LUPDecomposition]]
+
+#@end
+
+--- hash -> Fixnum
+行列のHash値を返します。
+
+--- to_s -> String
+行列を文字列化し、その文字列を返します。
+
+例:
+  a1 = [1, 2]
+  a2 = [3, 4.5]
+  m = Matrix[a1, a2]
+
+  p m.to_s #=> "Matrix[[1, 2], [3, 4.5]]"
+
+--- inspect -> String
+自分自身を見やすい形式に文字列化し、その文字列を返します。
+
+例:
+  a1 = [1, 2]
+  a2 = [3, 4.5]
+  m = Matrix[a1, a2]
+
+  p m.to_s #=> "Matrix[[1, 2], [3, 4.5]]"
+
+
+--- clone -> Matrix
+自分自身のコピーを返します。
+
+#@since 1.9.3
+= class Matrix::EigenvalueDecomposition
+行列の固有分解の情報を保持するクラスです。
+
+[[m:Matrix#eigensystem]] の返り値のクラスです。
+
+== Instance Methods
+--- eigenvector_matrix -> Matrix
+--- v  -> Matrix
+右固有ベクトルを横に並べた行列を返します。
+
+--- eigenvector_matrix_inv  -> Matrix
+--- v_inv  -> Matrix
+左固有ベクトルを縦に並べた行列を返します。
+
+これは [[m:Matrix::EigenvalueDecomposition#v]] の逆行列です
+
+--- eigenvalues -> [Float]
+固有値を配列で返します。
+
+--- eigenvectors -> [Vector]
+右固有ベクトルを配列で返します。
+
+--- eigenvalue_matrix -> Matrix
+--- d -> Matrix
+固有値を対角成分に並べた行列を返します。
+
+--- to_ary -> [Matrix, Matrix, Matrix]
+--- to_a -> [Matrix, Matrix, Matrix]
+
+[[m:Matrix::EigenvalueDecomposition#v]], 
+[[m:Matrix::EigenvalueDecomposition#d]],
+[[m:Matrix::EigenvalueDecomposition#v_inv]]
+をこの順に並べた配列を返します。
+
+
+= class Matrix::LUPDecomposition
+行列のLUP分解の情報を保持するクラスです。
+
+[[m:Matrix#lup_decomposition]] の返り値のクラスです。
+
+== Instance Methods
+--- det         -> Numeric
+--- determinant -> Numeric
+#@# サイズが (1, 1) なら型の変換は起こらないので何でも返す可能性が有る。
+元の行列の行列式の値を返します。
+LUP 分解の結果を利用して計算します。
+
+@see [[m:Matrix#determinant]]
+
+--- l -> Matrix
+LUP分解の下半行列部分を返します。
+
+--- u -> Matrix
+LUP分解の上半行列部分を返します。
+
+--- p -> Matrix
+LUP分解の置換行列部分を返します。
+
+--- to_ary -> [Matrix, Matrix, Matrix]
+--- to_a -> [Matrix, Matrix, Matrix]
+分解した行列を [下半行列, 上半行列, 置換行列] という3要素の配列で
+返します。
+
+--- pivots -> [Integer]
+ピボッティングを表す配列を返します。
+
+--- singular? -> bool
+元の行列が正方で特異なら真を/正則なら偽を返します。
+LUP 分解の結果を利用して判定します。
+
+@see [[m:Matrix#singular?]]
+
+--- solve(b) -> Vector | Matrix
+self が正方行列 A の LUP 分解の時、一次方程式 Ax = b の解を返します。
+b には [[c:Vector]], [[c:Matrix]], 数値の配列を指定出来ます。
+
+それぞれベクトルのサイズ、行列の行数、配列のサイズが A の列数と一致していなければなりません。
+返り値は b が行列なら行列、それ以外はベクトルになります。
+
+@param b 一次方程式の定数項を指定します。
+
+  lup = Matrix[[2, 1], [1, 2]].lup
+
+  lup.solve([1, -1])                  #=> Vector[(1/1), (-1/1)]
+  lup.solve(Vector[3, 0])             #=> Vector[(2/1), (-1/1)]
+  lup.solve(Matrix[[1, 3], [-1, 0]])  #=> Matrix[[(1/1), (2/1)], [(-1/1), (-1/1)]]
+#@end
+
+= class ExceptionForMatrix::ErrDimensionMismatch < StandardError
+行列/ベクトル計算時に次元が合わない場合に発生する例外です。
+
+= class ExceptionForMatrix::ErrNotRegular < StandardError
+逆行列計算時に行列が正則でない場合に発生する例外です。
+
+= class ExceptionForMatrix::ErrOperationNotDefined < StandardError
+演算時にクラスが適切でない場合に発生する例外です。
+
+#@#== ChangeLog
+#@#
+#@#*[2004-04-23] by [[unknown:坂野|URL:mailto:mas@star.le.ac.uk]]
+#@#    * Matrix.diagonalに注意書を加える。
+#@#*[2002-04-03] by [[unknown:すす|URL:mailto:sugawah@attglobal.net]]
+#@#    * 使い方の節を追加
+#@#    * Working with Complex classの節を追加
+#@#    * []=メソッドを追加
+#@#    * イテレータ関係を同じ節にまとめた
+#@#    * 誤りを訂正し、説明を直した。
+#@#    * 他クラスへのリンクを追加 Numeric, Vector
+#@#*[2002-04-02] 初版 by [[unknown:すす|URL:mailto:sugawah@attglobal.net]]

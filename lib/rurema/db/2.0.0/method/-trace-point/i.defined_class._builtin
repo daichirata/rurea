@@ -1,0 +1,42 @@
+names=defined_class
+visibility=public
+kind=defined
+
+--- defined_class -> Class | module
+
+メソッドを定義したクラスかモジュールを返します。
+
+  class C; def foo; end; end
+  trace = TracePoint.new(:call) do |tp|
+    p tp.defined_class # => C
+  end.enable do
+    C.new.foo
+  end
+
+メソッドがモジュールで定義されていた場合も(include に関係なく)モジュー
+ルを返します。
+
+  module M; def foo; end; end
+  class C; include M; end;
+  trace = TracePoint.new(:call) do |tp|
+    p tp.defined_class # => M
+  end.enable do
+    C.new.foo
+  end
+
+[注意] 特異メソッドを実行した場合は TracePoint#defined_class は特異クラ
+スを返します。また、[[m:Kernel.#set_trace_func]] の 6 番目のブロックパ
+ラメータは特異クラスではなく元のクラスを返します。
+
+  class C; def self.foo; end; end
+  trace = TracePoint.new(:call) do |tp|
+    p tp.defined_class # => #<Class:C>
+  end.enable do
+    C.foo
+  end
+
+[[m:Kernel.#set_trace_func]] と [[c:TracePoint]] の上記の差分に注意して
+ください。
+
+@see [[ruby-core:50864]]
+

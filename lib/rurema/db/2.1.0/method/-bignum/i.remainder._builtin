@@ -1,0 +1,14 @@
+names=remainder
+visibility=public
+kind=defined
+
+--- remainder(other) -> Fixnum | Bignum | Float
+
+self を other で割った余り r を返します。
+
+r の符号は self と同じになります。
+
+@param other self を割る数。
+
+@see [[m:Bignum#divmod]], [[m:Bignum#modulo]], [[m:Numeric#modulo]]
+

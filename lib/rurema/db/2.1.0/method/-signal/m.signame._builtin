@@ -1,0 +1,13 @@
+names=signame
+visibility=public
+kind=defined
+
+--- signame(signo) -> String
+
+引数で指定されたシグナル番号をシグナル名に変換して返します。
+
+  Signal.trap("INT") { |signo| puts Signal.signame(signo) }
+  Process.kill("INT", 0)
+  # => INT
+
+@see [[m:Signal.#list]]

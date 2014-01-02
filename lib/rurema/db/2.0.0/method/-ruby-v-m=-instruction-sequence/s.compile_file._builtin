@@ -1,0 +1,28 @@
+names=compile_file
+visibility=public
+kind=defined
+
+--- compile_file(file, options => nil) -> RubyVM::InstructionSequence
+
+引数 file で指定した Ruby のソースコードを元にコンパイル済みの
+[[c:RubyVM::InstructionSequence]] オブジェクトを作成して返します。
+
+[[m:RubyVM::InstructionSequence.compile]] とは異なり、file、path などの
+メタデータは自動的に取得します。
+
+@param file ファイル名を文字列で指定します。
+
+@param options コンパイル時のオプションを true、false、[[c:Hash]] オブ
+               ジェクトのいずれかで指定します。詳細は
+               [[m:RubyVM::InstructionSequence.compile_option=]] を参照
+               してください。
+
+  # /tmp/hello.rb
+  puts "Hello, world!"
+
+  # irb
+  RubyVM::InstructionSequence.compile_file("/tmp/hello.rb")
+  # => <RubyVM::InstructionSequence:<main>@/tmp/hello.rb>
+
+@see [[m:RubyVM::InstructionSequence.compile]]
+

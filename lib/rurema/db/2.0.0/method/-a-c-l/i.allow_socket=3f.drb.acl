@@ -1,0 +1,10 @@
+names=allow_socket?
+visibility=public
+kind=defined
+
+--- allow_socket?(soc) -> bool
+ソケットに関連付けられたアドレスが ACL で許可されているならば
+真を返します。
+
+@param soc 判定対象のソケット
+

@@ -1,0 +1,13 @@
+names=ANY
+visibility=public
+kind=defined
+
+--- ANY -> Integer
+「任意」のスタイルを意味します。
+
+emitter が適当に style を決めます。
+
+@see [[m:Psych::Nodes::Mapping.new]],
+     [[m:Psych::Nodes::Mapping#style]],
+     [[m:Psych::Handler#start_mapping]]
+

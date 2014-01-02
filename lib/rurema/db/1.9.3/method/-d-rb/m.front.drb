@@ -1,0 +1,10 @@
+names=front
+visibility=public
+kind=defined
+
+--- front -> object
+カレントサーバのフロントオブジェクトを返します。
+
+@raise DRbServerNotFound カレントサーバが存在しない場合に発生します
+@see [[m:DRb.#current_server]]
+

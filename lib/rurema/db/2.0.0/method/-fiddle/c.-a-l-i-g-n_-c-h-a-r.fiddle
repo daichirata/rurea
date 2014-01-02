@@ -1,0 +1,7 @@
+names=ALIGN_CHAR
+visibility=public
+kind=defined
+
+--- ALIGN_CHAR -> Integer
+C の構造体における char のアライメントの値。
+

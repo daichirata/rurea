@@ -1,0 +1,14 @@
+names=each,each_child
+visibility=public
+kind=defined
+
+--- each {|object| ... } -> ()
+--- each_child {|object| ... } -> ()
+--- each -> Enumerator
+--- each_child -> Enumerator
+
+各子ノードに対しブロックを呼び出します。
+
+ブロックを省略した場合は、各子ノードに対し操作を
+繰り返すような [[c:Enumerator]] オブジェクトを返します。
+

@@ -1,0 +1,8 @@
+names=fiddle?
+visibility=public
+kind=defined
+
+--- fiddle? -> bool
+DL 内部で [[lib:fiddle]] を利用するならば真を返します。
+
+

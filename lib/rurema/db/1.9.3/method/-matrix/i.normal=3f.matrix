@@ -1,0 +1,9 @@
+names=normal?
+visibility=public
+kind=defined
+
+--- normal? -> bool
+行列が正規行列ならば真を返します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+

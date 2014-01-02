@@ -1,0 +1,24 @@
+names=root
+visibility=public
+kind=defined
+
+--- root -> REXML::Element
+self が属する文書のルート要素を返します。
+
+==== 例
+  require 'rexml/document'
+  doc = REXML::Document.new(<<EOS)
+  <root>
+  <children>
+    <grandchildren />
+  </children>
+  </root>
+  EOS
+  
+  children = doc.get_elements("/root/children").first
+  children.name # => "children"
+  children.root.name # => "root"
+  grandchildren = doc.get_elements("/root/children/grandchildren").first
+  grandchildren.name # => "grandchildren"
+  grandchildren.root.name # => "root"
+

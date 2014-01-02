@@ -1,0 +1,10 @@
+names=pubid
+visibility=public
+kind=defined
+
+--- pubid -> String | nil
+公開識別子(public identifier)を用いた外部実体宣言の場合は、その公開識別子を
+返します。
+
+それ以外の場合は nil を返します。
+

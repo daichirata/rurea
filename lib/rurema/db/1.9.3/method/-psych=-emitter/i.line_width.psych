@@ -1,0 +1,9 @@
+names=line_width
+visibility=public
+kind=defined
+
+--- line_width -> Integer
+「好ましい」行幅を返します。
+
+@see [[m:Psych::Emitter#line_width=]]
+

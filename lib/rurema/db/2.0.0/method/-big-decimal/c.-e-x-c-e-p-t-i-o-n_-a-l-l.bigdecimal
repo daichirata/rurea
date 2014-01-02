@@ -1,0 +1,19 @@
+names=EXCEPTION_ALL
+visibility=public
+kind=defined
+
+--- EXCEPTION_ALL -> Fixnum
+
+[[c:BigDecimal]] の計算において例外を発生させるかどうかを設定、確認する
+際の値を返します。
+
+以下の例外全てが対象です。
+
+ * [[m:BigDecimal::EXCEPTION_INFINITY]]
+ * [[m:BigDecimal::EXCEPTION_NaN]]
+ * [[m:BigDecimal::EXCEPTION_OVERFLOW]]
+ * [[m:BigDecimal::EXCEPTION_UNDERFLOW]]
+ * [[m:BigDecimal::EXCEPTION_ZERODIVIDE]]
+
+[[m:BigDecimal.mode]] の第 1 引数に指定します。
+

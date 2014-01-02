@@ -1,0 +1,10 @@
+names=grep
+visibility=public
+kind=defined
+
+--- grep(pattern) {|item| ... } -> Enumerator::Lazy
+
+[[m:Enumerable#grep]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+@see [[m:Enumerable#grep]]
+

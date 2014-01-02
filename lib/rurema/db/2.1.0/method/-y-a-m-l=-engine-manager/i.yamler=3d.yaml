@@ -1,0 +1,13 @@
+names=yamler=
+visibility=public
+kind=defined
+
+--- yamler=(engine)
+
+使用しません。
+
+@param engine バックエンドを文字列で指定します。
+
+@raise ArgumentError 未対応のバックエンドを指定した場合に発生します。
+
+

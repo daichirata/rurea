@@ -1,0 +1,7 @@
+names=b
+visibility=public
+kind=defined
+
+--- b -> String
+
+self の文字エンコーディングを ASCII-8BIT にした文字列を返します。

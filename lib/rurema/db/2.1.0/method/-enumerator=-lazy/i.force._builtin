@@ -1,0 +1,10 @@
+names=force
+visibility=public
+kind=defined
+
+--- force -> [object]
+
+全ての要素を含む配列を返します。Lazy から実際に値を取り出すのに使います。
+
+[[m:Enumerable#to_a]] のエイリアスです。
+

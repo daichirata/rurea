@@ -1,0 +1,43 @@
+names=struct
+visibility=public
+kind=defined
+
+--- struct(signature) -> Class
+C の構造体型に対応する Ruby のクラスを構築して返します。
+
+構造体の各要素は C と似せた表記ができます。そしてそれを
+配列で signature に渡してデータを定義します。例えば C における
+  struct timeval {
+    long tv_sec;
+    long tv_usec;
+  };
+という構造体型に対応して
+  Timeval = struct(["long tv_sec", "long tv_usec"])
+として構造体に対応するクラスを生成します。
+
+このメソッドが返すクラスには以下のメソッドが定義されています
+  * クラスメソッド malloc
+  * initialize
+  * to_ptr
+  * to_i
+  * 構造体の各メンバへのアクセサ
+返されるクラスは [[c:DL::CStruct]] を継承しています。詳しくは
+そちらを参照してください。
+
+
+@param signature 構造体の各要素を文字列で表現したものの配列
+
+  require 'dl/import
+  
+  module M
+    extend DL::Importer
+    dlload "libc.so.6"
+    extern "int gettimeofday(void*, void*)"
+    Timeval = struct(["long tv_sec", "long tv_usec"])
+  end
+  
+  time = Timeval.malloc
+  M.gettimeofday(time, DL::NULL)
+  p time.tv_sec
+  p time.tv_usec
+

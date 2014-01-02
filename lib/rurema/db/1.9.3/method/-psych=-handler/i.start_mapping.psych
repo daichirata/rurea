@@ -1,0 +1,46 @@
+names=start_mapping
+visibility=public
+kind=defined
+
+--- start_mapping(anchor, tag, implicit, style) -> ()
+mapping の開始を見付けたときに呼び出されます。
+
+anchor には map に関連付けられた anchor の名前が文字列で渡されます。
+anchor がない場合には nil が渡されます。
+
+tag には map に関連付けられた tag の名前が文字列で渡されます。
+tag がない場合には nil が渡されます。
+
+implicit には map が implicit に開始されたかどうかが
+真偽値で渡されます。
+
+style には sequence の style が整数値で渡されます。以下のいずれか
+です。
+  * [[m:Psych::Nodes::Mapping::BLOCK]]
+  * [[m:Psych::Nodes::Mapping::FLOW]]
+
+必要に応じてこのメソッドを override してください。
+
+@param anchor 関連付けられた anchor の名前
+@param tag タグ名
+@param implicit mapping が implicit に開始されかどうか
+@param style mapping のスタイル
+
+=== 例
+
+以下の YAML ドキュメントを例として考えます。
+
+  ---
+  k: !!map { hello: world }
+  v: &pewpew
+    hello: world
+
+この YAML ドキュメントには3つの mapping が含まれています。
+外側の map の中に 2 つの map が含まれています。
+start_mapping メソッドは 順に以下の引数で呼び出されます。
+
+  # anchor    tag                       implicit  style
+  [nil,       nil,                      true,     1     ]
+  [nil,       "tag:yaml.org,2002:map",  false,    2     ]
+  ["pewpew",  nil,                      true,     1     ]
+

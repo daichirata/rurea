@@ -1,0 +1,11 @@
+names=canonical=
+visibility=public
+kind=defined
+
+--- canonical=(bool)
+
+出力の style が canonical である/ないを指定します。
+
+@param bool canonnicalであるかどうか
+@see [[m:Psych::Emitter#canonical]]
+

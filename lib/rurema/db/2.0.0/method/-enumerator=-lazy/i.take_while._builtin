@@ -1,0 +1,11 @@
+names=take_while
+visibility=public
+kind=defined
+
+--- take_while -> Enumerator::Lazy
+--- take_while {|item| ... } -> Enumerator::Lazy
+
+[[m:Enumerable#take_while]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+@see [[m:Enumerable#take_while]]
+

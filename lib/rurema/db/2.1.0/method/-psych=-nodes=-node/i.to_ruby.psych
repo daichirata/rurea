@@ -1,0 +1,9 @@
+names=to_ruby,transform
+visibility=public
+kind=defined
+
+--- to_ruby -> object
+--- transform -> object
+
+AST を ruby のオブジェクトに変換します。
+

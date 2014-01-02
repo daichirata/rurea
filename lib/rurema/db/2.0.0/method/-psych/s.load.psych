@@ -1,0 +1,29 @@
+names=load
+visibility=public
+kind=defined
+
+--- load(yaml, filename = nil) -> object
+YAML ドキュメントを Ruby のデータ構造(オブジェクト)に変換します。
+
+入力に複数のドキュメントが含まれている場合は、先頭のものを変換して
+返します。
+
+filename はパース中に発生した例外のメッセージに用います。
+
+
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@param filename 例外メッセージのためのファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+@see [[m:Psych.parse]]
+
+==== 例
+  Psych.load("--- a")           # => 'a'
+  Psych.load("---\n - a\n - b") # => ['a', 'b']
+
+  begin
+    Psych.load("--- `", "file.txt")
+  rescue Psych::SyntaxError => ex
+    p ex.file    # => 'file.txt'
+    p ex.message # => "(file.txt): found character that cannot start any token while scanning for the next token at line 1 column 5"
+  end
+

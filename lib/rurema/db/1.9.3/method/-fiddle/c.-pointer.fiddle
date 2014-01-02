@@ -1,0 +1,7 @@
+names=Pointer
+visibility=public
+kind=defined
+
+--- Pointer -> Class
+[[c:DL::CPtr]] の別名です。
+

@@ -1,0 +1,12 @@
+names=typealias
+visibility=public
+kind=defined
+
+--- typealias(new, orig) -> ()
+extern や struct で利用する型の別名を定義します。
+
+@param new 別名(文字列)
+@param orig 別名を付けたい型の名前(文字列)
+@see [[m:DL::Importer#extern]], [[m:DL::Importer#sizeof]], 
+     [[m:DL::Importer#struct]], [[m:DL::Importer#union]]
+

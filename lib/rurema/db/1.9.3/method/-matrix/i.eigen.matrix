@@ -1,0 +1,25 @@
+names=eigen,eigensystem
+visibility=public
+kind=defined
+
+--- eigen -> Matrix::EigenvalueDecomposition
+--- eigensystem -> Matrix::EigenvalueDecomposition
+行列の固有値と左右の固有ベクトルを保持したオブジェクトを返します。
+
+[[c:Matrix::EigenvalueDecomposition]] は to_ary を定義しているため、
+多重代入によって3つの行列(右固有ベクトル、固有値行列、左固有ベクトル)
+を得ることができます。
+これを [V, D, W] と書くと、
+(元の行列が対角化可能ならば)、
+D は対角行列で、 self == V*D*W, V = W.inverse を満たします。
+D のそれぞれの対角成分が行列の固有値です。
+
+  m = Matrix[[1, 2], [3, 4]]
+  v, d, v_inv = m.eigensystem
+  d.diagonal? # => true
+  v.inv == v_inv # => true
+  (v * d * v_inv).round(5) == m # => true
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+@see [[c:Matrix::EigenvalueDecomposition]]
+

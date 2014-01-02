@@ -1,0 +1,10 @@
+names=raised_exception
+visibility=public
+kind=defined
+
+--- raised_exception -> Exception
+
+発生した例外を返します。
+
+@raise RuntimeError :raise イベントのためのイベントフックの外側で実行し
+                    た場合に発生します。

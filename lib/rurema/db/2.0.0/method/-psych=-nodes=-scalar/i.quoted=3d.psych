@@ -1,0 +1,11 @@
+names=quoted=
+visibility=public
+kind=defined
+
+--- quoted=(bool)
+scalar が quoted であるかどうかを変更します。
+
+@param bool 設定する真偽値
+@see [[m:Psych::Nodes::Scalar#quoted]],
+     [[m:Psych::Nodes::Scalar.new]]
+

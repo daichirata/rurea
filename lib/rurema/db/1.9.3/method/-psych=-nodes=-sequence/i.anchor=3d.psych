@@ -1,0 +1,12 @@
+names=anchor=
+visibility=public
+kind=defined
+
+--- anchor=(a)
+sequence に付加する anchor を設定します。
+
+@param a 設定する anchor
+@see [[m:Psych::Nodes::Sequence#anchor]],
+     [[m:Psych::Nodes::Sequence.new]]
+
+

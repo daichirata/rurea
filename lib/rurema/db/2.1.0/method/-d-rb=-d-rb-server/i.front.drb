@@ -1,0 +1,9 @@
+names=front
+visibility=public
+kind=defined
+
+--- front -> object
+サーバに設定されたフロントオブジェクトを返します。
+
+@see [[m:DRb::DRbServer.new]], [[m:DRb.#start_service]]
+

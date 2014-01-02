@@ -1,0 +1,17 @@
+names=[]
+visibility=public
+kind=defined
+
+--- [](*rows) -> Matrix
+
+rows[i] を第 i 行とする行列を生成します。
+
+@param rows 行列の要素を数の配列の配列として渡します。
+
+例:
+
+  m = Matrix[[11, 12], [21, 22]]
+  p m  #=> Matrix[[11, 12], [21, 22]]
+       #   [11, 12]
+       #   [21, 22] 
+

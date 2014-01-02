@@ -1,0 +1,13 @@
+names=to_a,to_ary
+visibility=public
+kind=defined
+
+--- to_ary -> [Matrix, Matrix, Matrix]
+--- to_a -> [Matrix, Matrix, Matrix]
+
+[[m:Matrix::EigenvalueDecomposition#v]], 
+[[m:Matrix::EigenvalueDecomposition#d]],
+[[m:Matrix::EigenvalueDecomposition#v_inv]]
+をこの順に並べた配列を返します。
+
+

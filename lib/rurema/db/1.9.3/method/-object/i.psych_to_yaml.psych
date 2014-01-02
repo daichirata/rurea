@@ -1,0 +1,19 @@
+names=psych_to_yaml,to_yaml
+visibility=public
+kind=added
+
+--- to_yaml(options = {}) -> String
+--- psych_to_yaml(options = {}) -> String
+オブジェクトを YAML document に変換します。
+
+options でオプションを指定できます。
+[[m:Psych.dump]] と同じなので詳しくはそちらを参照してください。
+
+[[lib:syck]] に to_yaml メソッドがあるため、
+psych_to_yaml が別名として定義されています。将来的に
+syck が廃止された場合  psych_to_yaml は廃止
+される予定であるため、特別の事情がない限り to_yaml を用いてください。
+
+@param options 出力オプション
+@see [[m:Psych.dump]]
+

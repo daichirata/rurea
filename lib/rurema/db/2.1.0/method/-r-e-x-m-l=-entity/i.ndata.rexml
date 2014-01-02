@@ -1,0 +1,10 @@
+names=ndata
+visibility=public
+kind=defined
+
+--- ndata -> String | nil
+解析対象外実体(unparsed entity)宣言である場合には
+その記法名(notation name)を返します。
+
+それ以外の場合は nil を返します。
+

@@ -1,0 +1,11 @@
+names=BLOCK
+visibility=public
+kind=defined
+
+--- BLOCK -> Integer
+block style を表します。
+
+@see [[m:Psych::Nodes::Sequence.new]],
+     [[m:Psych::Nodes::Sequence#style]],
+     [[m:Psych::Handler#start_sequence]]
+

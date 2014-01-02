@@ -1,0 +1,7 @@
+names=ALIGN_UINTPTR_T
+visibility=public
+kind=defined
+
+--- ALIGN_UINTPTR_T -> Integer
+C の構造体における uintptr_t のアライメントの値。
+

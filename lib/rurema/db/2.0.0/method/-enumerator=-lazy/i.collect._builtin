@@ -1,0 +1,13 @@
+names=collect,map
+visibility=public
+kind=defined
+
+--- map {|item| ... } -> Enumerator::Lazy
+--- collect {|item| ... } -> Enumerator::Lazy
+
+[[m:Enumerable#map]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+@raise ArgumentError ブロックを指定しなかった場合に発生します。
+
+@see [[m:Enumerable#map]]
+

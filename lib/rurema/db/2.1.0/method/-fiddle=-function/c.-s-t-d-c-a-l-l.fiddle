@@ -1,0 +1,11 @@
+names=STDCALL
+visibility=public
+kind=defined
+
+--- STDCALL -> Integer
+Windows の stdcall 呼出規約を表します。
+
+stdcall 呼出規約を持つ環境でのみ定義されます。
+
+@see [[m:Fiddle::Function.new]]
+

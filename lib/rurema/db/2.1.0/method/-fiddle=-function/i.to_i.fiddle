@@ -1,0 +1,9 @@
+names=to_i
+visibility=public
+kind=defined
+
+--- to_i -> Integer
+関数ポインタのアドレスを整数で返します。
+
+@see [[m:Fiddle::Function#ptr]]
+

@@ -1,0 +1,12 @@
+names=implicit=
+visibility=public
+kind=defined
+
+--- implicit=(bool)
+sequence が implicit に開始されたかどうかを真偽値で設定します。
+
+@param bool 設定値
+
+@see [[m:Psych::Nodes::Sequence#implicit]],
+     [[m:Psych::Nodes::Sequence.new]]
+

@@ -1,0 +1,17 @@
+requires=
+classes=Fiddle,Fiddle=Function,Fiddle=Closure,Fiddle=Closure=BlockCaller
+methods=
+sublibraries=
+is_sublibrary=false
+category=
+
+*.dllや*.soなど、ダイナミックリンクライブラリを扱うためのライブラリです。
+
+[[lib:dl]] と同様の機能を持ちます。dl は環境によっては正しく
+動作しないという問題を解決するために導入されました。
+fiddle は libffi の wrapper です。
+dl ライブラリの一部機能は上記の問題を解決するため fiddle で
+実装されています。
+
+Ruby 1.9.x ではこのライブラリは単体では利用できません。
+DL を経由して利用してください。

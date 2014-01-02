@@ -1,0 +1,21 @@
+names=bytes
+visibility=public
+kind=defined
+
+--- bytes {|ch| ... }        -> self
+--- bytes                    -> Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:IO#each_byte]] を使用してください。
+
+IO の現在位置から 1 バイトずつ読み込み、それを整数として与え、ブロックを実行します。
+
+ブロックが与えられなかった場合は、自身から生成した
+[[c:Enumerator]] オブジェクトを返します。
+
+バイナリ読み込みメソッドとして動作します。
+
+@raise IOError 自身が読み込み用にオープンされていなければ発生します。
+
+@see [[m:IO#each_byte]]
+

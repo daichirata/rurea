@@ -1,0 +1,9 @@
+names=root
+visibility=public
+kind=defined
+
+--- root -> Psych::Nodes::Stream
+
+AST の root を返します。
+
+@see [[c:Psych::Nodes::Stream]]

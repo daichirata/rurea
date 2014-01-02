@@ -1,0 +1,15 @@
+names=dlopen
+visibility=public
+kind=defined
+
+--- dlopen(lib)                    -> Fiddle::Handle
+
+ダイナミックライブラリ lib をロードし、
+[[c:Fiddle::Handle]] として返します。
+
+[[m:Fiddle::Handle.new]](lib) と等価です。
+
+@param lib ロードしたいライブラリを文字列で与えます。
+
+@raise Fiddle::DLError [[man:dlopen(3)]] に失敗した時に発生します。
+

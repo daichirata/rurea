@@ -1,0 +1,11 @@
+names=compile_option
+visibility=public
+kind=defined
+
+--- compile_option -> Hash
+
+命令シーケンスのコンパイル時のデフォルトの最適化オプションを Hash で返
+します。
+
+@see [[m:RubyVM::InstructionSequence.compile_option=]]
+

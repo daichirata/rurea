@@ -1,0 +1,20 @@
+names=start_stream
+visibility=public
+kind=defined
+
+--- start_stream(encoding) -> ()
+
+YAML ストリームの始まりで呼び出されます。
+
+encoding にはストリームのエンコーディング(以下のいずれか)が渡されます。
+  * [[m:Psych::Parser::UTF8]]
+  * [[m:Psych::Parser::UTF16BE]]
+  * [[m:Psych::Parser::UTF16LE]]
+
+このメソッドは YAML のストリームごとに呼び出されます。一つのストリームには
+複数のドキュメントが含まれている可能性があります。
+
+必要に応じてこのメソッドを override してください。
+
+@param encoding ストリームのエンコーディング(整数値)
+

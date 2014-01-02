@@ -1,0 +1,9 @@
+names=DEFAULT_ENTITIES
+visibility=public
+kind=defined
+
+--- DEFAULT_ENTITIES -> { String => REXML::Entity }
+XML の仕様上デフォルトで定義されている実体の Hash table。
+
+"amp" => [[m:REXML::EntityConst::AMP]] は含まれません。
+

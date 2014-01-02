@@ -1,0 +1,9 @@
+names=UTF16LE
+visibility=public
+kind=defined
+
+--- UTF16LE -> Integer
+UTF-16LE エンコーディングを表します。
+
+@see [[m:Psych::Handler#start_stream]]
+

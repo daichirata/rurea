@@ -1,0 +1,9 @@
+type=class
+superclass=Object
+included=
+extended=
+library=fiddle
+aliases=
+aliasof=
+
+C の関数を表すクラスです。

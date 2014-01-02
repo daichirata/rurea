@@ -1,0 +1,13 @@
+names=<=>
+visibility=public
+kind=defined
+
+--- <=>(other)    -> Integer
+
+ポインタの指すアドレスの大小を比較します。
+
+other より小さい場合は -1, 等しい場合は 0、other より大きい場合は
+1を返します。
+
+@param other 比較対象の Pointer オブジェクト
+

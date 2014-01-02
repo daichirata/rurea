@@ -1,0 +1,43 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(ptr, args, ret_type, abi=Fiddle::Function::DEFAULT) -> Fiddle::Function
+ptr (関数ポインタを表す整数)から Fiddle::Function オブジェクトを
+生成します。
+
+ptr には [[c:DL::Handle]] から [[m:DL::Handle#ptr]] で取りだした
+関数ポインタ(を表す整数)を渡します。
+
+args、ret_type で関数の引数と返り値の型を指定します。これには以下の
+定数が利用できます。「-TYPE_INT」 のように符号を反転させると unsigned を
+意味します。
+  * [[m:Fiddle::TYPE_VOID]]
+  * [[m:Fiddle::TYPE_VOIDP]]
+  * [[m:Fiddle::TYPE_CHAR]]
+  * [[m:Fiddle::TYPE_SHORT]]
+  * [[m:Fiddle::TYPE_INT]]
+  * [[m:Fiddle::TYPE_LONG]]
+  * [[m:Fiddle::TYPE_LONG_LONG]]
+  * [[m:Fiddle::TYPE_FLOAT]]
+  * [[m:Fiddle::TYPE_DOUBLE]]
+
+abi で呼出規約を指定します。
+  * [[m:Fiddle::Function::DEFAULT]]
+  * [[m:Fiddle::Function::STDCALL]]
+のどちらかを指定します。
+
+  require 'dl'
+  require 'fiddle'
+  
+  include Fiddle
+  
+  libc = DL.dlopen("/lib/libc.so.6")
+  f = Fiddle::Function.new(libc["strcpy"], [TYPE_VOIDP, TYPE_VOIDP], TYPE_VOIDP)
+
+
+@param ptr C の関数を指す [[c:DL::Handle]] オブジェクト
+@param args 引数の型を表す配列
+@param ret_type 返り値の型
+@param abi 呼出規約
+

@@ -1,0 +1,9 @@
+names=DENY_ALLOW
+visibility=public
+kind=defined
+
+--- DENY_ALLOW -> Integer
+デフォルトですべてのアドレスを拒否することを意味します。
+
+@see [[m:ACL.new]]
+

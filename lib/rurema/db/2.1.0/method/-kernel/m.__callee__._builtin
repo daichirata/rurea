@@ -1,0 +1,22 @@
+names=__callee__
+visibility=public
+kind=defined
+
+--- __callee__ -> Symbol | nil
+
+現在のメソッド名を返します。
+メソッドの外で呼ばれると nil を返します。
+
+  def foo
+    p __callee__
+  end
+  alias :bar :foo
+  foo # => :foo
+  bar # => :bar
+  p __callee__ # => nil
+
+[[m:Kernel.#__method__]] とは異なり、現在のメソッド名が alias されたメ
+ソッドの場合には alias 先のメソッド名を返します。
+
+@see [[m:Kernel.#__method__]]
+

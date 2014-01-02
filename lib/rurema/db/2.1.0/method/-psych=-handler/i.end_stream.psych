@@ -1,0 +1,10 @@
+names=end_stream
+visibility=public
+kind=defined
+
+--- end_stream -> ()
+
+YAML stream の終端を見付けたときに呼び出されます。
+
+必要に応じてこのメソッドを override してください。
+

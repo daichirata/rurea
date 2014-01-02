@@ -1,0 +1,9 @@
+type=class
+superclass=Object
+included=
+extended=
+library=psych
+aliases=
+aliasof=
+
+Psych 内部で利用する各種 Visitor class を保持しているモジュール。

@@ -1,0 +1,18 @@
+names=caller_locations
+visibility=public
+kind=defined
+
+--- caller_locations(start = 1, length = nil) -> [Thread::Backtrace::Location] | nil
+--- caller_locations(range)                   -> [Thread::Backtrace::Location] | nil
+
+現在のフレームを [[c:Thread::Backtrace::Location]] の配列で返します。引
+数で指定した値が範囲外の場合は nil を返します。
+
+@param start 開始フレームの位置を数値で指定します。
+
+@param length 取得するフレームの個数を指定します。
+
+@param range  取得したいフレームの範囲を示す [[c:Range]] オブジェクトを指定します。
+
+@see [[c:Thread::Backtrace::Location]], [[m:Kernel.#caller]]
+

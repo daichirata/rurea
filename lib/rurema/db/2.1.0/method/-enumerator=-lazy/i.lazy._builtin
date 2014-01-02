@@ -1,0 +1,8 @@
+names=lazy
+visibility=public
+kind=defined
+
+--- lazy -> self
+
+self を返します。
+

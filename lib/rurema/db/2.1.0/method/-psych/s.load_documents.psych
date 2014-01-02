@@ -1,0 +1,16 @@
+names=load_documents
+visibility=public
+kind=defined
+
+--- load_documents(yaml) ->[object]
+--- load_documents(yaml){|obj| ... } -> ()
+複数の YAML ドキュメントを含むデータを
+Ruby のオブジェクトに変換します。
+このメソッドは deprecated です。[[m:Psych.load_stream]] を代わりに
+使ってください。
+
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+
+
+

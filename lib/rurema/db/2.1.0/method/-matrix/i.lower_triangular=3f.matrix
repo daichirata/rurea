@@ -1,0 +1,7 @@
+names=lower_triangular?
+visibility=public
+kind=defined
+
+--- lower_triangular? -> bool
+行列が下三角行列ならば真を返します。
+

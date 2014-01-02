@@ -1,0 +1,9 @@
+type=module
+superclass=
+included=
+extended=
+library=fiddle
+aliases=
+aliasof=
+
+fiddle ライブラリの名前空間をなすモジュール

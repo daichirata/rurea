@@ -1,0 +1,11 @@
+names=command=
+visibility=public
+kind=defined
+
+--- command=(cmd)
+サービスを起動するためのコマンドを指定するための [[c:Hash]] を
+設定します。
+
+@param cmd コマンドを設定した Hash
+@see [[m:DRb::ExtServManager.command]]
+

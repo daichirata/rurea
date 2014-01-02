@@ -1,0 +1,15 @@
+.last_error	Fiddle.last_error
+.last_error=	Fiddle.last_error=
+.win32_last_error	Fiddle.win32_last_error
+.win32_last_error=	Fiddle.win32_last_error=
+:Pointer	Fiddle::Pointer
+:TYPE_CHAR	Fiddle::TYPE_CHAR
+:TYPE_DOUBLE	Fiddle::TYPE_DOUBLE
+:TYPE_FLOAT	Fiddle::TYPE_FLOAT
+:TYPE_INT	Fiddle::TYPE_INT
+:TYPE_LONG	Fiddle::TYPE_LONG
+:TYPE_LONG_LONG	Fiddle::TYPE_LONG_LONG
+:TYPE_SHORT	Fiddle::TYPE_SHORT
+:TYPE_VOID	Fiddle::TYPE_VOID
+:TYPE_VOIDP	Fiddle::TYPE_VOIDP
+:WINDOWS	Fiddle::WINDOWS

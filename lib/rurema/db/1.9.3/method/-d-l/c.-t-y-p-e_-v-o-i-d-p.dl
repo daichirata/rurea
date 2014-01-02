@@ -1,0 +1,7 @@
+names=TYPE_VOIDP
+visibility=public
+kind=defined
+
+--- TYPE_VOIDP -> Integer
+C の void* 型を表す定数。
+

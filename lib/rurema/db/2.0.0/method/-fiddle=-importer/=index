@@ -1,0 +1,11 @@
+#[]	Fiddle::Importer#[]
+#bind	Fiddle::Importer#bind
+#create_value	Fiddle::Importer#create_value
+#dlload	Fiddle::Importer#dlload
+#extern	Fiddle::Importer#extern
+#import_symbol	Fiddle::Importer#import_symbol
+#sizeof	Fiddle::Importer#sizeof
+#struct	Fiddle::Importer#struct
+#typealias	Fiddle::Importer#typealias
+#union	Fiddle::Importer#union
+#value	Fiddle::Importer#create_value

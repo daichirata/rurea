@@ -1,0 +1,7 @@
+names=ALIGN_PTRDIFF_T
+visibility=public
+kind=defined
+
+--- ALIGN_PTRDIFF_T -> Integer
+C の構造体における ptrdiff_t のアライメントの値。
+

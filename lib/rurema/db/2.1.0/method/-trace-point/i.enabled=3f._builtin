@@ -1,0 +1,11 @@
+names=enabled?
+visibility=public
+kind=defined
+
+--- enabled? -> bool
+
+self のトレースが有効な場合に true を、そうでない場合に false を返しま
+す。
+
+@see [[m:TracePoint#enable]], [[m:TracePoint#disable]]
+

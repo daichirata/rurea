@@ -1,0 +1,15 @@
+type=module
+superclass=
+included=
+extended=
+library=dl.types
+aliases=
+aliasof=
+
+よく使われる型の別名を定義するモジュールです。
+
+include すると 以下の型が定義されます。
+  * "uint" 
+  * "u_int"
+  * "ulong" 
+  * "u_long"

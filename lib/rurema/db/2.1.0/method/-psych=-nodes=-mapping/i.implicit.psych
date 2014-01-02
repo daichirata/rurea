@@ -1,0 +1,10 @@
+names=implicit
+visibility=public
+kind=defined
+
+--- implicit -> bool
+mapping が implicit に開始されたかどうかを真偽値で返します。
+
+@see [[m:Psych::Nodes::Mapping#implicit=]],
+     [[m:Psych::Nodes::Mapping.new]]
+

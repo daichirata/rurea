@@ -1,0 +1,10 @@
+names=DEFAULT
+visibility=private 
+kind=defined
+
+--- DEFAULT -> Random
+
+デフォルトの疑似乱数生成器です。
+[[m:Random.rand]] や [[m:Kernel.#rand]] などで使用されます。
+
+@see [[m:Random.srand]], [[m:Kernel.#srand]]

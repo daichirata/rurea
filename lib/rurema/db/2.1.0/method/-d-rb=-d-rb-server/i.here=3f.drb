@@ -1,0 +1,10 @@
+names=here?
+visibility=public
+kind=defined
+
+--- here?(uri) -> bool
+uri がサーバに紐付けられたものであれば真を返します。
+
+@param uri URI 文字列
+
+

@@ -1,0 +1,10 @@
+names=<=>
+visibility=public
+kind=defined
+
+--- <=>(other) -> 0 | nil
+
+self === other である場合に 0 を返します。そうでない場合には nil を返します。
+
+@see [[m:Object#===]]
+

@@ -1,0 +1,22 @@
+names=-
+visibility=public
+kind=defined
+
+--- -(n)   -> Fiddle::Pointer
+
+自身のアドレスから n バイトを引いた新しい Pointer オブジェクトを返します。
+
+この返り値には、free 関数がセットされず、size は 0 とされます。
+
+@param n アドレスの差分を整数で指定します。
+
+例:
+ require 'fiddle' 
+ 
+ s = 'abc'
+ cptr = Fiddle::Pointer[s]
+ cptr += 1
+ p cptr[0,1]         #=> "b"
+ cptr -= 1
+ p cptr[0,1]         #=> "a"
+

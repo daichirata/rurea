@@ -1,0 +1,11 @@
+names=hermitian?
+visibility=public
+kind=defined
+
+--- hermitian? -> bool
+行列がエルミートならば真を返します。
+対角成分をチェックしないバグがあり、エルミートでないのに真を返す場合があります。
+2.0.0 で修正されました。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
+

@@ -1,0 +1,8 @@
+names=binding
+visibility=public
+kind=defined
+
+--- binding -> Binding
+
+発生したイベントによって生成された [[c:Binding]] オブジェクトを返します。
+

@@ -1,0 +1,29 @@
+type=class
+superclass=Fiddle=Closure
+included=
+extended=
+library=fiddle
+aliases=
+aliasof=
+
+Ruby のブロックをラップしたコールバック関数を表すクラスです。
+
+Ruby のブロックを C の関数ポインタとして表現するためのクラスです。
+
+  require 'fiddle'
+  include Fiddle
+
+  libc = DL.dlopen("/lib/libc.so.6")
+  qs = Fiddle::Function.new(libc["qsort"],
+                            [TYPE_VOIDP, TYPE_INT, TYPE_INT, TYPE_VOIDP],
+                            TYPE_VOID)
+  compare = Fiddle::Closure::BlockCaller.new(TYPE_INT, [TYPE_VOIDP, TYPE_VOIDP]){|x, y|
+    # qsort の比較関数は 型が int(*)(void*, void*) であるため、
+    # このブロックには DL::CPtr オブジェクトが渡される。
+    # そのポインタが指す先は比較している文字なので、
+    # DL::CPtr#to_s で1文字の文字列に変換している
+    x.to_s(1) <=> y.to_s(1)
+  }
+  s = "7x0cba(Uq)"
+  qs.call(s, s.size, 1, Compare.new(TYPE_INT, [TYPE_VOIDP, TYPE_VOIDP]))
+  p s # =>  "()07Uabcqx"

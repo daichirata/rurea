@@ -1,0 +1,8 @@
+names=BASE
+visibility=public
+kind=defined
+
+--- BASE -> Fixnum
+
+ライブラリ内部で使用します。
+

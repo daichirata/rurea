@@ -1,0 +1,11 @@
+names=last_error=
+visibility=public
+kind=defined
+
+--- last_error=(errno)
+[[m:Fiddle.last_error]] で返される値を設定します。
+
+errno は fiddle が設定するのでユーザはこのメソッドを使わないでください。
+
+@param errno 設定する errno
+

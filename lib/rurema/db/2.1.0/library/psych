@@ -1,0 +1,94 @@
+requires=
+classes=Psych,Psych=Exception,Psych=BadAlias,Psych=SyntaxError,Psych=Set,Psych=Omap,Psych=Parser,Psych=Parser=Mark,Psych=Handler,Psych=Emitter,Psych=TreeBuilder,Psych=Nodes,Psych=Nodes=Node,Psych=Nodes=Stream,Psych=Nodes=Document,Psych=Nodes=Sequence,Psych=Nodes=Mapping,Psych=Nodes=Scalar,Psych=Nodes=Alias,Psych=Visitors,Psych=Visitors=Visitor,Psych=Visitors=YAMLTree,Psych=Stream,Psych=ScalarScanner
+methods=Object/s.yaml_tag.psych,Object/i.psych_to_yaml.psych,Module/i.psych_yaml_as.psych,Kernel/i.psych_y.psych
+sublibraries=
+is_sublibrary=false
+category=FileFormat
+
+[[lib:yaml]] のバックエンドライブラリです。libyaml ベースで作成されてお
+り、YAML バージョン 1.1 を扱う事ができます。
+
+
+=== 概要
+
+Psych を用いると YAML のパースと出力ができます。
+これらの機能は libyaml [[url:http://pyyaml.org/wiki/LibYAML]] を用いて
+実装されています。さらに Ruby の大半のオブジェクトと YAML フォーマットの
+データの間を相互に変換することができます。
+
+=== 基本的な使いかた
+
+  require 'psych'
+  # YAML のテキストをパースする
+  Psych.load("--- foo") # => "foo"
+
+  # YAML のデータを出力
+  Psych.dump("foo")     # => "--- foo\n...\n"
+  { :a => 'b'}.to_yaml  # => "---\n:a: b\n"
+
+基本的な使い方はこれだけです。簡単な用事は
+[[m:Psych.load]]、[[m:Psych.dump]] で片付きます。
+
+
+==== YAML のパース
+
+Psych は YAML ドキュメントのパースができます。
+ユーザの必要に応じ、高水準な API から低水準な API まで用意されています。
+最も低水準なものは、イベントベースな API です。中程度の水準のものとして
+YAML の AST(Abstract Syntax Tree)にアクセスする APIがあります。
+高水準な API では、YAML のドキュメントを Ruby のオブジェクトに変換する
+ことができます。
+
+===== 低水準 パース API
+
+低水準のパース API は利用者が入力となる YAML ドキュメントについて
+すでに良く知っていて、AST を構築したり Ruby のオブジェクトに変換する
+のが無駄である場合に使います。この API については
+[[c:Psych::Parser]] を参照してください。イベントベースの API です。
+
+===== 中水準 パース API
+
+Psych には YAML ドキュメントの AST にアクセスする API があります。
+この AST は [[c:Psych::Parser]] と [[c:Psych::TreeBuilder]] で構築します。
+[[m:Psych.parse_stream]]、[[c:Psych::Nodes]]、[[c:Psych::Nodes::Node]]
+などを経由して AST を解析したり操作したりできます。
+
+===== 高水準 パース API
+
+YAML ドキュメントをパースして Ruby のオブジェクトに変換することができます。
+詳しくは [[m:Psych.load]] を見てください。
+
+
+==== YAML ドキュメントの出力
+
+Psych は YAML ドキュメントを出力する機能があります。
+高・中・底の三つの水準の API があります。
+低水準 API はイベントベースの API で、中水準のものは AST を構築する API、
+高水準の API は Ruby のオブジェクトを直接 YAML ドキュメントに変換する API
+です。これはパースの高・中・底水準 API と対応しています。
+
+
+===== 低水準出力 API
+
+低水準出力 API はイベントベースな仕組みです。
+各イベントは [[c:Psych::Emitter]] オブジェクトに送られます。
+このオブジェクトには、
+各イベントをどのように YAML ドキュメントに変換するかをセットしておきます。
+この API は出力フォーマットがあらかじめわかっている場合や性能が重要な
+場合に利用します。
+
+詳しくは [[c:Psych::Emitter]] を見てください。
+
+=====  中水準出力 API 
+
+中水準 API では、利用者が AST を構築し YAML ドキュメントに変換します。
+この AST は YAML ドキュメントをパースして得られるものと同じものです。
+詳しくは
+[[c:Psych::Nodes]]、[[c:Psych::Nodes::Node]]、[[c:Psych::TreeBuilder]]
+を参照してください。
+
+===== 高水準出力 API
+
+高水準 API を使うと Ruby のデータ構造(オブジェクト)を YAML のドキュメントに
+変換できます。
+詳しくは [[m:Psych.dump]] を参照してください。

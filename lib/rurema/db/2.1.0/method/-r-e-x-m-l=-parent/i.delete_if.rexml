@@ -1,0 +1,13 @@
+names=delete_if
+visibility=public
+kind=defined
+
+--- delete_if {|object| ... } -> ()
+--- delete_if -> Enumerator
+
+各子ノードに対しブロックを呼び出し、真を返したノードを削除します。
+
+ブロックを省略した場合は、各子ノードに対し上の操作を
+する [[c:Enumerator]] オブジェクトを返します。
+
+

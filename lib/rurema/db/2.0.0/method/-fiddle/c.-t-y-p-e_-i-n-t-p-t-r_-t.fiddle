@@ -1,0 +1,7 @@
+names=TYPE_INTPTR_T
+visibility=public
+kind=defined
+
+--- TYPE_INTPTR_T -> Integer
+C の intptr_t 型を表す定数。
+

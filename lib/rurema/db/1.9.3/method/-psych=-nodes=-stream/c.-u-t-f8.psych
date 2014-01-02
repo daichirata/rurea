@@ -1,0 +1,11 @@
+names=UTF8
+visibility=public
+kind=defined
+
+--- UTF8 -> Integer
+UTF8 エンコーディングを表します。
+
+[[m:Psych::Parser::UTF8]] と同じ値です。
+
+@see [[m:Psych::Nodes::Stream.new]]
+

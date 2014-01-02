@@ -1,0 +1,15 @@
+names=[],sym
+visibility=public
+kind=defined
+
+--- sym(func) -> Integer
+--- [](func) -> Integer
+
+ライブラリのデフォルトの検索順序に従い、現在のライブラリ以降の
+シンボルを探します。
+
+DL::Handle::NEXT.sym(func) と同じです。詳しくは [[man:dlsym(3)]] の
+RTLD_NEXT を見てください。
+
+@raise DL::DLError シンボルが見つからなかった時に発生します。
+

@@ -1,0 +1,8 @@
+names=INFINITY
+visibility=public
+kind=defined
+
+--- INFINITY -> BigDecimal
+
+正の無限大を表す [[c:BigDecimal]] オブジェクトを返します。
+

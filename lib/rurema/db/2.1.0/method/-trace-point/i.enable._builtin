@@ -1,0 +1,41 @@
+names=enable
+visibility=public
+kind=defined
+
+--- enable         -> bool
+--- enable { ... } -> object
+
+self のトレースを有効にします。
+
+実行前の [[m:TracePoint#enabled?]] を返します。(トレースが既に有効であっ
+た場合は true を返します。そうでなければ false を返します)
+
+  trace.enabled?  # => false
+  trace.enable    # => false (実行前の状態)
+
+  # トレースが有効
+
+  trace.enabled?  # => true
+  trace.enable    # => true (実行前の状態)
+
+  # 引き続きトレースが有効
+
+ブロックが与えられた場合、ブロック内でのみトレースが有効になります。
+この場合はブロックの評価結果を返します。
+
+  trace.enabled?   # => false
+
+  trace.enable do
+    trace.enabled? # => true
+  end
+
+  trace.enabled?   # => false
+
+[注意] イベントフックのためのメソッドにブロックの外側で参照した場合は
+[[c:RuntimeError]] が発生する事に注意してください。
+
+  trace.enable { p trace.lineno }
+  # => RuntimeError: access from outside
+
+@see [[m:TracePoint#disable]], [[m:TracePoint#enabled?]]
+

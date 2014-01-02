@@ -1,0 +1,35 @@
+names=lines
+visibility=public
+kind=defined
+
+--- lines(rs = $/) {|line| ... }        -> self
+--- lines(limit) {|line| ... }          -> self
+--- lines(rs, limit) {|line| ... }      -> self
+--- lines(rs = $/)                      -> Enumerator
+--- lines(limit)                        -> Enumerator
+--- lines(rs, limit)                    -> Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:IO#each_line]] を使用してください。
+使用すると警告メッセージが表示されます。
+
+IO の現在位置から 1 行ずつ文字列として読み込み、それを引数として
+与えられたブロックを実行します。
+
+ブロックが与えられなかった場合は、自身から生成した
+[[c:Enumerator]] オブジェクトを返します。
+
+テキスト読み込みメソッドとして動作します。
+
+limit で最大読み込みバイト数を指定します。ただしマルチバイト文字が途中で
+切れないように余分に読み込む場合があります。
+
+
+@param rs 行の区切りを文字列で指定します。rs に nil を指定すると行区切りなしとみなします。
+          空文字列 "" を指定すると連続する改行を行の区切りとみなします(パラグラフモード)。
+@param limit 最大の読み込みバイト数
+
+@raise IOError 自身が読み込み用にオープンされていなければ発生します。
+
+@see [[m:$/]], [[m:IO#each_line]]
+

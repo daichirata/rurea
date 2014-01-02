@@ -1,0 +1,19 @@
+type=module
+superclass=
+included=
+extended=
+library=yaml
+aliases=
+aliasof=
+
+YAML (YAML Ain't Markup Language) を扱うモジュールです。
+
+YAML オブジェクトは実際は [[c:Psych]] オブジェクトです。その他のオブジェ
+クトも同様に実体は別のオブジェクトです。もし確認したいメソッドの記述が
+見つからない場合は、[[lib:psych]] ライブラリを確認してください。
+
+  require "yaml"
+
+  p YAML::ENGINE.yamler # => "psych"
+  p YAML                # => Psych
+  p YAML::Stream        # => Psych::Stream

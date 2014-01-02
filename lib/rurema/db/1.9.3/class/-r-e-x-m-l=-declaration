@@ -1,0 +1,12 @@
+type=class
+superclass=REXML=Child
+included=
+extended=
+library=rexml
+aliases=
+aliasof=
+
+DTD に含まれる各種宣言ノードを表すクラスです。
+
+このクラス自体は直接はインスタンスを作りません。
+各サブクラスのインスタンスが使われます。

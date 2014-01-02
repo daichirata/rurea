@@ -1,0 +1,12 @@
+names=DEBUG=
+visibility=public
+kind=defined
+
+--- DEBUG=(val)
+
+スレッドのデバッグレベルを val に設定します。
+
+使用するためには、THREAD_DEBUG を -1 にして Ruby をコンパイルする必要が
+あります。
+
+

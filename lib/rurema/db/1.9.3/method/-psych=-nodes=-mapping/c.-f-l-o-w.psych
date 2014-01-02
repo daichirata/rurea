@@ -1,0 +1,11 @@
+names=FLOW
+visibility=public
+kind=defined
+
+--- FLOW -> Integer
+flow style を表します。
+
+@see [[m:Psych::Nodes::Mapping.new]],
+     [[m:Psych::Nodes::Mapping#style]],
+     [[m:Psych::Handler#start_mapping]]
+

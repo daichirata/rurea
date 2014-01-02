@@ -1,0 +1,10 @@
+names=eigenvector_matrix_inv,v_inv
+visibility=public
+kind=defined
+
+--- eigenvector_matrix_inv  -> Matrix
+--- v_inv  -> Matrix
+左固有ベクトルを縦に並べた行列を返します。
+
+これは [[m:Matrix::EigenvalueDecomposition#v]] の逆行列です
+

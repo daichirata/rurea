@@ -1,0 +1,25 @@
+names=+@,ptr
+visibility=public
+kind=defined
+
+--- ptr   -> Fiddle::Pointer
+--- +@    -> Fiddle::Pointer
+
+自身の指す値を Pointer にして返します。
+
+自身の指す値はポインタであると仮定します。
+C 言語におけるポインタのポインタに対する間接参照 *p と同じです。 
+
+この返り値には、free 関数がセットされず、size は 0 とされます。
+
+例:
+
+ require 'fiddle'
+ 
+ s = 'abc'
+ cptr = Fiddle::Pointer[s]
+ cref = cptr.ref
+ p cref.to_s(4).unpack('l*')[0]  #=> 136121648
+ p cptr.to_i                     #=> 136121648
+ p cref.ptr.to_s                 #=> "abc"
+

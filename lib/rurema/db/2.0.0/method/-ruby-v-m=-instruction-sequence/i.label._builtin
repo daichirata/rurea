@@ -1,0 +1,42 @@
+names=label
+visibility=public
+kind=defined
+
+--- label -> String
+
+self が表す命令シーケンスのラベルを返します。通常、メソッド名、クラス名、
+モジュール名などで構成されます。
+
+トップレベルでは "<main>" を返します。self を文字列から作成していた場合
+は "<compiled>" を返します。
+
+例1:irb で実行した場合
+
+  iseq = RubyVM::InstructionSequence.compile('num = 1 + 2')
+  # => <RubyVM::InstructionSequence:<compiled>@<compiled>>
+  iseq.label
+  # => "<compiled>"
+
+例2: [[m:RubyVM::InstructionSequence.compile_file]] を使用した場合
+
+  # /tmp/method.rb
+  def hello
+    puts "hello, world"
+  end
+
+  # irb
+  > iseq = RubyVM::InstructionSequence.compile_file('/tmp/method.rb')
+  > iseq.label # => "<main>"
+
+例3:
+
+  # /tmp/method2.rb
+  def hello
+    puts "hello, world"
+  end
+
+  RubyVM::InstructionSequence.of(method(:hello)).label
+  # => "hello"
+
+@see [[m:RubyVM::InstructionSequence#base_label]]
+

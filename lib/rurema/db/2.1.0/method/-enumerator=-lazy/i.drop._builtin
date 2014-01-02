@@ -1,0 +1,14 @@
+names=drop
+visibility=public
+kind=defined
+
+--- drop(n) -> Enumerator::Lazy
+
+[[m:Enumerable#drop]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+@param n 要素数を指定します。
+
+@raise ArgumentError n に負の数を指定した場合に発生します。
+
+@see [[m:Enumerable#drop]]
+

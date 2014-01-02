@@ -1,0 +1,10 @@
+names=hash
+visibility=public
+kind=defined
+
+--- hash -> Integer
+
+self のハッシュ値を返します。
+
+符号、小数部、指数部が同じ場合に同じハッシュ値を返します。
+

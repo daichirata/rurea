@@ -1,0 +1,13 @@
+names=find_all,select
+visibility=public
+kind=defined
+
+--- select {|item| ... } -> Enumerator::Lazy
+--- find_all {|item| ... } -> Enumerator::Lazy
+
+[[m:Enumerable#select]] と同じですが、配列ではなくEnumerator::Lazy を返します。
+
+@raise ArgumentError ブロックを指定しなかった場合に発生します。
+
+@see [[m:Enumerable#select]]
+

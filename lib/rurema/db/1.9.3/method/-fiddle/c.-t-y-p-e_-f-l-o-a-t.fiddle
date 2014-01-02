@@ -1,0 +1,9 @@
+names=TYPE_FLOAT
+visibility=public
+kind=defined
+
+--- TYPE_FLOAT -> Integer
+C の float 型を表します。
+
+@see [[m:Fiddle::Function.new]]
+

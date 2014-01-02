@@ -1,0 +1,5 @@
+= class Enumerator < Object
+
+include Enumerable
+
+#@include(Enumerator.inside)

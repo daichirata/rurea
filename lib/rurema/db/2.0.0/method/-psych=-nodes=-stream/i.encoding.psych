@@ -1,0 +1,9 @@
+names=encoding
+visibility=public
+kind=defined
+
+--- encoding -> Integer
+stream に使われるエンコーディングを返します。
+
+@see [[m:Psych::Nodes::Stream#encoding=]]
+

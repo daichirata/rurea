@@ -1,0 +1,14 @@
+names=fdiv
+visibility=public
+kind=defined
+
+--- fdiv(other) -> Float | Complex
+
+self を other で割った商を [[c:Float]] で返します。
+ただし [[c:Complex]] が関わる場合は例外です。
+その場合も成分は Float になります。
+
+@param other self を割る数を指定します。
+
+@see [[m:Numeric#quo]]
+

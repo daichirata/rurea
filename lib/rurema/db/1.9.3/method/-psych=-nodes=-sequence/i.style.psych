@@ -1,0 +1,10 @@
+names=style
+visibility=public
+kind=defined
+
+--- style -> Integer
+sequence の style を返します。
+
+@see [[m:Psych::Nodes::Sequence#style=]],
+     [[m:Psych::Nodes::Sequence.new]]
+

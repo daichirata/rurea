@@ -1,0 +1,32 @@
+type=module
+superclass=
+included=
+extended=
+library=dl.types
+aliases=
+aliasof=
+
+Windows 用の型の別名を定義するモジュールです。
+
+include すると 以下の型が定義されます。
+  * "DWORD"
+  * "PDWORD"
+  * "DWORD32"
+  * "DWORD64"
+  * "WORD"
+  * "PWORD"
+  * "BOOL"
+  * "ATOM"
+  * "BYTE"
+  * "PBYTE"
+  * "UINT"
+  * "ULONG"
+  * "UCHAR"
+  * "HANDLE"
+  * "PHANDLE"
+  * "PVOID"
+  * "LPCSTR"
+  * "LPSTR"
+  * "HINSTANCE"
+  * "HDC"
+  * "HWND"

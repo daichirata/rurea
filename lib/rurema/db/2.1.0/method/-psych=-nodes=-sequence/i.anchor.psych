@@ -1,0 +1,10 @@
+names=anchor
+visibility=public
+kind=defined
+
+--- anchor -> String|nil
+sequence に付加された anchor を返します。
+
+@see [[m:Psych::Nodes::Sequence#anchor=]],
+     [[m:Psych::Nodes::Sequence.new]]
+

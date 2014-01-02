@@ -1,0 +1,10 @@
+names=absolute_path
+visibility=public
+kind=defined
+
+--- absolute_path -> String
+
+self が表すフレームの絶対パスを返します。
+
+@see [[m:Thread::Backtrace::Location#path]]
+

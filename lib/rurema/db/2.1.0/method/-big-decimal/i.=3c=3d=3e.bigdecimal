@@ -1,0 +1,11 @@
+names=<=>
+visibility=public
+kind=defined
+
+--- <=>(other) -> -1 | 0 | 1 | nil
+
+self が other より大きい場合に 1 を、等しい場合に 0 を、小さい場合には
+-1 をそれぞれ返します。
+
+self と other が比較できない場合には nil を返します。
+

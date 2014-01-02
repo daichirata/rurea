@@ -1,0 +1,9 @@
+type=module
+superclass=
+included=
+extended=
+library=rexml
+aliases=
+aliasof=
+
+[[lib:rexml]] の名前空間をなすモジュール。

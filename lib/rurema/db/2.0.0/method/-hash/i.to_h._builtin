@@ -1,0 +1,9 @@
+names=to_h
+visibility=public
+kind=defined
+
+--- to_h -> self | Hash
+
+self を返します。[[c:Hash]] クラスのサブクラスから呼び出した場合は
+self を [[c:Hash]] オブジェクトに変換します。
+

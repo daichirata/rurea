@@ -1,0 +1,7 @@
+names=upper_triangular?
+visibility=public
+kind=defined
+
+--- upper_triangular? -> bool
+行列が上三角行列ならば真を返します。
+

@@ -1,0 +1,11 @@
+names=BUILD_RUBY_VERSION
+visibility=public
+kind=defined
+
+--- BUILD_RUBY_VERSION -> String
+ビルドに用いた ruby のバージョンを表す文字列。
+
+通常、[[m:Object::RUBY_VERSION]] と同じ。
+
+
+

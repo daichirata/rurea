@@ -1,0 +1,8 @@
+names=eigenvector_matrix,v
+visibility=public
+kind=defined
+
+--- eigenvector_matrix -> Matrix
+--- v  -> Matrix
+右固有ベクトルを横に並べた行列を返します。
+

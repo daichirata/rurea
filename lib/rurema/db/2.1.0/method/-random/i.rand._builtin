@@ -1,0 +1,49 @@
+names=rand
+visibility=public
+kind=defined
+
+--- rand -> Float
+--- rand(max) -> Integer | Float
+--- rand(range) -> Integer | Float | nil
+
+疑似乱数を発生させます。
+
+最初の形式では 0.0 以上 1.0 未満の実数を返します。
+
+二番目の形式では 0 以上 max 未満の数を返します。
+max が正の整数なら整数を、正の実数なら実数を返します。
+0 や負の数を指定することは出来ません。
+
+三番目の形式では range で指定された範囲の値を返します。
+range の始端と終端が共に整数の場合は整数を、少なくとも片方が実数の場合は実数を返します。
+range に含まれる数が無い場合は nil を返します。
+
+引数が実数でも範囲でもない場合は [[m:Object#to_int]] で変換した値が指定されたものとして扱います。
+
+@param max   乱数値の上限を正の整数または実数で指定します。
+             max 自体は乱数値の範囲に含まれません。
+@param range 発生させる乱数値の範囲を [[c:Range]] オブジェクトで指定します。
+             range の境界は数値でなければなりません。
+
+@raise ArgumentError 引数の数が0または1では無い時、引数に負の数値を与えた時に発生します。
+
+  # Kernel.#rand とほぼ同様の使い勝手
+  prng = Random.new(1234)
+  prng.rand            #=> 0.1915194503788923
+  srand(1234)
+  rand                 #=> 0.1915194503788923
+  
+  # max に実数も指定出来る
+  prng.rand(6.5)       #=> 4.043707011758907
+  rand(6.5)            #=> 5  (rand(6) と同等)
+  
+  # 上と同じ種で再初期化
+  prng = Random.new(1234)
+  srand(1234)
+  # Kernel.#rand は Array#sample などの影響を受けて値がずれることがある
+  [0, 1].sample
+  prng.rand            #=> 0.1915194503788923
+  rand                 #=> 0.6221087710398319
+
+@see [[m:Kernel.#rand]]
+

@@ -1,0 +1,13 @@
+names=import_symbol
+visibility=public
+kind=defined
+
+--- import_symbol(name) -> DL::CPtr
+取り込んだライブラリからシンボルをインポートします。
+
+返り値はシンボルがロードされたメモリのアドレスを持つ [[c:DL::CPtr]] 
+オブジェクトを返します。
+
+@param name シンボル名(文字列)
+
+

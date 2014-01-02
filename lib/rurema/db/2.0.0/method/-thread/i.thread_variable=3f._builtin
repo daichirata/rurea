@@ -1,0 +1,21 @@
+names=thread_variable?
+visibility=public
+kind=defined
+
+--- thread_variable?(key) -> bool
+
+引数 key で指定した名前のスレッドローカル変数が存在する場合に true、そ
+うでない場合に false を返します。
+
+@param key 変数名を [[c:String]] か [[c:Symbol]] で指定します。
+
+   me = Thread.current
+   me.thread_variable_set(:oliver, "a")
+   me.thread_variable?(:oliver)    # => true
+   me.thread_variable?(:stanley)   # => false
+
+[注意]: [[m:Thread#[] ]] でセットしたローカル変数(Fiber ローカル変数)が
+対象ではない事に注意してください。
+
+@see [[m:Thread#thread_variable_get]], [[m:Thread#[] ]]
+

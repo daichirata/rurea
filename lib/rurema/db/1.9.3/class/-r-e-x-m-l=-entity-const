@@ -1,0 +1,9 @@
+type=module
+superclass=
+included=
+extended=
+library=rexml
+aliases=
+aliasof=
+
+XML の標準的な実体(エンティティ)を保持しているモジュールです。

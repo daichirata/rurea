@@ -1,0 +1,14 @@
+names=offset
+visibility=public
+kind=defined
+
+--- offset -> Integer
+エラーが生じた位置の offset をバイト数で
+返します。
+
+offset とは、
+[[m:Psych::SyntaxError#line]], [[m:Psych::SyntaxError#column]] 
+で指示される位置からの相対位置です。
+この位置から 0 バイトの位置でエラーが発生することが多いため、
+このメソッドはしばしば 0 を返します。
+

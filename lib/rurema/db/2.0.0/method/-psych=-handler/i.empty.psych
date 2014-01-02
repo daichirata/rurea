@@ -1,0 +1,10 @@
+names=empty
+visibility=public
+kind=defined
+
+--- empty -> ()
+
+empty event が発生したときに呼び出されます。
+
+実際問題としてこれが呼び出される例は知られていません。
+

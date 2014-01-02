@@ -1,0 +1,14 @@
+type=module
+superclass=
+included=
+extended=
+library=dl.import
+aliases=
+aliasof=
+
+C の関数をモジュールにインポートするためのモジュールです。
+
+対象となるモジュールに [[m:Object#extend]] することで、
+そのモジュールにインポートできるようになります。
+
+使いかたは [[lib:dl]] や [[lib:dl/import]] を参照してください。

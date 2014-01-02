@@ -1,0 +1,9 @@
+names=system=
+visibility=public
+kind=defined
+
+--- system=(value)
+システム識別子を変更します。
+
+@param value 設定するシステム識別子
+

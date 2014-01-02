@@ -1,0 +1,12 @@
+names=enable_close
+visibility=public
+kind=defined
+
+--- enable_close     -> nil
+GC によるオブジェクトの回収時に self をクローズする([[m:DL::Handle#close]])
+ように設定します。
+
+デフォルトでは close しません。
+
+@see [[m:DL::Handle#disable_close]], [[m:DL::Handle#close_enabled?]]
+

@@ -1,0 +1,16 @@
+type=class
+superclass=Object
+included=
+extended=
+library=drb
+aliases=DRbObject
+aliasof=
+
+リモートの dRuby オブジェクトを表すオブジェクトです。
+
+このクラスのインスタンスはプロキシとして働きます。
+つまりインスタンスへのメソッド呼び出しはリモートプロセスに送られ
+リモート側でメソッドが呼び出されます。
+
+内部的には [[m:Object#method_missing]] でメソッド呼び出しを
+hook して、それを転送します。

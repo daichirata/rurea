@@ -1,0 +1,43 @@
+type=class
+superclass=Enumerator
+included=
+extended=
+library=_builtin
+aliases=
+aliasof=
+
+map や select などのメソッドの遅延評価版を提供するためのクラス。
+動作は通常の Enumerator と同じですが、以下のメソッドが遅延評価を行う
+(つまり、配列ではなく Enumerator を返す) ように再定義されています。
+
+ * map/collect
+ * flat_map/collect_concat
+ * select/find_all
+ * reject
+ * grep
+ * take, take_while
+ * drop, drop_while
+ * zip (※互換性のため、ブロックを渡さないケースのみlazy)
+ * cycle (※互換性のため、ブロックを渡さないケースのみlazy)
+
+Lazyオブジェクトは、[[m:Enumerable#lazy]]メソッドによって生成されます。
+
+Lazyから値を取り出すには、[[m:Enumerator::Lazy#force]] または
+[[m:Enumerator::Lazy#first]] を呼びます。
+
+例:
+
+  # 二乗して偶数になるような整数を、小さい方から5個表示する
+  p (1..Float::INFINITY).lazy.select{|n| (n**2).even?}.first(5)
+  # LTSV (http://ltsv.org/) 形式のログファイルから検索を行う
+  # [[m:Enumerator::Lazy#map]] は配列ではなく Enumerator を返すため、
+  # 巨大な配列を確保しようとしてメモリを使い切ったりはしない
+  open("log.txt"){|f|
+    f.each_line.lazy.map{|line|
+      Hash[line.split(/\t/).map{|s| s.split(/:/, 2)}]
+    }.select{|hash|
+      hash["req"] =~ /GET/ && hash["status"] == "200"
+    }.each{|hash|
+      p hash
+    }
+  }

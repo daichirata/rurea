@@ -1,0 +1,9 @@
+names=>
+visibility=public
+kind=defined
+
+--- >(other) -> bool
+
+self が other より大きい場合に true を、そうでない場合に false を返しま
+す。
+

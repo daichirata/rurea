@@ -1,0 +1,9 @@
+names=to_s
+visibility=public
+kind=defined
+
+--- to_s -> String
+
+self が表すフレームを [[m:Kernel.#caller]] と同じ表現にした文字列を返し
+ます。
+

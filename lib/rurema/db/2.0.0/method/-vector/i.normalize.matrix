@@ -1,0 +1,12 @@
+names=normalize
+visibility=public
+kind=defined
+
+--- normalize -> Vector
+自身を [[m:Vector#norm]] で正規化したベクトルを返します。
+
+[[m:Vector#norm]] を使うため複素ベクトルでは一般に正しい値を返しません。
+
+@raise Vector::ZeroVectorError ベクトルが0である場合に発生します。
+
+

@@ -1,0 +1,8 @@
+names=frac
+visibility=public
+kind=defined
+
+--- frac -> BigDecimal
+
+self の小数部分を新しい [[c:BigDecimal]] オブジェクトにして返します。
+

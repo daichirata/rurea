@@ -1,0 +1,14 @@
+names=divmod
+visibility=public
+kind=defined
+
+--- divmod(other) -> [Integer, Numeric]
+
+self を other で割った商 q と余り r を、 [q, r] という 2 要素の配列にし
+て返します。 商 q は常に整数ですが、余り r は整数であるとは限りません。
+
+@param other self を割る数。
+
+@see [[m:Numeric#divmod]]
+
+

@@ -1,0 +1,11 @@
+names=plain
+visibility=public
+kind=defined
+
+--- plain -> bool
+scalar が plain style であるかどうかを返します。
+
+
+@see [[m:Psych::Nodes::Scalar#plain=]],
+     [[m:Psych::Nodes::Scalar.new]]
+

@@ -1,0 +1,8 @@
+names=parser
+visibility=public
+kind=defined
+
+--- parser -> Psych::Parser
+デフォルトで使われるのパーサを返します。
+
+

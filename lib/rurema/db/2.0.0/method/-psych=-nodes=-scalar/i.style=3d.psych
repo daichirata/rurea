@@ -1,0 +1,11 @@
+names=style=
+visibility=public
+kind=defined
+
+--- style=(sty)
+scalar の style を変更します。
+
+@param sty 設定する style
+@see [[m:Psych::Nodes::Scalar#style=]],
+     [[m:Psych::Nodes::Scalar.new]]
+

@@ -1,0 +1,14 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(addr) -> DL::CStruct
+addr のアドレスが指すメモリを構造体のアドレスとみなし、
+構造体を作ります。
+
+C におけるキャストと似ています。
+  return (struct foo*)addr;
+というコートと対応していると言えます。
+
+@param addr アドレス
+

@@ -1,0 +1,10 @@
+names=line_width=
+visibility=public
+kind=defined
+
+--- line_width=(width)
+
+「好ましい」行幅を整数値で設定します。
+
+@param width 好ましい行幅
+@see [[m:Psych::Emitter#line_width]]

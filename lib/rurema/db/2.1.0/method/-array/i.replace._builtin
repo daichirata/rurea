@@ -1,0 +1,19 @@
+names=replace
+visibility=public
+kind=defined
+
+--- replace(another)    -> self
+
+配列の内容を配列 another の内容で置き換えます。
+
+@param another 配列を指定します。
+               配列以外のオブジェクトを指定した場合は to_ary メソッドに
+               よる暗黙の型変換を試みます。
+
+@raise TypeError 引数に配列以外の(暗黙の型変換が行えない)オブジェクトを
+                 指定した場合に発生します。
+
+    a = [1, 2, 3]
+    a.replace [4, 5, 6]
+    p a                 #=> [4, 5, 6]
+

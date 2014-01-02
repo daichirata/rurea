@@ -1,0 +1,11 @@
+names=SINGLE_QUOTED
+visibility=public
+kind=defined
+
+--- SINGLE_QUOTED -> Integer
+single quoted style を表します。
+
+@see [[m:Psych::Nodes::Scalar.new]],
+     [[m:Psych::Nodes::Scalar#style]],
+     [[m:Psych::Handler#scalar]]
+

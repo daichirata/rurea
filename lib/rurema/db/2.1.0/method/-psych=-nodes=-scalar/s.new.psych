@@ -1,0 +1,33 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(value, anchor=nil, tag=nil, plain=true, quoted=false, style=ANY) -> Psych::Nodes:Scalar
+
+Scalar オブジェクトを生成します。
+
+value は scalar の値を文字列で指定します。
+
+anchor には scalar に付加されている anchor を文字列で指定します。
+anchor を付けない場合には nil を指定します。
+
+tag には scalar に付加されている tag を文字列で指定します。
+tag を付けない場合には nil を指定します。
+
+plain は plain style であるかどうか、quoted は quoted style であるかどうか
+を指定します。style には node の style を整数値で渡します。
+style は次の値のいずれかです。
+  * [[m:Psych::Nodes::Scalar::ANY]]
+  * [[m:Psych::Nodes::Scalar::PLAIN]]
+  * [[m:Psych::Nodes::Scalar::SINGLE_QUOTED]]
+  * [[m:Psych::Nodes::Scalar::DOUBLE_QUOTED]]
+  * [[m:Psych::Nodes::Scalar::LITERAL]]
+  * [[m:Psych::Nodes::Scalar::FOLDED]]
+
+@param value スカラー値
+@param anchor 関連付けられた anchor の名前
+@param tag タグ名
+@param plain plain style であるかどうか
+@param quoted quoted style であるかどうか
+@param style スカラーのスタイル
+

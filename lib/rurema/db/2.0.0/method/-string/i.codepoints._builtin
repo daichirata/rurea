@@ -1,0 +1,19 @@
+names=codepoints
+visibility=public
+kind=defined
+
+--- codepoints                      -> [Integer]
+--- codepoints {|codepoint| block } -> self
+
+文字列の各コードポイントの配列を返します。(self.each_codepoint.to_a と同じです)
+
+   #coding:UTF-8
+   "hello わーるど".codepoints
+   # => [104, 101, 108, 108, 111, 32, 12431, 12540, 12427, 12393]
+
+ブロックが指定された場合は [[m:String#each_codepoint]] と同じように動作
+します。ただし obsolete のため、ブロックを指定する場合は
+[[m:String#each_codepoint]] を使用してください。
+
+@see [[m:String#each_codepoint]]
+

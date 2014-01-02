@@ -1,0 +1,16 @@
+names=+
+visibility=public
+kind=defined
+
+--- +(v) -> Vector | Matrix
+
+self にベクトル v を加えたベクトルを返します。
+
+v には column_size が 1 の [[c:Matrix]] オブジェクトも指定できます。
+その場合は返り値も [[c:Matrix]] オブジェクトになります。
+
+@param v 加算するベクトル。加算可能な行列やベクトルを指定します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 自分自身と引数のベクト
+       ルの要素の数(次元)が異なっていたときに発生します。
+

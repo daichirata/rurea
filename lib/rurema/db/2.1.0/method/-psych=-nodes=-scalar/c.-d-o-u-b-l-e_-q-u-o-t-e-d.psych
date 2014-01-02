@@ -1,0 +1,11 @@
+names=DOUBLE_QUOTED
+visibility=public
+kind=defined
+
+--- DOUBLE_QUOTED -> Integer
+double quoted style を表します。
+
+@see [[m:Psych::Nodes::Scalar.new]],
+     [[m:Psych::Nodes::Scalar#style]],
+     [[m:Psych::Handler#scalar]]
+

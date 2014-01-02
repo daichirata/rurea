@@ -1,0 +1,13 @@
+names=lineno
+visibility=public
+kind=defined
+
+--- lineno -> Integer
+
+self が表すフレームの行番号を返します。
+
+例: [[c:Thread::Backtrace::Location]] の例1を用いた例
+
+  loc = c(0..1).first
+  loc.lineno # => 2
+

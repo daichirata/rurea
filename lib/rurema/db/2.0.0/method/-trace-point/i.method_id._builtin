@@ -1,0 +1,11 @@
+names=method_id
+visibility=public
+kind=defined
+
+--- method_id -> Symbol | nil
+
+イベントが発生したメソッド名を [[c:Symbol]] で返します。トップレベルで
+あった場合は nil を返します。
+
+@raise RuntimeError イベントフックの外側で実行した場合に発生します。
+

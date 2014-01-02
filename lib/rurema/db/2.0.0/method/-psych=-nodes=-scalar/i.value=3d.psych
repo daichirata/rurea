@@ -1,0 +1,11 @@
+names=value=
+visibility=public
+kind=defined
+
+--- value=(v)
+scalar の値を設定します。
+
+@param v 設定する値
+@see [[m:Psych::Nodes::Scalar#value]],
+     [[m:Psych::Nodes::Scalar.new]]
+

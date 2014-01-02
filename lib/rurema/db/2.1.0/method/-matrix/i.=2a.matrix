@@ -1,0 +1,20 @@
+names=*
+visibility=public
+kind=defined
+
+--- *(m) -> Matrix | Vector
+
+self に行列またはベクトル m を右から乗じた行列を返します。
+
+m が [[c:Vector]] オブジェクトなら返り値も [[c:Vector]] オブジェクトになります。
+
+@param m 右からの乗算が定義可能な行列やベクトルを指定します。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 次元が合わない場合に発生します
+
+--- *(other) -> Matrix
+
+self の各成分に数 other を掛けた行列を返します。
+
+@param other self の各成分に掛ける [[c:Numeric]] オブジェクトを指定します。
+

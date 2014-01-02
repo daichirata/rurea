@@ -1,0 +1,49 @@
+type=class
+superclass=Object
+included=
+extended=
+library=fiddle
+aliases=
+aliasof=
+
+コールバック関数を表すクラスです。
+
+Ruby のメソッド(call)を C の関数ポインタとして表現するためのクラスです。
+
+FFI の closure の wrapper です。
+
+利用法としては、このクラスのサブクラスを作って
+そのサブクラスに call メソッドを定義し、
+new でオブジェクトを生成することで利用します。
+  
+  require 'fiddle'
+  include Fiddle # TYPE_* を使うために include する
+  
+  class Compare < Fiddle::Closure
+    # qsort の比較関数は 型が int(*)(void*, void*) であるため、
+    # このメソッドには DL::CPtr オブジェクトが渡される。
+    # そのポインタが指す先は比較している文字なので、
+    # DL::CPtr#to_s で1文字の文字列に変換している
+    def call(x, y)
+      x.to_s(1) <=> y.to_s(1)
+    end
+  end
+  
+  libc = DL.dlopen("/lib/libc.so.6")
+  qs = Fiddle::Function.new(libc["qsort"],
+                            [TYPE_VOIDP, TYPE_INT, TYPE_INT, TYPE_VOIDP],
+                            TYPE_VOID)
+  s = "7x0cba(Uq)"
+  qs.call(s, s.size, 1, Compare.new(TYPE_INT, [TYPE_VOIDP, TYPE_VOIDP]))
+  p s # =>  "()07Uabcqx"
+
+[[m:Class.new]] を使うことで、サブクラスを明示的に作ることなしに
+コールバックオブジェクトを作ることができます。
+  compare = Class.new(Fiddle::Closure){
+    def call(x, y)
+      x.to_s(1) <=> y
+    end
+  }.new(TYPE_INT, [TYPE_VOIDP, TYPE_VOIDP])
+
+単に Ruby のブロックを C の(コールバック)関数に変換したい場合は
+[[c:Fiddle::BlockClosure]] を使うほうが簡単です。

@@ -1,0 +1,9 @@
+type=class
+superclass=Exception
+included=
+extended=
+library=irb.ext.loader
+aliases=
+aliasof=
+
+irb 中で require などを中断した場合に発生する例外です。

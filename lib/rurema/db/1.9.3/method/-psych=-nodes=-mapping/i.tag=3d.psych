@@ -1,0 +1,11 @@
+names=tag=
+visibility=public
+kind=defined
+
+--- tag=(t)
+mapping に付加する tag を設定します。
+
+@param t 設定する tag
+@see [[m:Psych::Nodes::Mapping#anchor=]],
+     [[m:Psych::Nodes::Mapping.new]]
+

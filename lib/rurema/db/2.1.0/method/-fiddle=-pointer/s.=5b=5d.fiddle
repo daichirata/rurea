@@ -1,0 +1,35 @@
+names=[],to_ptr
+visibility=public
+kind=defined
+
+--- [](val)       -> Fiddle::Pointer
+--- to_ptr(val)   -> Fiddle::Pointer
+
+与えられた val と関連した Pointer オブジェクトを生成して返します。
+
+val が文字列の場合は文字列が格納されているメモリ領域を指す Pointer 
+オブジェクトを返します。
+
+IO オブジェクトの場合は FILE ポインタを表す Pointer オブジェクトを返します。
+
+val に to_ptr メソッドが定義されている場合は、val.to_ptr を呼び、
+Pointer オブジェクトに変換したものを返します。
+
+val が整数の場合はそれをアドレスとする Pointer オブジェクトを返します。
+
+上以外の場合は、整数に変換(to_int)し
+それをアドレスとする Pointer オブジェクトを返します。
+
+
+@param val Ruby オブジェクトを指定します。
+
+@raise Fiddle::DLError to_ptr の返り値が Pointer オブジェクトでない場合に発生します
+@raise TypeError 上記のいずれの変換も不可能であった場合に発生します
+
+例:
+
+ require 'fiddle'
+ s = "abc"
+ p Fiddle::Pointer[s].to_i                 #=> 136186388
+ p [s].pack('p*').unpack('l!*')[0]  #=> 136186388
+

@@ -1,0 +1,12 @@
+names=ARGF
+visibility=private 
+kind=defined
+
+--- ARGF -> Object
+引数 (なければ標準入力) で構成される仮想ファイル
+(詳細は [[c:ARGF]]、[[c:ARGF.class]] を参照)。
+
+つまり [[m:Kernel.#gets]] は [[m:ARGF.class#gets]] と同じ意味です。
+[[m:ARGF.class#file]] で現在読み込み中のファイルオブジェクトが、
+[[m:ARGF.class#filename]] で現在読み込み中のファイル名が得られます。
+

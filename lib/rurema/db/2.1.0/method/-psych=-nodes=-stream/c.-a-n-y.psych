@@ -1,0 +1,9 @@
+names=ANY
+visibility=public
+kind=defined
+
+--- ANY -> Integer
+任意のエンコーディングを表す値。
+
+[[m:Psych::Parser::ANY]] と同じ値です。
+

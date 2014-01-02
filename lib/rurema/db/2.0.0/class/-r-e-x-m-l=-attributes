@@ -1,0 +1,12 @@
+type=class
+superclass=Hash
+included=
+extended=
+library=rexml
+aliases=
+aliasof=
+
+属性の集合を表すクラスです。
+
+[[m:REXML::Element#attributes]] はこのクラスのオブジェクトを返します。
+各属性には [[m:REXML::Attributes#[] ]] でアクセスします。

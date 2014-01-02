@@ -1,0 +1,7 @@
+names=TYPE_PTRDIFF_T
+visibility=public
+kind=defined
+
+--- TYPE_PTRDIFF_T -> Integer
+C の ptrdiff_t 型を表す定数。
+

@@ -1,0 +1,12 @@
+names=enable_close
+visibility=public
+kind=defined
+
+--- enable_close     -> nil
+GC によるオブジェクトの回収時に self をクローズする([[m:Fiddle::Handle#close]])
+ように設定します。
+
+デフォルトでは close しません。
+
+@see [[m:Fiddle::Handle#disable_close]], [[m:Fiddle::Handle#close_enabled?]]
+

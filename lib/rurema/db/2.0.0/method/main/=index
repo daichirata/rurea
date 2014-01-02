@@ -1,0 +1,6 @@
+.include	main.include
+.inspect	main.inspect
+.private	main.private
+.public	main.public
+.to_s	main.inspect
+.using	main.using

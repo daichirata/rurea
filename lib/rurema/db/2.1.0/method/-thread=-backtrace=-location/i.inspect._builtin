@@ -1,0 +1,8 @@
+names=inspect
+visibility=public
+kind=defined
+
+--- inspect -> String
+
+[[m:Thread::Backtrace::Location#to_s]] の結果を人間が読みやすいような文
+字列に変換したオブジェクトを返します。

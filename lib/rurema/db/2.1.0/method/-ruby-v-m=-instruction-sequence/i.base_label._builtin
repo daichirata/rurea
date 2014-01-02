@@ -1,0 +1,38 @@
+names=base_label
+visibility=public
+kind=defined
+
+--- base_label -> String
+
+self が表す命令シーケンスの基本ラベルを返します。
+
+例1:irb で実行した場合
+
+  iseq = RubyVM::InstructionSequence.compile('num = 1 + 2')
+  # => <RubyVM::InstructionSequence:<compiled>@<compiled>>
+  iseq.base_label
+  # => "<compiled>"
+
+例2: [[m:RubyVM::InstructionSequence.compile_file]] を使用した場合
+
+  # /tmp/method.rb
+  def hello
+    puts "hello, world"
+  end
+
+  # irb
+  > iseq = RubyVM::InstructionSequence.compile_file('/tmp/method.rb')
+  > iseq.base_label # => "<main>"
+
+例3:
+
+  # /tmp/method2.rb
+  def hello
+    puts "hello, world"
+  end
+
+  RubyVM::InstructionSequence.of(method(:hello)).base_label
+  # => "hello"
+
+@see [[m:RubyVM::InstructionSequence#label]]
+

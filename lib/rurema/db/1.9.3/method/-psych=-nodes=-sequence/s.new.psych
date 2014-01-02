@@ -1,0 +1,28 @@
+names=new
+visibility=public
+kind=defined
+
+--- new(anchor=nil, tag=nil, implicit=true, style=BLOCK) -> Psych::Nodes::Sequence
+
+新たな sequence オブジェクトを生成します。
+
+anchor には sequence に付加されている anchor を文字列で指定します。
+anchor を付けない場合には nil を指定します。
+
+tag には sequence に付加されている tag を文字列で指定します。
+tag を付けない場合には nil を指定します。
+
+implicit には sequence が implicit に開始されたかどうかを
+真偽値で指定します。
+
+style には YAML ドキュメント上の style を整数で指定します。以下のいずれ
+かを指定できます。
+  * [[m:Psych::Nodes::Sequence::ANY]]
+  * [[m:Psych::Nodes::Sequence::BLOCK]]
+  * [[m:Psych::Nodes::Sequence::FLOW]]
+
+@param anchor sequence に付加された anchor
+@param tag sequence に付加された tag
+@param implicit sequence が implicit に開始されたかどうか
+@param style YAML ドキュメント上の style
+

@@ -1,0 +1,11 @@
+names=EXCEPTION_INFINITY
+visibility=public
+kind=defined
+
+--- EXCEPTION_INFINITY -> Fixnum
+
+[[c:BigDecimal]] の計算結果が無限大になった場合に例外を発生させるかどう
+かを設定、確認する際の値を返します。
+
+[[m:BigDecimal.mode]] の第 1 引数に指定します。
+

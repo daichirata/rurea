@@ -1,0 +1,84 @@
+names=to_a
+visibility=public
+kind=defined
+
+--- to_a -> Array
+
+self の情報を 14 要素の配列にして返します。
+
+命令シーケンスを以下の情報で表します。
+
+: magic
+
+  データフォーマットを示す文字列。常に
+  "YARVInstructionSequence/SimpleDataFormat"。
+
+: major_version
+
+  命令シーケンスのメジャーバージョン。
+
+: minor_version
+
+  命令シーケンスのマイナーバージョン。
+
+: format_type
+
+  データフォーマットを示す数値。常に 1。
+
+: misc
+
+  以下の要素から構成される [[c:Hash]] オブジェクト。
+
+  :arg_size： メソッド、ブロックが取る引数の総数(1 つもない場合は 0)。
+
+  :local_size： ローカル変数の総数 + 1。
+
+  :stack_max： スタックの深さ。([[c:SystemStackError]] を検出するために使用)
+
+: #label
+
+  メソッド名、クラス名、モジュール名などで構成される命令シーケンスのラ
+  ベル。トップレベルでは "<main>"。文字列から作成していた場合は
+  "<compiled>"。
+
+: #path
+
+  命令シーケンスの相対パス。文字列から作成していた場合は "<compiled>"。
+
+: #absolute_path
+
+  命令シーケンスの絶対パス。文字列から作成していた場合は "<compiled>"。
+
+: #first_lineno
+
+  命令シーケンスの 1 行目の行番号。
+
+: type
+
+  命令シーケンスの種別。
+  :top、:method、:block、:class、:rescue、:ensure、:eval、:main、
+  :defined_guard のいずれか。
+
+: locals
+
+  全ての引数名、ローカル変数名からなる [[c:Symbol]] の配列。
+
+: args
+
+  引数の指定が必須のメソッド、ブロックの引数の個数。あるいは以下のよう
+  な配列。
+
+    [required_argc, [optional_arg_labels, ...],
+     splat_index, post_splat_argc, post_splat_index,
+     block_index, simple]
+
+  より詳細な情報については、vm_core.h を参照。
+
+: catch_table
+
+  例外や制御構造のオペレータ(rescue、next、redo、break など)の一覧。
+
+: bytecode
+
+  命令シーケンスを構成する命令とオペランドの配列の配列。
+

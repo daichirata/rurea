@@ -1,0 +1,13 @@
+names=inspect,to_s
+visibility=public
+kind=defined
+
+--- inspect -> String
+--- to_s    -> String
+
+self の内容を人間に読みやすい文字列にして返します。
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
+

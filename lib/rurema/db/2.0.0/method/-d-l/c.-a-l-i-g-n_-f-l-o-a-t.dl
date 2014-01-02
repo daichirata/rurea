@@ -1,0 +1,7 @@
+names=ALIGN_FLOAT
+visibility=public
+kind=defined
+
+--- ALIGN_FLOAT -> Integer
+C の構造体における float のアライメントの値。
+

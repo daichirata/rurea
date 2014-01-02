@@ -1,0 +1,27 @@
+names=end,last
+visibility=public
+kind=defined
+
+--- end -> object
+--- last -> object
+
+終端の要素を返します。範囲オブジェクトが終端を含むかどうかは関係ありま
+せん。
+
+  p (1..5).end   # => 5
+  p (1...5).end  # => 5
+
+--- last(n) -> [object]
+
+最後の n 要素を返します。範囲内に要素が含まれない場合は空の配列を返します。
+
+@param n 取得する要素数を整数で指定します。整数以外のオブジェクトを指定
+         した場合は to_int メソッドによる暗黙の型変換を試みます。
+
+@raise TypeError 引数に整数以外の(暗黙の型変換が行えない)オブジェクトを
+                 指定した場合に発生します。
+
+@raise ArgumentError n に負の数を指定した場合に発生します。
+
+@see [[ruby-core:12697]]
+

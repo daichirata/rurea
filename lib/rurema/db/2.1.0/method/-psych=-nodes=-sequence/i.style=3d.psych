@@ -1,0 +1,12 @@
+names=style=
+visibility=public
+kind=defined
+
+--- style=(sty)
+sequence の style を設定します。
+
+@param sty 設定する style 
+
+@see [[m:Psych::Nodes::Sequence#style]],
+     [[m:Psych::Nodes::Sequence.new]]
+

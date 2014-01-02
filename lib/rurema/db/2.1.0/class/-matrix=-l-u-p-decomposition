@@ -1,0 +1,11 @@
+type=class
+superclass=Object
+included=
+extended=
+library=matrix
+aliases=
+aliasof=
+
+行列のLUP分解の情報を保持するクラスです。
+
+[[m:Matrix#lup_decomposition]] の返り値のクラスです。

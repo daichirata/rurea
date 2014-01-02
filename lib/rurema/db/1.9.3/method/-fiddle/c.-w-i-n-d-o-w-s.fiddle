@@ -1,0 +1,7 @@
+names=WINDOWS
+visibility=public
+kind=defined
+
+--- WINDOWS -> bool
+Windows 環境下では true、それ以外では false です。
+

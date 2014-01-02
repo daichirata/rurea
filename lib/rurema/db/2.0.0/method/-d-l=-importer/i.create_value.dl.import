@@ -1,0 +1,30 @@
+names=create_value,value
+visibility=public
+kind=defined
+
+--- create_value(type, val = nil) -> DL::CStruct
+--- value(type, val = nil) -> DL::CStruct
+型が type で要素名が "value" であるような構造体を
+定義([[m:DL::Importer#struct]])し、
+その構造体のメモリを [[m:DL::CStruct#malloc]] で確保し、
+確保したメモリを保持しているオブジェクトを返します。
+
+type は "int", "void*" といった文字列で型を指定します。
+val に nil 以外を指定すると、確保された構造体に
+その値を代入します。
+
+@param type 型を表す文字列
+@param val 構造体に確保される初期値
+
+例
+  require 'dl/import'
+  
+  module M
+    extend DL::Importer
+  end
+  
+  v = M.value("int", 32)
+  p v.value # => 32
+  v.value = 48
+  p v.value # => 48
+

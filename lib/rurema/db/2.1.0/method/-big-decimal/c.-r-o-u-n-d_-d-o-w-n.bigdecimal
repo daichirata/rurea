@@ -1,0 +1,11 @@
+names=ROUND_DOWN
+visibility=public
+kind=defined
+
+--- ROUND_DOWN -> Fixnum
+
+[[c:BigDecimal]] の計算結果の丸め処理で全て切り捨てるかどうかを設定、確
+認する際の値を返します。
+
+[[m:BigDecimal.mode]] の第 2 引数に指定します。
+

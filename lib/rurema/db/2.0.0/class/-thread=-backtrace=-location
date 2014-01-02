@@ -1,0 +1,58 @@
+type=class
+superclass=Object
+included=
+extended=
+library=_builtin
+aliases=
+aliasof=
+
+Ruby のフレームを表すクラスです。
+
+[[m:Kernel.#caller_locations]] から生成されます。
+
+例1:
+
+  # caller_locations.rb
+  def a(skip)
+    caller_locations(skip)
+  end
+  def b(skip)
+    a(skip)
+  end
+  def c(skip)
+    b(skip)
+  end
+
+  c(0..2).map do |call|
+    puts call.to_s
+  end
+
+例1の実行結果:
+
+  caller_locations.rb:2:in `a'
+  caller_locations.rb:5:in `b'
+  caller_locations.rb:8:in `c'
+
+例2:
+
+  # foo.rb
+  class Foo
+    attr_accessor :locations
+    def initialize(skip)
+      @locations = caller_locations(skip)
+    end
+  end
+
+  Foo.new(0..2).locations.map do |call|
+    puts call.to_s
+  end
+
+例2の実行結果:
+
+  init.rb:4:in `initialize'
+  init.rb:8:in `new'
+  init.rb:8:in `<main>'
+
+=== 参考
+
+ * Ruby VM アドベントカレンダー #4 vm_backtrace.c: [[url:http://www.atdot.net/~ko1/diary/201212.html#d4]]

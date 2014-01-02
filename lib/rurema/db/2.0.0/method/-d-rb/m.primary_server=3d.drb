@@ -1,0 +1,11 @@
+names=primary_server=
+visibility=public
+kind=defined
+
+--- primary_server=(server)
+ローカルプロセスのプライマリサーバーを変更します。
+
+通常、プライマリサーバは [[m:DRb.#start_service]] などが
+設定するものであり、ユーザが変更すべきではありません。
+このメソッドは dRuby の内部構造を良く理解した上で利用してください。
+

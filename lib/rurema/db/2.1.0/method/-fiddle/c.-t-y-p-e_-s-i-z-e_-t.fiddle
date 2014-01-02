@@ -1,0 +1,7 @@
+names=TYPE_SIZE_T
+visibility=public
+kind=defined
+
+--- TYPE_SIZE_T -> Integer
+C の size_t 型を表す定数。
+

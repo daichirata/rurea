@@ -1,0 +1,11 @@
+names=inspect
+visibility=public
+kind=defined
+
+--- inspect -> String
+
+self の情報をラベルとパスを含んだ人間に読みやすい文字列にして返します。
+
+@see [[m:RubyVM::InstructionSequence#label]],
+     [[m:RubyVM::InstructionSequence#path]]
+

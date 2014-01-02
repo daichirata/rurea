@@ -1,0 +1,30 @@
+names=stat
+visibility=public
+kind=defined
+
+--- stat(result_hash = {}) -> {Symbol => Integer}
+
+GC 内部の統計情報を [[c:Hash]] で返します。
+
+@param result_hash 戻り値のためのハッシュを指定します。省略した場合は新
+                   しくハッシュを作成します。result_hash の内容は上書き
+                   されます。
+
+@return GC 内部の統計情報を[[c:Hash]] で返します。
+
+  GC.stat
+  # =>
+  {
+    :count          => 18,
+    :heap_used      => 77,
+    :heap_length    => 77,
+    :heap_increment => 0,
+    :heap_live_num  => 23287,
+    :heap_free_num  => 8115,
+    :heap_final_num => 0,
+  }
+
+戻り値のハッシュは処理系に依存します。これは将来変更になるかもしれません。
+
+本メソッドは C Ruby 以外では動作しません。
+

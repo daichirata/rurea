@@ -1,0 +1,20 @@
+names=included_modules
+visibility=public
+kind=defined
+
+--- included_modules -> [Module]
+
+self にインクルードされているモジュールの配列を返します。
+
+  module Mixin
+  end
+
+  module Outer
+    include Mixin
+  end
+
+  Mixin.included_modules   #=> []
+  Outer.included_modules   #=> [Mixin]
+
+@see [[m:Module#ancestors]]
+

@@ -1,0 +1,35 @@
+names=compile_option=
+visibility=public
+kind=defined
+
+--- compile_option=(options)
+
+命令シーケンスのコンパイル時のデフォルトの最適化オプションを引数
+options で指定します。
+
+@param options コンパイル時の最適化オプションを true、false、nil、
+               [[c:Hash]] のいずれかで指定します。true を指定した場合は
+               全てのオプションを有効にします。false を指定した場合は全
+               てのオプションを無効にします。nil を指定した場合はいずれ
+               のオプションも変更しません。また、[[c:Hash]] を指定した
+               場合は以下のキーに対して、true か false を指定する事で個
+               別に有効、無効を指定します。
+//emlist{
+  * :inline_const_cache
+  * :instructions_unification
+  * :operands_unification
+  * :peephole_optimization
+  * :specialized_instruction
+  * :stack_caching
+  * :tailcall_optimization
+  * :trace_instruction
+//}
+               :debug_level をキーに指定した場合は値を数値で指定します。
+
+.new、.compile、.compile_file メソッドの実行の際に option 引数を指定し
+た場合はその実行のみ最適化オプションを変更する事もできます。
+
+@see [[m:RubyVM::InstructionSequence.new]],
+     [[m:RubyVM::InstructionSequence.compile]],
+     [[m:RubyVM::InstructionSequence.compile_file]]
+

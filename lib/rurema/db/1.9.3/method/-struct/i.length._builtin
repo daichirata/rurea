@@ -1,0 +1,12 @@
+names=length,size
+visibility=public
+kind=defined
+
+--- length -> Fixnum
+--- size -> Fixnum
+構造体のメンバの数を返します。
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
+

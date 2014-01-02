@@ -1,0 +1,11 @@
+names=FOLDED
+visibility=public
+kind=defined
+
+--- FOLDED -> Integer
+folded style を表します。
+
+@see [[m:Psych::Nodes::Scalar.new]],
+     [[m:Psych::Nodes::Scalar#style]],
+     [[m:Psych::Handler#scalar]]
+

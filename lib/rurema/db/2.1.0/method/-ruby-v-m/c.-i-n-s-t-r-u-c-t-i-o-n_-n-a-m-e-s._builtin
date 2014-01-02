@@ -1,0 +1,11 @@
+names=INSTRUCTION_NAMES
+visibility=public
+kind=defined
+
+--- INSTRUCTION_NAMES -> [String]
+
+[[c:RubyVM]] の命令シーケンスの名前の一覧を返します。
+
+@see [[c:RubyVM::InstructionSequence]]
+
+

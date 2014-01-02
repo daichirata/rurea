@@ -1,0 +1,24 @@
+names=end_document
+visibility=public
+kind=defined
+
+--- end_document(implicit) -> ()
+ドキュメントが終了したときに呼び出されます。
+
+ドキュメントが implicit に終わったならば implicit には真が渡されます。
+
+必要に応じてこのメソッドを override してください。
+
+@param implicit ドキュメントが implicit に終わったかどうか
+
+=== 例
+
+以下の YAML ドキュメントでは implicit は true です。
+  ---
+    hello world
+
+また、以下の YAML ドキュメントでは implicit は false です。
+  ---
+    hello world
+  ...
+

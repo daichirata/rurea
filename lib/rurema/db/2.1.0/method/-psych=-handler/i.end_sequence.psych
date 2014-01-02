@@ -1,0 +1,10 @@
+names=end_sequence
+visibility=public
+kind=defined
+
+--- end_sequence -> ()
+
+sequence の終了の見付けたときに呼び出されます。
+
+必要に応じてこのメソッドを override してください。
+

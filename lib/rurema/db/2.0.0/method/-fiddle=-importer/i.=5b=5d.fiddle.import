@@ -1,0 +1,13 @@
+names=[]
+visibility=public
+kind=defined
+
+--- [](name) -> Fiddle::Function|nil
+[[m:Fiddle::Importer#extern]] でインポートした関数の 
+[[c:Fiddle::Function]] オブジェクト
+を返します。
+
+name という名前の関数が存在しない場合は nil を返します。
+
+@param name 関数の名前の文字列
+

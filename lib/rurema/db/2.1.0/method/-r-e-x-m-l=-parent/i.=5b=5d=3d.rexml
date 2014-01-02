@@ -1,0 +1,17 @@
+names=[]=
+visibility=public
+kind=defined
+
+--- []=(index, node)
+--- []=(range, node)
+--- []=(start, length, node)
+子ノード列上の指定した場所を node で置き換えます。
+
+[[m:Array#[]=]] と同じ指定が可能です。
+
+@param index 変更場所の index ([[c:Integer]])
+@param range 変更場所の範囲 ([[c:Range]])
+@param start 変更範囲の最初の位置 ([[c:Integer]])
+@param length 変更範囲の個数 ([[c:Integer]])
+@param node 置き換えるノード
+

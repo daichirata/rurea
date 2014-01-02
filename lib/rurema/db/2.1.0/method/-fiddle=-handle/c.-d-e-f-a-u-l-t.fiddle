@@ -1,0 +1,9 @@
+names=DEFAULT
+visibility=public
+kind=defined
+
+--- DEFAULT -> Fiddle::Handle
+RTLD_DEFAULT で表わされる疑似ハンドルを表します。
+
+詳しくは [[man:dlsym(3)]] を参照してください。
+

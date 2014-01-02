@@ -1,0 +1,14 @@
+names=self
+visibility=public
+kind=defined
+
+--- self -> object
+
+イベントを発生させたオブジェクトを返します。
+
+以下のようにする事で同じ値を取得できます。
+
+  trace.binding.eval('self')
+
+@see [[m:TracePoint#binding]]
+

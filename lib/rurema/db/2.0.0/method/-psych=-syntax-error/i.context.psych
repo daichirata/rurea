@@ -1,0 +1,7 @@
+names=context
+visibility=public
+kind=defined
+
+--- context -> String
+エラーが生じたコンテキストを文字列で返します。
+

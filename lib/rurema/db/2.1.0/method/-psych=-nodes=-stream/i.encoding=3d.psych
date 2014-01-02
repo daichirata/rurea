@@ -1,0 +1,15 @@
+names=encoding=
+visibility=public
+kind=defined
+
+--- encoding=(enc)
+stream に使われるエンコーディングを指定します。
+
+以下のいずれかを指定します。
+  * [[m:Psych::Nodes::Node::UTF8]]
+  * [[m:Psych::Nodes::Node::UTF16BE]]
+  * [[m:Psych::Nodes::Node::UTF16LE]]
+
+@param enc 設定するエンコーディング
+@see [[m:Psych::Nodes::Stream#encoding]]
+

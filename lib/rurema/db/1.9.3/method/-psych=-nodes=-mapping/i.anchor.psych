@@ -1,0 +1,10 @@
+names=anchor
+visibility=public
+kind=defined
+
+--- anchor -> String|nil
+mapping に付加された anchor を返します。
+
+@see [[m:Psych::Nodes::Mapping#anchor=]],
+     [[m:Psych::Nodes::Mapping.new]]
+

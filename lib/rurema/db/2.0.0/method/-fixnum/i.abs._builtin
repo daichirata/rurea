@@ -1,0 +1,9 @@
+names=abs,magnitude
+visibility=public
+kind=defined
+
+--- abs -> Fixnum | Bignum
+--- magnitude -> Fixnum | Bignum
+
+self の絶対値を返します。
+

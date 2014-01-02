@@ -1,0 +1,20 @@
+names=public
+visibility=public
+kind=defined
+
+--- public(*name) -> Object
+
+メソッドを public に設定します。
+
+引数なしのときは今後このクラスまたはモジュール定義内で新規に定義さ
+れるメソッドをどんな形式でも呼び出せるように(public)設定します。
+
+引数が与えられた時には引数によって指定されたメソッドを public に設
+定します。
+
+@param name [[c:String]] または [[c:Symbol]] を 0 個以上指定します。
+
+@raise NameError 存在しないメソッド名を指定した場合に発生します。
+
+@see [[m:Module#public]]
+

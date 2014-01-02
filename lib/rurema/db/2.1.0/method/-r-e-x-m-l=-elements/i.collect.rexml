@@ -1,0 +1,14 @@
+names=collect
+visibility=public
+kind=defined
+
+--- collect(xpath = nil) {|element| .. } -> [object]
+[[m:Enumerable#collect]] と同様、
+各子要素に対しブロックを呼び出し、その返り値の配列を返します。
+
+xpath を指定した場合は、その XPath 文字列に
+マッチする要素に対し同様の操作をします。
+
+@param xpath XPath文字列
+@see [[m:REXML::Elements#each]]
+

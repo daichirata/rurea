@@ -1,0 +1,7 @@
+names=elements
+visibility=public
+kind=defined
+
+--- elements -> REXML::Elements
+要素が保持している子要素の集合を返します。
+

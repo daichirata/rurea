@@ -1,0 +1,9 @@
+names=even?
+visibility=public
+kind=defined
+
+--- even? -> bool
+
+self が偶数の場合に true を返します。そうでない場合に false を返します。
+
+
