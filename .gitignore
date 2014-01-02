@@ -1,6 +1,4 @@
 Gemfile.lock
 .bundle
 vendor
-lib/rurema/bitclust
-lib/rurema/db
-lib/rurema/doctree
+.svn
