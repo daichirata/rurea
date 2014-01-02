@@ -4,72 +4,47 @@ kind=defined
 
 --- bind(obj)    -> Method
 
-self §Ú obj §À•–•§•Û•…§∑§ø [[c:Method]] •™•÷•∏•ß•Ø•»§Ú¿∏¿Æ§∑ ÷§∑§ﬁ§π°£
+self „Çí obj „Å´„Éê„Ç§„É≥„Éâ„Åó„Åü [[c:Method]] „Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„ÇíÁîüÊàê„ÅóËøî„Åó„Åæ„Åô„ÄÇ
 
-@param obj º´ø»§Ú•–•§•Û•…§∑§ø§§•™•÷•∏•ß•Ø•»§ÚªÿƒÍ§∑§ﬁ§π°£§ø§¿§∑•–•§•Û•…§«§≠§Î§Œ§œ°¢
-           unbind §∑§ø•™•÷•∏•ß•Ø•»§Œ•Ø•È•π§Œ•§•Û•π•ø•Û•π§´°¢•·•Ω•√•…ƒÍµ¡∏µ§Œ•‚•∏•Â°º•Î§Ú
-           •§•Û•Ø•Î°º•…§∑§ø•Ø•È•π§Œ•§•Û•π•ø•Û•π§¿§±§«§π°£
 
-@raise TypeError obj §Œ•Ø•È•π§¨°¢unbind §∑§ø•™•÷•∏•ß•Ø•»§Œ•Ø•È•π§Œ•§•Û•π•ø•Û•π§´°¢
-                 •·•Ω•√•…ƒÍµ¡∏µ§Œ•‚•∏•Â°º•Î§Ú•§•Û•Ø•Î°º•…§∑§ø•Ø•È•π§«§ §±§Ï§–°¢»Ø¿∏§∑§ﬁ§π°£
+@param obj Ëá™Ë∫´„Çí„Éê„Ç§„É≥„Éâ„Åó„Åü„ÅÑ„Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„ÇíÊåáÂÆö„Åó„Åæ„Åô„ÄÇ„Åü„Å†„Åó„Éê„Ç§„É≥„Éâ„Åß„Åç„Çã„ÅÆ„ÅØ„ÄÅ
+           ÁîüÊàêÂÖÉ„ÅÆ„ÇØ„É©„Çπ„Åã„Åù„ÅÆ„Çµ„Éñ„ÇØ„É©„Çπ„ÅÆ„Ç§„É≥„Çπ„Çø„É≥„Çπ„ÅÆ„Åø„Åß„Åô„ÄÇ
 
-    # •Ø•È•π§Œ•§•Û•π•ø•Û•π•·•Ω•√•…§Œ UnboundMethod §ŒæÏπÁ
+@raise TypeError obj„Ååbind„Åß„Åç„Å™„ÅÑ„Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„Åß„ÅÇ„ÇãÂ†¥Âêà„Å´Áô∫Áîü„Åó„Åæ„Åô
 
+    # „ÇØ„É©„Çπ„ÅÆ„Ç§„É≥„Çπ„Çø„É≥„Çπ„É°„ÇΩ„ÉÉ„Éâ„ÅÆ UnboundMethod „ÅÆÂ†¥Âêà
     class Foo
       def foo
         "foo"
       end
     end
-
-    # UnboundMethod `m' §Ú¿∏¿Æ
-    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo(Foo)#foo>
-
-    # Foo §Œ•§•Û•π•ø•Û•π§Ú•Ï•∑°º•–§»§π§Î Method •™•÷•∏•ß•Ø•»§Ú¿∏¿Æ
-    p m.bind(Foo.new)               # => #<Method: Foo(Foo)#foo>
-
-    # Foo §Œ•µ•÷•Ø•È•π Bar §Œ•§•Û•π•ø•Û•π§Ú•Ï•∑°º•–§»§π§Î Method
-    #@#  ruby 1.8 feature: µˆ§µ§Ï§Î§Ë§¶§À§ §Í§ﬁ§∑§ø
-
+    
+    # UnboundMethod `m' „ÇíÁîüÊàê
+    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo#foo>
+    
+    # Foo „ÅÆ„Ç§„É≥„Çπ„Çø„É≥„Çπ„Çí„É¨„Ç∑„Éº„Éê„Å®„Åô„Çã Method „Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„ÇíÁîüÊàê
+    p m.bind(Foo.new)               # => #<Method: Foo#foo>
+    
+    # Foo „ÅÆ„Çµ„Éñ„ÇØ„É©„Çπ Bar „ÅÆ„Ç§„É≥„Çπ„Çø„É≥„Çπ„Çí„É¨„Ç∑„Éº„Éê„Å®„Åô„Çã Method
     class Bar < Foo
     end
-    # p m.bind(Bar.new)               # => -18:in `bind': bind argument must be an instance of Foo (TypeError)
+    p m.bind(Bar.new)               # => #<Method: Bar(Foo)#foo>
 
-    # ∆±Ãæ§Œ∆√∞€•·•Ω•√•…§¨ƒÍµ¡§µ§Ï§∆§§§Î§»•¿•·
-    class << obj = Foo.new
-      def foo
-      end
-    end
-    p m.bind(obj)                   # => -:25:in `bind': method `foo' overridden (TypeError)
 
-    # •‚•∏•Â°º•Î§Œ•§•Û•π•ø•Û•π•·•Ω•√•…§Œ UnboundMethod §ŒæÏπÁ
-
+    # „É¢„Ç∏„É•„Éº„É´„ÅÆ„Ç§„É≥„Çπ„Çø„É≥„Çπ„É°„ÇΩ„ÉÉ„Éâ„ÅÆ UnboundMethod „ÅÆÂ†¥Âêà
     module Foo
       def foo
         "foo"
       end
     end
-
-    # UnboundMethod `m' §Ú¿∏¿Æ
-    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo(Foo)#foo>
-
-    # Foo §Ú•§•Û•Ø•Î°º•…§∑§ø•Ø•È•π Bar §Œ•§•Û•π•ø•Û•π§Ú•Ï•∑°º•–§»
-    # §π§Î Method •™•÷•∏•ß•Ø•»§Ú¿∏¿Æ
+    
+    # UnboundMethod `m' „ÇíÁîüÊàê
+    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo#foo>
+    
+    # Foo „Çí„Ç§„É≥„ÇØ„É´„Éº„Éâ„Åó„Åü„ÇØ„É©„Çπ Bar „ÅÆ„Ç§„É≥„Çπ„Çø„É≥„Çπ„Çí„É¨„Ç∑„Éº„Éê„Å®
+    # „Åô„Çã Method „Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„ÇíÁîüÊàê
     class Bar
       include Foo
     end
     p m.bind(Bar.new)               # => #<Method: Bar(Foo)#foo>
-
-    # Bar §Œ•µ•÷•Ø•È•π§œ Foo §Ú•§•Û•Ø•Î°º•…§∑§∆§§§Î§Œ§»∆±≈˘§ §Œ§«§Ë§§
-    class Baz <Bar
-    end
-    p m.bind(Baz.new)               # => #<Method: Baz(Foo)#foo>
-
-    # ∆±Ãæ§Œ∆√∞€•·•Ω•√•…§¨ƒÍµ¡§µ§Ï§∆§§§Î§»•¿•·
-    class << obj = Baz.new
-      def foo
-      end
-    end
-    p m.bind(obj)                   # => -:27:in `bind': method `foo' overridden (TypeError)
-
-
 

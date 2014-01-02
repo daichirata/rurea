@@ -6,4 +6,4 @@ library=irb.output=2dmethod
 aliases=
 aliasof=
 
-���Ū�ʽ��Ϥ�ɽ�����饹�Ǥ����饤�֥�������ǻ��Ѥ��ޤ���
+抽象的な出力を表すクラスです。ライブラリ内部で使用します。

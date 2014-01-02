@@ -4,6 +4,6 @@ kind=defined
 
 --- new(sh) -> Shell::Filter
 
-[[c:Shell::Filter]] ���饹�Υ��󥹥��󥹤��֤��ޤ���
-�̾盧�Υ᥽�åɤ�ľ�ܻȤ�����Ͼ��ʤ��Ǥ��礦��
+[[c:Shell::Filter]] クラスのインスタンスを返します。
+通常このメソッドを直接使う機会は少ないでしょう。
 

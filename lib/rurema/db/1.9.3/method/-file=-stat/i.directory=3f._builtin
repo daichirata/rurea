@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- directory? -> bool
-¥Ç¥£¥ì¥¯¥È¥ê¤Î»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã®æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   p File::Stat.new($0).directory? #=> false
 

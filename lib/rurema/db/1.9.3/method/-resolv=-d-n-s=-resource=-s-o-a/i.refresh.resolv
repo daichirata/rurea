@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- refresh -> Integer
-�ץ饤�ޥꥵ���Ф���ι����򥻥�����ꥵ���Ф������å�����
-���٤���ñ�̤��֤��ޤ���
+プライマリサーバからの更新をセカンダリサーバがチェックする
+頻度を秒単位で返します。
 

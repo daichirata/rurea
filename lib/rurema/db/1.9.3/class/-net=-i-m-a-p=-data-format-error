@@ -6,4 +6,4 @@ library=net.imap
 aliases=
 aliasof=
 
-�ǡ����ե����ޥåȤ��������ʤ�����ȯ�������㳰�Υ��饹�Ǥ���
+データフォーマットが正しくない場合に発生する例外のクラスです。

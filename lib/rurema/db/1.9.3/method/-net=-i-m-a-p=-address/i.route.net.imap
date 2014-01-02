@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- route -> String | nil
-�᡼�륢�ɥ쥹�� SMTP at-domain-list ���֤��ޤ���
+メールアドレスの SMTP at-domain-list を返します。
 
-¸�ߤ��ʤ����� nil ���֤��ޤ���
+存在しない場合は nil を返します。
 
-�̾�� nil ���֤��ޤ���
+通常は nil を返します。
 

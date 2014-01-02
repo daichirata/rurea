@@ -2,10 +2,11 @@ names=SOCK_STREAM
 visibility=public
 kind=defined
 
---- SOCK_STREAM
-@todo
+--- SOCK_STREAM -> Integer
 
-[[m:Socket.open]] ¤ÎÂèÆó°ú¿ô type ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+ã‚¹ãƒˆãƒªãƒ¼ãƒ é€šä¿¡ã€‚
+[[m:Socket.open]] ã®ç¬¬äºŒå¼•æ•° type ã«ä½¿ç”¨ã—ã¾ã™ã€‚
 
-@see [[m:Socket.open]]
+@see [[m:Socket.open]], [[man:socket(2)]], [[man:socket(2linux)]],
+     [[man:socket(2freebsd)]]
 

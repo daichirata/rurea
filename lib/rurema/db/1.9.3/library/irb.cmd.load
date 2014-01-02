@@ -3,9 +3,10 @@ classes=IRB=ExtendCommand=Load,IRB=ExtendCommand=Require,IRB=ExtendCommand=Sourc
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-irb Ãæ¤Î irb_load¡¢irb_require¡¢irb_source ¥³¥Ş¥ó¥É¤Î¤¿¤á¤Î³ÈÄ¥¤òÄêµÁ¤·
-¤¿¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+irb ä¸­ã® irb_loadã€irb_requireã€irb_source ã‚³ãƒãƒ³ãƒ‰ã®ãŸã‚ã®æ‹¡å¼µã‚’å®šç¾©ã—
+ãŸã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ë¥á¥½¥Ã¥É¤Ï¥æ¡¼¥¶¤¬Ä¾ÀÜ»ÈÍÑ¤¹¤ë¤â¤Î¤Ç¤Ï¤¢
-¤ê¤Ş¤»¤ó¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã¯ãƒ¦ãƒ¼ã‚¶ãŒç›´æ¥ä½¿ç”¨ã™ã‚‹ã‚‚ã®ã§ã¯ã‚
+ã‚Šã¾ã›ã‚“ã€‚

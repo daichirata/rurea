@@ -4,5 +4,5 @@ kind=defined
 
 --- spec -> Gem::Specification
 
-[[m:Gem::Uninstaller#uninstall_gem]] ¤Î¼Â¹ÔÃæ¤Î¤ß¥»¥Ã¥È¤µ¤ì¤Ş¤¹¡£
+[[m:Gem::Uninstaller#uninstall_gem]] ã®å®Ÿè¡Œä¸­ã®ã¿ã‚»ãƒƒãƒˆã•ã‚Œã¾ã™ã€‚
 

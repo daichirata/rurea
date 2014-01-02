@@ -4,5 +4,5 @@ kind=defined
 
 --- file_entries -> Array
 
-Gem �ѥå������˴ޤޤ��ե������������֤��ޤ���
+Gem パッケージに含まれるファイルの配列を返します。
 

@@ -6,6 +6,6 @@ library=rubygems.source_index
 aliases=Gem=Cache
 aliasof=
 
-�ġ��Υ�������������������Ƥ�ͭ���� Gem �ѥå������򥤥�ǥå��������뤿��Υ��饹�Ǥ���
+個々のソースから取得した全ての有効な Gem パッケージをインデックス化するためのクラスです。
 
-Gem �ѥå������Υե�͡���� ���줾��� [[c:Gem::Specification]] ���֥������Ȥ��б��դ��ޤ���
+Gem パッケージのフルネームと それぞれの [[c:Gem::Specification]] オブジェクトを対応付けます。

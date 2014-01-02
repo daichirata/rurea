@@ -4,29 +4,29 @@ kind=defined
 
 --- const_load(ole, mod = WIN32OLE) -> ()
 
-OLE�����ȥ᡼����󥵡��Ф��ݻ�����������ɤ߹��ߡ����ꤵ�줿�⥸�塼��
-���Ȥ߹��ߤޤ���
+OLEオートメーションサーバが保持する定数を読み込み、指定されたモジュール
+に組み込みます。
 
-OLE�����ȥ᡼����󥵡��Фϡ�����򥯥饤����Ȥ��󶡤Ǥ��ޤ���
+OLEオートメーションサーバは、定数をクライアントへ提供できます。
 
-const_load�᥽�åɤϤ�����������ɤ߹��ߡ����ꤷ���⥸�塼����Ȥ߹�
-�ळ�Ȥǻ��Ȳ�ǽ�Ȥ��ޤ���
+const_loadメソッドはこれらの定数を読み込み、指定したモジュールに組み込
+むことで参照可能とします。
 
-@param ole ������ɤ߹����оݤ�WIN32OLE���֥������Ȥޤ��ϥ����ץ饤�֥�
-           ��̾��ʸ����ˤ���ꤷ�ޤ���
+@param ole 定数を読み込む対象のWIN32OLEオブジェクトまたはタイプライブラ
+           リ名（文字列）を指定します。
 
-@param mod �������������оݤΥ⥸�塼�����ꤷ�ޤ�����ά����
-           WIN32OLE���Ȥ߹��ޤ�ޤ���
+@param mod 定数を定義する対象のモジュールを指定します。省略時は
+           WIN32OLEに組み込まれます。
 
-@raise WIN32OLERuntimeError �����ȥ᡼����󥵡��ФθƤӽФ��˼��Ԥ��ޤ�����
-                            ��ͳ�ϥ�å�������HRESULT��Ĵ�٤Ƥ���������
+@raise WIN32OLERuntimeError オートメーションサーバの呼び出しに失敗しました。
+                            理由はメッセージのHRESULTを調べてください。
 
-OLE�����ȥ᡼������������̾VB�Υ����ɵ���˽स�ơ�vbConstants��
-�褦�˾�ʸ���ǻϤޤ�ޤ�����������Ruby���������ʸ���ǳ��Ϥ��뵬§�Τ�
-�ᡢWIN32OLE�ˤ�ä�VbConstants�Τ褦�˼�ưŪ����Ƭ����ʸ��������ޤ���
+OLEオートメーションの定数は通常、VBのコード規約に準じて、vbConstantsの
+ように小文字で始まります。しかし、Rubyの定数は大文字で開始する規則のた
+め、WIN32OLEによってVbConstantsのように自動的に先頭が大文字化されます。
 
-�ޤ�����Ƭ���ѻ��ǻϤޤ�ʤ�����ˤĤ��Ƥϡ�CONSTANTS�ϥå������Ͽ����
-�ޤ������ξ�硢�������̾�������Ȥʤ�ޤ���
+また、先頭が英字で始まらない定数については、CONSTANTSハッシュに登録され
+ます。この場合、元の定数名がキーとなります。
 
    module EXCEL_CONST
    end
@@ -36,12 +36,12 @@ OLE�����ȥ᡼������������̾VB�Υ����ɵ���˽स�ơ�vbConstants��
    puts EXCEL_CONST::XlTop # => -4160
    puts EXCEL_CONST::CONSTANTS['_xlDialogChartSourceData'] # => 541
 
-�⥸�塼��̾���ά������
+モジュール名を省略した例
 
    WIN32OLE.const_load(excel)
    puts WIN32OLE::XlTop # => -4160
 
-�����ץ饤�֥��̾����ꤷ����
+タイプライブラリ名を指定した例
 
    module MSO
    end

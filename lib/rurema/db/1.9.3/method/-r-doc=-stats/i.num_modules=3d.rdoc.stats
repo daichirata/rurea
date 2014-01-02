@@ -4,7 +4,7 @@ kind=defined
 
 --- num_modules=(val)
 
-���Ϥ����⥸�塼��ο�����ꤷ�ޤ���
+解析したモジュールの数を指定します。
 
-@param val ���ͤ���ꤷ�ޤ���
+@param val 数値を指定します。
 

@@ -3,5 +3,6 @@ classes=PTY,PTY=ChildExited
 methods=
 sublibraries=
 is_sublibrary=false
+category=CUI
 
-µ¿»÷Ã¼Ëö(Pseudo tTY)¤ò°·¤¦¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ç–‘ä¼¼ç«¯æœ«(Pseudo tTY)ã‚’æ‰±ã†ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

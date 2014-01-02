@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- V_ERR_CERT_SIGNATURE_FAILURE -> Integer
-╬злю╫Я╓к╓й╓╣╓Л╓©╫Пл╬╓н╦║╬з╓к╪╨гт╓╥╓©╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+Х╗╪Ф≤▌Ф⌡╦Ц│╚Ц│╙Ц│∙Ц┌▄Ц│÷Г╫╡Е░█Ц│╝Ф╓°Х╗╪Ц│╚Е╓╠Ф∙≈Ц│≈Ц│÷Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::X509::Store#error]] ╓Д
-[[m:OpenSSL::X509::StoreContext#error]] ╓н╔╗╔И║╪╔Ё║╪╔и╓х╓╥╓ф
-╩х╓О╓Л╓ч╓╧║ё
+[[m:OpenSSL::X509::Store#error]] Ц┌└
+[[m:OpenSSL::X509::StoreContext#error]] Ц│╝Ц┌╗Ц┐╘Ц┐╪Ц┌ЁЦ┐╪Ц┐┴Ц│╗Ц│≈Ц│╕
+Д╫©Ц┌▐Ц┌▄Ц│╬Ц│≥Ц─┌
 

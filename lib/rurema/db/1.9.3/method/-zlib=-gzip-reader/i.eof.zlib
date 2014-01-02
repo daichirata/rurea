@@ -5,11 +5,11 @@ kind=defined
 --- eof -> bool
 --- eof? -> bool
 
-���̥ǡ����ν�ü��ã������翿���֤��ޤ���
-�եå������ɤ߹��ޤ�Ƥ��ʤ��Ƥ⿿���֤����Ȥ����դ��Ʋ�������
+圧縮データの終端に達した場合真を返します。
+フッターが読み込まれていなくても真を返すことに注意して下さい。
 
   =begin
-  # hoge.gz ���ʤ����Ϥ���Ǻ������롣
+  # hoge.gz がない場合はこれで作成する。
   Zlib::GzipWriter.open('hoge.gz') { |gz|
     gz.puts 'hoge'
     gz.puts 'fuga'

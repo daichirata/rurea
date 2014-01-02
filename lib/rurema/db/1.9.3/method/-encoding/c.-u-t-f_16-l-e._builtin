@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- UTF_16LE -> Encoding
-UTF-16LE (��ȥ륨��ǥ�����) �Ǥ���
+UTF-16LE (リトルエンディアン) です。
 
-BOM ��ޤߤޤ���
+BOM を含みません。
 

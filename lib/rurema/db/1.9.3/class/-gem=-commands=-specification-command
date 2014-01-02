@@ -6,4 +6,4 @@ library=rubygems.commands.specification_command
 aliases=
 aliasof=
 
-»ØÄê¤µ¤ì¤¿ Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î gemspec ¤Î¾ğÊó¤ò YAML ·Á¼°¤ÇÉ½¼¨¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+æŒ‡å®šã•ã‚ŒãŸ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã® gemspec ã®æƒ…å ±ã‚’ YAML å½¢å¼ã§è¡¨ç¤ºã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

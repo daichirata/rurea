@@ -4,5 +4,5 @@ kind=defined
 
 --- extra_rdoc_files -> [String]
 
-RDoc �ǥɥ�����Ȥ��������ݤ˻��Ѥ������̤ʥե�����Υꥹ�Ȥ��֤��ޤ���
+RDoc でドキュメントを作成する際に使用する特別なファイルのリストを返します。
 

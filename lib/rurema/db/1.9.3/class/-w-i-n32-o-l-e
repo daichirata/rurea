@@ -6,26 +6,26 @@ library=win32ole
 aliases=
 aliasof=
 
-OLE�����ȥ᡼����󥵡��Ф�Ruby�����뤿��Υ��饹�Ǥ���
+OLEオートメーションサーバをRubyで操作するためのクラスです。
 
-Windows��¿���Υ��ץꥱ��������饤�֥��ϡ�COM�ȸƤФ��API��������
-����¾�Υץ�����फ�����Ǥ��ޤ���WIN32OLE�����ݡ��Ȥ��Ƥ���Τϡ�
-COM��API�Τ������ä˥��󥿡��ץ꥿�ѤΥ��󥿡��ե������Ǥ���OLE�����ȥ᡼
-������IDispatch���󥿡��ե������ˤȤ�����տ魯���ե쥯������ѤΥ�
-�󥿡��ե������Ǥ���
+Windowsの多くのアプリケーションやライブラリは、COMと呼ばれるAPI群を利用
+して他のプログラムから操作できます。WIN32OLEがサポートしているのは、
+COMのAPIのうち、特にインタープリタ用のインターフェイスであるOLEオートメー
+ション（IDispatchインターフェイス）とそれに付随するリフレクション用のイ
+ンターフェイスです。
 
-�����Υ��󥿡��ե������򥵥ݡ��Ȥ��Ƥ�����ɽŪ��Windows���ץꥱ������
-��ˡ�Office��IE��iTunes��Illustrator������ޤ����ޤ���WMI��WshShell��
-�ɤΥ饤�֥������Ѥ���Windows�ξ�������뤳�Ȥ��ǽ�Ǥ���������
-�ץ�������OLE�����ȥ᡼����󥵡��ФȸƤӤޤ���
+これらのインターフェイスをサポートしている代表的なWindowsアプリケーショ
+ンに、Office、IE、iTunes、Illustratorがあります。また、WMI、WshShellな
+どのライブラリを利用してWindowsの情報を操作することも可能です。これらの
+プログラムをOLEオートメーションサーバと呼びます。
 
-WIN32OLE���֥������Ȥϡ�OLE�����ȥ᡼����󥵡��Ф��󶡤���᥽�åɤ��
-���ѥƥ���Ruby��°�����б��ˤ򥹥���ץȤ���ƤӽФ����ʤ��󶡤��ޤ���
-�ƤӽФ��ˤϡ�Ruby�Υ��֥������Ȥ�Ʊ�ͤ˥��֥������Ȥ�³���ơ�.�פȥ᥽��
-��̾��ɬ�פǤ���а����Υꥹ�Ȥ򵭽Ҥ��ޤ����Ǹ�ΰ�����Hash����ꤷ��
-���ϡ�̾���դ������Ȥ��ƥ����˥ѥ�᡼��̾���ͤ˰��������Ǥ��ޤ���
+WIN32OLEオブジェクトは、OLEオートメーションサーバが提供するメソッドやプ
+ロパティ（Rubyの属性に対応）をスクリプトから呼び出す手段を提供します。
+呼び出しには、Rubyのオブジェクトと同様にオブジェクトに続けて「.」とメソッ
+ド名、必要であれば引数のリストを記述します。最後の引数にHashを指定した
+場合は、名前付き引数としてキーにパラメータ名、値に引数を指定できます。
 
-=== ����ץ륳����
+=== サンプルコード
 
   require 'win32ole'
 
@@ -35,9 +35,9 @@ WIN32OLE���֥������Ȥϡ�OLE�����ȥ᡼����󥵡��Ф��󶡤���᥽�åɤ��
   workbook.Close(:SaveChanges => false)
   excel.Quit
 
-�ʤ���OLE�����ȥ᡼�����λ��ͤǤϥ᥽�å�̾����ʸ���Ⱦ�ʸ������̤���
-���󡣤��Τ��ᡢ�ʲ��Τ褦��OLE�����ȥ᡼����󥵡��ФΥ᥽�å�̾�Ͼ�ʸ
-���ǵ��Ҥ��Ƥ⹽���ޤ���
+なお、OLEオートメーションの仕様ではメソッド名は大文字と小文字を区別しま
+せん。そのため、以下のようにOLEオートメーションサーバのメソッド名は小文
+字で記述しても構いません。
 
   require 'win32ole'
 
@@ -48,14 +48,14 @@ WIN32OLE���֥������Ȥϡ�OLE�����ȥ᡼����󥵡��Ф��󶡤���᥽�åɤ��
   excel.quit
 
 
-=== �ޥ������åɤǤ���������
+=== マルチスレッドでの利用制限
 
-���˰ʲ��ε��Ҥ�WIN32OLE�ξ���ΥС������λ��ͤ��ꤹ���ΤǤϤ���
-�ޤ���
+注）以下の記述はWIN32OLEの将来のバージョンの仕様を規定するものではあり
+ません。
 
-WIN32OLE�ϥ��󥰥륹��åɥ⡼�ɤ�COM�ȥ��󥿡��ե��������ޤ������Τ��ᡢ
-ruby 1.9�ʹߤ�Ruby��Thread�ȥͥ��ƥ��֥���åɤ�1��1���б�����¹ԴĶ�
-�Ǥϥ���åɤ�ޤ�����ƤӽФ��ϥ��顼�Ȥʤ�ޤ���
+WIN32OLEはシングルスレッドモードでCOMとインターフェイスします。このため、
+ruby 1.9以降のRubyのThreadとネイティブスレッドが1対1で対応する実行環境
+ではスレッドをまたがる呼び出しはエラーとなります。
 
   excel = WIN32OLE.new('Excel.Application')
   Thread.start do
@@ -65,6 +65,6 @@ ruby 1.9�ʹߤ�Ruby��Thread�ȥͥ��ƥ��֥���åɤ�1��1���б�����¹ԴĶ�
   end.join
   excel.Quit
 
-ȯ�����륨�顼��Thread�μ¹���ˡ�ˤ�ä�
-0x800401f0��CO_E_NOTINITIALIZED�ˤޤ���0x8001010e��RPC_E_WRONG_THREAD��
-�Ǥ���
+発生するエラーはThreadの実行方法によって
+0x800401f0（CO_E_NOTINITIALIZED）または0x8001010e（RPC_E_WRONG_THREAD）
+です。

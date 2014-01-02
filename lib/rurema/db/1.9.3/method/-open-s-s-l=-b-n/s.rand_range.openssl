@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- rand_range(range) -> OpenSSL::BN
-°Å¹æÏÀÅª¤Ë¶¯¤¤µ¿»÷Íğ¿ô¤ò 0 ¤«¤é range-1 ¤Ş¤Ç¤Î´Ö¤ÇÀ¸À®¤·¡¢ÊÖ¤·¤Ş¤¹¡£
+æš—å·è«–çš„ã«å¼·ã„ç–‘ä¼¼ä¹±æ•°ã‚’ 0 ã‹ã‚‰ range-1 ã¾ã§ã®é–“ã§ç”Ÿæˆã—ã€è¿”ã—ã¾ã™ã€‚
 
-@param range À¸À®¤¹¤ëÍğ¿ô¤ÎÈÏ°Ï
-@raise OpenSSL::BNError Íğ¿ô¤ÎÀ¸À®¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param range ç”Ÿæˆã™ã‚‹ä¹±æ•°ã®ç¯„å›²
+@raise OpenSSL::BNError ä¹±æ•°ã®ç”Ÿæˆã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::BN.rand]], [[m:OpenSSL::BN.pseudo_rand_range]]
 

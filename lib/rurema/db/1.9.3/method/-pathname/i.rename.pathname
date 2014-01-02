@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- rename(to) -> 0
-File.rename(self.to_s, to) ¤ÈÆ±¤¸¤Ç¤¹¡£
+File.rename(self.to_s, to) ã¨åŒã˜ã§ã™ã€‚
 
-@param to ¥Õ¥¡¥¤¥ëÌ¾¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param to ãƒ•ã‚¡ã‚¤ãƒ«åã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:File.rename]]
 

@@ -4,8 +4,8 @@ kind=defined
 
 --- build_args=(value)
 
-Gem ��ӥ�ɤ���Ȥ��˻��Ѥ���ѥ�᡼���򥻥åȤ��ޤ���
+Gem をビルドするときに使用するパラメータをセットします。
 
-@param value Gem ��ӥ�ɤ���Ȥ��˻��Ѥ���ѥ�᡼������ꤷ�ޤ���
+@param value Gem をビルドするときに使用するパラメータを指定します。
 
 

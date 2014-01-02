@@ -6,16 +6,16 @@ library=openssl
 aliases=
 aliasof=
 
-OpenSSL ╓н X509 ╬злю╫Я║╒CRL(╬злю╫Я╪╨╦З╔Й╔╧╔х)║╒
-CSR(╬злю╫Я╫Пл╬мв╣А)║╒╬злю╫Я╔╧╔х╔╒╓й╓и╓к╢ь╓╧╓К╔Б╔╦╔Е║╪╔К╓г╓╧║ё
+OpenSSL Ц│╝ X509 Х╗╪Ф≤▌Ф⌡╦Ц─│CRL(Х╗╪Ф≤▌Ф⌡╦Е╓╠Е┼╧Ц┐╙Ц┌╧Ц┐┬)Ц─│
+CSR(Х╗╪Ф≤▌Ф⌡╦Г╫╡Е░█Х╕│Ф╠┌)Ц─│Х╗╪Ф≤▌Ф⌡╦Ц┌╧Ц┐┬Ц┌╒Ц│╙Ц│╘Ц│╚И√╒Ц│≥Ц┌▀Ц┐╒Ц┌╦Ц┐╔Ц┐╪Ц┐╚Ц│╖Ц│≥Ц─┌
 
-===[a:verify_error] ╦║╬з╩Ч╔╗╔И║╪дЙ©Т
+===[a:verify_error] Ф╓°Х╗╪Ф≥┌Ц┌╗Ц┐╘Ц┐╪Е╝ Ф∙╟
 
-╟й╡╪╓ндЙ©Т╓о [[m:OpenSSL::X509::Store#error]],
+Д╩╔Д╦▀Ц│╝Е╝ Ф∙╟Ц│╞ [[m:OpenSSL::X509::Store#error]],
 [[m:OpenSSL::X509::StoreContext#error]],
 [[m:OpenSSL::SSL::SSLSocket#verify_result]]
-╓нйж╓Йцм╓х╓╥╓фмя╓╓╓И╓Л╓ч╓╧║ё
-V_OK ╓о╔╗╔И║╪╓й╓╥╓Р╟улё╓╥╓ф╓╓╓ч╓╧║ё
+Ц│╝Х©■Ц┌┼Е─╓Ц│╗Ц│≈Ц│╕Г■╗Ц│└Ц┌┴Ц┌▄Ц│╬Ц│≥Ц─┌
+V_OK Ц│╞Ц┌╗Ц┐╘Ц┐╪Ц│╙Ц│≈Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╕Ц│└Ц│╬Ц│≥Ц─┌
   * [[m:OpenSSL::X509::V_OK]]
   * [[m:OpenSSL::X509::V_ERR_AKID_SKID_MISMATCH]]
   * [[m:OpenSSL::X509::V_ERR_APPLICATION_VERIFICATION]]

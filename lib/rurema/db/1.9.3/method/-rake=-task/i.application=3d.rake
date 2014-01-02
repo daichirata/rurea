@@ -4,7 +4,7 @@ kind=defined
 
 --- application=(app)
 
-���Ȥ��ͭ���Ƥ��� [[c:Rake::Application]] �Υ��󥹥��󥹤򥻥åȤ��ޤ���
+自身を所有している [[c:Rake::Application]] のインスタンスをセットします。
 
-@param app ���Ȥ��ͭ���Ƥ��륢�ץꥱ����������ꤷ�ޤ���
+@param app 自身を所有しているアプリケーションを指定します。
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- === (other) -> bool
-Ʊ�����ʤ鿿���֤��ޤ���
+同じ日なら真を返します。
 
-@param other ���ե��֥�������
+@param other 日付オブジェクト
 

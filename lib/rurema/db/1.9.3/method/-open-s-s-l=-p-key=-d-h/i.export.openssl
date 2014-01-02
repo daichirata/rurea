@@ -5,7 +5,7 @@ kind=defined
 --- export -> String
 --- to_pem -> String
 --- to_s -> String
-���ѥ�᡼���� PEM �������Ѵ����ޤ���
+鍵パラメータを PEM 形式に変換します。
 
-���Ф��ͤϽ��Ϥ���ޤ���
+鍵対の値は出力されません。
 

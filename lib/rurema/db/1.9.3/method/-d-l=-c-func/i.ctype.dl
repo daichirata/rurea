@@ -5,7 +5,7 @@ kind=defined
 --- ctype     -> Integer
 --- ctype=(type)
 
-���Ȥ��֤��ͤη���ɽ�����������Ǥ���
+自身の返り値の型を表すアクセサです。
 
-@param type ���Ȥ��֤��ͤη��� DL ��������줿����ǻ��ꤷ�ޤ���
+@param type 自身の返り値の型を DL に定義された定数で指定します。
 

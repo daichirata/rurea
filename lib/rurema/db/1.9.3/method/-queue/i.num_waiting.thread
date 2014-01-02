@@ -4,5 +4,5 @@ kind=defined
 
 --- num_waiting -> Fixnum
 
-���塼���ԤäƤ��륹��åɤο����֤��ޤ���
+キューを待っているスレッドの数を返します。
 

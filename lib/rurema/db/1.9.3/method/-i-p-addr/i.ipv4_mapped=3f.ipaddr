@@ -4,5 +4,5 @@ kind=defined
 
 --- ipv4_mapped? -> bool
 
-IPv4 �ͱ� IPv6 ���ɥ쥹�ʤ� �����֤��ޤ���
+IPv4 射影 IPv6 アドレスなら 真を返します。
 

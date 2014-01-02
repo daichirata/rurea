@@ -4,17 +4,17 @@ kind=defined
 
 --- new(path)    -> File::Stat
 
-path ¤Ë´Ø¤¹¤ë File::Stat ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
-[[m:File.stat]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+path ã«é–¢ã™ã‚‹ File::Stat ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
+[[m:File.stat]] ã¨åŒã˜ã§ã™ã€‚
 
-@param path ¥Õ¥¡¥¤¥ë¤Î¥Ñ¥¹¤ò»ØÄê¤·¤Þ¤¹¡£
+@param path ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise Errno::ENOENT path¤Ë³ºÅö¤¹¤ë¥Õ¥¡¥¤¥ë¤¬Â¸ºß¤·¤Ê¤¤¾ì¹çÈ¯À¸¤·¤Þ¤¹¡£
+@raise Errno::ENOENT pathã«è©²å½“ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ãŒå­˜åœ¨ã—ãªã„å ´åˆç™ºç”Ÿã—ã¾ã™ã€‚
 
   p $:[0] 
-  #=> Îã
+  #=> ä¾‹
   # "C:/Program Files/ruby-1.8/lib/ruby/site_ruby/1.8"
   p File::Stat.new($:[0])
-  #=> Îã
+  #=> ä¾‹
   #<File::Stat dev=0x2, ino=0, mode=040755, nlink=1, uid=0, gid=0, rdev=0x2, size=0, blksize=nil, blocks=nil, atime=Sun Sep 02 14:15:20 +0900 2007, mtime=Tue Apr 24 23:03:44 +0900 2007, ctime=Tue Apr 24 23:03:37 +0900 2007>
 

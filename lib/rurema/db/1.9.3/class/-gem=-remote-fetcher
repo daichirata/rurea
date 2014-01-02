@@ -6,4 +6,4 @@ library=rubygems.remote_fetcher
 aliases=
 aliasof=
 
-��⡼�ȥ��������� Gem �ѥå������� Gem �ѥå������ξ����������뤿��Υ��饹�Ǥ���
+リモートソースから Gem パッケージや Gem パッケージの情報を取得するためのクラスです。

@@ -4,7 +4,7 @@ kind=defined
 
 --- UTF_32BE -> Encoding
 --- UCS_4BE -> Encoding
-UTF-32BE (�ӥå�����ǥ�����) �Ǥ���
+UTF-32BE (ビッグエンディアン) です。
 
-BOM ��ޤߤޤ���
+BOM を含みません。
 

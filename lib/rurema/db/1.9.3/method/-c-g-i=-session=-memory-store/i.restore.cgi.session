@@ -4,5 +4,5 @@ kind=defined
 
 --- restore -> Hash
 
-���å����ξ��֤����������ϥå�����֤��ޤ���
+セッションの状態を復元したハッシュを返します。
 

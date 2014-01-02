@@ -4,7 +4,7 @@ kind=defined
 
 --- update_sources=(update_sources)
 
-[[c:Gem::SourceInfoCache]] ¤òËè²ó¹¹¿·¤¹¤ë¤«¤É¤¦¤«ÀßÄê¤·¤Ş¤¹¡£
+[[c:Gem::SourceInfoCache]] ã‚’æ¯å›æ›´æ–°ã™ã‚‹ã‹ã©ã†ã‹è¨­å®šã—ã¾ã™ã€‚
 
-@param update_sources ¿¿¤ò»ØÄê¤¹¤ë¤ÈËè²ó [[c:Gem::SourceInfoCache]] ¤ò¹¹¿·¤·¤Ş¤¹¡£
+@param update_sources çœŸã‚’æŒ‡å®šã™ã‚‹ã¨æ¯å› [[c:Gem::SourceInfoCache]] ã‚’æ›´æ–°ã—ã¾ã™ã€‚
 

@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- []=(sec, hashtbl)
-»ØÄê¤·¤¿¥»¥¯¥·¥ç¥ó¤ÎÀßÄê¾ðÊó¤ò¾å½ñ¤­¤·¤Þ¤¹¡£
+æŒ‡å®šã—ãŸã‚»ã‚¯ã‚·ãƒ§ãƒ³ã®è¨­å®šæƒ…å ±ã‚’ä¸Šæ›¸ãã—ã¾ã™ã€‚
 
-sec ¤ÇÊÑ¹¹¤¹¤ë¥»¥¯¥·¥ç¥ó¤ò»ØÄê¤·¡¢hashtbl ¤Ï {¥­¡¼Ê¸»úÎó => ¥Ç¡¼¥¿Ê¸»úÎó}
-¤È¤¤¤¦¥Ï¥Ã¥·¥å¤ÇÊÑ¹¹¤¹¤ë¾ðÊó¤òÅÏ¤·¤Þ¤¹¡£
+sec ã§å¤‰æ›´ã™ã‚‹ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’æŒ‡å®šã—ã€hashtbl ã¯ {ã‚­ãƒ¼æ–‡å­—åˆ— => ãƒ‡ãƒ¼ã‚¿æ–‡å­—åˆ—}
+ã¨ã„ã†ãƒãƒƒã‚·ãƒ¥ã§å¤‰æ›´ã™ã‚‹æƒ…å ±ã‚’æ¸¡ã—ã¾ã™ã€‚
 
-hashtbl ¤Ë´Þ¤Þ¤ì¤Æ¤¤¤Ê¤¤¥­¡¼¤ËÂÐ±þ¤¹¤ë¾ðÊó¤ÏÊÑ¹¹¤µ¤ì¤Þ¤»¤ó¡£
+hashtbl ã«å«ã¾ã‚Œã¦ã„ãªã„ã‚­ãƒ¼ã«å¯¾å¿œã™ã‚‹æƒ…å ±ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚
 
-@param sec ¥»¥¯¥·¥ç¥ó¤òÉ½¤¹Ê¸»úÎó
-@param hashtbl ÀßÄê¤¹¤ë¾ðÊó¤Î¥Ï¥Ã¥·¥å
+@param sec ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’è¡¨ã™æ–‡å­—åˆ—
+@param hashtbl è¨­å®šã™ã‚‹æƒ…å ±ã®ãƒãƒƒã‚·ãƒ¥
 

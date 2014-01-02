@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- CP50220 -> Encoding
-CP50220 ���󥳡��ǥ��󥰡�
-Windows ���Ѥ����� ISO-2022-JP ����Ǥ���
+CP50220 エンコーディング、
+Windows で用いられる ISO-2022-JP 亜種です。
 
-CP50221 �Ȥۤ�Ʊ�ͤΥ��󥳡��ǥ��󥰤Ǥ�����
-¾�Υ��󥳡��ǥ��󥰤ؤ��Ѵ��ơ��֥뤬�����ۤʤ�ޤ���
+CP50221 とほぼ同様のエンコーディングですが、
+他のエンコーディングへの変換テーブルが少し異なります。
 
 @see [[url:http://legacy-encoding.sourceforge.jp/wiki/index.php?cp50220]]
 

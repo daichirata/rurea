@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- value -> object | nil
-�ѿ����ͤ�������ޤ���
+変数の値を取得します。
 
-�ѿ�����ˤ�äƤ�enum�ͤΤ褦������ͤ���Ĥ�Τ�����ޤ���value�᥽��
-�ɤϤ��Τ褦������ͤ��֤��ޤ���
+変数情報によってはenum値のように定数値を持つものがあります。valueメソッ
+ドはこのような定数値を返します。
 
-@return �����ѿ�����������͡��ͤ�����ʤ�����nil���֤��ޤ���
+@return この変数が持つ定数値。値を持たない場合はnilを返します。
 
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'XlSheetType')
@@ -17,7 +17,7 @@ kind=defined
      puts "#{variable.name}=#{variable.value}"
    end
 
-�¹Է�̤ϰʲ��Ȥʤ�ޤ���
+実行結果は以下となります。
 
  xlChart=-4109
  xlDialogSheet=-4116

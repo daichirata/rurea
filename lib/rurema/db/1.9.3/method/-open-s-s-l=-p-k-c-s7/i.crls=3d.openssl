@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- crls=(crls)
-½ðÌ¾¤ËÅºÉÕ¤µ¤ì¤ë CRL ¤òÇÛÎó¤ÇÀßÄê¤·¤Þ¤¹¡£
+ç½²åã«æ·»ä»˜ã•ã‚Œã‚‹ CRL ã‚’é…åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-¸µ¡¹ÉÕ¤±¤é¤ì¤Æ¤¤¤¿ CRL ¤Ï¥¯¥ê¥¢¤µ¤ì¤Þ¤¹¡£
+å…ƒã€…ä»˜ã‘ã‚‰ã‚Œã¦ã„ãŸ CRL ã¯ã‚¯ãƒªã‚¢ã•ã‚Œã¾ã™ã€‚
 
-@param crls ¹¹¿·¤¹¤ë CRL([[c:OpenSSL::X509::CRL]] ¥ª¥Ö¥¸¥§¥¯¥È) ¤ÎÇÛÎó
-@raise OpenSSL::PKCS7::PKCS7Error ÊÑ¹¹¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@param crls æ›´æ–°ã™ã‚‹ CRL([[c:OpenSSL::X509::CRL]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ) ã®é…åˆ—
+@raise OpenSSL::PKCS7::PKCS7Error å¤‰æ›´ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

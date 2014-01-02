@@ -4,9 +4,9 @@ kind=defined
 
 --- discard_ilseq? -> bool
 
-ʸ������Ѵ����� [[c:Iconv::IllegalSequence]] ��ȯ������褦��ʸ����
-����ˤ��ä����Ǥ�̵�뤷���Ѵ����³���뤫�ɤ������֤��ޤ���
+文字列の変換時に [[c:Iconv::IllegalSequence]] が発生するような文字列が
+途中にあった場合でも無視して変換を継続するかどうかを返します。
 
-@raise NotImplementedError �¹ԥץ�åȥե�����ǥ��ݡ��Ȥ���Ƥ��ʤ���
-                           ���ȯ�����ޤ���
+@raise NotImplementedError 実行プラットフォームでサポートされていない場
+                           合に発生します。
 

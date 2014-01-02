@@ -4,14 +4,14 @@ kind=defined
 
 --- ==(set) -> bool
 
-2 �Ĥν��礬�������Ȥ��� true ���֤��ޤ���
+2 つの集合が等しいときに true を返します。
 
-��긷̩�ˤϡ����� set �� Set ���֥������ȤǤ��ꡢ���Ȥ� set ��Ʊ����
-���Ǥ���������Ĥ��������Ǥ����٤����������� true �Ȥʤ�ޤ���
-����ʳ��ξ��ˤϡ�false ���֤��ޤ���
-���Ǥ��������� [[m:Object#eql?]] �ˤ��Ƚ�ꤵ��ޤ���
+より厳密には、引数 set が Set オブジェクトであり、自身と set が同数の
+要素を持ち、かつそれらの要素がすべて等しい場合に true となります。
+それ以外の場合には、false を返します。
+要素の等しさは [[m:Object#eql?]] により判定されます。
 
-@param set ����оݤΥ��֥������Ȥ���ꤷ�ޤ���
+@param set 比較対象のオブジェクトを指定します。
 
   s1 = Set[10, 20, 30]
   s2 = Set[10, 30, 40]

@@ -2,8 +2,7 @@ names=-@
 visibility=public
 kind=defined
 
---- -@
-@todo
+--- -@ -> BigDecimal
 
-
+self の符号を反転させたものを返します。
 

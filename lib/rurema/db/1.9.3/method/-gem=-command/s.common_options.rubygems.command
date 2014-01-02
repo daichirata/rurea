@@ -4,5 +4,5 @@ kind=defined
 
 --- common_options -> Array
 
-���̤ΰ������֤��ޤ���
+共通の引数を返します。
 

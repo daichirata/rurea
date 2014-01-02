@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- value -> OpenSSL::ASN1::ASN1Data
-attribute ¤ÎÃÍ¤ò [[c:OpenSSL::ASN1::ASN1Data]] ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤Ç
-ÊÖ¤·¤Ş¤¹¡£
+attribute ã®å€¤ã‚’ [[c:OpenSSL::ASN1::ASN1Data]] ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§
+è¿”ã—ã¾ã™ã€‚
 
-@raise OpenSSL::X509::AttributeError ÃÍ¤Î¼èÆÀ¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@raise OpenSSL::X509::AttributeError å€¤ã®å–å¾—ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::X509::Attribute#value=]]

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- >>(other) -> OpenSSL::BN
-���Ȥ� other �ӥåȱ����եȤ����ͤ��֤��ޤ���
+自身を other ビット右シフトした値を返します。
 
-@param other ���եȤ���ӥåȿ�
-@raise OpenSSL::BNError �׻������顼
+@param other シフトするビット数
+@raise OpenSSL::BNError 計算時エラー
 

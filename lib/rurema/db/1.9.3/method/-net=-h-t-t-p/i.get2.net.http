@@ -7,23 +7,23 @@ kind=defined
 --- get2(path, header = nil) -> Net::HTTPResponse
 --- get2(path, header = nil) {|response| .... } -> Net::HTTPResponse
 
-�����о�� path �ˤ��륨��ƥ��ƥ���������ޤ���
-[[c:Net::HTTPResponse]] ���֥������Ȥ��֤��ޤ���
+サーバ上の path にあるエンティティを取得します。
+[[c:Net::HTTPResponse]] オブジェクトを返します。
 
-header �� nil
-�Ǥʤ���С��ꥯ�����Ȥ�����Ȥ��ˤ������Ƥ� HTTP �إå��Ȥ���
-����ޤ��� header �� { 'Accept' = > '*/*', ... } �Ȥ���
-���Υϥå���Ǥʤ���Ф����ޤ���
+header が nil
+でなければ、リクエストを送るときにその内容を HTTP ヘッダとして
+送ります。 header は { 'Accept' = > '*/*', ... } という
+形のハッシュでなければいけません。
 
-�֥��å��ȤȤ�˸ƤӽФ��줿�Ȥ��ϡ�
-����ƥ��ƥ��ܥǥ��򥽥��åȤ����ɤ߽Ф����ˡ�
-��³��ݻ��������֤� [[c:Net::HTTPResponse]]
-���֥������Ȥ�֥��å����Ϥ��ޤ���
-�礭�ʥ������Υܥǥ�����٤��ɤߤ����Ȥޤ�����
-�����ʥ�������ʬ���Ƽ������������ˤϤ�������Ѥ��ޤ���
+ブロックとともに呼び出されたときは、
+エンティティボディをソケットから読み出す前に、
+接続を維持した状態で [[c:Net::HTTPResponse]]
+オブジェクトをブロックに渡します。
+大きなサイズのボディを一度に読みだすとまずく、
+小さなサイズに分けて取りだしたい場合にはこれを利用します。
 
-@param path �������륨��ƥ��ƥ��Υѥ���ʸ����ǻ��ꤷ�ޤ���
-@param header �ꥯ�����Ȥ� HTTP �إå���ϥå���ǻ��ꤷ�ޤ���
+@param path 取得するエンティティのパスを文字列で指定します。
+@param header リクエストの HTTP ヘッダをハッシュで指定します。
 
   # example
   response = http.request_get('/index.html')
@@ -38,7 +38,7 @@ header �� nil
     end
   }
 
-get2 �ϻ����٤�ʤΤǻȤ�ʤ��Ǥ���������
+get2 は時代遅れなので使わないでください。
 
 @see [[m:Net::HTTP#get]], [[m:Net::HTTPResponse#read_body]]
 

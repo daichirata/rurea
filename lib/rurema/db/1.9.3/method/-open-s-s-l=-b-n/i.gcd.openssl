@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- gcd(other) -> OpenSSL::BN
-GCD(ºÇÂç¸øÌó¿ô)¤òÊÖ¤·¤Þ¤¹¡£
+GCD(æœ€å¤§å…¬ç´„æ•°)ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤È¤Î GCD ¤ò·×»»¤¹¤ë¿ô
-@raise OpenSSL::BNError ·×»»»þ¥¨¥é¡¼
+@param other è‡ªèº«ã¨ã® GCD ã‚’è¨ˆç®—ã™ã‚‹æ•°
+@raise OpenSSL::BNError è¨ˆç®—æ™‚ã‚¨ãƒ©ãƒ¼
 

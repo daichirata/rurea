@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- create(status, basic_resp) -> OpenSSL::OCSP::Response
-Response ¥ª¥Ö¥¸¥§¥¯¥È¤ò [[c:OpenSSL::OCSP::BasicResponse]] ¥ª¥Ö¥¸¥§¥¯¥È
-¤«¤éÀ¸À®¤·¤Ş¤¹¡£
+Response ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ [[c:OpenSSL::OCSP::BasicResponse]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+ã‹ã‚‰ç”Ÿæˆã—ã¾ã™ã€‚
 
 
-@param status ¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É(À°¿ô)
-@param basic_resp [[c:OpenSSL::OCSP::BasicResponse]] ¥ª¥Ö¥¸¥§¥¯¥È
+@param status ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰(æ•´æ•°)
+@param basic_resp [[c:OpenSSL::OCSP::BasicResponse]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 @see [[m:OpenSSL::OCSP::Response.new]]
 

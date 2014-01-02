@@ -4,9 +4,9 @@ kind=defined
 
 --- flunk(message = nil)
 
-É¬¤º¼ºÇÔ¤¹¤ë¥á¥½¥Ã¥É¤Ç¤¹¡£
+å¿…ãšå¤±æ•—ã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
 
-@param message ¥á¥Ã¥»¡¼¥¸¤ò»ØÄê¤·¤Ş¤¹¡£
+@param message ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise MiniTest::Assertion É¬¤ºÈ¯À¸¤·¤Ş¤¹¡£
+@raise MiniTest::Assertion å¿…ãšç™ºç”Ÿã—ã¾ã™ã€‚
 

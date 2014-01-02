@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- port -> Integer
-�оݤΥ����ӥ����оݤΥۥ��Ȥˤ�����ݡ����ֹ���֤��ޤ���
+対象のサービスの対象のホストにおけるポート番号を返します。
 

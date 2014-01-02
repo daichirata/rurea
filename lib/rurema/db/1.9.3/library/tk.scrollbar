@@ -3,5 +3,6 @@ classes=TkScrollbar,TkXScrollbar,TkYScrollbar
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

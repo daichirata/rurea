@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- encoding -> String
-Content-Transfer-Encoding ¤ÎÃÍ¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+Content-Transfer-Encoding ã®å€¤ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 @see [[RFC:2045]]
 

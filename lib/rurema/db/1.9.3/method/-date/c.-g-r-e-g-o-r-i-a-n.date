@@ -2,7 +2,7 @@ names=GREGORIAN
 visibility=public
 kind=defined
 
---- GREGORIAN
-��˥��쥴�ꥪ��Ǥ��뤳�Ȥ򼨤��ޤ���
-��������̵�¤β��ˤ���ȹͤ����ޤ���
+--- GREGORIAN -> Date::Infinity
+常にグレゴリオ暦であることを示します。
+改暦日は無限の過去にあると考えられます。
 

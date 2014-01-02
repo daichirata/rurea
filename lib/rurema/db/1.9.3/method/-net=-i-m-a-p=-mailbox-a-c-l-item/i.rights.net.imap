@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- rights -> String
-�����������¤�ʸ������֤��ޤ���
+アクセス権限を文字列で返します。
 
-[[m:Net::IMAP::MailboxACLItem#user]] ��������桼����
-���äƤ��븢�¤��֤���ޤ���
+[[m:Net::IMAP::MailboxACLItem#user]] で得られるユーザが
+持っている権限が返されます。
 
-����ʸ����ΰ�̣�ˤĤ��Ƥ� [[RFC:2086]] �򻲾Ȥ��Ƥ���������
+この文字列の意味については [[RFC:2086]] を参照してください。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- default_executable=(executable)
 
-Gem �ѥå�������� gem ���ޥ�ɷ�ͳ�Ǽ¹Ԥ���ե�����򥻥åȤ��ޤ���
+Gem パッケージ内で gem コマンド経由で実行するファイルをセットします。
 
-@param executable �¹ԥե��������ꤷ�ޤ���
+@param executable 実行ファイルを指定します。
 

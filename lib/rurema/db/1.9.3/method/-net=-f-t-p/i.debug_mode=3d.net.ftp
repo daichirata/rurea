@@ -4,8 +4,8 @@ kind=defined
 
 --- debug_mode=(boolean)
 
-¥Ç¥Ğ¥Ã¥°¥â¡¼¥É¤Î on/off ¤òÀßÄê¤·¤Ş¤¹¡£
+ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã® on/off ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param boolean ¿¿¤Ê¤é¤Ğ¥Ç¥Ğ¥Ã¥°¥â¡¼¥É¤ò on ¤Ë¤·¤Ş¤¹¡£
+@param boolean çœŸãªã‚‰ã°ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã‚’ on ã«ã—ã¾ã™ã€‚
 @see [[m:Net::FTP#debug_mode]]
 

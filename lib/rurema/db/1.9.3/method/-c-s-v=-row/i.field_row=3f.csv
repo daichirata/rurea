@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- field_row? -> bool
-�ե�����ɹԤǤ���п����֤��ޤ��������Ǥʤ���е����֤��ޤ���
+フィールド行であれば真を返します。そうでなければ偽を返します。
 

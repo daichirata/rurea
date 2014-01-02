@@ -2,11 +2,9 @@ names=uri
 visibility=public
 kind=defined
 
---- uri
-@todo
+--- uri -> String
+カレントサーバに紐付けられた URI を返します。
 
-Get the URI defining the local dRuby space.
-
-This is the URI of the current server. See #current_server.
+@see [[m:DRb.#current_server]]
 
 

@@ -4,8 +4,8 @@ kind=added
 
 --- create_tmpsrc(src) -> String
 
-Ϳ����줿 C �ץ������Υ����������ɤ����ե�����˽��Ϥ���Ϳ����줿�����������ɤ��֤��ޤ���
+与えられた C プログラムのソースコードを一時ファイルに出力して与えられたソースコードを返します。
 
-@param src C �ץ������Υ����������ɤ���ꤷ�ޤ���
+@param src C プログラムのソースコードを指定します。
 
 

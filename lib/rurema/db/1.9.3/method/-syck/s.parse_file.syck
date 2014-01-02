@@ -2,11 +2,11 @@ names=parse_file
 visibility=public
 kind=defined
 
---- parse_file(file_path)
-file_pathд╬е╒ебедеыдлдщ░ьд─д╬YAMLе╔енехесеєе╚дЄе╤б╝е╣д╖бв
-[[c:Syck::Node]]еке╓е╕езепе╚дЄ╩╓д╖д▐д╣бг
+--- parse_file(file_path) -> Syck::Node
+file_pathуБоуГХуВбуВдуГлуБЛуВЙф╕АуБдуБоYAMLуГЙуВнуГеуГбуГ│уГИуВТуГСуГ╝уВ╣уБЧуАБ
+[[c:Syck::Node]]уВкуГЦуВ╕уВзуВпуГИуВТш┐ФуБЧуБ╛уБЩуАВ
 
-@param file_path YAMLе╔енехесеєе╚дм╜ёдлдьд┐е╒ебедеыд╪д╬е╤е╣дЄ╩╕╗·╬єд╟╗╪─ъд╣ды
+@param file_path YAMLуГЙуВнуГеуГбуГ│уГИуБМцЫ╕уБЛуВМуБЯуГХуВбуВдуГлуБ╕уБоуГСуВ╣уВТцЦЗхнЧхИЧуБзцМЗхоЪуБЩуВЛ
 
   cat:
    - name: taro

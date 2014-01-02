@@ -3,5 +3,6 @@ classes=IPAddr
 methods=
 sublibraries=
 is_sublibrary=false
+category=Network
 
-IP¥¢¥É¥ì¥¹¤ò°·¤¦¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+IPã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ‰±ã†ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

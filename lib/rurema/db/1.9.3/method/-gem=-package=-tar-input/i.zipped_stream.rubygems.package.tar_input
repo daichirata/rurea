@@ -4,6 +4,6 @@ kind=defined
 
 --- zipped_stream(entry) -> StringIO
 
-Ϳ����줿 entry �ΰ��̤����ޤޤ� StringIO ���֤��ޤ���
+与えられた entry の圧縮したままの StringIO を返します。
 
-@param entry ����ȥ����ꤷ�ޤ���
+@param entry エントリを指定します。

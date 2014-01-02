@@ -4,12 +4,12 @@ kind=added
 
 --- must_be_kind_of(klass) -> true
 
-���Ȥ���Ϳ����줿���饹�ޤ��Ϥ��Υ��֥��饹�Υ��󥹥���
-�Ǥ����硢�����˥ѥ��������Ȥˤʤ�ޤ���
+自身がが与えられたクラスまたはそのサブクラスのインスタンス
+である場合、検査にパスしたことになります。
 
-@param klass ���Ȥ���°���뤳�Ȥ���Ԥ��륯�饹����ꤷ�ޤ���
+@param klass 自身が所属することを期待するクラスを指定します。
 
-@raise MiniTest::Assertion ���Ȥ�Ϳ����줿���饹�ޤ��Ϥ��Υ��֥��饹�Υ��󥹥��󥹤ǤϤʤ�����ȯ�����ޤ���
+@raise MiniTest::Assertion 自身が与えられたクラスまたはそのサブクラスのインスタンスではない場合に発生します。
 
 @see [[m:MiniTest::Assertions#assert_kind_of]]
 

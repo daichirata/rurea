@@ -3,5 +3,6 @@ classes=TkLabelFrame,TkLabelframe
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- opaque=(s)
 
-���Ȥ� opaque �����ꤷ�ޤ���
+自身の opaque を設定します。
 
-@param s ���Ȥ� opaque ��ɽ��ʸ�������ꤷ�ޤ���
+@param s 自身の opaque を表す文字列を指定します。
 
-@raise URI::InvalidComponentError �����ʰ��� s ���Ф���ȯ�����ޤ���
+@raise URI::InvalidComponentError 不正な引数 s に対して発生します。
 
-@raise URI::InvalidURIError  opaque �ȥҥ���륭���ѡ��Ȥ�Ʊ�������ꤷ������ȯ�����ޤ���
+@raise URI::InvalidURIError  opaque とヒエラルキーパートを同時に設定した場合に発生します。
 

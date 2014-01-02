@@ -1,9 +1,12 @@
 type=class
 superclass=Object
-included=
+included=Enumerable
 extended=
-library=psych.nodes.node
+library=psych
 aliases=
 aliasof=
 
+YAML AST のノードを表す抽象クラスです。
 
+このクラスをインスタンス化することは不適切です。
+すべてのノードのクラスはこのクラスの派生クラスです。

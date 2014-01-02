@@ -5,5 +5,5 @@ kind=defined
 --- isatty    -> bool
 --- tty?      -> bool
 
-[[m:IO#isatty]], [[m:IO#tty?]] ¤Ë°Ñ¾ù¤·¤Ş¤¹¡£
+[[m:IO#isatty]], [[m:IO#tty?]] ã«å§”è­²ã—ã¾ã™ã€‚
 

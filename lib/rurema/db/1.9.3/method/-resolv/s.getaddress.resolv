@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- getaddress(name) -> String
-�ۥ���̾ name �� IP ���ɥ쥹���å����åפ���
-��å����å׷�̤κǽ�Υ��ɥ쥹���֤��ޤ���
+ホスト名 name の IP アドレスをルックアップし、
+ルックアップ結果の最初のアドレスを返します。
 
-��å����åפ� /etc/hosts, DNS �ν�ǹԤ��ޤ���
+ルックアップは /etc/hosts, DNS の順で行います。
 
   Resolv.getaddress("localhost") #=> "127.0.0.1"
   Resolv.getaddress("www.ruby-lang.org") #=> "221.186.184.68"
 
-@param name �ۥ���̾��ʸ�����Ϳ���ޤ���
-@raise Resolv::ResolvError ��å����åפ˼��Ԥ����Ȥ���ȯ�����ޤ���
+@param name ホスト名を文字列で与えます。
+@raise Resolv::ResolvError ルックアップに失敗したときに発生します。
 

@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- APPEND -> Integer
-�ɵ��⡼�ɤǥե�����򳫤��Ȥ��˻��ꤷ�ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+追記モードでファイルを開くときに指定します。
+[[m:File.open]]で使用します。
 

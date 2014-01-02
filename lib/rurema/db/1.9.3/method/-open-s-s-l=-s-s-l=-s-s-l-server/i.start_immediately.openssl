@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- start_immediately -> bool
-[[m:OpenSSL::SSL::SSLServer#accept]] ��
-accept �����餹���� TLS/SSL �ϥ�ɥ���������¹Ԥ��뤫�ɤ������֤��ޤ���
+[[m:OpenSSL::SSL::SSLServer#accept]] で
+accept したらすぐに TLS/SSL ハンドシェイクを実行するかどうかを返します。
 
 @see [[m:OpenSSL::SSL::SSLServer#start_immediately=]]
 

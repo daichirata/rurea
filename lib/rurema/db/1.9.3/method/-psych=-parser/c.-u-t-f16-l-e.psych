@@ -2,8 +2,8 @@ names=UTF16LE
 visibility=public
 kind=defined
 
---- UTF16LE
-@todo
+--- UTF16LE -> Integer
+UTF-16LE エンコーディングを表します。
 
-UTF-16-LE Encoding with BOM
+@see [[m:Psych::Handler#start_stream]]
 

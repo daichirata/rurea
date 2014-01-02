@@ -4,8 +4,8 @@ kind=defined
 
 --- <=>(other) -> -1 | 0 | 1 | nil
 
-self ¤È other ¤Î»þ¹ï¤òÈæ³Ó¤·¤Þ¤¹¡£self ¤ÎÊý¤¬Âç¤­¤¤¾ì¹ç¤Ï 1 ¤ò¡¢Åù¤·¤¤¾ì¹ç¤Ï 0 ¤ò¡¢
-¾®¤µ¤¤¾ì¹ç¤Ï -1 ¤òÊÖ¤·¤Þ¤¹¡£Èæ³Ó¤Ç¤­¤Ê¤¤¾ì¹ç¤Ï¡¢nil ¤òÊÖ¤·¤Þ¤¹¡£
+self ã¨ other ã®æ™‚åˆ»ã‚’æ¯”è¼ƒã—ã¾ã™ã€‚self ã®æ–¹ãŒå¤§ãã„å ´åˆã¯ 1 ã‚’ã€ç­‰ã—ã„å ´åˆã¯ 0 ã‚’ã€
+å°ã•ã„å ´åˆã¯ -1 ã‚’è¿”ã—ã¾ã™ã€‚æ¯”è¼ƒã§ããªã„å ´åˆã¯ã€nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ÈÈæ³Ó¤·¤¿¤¤»þ¹ï¤ò Time ¥ª¥Ö¥¸¥§¥¯¥È¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param other è‡ªèº«ã¨æ¯”è¼ƒã—ãŸã„æ™‚åˆ»ã‚’ Time ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§æŒ‡å®šã—ã¾ã™ã€‚
 

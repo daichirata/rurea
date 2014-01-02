@@ -4,8 +4,8 @@ kind=defined
 
 --- ppid    -> Integer
 
-�ƥץ������Υץ����� ID ���֤��ޤ���UNIX �Ǥϼºݤοƥץ���������
-λ������� ppid �� 1 (init�� pid)�ˤʤ�ޤ���
+親プロセスのプロセス ID を返します。UNIX では実際の親プロセスが終
+了した後は ppid は 1 (initの pid)になります。
 
 @see [[man:getppid(2)]]
 

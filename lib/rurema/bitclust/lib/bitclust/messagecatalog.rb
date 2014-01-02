@@ -9,6 +9,7 @@
 
 module BitClust
 
+  # Provides methods to use MessageCatalog
   module Translatable
 
     private
@@ -27,6 +28,9 @@ module BitClust
 
   end
 
+  # Tiny implementation of message catalog (I18N)
+  # see data/bitclust/catalog/ja_JP.UTF-8
+  #
   # FIXME: support automatic encoding-conversion
   class MessageCatalog
 
@@ -68,14 +72,14 @@ module BitClust
 
     def MessageCatalog.load_file(path, locale)
       h = {}
-      fopen(path, 'r:EUC-JP') {|f|
+      fopen(path, 'r:UTF-8') {|f|
         f.each do |key|
           h[key.chomp] = f.gets.chomp
         end
       }
       new(h, locale)
     end
-      
+
     def initialize(msgs, locale)
       @msgs = msgs
       @locale = locale

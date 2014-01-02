@@ -4,7 +4,7 @@ kind=defined
 
 --- opendir -> Dir
 --- opendir{|dir| ... } -> nil
-Dir.open(self.to_s, &block) ¤ÈÆ±¤¸¤Ç¤¹¡£
+Dir.open(self.to_s, &block) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:Dir.open]]
 

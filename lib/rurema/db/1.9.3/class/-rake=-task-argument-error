@@ -6,4 +6,4 @@ library=rake
 aliases=
 aliasof=
 
-�ְ�ä��������������Ԥä�����ȯ�������㳰�Ǥ���
+間違ったタスクの定義を行った場合に発生する例外です。

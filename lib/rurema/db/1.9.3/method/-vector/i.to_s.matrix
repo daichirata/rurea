@@ -4,9 +4,9 @@ kind=defined
 
 --- to_s -> String
 
-ฅูฅฏฅศฅ๋([[c:Vector]])คซค้สธป๚ฮ๓ ([[c:String]]) คหสัดนคทคÞคนกฃ
+ใใฏใใซ([[c:Vector]])ใใๆ–ๅญ—ๅ— ([[c:String]]) ใซๅคๆใ—ใพใใ€
 
-ฮใ:
+ไพ:
 
   require 'matrix'
 

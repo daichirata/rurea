@@ -4,6 +4,6 @@ kind=defined
 
 --- end_seen? -> bool
 
-����ޤǤ˲��Ϥ��� Ruby �ץ���������� __END__ ���ޤޤ�Ƥ������ɤ���
-���֤��ޤ���
+これまでに解析した Ruby プログラムの中に __END__ が含まれていたかどうか
+を返します。
 

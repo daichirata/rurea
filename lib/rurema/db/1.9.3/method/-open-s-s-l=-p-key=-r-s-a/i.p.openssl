@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- p -> OpenSSL::BN
-����1�Ĥ���ǿ��Ǥ���
+鍵の1つめの素数です。
 
-��̩���ξ���Ǥ���
+秘密鍵の情報です。
 

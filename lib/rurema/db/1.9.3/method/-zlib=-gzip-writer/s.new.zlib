@@ -4,16 +4,16 @@ kind=defined
 
 --- new(io, level = Zlib::DEFAULT_COMPRESSION, strategy = Zlib::DEFAULT_STRATEGY) -> Zlib::GzipWriter
 
-io ¤È´ØÏ¢ÉÕ¤±¤é¤ì¤¿ GzipWriter ¥ª¥Ö¥¸¥§¥¯¥È¤òºîÀ®¤·¤Ş¤¹¡£
-level, strategy ¤Ï [[m:Zlib::Deflate.new]] ¤ÈÆ±¤¸¤Ç¤¹¡£
-GzipWriter ¥ª¥Ö¥¸¥§¥¯¥È¤Ï io ¤Ë gzip ·Á¼°¤Î¥Ç¡¼¥¿¤ò
-Ãà¼¡¥é¥¤¥È¤·¤Ş¤¹¡£io ¤Ë¤Ï¾¯¤Ê¤¯¤È¤â¡¢[[m:IO#write]] ¤È
-Æ±¤¸Æ°ºî¤ò¤¹¤ë write ¥á¥½¥Ã¥É¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹¡£
+io ã¨é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸ GzipWriter ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã¾ã™ã€‚
+level, strategy ã¯ [[m:Zlib::Deflate.new]] ã¨åŒã˜ã§ã™ã€‚
+GzipWriter ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ io ã« gzip å½¢å¼ã®ãƒ‡ãƒ¼ã‚¿ã‚’
+é€æ¬¡ãƒ©ã‚¤ãƒˆã—ã¾ã™ã€‚io ã«ã¯å°‘ãªãã¨ã‚‚ã€[[m:IO#write]] ã¨
+åŒã˜å‹•ä½œã‚’ã™ã‚‹ write ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
-@param io  IO¥ª¥Ö¥¸¥§¥¯¥È¡¢¤â¤·¤¯¤Ï¾¯¤Ê¤¯¤È¤â¡¢
-           [[m:IO#write]] ¤È Æ±¤¸Æ°ºî¤ò¤¹¤ë write ¥á¥½¥Ã¥É¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹¡£
-@param level  0-9¤ÎÈÏ°Ï¤ÎÀ°¿ô¤ò»ØÄê¤·¤Ş¤¹¡£¾ÜºÙ¤Ïzlib.h¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£ 
-@param strategy [[m:Zlib::FILTERED]], [[m:Zlib::HUFFMAN_ONLY]], [[m:Zlib::DEFAULT_STRATEGY]]¤Ê¤É»ØÄê¤·¤Ş¤¹¡£¾ÜºÙ¤Ïzlib.h ¤ò>»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param io  IOã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã€ã‚‚ã—ãã¯å°‘ãªãã¨ã‚‚ã€
+           [[m:IO#write]] ã¨ åŒã˜å‹•ä½œã‚’ã™ã‚‹ write ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
+@param level  0-9ã®ç¯„å›²ã®æ•´æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚è©³ç´°ã¯zlib.hã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚ 
+@param strategy [[m:Zlib::FILTERED]], [[m:Zlib::HUFFMAN_ONLY]], [[m:Zlib::DEFAULT_STRATEGY]]ãªã©æŒ‡å®šã—ã¾ã™ã€‚è©³ç´°ã¯zlib.h ã‚’>å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
   require 'zlib'
 

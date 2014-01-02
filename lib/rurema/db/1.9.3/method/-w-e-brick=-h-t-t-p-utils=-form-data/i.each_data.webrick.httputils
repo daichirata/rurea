@@ -4,9 +4,9 @@ kind=defined
 
 --- each_data{|s| ... }
 
-���Ȥ�ɽ���ƥե�����ǡ���������Ȥ��ơ�Ϳ����줿�֥��å���¹Ԥ��ޤ���
+自身が表す各フォームデータを引数として、与えられたブロックを実行します。
 
-��:
+例:
 
  require "webrick/cgi"
  class MyCGI < WEBrick::CGI

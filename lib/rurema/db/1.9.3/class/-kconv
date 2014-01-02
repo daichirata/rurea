@@ -6,5 +6,5 @@ library=kconv
 aliases=
 aliasof=
 
-ʸ�������ɥ��󥳡��ǥ��󥰤��Ѵ����뤿��Υ⥸�塼�롣
-[[c:Kconv]] �� [[lib:nkf]] �Υ�åѡ��Ǥ���
+文字コードエンコーディングを変換するためのモジュール。
+[[c:Kconv]] は [[lib:nkf]] のラッパーです。

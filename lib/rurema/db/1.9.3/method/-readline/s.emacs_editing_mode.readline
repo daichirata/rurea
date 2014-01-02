@@ -4,13 +4,13 @@ kind=defined
 
 --- emacs_editing_mode -> nil
 
-�Խ��⡼�ɤ� Emacs �⡼�ɤˤ��ޤ����ǥե���Ȥ� Emacs �⡼�ɤǤ���
+編集モードを Emacs モードにします。デフォルトは Emacs モードです。
 
-Emacs �⡼�ɤξܺ٤ϡ� GNU Readline �Υޥ˥奢��򻲾Ȥ��Ƥ���������
+Emacs モードの詳細は、 GNU Readline のマニュアルを参照してください。
 
   * [[url:http://www.gnu.org/directory/readline.html]]
 
-@raise NotImplementedError ���ݡ��Ȥ��Ƥ��ʤ��Ķ���ȯ�����ޤ���
+@raise NotImplementedError サポートしていない環境で発生します。
 
-@raise SecurityError �����ե�٥� ($SAFE) �� 4 �ξ���ȯ�����ޤ���
+@raise SecurityError セーフレベル ($SAFE) が 4 の場合に発生します。
 

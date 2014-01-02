@@ -4,9 +4,9 @@ kind=defined
 
 --- update(source_uri, all) -> bool
 
-�������ǻ��ꤵ�줿 URI ����Ѥ��Ƽ��Ȥ򹹿����ޤ���
+第一引数で指定された URI を使用して自身を更新します。
 
-@param source_uri �����˻��Ѥ��� URI ����ꤷ�ޤ���ʸ���� [[c:URI::Generic]] �Υ��֥��饹����ꤷ�ޤ���
+@param source_uri 更新に使用する URI を指定します。文字列か [[c:URI::Generic]] のサブクラスを指定します。
 
-@param all ������ꤹ��Ⱥǿ��С������� Gem �Τ߼������ޤ���������ꤹ������ƤΥС������� Gem ��������ޤ���
+@param all 偽を指定すると最新バージョンの Gem のみ取得します。真を指定すると全てのバージョンの Gem を取得します。
 

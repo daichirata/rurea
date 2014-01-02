@@ -4,16 +4,16 @@ kind=added
 
 --- create_header(header = "extconf.h") -> String
 
-[[m:Kernel#have_func]], [[m:Kernel#have_header]] ¤Ê¤É¤Î¸¡ºº·ë²Ì¤ò¸µ¤Ë¡¢
-¥Ø¥Ã¥À¥Õ¥¡¥¤¥ë¤òÀ¸À®¤·¤Ş¤¹¡£
+[[m:Kernel#have_func]], [[m:Kernel#have_header]] ãªã©ã®æ¤œæŸ»çµæœã‚’å…ƒã«ã€
+ãƒ˜ãƒƒãƒ€ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï extconf.rb ¤ÎºÇ¸å¤Ç¸Æ¤Ó½Ğ¤¹¤è¤¦¤Ë¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ extconf.rb ã®æœ€å¾Œã§å‘¼ã³å‡ºã™ã‚ˆã†ã«ã—ã¦ãã ã•ã„ã€‚
 
-@param header ¥Ø¥Ã¥À¥Õ¥¡¥¤¥ë¤ÎÌ¾Á°¤ò»ØÄê¤·¤Ş¤¹¡£
+@param header ãƒ˜ãƒƒãƒ€ãƒ•ã‚¡ã‚¤ãƒ«ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return ¥Ø¥Ã¥À¥Õ¥¡¥¤¥ë¤ÎÌ¾Á°¤òÊÖ¤·¤Ş¤¹¡£
+@return ãƒ˜ãƒƒãƒ€ãƒ•ã‚¡ã‚¤ãƒ«ã®åå‰ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã
+ä¾‹
 
   # extconf.rb
   require 'mkmf'
@@ -22,7 +22,7 @@ kind=added
   create_header
   create_makefile('foo')
 
-¾å¤Î extconf.rb ¤Ï°Ê²¼¤Î extconf.h ¤òÀ¸À®¤·¤Ş¤¹¡£
+ä¸Šã® extconf.rb ã¯ä»¥ä¸‹ã® extconf.h ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
   #ifndef EXTCONF_H
   #define EXTCONF_H

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- code -> Net::IMAP::ResponseCode | nil
-�쥹�ݥ󥹥����ɤ��֤��ޤ���
+レスポンスコードを返します。
 
-�������쥹�ݥ󥹥����ɤ�ޤ�Ǥ��ʤ����� nil ���֤��ޤ���
+応答がレスポンスコードを含んでいない場合は nil を返します。
 
 @see [[c:Net::IMAP::ResponseCode]]
 

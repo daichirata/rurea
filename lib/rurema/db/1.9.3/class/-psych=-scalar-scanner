@@ -2,8 +2,8 @@ type=class
 superclass=Object
 included=
 extended=
-library=psych.scalar_scanner
+library=psych
 aliases=
 aliasof=
 
-Scan scalars for built in types
+YAML の scalar 型を読み込んで Ruby の built-in 型に変換するクラス。

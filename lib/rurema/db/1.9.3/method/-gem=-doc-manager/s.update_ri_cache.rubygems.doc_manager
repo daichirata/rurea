@@ -4,5 +4,5 @@ kind=defined
 
 --- update_ri_cache
 
-RDoc 2 �����󥹥ȡ��뤵��Ƥ������ RI �Υ���å���򹹿����ޤ���
-�����Ǥʤ����ϲ��⤷�ޤ���
+RDoc 2 がインストールされている場合は RI のキャッシュを更新します。
+そうでない場合は何もしません。

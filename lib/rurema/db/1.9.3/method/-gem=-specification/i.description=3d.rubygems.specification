@@ -4,7 +4,7 @@ kind=defined
 
 --- description=(desc)
 
-Gem �ѥå������������򥻥åȤ��ޤ���
+Gem パッケージの説明をセットします。
 
-@param desc �ѥå������ξܺ٤���������ʸ�Ϥ���ꤷ�ޤ���
+@param desc パッケージの詳細を説明する文章を指定します。
 

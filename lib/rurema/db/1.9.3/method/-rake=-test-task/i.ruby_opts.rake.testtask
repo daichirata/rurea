@@ -4,5 +4,5 @@ kind=defined
 
 --- ruby_opts -> Array
 
-�ƥ��ȼ¹Ի��� Ruby ���ޥ�ɤ��Ϥ���륪�ץ������֤��ޤ���
+テスト実行時に Ruby コマンドに渡されるオプションを返します。
 

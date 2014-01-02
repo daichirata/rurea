@@ -1,7 +1,0 @@
-requires=
-classes=RDoc=Constant
-methods=
-sublibraries=
-is_sublibrary=true
-
-[[c:RDoc::Constant]] を定義するサブライブラリです。

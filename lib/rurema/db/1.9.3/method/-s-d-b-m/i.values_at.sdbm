@@ -4,9 +4,9 @@ kind=defined
 
 --- values_at(*keys) -> [String]
 
-keys ¤ËÂÐ±þ¤¹¤ëÃÍ¤òÇÛÎó¤Ë³ÊÇ¼¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+keys ã«å¯¾å¿œã™ã‚‹å€¤ã‚’é…åˆ—ã«æ ¼ç´ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param keys ¥­¡¼¡£Ê£¿ô»ØÄê²ÄÇ½¤Ç¤¹¡£
+@param keys ã‚­ãƒ¼ã€‚è¤‡æ•°æŒ‡å®šå¯èƒ½ã§ã™ã€‚
 
   require 'sdbm'
   

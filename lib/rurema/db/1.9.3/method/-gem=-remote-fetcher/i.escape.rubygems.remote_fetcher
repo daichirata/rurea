@@ -4,9 +4,9 @@ kind=defined
 
 --- escape(str) -> String
 
-URI ʸ����򥨥󥳡��ɤ���ʸ������֤��ޤ���
+URI 文字列をエンコードした文字列を返します。
 
-@param str ʸ�������ꤷ�ޤ���
+@param str 文字列を指定します。
 
-@see [[m:URI.#escape]]
+@see [[m:URI.escape]]
 

@@ -5,21 +5,21 @@ kind=defined
 --- put(localfile, remotefile = File.basename(localfile), blocksize = DEFAULT_BLOCKSIZE) -> nil
 --- put(localfile, remotefile = File.basename(localfile), blocksize = DEFAULT_BLOCKSIZE) { |data| .... } -> nil
 
-�����Фإե������ž�����ޤ���
+サーバへファイルを転送します。
 
-[[m:Net::FTP#binary]] ���ͤ˽��ä�
-[[m:Net::FTP#putbinaryfile]] �⤷����
-[[m:Net::FTP#puttextfile]] ��ƤӤ����ޤ���
+[[m:Net::FTP#binary]] の値に従って
+[[m:Net::FTP#putbinaryfile]] もしくは
+[[m:Net::FTP#puttextfile]] を呼びだします。
 
-binary �����ΤȤ����Ĥޤ�ƥ����ȥ⡼�ɤ�
-�Ȥ��ˤ� blocksize ��̵�뤵��ޤ���
+binary が偽のとき、つまりテキストモードの
+ときには blocksize は無視されます。
 
-@param localfile ž�������������Υե�����̾��Ϳ���ޤ���
-@param remotefile ž���ǡ�������¸�����⡼�ȤΥե�����̾��Ϳ���ޤ���
-@param blocksize �ǡ���ž����ñ�̤�Х���ñ�̤�Ϳ���ޤ���
+@param localfile 転送するローカルのファイル名を与えます。
+@param remotefile 転送データを保存するリモートのファイル名を与えます。
+@param blocksize データ転送の単位をバイト単位で与えます。
 
-@raise Net::FTPTempError ���������ɤ� 4yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPPermError ���������ɤ� 5yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPProtoError ���������ɤ� RFC Ū���������ʤ�����ȯ�����ޤ���
-@raise Net::FTPReplyError ���������ɤ���ξ��ʳ����������ʤ�����ȯ�����ޤ���
+@raise Net::FTPTempError 応答コードが 4yz のときに発生します。
+@raise Net::FTPPermError 応答コードが 5yz のときに発生します。
+@raise Net::FTPProtoError 応答コードが RFC 的に正しくない場合に発生します。
+@raise Net::FTPReplyError 応答コードが上の場合以外で正しくない場合に発生します。
 

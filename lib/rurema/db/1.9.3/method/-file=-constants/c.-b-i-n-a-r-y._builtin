@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- BINARY -> Integer
-�ե������Х��ʥ�Ȥ��Ƴ����ޤ���
-open(2) �� O_BINARY������Ǥ�����˻Ȥ��ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+ファイルをバイナリとして開きます。
+open(2) で O_BINARYが指定できる場合に使えます。
+[[m:File.open]]で使用します。
 

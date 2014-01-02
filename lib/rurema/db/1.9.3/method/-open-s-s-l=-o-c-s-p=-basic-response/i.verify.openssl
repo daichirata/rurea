@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- verify(certs, store, flags=0) -> bool
-╫Пл╬╓Р╦║╬з╓╥╓ч╓╧║ё
+Г╫╡Е░█Ц┌▓Ф╓°Х╗╪Ц│≈Ц│╬Ц│≥Ц─┌
 
-flags╓к╓о╟й╡╪╓нцм╓н OR ╓Р╪Х╓ц╓©╓Б╓н╓Рео╓╥╓ч╓╧║ё
+flagsЦ│╚Ц│╞Д╩╔Д╦▀Ц│╝Е─╓Ц│╝ OR Ц┌▓Е▐√Ц│ёЦ│÷Ц┌┌Ц│╝Ц┌▓Ф╦║Ц│≈Ц│╬Ц│≥Ц─┌
   * [[m:OpenSSL::OCSP::TRUSTOTHER]]
   * [[m:OpenSSL::OCSP::NOSIGS]]
   * [[m:OpenSSL::OCSP::NOVERIFY]]
   * [[m:OpenSSL::OCSP::NOINTERN]]
 
-TRUSTOTHER ╓Рм╜╦З╓к╓╧╓К╓х certs ╓г╩ьдЙ╓╥╓©╬злю╫Я╓Р╦║╬з╓╩╓╨╓к©╝мЙ╓╥╓ч╓╧║ё
+TRUSTOTHER Ц┌▓Ф°┴Е┼╧Ц│╚Ц│≥Ц┌▀Ц│╗ certs Ц│╖Ф▄┤Е╝ Ц│≈Ц│÷Х╗╪Ф≤▌Ф⌡╦Ц┌▓Ф╓°Х╗╪Ц│⌡Ц│ Ц│╚Д©║И═╪Ц│≈Ц│╬Ц│≥Ц─┌
 
-@param certs ╦║╬з╓кмя╓╓╓Кди╡це╙╓й╬злю╫Я([[c:OpenSSL::X509::Certificate]] ╔╙╔ж╔╦╔╖╔╞╔х╓нгшнС)
-@param store ╦║╬з╓кмя╓╓╓К╬злю╫Я╔╧╔х╔╒([[c:OpenSSL::X509::Store]] ╔╙╔ж╔╦╔╖╔╞╔х)
-@param flags ╔у╔И╔╟(ю╟©Т)
+@param certs Ф╓°Х╗╪Ц│╚Г■╗Ц│└Ц┌▀Х©╫Е┼═Г └Ц│╙Х╗╪Ф≤▌Ф⌡╦([[c:OpenSSL::X509::Certificate]] Ц┌╙Ц┐√Ц┌╦Ц┌╖Ц┌╞Ц┐┬Ц│╝И┘█Е┬≈)
+@param store Ф╓°Х╗╪Ц│╚Г■╗Ц│└Ц┌▀Х╗╪Ф≤▌Ф⌡╦Ц┌╧Ц┐┬Ц┌╒([[c:OpenSSL::X509::Store]] Ц┌╙Ц┐√Ц┌╦Ц┌╖Ц┌╞Ц┐┬)
+@param flags Ц┐∙Ц┐╘Ц┌╟(Ф∙╢Ф∙╟)
 

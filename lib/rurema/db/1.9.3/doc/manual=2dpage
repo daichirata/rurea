@@ -1,39 +1,39 @@
 title=manual page
 
 
-foo(1)¤È¤¤¤¦µ­½Ò¤Ï¥Ş¥Ë¥å¥¢¥ë¥Ú¡¼¥¸¤Î»²¾È¤ò¼¨¤·¤Ş¤¹(Unix¤Ç¤ÎÏÃ)¡£
+foo(1)ã¨ã„ã†è¨˜è¿°ã¯ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãƒšãƒ¼ã‚¸ã®å‚ç…§ã‚’ç¤ºã—ã¾ã™(Unixã§ã®è©±)ã€‚
 
   $ man 1 foo
 
-¤Ê¤É¤È¤·¤Æ»²¾È¤·¤Ş¤¹¡£
+ãªã©ã¨ã—ã¦å‚ç…§ã—ã¾ã™ã€‚
 
-¿ô»ú¤Ï¥»¥¯¥·¥ç¥óÈÖ¹æ¤ò¼¨¤·¤Ş¤¹¡£Îã¤¨¤Ğ
-* 1 ¥³¥Ş¥ó¥É
-* 2 ¥·¥¹¥Æ¥à¥³¡¼¥ë
-* 3 ¥é¥¤¥Ö¥é¥ê´Ø¿ô
-¤Ê¤É¤ÈÊ¬Îà¤ï¤±¤µ¤ì¤Æ¤¤¤Ş¤¹¡£³Æ¥»¥¯¥·¥ç¥ó¤Î°ÕÌ£¤Ï intro(1) ¤Ê¤É¤Ë
-ÀâÌÀ¤¬¤¢¤ê¤Ş¤¹¤Î¤Ç¤½¤Á¤é¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+æ•°å­—ã¯ã‚»ã‚¯ã‚·ãƒ§ãƒ³ç•ªå·ã‚’ç¤ºã—ã¾ã™ã€‚ä¾‹ãˆã°
+ * 1 ã‚³ãƒãƒ³ãƒ‰
+ * 2 ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ«
+ * 3 ãƒ©ã‚¤ãƒ–ãƒ©ãƒªé–¢æ•°
+ãªã©ã¨åˆ†é¡ã‚ã‘ã•ã‚Œã¦ã„ã¾ã™ã€‚å„ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã®æ„å‘³ã¯ intro(1) ãªã©ã«
+èª¬æ˜ãŒã‚ã‚Šã¾ã™ã®ã§ãã¡ã‚‰ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-´Ä¶­¤Ë¤è¤Ã¤Æ¤Ï¥·¥¹¥Æ¥à¥³¡¼¥ë¤¬¥é¥¤¥Ö¥é¥ê´Ø¿ô¤È¤·¤Æ¼ÂÁõ¤µ¤ì¤Æ¤¤¤ë
-¾ì¹ç¤â¤¢¤ë¤Î¤Ç socket(2) ¤¬
+ç’°å¢ƒã«ã‚ˆã£ã¦ã¯ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ«ãŒãƒ©ã‚¤ãƒ–ãƒ©ãƒªé–¢æ•°ã¨ã—ã¦å®Ÿè£…ã•ã‚Œã¦ã„ã‚‹
+å ´åˆã‚‚ã‚ã‚‹ã®ã§ socket(2) ãŒ
 
   $ man 2 socket
 
-¤Ç¤Ê¤¯
+ã§ãªã
 
   $ man 3 socket
 
-¤Î¾ì¹ç¤â¤¢¤ê¤Ş¤¹¡£ÂçÄñ¥»¥¯¥·¥ç¥ó¤Ï¾ÊÎ¬¤·¤Æ
+ã®å ´åˆã‚‚ã‚ã‚Šã¾ã™ã€‚å¤§æŠµã‚»ã‚¯ã‚·ãƒ§ãƒ³ã¯çœç•¥ã—ã¦
   $ man socket
-¤È¤·¤Æ»²¾È¤¹¤ì¤ĞÎÉ¤¤¤Ç¤·¤ç¤¦¡£
+ã¨ã—ã¦å‚ç…§ã™ã‚Œã°è‰¯ã„ã§ã—ã‚‡ã†ã€‚
 
-¾ÜºÙ¤Ï [[man:man(1)]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+è©³ç´°ã¯ [[man:man(1)]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-UNIX ´Ä¶­¤ò¿¨¤ì¤Ê¤¤¿Í¤Ï
-* [[unknown:The Single UNIX(R) Specification V2|URL:http://www.unix-systems.org/single_unix_specification_v2/]]
-* [[unknown:JM Project|URL:http://www.linux.or.jp/JM/]]
-* [[unknown:jpman ¥×¥í¥¸¥§¥¯¥È|URL:http://www.jp.freebsd.org/man-jp/]]
-* [[unknown:X Japanese Documentation Project|URL:http://xjman.dsl.gr.jp/]]
-* [[unknown:FreeBSD Hypertext Man Pages|URL:http://www.freebsd.org/cgi/man.cgi]]
-* [[unknown:The Open Group Base Specifications Issue 6 IEEE Std 1003.1-2001|URL:http://www.opengroup.org/onlinepubs/007904975/idx/index.html]]
-¤Ê¤É¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤(¤³¤ÎÂ¾¤Ë¤â¾ğÊó¤¬¤¢¤ì¤Ğ¶µ¤¨¤Æ¤¯¤À¤µ¤¤)¡£
+UNIX ç’°å¢ƒã‚’è§¦ã‚Œãªã„äººã¯
+ * The Single UNIX(R) Specification V2: [[url:http://www.unix-systems.org/single_unix_specification_v2/]]
+ * JM Project: [[url:http://www.linux.or.jp/JM/]]
+ * jpman ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆ: [[url:http://www.jp.freebsd.org/man-jp/]]
+ * X Japanese Documentation Project: [[url:http://xjman.dsl.gr.jp/]]
+ * FreeBSD Hypertext Man Pages: [[url:http://www.freebsd.org/cgi/man.cgi]]
+ * The Open Group Base Specifications Issue 6 IEEE Std 1003.1-2001: [[url:http://www.opengroup.org/onlinepubs/007904975/idx/index.html]]
+ãªã©ã‚’å‚ç…§ã—ã¦ãã ã•ã„(ã“ã®ä»–ã«ã‚‚æƒ…å ±ãŒã‚ã‚Œã°æ•™ãˆã¦ãã ã•ã„)ã€‚

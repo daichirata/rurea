@@ -2,7 +2,8 @@ names=children,to_a
 visibility=public
 kind=defined
 
---- to_a
---- children
-@todo
+--- to_a -> [REXML::Child]
+--- children -> [REXML::Child]
+子ノード列の配列を返します。
+
 

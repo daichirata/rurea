@@ -6,6 +6,6 @@ library=resolv
 aliases=
 aliasof=
 
-/etc/hosts (Windows ¤Ç¤¢¤ì¤Ğ 
-%SystemRoot%\System32\drivers\etc\hosts ¤Ê¤É)
-¤ò»ÈÍÑ¤¹¤ë¥Û¥¹¥ÈÌ¾¥ê¥¾¥ë¥Ğ¤Ç¤¹¡£
+/etc/hosts (Windows ã§ã‚ã‚Œã° 
+%SystemRoot%\System32\drivers\etc\hosts ãªã©)
+ã‚’ä½¿ç”¨ã™ã‚‹ãƒ›ã‚¹ãƒˆåãƒªã‚¾ãƒ«ãƒã§ã™ã€‚

@@ -4,5 +4,5 @@ kind=defined
 
 --- array_nl=(str)
 
-JSON ������θ�˽��Ϥ���ʸ����򥻥åȤ��ޤ���
+JSON の配列の後に出力する文字列をセットします。
 

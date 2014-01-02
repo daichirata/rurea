@@ -4,7 +4,7 @@ kind=defined
 
 --- split_header_value(str) -> Array
 
-HTTP �إå����ͤ�ʬ�䤷���֤��ޤ���
+HTTP ヘッダの値を分割して返します。
 
-@param str HTTP �إå����ͤ��֤��ޤ���
+@param str HTTP ヘッダの値を返します。
 

@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- sysclose -> nil
-��³���Ĥ��ޤ�������'close notify'������ޤ���
+接続を閉じます。相手に'close notify'を送ります。
 
-���Υ᥽�åɤ� openssl �饤�֥����Ǵ������Ƥ���Хåե���
-�ե�å��夻������³���Ĥ��ޤ������Τ��ᡢ�̾��
-����ǤϤʤ� [[m:OpenSSL::Buffering#close]] ��Ƥ֤٤��Ǥ���
+このメソッドは openssl ライブラリ内で管理しているバッファを
+フラッシュせずに接続を閉じます。そのため、通常は
+これではなく [[m:OpenSSL::Buffering#close]] を呼ぶべきです。
 
-[[m:OpenSSL::SSL::SSLSocket#sync_close]] �����Ǥ������
-���Υ᥽�åɤ�ƤӤ����������Ǽ��Ȥ��ݻ����Ƥ��륽���å�
-��Ʊ�����Ĥ��ޤ���
+[[m:OpenSSL::SSL::SSLSocket#sync_close]] が真である場合は
+このメソッドを呼びだした時点で自身が保持しているソケット
+を同時に閉じます。
 

@@ -5,7 +5,7 @@ kind=added
 --- $ORS                     -> String | nil
 --- $OUTPUT_RECORD_SEPARATOR -> String | nil
 
-[[m:$\]] ¤ÎÊÌÌ¾
+[[m:$\]] ã®åˆ¥å
 
   require "English"
 

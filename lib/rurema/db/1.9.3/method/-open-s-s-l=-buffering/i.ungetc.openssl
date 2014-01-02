@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- ungetc(char) -> ()
-»ØÄê¤·¤¿Ê¸»ú char ¤ò¥Ğ¥Ã¥Õ¥¡¤ËÆÉ¤ßÌá¤·¤Ş¤¹¡£
+æŒ‡å®šã—ãŸæ–‡å­— char ã‚’ãƒãƒƒãƒ•ã‚¡ã«èª­ã¿æˆ»ã—ã¾ã™ã€‚
 
-char ¤Ë¤Ï String ¤« Integer ¤òÅÏ¤·¤Ş¤¹¡£
+char ã«ã¯ String ã‹ Integer ã‚’æ¸¡ã—ã¾ã™ã€‚
 
-[[m:IO#ungetc]] ¤ÈÆ±ÍÍ¤Ç¤¹¡£
+[[m:IO#ungetc]] ã¨åŒæ§˜ã§ã™ã€‚
 
-@param char ÆÉ¤ßÌá¤¹Ê¸»ú
+@param char èª­ã¿æˆ»ã™æ–‡å­—

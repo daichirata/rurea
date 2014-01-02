@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- new(data=nil) -> OpenSSL::Digest::SHA224
-¿·¤·¤¤¥À¥¤¥¸¥§¥¹¥È¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
+æ–°ã—ã„ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-data ¤ËÊ¸»úÎó¤òÅÏ¤¹¤È¤½¤ÎÆâÍÆ¤ÇÆâÉô¾õÂÖ¤ò¹¹¿·¤·¤Þ¤¹¡£
+data ã«æ–‡å­—åˆ—ã‚’æ¸¡ã™ã¨ãã®å†…å®¹ã§å†…éƒ¨çŠ¶æ…‹ã‚’æ›´æ–°ã—ã¾ã™ã€‚
 
-@param data ÆþÎÏÊ¸»úÎó
+@param data å…¥åŠ›æ–‡å­—åˆ—
 

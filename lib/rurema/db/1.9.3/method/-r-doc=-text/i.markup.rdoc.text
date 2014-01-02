@@ -4,9 +4,9 @@ kind=defined
 
 --- markup(text) -> String
 
-�������������ޤ���
+引数を整形します。
 
-include �������饹�� self#formatter �᥽�åɤ�ɬ�פǤ���
+include したクラスに self#formatter メソッドが必要です。
 
-@param text ʸ�������ꤷ�ޤ���
+@param text 文字列を指定します。
 

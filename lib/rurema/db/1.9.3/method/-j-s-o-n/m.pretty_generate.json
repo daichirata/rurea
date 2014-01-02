@@ -5,16 +5,16 @@ kind=defined
 --- pretty_generate(object, options = nil) -> String
 --- pretty_unparse(object, options = nil) -> String
 
-Ruby �Υ��֥������Ȥ� JSON ������ʸ������Ѵ������֤��ޤ���
+Ruby のオブジェクトを JSON 形式の文字列に変換して返します。
 
-���Υ᥽�åɤ� [[m:JSON.#generate]] ����ʹ֤��ɤߤ䤹��ʸ������֤��ޤ���
+このメソッドは [[m:JSON.#generate]] よりも人間に読みやすい文字列を返します。
 
-pretty_unparse �Ͼ����������ͽ��Ǥ���
+pretty_unparse は将来削除される予定です。
 
-@param object JSON ������ʸ������Ѵ����륪�֥������Ȥ���ꤷ�ޤ���
+@param object JSON 形式の文字列に変換するオブジェクトを指定します。
 
-@param options [[c:JSON::State]] �ޤ��ϡ�to_hash �� to_h �᥽�åɤǥϥå�����Ѵ���ǽ�ʥ��֥������Ȥ����Ǥ��ޤ���
-       �ϥå������Ѥ���������ǽ�ʥ��ץ����� [[m:JSON.#generate]] �򻲾Ȥ��Ƥ���������
+@param options [[c:JSON::State]] または、to_hash や to_h メソッドでハッシュに変換可能なオブジェクトを指定できます。
+       ハッシュを使用する場合指定可能なオプションは [[m:JSON.#generate]] を参照してください。
 
 @see [[m:JSON.#generate]]
 

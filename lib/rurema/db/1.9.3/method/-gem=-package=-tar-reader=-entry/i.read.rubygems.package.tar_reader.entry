@@ -4,8 +4,8 @@ kind=defined
 
 --- read(length = nil) -> String
 
-���Ȥ�����ꤵ�줿�Х��ȿ��ɤ߹��ߤޤ���
+自身から指定されたバイト数読み込みます。
 
-@param length �ɤ߹���Х��ȿ�����ꤷ�ޤ���
-              ��ά��������Ƥ��ɤ߹��ߤޤ���
+@param length 読み込むバイト数を指定します。
+              省略すると全てを読み込みます。
 

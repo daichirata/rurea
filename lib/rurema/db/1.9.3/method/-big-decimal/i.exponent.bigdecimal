@@ -2,12 +2,7 @@ names=exponent
 visibility=public
 kind=defined
 
---- exponent
-@todo
+--- exponent -> Integer
 
-ปุฟ๔ษ๔ค๒ภฐฟ๔รอควสึคทคÞคนกฃ
-
-    n = a.exponent
-
-คฯ a คฮรอคฌ 0.xxxxxxx*10**n ค๒ฐีฬฃคทคÞคนกฃ 
+self ใฎๆๆ•ฐ้จใ’ๆ•ดๆ•ฐๅ€คใง่ฟ”ใ—ใพใใ€
 

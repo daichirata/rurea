@@ -4,6 +4,6 @@ kind=defined
 
 --- bytes_read -> Integer
 
-���Ȥ����ɤ߹�����Х��ȿ����֤��ޤ���
+自身から読み込んだバイト数を返します。
 
 

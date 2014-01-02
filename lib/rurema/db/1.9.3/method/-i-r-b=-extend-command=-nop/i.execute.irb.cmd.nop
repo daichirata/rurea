@@ -4,6 +4,6 @@ kind=defined
 
 --- execute(*opts) -> ()
 
-���⤷�ޤ��󡣥��֥��饹�ǥ����С��饤�ɤ��ƻ��Ѥ��ޤ���
+何もしません。サブクラスでオーバーライドして使用します。
 
-@param opts irb ��ǥ��ޥ�ɤ��Ϥ���������ꤷ�ޤ���
+@param opts irb 中でコマンドに渡す引数を指定します。

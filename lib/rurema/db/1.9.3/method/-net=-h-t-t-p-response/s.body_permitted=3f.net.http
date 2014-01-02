@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- body_permitted? -> bool
-����ƥ��ƥ��ܥǥ���ޤळ�Ȥ�������Ƥ���쥹�ݥ󥹥��饹
-�ʤ�п��򡢤����Ǥʤ���е����֤��ޤ���
+エンティティボディを含むことが許されているレスポンスクラス
+ならば真を、そうでなければ偽を返します。
 
 

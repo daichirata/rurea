@@ -1,7 +1,0 @@
-requires=
-classes=RDoc=Text
-methods=
-sublibraries=
-is_sublibrary=true
-
-コメントテキストを処理するためのサブライブラリです。

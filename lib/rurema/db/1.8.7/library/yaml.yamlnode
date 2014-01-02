@@ -1,7 +1,0 @@
-requires=yaml.basenode,yaml.ypath
-classes=YAML=YamlNode
-methods=
-sublibraries=
-is_sublibrary=true
-
-YAML のノードを表現するためのサブライブラリです。

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- each_capitalized_name {|name| .... } -> ()
-�ݻ����Ƥ���إå�̾��������
+保持しているヘッダ名を正規化
 ('x-my-header' -> 'X-My-Header') 
-���ơ��֥��å����Ϥ��ޤ���
+して、ブロックに渡します。
 

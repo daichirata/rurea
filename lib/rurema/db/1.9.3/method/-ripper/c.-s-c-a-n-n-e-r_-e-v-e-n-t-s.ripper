@@ -4,5 +4,5 @@ kind=defined
 
 --- SCANNER_EVENTS -> [Symbol]
 
-������ʥ��٥�ȤΥ��٥�� ID (����ܥ�) �Υꥹ�Ȥ��֤��ޤ���
+スキャナイベントのイベント ID (シンボル) のリストを返します。
 

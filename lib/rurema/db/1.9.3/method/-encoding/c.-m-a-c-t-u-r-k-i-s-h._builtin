@@ -4,11 +4,11 @@ kind=defined
 
 --- MacTurkish -> Encoding
 --- MACTURKISH -> Encoding
-MacTurkish ���󥳡��ǥ��󥰡�
+MacTurkish エンコーディング。
 
-Mac OS�ǻȤ���
-8bit single-byte ���󥳡��ǥ��󥰤ǡ�
-�ȥ륳��Τ���˻Ȥ��ޤ���
+Mac OSで使われる
+8bit single-byte エンコーディングで、
+トルコ語のために使われます。
 
 @see [[url:http://www.unicode.org/Public/MAPPINGS/VENDORS/APPLE/TURKISH.TXT]]
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- content_encoding    -> [String]
 
-ÂÐ¾Ý¤È¤Ê¤ë¥ê¥½¡¼¥¹¤Î Content-Encoding ¤òÊ¸»úÎó¤ÎÇÛÎó¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£
-Content-Encoding ¥Ø¥Ã¥À¤¬¤Ê¤¤¾ì¹ç¤Ï¡¢¶õ¤ÎÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
+å¯¾è±¡ã¨ãªã‚‹ãƒªã‚½ãƒ¼ã‚¹ã® Content-Encoding ã‚’æ–‡å­—åˆ—ã®é…åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
+Content-Encoding ãƒ˜ãƒƒãƒ€ãŒãªã„å ´åˆã¯ã€ç©ºã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'open-uri'
   p open('http://example.com/f.tar.gz').content_encoding  #=> ["x-gzip"]

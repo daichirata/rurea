@@ -6,24 +6,24 @@ library=_builtin
 aliases=
 aliasof=
 
-each �ʳ��Υ᥽�åɤˤ� [[c:Enumerable]] �ε�ǽ���󶡤��뤿��Υ�åѡ����饹�Ǥ���
-�ޤ����������ƥ졼���Ȥ��Ƥ�Ȥ��ޤ���
+each 以外のメソッドにも [[c:Enumerable]] の機能を提供するためのラッパークラスです。
+また、外部イテレータとしても使えます。
 
-[[c:Enumerable]] �⥸�塼��ϡ� [[m:Module#include]] ��Υ��饹������
-each �᥽�åɤ򸵤��͡��ʥ᥽�åɤ��󶡤��ޤ���
-�㤨�� Array#map �� [[m:Array#each]] �η����֤��򸵤ˤ����������ޤ���
-Enumerator ��𤹤뤳�Ȥˤ�� [[m:String#each_byte]] �Τ褦��
-�ۤʤ�̾���Υ��ƥ졼���ˤĤ��Ƥ� each ��Ʊ�ͤ� Enumerable �ε�ǽ�����ѤǤ��ޤ���
+[[c:Enumerable]] モジュールは、 [[m:Module#include]] 先のクラスが持つ
+each メソッドを元に様々なメソッドを提供します。
+例えば Array#map は [[m:Array#each]] の繰り返しを元にして定義されます。
+Enumerator を介することにより [[m:String#each_byte]] のような
+異なる名前のイテレータについても each と同様に Enumerable の機能を利用できます。
 
-Enumerator ����������ˤ�
+Enumerator を生成するには
 [[m:Enumerator.new]]
-���뤤�� [[m:Object#to_enum]], [[m:Object#enum_for]] �����Ѥ��ޤ���
-�ޤ��������Υ��ƥ졼���ϥ֥��å����Ϥ����˸ƤӽФ��ȷ����֤���¹Ԥ��������
-enumerator �����������֤��ޤ���
+あるいは [[m:Object#to_enum]], [[m:Object#enum_for]] を利用します。
+また、一部のイテレータはブロックを渡さずに呼び出すと繰り返しを実行する代わりに
+enumerator を生成して返します。
 
-=== ����
-�������ƥ졼���Ȥ��Ƥε�ǽ�� [[c:Fiber]] ���Ѥ��Ƽ�������Ƥ��뤿�� Fiber ��Ʊ�����¤�����ޤ���
-�㤨�аʲ��Τ褦�ʥ���åɤ�ޤ������ƤӽФ��ϥ��顼�ˤʤ�ޤ���
+=== 注意
+外部イテレータとしての機能は [[c:Fiber]] を用いて実装されているため Fiber と同じ制限があります。
+例えば以下のようなスレッドをまたいだ呼び出しはエラーになります。
 
  a = nil
  Thread.new do

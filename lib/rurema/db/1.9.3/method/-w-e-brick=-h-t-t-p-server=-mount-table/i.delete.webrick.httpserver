@@ -4,9 +4,9 @@ kind=defined
 
 --- delete(dir) -> WEBrick::HTTPServlet::AbstractServlet
 
-�ǥ��쥯�ȥ�ȥ����֥�åȤ��б��������ƥ����֥�åȤ��֤��ޤ���
+ディレクトリとサーブレットの対応を削除してサーブレットを返します。
 
-@param dir �ǥ��쥯�ȥ����ꤷ�ޤ���
+@param dir ディレクトリを指定します。
 
-@return [[c:WEBrick::HTTPServlet::AbstractServlet]] �Υ��֥��饹�Υ��󥿥󥹤��֤��ޤ���
+@return [[c:WEBrick::HTTPServlet::AbstractServlet]] のサブクラスのインタンスを返します。
 

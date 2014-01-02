@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- each_filename {|v| ... } -> nil
-self คฮฅัฅนฬพอืมวห่คหฅึฅํฅรฅฏค๒ผยนิคทคÞคนกฃ
+self ใฎใ‘ในๅ่ฆ็ด ๆฏใซใ–ใญใใฏใ’ๅฎ่กใ—ใพใใ€
 
     require 'pathname'
 

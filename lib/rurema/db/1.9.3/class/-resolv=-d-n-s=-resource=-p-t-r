@@ -6,8 +6,8 @@ library=resolv
 aliases=
 aliasof=
 
-DNS �꥽������ PTR �쥳����
-��ɽ����ݥ��饹�Ǥ���
+DNS リソースの PTR レコード
+を表す抽象クラスです。
 
-[[m:Resolv::DNS#getresource]] �� PTR �쥳���ɤ�����������
-[[c:Resolv::DNS::Resource::IN::PTR]] ��Ȥ��٤��Ǥ���
+[[m:Resolv::DNS#getresource]] で PTR レコードを得たい場合は
+[[c:Resolv::DNS::Resource::IN::PTR]] を使うべきです。

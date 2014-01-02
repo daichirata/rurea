@@ -4,8 +4,8 @@ kind=defined
 
 --- [](key) -> object
 
-���ꤵ�줿�������ͤ��֤��ޤ���
-�ͤ����ꤵ��Ƥ��ʤ���� nil ���֤��ޤ���
+指定されたキーの値を返します。
+値が設定されていなければ nil を返します。
 
-@param key ��������ꤷ�ޤ���
+@param key キーを指定します。
 

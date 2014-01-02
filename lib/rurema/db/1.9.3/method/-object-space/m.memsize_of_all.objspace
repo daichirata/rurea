@@ -4,28 +4,28 @@ kind=added
 
 --- memsize_of_all(klass = nil) -> Integer
 
-���٤Ƥ���¸���Ƥ��륪�֥������Ȥ����񤷤Ƥ����������̤�Х���ñ��
-���֤��ޤ���
+すべての生存しているオブジェクトが消費しているメモリ使用量をバイト単位
+で返します。
 
-@param klass ���ꤷ�����饹�Υ��󥹥��󥹤Υ�������̤��֤��ޤ�����ά
-             �������Ϥ��٤ƤΥ��饹�Υ��󥹥��󥹤Υ�������̤��֤�
-             �ޤ���
+@param klass 指定したクラスのインスタンスのメモリ使用量を返します。省略
+             した場合はすべてのクラスのインスタンスのメモリ使用量を返し
+             ます。
 
-�ܥ᥽�åɤϰʲ��Τ褦�� Ruby �Υ����ɤ�����Ǥ��ޤ���
+本メソッドは以下のような Ruby のコードで定義できます。
 
   def memsize_of_all klass = false
     total = 0
-    ObjectSpace.each_objects{|e|
+    ObjectSpace.each_object{|e|
       total += ObjectSpace.memsize_of(e) if klass == false || e.kind_of?(klass)
     }
     total
   end
 
-����ͤ����Ƥϴ����ǤϤʤ��������դ��Ƥ����������������ƤϤ����ޤǤ��
-��ȤȤ��ư���ɬ�פ�����ޤ����ä� T_DATA ���ͤ��������ʤ��Ǥ��礦��
+戻り値の内容は完全ではない事に注意してください。この内容はあくまでもヒ
+ントとして扱う必要があります。特に T_DATA の値は正しくないでしょう。
 
-�ޤ���Ʊ�ͤ�����ͤ����Ƥ� malloc ���줿����ι�פǤ�ʤ��������դ�
-�Ƥ���������
+また、同様に戻り値の内容は malloc されたメモリの合計でもない事に注意し
+てください。
 
-�ܥ᥽�åɤ� C Ruby �ʳ��Ǥ�ư��ޤ���
+本メソッドは C Ruby 以外では動作しません。
 

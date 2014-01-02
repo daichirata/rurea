@@ -6,13 +6,13 @@ kind=defined
 --- compare_file(file_a, file_b) -> bool
 --- identical?(file_a, file_b)   -> bool
 
-¥Õ¥¡¥¤¥ë a ¤È b ¤ÎÆâÍÆ¤¬Æ±¤¸¤Ê¤é¿¿¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ« a ã¨ b ã®å†…å®¹ãŒåŒã˜ãªã‚‰çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-@param file_a ¥Õ¥¡¥¤¥ëÌ¾¡£
+@param file_a ãƒ•ã‚¡ã‚¤ãƒ«åã€‚
 
-@param file_b ¥Õ¥¡¥¤¥ëÌ¾¡£
+@param file_b ãƒ•ã‚¡ã‚¤ãƒ«åã€‚
 
-Îã:
+ä¾‹:
 
   FileUtils.cmp('somefile', 'somefile')  #=> true
   FileUtils.cmp('/bin/cp', '/bin/mv')    #=> maybe false.

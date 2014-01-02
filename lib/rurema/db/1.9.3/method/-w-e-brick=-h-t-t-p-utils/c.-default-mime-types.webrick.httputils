@@ -4,4 +4,4 @@ kind=defined
 
 --- DefaultMimeTypes -> Hash
 
-�ե�����γ�ĥ�Ҥ򥭡��� MIME Type ���ͤȤ������Ǥ���ĥϥå���Ǥ���
+ファイルの拡張子をキー、 MIME Type を値とする要素を持つハッシュです。

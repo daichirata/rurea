@@ -3,5 +3,6 @@ classes=Tk=Vu
 methods=
 sublibraries=tkextlib.vu.setup,tkextlib.vu.dial,tkextlib.vu.pie,tkextlib.vu.spinbox,tkextlib.vu.bargraph
 is_sublibrary=true
+category=
 
 

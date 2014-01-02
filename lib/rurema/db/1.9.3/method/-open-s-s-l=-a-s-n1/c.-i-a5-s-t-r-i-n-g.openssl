@@ -4,6 +4,6 @@ kind=defined
 
 --- IA5STRING -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-IA5STRING ¤Î¥¿¥°ÈÖ¹æ 22 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+IA5STRING ã®ã‚¿ã‚°ç•ªå· 22 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

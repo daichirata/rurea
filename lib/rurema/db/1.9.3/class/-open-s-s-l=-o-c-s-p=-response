@@ -6,10 +6,10 @@ library=openssl
 aliases=
 aliasof=
 
-OCSP �쥹�ݥ������Υ쥹�ݥ󥹤�ɽ�魯���֥������ȤǤ���
+OCSP レスポンダからのレスポンスを表わすオブジェクトです。
 
-�쥹�ݥ󥹤μ¼�Ū������(�����񤬼������Ƥ��뤫�ݤ�)
-�� [[m:OpenSSL::OCSP::Response#basic]] 
-�������� [[c:OpenSSL::OCSP::BasicResponse]] ���֥������Ȥ�
-�ݻ����Ƥ��ޤ������Υ��֥������ȼ��Τϥ쥹�ݥ󥹤Υ��ơ�����������
-�ʤɤ��ݻ����Ƥ��ޤ���
+レスポンスの実質的な内容(証明書が失効しているか否か)
+は [[m:OpenSSL::OCSP::Response#basic]] 
+で得られる [[c:OpenSSL::OCSP::BasicResponse]] オブジェクトが
+保持しています。このオブジェクト自体はレスポンスのステータスコード
+などを保持しています。

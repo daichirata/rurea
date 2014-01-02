@@ -18,6 +18,7 @@ require 'bitclust/methoddatabase'
 
 module BitClust
 
+  # Parser for Ruby API reference file (refm/api/src/*)
   class RRDParser
 
     include NameUtils
@@ -51,7 +52,7 @@ module BitClust
       end
       return ["", source]
     end
-    
+
     def RRDParser.libname(path)
       case path
       when %r<(\A|/)_builtin/>
@@ -66,9 +67,9 @@ module BitClust
       @db = db
     end
     attr_reader :db
-    
+
     def parse_file(path, libname, params = {})
-      fopen(path, 'r:EUC-JP') {|f|
+      fopen(path, 'r:UTF-8') {|f|
         return parse(f, libname, params)
       }
     end
@@ -83,6 +84,8 @@ module BitClust
     private
 
     def do_parse(f)
+      f.skip_blank_lines
+      @context.categorize f.gets_if(/\Acategory\s(.*)/, 1)
       f.skip_blank_lines
       f.while_match(/\Arequire\s/) do |line|
         @context.require line.split[1]
@@ -191,21 +194,21 @@ module BitClust
 
     def read_includes(f, reopen = false)
       f.while_match(/\Ainclude\s/) do |line|
-tty_warn "#{line.location}: dynamic include is not implemented yet" if reopen
+        tty_warn "#{line.location}: dynamic include is not implemented yet" if reopen
         @context.include line.split[1]          unless reopen # FIXME
       end
     end
 
     def read_extends(f, reopen = false)
       f.while_match(/\Aextend\s/) do |line|
-tty_warn "#{line.location}: dynamic extend is not implemented yet" if reopen
+        tty_warn "#{line.location}: dynamic extend is not implemented yet" if reopen
         @context.extend line.split[1]           unless reopen # FIXME
       end
     end
 
-def tty_warn(msg)
-  $stderr.puts msg if $stderr.tty?
-end
+    def tty_warn(msg)
+      $stderr.puts msg if $stderr.tty?
+    end
 
     def read_level2_blocks(f)
       read_entries f
@@ -332,6 +335,10 @@ end
       attr_accessor :type
       attr_accessor :visibility
 
+      def categorize(category)
+        @library.category = category
+      end
+
       def require(libname)
         @library.require @db.get_library(libname)
       end
@@ -339,7 +346,7 @@ end
       def sublibrary(libname)
         @library.sublibrary @db.get_library(libname)
       end
-      
+
       def define_class(name, supername)
         if @db.properties['version'] >= "1.9.0"
           top = 'BasicObject'
@@ -516,7 +523,7 @@ end
         (@klass and @type) ? true : false
       end
     end
-  
+
   end
 
 end

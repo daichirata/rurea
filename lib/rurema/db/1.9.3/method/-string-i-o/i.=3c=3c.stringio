@@ -4,8 +4,8 @@ kind=defined
 
 --- <<(obj)    -> self
 
-obj �� pos �ΰ��֤˽񤭹��ߤޤ��� ɬ�פʤ� obj.to_s ��Ƥ��
-ʸ������Ѵ����ޤ��� self ���֤��ޤ���
+obj を pos の位置に書き込みます。 必要なら obj.to_s を呼んで
+文字列に変換します。 self を返します。
 
-@param obj ���Ȥ˽񤭹��ߤ�����ʸ���� to_s ��������줿���֥������Ȥ���ꤷ�ޤ���
+@param obj 自身に書き込みたい、文字列か to_s が定義されたオブジェクトを指定します。
 

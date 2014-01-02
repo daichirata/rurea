@@ -4,9 +4,9 @@ kind=defined
 
 --- choose_from_list(*args) -> Array
 
-�ꥹ�Ȥ�����������򤹤����򤷤ޤ���
+リストから回答を選択する質問をします。
 
-@param args �Ѿ���Υ᥽�åɤ�Ϳ��������Ǥ���
+@param args 委譲先のメソッドに与える引数です。
 
-@return ������̾�Τ������Υ���ǥå��������ǤȤ���������֤��ޤ���
+@return 選択肢の名称と選択肢のインデックスを要素とする配列を返します。
 

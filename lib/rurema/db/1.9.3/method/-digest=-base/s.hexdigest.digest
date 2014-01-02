@@ -4,7 +4,7 @@ kind=defined
 
 --- hexdigest(str) -> String
 
-Ϳ����줿ʸ������Ф���ϥå����ͤ�ASCII�����ɤ�Ȥä�
-16�ʿ�����򼨤�ʸ����˥��󥳡��ɤ����֤��ޤ���
-new(str).hexdigest �������Ǥ���
+与えられた文字列に対するハッシュ値を、ASCIIコードを使って
+16進数の列を示す文字列にエンコードして返します。
+new(str).hexdigest と等価です。
 

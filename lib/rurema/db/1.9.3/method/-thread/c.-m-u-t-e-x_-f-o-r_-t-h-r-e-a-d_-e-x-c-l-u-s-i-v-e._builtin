@@ -2,6 +2,6 @@ names=MUTEX_FOR_THREAD_EXCLUSIVE
 visibility=public
 kind=defined
 
---- MUTEX_FOR_THREAD_EXCLUSIVE
+--- MUTEX_FOR_THREAD_EXCLUSIVE -> Mutex
 
-[[m:Thread.exclusive]]мя╓н[[c:Mutex]]╔╙╔ж╔╦╔╖╔╞╔х╓г╓╧║ё
+[[m:Thread.exclusive]]Г■╗Ц│╝[[c:Mutex]]Ц┌╙Ц┐√Ц┌╦Ц┌╖Ц┌╞Ц┐┬Ц│╖Ц│≥Ц─┌

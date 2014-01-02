@@ -4,8 +4,8 @@ kind=defined
 
 --- ==(other) -> bool
 
-���Ȥ� other ����������п����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+自身と other が等しければ真を返します。
+そうでない場合は偽を返します。
 
-@param other ����оݤΥ��֥������Ȥ���ꤷ�ޤ���
+@param other 比較対象のオブジェクトを指定します。
 

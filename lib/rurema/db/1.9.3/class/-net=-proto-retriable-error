@@ -6,5 +6,5 @@ library=net.protocol
 aliases=Net=ProtocRetryError
 aliasof=
 
-�ʤ�餫�κƻ�Ԥ򤹤뤳�Ȥǡ������η�³����ǽ�Ǥ���褦��
-���顼��ȯ����������ȯ�������㳰�Ǥ���
+なんらかの再試行をすることで、処理の継続が可能であるような
+エラーが発生した場合に発生する例外です。

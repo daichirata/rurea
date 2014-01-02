@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- size? -> bool
-FileTest.size?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.size?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#size?]]
 

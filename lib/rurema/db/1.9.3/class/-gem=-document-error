@@ -6,4 +6,4 @@ library=rubygems.exceptions
 aliases=
 aliasof=
 
-�����ƥ�� RDoc �����󥹥ȡ��뤵��Ƥ��ʤ����˻��Ѥ����㳰�Ǥ���
+システムに RDoc がインストールされていない場合に使用する例外です。

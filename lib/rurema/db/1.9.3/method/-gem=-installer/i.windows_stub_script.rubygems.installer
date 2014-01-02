@@ -4,6 +4,6 @@ kind=defined
 
 --- windows_stub_script -> String
 
-���ޥ�ɤ�ư���뤿��˻��Ѥ��� Windows �ѤΥХå��ե���������Ƥ�
-ʸ����Ȥ����֤��ޤ���
+コマンドを起動するために使用する Windows 用のバッチファイルの内容を
+文字列として返します。
 

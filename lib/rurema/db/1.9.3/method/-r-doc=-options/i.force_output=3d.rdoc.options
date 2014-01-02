@@ -4,10 +4,10 @@ kind=defined
 
 --- force_output=(val)
 
-val �� true ����ꤷ����硢���ޥ�ɥ饤������� --force_output ���ץ���
-���Ʊ�ͤλ����Ԥ��ޤ���
+val に true を指定した場合、コマンドライン引数の --force_output オプショ
+ンと同様の指定を行います。
 
-@param val --force_output ���ץ�����Ʊ�������Ԥ����� true��������
-           �ʤ����� false ����ꤷ�ޤ���
+@param val --force_output オプションと同じ指定を行う場合は true、そうで
+           ない場合は false を指定します。
 
 

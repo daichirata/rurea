@@ -3,5 +3,6 @@ classes=Timeout,Timeout=Error,TimeoutError
 methods=Kernel/i.timeout.timeout
 sublibraries=
 is_sublibrary=false
+category=Thread
 
-¥¿¥¤¥à¥¢¥¦¥È¤ò¹Ô¤¦¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆã‚’è¡Œã†ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

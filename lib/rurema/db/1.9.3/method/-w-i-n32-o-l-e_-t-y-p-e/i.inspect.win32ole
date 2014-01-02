@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- inspect -> String
-self¤òÀâÌÀÅª¤ÊÊ¸»úÎó¤ÇÉ½¸½¤·¤Ş¤¹¡£
+selfã‚’èª¬æ˜çš„ãªæ–‡å­—åˆ—ã§è¡¨ç¾ã—ã¾ã™ã€‚
 
-@return "#<WIN32OLE_TYPE"¤È[[m:WIN32OLE_TYPE#to_s]]¤Î·ë²Ì¤ò¡Ö:¡×¤Ç·ë¹ç
-        ¤·¡¢¡Ö>¡×¤ÇÊÄ¤¸¤¿Ê¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£
+@return "#<WIN32OLE_TYPE"ã¨[[m:WIN32OLE_TYPE#to_s]]ã®çµæœã‚’ã€Œ:ã€ã§çµåˆ
+        ã—ã€ã€Œ>ã€ã§é–‰ã˜ãŸæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
    x = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Worksheet')
    puts x.inspect #=> #<WIN32OLE_TYPE:Worksheet>

@@ -4,6 +4,6 @@ kind=defined
 
 --- orig_name -> String | nil
 
-gzip �ե�����Υإå����˵�Ͽ����Ƥ��븵�ե�����̾���֤��ޤ���
-�ե�����̾����Ͽ����Ƥ��ʤ����� nil ���֤��ޤ���
+gzip ファイルのヘッダーに記録されている元ファイル名を返します。
+ファイル名が記録されていない場合は nil を返します。
 

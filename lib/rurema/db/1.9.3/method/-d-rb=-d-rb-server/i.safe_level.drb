@@ -2,6 +2,7 @@ names=safe_level
 visibility=public
 kind=defined
 
---- safe_level
-@todo
+--- safe_level -> Integer
+サーバのセーフレベルを返します。
+
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- server_protocol -> String
 
-ENV['SERVER_PROTOCOL'] ค๒สึคทคÞคนกฃ
+ENV['SERVER_PROTOCOL'] ใ’่ฟ”ใ—ใพใใ€
 

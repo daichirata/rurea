@@ -4,7 +4,7 @@ kind=added
 
 --- isutf8 -> bool
 
-self �� UTF-8 �ʥХ�����Ȥ��������Ǥ��뤫�ɤ�����Ƚ�ꤷ�ޤ���
+self が UTF-8 なバイト列として正当であるかどうかを判定します。
 
-[[m:Kconv.#isutf8]](self) ��Ʊ���Ǥ���
+[[m:Kconv.#isutf8]](self) と同じです。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- row_vector(row) -> Matrix
 
-Í×ÁÇ¤¬row¤Î(1,n)·¿¤Î¹ÔÎó(¹Ô¥Ù¥¯¥È¥ë)¤òÀ¸À®¤·¤Þ¤¹¡£
+è¦ç´ ãŒrowã®(1,n)åž‹ã®è¡Œåˆ—(è¡Œãƒ™ã‚¯ãƒˆãƒ«)ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param row (1,n)·¿¤Î¹ÔÎó¤È¤·¤ÆÀ¸À®¤¹¤ë[[c:Vector]] [[c:Array]] ¥ª¥Ö¥¸¥§¥¯¥È
+@param row (1,n)åž‹ã®è¡Œåˆ—ã¨ã—ã¦ç”Ÿæˆã™ã‚‹[[c:Vector]] [[c:Array]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 

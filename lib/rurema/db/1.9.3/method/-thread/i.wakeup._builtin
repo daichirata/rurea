@@ -4,8 +4,7 @@ kind=defined
 
 --- wakeup    -> self
 
-��߾���(stop)�Υ���åɤ�¹Բ�ǽ����(run)�ˤ��ޤ���
+停止状態(stop)のスレッドを実行可能状態(run)にします。
 
-@raise ThreadError ���Ǥ��륹��åɤ��Ф��Ƽ¹Ԥ����ȯ�����ޤ���
-
+@raise ThreadError 死んでいるスレッドに対して実行すると発生します。
 

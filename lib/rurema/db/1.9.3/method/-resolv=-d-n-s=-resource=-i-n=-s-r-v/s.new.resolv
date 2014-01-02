@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- new(priority, weight, port, target) -> Resolv::DNS::Resource::IN::SRV
-Resolv::DNS::Resource::IN::SRV ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+Resolv::DNS::Resource::IN::SRV ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param priority ¥Û¥¹¥È¤ÎÍ¥Àè½ç°Ì
+@param priority ãƒ›ã‚¹ãƒˆã®å„ªå…ˆé †ä½
 @param weight
-@param port ¥İ¡¼¥ÈÈÖ¹æ
-@param target ¥Û¥¹¥ÈÌ¾
+@param port ãƒãƒ¼ãƒˆç•ªå·
+@param target ãƒ›ã‚¹ãƒˆå
 
 

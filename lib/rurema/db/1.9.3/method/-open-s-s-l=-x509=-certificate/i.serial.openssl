@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- serial -> Integer
-ȯ�Լ� (CA) ����������դ��뼱���ֹ���֤��ޤ���
+発行者 (CA) が証明書に付ける識別番号を返します。
 
 @see [[m:OpenSSL::X509::Certificate#serial=]]

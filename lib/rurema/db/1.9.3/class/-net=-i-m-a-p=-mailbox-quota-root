@@ -6,7 +6,7 @@ library=net.imap
 aliases=
 aliasof=
 
-[[m:Net::IMAP#getquotaroot]] �η�̤Ȥ���������
-quota root �����ɽ�魯���֥������ȤǤ���
+[[m:Net::IMAP#getquotaroot]] の結果として得られる
+quota root 情報を表わすオブジェクトです。
 
-�ܤ����� [[RFC:2087]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2087]] を参照してください。

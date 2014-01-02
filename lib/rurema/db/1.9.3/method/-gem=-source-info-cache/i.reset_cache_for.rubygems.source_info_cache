@@ -4,9 +4,9 @@ kind=defined
 
 --- reset_cache_for(url, cache_data) -> Hash
 
-���ꤵ�줿 URL ���б����륭��å���ǡ����򹹿����ޤ���
+指定された URL に対応するキャッシュデータを更新します。
 
-@param url ������ URL ����ꤷ�ޤ���
+@param url 取得元 URL を指定します。
 
-@param cache_data ����å���ǡ�������ꤷ�ޤ�����
+@param cache_data キャッシュデータを指定します。　
 

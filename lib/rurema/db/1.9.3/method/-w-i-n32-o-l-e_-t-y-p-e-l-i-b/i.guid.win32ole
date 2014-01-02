@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- guid -> String
-TypeLib¤ÎGUID¤ò¼èÆÀ¤·¤Þ¤¹¡£
+TypeLibã®GUIDã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return TypeLib¤ÎGUID¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
-@raise WIN32OLERuntimeError TypeLib¤ÎÂ°À­¤¬ÆÉ¤ß¼è¤ì¤Ê¤¤¾ì¹ç¤ËÄÌÃÎ¤·¤Þ¤¹¡£
+@return TypeLibã®GUIDã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
+@raise WIN32OLERuntimeError TypeLibã®å±žæ€§ãŒèª­ã¿å–ã‚Œãªã„å ´åˆã«é€šçŸ¥ã—ã¾ã™ã€‚
 
    tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 14.0 Object Library')
    puts tlib.guid # => '{00020813-0000-0000-C000-000000000046}'

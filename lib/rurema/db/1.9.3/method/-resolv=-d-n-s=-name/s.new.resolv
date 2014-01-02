@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- new(labels, absolute = true) -> Resolv::DNS::Name
-Resolv::DNS::Name¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
-labels ¤Ï [[c:Resolv::DNS::Label::Str]] ¤ÎÇÛÎó¤òÍ¿¤¨¤Ş¤¹¡£
+Resolv::DNS::Nameã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+labels ã¯ [[c:Resolv::DNS::Label::Str]] ã®é…åˆ—ã‚’ä¸ãˆã¾ã™ã€‚
 
-@param labels ¥É¥á¥¤¥óÌ¾¤ò [[c:Resolv::DNS::Label::Str]] ¤ÎÇÛÎó¤È¤·¤ÆÍ¿¤¨¤Ş¤¹¡£
-@param absolute ¥É¥á¥¤¥óÌ¾¤¬ÀäÂĞ¥Ñ¥¹¤Ç¤¢¤ë¤«¤É¤¦¤«¤ò ¿¿µ¶ÃÍ¤ÇÍ¿¤¨¤Ş¤¹¡£
+@param labels ãƒ‰ãƒ¡ã‚¤ãƒ³åã‚’ [[c:Resolv::DNS::Label::Str]] ã®é…åˆ—ã¨ã—ã¦ä¸ãˆã¾ã™ã€‚
+@param absolute ãƒ‰ãƒ¡ã‚¤ãƒ³åãŒçµ¶å¯¾ãƒ‘ã‚¹ã§ã‚ã‚‹ã‹ã©ã†ã‹ã‚’ çœŸå½å€¤ã§ä¸ãˆã¾ã™ã€‚
 
 @see [[m:Resolv::DNS::Name.create]]
 

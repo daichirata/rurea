@@ -2,21 +2,20 @@ names=sign
 visibility=public
 kind=defined
 
---- sign
-@todo
+--- sign -> Fixnum
 
-ÃÍ¤¬Àµ (sign > 0)¡¢Éé (sign < 0)¡¢¤½¤ÎÂ¾ (sign == 0) ¤Ç¤¢¤ë¤«¤Î¾ğÊó¤òÊÖ¤·¤Ş¤¹¡£
+å€¤ãŒæ­£ (sign > 0)ã€è²  (sign < 0)ã€ãã®ä»– (sign == 0) ã§ã‚ã‚‹ã‹ã®æƒ…å ±ã‚’è¿”ã—ã¾ã™ã€‚
 
     n = a.sign
 
-¤È¤·¤¿¤È¤­ n ¤ÎÃÍ¤Ï a ¤¬°Ê²¼¤Î¤È¤­¤ò°ÕÌ£¤·¤Ş¤¹¡£
-() ¤ÎÃæ¤Î¿ô»ú¤Ï¡¢¼Âºİ¤ÎÃÍ¤Ç¤¹ (¡ÖÆâÉô¹½Â¤¡×¤ò»²¾È)¡£
+ã¨ã—ãŸã¨ã n ã®å€¤ã¯ a ãŒä»¥ä¸‹ã®ã¨ãã‚’æ„å‘³ã—ã¾ã™ã€‚() ã®ä¸­ã®æ•°å­—ã¯ã€å®Ÿéš›ã®
+å€¤ã§ã™ (ã€Œ[[ref:lib:bigdecimal#internal_structure]]ã€ã‚’å‚ç…§)ã€‚
 
-    n = BigDecimal::SIGN_NaN(0)                 # a ¤Ï NaN
-    n = BigDecimal::SIGN_POSITIVE_ZERO(1)       # a ¤Ï +0
-    n = BigDecimal::SIGN_NEGATIVE_ZERO(-1)      # a ¤Ï -0
-    n = BigDecimal::SIGN_POSITIVE_FINITE(2)     # a ¤ÏÀµ¤ÎÃÍ
-    n = BigDecimal::SIGN_NEGATIVE_FINITE(-2)    # a ¤ÏÉé¤ÎÃÍ
-    n = BigDecimal::SIGN_POSITIVE_INFINITE(3)   # a ¤Ï+Infinity
-    n = BigDecimal::SIGN_NEGATIVE_INFINITE(-3)  # a ¤Ï-Infinity
+    n = BigDecimal::SIGN_NaN(0)                 # a ã¯ NaN
+    n = BigDecimal::SIGN_POSITIVE_ZERO(1)       # a ã¯ +0
+    n = BigDecimal::SIGN_NEGATIVE_ZERO(-1)      # a ã¯ -0
+    n = BigDecimal::SIGN_POSITIVE_FINITE(2)     # a ã¯æ­£ã®å€¤
+    n = BigDecimal::SIGN_NEGATIVE_FINITE(-2)    # a ã¯è² ã®å€¤
+    n = BigDecimal::SIGN_POSITIVE_INFINITE(3)   # a ã¯+Infinity
+    n = BigDecimal::SIGN_NEGATIVE_INFINITE(-3)  # a ã¯-Infinity
 

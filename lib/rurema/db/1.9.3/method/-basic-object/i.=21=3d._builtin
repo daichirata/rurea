@@ -3,23 +3,22 @@ visibility=public
 kind=defined
 
 --- !=(other) -> bool
-���֥������Ȥ� other ���������ʤ����Ȥ�Ƚ�ꤷ�ޤ���
+オブジェクトが other と等しくないことを判定します。
 
-�ǥե���ȤǤ� self == other ��ɾ��������˷�̤��������ꤷ���֤��ޤ���
-���Τ��ᡢ���֥��饹�� [[m:BasicObject#==]] ���������Ƥ� != �Ȥϼ�ưŪ����������
-�Ȥ��褦�ˤʤäƤ��ޤ���
+デフォルトでは self == other を評価した後に結果を論理否定して返します。
+このため、サブクラスで [[m:BasicObject#==]] を再定義しても != とは自動的に整合性が
+とれるようになっています。
 
-�������� [[m:BasicObject#!=]] ���Ȥ� [[m:BasicObject#!]] �����������ݤˤϡ��桼��������Ǥ��
-���������ݤ��ʤ��ƤϤʤ�ޤ���
+ただし、 [[m:BasicObject#!=]] 自身や [[m:BasicObject#!]] を再定義した際には、ユーザーの責任で
+整合性を保たなくてはなりません。
 
-���Υ᥽�åɤϼ����������ɾ����ȼ�ä������Ѥ�������������Ȥ���Ū��
-����������Τ����ꤵ��Ƥ��ޤ���
+このメソッドは主に論理式の評価に伴って副作用を引き起こすことを目的に
+再定義するものと想定されています。
 
-@param other ����оݤȤʤ륪�֥�������
-@see [[m:BasicObject#==]]
-@see [[m:BasicObject#!]]
+@param other 比較対象となるオブジェクト
+@see [[m:BasicObject#==]], [[m:BasicObject#!]]
 
-��
+例
  class NonequalityRecorder < BasicObject
    def initialize
      @count = 0

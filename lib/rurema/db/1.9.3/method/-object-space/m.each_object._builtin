@@ -7,15 +7,15 @@ kind=defined
 --- each_object                          -> Enumerator
 --- each_object(klass)                   -> Enumerator
 
-���ꤵ�줿 klass �� [[m:Object#kind_of?]] �δط��ˤ������Ƥ�
-���֥������Ȥ��Ф��Ʒ����֤��ޤ�����������ά���줿���ˤ����ƤΥ���
-�������Ȥ��Ф��Ʒ����֤��ޤ���
-�����֤��������֤��ޤ���
+指定された klass と [[m:Object#kind_of?]] の関係にある全ての
+オブジェクトに対して繰り返します。引数が省略された時には全てのオブ
+ジェクトに対して繰り返します。
+繰り返した数を返します。
 
-�֥��å���Ϳ�����ʤ��ä����ϡ�
-[[c:Enumerator]] ���֥������Ȥ��֤��ޤ���
+ブロックが与えられなかった場合は、
+[[c:Enumerator]] オブジェクトを返します。
 
-���Υ��饹�Υ��֥������ȤˤĤ��ƤϷ����֤��ޤ���
+次のクラスのオブジェクトについては繰り返しません
 
  * [[c:Fixnum]]
  * [[c:Symbol]]
@@ -23,9 +23,9 @@ kind=defined
  * [[c:FalseClass]]
  * [[c:NilClass]]
 
-�Ȥ��ˡ�klass �� [[c:Fixnum]] �� [[c:Symbol]] �ʤɤΥ��饹����ꤷ�����ϡ�
-���ⷫ���֤��ʤ����Ȥˤʤ�ޤ���
-�ʤ���[[c:Symbol]] �ˤĤ��Ƥϡ������� [[m:Symbol.all_symbols]] �����ѤǤ��ޤ���
+とくに、klass に [[c:Fixnum]] や [[c:Symbol]] などのクラスを指定した場合は、
+何も繰り返さないことになります。
+なお、[[c:Symbol]] については、かわりに [[m:Symbol.all_symbols]] が使用できます。
 
-@param klass ���饹���⥸�塼�����ꤷ�ޤ���
+@param klass クラスかモジュールを指定します。
 

@@ -6,4 +6,4 @@ library=irb.extend=2dcommand
 aliases=
 aliasof=
 
-[[c:IRB::Context]] ¤ò³ÈÄ¥¤¹¤ë¤¿¤á¤Î¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+[[c:IRB::Context]] ã‚’æ‹¡å¼µã™ã‚‹ãŸã‚ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚

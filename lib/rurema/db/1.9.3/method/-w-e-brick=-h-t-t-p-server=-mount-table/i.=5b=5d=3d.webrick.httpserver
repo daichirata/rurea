@@ -4,9 +4,9 @@ kind=defined
 
 --- []=(dir, val)
 
-Ϳ����줿�ǥ��쥯�ȥ���б����륵���֥�åȤ���Ͽ���ޤ���
+与えられたディレクトリに対応するサーブレットを登録します。
 
-@param dir �ǥ��쥯�ȥ����ꤷ�ޤ���
+@param dir ディレクトリを指定します。
 
-@param val �����֥�åȤ���ꤷ�ޤ���
+@param val サーブレットを指定します。
 

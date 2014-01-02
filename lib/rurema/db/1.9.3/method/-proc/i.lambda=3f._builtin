@@ -3,33 +3,33 @@ visibility=public
 kind=defined
 
 --- lambda? -> bool
-��³�����֥������Ȥΰ����μ谷����̩�Ǥ���ʤ�� true ���֤��ޤ���
+手続きオブジェクトの引数の取扱が厳密であるならば true を返します。
 
 
-�����μ谷�θ�̩���ΰ�̣�ϰʲ�����򻲹ͤˤ��Ƥ���������
-��:
-  # lambda ���������� Proc ���֥������ȤǤ� true 
+引数の取扱の厳密さの意味は以下の例を参考にしてください。
+例:
+  # lambda で生成した Proc オブジェクトでは true 
   lambda{}.lambda? # => true
-  # proc ���������� Proc ���֥������ȤǤ� false
+  # proc で生成した Proc オブジェクトでは false
   proc{}.lambda?   # => false
-  # Proc.new ���������� Proc ���֥������ȤǤ� false
+  # Proc.new で生成した Proc オブジェクトでは false
   Proc.new{}.lambda? # => false
   
-  # �ʲ���lambda?�����Ǥ�����
-  # ;ʬ�ʰ�����̵�뤹��
+  # 以下、lambda?が偽である場合
+  # 余分な引数を無視する
   proc{|a,b| [a,b]}.call(1,2,3) # => [1,2]
-  # ­��ʤ������ˤ� nil ���Ϥ����
+  # 足りない引数には nil が渡される
   proc{|a,b| [a,b]}.call(1) # => [1, nil]
-  # ����1�Ĥ���Ÿ�������
+  # 配列1つだと展開される
   proc{|a,b| [a,b]}.call([1,2]) => [1,2]
-  # lambda�ξ�礳���Ϥ��٤� ArgumentError �Ȥʤ�
+  # lambdaの場合これらはすべて ArgumentError となる
    
-  # &���դ�������������������� Proc �� lambda? �����Ȥʤ�
+  # &が付いた仮引数で生成される Proc は lambda? が偽となる
   def n(&b) b.lambda? end
   n {} # => false
   
-  # &���դ����°����ˤ���Τϡ�lambda?������ Proc���֥������Ȥ���
-  # �����Ѥ����
+  # &が付いた実引数によるものは、lambda?が元の Procオブジェクトから
+  # 引き継がれる
   lambda(&lambda {}).lambda?   #=> true
   proc(&lambda {}).lambda?     #=> true
   Proc.new(&lambda {}).lambda? #=> true
@@ -42,12 +42,12 @@ kind=defined
   n(&proc {})                  #=> false
   n(&Proc.new {})              #=> false
   
-  # Method#to_proc �ˤ���Τ� lambda?�����Ȥʤ�
+  # Method#to_proc によるものは lambda?が真となる
   def m() end
-  method(:m).to_proc.lambda? #=> false
+  method(:m).to_proc.lambda? #=> true
   
-  # Module#define_method �����̰����ǡ�
-  # �����������줿�᥽�åɤΰ����Ͼ�˸�̩�˼�갷����
+  # Module#define_method は特別扱いで、
+  # これで定義されたメソッドの引数は常に厳密に取り扱われる
   class C
     define_method(:d) {}
   end

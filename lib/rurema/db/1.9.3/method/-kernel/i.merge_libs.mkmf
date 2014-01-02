@@ -3,7 +3,7 @@ visibility=private
 kind=added
 
 --- merge_libs(*libs) -> [String]
-@todo �Ȥ��Ƥʤ�
+@todo 使われてない
 
 @param libs ???
 

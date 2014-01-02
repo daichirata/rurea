@@ -2,28 +2,29 @@ names=format
 visibility=public
 kind=defined
 
---- format(fmtstr = nil, *args)
+--- format(fmtstr = nil, *args) -> String
 
-self ¤ò»ØÄê¤µ¤ì¤¿¥Õ¥©¡¼¥Ş¥Ã¥È¤ÇÀ°·Á¤·¤ÆÊÖ¤·¤Ş¤¹¡£
+self ã‚’æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã§æ•´å½¢ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï [[m:Kernel.#format]] ¤Î¤è¤¦¤Ë¥ª¥Ö¥¸¥§¥¯¥È¤òÀ°·Á¤·¤Ş¤¹¤¬¡¢
-°Ê²¼¤Î³ÈÄ¥¤ò»ÈÍÑ¤¹¤ë¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ [[m:Kernel.#format]] ã®ã‚ˆã†ã«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ•´å½¢ã—ã¾ã™ãŒã€
+ä»¥ä¸‹ã®æ‹¡å¼µã‚’ä½¿ç”¨ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
 : %u
-  user CPU time ¤ÇÃÖ¤­´¹¤¨¤é¤ì¤Ş¤¹¡£[[m:Benchmark::Tms#utime]]
+  user CPU time ã§ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™ã€‚[[m:Benchmark::Tms#utime]]
 : %y
-  system CPU time ¤ÇÃÖ¤­´¹¤¨¤é¤ì¤Ş¤¹(Mnemonic: y of "s*y*stem")¡£[[m:Benchmark::Tms#stime]]
+  system CPU time ã§ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™(Mnemonic: y of "s*y*stem")ã€‚[[m:Benchmark::Tms#stime]]
 : %U
-  »Ò¥×¥í¥»¥¹¤Î user CPU time ¤ÇÃÖ¤­´¹¤¨¤é¤ì¤Ş¤¹¡£[[m:Benchmark::Tms#cutime]]
+  å­ãƒ—ãƒ­ã‚»ã‚¹ã® user CPU time ã§ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™ã€‚[[m:Benchmark::Tms#cutime]]
 : %Y
-  »Ò¥×¥í¥»¥¹¤Î system CPU time ¤ÇÃÖ¤­´¹¤¨¤é¤ì¤Ş¤¹¡£[[m:Benchmark::Tms#cstime]]
+  å­ãƒ—ãƒ­ã‚»ã‚¹ã® system CPU time ã§ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™ã€‚[[m:Benchmark::Tms#cstime]]
 : %t
-  total CPU time ¤ÇÃÖ¤­´¹¤¨¤é¤ì¤Ş¤¹¡£[[m:Benchmark::Tms#total]]
+  total CPU time ã§ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™ã€‚[[m:Benchmark::Tms#total]]
 : %r
-  ¼Â·Ğ²á»ş´Ö¤ÇÃÖ¤­´¹¤¨¤é¤ì¤Ş¤¹¡£[[m:Benchmark::Tms#real]]
+  å®ŸçµŒéæ™‚é–“ã§ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™ã€‚[[m:Benchmark::Tms#real]]
 : %n
-  ¥é¥Ù¥ë¤ÇÃÖ¤­´¹¤¨¤é¤ì¤Ş¤¹(Mnemonic: n of "*n*ame")¡£[[m:Benchmark::Tms#label]]
+  ãƒ©ãƒ™ãƒ«ã§ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™(Mnemonic: n of "*n*ame")ã€‚[[m:Benchmark::Tms#label]]
 
-@param fmtstr ¥Õ¥©¡¼¥Ş¥Ã¥ÈÊ¸»úÎó¤Ç¤¹¡£¾ÊÎ¬¤µ¤ì¤¿¾ì¹ç¤Ï¡¢[[m:Benchmark::Tms::FMTSTR]] ¤¬»ÈÍÑ¤µ¤ì¤Ş¤¹¡£
-@param args  ¥Õ¥©¡¼¥Ş¥Ã¥È¤µ¤ì¤ë°ú¿ô¤Ç¤¹¡£
+@param fmtstr ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆæ–‡å­—åˆ—ã§ã™ã€‚
+              çœç•¥ã•ã‚ŒãŸå ´åˆã¯ã€[[m:Benchmark::Tms::FORMAT]] ãŒä½¿ç”¨ã•ã‚Œã¾ã™ã€‚
+@param args  ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã•ã‚Œã‚‹å¼•æ•°ã§ã™ã€‚
 

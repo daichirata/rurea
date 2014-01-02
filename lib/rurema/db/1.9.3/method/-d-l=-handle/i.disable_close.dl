@@ -1,9 +1,13 @@
-names=disable_close,enable_close
+names=disable_close
 visibility=public
 kind=defined
 
---- enable_close     -> nil
 --- disable_close    -> nil
 
-GC д╦дшдыеке╓е╕езепе╚д╬▓є╝¤╗■д╦╝л┐╚дЄепеэб╝е║д╣дыдлд╔дждлдЄ╗╪─ъд╖д▐д╣бг
+GC уБлуВИуВЛуВкуГЦуВ╕уВзуВпуГИуБохЫЮхПОцЩВуБл self уВТуВпуГнуГ╝уВ║уБЧуБкуБД([[m:DL::Handle#close]])
+уВИуБЖуБлшинхоЪуБЧуБ╛уБЩуАВ
+
+уГЗуГХуВйуГлуГИуБзуБп close уБЧуБ╛уБЫуВУуАВ
+
+@see [[m:DL::Handle#enable_close]], [[m:DL::Handle#close_enabled?]]
 

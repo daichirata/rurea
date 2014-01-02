@@ -1,13 +1,19 @@
-names=**
+names=**,power
 visibility=public
 kind=defined
 
---- **(n)
-@todo
+--- power(n)       -> BigDecimal
+--- power(n, prec) -> BigDecimal
+--- **(n)          -> BigDecimal
 
-a �� n ���׻����ޤ���n ��������
+self の n 乗を計算します。
 
-      c = a ** n
+戻り値の有効桁数は self の有効桁数の n 倍以上になります。
 
-��̤Ȥ��� c ��ͭ����� a �� n �ܰʾ�ˤʤ�Τ����ա� 
+@param n selfを other 乗する数を指定します。
+
+@param prec 有効桁数を整数で指定します。
+
+@raise TypeError prec に [[c:Fixnum]] 以外のオブジェクトを指定した場合
+                 に発生します。
 

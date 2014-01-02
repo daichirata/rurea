@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- _httpdate(str) -> Hash
-���Υ᥽�åɤ� [[m:Date.httpdate]] �Ȼ��Ƥ��ޤ��������ե��֥������Ȥ����������ˡ�
-�������������Ǥ�ϥå�����֤��ޤ���
+このメソッドは [[m:Date.httpdate]] と似ていますが、日付オブジェクトを生成せずに、
+見いだした要素をハッシュで返します。
 
-[[m:Date.httpdate]] �⻲�Ȥ��Ƥ���������
+[[m:Date.httpdate]] も参照してください。
 
-@param str ���դ򤢤�魯ʸ����
+@param str 日付をあらわす文字列
 

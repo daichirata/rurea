@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- add_extension(ext) -> OpenSSL::X509::Extension
-³ÈÄ¥ÎÎ°è¤Ë³ÈÄ¥¤òÄÉ²Ã¤·¤Ş¤¹¡£
+æ‹¡å¼µé ˜åŸŸã«æ‹¡å¼µã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-@return ÄÉ²Ã¤·¤¿³ÈÄ¥¤òÊÖ¤·¤Ş¤¹
-@param ext ÄÉ²Ã¤¹¤ë³ÈÄ¥([[c:OpenSSL::X509::Extension]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@raise OpenSSL::X509::CertificateError ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@return è¿½åŠ ã—ãŸæ‹¡å¼µã‚’è¿”ã—ã¾ã™
+@param ext è¿½åŠ ã™ã‚‹æ‹¡å¼µ([[c:OpenSSL::X509::Extension]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@raise OpenSSL::X509::CertificateError è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

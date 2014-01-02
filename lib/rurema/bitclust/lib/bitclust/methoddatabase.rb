@@ -20,6 +20,7 @@ require 'fileutils'
 
 module BitClust
 
+  # Database for Ruby entries (library, class, method).
   class MethodDatabase < Database
 
     include Completion
@@ -131,7 +132,7 @@ module BitClust
         lib.requires = lib.all_requires
       }
     end
-    
+
     def update_sublibraries
       libraries.each{|lib|
         re = /\A#{lib.name}\// 
@@ -140,7 +141,7 @@ module BitClust
         }
       }
     end
-    
+
     def update_by_stdlibtree(root)
       @root = root
       parse_LIBRARIES("#{root}/LIBRARIES", properties()).each do |libname|
@@ -149,7 +150,7 @@ module BitClust
     end
 
     def parse_LIBRARIES(path, properties)
-      fopen(path, 'r:EUC-JP') {|f|
+      fopen(path, 'r:UTF-8') {|f|
         BitClust::Preprocessor.wrap(f, properties).map {|line| line.strip }
       }
     end
@@ -159,7 +160,7 @@ module BitClust
       check_transaction
       RRDParser.new(self).parse_file(path, libname, properties())
     end
-    
+
     def refs
       @refs ||= RefsDatabase.load(realpath('refs'))
     end
@@ -172,7 +173,7 @@ module BitClust
       end
       refs
     end
-    
+
     def copy_doc
       Dir.glob("#{@root}/../../doc/**/*.rd").each do |f|
         if %r!\A#{Regexp.escape(@root)}/\.\./\.\./doc/([-\./\w]+)\.rd\z! =~ f
@@ -190,7 +191,7 @@ module BitClust
     #
     # Doc Entry
     #
-    
+
     def docs
       docmap().values
     end
@@ -209,11 +210,11 @@ module BitClust
       docmap()[libname2id(name)] or
           raise DocNotFound, "doc not found: #{name.inspect}"
     end
-   
+
     #
     # Library Entry
     #
-    
+
     def libraries
       librarymap().values
     end
@@ -343,6 +344,8 @@ module BitClust
     # Method Entry
     #
 
+    # Return existing/newly created MethodEntry from the given MethodID
+    #
     # FIXME: see kind
     def open_method(id)
       check_transaction

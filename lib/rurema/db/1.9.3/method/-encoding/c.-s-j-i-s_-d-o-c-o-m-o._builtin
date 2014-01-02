@@ -5,10 +5,10 @@ kind=defined
 --- SJIS_DOCOMO -> Encoding
 --- SJIS_DoCoMo -> Encoding
 
-SJIS-DoCoMo ╔╗╔С╔Ё║╪╔г╔ё╔С╔╟╓г╓╧║ё
+SJIS-DoCoMo Ц┌╗Ц┐ЁЦ┌ЁЦ┐╪Ц┐┤Ц┌ёЦ┐ЁЦ┌╟Ц│╖Ц│≥Ц─┌
 
-Shift_JIS, CP932 ╓н╟║╪О╓г╓╧║ё
-DoCoMo ╓н╥хбсееоц╓г╩х╓О╓Л╓КЁ╗й╦╩З╓╛╢ч╓ч╓Л╓ф╓╓╓ч╓╧║ё
+Shift_JIS, CP932 Ц│╝Д╨°Г╗╝Ц│╖Ц│≥Ц─┌
+DoCoMo Ц│╝Ф░╨Е╦╞И⌡╩Х╘╠Ц│╖Д╫©Ц┌▐Ц┌▄Ц┌▀Г╣╣Ф√┤Е╜≈Ц│▄Е░╚Ц│╬Ц┌▄Ц│╕Ц│└Ц│╬Ц│≥Ц─┌
 
 @see [[url:http://www.nttdocomo.co.jp/english/service/imode/make/content/pictograph/basic/index.html]],
      [[url:http://www.nttdocomo.co.jp/english/service/imode/make/content/pictograph/extention/index.html]],

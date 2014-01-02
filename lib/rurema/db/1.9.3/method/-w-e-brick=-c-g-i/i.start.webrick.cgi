@@ -4,15 +4,15 @@ kind=defined
 
 --- start(env = ENV, stdin = $stdin, stdout = $stdout)     -> ()
 
-���Ȥ�������줿�����ӥ���¹Ԥ��ޤ���
+自身に定義されたサービスを実行します。
 
-start �᥽�åɤ� service �᥽�åɤ�ƤӽФ���service �᥽�åɤϥꥯ�����Ȥ˱�����
-do_XXX �᥽�åɤ�ƤӽФ��ޤ������Τ褦�ˤ��� CGI ������ץȤϼ¹Ԥ���ޤ���
+start メソッドは service メソッドを呼び出し、service メソッドはリクエストに応じて
+do_XXX メソッドを呼び出します。このようにして CGI スクリプトは実行されます。
 
-@param env CGI ������ץȤ�������ä� Meta-Variables (�Ķ��ѿ�)���ݻ������ϥå��夫��
-           �����Ʊ�� [] �᥽�åɤ���ä����֥������Ȥ���ꤷ�ޤ���
+@param env CGI スクリプトが受け取った Meta-Variables (環境変数)を保持したハッシュか、
+           それと同じ [] メソッドを持ったオブジェクトを指定します。
 
-@param stdin �ꥯ�����ȥǡ��������ϸ��� [[c:IO]] ���֥������Ȥǻ��ꤷ�ޤ���
+@param stdin リクエストデータの入力元を [[c:IO]] オブジェクトで指定します。
 
-@param stdout �쥹�ݥ󥹥ǡ����ν������ [[c:IO]] ���֥������Ȥǻ��ꤷ�ޤ���
+@param stdout レスポンスデータの出力先を [[c:IO]] オブジェクトで指定します。
 

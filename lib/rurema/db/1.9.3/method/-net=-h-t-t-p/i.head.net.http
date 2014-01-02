@@ -4,18 +4,18 @@ kind=defined
 
 --- head(path, header = nil) -> Net::HTTPResponse
 
-�����о�� path �ˤ��륨��ƥ��ƥ��Υإå��Τߤ�������ޤ���
-[[c:Net::HTTPResponse]] �Υ��󥹥��󥹤��֤��ޤ���
+サーバ上の path にあるエンティティのヘッダのみを取得します。
+[[c:Net::HTTPResponse]] のインスタンスを返します。
 
-header �� nil
-�Ǥʤ���С��ꥯ�����Ȥ�����Ȥ��ˤ������Ƥ� HTTP �إå��Ȥ���
-����ޤ��� header �� { 'Accept' = > '*/*', ... } �Ȥ���
-���Υϥå���Ǥʤ���Ф����ޤ���
+header が nil
+でなければ、リクエストを送るときにその内容を HTTP ヘッダとして
+送ります。 header は { 'Accept' = > '*/*', ... } という
+形のハッシュでなければいけません。
 
-@param path �������륨��ƥ��ƥ��Υѥ���ʸ����ǻ��ꤷ�ޤ���
-@param header �ꥯ�����Ȥ� HTTP �إå���ϥå���ǻ��ꤷ�ޤ���
+@param path 取得するエンティティのパスを文字列で指定します。
+@param header リクエストの HTTP ヘッダをハッシュで指定します。
 
-1.1 �ߴ��⡼�ɤξ��ϡ��쥹�ݥ󥹤˱������㳰��ȯ�����ޤ���
+1.1 互換モードの場合は、レスポンスに応じて例外が発生します。
 
   response = nil
   Net::HTTP.start('some.www.server', 80) {|http|

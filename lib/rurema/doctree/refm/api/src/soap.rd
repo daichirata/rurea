@@ -1,6 +1,8 @@
-#@since 1.8.1
-SOAP �򰷤�����Υ饤�֥��Ǥ���
+category Network
 
-���Υڡ����� soap �饤�֥��ΤޤȤ�Υڡ����Ǥ��ꡢrequire 'soap' ��¹Ԥ��Ƥ�
-���顼�ˤʤ뤳�Ȥ����դ��Ʋ�������
+#@since 1.8.1
+SOAP を扱うためのライブラリです。
+
+このページは soap ライブラリのまとめのページであり、require 'soap' を実行しても
+エラーになることに注意して下さい。
 #@end

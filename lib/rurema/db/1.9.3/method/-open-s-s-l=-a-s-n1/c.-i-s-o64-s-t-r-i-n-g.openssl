@@ -4,6 +4,6 @@ kind=defined
 
 --- ISO64STRING -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-ISO64STRING ¤Î¥¿¥°ÈÖ¹æ 26 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+ISO64STRING ã®ã‚¿ã‚°ç•ªå· 26 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

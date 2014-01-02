@@ -5,5 +5,5 @@ kind=defined
 --- eof    -> bool
 --- eof?   -> bool
 
-���Ȥ� pos ��ʸ����ν�ü�ˤ���� true ���֤��ޤ��������Ǥʤ��ʤ� false ���֤��ޤ���
+自身の pos が文字列の終端にあれば true を返します。そうでないなら false を返します。
 

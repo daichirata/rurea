@@ -4,13 +4,13 @@ kind=defined
 
 --- set_redirect(status, url)    -> ()
 
-»ØÄê¤µ¤ì¤¿ url ¤Ë¥ê¥À¥¤¥ì¥¯¥È¤¹¤ë¤¿¤á¤Î¥Ø¥Ã¥À¤ÈÆâÍÆ(¥¨¥ó¥Æ¥£¥Æ¥£¥Ü¥Ç¥£)¤ò
-ÀßÄê¤·Îã³° status ¤òÈ¯À¸¤µ¤»¤Ş¤¹¡£
+æŒ‡å®šã•ã‚ŒãŸ url ã«ãƒªãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆã™ã‚‹ãŸã‚ã®ãƒ˜ãƒƒãƒ€ã¨å†…å®¹(ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ãƒœãƒ‡ã‚£)ã‚’
+è¨­å®šã—ä¾‹å¤– status ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚
 
-@param status [[c:WEBrick::HTTPStatus::Redirect]] ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param status [[c:WEBrick::HTTPStatus::Redirect]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param url URL ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param url URL ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   res.set_redirect WEBrick::HTTPStatus::TemporaryRedirect
 

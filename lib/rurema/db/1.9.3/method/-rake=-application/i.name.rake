@@ -4,5 +4,5 @@ kind=defined
 
 --- name -> String
 
-���ץꥱ��������̾�����֤��ޤ����̾�� 'rake' �Ȥ���̾�����֤��ޤ���
+アプリケーションの名前を返します。通常は 'rake' という名前を返します。
 

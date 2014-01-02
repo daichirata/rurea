@@ -5,8 +5,8 @@ kind=defined
 --- EUC_CN -> Encoding
 --- EUCCN -> Encoding
 --- EucCN -> Encoding
-ENC-CN ���󥳡��ǥ��󥰤Ǥ���
+ENC-CN エンコーディングです。
 
-�����Ѥ�������λ����� EUC�Υ��󥳡��ǥ��󥰤Ǥ���
-GB2312 �ȸƤФ�뤳�Ȥ�¿���Ǥ���
+中国で用いられる簡体字中国語 EUCのエンコーディングです。
+GB2312 と呼ばれることも多いです。
 

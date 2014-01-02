@@ -4,11 +4,11 @@ kind=defined
 
 --- parse(query) -> Hash
 
-Ϳ����줿������ʸ�����ѡ������ޤ���
+与えられたクエリ文字列をパースします。
 
-@param query ������ʸ�������ꤷ�ޤ���
+@param query クエリ文字列を指定します。
 
-�㡧
+例：
         require "cgi"
 
         params = CGI.parse("query_string")

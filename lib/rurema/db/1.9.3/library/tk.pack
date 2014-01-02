@@ -3,5 +3,6 @@ classes=TkPack
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

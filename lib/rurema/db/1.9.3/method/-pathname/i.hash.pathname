@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- hash -> Fixnum
-�ϥå����ͤ��֤��ޤ���
+ハッシュ値を返します。
 

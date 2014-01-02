@@ -6,4 +6,4 @@ library=rubygems.exceptions
 aliases=
 aliasof=
 
-��⡼�Ȥ����꤬ȯ���������˻��Ѥ����㳰�Ǥ���
+リモートで問題が発生した場合に使用する例外です。

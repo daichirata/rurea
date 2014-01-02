@@ -1,7 +1,8 @@
-requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system
+requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder
 classes=Gem=SourceIndex,Gem=Cache
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-¸Ä¡¹¤Î¥½¡¼¥¹¤«¤é¼èÆÀ¤·¤¿Á´¤Æ¤ÎÍ­¸ú¤Ê Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥Ç¥Ã¥¯¥¹²½¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+å€‹ã€…ã®ã‚½ãƒ¼ã‚¹ã‹ã‚‰å–å¾—ã—ãŸå…¨ã¦ã®æœ‰åŠ¹ãª Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹åŒ–ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

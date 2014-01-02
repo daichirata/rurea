@@ -4,10 +4,10 @@ kind=defined
 
 --- close_screen -> nil
 
-curses ¤Î½ªÎ»½èÍı¤ò¹Ô¤¤¤Ş¤¹¡£
-Ã¼Ëö¤Î¾õÂÖ¤òÉüµ¢¤µ¤»¡¢¥«¡¼¥½¥ë¤òº¸Ã¼¤Ë°ÜÆ°¤µ¤»¤Ş¤¹¡£
+curses ã®çµ‚äº†å‡¦ç†ã‚’è¡Œã„ã¾ã™ã€‚
+ç«¯æœ«ã®çŠ¶æ…‹ã‚’å¾©å¸°ã•ã›ã€ã‚«ãƒ¼ã‚½ãƒ«ã‚’å·¦ç«¯ã«ç§»å‹•ã•ã›ã¾ã™ã€‚
 
-¾Ü¤·¤¯¤Ï¡¢ man ¥Ú¡¼¥¸¤Î curs_initscr(3X) ¤Î endwin ´Ø¿ô¤ò»²¾È¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ã€ man ãƒšãƒ¼ã‚¸ã® curs_initscr(3X) ã® endwin é–¢æ•°ã‚’å‚ç…§ãã ã•ã„ã€‚
 
-@see [[m:Curses.#init_screen]]¡¢[[m:Curses.#stdscr]], [[man:curs_initscr(3X)]]
+@see [[m:Curses.#init_screen]]ã€[[m:Curses.#stdscr]], [[man:curs_initscr(3X)]]
 

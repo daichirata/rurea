@@ -5,9 +5,11 @@ kind=defined
 --- imag      -> Numeric
 --- imaginary -> Numeric
 
-¼«¿È¤ÎµõÉô¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã®è™šéƒ¨ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Complex(3, 2).imag # => 2
+
+@see [[m:Numeric#imag]]
 

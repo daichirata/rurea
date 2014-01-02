@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- +(filter)
-¼¹É®¼ÔÊç½¸
+åŸ·ç­†è€…å‹Ÿé›†
 
-filter1 + filter2 ¤Ï filter1¤Î½ĞÎÏ¤Î¸å, filter2¤Î½ĞÎÏ¤ò¹Ô¤¦¡£
+filter1 + filter2 ã¯ filter1ã®å‡ºåŠ›ã®å¾Œ, filter2ã®å‡ºåŠ›ã‚’è¡Œã†ã€‚
 

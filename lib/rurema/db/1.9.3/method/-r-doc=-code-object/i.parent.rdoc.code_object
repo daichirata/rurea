@@ -4,5 +4,5 @@ kind=defined
 
 --- parent -> RDoc::CodeObject
 
-���Ȥ��ͭ����(�ѿ�������ʤɤη����ݻ�����)���֥������Ȥ��֤��ޤ���
+自身を所有する(変数や定数などの形で保持する)オブジェクトを返します。
 

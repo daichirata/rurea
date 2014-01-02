@@ -4,5 +4,5 @@ kind=defined
 
 --- make_affine! -> self
 @todo
-@raise OpenSSL::PKey::EC::Point::Error ¥¨¥é¡¼¤¬À¸¤¸¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@raise OpenSSL::PKey::EC::Point::Error ã‚¨ãƒ©ãƒ¼ãŒç”Ÿã˜ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

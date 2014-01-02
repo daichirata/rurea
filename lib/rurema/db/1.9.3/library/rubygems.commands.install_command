@@ -1,51 +1,52 @@
-requires=rubygems.command,rubygems.user_interaction,rubygems.doc_manager,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system,rubygems.install_update_options,rubygems.security,rubygems.gem_openssl,rubygems.dependency_installer,rubygems.dependency_list,rubygems.installer,rubygems.format,rubygems.package,rubygems.digest.md5,rubygems.package.f_sync_dir,rubygems.package.tar_header,rubygems.package.tar_input,rubygems.package.tar_output,rubygems.package.tar_reader,rubygems.package.tar_reader.entry,rubygems.package.tar_writer,rubygems.ext,rubygems.ext.builder,rubygems.ext.configure_builder,rubygems.ext.ext_conf_builder,rubygems.ext.rake_builder,rubygems.require_paths_builder,rubygems.local_remote_options,rubygems.validator,rubygems.version_option
+requires=rubygems.command,rubygems.user_interaction,rubygems.doc_manager,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.install_update_options,rubygems.security,rubygems.gem_openssl,rubygems.dependency_installer,rubygems.dependency_list,rubygems.installer,rubygems.format,rubygems.package,rubygems.digest.md5,rubygems.package.f_sync_dir,rubygems.package.tar_header,rubygems.package.tar_input,rubygems.package.tar_output,rubygems.package.tar_reader,rubygems.package.tar_reader.entry,rubygems.package.tar_writer,rubygems.ext,rubygems.ext.builder,rubygems.ext.configure_builder,rubygems.ext.ext_conf_builder,rubygems.ext.rake_builder,rubygems.require_paths_builder,rubygems.local_remote_options,rubygems.validator,rubygems.version_option
 classes=Gem=Commands=InstallCommand
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥í¡¼¥«¥ë¥ê¥Ý¥¸¥È¥ê¤Ë¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ãƒ­ãƒ¼ã‚«ãƒ«ãƒªãƒã‚¸ãƒˆãƒªã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
   Usage: gem install GEMNAME [GEMNAME ...] [options] -- --build-flags [options]
     Options:
-          --platform PLATFORM          »ØÄê¤µ¤ì¤¿¥×¥é¥Ã¥È¥Õ¥©¡¼¥à¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤·¤Þ¤¹
-      -v, --version VERSION            »ØÄê¤µ¤ì¤¿¥Ð¡¼¥¸¥ç¥ó¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤·¤Þ¤¹
+          --platform PLATFORM          æŒ‡å®šã•ã‚ŒãŸãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™
+      -v, --version VERSION            æŒ‡å®šã•ã‚ŒãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™
     Install/Update Options:
-      -i, --install-dir DIR            Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¥¤¥ó¥¹¥È¡¼Àè¤ò»ØÄê¤·¤Þ¤¹
-      -n, --bindir DIR                 Gem ¥Ñ¥Ã¥±¡¼¥¸¤Ë´Þ¤Þ¤ì¤ë¥Ð¥¤¥Ê¥ê¥Õ¥¡¥¤¥ë¤ÎÇÛÃÖÀè¤ò»ØÄê¤·¤Þ¤¹
-      -d, --[no-]rdoc                  ¥¤¥ó¥¹¥È¡¼¥ë»þ¤Ë RDoc ¤òÀ¸À®¤·¤Þ¤¹
-          --[no-]ri                    ¥¤¥ó¥¹¥È¡¼¥ë»þ¤Ë RI ¥É¥­¥å¥á¥ó¥È¤òÀ¸À®¤·¤Þ¤¹
-      -E, --[no-]env-shebang           ¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¥¹¥¯¥ê¥×¥È¤Î shebang line ¤ò½ñ¤­´¹¤¨¤Þ¤¹(/usr/bin/env)
-      -f, --[no-]force                 °ÍÂ¸´Ø·¸¤Î¥Á¥§¥Ã¥¯¤ò¥Ð¥¤¥Ñ¥¹¤·¤Æ¶¯À©Åª¤Ë¥¤¥ó¥¹¥È¡¼¥ë¤·¤Þ¤¹
-      -t, --[no-]test                  ¥¤¥ó¥¹¥È¡¼¥ë»þ¤Ë¥æ¥Ë¥Ã¥È¥Æ¥¹¥È¤ò¼Â¹Ô¤·¤Þ¤¹
+      -i, --install-dir DIR            Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼å…ˆã‚’æŒ‡å®šã—ã¾ã™
+      -n, --bindir DIR                 Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã«å«ã¾ã‚Œã‚‹ãƒã‚¤ãƒŠãƒªãƒ•ã‚¡ã‚¤ãƒ«ã®é…ç½®å…ˆã‚’æŒ‡å®šã—ã¾ã™
+      -d, --[no-]rdoc                  ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ™‚ã« RDoc ã‚’ç”Ÿæˆã—ã¾ã™
+          --[no-]ri                    ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ™‚ã« RI ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã—ã¾ã™
+      -E, --[no-]env-shebang           ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã‚¹ã‚¯ãƒªãƒ—ãƒˆã® shebang line ã‚’æ›¸ãæ›ãˆã¾ã™(/usr/bin/env)
+      -f, --[no-]force                 ä¾å­˜é–¢ä¿‚ã®ãƒã‚§ãƒƒã‚¯ã‚’ãƒã‚¤ãƒ‘ã‚¹ã—ã¦å¼·åˆ¶çš„ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™
+      -t, --[no-]test                  ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ™‚ã«ãƒ¦ãƒ‹ãƒƒãƒˆãƒ†ã‚¹ãƒˆã‚’å®Ÿè¡Œã—ã¾ã™
       -w, --[no-]wrappers              Use bin wrappers for executables
-                                       DOSHISH ¤Ê¥×¥é¥Ã¥È¥Õ¥©¡¼¥à¾å¤Ç¤ÏÌµ¸ú¤Ç¤¹
+                                       DOSHISH ãªãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ä¸Šã§ã¯ç„¡åŠ¹ã§ã™
       -P, --trust-policy POLICY        Specify gem trust policy
-          --ignore-dependencies        °ÍÂ¸¤·¤Æ¤¤¤ë Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤·¤Þ¤»¤ó
-      -y, --include-dependencies       °ÍÂ¸¤·¤Æ¤¤¤ë Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤·¤Þ¤¹
+          --ignore-dependencies        ä¾å­˜ã—ã¦ã„ã‚‹ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã›ã‚“
+      -y, --include-dependencies       ä¾å­˜ã—ã¦ã„ã‚‹ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™
           --[no-]format-executable     Make installed executable names match ruby.
                                        If ruby is ruby18, foo_exec will be
                                        foo_exec18
     Local/Remote Options:
-      -l, --local                      Áàºî¤ò¥í¡¼¥«¥ë¤Ë¸ÂÄê¤·¤Þ¤¹
-      -r, --remote                     Áàºî¤ò¥ê¥â¡¼¥È¤Ë¸ÂÄê¤·¤Þ¤¹
-      -b, --both                       ¥í¡¼¥«¥ë¤È¥ê¥â¡¼¥È¤ÎÎ¾Êý¤ÎÁàºî¤òµö²Ä¤·¤Þ¤¹
+      -l, --local                      æ“ä½œã‚’ãƒ­ãƒ¼ã‚«ãƒ«ã«é™å®šã—ã¾ã™
+      -r, --remote                     æ“ä½œã‚’ãƒªãƒ¢ãƒ¼ãƒˆã«é™å®šã—ã¾ã™
+      -b, --both                       ãƒ­ãƒ¼ã‚«ãƒ«ã¨ãƒªãƒ¢ãƒ¼ãƒˆã®ä¸¡æ–¹ã®æ“ä½œã‚’è¨±å¯ã—ã¾ã™
       -B, --bulk-threshold COUNT       Threshold for switching to bulk
                                        synchronization (default 1000)
-          --source URL                 Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¥ê¥â¡¼¥È¥ê¥Ý¥¸¥È¥ê¤Î URL ¤ò»ØÄê¤·¤Þ¤¹
-          --[no-]http-proxy [URL]      ¥ê¥â¡¼¥È¤ÎÁàºî¤Ë HTTP ¥×¥í¥¯¥·¤ò»ÈÍÑ¤·¤Þ¤¹
-      -u, --[no-]update-sources        ¥í¡¼¥«¥ë¥½¡¼¥¹¥­¥ã¥Ã¥·¥å¤ò¹¹¿·¤·¤Þ¤¹
+          --source URL                 Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®ãƒªãƒ¢ãƒ¼ãƒˆãƒªãƒã‚¸ãƒˆãƒªã® URL ã‚’æŒ‡å®šã—ã¾ã™
+          --[no-]http-proxy [URL]      ãƒªãƒ¢ãƒ¼ãƒˆã®æ“ä½œã« HTTP ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½¿ç”¨ã—ã¾ã™
+      -u, --[no-]update-sources        ãƒ­ãƒ¼ã‚«ãƒ«ã‚½ãƒ¼ã‚¹ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚’æ›´æ–°ã—ã¾ã™
     Common Options:
-      -h, --help                       ¤³¤Î¥³¥Þ¥ó¥É¤Î¥Ø¥ë¥×¤òÉ½¼¨¤·¤Þ¤¹
-      -V, --[no-]verbose               É½¼¨¤ò¾ÜºÙ¤Ë¤·¤Þ¤¹
-      -q, --quiet                      ÀÅ¤«¤Ë¼Â¹Ô¤·¤Þ¤¹
-          --config-file FILE           »ØÄê¤µ¤ì¤¿ÀßÄê¥Õ¥¡¥¤¥ë¤ò»ÈÍÑ¤·¤Þ¤¹
-          --backtrace                  ¥Ð¥Ã¥¯¥È¥ì¡¼¥¹¤òÉ½¼¨¤·¤Þ¤¹
-          --debug                      Ruby ¼«ÂÎ¤Î¥Ç¥Ð¥Ã¥°¥ª¥×¥·¥ç¥ó¤òÍ­¸ú¤Ë¤·¤Þ¤¹
+      -h, --help                       ã“ã®ã‚³ãƒžãƒ³ãƒ‰ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã—ã¾ã™
+      -V, --[no-]verbose               è¡¨ç¤ºã‚’è©³ç´°ã«ã—ã¾ã™
+      -q, --quiet                      é™ã‹ã«å®Ÿè¡Œã—ã¾ã™
+          --config-file FILE           æŒ‡å®šã•ã‚ŒãŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ç”¨ã—ã¾ã™
+          --backtrace                  ãƒãƒƒã‚¯ãƒˆãƒ¬ãƒ¼ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™
+          --debug                      Ruby è‡ªä½“ã®ãƒ‡ãƒãƒƒã‚°ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æœ‰åŠ¹ã«ã—ã¾ã™
     Arguments:
-      GEMNAME       ¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë Gem ¥Ñ¥Ã¥±¡¼¥¸Ì¾¤ò»ØÄê¤·¤Þ¤¹
+      GEMNAME       ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã‚’æŒ‡å®šã—ã¾ã™
     Summary:
-      Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥í¡¼¥«¥ë¤Ë¥¤¥ó¥¹¥È¡¼¥ë¤·¤Þ¤¹
+      Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ãƒ­ãƒ¼ã‚«ãƒ«ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™
     Defaults:
       --both --version '>= 0' --rdoc --ri --no-force
       --no-test --install-dir /usr/lib/ruby/gems/1.8

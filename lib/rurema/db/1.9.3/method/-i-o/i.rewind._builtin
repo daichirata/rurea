@@ -4,9 +4,9 @@ kind=defined
 
 --- rewind    -> 0
 
-¥Õ¥¡¥¤¥ë¥İ¥¤¥ó¥¿¤òÀèÆ¬¤Ë°ÜÆ°¤·¤Ş¤¹¡£[[m:IO#lineno]] ¤Ï 0 ¤Ë¤Ê¤ê¤Ş¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ãƒã‚¤ãƒ³ã‚¿ã‚’å…ˆé ­ã«ç§»å‹•ã—ã¾ã™ã€‚[[m:IO#lineno]] ã¯ 0 ã«ãªã‚Šã¾ã™ã€‚
 
-@raise IOError ´û¤Ë close ¤µ¤ì¤Æ¤¤¤ë¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise IOError æ—¢ã« close ã•ã‚Œã¦ã„ã‚‹å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
      f = File.new("testfile")
      f.readline               #=> "This is line one\n"

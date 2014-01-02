@@ -4,8 +4,8 @@ kind=defined
 
 --- coverage_report -> Integer | false
 
-���ޥ�ɥ饤������� --coverage-report ���ץ�������ꤷ�Ƥ�����硢��
-�ꤷ�����ͤ��֤��ޤ���
+コマンドライン引数の --coverage-report オプションを指定していた場合、指
+定した数値を返します。
 
-���ꤷ�ʤ��ä����� false ���֤��ޤ���
+指定しなかった場合は false を返します。
 

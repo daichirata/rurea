@@ -4,8 +4,8 @@ kind=defined
 
 --- accept_charset -> String
 
-�����Ȥ뤳�Ȥ��Ǥ��륭��饯�����åȤ�ʸ������֤��ޤ���
-�ǥե���Ȥ� UTF-8 �Ǥ���
+受けとることができるキャラクタセットを文字列で返します。
+デフォルトは UTF-8 です。
 
 @see [[m:CGI.accept_charset]], [[m:CGI.accept_charset=]]
 

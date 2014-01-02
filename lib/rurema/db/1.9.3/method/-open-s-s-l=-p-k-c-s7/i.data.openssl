@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- data -> String
-��̾�оݤΥǡ�����ʸ������֤��ޤ���
+署名対象のデータを文字列で返します。
 

@@ -6,5 +6,5 @@ library=webrick.httpservlet.filehandler
 aliases=
 aliasof=
 
-�̾�Υե����륵���ФȤ��Ƥε�ǽ���󶡤��뤿��Υ����֥�åȤǤ���
-[[c:WEBrick::HTTPServlet::FileHandler]] �����������Ѥ��Ƥ��ޤ���
+通常のファイルサーバとしての機能を提供するためのサーブレットです。
+[[c:WEBrick::HTTPServlet::FileHandler]] の内部で利用しています。

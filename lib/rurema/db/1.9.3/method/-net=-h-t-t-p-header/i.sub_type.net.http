@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- sub_type -> String|nil
-"text/html" �ˤ����� "html" �Τ褦�ʥ��֥����פ�ɽ��
-ʸ������֤��ޤ���
+"text/html" における "html" のようなサブタイプを表す
+文字列を返します。
 
-Content-Type: �إå��ե�����ɤ�¸�ߤ��ʤ����ˤ� nil ���֤��ޤ���
+Content-Type: ヘッダフィールドが存在しない場合には nil を返します。
 

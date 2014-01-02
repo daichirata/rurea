@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- getnames(address) -> [String]
-IP ���ɥ쥹 address �Υۥ���̾���å����åפ���
-��å����å׷�̤Υۥ���̾�ꥹ�Ȥ��֤��ޤ���
+IP アドレス address のホスト名をルックアップし、
+ルックアップ結果のホスト名リストを返します。
 
-@param address IP���ɥ쥹��ʸ�����Ϳ���ޤ���
+@param address IPアドレスを文字列で与えます。
 

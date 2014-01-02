@@ -2,8 +2,9 @@ names=parse_file
 visibility=public
 kind=defined
 
---- parse_file(filename) -> object
-@todo
+--- parse_file(filename) -> Psych::Nodes::Document
+filename で指定したファイルをパースして YAML の AST を返します。
 
-Parse a file at +filename+. Returns the YAML AST.
+@param filename パースするファイルの名前
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
 

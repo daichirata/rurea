@@ -4,6 +4,6 @@ kind=defined
 
 --- logger    -> WEBrick::Log
 
-����������˻��ꤵ�줿�����Ȥ�����󥰤��� [[c:WEBrick::Log]] �Υ���
-���󥹤��֤��ޤ���
+生成する時に指定された、自身をロギングする [[c:WEBrick::Log]] のインス
+タンスを返します。
 

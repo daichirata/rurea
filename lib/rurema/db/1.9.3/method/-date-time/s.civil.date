@@ -4,18 +4,18 @@ kind=defined
 
 --- civil(year = -4712, mon = 1, mday = 1, hour = 0, min = 0, sec = 0, offset = 0, start = Date::ITALY) -> DateTime
 --- new(year = -4712, mon = 1, mday = 1, hour = 0, min = 0, sec = 0, offset = 0, start = Date::ITALY) -> DateTime
-ÎñÆüÉÕ¤ËÁêÅö¤¹¤ëÆü»ş¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Ş¤¹¡£
+æš¦æ—¥ä»˜ã«ç›¸å½“ã™ã‚‹æ—¥æ™‚ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-»şº¹¤ÎÃ±°Ì¤ÏÆü¤Ç¤¹¡£
-1.8.6 °Ê¹ß¤Ç¤Ï¡¢"+0900" ¤Î¤è¤¦¤Ê»şº¹¤ò¤¢¤é¤ï¤¹Ê¸»úÎó¤â¤Ä¤«¤¨¤Ş¤¹¡£
+æ™‚å·®ã®å˜ä½ã¯æ—¥ã§ã™ã€‚
+1.8.6 ä»¥é™ã§ã¯ã€"+0900" ã®ã‚ˆã†ãªæ™‚å·®ã‚’ã‚ã‚‰ã‚ã™æ–‡å­—åˆ—ã‚‚ã¤ã‹ãˆã¾ã™ã€‚
 
-@param year Ç¯
-@param mon ·î
-@param mday Æü
-@param hour »ş
-@param min Ê¬
-@param sec ÉÃ
-@param offset »şº¹
-@param start ¥°¥ì¥´¥ê¥ªÎñ¤ò¤Ä¤«¤¤»Ï¤á¤¿Æü¤ò¤¢¤é¤ï¤¹¥æ¥ê¥¦¥¹Æü
-@raise ArgumentError Àµ¤·¤¯¤Ê¤¤Æü»ş
+@param year å¹´
+@param mon æœˆ
+@param mday æ—¥
+@param hour æ™‚
+@param min åˆ†
+@param sec ç§’
+@param offset æ™‚å·®
+@param start ã‚°ãƒ¬ã‚´ãƒªã‚ªæš¦ã‚’ã¤ã‹ã„å§‹ã‚ãŸæ—¥ã‚’ã‚ã‚‰ã‚ã™ãƒ¦ãƒªã‚¦ã‚¹æ—¥
+@raise ArgumentError æ­£ã—ããªã„æ—¥æ™‚
 

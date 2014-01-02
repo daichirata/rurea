@@ -5,14 +5,14 @@ kind=defined
 --- ole_types -> [WIN32OLE_TYPE]
 --- ole_classes -> [WIN32OLE_TYPE]
 
-TypeLib¤Ë³ÊÇ¼¤µ¤ì¤Æ¤¤¤ë¤¹¤Ù¤Æ¤Î·¿¤ò¼èÆÀ¤·¤Þ¤¹¡£
+TypeLibã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹ã™ã¹ã¦ã®åž‹ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-TypeLib¤Ë³ÊÇ¼¤µ¤ì¤Æ¤¤¤ë·¿¤Ë¤Ï¡¢¥¯¥é¥¹¡ÊCoClass¡½¡½¥³¥ó¥Ý¡¼¥Í¥ó¥È¥¯¥é¥¹¡Ë
-¤äEnum¡ÊÎóµó»Ò¡Ë¡¢¹½Â¤ÂÎ¤Ê¤É¤¬¤¢¤ê¤Þ¤¹¡£
+TypeLibã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹åž‹ã«ã¯ã€ã‚¯ãƒ©ã‚¹ï¼ˆCoClassâ€”â€”ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚¯ãƒ©ã‚¹ï¼‰
+ã‚„Enumï¼ˆåˆ—æŒ™å­ï¼‰ã€æ§‹é€ ä½“ãªã©ãŒã‚ã‚Šã¾ã™ã€‚
 
-@return TypeLib¤Ë³ÊÇ¼¤µ¤ì¤Æ¤¤¤ë¤¹¤Ù¤Æ¤Î·¿¤ò[[c:WIN32OLE_TYPE]]¥ª¥Ö¥¸¥§
-        ¥¯¥È¤ÎÇÛÎó¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+@return TypeLibã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹ã™ã¹ã¦ã®åž‹ã‚’[[c:WIN32OLE_TYPE]]ã‚ªãƒ–ã‚¸ã‚§
+        ã‚¯ãƒˆã®é…åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 
    tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 14.0 Object Library')
-   classes = tlib.ole_types.map{|k| k.name} # -> ["Adjustments", "CalloutFormat", ...]
+   classes = tlib.ole_types.map{|k| k.name} # => ["Adjustments", "CalloutFormat", ...]
 

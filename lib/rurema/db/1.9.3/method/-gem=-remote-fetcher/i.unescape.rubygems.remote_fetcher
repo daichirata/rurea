@@ -4,9 +4,9 @@ kind=defined
 
 --- unescape(str) -> String
 
-URI ʸ�����ǥ����ɤ���ʸ������֤��ޤ���
+URI 文字列をデコードした文字列を返します。
 
-@param str ʸ�������ꤷ�ޤ���
+@param str 文字列を指定します。
 
-@see [[m:URI.#unescape]]
+@see [[m:URI.unescape]]
 

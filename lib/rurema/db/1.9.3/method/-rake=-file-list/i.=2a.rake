@@ -4,7 +4,7 @@ kind=defined
 
 --- *(other) -> Array | String
 
-[[m:Array#*]] ��ư����碌�뤿��˺�������Ƥ��ޤ���
+[[m:Array#*]] と動作を合わせるために再定義しています。
 
 @see [[m:Array#*]]
 

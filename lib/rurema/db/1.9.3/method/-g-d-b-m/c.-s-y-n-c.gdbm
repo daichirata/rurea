@@ -4,10 +4,10 @@ kind=defined
 
 --- SYNC -> Fixnum
 
-[[m:GDBM.open]] ����3�����˻��ꤷ�ޤ���
+[[m:GDBM.open]] の第3引数に指定します。
 
-�񤭹��ߤη�̤����ǥ�������Υե�����ˤ�����ȿ�Ǥ���ޤ���
-libgdbm version 1.8.0 �����Υǥե���ȥ⡼�ɤǤ���
+書き込みの結果が、ディスク上のファイルにすぐに反映されます。
+libgdbm version 1.8.0 以前のデフォルトモードです。
 
-��������� libgdbm version 1.8.0 �ʹߤ��ͭ���Ǥ���
+この定数は libgdbm version 1.8.0 以降より有効です。
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- closed_write?    -> bool
 
-���Ȥ��Ф���񤭹��ߤ��ػߤ���Ƥ���ʤ� true ���֤��ޤ��������Ǥʤ����ϡ�false ���֤��ޤ���
+自身に対する書き込みが禁止されているなら true を返します。そうでない場合は、false を返します。
 

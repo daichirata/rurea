@@ -4,8 +4,8 @@ kind=defined
 
 --- image_format -> String
 
-���ޥ�ɥ饤������� --image-format ���ץ����ǻ��ꤷ��̾����ʸ�����
-������֤��ޤ���
+コマンドライン引数の --image-format オプションで指定した名前を文字列の
+配列で返します。
 
-���ꤷ�ʤ��ä����� 'png' ���֤��ޤ���
+指定しなかった場合は 'png' を返します。
 

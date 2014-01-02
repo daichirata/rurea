@@ -4,5 +4,5 @@ kind=defined
 
 --- source -> String
 
-[[m:Rake::Task#sources]] ¤ÎºÇ½é¤ÎÍ×ÁÇ¤òÊÖ¤·¤Ş¤¹¡£
+[[m:Rake::Task#sources]] ã®æœ€åˆã®è¦ç´ ã‚’è¿”ã—ã¾ã™ã€‚
 

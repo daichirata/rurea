@@ -3,28 +3,29 @@ classes=Rake=RDocTask
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-¥É¥­¥å¥á¥ó¥È¤òºîÀ®¤¹¤ë¤¿¤á¤Î¥¿¥¹¥¯¤òÄêµÁ¤·¤Þ¤¹¡£
+ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹ãŸã‚ã®ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-°Ê²¼¤Î¥¿¥¹¥¯¤òÄêµÁ¤·¤Þ¤¹¡£
+ä»¥ä¸‹ã®ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
 : rdoc
-  RDoc ¤òºîÀ®¤·¤Þ¤¹¡£
+  RDoc ã‚’ä½œæˆã—ã¾ã™ã€‚
 : clobber_rdoc
-  À¸À®¤µ¤ì¤¿ RDoc ¤Î¥Õ¥¡¥¤¥ë¤òºï½ü¤·¤Þ¤¹¡£
-  ¤³¤Î¥¿¥¹¥¯¤Ï clobber ¥¿¥¹¥¯¤Ë¤âÄÉ²Ã¤µ¤ì¤Þ¤¹¡£
+  ç”Ÿæˆã•ã‚ŒãŸ RDoc ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
+  ã“ã®ã‚¿ã‚¹ã‚¯ã¯ clobber ã‚¿ã‚¹ã‚¯ã«ã‚‚è¿½åŠ ã•ã‚Œã¾ã™ã€‚
 : rerdoc
-  ´û¤ËÂ¸ºß¤¹¤ë RDoc ¤¬¸Å¤¯¤Ê¤¯¤Æ¤â RDoc ¤òºîÀ®¤·¤Þ¤¹¡£
+  æ—¢ã«å­˜åœ¨ã™ã‚‹ RDoc ãŒå¤ããªãã¦ã‚‚ RDoc ã‚’ä½œæˆã—ã¾ã™ã€‚
 
 
-Îã:
+ä¾‹:
    Rake::RDocTask.new do |rd|
      rd.main = "README.rdoc"
      rd.rdoc_files.include("README.rdoc", "lib/**/*.rb")
    end
 
-Îã:
-   # RDoc ¥¿¥¹¥¯¤ËÊÌ¤ÎÌ¾Á°¤òÉÕ¤±¤ëÎã
+ä¾‹:
+   # RDoc ã‚¿ã‚¹ã‚¯ã«åˆ¥ã®åå‰ã‚’ä»˜ã‘ã‚‹ä¾‹
    Rake::RDocTask.new(:rdoc_dev) do |rd|
      rd.main = "README.doc"
      rd.rdoc_files.include("README.rdoc", "lib/**/*.rb")

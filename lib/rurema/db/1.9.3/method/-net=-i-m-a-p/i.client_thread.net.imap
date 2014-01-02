@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- client_thread -> Thread
-���Υ᥽�åɤ� obsolete �Ǥ����Ȥ�ʤ��Ǥ���������
+このメソッドは obsolete です。使わないでください。
 

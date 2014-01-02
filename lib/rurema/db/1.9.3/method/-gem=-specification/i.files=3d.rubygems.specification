@@ -4,8 +4,8 @@ kind=defined
 
 --- files=(files)
 
-���� Gem �ѥå������˴ޤޤ��ե�����̾������򥻥åȤ��ޤ���
+この Gem パッケージに含まれるファイル名の配列をセットします。
 
-@param files ���� Gem �ѥå������˴ޤޤ��ե�����̾���������ꤷ�ޤ���
+@param files この Gem パッケージに含まれるファイル名の配列を指定します。
 
 

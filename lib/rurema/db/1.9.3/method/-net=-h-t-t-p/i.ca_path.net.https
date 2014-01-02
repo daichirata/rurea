@@ -3,7 +3,7 @@ visibility=public
 kind=added
 
 --- ca_path -> String | nil
-┐о═ъд╣ды CA ╛┌╠└╜ёе╒ебедеыдм┬╕║▀д╣дые╟егеьепе╚еъдЄ└▀─ъд╖д▐д╣бг
+ф┐бща╝уБЩуВЛ CA ши╝цШОцЫ╕уГХуВбуВдуГлуБМхнШхЬиуБЩуВЛуГЗуВгуГмуВпуГИуГкуВТшинхоЪуБЧуБ╛уБЩуАВ
 
 @see [[m:Net::HTTP#ca_path=]], [[m:OpenSSL::SSL::SSLContext#ca_path]]
 

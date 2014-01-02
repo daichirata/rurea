@@ -6,6 +6,6 @@ library=openssl
 aliases=
 aliasof=
 
-OpenSSLÆâ¤ÇÍøÍÑ¤µ¤ì¤ëÂ¿ÇÜÄ¹À°¿ô¥¯¥é¥¹¤Ç¤¹¡£
+OpenSSLå†…ã§åˆ©ç”¨ã•ã‚Œã‚‹å¤šå€é•·æ•´æ•°ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-ÄÌ¾ïÂ¿ÇÜÄ¹À°¿ô¤òÍøÍÑ¤¹¤ë¤Ë¤Ï [[c:Bignum]] ¤òÍÑ¤¤¤Æ¤¯¤À¤µ¤¤¡£
+é€šå¸¸å¤šå€é•·æ•´æ•°ã‚’åˆ©ç”¨ã™ã‚‹ã«ã¯ [[c:Bignum]] ã‚’ç”¨ã„ã¦ãã ã•ã„ã€‚

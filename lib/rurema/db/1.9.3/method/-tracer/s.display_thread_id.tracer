@@ -5,6 +5,6 @@ kind=defined
 --- display_thread_id -> bool
 --- display_thread_id? -> bool
 
-���ʤ�С�����å� ID ��ɽ�����ޤ���
-�ǥե���Ȥϡ����Ǥ���
+真ならば、スレッド ID を表示します。
+デフォルトは、真です。
 

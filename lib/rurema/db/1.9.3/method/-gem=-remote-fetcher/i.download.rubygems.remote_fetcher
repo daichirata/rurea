@@ -4,18 +4,18 @@ kind=defined
 
 --- download(spec, source_uri, install_dir = Gem.dir) -> String
 
-source_uri ����������� Gem �ѥå������򥭥�å���ǥ��쥯�ȥ�����֤��ޤ���
+source_uri から取得した Gem パッケージをキャッシュディレクトリに配置します。
 
-���� Gem �ѥå�������¸�ߤ�����ϡ��ե�������֤������ޤ��� source_uri ��
-��������ѥ� (file://) �Ǥ�����Ͼ�˥ե�������֤������ޤ���
+既に Gem パッケージが存在する場合は、ファイルを置き換えませんが source_uri が
+ローカルパス (file://) である場合は常にファイルを置き換えます。
 
-@param spec [[c:Gem::Specification]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param spec [[c:Gem::Specification]] のインスタンスを指定します。
 
-@param source_uri ������� URI ����ꤷ�ޤ���
+@param source_uri 取得先の URI を指定します。
 
-@param install_dir ����������ɤ����ե���������������ꤷ�ޤ���
+@param install_dir ダウンロードしたファイルの配置先を指定します。
 
-@return ��������˥��ԡ����� Gem �ե�����Υѥ����֤��ޤ���
+@return ローカルにコピーした Gem ファイルのパスを返します。
 
 @raise Gem::RemoteFetcher::FetchError 
 

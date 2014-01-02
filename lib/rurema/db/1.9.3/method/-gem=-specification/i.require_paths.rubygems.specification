@@ -4,6 +4,6 @@ kind=defined
 
 --- require_paths -> [String]
 
-���� Gem �ѥå���������Ѥ����ݤ� require ����ե����뤬�֤���Ƥ���ǥ��쥯�ȥ�
-�Υꥹ�Ȥ��֤��ޤ���
+この Gem パッケージを使用した際に require するファイルが置かれているディレクトリ
+のリストを返します。
 

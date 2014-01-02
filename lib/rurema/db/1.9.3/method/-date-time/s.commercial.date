@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- commercial(cwyear = -4712, cweek = 1, cwday = 1, hour = 0, min = 0, sec = 0, offset = 0, start = Date::ITALY) -> DateTime
-Îñ½µÆüÉÕ¤ËÁêÅö¤¹¤ëÆü»ş¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Ş¤¹¡£
+æš¦é€±æ—¥ä»˜ã«ç›¸å½“ã™ã‚‹æ—¥æ™‚ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-[[m:DateTime.new]] ¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:DateTime.new]] ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param cwyear Ç¯
-@param cweek ½µ
-@param cwday ½µ¤ÎÆü (ÍËÆü)
-@param hour »ş
-@param min Ê¬
-@param sec ÉÃ
-@param offset »şº¹
-@param start ¥°¥ì¥´¥ê¥ªÎñ¤ò¤Ä¤«¤¤»Ï¤á¤¿Æü¤ò¤¢¤é¤ï¤¹¥æ¥ê¥¦¥¹Æü
-@raise ArgumentError Àµ¤·¤¯¤Ê¤¤Æü»ş
+@param cwyear å¹´
+@param cweek é€±
+@param cwday é€±ã®æ—¥ (æ›œæ—¥)
+@param hour æ™‚
+@param min åˆ†
+@param sec ç§’
+@param offset æ™‚å·®
+@param start ã‚°ãƒ¬ã‚´ãƒªã‚ªæš¦ã‚’ã¤ã‹ã„å§‹ã‚ãŸæ—¥ã‚’ã‚ã‚‰ã‚ã™ãƒ¦ãƒªã‚¦ã‚¹æ—¥
+@raise ArgumentError æ­£ã—ããªã„æ—¥æ™‚
 

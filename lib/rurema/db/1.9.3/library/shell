@@ -3,12 +3,13 @@ classes=Shell
 methods=
 sublibraries=shell.error,shell.command=2dprocessor,shell.process=2dcontroller,shell.filter,shell.system=2dcommand,shell.builtin=2dcommand
 is_sublibrary=false
+category=CUI
 
-Ruby ¾å¤Ç sh/csh ¤Î¤è¤¦¤Ë¥³¥Ş¥ó¥É¤Î¼Â¹ÔµÚ¤Ó¥Õ¥£¥ë¥¿¥ê¥ó¥°¤ò¼ê·Ú¤Ë¹Ô¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Ruby ä¸Šã§ sh/csh ã®ã‚ˆã†ã«ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡ŒåŠã³ãƒ•ã‚£ãƒ«ã‚¿ãƒªãƒ³ã‚°ã‚’æ‰‹è»½ã«è¡Œã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-sh/csh ¤ÎÀ©¸æÊ¸¤Ï Ruby ¤Îµ¡Ç½¤òÍÑ¤¤¤Æ¼Â¸½¤·¤Ş¤¹¡£
+sh/csh ã®åˆ¶å¾¡æ–‡ã¯ Ruby ã®æ©Ÿèƒ½ã‚’ç”¨ã„ã¦å®Ÿç¾ã—ã¾ã™ã€‚
 
-=== ¥µ¥ó¥×¥ë
+=== ã‚µãƒ³ãƒ—ãƒ«
 
 ==== Example 1:
 

@@ -6,5 +6,5 @@ library=net.protocol
 aliases=
 aliasof=
 
-�����С�¦������ˤ���׵᤬ã���Ǥ��ʤ�����
-ȯ�������㳰�Ǥ���
+サーバー側の問題により要求が達成できない場合に
+発生する例外です。

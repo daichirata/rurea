@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- issuer=(issuer)
-CRL ¤ÎÈ¯¹Ô¼Ô¤òÀßÄê¤·¤Ş¤¹¡£
+CRL ã®ç™ºè¡Œè€…ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param issuer È¯¹Ô¼Ô¤Î [[c:OpenSSL::X509::Name]] ¥ª¥Ö¥¸¥§¥¯¥È
-@raise OpenSSL::X509::CRLError ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param issuer ç™ºè¡Œè€…ã® [[c:OpenSSL::X509::Name]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+@raise OpenSSL::X509::CRLError è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::X509::CRL#issuer]]
 

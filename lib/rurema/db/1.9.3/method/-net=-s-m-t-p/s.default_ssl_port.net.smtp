@@ -4,6 +4,6 @@ kind=defined
 
 --- default_tls_port -> Integer
 --- default_ssl_port -> Integer
-�ǥե���Ȥ�SMTPS�Υݡ����ֹ�(465)���֤��ޤ���
+デフォルトのSMTPSのポート番号(465)を返します。
 
 

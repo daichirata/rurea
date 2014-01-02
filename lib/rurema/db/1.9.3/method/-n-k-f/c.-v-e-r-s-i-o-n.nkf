@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- VERSION -> String
-"#{NKF::NKF_VERSION} (#{NKF_RELEASE_DATE})" คศ
-คขค้ค๏คตค์ค๋สธป๚ฮ๓ควคนกฃ
+"#{NKF::NKF_VERSION} (#{NKF_RELEASE_DATE})" ใจ
+ใใใใ•ใใๆ–ๅญ—ๅ—ใงใใ€
 

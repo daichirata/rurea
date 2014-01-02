@@ -5,7 +5,7 @@ kind=defined
 --- delete_if { |key, value|  ...  } -> self
 --- reject! { |key, value|  ...  } -> self
 
-�֥��å���ɾ�������ͤ����Ǥ���г���������ܤ������ޤ���
+ブロックを評価した値が真であれば該当する項目を削除します。
 
-���Υ᥽�åɤ� self ���˲�Ū���ѹ����ޤ���
+このメソッドは self を破壊的に変更します。
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- loaded=(flag)
 
-���� Gem �ѥå������� gemspec �����˥����ɤ���Ƥ��뤫�ɤ����򥻥åȤ��ޤ���
+この Gem パッケージの gemspec が既にロードされているかどうかをセットします。
 
-����°���ϱ�³�����ޤ���
+この属性は永続化しません。
 
-@param flag ���˥����ɤ���Ƥ�����Ͽ�����ꤷ�ޤ���
+@param flag 既にロードされている場合は真を指定します。
 

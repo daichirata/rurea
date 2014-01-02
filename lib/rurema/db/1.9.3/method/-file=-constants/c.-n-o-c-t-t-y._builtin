@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- NOCTTY -> Integer
-���Ȥ�TTY���椷�ʤ��褦��TTY�򳫤��ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+自身がTTY制御しないようにTTYを開きます。
+[[m:File.open]]で使用します。
 

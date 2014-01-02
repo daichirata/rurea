@@ -4,14 +4,16 @@ kind=added
 
 --- httpdate -> String
 
-[[RFC:2616]]���������Ƥ���HTTP-date��rfc1123-date�Ȥ���
-ɽ�������ʲ��η�����ʸ������֤��ޤ�:
+[[RFC:2616]] で定義されている HTTP-date の rfc1123-date 形式の文字列を
+返します。
 
+@return 以下の形式の文字列を返します。
+//emlist{
   day-of-week, DD month-name CCYY hh:mm:ss GMT
+//}
+        注意: 結果はいつも UTC (GMT) です。
 
-����: ��̤Ϥ��Ĥ� UTC (GMT) �Ǥ���
-
-������
+使用例
   require 'time'
 
   iso8601_time = '2008-08-31T12:34:56+09:00'

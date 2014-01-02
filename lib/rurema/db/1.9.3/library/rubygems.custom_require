@@ -1,9 +1,10 @@
-requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system
+requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder
 classes=
 methods=Kernel/i.require.rubygems.custom_require
 sublibraries=
 is_sublibrary=true
+category=
 
-[[m:Kernel#require]] ¤òºÆÄêµÁ¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[m:Kernel#require]] ã‚’å†å®šç¾©ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-Ruby1.9 °ÊÁ°¤Ç»ÈÍÑ¤·¤Æ¤¤¤Ş¤¹¡£
+Ruby1.9 ä»¥å‰ã§ä½¿ç”¨ã—ã¦ã„ã¾ã™ã€‚

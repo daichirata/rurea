@@ -5,7 +5,7 @@ kind=defined
 --- next -> Integer
 --- succ -> Integer
 
-���ε����ǿ����֤��ޤ���
+次の疑似素数を返します。
 
-�ޤ�����Ū�������֤�ʤ�ޤ���
+また内部的な列挙位置を進めます。
 

@@ -5,7 +5,7 @@ kind=defined
 --- [](*ret)      -> ()
 --- call(*ret)    -> ()
 
-self ¤¬µ­²±¤·¤¿¾õÂÖ¤ò·ÑÂ³¤·¤Þ¤¹¡£°ú¿ô¤Ï ¤½¤Î¤Þ¤Þ
-[[m:Kernel.#callcc]] ¤ÎÌá¤êÃÍ¤Ë¤Ê¤ê¤Þ¤¹¡£
+self ãŒè¨˜æ†¶ã—ãŸçŠ¶æ…‹ã‚’ç¶™ç¶šã—ã¾ã™ã€‚å¼•æ•°ã¯ ãã®ã¾ã¾
+[[m:Kernel.#callcc]] ã®æˆ»ã‚Šå€¤ã«ãªã‚Šã¾ã™ã€‚
 
-@param ret ·ÑÂ³¤ËÉüµ¢¤·¤¿»þ¤ËÊÖ¤¹ÃÍ¤ò»ØÄê¤·¤Þ¤¹¡£
+@param ret ç¶™ç¶šã«å¾©å¸°ã—ãŸæ™‚ã«è¿”ã™å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- serial -> Integer
-��̾�Ԥξ�����μ����ֹ���֤��ޤ���
+署名者の証明書の識別番号を返します。
 
-����� [[m:OpenSSL::PKCS7::SignerInfo#issuer]] ��
-��̾�Ԥ��դ˼��̤��ޤ���
+これと [[m:OpenSSL::PKCS7::SignerInfo#issuer]] で
+署名者を一意に識別します。
 

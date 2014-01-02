@@ -6,6 +6,6 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 401 (Unauthorized) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 401 (Unauthorized) を表現するクラスです。
 
-�ܤ����� [[RFC:2616]] �򸫤Ƥ���������
+詳しくは [[RFC:2616]] を見てください。

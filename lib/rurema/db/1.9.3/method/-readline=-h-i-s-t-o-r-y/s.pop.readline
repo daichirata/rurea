@@ -4,14 +4,14 @@ kind=defined
 
 --- pop -> String
 
-•“•π•»•Í§Œ∫«∏Â§Œ∆‚Õ∆§ÚºË§ÍΩ–§∑§ﬁ§π°£
-∫«∏Â§Œ∆‚Õ∆§œ°¢•“•π•»•Í§´§ÈºË§ÍΩ¸§´§Ï§ﬁ§π°£
+„Éí„Çπ„Éà„É™„ÅÆÊúÄÂæå„ÅÆÂÜÖÂÆπ„ÇíÂèñ„ÇäÂá∫„Åó„Åæ„Åô„ÄÇ
+ÊúÄÂæå„ÅÆÂÜÖÂÆπ„ÅØ„ÄÅ„Éí„Çπ„Éà„É™„Åã„ÇâÂèñ„ÇäÈô§„Åã„Çå„Åæ„Åô„ÄÇ
 
-@raise NotImplementedError •µ•›°º•»§∑§∆§§§ §§¥ƒ∂≠§«»Ø¿∏§∑§ﬁ§π°£
+@raise NotImplementedError „Çµ„Éù„Éº„Éà„Åó„Å¶„ÅÑ„Å™„ÅÑÁí∞Â¢É„ÅßÁô∫Áîü„Åó„Åæ„Åô„ÄÇ
 
-@raise SecurityError •ª°º•’•Ï•Ÿ•Î ($SAFE) §¨ 4 §ŒæÏπÁ§À»Ø¿∏§∑§ﬁ§π°£
+@raise SecurityError „Çª„Éº„Éï„É¨„Éô„É´ ($SAFE) „Åå 4 „ÅÆÂ†¥Âêà„Å´Áô∫Áîü„Åó„Åæ„Åô„ÄÇ
 
-Œ„:
+‰æã:
 
   require "readline"
   
@@ -20,6 +20,6 @@ kind=defined
   p Readline::HISTORY.pop #=> "bar"
   p Readline::HISTORY.pop #=> "foo"
 
-@see [[m:Readline::HISTORY.push]]°¢[[m:Readline::HISTORY.shift]]°¢
+@see [[m:Readline::HISTORY.push]]„ÄÅ[[m:Readline::HISTORY.shift]]„ÄÅ
      [[m:Readline::HISTORY.delete_at]]
 

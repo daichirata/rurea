@@ -4,9 +4,9 @@ kind=added
 
 --- im -> Complex
 
-¼Â¿ô¤ËÂÐ¤·¡¢½ãµõ¿ô²½¤·¤¿ [[c:Complex]] ¥¯¥é¥¹¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+å®Ÿæ•°ã«å¯¾ã—ã€ç´”è™šæ•°åŒ–ã—ãŸ [[c:Complex]] ã‚¯ãƒ©ã‚¹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require "complex"
   n = 100

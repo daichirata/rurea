@@ -4,7 +4,7 @@ kind=defined
 
 --- eof? -> bool
 --- eof -> bool
-��꤫����̿�����ü��ã������ true ���֤��ޤ���
+相手からの通信が終端に達したら true を返します。
 
-[[m:IO#eof?]] ��Ʊ�ͤǤ���
+[[m:IO#eof?]] と同様です。
 

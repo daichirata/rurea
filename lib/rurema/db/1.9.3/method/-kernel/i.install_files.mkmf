@@ -4,14 +4,14 @@ kind=added
 
 --- install_files(mfile, ifiles, map = nil, srcprefix = nil) -> []
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï create_makefile, install_rb ¤¬»ÈÍÑ¤·¤Ş¤¹¡£
-ÆâÉôÍÑ¤Î¥á¥½¥Ã¥É¤Ç¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ create_makefile, install_rb ãŒä½¿ç”¨ã—ã¾ã™ã€‚
+å†…éƒ¨ç”¨ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
 
-@param mfile Makefile ¤òÉ½¤¹ [[c:File]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤Ç¤¹¡£
+@param mfile Makefile ã‚’è¡¨ã™ [[c:File]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã§ã™ã€‚
 
-@param ifiles ¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¥Õ¥¡¥¤¥ë¤Î¥ê¥¹¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param ifiles ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒªã‚¹ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @param map ???
 
-@param srcprefix ¥½¡¼¥¹¥Ç¥£¥ì¥¯¥È¥ê¤ò»ØÄê¤·¤Ş¤¹¡£
+@param srcprefix ã‚½ãƒ¼ã‚¹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

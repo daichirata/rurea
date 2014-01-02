@@ -4,5 +4,5 @@ kind=defined
 
 --- waiting_jobs -> Array
 
-�Ե���Υ���֤��֤��ޤ���
+待機中のジョブを返します。
 

@@ -4,15 +4,15 @@ kind=defined
 
 --- truncate(path, length)    -> 0
 
-path ¤Ç»ØÄê¤µ¤ì¤¿¥Õ¥¡¥¤¥ë¤Î¥µ¥¤¥º¤òºÇÂç length ¥Ð¥¤¥È
-¤Ë¤·¤Þ¤¹¡£
+path ã§æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚µã‚¤ã‚ºã‚’æœ€å¤§ length ãƒã‚¤ãƒˆ
+ã«ã—ã¾ã™ã€‚
 
-¥µ¥¤¥º¤ÎÊÑ¹¹¤ËÀ®¸ù¤¹¤ì¤Ð 0 ¤òÊÖ¤·¤Þ¤¹¡£¼ºÇÔ¤·¤¿¾ì¹ç¤ÏÎã³°
-[[c:Errno::EXXX]] ¤¬È¯À¸¤·¤Þ¤¹¡£
+ã‚µã‚¤ã‚ºã®å¤‰æ›´ã«æˆåŠŸã™ã‚Œã° 0 ã‚’è¿”ã—ã¾ã™ã€‚å¤±æ•—ã—ãŸå ´åˆã¯ä¾‹å¤–
+[[c:Errno::EXXX]] ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-@param path ¥Ñ¥¹¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param path ãƒ‘ã‚¹ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param length ÊÑ¹¹¤·¤¿¤¤¥µ¥¤¥º¤òÀ°¿ô¤ÇÍ¿¤¨¤Þ¤¹¡£
+@param length å¤‰æ›´ã—ãŸã„ã‚µã‚¤ã‚ºã‚’æ•´æ•°ã§ä¸Žãˆã¾ã™ã€‚
 
-@raise Errno::EXXX ¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Errno::EXXX å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

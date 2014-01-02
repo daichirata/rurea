@@ -6,7 +6,7 @@ library=_builtin
 aliases=
 aliasof=
 
-[[m:Hash#fetch]] �ʤɤ� key ���б����� value ���ʤ�����ȯ�����ޤ���
+[[m:Hash#fetch]] などで key に対応する value がない場合に発生します。
 
-Ruby 1.8 �����Ǥ�Ʊ�ͤξ��̤� [[c:IndexError]] ��ȯ�����Ƥ��ޤ�����
-�ߴ����Τ��ᡢ[[c:KeyError]] �� [[c:IndexError]] �Υ��֥��饹�ˤʤäƤ��ޤ���
+Ruby 1.8 以前では同様の場面で [[c:IndexError]] が発生していました。
+互換性のため、[[c:KeyError]] は [[c:IndexError]] のサブクラスになっています。

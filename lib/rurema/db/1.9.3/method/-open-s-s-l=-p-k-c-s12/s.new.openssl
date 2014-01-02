@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- new(obj=nil, pass=nil) -> OpenSSL::PKCS12
-ʸ����⤷���� [[c:IO]] ���֥������Ȥ��� PKCS#12 ���֥������Ȥ��������ޤ���
+文字列もしくは [[c:IO]] オブジェクトから PKCS#12 オブジェクトを生成します。
 
-�ǡ������̾�ѥ��ե졼���ǰŹ沽����Ƥ��뤿�ᡢpass �Ǥ��Υѥ���ɤ��Ϥ�
-�ޤ���
+データは通常パスフレーズで暗号化されているため、pass でそのパスワードを渡し
+ます。
 
-@param obj PKCS#12�ǡ������ɤ߹��४�֥�������(ʸ����⤷���� IO)
-@param pass �ѥ��ե졼��ʸ����
-@raise OpenSSL::PKCS12::PKCS12Error �ǡ������ɤ߹��ߤ˼��Ԥ�������ȯ�����ޤ�
+@param obj PKCS#12データを読み込むオブジェクト(文字列もしくは IO)
+@param pass パスフレーズ文字列
+@raise OpenSSL::PKCS12::PKCS12Error データの読み込みに失敗した場合に発生します
 

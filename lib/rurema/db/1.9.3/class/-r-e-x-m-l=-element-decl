@@ -6,4 +6,4 @@ library=rexml
 aliases=
 aliasof=
 
-
+DTD の要素宣言(Element Decleration)を表すクラスです。

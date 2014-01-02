@@ -4,5 +4,5 @@ kind=defined
 
 --- auth_type -> Class
 
-[[c:WEBrick::HTTPAuth::BasicAuth]], [[c:WEBrick::HTTPAuth::DigestAuth]] ¤Î¤¤¤º¤ì¤«¤òÊÖ¤·¤Ş¤¹¡£
+[[c:WEBrick::HTTPAuth::BasicAuth]], [[c:WEBrick::HTTPAuth::DigestAuth]] ã®ã„ãšã‚Œã‹ã‚’è¿”ã—ã¾ã™ã€‚
 

@@ -6,4 +6,4 @@ library=rubygems.commands.pristine_command
 aliases=
 aliasof=
 
-���󥹥ȡ��뤵��Ƥ��� Gem �ѥå������������֤ˤ��뤿��Υ��饹�Ǥ���
+インストールされている Gem パッケージを初期状態にするためのクラスです。

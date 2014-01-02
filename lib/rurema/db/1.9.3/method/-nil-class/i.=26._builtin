@@ -4,7 +4,7 @@ kind=defined
 
 --- &(other) -> false
 
-¾ï¤Ë false ¤òÊÖ¤·¤Ş¤¹¡£
+å¸¸ã« false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ÏÀÍıÀÑ¤ò¹Ô¤Ê¤¦¼°¤Ç¤¹
+@param other è«–ç†ç©ã‚’è¡Œãªã†å¼ã§ã™
 

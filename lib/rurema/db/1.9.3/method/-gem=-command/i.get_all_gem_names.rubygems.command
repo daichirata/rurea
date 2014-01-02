@@ -4,7 +4,7 @@ kind=defined
 
 --- get_all_gem_names -> Array
 
-���ޥ�ɥ饤���Ϳ����줿 Gem ��̾�������Ƽ��������֤��ޤ���
+コマンドラインで与えられた Gem の名前を全て取得して返します。
 
-@raise Gem::CommandLineError ���ޥ�ɥ饤��������� Gem ��̾��������Ǥ��ʤ�����ȯ�����ޤ���
+@raise Gem::CommandLineError コマンドライン引数から Gem の名前を取得できない場合に発生します。
 

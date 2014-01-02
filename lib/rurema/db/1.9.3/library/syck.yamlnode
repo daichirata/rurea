@@ -3,5 +3,6 @@ classes=Syck=YamlNode
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-YAML ¤Î¥Î¡¼¥É¤òÉ½¸½¤¹¤ë¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+YAML ã®ãƒãƒ¼ãƒ‰ã‚’è¡¨ç¾ã™ã‚‹ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

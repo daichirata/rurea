@@ -4,13 +4,13 @@ kind=defined
 
 --- foreach(path = nil, &block) -> ()
 
-pathдме╒ебедеыд╩дщ, File#foreach
-pathдме╟егеьепе╚еъд╩дщ, Dir#foreach
-д╬╞░║юдЄд╖д▐д╣бг
+pathуБМуГХуВбуВдуГлуБкуВЙ, File#foreach
+pathуБМуГЗуВгуГмуВпуГИуГкуБкуВЙ, Dir#foreach
+уБохЛХф╜ЬуВТуБЧуБ╛уБЩуАВ
 
-@param path е╒ебедеыдтд╖дпд╧е╟егеьепе╚еъд╬е╤е╣дЄ╩╕╗·╬єд╟╗╪─ъд╖д▐д╣бг
+@param path уГХуВбуВдуГлуВВуБЧуБПуБпуГЗуВгуГмуВпуГИуГкуБоуГСуВ╣уВТцЦЗхнЧхИЧуБзцМЗхоЪуБЧуБ╛уБЩуАВ
 
-╗╚═╤╬у
+ф╜┐чФиф╛Л
   require 'shell'
   Shell.verbose = false
   sh = Shell.new

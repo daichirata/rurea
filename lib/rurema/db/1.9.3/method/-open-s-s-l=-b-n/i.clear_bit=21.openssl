@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- clear_bit!(n) -> self
-¼«¿È¤Î n ¥Ó¥Ã¥ÈÌÜ¤ò0¤Ë¤·¤Ş¤¹¡£
+è‡ªèº«ã® n ãƒ“ãƒƒãƒˆç›®ã‚’0ã«ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   a = BN.new("129")
   a.clear_bit!(0)
   a # => 128
 
-@param n 0¤Ë¤¹¤ë¥Ó¥Ã¥È¤Î°ÌÃÖ
-@raise OpenSSL::BNError ·×»»»ş¥¨¥é¡¼
+@param n 0ã«ã™ã‚‹ãƒ“ãƒƒãƒˆã®ä½ç½®
+@raise OpenSSL::BNError è¨ˆç®—æ™‚ã‚¨ãƒ©ãƒ¼
 

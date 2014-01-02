@@ -4,7 +4,10 @@ kind=defined
 
 --- AGENT_LOG_FORMAT -> String
 
-Apache �Υ������������ǰ���Ū�˻Ȥ��� User-Agent �η�����ɽ���ʲ���ʸ����Ǥ���
+Apache のアクセスログで一般的に使われる User-Agent の形式を表す文字列です。
 
+@return 以下の文字列を返します。
+//emlist{{
   "%{User-Agent}i"
+//}}
 

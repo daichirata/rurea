@@ -4,5 +4,5 @@ kind=defined
 
 --- closed? -> bool
 
-[[m:IO#closed?]] �˰Ѿ����ޤ���
+[[m:IO#closed?]] に委譲します。
 

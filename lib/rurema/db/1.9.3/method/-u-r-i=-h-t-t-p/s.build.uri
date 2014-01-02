@@ -5,18 +5,18 @@ kind=defined
 --- build(ary)     -> URI::HTTP
 --- build(hash)    -> URI::HTTP
 
-°ú¿ô¤ÇÍ¿¤¨¤é¤ì¤¿ URI ¹½À®Í×ÁÇ¤«¤é URI::HTTP ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
-°ú¿ô¤ÎÀµÅöÀ­¤ò¸¡ºº¤·¤Þ¤¹¡£
+å¼•æ•°ã§ä¸Žãˆã‚‰ã‚ŒãŸ URI æ§‹æˆè¦ç´ ã‹ã‚‰ URI::HTTP ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+å¼•æ•°ã®æ­£å½“æ€§ã‚’æ¤œæŸ»ã—ã¾ã™ã€‚
 
-@param ary ¹½À®Í×ÁÇ¤òÉ½¤¹ÇÛÎó¤òÍ¿¤¨¤Þ¤¹¡£Í×ÁÇ¤Ï¼¡¤Î½ç¤Ç¤¹¡£
+@param ary æ§‹æˆè¦ç´ ã‚’è¡¨ã™é…åˆ—ã‚’ä¸Žãˆã¾ã™ã€‚è¦ç´ ã¯æ¬¡ã®é †ã§ã™ã€‚
 //emlist{
       [userinfo, host, port, path, query, fragment]
 //}
-@param hash ¹½À®Í×ÁÇ¤òÉ½¤¹¥Ï¥Ã¥·¥å¤òÍ¿¤¨¤Þ¤¹¡£¥Ï¥Ã¥·¥å¤Î¥­¡¼¤Ï  :scheme, :userinfo, :host, :port, :path, :query, :fragment ¤Î¤¤¤º¤ì¤«¤Ç¤¹¡£
+@param hash æ§‹æˆè¦ç´ ã‚’è¡¨ã™ãƒãƒƒã‚·ãƒ¥ã‚’ä¸Žãˆã¾ã™ã€‚ãƒãƒƒã‚·ãƒ¥ã®ã‚­ãƒ¼ã¯  :scheme, :userinfo, :host, :port, :path, :query, :fragment ã®ã„ãšã‚Œã‹ã§ã™ã€‚
 
-@raise URI::InvalidComponentError ³ÆÍ×ÁÇ¤¬Å¬¹ç¤·¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise URI::InvalidComponentError å„è¦ç´ ãŒé©åˆã—ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   newuri = URI::HTTP.build({:host => 'www.example.com', :path> => '/foo/bar'})  
   newuri = URI::HTTP.build([nil, "www.example.com", nil, "/path", "query", 'fragment'])
 

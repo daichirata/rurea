@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- raw_data -> String
-�쥹�ݥ�ʸ������֤��ޤ���
+レスポンス文字列を返します。
 

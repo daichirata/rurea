@@ -5,13 +5,13 @@ kind=added
 --- find_type(type, opt, *headers) -> Array
 --- find_type(type, opt, *headers){ ... } -> Array
 
-��Ū�ʷ� type �������ƥ��¸�ߤ��뤫�ɤ����������ޤ���
+静的な型 type がシステムに存在するかどうか検査します。
 
-@param type ��������������̾������ꤷ�ޤ���
+@param type 検査したい型の名前を指定します。
 
-@param opt ����ѥ�����Ϥ��ɲäΥ��ץ�������ꤷ�ޤ���
+@param opt コンパイラに渡す追加のオプションを指定します。
 
-@param headers �ɲäΥإå�����ꤷ�ޤ���
+@param headers 追加のヘッダを指定します。
 
 @see [[m:Kernel#have_type]] 
 

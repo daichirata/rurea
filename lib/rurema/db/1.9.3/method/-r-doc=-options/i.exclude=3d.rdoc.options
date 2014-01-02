@@ -4,7 +4,7 @@ kind=defined
 
 --- exclude=(val)
 
-���ޥ�ɥ饤������� --exclude ���ץ�����Ʊ�ͤλ����Ԥ��ޤ���
+コマンドライン引数の --exclude オプションと同様の指定を行います。
 
-@param val ���ꤹ��ѥ������ [[c:Regexp]] ���֥������Ȥǻ��ꤷ�ޤ���
+@param val 設定するパターンを [[c:Regexp]] オブジェクトで指定します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- _load(str)    -> Class
 
-[[m:Object#_dump]] �򻲾Ȥ��Ʋ�������
+[[m:Object#_dump]] を参照して下さい。
 
-@param str Ruby �Υ��֥������Ȥ�����פ��줿ʸ�������ꤷ�ޤ���
+@param str Ruby のオブジェクトがダンプされた文字列を指定します。
 

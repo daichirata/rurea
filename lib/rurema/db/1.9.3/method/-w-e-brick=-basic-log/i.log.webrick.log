@@ -4,9 +4,9 @@ kind=defined
 
 --- log(level, msg)    -> ()
 
-���ꤵ�줿 msg ����ꤵ�줿������٥� level �ǥ����˵�Ͽ���ޤ���
+指定された msg を指定されたログレベル level でログに記録します。
 
-@param level ��Ͽ������ msg �Υ�٥�� FATAL, ERROR, WARN, INFO, DEBUG �Τ����줫������ǻ��ꤷ�ޤ���
+@param level 記録したい msg のレベルを FATAL, ERROR, WARN, INFO, DEBUG のいずれかの定数で指定します。
 
-@param msg ��Ͽ������ʸ�������ꤷ�ޤ���
+@param msg 記録したい文字列を指定します。
 

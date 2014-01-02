@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- $$ -> Fixnum
-���߼¹���� Ruby �ץ������Υץ����� ID �Ǥ���
-[[m:Process.#pid]] ��Ʊ���Ǥ���
+現在実行中の Ruby プロセスのプロセス ID です。
+[[m:Process.#pid]] と同じです。
 
-�����ѿ��ϥ������Х륹�����פǤ���
+この変数はグローバルスコープです。
 

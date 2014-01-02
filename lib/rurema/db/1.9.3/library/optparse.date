@@ -3,11 +3,12 @@ classes=
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[m:OptionParser#on]] ¤Ç»ÈÍÑ²ÄÇ½¤Ê¥¯¥é¥¹¤Ë [[c:Date]] ¤È [[c:DateTime]] ¤¬
-ÄÉ²Ã¤µ¤ì¤Ş¤¹¡£
-¥ª¥×¥·¥ç¥ó¤Î°ú¿ô¤Ï¤½¤ì¤¾¤ì¤Î¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ËÊÑ´¹¤µ¤ì¤Æ¤«¤é¡¢
-[[m:OptionParser#on]] ¤Î¥Ö¥í¥Ã¥¯¤ËÅÏ¤µ¤ì¤Ş¤¹¡£
+[[m:OptionParser#on]] ã§ä½¿ç”¨å¯èƒ½ãªã‚¯ãƒ©ã‚¹ã« [[c:Date]] ã¨ [[c:DateTime]] ãŒ
+è¿½åŠ ã•ã‚Œã¾ã™ã€‚
+ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®å¼•æ•°ã¯ãã‚Œãã‚Œã®ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã«å¤‰æ›ã•ã‚Œã¦ã‹ã‚‰ã€
+[[m:OptionParser#on]] ã®ãƒ–ãƒ­ãƒƒã‚¯ã«æ¸¡ã•ã‚Œã¾ã™ã€‚
 
  require 'optparse/date'
  opts = OptionParser.new

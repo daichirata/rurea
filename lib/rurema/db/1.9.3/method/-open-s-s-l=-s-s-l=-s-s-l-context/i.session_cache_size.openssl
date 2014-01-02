@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- session_cache_size -> Integer
-���Ȥ��ݻ���ǽ�ʥ��å���󥭥�å���Υ��������֤��ޤ���
+自身が保持可能なセッションキャッシュのサイズを返します。
 
 @see [[m:OpenSSL::SSL::SSLContext#session_cache_size=]]
 

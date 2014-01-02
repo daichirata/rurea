@@ -3,5 +3,6 @@ classes=Syslog,Syslog=Constants
 methods=
 sublibraries=
 is_sublibrary=false
+category=Unix
 
-Unix·ÏOS ¤Î syslog ¤ò°·¤¦¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Unixç³»OS ã® syslog ã‚’æ‰±ã†ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

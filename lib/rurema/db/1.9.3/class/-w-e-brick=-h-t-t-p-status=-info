@@ -6,4 +6,4 @@ library=webrick.httpstatus
 aliases=
 aliasof=
 
-HTTP �Υ��ơ����������ɾ����� 1XX �οƥ��饹�Ǥ���
+HTTP のステータスコード情報提供 1XX の親クラスです。

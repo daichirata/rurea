@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- challenge=(chg)
-SPKI ¥ª¥Ö¥¸¥§¥¯¥È¤Ë¥Á¥ã¥ì¥ó¥¸Ê¸»úÎó¤òÀßÄê¤·¤Ş¤¹¡£
+SPKI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ãƒãƒ£ãƒ¬ãƒ³ã‚¸æ–‡å­—åˆ—ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param chg ÀßÄê¤¹¤ëÊ¸»úÎó
-@raise OpenSSL::Netscape::SPKIError Ê¸»úÎó¤ÎÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param chg è¨­å®šã™ã‚‹æ–‡å­—åˆ—
+@raise OpenSSL::Netscape::SPKIError æ–‡å­—åˆ—ã®è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::Netscape::SPKI#challenge]]
 

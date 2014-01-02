@@ -4,8 +4,8 @@ kind=defined
 
 --- eql?(other) -> bool
 
-¼«¿È¤¬ other ¤ÈÅù¤·¤¤¾ì¹ç¤Ï¿¿¤òÊÖ¤·¤Þ¤¹¡£
-¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ïµ¶¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒ other ã¨ç­‰ã—ã„å ´åˆã¯çœŸã‚’è¿”ã—ã¾ã™ã€‚
+ãã†ã§ãªã„å ´åˆã¯å½ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Object#eql?]]
 

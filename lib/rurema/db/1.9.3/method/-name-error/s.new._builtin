@@ -4,13 +4,13 @@ kind=defined
 
 --- new(error_message = "", name = nil) -> NameError
 
-Îã³°¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+ä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param error_message ¥¨¥é¡¼¥á¥Ã¥»¡¼¥¸¤òÉ½¤¹Ê¸»úÎó¤Ç¤¹
+@param error_message ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™
 
-@param name Ì¤ÄêµÁ¤À¤Ã¤¿¥·¥ó¥Ü¥ë¤Ç¤¹
+@param name æœªå®šç¾©ã ã£ãŸã‚·ãƒ³ãƒœãƒ«ã§ã™
 
-Îã:
+ä¾‹:
 
   err = NameError.new("message", "foo")
   p err       # => #<NameError: message>

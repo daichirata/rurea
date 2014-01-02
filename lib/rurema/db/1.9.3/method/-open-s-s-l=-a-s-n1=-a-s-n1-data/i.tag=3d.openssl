@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- tag=(tag)
-¥¿¥°ÈÖ¹æ¤òÀßÄê¤·¤Ş¤¹¡£
+ã‚¿ã‚°ç•ªå·ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param tag ÀßÄê¤¹¤ë¥¿¥°ÈÖ¹æ
+@param tag è¨­å®šã™ã‚‹ã‚¿ã‚°ç•ªå·
 @see [[m:OpenSSL::ASN1::ASN1Data#tag]]
 

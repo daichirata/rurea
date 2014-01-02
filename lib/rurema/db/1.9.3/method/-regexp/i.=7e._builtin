@@ -4,12 +4,13 @@ kind=defined
 
 --- ~ -> Fixnum | nil
 
-ÊÑ¿ô [[m:$_]] ¤ÎÃÍ¤È¤Î´Ö¤Ç¤Î¥Ş¥Ã¥Á¤ò¤È¤ê¤Ş¤¹¡£¤Á¤ç¤¦¤É°Ê²¼¤ÈÆ±¤¸°Õ
-Ì£¤Ç¤¹¡£
+å¤‰æ•° [[m:$_]] ã®å€¤ã¨ã®é–“ã§ã®ãƒãƒƒãƒã‚’ã¨ã‚Šã¾ã™ã€‚
+
+ã¡ã‚‡ã†ã©ä»¥ä¸‹ã¨åŒã˜æ„å‘³ã§ã™ã€‚
 
   self =~ $_
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
   $_ = "hogehoge"
 
   if  /foo/
@@ -18,7 +19,7 @@ kind=defined
     puts "no match"
   end
   #=> no match
-  # ¤¿¤À¤·¡¢·Ù¹ğ¤¬¤Ç¤ë¡£warning: regex literal in condition
+  # ãŸã ã—ã€è­¦å‘ŠãŒã§ã‚‹ã€‚warning: regex literal in condition
 
   reg = Regexp.compile("foo")
 
@@ -35,6 +36,6 @@ kind=defined
     puts "no match"
   end
   #=> match
-  # reg ¤Ï nil ¤Ç¤â false ¤Ç¤âÌµ¤¤¤Î¤Ç¾ï¤Ëtrue
+  # reg ã¯ nil ã§ã‚‚ false ã§ã‚‚ç„¡ã„ã®ã§å¸¸ã«true
 
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- option_list -> Array
 
-rdoc ���ޥ�ɤ��Ϥ����ץ����Υꥹ�Ȥ��֤��ޤ���
+rdoc コマンドに渡すオプションのリストを返します。
 

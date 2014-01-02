@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- usage -> Integer
-���ߤΥ᡼��ܥå�����λ����̤��֤��ޤ���
+現在のメールボックス内の使用量を返します。
 

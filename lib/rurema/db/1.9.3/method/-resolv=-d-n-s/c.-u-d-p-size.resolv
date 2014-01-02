@@ -4,7 +4,7 @@ kind=defined
 
 --- UDPSize -> Integer
 
-�ǥե���Ȥ� UDP �ѥ��åȥ������Ǥ���
+デフォルトの UDP パケットサイズです。
 
 
 

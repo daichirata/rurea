@@ -4,11 +4,11 @@ kind=defined
 
 --- putback -> String
 --- putback(max_numbytes) -> String
-¸å¤ÎÊÑ´¹ÍÑ¤ËÊÑ´¹´ïÆâÉô¤ÇÊÝ»ý¤·¤Æ¤¤¤ë¥Ð¥¤¥ÈÎó¤ò max_numbytes ¤Ç»ØÄê¤·¤¿
-¥Ð¥¤¥È¿ô¤À¤±ÊÖ¤·¤Þ¤¹¡£max_numbytes ¤ò»ØÄê¤·¤Ê¤«¤Ã¤¿¾ì¹ç¤ÏÊÝ»ý¤·¤Æ¤¤¤ë¥Ð
-¥¤¥ÈÎó¤ÎÁ´¤Æ¤òÊÖ¤·¤Þ¤¹¡£
+å¾Œã®å¤‰æ›ç”¨ã«å¤‰æ›å™¨å†…éƒ¨ã§ä¿æŒã—ã¦ã„ã‚‹ãƒã‚¤ãƒˆåˆ—ã‚’ max_numbytes ã§æŒ‡å®šã—ãŸ
+ãƒã‚¤ãƒˆæ•°ã ã‘è¿”ã—ã¾ã™ã€‚max_numbytes ã‚’æŒ‡å®šã—ãªã‹ã£ãŸå ´åˆã¯ä¿æŒã—ã¦ã„ã‚‹ãƒ
+ã‚¤ãƒˆåˆ—ã®å…¨ã¦ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param max_numbytes ¼èÆÀ¤¹¤ë¥Ð¥¤¥ÈÎó¤ÎºÇÂçÃÍ
+@param max_numbytes å–å¾—ã™ã‚‹ãƒã‚¤ãƒˆåˆ—ã®æœ€å¤§å€¤
 
-@return ³ÊÇ¼¤µ¤ì¤Æ¤¤¤¿¥Ð¥¤¥ÈÎó
+@return æ ¼ç´ã•ã‚Œã¦ã„ãŸãƒã‚¤ãƒˆåˆ—
 

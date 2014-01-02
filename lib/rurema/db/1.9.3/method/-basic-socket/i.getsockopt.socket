@@ -2,20 +2,30 @@ names=getsockopt
 visibility=public
 kind=defined
 
---- getsockopt(level, optname) -> String
+--- getsockopt(level, optname) -> Socket::Option
 
-¥½¥±¥Ã¥È¤Î¥ª¥×¥·¥ç¥ó¤ò¼èÆÀ¤·¤Þ¤¹¡£[[man:getsockopt(2)]]
-¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£¼èÆÀ¤·¤¿¥ª¥×¥·¥ç¥ó¤Î¥Ç¡¼¥¿¤ò¥Ñ¥Ã¥¯¤·¤¿Ê¸»úÎó¤ò
-ÊÖ¤·¤Þ¤¹¡£
+ã‚½ã‚±ãƒƒãƒˆã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’å–å¾—ã—ã¾ã™ã€‚[[man:getsockopt(2)]]
+ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
+å–å¾—ã—ãŸã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®ãƒ‡ãƒ¼ã‚¿ã‚’ [[c:Socket::Option]] ã§è¿”ã—ã¾ã™ã€‚
 
-@param level    [[man:getsockopt(2)]] ¤Î ÂèÆó°ú¿ô¤Îlevel ¤ËÁêÅö¤¹¤ëÀ°¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
-@param optname  [[man:getsockopt(2)]] ¤Î Âè»°°ú¿ô¤Îoption_name ¤ËÁêÅö¤¹¤ëÀ°¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
+level, optname ã«ã¯ Socket::SOL_SOCKET ã‚„ Socket::SO_REUSEADDR 
+ã¨ã„ã£ãŸæ•´æ•°å€¤ã®ä»–ã€æ–‡å­—åˆ—("SOL_SOCKET", prefixãªã—ã® "SOCKET")ã‚„
+ã‚·ãƒ³ãƒœãƒ«(:SO_REUSEADDR, :REUSEADDR)ã‚’ç”¨ã„ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-Îã:
+@param level    [[man:getsockopt(2)]] ã® ç¬¬äºŒå¼•æ•°ã®level 
+@param optname  [[man:getsockopt(2)]] ã® ç¬¬ä¸‰å¼•æ•°ã®option_name 
+@see [[m:BasicSocket#setsockopt]]
 
-  serv = TCPServer.open("", 0)
-  c = TCPSocket.open(*Socket.unpack_sockaddr_in(serv.getsockname).reverse)
+ä¾‹:
+
+  serv = Socket.tcp_server_sockets("", 0)[0]
+  c = serv.local_address.connect
   s = serv.accept
-  p c.getsockopt(Socket::IPPROTO_TCP, Socket::TCP_NODELAY)  #=> "\000\000\000\000"
-  p opt.unpack("i")[0]                                      #=> 0   (Nagle ¥¢¥ë¥´¥ê¥º¥àÍ­¸ú)
+  opt = c.getsockopt(Socket::IPPROTO_TCP, Socket::TCP_NODELAY)
+  # c.getsockopt("TCP", "NODELAY"),  ãªã©ã‚‚å¯èƒ½
+  p opt #=> #<Socket::Option: INET TCP NODELAY 0>
+  p opt.bool #=> false (Nagle ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ æœ‰åŠ¹)
+  p opt.unpack("i")[0] #=> 0 (Socket::Option#unpack ãŒäº’æ›æ€§ã®ãŸã‚ã«å­˜åœ¨ã™ã‚‹)
+  # æ•´æ•°å€¤ã®å ´åˆã¯ Socket::Option#int ã‚’ç”¨ã„ã‚‹
+  p c.getsockopt(:IP, :TTL).int #=> 64
 

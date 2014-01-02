@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- +(other) -> Pathname
-¥Ñ¥¹Ì¾¤òÏ¢·ë¤·¤Ş¤¹¡£¤Ä¤Ş¤ê¡¢other ¤ò self ¤«¤é¤ÎÁêÂĞ¥Ñ¥¹¤È¤·¤¿¿·¤·¤¤
-Pathname ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Ş¤¹¡£
+ãƒ‘ã‚¹åã‚’é€£çµã—ã¾ã™ã€‚ã¤ã¾ã‚Šã€other ã‚’ self ã‹ã‚‰ã®ç›¸å¯¾ãƒ‘ã‚¹ã¨ã—ãŸæ–°ã—ã„
+Pathname ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-other ¤¬ÀäÂĞ¥Ñ¥¹¤Ê¤éÃ±¤Ë other ¤ÈÆ±¤¸ÆâÍÆ¤Î Pathname ¥ª¥Ö¥¸¥§¥¯¥È¤¬ÊÖ¤µ
-¤ì¤Ş¤¹¡£
+other ãŒçµ¶å¯¾ãƒ‘ã‚¹ãªã‚‰å˜ã« other ã¨åŒã˜å†…å®¹ã® Pathname ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒè¿”ã•
+ã‚Œã¾ã™ã€‚
 
  Pathname("foo/bar")+"baz" # => #<Pathname:foo/bar/baz>
  Pathname("foo/bar/")+"baz" # => #<Pathname:foo/bar/baz>
  Pathname("foo/bar")+"/baz" # => #<Pathname:/baz>
  Pathname("foo/bar")+"../baz" # => #<Pathname:foo/baz>
 
-@param other Ê¸»úÎó¤« Pathname ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param other æ–‡å­—åˆ—ã‹ Pathname ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 

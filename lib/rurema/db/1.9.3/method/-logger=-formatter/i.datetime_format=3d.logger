@@ -4,10 +4,10 @@ kind=defined
 
 --- datetime_format=(format)
 
-�����������ե����ޥåȤ򥻥åȤ��ޤ���
+ログの日時フォーマットをセットします。
 
-@param format �����Υե����ޥå�ʸ����[[m:Time#strftime]] �ǻ��Ѥ���ե����ޥå�ʸ�����
-              Ʊ����Τ���ѤǤ��ޤ���
+@param format 日時のフォーマット文字列。[[m:Time#strftime]] で使用するフォーマット文字列と
+              同じものを使用できます。
 
 @see [[m:Time#strftime]]
 

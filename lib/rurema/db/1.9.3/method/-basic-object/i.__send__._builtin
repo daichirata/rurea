@@ -4,11 +4,11 @@ kind=defined
 
 --- __send__(name, *args) -> object
 --- __send__(name, *args) { .... } -> object
-���֥������ȤΥ᥽�å� name �� args ������ˤ��ƸƤӽФ����᥽�åɤη�̤��֤��ޤ���
+オブジェクトのメソッド name を args を引数にして呼び出し、メソッドの結果を返します。
 
-�֥��å��դ��ǸƤФ줿�Ȥ��ϥ֥��å��⤽�Τޤް����Ϥ��ޤ���
+ブロック付きで呼ばれたときはブロックもそのまま引き渡します。
 
-@param name �ƤӽФ��᥽�åɤ�̾���� [[c:Symbol]] �ޤ���ʸ����ǻ��ꤷ�ޤ���
-@param args �᥽�åɤ��Ϥ�Ǥ�ոĤΰ���
+@param name 呼び出すメソッドの名前。 [[c:Symbol]] または文字列で指定します。
+@param args メソッドに渡す任意個の引数
 @see [[m:Object#__send__]]
 

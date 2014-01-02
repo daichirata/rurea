@@ -5,9 +5,9 @@ kind=defined
 --- conjugate -> Complex
 --- conj      -> Complex
 
-¼«¿È¤Î¶¦ÌòÊ£ÁÇ¿ô¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã®å…±å½¹è¤‡ç´ æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Complex(1, 2).conj # => (1-2i)
 

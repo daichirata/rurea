@@ -4,7 +4,7 @@ kind=defined
 
 --- display_process_id=(flag)
 
-�ץ����� ID ��ɽ�����뤫�ɤ��������ꤷ�ޤ���
+プロセス ID を表示するかどうかを設定します。
 
-@param flag �ץ����� ID ��ɽ������ʤ�С�������ꤷ�ޤ���
+@param flag プロセス ID を表示するならば、真を指定します。
 

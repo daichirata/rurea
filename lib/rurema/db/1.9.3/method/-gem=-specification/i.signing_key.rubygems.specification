@@ -4,5 +4,5 @@ kind=defined
 
 --- signing_key -> String
 
-���� Gem �ѥå������ν�̾�˻��Ѥ��륭�����֤��ޤ���
+この Gem パッケージの署名に使用するキーを返します。
 

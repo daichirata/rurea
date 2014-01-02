@@ -4,5 +4,5 @@ kind=defined
 
 --- includes -> [RDoc::Include]
 
-�ɲä��줿 [[c:RDoc::Include]] ��������֤��ޤ���
+追加された [[c:RDoc::Include]] の配列を返します。
 

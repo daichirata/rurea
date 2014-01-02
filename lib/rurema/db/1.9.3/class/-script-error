@@ -6,9 +6,9 @@ library=_builtin
 aliases=
 aliasof=
 
-������ץȤΥ��顼��ɽ���㳰���饹�Ǥ���
+スクリプトのエラーを表す例外クラスです。
 
-�ʲ����㳰���饹�Υ����ѡ����饹�Ǥ���
+以下の例外クラスのスーパークラスです。
 
   * [[c:LoadError]]
   * [[c:NameError]]
@@ -16,5 +16,5 @@ aliasof=
   * [[c:NotImplementedError]]
   * [[c:SyntaxError]]
 
-�������㳰��ȯ�������Ȥ��� Ruby ������ץȼ��Τ�
-�Х��������ǽ�����⤤�ȹͤ����ޤ���
+これらの例外が発生したときは Ruby スクリプト自体に
+バグがある可能性が高いと考えられます。

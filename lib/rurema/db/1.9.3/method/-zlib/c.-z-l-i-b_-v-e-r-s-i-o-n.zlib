@@ -4,5 +4,5 @@ kind=defined
 
 --- ZLIB_VERSION -> String
 
-zlib.h �ΥС�������ɽ��ʸ����Ǥ���
+zlib.h のバージョンを表す文字列です。
 

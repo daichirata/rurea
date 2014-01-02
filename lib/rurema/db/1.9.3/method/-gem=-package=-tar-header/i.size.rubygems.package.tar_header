@@ -4,5 +4,5 @@ kind=defined
 
 --- size -> Integer
 
-tar �Υإå��˴ޤޤ�� size ���֤��ޤ���
+tar のヘッダに含まれる size を返します。
 

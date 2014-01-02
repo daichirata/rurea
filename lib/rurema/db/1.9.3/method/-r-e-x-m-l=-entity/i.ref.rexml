@@ -2,6 +2,8 @@ names=ref
 visibility=public
 kind=defined
 
---- ref
-@todo
+--- ref -> String | nil
+外部実体(external entity)宣言の URI を返します。
+
+内部実体宣言の場合は nil を返します。
 

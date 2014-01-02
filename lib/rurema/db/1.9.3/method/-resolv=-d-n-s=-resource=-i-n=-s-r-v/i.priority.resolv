@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- priority -> Integer
-�ۥ��Ȥ�ͥ���̤��֤��ޤ���
+ホストの優先順位を返します。
 
-���饤����Ȥ����Ѳ�ǽ�ʥۥ��Ȥ���ǺǤ� priority ��
-���������ͤΥۥ��Ȥ����Ѥ��ʤ���Фʤ�ޤ���
+クライアントは利用可能なホストの中で最も priority が
+小さい数値のホストを利用しなければなりません。
 
-priority ��Ʊ���ʤ�� [[m:Resolv::DNS::Resource::IN::SRV#weight]]
-����������褦�˥ۥ��Ȥ����֤٤��Ǥ���
+priority が同じならば [[m:Resolv::DNS::Resource::IN::SRV#weight]]
+で定義されるようにホストを選ぶべきです。
 
-�֤��ͤ��ϰϤ� 0 ���� 65535 �ޤǤ������ͤǤ���
+返り値の範囲は 0 から 65535 までの整数値です。
 

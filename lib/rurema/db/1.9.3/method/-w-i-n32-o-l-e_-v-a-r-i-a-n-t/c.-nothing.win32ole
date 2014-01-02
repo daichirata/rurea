@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- Nothing -> WIN32OLE_VARIANT
-DISPATCH╖┐д╬╢їд╬еке╓е╕езепе╚д╟д╣бг
+DISPATCHхЮЛуБочй║уБоуВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 
 @see [[m:WIN32OLE::VARIANT::VT_DISPATCH]]
 

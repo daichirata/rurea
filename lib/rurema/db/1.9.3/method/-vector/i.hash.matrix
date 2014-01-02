@@ -4,5 +4,5 @@ kind=defined
 
 --- hash() -> Fixnum
 
-��ʬ���ȤΥϥå����ͤ��֤��ޤ���
+自分自身のハッシュ値を返します。
 

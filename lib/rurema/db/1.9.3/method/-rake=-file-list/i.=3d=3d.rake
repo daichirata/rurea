@@ -4,7 +4,7 @@ kind=defined
 
 --- ==(array) -> bool
 
-���Ȥ�������Ѵ����Ƥ���Ϳ����줿�������Ӥ��ޤ���
+自身を配列に変換してから与えられた配列と比較します。
 
-@param array ����оݤ��������ꤷ�ޤ���
+@param array 比較対象の配列を指定します。
 

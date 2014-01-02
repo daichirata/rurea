@@ -5,6 +5,6 @@ kind=defined
 --- inspect   -> String
 --- to_s      -> String
 
-���Ȥξ����ʹ֤��ɤߤ䤹��ʸ����ˤ����֤��ޤ���
+自身の情報を人間に読みやすい文字列にして返します。
 
 

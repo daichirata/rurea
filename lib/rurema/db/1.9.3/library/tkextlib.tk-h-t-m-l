@@ -3,5 +3,6 @@ classes=
 methods=
 sublibraries=tkextlib.tkHTML.setup,tkextlib.tkHTML.htmlwidget
 is_sublibrary=true
+category=
 
 

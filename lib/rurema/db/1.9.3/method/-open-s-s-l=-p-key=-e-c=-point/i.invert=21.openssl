@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- invert! -> self
-���Ȥ򤽤εո������ꤷ�ޤ���
+自身をその逆元に設定します。
 
-@raise OpenSSL::PKey::EC::Point::Error ���顼������������ȯ�����ޤ�
+@raise OpenSSL::PKey::EC::Point::Error エラーが生じた場合に発生します
 

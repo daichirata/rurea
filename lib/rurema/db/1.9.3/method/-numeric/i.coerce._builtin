@@ -4,14 +4,14 @@ kind=defined
 
 --- coerce(other)    -> [Numeric]
 
-���Ȥ� other ��Ʊ�����饹�ˤʤ�褦�����Ȥ� other ���Ѵ��� [other, self] �Ȥ�������ˤ����֤��ޤ���
+自身と other が同じクラスになるよう、自身か other を変換し [other, self] という配列にして返します。
 
-�ǥե���ȤǤ� self �� other �� [[c:Float]] ���Ѵ����� [other, self] �Ȥ�������ˤ����֤��ޤ���
-Numeric �Υ��֥��饹�ϡ����Υ᥽�åɤ�Ŭ�ڤ˺�������ʤ���Фʤ�ޤ���
-�ʲ��� [[c:Rational]] �� coerce �Υ������Ǥ���other �����Ȥ��Τ�ʤ����ͥ��饹�Ǥ��ä���硢
-super ��Ƥ�Ǥ��뤳�Ȥ����դ��Ʋ�������
+デフォルトでは self と other を [[c:Float]] に変換して [other, self] という配列にして返します。
+Numeric のサブクラスは、このメソッドを適切に再定義しなければなりません。
+以下は [[c:Rational]] の coerce のソースです。other が自身の知らない数値クラスであった場合、
+super を呼んでいることに注意して下さい。
 
-  # lib/rational.rb ���
+  # lib/rational.rb より
  
   def coerce(other)
     if other.kind_of?(Float)
@@ -23,19 +23,19 @@ super ��Ƥ�Ǥ��뤳�Ȥ����դ��Ʋ�������
     end
   end
 
-���ͥ��饹�λ��ѱ黻�Ҥ��̾Ｋʬ�ȱ黻�Ǥ��ʤ����饹�򥪥ڥ��ɤȤ��Ƽ���
-���� coerce ��ȤäƼ�ʬ�ȥ��ڥ��ɤ��Ѵ�������Ǳ黻��Ԥ��ޤ���
-�ʲ��� [[c:Rational]] �� + �᥽�åɤ������ά������ΤǤ���
-���������Ȥ��Τ�ʤ����ͥ��饹�Ǥ����硢������ coerce �ˤ�꼫�Ȥ��Ѵ����Ƥ���
-+ �黻�Ҥ�Ƥ�Ǥ��ޤ���
+数値クラスの算術演算子は通常自分と演算できないクラスをオペランドとして受け
+取ると coerce を使って自分とオペランドを変換した上で演算を行います。
+以下は [[c:Rational]] の + メソッドを一部省略したものです。
+引数が自身の知らない数値クラスである場合、引数の coerce により自身を変換してから
++ 演算子を呼んでいます。
 
-  # lib/rational.rb ���
+  # lib/rational.rb より
   
   def + (a)
     if a.kind_of?(Rational)
-      # Ĺ���ΤǾ�ά
+      # 長いので省略
     elsif a.kind_of?(Integer)
-      # Ĺ���ΤǾ�ά
+      # 長いので省略
     elsif a.kind_of?(Float)
       Float(self) + a
     else
@@ -44,5 +44,5 @@ super ��Ƥ�Ǥ��뤳�Ȥ����դ��Ʋ�������
     end
   end
 
-@param other ���ڥ��ɤ���ͤǻ��ꤷ�ޤ���
+@param other オペランドを数値で指定します。
 

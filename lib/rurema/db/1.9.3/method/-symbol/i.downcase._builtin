@@ -4,9 +4,9 @@ kind=defined
 
 --- downcase -> Symbol
 
-ÂçÊ¸»ú¤ò¾®Ê¸»ú¤ËÊÑ´¹¤·¤¿¥·¥ó¥Ü¥ë¤òÊÖ¤·¤Þ¤¹¡£
+å¤§æ–‡å­—ã‚’å°æ–‡å­—ã«å¤‰æ›ã—ãŸã‚·ãƒ³ãƒœãƒ«ã‚’è¿”ã—ã¾ã™ã€‚
 
-(self.to_s.downcase.intern ¤ÈÆ±¤¸¤Ç¤¹¡£)
+(self.to_s.downcase.intern ã¨åŒã˜ã§ã™ã€‚)
 
   :FOO.downcase #=> :foo
 

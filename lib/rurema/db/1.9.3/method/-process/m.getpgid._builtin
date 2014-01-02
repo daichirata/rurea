@@ -4,13 +4,13 @@ kind=defined
 
 --- getpgid(pid = 0)   -> Integer
 
-�ץ����� ID �� pid �Ǥ���ץ������Υץ��������롼�� ID ���������֤��ޤ���
+プロセス ID が pid であるプロセスのプロセスグループ ID を整数で返します。
 
-@param pid �ץ����� ID �������ǻ��ꤷ�ޤ���0 �λ��ϥ����ȥץ����� ID ����ꤷ���Τ�Ʊ���Ǥ���
+@param pid プロセス ID を整数で指定します。0 の時はカレントプロセス ID を指定したのと同じです。
 
-@raise Errno::EXXX �ץ��������롼�פμ����˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX プロセスグループの取得に失敗した場合に発生します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 
 @see [[man:getpgid(2)]]
 

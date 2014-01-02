@@ -5,21 +5,22 @@ kind=defined
 --- define_finalizer(obj, proc)         -> Array
 --- define_finalizer(obj) {|id| ...}    -> Array
 
-obj �����������Ȥ��˼¹Ԥ����ե����ʥ饤�� proc ��
-��Ͽ���ޤ���Ʊ�����֥������ȤˤĤ���ʣ����ƤФ줿�Ȥ����֤�������
-�Ϥʤ��ɲ���Ͽ����ޤ������ߤΥ����ե�٥�� proc ������ˤ����֤��ޤ���
+obj が解放されるときに実行されるファイナライザ proc を
+登録します。同じオブジェクトについて複数回呼ばれたときは置き換えで
+はなく追加登録されます。現在のセーフレベルと proc を配列にして返します。
 
-�֥��å�����ꤷ�����ϡ����Υ֥��å����ե����ʥ饤���ˤʤ�ޤ���
-obj �β�����˥֥��å��� obj �� ID ([[m:Object#__id__]])������Ȥ��Ƽ¹Ԥ���ޤ���
-����������Ҥ����꤬����Τǥ֥��å��ǥե����ʥ饤������Ͽ����Τ��񤷤��Ǥ��礦��
+ブロックを指定した場合は、そのブロックがファイナライザになります。
+obj の回収時にブロックは obj の ID ([[m:BasicObject#__id__]])を引数とし
+て実行されます。
+しかし、後述の問題があるのでブロックでファイナライザを登録するのは難しいでしょう。
 
-@param obj �ե����ʥ饤������Ͽ���������֥������Ȥ���ꤷ�ޤ���
+@param obj ファイナライザを登録したいオブジェクトを指定します。
 
-@param proc �ե����ʥ饤���Ȥ��� [[c:Proc]] ���֥������Ȥ���ꤷ�ޤ���proc �� obj �β������ obj �� ID ������Ȥ��Ƽ¹Ԥ���ޤ���
+@param proc ファイナライザとして [[c:Proc]] オブジェクトを指定します。proc は obj の回収時に obj の ID を引数として実行されます。
 
-==== �Ȥ���������
+==== 使い方の注意
 
-�ʲ��ϡ�define_finalizer �λȤ����ΰ�����Ǥ���
+以下は、define_finalizer の使い方の悪い例です。
 
   class Foo
     def initialize
@@ -31,12 +32,12 @@ obj �β�����˥֥��å��� obj �� ID ([[m:Object#__id__]])������Ȥ��Ƽ¹Ԥ���ޤ�
   Foo.new
   GC.start
 
-����ϡ��Ϥ��줿 proc �� self �� obj �򻲾Ȥ���
-�Ť��뤿�ᡣ���Υ��֥������Ȥ� GC ���оݤˤʤ�ޤ���
+これは、渡された proc の self が obj を参照しつ
+づけるため。そのオブジェクトが GC の対象になりません。
 
-[[lib:tempfile]] �ϡ��ե����ʥ饤���λȤ�����
-�ɤ���ˤʤäƤ��ޤ�������ϡ����饹�Υ���ƥ����Ȥ� [[c:Proc]] ��
-�������뤳�ȤǾ嵭���������򤷤Ƥ��ޤ���
+[[lib:tempfile]] は、ファイナライザの使い方の
+良い例になっています。これは、クラスのコンテキストで [[c:Proc]] を
+生成することで上記の問題を回避しています。
 
   class Bar
     def Bar.callback
@@ -51,10 +52,10 @@ obj �β�����˥֥��å��� obj �� ID ([[m:Object#__id__]])������Ȥ��Ƽ¹Ԥ���ޤ�
   Bar.new
   GC.start
 
-proc �θƤӽФ���ȯ���������æ��(exit���㳰)��̵�뤵��ޤ���
-����ϡ�������ץȤΥᥤ������� GC ��ȯ���ˤ�ä���Ʊ�������Ǥ���
-��Τ��ɤ�����Ǥ����԰¤ʤ����� -d ���ץ�����
-�������㳰��ȯ����̵ͭ���ǧ���Ƥ����������ɤ��Ǥ��礦��
+proc の呼び出しで発生した大域脱出(exitや例外)は無視されます。
+これは、スクリプトのメイン処理が GC の発生によって非同期に中断され
+るのを防ぐためです。不安なうちは -d オプションで
+事前に例外の発生の有無を確認しておいた方が良いでしょう。
 
   class Baz
     def initialize

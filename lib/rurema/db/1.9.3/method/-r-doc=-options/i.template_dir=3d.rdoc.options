@@ -4,9 +4,9 @@ kind=defined
 
 --- template_dir=(val)
 
-���ޥ�ɥ饤������� --template ���ץ����ǻ��ꤷ���ƥ�ץ졼�Ȥ��б�
-����ǥ��쥯�ȥ�����ꤷ�ޤ���
+コマンドライン引数の --template オプションで指定したテンプレートに対応
+するディレクトリを設定します。
 
-@param val �ѥ���ʸ����ǻ��ꤷ�ޤ���
+@param val パスを文字列で指定します。
 
 

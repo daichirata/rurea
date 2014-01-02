@@ -6,10 +6,10 @@ library=net.imap
 aliases=
 aliasof=
 
-text ·¿([[c:Net::IMAP::BodyTypeText]])¡¢
-multipart ·¿([[c:Net::IMAP::BodyTypeMultipart]])¡¢
-message ·¿([[c:Net::IMAP::BodyTypeMessage]])¡¢
-¤Î¤¤¤º¤ì¤Ç¤â¤Ê¤¤¤è¤¦¤Ê¥á¥Ã¥»¡¼¥¸¥Ü¥Ç¥£¹½Â¤¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+text å‹([[c:Net::IMAP::BodyTypeText]])ã€
+multipart å‹([[c:Net::IMAP::BodyTypeMultipart]])ã€
+message å‹([[c:Net::IMAP::BodyTypeMessage]])ã€
+ã®ã„ãšã‚Œã§ã‚‚ãªã„ã‚ˆã†ãªãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒœãƒ‡ã‚£æ§‹é€ ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-ÅºÉÕ¥Õ¥¡¥¤¥ë¤Ê¤É¤òÉ½¤·¤Ş¤¹¡£
-¾Ü¤·¤¯¤Ï MIME ¤ÎRFC([[RFC:2045]])¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+æ·»ä»˜ãƒ•ã‚¡ã‚¤ãƒ«ãªã©ã‚’è¡¨ã—ã¾ã™ã€‚
+è©³ã—ãã¯ MIME ã®RFC([[RFC:2045]])ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚

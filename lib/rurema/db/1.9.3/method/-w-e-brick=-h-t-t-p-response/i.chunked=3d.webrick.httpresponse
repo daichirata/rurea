@@ -4,11 +4,11 @@ kind=defined
 
 --- chunked=(flag)
 
-¿¿¤ËÀßÄê¤¹¤ë¤È¥¯¥é¥¤¥¢¥ó¥È¤ËÊÖ¤¹ÆâÍÆ(¥¨¥ó¥Æ¥£¥Æ¥£¥Ü¥Ç¥£)¤ò chunk ¤ËÊ¬¤±¤ë¤è¤¦¤Ë¤Ê¤ê¤Ş¤¹¡£
+çœŸã«è¨­å®šã™ã‚‹ã¨ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã«è¿”ã™å†…å®¹(ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ãƒœãƒ‡ã‚£)ã‚’ chunk ã«åˆ†ã‘ã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
 
-¼«¿È¤Î [[m:WEBrick::HTTPResponse#request_http_version]] ¤¬ 1.0 °Ê²¼¤Ç¤¢¤ë¾ì¹ç¡¢¤³¤ÎÃÍ¤ÏÌµ»ë¤µ¤ì¤Ş¤¹¡£
+è‡ªèº«ã® [[m:WEBrick::HTTPResponse#request_http_version]] ãŒ 1.0 ä»¥ä¸‹ã§ã‚ã‚‹å ´åˆã€ã“ã®å€¤ã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚
 
-@param flag true ¤ò»ØÄê¤·¤¿¾ì¹ç¡¢¥ì¥¹¥İ¥ó¥¹¤ò chunk ¤ËÊ¬¤±¤Æ¥¯¥é¥¤¥¢¥ó¥È¤ËÊÖ¤·¤Ş¤¹¡£
+@param flag true ã‚’æŒ‡å®šã—ãŸå ´åˆã€ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã‚’ chunk ã«åˆ†ã‘ã¦ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã«è¿”ã—ã¾ã™ã€‚
 
   require 'webrick'
   include WEBrick
@@ -17,7 +17,7 @@ kind=defined
   res.chunked = true
   print res.to_s
 
-  #=> ½ĞÎÏ·ë²Ì
+  #=> å‡ºåŠ›çµæœ
   HTTP/1.1 200 OK
   Connection: Keep-Alive
   Date: Sat, 27 Oct 2007 09:04:28 GMT

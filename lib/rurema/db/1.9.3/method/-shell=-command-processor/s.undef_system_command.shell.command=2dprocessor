@@ -4,8 +4,8 @@ kind=defined
 
 --- undef_system_command(command) -> self
 
-Ϳ����줿���ޥ�ɤ������ޤ���
+与えられたコマンドを削除します。
 
-@param command ������������ޥ��̾����ꤷ�ޤ���
+@param command 削除したいコマンド名を指定します。
 
 

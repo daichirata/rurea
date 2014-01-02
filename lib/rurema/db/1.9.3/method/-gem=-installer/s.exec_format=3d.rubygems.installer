@@ -4,7 +4,7 @@ kind=defined
 
 --- exec_format=(format)
 
-�¹ԥե�����̾�Υե����ޥåȤ򥻥åȤ��ޤ���
+実行ファイル名のフォーマットをセットします。
 
-@param format �¹ԥե�����̾�Υե����ޥåȤ���ꤷ�ޤ���
+@param format 実行ファイル名のフォーマットを指定します。
 

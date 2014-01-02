@@ -4,14 +4,14 @@ kind=defined
 
 --- rewind -> Integer
 
-���Ȥ˴�Ϣ�դ���줿 IO �Υե�����ݥ��󥿤���Ƭ�˰�ư���ޤ����ޤ��ϡ�
-[[m:Gem::Package::TarReader.new]] �����Ȥ��� [[m:IO#pos]] �˥ե������
-���󥿤���Ƭ�˰�ư���ޤ���
+自身に関連付けられた IO のファイルポインタを先頭に移動します。または、
+[[m:Gem::Package::TarReader.new]] したときの [[m:IO#pos]] にファイルポ
+インタを先頭に移動します。
 
-[[m:Gem::Package::TarReader#each]] �μ¹���˸ƤФʤ��褦�ˤ��Ƥ���������
+[[m:Gem::Package::TarReader#each]] の実行中に呼ばないようにしてください。
 
-@return ��ä����֤��֤��ޤ���
+@return 戻った位置を返します。
 
-@raise Gem::Package::NonSeekableIO ���Ȥ˴�Ϣ�դ���줿 IO ����������ǽ
-                                   �Ǥʤ�����ȯ�����ޤ���
+@raise Gem::Package::NonSeekableIO 自身に関連付けられた IO がシーク可能
+                                   でない場合に発生します。
 

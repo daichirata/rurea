@@ -5,24 +5,24 @@ kind=added
 --- find_library(lib, func, *paths) -> bool
 --- find_library(lib, func, *paths){ ... } -> bool
 
-�ؿ� func ��������줿�饤�֥�� lib ��õ���ޤ���
+関数 func が定義されたライブラリ lib を探します。
 
-�ǽ�ϥѥ�����ꤻ����õ����
-����˼��Ԥ����� paths[0] ����ꤷ��õ����
-����ˤ⼺�Ԥ����� paths[1] ����ꤷ��õ���ġ�
-�Ȥ����褦�ˡ���󥯲�ǽ�ʥ饤�֥���õ�����ޤ���
+最初はパスを指定せずに探し、
+それに失敗したら paths[0] を指定して探し、
+それにも失敗したら paths[1] を指定して探し……
+というように、リンク可能なライブラリを探索します。
 
-�嵭��õ���ǥ饤�֥�� lib ��ȯ���Ǥ������� lib �� [[m:$libs]] ���ɲä���
-���Ĥ��ä��ѥ��� [[m:$LDFLAGS]] ���ɲä��� true ���֤��ޤ���
-���ꤵ�줿���٤ƤΥѥ��򸡺����Ƥ�饤�֥�� lib �����Ĥ���ʤ��Ȥ��ϡ�
-�ѿ����ѹ����� false ���֤��ޤ���
+上記の探索でライブラリ lib を発見できた場合は lib を [[m:$libs]] に追加し、
+見つかったパスを [[m:$LDFLAGS]] に追加して true を返します。
+指定されたすべてのパスを検査してもライブラリ lib が見つからないときは、
+変数を変更せず false を返します。
 
-paths ����ꤷ�ʤ��Ȥ��� [[m:Kernel#have_library]] ��Ʊ��ư��Ǥ���
+paths を指定しないときは [[m:Kernel#have_library]] と同じ動作です。
 
-@param lib �饤�֥��̾����ꤷ�ޤ���
+@param lib ライブラリ名を指定します。
 
-@param func �ؿ�̾����ꤷ�ޤ���
-            nil �ޤ��϶�ʸ�������ꤷ������ "main" �ˤʤ�ޤ���
+@param func 関数名を指定します。
+            nil または空文字列を指定した場合は "main" になります。
 
-@param paths �饤�֥��򸡺�����ѥ���ʸ���������ǻ��ꤷ�ޤ���
+@param paths ライブラリを検索するパスを文字列の配列で指定します。
 

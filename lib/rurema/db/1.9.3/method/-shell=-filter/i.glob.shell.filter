@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- glob(patten) -> Shell::Filter
-�¹Ԥ����, ���������ƤȤ��� Filter ���֥������Ȥ��֤��ޤ�.
+実行すると, それらを内容とする Filter オブジェクトを返します.
 
-@param patten �����륳�ޥ�� glob ��Ϳ����ѥ��������ꤷ�ޤ���
-              �ѥ�����ν񼰤ˤĤ��Ƥϡ�[[m:Dir.[] ]]�򻲾Ȥ��Ƥ���������
+@param patten シェルコマンド glob に与えるパターンを指定します。
+              パターンの書式については、[[m:Dir.[] ]]を参照してください。
 
-ư����
+動作例
   require 'shell'
   Shell.def_system_command("head")
   sh = Shell.new

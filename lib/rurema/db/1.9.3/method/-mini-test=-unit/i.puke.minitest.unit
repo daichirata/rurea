@@ -4,14 +4,14 @@ kind=defined
 
 --- puke(klass, method_name, exception) -> String
 
-�ƥ��ȥ᥽�åɤμ¹Է�̤������ʳ��ξ��ˡ����μ������ͳ��Ͽ���ޤ���
+テストメソッドの実行結果が成功以外の場合に、その種類と理由を記録します。
 
-@param klass �ƥ��ȥ��饹����ꤷ�ޤ���
+@param klass テストクラスを指定します。
 
-@param method_name �ƥ��ȥ᥽�åɤ�̾������ꤷ�ޤ���
+@param method_name テストメソッドの名前を指定します。
 
-@param exception �㳰���饹����ꤷ�ޤ���
+@param exception 例外クラスを指定します。
 
-@return Ϳ����줿�㳰���饹�ˤ�ä� "Skip", "Failure", "Error" ��
-        �����줫��Ƭʸ�����֤��ޤ���
+@return 与えられた例外クラスによって "Skip", "Failure", "Error" の
+        いずれかの頭文字を返します。
 

@@ -3,15 +3,16 @@ classes=TkComm,TkCore,TkCore=Tk_OBJECT_TABLE,TkCore=INTERP,Tk=Encoding,Tk,TkBind
 methods=TclTkIp/i.__eval.tk,TclTkIp/i.__invoke.tk,TclTkIp/i.__fromUTF8.tk,TclTkIp/i.__toUTF8.tk,TclTkIp/i._ip_id_.tk,TclTkIp/i.encoding.tk,TclTkIp/i.encoding=3d.tk,TclTkLib/s._encoding.tk,TclTkLib/s._encoding=3d.tk,TclTkLib/s.encoding.tk,TclTkLib/s.encoding=3d.tk
 sublibraries=tcltklib,tkutil,remote=2dtk,multi=2dtk,tkafter,tkbgerror,tkcanvas,tkclass,tkconsole,tkdialog,tkentry,tkfont,tkmacpkg,tkmenubar,tkmngfocus,tkpalette,tkscrollbox,tktext,tkvirtevent,tkwinpkg,tkextlib.ICONS,tkextlib.blt,tkextlib.bwidget,tkextlib.itcl,tkextlib.itk,tkextlib.iwidgets,tkextlib.pkg_checker,tkextlib.tcllib,tkextlib.tclx,tkextlib.tile,tkextlib.tkDND,tkextlib.tkHTML,tkextlib.tkimg,tkextlib.tktable,tkextlib.tktrans,tkextlib.treectrl,tkextlib.vu,tkextlib.winico,tk.autoload,tk.variable,tk.timer,tk.bgerror,tk.canvas,tk.console,tk.dialog,tk.entry,tk.font,tk.macpkg,tk.menubar,tk.mngfocus,tk.palette,tk.scrollbox,tk.text,tk.virtevent,tk.winpkg,tk.after,tk.bindtag,tk.button,tk.canvastag,tk.checkbutton,tk.clipboard,tk.clock,tk.composite,tk.encodedstr,tk.event,tk.frame,tk.grid,tk.image,tk.itemconfig,tk.itemfont,tk.kinput,tk.label,tk.labelframe,tk.listbox,tk.menu,tk.menuspec,tk.message,tk.msgcat,tk.namespace,tk.optiondb,tk.optionobj,tk.pack,tk.package,tk.panedwindow,tk.place,tk.radiobutton,tk.root,tk.scale,tk.scrollable,tk.scrollbar,tk.selection,tk.spinbox,tk.tagfont,tk.textimage,tk.textmark,tk.texttag,tk.textwindow,tk.toplevel,tk.txtwin_abst,tk.validation,tk.winfo,tk.wm,tk.xim
 is_sublibrary=false
+category=GUI
 
-tk¤òÍÑ¤¤¤ÆGUI¥¢¥×¥ê¥±¡¼¥·¥ç¥ó¤òºîÀ®¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+tkã‚’ç”¨ã„ã¦GUIã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã‚’ä½œæˆã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
- * multi-tk Ê£¿ô¤Î Tcl ¥¤¥ó¥¿¡¼¥×¥ê¥¿¤ò¥µ¥İ¡¼¥È¤¹¤ë
+ * multi-tk è¤‡æ•°ã® Tcl ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ—ãƒªã‚¿ã‚’ã‚µãƒãƒ¼ãƒˆã™ã‚‹
  Ruby/Tk [[ruby-dev:20949]]
- * tcltk Tcl/Tk ¥é¥¤¥Ö¥é¥ê tk ¤È¤Ï°Û¤Ê¤êÄ¾ÀÜ Tcl/Tk ¤ò¸Æ¤Ó½Ğ¤¹¥¤¥ó¥¿¥Õ¥§¡¼¥¹)
- * tk    Ruby/Tk [[url:http://ns103.net/~arai/ruby/rubytk.html.gz]] ¤ò»²¾È¤Î¤³¤È
+ * tcltk Tcl/Tk ãƒ©ã‚¤ãƒ–ãƒ©ãƒª tk ã¨ã¯ç•°ãªã‚Šç›´æ¥ Tcl/Tk ã‚’å‘¼ã³å‡ºã™ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹)
+ * tk    Ruby/Tk [[url:http://ns103.net/~arai/ruby/rubytk.html.gz]] ã‚’å‚ç…§ã®ã“ã¨
 
-=== »²¹Í
+=== å‚è€ƒ
 
  * [[unknown:RubyTkFAQ]]
- * "Rubyist Magazine - 0003-Ruby/Tk ¤ÎÆ°¸ş"[[url:http://jp.rubyist.net/magazine/?0003-RubyTkMovement]]
+ * "Rubyist Magazine - 0003-Ruby/Tk ã®å‹•å‘"[[url:http://jp.rubyist.net/magazine/?0003-RubyTkMovement]]

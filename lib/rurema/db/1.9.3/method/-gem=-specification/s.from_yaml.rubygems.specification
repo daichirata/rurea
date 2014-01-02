@@ -4,11 +4,11 @@ kind=defined
 
 --- from_yaml(input) -> Gem::Specification
 
-YAML �ե����뤫�� gemspec ������ɤ��ޤ���
+YAML ファイルから gemspec をロードします。
 
-YAML �ե����뤫�� [[c:Gem::Specification]] ������ɤ���ȡ��̾�� Ruby ���֥������Ȥ�
-������롼���� (#initialize) ���̤�ޤ��󡣤��Υ᥽�åɤϽ�����롼����ΰ�����¹Ԥ���
-gemspec �ΥС����������å���Ԥ��ޤ���
+YAML ファイルから [[c:Gem::Specification]] をロードすると、通常の Ruby オブジェクトの
+初期化ルーチン (#initialize) を通りません。このメソッドは初期化ルーチンの一部を実行し、
+gemspec のバージョンチェックも行います。
 
-@param input ʸ���� [[c:IO]] ���֥������Ȥ���ꤷ�ޤ���
+@param input 文字列か [[c:IO]] オブジェクトを指定します。
 

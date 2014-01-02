@@ -6,5 +6,5 @@ library=net.imap
 aliases=
 aliasof=
 
-[[m:Net::IMAP#thread]]¡¢ [[m:Net::IMAP#uid_thread]] ¤«¤é
-ÆÀ¤é¤ì¤ë¥¹¥ì¥Ã¥É¤ÎÌÚ¹½Â¤¤Î¥Î¡¼¥É¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+[[m:Net::IMAP#thread]]ã€ [[m:Net::IMAP#uid_thread]] ã‹ã‚‰
+å¾—ã‚‰ã‚Œã‚‹ã‚¹ãƒ¬ãƒƒãƒ‰ã®æœ¨æ§‹é€ ã®ãƒãƒ¼ãƒ‰ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

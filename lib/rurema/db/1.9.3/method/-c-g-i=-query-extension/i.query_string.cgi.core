@@ -4,5 +4,5 @@ kind=defined
 
 --- query_string -> String
 
-ENV['QUERY_STRING'] ค๒สึคทคÞคนกฃ
+ENV['QUERY_STRING'] ใ’่ฟ”ใ—ใพใใ€
 

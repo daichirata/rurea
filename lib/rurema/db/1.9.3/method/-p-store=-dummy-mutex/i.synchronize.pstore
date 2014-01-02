@@ -4,5 +4,5 @@ kind=defined
 
 --- synchronize{ ... } -> object
 
-Ϳ����줿�֥��å���ɾ����������ǲ��⤷�ޤ���
+与えられたブロックを評価するだけで何もしません。
 

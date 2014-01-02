@@ -4,8 +4,8 @@ kind=defined
 
 --- source_index -> Gem::SourceIndex
 
-[[m:Gem.#path]] д╦двды [[c:Gem::Specification]] д╬енеуе├е╖ехдЄ╩╓д╖д▐д╣бг
-едеєе╣е╚б╝еыд╡дьд╞ддды [[c:Gem::Specification]] д╬едеєе╟е├епе╣дЄ╩╓д╖д▐д╣
+[[m:Gem.#path]] уБлуБВуВЛ [[c:Gem::Specification]] уБоуВнуГгуГГуВ╖уГеуВТш┐ФуБЧуБ╛уБЩуАВ
+уВдуГ│уВ╣уГИуГ╝уГлуБХуВМуБжуБДуВЛ [[c:Gem::Specification]] уБоуВдуГ│уГЗуГГуВпуВ╣уВТш┐ФуБЧуБ╛уБЩ
 
 @see [[c:Gem::SourceIndex]], [[c:Gem::Specification]]
 

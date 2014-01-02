@@ -5,63 +5,63 @@ kind=defined
 --- local(year, mon = 1, day = 1, hour = 0, min = 0, sec = 0, usec = 0)      -> Time
 --- mktime(year, mon = 1, day = 1, hour = 0, min = 0, sec = 0, usec = 0)     -> Time
 
-�����ǻ��ꤷ���������� Time ���֥������Ȥ��֤��ޤ���
+引数で指定した地方時の Time オブジェクトを返します。
 
-��2�����ʹߤ� nil ����ꤷ�������ͤϤ��ΰ������Ȥ�����Ǿ����ͤǤ���
+第2引数以降に nil を指定した場合の値はその引数がとり得る最小の値です。
 
-@param year ǯ��������ʸ����ǻ��ꤷ�ޤ����㤨�� 1998 ǯ���Ф��� 1998 ����ꤷ�ޤ���
-            ��������0 �ʾ� 38 �ʲ���������Ϳ����줿���ϡ�2000ǯ��β�2����Ȳ�ᤷ�ޤ���
-            69 �ʾ� 138 �ʲ���������Ϳ����줿���ϡ�1900 �ˤ��ο���­����ǯ���Ȳ�ᤵ��ޤ���
+@param year 年を整数か文字列で指定します。例えば 1998 年に対して 1998 を指定します。
+            ただし、0 以上 38 以下の整数が与えられた場合は、2000年代の下2桁だと解釈します。
+            69 以上 138 以下の整数が与えられた場合は、1900 にその数を足した年だと解釈されます。
 
-@param mon 1(1��)���� 12(12��)���ϰϤ������ޤ���ʸ����ǻ��ꤷ�ޤ���
-           �Ѹ�η�̾("Jan", "Feb", ... �ʤɤξ�ά̾��ʸ�����羮��̵��)�����Ǥ��ޤ���
+@param mon 1(1月)から 12(12月)の範囲の整数または文字列で指定します。
+           英語の月名("Jan", "Feb", ... などの省略名。文字の大小は無視)も指定できます。
 
-@param  day ���� 1 ���� 31 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���
+@param  day 日を 1 から 31 までの整数か文字列で指定します。
 
-@param  hour ���� 0 ���� 23 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���
+@param  hour 時を 0 から 23 までの整数か文字列で指定します。
 
-@param  min ʬ�� 0 ���� 59 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���
+@param  min 分を 0 から 59 までの整数か文字列で指定します。
 
-@param  sec �ä� 0 ���� 60 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���(60�Ϥ��뤦��)
+@param  sec 秒を 0 から 60 までの整数か文字列で指定します。(60はうるう秒)
 
-@param  usec �ޥ������ä�������ʸ����ǻ��ꤷ�ޤ���
+@param  usec マイクロ秒を整数か文字列で指定します。
 
-@raise ArgumentError Ϳ����줿�������ϰϤ� valid �Ǥʤ�����ȯ�����ޤ���
+@raise ArgumentError 与えられた引数の範囲が valid でない場合に発生します。
 
  p Time.local(2000, 1, 1) #=> Sat Jan 01 00:00:00 +0900 2000
 
 --- local(sec, min, hour, mday, mon, year, wday, yday, isdst, zone)     -> Time
 --- mktime(sec, min, hour, mday, mon, year, wday, yday, isdst, zone)    -> Time
 
-�����ǻ��ꤷ���������� Time ���֥������Ȥ��֤��ޤ���
+引数で指定した地方時の Time オブジェクトを返します。
 
-�����ν���� [[m:Time#to_a]] ������Ʊ���Ǥ���
-���� wday, yday, zone �˻��ꤷ���ͤ�̵�뤵��ޤ���
-������ nil ����ꤷ�������ͤϤ��ΰ������Ȥ�����Ǿ����ͤǤ���
+引数の順序は [[m:Time#to_a]] と全く同じです。
+引数 wday, yday, zone に指定した値は無視されます。
+引数に nil を指定した場合の値はその引数がとり得る最小の値です。
 
-@param  sec �ä� 0 ���� 60 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���(60�Ϥ��뤦��)
+@param  sec 秒を 0 から 60 までの整数か文字列で指定します。(60はうるう秒)
 
-@param  min ʬ�� 0 ���� 59 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���
+@param  min 分を 0 から 59 までの整数か文字列で指定します。
 
-@param  hour ���� 0 ���� 23 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���
+@param  hour 時を 0 から 23 までの整数か文字列で指定します。
 
-@param  mday ���� 1 ���� 31 �ޤǤ�������ʸ����ǻ��ꤷ�ޤ���
+@param  mday 日を 1 から 31 までの整数か文字列で指定します。
 
-@param mon 1(1��)���� 12(12��)���ϰϤ�������ʸ����ǻ��ꤷ�ޤ���
-           �Ѹ�η�̾("Jan", "Feb", ... �ʤɤξ�ά̾��ʸ�����羮��̵��)�����Ǥ��ޤ���
+@param mon 1(1月)から 12(12月)の範囲の整数か文字列で指定します。
+           英語の月名("Jan", "Feb", ... などの省略名。文字の大小は無視)も指定できます。
 
-@param year ǯ��������ʸ����ǻ��ꤷ�ޤ����㤨�� 1998 ǯ���Ф��� 1998 ����ꤷ�ޤ���
-            ��������0 �ʾ� 38 �ʲ���������Ϳ����줿���ϡ�2000ǯ��β�2����Ȳ�ᤷ�ޤ���
-            69 �ʾ� 138 �ʲ���������Ϳ����줿���ϡ�1900 �ˤ��ο���­����ǯ���Ȳ�ᤵ��ޤ���
+@param year 年を整数か文字列で指定します。例えば 1998 年に対して 1998 を指定します。
+            ただし、0 以上 38 以下の整数が与えられた場合は、2000年代の下2桁だと解釈します。
+            69 以上 138 以下の整数が与えられた場合は、1900 にその数を足した年だと解釈されます。
 
-@param wday ̵�뤵��ޤ���
+@param wday 無視されます。
 
-@param yday ̵�뤵��ޤ���
+@param yday 無視されます。
 
-@param isdst ���ꤷ���������ƻ���(Daylight Saving Time)�ʤ� true ����ꤷ�ޤ���
-             �����Ǥʤ��ʤ顢false ����ꤷ�ޤ���
+@param isdst 指定した日時が夏時間(Daylight Saving Time)なら true を指定します。
+             そうでないなら、false を指定します。
 
-@param zone ̵�뤵��ޤ���
+@param zone 無視されます。
 
-@raise ArgumentError Ϳ����줿�������ϰϤ� valid �Ǥʤ�����ȯ�����ޤ���
+@raise ArgumentError 与えられた引数の範囲が valid でない場合に発生します。
 

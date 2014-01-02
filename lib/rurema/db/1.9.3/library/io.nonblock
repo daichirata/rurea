@@ -3,5 +3,6 @@ classes=
 methods=IO/i.nonblock=3f.io.nonblock,IO/i.nonblock=3d.io.nonblock,IO/i.nonblock.io.nonblock
 sublibraries=
 is_sublibrary=false
+category=I/O
 
-IO �ΥΥ�֥��å��⡼�ɤ򰷤��饤�֥��Ǥ���
+IO のノンブロックモードを扱うライブラリです。

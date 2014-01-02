@@ -6,4 +6,4 @@ library=rubygems.commands.environment_command
 aliases=
 aliasof=
 
-RubyGems ¤Î´Ä¶­¤Ë´Ø¤¹¤ë¾ğÊó¤òÉ½¼¨¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+RubyGems ã®ç’°å¢ƒã«é–¢ã™ã‚‹æƒ…å ±ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

@@ -5,14 +5,14 @@ kind=defined
 --- sharing_detection                 -> bool
 --- sharing_detection=(boolean)
 
-��ͭ���Хե饰��ɽ�����������Ǥ���
-�ǥե���Ȥ� false �Ǥ���true �Ǥ����硢
-[[m:PP.pp]] �ϰ��ٽ��Ϥ������֥������Ȥ�Ƥӽ��Ϥ����
-[[m:Object#pretty_print_cycle]] ��Ȥ��ޤ���
+共有検出フラグを表すアクセサです。
+デフォルトは false です。true である場合、
+[[m:PP.pp]] は一度出力したオブジェクトを再び出力する時
+[[m:Object#pretty_print_cycle]] を使います。
 
-@param boolean ��ͭ���Хե饰�� true �� false �ǻ��ꤷ�ޤ���
+@param boolean 共有検出フラグを true か false で指定します。
 
-��:
+例:
 
   require 'pp'
   b = [1, 2, 3]

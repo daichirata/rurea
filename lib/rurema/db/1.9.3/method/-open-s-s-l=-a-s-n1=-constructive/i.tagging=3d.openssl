@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- tagging=(tag)
-¥¿¥°ÉÕ¤±¤ÎÊı¼°¤òÀßÄê¤·¤Ş¤¹¡£
+ã‚¿ã‚°ä»˜ã‘ã®æ–¹å¼ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param tagging ¥¿¥°ÉÕ¤±¤ÎÊı¼°(:IMPLICIT ¤Ş¤¿¤Ï :EXPLICIT)
+@param tagging ã‚¿ã‚°ä»˜ã‘ã®æ–¹å¼(:IMPLICIT ã¾ãŸã¯ :EXPLICIT)
 @see [[m:OpenSSL::ASN1::Constructive#tagging=]]
 

@@ -6,5 +6,5 @@ library=net.imap
 aliases=
 aliasof=
 
-[[m:Net::IMAP#list]]¡¢[[m:Net::IMAP#xlist]]¡¢[[m:Net::IMAP#lsub]]
-¤ÇÊÖ¤µ¤ì¤ë¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤Î¥Ç¡¼¥¿¤òÉ½¤·¤Ş¤¹¡£
+[[m:Net::IMAP#list]]ã€[[m:Net::IMAP#xlist]]ã€[[m:Net::IMAP#lsub]]
+ã§è¿”ã•ã‚Œã‚‹ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ã®ãƒ‡ãƒ¼ã‚¿ã‚’è¡¨ã—ã¾ã™ã€‚

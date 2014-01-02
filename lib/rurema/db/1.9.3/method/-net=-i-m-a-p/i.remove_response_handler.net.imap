@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- remove_response_handler(handler) -> ()
-¥ì¥¹¥İ¥ó¥¹¥Ï¥ó¥É¥é¤òºï½ü¤·¤Ş¤¹¡£
+ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãƒãƒ³ãƒ‰ãƒ©ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
-@param handler ºï½ü¤¹¤ë¥Ï¥ó¥É¥é
+@param handler å‰Šé™¤ã™ã‚‹ãƒãƒ³ãƒ‰ãƒ©
 @see [[m:Net::IMAP#add_response_handler]]
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- add_nonce(nonce = nil) -> self
-Request ���֥������Ȥ� nonce ���ɲä��ޤ���
+Request オブジェクトに nonce を追加します。
 
-nonce �Ȥϡ���ץ쥤������ɻߤ��뤿������ꤹ������Ǥ���
+nonce とは、リプレイ攻撃を防止するために設定する乱数です。
 
-@param nonce ���ꤹ��nonceʸ����nil�ξ���Ŭ���������ư�����ꤷ�ޤ�
+@param nonce 設定するnonce文字列。nilの場合は適当な乱数を自動で設定します
 

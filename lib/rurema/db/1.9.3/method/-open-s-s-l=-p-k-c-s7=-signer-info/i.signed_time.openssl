@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- signed_time -> Time
-���ν�̾�Ԥ���̾����������֤��ޤ���
+その署名者が署名した時刻を返します。
 

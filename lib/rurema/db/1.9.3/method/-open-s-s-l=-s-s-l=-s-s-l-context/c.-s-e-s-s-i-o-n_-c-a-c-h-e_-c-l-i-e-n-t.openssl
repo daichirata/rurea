@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- SESSION_CACHE_CLIENT -> Integer
-���饤�����¦���å����򥭥�å�����ɲä��뤳�Ȥ��̣���ޤ���
+クライアント側セッションをキャッシュに追加することを意味します。
 
-[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] ��
-�Ϥ��ե饰�Ȥ����Ѥ��ޤ���
+[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] に
+渡すフラグとして用います。
 
-���饤�����¦�ˤ����Ƥϡ�OpenSSL �饤�֥�꤬�ɤΥ��å�����
-�����Ѥ���٤����μ¤�Ƚ�ꤹ����ˡ�Ϥʤ��Τǡ������Ѥ������
-[[m:OpenSSL::SSL::SSLSocket#session=]] �ˤ�ä�����Ū��
-���å�������ꤷ�ʤ���Фʤ�ޤ���
+クライアント側においては、OpenSSL ライブラリがどのセッションを
+再利用するべきか確実に判定する方法はないので、再利用する場合は
+[[m:OpenSSL::SSL::SSLSocket#session=]] によって明示的に
+セッションを指定しなければなりません。
 

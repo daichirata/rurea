@@ -4,12 +4,12 @@ kind=defined
 
 --- accept -> Array
 
-��������³������դ��ơ���������³���Ф��륽���åȤȥ��ɥ쥹��
-�ڥ����֤��ޤ���[[man:accept(2)]] �򻲾ȡ�
+新しい接続を受け付けて、新しい接続に対するソケットとアドレスの
+ペアを返します。[[man:accept(2)]] を参照。
 
-���Ȥ��� IPv4 �� TCP �����Х����åȤ���������accept �ǥ��饤����Ȥ������³������դ���ˤϰʲ��Τ褦�ˤ��ޤ���
+たとえば IPv4 の TCP サーバソケットを生成し、accept でクライアントからの接続を受け付けるには以下のようにします。
 
-��:
+例:
 
   serv = Socket.new(Socket::AF_INET, Socket::SOCK_STREAM, 0)
   sockaddr = Socket.sockaddr_in(8080, "0.0.0.0")

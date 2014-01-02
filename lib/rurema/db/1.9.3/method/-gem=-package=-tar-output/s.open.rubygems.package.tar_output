@@ -4,12 +4,12 @@ kind=defined
 
 --- open(io, signer = nil){|data_tar_writer| ... }
 
-gem-format ¤Ê tar ¥Õ¥¡¥¤¥ëÆâ¤Î data.tar.gz ¤Ë¥Õ¥¡¥¤¥ë¤òÄÉ²Ã¤¹¤ë¤¿¤á¤Î¥á
-¥½¥Ã¥É¤Ç¤¹¡£
+gem-format ãª tar ãƒ•ã‚¡ã‚¤ãƒ«å†…ã® data.tar.gz ã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è¿½åŠ ã™ã‚‹ãŸã‚ã®ãƒ¡
+ã‚½ãƒƒãƒ‰ã§ã™ã€‚
 
-@param io gem-format ¤Ê tar ¥Õ¥¡¥¤¥ë¤ò°·¤¦¤¿¤á¤Î IO ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param io gem-format ãª tar ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ‰±ã†ãŸã‚ã® IO ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param signer [[c:Gem::Security::Signer]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param signer [[c:Gem::Security::Signer]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Gem::Package::TarOutput#add_gem_contents]]
 

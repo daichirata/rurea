@@ -1,23 +1,23 @@
 = VMS
 
-VAX ¤ä Alpha ¤ÎOS¡£º£¤Ï OpenVMS ¤È¸Æ¤Ö¤é¤·¤¤¡£ruby ¤Î¥½¡¼¥¹¤Ç¤Ï¡¢¤¿¤À 
-1 ²Õ½ê ruby.c ¤Ë
+VAX ã‚„ Alpha ã®OSã€‚ä»Šã¯ OpenVMS ã¨å‘¼ã¶ã‚‰ã—ã„ã€‚ruby ã®ã‚½ãƒ¼ã‚¹ã§ã¯ã€ãŸã  
+1 ç®‡æ‰€ ruby.c ã«
 
     #ifdef VMS
         uid |= gid << 16;
         euid |= egid << 16;
     #endif
 
-¤È¤¤¤¦µ­½Ò¤¬Â¸ºß¤¹¤ë¡£(¤È½ñ¤¤¤¿ÅÓÃ¼¤Ë version 1.7 ¤Ç¥Ñ¥Ã¥Á¤¬¼è¤ê¹ş¤Ş¤ì
-¤¿¡£¤Ş¤È¤â¤ËÂĞ±ş¤µ¤ì¤Ä¤Ä¤¢¤ë¤è¤¦¤Ç¤¹)
+ã¨ã„ã†è¨˜è¿°ãŒå­˜åœ¨ã™ã‚‹ã€‚(ã¨æ›¸ã„ãŸé€”ç«¯ã« version 1.7 ã§ãƒ‘ãƒƒãƒãŒå–ã‚Šè¾¼ã¾ã‚Œ
+ãŸã€‚ã¾ã¨ã‚‚ã«å¯¾å¿œã•ã‚Œã¤ã¤ã‚ã‚‹ã‚ˆã†ã§ã™)
 
-1.8.1¤«¤é¥Ğ¥¤¥Ê¥ê¤¬¸ø³«¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
-((<URL:http://www.geocities.jp/vmsruby/>)) ¤ò»²¾È¡£
+1.8.1ã‹ã‚‰ãƒã‚¤ãƒŠãƒªãŒå…¬é–‹ã•ã‚Œã¦ã„ã¾ã™ã€‚
+[[url:http://www.geocities.jp/vmsruby/]] ã‚’å‚ç…§ã€‚
 
-((<URL:http://www.openvms.compaq.com/>)) ¤ò»²¾È¡£
+[[url:http://www.openvms.compaq.com/]] ã‚’å‚ç…§ã€‚
 
-°Ê²¼¤â»²¾È
+ä»¥ä¸‹ã‚‚å‚ç…§
 
-((<URL:http://www.levitte.org/~ava/index.htmlx>))
+[[url:http://www.levitte.org/~ava/index.htmlx]]
 
-((<URL:http://www.montagar.com/hobbyist/>))
+[[url:http://www.montagar.com/hobbyist/]]

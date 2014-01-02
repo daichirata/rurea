@@ -6,4 +6,4 @@ library=webrick.htmlutils
 aliases=
 aliasof=
 
-HTML �Τ���Υ桼�ƥ���ƥ��ؿ����󶡤��ޤ���
+HTML のためのユーティリティ関数を提供します。

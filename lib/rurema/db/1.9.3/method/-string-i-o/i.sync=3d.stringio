@@ -4,7 +4,7 @@ kind=defined
 
 --- sync=(bool)
 
-²¿¤â¤»¤º¤Ë bool ¤òÊÖ¤·¤Ş¤¹¡£
+ä½•ã‚‚ã›ãšã« bool ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param bool true ¤« false ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param bool true ã‹ false ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

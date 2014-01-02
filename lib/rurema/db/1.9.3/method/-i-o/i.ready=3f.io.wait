@@ -3,8 +3,8 @@ visibility=public
 kind=added
 
 --- ready? -> bool | nil
-�֥��å��������ɤ߹��߲�ǽ�ʤ�true��
-�֥��å����Ƥ��ޤ���ǽ��������ʤ�false���֤��ޤ���
+ブロックせずに読み込み可能ならtrueを、
+ブロックしてしまう可能性があるならfalseを返します。
 
-Ƚ���Բ�ǽ�ʾ��� nil ���֤��ޤ���
+判定不可能な場合は nil を返します。
 

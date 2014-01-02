@@ -4,7 +4,7 @@ kind=defined
 
 --- comma_breakable    -> ()
 
-�ʲ���������Ư���򤹤��ΤǴ��ؤΤ�����Ѱդ���Ƥ��ޤ���
+以下と等価な働きをするもので簡便のために用意されています。
   text ','
   breakable
 

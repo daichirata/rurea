@@ -5,10 +5,10 @@ kind=defined
 --- next -> ()
 --- succ -> ()
 
-���ε����ǿ����֤��ޤ���
-�ޤ�����Ū�ʰ��֤�ʤ�ޤ���
+次の擬似素数を返します。
+また内部的な位置を進めます。
 
-���֥��饹�Ǽ������Ƥ���������
+サブクラスで実装してください。
 
-@raise NotImplementedError ɬ��ȯ�����ޤ���
+@raise NotImplementedError 必ず発生します。
 

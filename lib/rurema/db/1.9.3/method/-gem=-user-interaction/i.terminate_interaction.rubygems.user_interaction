@@ -4,7 +4,7 @@ kind=defined
 
 --- terminate_interaction(*args) -> ()
 
-���ץꥱ��������λ���ޤ���
+アプリケーションを終了します。
 
-@param args �Ѿ���Υ᥽�åɤ�Ϳ��������Ǥ���
+@param args 委譲先のメソッドに与える引数です。
 

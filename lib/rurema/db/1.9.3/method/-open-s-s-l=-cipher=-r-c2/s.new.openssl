@@ -5,17 +5,17 @@ kind=defined
 --- new(bit, mode) -> OpenSSL::Cipher::RC2
 --- new(mode) -> OpenSSL::Cipher::RC2
 
-RC2 �Ź楪�֥������Ȥ��������ޤ���
+RC2 暗号オブジェクトを生成します。
 
-��Ĺ�������⤷����ʸ����(40 or "40") bit �ǡ�
-�⡼�ɤ�ʸ���� mode �ǻ��ꤷ�ޤ���
+鍵長を整数もしくは文字列(40 or "40") bit で、
+モードを文字列 mode で指定します。
 
-��Ĺ�Ͼ�ά��ǽ�Ǥ���
+鍵長は省略可能です。
 
-�����ǽ�ʸ����ȥ⡼�ɤ� [[m:OpenSSL::Cipher.ciphers]] ��
-�����Ǥ��ޤ���
+指定可能な鍵数とモードは [[m:OpenSSL::Cipher.ciphers]] で
+取得できます。
 
-@param bit ��Ĺ����/ʸ����
-@param mode �⡼��ʸ����
+@param bit 鍵長整数/文字列
+@param mode モード文字列
 
 

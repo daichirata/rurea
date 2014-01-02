@@ -5,39 +5,39 @@ kind=added
 --- create_makefile(target, srcprefix = nil) -> true
 @todo
 
-[[m:Kernel#have_library]] �ʤɤγƼ︡���η�̤򸵤ˡ���ĥ�饤�֥���
-�ӥ�ɤ��뤿��� Makefile ���������ޤ���
+[[m:Kernel#have_library]] などの各種検査の結果を元に、拡張ライブラリを
+ビルドするための Makefile を生成します。
 
-extconf.rb �����̤��Υ᥽�åɤθƤӽФ��ǽ���ޤ���
+extconf.rb は普通このメソッドの呼び出しで終ります。
 
-@param target �������åȤȤʤ��ĥ�饤�֥���̾������ꤷ�ޤ���
-              �㤨�С���ĥ�饤�֥��� "Init_foo" �Ȥ����ؿ����������
-              ������ϡ�"foo" ����ꤷ�ޤ���
-              '/' ��ޤ���ϡ��Ǹ�Υ���å���ʹߤΤߤ򥿡����å�̾
-              �Ȥ��ƻ��Ѥ��ޤ����Ĥ�ϥȥåץ�٥�Υǥ��쥯�ȥ�̾�ȸ�
-              �ʤ��졢�������줿 Makefile �Ϥ��Υǥ��쥯�ȥ깽¤�˽���
-              �ޤ���
-              �㤨�С�'test/foo' ����ꤷ����硢��ĥ�饤�֥���
-              'test' �ǥ��쥯�ȥ�˥��󥹥ȡ��뤵��ޤ������γ�ĥ�饤��
-              ���� Ruby ������ץȤ�����Ѥ���Ȥ���
-              "require 'test/foo'" �Ȥ���ɬ�פ�����ޤ���
+@param target ターゲットとなる拡張ライブラリの名前を指定します。
+              例えば、拡張ライブラリで "Init_foo" という関数を定義して
+              いる場合は、"foo" を指定します。
+              '/' を含む場合は、最後のスラッシュ以降のみをターゲット名
+              として使用します。残りはトップレベルのディレクトリ名と見
+              なされ、生成された Makefile はそのディレクトリ構造に従い
+              ます。
+              例えば、'test/foo' を指定した場合、拡張ライブラリは
+              'test' ディレクトリにインストールされます。この拡張ライブ
+              ラリを Ruby スクリプトから使用するときは
+              "require 'test/foo'" とする必要があります。
 
-@param srcprefix �����������ɤ�����ǥ��쥯�ȥ�̾����ꤷ�ޤ���
-                 ��ά�������� extconf.rb ������ǥ��쥯�ȥ����Ѥ��ޤ���
+@param srcprefix ソースコードがあるディレクトリ名を指定します。
+                 省略した場合は extconf.rb があるディレクトリを使用します。
                  
-�ʲ��Τ褦�ʥǥ��쥯�ȥ깽���ξ��:
+以下のようなディレクトリ構成の場合:
 
    ext/
       extconf.rb
       test/
          foo.c
 
-���Τ褦�ˤ��ޤ���
+このようにします。
 
    create_makefile('test/foo', 'test')
 
-���Τ褦�ˤ��ƺ�ä� Makefile �� 'make install' ����ȳ�ĥ�饤�֥��ϡ�
-�ʲ��Υѥ��˥��󥹥ȡ��뤵��ޤ���
+このようにして作った Makefile で 'make install' すると拡張ライブラリは、
+以下のパスにインストールされます。
 
   /path/to/ruby/sitearchdir/test/foo.so
 

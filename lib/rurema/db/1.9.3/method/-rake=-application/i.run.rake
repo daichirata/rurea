@@ -4,11 +4,11 @@ kind=defined
 
 --- run
 
-Rake ���ץꥱ��������¹Ԥ��ޤ���
+Rake アプリケーションを実行します。
 
-���Υ᥽�åɤϰʲ��� 3 ���ƥåפ�¹Ԥ��ޤ���
+このメソッドは以下の 3 ステップを実行します。
 
- * ���ޥ�ɥ饤�󥪥ץ������������ޤ���[[m:Rake::Application#init]]
- * ��������������ޤ���[[m:Rake::Application#load_rakefile]]
- * ���ޥ�ɥ饤��ǻ��ꤵ�줿��������¹Ԥ��ޤ���[[m:Rake::Application#top_level]]
+ * コマンドラインオプションを初期化します。[[m:Rake::Application#init]]
+ * タスクを定義します。[[m:Rake::Application#load_rakefile]]
+ * コマンドラインで指定されたタスクを実行します。[[m:Rake::Application#top_level]]
 

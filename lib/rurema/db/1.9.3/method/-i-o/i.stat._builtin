@@ -4,12 +4,12 @@ kind=defined
 
 --- stat    -> File::Stat
 
-¥Õ¥¡¥¤¥ë¤Î¥¹¥Æ¡¼¥¿¥¹¤ò´Þ¤à [[c:File::Stat]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Æ
-ÊÖ¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’å«ã‚€ [[c:File::Stat]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦
+è¿”ã—ã¾ã™ã€‚
 
-@raise Errno::EXXX ¥¹¥Æ¡¼¥¿¥¹¤ÎÆÉ¤ß¹þ¤ß¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Errno::EXXX ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise IOError ´û¤Ë close ¤µ¤ì¤Æ¤¤¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£ 
+@raise IOError æ—¢ã« close ã•ã‚Œã¦ã„ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚ 
 
 @see [[m:File#lstat]], [[m:File.stat]], [[m:File.lstat]] 
 

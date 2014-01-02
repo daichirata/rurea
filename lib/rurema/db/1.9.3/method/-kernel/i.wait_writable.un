@@ -3,10 +3,10 @@ visibility=private
 kind=added
 
 --- wait_writable -> ()
-�ե����뤬�񤭹��߲�ǽ�ˤʤ�ޤ��Ԥ��ޤ���
+ファイルが書き込み可能になるまで待ちます。
 
   ruby -run -e wait_writable -- [OPTION] FILE
 
-  -n RETRY	��ȥ饤���
-  -w SEC	��ȥ饤���Ȥ��Ԥ��ÿ�
-  -v		�ܺ�ɽ��
+  -n RETRY	リトライ回数
+  -w SEC	リトライごとに待つ秒数
+  -v		詳細表示

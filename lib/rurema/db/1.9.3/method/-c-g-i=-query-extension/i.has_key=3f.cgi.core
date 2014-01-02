@@ -6,8 +6,8 @@ kind=defined
 --- key?(*args) -> bool
 --- include?(*args) -> bool
 
-Ϳ����줿������������˴ޤޤ�Ƥ�����ϡ������֤��ޤ���
-�����Ǥʤ����ϡ������֤��ޤ���
+与えられたキーがクエリに含まれている場合は、真を返します。
+そうでない場合は、偽を返します。
 
-@param args �������İʾ���ꤷ�ޤ���
+@param args キーを一つ以上指定します。
 

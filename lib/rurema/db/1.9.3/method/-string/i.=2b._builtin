@@ -4,18 +4,18 @@ kind=defined
 
 --- +(other) -> String
 
-Ê¸»úÎó¤È other ¤òÏ¢·ë¤·¤¿¿·¤·¤¤Ê¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£
+æ–‡å­—åˆ—ã¨ other ã‚’é€£çµã—ãŸæ–°ã—ã„æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other    Ê¸»úÎó
-@return         self ¤È other ¤òÏ¢·ë¤·¤¿Ê¸»úÎó
+@param other    æ–‡å­—åˆ—
+@return         self ã¨ other ã‚’é€£çµã—ãŸæ–‡å­—åˆ—
 
-Îã:
+ä¾‹:
 
   p "str" + "ing"   # => "string"
 
   a = "abc"
   b = "def"
   p a + b   # => "abcdef"
-  p a       # => "abc"  (ÊÑ²½¤Ê¤·)
+  p a       # => "abc"  (å¤‰åŒ–ãªã—)
   p b       # => "def"
 

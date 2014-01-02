@@ -4,8 +4,8 @@ kind=defined
 
 --- ==(other)    -> bool
 
-���ȤȻ��ꤵ�줿 other �Υ��饹��Ʊ���Ǥ��ꡢmessage �� backtrace �� == �᥽�åɤ���Ӥ���
-���������� true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+自身と指定された other のクラスが同じであり、message と backtrace が == メソッドで比較して
+等しい場合に true を返します。そうでない場合に false を返します。
 
-@param other ���Ȥ���Ӥ��������֥������Ȥ���ꤷ�ޤ���
+@param other 自身と比較したいオブジェクトを指定します。
 

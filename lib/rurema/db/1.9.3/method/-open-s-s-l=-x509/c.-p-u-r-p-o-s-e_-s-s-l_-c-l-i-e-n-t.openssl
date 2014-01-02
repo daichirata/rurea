@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- PURPOSE_SSL_CLIENT -> Integer
-╬злю╫Я╓╛
-SSL ╓н╔╞╔И╔╓╔╒╔С╔х╔╣╔╓╔и╓н╬злю╫Я╓х╓╥╓ф╩х╓╗╓К╓╚
-╔а╔╖╔ц╔╞╓╧╓К╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+Х╗╪Ф≤▌Ф⌡╦Ц│▄
+SSL Ц│╝Ц┌╞Ц┐╘Ц┌╓Ц┌╒Ц┐ЁЦ┐┬Ц┌╣Ц┌╓Ц┐┴Ц│╝Х╗╪Ф≤▌Ф⌡╦Ц│╗Ц│≈Ц│╕Д╫©Ц│┬Ц┌▀Ц│▀
+Ц┐│Ц┌╖Ц┐┐Ц┌╞Ц│≥Ц┌▀Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::X509::Store#purpose=]] ╓Д
-[[m:OpenSSL::X509::StoreContext#purpose=]] ╓гюъдЙ╓╥║╒
-[[m:OpenSSL::X509::Store#verify]] ╓Д
-[[m:OpenSSL::X509::StoreContext#verify]] ╓г
-╓Ё╓н╓Ё╓х╓РЁнг╖╓╥╓ч╓╧║ё
+[[m:OpenSSL::X509::Store#purpose=]] Ц┌└
+[[m:OpenSSL::X509::StoreContext#purpose=]] Ц│╖Х╗╜Е╝ Ц│≈Ц─│
+[[m:OpenSSL::X509::Store#verify]] Ц┌└
+[[m:OpenSSL::X509::StoreContext#verify]] Ц│╖
+Ц│⌠Ц│╝Ц│⌠Ц│╗Ц┌▓Г╒╨Х╙█Ц│≈Ц│╬Ц│≥Ц─┌
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- do_not_reverse_lookup=(bool)
-¿¿¤òÅÏ¤¹¤È¥¢¥É¥ì¥¹¤«¤é¥Û¥¹¥ÈÌ¾¤Ø¤ÎµÕ°ú¤­¤ò¹Ô¤ï¤Ê¤¯¤Ê¤ê¤Ş¤¹¡£
+çœŸã‚’æ¸¡ã™ã¨ã‚¢ãƒ‰ãƒ¬ã‚¹ã‹ã‚‰ãƒ›ã‚¹ãƒˆåã¸ã®é€†å¼•ãã‚’è¡Œã‚ãªããªã‚Šã¾ã™ã€‚
 
-[[m:BasicSocket#do_not_reverse_lookup]] ¤ÈÆ±ÍÍ¤Ç¤¹¡£
+[[m:BasicSocket#do_not_reverse_lookup]] ã¨åŒæ§˜ã§ã™ã€‚
 
-@param bool ¿¿¤ÇµÕ°ú¤­¤òÍŞÀ©¤·¤Ş¤¹
+@param bool çœŸã§é€†å¼•ãã‚’æŠ‘åˆ¶ã—ã¾ã™
 

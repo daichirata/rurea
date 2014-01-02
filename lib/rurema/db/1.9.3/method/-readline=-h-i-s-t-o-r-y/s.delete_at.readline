@@ -4,21 +4,21 @@ kind=defined
 
 --- delete_at(index) -> String | nil
 
-index �ǻ��ꤷ������ǥå��������Ƥ�ҥ��ȥ꤫���������������Ƥ��֤��ޤ���
-�������� index �����Ƥ��ҥ��ȥ�ˤʤ���С� nil ���֤��ޤ���
-index �� 0 ����ꤹ��� [[m:Readline::HISTORY.shift]] 
-��Ʊ�ͤ˺ǽ���������Ƥ������ޤ���
-�ޤ��� -1 �ϺǸ���������ƤȤ����褦�ˡ�index ������ͤ���ꤹ�뤳�Ȥǡ�
-�Ǹ夫���������Ƥ�������뤳�Ȥ�Ǥ��ޤ���
-index �� -1 �ξ��� [[m:Readline::HISTORY.pop]] ��Ʊ�ͤ�ư��ޤ���
+index で指定したインデックスの内容をヒストリから削除し、その内容を返します。
+該当する index の内容がヒストリになければ、 nil を返します。
+index に 0 を指定すると [[m:Readline::HISTORY.shift]] 
+と同様に最初の入力内容を削除します。
+また、 -1 は最後の入力内容というように、index に負の値を指定することで、
+最後から入力内容を取得することもできます。
+index が -1 の場合は [[m:Readline::HISTORY.pop]] と同様に動作します。
 
-@param index ����оݤΥҥ��ȥ�Υ���ǥå�������ꤷ�ޤ���
+@param index 削除対象のヒストリのインデックスを指定します。
 
-@raise NotImplementedError ���ݡ��Ȥ��Ƥ��ʤ��Ķ���ȯ�����ޤ���
+@raise NotImplementedError サポートしていない環境で発生します。
 
-@raise SecurityError �����ե�٥� ($SAFE) �� 4 �ξ���ȯ�����ޤ���
+@raise SecurityError セーフレベル ($SAFE) が 4 の場合に発生します。
 
-��:
+例:
 
   require "readline"
   

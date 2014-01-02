@@ -5,9 +5,9 @@ kind=defined
 --- GBK -> Encoding
 --- CP936 -> Encoding
 
-GBK ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
+GBK ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
 
-Ãæ¹ñ¤ÇÍÑ¤¤¤é¤ì¤ë´ÊÂÎ»úÃæ¹ñ¸ì¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+ä¸­å›½ã§ç”¨ã„ã‚‰ã‚Œã‚‹ç°¡ä½“å­—ä¸­å›½èªã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[url:http://www.iana.org/assignments/character-sets]],
      [[url:http://www.iana.org/assignments/charset-reg/GBK]],

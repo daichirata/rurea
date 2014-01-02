@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- ctime -> Time
-File.ctime(self.to_s) ¤òÅÏ¤·¤¿¤â¤Î¤ÈÆ±¤¸¤Ç¤¹¡£
+File.ctime(self.to_s) ã‚’æ¸¡ã—ãŸã‚‚ã®ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:File.ctime]]

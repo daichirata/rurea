@@ -4,7 +4,7 @@ kind=defined
 
 --- tar_command -> String
 
-tar ���ޥ�ɤȤ��ƻ��Ѥ��륳�ޥ�ɤ��֤��ޤ���
+tar コマンドとして使用するコマンドを返します。
 
-�ǥե���Ȥ� 'tar' �Ǥ���
+デフォルトは 'tar' です。
 

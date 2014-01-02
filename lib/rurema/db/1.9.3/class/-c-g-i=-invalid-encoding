@@ -6,4 +6,4 @@ library=cgi.core
 aliases=
 aliasof=
 
-������ʸ�����󥳡��ǥ��󥰤����줿�Ȥ���ȯ�������㳰�Ǥ���
+不正な文字エンコーディングが現れたときに発生する例外です。

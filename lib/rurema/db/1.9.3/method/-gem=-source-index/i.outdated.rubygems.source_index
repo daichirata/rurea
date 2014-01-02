@@ -4,5 +4,5 @@ kind=defined
 
 --- outdated -> Array
 
-��������Ƥ��ʤ� [[c:Gem::Specification]] �Υꥹ�Ȥ��֤��ޤ���
+更新されていない [[c:Gem::Specification]] のリストを返します。
 

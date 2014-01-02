@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- serial=(serial)
-¾ÚÌÀ½ñ¤Î¼±ÊÌÈÖ¹æ¤òÀßÄê¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã®è­˜åˆ¥ç•ªå·ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param serial ¼±ÊÌÈÖ¹æ
+@param serial è­˜åˆ¥ç•ªå·
 @see [[m:OpenSSL::X509::Certificate#serial]]
 

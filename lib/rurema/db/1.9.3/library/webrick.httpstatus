@@ -3,5 +3,6 @@ classes=WEBrick=HTTPStatus,WEBrick=HTTPStatus=Status,WEBrick=HTTPStatus=Info,WEB
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-HTTP ¤Î¥¹¥Æ¡¼¥¿¥¹¤òÉ½¤¹Îã³°¥¯¥é¥¹¤òÄó¶¡¤·¤Ş¤¹¡£
+HTTP ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’è¡¨ã™ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’æä¾›ã—ã¾ã™ã€‚

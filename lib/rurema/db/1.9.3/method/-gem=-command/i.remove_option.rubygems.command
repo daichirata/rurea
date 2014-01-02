@@ -4,7 +4,7 @@ kind=defined
 
 --- remove_option(name)
 
-Ϳ����줿̾���˰��פ��륳�ޥ�ɥ饤�󥪥ץ����������ޤ���
+与えられた名前に一致するコマンドラインオプションを削除します。
 
-@param name ������������ޥ�ɥ饤�󥪥ץ�����̾������ꤷ�ޤ���
+@param name 削除したいコマンドラインオプションの名前を指定します。
 

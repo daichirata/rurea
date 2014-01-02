@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- V_ERR_CERT_HAS_EXPIRED -> Integer
-╬злю╫Я╓╛╢Э╦бюз╓Л╓г╓╒╓К╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+Х╗╪Ф≤▌Ф⌡╦Ц│▄Ф°÷И≥░Е┬┤Ц┌▄Ц│╖Ц│┌Ц┌▀Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-╢Э╦б╓о╬злю╫Я╔а╔╖╔╓╔Са╢бн╓кбп╓╥Ёнг╖╓╣╓Л╓ч╓╧║ё
+Ф°÷И≥░Ц│╞Х╗╪Ф≤▌Ф⌡╦Ц┐│Ц┌╖Ц┌╓Ц┐ЁЕ┘╗Д╫⌠Ц│╚Е╞╬Ц│≈Г╒╨Х╙█Ц│∙Ц┌▄Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::X509::Store#error]] ╓Д
-[[m:OpenSSL::X509::StoreContext#error]] ╓н╔╗╔И║╪╔Ё║╪╔и╓х╓╥╓ф
-╩х╓О╓Л╓ч╓╧║ё
+[[m:OpenSSL::X509::Store#error]] Ц┌└
+[[m:OpenSSL::X509::StoreContext#error]] Ц│╝Ц┌╗Ц┐╘Ц┐╪Ц┌ЁЦ┐╪Ц┐┴Ц│╗Ц│≈Ц│╕
+Д╫©Ц┌▐Ц┌▄Ц│╬Ц│≥Ц─┌
 
 @see [[m:OpenSSL::X509::Certificate#not_after=]],
      [[m:OpenSSL::X509::Store#time=]]

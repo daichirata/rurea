@@ -4,6 +4,6 @@ kind=defined
 
 --- FILTERED -> Fixnum
 
-[[m:Zlib::Deflate.new]] ¤ä [[m:Zlib::Deflate#params]] ¤ËÅÏ¤¹¡¢
-°µ½ÌÊıË¡¤òÉ½¤¹À°¿ô¤Ç¤¹¡£
+[[m:Zlib::Deflate.new]] ã‚„ [[m:Zlib::Deflate#params]] ã«æ¸¡ã™ã€
+åœ§ç¸®æ–¹æ³•ã‚’è¡¨ã™æ•´æ•°ã§ã™ã€‚
 

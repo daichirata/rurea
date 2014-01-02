@@ -4,5 +4,5 @@ kind=defined
 
 --- cache_control -> String
 
-ENV['HTTP_CACHE_CONTROL'] ค๒สึคทคÞคนกฃ
+ENV['HTTP_CACHE_CONTROL'] ใ’่ฟ”ใ—ใพใใ€
 

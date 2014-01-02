@@ -3,15 +3,17 @@ visibility=public
 kind=defined
 
 --- values_at(*members) -> [object]
-(���Υ᥽�åɤ� Struct �β��̥��饹�ˤΤ��������Ƥ��ޤ�)
-�����ǻ��ꤵ�줿���Ф��ͤ�������֤��ޤ���
+引数で指定されたメンバの値の配列を返します。
 
-@param members [[c:Fixnum]] �� [[c:Range]] �ǥ��ФΥ���ǥå�������ꤷ�ޤ���
+@param members [[c:Fixnum]] か [[c:Range]] でメンバのインデックスを指定します。
 
-@raise IndexError member ��������¸�ߤ��ʤ����Ф���ꤷ������ȯ�����ޤ���
+@raise IndexError member が整数で存在しないメンバを指定した場合に発生します。
 
     Foo = Struct.new(:foo, :bar, :baz)
     obj = Foo.new('FOO', 'BAR', 'BAZ')
     p obj.values_at(0, 1, 2)    # => ["FOO", "BAR", "BAZ"]
 
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
 

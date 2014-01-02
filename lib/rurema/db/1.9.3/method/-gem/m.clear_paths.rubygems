@@ -4,8 +4,8 @@ kind=defined
 
 --- clear_paths -> nil
 
-[[m:Gem.#dir]], [[m:Gem.#path]] ���ͤ�ꥻ�åȤ��ޤ���
+[[m:Gem.#dir]], [[m:Gem.#path]] の値をリセットします。
 
-���� [[m:Gem.#dir]], [[m:Gem.#path]] ���ƤФ줿���ϡ��ͤ�ǽ餫��׻����ޤ���
-���Υ᥽�åɤϼ�˥�˥åȥƥ��Ȥ���Ω�����󶡤��뤿��˻��Ѥ��ޤ���
+次に [[m:Gem.#dir]], [[m:Gem.#path]] が呼ばれた時は、値を最初から計算します。
+このメソッドは主にユニットテストの独立性を提供するために使用します。
 

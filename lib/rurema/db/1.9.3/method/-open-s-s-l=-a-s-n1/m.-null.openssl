@@ -4,13 +4,13 @@ kind=defined
 
 --- Null(value) -> OpenSSL::ASN1::Null -> OpenSSL::ASN1::Null
 --- Null(value, tag, tagging, tag_class) -> OpenSSL::ASN1::Null
-ASN.1 д╬ Null ╖┐д╬├═дЄ╔╜╕╜д╣ды Ruby д╬еке╓е╕езепе╚дЄ
-└╕└од╖д▐д╣бг
+ASN.1 уБо Null хЮЛуБохАдуВТшбичП╛уБЩуВЛ Ruby уБоуВкуГЦуВ╕уВзуВпуГИуВТ
+чФЯцИРуБЧуБ╛уБЩуАВ
 
-[[m:OpenSSL::ASN1::Null.new]] д╚╞▒д╕д╟д╣бг
+[[m:OpenSSL::ASN1::Null.new]] уБихРМуБШуБзуБЩуАВ
 
-@param value ASN.1 ├═дЄ╔╜д╣ Ruby д╬еке╓е╕езепе╚(nilд╬д▀)
-@param tag е┐е░╚╓╣ц
-@param tagging е┐е░╔╒д▒д╬╩¤╦б(:IMPLICIT дтд╖дпд╧ :EXPLICIT)
-@param tag_class е┐е░епеще╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE д╬ддд║дьдл)
+@param value ASN.1 хАдуВТшбиуБЩ Ruby уБоуВкуГЦуВ╕уВзуВпуГИ(nilуБоуБ┐)
+@param tag уВ┐уВ░чХкхП╖
+@param tagging уВ┐уВ░ф╗ШуБСуБоцЦ╣ц│Х(:IMPLICIT уВВуБЧуБПуБп :EXPLICIT)
+@param tag_class уВ┐уВ░уВпуГйуВ╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE уБоуБДуБЪуВМуБЛ)
 

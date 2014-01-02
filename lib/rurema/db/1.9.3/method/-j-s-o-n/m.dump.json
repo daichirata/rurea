@@ -4,18 +4,18 @@ kind=defined
 
 --- dump(object, io = nil, limit = nil) -> String | IO
 
-Ϳ����줿���֥������Ȥ� JSON ������ʸ������Ѵ����ƥ���פ��ޤ���
+与えられたオブジェクトを JSON 形式の文字列に変換してダンプします。
 
-Ϳ����줿���֥������Ȥ�����Ȥ��� [[m:JSON.#generate]] ��ƤӽФ��ޤ���
+与えられたオブジェクトを引数として [[m:JSON.#generate]] を呼び出します。
 
 
-@param object ����פ��륪�֥������Ȥ���ꤷ�ޤ���
+@param object ダンプするオブジェクトを指定します。
 
-@param io  [[c:IO]] �Τ褦�� write �᥽�åɤ�������Ƥ��륪�֥������Ȥ���ꤷ�ޤ���
+@param io  [[c:IO]] のように write メソッドを実装しているオブジェクトを指定します。
 
-@param limit ���ꤷ����硢limit �ʰʾ忼����󥯤������֥������Ȥ����פǤ��ޤ���
+@param limit 指定した場合、limit 段以上深くリンクしたオブジェクトをダンプできません。
 
-@raise ArgumentError ���֥������ȤΥͥ��Ȥο����� limit ��ۤ�������ȯ�����ޤ���
+@raise ArgumentError オブジェクトのネストの深さが limit を越えた場合に発生します。
 
 @see [[c:Marshal]], [[m:Marshal.#dump]]
 

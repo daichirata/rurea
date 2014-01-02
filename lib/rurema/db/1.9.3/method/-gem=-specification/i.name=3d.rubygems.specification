@@ -4,7 +4,7 @@ kind=defined
 
 --- name=(name)
 
-���� Gem �ѥå�������̾���򥻥åȤ��ޤ���
+この Gem パッケージの名前をセットします。
 
-@param name ���� Gem �ѥå�������̾������ꤷ�ޤ���
+@param name この Gem パッケージの名前を指定します。
 

@@ -4,12 +4,12 @@ kind=defined
 
 --- write(str) -> Integer
 
-���Ȥ� str ����Ϥ��ޤ���str ��ʸ����Ǥʤ�
-��� to_s �ˤ��ʸ���󲽤��ߤޤ���
+自身に str を出力します。str が文字列でなけ
+れば to_s による文字列化を試みます。
 
-@param str ���Ϥ���ʸ�������ꤷ�ޤ���ʸ����Ǥʤ����� to_s ��ʸ������Ѵ����ޤ���
+@param str 出力する文字列を指定します。文字列でない場合は to_s で文字列に変換します。
 
-@return �ºݤ˽��ϤǤ����Х��ȿ����֤��ޤ���
+@return 実際に出力できたバイト数を返します。
 
   require 'zlib'
 

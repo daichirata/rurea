@@ -4,11 +4,11 @@ kind=defined
 
 --- to_a -> [[String, String, Integer]]
 
-ÆâÍÆ¤òÇÛÎó¤Ë¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+å†…å®¹ã‚’é…åˆ—ã«ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-ÇÛÎó¤Î³ÆÍ×ÁÇ¤Ï¡¢[Â°À­·¿Ê¸»úÎó¡¢Â°À­ÃÍÊ¸»úÎó¡¢Â°À­ÃÍ¤Î·¿¤òÉ½¤¹À°¿ô([[c:OpenSSL::ASN1]]°Ê²¼¤Î³ÆÄê¿ô¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ëASN1¤Î·¿)] ¤È¤¤¤¦3Í×ÁÇ¤ÎÇÛÎó¤Ç¤¹¡£
+é…åˆ—ã®å„è¦ç´ ã¯ã€[å±žæ€§åž‹æ–‡å­—åˆ—ã€å±žæ€§å€¤æ–‡å­—åˆ—ã€å±žæ€§å€¤ã®åž‹ã‚’è¡¨ã™æ•´æ•°([[c:OpenSSL::ASN1]]ä»¥ä¸‹ã®å„å®šæ•°ã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ASN1ã®åž‹)] ã¨ã„ã†3è¦ç´ ã®é…åˆ—ã§ã™ã€‚
 
-Îã:
+ä¾‹:
   n = OpenSSL::X509::Name.parse('/C=JP/ST=Kanagawa/L=Yokohama/O=Example Company/OU=Lab3/CN=foobar/emailAddress=foobar@lab3.example.co.jp')
   n.to_a
   # => [["C", "JP", 19], ["ST", "Kanagawa", 12], ["L", "Yokohama", 12], ["O", "Example Company", 12], ["OU", "Lab3", 12], ["CN", "foobar", 12], ["emailAddress", "foobar@lab3.example.co.jp", 22]]

@@ -6,11 +6,11 @@ library=resolv
 aliases=
 aliasof=
 
-DNS �꥽������ HINFO �쥳����
-��ɽ����ݥ��饹�Ǥ���
+DNS リソースの HINFO レコード
+を表す抽象クラスです。
 
-���Υ쥳���ɤϥۥ��ȤΥϡ��ɥ������ȥ��եȥ������ξ����
-�ݻ����Ƥ��ޤ���
+このレコードはホストのハードウェアとソフトウェアの情報を
+保持しています。
 
-[[m:Resolv::DNS#getresource]] �� HINFO �쥳���ɤ�����������
-[[c:Resolv::DNS::Resource::IN::HINFO]] ��Ȥ��٤��Ǥ���
+[[m:Resolv::DNS#getresource]] で HINFO レコードを得たい場合は
+[[c:Resolv::DNS::Resource::IN::HINFO]] を使うべきです。

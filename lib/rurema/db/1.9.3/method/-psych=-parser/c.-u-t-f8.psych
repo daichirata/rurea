@@ -2,8 +2,8 @@ names=UTF8
 visibility=public
 kind=defined
 
---- UTF8
-@todo
+--- UTF8 -> Integer
+UTF-8 エンコーディングを表します。
 
-UTF-8 Encoding
+@see [[m:Psych::Handler#start_stream]]
 

@@ -4,13 +4,13 @@ kind=defined
 
 --- system(command, *opts) -> Shell::SystemCommand
 
-command ¤ò¼Â¹Ô¤¹¤ë.
+command ã‚’å®Ÿè¡Œã™ã‚‹.
 
-@param command ¼Â¹Ô¤¹¤ë¥³¥Ş¥ó¥É¤Î¥Ñ¥¹¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param command å®Ÿè¡Œã™ã‚‹ã‚³ãƒãƒ³ãƒ‰ã®ãƒ‘ã‚¹ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param opts command ¤Î¥ª¥×¥·¥ç¥ó¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£Ê£¿ô²Ä¡£
+@param opts command ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚è¤‡æ•°å¯ã€‚
 
-»ÈÍÑÎã:
+ä½¿ç”¨ä¾‹:
 
   require 'shell'
   Shell.verbose = false

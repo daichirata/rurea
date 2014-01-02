@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- inspect -> String
-ASCII �ߴ��Ǥ��륨�󥳡��ǥ��󥰤�ʸ����Ǽ��Ȥξ�����֤��ޤ���
+ASCII 互換であるエンコーディングの文字列で自身の情報を返します。
 

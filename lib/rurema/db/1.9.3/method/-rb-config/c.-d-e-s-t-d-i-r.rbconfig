@@ -4,6 +4,6 @@ kind=defined
 
 --- DESTDIR -> String
 
-make install ����Ȥ��˻��ꤷ�� DESTDIR ���֤��ޤ���
-����������ѥ��뤷���Ȥ��ʤɤ��ͤ����åȤ���Ƥ��ޤ���
+make install するときに指定した DESTDIR を返します。
+クロスコンパイルしたときなどは値がセットされています。
 

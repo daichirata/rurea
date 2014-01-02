@@ -4,7 +4,7 @@ kind=defined
 
 --- loaded_from -> String
 
-¤³¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î gemspec ¤¬¤¢¤ë¾ì½ê¤òÊÖ¤·¤Þ¤¹¡£
+ã“ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã® gemspec ãŒã‚ã‚‹å ´æ‰€ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤³¤ÎÂ°À­¤Ï±ÊÂ³²½¤µ¤ì¤Þ¤»¤ó¡£
+ã“ã®å±žæ€§ã¯æ°¸ç¶šåŒ–ã•ã‚Œã¾ã›ã‚“ã€‚
 

@@ -6,4 +6,4 @@ library=webrick.httpservlet.erbhandler
 aliases=
 aliasof=
 
-ERB ¤ò°·¤¦¤¿¤á¤Î¥µ¡¼¥Ö¥ì¥Ã¥È¤Ç¤¹¡£
+ERB ã‚’æ‰±ã†ãŸã‚ã®ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆã§ã™ã€‚

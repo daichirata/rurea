@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- timeout -> Integer
-���å���󥿥��ॢ���Ȥλ���(�ÿ�)���������֤��ޤ���
+セッションタイムアウトの時間(秒数)を整数で返します。
 
-�ǥե�����ͤ� [[m:OpenSSL::SSL::SSLContext#timeout=]] 
-�����ꤵ��ޤ���
+デフォルト値は [[m:OpenSSL::SSL::SSLContext#timeout=]] 
+で設定されます。
 
 @see [[m:OpenSSL::SSL::Session#time]],
      [[m:OpenSSL::SSL::Session#timeout=]]

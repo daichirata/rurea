@@ -6,4 +6,4 @@ library=syck.basenode
 aliases=
 aliasof=
 
-YAML �ΥΡ��ɤ򸡺�����Τ���Υ⥸�塼��Ǥ���
+YAML のノードを検索するのためのモジュールです。

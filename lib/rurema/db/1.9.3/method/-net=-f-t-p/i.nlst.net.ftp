@@ -4,14 +4,14 @@ kind=defined
 
 --- nlst(dir = nil) -> [String]
 
-dir �ǻ��ꤷ���ǥ��쥯�ȥ�Υե������������֤��ޤ���
+dir で指定したディレクトリのファイルの配列を返します。
 
-dir ���ά������祫���ȥǥ��쥯�ȥ꤬���ꤵ��ޤ���
+dir を省略した場合カレントディレクトリが指定されます。
 
-@param dir �ǥ��쥯�ȥ��ʸ����ǻ��ꤷ�ޤ���
+@param dir ディレクトリを文字列で指定します。
 
-@raise Net::FTPTempError ���������ɤ� 4yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPPermError ���������ɤ� 5yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPProtoError ���������ɤ� RFC Ū���������ʤ�����ȯ�����ޤ���
-@raise Net::FTPReplyError ���������ɤ���ξ��ʳ����������ʤ����(1xy, 3xy�����٤��Ǥʤ��Ȥ����褿���ʤ�)��ȯ�����ޤ���
+@raise Net::FTPTempError 応答コードが 4yz のときに発生します。
+@raise Net::FTPPermError 応答コードが 5yz のときに発生します。
+@raise Net::FTPProtoError 応答コードが RFC 的に正しくない場合に発生します。
+@raise Net::FTPReplyError 応答コードが上の場合以外で正しくない場合(1xy, 3xyが来るべきでないときに来た場合など)に発生します。
 

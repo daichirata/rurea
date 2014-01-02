@@ -16,9 +16,11 @@ require 'uri'
 require 'rbconfig'
 require 'optparse'
 require 'nkf'
+require 'yaml'
 
 module BitClust
 
+  # Body of bin/refe.
   class Searcher
 
     include NameUtils
@@ -33,34 +35,34 @@ module BitClust
       @target_type = nil
       @listen_url = nil
       @foreground = false
-      @parser = OptionParser.new {|opt|
-        opt.banner = "Usage: #{@name} <pattern>"
+      @parser = OptionParser.new {|parser|
+        parser.banner = "Usage: #{@name} <pattern>"
         unless cmd == 'bitclust'
-          opt.on('-d', '--database=URL', "Database location (default: #{dblocation_name()})") {|loc|
+          parser.on('-d', '--database=URL', "Database location (default: #{dblocation_name()})") {|loc|
             url = (/:/ =~ loc) ? loc : "file://#{File.expand_path(loc)}"
             @dblocation = URI.parse(url)
           }
-          opt.on('--server=URL', 'Spawns BitClust database server and listen URL.  Requires --database option with local path.') {|url|
+          parser.on('--server=URL', 'Spawns BitClust database server and listen URL.  Requires --database option with local path.') {|url|
             require 'bitclust/server'   # require here for speed
             @listen_url = url
           }
-          opt.on('--foreground', 'Do not become daemon (for debug)') {
+          parser.on('--foreground', 'Do not become daemon (for debug)') {
             @foreground = true
           }
         end
-        opt.on('-a', '--all', 'Prints descriptions for all matched entries.') {
+        parser.on('-a', '--all', 'Prints descriptions for all matched entries.') {
           @describe_all = true
         }
-        opt.on('-l', '--line', 'Prints one entry in one line.') {
+        parser.on('-l', '--line', 'Prints one entry in one line.') {
           @linep = true
         }
-        opt.on('-e', '--encoding=ENCODING', 'Select encoding.') {|enc|
+        parser.on('-e', '--encoding=ENCODING', 'Select encoding.') {|enc|
           @encoding = enc
         }
-        opt.on('--class', 'Search class or module.') {
+        parser.on('--class', 'Search class or module.') {
           @target_type = :class
         }
-        opt.on('--version', 'Prints version and quit.') {
+        parser.on('--version', 'Prints version and quit.') {
           if cmd == 'bitclust'
             puts "BitClust -- Next generation reference manual interface"
             exit 1
@@ -69,8 +71,8 @@ module BitClust
             exit 1
           end
         }
-        opt.on('--help', 'Prints this message and quit.') {
-          puts opt.help
+        parser.on('--help', 'Prints this message and quit.') {
+          puts parser.help
           exit 0
         }
       }
@@ -87,7 +89,8 @@ module BitClust
       end
     end
 
-    def exec(db, argv)
+    def exec(argv, options = {})
+      db = nil
       if @listen_url
         spawn_server db
       else
@@ -193,6 +196,11 @@ module BitClust
       datadir = ::RbConfig::CONFIG['datadir']
       [ "#{datadir}/refe2", "#{datadir}/bitclust" ].each do |path|
         return path if MethodDatabase.datadir?(path)
+      end
+      config_path = Pathname(ENV['HOME']) + ".bitclust" + "config"
+      if config_path.exist?
+        config = YAML.load_file(config_path)
+        return "#{config[:database_prefix]}-#{config[:default_version]}"
       end
       nil
     end
@@ -319,7 +327,7 @@ module BitClust
       @encoding = opts[:encoding]
       @database = nil
     end
-    
+
     attr_accessor :database
 
     def show_class(cs)
@@ -414,7 +422,7 @@ module BitClust
         describe_class(c.aliasof)
         return
       end
-      
+
       unless c.library.name == '_builtin'
         puts "require '#{c.library.name}'"
         puts
@@ -456,7 +464,7 @@ module BitClust
           puts name
         end
       end
-        
+
       puts @compiler.compile(rec.entry.source.strip)
       puts
     end

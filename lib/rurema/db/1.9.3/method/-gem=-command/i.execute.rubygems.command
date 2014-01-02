@@ -4,8 +4,8 @@ kind=defined
 
 --- execute -> ()
 
-���Υ᥽�åɤϥ��֥��饹�Ǻ��������ޤ���
-���ޥ�ɤ�¹Ԥ��ޤ���
+このメソッドはサブクラスで再定義されます。
+コマンドを実行します。
 
-@raise RuntimeError ���Υ᥽�åɤ����֥��饹�Ǻ��������Ƥ��ʤ�����ȯ�����ޤ���
+@raise RuntimeError このメソッドがサブクラスで再定義されていない場合に発生します。
 

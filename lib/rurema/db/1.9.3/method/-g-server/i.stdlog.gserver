@@ -4,5 +4,5 @@ kind=defined
 
 --- stdlog -> IO
 
-¥í¥°¤ò½ÐÎÏ¤¹¤ëÀè¤Î [[c:IO]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£¥Ç¥Õ¥©¥ë¥È¤Ï [[m:$stderr]] ¤Ç¤¹¡£
+ãƒ­ã‚°ã‚’å‡ºåŠ›ã™ã‚‹å…ˆã® [[c:IO]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ [[m:$stderr]] ã§ã™ã€‚
 

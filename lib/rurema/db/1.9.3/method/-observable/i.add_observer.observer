@@ -2,18 +2,20 @@ names=add_observer
 visibility=public
 kind=defined
 
---- add_observer(observer) -> Array
+--- add_observer(observer, func=:update) -> Array
 
-���֥����Ф���Ͽ���ޤ���
+オブザーバを登録します。
 
-���֥����Ф���Ͽ������Ͽ����Ƥ��륪�֥����ФΥꥹ�Ȥ��֤��ޤ���
+オブザーバを登録し、登録されているオブザーバのリストを返します。
 
-���֥����Ф� update �᥽�åɤ������Ƥ���ɬ�פ�����ޤ���
+オブザーバは update メソッドを備えている必要があります。
 
-observer �� update �᥽�åɤ�����ʤ��Ȥ���
-�㳰 [[c:NoMethodError]] ��ȯ�����ޤ���
+observer が update メソッドを持たないときは
+例外 [[c:NoMethodError]] が発生します。
 
-@param observer ���������Τ�����륪�֥�����
+func を指定することで update 以外のメソッドを通知に用いることができます。
 
-@raise NoMethodError update�᥽�åɤ�����ʤ����֥������Ȥ򥪥֥����Ф˻��ꤷ������ȯ�����ޤ���
+@param observer 更新の通知を受けるオブザーバ
+@param func 更新の通知をするメソッド
+@raise NoMethodError updateメソッドを持たないオブジェクトをオブザーバに指定した場合に発生します。
 

@@ -3,6 +3,7 @@ classes=Gem=SSL
 methods=Gem/s.ssl_available=3f.rubygems.gem_openssl,Gem/s.ensure_ssl_available.rubygems.gem_openssl
 sublibraries=
 is_sublibrary=true
+category=
 
-OpenSSL ╓╛╔╓╔С╔╧╔х║╪╔К╓╣╓Л╓ф╓╓╓й╓╓╔╥╔╧╔ф╔Ю╓╛╓╒╓К╓╚╓Б╓╥╓Л╓й╓╓╓н╓г║╒
-OpenSSL ╓╛╩х╓╗╓К╓╚╓и╓╕╓╚╓РЁнг╖╓╧╓К╓©╓А╓н╔И╔╓╔ж╔И╔Й╓г╓╧║ё
+OpenSSL Ц│▄Ц┌╓Ц┐ЁЦ┌╧Ц┐┬Ц┐╪Ц┐╚Ц│∙Ц┌▄Ц│╕Ц│└Ц│╙Ц│└Ц┌╥Ц┌╧Ц┐├Ц┐═Ц│▄Ц│┌Ц┌▀Ц│▀Ц┌┌Ц│≈Ц┌▄Ц│╙Ц│└Ц│╝Ц│╖Ц─│
+OpenSSL Ц│▄Д╫©Ц│┬Ц┌▀Ц│▀Ц│╘Ц│├Ц│▀Ц┌▓Г╒╨Х╙█Ц│≥Ц┌▀Ц│÷Ц┌│Ц│╝Ц┐╘Ц┌╓Ц┐√Ц┐╘Ц┐╙Ц│╖Ц│≥Ц─┌

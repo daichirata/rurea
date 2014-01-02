@@ -4,15 +4,15 @@ kind=defined
 
 --- <=>(other) -> -1 | 0 | 1 | nil
 
-self ¤È other ¤òÈæ³Ó¤·¤Æ¡¢self ¤¬Âç¤­¤¤»þ¤Ë 1¡¢Åù¤·¤¤»þ¤Ë 0¡¢¾®¤µ¤¤»þ¤Ë
--1 ¤òÊÖ¤·¤Þ¤¹¡£
-Èæ³Ó¤Ç¤­¤Ê¤¤¾ì¹ç¤Ïnil¤òÊÖ¤·¤Þ¤¹¡£
+self ã¨ other ã‚’æ¯”è¼ƒã—ã¦ã€self ãŒå¤§ãã„æ™‚ã« 1ã€ç­‰ã—ã„æ™‚ã« 0ã€å°ã•ã„æ™‚ã«
+-1 ã‚’è¿”ã—ã¾ã™ã€‚
+æ¯”è¼ƒã§ããªã„å ´åˆã¯nilã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ÈÈæ³Ó¤¹¤ë¿ôÃÍ
+@param other è‡ªèº«ã¨æ¯”è¼ƒã™ã‚‹æ•°å€¤
 
-@return      -1 ¤« 0 ¤« 1 ¤« nil ¤òÊÖ¤·¤Þ¤¹¡£
+@return      -1 ã‹ 0 ã‹ 1 ã‹ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Rational(2, 3)  <=> Rational(2, 3)  # => 0
   Rational(5)     <=> 5               # => 0

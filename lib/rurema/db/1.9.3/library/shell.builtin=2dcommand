@@ -3,5 +3,6 @@ classes=Shell=BuiltInCommand,Shell=AppendFile,Shell=AppendIO,Shell=Cat,Shell=Con
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:Shell]] ¤Ç»ÈÍÑ¤¹¤ë¥Ó¥ë¥È¥¤¥ó¥³¥Ş¥ó¥É¤òÄêµÁ¤·¤Æ¤¤¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:Shell]] ã§ä½¿ç”¨ã™ã‚‹ãƒ“ãƒ«ãƒˆã‚¤ãƒ³ã‚³ãƒãƒ³ãƒ‰ã‚’å®šç¾©ã—ã¦ã„ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

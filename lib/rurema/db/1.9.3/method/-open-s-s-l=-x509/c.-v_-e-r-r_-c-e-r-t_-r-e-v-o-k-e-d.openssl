@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- V_ERR_CERT_REVOKED -> Integer
-╬злю╫Я╓╛ CRL ╓к╓Х╓ц╓ф╪╨╦З╓╣╓Л╓И╓Л╓ф╓╓╓К╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+Х╗╪Ф≤▌Ф⌡╦Ц│▄ CRL Ц│╚Ц┌┬Ц│ёЦ│╕Е╓╠Е┼╧Ц│∙Ц┌▄Ц┌┴Ц┌▄Ц│╕Ц│└Ц┌▀Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::X509::Store#error]] ╓Д
-[[m:OpenSSL::X509::StoreContext#error]] ╓н╔╗╔И║╪╔Ё║╪╔и╓х╓╥╓ф
-╩х╓О╓Л╓ч╓╧║ё
+[[m:OpenSSL::X509::Store#error]] Ц┌└
+[[m:OpenSSL::X509::StoreContext#error]] Ц│╝Ц┌╗Ц┐╘Ц┐╪Ц┌ЁЦ┐╪Ц┐┴Ц│╗Ц│≈Ц│╕
+Д╫©Ц┌▐Ц┌▄Ц│╬Ц│≥Ц─┌
 
 @see [[c:OpenSSL::X509::CRL]]
 

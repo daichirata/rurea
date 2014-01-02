@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- new(path, initheader = nil) -> Net::HTTPRequest
-HTTP �ꥯ�����ȥ��֥������Ȥ��������ޤ���
+HTTP リクエストオブジェクトを生成します。
 
-initheader �ǥꥯ�����ȥإå�����ꤹ�뤳�Ȥ��Ǥ��ޤ���
-{�إå��ե������̾(ʸ����)=>�������(ʸ����)} �Ȥ���
-[[c:Hash]] ���Ѥ��ޤ���
+initheader でリクエストヘッダを指定することができます。
+{ヘッダフィールド名(文字列)=>その中身(文字列)} という
+[[c:Hash]] を用います。
 
-@param path �ꥯ�����Ȥ��� path ��ʸ�����Ϳ���ޤ���
-@param initheader �ꥯ�����ȥإå���ϥå���ǻ��ꤷ�ޤ���
+@param path リクエストする path を文字列で与えます。
+@param initheader リクエストヘッダをハッシュで指定します。
 
 
 

@@ -6,4 +6,4 @@ library=shell.error
 aliases=
 aliasof=
 
-���ޥ�ɤ��������ʤ��Ȥ���ȯ�������㳰�Ǥ���
+コマンドを定義出来ないときに発生する例外です。

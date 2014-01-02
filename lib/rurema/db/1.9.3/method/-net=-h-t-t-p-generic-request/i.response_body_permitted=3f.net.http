@@ -4,7 +4,7 @@ kind=defined
 
 --- response_body_permitted? -> bool
 
-�����Ф���Υ쥹�ݥ󥹤˥���ƥ��ƥ��ܥǥ���ޤळ�Ȥ�������Ƥ���
-HTTP �᥽�å� (GET, POST �ʤ�)�ξ�翿���֤��ޤ���
+サーバからのレスポンスにエンティティボディを含むことが許されている
+HTTP メソッド (GET, POST など)の場合真を返します。
 
 

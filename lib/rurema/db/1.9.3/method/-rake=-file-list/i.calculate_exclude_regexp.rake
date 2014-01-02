@@ -4,5 +4,5 @@ kind=defined
 
 --- calculate_exclude_regexp
 
-�����ꥹ�Ȥ˴ޤޤ��ѥ������Ŭ�ڤ��Ѵ����ޤ���
+除外リストに含まれるパターンを適切に変換します。
 

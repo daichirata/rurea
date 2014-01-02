@@ -6,6 +6,6 @@ library=net.imap
 aliases=
 aliasof=
 
-�ޥ���ѡ��Ȥʥ�å�������ɽ�����饹�Ǥ���
+マルチパートなメッセージを表すクラスです。
 
-�ܤ����� MIME ��RFC([[RFC:2045]])�򻲾Ȥ��Ƥ���������
+詳しくは MIME のRFC([[RFC:2045]])を参照してください。

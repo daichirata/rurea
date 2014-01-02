@@ -4,12 +4,12 @@ kind=defined
 
 --- listen(address, port) -> [TCPServer]
 
-Í¿¤¨¤é¤ì¤¿¥¢¥É¥ì¥¹¤È¥İ¡¼¥È¤Ç [[c:TCPServer]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·
-listener ¤È¤·¤Æ´ÉÍı¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸã‚¢ãƒ‰ãƒ¬ã‚¹ã¨ãƒãƒ¼ãƒˆã§ [[c:TCPServer]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—
+listener ã¨ã—ã¦ç®¡ç†ã—ã¾ã™ã€‚
 
-@param address ¥¢¥É¥ì¥¹¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param address ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param port listen ¤¹¤ë¥İ¡¼¥È¤òÀ°¿ô¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param port listen ã™ã‚‹ãƒãƒ¼ãƒˆã‚’æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:WEBrick::GenericServer#listeners]], [[m:TCPServer#listen]]
 

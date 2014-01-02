@@ -3,10 +3,11 @@ classes=Digest=SHA256,Digest=SHA384,Digest=SHA512,Digest=SHA2
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-FIPS PUB 180-2¤Ëµ­½Ò¤µ¤ì¤Æ¤¤¤ëNIST (the US' National Institute of
-Standards and Technology) ¤Î°Ê²¼¤Î¥¢¥ë¥´¥ê¥º¥à¤ò¼ÂÁõ¤¹¤ë¥¯¥é¥¹¤òÄó¶¡¤¹
-¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+FIPS PUB 180-2ã«è¨˜è¿°ã•ã‚Œã¦ã„ã‚‹NIST (the US' National Institute of
+Standards and Technology) ã®ä»¥ä¸‹ã®ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã‚’å®Ÿè£…ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’æä¾›ã™
+ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
   * SHA-256 Secure Hash Algorithm
   * SHA-384 Secure Hash Algorithm

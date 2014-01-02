@@ -4,9 +4,9 @@ kind=added
 
 --- $IGNORECASE -> bool
 
-��侩(obsolete): �����ѿ��Ͼ���ΥС������Ǻ�������ͽ��Ǥ���
+非推奨(obsolete): この変数は将来のバージョンで削除される予定です。
 
-[[m:$=]] ����̾
+[[m:$=]] の別名
 
   require "English"
 

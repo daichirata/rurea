@@ -4,6 +4,6 @@ kind=defined
 
 --- UTCTIME -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-UTCTIME ¤Î¥¿¥°ÈÖ¹æ 23 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+UTCTIME ã®ã‚¿ã‚°ç•ªå· 23 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

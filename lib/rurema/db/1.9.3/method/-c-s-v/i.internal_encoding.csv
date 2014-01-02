@@ -4,5 +4,5 @@ kind=defined
 
 --- internal_encoding   -> Encoding | nil
 
-[[m:IO#internal_encoding]] ¤Ë°Ñ¾ù¤·¤Ş¤¹¡£
+[[m:IO#internal_encoding]] ã«å§”è­²ã—ã¾ã™ã€‚
 

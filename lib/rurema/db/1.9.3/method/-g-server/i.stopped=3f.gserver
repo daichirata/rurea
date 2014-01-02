@@ -4,5 +4,5 @@ kind=defined
 
 --- stopped? -> bool
 
-���Ȥ���ߤ��Ƥ���ʤ鿿���֤��ޤ���
+自身が停止しているなら真を返します。
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- mark -> Psych::Parser::Mark
-@todo
 
-Returns a Psych::Parser::Mark object that contains line, column, and index
-information.
+パーサが現在読み込んでいる入力上の位置を [[c:Psych::Parser::Mark]] オブジェクト
+で返します。
+
 

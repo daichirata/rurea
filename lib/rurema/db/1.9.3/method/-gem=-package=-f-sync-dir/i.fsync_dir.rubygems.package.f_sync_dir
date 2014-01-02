@@ -4,5 +4,5 @@ kind=defined
 
 --- fsync_dir(dirname) -> ()
 
-�ǥ�������Ʊ���򤷤ޤ���
+ディスクの同期をします。
 

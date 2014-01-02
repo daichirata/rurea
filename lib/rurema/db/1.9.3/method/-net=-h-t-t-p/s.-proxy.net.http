@@ -4,28 +4,28 @@ kind=defined
 
 --- Proxy(address, port = 80) -> Class
 
-Proxy ·ĞÍ³¤Ç http ¥µ¡¼¥Ğ¤ËÀÜÂ³¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤òºîÀ®¤·ÊÖ¤·¤Ş¤¹¡£
+Proxy çµŒç”±ã§ http ã‚µãƒ¼ãƒã«æ¥ç¶šã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã‚’ä½œæˆã—è¿”ã—ã¾ã™ã€‚
 
-¤³¤Î¥¯¥é¥¹¤Ï Net::HTTP ¤ò·Ñ¾µ¤·¤Æ¤¤¤ë¤Î¤Ç Net::HTTP ¤ÈÁ´¤¯
-Æ±¤¸¤è¤¦¤Ë»È¤¨¤Ş¤¹¡£»ØÄê¤µ¤ì¤¿¥×¥í¥¯¥·¤ò¾ï¤Ë·ĞÍ³¤·¤Æ http ¥µ¡¼¥Ğ
-¤ËÀÜÂ³¤·¤Ş¤¹¡£
+ã“ã®ã‚¯ãƒ©ã‚¹ã¯ Net::HTTP ã‚’ç¶™æ‰¿ã—ã¦ã„ã‚‹ã®ã§ Net::HTTP ã¨å…¨ã
+åŒã˜ã‚ˆã†ã«ä½¿ãˆã¾ã™ã€‚æŒ‡å®šã•ã‚ŒãŸãƒ—ãƒ­ã‚¯ã‚·ã‚’å¸¸ã«çµŒç”±ã—ã¦ http ã‚µãƒ¼ãƒ
+ã«æ¥ç¶šã—ã¾ã™ã€‚
 
-address ¤¬ nil ¤Î¤È¤­¤Ï Net::HTTP ¥¯¥é¥¹¤ò¤½¤Î¤Ş¤ŞÊÖ¤·¤Ş¤¹¡£
+address ãŒ nil ã®ã¨ãã¯ Net::HTTP ã‚¯ãƒ©ã‚¹ã‚’ãã®ã¾ã¾è¿”ã—ã¾ã™ã€‚
 
-Îã1: [[m:Net::HTTP.new]] ¤ò»È¤¦
+ä¾‹1: [[m:Net::HTTP.new]] ã‚’ä½¿ã†
   require 'net/http'
   proxy_class = Net::HTTP::Proxy('proxy.example.com', 8080)
   http = proxy_class.new('www.example.org')
   http.start {|h|
-    h.get('/ja/') # proxy.example.com ·ĞÍ³¤ÇÀÜÂ³¤·¤Ş¤¹¡£
+    h.get('/ja/') # proxy.example.com çµŒç”±ã§æ¥ç¶šã—ã¾ã™ã€‚
   }
-Îã2: [[m:Net::HTTP.start]] ¤ò»È¤¦
+ä¾‹2: [[m:Net::HTTP.start]] ã‚’ä½¿ã†
   require 'net/http'
   proxy_class = Net::HTTP::Proxy('proxy.example.com', 8080)
   proxy_class.start('www.example.org') {|h|
-    h.get('/ja/') # proxy.example.com ·ĞÍ³¤ÇÀÜÂ³¤·¤Ş¤¹¡£
+    h.get('/ja/') # proxy.example.com çµŒç”±ã§æ¥ç¶šã—ã¾ã™ã€‚
   }
 
-@param address ¥×¥í¥¯¥·¤Î¥Û¥¹¥ÈÌ¾¤òÊ¸»úÎó¤ÇÍ¿¤¨¤Ş¤¹¡£
-@param port ¥×¥í¥¯¥·¤Î¥İ¡¼¥ÈÈÖ¹æ¤òÍ¿¤¨¤Ş¤¹¡£
+@param address ãƒ—ãƒ­ã‚¯ã‚·ã®ãƒ›ã‚¹ãƒˆåã‚’æ–‡å­—åˆ—ã§ä¸ãˆã¾ã™ã€‚
+@param port ãƒ—ãƒ­ã‚¯ã‚·ã®ãƒãƒ¼ãƒˆç•ªå·ã‚’ä¸ãˆã¾ã™ã€‚
 

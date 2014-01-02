@@ -3,6 +3,7 @@ classes=Syck=YPath
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-YAML �ɥ�����Ȥ�������Υǡ����򸡺����뵡ǽ���󶡤��륵�֥饤�֥��
-�Ǥ���
+YAML ドキュメントから特定のデータを検索する機能を提供するサブライブラリ
+です。

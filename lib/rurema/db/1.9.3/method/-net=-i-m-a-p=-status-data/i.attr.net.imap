@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- attr -> { String => Integer }
-STATUS ���������Ƥ�ϥå�����֤��ޤ���
+STATUS 応答の内容をハッシュで返します。
 
-�ϥå���Υ�����
+ハッシュのキーは
 "MESSAGES", "RECENT", "UIDNEXT", "UIDVALIDITY", "UNSEEN"
-�ʤɤ��Ȥ��ޤ���
+などが使われます。
 
-�ܤ����� [[RFC:2060]] �� 6.3.10��7.2.4 �򸫤Ƥ���������
+詳しくは [[RFC:2060]] の 6.3.10、7.2.4 を見てください。
 

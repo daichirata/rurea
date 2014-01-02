@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- dh_compute_key(pubkey) -> String
-��ʬ����̩�������θ��������� ECDH �ˤ�äƸ�ʸ�����׻������֤��ޤ���
+自分の秘密鍵と相手の公開鍵から ECDH によって鍵文字列を計算し、返します。
 
-���θ������� [[c:OpenSSL::PKey::EC::Point]] ���֥������ȤǤ���ɬ�פ�����ޤ���
+相手の公開鍵は [[c:OpenSSL::PKey::EC::Point]] オブジェクトである必要があります。
 
-@param pubkey ���θ�����
-@raise OpenSSL::PKey::ECError ���򴹤˼��Ԥ�������ȯ�����ޤ�
+@param pubkey 相手の公開鍵
+@raise OpenSSL::PKey::ECError 鍵交換に失敗した場合に発生します
 

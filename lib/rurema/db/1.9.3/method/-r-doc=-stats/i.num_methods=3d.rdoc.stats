@@ -4,6 +4,6 @@ kind=defined
 
 --- num_methods=(val)
 
-���Ϥ����᥽�åɤο�����ꤷ�ޤ���
+解析したメソッドの数を指定します。
 
-@param val ���ͤ���ꤷ�ޤ���
+@param val 数値を指定します。

@@ -4,9 +4,9 @@ kind=defined
 
 --- [](dir) -> WEBrick::HTTPServlet::AbstractServlet
 
-Ϳ����줿�ǥ��쥯�ȥ���б����륵���֥�åȤ��֤��ޤ���
+与えられたディレクトリに対応するサーブレットを返します。
 
-@param dir �ǥ��쥯�ȥ����ꤷ�ޤ���
+@param dir ディレクトリを指定します。
 
-@return [[c:WEBrick::HTTPServlet::AbstractServlet]] �Υ��֥��饹�Υ��󥿥󥹤��֤��ޤ���
+@return [[c:WEBrick::HTTPServlet::AbstractServlet]] のサブクラスのインタンスを返します。
 

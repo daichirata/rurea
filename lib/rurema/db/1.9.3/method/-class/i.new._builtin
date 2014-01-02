@@ -4,13 +4,13 @@ kind=defined
 
 --- new(*args, &block)    -> object
 
-���ȤΥ��󥹥��󥹤����������֤��ޤ���
-���Υ᥽�åɤΰ����ϥ֥��å�������ޤ� [[m:Object#initialize]] ���Ϥ���ޤ���
+自身のインスタンスを生成して返します。
+このメソッドの引数はブロック引数も含め [[m:Object#initialize]] に渡されます。
 
-new �� [[m:Class#allocate]] �ǥ��󥹥��󥹤���������
-[[m:Object#initialize]] �ǽ������Ԥ��ޤ���
+new は [[m:Class#allocate]] でインスタンスを生成し、
+[[m:Object#initialize]] で初期化を行います。
 
-@param args [[m:Object#initialize]] ���Ϥ�����������ꤷ�ޤ���
+@param args [[m:Object#initialize]] に渡される引数を指定します。
 
-@param block [[m:Object#initialize]] ���Ϥ����֥��å�����ꤷ�ޤ���
+@param block [[m:Object#initialize]] に渡されるブロックを指定します。
 

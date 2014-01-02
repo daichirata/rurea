@@ -3,10 +3,11 @@ classes=
 methods=
 sublibraries=
 is_sublibrary=false
+category=
 
-[[lib:rubygems]] ¤ò [[m:Kernel.#require]] ¤¹¤ë¤À¤±¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[lib:rubygems]] ã‚’ [[m:Kernel.#require]] ã™ã‚‹ã ã‘ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-¥³¥Ş¥ó¥É¥é¥¤¥ó¤«¤é»ÈÍÑ¤¹¤ë¤È°Ê²¼¤Î¤è¤¦¤Ë¤Ç¤­¤Ş¤¹¡£
+ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã‹ã‚‰ä½¿ç”¨ã™ã‚‹ã¨ä»¥ä¸‹ã®ã‚ˆã†ã«ã§ãã¾ã™ã€‚
 
   $ ruby -rubygems -e ''
 

@@ -6,4 +6,4 @@ library=drb.extservm
 aliases=
 aliasof=
 
-
+[[c:DRb::ExtServ]] で作られたサービスを管理するクラスです。

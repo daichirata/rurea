@@ -6,21 +6,21 @@ library=openssl
 aliases=
 aliasof=
 
-¸ø³«¸°°Å¹æ¤Î¤¿¤á¤ÎÃê¾İ¥¯¥é¥¹¤Ç¤¹¡£
+å…¬é–‹éµæš—å·ã®ãŸã‚ã®æŠ½è±¡ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-°Ê²¼¤Î¥µ¥Ö¥¯¥é¥¹¤ò»ı¤Á¤Ş¤¹¡£
+ä»¥ä¸‹ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã‚’æŒã¡ã¾ã™ã€‚
   * [[c:OpenSSL::PKey::RSA]]
   * [[c:OpenSSL::PKey::DSA]]
   * [[c:OpenSSL::PKey::DH]]
   * [[c:OpenSSL::PKey::EC]]
 
-Îã:
+ä¾‹:
 
   require "openssl"
-  # ½ğÌ¾ÍÑ¤Î¸°¤ò¿·µ¬ºîÀ®
+  # ç½²åç”¨ã®éµã‚’æ–°è¦ä½œæˆ
   dsa512 = OpenSSL::PKey::DSA.new(512)
   data = 'hoge'
-  # ½ğÌ¾
+  # ç½²å
   sign = dsa512.sign("dss1", data)
-  # ½ğÌ¾¤Î¸¡¾Ú
+  # ç½²åã®æ¤œè¨¼
   p dsa512.verify(dss1, sign, data)

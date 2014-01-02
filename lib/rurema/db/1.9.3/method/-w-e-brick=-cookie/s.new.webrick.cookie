@@ -4,10 +4,10 @@ kind=defined
 
 --- new(name, value)    -> WEBrick::Cookie
 
-������ [[c:WEBrick::Cookie]] ���֥������Ȥ����������֤��ޤ���
-name �˥��å�����̾����value �˥��å������ݻ������ͤ�Ϳ���롣
+新しい [[c:WEBrick::Cookie]] オブジェクトを生成して返します。
+name にクッキーの名前を、value にクッキーで保持する値を与える。
 
-@param name Cookie ��̾����ʸ����ǻ��ꤷ�ޤ���
+@param name Cookie の名前を文字列で指定します。
 
-@param value Cookie ���ͤ�ʸ����ǻ��ꤷ�ޤ���
+@param value Cookie の値を文字列で指定します。
 

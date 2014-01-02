@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- REVOKED_STATUS_REMOVEFROMCRL -> Integer
-[[m:OpenSSL::OCSP::BasicResponse#status]] �μ�����ͳ�����ɤǡ�
-CRL ����κ�����̣���ޤ���
+[[m:OpenSSL::OCSP::BasicResponse#status]] の失効理由コードで、
+CRL からの削除を意味します。
 
-�ܤ����� [[RFC:3280]] �� X.509 �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:3280]] や X.509 を参照してください。
 
 

@@ -3,5 +3,6 @@ classes=Tk=Img
 methods=
 sublibraries=tkextlib.tkimg.setup,tkextlib.tkimg.pixmap
 is_sublibrary=true
+category=
 
 

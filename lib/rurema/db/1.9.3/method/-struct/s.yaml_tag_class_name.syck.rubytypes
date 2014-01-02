@@ -4,9 +4,9 @@ kind=added
 
 --- yaml_tag_class_name -> String
 
-���ȤΥ��饹̾���� Struct:: ��Τ�����ʸ������֤��ޤ���
+自身のクラス名から Struct:: をのぞいた文字列を返します。
 
-@return ���ȤΥ��饹̾���� Struct::��Τ�����ʸ����
+@return 自身のクラス名から Struct::をのぞいた文字列
 
   require 'yaml'
   

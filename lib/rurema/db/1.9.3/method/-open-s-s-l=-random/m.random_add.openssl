@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- random_add(str, entropy) -> self
-���������˥���ȥ��ԡ����ɲä��ޤ���
+乱数生成器にエントロピーを追加します。
 
-entropy �ˤ� str �����äƤ��륨��ȥ��ԡ���ͽ¬��(�β���)��
-�Х���ñ�̤��Ϥ��ޤ���
+entropy には str が持っているエントロピーの予測値(の下限)を
+バイト単位で渡します。
 
-@param str ͽ¬�Բ�ǽ�����Ƥ�ʸ����
-@param entropy str �����äƤ��륨��ȥ��ԡ���ͽ¬��(�Х���ñ��)����ư��������
+@param str 予測不可能な内容の文字列
+@param entropy str が持っているエントロピーの予測値(バイト単位)の浮動小数点数
 

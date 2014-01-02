@@ -5,17 +5,17 @@ kind=defined
 --- sockaddr_in(port, host) -> String
 --- pack_sockaddr_in(port, host) -> String
 
-���ꤷ�����ɥ쥹��[[ref:lib:socket#pack_string]]
-���֤��ޤ���port �ϡ��ݡ����ֹ��ɽ�� [[c:Fixnum]] ���뤤�ϡ��ݡ���
-�ֹ桢�����ӥ�̾��ɽ��ʸ����Ǥ���
+指定したアドレスを[[ref:lib:socket#pack_string]]
+で返します。port は、ポート番号を表す [[c:Fixnum]] あるいは、ポート
+番号、サービス名を表す文字列です。
 
-@param port  �ݡ����ֹ��ɽ�� [[c:Fixnum]] ���뤤�ϡ��ݡ����ֹ桢�����ӥ�̾��ɽ��ʸ�������ꤷ�ޤ���
+@param port  ポート番号を表す [[c:Fixnum]] あるいは、ポート番号、サービス名を表す文字列を指定します。
 
-@param host �ۥ��Ȥ�ʸ����ǻ��ꤷ�ޤ���
+@param host ホストを文字列で指定します。
 
-@return ���ꤷ�����ɥ쥹���֤��ޤ���
+@return 指定したアドレスを返します。
 
-��:
+例:
 
   require 'socket'
   p Socket.sockaddr_in("echo", "localhost")

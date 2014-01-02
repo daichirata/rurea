@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- seed=(s)
-seed ¤òÀßÄê¤·¤Ş¤¹¡£
+seed ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param s seed(Ê¸»úÎó)
-@raise OpenSSL::PKey::EC::Group::Error seed¤ÎÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@param s seed(æ–‡å­—åˆ—)
+@raise OpenSSL::PKey::EC::Group::Error seedã®è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 @see [[m:OpenSSL::PKey::EC::Group#seed]]
 

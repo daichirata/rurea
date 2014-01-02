@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- symlink(old, new)    -> 0
-[[c:File]] ���饹�ˤ���Ʊ̾�Υ��饹�᥽�åɤ�Ʊ���Ǥ�.
+[[c:File]] クラスにある同名のクラスメソッドと同じです.
 
-@param old �ե�����̾��ɽ��ʸ�������ꤷ�ޤ���
+@param old ファイル名を表す文字列を指定します。
 
-@param new ����ܥ�å���󥯤�ɽ��ʸ�������ꤷ�ޤ���
+@param new シンボリックリンクを表す文字列を指定します。
 
 @see [[m:File.symlink]]
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- OP_CIPHER_SERVER_PREFERENCE -> Integer
-�Ź楹�����Ȥ�����ˤ����ƥ�����¦��ͥ���̤�ͥ�褹��ե饰�Ǥ���
+暗号スイートの選択においてサーバ側の優先順位を優先するフラグです。
 
-[[m:OpenSSL::SSL::SSLContext#options=]] �����Ѥ��ޤ���
+[[m:OpenSSL::SSL::SSLContext#options=]] で利用します。
 
-���Υե饰��Ω�ƤƤ��ʤ����ϥ��饤�����¦��ͥ���̤�ͥ�褷�ޤ���
+このフラグを立てていない場合はクライアント側の優先順位を優先します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- benchmark=(benchmark)
 
-�٥���ޡ�����¹Ԥ��뤫�ɤ������ꤷ�ޤ���
+ベンチマークを実行するかどうか設定します。
 
-@param benchmark ������ꤹ��ȥ٥���ޡ�����¹Ԥ���褦�ˤʤ�ޤ���
+@param benchmark 真を指定するとベンチマークを実行するようになります。
 

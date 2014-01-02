@@ -4,14 +4,14 @@ kind=defined
 
 --- remove_class_variable(name) -> object
 
-�����ǻ��ꤷ�����饹�ѿ�������������Υ��饹�ѿ������ꤵ
-��Ƥ����ͤ��֤��ޤ���
+引数で指定したクラス変数を取り除き、そのクラス変数に設定さ
+れていた値を返します。
 
-@param name [[c:String]] �ޤ��� [[c:Symbol]] ����ꤷ�ޤ���
+@param name [[c:String]] または [[c:Symbol]] を指定します。
 
-@return �����ǻ��ꤵ�줿���饹�ѿ������ꤵ��Ƥ����ͤ��֤��ޤ���
+@return 引数で指定されたクラス変数に設定されていた値を返します。
 
-@raise NameError �����ǻ��ꤵ�줿���饹�ѿ������Υ⥸�塼��䥯�饹���������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NameError 引数で指定されたクラス変数がそのモジュールやクラスに定義されていない場合に発生します。
 
   class Foo
     @@foo = 1

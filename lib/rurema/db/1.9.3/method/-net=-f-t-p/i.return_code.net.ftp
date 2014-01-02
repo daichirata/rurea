@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- return_code -> String
-���Υ᥽�åɤ� obsolete �Ǥ����Ȥ�ʤ��Ǥ���������
+このメソッドは obsolete です。使わないでください。
 
-"\n" ���֤��ޤ���
+"\n" を返します。
 

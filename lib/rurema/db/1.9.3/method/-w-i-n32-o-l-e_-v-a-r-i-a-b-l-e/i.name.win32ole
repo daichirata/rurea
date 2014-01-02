@@ -5,9 +5,9 @@ kind=defined
 --- name -> String
 --- to_s -> String
 
-ÊÑ¿ôÌ¾¤ò¼èÆÀ¤·¤Ş¤¹¡£
+å¤‰æ•°åã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return ÊÑ¿ôÌ¾¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+@return å¤‰æ•°åã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'XlSheetType')
    variables = tobj.variables

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- major_version -> Integer
-·¿¤Î¥á¥¸¥ã¡¼¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¤ò¼èÆÀ¤·¤Þ¤¹¡£
+åž‹ã®ãƒ¡ã‚¸ãƒ£ãƒ¼ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return ·¿¤Î¥á¥¸¥ã¡¼¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¤òÀ°¿ô¤ÇÊÖ¤·¤Þ¤¹¡£
-@raise WIN32OLERuntimeError ·¿Â°À­¤ÎÆÉ¤ß¼è¤ê¤Ë¼ºÇÔ¤¹¤ë¤ÈÄÌÃÎ¤·¤Þ¤¹¡£
+@return åž‹ã®ãƒ¡ã‚¸ãƒ£ãƒ¼ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’æ•´æ•°ã§è¿”ã—ã¾ã™ã€‚
+@raise WIN32OLERuntimeError åž‹å±žæ€§ã®èª­ã¿å–ã‚Šã«å¤±æ•—ã™ã‚‹ã¨é€šçŸ¥ã—ã¾ã™ã€‚
 
    tobj = WIN32OLE_TYPE.new('Microsoft Word 14.0 Object Library', 'Documents')
    p tobj.major_version   # => 8

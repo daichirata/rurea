@@ -6,4 +6,4 @@ library=sync
 aliases=
 aliasof=
 
-���ä����å��⡼�ɤ����åȤ���Ƥ������ȯ�������㳰�Ǥ���
+誤ったロックモードがセットされている場合に発生する例外です。

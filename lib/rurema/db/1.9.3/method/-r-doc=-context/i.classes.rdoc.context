@@ -4,5 +4,5 @@ kind=defined
 
 --- classes -> [RDoc::SingleClass | RDoc::NormalClass]
 
-�ɲä��줿���饹��������֤��ޤ���
+追加されたクラスの配列を返します。
 

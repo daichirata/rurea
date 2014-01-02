@@ -4,16 +4,16 @@ kind=defined
 
 --- alias_command(alias, command, *opts) {...} -> self
 
-���ޥ�ɤ���̾(�����ꥢ��)��������ޤ���
-���ޥ�ɤ�̵�����ϡ�[[m:Shell.def_system_command]] �ʤɤǤ��餫����������ޤ�.
+コマンドの別名(エイリアス)を作成します。
+コマンドが無い場合は、[[m:Shell.def_system_command]] などであらかじめ作成します.
 
-@param alias �����ꥢ����̾����ʸ����ǻ��ꤷ�ޤ�.
+@param alias エイリアスの名前を文字列で指定します.
 
-@param command ���ޥ��̾��ʸ����ǻ��ꤷ�ޤ�.
+@param command コマンド名を文字列で指定します.
 
-@param opts command �ǻ��ꤷ�����ޥ�ɤΥ��ץ�������ꤷ�ޤ�.
+@param opts command で指定したコマンドのオプションを指定します.
 
-������: ls -la | sort -k 5 �Τ褦���㡣
+使用例: ls -la | sort -k 5 のような例。
 
   Shell.def_system_command("ls")
   Shell.alias_command("lsla", "ls", "-a", "-l")

@@ -4,10 +4,8 @@ kind=defined
 
 --- rank_e -> Fixnum
 
-³¬¿ô (rank) ¤òÊÖ¤·¤Þ¤¹¡£
+éšŽæ•° (rank) ã‚’è¿”ã—ã¾ã™ã€‚
 
-¥æ¡¼¥¯¥ê¥Ã¥É¥¢¥ë¥´¥ê¥º¥à¤Ë´ð¤Å¤¤¤Æ³¬¿ô(rank)¤ò·×»»¤·¤Þ¤¹¡£
-¹ÔÎó¤ÎÁ´À®Ê¬¤¬À°¿ô([[c:Integer]])¤Î¾ì¹ç¤ÏÀµ¤·¤¤ÃÍ¤òÊÖ¤·¤Þ¤¹¡£
-À®Ê¬¤Ë[[c:Float]]¤¬¤¢¤Ã¤¿¾ì¹ç¤Ë¤ÏÀµ¤·¤¤ÃÍ¤òÊÖ¤µ¤Ê¤¤¤«¤â¤·¤ì¤Þ¤»¤ó¡£
-
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ obsolete ã§ã™ã€‚[[m:Matrix#rank]] ã‚’ä»£ã‚ã‚Šã«
+ä½¿ã£ã¦ãã ã•ã„ã€‚
 

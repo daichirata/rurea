@@ -4,7 +4,7 @@ kind=defined
 
 --- tls? -> bool
 --- ssl? -> bool
-¤½¤Î Net::SMTP ¥ª¥Ö¥¸¥§¥¯¥È¤¬ SMTPS ¤òÍøÍÑ¤¹¤ë¤Ê¤é¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
+ãã® Net::SMTP ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒ SMTPS ã‚’åˆ©ç”¨ã™ã‚‹ãªã‚‰ã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Net::SMTP#enable_tls]], [[m:Net::SMTP#disable_tls]], [[m:Net::SMTP#start]]
 

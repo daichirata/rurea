@@ -6,5 +6,5 @@ kind=defined
 --- each_pair                     -> Enumerator
 --- each {|key, value| ... }      -> self
 --- each_pair {|key, value| ... } -> self
-key �� value ������Ȥ��ƥ֥��å���ɾ�����ޤ���
+key と value を引数としてブロックを評価します。
 

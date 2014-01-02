@@ -11,5 +11,5 @@ For positive +num+, it scrolls up.
 
 For negative +num+, it scrolls down.
 
-@param num ¥¹¥¯¥í¡¼¥ë¤¹¤ë¹Ô¿ô¤ò»ØÄê¤·¤Ş¤¹¡£
+@param num ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã™ã‚‹è¡Œæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

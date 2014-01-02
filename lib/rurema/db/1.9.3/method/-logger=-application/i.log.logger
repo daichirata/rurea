@@ -5,16 +5,16 @@ kind=defined
 --- log(severity, message = nil) -> true
 --- log(severity, message = nil){ ... } -> true
 
-��å�����������˵�Ͽ���ޤ���
+メッセージをログに記録します。
 
-�֥��å���Ϳ�������ϥ֥��å���ɾ�������֤��ͤ��å������Ȥ��ƥ����˵�Ͽ���ޤ���
+ブロックを与えた場合はブロックを評価した返り値をメッセージとしてログに記録します。
 
-@param severity ������٥롣[[c:Logger::Severity]] ���饹���������Ƥ����������ꤷ�ޤ���
-                �����ͤ��쥷���С������ꤵ��Ƥ����٥�����㤤��硢
-                ��å������ϵ�Ͽ����ޤ���
+@param severity ログレベル。[[c:Logger::Severity]] クラスで定義されている定数を指定します。
+                この値がレシーバーに設定されているレベルよりも低い場合、
+                メッセージは記録されません。
 
-@param message �����˽��Ϥ����å�������ʸ�����㳰���֥������Ȥ���ꤷ�ޤ���
-               ��ά����� nil ���Ѥ����ޤ���
+@param message ログに出力するメッセージを文字列か例外オブジェクトを指定します。
+               省略すると nil が用いられます。
 
 @see [[m:Logger#add]]
 

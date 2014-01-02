@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-OpenSSL¤Î ASN.1 ´ØÏ¢¤Î¥¨¥é¡¼¤¬µ¯¤­¤¿¤È¤­¤ËÈ¯À¸¤¹¤ëÎã³°¤Ç¤¹¡£
+OpenSSLã® ASN.1 é–¢é€£ã®ã‚¨ãƒ©ãƒ¼ãŒèµ·ããŸã¨ãã«ç™ºç”Ÿã™ã‚‹ä¾‹å¤–ã§ã™ã€‚

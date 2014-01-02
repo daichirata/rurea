@@ -2,6 +2,7 @@ names=SIGN_NaN
 visibility=public
 kind=defined
 
---- SIGN_NaN
-@todo
+--- SIGN_NaN -> Fixnum
+
+NaN に対応する [[m:BigDecimal#sign]] の値を返します。
 

@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- FLAGGED -> Symbol
-��:Flagged�פȤ�������ܥ���֤��ޤ���
+「:Flagged」というシンボルを返します。
 
-���Υ�å����������̤ʥե饰��Ω�ƤƤ��뤳�Ȥ��̣���ޤ���
+そのメッセージに特別なフラグを立てていることを意味します。
 
-�ե饰��å�����°���Ȥ����Ѥ����ޤ�
-([[m:Net::IMAP::FetchData#attr]])��
+フラグメッセージ属性として用いられます
+([[m:Net::IMAP::FetchData#attr]])。
 
-�ܤ����� [[RFC:2060]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] を参照してください。
 

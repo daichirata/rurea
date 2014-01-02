@@ -6,4 +6,4 @@ library=benchmark
 aliases=
 aliasof=
 
-
+ベンチマークを取るためのモジュールです。

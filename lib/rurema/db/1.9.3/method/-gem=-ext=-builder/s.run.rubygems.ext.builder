@@ -5,10 +5,10 @@ kind=defined
 --- run(command, results)
 @todo
 
-Ϳ����줿���ޥ�ɤ�¹Ԥ��ޤ���
+与えられたコマンドを実行します。
 
-@param command �¹Ԥ��륳�ޥ�ɤ�ʸ����ǻ��ꤷ�ޤ���
+@param command 実行するコマンドを文字列で指定します。
 
-@param results ��̤�����뤿�������Ǥ��������ѿ����˲�Ū���ѹ�����ޤ���
+@param results 結果を入れるための配列です。この変数は破壊的に変更されます。
 
-@raise Gem::InstallError ���ޥ�ɤμ¹Ԥ˼��Ԥ�������ȯ�����ޤ���
+@raise Gem::InstallError コマンドの実行に失敗した場合に発生します。

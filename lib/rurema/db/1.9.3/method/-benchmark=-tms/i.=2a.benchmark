@@ -4,11 +4,11 @@ kind=defined
 
 --- *(x) -> Benchmark::Tms
 
-self ¤È x ¤Î¾è»»¤ò·×»»¤·¤Ş¤¹¡£
+self ã¨ x ã®ä¹—ç®—ã‚’è¨ˆç®—ã—ã¾ã™ã€‚
 
-@param x [[c:Benchmark::Tms]] ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤« [[c:Float]] ¤Ë°ÅÌÛ¤ÎÊÑ´¹¤¬¤Ç¤­¤ë¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤¹¡£
+@param x [[c:Benchmark::Tms]] ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ [[c:Float]] ã«æš—é»™ã®å¤‰æ›ãŒã§ãã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
 
-@return ·×»»·ë²Ì¤Ï¿·¤·¤¤ [[c:Benchmark::Tms]] ¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤¹¡£
+@return è¨ˆç®—çµæœã¯æ–°ã—ã„ [[c:Benchmark::Tms]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
 
 @see [[m:Benchmark::Tms#memberwise]]
 

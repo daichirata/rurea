@@ -4,9 +4,9 @@ kind=defined
 
 --- scheme=(s)
 
-¼«¿È¤Î scheme ¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã® scheme ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î scheme ¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param s è‡ªèº«ã® scheme ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise URI::InvalidComponentError ÉÔÀµ¤Ê°ú¿ô s ¤ËÂĞ¤·¤ÆÈ¯À¸¤·¤Ş¤¹¡£
+@raise URI::InvalidComponentError ä¸æ­£ãªå¼•æ•° s ã«å¯¾ã—ã¦ç™ºç”Ÿã—ã¾ã™ã€‚
 

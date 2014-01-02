@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- to_text -> String
-SPKI ���֥������Ȥ�ʹ֤��ɤ�������ʸ������Ѵ����ޤ���
+SPKI オブジェクトを人間が読める形式の文字列に変換します。
 

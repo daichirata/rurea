@@ -4,14 +4,14 @@ kind=defined
 
 --- comment=(string)
 
-gzip �ե�����Υإå����˵�Ͽ���륳���Ȥ���ꤷ�ޤ���
+gzip ファイルのヘッダーに記録するコメントを指定します。
 
-[[m:Zlib::GzipWriter#write]] ���ν񤭹��߷ϥ᥽�åɤ�
-�Ƥ����ǻ��ꤷ�褦�Ȥ���� [[c:Zlib::GzipFile::Error]] �㳰��
-ȯ�����ޤ���
+[[m:Zlib::GzipWriter#write]] 等の書き込み系メソッドを
+呼んだ後で指定しようとすると [[c:Zlib::GzipFile::Error]] 例外が
+発生します。
 
-@param string gzip �ե�����Υإå����˵�Ͽ���륳���Ȥ�ʸ����ǻ��ꤷ�ޤ���
-@return string ���֤��ޤ���
+@param string gzip ファイルのヘッダーに記録するコメントを文字列で指定します。
+@return string を返します。
 
   require 'zlib'
 

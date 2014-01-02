@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- extension  -> Array | nil
-��å������γ�ĥ�ǡ������֤��ޤ���
+メッセージの拡張データを返します。
 

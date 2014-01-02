@@ -6,5 +6,5 @@ library=rubygems.package.tar_output
 aliases=
 aliasof=
 
-gem-format ¤Ê tar ¥Õ¥¡¥¤¥ë¤ò½ñ¤­½Ğ¤¹ [[c:Gem::Package::TarWriter]] ¤Î¥é¥Ã
-¥Ñ¡¼¥¯¥é¥¹¤Ç¤¹¡£
+gem-format ãª tar ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ›¸ãå‡ºã™ [[c:Gem::Package::TarWriter]] ã®ãƒ©ãƒƒ
+ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

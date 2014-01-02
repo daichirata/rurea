@@ -4,11 +4,11 @@ kind=added
 
 --- file(*args){ ... } -> Rake::FileTask
 
-¥Õ¥¡¥¤¥ë¥¿¥¹¥¯¤òÄêµÁ¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-@param args ¥Õ¥¡¥¤¥ëÌ¾¤È°ÍÂ¸¥Õ¥¡¥¤¥ëÌ¾¤ò»ØÄê¤·¤Þ¤¹¡£
+@param args ãƒ•ã‚¡ã‚¤ãƒ«åã¨ä¾å­˜ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
    file "config.cfg" => ["config.template"] do
      open("config.cfg", "w") do |outfile|
        open("config.template") do |infile|

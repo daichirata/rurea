@@ -5,8 +5,8 @@ kind=defined
 --- ErrorData
 @todo
 
-���顼�����Ͽ���뤿��ι�¤�ΤǤ���
-�ʲ���°������äƤ��ޤ���
+エラー情報を記録するための構造体です。
+以下の属性を持っています。
 
  * path
  * problem

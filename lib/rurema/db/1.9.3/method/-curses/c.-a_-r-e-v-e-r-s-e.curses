@@ -4,7 +4,7 @@ kind=defined
 
 --- A_REVERSE -> Integer
 
-ʸ�����ȿž��ɽ��°���ޥ����Ѥ�����Ǥ���
+文字列を反転を表す属性マスク用の定数です。
 
 @see [[m:Curses.attrset]]
 

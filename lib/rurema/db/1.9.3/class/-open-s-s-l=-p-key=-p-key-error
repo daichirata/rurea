@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-OpenSSL �θ�������Ϣ�Υ��顼�ξ���ȯ�������㳰
+OpenSSL の公開鍵関連のエラーの場合に発生する例外

@@ -2,10 +2,11 @@ names=SOCK_RAW
 visibility=public
 kind=defined
 
---- SOCK_RAW
-@todo
+--- SOCK_RAW -> Integer
 
-[[m:Socket.open]] ¤ÎÂèÆó°ú¿ô type ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+RAW ã‚½ã‚±ãƒƒãƒˆã€‚
+[[m:Socket.open]] ã®ç¬¬äºŒå¼•æ•° type ã«ä½¿ç”¨ã—ã¾ã™ã€‚
 
-@see [[m:Socket.open]]
+@see [[man:sys/socket.h(header)]], [[man:socket(2linux)]], 
+     [[man:raw(7linux)]], [[m:Socket.open]]
 

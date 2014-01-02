@@ -1,7 +1,12 @@
 requires=
-classes=Vector,ExceptionForMatrix=ErrDimensionMismatch,ExceptionForMatrix=ErrNotRegular,ExceptionForMatrix=ErrOperationNotDefined,Matrix
+classes=Vector,ExceptionForMatrix=ErrDimensionMismatch,ExceptionForMatrix=ErrNotRegular,ExceptionForMatrix=ErrOperationNotDefined,Vector=ZeroVectorError,Matrix,Matrix=EigenvalueDecomposition,Matrix=LUPDecomposition
 methods=
 sublibraries=
 is_sublibrary=false
+category=Math
 
-����ȿ��٥��ȥ�򰷤�����Υ饤�֥��Ǥ���
+行列と数ベクトルを扱うためのライブラリです。
+
+行列、ベクトルの各要素には Ruby の任意の数オブジェクト([[c:Numeric]] の
+サブクラス、[[c:Float]], [[c:Integer]], [[c:Complex]], [[c:Rational]] など)
+が使えます。

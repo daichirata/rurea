@@ -3,5 +3,6 @@ classes=TkcTagAccess,TkcTag,TkcTagString,TkcNamedTag,TkcTagAll,TkcTagCurrent,Tkc
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

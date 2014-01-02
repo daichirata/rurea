@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- extensions -> [OpenSSL::X509::Extension]
-CRL �����äƤ����ĥ�ΰ�Υǡ�����������֤��ޤ���
+CRL が持っている拡張領域のデータを配列で返します。
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- open_timeout -> Integer
 
-��³�����Ԥĺ����ÿ����֤��ޤ���
+接続時に待つ最大秒数を返します。
 
-�ǥե���Ȥ�30(��)�Ǥ���
-�����ÿ����äƤ⥳�ͥ������
-�����ʤ�����㳰 TimeoutError ��ȯ�����ޤ���
+デフォルトは30(秒)です。
+この秒数たってもコネクションが
+開かなければ例外 TimeoutError を発生します。
 
 @see [[m:Net::SMTP#open_timeout=]]
 

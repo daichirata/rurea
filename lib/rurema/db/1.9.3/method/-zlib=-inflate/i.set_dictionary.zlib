@@ -4,11 +4,11 @@ kind=defined
 
 --- set_dictionary(string) -> String
 
-Å¸³«¤ËÍÑ¤¤¤ë¼­½ñ¤ò»ØÄê¤·¤Ş¤¹¡£string ¤òÊÖ¤·¤Ş¤¹¡£
-¤³¤Î¥á¥½¥Ã¥É¤Ï [[c:Zlib::NeedDict]] Îã³°¤¬È¯À¸¤·¤¿Ä¾¸å¤Î¤ß
-Í­¸ú¤Ç¤¹¡£¾ÜºÙ¤Ï zlib.h ¤ò»²¾È¤·¤Æ²¼¤µ¤¤¡£
+å±•é–‹ã«ç”¨ã„ã‚‹è¾æ›¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚string ã‚’è¿”ã—ã¾ã™ã€‚
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ [[c:Zlib::NeedDict]] ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸç›´å¾Œã®ã¿
+æœ‰åŠ¹ã§ã™ã€‚è©³ç´°ã¯ zlib.h ã‚’å‚ç…§ã—ã¦ä¸‹ã•ã„ã€‚
 
-@param string Å¸³«¤ËÍÑ¤¤¤ë¼­½ñ¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param string å±•é–‹ã«ç”¨ã„ã‚‹è¾æ›¸ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
   def case2(str, dict)
     dez = Zlib::Deflate.new
@@ -21,7 +21,7 @@ kind=defined
       inz.inflate(comp_str)
     rescue Zlib::NeedDict
     end
-    # Å¸³«¤ËÍÑ¤¤¤ë¼­½ñ¤¬É¬Í×¤Ç¤¹¡£
+    # å±•é–‹ã«ç”¨ã„ã‚‹è¾æ›¸ãŒå¿…è¦ã§ã™ã€‚
     inz.set_dictionary(dict) 
     p inz.inflate(comp_str)
   end

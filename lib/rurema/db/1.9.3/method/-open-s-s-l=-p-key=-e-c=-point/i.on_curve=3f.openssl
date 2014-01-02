@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- on_curve? -> bool
-����������ˤ���ʤ�п����֤��ޤ���
+点が曲線上にあるならば真を返します。
 
-[[m:OpenSSL::PKey::EC::Group]] �������뷲�ȴ�Ϣ�դ���줿
-������ͤ��ޤ���
+[[m:OpenSSL::PKey::EC::Group]] で得られる群と関連付けられた
+曲線を考えます。
 
-@raise OpenSSL::PKey::EC::Point::Error ���顼������������ȯ�����ޤ�
+@raise OpenSSL::PKey::EC::Point::Error エラーが生じた場合に発生します
 

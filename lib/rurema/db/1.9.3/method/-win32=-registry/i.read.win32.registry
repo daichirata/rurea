@@ -5,22 +5,22 @@ kind=defined
 --- read(name, *rtype)
 @todo
 
-�쥸���ȥ��� name ���ɤߡ�[ type, data ]
-��������֤��ޤ���
-name �� nil �ξ�硤(ɸ��) �쥸���ȥ��ͤ��ɤ߹��ޤ�ޤ���
+レジストリ値 name を読み，[ type, data ]
+の配列で返します。
+name が nil の場合，(標準) レジストリ値が読み込まれます。
 
-type �ϥ쥸���ȥ��ͤη��Ǥ���(��[[c:Win32::Registry::Constants]])
-data �ϥ쥸���ȥ��ͤΥǡ����ǡ����饹�ϰʲ����̤�Ǥ�:
+type はレジストリ値の型です。(⇒[[c:Win32::Registry::Constants]])
+data はレジストリ値のデータで，クラスは以下の通りです:
   * REG_SZ, REG_EXPAND_SZ
     String
   * REG_MULTI_SZ
-    String ������
+    String の配列
   * REG_DWORD, REG_DWORD_BIG_ENDIAN, REG_QWORD
     Integer
   * REG_BINARY
-    String (�Х��ʥ�ǡ�����ޤߤޤ�)
+    String (バイナリデータを含みます)
 
-���ץ������� rtype �����ꤵ��Ƥ�����硤�쥸���ȥ��ͤη���
-Ϳ����줿 rtype �������¸�ߤ��뤫�����å����졤¸�ߤ��ʤ�����
-[[c:TypeError]] ��ȯ�����ޤ���
+オプション引数 rtype が指定されていた場合，レジストリ値の型が
+与えられた rtype の配列に存在するかチェックされ，存在しない場合に
+[[c:TypeError]] が発生します。
 

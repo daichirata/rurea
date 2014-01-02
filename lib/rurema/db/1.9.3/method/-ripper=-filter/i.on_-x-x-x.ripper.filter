@@ -4,18 +4,18 @@ kind=defined
 
 --- on_XXX(token, data) -> object
 
-�Ƽ凉����ʥ��٥�Ȥ�¹Ԥ��ޤ���
+各種スキャナイベントを実行します。
 
-�ºݤˤ� on_XXX �Ȥ����᥽�åɤ�¸�ߤ��ޤ��󡣡�XXX�פ���ʬ��
-[[m:Ripper::SCANNER_EVENTS]] �ˤ��륹����ʥ��٥�Ȥ��ɤ��ؤ��Ƥ���������
+実際には on_XXX というメソッドは存在しません。「XXX」の部分を
+[[m:Ripper::SCANNER_EVENTS]] にあるスキャナイベントに読み替えてください。
 
-@param token ���ߤΥȡ����󤬻��ꤵ��ޤ���
+@param token 現在のトークンが指定されます。
 
-@param data ���Υ��٥�ȥϥ�ɥ������ͤǤ����ǽ�Υ��٥�Ȥξ���
-            [[m:Ripper::Filter#parse]] �ΰ����ˤʤ�ޤ���
+@param data 前のイベントハンドラの戻り値です。最初のイベントの場合は
+            [[m:Ripper::Filter#parse]] の引数になります。
 
-�����Х饤�ɤ��ʤ��ä����� on_default ���¹Ԥ���ޤ���
+オーバライドしなかった場合は on_default が実行されます。
 
-���Υ᥽�åɤ�����ͤϼ��Υ��٥�ȥϥ�ɥ�� data �������Ϥ���ޤ���
+このメソッドの戻り値は次のイベントハンドラの data 引数に渡されます。
 
 @see [[m:Ripper::Filter#parse]], [[m:Ripper::Filter#on_default]], [[m:Ripper::SCANNER_EVENTS]]

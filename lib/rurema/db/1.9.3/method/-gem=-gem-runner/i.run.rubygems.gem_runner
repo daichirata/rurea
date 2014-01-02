@@ -5,6 +5,6 @@ kind=defined
 --- run(args) -> ()
 @todo
 
-Ϳ����줿�����򸵤ˤ��� gem �Υ��ޥ�ɤ�¹Ԥ��ޤ���
+与えられた引数を元にして gem のコマンドを実行します。
 
-@param args ���ޥ�ɥ饤�󤫤�Ϳ����줿��������ꤷ�ޤ���
+@param args コマンドラインから与えられた引数を指定します。

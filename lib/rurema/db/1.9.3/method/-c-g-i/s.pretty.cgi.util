@@ -4,13 +4,13 @@ kind=added
 
 --- pretty(string, shift = "  ") -> String
 
-HTML ��ʹ֤˸��䤹������������ʸ������֤��ޤ���
+HTML を人間に見やすく整形しした文字列を返します。
 
-@param string HTML ����ꤷ�ޤ���
+@param string HTML を指定します。
 
-@param shift ����ǥ�Ȥ˻��Ѥ���ʸ�������ꤷ�ޤ����ǥե���Ȥ�Ⱦ�Ѷ�����ĤǤ���
+@param shift インデントに使用する文字列を指定します。デフォルトは半角空白二つです。
 
-�㡧
+例：
         require "cgi"
 
         print CGI.pretty("<HTML><BODY></BODY></HTML>")

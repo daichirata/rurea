@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- closed? -> bool
-��³���ڤ�Ƥ�����˿����֤��ޤ���
+接続が切れている時に真を返します。
 

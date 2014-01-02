@@ -3,5 +3,6 @@ classes=Continuation
 methods=Kernel/m.callcc.continuation
 sublibraries=
 is_sublibrary=false
+category=
 
-Ruby 1.9¤Ç·ÑÂ³¥ª¥Ö¥¸¥§¥¯¥È¤ò°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Ruby 1.9 ä»¥é™ã§ç¶™ç¶šã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

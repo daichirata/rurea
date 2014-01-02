@@ -4,13 +4,13 @@ kind=defined
 
 --- kill_job(signal, command) -> Integer
 
-���ꤵ�줿���ޥ�ɤ˥����ʥ������ޤ���
+指定されたコマンドにシグナルを送ります。
 
-@param signal �����ʥ������������̾����ʸ����ǻ��ꤷ�ޤ���
-              ����ͤ���ĥ����ʥ�(���뤤�ϥ����ʥ�̾������-)����ꤹ��ȡ�
-              �ץ������ǤϤʤ��ץ��������롼�פ˥����ʥ������ޤ��� 
+@param signal シグナルを整数かその名前の文字列で指定します。
+              負の値を持つシグナル(あるいはシグナル名の前に-)を指定すると、
+              プロセスではなくプロセスグループにシグナルを送ります。 
 
-@param command ���ޥ�ɤ���ꤷ�ޤ���
+@param command コマンドを指定します。
 
 @see [[m:Process.#kill]]
 

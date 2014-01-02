@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- oid -> String
-attribute ¤Î Object ID(¼±ÊÌ»Ò)¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+attribute ã® Object ID(è­˜åˆ¥å­)ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-@raise OpenSSL::X509::AttributeError Object ID ¤Î¼èÆÀ¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@raise OpenSSL::X509::AttributeError Object ID ã®å–å¾—ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::X509::Attribute#oid=]]
 

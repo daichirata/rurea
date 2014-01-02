@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 ---  must_C_version -> self
-���Υ᥽�åɤϸ����ߴ����Τ�����������Ƥ��ޤ���
+このメソッドは後方互換性のために定義されています。
 

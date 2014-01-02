@@ -4,9 +4,9 @@ kind=defined
 
 --- log2(z) -> Float | Complex
 
-2 ¤òÄì¤È¤¹¤ë z ¤ÎÂĞ¿ô (binary logarithm) ¤òÊÖ¤·¤Ş¤¹¡£
+2 ã‚’åº•ã¨ã™ã‚‹ z ã®å¯¾æ•° (binary logarithm) ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param z ¿¿¿ô¤ò»ØÄê¤·¤Ş¤¹¡£
+@param z çœŸæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise TypeError z ¤Ë¿ôÃÍ°Ê³°¤ò»ØÄê¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise TypeError z ã«æ•°å€¤ä»¥å¤–ã‚’æŒ‡å®šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- lchmod(mode) -> Integer
-File.lchmod(mode, self.to_s) д╚╞▒д╕д╟д╣бг
+File.lchmod(mode, self.to_s) уБихРМуБШуБзуБЩуАВ
 
-@param mode е╒ебедеыд╬евепе╗е╣╕в╕┬дЄ└░┐Їд╟╗╪─ъд╖д▐д╣бг
+@param mode уГХуВбуВдуГлуБоуВвуВпуВ╗уВ╣цийщЩРуВТцХ┤цХ░уБзцМЗхоЪуБЧуБ╛уБЩуАВ
 
 @see [[m:File.lchmod]]
 

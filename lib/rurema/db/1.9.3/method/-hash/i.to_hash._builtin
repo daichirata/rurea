@@ -4,7 +4,8 @@ kind=defined
 
 --- to_hash -> self
 
-self ¤òÊÖ¤·¤Ş¤¹¡£
+self ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Object#to_hash]]
+
 

@@ -2,10 +2,10 @@ names=printn
 visibility=public
 kind=defined
 
---- printn(*opts) -> nil
+--- printn(*objs) -> nil
 
-Ёф obj ╓Р self ╓к╫пно╓╥║╒╨г╦Е╓к╡Ч╧т╓Р╫пно╓╥╓ч╓╧║ё
+Е░└ obj Ц┌▓ self Ц│╚Е┤╨Е┼⌡Ц│≈Ц─│Ф°─Е╬▄Ц│╚Ф■╧Х║▄Ц┌▓Е┤╨Е┼⌡Ц│≈Ц│╬Ц│≥Ц─┌
 
-@param objs г╓╟у╓н╔╙╔ж╔╦╔╖╔╞╔х╓Р╩ьдЙ╓╥╓ч╓╧║ё
+@param objs Д╩╩Ф└▐Ц│╝Ц┌╙Ц┐√Ц┌╦Ц┌╖Ц┌╞Ц┐┬Ц┌▓Ф▄┤Е╝ Ц│≈Ц│╬Ц│≥Ц─┌
 
 

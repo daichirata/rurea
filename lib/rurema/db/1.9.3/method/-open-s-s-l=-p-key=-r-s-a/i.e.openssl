@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- e -> OpenSSL::BN
-¸°¤Î public exponent ¤òÊÖ¤·¤Þ¤¹¡£
+éµã® public exponent ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤³¤ì¤Ï¸ø³«¸°¤Î°ìÉô¤Ç¤¹¡£
+ã“ã‚Œã¯å…¬é–‹éµã®ä¸€éƒ¨ã§ã™ã€‚
 

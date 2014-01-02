@@ -4,9 +4,9 @@ kind=defined
 
 --- inspect -> String
 
-���Ȥ�ʹ֤��ɤߤ䤹������ʸ����ɽ���ˤ����֤��ޤ���
+自身を人間が読みやすい形の文字列表現にして返します。
 
-@return ʸ������֤��ޤ���
+@return 文字列を返します。
 
 @see [[m:Object#inspect]]
 

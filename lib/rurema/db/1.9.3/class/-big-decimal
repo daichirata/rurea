@@ -6,4 +6,4 @@ library=bigdecimal
 aliases=
 aliasof=
 
-
+可変長浮動小数点計算クラスです。

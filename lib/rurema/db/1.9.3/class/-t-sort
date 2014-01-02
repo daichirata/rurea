@@ -6,15 +6,15 @@ library=tsort
 aliases=
 aliasof=
 
-TSort �϶�Ϣ����ʬ�˴ؤ��� Tarjan �Υ��르�ꥺ����Ѥ���
-�ȥݥ������륽���Ȥμ����Ǥ���
+TSort は強連結成分に関する Tarjan のアルゴリズムを用いた
+トポロジカルソートの実装です。
 
-TSort ��Ǥ�դΥ��֥������Ȥ�ͭ������դȤ��Ʋ��Ǥ���褦���߷פ���Ƥ��ޤ���
-TSort �����֥������Ȥ򥰥�դȤ��Ʋ�᤹��ˤ�2�ĤΥ᥽�åɤ��׵ᤷ�ޤ���
-���ʤ����tsort_each_node �� tsort_each_child �Ǥ���
+TSort は任意のオブジェクトを有向グラフとして解釈できるように設計されています。
+TSort がオブジェクトをグラフとして解釈するには2つのメソッドを要求します。
+すなわち、tsort_each_node と tsort_each_child です。
 
- * tsort_each_node �ϥ���վ�Τ��٤Ƥ�ĺ�����󤹤�Τ��Ѥ����ޤ���
- * tsort_each_child ��Ϳ����줿ĺ���λҤ��󤹤�Τ��Ѥ����ޤ���
+ * tsort_each_node はグラフ上のすべての頂点を巡回するのに用いられます。
+ * tsort_each_child は与えられた頂点の子を巡回するのに用いられます。
 
-ĺ��Ʊ�Τ��������� eql? �� hash �ˤ�ä��������ޤ���
-����� TSort �������ǥϥå�����Ѥ��Ƥ��뤫��Ǥ���
+頂点同士の等価性は eql? と hash によって定義されます。
+これは TSort が内部でハッシュを用いているからです。

@@ -4,8 +4,8 @@ kind=defined
 
 --- requirements=(informations)
 
-���� Gem �ѥå�������ư�����Τ�ɬ�פʾ��򥻥åȤ��ޤ���
-����ϥ桼���Τ���Υ���ץ�ʾ���򥻥åȤ��ޤ���
+この Gem パッケージを動作させるのに必要な条件をセットします。
+これはユーザのためのシンプルな情報をセットします。
 
-@param informations �����ʸ���������ǻ��ꤷ�ޤ���
+@param informations 情報を文字列の配列で指定します。
 

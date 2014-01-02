@@ -5,8 +5,8 @@ kind=defined
 --- reverse_each {|item| ... }    -> self
 --- reverse_each                  -> Enumerator
 
-�����Ǥ��Ф��Ƶս�˥֥��å���ɾ�����ޤ���
+各要素に対して逆順にブロックを評価します。
 
-�֥��å���Ϳ�����ʤ��ä����ϡ����Ȥ� reverse_each ������������
-[[c:Enumerator]] ���֥������Ȥ��֤��ޤ���
+ブロックが与えられなかった場合は、自身と reverse_each から生成した
+[[c:Enumerator]] オブジェクトを返します。
 

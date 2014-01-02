@@ -4,7 +4,7 @@ kind=defined
 
 --- WRITER -> Fixnum
 
-�񤭹��ߥ⡼�ɤǥ����ץ󤷤ޤ���
+書き込みモードでオープンします．
 
 @see [[m:DBM.open]]
 

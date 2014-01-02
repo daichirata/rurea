@@ -4,10 +4,10 @@ kind=defined
 
 --- require_paths=(paths)
 
-���� Gem �ѥå���������Ѥ����ݤ� require ����ե����뤬�֤���Ƥ���ǥ��쥯�ȥ�
-�Υꥹ�Ȥ򥻥åȤ��ޤ���
+この Gem パッケージを使用した際に require するファイルが置かれているディレクトリ
+のリストをセットします。
 
-@param paths ���� Gem �ѥå���������Ѥ����ݤ� require ����ե����뤬�֤���Ƥ���ǥ��쥯�ȥ�
-             �Υꥹ�Ȥ���ꤷ�ޤ���
+@param paths この Gem パッケージを使用した際に require するファイルが置かれているディレクトリ
+             のリストを指定します。
 
 

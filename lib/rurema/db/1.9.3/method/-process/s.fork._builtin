@@ -5,9 +5,9 @@ kind=defined
 --- fork            -> Integer | nil
 --- fork { ... }    -> Integer | nil
 
-�ҥץ��������������ޤ����ؿ� [[m:Kernel.#fork]] ��Ʊ���Ǥ���
+子プロセスを生成します。関数 [[m:Kernel.#fork]] と同じです。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 
 @see [[man:fork(2)]]
 

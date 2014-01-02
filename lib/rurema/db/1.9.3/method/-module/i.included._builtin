@@ -4,10 +4,10 @@ kind=defined
 
 --- included(class_or_module) -> ()
 
-self ¤¬ [[m:Module#include]] ¤µ¤ì¤¿¤È¤­¤ËÂÐ¾Ý¤Î¥¯¥é¥¹¤Þ¤¿¤Ï¥â¥¸¥å¡¼
-¥ë¤ò°ú¿ô¤Ë¤·¤Æ¥¤¥ó¥¿¥×¥ê¥¿¤¬¤³¤Î¥á¥½¥Ã¥É¤ò¸Æ¤Ó½Ð¤·¤Þ¤¹¡£
+self ãŒ [[m:Module#include]] ã•ã‚ŒãŸã¨ãã«å¯¾è±¡ã®ã‚¯ãƒ©ã‚¹ã¾ãŸã¯ãƒ¢ã‚¸ãƒ¥ãƒ¼
+ãƒ«ã‚’å¼•æ•°ã«ã—ã¦ã‚¤ãƒ³ã‚¿ãƒ—ãƒªã‚¿ãŒã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã—ã¾ã™ã€‚
 
-@param class_or_module [[m:Module#include]] ¤ò¼Â¹Ô¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È
+@param class_or_module [[m:Module#include]] ã‚’å®Ÿè¡Œã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
   module Foo
     def self.included(mod)
@@ -18,4 +18,6 @@ self ¤¬ [[m:Module#include]] ¤µ¤ì¤¿¤È¤­¤ËÂÐ¾Ý¤Î¥¯¥é¥¹¤Þ¤¿¤Ï¥â¥¸¥å¡¼
     include Foo
   end
   # => "Bar include Foo"
+
+@see [[m:Module#append_features]]
 

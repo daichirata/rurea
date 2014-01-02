@@ -4,8 +4,8 @@ kind=defined
 
 --- new -> Sync
 
-[[c:Sync_m]]¤òinclude¤·¤¿¥¯¥é¥¹¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
-»È¤¤Êý¤Ï[[c:Sync_m]]¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[c:Sync_m]]ã‚’includeã—ãŸã‚¯ãƒ©ã‚¹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
+ä½¿ã„æ–¹ã¯[[c:Sync_m]]ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 @see [[c:Sync_m]]
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- escape8bit(str) -> String
 
-Ϳ����줿ʸ�������ͻ���ʸ������Ѵ����ޤ���
+与えられた文字列を数値参照文字列に変換します。
 
-@param str ʸ�������ꤷ�ޤ���
+@param str 文字列を指定します。
 
 
 

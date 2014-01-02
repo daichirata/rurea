@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- issuer -> OpenSSL::X509::Name
-CRL ��ȯ�ԼԤ��֤��ޤ���
+CRL の発行者を返します。
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- eql?(other) -> bool
 
-self ¤È other ¤Î [[m:Gem::Version#version]] ¤¬Åù¤·¤¤¤È¤­¿¿¤òÊÖ¤·¤Þ¤¹¡£
-¤½¤¦¤Ç¤Ê¤±¤ì¤Ðµ¶¤òÊÖ¤·¤Þ¤¹¡£
+self ã¨ other ã® [[m:Gem::Version#version]] ãŒç­‰ã—ã„ã¨ãçœŸã‚’è¿”ã—ã¾ã™ã€‚
+ãã†ã§ãªã‘ã‚Œã°å½ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   ver1 = Gem::Version.create('1.0')   # => #<Gem::Version "1.0">
   ver2 = Gem::Version.create('1')     # => #<Gem::Version "1">

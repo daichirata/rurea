@@ -4,6 +4,6 @@ kind=defined
 
 --- need_zip -> bool
 
-�����ͤ����Ǥ������ zip �ե������������ޤ���
-�ǥե���Ȥϵ��Ǥ���
+この値が真である場合は zip ファイルを作成します。
+デフォルトは偽です。
 

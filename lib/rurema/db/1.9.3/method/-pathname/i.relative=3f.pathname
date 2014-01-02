@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- relative? -> bool
-self �����Хѥ�����Ǥ���п����֤��ޤ���
+self が相対パス指定であれば真を返します。
 

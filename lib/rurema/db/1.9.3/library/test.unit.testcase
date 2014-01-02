@@ -3,7 +3,8 @@ classes=Test=Unit=TestCase
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-¥Æ¥¹¥È¥±¡¼¥¹¤òµ­½Ò¤¹¤ë¤È¤­¤Ë»È¤¤¤Ş¤¹¡£
+ãƒ†ã‚¹ãƒˆã‚±ãƒ¼ã‚¹ã‚’è¨˜è¿°ã™ã‚‹ã¨ãã«ä½¿ã„ã¾ã™ã€‚
 
-test/unit ¤Î require »ş¤ËÆ±»ş¤Ërequire¤µ¤ì¤Ş¤¹¡£
+test/unit ã® require æ™‚ã«åŒæ™‚ã«requireã•ã‚Œã¾ã™ã€‚

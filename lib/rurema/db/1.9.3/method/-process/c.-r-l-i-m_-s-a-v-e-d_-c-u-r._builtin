@@ -2,7 +2,7 @@ names=RLIM_SAVED_CUR
 visibility=public
 kind=defined
 
---- RLIM_SAVED_CUR
+--- RLIM_SAVED_CUR -> Integer
 
-[[m:Process.#getrlimit]], [[m:Process.#setrlimit]] ¤Ç»È¤ï¤ì¤Ş¤¹¡£¾Ü¤·¤¯¤Ï [[man:setrlimit(2)]] ¤ò»²¾È¤·¤Æ²¼¤µ¤¤¡£
+[[m:Process.#getrlimit]], [[m:Process.#setrlimit]] ã§ä½¿ã‚ã‚Œã¾ã™ã€‚è©³ã—ãã¯ [[man:setrlimit(2)]] ã‚’å‚ç…§ã—ã¦ä¸‹ã•ã„ã€‚
 

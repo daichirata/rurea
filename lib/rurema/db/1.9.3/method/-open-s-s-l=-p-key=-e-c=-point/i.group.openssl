@@ -4,5 +4,5 @@ kind=defined
 
 --- group -> OpenSSL::PKey::EC::Group
 
-���Ȥȴ�Ϣ�դ���줿�����֤��ޤ���
+自身と関連付けられた群を返します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- **(n) -> Matrix
 
-self �� n��򤷤�������֤��ޤ���
+self の n 乗を返します。
 
-@param n �٤����λ���
-
+@param n べき数の指定
+@raise ExceptionForMatrix::ErrNotRegular n が 0 以下で、行列が正則でない場合に発生します

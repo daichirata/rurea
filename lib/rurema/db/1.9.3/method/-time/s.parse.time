@@ -6,37 +6,37 @@ kind=added
 --- parse(date, now = Time.now) {|year| year } -> Time
 
 
-date �� [[m:Date._parse]] �ˤ�ä�
-�ѡ������� [[c:Time]]���֥������Ȥ��Ѵ����ޤ���
+date を [[m:Date._parse]] によって
+パースして [[c:Time]]オブジェクトに変換します。
 
-�֥��å��դ��ǸƤФ줿��硢date��ǯ�ϥ֥��å��ˤ�ä��Ѵ�����ޤ���
+ブロック付きで呼ばれた場合、dateの年はブロックによって変換されます。
 
   Time.parse(...) {|y| y < 100 ? (y >= 69 ? y + 1900 : y + 2000) : y}
 
-Ϳ����줿����˾�̤����Ǥ��ʤ��ä������Ƥ�����硢now��
-�������Ǥ��Ȥ��ޤ���
-���̤����Ǥ��ʤ��ä������Ƥ�����硢�Ǿ���(1��0)���Ȥ��ޤ���
+与えられた時刻に上位の要素がなかったり壊れていた場合、nowの
+該当要素が使われます。
+下位の要素がなかったり壊れていた場合、最小値(1か0)が使われます。
 
-@param date [[c:Time]] ���֥������Ȥ��Ѵ���ǽ��ʸ�������ꤷ�ޤ���
-@param now  ���߻����[[c:Time]] ���֥������Ȥǻ��ꤷ�ޤ���
-            �ǥե���Ȥ�[[m:Time.now]]�Ȥʤ�ޤ���
+@param date [[c:Time]] オブジェクトに変換可能な文字列を指定します。
+@param now  現在時刻を[[c:Time]] オブジェクトで指定します。
+            デフォルトは[[m:Time.now]]となります。
 
-  # ���߻��郎 "Thu Nov 29 14:33:20 GMT 2001" ��
-  # �����ॾ����GMT�Ȥ����:
+  # 現在時刻が "Thu Nov 29 14:33:20 GMT 2001" で
+  # タイムゾーンがGMTとすると:
   Time.parse("16:30")     #=> Thu Nov 29 16:30:00 GMT 2001
   Time.parse("7/23")      #=> Mon Jul 23 00:00:00 GMT 2001
   Time.parse("2002/1")    #=> Tue Jan 01 00:00:00 GMT 2002
 
-[[m:Date._parse]]��date����������Ф��ʤ��Ȥ���
-�ޤ��� [[c:Time]] ���饹�����ꤵ�줿������ɽ���Ǥ��ʤ��Ȥ���
-[[c:ArgumentError]] ��ȯ�����ޤ���
+[[m:Date._parse]]がdateから情報を取り出せないとき、
+または [[c:Time]] クラスが指定された日時を表現できないときに
+[[c:ArgumentError]] が発生します。
 
-���Υ᥽�åɤ�¾�Υѡ����ѥ᥽�åɤΥե����륻���դȤ���
-�ʲ��Τ褦�˻��ѤǤ��ޤ�:
+このメソッドは他のパース用メソッドのフェイルセーフとして
+以下のように使用できます:
 
   Time.rfc2822(date) rescue Time.parse(date)
   Time.httpdate(date) rescue Time.parse(date)
   Time.xmlschema(date) rescue Time.parse(date)
 
-���ä� [[m:Time.parse]] �μ��Ԥϥ����å����٤��Ǥ���
+従って [[m:Time.parse]] の失敗はチェックすべきです。
 

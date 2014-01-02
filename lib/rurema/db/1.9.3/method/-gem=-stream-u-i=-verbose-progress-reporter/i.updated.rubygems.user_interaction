@@ -4,7 +4,7 @@ kind=defined
 
 --- updated(message) -> nil
 
-¸½ºß¤Î [[m:Gem::StreamUI::VerboseProgressReporter#count]] ¤ÈÁ´ÂÎ¤Î¿ô¤È¥á¥Ã¥»¡¼¥¸¤òÉ½¼¨¤·¤Ş¤¹¡£
+ç¾åœ¨ã® [[m:Gem::StreamUI::VerboseProgressReporter#count]] ã¨å…¨ä½“ã®æ•°ã¨ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
 
-@param message É½¼¨¤¹¤ë¥á¥Ã¥»¡¼¥¸¤ò»ØÄê¤·¤Ş¤¹¡£
+@param message è¡¨ç¤ºã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

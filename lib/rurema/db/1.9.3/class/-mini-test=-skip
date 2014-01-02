@@ -6,4 +6,4 @@ library=minitest.unit
 aliases=
 aliasof=
 
-[[m:MiniTest::Assertions#skip]] ¤ò¸Æ¤Ó½Ğ¤·¤¿»ş¤ËÈ¯À¸¤¹¤ëÎã³°¤Ç¤¹¡£
+[[m:MiniTest::Assertions#skip]] ã‚’å‘¼ã³å‡ºã—ãŸæ™‚ã«ç™ºç”Ÿã™ã‚‹ä¾‹å¤–ã§ã™ã€‚

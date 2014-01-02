@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- rshift!(n) -> self
-���Ȥ� n �ӥåȱ����եȤ��ޤ���
+自身を n ビット右シフトします。
 
-@param n ���եȤ���ӥåȿ�
-@raise OpenSSL::BNError �׻������顼
+@param n シフトするビット数
+@raise OpenSSL::BNError 計算時エラー
 

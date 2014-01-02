@@ -4,7 +4,7 @@ kind=defined
 
 --- to_s    -> String
 
-¼Âºİ¤Ë¥¯¥é¥¤¥¢¥ó¥È¤ËÁ÷¤é¤ì¤ë¥Ç¡¼¥¿¤òÊ¸»úÎó¤È¤·¤ÆÊÖ¤·¤Ş¤¹¡£
+å®Ÿéš›ã«ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã«é€ã‚‰ã‚Œã‚‹ãƒ‡ãƒ¼ã‚¿ã‚’æ–‡å­—åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 
   require 'webrick'
   include WEBrick
@@ -12,7 +12,7 @@ kind=defined
   res.body = 'hoge'
   print res.to_s
 
-  #=> ½ĞÎÏ·ë²Ì
+  #=> å‡ºåŠ›çµæœ
   HTTP/1.1 200 OK
   Connection: Keep-Alive
   Date: Sat, 27 Oct 2007 08:58:49 GMT

@@ -4,7 +4,7 @@ kind=defined
 
 --- nowrite_flag=(flag)
 
-�ºݤ�ư���Ԥ����ɤ������ꤷ�ޤ���
+実際に動作を行うかどうか設定します。
 
-@param flag �ºݤ�ư���Ԥ����ɤ�������ꤷ�ޤ���������ꤹ���ư���¹Ԥ��ޤ���
+@param flag 実際に動作を行うかどうかを指定します。真を指定すると動作を実行しません。
 

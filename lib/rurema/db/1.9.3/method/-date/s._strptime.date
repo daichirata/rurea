@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- _strptime(str, format = '%F') -> Hash
-���Υ᥽�åɤ� [[m:Date.strptime]] �Ȼ��Ƥ��ޤ��������ե��֥������Ȥ����������ˡ�
-�������������Ǥ�ϥå�����֤��ޤ���
+このメソッドは [[m:Date.strptime]] と似ていますが、日付オブジェクトを生成せずに、
+見いだした要素をハッシュで返します。
 
-@param str ���դ򤢤�魯ʸ����
-@param format ��
+@param str 日付をあらわす文字列
+@param format 書式
 

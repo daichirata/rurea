@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- to_s   -> String
-¥Ñ¥¹Ì¾¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+ãƒ‘ã‚¹åã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 
     require 'pathname'

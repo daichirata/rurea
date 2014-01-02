@@ -4,10 +4,12 @@ kind=defined
 
 --- new(*options) -> YAML::Store
 
-YAML �����Υե�������ɤ߹��ޤ��������ϡ��ǽ�ΰ����˥ե�����̾��ʸ����ǻ��ꤷ�ޤ���
-�Ǹ�ΰ������ϥå���Ǥ��ä����ϡ�YAML �Υǥե���Ȥ�������ѹ����ޤ���
+自身を初期化します。
 
-@param options �ɤ߹��ޤ������ե�����䡢���ץ�����Ϳ���ޤ���
+YAML 形式のファイルを読み込ませたい場合は、最初の引数にファイル名を文字列で指定します。
+最後の引数がハッシュであった場合は、YAML 出力時のオプションを変更します。
 
-@see [[m:YAML::DEFAULTS]]
+@param options 読み込ませたいファイルや、オプションを与えます。
+
+@see [[m:Object#to_yaml]]
 

@@ -6,6 +6,6 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 411 (Length Required) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 411 (Length Required) を表現するクラスです。
 
-�ܤ����� [[RFC:2616]] �򸫤Ƥ���������
+詳しくは [[RFC:2616]] を見てください。

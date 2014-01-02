@@ -4,8 +4,8 @@ kind=defined
 
 --- set_backtrace(errinfo)    -> nil | String | [String]
 
-�Хå��ȥ졼������� errinfo �����ꤷ�����ꤵ�줿�Хå��ȥ졼��
-������֤��ޤ���
+バックトレース情報に errinfo を設定し、設定されたバックトレース
+情報を返します。
 
-@param errinfo nil��[[c:String]] ���뤤�� [[c:String]] ������Τ����줫����ꤷ�ޤ���
+@param errinfo nil、[[c:String]] あるいは [[c:String]] の配列のいずれかを指定します。
 

@@ -4,12 +4,12 @@ kind=defined
 
 --- getpwuid(uid = getuid) -> Struct::Passwd
 
-passwd ¥Ç¡¼¥¿¥Ù¡¼¥¹¤ò¸¡º÷¤·¡¢
-¥æ¡¼¥¶ ID ¤¬ uid ¤Ç¤¢¤ë passwd ¥¨¥ó¥È¥ê¤òÊÖ¤·¤Ş¤¹¡£
+passwd ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã‚’æ¤œç´¢ã—ã€
+ãƒ¦ãƒ¼ã‚¶ ID ãŒ uid ã§ã‚ã‚‹ passwd ã‚¨ãƒ³ãƒˆãƒªã‚’è¿”ã—ã¾ã™ã€‚
 
-@param uid ¸¡º÷¤¹¤ë uid ¡£°ú¿ô¤ò¾ÊÎ¬¤·¤¿¾ì¹ç¤Ë¤Ï [[man:getuid(2)]] ¤ÎÃÍ¤òÍÑ¤¤¤Ş¤¹¡£
+@param uid æ¤œç´¢ã™ã‚‹ uid ã€‚å¼•æ•°ã‚’çœç•¥ã—ãŸå ´åˆã«ã¯ [[man:getuid(2)]] ã®å€¤ã‚’ç”¨ã„ã¾ã™ã€‚
 
-@raise ArgumentError ¥¨¥ó¥È¥ê¤¬¸«¤Ä¤«¤é¤Ê¤«¤Ã¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise ArgumentError ã‚¨ãƒ³ãƒˆãƒªãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[man:getpwuid(3)]], [[c:Struct::Passwd]]
 

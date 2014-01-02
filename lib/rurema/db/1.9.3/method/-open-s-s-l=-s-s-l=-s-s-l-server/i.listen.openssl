@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- listen(backlog=5) -> 0
-¥é¥Ã¥×¤·¤Æ¤¤¤ë [[c:TCPServer]] ¤Î [[m:TCPServer#listen]] 
-¤ò¸Æ¤Ó¤À¤·¤Ş¤¹¡£
+ãƒ©ãƒƒãƒ—ã—ã¦ã„ã‚‹ [[c:TCPServer]] ã® [[m:TCPServer#listen]] 
+ã‚’å‘¼ã³ã ã—ã¾ã™ã€‚
 
-ÄÌ¾ï¤Ï TCPServer ¤Î½é´ü²½»ş¤Ë listen ¤¬¸Æ¤Ó¤À¤µ¤ì¤ë¤¿¤á
-¸Æ¤ÖÉ¬Í×¤Ï¤Ê¤¤¤Ï¤º¤Ç¤¹¡£
+é€šå¸¸ã¯ TCPServer ã®åˆæœŸåŒ–æ™‚ã« listen ãŒå‘¼ã³ã ã•ã‚Œã‚‹ãŸã‚
+å‘¼ã¶å¿…è¦ã¯ãªã„ã¯ãšã§ã™ã€‚
 
-@param backlog ¥¯¥é¥¤¥¢¥ó¥È¤«¤é¤ÎÀÜÂ³Í×µá¤òÊİÎ±¤Ç¤­¤ë¿ô
-@raise Errno::EXXX [[man:listen(2)]] ¤¬¼ºÇÔ¤¹¤ì¤Ğ Îã³° [[c:Errno::EXXX]] ¤¬È¯À¸¤·¤Ş¤¹¡£
+@param backlog ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã‹ã‚‰ã®æ¥ç¶šè¦æ±‚ã‚’ä¿ç•™ã§ãã‚‹æ•°
+@raise Errno::EXXX [[man:listen(2)]] ãŒå¤±æ•—ã™ã‚Œã° ä¾‹å¤– [[c:Errno::EXXX]] ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 

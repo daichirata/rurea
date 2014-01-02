@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- + (n) -> Date
-self ���� n ��������ե��֥������Ȥ��֤��ޤ���
-n �Ͽ��ͤǤʤ���Фʤ�ޤ���
+self から n 日後の日付オブジェクトを返します。
+n は数値でなければなりません。
 
-@param n ����
-@raise TypeError n �����ͤǤʤ�����ȯ�����ޤ���
+@param n 日数
+@raise TypeError n が数値でない場合に発生します。
 

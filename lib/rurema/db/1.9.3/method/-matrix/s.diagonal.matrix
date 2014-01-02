@@ -2,18 +2,18 @@ names=diagonal
 visibility=public
 kind=defined
 
---- diagonal(values) -> Matrix
+--- diagonal(*values) -> Matrix
 
-ÂÐ³ÑÍ×ÁÇ¤¬values(¥ª¥Ö¥¸¥§¥¯¥È¤ÎÊÂ¤Ó)¤Ç¡¢ÈóÂÐ³ÑÍ×ÁÇ¤¬Á´¤Æ0¤Ç¤¢¤ë¤è¤¦¤Ê
-ÀµÊý¹ÔÎó¤òÀ¸À®¤·¤Þ¤¹¡£
+å¯¾è§’è¦ç´ ãŒvaluesã§ã€éžå¯¾è§’è¦ç´ ãŒå…¨ã¦0ã§ã‚ã‚‹ã‚ˆã†ãª
+æ­£æ–¹è¡Œåˆ—ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param values ¹ÔÎó¤ÎÂÐ³ÑÍ×ÁÇ¤È¤¹¤ë¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£
+@param values è¡Œåˆ—ã®å¯¾è§’è¦ç´ 
 
-===== Ãí°Õ
+===== æ³¨æ„
 
-values¤Ë°ì¼¡¸µArray¤ò1¸Ä»ØÄê¤¹¤ë¤È¡¢¤½¤ÎArray¤òÍ£°ì¤ÎÍ×ÁÇ¤È¤·¤¿1¡ß1¤Î¹ÔÎó¤¬À¸À®¤µ¤ì¤Þ¤¹¡£
+valuesã«ä¸€æ¬¡å…ƒArrayã‚’1å€‹æŒ‡å®šã™ã‚‹ã¨ã€ãã®Arrayã‚’å”¯ä¸€ã®è¦ç´ ã¨ã—ãŸ1Ã—1ã®è¡Œåˆ—ãŒç”Ÿæˆã•ã‚Œã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'matrix'
 
   m = Matrix.diagonal(1, 2, 3)

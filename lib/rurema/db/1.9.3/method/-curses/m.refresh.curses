@@ -4,11 +4,11 @@ kind=defined
 
 --- refresh -> nil
 
-�������Τ�ɽ��������ɥ� stdscr ��ɽ���򹹿����ޤ���
+画面全体を表すウィンドウ stdscr の表示を更新します。
 
-�ܤ����ϡ� man �ڡ����� curs_refresh(3X) �� refresh �ؿ��򻲾Ȥ���������
+詳しくは、 man ページの curs_refresh(3X) の refresh 関数を参照ください。
 
-���Υ᥽�åɤ���� [[m:Curses.#init_screen]] ��ƤӽФ��ޤ���
+このメソッドの中で [[m:Curses.#init_screen]] を呼び出します。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、例外 SecurityError を発生します。
 

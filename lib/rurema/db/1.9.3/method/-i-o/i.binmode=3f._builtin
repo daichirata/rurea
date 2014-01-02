@@ -4,5 +4,5 @@ kind=defined
 
 --- binmode? -> bool
 
-���Ȥ��Х��ʥ�⡼�ɤʤ� true ���֤��ޤ��������Ǥʤ���硢false ���֤��ޤ���
+自身がバイナリモードなら true を返します。そうでない場合、false を返します。
 

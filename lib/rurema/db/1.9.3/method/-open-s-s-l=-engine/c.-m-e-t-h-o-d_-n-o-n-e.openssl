@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- METHOD_NONE -> Integer
-engine ¤ò¥Ç¥Õ¥©¥ë¥È¤ËÀßÄê¤·¤Ê¤¤¤³¤È¤ò°ÕÌ£¤·¤Ş¤¹¡£
+engine ã‚’ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã«è¨­å®šã—ãªã„ã“ã¨ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
-[[m:OpenSSL::Engine#set_default]] ¤Î¥Õ¥é¥°¤È¤·¤Æ»È¤¤¤Ş¤¹¡£
+[[m:OpenSSL::Engine#set_default]] ã®ãƒ•ãƒ©ã‚°ã¨ã—ã¦ä½¿ã„ã¾ã™ã€‚
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- have_option?(mid, opt) -> bool
 
-mid �Ȥ����᥽�åɤ� opt �Ȥ������ץ�������ľ�硢�����֤��ޤ���
-�����Ǥʤ����ϡ������֤��ޤ���
+mid というメソッドが opt というオプションを持つ場合、真を返します。
+そうでない場合は、偽を返します。
 
-@param mid �᥽�å�̾����ꤷ�ޤ���
+@param mid メソッド名を指定します。
 
-@param opt ���ץ����̾����ꤷ�ޤ���
+@param opt オプション名を指定します。
 

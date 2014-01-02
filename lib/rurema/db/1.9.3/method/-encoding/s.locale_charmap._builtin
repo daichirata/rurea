@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- locale_charmap -> String | nil
-�������륨�󥳡��ǥ��󥰤���ꤹ�뤿����Ѥ��롢locale charmap ̾���֤��ޤ���nl_langinfo �����ʤ��Ķ��Ǥ� nil ��miniruby �Ǥ� ASCII_8BIT ���֤��ޤ���
+ロケールエンコーディングを決定するために用いる、locale charmap 名を返します。nl_langinfo 等がない環境では nil を、miniruby では ASCII_8BIT を返します。
 
   Debian GNU/Linux
     LANG=C

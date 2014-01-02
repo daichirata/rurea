@@ -2,11 +2,11 @@ names=reverse!
 visibility=public
 kind=defined
 
---- reverse! -> ()
+--- reverse! -> self
 
-Ê¸»úÎó¤òÊ¸»úÃ±°Ì¤Çº¸±¦µÕÅ¾¤·¤Þ¤¹¡£
+æ–‡å­—åˆ—ã‚’æ–‡å­—å˜ä½ã§å·¦å³é€†è»¢ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
     str = "foobar"
     str.reverse!
     p str   # => "raboof"

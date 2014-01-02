@@ -4,15 +4,15 @@ kind=defined
 
 --- close    -> nil
 
-�����ϥݡ��Ȥ򥯥��������ޤ���
+入出力ポートをクローズします。
 
-�ʸ夳�Υݡ��Ȥ��Ф��������Ϥ�Ԥ����㳰 [[c:IOError]] ��ȯ������
-���������١������쥯�Ȥκݤˤϥ�����������Ƥ��ʤ� IO �ݡ��Ȥϥ�����
-������ޤ���[[unknown:Traps:close��GC�ˤޤ�����|trap::IO]] 
-self ���ѥ��פǥץ������ˤĤʤ��äƤ���С����Υץ������ν�
-λ���Ԥ���碌�ޤ���
+以後このポートに対して入出力を行うと例外 [[c:IOError]] が発生しま
+す。ガーベージコレクトの際にはクローズされていない IO ポートはクロー
+ズされます。
+self がパイプでプロセスにつながっていれば、そのプロセスの終
+了を待ち合わせます。
 
-@raise Errno::EXXX close �˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX close に失敗した場合に発生します。
 
-@raise IOError ���� close ����Ƥ�������ȯ�����ޤ���
+@raise IOError 既に close されていた場合に発生します。
 

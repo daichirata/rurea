@@ -5,9 +5,9 @@ kind=defined
 --- Big5 -> Encoding
 --- BIG5 -> Encoding
 
-Big5 ���󥳡��ǥ��󥰤Ǥ���
+Big5 エンコーディングです。
 
-���ѤǻȤ��Ƥ������λ�����Υ��󥳡��ǥ��󥰤Ǥ���
+台湾で使われている繁体字中国語のエンコーディングです。
 
 @see [[url:http://en.wikipedia.org/wiki/Big5]]
 

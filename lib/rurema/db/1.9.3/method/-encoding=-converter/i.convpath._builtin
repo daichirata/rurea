@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- convpath -> Array
-สัดนด๏คฌนิคฆสัดนคฮทะฯฉค๒วÛฮ๓คหคทคฦสึคทคÞคนกฃ
+ๅคๆๅจใ่กใๅคๆใฎ็ต่ทฏใ’้…ๅ—ใซใ—ใฆ่ฟ”ใ—ใพใใ€
 
-@return สัดนด๏คฌนิคฆสัดนคฮทะฯฉคฮวÛฮ๓
+@return ๅคๆๅจใ่กใๅคๆใฎ็ต่ทฏใฎ้…ๅ—
 
   ec = Encoding::Converter.new("ISo-8859-1", "EUC-JP", crlf_newline: true)
   p ec.convpath

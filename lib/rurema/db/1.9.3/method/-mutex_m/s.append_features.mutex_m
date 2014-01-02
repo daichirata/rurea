@@ -4,7 +4,7 @@ kind=defined
 
 --- append_features(klass) -> Class | nil
 
-¥æ¡¼¥¶¤¬Ä¾ÀÜ¡¢»È¤¦¤³¤È¤Ï¤¢¤ê¤Ş¤»¤ó¡£
+ãƒ¦ãƒ¼ã‚¶ãŒç›´æ¥ã€ä½¿ã†ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚
 
 @see [[m:Module#append_features]]
 

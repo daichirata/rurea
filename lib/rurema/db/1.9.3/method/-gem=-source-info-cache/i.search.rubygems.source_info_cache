@@ -4,13 +4,13 @@ kind=defined
 
 --- search(pattern, platform_only = false, all = false) -> [Gem::Specification]
 
-Ϳ����줿���������� [[c:Gem::Specification]] �Υꥹ�Ȥ��֤��ޤ���
+与えられた条件を満たす [[c:Gem::Specification]] のリストを返します。
 
-@param pattern ���������� Gem ��ɽ�� [[c:Gem::Dependency]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param pattern 検索したい Gem を表す [[c:Gem::Dependency]] のインスタンスを指定します。
 
-@param platform_only ������ꤹ��ȥץ�åȥե����ब���פ����ΤΤߤ��֤��ޤ����ǥե���Ȥϵ��Ǥ���
+@param platform_only 真を指定するとプラットフォームが一致するもののみを返します。デフォルトは偽です。
 
-@param all ������ꤹ��ȥ���å���򹹿����Ƥ��鸡����¹Ԥ��ޤ���
+@param all 真を指定するとキャッシュを更新してから検索を実行します。
 
 @see [[m:Gem::SourceIndex#search]]
 

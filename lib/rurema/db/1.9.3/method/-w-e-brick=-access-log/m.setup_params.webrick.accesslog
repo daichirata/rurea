@@ -4,11 +4,11 @@ kind=defined
 
 --- setup_params(config, request, response) -> Hash
 
-Ϳ����줿��������Ѥ��ƥ������Ϥ˻��Ѥ���ѥ�᡼������������֤��ޤ���
+与えられた引数を使用してログ出力に使用するパラメータを作成して返します。
 
-@param config �ϥå������ꤷ�ޤ���
+@param config ハッシュを指定します。
 
-@param request [[c:WEBrick::HTTPRequest]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param request [[c:WEBrick::HTTPRequest]] のインスタンスを指定します。
 
-@param response [[c:WEBrick::HTTPResponse]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param response [[c:WEBrick::HTTPResponse]] のインスタンスを指定します。
 

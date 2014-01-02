@@ -4,18 +4,18 @@ kind=defined
 
 --- extend(*modules) -> self
 
-�����ǻ��ꤷ���⥸�塼��Υ��󥹥��󥹥᥽�åɤ� self ���ð�
-�᥽�åɤȤ����ɲä��ޤ���
+引数で指定したモジュールのインスタンスメソッドを self の特異
+メソッドとして追加します。
 
-[[m:Module#include]] �ϡ����饹(�Υ��󥹥���)�˵�ǽ���ɲä��ޤ�
-����extend �ϡ���������Υ��֥������Ȥ����˥⥸�塼��ε�ǽ���ɲ�
-�������Ȥ��˻��Ѥ��ޤ���
+[[m:Module#include]] は、クラス(のインスタンス)に機能を追加します
+が、extend は、ある特定のオブジェクトだけにモジュールの機能を追加
+したいときに使用します。
 
-������ʣ���Υ⥸�塼�����ꤷ����硢�Ǹ�
-�ΰ�������ս�� extend ��Ԥ��ޤ���
+引数に複数のモジュールを指定した場合、最後
+の引数から逆順に extend を行います。
 
-@param modules �⥸�塼���Ǥ�ոĻ��ꤷ�ޤ��ʥ��饹���Բġˡ�
-@return self ���֤��ޤ���
+@param modules モジュールを任意個指定します（クラスは不可）。
+@return self を返します。
 
   module Foo
     def a
@@ -42,12 +42,12 @@ kind=defined
   p Klass.new.a #=> "ok Foo"
   p Klass.b     #=> "ok Bar"
   
-extend �ε�ǽ�ϡ����ðۥ��饹���Ф��� [[m:Module#include]]��
-�ȸ����ؤ��뤳�Ȥ�Ǥ��ޤ���
-���������ξ�硢�եå��ѤΥ᥽�å�
-�� [[m:Module#extended]] �ǤϤʤ� [[m:Module#included]] �ˤʤ�Ȥ����㤤������ޤ���
+extend の機能は、「特異クラスに対する [[m:Module#include]]」
+と言い替えることもできます。
+ただしその場合、フック用のメソッド
+が [[m:Module#extended]] ではなく [[m:Module#included]] になるという違いがあります。
 
-  # obj.extend Foo, Bar �Ȥۤ�Ʊ��
+  # obj.extend Foo, Bar とほぼ同じ
   class << obj
     include Foo, Bar
   end

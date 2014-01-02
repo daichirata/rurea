@@ -4,5 +4,5 @@ kind=defined
 
 --- stop?    -> bool
 
-¥¹¥ì¥Ã¥É¤¬½ªÎ»(dead)¤¢¤ë¤¤¤ÏÄä»ß(stop)¤·¤Æ¤¤¤ë»þ¡¢true ¤òÊÖ¤·¤Þ¤¹¡£
+ã‚¹ãƒ¬ãƒƒãƒ‰ãŒçµ‚äº†(dead)ã‚ã‚‹ã„ã¯åœæ­¢(stop)ã—ã¦ã„ã‚‹æ™‚ã€true ã‚’è¿”ã—ã¾ã™ã€‚
 

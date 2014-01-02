@@ -6,11 +6,11 @@ library=openssl
 aliases=
 aliasof=
 
-DSA �������Ź楯�饹
+DSA 公開鍵暗号クラス
 
-�ºݤˤϡ�DSA �Ͻ�̾�Τ���Υ��르�ꥺ��Ǥ��ꡢ�Ź沽�ϤǤ��ޤ���
+実際には、DSA は署名のためのアルゴリズムであり、暗号化はできません。
 
-�ʲ��ϡ�data �˽�̾������̾���Ȥ� data �򸡾ڤ����ñ����Ǥ���
+以下は、data に署名し、署名をもとに data を検証する簡単な例です。
 
   require "openssl"
   dsa512 = OpenSSL::PKey::DSA.new(512)

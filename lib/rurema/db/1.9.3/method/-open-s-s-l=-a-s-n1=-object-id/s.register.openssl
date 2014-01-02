@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- register(oid, short_name, long_name) -> true
-¥ª¥Ö¥¸¥§¥¯¥È¼±ÊÌ»Ò¤ËÂĞ±ş¤¹¤ëÌ¾Á°(short name ¤È long name)¤ò
-OpenSSL¤ÎÆâÉô¥Æ¡¼¥Ö¥ë¤ËÅĞÏ¿¤·¤Ş¤¹¡£
+ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè­˜åˆ¥å­ã«å¯¾å¿œã™ã‚‹åå‰(short name ã¨ long name)ã‚’
+OpenSSLã®å†…éƒ¨ãƒ†ãƒ¼ãƒ–ãƒ«ã«ç™»éŒ²ã—ã¾ã™ã€‚
 
-ÅĞÏ¿¤·¤¿Ì¾Á°¤Ï [[c:OpenSSL::X509::Extension]] ¤Ê¤É¤ÇÍøÍÑ¤Ç¤­¤ë¤è¤¦¤Ë¤Ê¤ê¤Ş¤¹¡£
+ç™»éŒ²ã—ãŸåå‰ã¯ [[c:OpenSSL::X509::Extension]] ãªã©ã§åˆ©ç”¨ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require "openssl"
   OpenSSL::ASN1::ObjectId.register(
@@ -16,8 +16,8 @@ OpenSSL¤ÎÆâÉô¥Æ¡¼¥Ö¥ë¤ËÅĞÏ¿¤·¤Ş¤¹¡£
   p OpenSSL::ASN1::ObjectId.new("2.5.29.9").long_name 
   # => "X509v3 Subject Directory Attributes"
 
-@param oid ÅĞÏ¿¤¹¤ë¼±ÊÌ»Ò(¥É¥Ã¥È¶èÀÚ¤ê¿ô»úÉ½µ­¤ÎÊ¸»úÎó)
-@param short_name short name¤È¤·¤ÆÅĞÏ¿¤¹¤ëÊ¸»úÎó
-@param long_name long name¤È¤·¤ÆÅĞÏ¿¤¹¤ëÊ¸»úÎó
-@raise OpenSSL::ASN1Error ÅĞÏ¿¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@param oid ç™»éŒ²ã™ã‚‹è­˜åˆ¥å­(ãƒ‰ãƒƒãƒˆåŒºåˆ‡ã‚Šæ•°å­—è¡¨è¨˜ã®æ–‡å­—åˆ—)
+@param short_name short nameã¨ã—ã¦ç™»éŒ²ã™ã‚‹æ–‡å­—åˆ—
+@param long_name long nameã¨ã—ã¦ç™»éŒ²ã™ã‚‹æ–‡å­—åˆ—
+@raise OpenSSL::ASN1Error ç™»éŒ²ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

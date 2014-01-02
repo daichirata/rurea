@@ -4,7 +4,7 @@ kind=defined
 
 --- summary_indent=(indent)
 
-���ޥ��ɽ��������Υ���ǥ�Ȥ�ʸ����ǻ��ꤷ�ޤ���
+サマリを表示する時のインデントを文字列で指定します。
 
-@param indent ���ޥ��ɽ��������˻Ȥ��륤��ǥ�Ȥ�ʸ����ǻ��ꤷ�ޤ���
+@param indent サマリを表示する時に使われるインデントを文字列で指定します。
 

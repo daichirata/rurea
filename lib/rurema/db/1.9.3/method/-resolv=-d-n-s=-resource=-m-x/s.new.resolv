@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- new(preference, exchange) -> Resolv::DNS::Resource::MX
-Resolv::DNS::Resource::MX ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÊÖ¤·¤Ş¤¹¡£
+Resolv::DNS::Resource::MX ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param preference MX¤ÎÍ¥ÀèÅÙ
-@param exchange MX¤Î¥Û¥¹¥È
+@param preference MXã®å„ªå…ˆåº¦
+@param exchange MXã®ãƒ›ã‚¹ãƒˆ
 
 

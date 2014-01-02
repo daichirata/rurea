@@ -4,5 +4,5 @@ kind=defined
 
 --- count_observers -> Fixnum
 
-��Ͽ����Ƥ��륪�֥����Фο����֤��ޤ���
+登録されているオブザーバの数を返します。
 

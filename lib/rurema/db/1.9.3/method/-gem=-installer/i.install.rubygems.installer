@@ -4,20 +4,20 @@ kind=defined
 
 --- install -> Gem::Specification
 
-Gem �򥤥󥹥ȡ��뤷�ޤ���
+Gem をインストールします。
 
-�ʲ��Υǥ��쥯�ȥ깽¤�� Gem �򥤥󥹥ȡ��뤷�ޤ���
+以下のディレクトリ構造で Gem をインストールします。
 
    @gem_home/
-     cache/<gem-version>.gem              #=> ���󥹥ȡ��뤷�� Gem �Υ��ԡ�
-     gems/<gem-version>/...               #=> ���󥹥ȡ������Ÿ�������ե�����
-     specifications/<gem-version>.gemspec #=> gemspec �ե�����
+     cache/<gem-version>.gem              #=> インストールした Gem のコピー
+     gems/<gem-version>/...               #=> インストール時に展開したファイル
+     specifications/<gem-version>.gemspec #=> gemspec ファイル
 
-@return �����ɤ��줿 [[c:Gem::Specification]] �Υ��󥹥��󥹤��֤��ޤ���
+@return ロードされた [[c:Gem::Specification]] のインスタンスを返します。
 
-@raise Gem::InstallError �׵ᤵ�줿 Ruby �ΥС��������������Ƥ��ʤ�����ȯ�����ޤ���
+@raise Gem::InstallError 要求された Ruby のバージョンを満たしていない場合に発生します。
 
-@raise Gem::InstallError �׵ᤵ�줿 RubyGems �ΥС��������������Ƥ��ʤ�����ȯ�����ޤ���
+@raise Gem::InstallError 要求された RubyGems のバージョンを満たしていない場合に発生します。
 
-@raise Gem::InstallError [[c:Zlib::GzipFile::Error]] ��ȯ����������ȯ�����ޤ���
+@raise Gem::InstallError [[c:Zlib::GzipFile::Error]] が発生した場合に発生します。
 

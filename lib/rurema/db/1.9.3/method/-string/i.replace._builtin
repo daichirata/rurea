@@ -4,9 +4,9 @@ kind=defined
 
 --- replace(other) -> String
 
-self ¤ÎÆâÍÆ¤ò other ¤ÎÆâÍÆ¤ÇÃÖ¤­´¹¤¨¤Ş¤¹¡£
+self ã®å†…å®¹ã‚’ other ã®å†…å®¹ã§ç½®ãæ›ãˆã¾ã™ã€‚
 
-Îã:
+ä¾‹:
     str = "foo"
     str.replace "bar"
     p str   # => "bar"

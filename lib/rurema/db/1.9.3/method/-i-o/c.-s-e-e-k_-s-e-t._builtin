@@ -4,6 +4,4 @@ kind=defined
 
 --- SEEK_SET -> Fixnum
 
-[[m:IO#seek]] �򻲾Ȥ��Ƥ���������
-
-
+[[m:IO#seek]] を参照してください。

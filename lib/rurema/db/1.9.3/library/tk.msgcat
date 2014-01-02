@@ -3,5 +3,6 @@ classes=TkMsgCatalog,TkMsgCat
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

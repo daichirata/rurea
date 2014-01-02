@@ -4,5 +4,5 @@ kind=defined
 
 --- ipv4? -> bool
 
-IPv4 �ʤ鿿���֤��ޤ���
+IPv4 なら真を返します。
 

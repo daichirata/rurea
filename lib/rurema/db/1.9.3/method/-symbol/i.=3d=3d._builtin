@@ -4,8 +4,8 @@ kind=defined
 
 --- ==(other)        -> true | false
 
-other ��Ʊ������ܥ�λ��˿����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+other が同じシンボルの時に真を返します。
+そうでない場合は偽を返します。
 
-@param other ����оݤΥ���ܥ����ꤷ�ޤ���
+@param other 比較対象のシンボルを指定します。
 

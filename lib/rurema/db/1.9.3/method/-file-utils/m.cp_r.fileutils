@@ -4,18 +4,18 @@ kind=defined
 
 --- cp_r(src, dest, options = {}) -> ()
 
-src ¤ò dest ¤Ë¥³¥Ô¡¼¤·¤Ş¤¹¡£src ¤¬¥Ç¥£¥ì¥¯¥È¥ê¤Ç¤¢¤Ã¤¿¤éºÆµ¢Åª¤Ë
-¥³¥Ô¡¼¤·¤Ş¤¹¡£¤½¤Îºİ dest ¤¬¥Ç¥£¥ì¥¯¥È¥ê¤Ê¤é dest/src ¤Ë¥³¥Ô¡¼¤·¤Ş¤¹¡£
+src ã‚’ dest ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚src ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã‚ã£ãŸã‚‰å†å¸°çš„ã«
+ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚ãã®éš› dest ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãªã‚‰ dest/src ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-@param src ¥³¥Ô¡¼¸µ¡£°ì¤Ä¤Î¾ì¹ç¤ÏÊ¸»úÎó¤Ç¤â»ØÄê²ÄÇ½¤Ç¤¹¡£
-           Æó¤Ä°Ê¾å»ØÄê¤¹¤ë¾ì¹ç¤ÏÇÛÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param src ã‚³ãƒ”ãƒ¼å…ƒã€‚ä¸€ã¤ã®å ´åˆã¯æ–‡å­—åˆ—ã§ã‚‚æŒ‡å®šå¯èƒ½ã§ã™ã€‚
+           äºŒã¤ä»¥ä¸ŠæŒ‡å®šã™ã‚‹å ´åˆã¯é…åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param dest ¥³¥Ô¡¼Àè¤Î¥Õ¥¡¥¤¥ë¤«¥Ç¥£¥ì¥¯¥È¥ê¤Ç¤¹¡£
+@param dest ã‚³ãƒ”ãƒ¼å…ˆã®ãƒ•ã‚¡ã‚¤ãƒ«ã‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã™ã€‚
 
-@param options :preserve, :noop, :verbose, :dereference_root, :remove_destination ¤¬»ØÄê¤Ç¤­¤Ş¤¹¡£
+@param options :preserve, :noop, :verbose, :dereference_root, :remove_destination ãŒæŒ‡å®šã§ãã¾ã™ã€‚
                [[ref:c:FileUtils#options]]
 
-Îã:
+ä¾‹:
 
   # installing ruby library "mylib" under the site_ruby
   FileUtils.rm_r(site_ruby + '/mylib', {:force => true})

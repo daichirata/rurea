@@ -4,5 +4,5 @@ kind=defined
 
 --- os_code -> Integer
 
-gzip �ե�����Υإå����˵�Ͽ����Ƥ��� OS �������ֹ���֤��ޤ���
+gzip ファイルのヘッダーに記録されている OS コード番号を返します。
 

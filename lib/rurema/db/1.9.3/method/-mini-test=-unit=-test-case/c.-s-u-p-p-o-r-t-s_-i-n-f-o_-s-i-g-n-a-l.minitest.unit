@@ -4,6 +4,6 @@ kind=defined
 
 --- SUPPORTS_INFO_SIGNAL -> Fixnum | nil
 
-[[c:Signal]] �� INFO �Ȥ��������ʥ�򥵥ݡ��Ȥ��Ƥ��뤫�ɤ�����
-Ĵ�٤뤿�������Ǥ��������ǻ��Ѥ��ޤ���
+[[c:Signal]] が INFO というシグナルをサポートしているかどうかを
+調べるための定数です。内部で使用します。
 

@@ -6,5 +6,5 @@ library=net.protocol
 aliases=
 aliasof=
 
-�ͥåȥ���ץ��ȥ����Υ��顼������������
-ȯ�������㳰�Ǥ���
+ネットワークプロトコル上のエラーが起きた場合に
+発生する例外です。

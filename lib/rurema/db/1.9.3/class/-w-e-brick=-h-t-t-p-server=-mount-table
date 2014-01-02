@@ -6,4 +6,4 @@ library=webrick.httpserver
 aliases=
 aliasof=
 
-�����о�Υѥ��ȥ����֥�åȤ��б��ط���������뤿��Υ��饹�Ǥ���
+サーバ上のパスとサーブレットの対応関係を管理するためのクラスです。

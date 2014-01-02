@@ -11,6 +11,7 @@ require 'bitclust/compat'
 
 module BitClust
 
+  # Utilities for conversion among names, ids and URL fragments.
   module NameUtils
 
     module_function
@@ -18,9 +19,9 @@ module BitClust
     LIBNAME_RE     = %r<[\w\-]+(/[\w\-]+)*>
     CONST_RE       = /[A-Z]\w*/
     CONST_PATH_RE  = /#{CONST_RE}(?:::#{CONST_RE})*/
-    CLASS_NAME_RE  = /(?:#{CONST_RE}|fatal)/
-    CLASS_PATH_RE  = /(?:#{CONST_PATH_RE}|fatal)/
-    METHOD_NAME_RE = /\w+[?!=]?|===|==|=~|<=>|<=|>=|!=|!|!@|\[\]=|\[\]|\*\*|>>|<<|\+@|\-@|[~+\-*\/%&|^<>`]/
+    CLASS_NAME_RE  = /(?:#{CONST_RE}(?:::compatible)?|fatal|ARGF.class|main)/
+    CLASS_PATH_RE  = /(?:#{CONST_PATH_RE}(?:::compatible)?|fatal|ARGF.class|main)/
+    METHOD_NAME_RE = /\w+[?!=]?|===|==|=~|<=>|<=|>=|!=|!|!@|!~|\[\]=|\[\]|\*\*|>>|<<|\+@|\-@|[~+\-*\/%&|^<>`]/
     TYPEMARK_RE    = /(?:\.|\#|\.\#|::|\$)/
     METHOD_SPEC_RE = /#{CLASS_PATH_RE}#{TYPEMARK_RE}#{METHOD_NAME_RE}/
     GVAR_RE        = /\$(?:\w+|-.|\S)/
@@ -50,6 +51,7 @@ module BitClust
     end
 
     def method_spec?(str)
+      return false if str == "ARGF.class"
       (/\A#{METHOD_SPEC_RE}\z/o =~ str) ? true : false
     end
 
@@ -120,7 +122,8 @@ module BitClust
 
     # private module function
     def split_method_id(id)
-      return *id.split(%r<[/\.]>, 4)
+      c, rest = id.split("/")
+      return *[c, *rest.split(%r<[/\.]>, 3)]
     end
 
     NAME_TO_MARK = {

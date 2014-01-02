@@ -4,7 +4,7 @@ kind=defined
 
 --- pair_content(pair) -> Array
 @todo
-Ϳ����줿 pair �˴ޤޤ��ʸ�������طʿ������ǤȤ��������Ǥ�������֤��ޤ���
+与えられた pair に含まれる文字色と背景色を要素とする二要素の配列を返します。
 
 @param pair 
 

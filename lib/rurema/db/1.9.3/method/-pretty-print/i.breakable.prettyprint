@@ -5,11 +5,11 @@ kind=defined
 --- breakable(sep = ' ')     -> ()
 --- breakable(sep, width = sep.length)    -> ()
 
-��ɬ�פʤ餳���ǲ��Խ����פȤ������Ȥ򼫿Ȥ����Τ��ޤ���
-�⤷���ΰ��֤ǲ��Ԥ���ʤ���С�width �����Υƥ����� sep �����Ϥκݤˤ�������������ޤ���
+「必要ならここで改行出来る」ということを自身に通知します。
+もしその位置で改行されなければ、width カラムのテキスト sep が出力の際にそこに挿入されます。
 
-@param sep ���Ԥ������ʤ��ä��������������ƥ����Ȥ�ʸ����ǻ��ꤷ�ޤ���
+@param sep 改行が起きなかった場合に挿入されるテキストを文字列で指定します。
 
-@param width �ƥ����� sep �� width �����Ǥ���Ȳ��ꤵ��ޤ������ꤵ��ʤ���С�
-             sep.length �����Ѥ���ޤ����㤨�� sep ��¿�Х���ʸ���κݤ˻��ꤹ��ɬ�פ����뤫���Τ�ޤ���
+@param width テキスト sep は width カラムであると仮定されます。指定されなければ、
+             sep.length が利用されます。例えば sep が多バイト文字の際に指定する必要があるかも知れません。
 

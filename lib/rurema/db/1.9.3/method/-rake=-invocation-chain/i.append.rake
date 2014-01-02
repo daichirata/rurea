@@ -4,9 +4,9 @@ kind=defined
 
 --- append(task_name) -> Rake::InvocationChain
 
-Ϳ����줿������̾���ɲä��ƿ����� [[c:Rake::InvocationChain]] ���֤��ޤ���
+与えられたタスク名を追加して新しい [[c:Rake::InvocationChain]] を返します。
 
-@param task_name �ɲä��륿����̾����ꤷ�ޤ���
+@param task_name 追加するタスク名を指定します。
 
-@raise RuntimeError �۴Ĥ����������θƤӽФ��򸡽Ф�������ȯ�����ޤ���
+@raise RuntimeError 循環したタスクの呼び出しを検出した場合に発生します。
 

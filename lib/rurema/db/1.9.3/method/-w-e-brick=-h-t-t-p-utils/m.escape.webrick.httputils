@@ -4,9 +4,9 @@ kind=defined
 
 --- escape(str) -> String
 
-Í¿¤¨¤é¤ì¤¿Ê¸»úÎó¤ò¿ôÃÍ»²¾ÈÊ¸»úÎó¤ËÊÑ´¹¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸæ–‡å­—åˆ—ã‚’æ•°å€¤å‚ç…§æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-°Ê²¼¤ÎÀµµ¬É½¸½¤ò»ÈÍÑ¤·¤ÆÊÑ´¹¤·¤Ş¤¹¡£
+ä»¥ä¸‹ã®æ­£è¦è¡¨ç¾ã‚’ä½¿ç”¨ã—ã¦å¤‰æ›ã—ã¾ã™ã€‚
 
   control  = (0x0..0x1f).collect{|c| c.chr }.join + "\x7f"
   space    = " "
@@ -15,5 +15,5 @@ kind=defined
   nonascii = (0x80..0xff).collect{|c| c.chr }.join
   /[#{Regexp.escape(control + space + delims + unwise + nonascii)}]/n
 
-@param str Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param str æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

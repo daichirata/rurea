@@ -4,5 +4,5 @@ kind=defined
 
 --- rewind    -> 0
 
-���Ȥ� pos �� lineno �򤽤줾�� 0 �ˤ��ޤ���
+自身の pos と lineno をそれぞれ 0 にします。
 

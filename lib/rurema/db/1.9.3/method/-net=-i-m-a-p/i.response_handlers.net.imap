@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- response_handlers -> Array
-���ꤵ��Ƥ���쥹�ݥ󥹥ϥ�ɥ����Ƥ�
-������֤��ޤ���
+設定されているレスポンスハンドラ全てを
+配列で返します。
 
 @see [[m:Net::IMAP#add_response_handler]]
 

@@ -4,15 +4,15 @@ kind=defined
 
 --- delete -> ()
 --- delete! -> ()
-�᡼��˺���ޡ������դ��ޤ���
+メールに削除マークを付けます。
 
-����ޡ������դ����᡼����ɤ߽Ф��ʤ��ʤ�ޤ���
-���å����λ���˼ºݤ˺������ޤ���
-[[m:Net::POP3#reset]] ��Ƥ֤Ⱥ���ޡ����ϼ��ä���ޤ���
+削除マークを付けたメールは読み出せなくなります。
+セッション終了時に実際に削除されます。
+[[m:Net::POP3#reset]] を呼ぶと削除マークは取り消されます。
 
-delete! �� obsolete �Ǥ���
+delete! は obsolete です。
 
-@raise TimeoutError �̿��������ॢ���Ȥ�������ȯ�����ޤ�
-@raise Net::POPError �����Ф�ǧ�ڼ��԰ʳ��Υ��顼����𤷤�����ȯ�����ޤ�
-@raise Net::POPBadResponse �����Ф���α������ץ��ȥ���������Ǥ��ä�����ȯ�����ޤ�
+@raise TimeoutError 通信がタイムアウトした場合に発生します
+@raise Net::POPError サーバが認証失敗以外のエラーを報告した場合に発生します
+@raise Net::POPBadResponse サーバからの応答がプロトコル上不正であった場合に発生します
 @see [[m:Net::POPMail#deleted?]]

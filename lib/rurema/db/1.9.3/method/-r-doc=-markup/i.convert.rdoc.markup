@@ -4,12 +4,12 @@ kind=defined
 
 --- convert(str, formatter) -> object | ""
 
-str �ǻ��ꤵ�줿ʸ����� formatter ���Ѵ������ޤ���
+str で指定された文字列を formatter に変換させます。
 
-@param str �Ѵ�����ʸ�������ꤷ�ޤ���
+@param str 変換する文字列を指定します。
 
-@param formatter [[c:SM::ToHtml]]��[[c:SM::ToLaTeX]] �ʤɤΥ��󥹥���
-                 ����ꤷ�ޤ���
+@param formatter [[c:SM::ToHtml]]、[[c:SM::ToLaTeX]] などのインスタンス
+                 を指定します。
 
-�Ѵ���̤� formatter �ˤ�ä�ʸ�����������֤��ޤ���
+変換結果は formatter によって文字列や配列を返します。
 

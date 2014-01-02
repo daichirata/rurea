@@ -4,15 +4,15 @@ kind=defined
 
 --- Raise(exception_class = nil, *rest) -> ()
 --- Fail(exception_class = nil, *rest)  -> ()
-ÅĞÏ¿¤µ¤ì¤Æ¤¤¤ë¾ğÊó¤ò»ÈÍÑ¤·¤Æ¡¢Îã³°¤òÈ¯À¸¤µ¤»¤Ş¤¹¡£
+ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹æƒ…å ±ã‚’ä½¿ç”¨ã—ã¦ã€ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚
 
-@param exception_class Îã³°¥¯¥é¥¹¡£
+@param exception_class ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã€‚
 
-@param rest ¥á¥Ã¥»¡¼¥¸¤ËËä¤á¹ş¤àÃÍ¡£
+@param rest ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«åŸ‹ã‚è¾¼ã‚€å€¤ã€‚
 
-@raise Exception2MessageMapper::ErrNotRegisteredException »ØÄê¤µ¤ì¤¿Îã³°¥¯¥é¥¹¤ËÂĞ±ş¤¹¤ë¥á¥Ã¥»¡¼¥¸¤¬Â¸ºß¤·¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise Exception2MessageMapper::ErrNotRegisteredException æŒ‡å®šã•ã‚ŒãŸä¾‹å¤–ã‚¯ãƒ©ã‚¹ã«å¯¾å¿œã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå­˜åœ¨ã—ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   class Foo
     extend Exception2MessageMapper
@@ -24,8 +24,8 @@ kind=defined
   end
   
   Foo.new().foo() #=> in `Raise': message...1, 2 and 3 (Foo::NewExceptionClass)
-                  #   ¤È¤¤¤¦Îã³°¤¬È¯À¸¤·¤Ş¤¹¡£
+                  #   ã¨ã„ã†ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã™ã€‚
   
   Foo.Raise Foo::NewExceptionClass, 1, 3, 5  #=> in `Raise': message...1, 3 and 5 (Foo::NewExceptionClass)
-                                             #   ¤È¤¤¤¦Îã³°¤¬È¯À¸¤·¤Ş¤¹¡£
+                                             #   ã¨ã„ã†ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 

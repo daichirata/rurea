@@ -6,8 +6,8 @@ library=rss
 aliases=
 aliasof=
 
-day¤Ï
-maker.channel.skipDays.new_day¤ÇºîÀ®¤µ¤ì¤¿¥ª
-¥Ö¥¸¥§¥¯¥È¤È¤·¤Ş¤¹¡¥
+dayã¯
+maker.channel.skipDays.new_dayã§ä½œæˆã•ã‚ŒãŸã‚ª
+ãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨ã—ã¾ã™ï¼
 
-content¤ò»ØÄê¤¹¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹¡¥
+contentã‚’æŒ‡å®šã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ï¼

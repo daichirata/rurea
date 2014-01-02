@@ -6,4 +6,10 @@ library=rexml
 aliases=
 aliasof=
 
+要素([[c:REXML::Element]])の属性を表すクラスです。
 
+つまり、 <element attribute="value"/> という
+要素における attribute=value というペアのことです。
+
+属性にはなんらかの名前空間(namespace, [[c:REXML::Namespace]])
+に属することができます。

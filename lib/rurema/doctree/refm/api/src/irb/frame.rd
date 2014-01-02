@@ -1,45 +1,54 @@
+現在実行中のフレーム情報を取り扱うためのサブライブラリです。
+
+このライブラリで定義されているメソッドはユーザが直接使用するものではありません。
+
 #@# Author: Keiju ISHITSUKA
+
 = class IRB::Frame
 
-���߼¹���Υե졼�������갷������Υ��饹�Ǥ���
+現在実行中のフレーム情報を取り扱うためのクラスです。
 
-[��]
-set_trace_func ���Ѥ��� Ruby �μ¹Ԥ�ȥ졼�����Ƥ��ޤ���
-�ޥ������åɤˤ��б����Ƥ��ޤ���
+[注]
+set_trace_func を用いて Ruby の実行をトレースしています。
+マルチスレッドには対応していません。
 
 == Class Methods
 
---- top(n = 0)
-#@todo
+--- top(n = 0) -> Binding
 
-�夫��n���ܤΥ���ƥ����Ȥ���Ф��ޤ���
-n �� 0 ���Ǿ�̤ˤʤ�ޤ���
+上から n 番目のコンテキストを取り出します。
 
---- bottom(n = 0)
-#@todo
+@param n 取り出すコンテキストを [[c:Integer]] で指定します。n は 0 が最
+         上位になります。
 
-������n���ܤΥ���ƥ����Ȥ���Ф��ޤ���
-n �� 0 ���ǲ��̤ˤʤ�ޤ���
+--- bottom(n = 0) -> Binding
 
---- sender
-#@todo
+下から n 番目のコンテキストを取り出します。
 
-������ˤʤäƤ��륪�֥������Ȥ���Ф��ޤ���
-������Ȥϡ����Υ᥽�åɤ�ƤӽФ���¦�� self �Τ��ȤǤ���
+@param n 取り出すコンテキストを [[c:Integer]] で指定します。n は 0 が最
+         下位になります。
+
+--- sender -> object
+
+センダになっているオブジェクトを取り出します。
+センダとは、そのメソッドを呼び出した側の self のことです。
 
 == Instance Methods
 
---- bottom(n = 0)
-#@todo
+--- bottom(n = 0) -> Binding
 
-������n���ܤΥ���ƥ����Ȥ���Ф��ޤ���
-n �� 0 ���ǲ��̤ˤʤ�ޤ���
+下から n 番目のコンテキストを取り出します。
 
---- top(n = 0)
-#@todo
+@param n 取り出すコンテキストを [[c:Integer]] で指定します。n は 0 が最
+         下位になります。
 
-�夫��n���ܤΥ���ƥ����Ȥ���Ф��ޤ���
-n �� 0 ���Ǿ�̤ˤʤ�ޤ���
+--- top(n = 0) -> Binding
 
---- trace_func(event, file, line, id, binding)
-#@todo
+上から n 番目のコンテキストを取り出します。
+
+@param n 取り出すコンテキストを [[c:Integer]] で指定します。n は 0 が最
+         上位になります。
+
+--- trace_func(event, file, line, id, binding) -> Binding
+
+ライブラリ内部で使用します。

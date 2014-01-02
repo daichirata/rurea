@@ -4,5 +4,5 @@ kind=added
 
 --- default_bindir -> String
 
-�¹ԥե�����Υǥե���ȤΥѥ����֤��ޤ���
+実行ファイルのデフォルトのパスを返します。
 

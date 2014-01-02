@@ -5,5 +5,5 @@ kind=defined
 --- level -> Integer
 --- sev_threshold -> Integer
 
-�쥷���Ф˥��åȤ���Ƥ��������٥��������ޤ���
+レシーバにセットされているログレベルを取得します。
 

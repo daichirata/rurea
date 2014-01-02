@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- VT_ERROR -> Integer
-HRESULT�򼨤��ޤ���10�ˡ�
+HRESULTを示します（10）。
 
-HRESULT�ϡ�COM��ޤ�Windows�Υ����ӥ������ץꥱ�����������Τ�������Ū
-�ʥ��顼�����ɤǤ���
+HRESULTは、COMを含むWindowsのサービスがアプリケーションへ通知する統一的
+なエラーコードです。
 
 HRESULT: [[url:http://msdn.microsoft.com/en-us/library/cc704587(v=PROT.10).aspx]]
 

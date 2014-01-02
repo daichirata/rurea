@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- ino -> Integer
-i-node ÈÖ¹æ¤òÊÖ¤·¤Þ¤¹¡£
+i-node ç•ªå·ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.ino      #=> 0
 

@@ -3,5 +3,6 @@ classes=
 methods=Syck/s.tag_class.syck.tag,Syck/s.tagged_classes.syck.tag
 sublibraries=
 is_sublibrary=true
+category=
 
-¥¿¥° URI ¤È¥¯¥é¥¹¤ò´ØÏ¢ÉÕ¤±¤ë¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ã‚¿ã‚° URI ã¨ã‚¯ãƒ©ã‚¹ã‚’é–¢é€£ä»˜ã‘ã‚‹ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

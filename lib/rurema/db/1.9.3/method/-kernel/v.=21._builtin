@@ -4,11 +4,11 @@ kind=defined
 
 --- $! -> Exception | nil
 
-�Ǹ���㳰��ȯ�������Ȥ��� [[c:Exception]] ���֥������ȤǤ���
-���������㳰���ʤ��Ȥ��� nil �Ǥ���
+最後に例外が発生したときの [[c:Exception]] オブジェクトです。
+該当する例外がないときは nil です。
 
-[[m:Kernel.#raise]] �ˤ�ä����ꤵ��ޤ���
+[[m:Kernel.#raise]] によって設定されます。
 
-�����ѿ��ϥ���åɥ������롢�ɤ߼�����ѤǤ���
+この変数はスレッドローカル、読み取り専用です。
 
 

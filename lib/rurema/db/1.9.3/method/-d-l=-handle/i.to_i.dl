@@ -4,4 +4,5 @@ kind=defined
 
 --- to_i    -> Integer
 
-���Ȥ�ɽ���ϥ�ɥ�([[man:dlopen(3)]] ���֤������)�Υ��ɥ쥹���֤��ޤ���
+自身が表すハンドル([[man:dlopen(3)]] が返したもの)のアドレスを返します。
+

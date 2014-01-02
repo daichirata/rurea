@@ -4,13 +4,13 @@ kind=defined
 
 --- new(parent, title, comment) -> RDoc::Context::Section
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-@param parent [[c:RDoc::Context]] ���֥������Ȥ���ꤷ�ޤ���
+@param parent [[c:RDoc::Context]] オブジェクトを指定します。
 
-@param title section �Υ����ȥ��ʸ����ǻ��ꤷ�ޤ���
+@param title section のタイトルを文字列で指定します。
 
-@param comment section �Υ����Ȥ�ʸ����ǻ��ꤷ�ޤ���
+@param comment section のコメントを文字列で指定します。
 
-�ޤ���section �Υ��������ֹ�򿷤����������ޤ���
+また、section のシーケンス番号を新しく作成します。
 

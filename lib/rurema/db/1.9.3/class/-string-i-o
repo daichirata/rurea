@@ -6,9 +6,9 @@ library=stringio
 aliases=
 aliasof=
 
-ʸ����� [[c:IO]] ��Ʊ�����󥿥ե�������������뤿��Υ��饹�Ǥ���
+文字列に [[c:IO]] と同じインタフェースを持たせるためのクラスです。
 
-��:
+例:
 
   require "stringio"
   sio = StringIO.new("hoge", 'r+')
@@ -19,9 +19,9 @@ aliasof=
   sio.rewind
   p sio.read                 #=> "hOGE"
 
-=== �㳰
-StringIO ���֥������Ȥ�����ξ�� IO ���֥������Ȥ�Ʊ���㳰��ȯ�������ޤ���
-�㤨�м�����Ǥ� write �� IOError ��ȯ�������ޤ���
+=== 例外
+StringIO オブジェクトは大抵の場合 IO オブジェクトと同じ例外を発生させます。
+例えば次の例では write は IOError を発生させます。
 
   require "stringio"
   sio = StringIO.new("hoge")

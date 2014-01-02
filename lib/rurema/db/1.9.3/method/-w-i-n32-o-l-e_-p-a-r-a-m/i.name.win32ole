@@ -4,9 +4,9 @@ kind=defined
 
 --- name -> String
 --- to_s -> String
-�ѥ�᡼��̾��������ޤ���
+パラメータ名を取得します。
 
-@return �ѥ�᡼��̾���֤��ޤ���̾���դ����������ǥ᥽�åɤ�ƤӽФ��Ȥ��˻��ꤷ�ޤ���
+@return パラメータ名を返します。名前付き引数形式でメソッドを呼び出すときに指定します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 9.0 Object Library', 'Workbook')
    method = WIN32OLE_METHOD.new(tobj, 'SaveAs')

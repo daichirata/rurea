@@ -3,5 +3,6 @@ classes=WEBrick=ServerError,WEBrick=SimpleServer,WEBrick=Daemon,WEBrick=GenericS
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

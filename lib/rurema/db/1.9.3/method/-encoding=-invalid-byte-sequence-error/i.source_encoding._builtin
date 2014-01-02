@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- source_encoding -> Encoding
-���顼��ȯ���������Ѵ����Ѵ����Υ��󥳡��ǥ��󥰤� [[c:Encoding]]
-���֥������Ȥ��֤��ޤ���
+エラーを発生させた変換の変換元のエンコーディングを [[c:Encoding]]
+オブジェクトで返します。
 
 @see [[m:Encoding::InvalidByteSequenceError#destination_encoding]],
      [[m:Encoding::UndefinedConversionError#source_encoding]]

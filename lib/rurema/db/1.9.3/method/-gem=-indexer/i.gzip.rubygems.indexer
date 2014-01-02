@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- gzip(filename)
-[[m:Zlib::GzipWriter.open]] ¤Ø¤Î¥é¥Ã¥Ñ¡¼¤Ç¤¹¡£
-Í¿¤¨¤é¤ì¤¿¥Õ¥¡¥¤¥ëÌ¾¤ò°µ½Ì¤·¤ÆÊİÂ¸¤·¤Ş¤¹¡£
+[[m:Zlib::GzipWriter.open]] ã¸ã®ãƒ©ãƒƒãƒ‘ãƒ¼ã§ã™ã€‚
+ä¸ãˆã‚‰ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«åã‚’åœ§ç¸®ã—ã¦ä¿å­˜ã—ã¾ã™ã€‚
 

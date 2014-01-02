@@ -4,6 +4,6 @@ kind=defined
 
 --- load(filename)
 
-Ϳ����줿�ե����������ɤ��ޤ���
+与えられたファイルをロードします。
 
-@param filename �����ɤ���ե�����̾����ꤷ�ޤ���
+@param filename ロードするファイル名を指定します。

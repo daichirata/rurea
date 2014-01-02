@@ -4,12 +4,12 @@ kind=defined
 
 --- create(input) -> Gem::Requirement
 
-[[c:Gem::Requirement]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òºîÀ®¤¹¤ë¤¿¤á¤Î¥Õ¥¡¥¯¥È¥ê¥á¥½¥Ã¥É¤Ç¤¹¡£
+[[c:Gem::Requirement]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½œæˆã™ã‚‹ãŸã‚ã®ãƒ•ã‚¡ã‚¯ãƒˆãƒªãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
 
-@param input Ê¸»úÎó¤«ÇÛÎó¤« [[c:Gem::Requirement]], [[c:Gem::Version]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹
-             ¤Î¤¤¤º¤ì¤«¤ò»ØÄê¤·¤Ş¤¹¡£
+@param input æ–‡å­—åˆ—ã‹é…åˆ—ã‹ [[c:Gem::Requirement]], [[c:Gem::Version]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
+             ã®ã„ãšã‚Œã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return ¾åµ­°Ê³°¤ÎÃÍ¤ò input ¤Ë»ØÄê¤¹¤ë¤È¥Ç¥Õ¥©¥ë¥ÈÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+@return ä¸Šè¨˜ä»¥å¤–ã®å€¤ã‚’ input ã«æŒ‡å®šã™ã‚‹ã¨ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Gem::Requirement.new]], [[m:Gem::Requirement.default]]
 

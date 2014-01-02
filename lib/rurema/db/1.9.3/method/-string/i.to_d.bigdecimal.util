@@ -4,7 +4,7 @@ kind=added
 
 --- to_d -> BigDecimal
 
-¼«¿È¤ò [[c:BigDecimal]] ¤ËÊÑ´¹¤·¤Ş¤¹¡£BigDecimal(self) ¤ÈÆ±¤¸¤Ç¤¹¡£
+è‡ªèº«ã‚’ [[c:BigDecimal]] ã«å¤‰æ›ã—ã¾ã™ã€‚BigDecimal(self) ã¨åŒã˜ã§ã™ã€‚
 
-@return [[c:BigDecimal]] ¤ËÊÑ´¹¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È
+@return [[c:BigDecimal]] ã«å¤‰æ›ã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 

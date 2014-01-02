@@ -3,5 +3,6 @@ classes=TkToplevel
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

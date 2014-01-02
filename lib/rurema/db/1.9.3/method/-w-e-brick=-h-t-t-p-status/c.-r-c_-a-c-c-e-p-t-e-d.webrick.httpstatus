@@ -43,7 +43,7 @@ kind=defined
 --- RC_GATEWAY_TIMEOUT
 --- RC_HTTP_VERSION_NOT_SUPPORTED
 
-HTTP ¤Î¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤òÉ½¤¹À°¿ô¤Ç¤¹¡£
+HTTP ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’è¡¨ã™æ•´æ•°ã§ã™ã€‚
 
   require 'webrick'
   p WEBrick::HTTPStatus::RC_INTERNAL_SERVER_ERROR   #=> 500

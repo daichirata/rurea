@@ -3,35 +3,35 @@ visibility=private
 kind=added
 
 --- gem(gem_name, *version_requirements) -> bool
-[[m:$LOAD_PATH]] �� Ruby Gem ���ɲä��ޤ���
+[[m:$LOAD_PATH]] に Ruby Gem を追加します。
 
-���ꤵ�줿 Gem ������ɤ������ˤ��� Gem ��ɬ�פȤ��� Gem ������ɤ��ޤ���
-�С�����������ά�������ϡ��Ǥ�⤤�С������� Gem ������ɤ��ޤ���
-���ꤵ�줿 Gem �䤽�� Gem ��ɬ�פȤ��� Gem �����Ĥ���ʤ��ä�����
-[[c:Gem::LoadError]] ��ȯ�����ޤ���
+指定された Gem をロードする前にその Gem が必要とする Gem をロードします。
+バージョン情報を省略した場合は、最も高いバージョンの Gem をロードします。
+指定された Gem やその Gem が必要とする Gem が見つからなかった場合は
+[[c:Gem::LoadError]] が発生します。
 
-�С������λ�����ˡ�˴ؤ��Ƥ� [[c:Gem::Version]] �򻲾Ȥ��Ƥ���������
+バージョンの指定方法に関しては [[c:Gem::Version]] を参照してください。
 
-rubygems �饤�֥�꤬�饤�֥��С������ξ��ͤ򸡽Ф��ʤ��¤ꡢ
-gem �᥽�åɤ����Ƥ� require �᥽�åɤ������˼¹Ԥ���ޤ���
+rubygems ライブラリがライブラリバージョンの衝突を検出しない限り、
+gem メソッドは全ての require メソッドよりも前に実行されます。
 
-==== �Ķ��ѿ� GEM_SKIP
+==== 環境変数 GEM_SKIP
 
-����� Gem ������ɤ��ʤ��褦�ˤ��뤿��˴Ķ��ѿ� GEM_SKIP ��������뤳�Ȥ��Ǥ��ޤ���
-����� Gem ���ޤ����󥹥ȡ��뤵��Ƥ��ʤ��Ȥ�������������˻��ѤǤ��ޤ���
+特定の Gem をロードしないようにするために環境変数 GEM_SKIP を定義することができます。
+特定の Gem がまだインストールされていないという状況を試すために使用できます。
 
-��:
+例:
 
   GEM_SKIP=libA:libB ruby-I../libA -I../libB ./mycode.rb
 
-@param gem Gem ��̾����ʸ���󤫡�Gem �ΰ�¸�ط��� [[c:Gem::Dependency]] �Υ��󥹥��󥹤ǻ��ꤷ�ޤ���
+@param gem Gem の名前の文字列か、Gem の依存関係を [[c:Gem::Dependency]] のインスタンスで指定します。
 
-@param version_requirements ɬ�פȤ��� gem �ΥС���������ꤷ�ޤ���
+@param version_requirements 必要とする gem のバージョンを指定します。
 
-@return Gem �������ɤǤ������� true ���֤��ޤ��������ɤǤ��ʤ��ä����� false ���֤��ޤ���
+@return Gem がロードできた場合は true を返します。ロードできなかった場合は false を返します。
 
-@raise Gem::LoadError ���ꤵ�줿 Gem �䤽�� Gem ��ɬ�פȤ��� Gem �����Ĥ���ʤ��ä�����ȯ�����ޤ���
-                      ���������Ķ��ѿ� GEM_SKIP �˻��ꤵ��Ƥ��� Gem �˴ؤ��ƤϤ����㳰��ȯ�����ޤ���
+@raise Gem::LoadError 指定された Gem やその Gem が必要とする Gem が見つからなかった場合に発生します。
+                      ただし、環境変数 GEM_SKIP に指定されている Gem に関してはこの例外は発生しません。
 
 @see [[c:Gem::Version]]
 

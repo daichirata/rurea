@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- offset_vtbl -> Integer
-���Υ᥽�åɤ�VTBL�Υ��ե��åȤ�������ޤ���
+このメソッドのVTBLのオフセットを取得します。
 
-VTBL��C++��C�ǥ᥽�åɤ�ƤӽФ���������Ѥ���ؿ��ݥ��󥿤Υơ��֥�Ǥ���
+VTBLはC++やCでメソッドを呼び出すために利用する関数ポインタのテーブルです。
 
-@return �᥽�åɤ�VTBL��Υ��ե��åȤ��֤��ޤ���
+@return メソッドのVTBL上のオフセットを返します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Workbooks')
    method = WIN32OLE_METHOD.new(tobj, 'Add')

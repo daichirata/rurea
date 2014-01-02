@@ -3,5 +3,6 @@ classes=Shell=Error,Shell=Error=CantApplyMethod,Shell=Error=CantDefine,Shell=Err
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[lib:shell]] ¤Ç»ÈÍÑ¤¹¤ëÎã³°¤òÄêµÁ¤·¤¿¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[lib:shell]] ã§ä½¿ç”¨ã™ã‚‹ä¾‹å¤–ã‚’å®šç¾©ã—ãŸãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

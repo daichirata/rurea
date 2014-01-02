@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- exist? -> bool
-FileTest.exist?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.exist?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#exist?]]
 

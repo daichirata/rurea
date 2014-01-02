@@ -4,9 +4,9 @@ kind=defined
 
 --- at(segment) -> object | nil
 
-���ꤷ������(�⤷���ϥ���ǥå���)���б������ͤ��֤��ޤ����б������ͤ�
-�ʤ����� nil ���֤��ޤ���
+指定したキー(もしくはインデックス)に対応する値を返します。対応する値が
+ない場合は nil を返します。
 
-@param segment [[c:Hash]] �Υ����� [[c:Array]] �Υ���ǥå�����ʸ�����
-               ���ꤷ�ޤ���
+@param segment [[c:Hash]] のキーか [[c:Array]] のインデックスを文字列で
+               指定します。
 

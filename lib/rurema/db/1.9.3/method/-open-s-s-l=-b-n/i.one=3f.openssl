@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- one? -> bool
-���Ȥ�1�Ǥ�����˿����֤��ޤ���
+自身が1である場合に真を返します。
 

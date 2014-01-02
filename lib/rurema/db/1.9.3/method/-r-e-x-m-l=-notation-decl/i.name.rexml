@@ -2,5 +2,6 @@ names=name
 visibility=public
 kind=defined
 
---- name
-@todo
+--- name -> String
+記法宣言の名前を返します。
+

@@ -4,5 +4,5 @@ kind=defined
 
 --- clone() -> Vector
 
-��ʬ���Ȥ򥳥ԡ������٥��ȥ���֤��ޤ���
+自分自身をコピーしたベクトルを返します。
 

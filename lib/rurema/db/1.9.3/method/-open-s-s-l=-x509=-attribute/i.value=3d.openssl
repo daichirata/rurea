@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- value=(val)
-attribute ¤ÎÃÍ¤òÀßÄê¤·¤Ş¤¹¡£
+attribute ã®å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-°ú¿ô¤Ë¤Ï [[c:OpenSSL::ASN1::ASN1Data]] ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òÅÏ¤µ¤Ê¤±¤ì¤Ğ¤Ê¤ê¤Ş¤»¤ó¡£
+å¼•æ•°ã«ã¯ [[c:OpenSSL::ASN1::ASN1Data]] ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¸¡ã•ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚
 
-@param val ÀßÄê¤¹¤ëÃÍ¤Î [[c:OpenSSL::ASN1::ASN1Data]] ¥ª¥Ö¥¸¥§¥¯¥È
-@raise OpenSSL::X509::AttributeError val ¤¬ÉÔÀµ¤Ç¤¢¤Ã¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param val è¨­å®šã™ã‚‹å€¤ã® [[c:OpenSSL::ASN1::ASN1Data]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+@raise OpenSSL::X509::AttributeError val ãŒä¸æ­£ã§ã‚ã£ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::X509::Attribute#value]]
 

@@ -2,6 +2,6 @@ names=LT
 visibility=public
 kind=defined
 
---- LT
-@todo
+--- LT -> REXML::Entity
+「&lt;」「<」というエンティティを表わすオブジェクト。
 

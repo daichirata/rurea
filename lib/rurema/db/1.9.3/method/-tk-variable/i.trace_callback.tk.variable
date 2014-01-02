@@ -5,8 +5,8 @@ kind=defined
 --- trace_callback(elem, op)
 @todo
 
-[[m:TkVariable#trace]]¤Ë¤è¤êÅĞÏ¿¤µ¤ì¤¿Proc¥ª¥Ö¥¸¥§¥¯¥È¤ò°ú¿ô¤Ëself,
-elem, op¤ò»ØÄê¤·¤Æ¼Â¹Ô¤·¤Ş¤¹¡£
+[[m:TkVariable#trace]]ã«ã‚ˆã‚Šç™»éŒ²ã•ã‚ŒãŸProcã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å¼•æ•°ã«self,
+elem, opã‚’æŒ‡å®šã—ã¦å®Ÿè¡Œã—ã¾ã™ã€‚
 
   require "tk"
 

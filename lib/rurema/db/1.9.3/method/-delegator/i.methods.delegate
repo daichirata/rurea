@@ -4,8 +4,8 @@ kind=defined
 
 --- methods -> [Symbol]
 
-���Υ��֥������Ȥ��Ф��ƸƤӽФ���᥽�å�̾�ΰ������֤��ޤ���
-���Υ᥽�åɤ� public �᥽�åɤ���� protected �᥽�åɤ�̾�����֤��ޤ���
+そのオブジェクトに対して呼び出せるメソッド名の一覧を返します。
+このメソッドは public メソッドおよび protected メソッドの名前を返します。
 
 @see [[m:Object#methods]]
 

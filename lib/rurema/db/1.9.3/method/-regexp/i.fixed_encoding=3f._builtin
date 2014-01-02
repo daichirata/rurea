@@ -4,6 +4,6 @@ kind=defined
 
 --- fixed_encoding? -> bool
 
-����ɽ����Ǥ�դ� ASCII �ߴ����󥳡��ǥ��󥰤ȥޥå���ǽ�ʻ��� false ���֤��ޤ���
+正規表現が任意の ASCII 互換エンコーディングとマッチ可能な時に false を返します。
 
 

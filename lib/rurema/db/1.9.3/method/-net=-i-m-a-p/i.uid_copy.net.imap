@@ -3,18 +3,18 @@ visibility=public
 kind=defined
 
 --- uid_copy(set, mailbox) -> Net::IMAP::TaggedResponse
-UID COPY ���ޥ�ɤ����ꡢ���ꤷ����å�������
-���ꤷ���᡼��ܥå������������ɲä��ޤ���
+UID COPY コマンドを送り、指定したメッセージを
+指定したメールボックスの末尾に追加します。
 
-set �ǥ��ԡ������å���������ꤷ�ޤ���
-UID (����)��
-UID �����󡢤⤷���� [[c:Range]] ��
-���ꤷ�ޤ������ԡ����Υ᡼��ܥå�����
-[[m:Net::IMAP#examine]] �⤷���� [[m:Net::IMAP#select]] ��
-���ꤷ����Τ��Ѥ��ޤ���
-mailbox �ϥ��ԡ���Υ᡼��ܥå����Ǥ���
+set でコピーするメッセージを指定します。
+UID (整数)、
+UID の配列、もしくは [[c:Range]] で
+指定します。コピー元のメールボックスは
+[[m:Net::IMAP#examine]] もしくは [[m:Net::IMAP#select]] で
+指定したものを用います。
+mailbox はコピー先のメールボックスです。
 
-@param set ���ԡ������å������� UID
-@param mailbox ���ԡ���Υ᡼��ܥå���(ʸ����)
+@param set コピーするメッセージの UID
+@param mailbox コピー先のメールボックス(文字列)
 @see [[m:Net::IMAP#copy]]
 

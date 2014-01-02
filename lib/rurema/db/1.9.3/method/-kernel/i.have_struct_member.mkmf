@@ -5,22 +5,22 @@ kind=added
 --- have_struct_member(type, member, headers = nil) -> bool
 --- have_struct_member(type, member, headers = nil){ ... } -> bool
 
-member �Ȥ������Ф���Ĺ�¤�� type �������ƥ��¸�ߤ��뤫�ɤ����������ޤ���
+member というメンバを持つ構造体 type がシステムに存在するかどうか検査します。
 
-member �Ȥ������Ф���Ĺ�¤�� type �������ƥ��¸�ߤ�����ϡ�
-�������Х��ѿ� [[m:$defs]] �� "-DHAVE_type_member" ���ɲä��������֤��ޤ���
-member �Ȥ������Ф���Ĺ�¤�� type ��¸�ߤ��ʤ����ϡ������֤��ޤ���
+member というメンバを持つ構造体 type がシステムに存在する場合は、
+グローバル変数 [[m:$defs]] に "-DHAVE_type_member" を追加し、真を返します。
+member というメンバを持つ構造体 type が存在しない場合は、偽を返します。
 
-�㤨��
+例えば
 
   have_struct_member('struct foo', 'bar') # => true
 
-�Ǥ����硢HAVE_STRUCT_FOO_BAR �Ȥ����ץ�ץ����å��ޥ����򥳥�ѥ�����Ϥ��ޤ���
-�ޤ��������ߴ����Τ���� HAVE_ST_BAR �Ȥ����ץ�ץ����å��ޥ�����������ޤ���
+である場合、HAVE_STRUCT_FOO_BAR というプリプロセッサマクロをコンパイラに渡します。
+また、後方互換性のために HAVE_ST_BAR というプリプロセッサマクロも定義します。
 
-@param type ������������¤�Τ�̾������ꤷ�ޤ���
+@param type 検査したい構造体の名前を指定します。
 
-@param member ������������¤�ΤΥ��Ф�̾������ꤷ�ޤ���
+@param member 検査したい構造体のメンバの名前を指定します。
 
-@param headers �ɲäΥإå��ե��������ꤷ�ޤ���
+@param headers 追加のヘッダファイルを指定します。
 

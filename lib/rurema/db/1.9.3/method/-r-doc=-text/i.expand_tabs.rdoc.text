@@ -4,8 +4,8 @@ kind=defined
 
 --- expand_tabs(text) -> String
 
-������Υ���(\t)��ľ����Ϣ³���륹�ڡ����ȹ�פ��� 8 ʸ���Υ��ڡ����ˤ�
-��褦���֤������ޤ���
+引数中のタブ(\t)を直前の連続するスペースと合計して 8 文字のスペースにな
+るように置き換えます。
 
-@param text ʸ�������ꤷ�ޤ���
+@param text 文字列を指定します。
 

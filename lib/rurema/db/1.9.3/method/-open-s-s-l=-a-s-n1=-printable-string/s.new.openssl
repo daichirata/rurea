@@ -4,14 +4,14 @@ kind=defined
 
 --- new(value) ->  OpenSSL::ASN1::PrintableString
 --- new(value, tag, tagging, tag_class) -> OpenSSL::ASN1::PrintableString
-ASN.1 ¤Î PrintableString ·¿¤ÎÃÍ¤òÉ½¸½¤¹¤ë OpenSSL::ASN1::PrintableString ¥ª¥Ö¥¸¥§¥¯¥È¤ò
-À¸À®¤·¤Þ¤¹¡£
+ASN.1 ã® PrintableString åž‹ã®å€¤ã‚’è¡¨ç¾ã™ã‚‹ OpenSSL::ASN1::PrintableString ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’
+ç”Ÿæˆã—ã¾ã™ã€‚
 
-value °Ê³°¤Î°ú¿ô¤ò¾ÊÎ¬¤·¤¿¾ì¹ç¤Ï¥¿¥°¥¯¥é¥¹¤Ï :UNIVERSAL¡¢
-¥¿¥° ¤Ï [[m:OpenSSL::ASN1::PRINTABLESTRING]] ¤È¤Ê¤ê¤Þ¤¹¡£
+value ä»¥å¤–ã®å¼•æ•°ã‚’çœç•¥ã—ãŸå ´åˆã¯ã‚¿ã‚°ã‚¯ãƒ©ã‚¹ã¯ :UNIVERSALã€
+ã‚¿ã‚° ã¯ [[m:OpenSSL::ASN1::PRINTABLESTRING]] ã¨ãªã‚Šã¾ã™ã€‚
 
-@param value ASN.1 ÃÍ¤òÉ½¤¹ Ruby ¤Î¥ª¥Ö¥¸¥§¥¯¥È(Ê¸»úÎó)
-@param tag ¥¿¥°ÈÖ¹æ
-@param tagging ¥¿¥°ÉÕ¤±¤ÎÊýË¡(:IMPLICIT ¤â¤·¤¯¤Ï :EXPLICIT)
-@param tag_class ¥¿¥°¥¯¥é¥¹(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE ¤Î¤¤¤º¤ì¤«)
+@param value ASN.1 å€¤ã‚’è¡¨ã™ Ruby ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ(æ–‡å­—åˆ—)
+@param tag ã‚¿ã‚°ç•ªå·
+@param tagging ã‚¿ã‚°ä»˜ã‘ã®æ–¹æ³•(:IMPLICIT ã‚‚ã—ãã¯ :EXPLICIT)
+@param tag_class ã‚¿ã‚°ã‚¯ãƒ©ã‚¹(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE ã®ã„ãšã‚Œã‹)
 

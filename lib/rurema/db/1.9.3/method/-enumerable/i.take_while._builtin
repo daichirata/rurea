@@ -5,12 +5,12 @@ kind=defined
 --- take_while                    -> Enumerator
 --- take_while {|element| ... }   -> Array
 
-Enumerable ���֥������Ȥ����Ǥ��˵��ˤʤ�ޤǥ֥��å���ɾ�����ޤ���
-�ǽ�˵��ˤʤä����Ǥμ��������ǤޤǤ�����Ȥ����֤��ޤ���
+Enumerable オブジェクトの要素を順に偽になるまでブロックで評価します。
+最初に偽になった要素の手前の要素までを配列として返します。
 
    a = [1, 2, 3, 4, 5, 0]
    a.take_while {|i| i < 3 }   # => [1, 2]
 
-�֥��å����ά�������ϡ�[[c:Enumerator]] ���֥������Ȥ�
-�֤��ޤ���
+ブロックを省略した場合は、[[c:Enumerator]] オブジェクトを
+返します。
 

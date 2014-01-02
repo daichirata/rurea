@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-OpenSSL PKCS#5 ��Ϣ�ε�ǽ�򽸤᤿�⥸�塼��
+OpenSSL PKCS#5 関連の機能を集めたモジュール

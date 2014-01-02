@@ -4,7 +4,7 @@ kind=defined
 
 --- A_BOLD -> Integer
 
-ʸ��������뤯���뤫�����ˤ��뤿���°���ޥ����Ѥ�����Ǥ���
+文字列を明るくするか太字にするための属性マスク用の定数です。
 
 @see [[m:Curses.attrset]]
 

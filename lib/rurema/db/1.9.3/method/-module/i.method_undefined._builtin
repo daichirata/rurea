@@ -4,15 +4,15 @@ kind=defined
 
 --- method_undefined(name) -> ()
 
-���Υ⥸�塼��Υ��󥹥��󥹥᥽�å� name ��
-[[m:Module#undef_method]] �ˤ�äƺ������뤫��
-undef ʸ�ˤ��̤����ˤ����ȡ����󥿥ץ꥿�����Υ᥽�åɤ�ƤӽФ��ޤ���
+このモジュールのインスタンスメソッド name が
+[[m:Module#undef_method]] によって削除されるか、
+undef 文により未定義にされると、インタプリタがこのメソッドを呼び出します。
 
-�ðۥ᥽�åɤκ����եå�����ˤ�
-[[m:Object#singleton_method_undefined]]
-��Ȥ��ޤ���
+特異メソッドの削除をフックするには
+[[m:BasicObject#singleton_method_undefined]]
+を使います。
 
-@param name ���/̤����ˤ��줿�᥽�å�̾�� [[c:Symbol]] ���Ϥ���ޤ���
+@param name 削除/未定義にされたメソッド名が [[c:Symbol]] で渡されます。
 
   class C
     def C.method_undefined(name)
@@ -28,7 +28,7 @@ undef ʸ�ˤ��̤����ˤ����ȡ����󥿥ץ꥿�����Υ᥽�åɤ�ƤӽФ��ޤ���
     undef bar
   end
 
-�¹Է��:
+実行結果:
 
   method C#foo was undefined
   method C#bar was undefined

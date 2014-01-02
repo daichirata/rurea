@@ -4,11 +4,11 @@ kind=defined
 
 --- tsort_each_child(node) {|child| ...} -> ()
 
-TSort �ǳ�ĥ����륯�饹���������Ƥ��ʤ���Фʤ�ʤ��᥽�åɤǤ���
+TSort で拡張されるクラスで定義されていなければならないメソッドです。
 
 tsort_each_child is used to iterate for child nodes of node.
 
-@param node �Ρ��ɤ���ꤷ�ޤ���
+@param node ノードを指定します。
 
-@raise NotImplementedError TSort �ǳ�ĥ����륯�饹���������Ƥ��ʤ����ȯ�����ޤ���
+@raise NotImplementedError TSort で拡張されるクラスで定義されていない場合発生します。
 

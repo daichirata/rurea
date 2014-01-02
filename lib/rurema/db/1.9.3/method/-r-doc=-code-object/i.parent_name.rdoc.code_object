@@ -4,6 +4,6 @@ kind=defined
 
 --- parent_name -> String
 
-self.parent ¤ÎÌ¾Á°¤òÊÖ¤·¤Ş¤¹¡£
+self.parent ã®åå‰ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:RDoc::CodeObject#parent]]

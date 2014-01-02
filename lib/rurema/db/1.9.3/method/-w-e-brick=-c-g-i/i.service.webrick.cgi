@@ -4,16 +4,16 @@ kind=defined
 
 --- service(req, res)     -> ()
 
-╗╪─ъд╡дьд┐ [[c:WEBrick::HTTPRequest]] еке╓е╕езепе╚ req д╬ [[m:WEBrick::HTTPRequest#request_method]] д╦▒■д╕д╞бв
-╝л┐╚д╬ do_GET, do_HEAD, do_POST, do_OPTIONS... ддд║дьдлд╬есе╜е├е╔дЄ req д╚ res дЄ░·┐Їд╚д╖д╞╕╞д╙д▐д╣бг
+цМЗхоЪуБХуВМуБЯ [[c:WEBrick::HTTPRequest]] уВкуГЦуВ╕уВзуВпуГИ req уБо [[m:WEBrick::HTTPRequest#request_method]] уБлх┐ЬуБШуБжуАБ
+шЗкш║луБо do_GET, do_HEAD, do_POST, do_OPTIONS... уБДуБЪуВМуБЛуБоуГбуВ╜уГГуГЙуВТ req уБи res уВТх╝ХцХ░уБиуБЧуБжхС╝уБ│уБ╛уБЩуАВ
 
-╞├д╦═¤═│дм╠╡дд╕┬дъ [[c:WEBrick::CGI]] д╬е╡е╓епеще╣дмд│д╬есе╜е├е╔дЄ─ъ╡┴д╣ды╔м═╫д╧двдъд▐д╗дєбг
+чЙ╣уБлчРЖчФ▒уБМчДбуБДщЩРуВК [[c:WEBrick::CGI]] уБоуВ╡уГЦуВпуГйуВ╣уБМуБУуБоуГбуВ╜уГГуГЙуВТхоЪч╛йуБЩуВЛх┐ЕшжБуБпуБВуВКуБ╛уБЫуВУуАВ
 
-@param req епещедевеєе╚длдщд╬еъепеие╣е╚дЄ╔╜д╣ [[c:WEBrick::HTTPRequest]] еке╓е╕езепе╚д╟д╣бг
+@param req уВпуГйуВдуВвуГ│уГИуБЛуВЙуБоуГкуВпуВиуВ╣уГИуВТшбиуБЩ [[c:WEBrick::HTTPRequest]] уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 
-@param res епещедевеєе╚д╪д╬еье╣е▌еєе╣дЄ╔╜д╣ [[c:WEBrick::HTTPResponse]] еке╓е╕езепе╚д╟д╣бг
+@param res уВпуГйуВдуВвуГ│уГИуБ╕уБоуГмуВ╣уГЭуГ│уВ╣уВТшбиуБЩ [[c:WEBrick::HTTPResponse]] уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 
-@raise WEBrick::HTTPStatus::MethodNotAllowed ╗╪─ъд╡дьд┐
-       [[c:WEBrick::HTTPRequest]] еке╓е╕езепе╚ req дм╝л┐╚д╦─ъ╡┴д╡дьд╞дд
-       д╩ддHTTP д╬есе╜е├е╔д╟двд├д┐╛ь╣ч╚п└╕д╖д▐д╣бг
+@raise WEBrick::HTTPStatus::MethodNotAllowed цМЗхоЪуБХуВМуБЯ
+       [[c:WEBrick::HTTPRequest]] уВкуГЦуВ╕уВзуВпуГИ req уБМшЗкш║луБлхоЪч╛йуБХуВМуБжуБД
+       уБкуБДHTTP уБоуГбуВ╜уГГуГЙуБзуБВуБгуБЯха┤хРИчЩ║чФЯуБЧуБ╛уБЩуАВ
 

@@ -6,5 +6,5 @@ library=openssl
 aliases=
 aliasof=
 
-PKCS#12 (ÈëÌ©¸°¡¢¾ÚÌÀ½ñ¡¢´ØÏ¢¤¹¤ëCA¾ÚÌÀ½ñ¤ò1¤Ä¤Î¥Õ¥¡¥¤¥ë¤ËÊÝÂ¸¤¹¤ë·Á¼°)
-¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+PKCS#12 (ç§˜å¯†éµã€è¨¼æ˜Žæ›¸ã€é–¢é€£ã™ã‚‹CAè¨¼æ˜Žæ›¸ã‚’1ã¤ã®ãƒ•ã‚¡ã‚¤ãƒ«ã«ä¿å­˜ã™ã‚‹å½¢å¼)
+ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

@@ -4,7 +4,7 @@ kind=defined
 
 --- shift -> [String]
 
-¥Ç¡¼¥¿¥Ù¡¼¥¹Ãæ¤ÎÍ×ÁÇ¤ò°ì¤Ä¼è¤ê½Ð¤·¡¢¥Ç¡¼¥¿¥Ù¡¼¥¹¤«¤éºï½ü¤·¤Þ¤¹¡£
+ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ä¸­ã®è¦ç´ ã‚’ä¸€ã¤å–ã‚Šå‡ºã—ã€ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã‹ã‚‰å‰Šé™¤ã—ã¾ã™ã€‚
 
   require 'sdbm'
   

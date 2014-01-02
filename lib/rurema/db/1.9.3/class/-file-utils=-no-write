@@ -6,5 +6,5 @@ library=fileutils
 aliases=
 aliasof=
 
-FileUtils ��Ʊ���᥽�åɤ��������Ƥ��ޤ�����
-�ºݤ˥ե�������ѹ��������ϼ¹Ԥ��ޤ���
+FileUtils と同じメソッドが定義されていますが、
+実際にファイルを変更する操作は実行しません。

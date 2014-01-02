@@ -6,5 +6,5 @@ library=webrick.cgi
 aliases=
 aliasof=
 
-���̤� CGI �Ķ��� [[c:WEBrick]] �Υ����֥�åȤ�Ʊ���褦�� CGI ������ץȤ�񤯤����
-���饹�Ǥ���
+一般の CGI 環境で [[c:WEBrick]] のサーブレットと同じように CGI スクリプトを書くための
+クラスです。

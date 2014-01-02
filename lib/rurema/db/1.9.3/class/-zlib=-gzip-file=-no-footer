@@ -6,4 +6,4 @@ library=zlib
 aliases=
 aliasof=
 
-gzip �ե�����˥եå�����̵������ȯ�����ޤ���
+gzip ファイルにフッターが無い時に発生します。

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- subject_certificate -> OpenSSL::X509::Certificate | nil
-���Ȥ����ꤵ��Ƥ����ͭ��(subject)�ξ����񥪥֥������Ȥ��֤��ޤ���
+自身に設定されている所有者(subject)の証明書オブジェクトを返します。
 
-���������ꤵ��Ƥ��ʤ����� nil ���֤��ޤ���
+証明書が設定されていない場合は nil を返します。
 

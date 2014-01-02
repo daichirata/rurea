@@ -4,11 +4,11 @@ kind=added
 
 --- rfc1123_date(time) -> String
 
-Ϳ����줿����� [[RFC:1123]] �ե����ޥåȤ˽�򤷤�ʸ������Ѵ����ޤ���
+与えられた時刻を [[RFC:1123]] フォーマットに準拠した文字列に変換します。
 
-@param time [[c:Time]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param time [[c:Time]] のインスタンスを指定します。
 
-�㡧
+例：
         require "cgi"
 
         CGI.rfc1123_date(Time.now)

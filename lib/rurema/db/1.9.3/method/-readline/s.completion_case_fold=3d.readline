@@ -4,12 +4,12 @@ kind=defined
 
 --- completion_case_fold=(bool)
 
-�桼�������Ϥ��䴰����ݡ���ʸ���Ⱦ�ʸ����Ʊ��뤹�롿���ʤ�����ꤷ�ޤ���
-bool �����ʤ��Ʊ��뤷�ޤ���bool �����ʤ��Ʊ��뤷�ޤ���
+ユーザの入力を補完する際、大文字と小文字を同一視する／しないを指定します。
+bool が真ならば同一視します。bool が偽ならば同一視しません。
 
-@param bool ��ʸ���Ⱦ�ʸ����Ʊ��뤹��(true)�����ʤ�(false)����ꤷ�ޤ���
+@param bool 大文字と小文字を同一視する(true)／しない(false)を指定します。
 
-@raise SecurityError �����ե�٥� ($SAFE) �� 4 �ξ���ȯ�����ޤ���
+@raise SecurityError セーフレベル ($SAFE) が 4 の場合に発生します。
 
 @see [[m:Readline.completion_case_fold]]
 

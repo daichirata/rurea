@@ -3,13 +3,13 @@ visibility=private
 kind=added
 
 --- xpopen(command, *mode) -> IO
---- xpopen(command, *mode){ ... } -> opbject
+--- xpopen(command, *mode){ ... } -> object
 
-command ��ɽ�����Ƥ��� [[m:IO.popen]] �μ¹Ԥ��ޤ���
+command を表示してから [[m:IO.popen]] の実行します。
 
-@param command ���ޥ��̾����ꤷ�ޤ���
+@param command コマンド名を指定します。
 
-@param mode �����ץ󤹤� IO �ݡ��ȤΥ⡼�ɤ���ꤷ�ޤ���mode �ξܺ٤� [[m:Kernel.#open]] ���Ȥ��Ʋ�������
+@param mode オープンする IO ポートのモードを指定します。mode の詳細は [[m:Kernel.#open]] 参照して下さい。
 
 @see [[m:IO.popen]]
 

@@ -1,9 +1,14 @@
-names===
+names===,===,eql?
 visibility=public
 kind=defined
 
---- ==(other)
-@todo
+--- ==(other)   -> bool
+--- ===(other)  -> bool
+--- eql?(other) -> bool
 
+self が other と等しい場合に true を、そうでない場合に false を返します。
 
+それぞれの値は [[m:BigDecimal#coerce]] で変換して比較される場合があります。
+
+  BigDecimal.new('1.0') == 1.0 # => true
 

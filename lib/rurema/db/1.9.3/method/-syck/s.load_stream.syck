@@ -4,11 +4,11 @@ kind=defined
 
 --- load_stream(io) -> object
 
-Ϳ����줿 io ���� YAML �ե����ޥåȤ�ʸ���
-���٤ƽ���ɤ߹���� Ruby �Υ��֥������Ȥ��Ѵ����Ƥ�����
-����饪�֥������Ȥ�ޤ�� [[c:Syck::Stream]] ���֤��ޤ���
+与えられた io から YAML フォーマットの文書を
+すべて順に読み込んで Ruby のオブジェクトに変換していき、
+それらオブジェクトを含んだ [[c:Syck::Stream]] を返します。
 
-@param io YAML �ե����ޥåȤ�ʸ���IO���֥������Ȥ⤷����ʸ����
+@param io YAML フォーマットの文書のIOオブジェクトもしくは文字列
 
   require 'syck'
   require 'yaml'

@@ -4,8 +4,8 @@ kind=defined
 
 --- list    -> [Thread]
 
-���Ƥ������Ƥ��륹��åɤ�ޤ���������������֤��ޤ���aborting ���֤Ǥ��륹��å�
-�����Ǥ˴ޤޤ�ޤ���
+全ての生きているスレッドを含む配列を生成して返します。aborting 状態であるスレッド
+も要素に含まれます。
 
   Thread.new do
     sleep 

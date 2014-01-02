@@ -4,14 +4,14 @@ kind=defined
 
 --- sid_available?    -> bool
 
-���ߤΥץ�åȥե����ब��¸���롼�� ID ����Ĥʤ� true ���֤��ޤ���
-�����Ǥʤ����� false ���֤��ޤ���
+現在のプラットフォームが保存グループ ID を持つなら true を返します。
+そうでない場合に false を返します。
 
-�����������Υ᥽�åɤ��ͤˤ��ݾڤ�����ޤ���
-���ߤϼ��ξ��Τ����줫����­�������ˤ�
-��¸���롼�� ID ����Ĥ�Τ�Ƚ�ꤷ�Ƥ��ޤ���
+ただし、このメソッドの値には保証がありません。
+現在は次の条件のいずれかが満足される場合には
+保存グループ ID を持つものと判定しています。
 
-  * setresgid() �����
-  * setegid() �����
-  * _POSIX_SAVED_IDS �����Ȥ����������Ƥ���
+  * setresgid() を持つ
+  * setegid() を持つ
+  * _POSIX_SAVED_IDS が真として定義されている
 

@@ -5,14 +5,14 @@ kind=defined
 --- pair(domain, type, protocol) -> Array
 --- socketpair(domain, type, protocol) -> Array
 
-Áê¸ß¤Ë·ë¹ç¤µ¤ì¤¿¥½¥±¥Ã¥È¤Î¥Ú¥¢¤ò´Ş¤à2Í×ÁÇ¤ÎÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
-°ú¿ô¤Î»ØÄê¤Ï [[m:Socket.open]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+ç›¸äº’ã«çµåˆã•ã‚ŒãŸã‚½ã‚±ãƒƒãƒˆã®ãƒšã‚¢ã‚’å«ã‚€2è¦ç´ ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+å¼•æ•°ã®æŒ‡å®šã¯ [[m:Socket.open]] ã¨åŒã˜ã§ã™ã€‚
 
-@param domain [[m:Socket.open]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param domain [[m:Socket.open]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param type   [[m:Socket.open]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param type   [[m:Socket.open]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param protocol [[m:Socket.open]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param protocol [[m:Socket.open]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 @see [[m:Socket.open]]
 

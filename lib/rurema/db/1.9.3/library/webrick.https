@@ -3,6 +3,7 @@ classes=
 methods=WEBrick=Config/c.HTTP.webrick.https,WEBrick=HTTPRequest/i.cipher.webrick.https,WEBrick=HTTPRequest/i.server_cert.webrick.https,WEBrick=HTTPRequest/i.client_cert.webrick.https,WEBrick=HTTPRequest/i.parse.webrick.https,WEBrick=HTTPRequest/i.meta_vars.webrick.https
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:WEBrick::HTTPServer]] ¤ò SSL/TLS ¤ËÂĞ±ş¤µ¤»¤ë¤¿¤á¤Î¼ÂÁõ¡£
-¤³¤Î¥Õ¥¡¥¤¥ë¤ò [[m:Kernel.#require]] ¤¹¤ë¤È [[c:WEBrick::HTTPServer]] ¤¬ SSL/TLS ÂĞ±ş¤Ë¤Ê¤ê¤Ş¤¹¡£
+[[c:WEBrick::HTTPServer]] ã‚’ SSL/TLS ã«å¯¾å¿œã•ã›ã‚‹ãŸã‚ã®å®Ÿè£…ã€‚
+ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ [[m:Kernel.#require]] ã™ã‚‹ã¨ [[c:WEBrick::HTTPServer]] ãŒ SSL/TLS å¯¾å¿œã«ãªã‚Šã¾ã™ã€‚

@@ -4,5 +4,5 @@ kind=defined
 
 --- to_s -> String
 
-�Ķ��ѿ���ʸ���󲽤��ޤ��� Hash#to_s ��Ʊ���褦��ư��ޤ���
+環境変数を文字列化します。 Hash#to_s と同じように動作します。
 

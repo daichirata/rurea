@@ -2,15 +2,22 @@ names=addr
 visibility=public
 kind=defined
 
---- addr
-@todo
+--- addr -> [String, String]
 
-¥½¥±¥Ã¥È¤ÎÀÜÂ³¾ðÊó¤òÉ½¤¹ÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£ÇÛÎó¤Î³ÆÍ×ÁÇ¤ÏÂè1Í×
-ÁÇ¤¬Ê¸»úÎó "AF_UNIX"¡¢Âè2Í×ÁÇ¤¬¥Ñ¥¹¤òÉ½¤¹Ê¸»úÎó¤Ç¤¹¡£
+ã‚½ã‚±ãƒƒãƒˆã®æŽ¥ç¶šæƒ…å ±ã‚’è¡¨ã™é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚é…åˆ—ã®å„è¦ç´ ã¯ç¬¬1è¦
+ç´ ãŒæ–‡å­—åˆ— "AF_UNIX"ã€ç¬¬2è¦ç´ ãŒãƒ‘ã‚¹ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™ã€‚
 
-Îã:
+ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆå´ã¯ãƒ‘ã‚¹ã‚’æŒãŸãªã„ãŸã‚ç©ºæ–‡å­—åˆ—ã¨ãªã‚Šã¾ã™ã€‚
+ä¾‹:
 
   UNIXServer.open("/tmp/s") {|serv|
     p serv.addr     #=> ["AF_UNIX", "/tmp/s"]
   }
 
+  UNIXServer.open("/tmp/s") {|serv|
+    c = UNIXSocket.open("/tmp/s")
+    p c.peeraddr    #=> ["AF_UNIX", "/tmp/s"]
+    p c.addr #=> ["AF_UNIX", ""]
+  }
+
+@see [[m:UNIXSocket#peeraddr]]

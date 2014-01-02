@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- to_s -> String
-¹ÔÎó¤òÊ¸»úÎó²½¤·¡¢¤½¤ÎÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+è¡Œåˆ—ã‚’æ–‡å­—åˆ—åŒ–ã—ã€ãã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   a1 = [1, 2]
   a2 = [3, 4.5]
   m = Matrix[a1, a2]

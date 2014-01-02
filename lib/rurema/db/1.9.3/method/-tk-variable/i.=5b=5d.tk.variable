@@ -5,6 +5,6 @@ kind=defined
 --- [](index)
 @todo
 
-index���ܤ��ͤ��֤��ޤ���
-self��Tcl������Ǥʤ���Фʤ�ޤ���
+index番目の値を返します。
+selfはTclの配列でなければなりません。
 

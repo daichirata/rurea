@@ -4,9 +4,9 @@ kind=defined
 
 --- meta    -> Hash
 
-¥Ø¥Ã¥À¤ò¼ıÏ¿¤·¤¿¥Ï¥Ã¥·¥å¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ˜ãƒƒãƒ€ã‚’åéŒ²ã—ãŸãƒãƒƒã‚·ãƒ¥ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'open-uri'
   p open('http://example.com/').meta

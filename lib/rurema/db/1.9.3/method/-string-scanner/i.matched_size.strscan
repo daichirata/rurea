@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- matched_size -> Fixnum | nil
-Á°²ó¥Ş¥Ã¥Á¤·¤¿ÉôÊ¬Ê¸»úÎó¤ÎÄ¹¤µ¤òÊÖ¤·¤Ş¤¹¡£
-Á°²ó¥Ş¥Ã¥Á¤Ë¼ºÇÔ¤·¤Æ¤¤¤¿¤é nil ¤òÊÖ¤·¤Ş¤¹¡£
+å‰å›ãƒãƒƒãƒã—ãŸéƒ¨åˆ†æ–‡å­—åˆ—ã®é•·ã•ã‚’è¿”ã—ã¾ã™ã€‚
+å‰å›ãƒãƒƒãƒã«å¤±æ•—ã—ã¦ã„ãŸã‚‰ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-¥Ş¥Ã¥Á¤·¤¿¥µ¥¤¥º¤ÏÊ¸»úÃ±°Ì¤Ç¤Ê¤¯¥Ğ¥¤¥ÈÃ±°Ì¤È¤Ê¤ê¤Ş¤¹¡£
+ãƒãƒƒãƒã—ãŸã‚µã‚¤ã‚ºã¯æ–‡å­—å˜ä½ã§ãªããƒã‚¤ãƒˆå˜ä½ã¨ãªã‚Šã¾ã™ã€‚
 
   def run(encode)
-    utf8 = "\u{308B 3073 3044}" # ¤ë¤Ó¤¤
+    utf8 = "\u{308B 3073 3044}" # ã‚‹ã³ã„
     s = StringScanner.new(utf8.encode(encode))
     s.scan(/#{"\u{308B}".encode(encode)}/)
     s.matched_size
@@ -20,7 +20,7 @@ kind=defined
   p run("Shift_Jis") #=> 2
 
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
       s = StringScanner.new('test string')
       s.matched_size # => nil
       s.scan(/\w+/)  # => "test"

@@ -1,13 +1,14 @@
-names=abs
+names=abs,magnitude
 visibility=public
 kind=defined
 
---- abs    -> Float
+--- abs        -> Float
+--- magnitude  -> Float
 
-¼«¿È¤ÎÀäÂÐÃÍ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã®çµ¶å¯¾å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
- p   34.56.abs     #=> 34.56
- p  -34.56.abs     #=> 34.56
+   34.56.abs     #=> 34.56
+  -34.56.abs     #=> 34.56
 

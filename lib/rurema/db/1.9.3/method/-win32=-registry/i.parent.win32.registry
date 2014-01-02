@@ -5,6 +5,6 @@ kind=defined
 --- parent
 @todo
 
-�ƤΥ�����ɽ�� Win32::Registry ���֥������Ȥ��֤��ޤ���
-����ѥ����Ǥ� nil ���֤��ޤ���
+親のキーを表す Win32::Registry オブジェクトを返します。
+定義済キーでは nil を返します。
 

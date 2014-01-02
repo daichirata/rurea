@@ -6,4 +6,4 @@ library=webrick.httpservlet.cgihandler
 aliases=
 aliasof=
 
-CGI ¤ò°·¤¦¤¿¤á¤Î¥µ¡¼¥Ö¥ì¥Ã¥È¤Ç¤¹¡£
+CGI ã‚’æ‰±ã†ãŸã‚ã®ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆã§ã™ã€‚

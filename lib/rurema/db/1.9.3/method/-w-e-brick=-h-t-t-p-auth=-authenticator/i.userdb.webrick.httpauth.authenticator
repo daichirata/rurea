@@ -4,7 +4,7 @@ kind=defined
 
 --- userdb -> WEBrick::HTTPAuth::Htpasswd | WEBrick::HTTPAuth::Htdigest
 
-ǧ�ڤΤ���Υ桼���ǡ����١������֤��ޤ���
+認証のためのユーザデータベースを返します。
 
 @see [[c:WEBrick::HTTPAuth::BasicAuth]], [[c:WEBrick::HTTPAuth::Htdigest]]
 

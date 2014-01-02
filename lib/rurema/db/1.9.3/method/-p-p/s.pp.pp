@@ -4,14 +4,14 @@ kind=defined
 
 --- pp(obj, out = $>, width = 79)    -> object
 
-»ØÄê¤µ¤ì¤¿¥ª¥Ö¥¸¥§¥¯¥È obj ¤ò½ÐÎÏÀè out ¤ËÉý width ¤Ç½ÐÎÏ¤·¤Þ¤¹¡£
-½ÐÎÏÀè out ¤òÊÖ¤·¤Þ¤¹¡£
+æŒ‡å®šã•ã‚ŒãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ obj ã‚’å‡ºåŠ›å…ˆ out ã«å¹… width ã§å‡ºåŠ›ã—ã¾ã™ã€‚
+å‡ºåŠ›å…ˆ out ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param obj É½¼¨¤·¤¿¤¤¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£
+@param obj è¡¨ç¤ºã—ãŸã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param out ½ÐÎÏÀè¤ò»ØÄê¤·¤Þ¤¹¡£<< ¥á¥½¥Ã¥É¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ëÉ¬Í×¤¬¤¢¤ê¤Þ¤¹¡£
+@param out å‡ºåŠ›å…ˆã‚’æŒ‡å®šã—ã¾ã™ã€‚<< ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
-@param width ½ÐÎÏÀè¤ÎÉý¤ò»ØÄê¤·¤Þ¤¹¡£
+@param width å‡ºåŠ›å…ˆã®å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   str = PP.pp([[:a, :b], [:a, [[:a, [:a, [:a, :b]]], [:a, :b],]]], '', 20)
   puts str

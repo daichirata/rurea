@@ -4,7 +4,7 @@ kind=defined
 
 --- scope=(s)
 
-¼«¿È¤Î Scope ¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Þ¤¹¡£
+è‡ªèº«ã® Scope ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î Scope ¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Þ¤¹¡£
+@param s è‡ªèº«ã® Scope ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 

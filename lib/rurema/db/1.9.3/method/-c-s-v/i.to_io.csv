@@ -4,5 +4,5 @@ kind=defined
 
 --- to_io -> self
 
-[[m:IO#to_io]] �˰Ѿ����ޤ���
+[[m:IO#to_io]] に委譲します。
 

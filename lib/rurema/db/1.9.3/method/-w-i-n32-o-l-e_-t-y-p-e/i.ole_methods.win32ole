@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- ole_methods -> [WIN32OLE_METHOD]
-�������ĥ᥽�åɤΥ᥿�ǡ�����������ޤ���
+型が持つメソッドのメタデータを取得します。
 
-@return �������ĥ᥽�åɤΥ᥿�ǡ�����[[c:WIN32OLE_METHOD]]������Ȥ����֤��ޤ���
-        �᥽�åɤ�����ʤ����϶�������֤��ޤ���
+@return 型が持つメソッドのメタデータを[[c:WIN32OLE_METHOD]]の配列として返します。
+        メソッドを持たない場合は空配列を返します。
 
 
   tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Worksheet')

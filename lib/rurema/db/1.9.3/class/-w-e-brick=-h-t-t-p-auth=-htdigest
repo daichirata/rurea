@@ -6,9 +6,9 @@ library=webrick.httpauth.htdigest
 aliases=
 aliasof=
 
-Apache ¤Î htdigest ¸ß´¹¤Î¥¯¥é¥¹¡£
+Apache ã® htdigest äº’æ›ã®ã‚¯ãƒ©ã‚¹ã€‚
 
-Îã
+ä¾‹
 
  require 'webrick'
  include WEBrick

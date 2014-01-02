@@ -3,11 +3,11 @@ visibility=private
 kind=added
 
 --- Pathname(path) -> Pathname
-ʸ���� path �򸵤� [[c:Pathname]] ���֥������Ȥ��������ޤ���
+文字列 path を元に [[c:Pathname]] オブジェクトを生成します。
 
-Pathname.new(path) ��Ʊ���Ǥ���
+Pathname.new(path) と同じです。
 
-@param path ʸ���󡢤ޤ�������Υ��֥������Ȥ�Ϳ���ޤ���
-            �ºݤˤ� to_str ��ȿ�����륪�֥������Ȥʤ鲿�Ǥ⹽���ޤ���
+@param path 文字列、または類似のオブジェクトを与えます。
+            実際には to_str に反応するオブジェクトなら何でも構いません。
 
 

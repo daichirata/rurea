@@ -4,7 +4,7 @@ kind=defined
 
 --- release=(rel)
 
-�ץ������Υ�꡼����ʸ����ǻ��ꤷ�ޤ���
+プログラムのリリースを文字列で指定します。
 
-@param rel �ץ������Υ�꡼����ʸ����ǻ��ꤷ�ޤ���
+@param rel プログラムのリリースを文字列で指定します。
 

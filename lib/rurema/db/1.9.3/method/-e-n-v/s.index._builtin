@@ -5,12 +5,12 @@ kind=defined
 --- key(val)   -> String | nil
 --- index(val) -> String | nil
 
-val ���б����륭�����֤��ޤ����б��������Ǥ�¸�ߤ��ʤ����ˤ�
-nil ���֤��ޤ���
+val に対応するキーを返します。対応する要素が存在しない時には
+nil を返します。
 
-[[m:ENV.index]] �� obsolete �Ǥ������Ѥ���ȷٹ��å�������ɽ������ޤ���
-[[m:ENV.key]] ����Ѥ��Ƥ���������
+[[m:ENV.index]] は obsolete です。使用すると警告メッセージが表示されます。
+[[m:ENV.key]] を使用してください。
 
-@param val  �ͤ���ꤷ�ޤ��� to_str ��ʸ���󲽤���ޤ���
+@param val  値を指定します。 to_str で文字列化されます。
 
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- numerator -> Complex
 
-Ê¬»Ò¤òÊÖ¤·¤Þ¤¹¡£
+åˆ†å­ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Complex('1/2+2/3i').numerator # => (3+4i)
   Complex(3).numerator          # => (3+0i)

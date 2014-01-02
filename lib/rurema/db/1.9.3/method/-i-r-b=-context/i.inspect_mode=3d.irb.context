@@ -2,16 +2,21 @@ names=inspect_mode=
 visibility=public
 kind=defined
 
---- inspect_mode=(val)
-@todo
+--- inspect_mode=(opt)
 
-���󥹥ڥ��ȥ⡼�ɤ����ꤹ��.
+実行結果の出力方式を opt に設定します。
 
-: true
-    inspect �η�̤�ɽ������
-: false
-    to_s �η�̤�ɽ������
-: nil
-    irb ���̾�⡼�ɤǤ���� inspect mode��
-    math �⡼�ɤʤ� non inspect mode
+@param opt 以下のいずれかを指定します。
+: false, :to_s, :raw
+  出力結果を to_s したものを表示します。
+: true, :p, :inspect
+  出力結果を inspect したものを表示します。
+: :pp, :pretty_inspect
+  出力結果を pretty_inspect したものを表示します。
+: :yaml, :YAML
+  出力結果を YAML 形式にしたものを表示します。
+: :marshal, :Marshal, :MARSHAL, [[c:Marshal]]
+  出力結果を [[m:Marshal.#dump]] したものを表示します。
+
+@see [[ref:lib:irb#inspect_mode]]
 

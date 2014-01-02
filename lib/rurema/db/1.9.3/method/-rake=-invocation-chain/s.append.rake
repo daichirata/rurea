@@ -4,9 +4,9 @@ kind=defined
 
 --- append(task_name, chain) -> Rake::InvocationChain
 
-Í¿¤¨¤é¤ì¤¿¥¿¥¹¥¯Ì¾¤òÂèÆó°ú¿ô¤Î [[c:Rake::InvocationChain]] ¤ËÄÉ²Ã¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸã‚¿ã‚¹ã‚¯åã‚’ç¬¬äºŒå¼•æ•°ã® [[c:Rake::InvocationChain]] ã«è¿½åŠ ã—ã¾ã™ã€‚
 
-@param task_name ¥¿¥¹¥¯Ì¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param task_name ã‚¿ã‚¹ã‚¯åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param chain ´û¤ËÂ¸ºß¤¹¤ë [[c:Rake::InvocationChain]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param chain æ—¢ã«å­˜åœ¨ã™ã‚‹ [[c:Rake::InvocationChain]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

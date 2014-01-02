@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- ord    -> Integer
-¼«¿È¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’è¿”ã—ã¾ã™ã€‚
 
    10.ord    #=> 10
    # String#ord

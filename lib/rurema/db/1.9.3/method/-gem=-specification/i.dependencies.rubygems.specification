@@ -4,7 +4,7 @@ kind=defined
 
 --- dependencies -> Array
 
-°ÍÂ¸¤·¤Æ¤¤¤ë Gem ¤Î¥ê¥¹¥È¤òÊÖ¤·¤Ş¤¹¡£
+ä¾å­˜ã—ã¦ã„ã‚‹ Gem ã®ãƒªã‚¹ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[c:Gem::Dependency]]
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- nil? -> bool
 
-¥ì¥·¡¼¥Ğ¤¬ nil ¤Ç¤¢¤ì¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ¬ã‚·ãƒ¼ãƒãŒ nil ã§ã‚ã‚Œã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   p false.nil? #=> false
   p nil.nil? #=> true

@@ -1,9 +1,9 @@
 type=class
-superclass=OutputMethod
+superclass=IRB=OutputMethod
 included=
 extended=
 library=irb.output=2dmethod
 aliases=
 aliasof=
 
-É¸½à½ĞÎÏ¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£¥é¥¤¥Ö¥é¥êÆâÉô¤Ç»ÈÍÑ¤·¤Ş¤¹¡£
+æ¨™æº–å‡ºåŠ›ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚ãƒ©ã‚¤ãƒ–ãƒ©ãƒªå†…éƒ¨ã§ä½¿ç”¨ã—ã¾ã™ã€‚

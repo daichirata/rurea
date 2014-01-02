@@ -6,13 +6,13 @@ library=thread
 aliases=
 aliasof=
 
-Queue �ϥ���åɴ֤� FIFO(first in first out) ���̿�ϩ�Ǥ�����
-��åɤ����Υ��塼���ɤ߽Ф����Ȥ������ߤ��ޤ������塼�ˤʤ��
-���ξ��󤬽񤭹��ޤ��ȼ¹ԤϺƳ�����ޤ���
+Queue はスレッド間の FIFO(first in first out) の通信路です。ス
+レッドが空のキューを読み出そうとすると停止します。キューになんら
+かの情報が書き込まれると実行は再開されます。
 
-���祵����������Ǥ��� Queue �Υ��֥��饹 [[c:SizedQueue]] ���󶡤���Ƥ��ޤ���
+最大サイズが指定できる Queue のサブクラス [[c:SizedQueue]] も提供されています。
 
-=== ��
+=== 例
 
   require 'thread'
 
@@ -30,7 +30,7 @@ Queue �ϥ���åɴ֤� FIFO(first in first out) ���̿�ϩ�Ǥ�����
 
   th1.join
 
-�¹Ԥ���Ȱʲ��Τ褦�˽��Ϥ��ޤ���
+実行すると以下のように出力します。
 
   $ ruby que.rb
   resource1

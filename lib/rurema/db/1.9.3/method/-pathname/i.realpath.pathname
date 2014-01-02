@@ -4,14 +4,14 @@ kind=defined
 
 --- realpath(basedir = nil) -> Pathname
 --- realpath -> Pathname
-;�פ� "."��".." �� "/" ��������������� Pathname ���֥������Ȥ��֤��ޤ���
+余計な "."、".." や "/" を取り除いた新しい Pathname オブジェクトを返します。
 
-�ޤ����ե����륷���ƥ�򥢥����������ºݤ�¸�ߤ���ѥ����֤��ޤ���
-����ܥ�å���󥯤��褵��ޤ���
+また、ファイルシステムをアクセスし、実際に存在するパスを返します。
+シンボリックリンクも解決されます。
 
-self ���ؤ��ѥ���¸�ߤ��ʤ������㳰 [[c:Errno::ENOENT]] ��ȯ�����ޤ���
+self が指すパスが存在しない場合は例外 [[c:Errno::ENOENT]] が発生します。
 
-@param basedir �١����ǥ��쥯�ȥ����ꤷ�ޤ�����ά����ȥ����ȥǥ��쥯�ȥ�ˤʤ�ޤ���
+@param basedir ベースディレクトリを指定します。省略するとカレントディレクトリになります。
 
     require 'pathname'
 

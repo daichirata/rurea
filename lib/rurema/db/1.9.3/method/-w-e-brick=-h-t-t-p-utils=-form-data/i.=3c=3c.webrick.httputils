@@ -4,5 +4,5 @@ kind=defined
 
 --- <<(str)    -> self
 
-WEBrick::HTTPUtils �������ǻȤ��ޤ����桼�������Υ᥽�åɤ�ľ�ܸƤ֤��ȤϤ���ޤ���
+WEBrick::HTTPUtils の内部で使われます。ユーザがこのメソッドを直接呼ぶことはありません。
 

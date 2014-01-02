@@ -4,7 +4,7 @@ kind=defined
 
 --- name  -> String
 
-���Ȥ�ɽ���ؿ���̾����ʸ������֤��ޤ���
+自身が表す関数の名前を文字列で返します。
 
  require 'dl/import'
 

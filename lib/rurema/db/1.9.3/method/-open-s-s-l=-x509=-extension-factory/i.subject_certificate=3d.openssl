@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- subject_certificate=(name)
-¼«¿È¤Ë½êÍ­¼Ô(subject)¤Î¾ÚÌÀ½ñ¥ª¥Ö¥¸¥§¥¯¥È¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã«æ‰€æœ‰è€…(subject)ã®è¨¼æ˜æ›¸ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param cert ÀßÄê¤¹¤ë¾ÚÌÀ½ñ([[c:OpenSSL::X509::Certificate]])¥ª¥Ö¥¸¥§¥¯¥È
+@param cert è¨­å®šã™ã‚‹è¨¼æ˜æ›¸([[c:OpenSSL::X509::Certificate]])ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 @see [[m:OpenSSL::X509::ExtensionFactory.new]]
 

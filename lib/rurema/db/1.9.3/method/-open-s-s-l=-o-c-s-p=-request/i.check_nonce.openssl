@@ -3,21 +3,21 @@ visibility=public
 kind=defined
 
 --- check_nonce(basic_resp) -> Integer
-���Ȥ� nonce �ȥ쥹�ݥ󥹤� nonce �����礷�Ƥ��뤫
-�����å����ޤ���
+自身の nonce とレスポンスの nonce が整合しているか
+チェックします。
 
--1 ���� 3 �ޤǤ��������֤��ޤ������줾��ΰ�̣�ϰʲ����̤�Ǥ���
-* -1 ���Ȥˤ��� nonce �����ꤵ��Ƥ��ʤ�
-* 0 nonce �����Ȥȥ쥹�ݥ󥹤�ξ���ˤ��뤬�������ʤ�
-* 1 nonce �����Ȥȥ쥹�ݥ󥹤�ξ���ˤ���������
-* 2 nonce �����Ȥȥ쥹�ݥ󥹤Τɤ���ˤ�ʤ�
-* 3 nonce ���쥹�ݥ󥹤ˤ������ꤵ��Ƥ��ʤ�
+-1 から 3 までの整数を返します。それぞれの意味は以下の通りです。
+* -1 自身にしか nonce が設定されていない
+* 0 nonce が自身とレスポンスの両方にあるが等しくない
+* 1 nonce が自身とレスポンスの両方にあり等しい
+* 2 nonce が自身とレスポンスのどちらにもない
+* 3 nonce がレスポンスにしか設定されていない
 
-0 �����餫�������ʤΤǡ������ɬ�������å�����ɬ�פ�����ޤ���
-1 �� nonce ���������Ȥ������Ȥ��̣���ޤ���
-����ʳ��ϡ����(�����Фμ����ʤ�)
-�ˤ�ä������Ǥ��ä��ꤽ���Ǥʤ��ä��ꤷ�ޤ��Τǡ�Ŭ�ڤ˥����å�
-����ɬ�פ�����ޤ���
+0 は明らかに不正なので、これは必ずチェックする必要があります。
+1 は nonce が正しいということを意味します。
+それ以外は、場合(サーバの実装など)
+によって不正であったりそうでなかったりしますので、適切にチェック
+する必要があります。
 
-@param basic_resp ��Ӥ���쥹�ݥ�([[c:OpenSSL::OCSP::BasicResponse]] ���֥�������)
+@param basic_resp 比較するレスポンス([[c:OpenSSL::OCSP::BasicResponse]] オブジェクト)
 

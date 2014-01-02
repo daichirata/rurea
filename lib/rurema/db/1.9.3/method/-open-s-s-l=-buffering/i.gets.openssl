@@ -3,20 +3,20 @@ visibility=public
 kind=defined
 
 --- gets(eol=$/, limit=nil) -> String | nil
-�̿�ϩ�������ɤ߹���ǡ�������֤��ޤ���
+通信路から一行読み込んで、それを返します。
 
-�Զ��ڤ�� eol �ǻ��ꤷ��ʸ����/����ɽ���ˤʤ�ޤ���
+行区切りは eol で指定した文字列/正規表現になります。
 
-���� limit �Х��Ȥ�ʸ������֤��ޤ���1 �Ԥ�������
-Ĺ�����Ϥ������ڤ��ޤ���limit �� nil �ξ���
-eol ����ã����ޤ��ɤ߹��ߤޤ���
+最大 limit バイトの文字列を返します。1 行がそれより
+長い場合はそこで切られます。limit が nil の場合は
+eol に到達するまで読み込みます。
 
-�ɤ߹��ߤ���ü����ã�������� nil ���֤��ޤ���
+読み込みが終端に到達した場合は nil を返します。
 
-[[m:IO#gets]] ��Ʊ�ͤǤ��������ڤ�ʸ�����
-"" ���Ϥ������䡢nil ���Ϥ����Ȥ��ΰ�̣���ۤʤꡢ
-�����ξ���������ư��ޤ���
+[[m:IO#gets]] と同様ですが、区切り文字列に
+"" を渡した場合や、nil を渡したときの意味が異なり、
+これらの場合は正しく動作しません。
 
-@param eol �Զ��ڤ�ʸ����/����ɽ��
-@param limit ������ɤ߹��ߥХ��ȿ�
+@param eol 行区切り文字列/正規表現
+@param limit 最大の読み込みバイト数
 

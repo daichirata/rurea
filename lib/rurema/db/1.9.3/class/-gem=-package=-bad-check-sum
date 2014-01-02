@@ -6,4 +6,4 @@ library=rubygems.package
 aliases=
 aliasof=
 
-�����å����ब���פ��ʤ�����ȯ�������㳰�Ǥ���
+チェックサムが一致しない場合に発生する例外です。

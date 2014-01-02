@@ -4,5 +4,5 @@ kind=defined
 
 --- summary -> String
 
-���ޥ�ɤ�û���������֤��ޤ���
+コマンドの短い説明を返します。
 

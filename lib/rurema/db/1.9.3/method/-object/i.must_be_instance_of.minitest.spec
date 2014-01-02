@@ -4,11 +4,11 @@ kind=added
 
 --- must_be_instance_of(klass) -> true
 
-���Ȥ�Ϳ����줿���饹�Υ��󥹥��󥹤Ǥ����硢�����˥ѥ��������Ȥˤʤ�ޤ���
+自身が与えられたクラスのインスタンスである場合、検査にパスしたことになります。
 
-@param klass Ǥ�դΥ��饹����ꤷ�ޤ���
+@param klass 任意のクラスを指定します。
 
-@raise MiniTest::Assertion ���Ȥ���Ϳ����줿���饹��ľ�ܤΥ��󥹥��󥹤Ǥʤ�����ȯ�����ޤ���
+@raise MiniTest::Assertion 自身がが与えられたクラスの直接のインスタンスでない場合に発生します。
 
 @see [[m:MiniTest::Assertions#assert_instance_of]]
 

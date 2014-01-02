@@ -4,9 +4,9 @@ kind=defined
 
 --- add(group, members)
 
-Ϳ����줿���롼�פ˥��Ф��ɲä��ޤ���
+与えられたグループにメンバを追加します。
 
-@param group ���Ф��ɲä��륰�롼�פ���ꤷ�ޤ���
+@param group メンバを追加するグループを指定します。
 
-@param members �ɲä�����Ф�����ǻ��ꤷ�ޤ���
+@param members 追加するメンバを配列で指定します。
 

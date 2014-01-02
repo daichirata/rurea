@@ -4,11 +4,11 @@ kind=defined
 
 --- select(*components)    -> [String]
 
-»ØÄê¤µ¤ì¤¿ components ¤ËÂĞ±ş¤¹¤ë¹½À®Í×ÁÇ¤òÊ¸»úÎó¤ÎÇÛÎó¤È¤·¤ÆÊÖ¤·¤Ş¤¹¡£
+æŒ‡å®šã•ã‚ŒãŸ components ã«å¯¾å¿œã™ã‚‹æ§‹æˆè¦ç´ ã‚’æ–‡å­—åˆ—ã®é…åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param components ¹½À®Í×ÁÇÌ¾¤ò¥·¥ó¥Ü¥ë¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param components æ§‹æˆè¦ç´ åã‚’ã‚·ãƒ³ãƒœãƒ«ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
   
   uri = URI.parse('http://myuser:mypass@my.example.com/test.rbx')

@@ -3,19 +3,19 @@ visibility=public
 kind=defined
 
 --- return_type -> String
-�᥽�åɤ��֤��ͤη�̾��������ޤ���
+メソッドの返り値の型名を取得します。
 
-@return �֤��ͤη�̾�򼨤�ʸ������֤��ޤ���
-@raise WIN32OLERuntimeError �᥽�åɤη����������Ǥ��ʤ��ä��������Τ��ޤ���
+@return 返り値の型名を示す文字列を返します。
+@raise WIN32OLERuntimeError メソッドの型情報を取得できなかった場合に通知します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Application')
    method = WIN32OLE_METHOD.new(tobj, 'Visible')
    puts method.return_type # => BOOL
 
-OLE�����ȥ᡼�����η�̾�ϡ��б�����[[c:WIN32OLE::VARIANT]]���������
-Ƭ�Ρ�VT_�פ�������̾�Τ�����ޤ���
+OLEオートメーションの型名は、対応する[[c:WIN32OLE::VARIANT]]の定数の先
+頭の「VT_」を削除した名称を持ちます。
 
-���Ȥ��С�32�ӥå�����դ������Ǥ���С�I4�פȤʤ�ޤ���
+たとえば、32ビット符号付き整数であれば「I4」となります。
 
 @see [[c:WIN32OLE::VARIANT]]
 

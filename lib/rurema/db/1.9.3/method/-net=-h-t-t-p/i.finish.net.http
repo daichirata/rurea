@@ -4,8 +4,8 @@ kind=defined
 
 --- finish -> ()
 
-HTTP ���å�����λ���ޤ������å���󳫻����ˤ��Υ᥽�åɤ�
-�ƤФ줿�����㳰 IOError ��ȯ�����ޤ���
+HTTP セッションを終了します。セッション開始前にこのメソッドが
+呼ばれた場合は例外 IOError を発生します。
 
-@raise IOError ���å���󳫻����˸Ƥ֤�ȯ�����ޤ���
+@raise IOError セッション開始前に呼ぶと発生します。
 

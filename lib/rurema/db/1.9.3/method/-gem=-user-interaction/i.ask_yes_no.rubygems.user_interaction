@@ -4,9 +4,9 @@ kind=defined
 
 --- ask_yes_no(*args) -> bool
 
-���������Ρ������������򤷤ޤ���
+イエス、ノーで答える質問をします。
 
-@param args �Ѿ���Υ᥽�åɤ�Ϳ��������Ǥ���
+@param args 委譲先のメソッドに与える引数です。
 
-@return �桼���β������������ξ��Ͽ��򡢥Ρ��ξ��ϵ����֤��ޤ���
+@return ユーザの回答がイエスの場合は真を、ノーの場合は偽を返します。
 

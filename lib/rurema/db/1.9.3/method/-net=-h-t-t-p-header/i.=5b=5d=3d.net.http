@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- []=(key, val)
-key �إå��ե�����ɤ�ʸ���� val �򥻥åȤ��ޤ���
+key ヘッダフィールドに文字列 val をセットします。
 
-key �˸������ꤵ��Ƥ����ͤ��˴�����ޤ���
-key ����ʸ����ʸ������̤��ޤ���
-val �� nil ��Ϳ����Ȥ��Υե�����ɤ������ޤ���
+key に元々設定されていた値は破棄されます。
+key は大文字小文字を区別しません。
+val に nil を与えるとそのフィールドを削除します。
 
-@param key �إå��ե�����̾��ʸ�����Ϳ���ޤ���
-@param val key�ǻ��ꤷ���ե�����ɤ˥��åȤ���ʸ�����Ϳ���ޤ���
+@param key ヘッダフィール名を文字列で与えます。
+@param val keyで指定したフィールドにセットする文字列を与えます。
 
 @see [[m:Net::HTTPHeader#[] ]],
      [[m:Net::HTTPHeader#add_field]],

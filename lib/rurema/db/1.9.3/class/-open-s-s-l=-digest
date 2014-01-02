@@ -6,20 +6,20 @@ library=openssl
 aliases=
 aliasof=
 
-�ϥå���ؿ��Τ���Υ��󥿡��ե��������󶡤��륯�饹�Ǥ���
+ハッシュ関数のためのインターフェースを提供するクラスです。
 
-���Υ��󥿡��ե������ˤ�2�̤������ˡ��¸�ߤ��ޤ���
-������ʸ���󤫤�ľ�ܥϥå����׻����� ([[m:OpenSSL::Digest.digest]],
-[[m:Digest::Instance#hexdigest]]) ��ˡ�Ǥ���û��ʸ�����
-�����������Ȥ���Ȥ��ˤϤ������Ȥ��Ф褤�Ǥ��礦��
+このインターフェースには2通りの利用法が存在します。
+一方は文字列から直接ハッシュを計算する ([[m:OpenSSL::Digest.digest]],
+[[m:Digest::Instance#hexdigest]]) 方法です。短い文字列の
+ダイジェストを取るときにはこちらを使えばよいでしょう。
 
-�⤦��Ĥϥ����������ȥ��֥������Ȥ�������ơ�ʸ�����缡
-[[m:OpenSSL::Digest#update]] ���Ϥ����Ȥǥ����������Ȥ�׻�
-���ޤ����礭�ʥե�����Υϥå����ͤ�׻�������ʤɤ�
-���Ѥ��ޤ���
+もう一つはダイジェストオブジェクトを作成して、文字列を順次
+[[m:OpenSSL::Digest#update]] で渡すことでダイジェストを計算
+します。大きなファイルのハッシュ値を計算する場合などに
+利用します。
 
 
-��:
+例:
   require 'openssl'
   digest = OpenSSL::Digest.new("sha256")
 
@@ -30,4 +30,4 @@ aliasof=
   }
   puts digest.hexdigest
 
-[[lib:digest]] �⻲�Ȥ��Ƥ���������
+[[lib:digest]] も参照してください。

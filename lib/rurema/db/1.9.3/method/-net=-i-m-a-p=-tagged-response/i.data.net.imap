@@ -4,7 +4,7 @@ kind=defined
 
 --- data -> Net::IMAP::ResponseText 
 
-�쥹�ݥ󥹤���Ϥ������֥������Ȥ��֤��ޤ���
+レスポンスを解析したオブジェクトを返します。
 
 @see [[c:Net::IMAP::ResponseText]]
 

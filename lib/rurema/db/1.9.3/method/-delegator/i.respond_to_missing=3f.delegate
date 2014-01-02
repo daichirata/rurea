@@ -4,8 +4,8 @@ kind=defined
 
 --- respond_to_missing?(m, include_private) -> bool
 
-@param m ¥á¥½¥Ã¥ÉÌ¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param m ãƒ¡ã‚½ãƒƒãƒ‰åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param include_private ¿¿¤ò»ØÄê¤¹¤ë¤È private ¥á¥½¥Ã¥É¤âÄ´¤Ù¤Ş¤¹¡£
+@param include_private çœŸã‚’æŒ‡å®šã™ã‚‹ã¨ private ãƒ¡ã‚½ãƒƒãƒ‰ã‚‚èª¿ã¹ã¾ã™ã€‚
 
 

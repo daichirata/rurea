@@ -4,7 +4,7 @@ kind=defined
 
 --- execute(*obj) -> [IRB::WorkSpace]
 
-���ߤΥ�����ڡ����ΰ������֤��ޤ���
+現在のワークスペースの一覧を返します。
 
-@param obj ���Ѥ��ޤ���
+@param obj 使用しません。
 

@@ -4,8 +4,8 @@ kind=defined
 
 --- new(spec) -> Gem::Builder
 
-Ϳ����줿 [[c:Gem::Specification]] �Υ��󥹥��󥹤ˤ�ä�
-[[c:Gem::Builder]] �Υ��󥹥��󥹤��������ޤ���
+与えられた [[c:Gem::Specification]] のインスタンスによって
+[[c:Gem::Builder]] のインスタンスを生成します。
 
-@param spec [[c:Gem::Specification]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param spec [[c:Gem::Specification]] のインスタンスを指定します。
 

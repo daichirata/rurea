@@ -4,7 +4,7 @@ kind=defined
 
 --- length -> Integer
 --- size -> Integer
-е╞еєе▌ещеъе╒ебедеыд╬е╡еде║дЄ╩╓д╖д▐д╣бг
+уГЖуГ│уГЭуГйуГкуГХуВбуВдуГлуБоуВ╡уВдуВ║уВТш┐ФуБЧуБ╛уБЩуАВ
 
   tf = Tempfile.new("foo")
   tf.print("bar,ugo")

@@ -4,7 +4,7 @@ kind=defined
 
 --- space=(string)
 
-JSON ������ʸ����Υȡ�����֤���������ʸ����򥻥åȤ��ޤ���
+JSON 形式の文字列のトークン間に挿入する文字列をセットします。
 
-@param string JSON ������ʸ����Υȡ�����֤���������ʸ�������ꤷ�ޤ���
+@param string JSON 形式の文字列のトークン間に挿入する文字列を指定します。
 

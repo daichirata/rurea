@@ -1,18 +1,22 @@
+#@since 1.9.1
+= object ARGF < ARGF.class
+#@else
 = object ARGF
 
 extend Enumerable
+#@end
 
-������ץȤ˻��ꤷ������
-([[m:Kernel::ARGV]] �򻲾�) ��ե�����̾�Ȥߤʤ��ơ�
-�����Υե������Ϣ�뤷�� 1 �Ĥβ��ۥե������ɽ�����֥������ȤǤ���
-ARGV �����ʤ�ɸ�����Ϥ��оݤȤ��ޤ���
-ARGV ���ѹ�����Ф��Υ��֥������Ȥ�ư��˱ƶ����ޤ���
+スクリプトに指定した引数
+([[m:Object::ARGV]] を参照) をファイル名とみなして、
+それらのファイルを連結した 1 つの仮想ファイルを表すオブジェクトです。
+ARGV が空なら標準入力を対象とします。
+ARGV を変更すればこのオブジェクトの動作に影響します。
 
     while line = ARGF.gets
       ....
     end
 
-�ϡ�
+は、
 
     while argv = ARGV.shift
       File.open(argv) {|file|
@@ -22,36 +26,48 @@ ARGV ���ѹ�����Ф��Υ��֥������Ȥ�ư��˱ƶ����ޤ���
       }
     end
 
-�Τ褦��ư��ޤ���
+のように動作します。
 
-ARGF ��������뤴�Ȥ� ARGV �����Ǥϰ�Ĥ��ļ�������ޤ���
-�Ǹ�ޤ� ARGF ���ɤ߹�����塢���� ARGF �������Ƥ��ɤ��
-(ARGV �����ʤΤ�)ɸ�����Ϥ�����ɤ߹��ߤȤʤ�ޤ���
+ARGF を処理するごとに ARGV の要素は一つずつ取り除かれます。
+最後まで ARGF を読み込んだ後、再度 ARGF から内容を読むと
+(ARGV が空なので)標準入力からの読み込みとなります。
 
     ARGV.replace %w(/tmp/foo /tmp/bar)
     ARGF.each {|line|
-        # ������� ARGV �����Ƥ�ɽ��
+        # 処理中の ARGV の内容を表示
         p [ARGF.filename, ARGV]
         ARGF.skip
     }
         # => ["/tmp/foo", ["/tmp/bar"]]
         #    ["/tmp/bar", []]
-    # �Ǹ�ޤ��ɤ���� (ARGV ����) ��ư��
+    # 最後まで読んだ後 (ARGV が空) の動作
     p ARGF.gets      # => nil
     p ARGF.filename  # => "-"
 
-[[m:Kernel.#gets]] �ʤɰ������Ȥ߹��ߴؿ���
-ARGF.gets �ʤɤ��Υ��֥������Ȥ�쥷���ФȤ����᥽�åɤξ�ά���Ǥ���
+[[m:Kernel.#gets]] など一部の組み込み関数は
+ARGF.gets などこのオブジェクトをレシーバとしたメソッドの省略形です。
 
-#@if (version >= "1.8.0")
+#@since 1.9.1
+また、ARGF は [[c:ARGF.class]] クラスのインスタンスです。
+各メソッドの詳細は [[c:ARGF.class]] を参照してください。
+
+= class ARGF.class
+
+extend Enumerable
+
+[[c:ARGF]] を表すクラスです。
+
+== Public Instance Methods
+#@end
+
 --- filename -> String
 --- path -> String
 
-�����оݤΥե�����̾���֤��ޤ���
-ɸ�����Ϥ��Ф��Ƥ� - ���֤��ޤ���
-�Ȥ߹����ѿ� [[m:$FILENAME]] ��Ʊ���Ǥ���
+処理対象のファイル名を返します。
+標準入力に対しては - を返します。
+組み込み変数 [[m:$FILENAME]] と同じです。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -59,15 +75,18 @@ ARGF.gets �ʤɤ��Υ��֥������Ȥ�쥷���ФȤ����᥽�åɤξ�ά���Ǥ���
     p [ARGF.filename, ARGF.path, ARGV]
     ARGF.skip
   }
-  #��
+  #例
   #=> ["test.rb", "test.rb", ["test.rb~", "third.txt", "ugo.yaml"]]
   #=> ["test.rb~", "test.rb~", ["third.txt", "ugo.yaml"]]
   #...
 
 --- to_s -> String
-���ʸ���� "ARGF" ���֤��ޤ���
+#@since 2.0.0
+--- inspect -> String
+#@end
+常に文字列 "ARGF" を返します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -76,42 +95,32 @@ ARGF.gets �ʤɤ��Υ��֥������Ȥ�쥷���ФȤ����᥽�åɤξ�ά���Ǥ���
     ARGF.skip
   end
 
-  #��
+  #例
   #=> ["test.rb", "ARGF", ["test.rb~", "third.txt", "ugo.yaml"]]
   #=> ["test.rb~", "ARGF", ["third.txt", "ugo.yaml"]]
   #...
 
-#@else
-
---- filename -> String
---- to_s -> String
-
-�����оݤΥե�����̾���֤��ޤ���
-ɸ�����Ϥ��Ф��Ƥ� - ���֤��ޤ���
-�Ȥ߹����ѿ� [[m:$FILENAME]] ��Ʊ���Ǥ���
-#@end
-
 --- file -> IO
-�����оݤ� [[c:File]] ���֥�������(�ޤ��� [[c:IO]] ���֥�������)��
-�֤��ޤ���
+処理対象の [[c:File]] オブジェクト(または [[c:IO]] オブジェクト)を
+返します。
 
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
 
   until ARGF.closed?
-    printf("�ǽ��������� %s (%s)\n", ARGF.file.stat.mtime, ARGF.filename)
+    printf("最終更新時刻 %s (%s)\n", ARGF.file.stat.mtime, ARGF.filename)
     ARGF.skip
   end 
-  #��
-  #=> �ǽ��������� Thu May 03 14:05:53 +0900 2007 (sample.yaml)
-  #=> �ǽ��������� Sun Aug 26 11:28:09 +0900 2007 (test.rb)
-  #=> �ǽ��������� Sun Aug 26 11:27:58 +0900 2007 (test.rb~)
-  #=> �ǽ��������� Sun Jun 24 13:08:12 +0900 2007 (third.txt)
-  #=> �ǽ��������� Sun May 20 21:34:25 +0900 2007 (ugo.yaml)
+  #例
+  #=> 最終更新時刻 Thu May 03 14:05:53 +0900 2007 (sample.yaml)
+  #=> 最終更新時刻 Sun Aug 26 11:28:09 +0900 2007 (test.rb)
+  #=> 最終更新時刻 Sun Aug 26 11:27:58 +0900 2007 (test.rb~)
+  #=> 最終更新時刻 Sun Jun 24 13:08:12 +0900 2007 (third.txt)
+  #=> 最終更新時刻 Sun May 20 21:34:25 +0900 2007 (ugo.yaml)
 
 
-$stdin��IO���֥������ȤǤʤ�����$stdin���֤��ޤ���
+$stdinがIOオブジェクトでない場合は$stdinを返します。
 
   class MyIO
     def to_io
@@ -127,16 +136,20 @@ $stdin��IO���֥������ȤǤʤ�����$stdin���֤��ޤ���
 
   __END__
   MyIO Test
-  �Ǥ���
+  です。
 
+#@since 1.9.1
+@see [[m:ARGF.class#to_io]]
+#@else
 @see [[m:ARGF.to_io]]
+#@end
 
 --- lineno -> Integer
 
-�������ե�������ĤΥե�����Ȥߤʤ����Ȥ��θ��ߤι��ֹ���֤��ޤ���
-�ġ��ΰ����ե�������ι��ֹ������ˤ� ARGF.file.lineno �Ȥ��ޤ���
+全引数ファイルを一つのファイルとみなしたときの現在の行番号を返します。
+個々の引数ファイル毎の行番号を得るには ARGF.file.lineno とします。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -146,16 +159,16 @@ $stdin��IO���֥������ȤǤʤ�����$stdin���֤��ޤ���
     end
     p [ ARGF.lineno, line]
   }
-  #��
+  #例
   #=> [10, "cat:\n"]
   #=> [11, " - name: taro\n"]
   #=> [12, "   age: 7\n"]
   #...
 
 --- lineno=(number)
-�������ե�������ĤΥե�����Ȥߤʤ����Ȥ��θ��ߤι��ֹ�� number �˽񤭴����ޤ���
+全引数ファイルを一つのファイルとみなしたときの現在の行番号を number に書き換えます。
 
-@param number ������ι��ֹ����ꤹ��
+@param number 更新後の行番号を指定する
 
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
@@ -167,7 +180,7 @@ $stdin��IO���֥������ȤǤʤ�����$stdin���֤��ޤ���
     end
     p [ARGF.lineno, line]
   }
-  #=> ��
+  #=> 例
   #=> [1, "cat:\n"]
   #=> [2, " - name: taro\n"]
   #=> [3, "   age: 7\n"]
@@ -177,25 +190,25 @@ $stdin��IO���֥������ȤǤʤ�����$stdin���֤��ޤ���
 
 --- skip -> self
 
-�����оݤΥե�����򥯥��������ޤ���
-������ɤ߹��ߤϼ��ΰ����������оݤˤʤ�ޤ���
-self ���֤��ޤ���
+処理対象のファイルをクローズします。
+次回の読み込みは次の引数が処理対象になります。
+self を返します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
   while line = ARGF.gets
     p [ARGF.filename, ARGV, ARGF.skip]
   end
-  #��
+  #例
   #=> ["sample.yaml", ["test.rb", "test.rb~", "third.txt", "ugo.yaml"], ARGF]
   #=> ["test.rb", ["test.rb~", "third.txt", "ugo.yaml"], ARGF]
   #...
 
 
 --- binmode -> self
-[[m:IO#binmode]]�򻲾�
+[[m:IO#binmode]]を参照
 
   require 'md5'
 
@@ -209,21 +222,21 @@ self ���֤��ޤ���
     printf("%s\t%s\n", md5, files[i])
   }
 
-  #��
+  #例
   #=> fe413bf114e16b0cd596d869743e9d35        ruby-1.8.5-p35.tar.gz
   #=> 70ad729e965c9625d2dfb7fa0145b423        sample.yaml
   #=> d91e81b81673279e908a1c08e8582487        test.rb
   #=> 158c4a0a097379a08bd88abfca6a51c5        test.rb~
   #...
 
-#@# ruby-list:43420 �򻲹ͤˤ���
+#@# ruby-list:43420 を参考にした
 
 @see [[m:IO#binmode]]
 
 --- close -> self
-�����оݤΥե�����򥯥��������ޤ��������ե����뤬�ĤäƤ�����ϼ��Υե�����򥪡��ץ󤷤ޤ���
+処理対象のファイルをクローズします。開くファイルが残っている場合は次のファイルをオープンします。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -242,7 +255,7 @@ self ���֤��ޤ���
     p "ARGF is not closed"
   end
   
-  #��
+  #例
   #=> ["cat:", "sample.yaml"]
   #=> "ARGF is not closed"
   #=> ["", "test.rb"]
@@ -252,9 +265,9 @@ self ���֤��ޤ���
   #=> "ARGF had been closed."
 
 --- closed? -> bool
-ARGF��close����Ƥ����true���֤��ޤ���
+ARGFがcloseされていればtrueを返します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -273,7 +286,7 @@ ARGF��close����Ƥ����true���֤��ޤ���
     p "ARGF is not closed"
   end
   
-  #��
+  #例
   #=> ["cat:", "sample.yaml"]
   #=> "ARGF is not closed"
   #=> ["", "test.rb"]
@@ -287,19 +300,18 @@ ARGF��close����Ƥ����true���֤��ޤ���
 --- each(rs = $/) {|line| ... } -> self
 --- each_line(rs = $/) {|line| ... } -> self
 #@since 1.8.7
-#@until 1.8.8
+#@since 1.9.1
+--- each(rs = $/)       -> Enumerator
+--- each_line(rs = $/)  -> Enumerator
+#@else
 --- each(rs = $/)       -> Enumerable::Enumerator
 --- each_line(rs = $/)  -> Enumerable::Enumerator
 #@end
 #@end
-#@since 1.8.8
---- each(rs = $/)       -> Enumerator
---- each_line(rs = $/)  -> Enumerator
-#@end
 
-ARGF�θ��߰��֤����Ԥ���ʸ����Ȥ����ɤ߹��ߤޤ���
+ARGFの現在位置から一行ずつ文字列として読み込みます。
 
-@param rs ���ڤ�ʸ������ꤹ��
+@param rs 区切り文字を指定する
 
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
@@ -308,7 +320,7 @@ ARGF�θ��߰��֤����Ԥ���ʸ����Ȥ����ɤ߹��ߤޤ���
     line.chomp!
     printf("'%s' in %s\n", line, ARGF.filename)
   }
-  #��
+  #例
   #=> '--- !ruby/object:Dog ' in ugo.yaml
   #=> 'name: pochi' in ugo.yaml
   #=> '--- ' in ugo.yaml
@@ -323,24 +335,23 @@ ARGF�θ��߰��֤����Ԥ���ʸ����Ȥ����ɤ߹��ߤޤ���
 
 --- each_byte{|char| ...} -> self
 #@since 1.8.7
-#@until 1.8.8
+#@since 1.9.1
+--- each_byte -> Enumerator
+#@else
 --- each_byte -> Enumerable::Enumerator
 #@end
 #@end
-#@since 1.8.8
---- each_byte -> Enumerator
-#@end
 
-ARGF �θ��߰��֤��� 1 �Х��Ȥ����ɤ߹��ߡ�����������Ȥ���Ϳ�����֥��å���¹Ԥ��ޤ���
+ARGF の現在位置から 1 バイトずつ読み込み、それを整数として与え、ブロックを実行します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
   ARGF.each_byte {|b|
     printf("%4d <-> %4s\n", b, b.chr)
   }
-  #��
+  #例
   #=>  45 <->    -
   #=>  32 <->
   #=>  83 <->    S
@@ -357,35 +368,58 @@ ARGF �θ��߰��֤��� 1 �Х��Ȥ����ɤ߹��ߡ�����������Ȥ���Ϳ�����֥��å���¹Ԥ�
 
 #@since 1.8.7
 --- each_char{|c| ... }     -> self
---- chars{|c| ... }         -> self
-#@until 1.8.8
---- each_char               -> Enumerable::Enumerator
---- chars                   -> Enumerable::Enumerator
-#@end
-#@since 1.8.8
+#@since 1.9.1
 --- each_char               -> Enumerator
---- chars                   -> Enumerator
+#@else
+--- each_char               -> Enumerable::Enumerator
 #@end
 
-�쥷���Ф˴ޤޤ��ʸ�����ʸ���Ĥĥ֥��å����Ϥ���ɾ�����ޤ���
+レシーバに含まれる文字を一文字つつブロックに渡して評価します。
 
-�쥷���Ф��ɤ߹��߲�ǽ�Ǥʤ���Фʤ�ޤ���
+レシーバは読み込み可能でなければなりません。
 
 #@until 1.9.1
-�ޤ����ޥ���Х���ʸ�������Ѥ������ [[m:$KCODE]] ��Ŭ�ڤ����ꤷ�Ƥ���������
+また、マルチバイト文字列を使用する場合は [[m:$KCODE]] を適切に設定してください。
 #@end
 
 @see [[m:IO#each_char]], [[m:IO#chars]]
 
+--- chars{ |c| ... }        -> self
+#@since 1.9.1
+--- chars                   -> Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:ARGF.class#each_char]] を使用してください。
+#@else
+--- chars                   -> Enumerable::Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:ARGF.each_char]] を使用してください。
+#@end
+#@since 2.0.0
+使用すると警告メッセージが表示されます。
+#@end
+
+レシーバに含まれる文字を一文字つつブロックに渡して評価します。
+
+レシーバは読み込み可能でなければなりません。
+
+#@since 1.9.1
+@see [[m:ARGF.class#each_char]]
+#@else
+また、マルチバイト文字列を使用する場合は [[m:$KCODE]] を適切に設定してください。
+
+@see [[m:ARGF.each_char]]
+#@end
 #@end
 
 --- eof -> bool
 --- eof? -> bool
-���߳����Ƥ���ե����뤬eof��ã������true���֤��ޤ��������Ǥʤ�����false���֤��ޤ���
+現在開いているファイルがeofに達したらtrueを返します。そうでない場合はfalseを返します。
 
-@raise IOError �ե����뤬open����Ƥ��ʤ����
+@raise IOError ファイルがopenされていない場合
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -402,7 +436,7 @@ ARGF �θ��߰��֤��� 1 �Х��Ȥ����ɤ߹��ߡ�����������Ȥ���Ϳ�����֥��å���¹Ԥ�
     print "IOError !!\n"
   end
 
-  #=> ��
+  #=> 例
   #=> eof. sample.yaml has 13(13) line
   #=> eof. test.rb has 159(172) line
   #=> eof. test.rb~ has 159(331) line
@@ -414,9 +448,9 @@ ARGF �θ��߰��֤��� 1 �Х��Ȥ����ɤ߹��ߡ�����������Ȥ���Ϳ�����֥��å���¹Ԥ�
 
 --- fileno -> Integer
 --- to_i -> Integer
-���ߥ����ץ󤷤Ƥ���ե�����Υե����뵭�һҤ�ɽ���������֤��ޤ���
+現在オープンしているファイルのファイル記述子を表す整数を返します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -429,7 +463,7 @@ ARGF �θ��߰��֤��� 1 �Х��Ȥ����ɤ߹��ߡ�����������Ȥ���Ϳ�����֥��å���¹Ԥ�
   rescue ArgumentError
     print "ArgumentError\n"
   end
-  #��
+  #例
   #=> [3, "sample.yaml"]
   #=> [3, "test.rb"]
   #=> [3, "test.rb~"]
@@ -440,9 +474,9 @@ ARGF �θ��߰��֤��� 1 �Х��Ȥ����ɤ߹��ߡ�����������Ȥ���Ϳ�����֥��å���¹Ԥ�
 @raise ArgumentError
 
 --- getc -> Integer | nil
-ARGF���� 1 ʸ���ɤ߹���ǡ�����ʸ�����б����� Fixnum ���֤��ޤ���EOF ����ã�������ˤ� nil ���֤��ޤ���
+ARGFから 1 文字読み込んで、その文字に対応する Fixnum を返します。EOF に到達した時には nil を返します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -450,7 +484,7 @@ ARGF���� 1 ʸ���ɤ߹���ǡ�����ʸ�����б����� Fixnum ���֤��ޤ���EOF ����ã�����
   while c = ARGF.getc
     printf("%d,%c.\n", c, c)
   end
-  #��
+  #例
   #=> 45,-.
   #=> 32, .
   #=> 67,C.
@@ -463,9 +497,9 @@ ARGF���� 1 ʸ���ɤ߹���ǡ�����ʸ�����б����� Fixnum ���֤��ޤ���EOF ����ã�����
   #...
 
 --- gets -> String | nil
-ARGF�θ��߰��֤����Ԥ���ʸ����Ȥ����ɤ߹��ߤޤ���EOF ����ã�������ˤ� nil ���֤��ޤ���
+ARGFの現在位置から一行ずつ文字列として読み込みます。EOF に到達した時には nil を返します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
   )
@@ -479,7 +513,7 @@ ARGF�θ��߰��֤����Ԥ���ʸ����Ȥ����ɤ߹��ߤޤ���EOF ����ã�������ˤ� nil ���
 
 --- pos -> Integer
 --- tell -> Integer
-ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤θ��ߤΰ��֤��������֤��ޤ���
+ARGFが現在開いているファイルのファイルポインタの現在の位置を整数で返します。
 
   ARGV.replace(
     Dir.glob("*").reject{|name| FileTest.file?(name) == false}
@@ -492,7 +526,7 @@ ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤θ��ߤΰ��֤��������֤��ޤ���
     end
   end
 
-  # ��
+  # 例
   #=> 1 'c' sample.yaml
   #=> 2 'a' sample.yaml
   #=> 3 't' sample.yaml
@@ -507,16 +541,16 @@ ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤θ��ߤΰ��֤��������֤��ޤ���
 @see [[m:IO#pos]], [[m:IO#tell]]
 
 --- pos=(n)
-ARGF�������Ƥ���ե�����Υե�����ݥ��󥿤������֤˰�ư���ޤ���
+ARGFが開いているファイルのファイルポインタを指定位置に移動します。
 
-@param n ��Ƭ����Υ��ե��åȤ������ǻ��ꤷ�ޤ���
+@param n 先頭からのオフセットを整数で指定します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
   print ARGF.readline
-  #��
+  #例
   #=> #!/usr/bin/env ruby
   ARGF.pos = 2
   print ARGF.readline
@@ -528,14 +562,14 @@ ARGF�������Ƥ���ե�����Υե�����ݥ��󥿤������֤˰�ư���ޤ���
 @see [[m:IO#pos=]]
 
 --- read(length = nil, str = nil) -> String
-ARGV�˻��ꤵ�줿�ե��������Ƭ�Υե����뤫��length�Х����ɤ߹��ߡ�
-����ʸ�����str�˽��Ϥ��ޤ����ɤ߹����ʸ������֤��ޤ���
+ARGVに指定されたファイルを先頭のファイルからlengthバイト読み込み、
+その文字列をstrに出力します。読み込んだ文字列を返します。
 
-@param length �ɤ߹���Х��ȿ�����ꤷ�ޤ� nil�ξ���ARGV�Τ��٤ƤΥե�������ɤ߹��ߤޤ���
+@param length 読み込むバイト数を指定します nilの場合はARGVのすべてのファイルを読み込みます。
 
-@param str �������ʸ����
+@param str 出力先の文字列
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
@@ -544,17 +578,17 @@ ARGV�˻��ꤵ�줿�ե��������Ƭ�Υե����뤫��length�Х����ɤ߹��ߡ�
   ARGF.read(100, str)
   p str.size #=> 100
   p str 
-  # ��
+  # 例
   #=> "cat:\n - name: taro\n   age: 7\n - name: jiro\n   age: 23\n---\ndog:\n shiba:\n- name: goro\n    age: 3\n  -"
 
 @see [[m:IO#read]]
 
 --- readchar -> Integer
-ARGF���� 1 ʸ���ɤ߹���ǡ�����ʸ�����б����� Fixnum ���֤��ޤ���EOF ����ã�������ˤ� EOFError��ȯ�����ޤ���
+ARGFから 1 文字読み込んで、その文字に対応する Fixnum を返します。EOF に到達した時には EOFErrorを発生します。
 
-@raise EOFError EOF��ã������ȯ������
+@raise EOFError EOFに達した時発生する
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
@@ -567,7 +601,7 @@ ARGF���� 1 ʸ���ɤ߹���ǡ�����ʸ�����б����� Fixnum ���֤��ޤ���EOF ����ã�����
     break
   end while true
 
-  # ��
+  # 例
   #...
   #=>    t is  116
   #=>    a is   97
@@ -577,14 +611,18 @@ ARGF���� 1 ʸ���ɤ߹���ǡ�����ʸ�����б����� Fixnum ���֤��ޤ���EOF ����ã�����
   #=>  is   10
   #<EOFError: end of file reached>
 
+#@since 1.9.1
+@see [[m:ARGF.class#getc]]
+#@else
 @see [[m:ARGF.getc]]
+#@end
 
 --- readline -> String
-ARGF�θ��߰��֤����Ԥ���ʸ����Ȥ����ɤ߹��ߤޤ���EOF ����ã�������ˤ�EOFError��ȯ�����ޤ���
+ARGFの現在位置から一行ずつ文字列として読み込みます。EOF に到達した時にはEOFErrorを発生します。
 
-@raise EOFError EOF��ã������ȯ������
+@raise EOFError EOFに達したら発生する
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
@@ -597,26 +635,30 @@ ARGF�θ��߰��֤����Ԥ���ʸ����Ȥ����ɤ߹��ߤޤ���EOF ����ã�������ˤ�EOFError
     break
   end while true
 
-  #��
+  #例
   #...
   #=> "- Saitama\n"
   #=> <EOFError: end of file reached>
 
+#@since 1.9.1
+@see [[m:Kernel.#readline]] [[m:ARGF.class#gets]]
+#@else
 @see [[m:Kernel.#readline]] [[m:ARGF.gets]]
+#@end
 
 --- readlines(rs = $/) -> [String]
 --- to_a(rs = $/) -> [String]
-ARGF�γƹԤ�������ɤ߹�����֤��ޤ���rs��nil�ξ������Ǥ˳ƥե�����򤹤٤��ɤ߹����������֤��ޤ���
+ARGFの各行を配列に読み込んで返します。rsがnilの場合は要素に各ファイルをすべて読み込んだ配列を返します。
 
-@param rs �Զ��ڤ�ʸ��
+@param rs 行区切り文字
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
   aall = ARGF.readlines
   p aall[0, 3]
-  # ��
+  # 例
   #=> ["cat:\n", " - name: taro\n", "   age: 7\n"] 
   p ARGF.closed? #=> true
 
@@ -632,14 +674,14 @@ ARGF�γƹԤ�������ɤ߹�����֤��ޤ���rs��nil�ξ������Ǥ˳ƥե�����򤹤٤��ɤ
 @see [[m:$/]] [[m:IO#readlines]]
 
 --- rewind -> 0
-ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤���Ƭ���ᤷ�ޤ���
+ARGFが現在開いているファイルのファイルポインタを先頭に戻します。
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
 
-  #�ƥե��������Ƭ���飳�Ԥ򣲲�ɽ������
+  #各ファイルの先頭から３行を２回表示する
   until ARGF.closed?
     1.upto(2){|i|
       printf("filename:%s at %d\n", ARGF.filename, i)
@@ -654,12 +696,12 @@ ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤���Ƭ���ᤷ�ޤ���
   end 
 
 --- seek(offset, whence = IO::SEEK_SET) -> 0
-ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤� whence �ΰ��֤��� offset ������ư�����ޤ��� offset ���֤ؤΰ�ư����������� 0 ���֤��ޤ���
+ARGFが現在開いているファイルのファイルポインタを whence の位置から offset だけ移動させます。 offset 位置への移動が成功すれば 0 を返します。
 
-@param offset �ե�����ݥ��󥿤��ư�����륪�ե��åȤ������ǻ��ꤷ�ޤ���
-@param whence [[m:IO#seek]]�򻲾�
+@param offset ファイルポインタを移動させるオフセットを整数で指定します。
+@param whence [[m:IO#seek]]を参照
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
@@ -673,7 +715,7 @@ ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤� whence �ΰ��֤��� offset ������
     end
     ARGF.skip
   end
-  #��
+  #例
   #=> (sample.yaml):d of sample
   #=> (test.rb):.skip
   #=> (test.rb~):.skip
@@ -683,26 +725,26 @@ ARGF�����߳����Ƥ���ե�����Υե�����ݥ��󥿤� whence �ΰ��֤��� offset ������
 @see [[m:IO#seek]]
 
 --- to_io -> IO
-ARGF�����߳����Ƥ���ե������[[c:File]]���ޤ���[[c:IO]]���֥������Ȥ��֤��ޤ�
+ARGFが現在開いているファイルの[[c:File]]、または[[c:IO]]オブジェクトを返します
 
-  # �����ȥǥ��쥯�ȥ꤫��Ŭ���˥ե����������
+  # カレントディレクトリから適当にファイルを選ぶ
   ARGV.replace(
     Dir.glob("*").select{|name| FileTest.file?(name)}
   )
 
   until ARGF.closed?
-    printf("�ǽ��������� %s (%s)\n", ARGF.to_io.stat.mtime, ARGF.filename)
+    printf("最終更新時刻 %s (%s)\n", ARGF.to_io.stat.mtime, ARGF.filename)
     ARGF.skip
   end 
-  #��
-  #=> �ǽ��������� Thu May 03 14:05:53 +0900 2007 (sample.yaml)
-  #=> �ǽ��������� Sat Aug 18 16:31:42 +0900 2007 (test.rb)
-  #=> �ǽ��������� Sat Aug 18 16:31:30 +0900 2007 (test.rb~)
-  #=> �ǽ��������� Sun Jun 24 13:08:12 +0900 2007 (third.txt)
-  #=> �ǽ��������� Sun May 20 21:34:25 +0900 2007 (ugo.yaml)
+  #例
+  #=> 最終更新時刻 Thu May 03 14:05:53 +0900 2007 (sample.yaml)
+  #=> 最終更新時刻 Sat Aug 18 16:31:42 +0900 2007 (test.rb)
+  #=> 最終更新時刻 Sat Aug 18 16:31:30 +0900 2007 (test.rb~)
+  #=> 最終更新時刻 Sun Jun 24 13:08:12 +0900 2007 (third.txt)
+  #=> 最終更新時刻 Sun May 20 21:34:25 +0900 2007 (ugo.yaml)
   #...
 
-$stdin��IO���֥������ȤǤʤ�����$stdin.to_io��ƤӽФ��ޤ���
+$stdinがIOオブジェクトでない場合は$stdin.to_ioを呼び出します。
 
   class MyIO
     def to_io
@@ -719,71 +761,143 @@ $stdin��IO���֥������ȤǤʤ�����$stdin.to_io��ƤӽФ��ޤ���
 
   __END__
   MyIO Test
-  �Ǥ���
+  です。
 
-@see [[m:ARGF.file]]
-
-#@since 1.8.7
-#@since 1.8.8
---- bytes    -> Enumerator
+#@since 1.9.1
+@see [[m:ARGF.class#file]]
 #@else
---- bytes    -> Enumerable::Enumerator
+@see [[m:ARGF.file]]
 #@end
 
-���Ȥ� 1 �Х��Ȥ��������Ȥ��ƥ��ƥ졼�Ȥ���褦��
-#@since 1.8.8
-[[c:Enumerator]] ���֥������Ȥ����������֤��ޤ���
+#@since 1.8.7
+#@since 1.9.1
+--- bytes { |char| ... } -> self
+--- bytes                -> Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:ARGF.class#each_byte]] を使用してください。
 #@else
-[[c:Enumerable::Enumerator]] ���֥������Ȥ����������֤��ޤ���
+--- bytes { |char| ... } -> self
+--- bytes                -> Enumerable::Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:ARGF.each_byte]] を使用してください。
+#@end
+#@since 2.0.0
+使用すると警告メッセージが表示されます。
+#@end
+
+self を 1 バイトずつ整数としてブロックの引数に繰り返しブロックを呼びだします。
+
+ブロックを省略した場合には、
+#@since 1.9.1
+[[c:Enumerator]] オブジェクトを生成して返します。
+#@else
+[[c:Enumerable::Enumerator]] オブジェクトを生成して返します。
 #@end
 
    ARGF.bytes.to_a        #=> [104, 101, 108, 108, 111]
 
-#@since 1.8.8
---- lines(rs = $/)    -> Enumerator
+#@since 1.9.1
+--- lines(rs = $/) { |line| ... }   -> self
+--- lines(limit) { |line| ... }     -> self
+--- lines(rs, limit) { |line| ... } -> self
+--- lines(rs = $/)                  -> Enumerator
+--- lines(limit)                    -> Enumerator
+--- lines(rs, limit)                -> Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:ARGF.class#each_line]] を使用してください。
 #@else
---- lines(rs = $/)    -> Enumerable::Enumerator
+--- lines(rs = $/) { |line| ... }   -> self
+--- lines(rs = $/)                  -> Enumerable::Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:ARGF.each_line]] を使用してください。
+#@end
+#@since 2.0.0
+使用すると警告メッセージが表示されます。
 #@end
 
-���Ȥ� 1 �Ԥ��ĥ��ƥ졼�Ȥ���褦��
-#@since 1.8.8
-[[c:Enumerator]] ���֥������Ȥ����������֤��ޤ���
+現在位置から 1 行ずつ文字列として読み込み、それを引数として 与えられたブロックを実行します。
+
+ブロックが与えられなかった場合は、
+#@since 1.9.1
+[[c:Enumerator]] オブジェクトを生成して返します。
 #@else
-[[c:Enumerable::Enumerator]] ���֥������Ȥ����������֤��ޤ���
+[[c:Enumerable::Enumerator]] オブジェクトを生成して返します。
 #@end
 
-�ƥ������ɤ߹��ߥ᥽�åɤȤ���ư��ޤ���
+テキスト読み込みメソッドとして動作します。
 
-@param rs �Ԥζ��ڤ��ʸ����ǻ��ꤷ�ޤ���rs �� nil ����ꤹ��ȹԶ��ڤ�ʤ��Ȥߤʤ��ޤ���
-          ��ʸ���� "" ����ꤹ���Ϣ³������Ԥ�Ԥζ��ڤ�Ȥߤʤ��ޤ�(�ѥ饰��ե⡼��)��
+#@since 1.9.1
+limit で最大読み込みバイト数を指定します。ただしマルチバイト文字が途中
+で 切れないように余分に読み込む場合があります。
+#@end
+
+@param rs 行の区切りを文字列で指定します。rs に nil を指定すると行区切りなしとみなします。
+          空文字列 "" を指定すると連続する改行を行の区切りとみなします(パラグラフモード)。
+
+#@since 1.9.1
+@param limit 最大の読み込みバイト数
+#@end
 
    ARGF.lines.to_a   #=> ["foo\n", "bar\n"]
 
-@see [[m:$/]]
+#@since 1.9.1
+@see [[m:$/]], [[m:ARGF.class#each_line]]
+#@else
+@see [[m:$/]], [[m:ARGF.each_line]]
+#@end
 
 --- getbyte   -> Integer | nil
 
-���Ȥ��� 1 �Х��Ȥ��ɤ߹��������Ȥ����֤��ޤ���
-���� EOF ��ã���Ƥ���� nil ���֤��ޤ���
+自身から 1 バイトを読み込み整数として返します。
+既に EOF に達していれば nil を返します。
 
    ARGF.getbyte   #=> 84
    ARGF.getbyte   #=> 104
 
 --- readbyte   -> Integer
 
-���Ȥ��� 1 �Х��Ȥ��ɤ߹��������Ȥ����֤��ޤ���
-���� EOF ��ã���Ƥ���� EOFError ��ȯ�����ޤ���
+自身から 1 バイトを読み込み整数として返します。
+既に EOF に達していれば EOFError が発生します。
 
-@raise EOFError ���� EOF ��ã���Ƥ������ȯ�����ޤ���
+@raise EOFError 既に EOF に達している場合に発生します。
 
 #@end
 
 #@since 1.9.1
---- readpartial(length, str = nil)
-[[m:IO#readpartial]]�򻲾�
+--- readpartial(length, str = nil) -> String
+[[m:IO#readpartial]]を参照
 
 @see [[m:IO#readpartial]]
 
 #@end
 
+#@since 2.0.0
+--- each_codepoint{ |c| ... }    -> self
+--- each_codepoint               -> Enumerator
 
+self の各コードポイントに対して繰り返しブロックを呼びだします。
+
+ブロックの引数にはコードポイントを表す整数が渡されます。
+
+ブロックを省略した場合には、[[c:Enumerator]] を返します。
+
+#@# 2.0 から追加のメソッドだが IO#codepoints と揃えたと思われる。
+--- codepoints { |c| ... }       -> self
+--- codepoints                   -> Enumerator
+
+このメソッドは obsolete です。
+代わりに [[m:ARGF.class#each_codepoint]] を使用してください。
+使用すると警告メッセージが表示されます。
+
+self の各コードポイントに対して繰り返しブロックを呼びだします。
+
+ブロックの引数にはコードポイントを表す整数が渡されます。
+
+ブロックを省略した場合には、[[c:Enumerator]] を返します。
+
+@see [[m:ARGF.class#each_codepoint]]
+#@end

@@ -6,4 +6,4 @@ library=zlib
 aliases=
 aliasof=
 
-���ϥǡ����򰵽̤��륹�ȥ꡼��Υ��饹�Ǥ���
+入力データを圧縮するストリームのクラスです。

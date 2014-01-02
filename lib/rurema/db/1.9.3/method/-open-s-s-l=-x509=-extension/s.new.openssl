@@ -4,16 +4,16 @@ kind=defined
 
 --- new(der) -> OpenSSL::X509::Extension
 --- new(oid, value, critical=false) -> OpenSSL::X509::Extension
-[[c:OpenSSL::X509::Extension]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Ş¤¹¡£
+[[c:OpenSSL::X509::Extension]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-°ú¿ô¤¬1¤Ä¤Î¾ì¹ç¤Ï DER ·Á¼°¤ÎÊ¸»úÎó¤òÅÏ¤·¤Ş¤¹¡£
+å¼•æ•°ãŒ1ã¤ã®å ´åˆã¯ DER å½¢å¼ã®æ–‡å­—åˆ—ã‚’æ¸¡ã—ã¾ã™ã€‚
 
-°ú¿ô¤¬2¤Ä°Ê¾å¤Î¾ì¹ç¤Ï¡¢oid ¤Ë¤Ï³ÈÄ¥ÎÎ°è¤Î OID ¤Î ¥É¥Ã¥È¶èÀÚ¤êÉ½µ­¡¢
-short name¡¢long name ¤Î¤¤¤º¤ì¤«¤Ç¤¢¤ëÊ¸»úÎó¤òÍ¿¤¨¤Ş¤¹¡£
-value ¤Ë¤Ï¤½¤ÎÃÍ¤òÉ½¤¹ DER ·Á¼°¤ÎÊ¸»úÎó¡¢¤â¤·¤¯¤Ï 
-[[c:OpenSSL::ASN1::ASN1Data]] ¤Î¥µ¥Ö¥¯¥é¥¹¤òÍ¿¤¨¤Ş¤¹¡£
+å¼•æ•°ãŒ2ã¤ä»¥ä¸Šã®å ´åˆã¯ã€oid ã«ã¯æ‹¡å¼µé ˜åŸŸã® OID ã® ãƒ‰ãƒƒãƒˆåŒºåˆ‡ã‚Šè¡¨è¨˜ã€
+short nameã€long name ã®ã„ãšã‚Œã‹ã§ã‚ã‚‹æ–‡å­—åˆ—ã‚’ä¸ãˆã¾ã™ã€‚
+value ã«ã¯ãã®å€¤ã‚’è¡¨ã™ DER å½¢å¼ã®æ–‡å­—åˆ—ã€ã‚‚ã—ãã¯ 
+[[c:OpenSSL::ASN1::ASN1Data]] ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã‚’ä¸ãˆã¾ã™ã€‚
 
-Îã;
+ä¾‹;
 
   require 'openssl'
   include OpenSSL
@@ -26,8 +26,8 @@ value ¤Ë¤Ï¤½¤ÎÃÍ¤òÉ½¤¹ DER ·Á¼°¤ÎÊ¸»úÎó¡¢¤â¤·¤¯¤Ï
   ex3 = X509::Extension.new("basicConstraints", ASN1.Sequence([ASN1::Boolean(false)]))
   p ex3 # => basicConstraints = CA:FALSE
 
-@param der DER·Á¼°¤ÎÊ¸»úÎó
-@param oid OID¤òÉ½¤¹Ê¸»úÎó(¥É¥Ã¥È¶èÀÚ¤ê¡¢short name, long name¤Î¤¤¤º¤ì¤«)
-@param value ³ÈÄ¥ÎÎ°è¤ÎÃÍ¤òÉ½¤¹ DER ·Á¼°Ê¸»úÎó
-@param critical ³ÈÄ¥ÎÎ°è¤Î½ÅÍ×ÅÙ 
+@param der DERå½¢å¼ã®æ–‡å­—åˆ—
+@param oid OIDã‚’è¡¨ã™æ–‡å­—åˆ—(ãƒ‰ãƒƒãƒˆåŒºåˆ‡ã‚Šã€short name, long nameã®ã„ãšã‚Œã‹)
+@param value æ‹¡å¼µé ˜åŸŸã®å€¤ã‚’è¡¨ã™ DER å½¢å¼æ–‡å­—åˆ—
+@param critical æ‹¡å¼µé ˜åŸŸã®é‡è¦åº¦ 
 

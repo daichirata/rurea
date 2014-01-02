@@ -4,7 +4,7 @@ kind=defined
 
 --- join(*args) -> Pathname
 
-Ϳ����줿�ѥ�̾��Ϣ�뤷�ޤ���
+与えられたパス名を連結します。
 
-@param args Ϣ�뤷�����ǥ��쥯�ȥ�̾��ե�����̾��ʸ�����Ϳ���ޤ���
+@param args 連結したいディレクトリ名やファイル名を文字列で与えます。
 

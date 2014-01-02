@@ -4,12 +4,12 @@ kind=defined
 
 --- add_builtin_type(type_tag){|type, val| ...} -> nil
 
-yaml.org,2002¥É¥á¥¤¥ó¤ËÂ°¤·¤Æ¤¤¤ë¥¯¥é¥¹¤òYAML¤ËÄÉ²Ã¤·
-¤½¤Î¥¯¥é¥¹¤ò¸«¤Ä¤±¤¿¤È¤­¤ÎÁàºî¤ò»ØÄê¤·¤Þ¤¹¡£
+yaml.org,2002ãƒ‰ãƒ¡ã‚¤ãƒ³ã«å±žã—ã¦ã„ã‚‹ã‚¯ãƒ©ã‚¹ã‚’YAMLã«è¿½åŠ ã—
+ãã®ã‚¯ãƒ©ã‚¹ã‚’è¦‹ã¤ã‘ãŸã¨ãã®æ“ä½œã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param type_tag ²Ã¤¨¤ë¥¯¥é¥¹¤ò»ØÄê¤¹¤ë¡£
-@param type YAML¥É¥á¥¤¥ó¤È¥¯¥é¥¹¤ÎÊ¸»úÎó
-@param val YAML¥Ç¡¼¥¿¹½Â¤
+@param type_tag åŠ ãˆã‚‹ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã™ã‚‹ã€‚
+@param type YAMLãƒ‰ãƒ¡ã‚¤ãƒ³ã¨ã‚¯ãƒ©ã‚¹ã®æ–‡å­—åˆ—
+@param val YAMLãƒ‡ãƒ¼ã‚¿æ§‹é€ 
 
   require 'yaml'
   
@@ -33,7 +33,7 @@ yaml.org,2002¥É¥á¥¤¥ó¤ËÂ°¤·¤Æ¤¤¤ë¥¯¥é¥¹¤òYAML¤ËÄÉ²Ã¤·
   
   p YAML.load(str1)
   #=> #<YAML::DomainType:0x2b06fec @type_id="Rational", @domain="ruby.yaml.org,2002", @value="5/6">
-  ## Á°²ó¤ÈÊÑ²½¤Ê¤·
+  ## å‰å›žã¨å¤‰åŒ–ãªã—
   
   rt = YAML.load(str2)
   p rt        # => Rational(3, 4)

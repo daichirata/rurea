@@ -4,12 +4,12 @@ kind=defined
 
 --- unpack_sockaddr_un(sockaddr) -> String
 
-[[ref:lib:socket#pack_string]]¤ò
-unpack ¤·¤¿¥½¥±¥Ã¥È¥Ñ¥¹Ì¾¤òÊÖ¤·¤Ş¤¹¡£
+[[ref:lib:socket#pack_string]]ã‚’
+unpack ã—ãŸã‚½ã‚±ãƒƒãƒˆãƒ‘ã‚¹åã‚’è¿”ã—ã¾ã™ã€‚
 
-@param sockaddr ¥½¥±¥Ã¥È¥¢¥É¥ì¥¹¹½Â¤ÂÎ¤ò pack ¤·¤¿Ê¸»úÎó[[ref:lib:socket#pack_string]]¤ò»ØÄê¤·¤Ş¤¹¡£
+@param sockaddr ã‚½ã‚±ãƒƒãƒˆã‚¢ãƒ‰ãƒ¬ã‚¹æ§‹é€ ä½“ã‚’ pack ã—ãŸæ–‡å­—åˆ—[[ref:lib:socket#pack_string]]ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'socket'
   p Socket.unpack_sockaddr_un(Socket.sockaddr_un("/tmp/.X11-unix/X0"))

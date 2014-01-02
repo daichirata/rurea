@@ -4,9 +4,9 @@ kind=defined
 
 --- acosh(z) -> Float | Complex
 
-z �ε��ж���;���ؿ����ͤ��֤��ޤ���
+z の逆双曲線余弦関数の値を返します。
 
-@param z ����
+@param z 数値
 
-@raise TypeError z �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError z に数値以外を指定した場合に発生します。
 

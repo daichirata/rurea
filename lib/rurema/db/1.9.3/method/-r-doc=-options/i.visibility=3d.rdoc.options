@@ -4,7 +4,7 @@ kind=defined
 
 --- visibility=(val)
 
-¥³¥Ş¥ó¥É¥é¥¤¥ó°ú¿ô¤Î --visibility ¥ª¥×¥·¥ç¥ó¤ÈÆ±ÍÍ¤Î»ØÄê¤ò¹Ô¤¤¤Ş¤¹¡£
+ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³å¼•æ•°ã® --visibility ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¨åŒæ§˜ã®æŒ‡å®šã‚’è¡Œã„ã¾ã™ã€‚
 
-@param val :public¡¢:protected¡¢:private ¤Î¤¤¤º¤ì¤«¤ò»ØÄê¤·¤Ş¤¹¡£
+@param val :publicã€:protectedã€:private ã®ã„ãšã‚Œã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

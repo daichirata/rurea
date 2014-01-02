@@ -4,5 +4,5 @@ kind=defined
 
 --- ioctl(cmd, arg = 0)    -> Integer
 
-[[m:IO#ioctl]] ¤Ë°Ñ¾ù¤·¤Ş¤¹¡£
+[[m:IO#ioctl]] ã«å§”è­²ã—ã¾ã™ã€‚
 

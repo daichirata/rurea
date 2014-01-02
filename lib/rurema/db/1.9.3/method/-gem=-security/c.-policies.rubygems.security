@@ -4,7 +4,7 @@ kind=defined
 
 --- Policies -> Hash
 
-���Ѳ�ǽ�ʥݥꥷ���ΰ������֤��ޤ���
+使用可能なポリシーの一覧を返します。
 
  * [[m:Gem::Security::NoSecurity]]
  * [[m:Gem::Security::AlmostNoSecurity]]

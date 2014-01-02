@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- getc -> String | nil
-�Хåե�����1ʸ���ɤ߹��ߡ������֤��ޤ���
+バッファから1文字読み込み、それ返します。
 
-�ɤ߹��ߤ���ü����ã�������� nil ���֤��ޤ���
+読み込みが終端に到達した場合は nil を返します。
 
-[[m:IO#getc]] ��Ʊ�ͤǤ���
+[[m:IO#getc]] と同様です。
 

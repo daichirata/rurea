@@ -1,3 +1,149 @@
+2013-04-12  Kazuhiro NISHIYAMA  <zn@mbf.nifty.com>
+
+	* lib/bitclust/subcommands/setup_command.rb (BitClust::SetupCommand#checkout):
+	use result of system directly instead of calling "svn help" with
+	redirects. because it may cause permission problem on cygwin.
+	see https://twitter.com/higaki/status/322542075927212034
+
+2013-04-06  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/nameutils.rb
+	(BitClust::NameUtils::CLASS_NAME_RE): support main and
+	*::compatible class. (see #8186)
+	(BitClust::NameUtils::CLASS_PATH_RE): ditto.
+
+2012-10-09  Ippei Obayashi  <ohai@kmc.gr.jp>
+
+	* lib/bitclust/subcommands/server_command.rb
+	(BitClust::Subcommands::ServerCommand#initialize): fix set_srcdir call
+	(BitClust::Subcommands::ServerCommand#srcdir_root): fix default srcdir
+
+2012-09-24  okkez  <okkez000@gmail.com>
+
+	* lib/bitclust/subcommand.rb: split subcommands.
+
+	* lib/bitclust/subcommands/update_command.rb: split update
+	subcommand.
+
+	* lib/bitclust/subcommands/setup_command.rb: split setup
+	subcommand.
+
+	* lib/bitclust/subcommands/server_command.rb: split server
+	subcommand.
+
+	* lib/bitclust/subcommands/query_command.rb: split query
+	subcommand.
+
+	* lib/bitclust/subcommands/property_command.rb: split property
+	subcommand.
+
+	* lib/bitclust/subcommands/lookup_command.rb: split lookup
+	subcommand.
+
+	* lib/bitclust/subcommands/list_command.rb: split list subcommand.
+
+	* lib/bitclust/subcommands/init_command.rb: split init subcommand.
+
+2012-09-16  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/subcommand.rb (BitClust::SetupCommand#checkout):
+	  check svn installed Windows, too. (see #7026)
+
+2012-09-15  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/subcommand.rb (BitClust::ServerCommand#exec): start
+	  browser mingw, cygwin and bccwin. (same as r5167)
+
+2012-09-02  okkez  <okkez000@gmail.com>
+
+	* lib/bitclust/subcommand.rb (BitClust::SetupCommand#prepare): do
+	not overwrite config.yml if exist it. fix #6949
+
+2012-08-26  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/subcommand.rb (BitClust::ServerCommand#initialize):
+	  add :BindAddress to @params to delete warning.
+
+2012-08-25  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/runner.rb: do not push Pathname object to
+	  $LOAD_PATH. (fixes #6925)
+
+2012-08-25  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/subcommand.rb (BitClust::ServerCommand#parse): fix
+	  instance method reference. (fixes #6924)
+
+2012-08-25  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/nameutils.rb (BitClust::NameUtils): add #!~ to
+	  methodname (fixes #6915)
+
+2012-08-15  okkez  <okkez000@gmail.com>
+
+	* standalone.rb: remove unused file.
+
+2012-08-12  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/classentry.rb (BitClust::ClassEntry#superclass):
+	  enable to return superclass from alias class. (see #6826)
+
+2012-08-11  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/subcommand.rb (BitClust::SetupCommand#prepare): fix
+	  typo. thanks dice (fixes #6856)
+
+2012-08-07  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* tools/bc-tohtmlpackage.rb (#main): support multi name
+	  method. (see #5257)
+	  (#create_html_file): ditto.
+	  (#create_html_method_file): ditto.
+
+2012-06-04  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* lib/bitclust/completion.rb
+	  (BitClust::Completion::search_methods_from_mname): remove unused
+	  line. (fixes #6542)
+
+2012-06-01  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* data/bitclust/template.lillia/library: display all error
+	  classes. (see #6350)
+
+	* data/bitclust/template.offline/library: ditto.
+
+	* data/bitclust/template/library: ditto.
+
+2012-06-01  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* data/bitclust/template.lillia/library: display all classes.
+	  (see #6350)
+
+	* data/bitclust/template.offline/library: ditto.
+
+	* data/bitclust/template/library: ditto.
+
+2012-05-27  wanabe  <s.wanabe@gmail.com>
+
+	* data/bitclust/template.offline/class: update to keep with template/.
+	  fix #5944. see #5503.
+
+	* data/bitclust/template.offline/library: ditto.
+
+2012-05-25  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* tools/bc-tohtmlpackage.rb (main): do not copy .svn in images.
+
+2012-05-23  Sho Hashimoto  <sho-h@netlab.jp>
+
+	* standalone.rb: start browser mingw, cygwin and bccwin.
+	  (fixes #6461)
+
+2012-02-29  Kazuhiro NISHIYAMA  <zn@mbf.nifty.com>
+
+	* packer.rb: add bitclust_libdir to avoid LoadError in bin/bitclust.
+
 2012-02-12  wanabe  <s.wanabe@gmail.com>
 
 	* data/bitclust/template/library: sort classes according to

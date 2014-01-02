@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- next_year(n = 1) -> Date
-n Ç¯¸å¤òÊÖ¤·¤Ş¤¹¡£
+n å¹´å¾Œã‚’è¿”ã—ã¾ã™ã€‚
 
-@param n Ç¯¿ô
+@param n å¹´æ•°
 

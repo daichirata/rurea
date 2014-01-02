@@ -4,9 +4,9 @@ kind=added
 
 --- tagged_classes -> {String => Class}
 
-���� URI �ȡ����줬�б����륯�饹�ΰ������֤��ޤ���
+タグ URI と、それが対応するクラスの一覧を返します。
 
-��:
+例:
 
  require "pp"
  require "syck"

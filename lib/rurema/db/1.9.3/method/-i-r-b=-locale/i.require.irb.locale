@@ -1,7 +1,0 @@
-names=require
-visibility=public
-kind=defined
-
---- require(file, priv = nil)
-@todo
-

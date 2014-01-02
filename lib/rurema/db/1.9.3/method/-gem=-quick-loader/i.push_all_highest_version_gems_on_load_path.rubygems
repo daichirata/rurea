@@ -4,5 +4,5 @@ kind=defined
 
 --- push_all_highest_version_gems_on_load_path
 
-prelude.c ¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ëÆâÉôÍÑ¤Î¥á¥½¥Ã¥É¤Ç¤¹¡£
+prelude.c ã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹å†…éƒ¨ç”¨ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- [](code)    -> Class
 
-»ØÄê¤µ¤ì¤¿À°¿ô¤¬É½¤¹¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤ËÂÐ±þ¤¹¤ë WEBrick::HTTPStatus::Status
-¤Î¥µ¥Ö¥¯¥é¥¹¤òÊÖ¤·¤Þ¤¹¡£
+æŒ‡å®šã•ã‚ŒãŸæ•´æ•°ãŒè¡¨ã™ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ã«å¯¾å¿œã™ã‚‹ WEBrick::HTTPStatus::Status
+ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param code HTTP ¤Î¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤òÉ½¤¹À°¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
+@param code HTTP ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’è¡¨ã™æ•´æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   require 'webrick'
   p WEBrick::HTTPStatus[200]   #=> WEBrick::HTTPStatus::OK

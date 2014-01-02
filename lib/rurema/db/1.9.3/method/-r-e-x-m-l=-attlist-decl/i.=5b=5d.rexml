@@ -2,6 +2,9 @@ names=[]
 visibility=public
 kind=defined
 
---- [](key)
-@todo
+--- [](key) -> String | nil
+key という属性名のデフォルト値を返します。
+
+key という名前の属性が存在しない、もしくは
+デフォルト値を持たない場合は nil を返します。
 

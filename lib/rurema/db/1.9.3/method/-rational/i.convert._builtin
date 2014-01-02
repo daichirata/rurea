@@ -4,10 +4,11 @@ kind=defined
 
 --- convert(*arg) -> Rational
 
-°ú¿ô¤òÍ­Íı¿ô([[c:Rational]])¤ËÊÑ´¹¤·¤¿·ë²Ì¤òÊÖ¤·¤Ş¤¹¡£
+å¼•æ•°ã‚’æœ‰ç†æ•°([[c:Rational]])ã«å¤‰æ›ã—ãŸçµæœã‚’è¿”ã—ã¾ã™ã€‚
 
-@param arg ÊÑ´¹ÂĞ¾İ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤¹¡£
+@param arg å¤‰æ›å¯¾è±¡ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
 
-[[m:Kernel.#Rational]] ¤ÎËÜÂÎ¤Ç¤¹¡£
+[[m:Kernel.#Rational]] ã®æœ¬ä½“ã§ã™ã€‚
 
 @see [[m:Kernel.#Rational]]
+

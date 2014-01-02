@@ -4,12 +4,12 @@ kind=defined
 
 --- valid_civil? (year, mon, mday, start = Date::GREGORIAN) -> bool
 --- valid_date? (year, mon, mday, start = Date::GREGORIAN) -> bool
-Àµ¤·¤¤ÎñÆüÉÕ¤Ç¤¢¤ì¤Ğ¿¿¡¢¤½¤¦¤Ç¤Ê¤¤¤Ê¤éµ¶¤òÊÖ¤·¤Ş¤¹¡£
+æ­£ã—ã„æš¦æ—¥ä»˜ã§ã‚ã‚Œã°çœŸã€ãã†ã§ãªã„ãªã‚‰å½ã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:Date.jd]]¡¢¤ª¤è¤Ó [[m:Date.civil]] ¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:Date.jd]]ã€ãŠã‚ˆã³ [[m:Date.civil]] ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param year Ç¯
-@param mon ·î
-@param mday Æü
-@param start ¥°¥ì¥´¥ê¥ªÎñ¤ò¤Ä¤«¤¤»Ï¤á¤¿Æü¤ò¤¢¤é¤ï¤¹¥æ¥ê¥¦¥¹Æü
+@param year å¹´
+@param mon æœˆ
+@param mday æ—¥
+@param start ã‚°ãƒ¬ã‚´ãƒªã‚ªæš¦ã‚’ã¤ã‹ã„å§‹ã‚ãŸæ—¥ã‚’ã‚ã‚‰ã‚ã™ãƒ¦ãƒªã‚¦ã‚¹æ—¥
 

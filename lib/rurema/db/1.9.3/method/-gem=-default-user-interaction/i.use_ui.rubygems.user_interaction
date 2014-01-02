@@ -4,9 +4,9 @@ kind=defined
 
 --- use_ui(new_ui){ ... }
 
-Í¿¤¨¤é¤ì¤¿¥Ö¥í¥Ã¥¯¤òÉ¾²Á¤·¤Æ¤¤¤ë´Ö¤À¤± UI ¤È¤·¤Æ new_ui ¤ò»ÈÍÑ¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸãƒ–ãƒ­ãƒƒã‚¯ã‚’è©•ä¾¡ã—ã¦ã„ã‚‹é–“ã ã‘ UI ã¨ã—ã¦ new_ui ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
-@param new_ui ¿·¤·¤¤ UI ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param new_ui æ–°ã—ã„ UI ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@see [[m:Gem::DefaultUserInteraction.#use_ui]]
+@see [[m:Gem::DefaultUserInteraction.use_ui]]
 

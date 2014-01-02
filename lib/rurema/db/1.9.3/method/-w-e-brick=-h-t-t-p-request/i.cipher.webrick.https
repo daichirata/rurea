@@ -4,7 +4,7 @@ kind=added
 
 --- cipher -> Array
 
-���߼ºݤ˻Ȥ��Ƥ���Ź�ξ����������֤��ޤ��� 
+現在実際に使われている暗号の情報を配列で返します。 
 
 @see [[m:OpenSSL::SSL::SSLSocket#cipher]]
 

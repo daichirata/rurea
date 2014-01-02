@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- header(dest='') -> String
-�᡼��إå����������ʸ����Ȥ����֤��ޤ���
+メールヘッダを受信し、文字列として返します。
 
-dest���Ϥ��Ȥ��Υ��֥������Ȥ˥ǡ�����񤭹��ߤޤ����������
-obsolete �ʤΤǻȤ�ʤ��Ǥ���������
+destを渡すとそのオブジェクトにデータを書き込みますが、これは
+obsolete なので使わないでください。
 
-@param dest �إå���񤭹�����(obsolete�ʤΤǻȤ�ʤ��Ǥ�������)
-@raise TimeoutError �̿��������ॢ���Ȥ�������ȯ�����ޤ�
-@raise Net::POPError �����Ф�ǧ�ڼ��԰ʳ��Υ��顼����𤷤�����ȯ�����ޤ�
-@raise Net::POPBadResponse �����Ф���α������ץ��ȥ���������Ǥ��ä�����ȯ�����ޤ�
+@param dest ヘッダを書き込む先(obsoleteなので使わないでください)
+@raise TimeoutError 通信がタイムアウトした場合に発生します
+@raise Net::POPError サーバが認証失敗以外のエラーを報告した場合に発生します
+@raise Net::POPBadResponse サーバからの応答がプロトコル上不正であった場合に発生します
 

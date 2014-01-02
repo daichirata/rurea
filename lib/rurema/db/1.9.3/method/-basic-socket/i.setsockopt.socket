@@ -3,14 +3,46 @@ visibility=public
 kind=defined
 
 --- setsockopt(level, optname, optval) -> 0
+--- setsockopt(socketoption) -> 0
 
-�����åȤΥ��ץ��������ꤷ�ޤ���[[man:setsockopt(2)]]
-�򻲾Ȥ��Ƥ���������
+ソケットのオプションを設定します。[[man:setsockopt(2)]]
+を参照してください。
 
-@param level    [[man:setsockopt(2)]] �� level �򻲾Ȥ��Ƥ���������
-@param optname  [[man:setsockopt(2)]] �� option_name �򻲾Ȥ��Ƥ���������
-@param optval  ���ꤵ����ͤ�ʸ����ǻ��ꤷ�ޤ���
+level, optname には Socket::SOL_SOCKET や Socket::SO_REUSEADDR 
+といった整数値の他、文字列("SOL_SOCKET", prefixなしの "SOCKET")や
+シンボル(:SO_REUSEADDR, :REUSEADDR)を用いることができます。
 
-@raise Errno::EXXX  ���ץ���������˼��Ԥ������ȯ�����ޤ���
+optval には文字列、整数、真偽値(true or false)を渡すことができます。
+文字列の場合には [[man:setsockopt(2)]] にはその文字列と
+長さが渡されます。整数の場合はintへのポインタが渡されます。
+true/falseの場合は0/1という整数と解釈され、そのメモリ領域の
+intポインタを渡します。
+
+引数が1つの場合は [[c:Socket::Option]] で設定値を表現します。
+
+  # 真偽値の場合
+  #setsockopt could be called like this:
+  sock.setsockopt(:SOCKET, :REUSEADDR, true)
+  sock.setsockopt(Socket::SOL_SOCKET,Socket::SO_REUSEADDR, true)
+  sock.setsockopt(Socket::Option.bool(:INET, :SOCKET, :REUSEADDR, true))
+
+  # 整数値の場合
+  #setsockopt could be called like this:
+  sock.setsockopt(:IP, :TTL, 255)
+  sock.setsockopt(Socket::IPPROTO_IP, Socket::IP_TTL, 255)
+  sock.setsockopt(Socket::Option.int(:INET, :IP, :TTL, 255))
+
+  # より複雑な場合
+  optval = IPAddr.new("224.0.0.251").hton +
+           IPAddr.new(Socket::INADDR_ANY, Socket::AF_INET).hton
+  sock.setsockopt(Socket::IPPROTO_IP, Socket::IP_ADD_MEMBERSHIP, optval)
+
+@param level    [[man:setsockopt(2)]] の level を参照してください。
+@param optname  [[man:setsockopt(2)]] の option_name を参照してください。
+@param optval   設定値
+@param socketoption 設定値を表す [[c:Socket::Option]] オブジェクト
+
+@raise Errno::EXXX  オプションの設定に失敗した場合発生します。
+@see [[m:BasicSocket#getsockopt]]
 
 

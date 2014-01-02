@@ -3,5 +3,6 @@ classes=TkEntry
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -6,7 +6,7 @@ library=openssl
 aliases=
 aliasof=
 
-X.500¤Î¼±ÊÌÌ¾(DN, Distinguished Name)¤òÉ½¤ï¤¹¥¯¥é¥¹¡£
+X.500ã®è­˜åˆ¥å(DN, Distinguished Name)ã‚’è¡¨ã‚ã™ã‚¯ãƒ©ã‚¹ã€‚
 
-eql? ¤È hash ¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ë¤¿¤á¡¢[[c:Hash]] ¤Î¥­¡¼¤È¤·¤Æ
-ÍøÍÑ¤Ç¤­¤Ş¤¹¡£
+eql? ã¨ hash ãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹ãŸã‚ã€[[c:Hash]] ã®ã‚­ãƒ¼ã¨ã—ã¦
+åˆ©ç”¨ã§ãã¾ã™ã€‚

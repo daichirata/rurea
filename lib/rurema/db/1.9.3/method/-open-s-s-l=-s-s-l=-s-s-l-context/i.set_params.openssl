@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- set_params(params) -> Hash
-¥Ñ¥é¥á¡¼¥¿¤ò¥Ï¥Ã¥·¥å¤ÇÀßÄê¤·¤Ş¤¹¡£
+ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’ãƒãƒƒã‚·ãƒ¥ã§è¨­å®šã—ã¾ã™ã€‚
 
-ÅÏ¤¹¥Ï¥Ã¥·¥å¥Æ¡¼¥Ö¥ë¤Ï { ¥Ñ¥é¥á¡¼¥¿Ì¾¤Î¥·¥ó¥Ü¥ë => ¥Ñ¥é¥á¡¼¥¿¤ÎÃÍ } ¤È¤¤¤¦
-·Á¤ò¤·¤Æ¤¤¤Ê¤±¤ì¤Ğ¤Ê¤ê¤Ş¤»¤ó¡£
+æ¸¡ã™ãƒãƒƒã‚·ãƒ¥ãƒ†ãƒ¼ãƒ–ãƒ«ã¯ { ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿åã®ã‚·ãƒ³ãƒœãƒ« => ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å€¤ } ã¨ã„ã†
+å½¢ã‚’ã—ã¦ã„ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚
 
-°Ê²¼¤Î¥Ñ¥é¥á¡¼¥¿¤òÀßÄê¤Ç¤­¤Ş¤¹¡£
+ä»¥ä¸‹ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’è¨­å®šã§ãã¾ã™ã€‚
   * :cert ([[m:OpenSSL::SSL::SSLContext#cert=]])
   * :key ([[m:OpenSSL::SSL::SSLContext#key=]])
   * :client_ca ([[m:OpenSSL::SSL::SSLContext#client_ca=]])
@@ -28,6 +28,6 @@ kind=defined
   * :session_new_cb ([[m:OpenSSL::SSL::SSLContext#session_new_cb=]])
   * :session_remove_cb ([[m:OpenSSL::SSL::SSLContext#session_remove_cb=]])
   * :servername_cb ([[m:OpenSSL::SSL::SSLContext#servername_cb=]])
-»ØÄê¤µ¤ì¤Ê¤«¤Ã¤¿¥Ñ¥é¥á¡¼¥¿¤Ï [[m:OpenSSL::SSL::SSLContext::DEFAULT_PARAMS]] 
-¤ÎÃÍ¤Ç½é´ü²½¤µ¤ì¤Ş¤¹¡£
+æŒ‡å®šã•ã‚Œãªã‹ã£ãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¯ [[m:OpenSSL::SSL::SSLContext::DEFAULT_PARAMS]] 
+ã®å€¤ã§åˆæœŸåŒ–ã•ã‚Œã¾ã™ã€‚
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- quotaroots -> [String]
-�䤤��碌�����᡼��ܥå����� quota root ̾��������֤��ޤ���
+問い合わせしたメールボックスの quota root 名を配列で返します。
 
-���ξ��⤢�ꤨ�ޤ���
+空の場合もありえます。
 
 

@@ -4,13 +4,13 @@ kind=defined
 
 --- lookup(task_name, initial_scope = nil) -> Rake::Task | nil
 
-Ϳ����줿������̾�˥ޥå����륿�����򸡺����ޤ���
+与えられたタスク名にマッチするタスクを検索します。
 
-���Υ᥽�åɤϡ��ե����륿������롼�����������˥�������õ���ޤ���
-���̤ʥ������� ('^' �ʤ�) ��¸�ߤ��ޤ����������פ���ά���줿����
-���ߤΥ������פ���Ѥ��ޤ���
+このメソッドは、ファイルタスクやルールを合成せずにタスクを探します。
+特別なスコープ ('^' など) が存在します。スコープが省略された場合は
+現在のスコープを使用します。
 
-@param task_name ������̾����ꤷ�ޤ���
+@param task_name タスク名を指定します。
 
-@param initial_scope �������륹�����פ���ꤷ�ޤ���
+@param initial_scope 検索するスコープを指定します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- ask_if_ok(spec) -> bool
 
-���󥤥󥹥ȡ�����ꤵ�줿 Gem ��������Ȱ�¸�ط����������ʤ��ʤ���˸ƤӽФ���ޤ���
+アンインストール指定された Gem を削除すると依存関係を満たせなくなる場合に呼び出されます。
 
-@param spec ���󥤥󥹥ȡ�����ꤵ��Ƥ��� Gem �� [[c:Gem::Specification]] ����ꤷ�ޤ���
+@param spec アンインストール指定されている Gem の [[c:Gem::Specification]] を指定します。
 

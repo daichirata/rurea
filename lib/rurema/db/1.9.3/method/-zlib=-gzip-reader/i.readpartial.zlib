@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- readpartial(maxlen, outbuf = nil) -> String
-IO ���饹��Ʊ̾�᥽�å� [[m:IO#readpartial]] ��Ʊ���Ǥ���
+IO クラスの同名メソッド [[m:IO#readpartial]] と同じです。
 
-@param maxlen �ɤ߹���Ĺ���ξ�¤������ǻ��ꤷ�ޤ���
+@param maxlen 読み込む長さの上限を整数で指定します。
 
-@param outbuf ʸ����ǻ��ꤷ�ޤ����ɤ߹�����ǡ����� outbuf ���˲�Ū�˳�Ǽ����
-              �֤��ͤ� outbuf �Ȥʤ�ޤ���outbuf �ϰ�ö maxlen Ĺ�˳�ĥ(���뤤�Ͻ̾�)���줿���ȡ�
-              �ºݤ��ɤ߹�����ǡ����Υ������ˤʤ�ޤ���
+@param outbuf 文字列で指定します。読み込んだデータを outbuf に破壊的に格納し、
+              返り値は outbuf となります。outbuf は一旦 maxlen 長に拡張(あるいは縮小)されたあと、
+              実際に読み込んだデータのサイズになります。
 
-@raise ArgumentError maxlen ������ͤ����Ϥ��줿���ȯ�����ޤ���
+@raise ArgumentError maxlen に負の値が入力された場合発生します。
 
 @see [[m:IO#readpartial]]
 

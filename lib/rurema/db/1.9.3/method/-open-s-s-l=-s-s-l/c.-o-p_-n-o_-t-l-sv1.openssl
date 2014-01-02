@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- OP_NO_TLSv1 -> Integer
-TLS v1 คฮปศอัค๒ถุป฿คนค๋ฅีฅ้ฅฐควคนกฃ
+TLS v1 ใฎไฝฟ็”จใ’็ฆๆญขใใใ•ใฉใฐใงใใ€
 
-[[m:OpenSSL::SSL::SSLContext#options=]] ควอ๘อัคทคÞคนกฃ
+[[m:OpenSSL::SSL::SSLContext#options=]] ใงๅฉ็”จใ—ใพใใ€
 

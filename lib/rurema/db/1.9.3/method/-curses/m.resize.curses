@@ -5,12 +5,12 @@ kind=defined
 --- resizeterm(lines, cols) -> bool | nil
 --- resize(lines, cols) -> bool | nil
 
-���ߤ�ü�����������ѹ����ޤ���
+現在の端末サイズを変更します。
 
-@param lines �ѹ���ιԿ�����ꤷ�ޤ���
+@param lines 変更後の行数を指定します。
 
-@param cols �ѹ���Υ���������ꤷ�ޤ���
+@param cols 変更後のカラム数を指定します。
 
-@return ���������ѹ��������������ϡ������֤��ޤ������Ԥ������ϵ����֤��ޤ���
-        ��ǽ�򥵥ݡ��Ȥ��Ƥ��ʤ����� nil ���֤��ޤ���
+@return サイズの変更に成功した場合は、真を返します。失敗した場合は偽を返します。
+        機能をサポートしていない場合は nil を返します。
 

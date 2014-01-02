@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- status -> String
-¸½ºß¤Î¾õÂÖ¤òÊÖ¤·¤Þ¤¹¡£
+ç¾åœ¨ã®çŠ¶æ…‹ã‚’è¿”ã—ã¾ã™ã€‚
 
-@raise Net::FTPTempError ±þÅú¥³¡¼¥É¤¬ 4yz ¤Î¤È¤­¤ËÈ¯À¸¤·¤Þ¤¹¡£
-@raise Net::FTPPermError ±þÅú¥³¡¼¥É¤¬ 5yz ¤Î¤È¤­¤ËÈ¯À¸¤·¤Þ¤¹¡£
-@raise Net::FTPProtoError ±þÅú¥³¡¼¥É¤¬ RFC Åª¤ËÀµ¤·¤¯¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Net::FTPTempError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ 4yz ã®ã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚
+@raise Net::FTPPermError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ 5yz ã®ã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚
+@raise Net::FTPProtoError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ RFC çš„ã«æ­£ã—ããªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

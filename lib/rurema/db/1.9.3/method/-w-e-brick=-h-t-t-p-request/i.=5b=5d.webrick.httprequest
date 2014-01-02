@@ -4,7 +4,7 @@ kind=defined
 
 --- [](header_name)    -> String
 
-�ꥯ�����ȤΥإå��γ����������Ƥ�ʸ������֤��ޤ���
+リクエストのヘッダの該当する内容を文字列で返します。
 
-@param header_name �إå���̾��ʸ����ǻ��ꤷ�ޤ�����ʸ���Ⱦ�ʸ������̤��ޤ���
+@param header_name ヘッダー名を文字列で指定します。大文字と小文字を区別しません。
 

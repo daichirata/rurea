@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- config=(config) 
-╝л┐╚д╦е│еєе╒еге░е╒ебедеыеке╓е╕езепе╚дЄ└▀─ъд╖д▐д╣бг
+шЗкш║луБлуВ│уГ│уГХуВгуВ░уГХуВбуВдуГлуВкуГЦуВ╕уВзуВпуГИуВТшинхоЪуБЧуБ╛уБЩуАВ
 
-╬у
+ф╛Л
   factory.config = OpenSSL::Config.load(OpenSSL::Config::DEFAULT_CONFIG_FILE)
 
-@param config └▀─ъе╒ебедеы([[c:OpenSSL::Config]] еке╓е╕езепе╚)
+@param config шинхоЪуГХуВбуВдуГл([[c:OpenSSL::Config]] уВкуГЦуВ╕уВзуВпуГИ)
 

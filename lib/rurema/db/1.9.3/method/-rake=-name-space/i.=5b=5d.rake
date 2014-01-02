@@ -4,7 +4,7 @@ kind=defined
 
 --- [](name) -> Rake::Task
 
-Ϳ����줿̾���Υ��������֤��ޤ���
+与えられた名前のタスクを返します。
 
-@param name ��������̾������ꤷ�ޤ���
+@param name タスクの名前を指定します。
 

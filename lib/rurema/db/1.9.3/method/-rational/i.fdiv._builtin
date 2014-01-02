@@ -4,13 +4,17 @@ kind=defined
 
 --- fdiv(other) -> Float
 
-¼«¿È¤ò other ¤Ç³ä¤Ã¤¿¼Â¿ô¤Î¾¦¤òÊÖ¤·¤Þ¤¹¡£
+self ã‚’ other ã§å‰²ã£ãŸå•†ã‚’ [[c:Float]] ã§è¿”ã—ã¾ã™ã€‚
+other ã«è™šæ•°ã‚’æŒ‡å®šã™ã‚‹ã“ã¨ã¯å‡ºæ¥ã¾ã›ã‚“ã€‚
 
-@param other ¼«¿È¤ò³ä¤ë¿ô
+@param other è‡ªèº«ã‚’å‰²ã‚‹æ•°
 
-Îã:
+ä¾‹:
 
   Rational(2, 3).fdiv(1)   # => 0.6666666666666666
   Rational(2, 3).fdiv(0.5) # => 1.3333333333333333
   Rational(2).fdiv(3)      # => 0.6666666666666666
+  
+  Rational(1).fdiv(Complex(1, 0))  # => 1.0
+  Rational(1).fdiv(Complex(0, 1))  # => RangeError
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- issuer_certificate -> OpenSSL::X509::Certificate | nil
-���Ȥ����ꤵ��Ƥ���ȯ�Լ�(issuer)�ξ����񥪥֥������Ȥ��֤��ޤ���
+自身に設定されている発行者(issuer)の証明書オブジェクトを返します。
 
-���������ꤵ��Ƥ��ʤ����� nil ���֤��ޤ���
+証明書が設定されていない場合は nil を返します。
 
 

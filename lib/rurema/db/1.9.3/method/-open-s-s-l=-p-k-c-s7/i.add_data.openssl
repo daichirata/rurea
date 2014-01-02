@@ -5,11 +5,11 @@ kind=defined
 --- data=(data)
 --- add_data(data) -> data
 
-��̾�оݤΥǡ��������ꤷ�ޤ���
+署名対象のデータを設定します。
 
-���Υ᥽�åɤϻȤ�ʤ��Ǥ���������
-���Υ᥽�åɤ� PKCS#7 �����٥� API �Ǥ��ꡢ�������Ȥ��Τ�
-�񤷤��Ǥ��礦��
+このメソッドは使わないでください。
+このメソッドは PKCS#7 の低レベル API であり、正しく使うのは
+難しいでしょう。
 
-@param data ʸ����
+@param data 文字列
 

@@ -2,6 +2,10 @@ names=ROUND_HALF_DOWN
 visibility=public
 kind=defined
 
---- ROUND_HALF_DOWN
-@todo
+--- ROUND_HALF_DOWN -> Fixnum
+
+[[c:BigDecimal]] の計算結果の丸め処理で五捨六入するかどうかを設定、確認
+する際の値を返します。
+
+[[m:BigDecimal.mode]] の第 2 引数に指定します。
 

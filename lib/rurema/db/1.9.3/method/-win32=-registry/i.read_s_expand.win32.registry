@@ -5,9 +5,9 @@ kind=defined
 --- read_s_expand(name)
 @todo
 
-���� REG_SZ �ޤ��� REG_EXPAND_SZ �Ǥ���쥸���ȥ��� name ���ɤߡ�
-�����ͤ��֤��ޤ���
+型が REG_SZ または REG_EXPAND_SZ であるレジストリ値 name を読み，
+その値を返します。
 
-���� REG_EXPAND_SZ ���ä���硤�Ķ��ѿ����ִ����줿�ͤ��֤�ޤ���
-REG_SZ �ޤ��� REG_EXPAND_SZ �ʳ����ä���硤TypeError ��ȯ�����ޤ���
+型が REG_EXPAND_SZ だった場合，環境変数が置換された値が返ります。
+REG_SZ または REG_EXPAND_SZ 以外だった場合，TypeError が発生します。
 

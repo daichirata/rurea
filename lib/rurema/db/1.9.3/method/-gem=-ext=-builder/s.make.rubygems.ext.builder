@@ -5,13 +5,13 @@ kind=defined
 --- make(dest_path, results)
 @todo
 
-Makefile ¤òÊÔ½¸¤·¤Æ make, make install ¤ò¼Â¹Ô¤·¤Ş¤¹¡£
+Makefile ã‚’ç·¨é›†ã—ã¦ make, make install ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
 
 @param dest_path ???
 
-@param results ·ë²Ì¤òÆş¤ì¤ë¤¿¤á¤ÎÇÛÎó¤Ç¤¹¡£¤³¤ÎÊÑ¿ô¤ÏÇË²õÅª¤ËÊÑ¹¹¤µ¤ì¤Ş¤¹¡£
+@param results çµæœã‚’å…¥ã‚Œã‚‹ãŸã‚ã®é…åˆ—ã§ã™ã€‚ã“ã®å¤‰æ•°ã¯ç ´å£Šçš„ã«å¤‰æ›´ã•ã‚Œã¾ã™ã€‚
 
-@raise Gem::InstallError Makefile ¤¬Â¸ºß¤·¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise Gem::InstallError Makefile ãŒå­˜åœ¨ã—ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise Gem::InstallError make ¤Î¼Â¹Ô¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise Gem::InstallError make ã®å®Ÿè¡Œã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- specification_version -> Integer
 
-���� Gem �ѥå��������Ѥ����Ƥ��� gemspec �ΥС��������֤��ޤ���
+この Gem パッケージに用いられている gemspec のバージョンを返します。
 

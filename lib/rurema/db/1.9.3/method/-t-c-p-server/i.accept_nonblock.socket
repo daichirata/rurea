@@ -4,14 +4,14 @@ kind=defined
 
 --- accept_nonblock -> TCPSocket
 
-�����åȤ�Υ�֥��å��󥰥⡼�ɤ����ꤷ���塢
-[[man:accept(2)]] ��ƤӽФ��ޤ���
+ソケットをノンブロッキングモードに設定した後、
+[[man:accept(2)]] を呼び出します。
 
-�֤��ͤ� [[m:TCPServer#accept]] ��Ʊ���Ǥ���
+返り値は [[m:TCPServer#accept]] と同じです。
 
-[[man:accept(2)]] �����顼�ˤʤä���硢
-EAGAIN, EINTR ��ޤ��㳰 [[c:Errno::EXXX]] ��ȯ�����ޤ���
+[[man:accept(2)]] がエラーになった場合、
+EAGAIN, EINTR を含め例外 [[c:Errno::EXXX]] が発生します。
 
-@raise Errno::EXXX [[man:accept(2)]] �����顼�ˤʤä�����ȯ�����ޤ���
+@raise Errno::EXXX [[man:accept(2)]] がエラーになった場合に発生します。
 
 

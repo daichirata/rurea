@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- setuid? -> bool
-setuid¤µ¤ì¤Æ¤¤¤ë»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+setuidã•ã‚Œã¦ã„ã‚‹æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   Dir.glob("/bin/*") {|bd|
     if File::Stat.new(bd).setuid?
       puts bd
     end
   }
-  #Îã
+  #ä¾‹
   #...
   #=> /bin/ping
   #=> /bin/su

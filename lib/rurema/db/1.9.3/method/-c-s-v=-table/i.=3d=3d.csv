@@ -4,8 +4,8 @@ kind=defined
 
 --- ==(other) -> bool
 
-���Ȥ����ƤιԤ�����оݤ�Ʊ���Ǥ�����Ͽ����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+自身の全ての行が比較対象と同じである場合は真を返します。
+そうでない場合は偽を返します。
 
-@param other [[c:CSV::Table]] ����ꤷ�ޤ���
+@param other [[c:CSV::Table]] を指定します。
 

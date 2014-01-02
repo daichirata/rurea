@@ -4,5 +4,5 @@ kind=defined
 
 --- shutdown     -> ()
 
-[[m:WEBrick::GenericServer#stop]] ¤ò¸Æ¤Ó¡¢Á´¤Æ¤Î listeners ¤ò close ¤·¤Ş¤¹¡£
+[[m:WEBrick::GenericServer#stop]] ã‚’å‘¼ã³ã€å…¨ã¦ã® listeners ã‚’ close ã—ã¾ã™ã€‚
 

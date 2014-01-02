@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- num_bytes -> Integer
-���Ȥ�ɽ������Τ˻ȤäƤ���Х��ȿ����֤��ޤ���
+自身を表現するのに使っているバイト数を返します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- ask(*args) -> String
 
-����򤷤ơ��桼�������Ϥ��Ԥ������Ʋ������֤��ޤ���
+質問をして、ユーザの入力を待ち受けて回答を返します。
 
-@param args �Ѿ���Υ᥽�åɤ�Ϳ��������Ǥ���
+@param args 委譲先のメソッドに与える引数です。
 

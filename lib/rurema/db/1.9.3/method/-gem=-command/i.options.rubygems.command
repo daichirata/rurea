@@ -4,5 +4,5 @@ kind=defined
 
 --- options -> Hash
 
-���ޥ�ɤǻ��Ѥ��륪�ץ������֤��ޤ���
+コマンドで使用するオプションを返します。
 

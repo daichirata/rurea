@@ -4,9 +4,9 @@ kind=defined
 
 --- new(task_name, tail)
 
-Í¿¤¨¤é¤ì¤¿¥¿¥¹¥¯Ì¾¤È°ì¤ÄÁ°¤Î [[c:Rake::InvocationChain]] ¤òÍÑ¤¤¤Æ¼«¿È¤ò½é´ü²½¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸã‚¿ã‚¹ã‚¯åã¨ä¸€ã¤å‰ã® [[c:Rake::InvocationChain]] ã‚’ç”¨ã„ã¦è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param task_name ¥¿¥¹¥¯Ì¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param task_name ã‚¿ã‚¹ã‚¯åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param tail °ì¤ÄÁ°¤Î [[c:Rake::InvocationChain]] ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param tail ä¸€ã¤å‰ã® [[c:Rake::InvocationChain]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

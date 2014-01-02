@@ -3,5 +3,6 @@ classes=TkButton
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

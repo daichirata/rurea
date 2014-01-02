@@ -2,6 +2,17 @@ names=unix
 visibility=public
 kind=defined
 
---- unix
-@todo
+--- unix(path, socktype=Socket::SOCK_STREAM) -> Addrinfo
+
+Unix ソケットアドレスに対応する Addrinfo オブジェクトを返します。
+
+socktype でソケットタイプを指定します。
+
+  Addrinfo.unix("/tmp/sock")         #=> #<Addrinfo: /tmp/sock SOCK_STREAM>
+  Addrinfo.unix("/tmp/sock", :DGRAM) #=> #<Addrinfo: /tmp/sock SOCK_DGRAM>
+
+@param path Unix ソケットのアドレス文字列
+@param socktype ソケットタイプ(整数、文字列、シンボル)
+
+@see [[m:Addrinfo.new]]
 

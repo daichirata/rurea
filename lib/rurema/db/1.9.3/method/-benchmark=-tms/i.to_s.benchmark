@@ -4,6 +4,6 @@ kind=defined
 
 --- to_s -> String
 
-°ú¿ô¤ò¾ÊÎ¬¤·¤Æ [[m:Benchmark::Tms#format]] ¤ò¸Æ¤Ó½Ğ¤¹¤Î¤ÈÆ±¤¸¤Ç¤¹¡£
+å¼•æ•°ã‚’çœç•¥ã—ã¦ [[m:Benchmark::Tms#format]] ã‚’å‘¼ã³å‡ºã™ã®ã¨åŒã˜ã§ã™ã€‚
 
 

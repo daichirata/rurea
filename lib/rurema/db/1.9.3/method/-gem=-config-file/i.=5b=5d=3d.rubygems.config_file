@@ -4,9 +4,9 @@ kind=defined
 
 --- []=(key, value)
 
-������Ϳ����줿�������б������������򼫿Ȥ���¸���ޤ���
+引数で与えられたキーに対応する設定情報を自身に保存します。
 
-@param key �������򥻥åȤ��뤿��˻��Ѥ��륭������ꤷ�ޤ���
+@param key 設定情報をセットするために使用するキーを指定します。
 
-@param value ���������ͤ���ꤷ�ޤ���
+@param value 設定情報の値を指定します。
 

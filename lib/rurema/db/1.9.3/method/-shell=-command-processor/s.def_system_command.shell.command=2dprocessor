@@ -5,9 +5,9 @@ kind=defined
 --- def_system_command(command, path = command) -> ()
 @todo
 
-Ϳ����줿���ޥ�ɤ�᥽�åɤȤ���������ޤ���
+与えられたコマンドをメソッドとして定義します。
 
-@param command ������������ޥ�ɤ���ꤷ�ޤ���
+@param command 定義したいコマンドを指定します。
 
-@param path command �Υѥ�����ꤷ�ޤ�����ά����ȴĶ��ѿ� PATH ���� command ��õ���ޤ���
+@param path command のパスを指定します。省略すると環境変数 PATH から command を探します。
 

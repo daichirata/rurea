@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- body_exist? -> bool
-¤³¤Î¥á¥½¥Ã¥É¤Ï obsolete ¤Ç¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ obsolete ã§ã™ã€‚
 
 [[m:Net::HTTPGenericRequest#response_body_permitted?]]
-¤ÎÊÌÌ¾¤Ç¤¹¡£
+ã®åˆ¥åã§ã™ã€‚
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- to_json -> String
 
-¼«¿È¤«¤éÀ¸À®¤·¤¿ JSON ·Á¼°¤ÎÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã‹ã‚‰ç”Ÿæˆã—ãŸ JSON å½¢å¼ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-"null" ¤È¤¤¤¦Ê¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+"null" ã¨ã„ã†æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 

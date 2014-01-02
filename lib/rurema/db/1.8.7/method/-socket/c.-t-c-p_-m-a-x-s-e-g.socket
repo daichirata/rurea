@@ -1,7 +1,0 @@
-names=TCP_MAXSEG,TCP_NODELAY
-visibility=public
-kind=defined
-
---- TCP_MAXSEG
---- TCP_NODELAY
-@todo

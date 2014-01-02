@@ -4,13 +4,13 @@ kind=defined
 
 --- fdatasync -> 0 | nil
 
-IO �Τ��٤ƤΥХåե�����Ƥ���ǡ�����ľ���˥ǥ������˽񤭹��ߤޤ���
+IO のすべてのバッファされているデータを直ちにディスクに書き込みます。
 
-[[man:fdatasync(2)]] �򥵥ݡ��Ȥ��Ƥ��ʤ� OS ��Ǥ������
-[[m:IO#fsync]] ��ƤӤ����ޤ���
+[[man:fdatasync(2)]] をサポートしていない OS 上では代わりに
+[[m:IO#fsync]] を呼びだします。
 
-[[m:IO#fsync]] �Ȥΰ㤤�� [[man:fdatasync(2)]] �򻲾Ȥ��Ƥ���������
+[[m:IO#fsync]] との違いは [[man:fdatasync(2)]] を参照してください。
 
-@raise NotImplementedError [[man:fdatasync(2)]] �� [[man:fsync(2)]] ��
-       ���ݡ��Ȥ���Ƥ��ʤ� OS ��ȯ�����ޤ���
+@raise NotImplementedError [[man:fdatasync(2)]] も [[man:fsync(2)]] も
+       サポートされていない OS で発生します。
 

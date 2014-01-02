@@ -4,8 +4,8 @@ kind=added
 
 --- iseuc -> bool
 
-self �� EUC-JP �ʥХ�����Ȥ��������Ǥ��뤫�ɤ�����Ƚ�ꤷ�ޤ���
+self が EUC-JP なバイト列として正当であるかどうかを判定します。
 
-[[m:Kconv.#iseuc]](self) ��Ʊ���Ǥ���
+[[m:Kconv.#iseuc]](self) と同じです。
 
 

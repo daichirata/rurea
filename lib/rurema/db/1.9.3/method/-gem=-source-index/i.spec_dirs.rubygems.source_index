@@ -4,5 +4,5 @@ kind=defined
 
 --- spec_dirs -> [String]
 
-[[m:Gem::SourceIndex#refresh!]] �Ǽ��Ȥ򹹿�������˻��Ѥ���ǥ��쥯�ȥ��������ޤ���
+[[m:Gem::SourceIndex#refresh!]] で自身を更新する時に使用するディレクトリを取得します。
 

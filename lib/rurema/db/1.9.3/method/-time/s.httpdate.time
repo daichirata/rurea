@@ -4,16 +4,16 @@ kind=added
 
 --- httpdate(date) -> Time
 
-[[RFC:2616]]���������Ƥ���HTTP-date�Ȥ���date��ѡ�������
-[[c:Time]]���֥������Ȥ��Ѵ����ޤ���
+[[RFC:2616]]で定義されているHTTP-dateとしてdateをパースして
+[[c:Time]]オブジェクトに変換します。
 
-date��[[RFC:2616]]�˽�򤷤Ƥ��ʤ����ޤ���
-[[c:Time]]���饹�����ꤵ�줿������ɽ���Ǥ��ʤ��Ȥ���[[c:ArgumentError]]��
-ȯ�����ޤ���
+dateが[[RFC:2616]]に準拠していない、または
+[[c:Time]]クラスが指定された日時を表現できないときに[[c:ArgumentError]]が
+発生します。
 
-@param date [[RFC:2616]]���������Ƥ���HTTP-date�Ȥ��ƥѡ��������ʸ�������ꤷ�ޤ���
+@param date [[RFC:2616]]で定義されているHTTP-dateとしてパースされる文字列を指定します。
 
-@raise ArgumentError date��[[RFC:2616]]�˽�򤷤Ƥ��ʤ����ޤ��� [[c:Time]]���饹�����ꤵ�줿������ɽ���Ǥ��ʤ��Ȥ���ȯ�����ޤ���
+@raise ArgumentError dateが[[RFC:2616]]に準拠していない、または [[c:Time]]クラスが指定された日時を表現できないときに発生します。
 
   require 'time'
   rfc2616_time = 'Sun, 31 Aug 2008 12:34:56 GMT'

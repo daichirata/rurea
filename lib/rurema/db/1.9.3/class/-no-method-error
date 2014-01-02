@@ -6,16 +6,16 @@ library=_builtin
 aliases=
 aliasof=
 
-ÄêµÁ¤µ¤ì¤Æ¤¤¤Ê¤¤¥á¥½¥Ã¥É¤Î¸Æ¤Ó½Ð¤·¤¬¹Ô¤ï¤ì¤¿¤È¤­¤ËÈ¯À¸¤·¤Þ¤¹¡£
+å®šç¾©ã•ã‚Œã¦ã„ãªã„ãƒ¡ã‚½ãƒƒãƒ‰ã®å‘¼ã³å‡ºã—ãŒè¡Œã‚ã‚ŒãŸã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   self.bar
   => -:1: undefined method `bar' for #<Object:0x401a6c40> (NoMethodError)
 
-¥á¥½¥Ã¥É¸Æ¤Ó½Ð¤·¤Î·Á¼°¤Ç¤Ê¤±¤ì¤Ð [[c:NameError]] Îã³°¤¬È¯À¸¤·¤Þ¤¹¡£
+ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã®å½¢å¼ã§ãªã‘ã‚Œã° [[c:NameError]] ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   bar
   => -:1: undefined local variable or method `bar' for #<Object:0x401a6c40> (NameError)

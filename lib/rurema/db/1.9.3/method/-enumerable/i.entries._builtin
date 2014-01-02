@@ -5,5 +5,5 @@ kind=defined
 --- to_a    -> [object]
 --- entries -> [object]
 
-���Ƥ����Ǥ�ޤ�������֤��ޤ���
+全ての要素を含む配列を返します。
 

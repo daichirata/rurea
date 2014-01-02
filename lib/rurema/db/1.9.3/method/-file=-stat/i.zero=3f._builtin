@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- zero? -> bool
-¥µ¥¤¥º¤¬0¤Ç¤¢¤ë»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+ã‚µã‚¤ã‚ºãŒ0ã§ã‚ã‚‹æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   p File::Stat.new($0).zero? #=> false
 

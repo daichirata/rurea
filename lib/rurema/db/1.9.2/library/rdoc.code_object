@@ -1,7 +1,0 @@
-requires=
-classes=RDoc=CodeObject
-methods=
-sublibraries=
-is_sublibrary=true
-
-[[c:RDoc::CodeObject]] を定義するサブライブラリです。

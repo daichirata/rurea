@@ -4,11 +4,11 @@ kind=defined
 
 --- satisfies_requirement?(dependency) -> bool
 
-¤³¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤¬Í¿¤¨¤é¤ì¤¿°ÍÂ¸´Ø·¸¤òËþ¤¿¤¹¤«¤É¤¦¤«¤òÊÖ¤·¤Þ¤¹¡£
+ã“ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãŒä¸Žãˆã‚‰ã‚ŒãŸä¾å­˜é–¢ä¿‚ã‚’æº€ãŸã™ã‹ã©ã†ã‹ã‚’è¿”ã—ã¾ã™ã€‚
 
-°ÍÂ¸´Ø·¸¤òËþ¤¿¤¹¾ì¹ç¤Ï¿¿¤òÊÖ¤·¤Þ¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ïµ¶¤òÊÖ¤·¤Þ¤¹¡£
+ä¾å­˜é–¢ä¿‚ã‚’æº€ãŸã™å ´åˆã¯çœŸã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã¯å½ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param dependency ¥Á¥§¥Ã¥¯¤·¤¿¤¤°ÍÂ¸´Ø·¸¤ò»ØÄê¤·¤Þ¤¹¡£
+@param dependency ãƒã‚§ãƒƒã‚¯ã—ãŸã„ä¾å­˜é–¢ä¿‚ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[c:Gem::Dependency]]
 

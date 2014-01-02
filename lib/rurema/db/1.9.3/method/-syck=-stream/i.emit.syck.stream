@@ -4,10 +4,10 @@ kind=defined
 
 --- emit(io = nil) -> IO | String
 
-¥¹¥È¥ê¡¼¥à¤Ë´Þ¤Þ¤ì¤ë³Æ¥É¥­¥å¥á¥ó¥È¤ò°ú¿ô io ¤Ë YAML ·Á¼°¤Ç½ñ¤­¹þ¤ß¤Þ¤¹¡£
-io ¤¬ nil ¤Î¾ì¹ç¤ÏÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+ã‚¹ãƒˆãƒªãƒ¼ãƒ ã«å«ã¾ã‚Œã‚‹å„ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’å¼•æ•° io ã« YAML å½¢å¼ã§æ›¸ãè¾¼ã¿ã¾ã™ã€‚
+io ãŒ nil ã®å ´åˆã¯æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param io ½ñ¤­¹þ¤ßÀè¤Î IO ¥ª¥Ö¥¸¥§¥¯¥È
+@param io æ›¸ãè¾¼ã¿å…ˆã® IO ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
   require 'yaml'
   
@@ -26,7 +26,7 @@ io ¤¬ nil ¤Î¾ì¹ç¤ÏÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
     puts l
   }
   
-  #·ë²Ì
+  #çµæžœ
   --- !ruby/object:Dog
   name: pochi
   ---

@@ -4,5 +4,5 @@ kind=defined
 
 --- object_nl -> String
 
-JSON ·Á¼°¤ÎÊ¸»úÎóÃæ¤Ë¸½¤ì¤ë JavaScript ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤Î¹ÔËö¤ËÁÞÆþ¤¹¤ëÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+JSON å½¢å¼ã®æ–‡å­—åˆ—ä¸­ã«ç¾ã‚Œã‚‹ JavaScript ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®è¡Œæœ«ã«æŒ¿å…¥ã™ã‚‹æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 

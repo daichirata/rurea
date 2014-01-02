@@ -6,6 +6,6 @@ library=_builtin
 aliases=
 aliasof=
 
-��ĥ�饤�֥���񤯻��� new ���������Ƥ���Ȥޤ�����礬
-���뤿�ᡢ[[c:Object]] ���� new �� allocate �� undef �������饹�Ǥ���
-Ruby ������ץȥ�٥�Ǥϵ��ˤ���ɬ�פ���������ޤ���
+拡張ライブラリを書く時に new が定義されているとまずい場合が
+あるため、[[c:Object]] から new と allocate を undef したクラスです。
+Ruby スクリプトレベルでは気にする必要は全くありません。

@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- verify(key) -> bool
-½ðÌ¾¤ò¸¡¾Ú¤·¤Þ¤¹¡£
+ç½²åã‚’æ¤œè¨¼ã—ã¾ã™ã€‚
 
-¸¡¾Ú¤ËÀ®¸ù¤·¤¿¾ì¹ç¤Ï true ¤òÊÖ¤·¡¢¼ºÇÔ¤·¤¿¾ì¹ç¤Ï false ¤òÊÖ¤·¤Þ¤¹¡£
+æ¤œè¨¼ã«æˆåŠŸã—ãŸå ´åˆã¯ true ã‚’è¿”ã—ã€å¤±æ•—ã—ãŸå ´åˆã¯ false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param key ½ðÌ¾¤Ë»È¤¦¸ø³«¸°([[c:OpenSSL::PKey::PKey]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@raise OpenSSL::Netscape::SPKIError ¸¡¾Ú»þ¤Ë¥¨¥é¡¼¤¬µ¯¤­¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@param key ç½²åã«ä½¿ã†å…¬é–‹éµ([[c:OpenSSL::PKey::PKey]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@raise OpenSSL::Netscape::SPKIError æ¤œè¨¼æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒèµ·ããŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::Netscape::SPKI#sign]]
 

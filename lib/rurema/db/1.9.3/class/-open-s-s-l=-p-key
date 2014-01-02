@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-�������Ź��Ϣ�򽸤᤿�⥸�塼��Ǥ���
+公開鍵暗号関連を集めたモジュールです。

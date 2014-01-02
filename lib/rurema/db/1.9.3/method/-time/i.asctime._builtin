@@ -5,6 +5,8 @@ kind=defined
 --- asctime    -> String
 --- ctime      -> String
 
-����� [[man:asctime(3)]] �η�����ʸ������Ѵ����ޤ�����
-�����������β���ʸ�� "\n" �ϴޤޤ�ޤ���
+時刻を [[man:asctime(3)]] の形式の文字列に変換します。た
+だし、末尾の改行文字 "\n" は含まれません。
+
+戻り値の文字エンコーディングは [[m:Encoding::ASCII_8BIT]] です。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- correct?(version) -> bool
 
-version ���������С������Ǥ���п����֤��ޤ��������Ǥʤ���е����֤��ޤ���
+version が正しいバージョンであれば真を返します。そうでなければ偽を返します。
 
-@param version �С�������ʸ���󤫿��ͤǻ��ꤷ�ޤ���
+@param version バージョンを文字列か数値で指定します。
 

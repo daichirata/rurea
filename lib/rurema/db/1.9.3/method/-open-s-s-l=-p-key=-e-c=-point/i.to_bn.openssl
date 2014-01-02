@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- to_bn -> OpenSSL::BN
-ลภค๒ภฐฟ๔คหสัดนคทคÞคนกฃ
+็นใ’ๆ•ดๆ•ฐใซๅคๆใ—ใพใใ€
 
-@raise OpenSSL::PKey::EC::Point::Error สัดนคหผบวิคทคฟพ์น็คหศฏภธคทคÞคน
+@raise OpenSSL::PKey::EC::Point::Error ๅคๆใซๅคฑๆ•—ใ—ใๅ ดๅใซ็บ็”ใ—ใพใ
 

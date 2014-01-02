@@ -4,5 +4,5 @@ kind=defined
 
 --- build_args -> Array
 
-Gem ��ӥ�ɤ���Ȥ��˻��Ѥ���ѥ�᡼�����֤��ޤ���
+Gem をビルドするときに使用するパラメータを返します。
 

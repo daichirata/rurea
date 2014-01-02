@@ -3,8 +3,8 @@ visibility=public
 kind=added
 
 --- nonblock=(bool)
-bool �����ʤ� self ��Υ�֥��å��⡼�ɤˡ����ʤ�֥��å��⡼
-�ɤˤ��ޤ���
+bool が真なら self をノンブロックモードに、偽ならブロックモー
+ドにします。
 
-@param bool ������ꤹ��ȼ��Ȥ�Υ�֥��å��⡼�ɤˤ��ޤ���������ꤹ��ȥ֥��å��⡼�ɤˤ��ޤ���
+@param bool 真を指定すると自身をノンブロックモードにします。偽を指定するとブロックモードにします。
 

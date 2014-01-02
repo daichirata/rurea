@@ -4,7 +4,7 @@ kind=defined
 
 --- section=(val)
 
-½êÂ°¤¹¤ë section ¤òÀßÄê¤·¤Ş¤¹¡£
+æ‰€å±ã™ã‚‹ section ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param val [[c:RDoc::Context::Section]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param val [[c:RDoc::Context::Section]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

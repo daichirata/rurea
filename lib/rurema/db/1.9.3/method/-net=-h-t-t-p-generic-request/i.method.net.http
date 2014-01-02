@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- method -> String
-�ꥯ�����Ȥ� HTTP �᥽�åɤ�ʸ������֤��ޤ���
+リクエストの HTTP メソッドを文字列で返します。
 

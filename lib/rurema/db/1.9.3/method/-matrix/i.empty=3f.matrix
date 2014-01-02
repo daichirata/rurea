@@ -3,7 +3,9 @@ visibility=public
 kind=defined
 
 --- empty? -> bool
-@todo
+行列が要素を持たないならば真を返します。
 
-Returns +true+ if this is an empty matrix, i.e. if the number of rows
-or the number of columns is 0.
+要素を持たないとは、行数か列数のいずれかが0であることを意味します。
+
+@see [[m:Matrix.empty]]
+

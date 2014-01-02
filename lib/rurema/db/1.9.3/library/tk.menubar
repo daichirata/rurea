@@ -3,5 +3,6 @@ classes=TkMenubar
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

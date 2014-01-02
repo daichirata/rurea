@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- q -> OpenSSL::BN
-����2�Ĥ���ǿ��Ǥ���
+鍵の2つめの素数です。
 
-��̩���ξ���Ǥ���
+秘密鍵の情報です。
 

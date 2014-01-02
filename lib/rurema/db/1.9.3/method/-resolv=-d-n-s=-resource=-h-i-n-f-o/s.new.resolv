@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- new(cpu, os) -> Resolv::DNS::Resource::HINFO
-Resolv::DNS::Resource::HINFO ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+Resolv::DNS::Resource::HINFO ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param cpu CPU Ì¾
-@param os OS Ì¾
+@param cpu CPU å
+@param os OS å
 
 

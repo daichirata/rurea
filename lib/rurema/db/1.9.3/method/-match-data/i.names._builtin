@@ -4,9 +4,9 @@ kind=defined
 
 --- names -> [Array]
 
-Ì¾Á°ÉÕ¤­¥­¥ã¥×¥Á¥ã¤ÎÌ¾Á°¤òÊ¸»úÎóÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+åå‰ä»˜ãã‚­ãƒ£ãƒ—ãƒãƒ£ã®åå‰ã‚’æ–‡å­—åˆ—é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-self.regexp.names ¤ÈÆ±¤¸¤Ç¤¹¡£
+self.regexp.names ã¨åŒã˜ã§ã™ã€‚
 
     /(?<foo>.)(?<bar>.)(?<baz>.)/.match("hoge").names
     #=> ["foo", "bar", "baz"]

@@ -5,12 +5,12 @@ kind=defined
 --- abort_on_exception               -> bool
 --- abort_on_exception=(newstate)
 
-���ξ�硢���Υ���åɤ��㳰�ˤ�äƽ�λ�������ˡ����󥿥ץ꥿
-���Τ����Ǥ����ޤ���false �ξ�硢���륹��åɤǵ����ä���
-���ϡ�[[m:Thread#join]] �ʤɤǸ��Ф���ʤ��¤ꤽ�Υ����
-�ɤ�����ʤˤ�ٹ��Ф����˽�λ�����ޤ���
+真の場合、そのスレッドが例外によって終了した時に、インタプリタ
+全体を中断させます。false の場合、あるスレッドで起こった例
+外は、[[m:Thread#join]] などで検出されない限りそのスレッ
+ドだけをなにも警告を出さずに終了させます。
 
-�ǥե���Ȥϵ��Ǥ���[[ref:c:Thread#exception]]�򻲾Ȥ��Ƥ���������
+デフォルトは偽です。[[ref:c:Thread#exception]]を参照してください。
 
-@param newstate ���Ȥ�¹�����㳰ȯ��������硢���󥿥ץ꥿���Τ�λ�����뤫�ɤ����� true �� false �ǻ��ꤷ�ޤ���
+@param newstate 自身を実行中に例外発生した場合、インタプリタ全体を終了させるかどうかを true か false で指定します。
 

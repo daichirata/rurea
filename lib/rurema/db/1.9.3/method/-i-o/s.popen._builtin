@@ -5,20 +5,20 @@ kind=defined
 --- popen(command, mode = "r", opt={})                -> IO
 --- popen(command, mode = "r", opt={}) {|io| ... }    -> object
 
-command �򥵥֥ץ������Ȥ��Ƽ¹Ԥ������Υץ�������ɸ��������
-�Ȥδ֤˥ѥ��ץ饤����Ω���ޤ������������ѥ��פ� [[c:IO]] ���֥������ȤȤ����֤��ޤ���
+command をサブプロセスとして実行し、そのプロセスの標準入出力
+との間にパイプラインを確立します。生成したパイプを [[c:IO]] オブジェクトとして返します。
 
-command ��ʸ����ξ��ϡ���������ͳ���ƻҥץ�������¹Ԥ��ޤ���
-command ������ξ��ϡ���������ͳ�����˻ҥץ�������¹Ԥ��ޤ���
+command が文字列の場合は、シェルを経由して子プロセスを実行します。
+command が配列の場合は、シェルを経由せずに子プロセスを実行します。
 
   p io = IO.popen("cat", "r+")  # => #<IO:0x401b75c8>
   io.puts "foo"
   io.close_write
   p io.gets                     # => "foo\n"
 
-�֥��å���Ϳ����줿������������ IO ���֥������Ȥ�����˥�
-���å���¹Ԥ������η�̤��֤��ޤ����֥��å��μ¹Ը塢���������ѥ�
-�פϼ�ưŪ�˥�����������ޤ���
+ブロックが与えられた場合は生成した IO オブジェクトを引数にブ
+ロックを実行し、その結果を返します。ブロックの実行後、生成したパイ
+プは自動的にクローズされます。
 
   p IO.popen("cat", "r+") {|io|
     io.puts "foo"
@@ -27,21 +27,21 @@ command ������ξ��ϡ���������ͳ�����˻ҥץ�������¹Ԥ��ޤ���
   }
   # => "foo\n"
 
-@param command ���ޥ��̾��ʸ��������ǻ��ꤷ�ޤ������󤬻��ꤵ�줿���ˤϡ�
-               ��������ͳ�����˻ҥץ�������¹Ԥ��ޤ���
+@param command コマンド名を文字列か配列で指定します。配列が指定された場合には、
+               シェルを経由せずに子プロセスを実行します。
 
-@param mode �����ץ󤹤� IO �ݡ��ȤΥ⡼�ɤ���ꤷ�ޤ���mode �ξܺ٤� [[m:Kernel.#open]] ���Ȥ��Ʋ�������
-@param opt ���󥳡��ǥ��󥰤ʤɤ����ꤹ�륪�ץ�������(see [[m:IO.new]])
+@param mode オープンする IO ポートのモードを指定します。mode の詳細は [[m:Kernel.#open]] 参照して下さい。
+@param opt エンコーディングなどを設定するオプション引数(see [[m:IO.new]])
 
-@raise Errno::EXXX �ѥ��ס����뤤�ϻҥץ������������˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX パイプ、あるいは子プロセスの生成に失敗した場合に発生します。
 
 --- popen("-", mode = "r", opt={})                -> IO
 --- popen("-", mode = "r", opt={}) {|io| ... }    -> object
 
-��������ʸ���� "-" �����ꤵ�줿����[[man:fork(2)]] ��
-�Ԥ��ҥץ�������ɸ�������ϤȤδ֤˥ѥ��ץ饤����Ω���ޤ���
-�ƥץ������Ǥ� IO ���֥������Ȥ��֤����ҥץ������Ǥ�
-nil ���֤��ޤ���
+第一引数に文字列 "-" が指定された時、[[man:fork(2)]] を
+行い子プロセスの標準入出力との間にパイプラインを確立します。
+親プロセスでは IO オブジェクトを返し、子プロセスでは
+nil を返します。
 
   io = IO.popen("-", "r+")
   if io  # parent
@@ -54,10 +54,10 @@ nil ���֤��ޤ���
     exit
   end
   
-�֥��å���Ϳ����줿��硢�ƥץ������Ǥ��������� IO ���֥������Ȥ������
-�֥��å���¹Ԥ������η�̤��֤��ޤ����֥��å��μ¹Ը塢���������ѥ�
-�פϼ�ưŪ�˥�����������ޤ���
-�ҥץ������Ǥ� nil ������˥֥��å���¹Ԥ���λ���ޤ���  
+ブロックを与えられた場合、親プロセスでは生成した IO オブジェクトを引数に
+ブロックを実行し、その結果を返します。ブロックの実行後、生成したパイ
+プは自動的にクローズされます。
+子プロセスでは nil を引数にブロックを実行し終了します。  
 
   p IO.popen("-", "r+") {|io|
     if io   # parent
@@ -70,8 +70,8 @@ nil ���֤��ޤ���
   }
   # => "child output: foo\n"
 
-@param mode �����ץ󤹤� IO �ݡ��ȤΥ⡼�ɤ���ꤷ�ޤ���mode �ξܺ٤� [[m:Kernel.#open]] ���Ȥ��Ʋ�������
-@param opt ���󥳡��ǥ��󥰤ʤɤ����ꤹ�륪�ץ�������(see [[m:IO.new]])
+@param mode オープンする IO ポートのモードを指定します。mode の詳細は [[m:Kernel.#open]] 参照して下さい。
+@param opt エンコーディングなどを設定するオプション引数(see [[m:IO.new]])
 
-@raise Errno::EXXX �ѥ��ס����뤤�ϻҥץ������������˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX パイプ、あるいは子プロセスの生成に失敗した場合に発生します。
 

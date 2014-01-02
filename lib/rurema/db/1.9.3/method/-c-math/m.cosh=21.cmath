@@ -4,14 +4,14 @@ kind=defined
 
 --- cosh!(x) -> Float
 
-�¿� x ���ж���;���ؿ����ͤ��֤��ޤ���[[m:Math.#cosh]] �Υ����ꥢ����
-����
+実数 x の双曲線余弦関数の値を返します。[[m:Math.#cosh]] のエイリアスで
+す。
 
-@param x �¿�
+@param x 実数
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 
 @see [[m:Math.#cosh]]
 

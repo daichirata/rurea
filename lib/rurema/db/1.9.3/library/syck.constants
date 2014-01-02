@@ -3,5 +3,6 @@ classes=
 methods=Syck/c.VERSION.syck.constants,Syck/c.SUPPORTED_YAML_VERSIONS.syck.constants,Syck/c.DEFAULTS.syck.constants
 sublibraries=
 is_sublibrary=true
+category=
 
-YAML ´ØÏ¢¤ÎÄê¿ô¤Î¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+YAML é–¢é€£ã®å®šæ•°ã®ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

@@ -2,9 +2,9 @@ names=find
 visibility=public 
 kind=defined
 
---- find(path) -> nil | Gem::Specification
+--- find(path) -> Gem::Specification | nil
 
-Ϳ����줿�ѥ��˥ޥå����� [[c:Gem::Specification]] ���Ĥ����֤��ޤ���
+与えられたパスにマッチする [[c:Gem::Specification]] を一つだけ返します。
 
 @see [[m:Array#find]]
 

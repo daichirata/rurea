@@ -4,9 +4,9 @@ kind=defined
 
 --- IBM775 -> Encoding
 --- CP775 -> Encoding
-CP775 ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+CP775 ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-¥Ğ¥ë¥È¸ìÇÉ¤Î¸À¸ì¤ò°·¤¦¤¿¤á¤Î 8bit single-byte¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+ãƒãƒ«ãƒˆèªæ´¾ã®è¨€èªã‚’æ‰±ã†ãŸã‚ã® 8bit single-byteã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[url:http://en.wikipedia.org/wiki/Code_page_775]]
 

@@ -1,7 +1,0 @@
-requires=
-classes=TkVariable,TkVarAccess
-methods=
-sublibraries=
-is_sublibrary=true
-
-

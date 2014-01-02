@@ -4,6 +4,6 @@ kind=added
 
 --- ssl_available? -> bool
 
-���߼¹���Υץ�åȥե������ OpenSSL ��ͭ���Ǥ�����Ͽ����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+現在実行中のプラットフォームで OpenSSL が有効である場合は真を返します。
+そうでない場合は偽を返します。
 

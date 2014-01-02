@@ -3,5 +3,6 @@ classes=Rake=MakefileLoader
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Makefile ¤ò¥í¡¼¥É¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Makefile ã‚’ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

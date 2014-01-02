@@ -4,11 +4,11 @@ kind=added
 
 --- namespace(name = nil){ ... } -> Rake::NameSpace
 
-������̾�����֤�������ޤ���
+新しい名前空間を作成します。
 
-Ϳ����줿�֥��å���ɾ������֤ϡ�����̾�����֤���Ѥ��ޤ���
+与えられたブロックを評価する間は、その名前空間を使用します。
 
-��:
+例:
    ns = namespace "nested" do
      task :run
    end

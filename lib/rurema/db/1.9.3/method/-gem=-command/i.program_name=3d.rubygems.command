@@ -4,7 +4,7 @@ kind=defined
 
 --- program_name=(name)
 
-���ޥ�ɥ饤��Ǽ¹Ԥ���Ȥ��˻��Ѥ���ץ������̾�򥻥åȤ��ޤ���
+コマンドラインで実行するときに使用するプログラム名をセットします。
 
-@param name �ץ������̾����ꤷ�ޤ���
+@param name プログラム名を指定します。
 

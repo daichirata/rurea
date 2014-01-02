@@ -5,18 +5,18 @@ kind=defined
 --- catch {|tag| .... } -> object
 --- catch(tag) {|tag| .... } -> object
 
-[[m:Kernel.#throw]]�Ȥ��Ȥ߹�碌�����æ�Ф�Ԥ��ޤ��� catch �ϥ֥��å���¹Ԥ��ޤ���
+[[m:Kernel.#throw]]との組み合わせで大域脱出を行います。 catch はブロックを実行します。
 
-�֥��å��μ¹���� tag ��Ʊ��Υ��֥������Ȥ�����Ȥ��� [[m:Kernel.#throw]] ���Ԥ�줿
-���ϡ����� throw ���������������ͤȤ��ơ��֥��å��μ¹Ԥ�λ���ޤ���
+ブロックの実行中に tag と同一のオブジェクトを引数とする [[m:Kernel.#throw]] が行われた
+場合は、その throw の第二引数を戻り値として、ブロックの実行を終了します。
 
-��˥ͥ��Ȥ����롼�פ���쵤��æ�Ф���Τ˻��Ѥ��ޤ���
+主にネストしたループから一気に脱出するのに使用します。
 
-�������ά������硢�����Ȥʤ륪�֥������Ȥ��������������졢�֥��å��ѥ�᡼�� tag ��
-�Ϥ���ޤ���
+引数を省略した場合、タグとなるオブジェクトが内部で生成され、ブロックパラメータ tag に
+渡されます。
 
-@param tag �����Ȥʤ�Ǥ�դΥ��֥������ȤǤ���
-@return �֥��å����֤��ͤ����б�����throw������������֤��ͤȤ����֤��ޤ���
+@param tag タグとなる任意のオブジェクトです。
+@return ブロックの返り値か、対応するthrowの第二引数を返り値として返します。
 
   result = catch do |tag|
     for i in 1..2

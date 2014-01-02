@@ -2,8 +2,8 @@ names=clone,dup
 visibility=public
 kind=defined
 
---- dup
---- clone
+--- dup   -> Digest::Base
+--- clone -> Digest::Base
 
-е└еде╕езе╣е╚еке╓е╕езепе╚д╬╩г└╜дЄ║юдъд▐д╣бг
+уГАуВдуВ╕уВзуВ╣уГИуВкуГЦуВ╕уВзуВпуГИуБошдЗшг╜уВТф╜ЬуВКуБ╛уБЩуАВ
 

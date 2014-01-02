@@ -4,5 +4,5 @@ kind=defined
 
 --- DEFAULT_IGNORE_PATTERNS -> Array
 
-�ǥե���Ȥǽ�������ѥ�����Υꥹ�ȤǤ���
+デフォルトで除外するパターンのリストです。
 

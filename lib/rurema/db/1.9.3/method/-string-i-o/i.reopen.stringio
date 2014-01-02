@@ -4,11 +4,11 @@ kind=defined
 
 --- reopen(sio)           -> StringIO
 
-���Ȥ�ɽ��ʸ���󤬻��ꤵ�줿 StringIO ��Ʊ����Τˤʤ�ޤ���
+自身が表す文字列が指定された StringIO と同じものになります。
 
-@param sio ���Ȥ�ɽ������ StringIO ����ꤷ�ޤ���
+@param sio 自身が表したい StringIO を指定します。
 
-��: 
+例: 
 
   require 'stringio'
   sio = StringIO.new("hoge", 'r+')
@@ -18,20 +18,20 @@ kind=defined
 
 --- reopen(str, mode = 'r+')     -> StringIO
 
-���Ȥ�ɽ��ʸ���󤬻��ꤵ�줿ʸ���� str �ˤʤ�ޤ���
+自身が表す文字列が指定された文字列 str になります。
 
-Ϳ����줿 str ���ե꡼������Ƥ�����ˤϡ�mode �ϥǥե���ȤǤ��ɤ߼��Τߤ����ꤵ��ޤ���
-�֥��å���Ϳ���������������� StringIO ���֥������Ȥ�����Ȥ��ƥ֥��å���ɾ�����ޤ���
+与えられた str がフリーズされている場合には、mode はデフォルトでは読み取りのみに設定されます。
+ブロックを与えた場合は生成した StringIO オブジェクトを引数としてブロックを評価します。
 
-@param str ���Ȥ�ɽ������ʸ�������ꤷ�ޤ���
-           ����ʸ����ϥХåե��Ȥ��ƻȤ��ޤ���[[m:StringIO#write]] �ʤɤˤ�äơ�
-           str ���Ȥ�񤭴������ޤ���
+@param str 自身が表したい文字列を指定します。
+           この文字列はバッファとして使われます。[[m:StringIO#write]] などによって、
+           str 自身も書き換えられます。
 
-@param mode [[m:Kernel.#open]] Ʊ��ʸ���������Ǽ��ȤΥ⡼�ɤ���ꤷ�ޤ���
+@param mode [[m:Kernel.#open]] 同様文字列か整数で自身のモードを指定します。
 
-@raise Errno::EACCES str ���ե꡼������Ƥ��ơ�mode ���񤭹��߲�ǽ�����ꤵ��Ƥ������ȯ�����ޤ���
+@raise Errno::EACCES str がフリーズされていて、mode が書き込み可能に設定されている場合に発生します。
 
-��: 
+例: 
 
   require 'stringio'
   sio = StringIO.new("hoge", 'r+')

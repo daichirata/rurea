@@ -6,4 +6,4 @@ library=shell.filter
 aliases=
 aliasof=
 
-���ޥ�ɤμ¹Է�̤Ϥ��٤� [[c:Shell::Filter]] �������Υ��֥��饹�Υ��󥹥��󥹤Ȥ����֤�ޤ���
+コマンドの実行結果はすべて [[c:Shell::Filter]] か、そのサブクラスのインスタンスとして返ります。

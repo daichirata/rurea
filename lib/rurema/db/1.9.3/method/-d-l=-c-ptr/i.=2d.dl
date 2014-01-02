@@ -4,13 +4,13 @@ kind=defined
 
 --- -(n)   -> DL::CPtr
 
-���ȤΥ��ɥ쥹���� n �Х��Ȥ������������ CPtr ���֥������Ȥ��֤��ޤ���
+自身のアドレスから n バイトを引いた新しい CPtr オブジェクトを返します。
 
-�����֤��ͤˤϡ�free �ؿ������åȤ���Ƥ��ޤ���
+この返り値には、free 関数がセットされていません。
 
-@param n ���ɥ쥹�κ�ʬ�������ǻ��ꤷ�ޤ���
+@param n アドレスの差分を整数で指定します。
 
-��:
+例:
  require 'dl' 
  
  s = 'abc'

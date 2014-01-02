@@ -3,6 +3,6 @@ visibility=public
 kind=added
 
 --- nonblock? -> bool
-self ���Υ�֥��å��⡼�ɤʤ�� true ��
-�֥��å��⡼�ɤʤ� false ���֤��ޤ���
+self がノンブロックモードならば true を、
+ブロックモードなら false を返します。
 

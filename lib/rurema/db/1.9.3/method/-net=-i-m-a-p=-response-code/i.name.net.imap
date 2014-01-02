@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- name -> String
-�쥹�ݥ󥹥����ɤ�ɽ��ʸ������֤��ޤ���
+レスポンスコードを表す文字列を返します。
  
-"ALERT"��"PERMANENTFLAGS"��"UIDVALIDITY" �ʤɤ��֤��ޤ���
+"ALERT"、"PERMANENTFLAGS"、"UIDVALIDITY" などを返します。
 

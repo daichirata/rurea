@@ -4,5 +4,5 @@ kind=defined
 
 --- accept_charset -> String
 
-ENV['HTTP_ACCEPT_CHARSET'] ค๒สึคทคÞคนกฃ
+ENV['HTTP_ACCEPT_CHARSET'] ใ’่ฟ”ใ—ใพใใ€
 

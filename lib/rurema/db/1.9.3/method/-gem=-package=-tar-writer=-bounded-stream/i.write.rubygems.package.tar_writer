@@ -4,12 +4,12 @@ kind=defined
 
 --- write(data) -> Integer
 
-Í¿¤¨¤é¤ì¤¿¥Ç¡¼¥¿¤ò¼«¿È¤Ë´ØÏ¢ÉÕ¤±¤é¤ì¤¿ IO ¤Ë½ñ¤­¹ş¤ß¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸãƒ‡ãƒ¼ã‚¿ã‚’è‡ªèº«ã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸ IO ã«æ›¸ãè¾¼ã¿ã¾ã™ã€‚
 
-@param data ½ñ¤­¹ş¤à¥Ç¡¼¥¿¤ò»ØÄê¤·¤Ş¤¹¡£
+@param data æ›¸ãè¾¼ã‚€ãƒ‡ãƒ¼ã‚¿ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return ½ñ¤­¹ş¤ó¤À¥Ç¡¼¥¿¤Î¥µ¥¤¥º¤òÊÖ¤·¤Ş¤¹¡£
+@return æ›¸ãè¾¼ã‚“ã ãƒ‡ãƒ¼ã‚¿ã®ã‚µã‚¤ã‚ºã‚’è¿”ã—ã¾ã™ã€‚
 
-@raise Gem::Package::TarWriter::FileOverflow [[m:Gem::Package::TarWriter::BoundedStream#limit]] ¤ò±Û¤¨¤Æ
-       ½ñ¤­¹ş¤â¤¦¤È¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise Gem::Package::TarWriter::FileOverflow [[m:Gem::Package::TarWriter::BoundedStream#limit]] ã‚’è¶Šãˆã¦
+       æ›¸ãè¾¼ã‚‚ã†ã¨ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

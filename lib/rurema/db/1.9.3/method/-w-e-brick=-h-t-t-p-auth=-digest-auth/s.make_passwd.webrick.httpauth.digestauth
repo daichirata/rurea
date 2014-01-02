@@ -4,11 +4,11 @@ kind=defined
 
 --- make_passwd(realm, user, pass) -> String
 
-Ϳ����줿�������Ѥ��ƥϥå��岽�����ѥ���ɤ��������ޤ���
+与えられた情報を使用してハッシュ化したパスワードを生成します。
 
-@param realm �������ꤷ�ޤ���
+@param realm レルムを指定します。
 
-@param user �桼��̾����ꤷ�ޤ���
+@param user ユーザ名を指定します。
 
-@param pass �ѥ���ɤ���ꤷ�ޤ���
+@param pass パスワードを指定します。
 

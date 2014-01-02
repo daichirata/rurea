@@ -5,7 +5,7 @@ kind=defined
 --- mon      -> Integer
 --- month    -> Integer
 
-·î¤òÀ°¿ô¤ÇÊÖ¤·¤Þ¤¹¡£
+æœˆã‚’æ•´æ•°ã§è¿”ã—ã¾ã™ã€‚
 
   p Time.local(2000, 1, 1).month #=> 1
 

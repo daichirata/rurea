@@ -3,15 +3,16 @@ classes=Resolv,Resolv=ResolvError,Resolv=Hosts,Resolv=DNS,Resolv=DNS=Requester=R
 methods=
 sublibraries=
 is_sublibrary=false
+category=Network
 
-DNS�ˤ��̾������Ԥ��饤�֥��Ǥ��� Ruby �ǽ񤫤�Ƥ��뤿�� thread-aware �Ǥ��ꡢ�����¿���Υۥ���̾���褹�뤳�Ȥ��Ǥ��ޤ���
+DNSによる名前解決を行うライブラリです。 Ruby で書かれているため thread-aware であり、並列に多くのホスト名を解決することができます。
 
-DNS �⥸�塼���Ȥ����Ȥǡ����ޤ��ޤʥ꥽������ľ�ܥ�å����åפǤ��ޤ���
+DNS モジュールを使うことで、さまざまなリソースを直接ルックアップできます。
 
-�ʤ���ñ�˥ۥ���̾���� IP ���ɥ쥹�������������Ǥ���С�
-[[lib:socket]] �饤�֥��� [[m:IPSocket.getaddress]] �ʤɤ����ѤǤ��ޤ���
+なお、単にホスト名から IP アドレスを得たいだけであれば、
+[[lib:socket]] ライブラリの [[m:IPSocket.getaddress]] などが使用できます。
 
-=== ��:
+=== 例:
   Resolv.getaddress("www.ruby-lang.org")
   Resolv.getname("210.251.121.214").to_s
   Resolv::DNS.new.getresources("www.ruby-lang.org", Resolv::DNS::Resource::IN::A).collect {|r| r.address}
@@ -19,4 +20,4 @@ DNS �⥸�塼���Ȥ����Ȥǡ����ޤ��ޤʥ꥽������ľ�ܥ�å����åפǤ��ޤ���
 
 
 === Bugs
-NIS �ϥ��ݡ��Ȥ���Ƥ��ޤ���
+NIS はサポートされていません。

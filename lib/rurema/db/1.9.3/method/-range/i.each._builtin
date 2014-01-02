@@ -5,10 +5,10 @@ kind=defined
 --- each {|item|  ... } -> self
 --- each -> Enumerator
 
-�ϰ�������Ǥ��Ф��Ʒ����֤��ޤ���
+範囲内の要素に対して繰り返します。
 
-Range#each �ϳ����Ǥ� succ �᥽�åɤ���Ѥ��ƥ��ƥ졼����󤹤�褦�ˤʤ�ޤ�����
+Range#each は各要素の succ メソッドを使用してイテレーションするようになりました。
 
-@raise TypeError succ �᥽�åɤ�����ʤ����饹���ϰϥ��֥������Ȥ��Ф��Ƥ��Υ᥽�åɤ�Ƥ������ȯ�����ޤ���
+@raise TypeError succ メソッドを持たないクラスの範囲オブジェクトに対してこのメソッドを呼んだ場合に発生します。
 
 

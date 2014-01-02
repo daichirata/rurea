@@ -4,12 +4,12 @@ kind=defined
 
 --- each_path(str) {|ypath| ...} -> Array
 
-���� str �� [[c:Syck::YPath]] ��
-�����Ǥ���ʣ���Υѥ��˺ƹ��ۤ��ơ����γƥѥ����Ф��ƥ֥��å���ɾ�����ޤ���
+引数 str を [[c:Syck::YPath]] が
+検索できる複数のパスに再構築して、その各パスに対してブロックを評価します。
 
-�ƥѥ����Ф��ƥ֥��å���ɾ��������̤�������֤��ޤ���
+各パスに対してブロックを評価した結果の配列を返します。
 
-��1: YAML::YPath.each_path ����Ѥ�����
+例1: YAML::YPath.each_path を使用する場合
 
   require 'syck'
   require 'yaml'
@@ -19,7 +19,7 @@ kind=defined
     ...
   }
 
-��2: YAML::YPath.each_path ����Ѥ��ʤ����
+例2: YAML::YPath.each_path を使用しない場合
 
   require 'syck'
   require 'yaml'

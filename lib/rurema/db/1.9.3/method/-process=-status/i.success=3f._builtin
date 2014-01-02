@@ -4,6 +4,6 @@ kind=defined
 
 --- success?    -> bool
 
-¥×¥í¥»¥¹¤Î½ªÎ»¾õÂÖ¤¬À®¸ù¤Ç¤¢¤ë¾ì¹ç¤Ë true ¤òÊÖ¤·¤Þ¤¹¡£
-¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ—ãƒ­ã‚»ã‚¹ã®çµ‚äº†çŠ¶æ…‹ãŒæˆåŠŸã§ã‚ã‚‹å ´åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚
+ãã†ã§ãªã„å ´åˆã« false ã‚’è¿”ã—ã¾ã™ã€‚
 

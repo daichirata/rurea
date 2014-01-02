@@ -4,9 +4,9 @@ kind=defined
 
 --- stop(port, host = DEFAULT_HOST) -> ()
 
-Ϳ����줿 host �� port ���б����� GServer ���֥������Ȥ���ߤ��ޤ���
+与えられた host と port に対応する GServer オブジェクトを停止します。
 
-@param port �ݡ����ֹ����ꤷ�ޤ���
+@param port ポート番号を指定します。
 
-@param host �ۥ��Ȥ���ꤷ�ޤ���
+@param host ホストを指定します。
 

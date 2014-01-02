@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- NKF_VERSION -> String
-nkf ���ΤΥС�������ɽ��ʸ����Ǥ���
+nkf 自体のバージョンを表す文字列です。
 

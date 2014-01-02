@@ -4,11 +4,11 @@ kind=added
 
 --- yaml_tag_read_class(name) -> String
 
-°ú¿ô name ¤Ë Struct:: ¤ò²Ã¤¨¤¿Ê¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£
+å¼•æ•° name ã« Struct:: ã‚’åŠ ãˆãŸæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param name ¹½Â¤ÂÎ¤ÎÌ¾Á°¤ò»ØÄê¤·¤Ş¤¹¡£
+@param name æ§‹é€ ä½“ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return °ú¿ô name ¤Ë Struct:: ¤ò²Ã¤¨¤¿Ê¸»úÎó¡£
+@return å¼•æ•° name ã« Struct:: ã‚’åŠ ãˆãŸæ–‡å­—åˆ—ã€‚
 
   require 'yaml'
   

@@ -4,7 +4,7 @@ kind=defined
 
 --- scan -> RDoc::TopLevel
 
-C ����ǵ��Ҥ��줿�����������ɤ����Ȥ߹��ߥ��饹/�⥸�塼��Υɥ�����
-�Ȥ���Ϥ��ޤ���
+C 言語で記述されたソースコードから組み込みクラス/モジュールのドキュメン
+トを解析します。
 
-@return [[c:RDoc::TopLevel]] ���֥������Ȥ��֤��ޤ���
+@return [[c:RDoc::TopLevel]] オブジェクトを返します。

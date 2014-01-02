@@ -4,9 +4,9 @@ kind=defined
 
 --- write(data) -> Integer
 
-Ϳ����줿�ǡ����򼫿Ȥ˴�Ϣ�դ���줿 IO �˽񤭹��ߤޤ���
+与えられたデータを自身に関連付けられた IO に書き込みます。
 
-@param data �񤭹���ǡ�������ꤷ�ޤ���
+@param data 書き込むデータを指定します。
 
-@return �񤭹�����ǡ����Υ��������֤��ޤ���
+@return 書き込んだデータのサイズを返します。
 

@@ -6,5 +6,5 @@ library=net.smtp
 aliases=
 aliasof=
 
-SMTP ���ޥ��ʸˡ���顼(���顼������ 500) ���б�����
-�㳰���饹�Ǥ���
+SMTP コマンド文法エラー(エラーコード 500) に対応する
+例外クラスです。

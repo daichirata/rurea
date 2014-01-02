@@ -4,8 +4,8 @@ kind=defined
 
 --- [](*args) -> Rake::FileList
 
-Ϳ����줿�ѥ�������Ȥˤ��Ƽ��Ȥ��������ޤ���
+与えられたパターンをもとにして自身を初期化します。
 
-@param args �ѥ��������ꤷ�ޤ���
+@param args パターンを指定します。
 
 

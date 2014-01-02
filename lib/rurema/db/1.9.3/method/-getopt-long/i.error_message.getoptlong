@@ -4,6 +4,6 @@ kind=defined
 
 --- error_message -> String | nil
 
-���ߤΥ��顼�Υ��顼��å��������֤��ޤ������顼��ȯ�����Ƥ���
-����С�nil ���֤��ޤ���
+現在のエラーのエラーメッセージを返します。エラーが発生していな
+ければ、nil を返します。
 

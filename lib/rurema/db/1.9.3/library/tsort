@@ -3,8 +3,9 @@ classes=TSort,TSort=Cyclic
 methods=
 sublibraries=
 is_sublibrary=false
+category=Math
 
-tsort �ϥȥݥ������륽���Ȥȶ�Ϣ����ʬ�˴ؤ���⥸�塼����󶡤��ޤ���
+tsort はトポロジカルソートと強連結成分に関するモジュールを提供します。
 
 === Example
 
@@ -24,9 +25,9 @@ tsort �ϥȥݥ������륽���Ȥȶ�Ϣ����ʬ�˴ؤ���⥸�塼����󶡤��ޤ���
   {1=>[2], 2=>[3, 4], 3=>[2], 4=>[]}.strongly_connected_components
   #=> [[4], [2, 3], [1]]
 
-=== ��긽��Ū����
+=== より現実的な例
 
-����ñ��� `make' �˻����ġ���ϰʲ��Τ褦�˼����Ǥ��ޤ���
+非常に単純な `make' に似たツールは以下のように実装できます。
 
   require 'tsort'
 
@@ -87,9 +88,9 @@ tsort �ϥȥݥ������륽���Ȥȶ�Ϣ����ʬ�˴ؤ���⥸�塼����󶡤��ޤ���
 
 === Bugs
 
-tsort �Ȥ���̾�������ΤǤϤ���ޤ��󡣤ʤ��ʤ�
-���Υ饤�֥��� Tarjan �ζ�Ϣ����ʬ�˴ؤ��륢�르�ꥺ���ȤäƤ��뤫��Ǥ���
-�ȤϤ��� strongly_connected_components �Ȥ������Τ�̾����Ĺ�᤮�ޤ���
+tsort という名前は正確ではありません。なぜなら
+このライブラリは Tarjan の強連結成分に関するアルゴリズムを使っているからです。
+とはいえ strongly_connected_components という正確な名前は長過ぎます。
 
 === References
 R. E. Tarjan,

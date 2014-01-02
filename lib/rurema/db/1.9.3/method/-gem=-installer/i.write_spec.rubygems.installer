@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- write_spec
-Ruby ¥¹¥¯¥ê¥×¥È·Á¼°¤Ç .gemspec ¥Õ¥¡¥¤¥ë¤òºîÀ®¤·¤Ş¤¹¡£
+Ruby ã‚¹ã‚¯ãƒªãƒ—ãƒˆå½¢å¼ã§ .gemspec ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã—ã¾ã™ã€‚
 

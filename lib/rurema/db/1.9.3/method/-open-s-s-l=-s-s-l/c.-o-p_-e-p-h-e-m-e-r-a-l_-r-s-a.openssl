@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- OP_EPHEMERAL_RSA -> Integer
-RSA ��Ȥ����˾�˰��Ū RSA ����Ȥ����Ȥ��̣����ե饰�Ǥ���
+RSA を使う場合に常に一時的 RSA 鍵を使うことを意味するフラグです。
 
-[[m:OpenSSL::SSL::SSLContext#options=]] �����Ѥ��ޤ���
+[[m:OpenSSL::SSL::SSLContext#options=]] で利用します。
 

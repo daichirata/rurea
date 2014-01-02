@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- digest -> String
-���֥������Ȥ��������֤��黻�Ф��줿 HMAC ��
-�Х��ʥ�ʸ������֤��ޤ���
+オブジェクトの内部状態から算出された HMAC を
+バイナリ文字列で返します。
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- source_location -> [String, Fixnum] | nil
-�����������ɤΥե�����̾�ȹ��ֹ��������֤��ޤ���
+ソースコードのファイル名と行番号を配列で返します。
 
-���μ�³���֥������Ȥ� ruby ���������Ƥ��ʤ�(�Ĥޤ�ͥ��ƥ���
-�Ǥ���)���� nil ���֤��ޤ���
+その手続オブジェクトが ruby で定義されていない(つまりネイティブ
+である)場合は nil を返します。
 
 @see [[m:Proc#source_location]]
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- split(url)    -> [String | nil]
 
-URI ¤òÍ×ÁÇ¤ËÊ¬³ä¤·¤¿Ê¸»úÎó¤ÎÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
+URI ã‚’è¦ç´ ã«åˆ†å‰²ã—ãŸæ–‡å­—åˆ—ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-³ÆÍ×ÁÇ¤Î¼ïÎà¤È½çÈÖ¤Ï°Ê²¼¤Î¤È¤ª¤ê¤Ç¤¹¡£
+å„è¦ç´ ã®ç¨®é¡žã¨é †ç•ªã¯ä»¥ä¸‹ã®ã¨ãŠã‚Šã§ã™ã€‚
 
   * scheme
   * userinfo
@@ -18,11 +18,11 @@ URI ¤òÍ×ÁÇ¤ËÊ¬³ä¤·¤¿Ê¸»úÎó¤ÎÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
   * query
   * fragment
 
-@param url ¥Ñ¡¼¥¹¤·¤¿¤¤ URI ¤òÊ¸»úÎó¤È¤·¤ÆÍ¿¤¨¤Þ¤¹¡£
+@param url ãƒ‘ãƒ¼ã‚¹ã—ãŸã„ URI ã‚’æ–‡å­—åˆ—ã¨ã—ã¦ä¸Žãˆã¾ã™ã€‚
 
-@raise URI::InvalidURIError ¥Ñ¡¼¥¹¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise URI::InvalidURIError ãƒ‘ãƒ¼ã‚¹ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
   p URI.split("http://www.ruby-lang.org/")
   #=> ["http", nil, "www.ruby-lang.org", nil, nil, "/", nil, nil, nil]

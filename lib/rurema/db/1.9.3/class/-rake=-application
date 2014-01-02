@@ -6,6 +6,6 @@ library=rake
 aliases=
 aliasof=
 
-Rake �ǻ��Ѥ���ᥤ��Υ��饹�Ǥ���
+Rake で使用するメインのクラスです。
 
-���ޥ�ɥ饤��� rake ���ޥ�ɤ�¹Ԥ������˺������졢�¹Ԥ���ޤ���
+コマンドラインで rake コマンドを実行した時に作成され、実行されます。

@@ -3,9 +3,11 @@ visibility=public
 kind=defined
 
 --- lock -> self
-mutex ���֥������Ȥ���å����ޤ������٤˰�ĤΥ�
-��åɤ����� mutex ����å��Ǥ��ޤ������˥��å�����Ƥ��� mutex
-���Ф��ƥ��å���Ԥ����Ȥ�������åɤ� mutex �Υ��å���������
-���ޤǡ��¹Ԥ���ߤ���ޤ���
+mutex オブジェクトをロックします。一度に一つのス
+レッドだけが mutex をロックできます。既にロックされている mutex
+に対してロックを行おうとしたスレッドは mutex のロックが解放さ
+れるまで、実行が停止されます。
 
+@raise ThreadError self 既にカレントスレッドにロックされている場合に発
+                   生します。
 

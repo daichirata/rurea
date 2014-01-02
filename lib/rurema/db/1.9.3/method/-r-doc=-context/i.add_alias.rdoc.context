@@ -4,7 +4,7 @@ kind=defined
 
 --- add_alias(an_alias) -> RDoc::Alias
 
-°ú¿ô¤Ç»ØÄê¤·¤¿ [[c:RDoc::Alias]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÄÉ²Ã¤·¤Ş¤¹¡£
+å¼•æ•°ã§æŒ‡å®šã—ãŸ [[c:RDoc::Alias]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-@param an_alias [[c:RDoc::Alias]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param an_alias [[c:RDoc::Alias]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

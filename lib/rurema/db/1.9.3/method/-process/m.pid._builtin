@@ -4,8 +4,8 @@ kind=defined
 
 --- pid    -> Integer
 
-�����ȥץ������Υץ����� ID ���֤��ޤ����ѿ� [[m:$$]]
-���ͤ�Ʊ���Ǥ���
+カレントプロセスのプロセス ID を返します。変数 [[m:$$]]
+の値と同じです。
 
 @see [[man:getpid(2)]]
 

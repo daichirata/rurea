@@ -4,5 +4,5 @@ kind=defined
 
 --- inspect -> String
 
-ASCII �ߴ�ʸ����Ǽ��Ȥξ����ɽ������Τ��֤��ޤ���
+ASCII 互換文字列で自身の情報を表したものを返します。
 

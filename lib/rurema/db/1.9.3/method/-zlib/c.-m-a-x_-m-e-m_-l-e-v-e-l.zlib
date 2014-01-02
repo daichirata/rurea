@@ -4,5 +4,5 @@ kind=defined
 
 --- MAX_MEM_LEVEL -> Fixnum
 
-[[m:Zlib::Deflate.new]] Åù¤ËÅÏ¤¹¡¢memory level ¤òÉ½¤¹À°¿ô¤Ç¤¹¡£
+[[m:Zlib::Deflate.new]] ç­‰ã«æ¸¡ã™ã€memory level ã‚’è¡¨ã™æ•´æ•°ã§ã™ã€‚
 

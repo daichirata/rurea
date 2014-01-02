@@ -4,7 +4,7 @@ kind=defined
 
 --- say(statement = '') -> ()
 
-Ϳ����줿ʸ�����ɽ�����ޤ���
+与えられた文字列を表示します。
 
-@param statement ɽ������ʸ�������ꤷ�ޤ���
+@param statement 表示する文字列を指定します。
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- starttls -> Net::SMTP::Response
-STARTTLS ���ޥ�ɤ�����ޤ���
+STARTTLS コマンドを送ります。
 
-�̾�� [[m:Net::SMTP#start]] �� STARTTLS �������뤿��
-���Ѥ���ɬ�פϤʤ��Ϥ��Ǥ���
+通常は [[m:Net::SMTP#start]] で STARTTLS が送られるため
+利用する必要はないはずです。
 

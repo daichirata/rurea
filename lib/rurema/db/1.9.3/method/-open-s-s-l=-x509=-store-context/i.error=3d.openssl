@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- error=(error)
-¥¨¥é¡¼¥³¡¼¥É¤òÀßÄê¤·¤Ş¤¹¡£
+ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-[[m:OpenSSL::X509::StoreContext#verify]] ¤ò¸Æ¤Ó¤À¤·¡¢
-¾ÚÌÀ½ñ¥Á¥§¥¤¥ó¤Î³Æ¾ÚÌÀ½ñ¤ò¸¡¾Ú¤·¤¿
-¥³¡¼¥ë¥Ğ¥Ã¥¯([[m:OpenSSL::X509::Store#verify_callback=]])¤¬¸Æ¤Ó½Ğ¤µ¤ì¡¢
-StoreContext ¥ª¥Ö¥¸¥§¥¯¥È¤¬ÅÏ¤µ¤ì¤Ş¤¹¤¬¡¢¤³¤Î¥á¥½¥Ã¥É¤Ç¥¨¥é¡¼¥³¡¼¥É¤ò
-ÀßÄê¤·¡¢¥³¡¼¥ë¥Ğ¥Ã¥¯¤ÎÊÖ¤êÃÍ¤ò false ¤Ë¤¹¤ë¤È¡¢ºÇ½ªÅª¤Ê¥¨¥é¡¼¥³¡¼¥É¤¬
-¤³¤³¤ÇÀßÄê¤·¤¿¤â¤Î¤Ë¤Ê¤ê¤Ş¤¹¡£[[m:OpenSSL::X509::StoreContext#error_string]] 
-¤â¤½¤ÎÃÍ¤Ë±ş¤¸¤¿Ê¸»úÎó¤¬ÊÖ¤ë¤è¤¦¤Ë¤Ê¤ê¤Ş¤¹¡£
+[[m:OpenSSL::X509::StoreContext#verify]] ã‚’å‘¼ã³ã ã—ã€
+è¨¼æ˜æ›¸ãƒã‚§ã‚¤ãƒ³ã®å„è¨¼æ˜æ›¸ã‚’æ¤œè¨¼ã—ãŸ
+ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯([[m:OpenSSL::X509::Store#verify_callback=]])ãŒå‘¼ã³å‡ºã•ã‚Œã€
+StoreContext ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒæ¸¡ã•ã‚Œã¾ã™ãŒã€ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã‚’
+è¨­å®šã—ã€ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ã®è¿”ã‚Šå€¤ã‚’ false ã«ã™ã‚‹ã¨ã€æœ€çµ‚çš„ãªã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ãŒ
+ã“ã“ã§è¨­å®šã—ãŸã‚‚ã®ã«ãªã‚Šã¾ã™ã€‚[[m:OpenSSL::X509::StoreContext#error_string]] 
+ã‚‚ãã®å€¤ã«å¿œã˜ãŸæ–‡å­—åˆ—ãŒè¿”ã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   store = OpenSSL::X509::Store.new
   store.set_default_paths
   cert = OpenSSL::X509::Certificate.new(...)
@@ -23,5 +23,5 @@ StoreContext ¥ª¥Ö¥¸¥§¥¯¥È¤¬ÅÏ¤µ¤ì¤Ş¤¹¤¬¡¢¤³¤Î¥á¥½¥Ã¥É¤Ç¥¨¥é¡¼¥³¡¼¥É¤ò
   p store.error # => OpenSSL::X509::V_ERR_APPLICATION_VERIFICATION
   p store.error_string # => "application verification failure"
   
-@param error ¥¨¥é¡¼¥³¡¼¥É¤ÎÀ°¿ôÃÍ
+@param error ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã®æ•´æ•°å€¤
 @see [[m:OpenSSL::X509::StoreContext#error]]

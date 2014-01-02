@@ -4,12 +4,12 @@ kind=defined
 
 --- [](object, options) -> object
 
-ʸ����Τ褦�˰�����ǡ����������ä����� Ruby �Υ��֥������Ȥ��Ѵ������֤��ޤ���
-�����Ǥʤ����� JSON ���Ѵ������֤��ޤ���
+文字列のように扱えるデータを受け取った場合は Ruby のオブジェクトに変換して返します。
+そうでない場合は JSON に変換して返します。
 
-@param object Ǥ�դΥ��֥������Ȼ����ǽ�Ǥ���
+@param object 任意のオブジェクト指定可能です。
 
-@param options [[m:JSON.#parse]], [[m:JSON.#generate]] �������򻲾Ȥ��Ƥ���������
+@param options [[m:JSON.#parse]], [[m:JSON.#generate]] の説明を参照してください。
 
 @see [[m:JSON.#parse]], [[m:JSON.#generate]]
 

@@ -5,7 +5,7 @@ kind=defined
 --- path          -> String
 --- path=(value)
 
-�ѥ�̾��ʸ�����ɽ�����������Ǥ���
+パス名を文字列で表すアクセサです。
 
-@param value �ѥ�̾��ʸ����ǻ��ꤷ�ޤ���
+@param value パス名を文字列で指定します。
 

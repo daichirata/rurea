@@ -4,7 +4,7 @@ kind=defined
 
 --- new_day
 @todo
-������day����������֤��ޤ����������줿
-day��day�ꥹ�ȤκǸ�
-���ɲä���Ƥ��ޤ���
+新しくdayを作成し，返します．作成された
+dayはdayリストの最後
+に追加されています．
 

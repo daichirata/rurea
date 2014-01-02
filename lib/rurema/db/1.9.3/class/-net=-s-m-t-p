@@ -6,4 +6,4 @@ library=net.smtp
 aliases=Net=SMTPSession
 aliasof=
 
-SMTP ¤Î¥»¥Ã¥·¥ç¥ó¤òÉ½¸½¤·¤¿¥¯¥é¥¹¤Ç¤¹¡£
+SMTP ã®ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‚’è¡¨ç¾ã—ãŸã‚¯ãƒ©ã‚¹ã§ã™ã€‚

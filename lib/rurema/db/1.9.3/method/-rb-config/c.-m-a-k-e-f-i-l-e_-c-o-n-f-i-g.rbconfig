@@ -5,11 +5,11 @@ kind=defined
 --- MAKEFILE_CONFIG -> Hash
 
 [[m:RbConfig::CONFIG]]
-��Ʊ���Ǥ����������ͤϰʲ��Τ褦�ʷ�
-��¾���ѿ��ؤλ��Ȥ�ޤߤޤ���
+と同じですが、その値は以下のような形
+で他の変数への参照を含みます。
   MAKEFILE_CONFIG["bindir"] = "$(exec_prefix)/bin"
-����ϡ�Makefile ���ѿ����Ȥη����� MAKEFILE_CONFIG �ϡ�
-Makefile �����κݤ����Ѥ���뤳�Ȥ����ꤷ�Ƥ��ޤ���
+これは、Makefile の変数参照の形式で MAKEFILE_CONFIG は、
+Makefile 作成の際に利用されることを想定しています。
 
   require 'rbconfig'
   
@@ -24,11 +24,11 @@ Makefile �����κݤ����Ѥ���뤳�Ȥ����ꤷ�Ƥ��ޤ���
      bindir = $(exec_prefix)/bin
 
 [[m:RbConfig.expand]]
-�ϡ����Τ褦�ʻ��Ȥ��褹��
-�᥽�åɤȤ��� rbconfig ���������Ѥ���Ƥ��ޤ���
-(CONFIG �ѿ��ϡ�MAKEFILE_CONFIG �����Ƥ���
+は、このような参照を解決する
+メソッドとして rbconfig 内部で利用されています。
+(CONFIG 変数は、MAKEFILE_CONFIG の内容から
 [[m:RbConfig.expand]]
-��Ȥä���������Ƥ��ޤ�)
+を使って生成されています)
 
   require 'rbconfig'
   p Config.expand(Config::MAKEFILE_CONFIG["bindir"])

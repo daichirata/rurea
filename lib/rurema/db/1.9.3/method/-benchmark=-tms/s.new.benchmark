@@ -4,13 +4,13 @@ kind=defined
 
 --- new(utime = 0.0, stime = 0.0, cutime = 0.0, cstime = 0.0, real = 0.0, label = nil) -> Benchmark::Tms
 
-¿·¤·¤¤ [[c:Benchmark::Tms]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Ş¤¹¡£
+æ–°ã—ã„ [[c:Benchmark::Tms]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
 @param utime  User CPU time
 @param stime  System CPU time
-@param cutime »Ò¥×¥í¥»¥¹¤Î User CPU time
-@param cstime »Ò¥×¥í¥»¥¹¤Î System CPU time
-@param real   ¼Â·Ğ²á»ş´Ö
-@param label  ¥é¥Ù¥ë
+@param cutime å­ãƒ—ãƒ­ã‚»ã‚¹ã® User CPU time
+@param cstime å­ãƒ—ãƒ­ã‚»ã‚¹ã® System CPU time
+@param real   å®ŸçµŒéæ™‚é–“
+@param label  ãƒ©ãƒ™ãƒ«
 
 

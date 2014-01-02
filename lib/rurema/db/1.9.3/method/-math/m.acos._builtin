@@ -4,15 +4,15 @@ kind=defined
 
 --- acos(x) -> Float
 
-x �ε�;���ؿ����ͤ�饸������֤��ޤ���
+x の逆余弦関数の値をラジアンで返します。
 
-@param x -1.0 <= x <= 1 ���ϰ���μ¿�
+@param x -1.0 <= x <= 1 の範囲内の実数
 
-@return �֤�����ͤ��ϰϤ� [0, +��] �Ǥ���
+@return 返される値の範囲は [0, +π] です。
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise Math::DomainError x ���ϰϳ��μ¿�����ꤷ������ȯ�����ޤ���
+@raise Math::DomainError x に範囲外の実数を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 

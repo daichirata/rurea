@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- generate_windows_script(filename, bindir)
-���ޥ�ɤμ¹Ԥ��ưפˤ��뤿��� Windows �����ΥХå��ե������������ޤ���
+コマンドの実行を容易にするために Windows 向けのバッチファイルを作成します。
 
-@param bindir �¹ԥե���������֤���ǥ��쥯�ȥ����ꤷ�ޤ���
+@param bindir 実行ファイルを配置するディレクトリを指定します。
 
-@param filename �ե�����̾����ꤷ�ޤ���
+@param filename ファイル名を指定します。
 

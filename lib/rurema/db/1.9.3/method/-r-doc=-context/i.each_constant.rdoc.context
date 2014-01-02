@@ -4,5 +4,5 @@ kind=defined
 
 --- each_constant {|c| ... } -> [RDoc::Constant]
 
-�ɲä��줿 [[c:RDoc::Constant]] ���Ф��ƥ֥��å���ɾ�����ޤ���
+追加された [[c:RDoc::Constant]] に対してブロックを評価します。
 

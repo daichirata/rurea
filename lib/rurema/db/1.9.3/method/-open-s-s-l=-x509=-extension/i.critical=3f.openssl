@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 ---critical? -> bool
-���γ�ĥ�ΰ�ν�����(critical)���֤��ޤ���
+その拡張領域の重要度(critical)を返します。
 
 @see [[c:OpenSSL::X509::Extension#critical=]]

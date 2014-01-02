@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- bitmap -> String
-���Υۥ��Ȥ����Ѳ�ǽ�ʥ����ӥ��Υӥåȥޥåפ��֤��ޤ���
+そのホストで利用可能なサービスのビットマップを返します。
 
-�㤨�� [[m:Resolv::DNS::Resource::IN::WKS#protocol]] �� 6 (TCP)
-�ξ�硢26���ܤΥӥåȤϥݡ���25�Υ����ӥ�(SMTP)���б����Ƥ��ޤ���
-���ΥӥåȤ�Ω�äƤ���ʤ�� SMTP �����Ѳ�ǽ�Ǥ��ꡢ
-�����Ǥʤ�������ѤǤ��ޤ���
+例えば [[m:Resolv::DNS::Resource::IN::WKS#protocol]] が 6 (TCP)
+の場合、26番目のビットはポート25のサービス(SMTP)に対応しています。
+このビットが立っているならば SMTP は利用可能であり、
+そうでなければ利用できません。
 
 

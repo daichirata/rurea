@@ -2,10 +2,9 @@ names=PF_UNSPEC
 visibility=public
 kind=defined
 
---- PF_UNSPEC
-@todo
+--- PF_UNSPEC -> Integer
+ãƒ—ãƒ­ãƒˆã‚³ãƒ«ãƒ•ã‚¡ãƒŸãƒªãƒ¼ä¸å®šã€‚
 
-[[m:Socket.open]] ¤ÎÂè»°°ú¿ô protocol ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+@see [[m:Socket::Constants::AF_UNSPEC]], [[m:Socket.open]]
 
-@see [[m:Socket.open]]
 

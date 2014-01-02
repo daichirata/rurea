@@ -4,9 +4,9 @@ kind=defined
 
 --- close_write    -> nil
 
-�񤭹����Ѥ� IO �� close ���ޤ���
+書き込み用の IO を close します。
 
-@raise IOError ���Ȥ��񤭹����Ѥ˥����ץ󤵤�Ƥ��ʤ����ȯ�����ޤ���
+@raise IOError 自身が書き込み用にオープンされていなければ発生します。
 
-@raise Errno::EXXX close �˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX close に失敗した場合に発生します。
 

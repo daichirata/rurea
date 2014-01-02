@@ -6,13 +6,13 @@ kind=defined
 --- ===(other)  -> bool
 --- eql?(other) -> bool
 
-�ѥ�̾����Ӥ��� other ��Ʊ���ʤ鿿���֤��ޤ�����ʸ����ʸ���϶��̤���ޤ���
-other �� Pathname ���֥������ȤǤʤ���Фʤ�ޤ���
+パス名を比較し、 other と同じなら真を返します。大文字小文字は区別されます。
+other は Pathname オブジェクトでなければなりません。
 
-�ѥ�̾����Ӥ�ñ��˥ѥ�ʸ�������Ӥˤ�äƹԤ���Τǡ�����Ū��
-Ʊ���ѥ��Ǥ�ѥ�ʸ���󤬰㤨�аۤʤ��Ƚ�Ǥ���ޤ���
+パス名の比較は単純にパス文字列の比較によって行われるので、論理的に
+同じパスでもパス文字列が違えば異なると判断されます。
 
-@param other ����оݤ� Pathname ���֥������Ȥ���ꤷ�ޤ���
+@param other 比較対象の Pathname オブジェクトを指定します。
 
     require 'pathname'
 

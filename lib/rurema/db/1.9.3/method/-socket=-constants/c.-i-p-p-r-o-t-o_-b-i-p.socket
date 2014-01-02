@@ -1,36 +1,11 @@
-names=IPPROTO_BIP,IPPROTO_EGP,IPPROTO_EON,IPPROTO_GGP,IPPROTO_HELLO,IPPROTO_ICMP,IPPROTO_IDP,IPPROTO_IGMP,IPPROTO_IP,IPPROTO_MAX,IPPROTO_ND,IPPROTO_PUP,IPPROTO_RAW,IPPROTO_TCP,IPPROTO_TP,IPPROTO_UDP,IPPROTO_XTP
+names=IPPROTO_BIP
 visibility=public
 kind=defined
 
---- IPPROTO_BIP
---- IPPROTO_EGP
---- IPPROTO_EON
---- IPPROTO_GGP
---- IPPROTO_HELLO
---- IPPROTO_ICMP
---- IPPROTO_IDP
---- IPPROTO_IGMP
---- IPPROTO_IP
---- IPPROTO_MAX
---- IPPROTO_ND
---- IPPROTO_PUP
---- IPPROTO_RAW
---- IPPROTO_TCP
---- IPPROTO_TP
---- IPPROTO_UDP
---- IPPROTO_XTP
+--- IPPROTO_BIP -> Integer
 @todo
+[[m:BasicSocket#getsockopt]], [[m:BasicSocket#setsockopt]] ใฎ 
+level ๅผ•ๆ•ฐใซไฝฟ็”จใ—ใพใใ€
 
-IPฅืฅํฅศฅณฅ๋:
-[[m:BasicSocket#getsockopt]], [[m:BasicSocket#setsockopt]] คฮ level ฐ๚ฟ๔คห
-ปศอัคทคÞคนกฃ
-
-คÞคฟกข[[m:Socket.open]] คฮ
-ย่ฐ์ฐ๚ฟ๔ domain คห AF_INET คโคทคฏคฯ AF_INET6,
-ย่ฦ๓ฐ๚ฟ๔ type คห SOCK_RAW ค๒ปุฤ๊คทคฟพ์น็คฮกข
-ย่ปฐฐ๚ฟ๔ protocol คหคโปศอัคทคÞคนกฃ
-
-คสคชกขAF_INET คว SOCK_STREAM คสพ์น็คหคฯ IPPROTO_TCP ค๒ปศอัควคญคÞคนคฌกข
-คฝคฮพ์น็คฯ 0 ค๒ปุฤ๊คทคฦคโฦฑคธท๋ฒฬค๒ฦภค้ค์คÞคนคฮควฤฬพ๏คฯปศอัคตค์คÞคปค๓กฃ
-AF_INET คว SOCK_DGRAM คฮพ์น็คฮ IPPROTO_UDP คโฦฑออควคนกฃ
+ใพใใ€[[m:Socket.open]] ใฎ protocol ๅผ•ๆ•ฐใซๆธกใๅฉ็”จๆณ•ใใใใพใใ€
 

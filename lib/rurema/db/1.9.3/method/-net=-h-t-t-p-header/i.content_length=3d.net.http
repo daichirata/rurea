@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- content_length=(len)
-Content-Length: ¥Ø¥Ã¥À¥Õ¥£¡¼¥ë¥É¤ËÃÍ¤òÀßÄê¤·¤Ş¤¹¡£
+Content-Length: ãƒ˜ãƒƒãƒ€ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã«å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-len ¤Ë nil ¤òÍ¿¤¨¤ë¤È Content-Length: ¥Ø¥Ã¥À¥Õ¥£¡¼¥ë¥É¤ò
-ºï½ü¤·¤Ş¤¹¡£
+len ã« nil ã‚’ä¸ãˆã‚‹ã¨ Content-Length: ãƒ˜ãƒƒãƒ€ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’
+å‰Šé™¤ã—ã¾ã™ã€‚
 
-@param len ÀßÄê¤¹¤ëÃÍ¤òÀ°¿ô¤ÇÍ¿¤¨¤Ş¤¹¡£
+@param len è¨­å®šã™ã‚‹å€¤ã‚’æ•´æ•°ã§ä¸ãˆã¾ã™ã€‚
 

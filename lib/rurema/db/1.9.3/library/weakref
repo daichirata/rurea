@@ -3,5 +3,6 @@ classes=WeakRef,WeakRef=RefError
 methods=
 sublibraries=
 is_sublibrary=false
+category=GC
 
-weak reference ¤ò¼Â¸½¤·¤Ş¤¹¡£
+weak reference ã‚’å®Ÿç¾ã—ã¾ã™ã€‚

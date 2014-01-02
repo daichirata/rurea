@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- LOCK_EX -> Integer
-��¾���å���Ʊ���ˤϤ����ҤȤĤΥץ��������������å����ݻ��Ǥ��ޤ���
-[[m:File#flock]] �ǻ��Ѥ��ޤ���
+排他ロック。同時にはただひとつのプロセスだけがロックを保持できます。
+[[m:File#flock]] で使用します。
 

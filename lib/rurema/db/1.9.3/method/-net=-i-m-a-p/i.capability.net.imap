@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- capability -> [String]
-CAPABILITY ¥³¥Þ¥ó¥É¤òÁ÷¤Ã¤Æ¥µ¡¼¥Ð¤¬¥µ¥Ý¡¼¥È¤·¤Æ¤¤¤ë
-µ¡Ç½(capabilities)¤Î¥ê¥¹¥È¤òÊ¸»úÎó¤ÎÇÛÎó¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+CAPABILITY ã‚³ãƒžãƒ³ãƒ‰ã‚’é€ã£ã¦ã‚µãƒ¼ãƒãŒã‚µãƒãƒ¼ãƒˆã—ã¦ã„ã‚‹
+æ©Ÿèƒ½(capabilities)ã®ãƒªã‚¹ãƒˆã‚’æ–‡å­—åˆ—ã®é…åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-capability ¤Ï IMAP ¤Ë´ØÏ¢¤¹¤ë RFC ¤Ê¤É¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤Þ¤¹¡£
+capability ã¯ IMAP ã«é–¢é€£ã™ã‚‹ RFC ãªã©ã§å®šç¾©ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
   imap.capability
   # => ["IMAP4REV1", "UNSELECT", "IDLE", "NAMESPACE", "QUOTA", ... ]

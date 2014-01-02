@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- public? -> bool
-¼«¿È¤¬¸ø³«¸°¤ò¤â¤Ã¤Æ¤¤¤ë¾ì¹ç¤Ë true ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒå…¬é–‹éµã‚’ã‚‚ã£ã¦ã„ã‚‹å ´åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚
 

@@ -2,8 +2,9 @@ names=alive?
 visibility=public
 kind=defined
 
---- alive?
-@todo
+--- alive? -> bool
+サーバが生存しているならば真を返します。
 
-Is this server alive? 
+@see [[m:DRb::DRbServer#stop_service]]
+
 

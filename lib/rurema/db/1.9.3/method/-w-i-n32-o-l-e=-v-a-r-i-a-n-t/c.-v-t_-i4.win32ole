@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- VT_I4 -> Integer
-����դ�32�ӥå�������int�ˤ򼨤��ޤ���3�ˡ�
+符号付き32ビット整数（int）を示します（3）。
 

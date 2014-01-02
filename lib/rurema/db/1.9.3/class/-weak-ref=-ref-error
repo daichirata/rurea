@@ -6,4 +6,4 @@ library=weakref
 aliases=
 aliasof=
 
-GC ���줿���֥������Ȥ򻲾Ȥ��褦�Ȥ����Ȥ���ȯ�������㳰�Ǥ���
+GC されたオブジェクトを参照しようとしたときに発生する例外です。

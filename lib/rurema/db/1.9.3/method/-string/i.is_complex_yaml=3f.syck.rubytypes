@@ -4,10 +4,10 @@ kind=added
 
 --- is_complex_yaml? -> Integer | nil
 
-���Ȥ�ʣ���Ԥˤʤ륭����ޤ�褦�� YAML �Ǥ�����˿��ˤʤ��ͤ��֤���
-����
+自身が複数行になるキーを含むような YAML である場合に真になる値を返しま
+す。
 
-��: ["Detroit Tigers", "Chicago cubs"] �򥭡��Ȥ�����
+例: ["Detroit Tigers", "Chicago cubs"] をキーとする場合
 
   require 'yaml'
   s = <<EOS

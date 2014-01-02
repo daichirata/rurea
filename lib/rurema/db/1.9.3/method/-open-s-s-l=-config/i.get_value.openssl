@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- get_value(section, name) -> String | nil
-¥ª¥Ö¥¸¥§¥¯¥È¤¬»ý¤Ã¤Æ¤¤¤ëÀßÄê¾ðÊó¤òÊÖ¤·¤Þ¤¹¡£
+ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒæŒã£ã¦ã„ã‚‹è¨­å®šæƒ…å ±ã‚’è¿”ã—ã¾ã™ã€‚
 
-¥­¡¼¤ËÂÐ±þ¤¹¤ëÀßÄê¾ðÊó¤¬¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+ã‚­ãƒ¼ã«å¯¾å¿œã™ã‚‹è¨­å®šæƒ…å ±ãŒãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param section ¥»¥¯¥·¥ç¥ó¤òÉ½¤¹Ê¸»úÎó¡£"" ¤òÅÏ¤¹¤³¤È¤Ç¥°¥í¡¼¥Ð¥ë¤ÊÀßÄê¾ðÊó¤òÆÉ¤à¤³¤È¤¬¤Ç¤­¤Þ¤¹¡£
-@param name ¥­¡¼¤òÉ½¤¹Ê¸»úÎó
+@param section ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’è¡¨ã™æ–‡å­—åˆ—ã€‚"" ã‚’æ¸¡ã™ã“ã¨ã§ã‚°ãƒ­ãƒ¼ãƒãƒ«ãªè¨­å®šæƒ…å ±ã‚’èª­ã‚€ã“ã¨ãŒã§ãã¾ã™ã€‚
+@param name ã‚­ãƒ¼ã‚’è¡¨ã™æ–‡å­—åˆ—
 

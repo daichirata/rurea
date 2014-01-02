@@ -4,8 +4,8 @@ kind=defined
 
 --- dependencies_ok?(spec) -> bool
 
-���󥤥󥹥ȡ�����ꤵ�줿 Gem �������Ƥ��¸�ط������������Ȥ��Ǥ��뤫
-�ɤ��������å����ޤ���
+アンインストール指定された Gem を削除しても依存関係を満たすことができるか
+どうかチェックします。
 
-@param spec ���󥤥󥹥ȡ�����ꤵ��Ƥ��� Gem �� [[c:Gem::Specification]] ����ꤷ�ޤ���
+@param spec アンインストール指定されている Gem の [[c:Gem::Specification]] を指定します。
 

@@ -2,14 +2,13 @@ names=double_fig
 visibility=public
 kind=defined
 
---- double_fig
-@todo
+--- double_fig -> Fixnum
 
-Ruby ¤Î [[c:Float]] ¥¯¥é¥¹¤¬Êİ»ı¤Ç¤­¤ëÍ­¸ú¿ô»ú¤Î¿ô¤òÊÖ¤·¤Ş¤¹¡£
+Ruby ã® [[c:Float]] ã‚¯ãƒ©ã‚¹ãŒä¿æŒã§ãã‚‹æœ‰åŠ¹æ•°å­—ã®æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
     p BigDecimal::double_fig  # ==> 20 (depends on the CPU etc.)
 
-double_fig¤Ï°Ê²¼¤Î C ¥×¥í¥°¥é¥à¤Î·ë²Ì¤ÈÆ±¤¸¤Ç¤¹¡£
+double_figã¯ä»¥ä¸‹ã® C ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®çµæœã¨åŒã˜ã§ã™ã€‚
 
     double v = 1.0;
     int double_fig = 0;

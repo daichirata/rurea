@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- open_timeout -> Interger
-��³�����Ԥĺ����ÿ����֤��ޤ���
+接続時に待つ最大秒数を返します。
 
-�����ÿ����äƤ⥳�ͥ�����󤬳����ʤ��Ȥ���
-�㳰 TimeoutError ��ȯ�����ޤ���
+この秒数たってもコネクションが開かないときは
+例外 TimeoutError を発生します。
 
-�ǥե���Ȥ�30�äǤ���
+デフォルトは30秒です。
 
 @see [[m:Net::POP3#open_timeout=]]
 

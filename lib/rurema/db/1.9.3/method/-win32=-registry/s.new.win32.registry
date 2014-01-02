@@ -8,15 +8,15 @@ kind=defined
 --- open(key, subkey, desired = KEY_READ, opt = REG_OPTION_RESERVED) {|reg| ... }
 @todo
 
-¥ì¥¸¥¹¥È¥ê¥­¡¼ key ²¼¤Î¥­¡¼ subkey ¤ò³«¤­¡¤
-³«¤¤¤¿¥­¡¼¤òÉ½¤¹ Win32::Registry ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹¡£
-key ¤Ï¿Æ¤Î¥­¡¼¤ò Win32::Registry ¥ª¥Ö¥¸¥§¥¯¥È¤Ç»ØÄê¤·¤Ş¤¹¡£
-¿Æ¤Î¥­¡¼¤Ë¤ÏÄêµÁºÑ¥­¡¼ HKEY_* ¤ò»ÈÍÑ¤Ç¤­¤Ş¤¹ (¢Í[[c:Win32::Registry::Constants]])
+ãƒ¬ã‚¸ã‚¹ãƒˆãƒªã‚­ãƒ¼ key ä¸‹ã®ã‚­ãƒ¼ subkey ã‚’é–‹ãï¼Œ
+é–‹ã„ãŸã‚­ãƒ¼ã‚’è¡¨ã™ Win32::Registry ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
+key ã¯è¦ªã®ã‚­ãƒ¼ã‚’ Win32::Registry ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§æŒ‡å®šã—ã¾ã™ã€‚
+è¦ªã®ã‚­ãƒ¼ã«ã¯å®šç¾©æ¸ˆã‚­ãƒ¼ HKEY_* ã‚’ä½¿ç”¨ã§ãã¾ã™ (â‡’[[c:Win32::Registry::Constants]])
 
-desired ¤Ï¥¢¥¯¥»¥¹¥Ş¥¹¥¯¤Ç¤¹¡£opt ¤Ï¥­¡¼¤Î¥ª¥×¥·¥ç¥ó¤Ç¤¹¡£
-¾ÜºÙ¤Ï°Ê²¼¤Î MSDN Library ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+desired ã¯ã‚¢ã‚¯ã‚»ã‚¹ãƒã‚¹ã‚¯ã§ã™ã€‚opt ã¯ã‚­ãƒ¼ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã§ã™ã€‚
+è©³ç´°ã¯ä»¥ä¸‹ã® MSDN Library ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
  * Registry Key Security and Access Rights: [[url:http://msdn.microsoft.com/library/en-us/sysinfo/base/registry_key_security_and_access_rights.asp]]
 
-¥Ö¥í¥Ã¥¯¤¬Í¿¤¨¤é¤ì¤ë¤È¡¤¥­¡¼¤Ï¼«Æ°Åª¤ËÊÄ¤¸¤é¤ì¤Ş¤¹¡£
+ãƒ–ãƒ­ãƒƒã‚¯ãŒä¸ãˆã‚‰ã‚Œã‚‹ã¨ï¼Œã‚­ãƒ¼ã¯è‡ªå‹•çš„ã«é–‰ã˜ã‚‰ã‚Œã¾ã™ã€‚
 

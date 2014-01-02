@@ -5,7 +5,7 @@ kind=defined
 --- path    -> String
 --- to_path -> String
 
-¥ª¡¼¥×¥ó»þ¤Ë»ÈÍÑ¤·¤¿¥Ñ¥¹¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+ã‚ªãƒ¼ãƒ—ãƒ³æ™‚ã«ä½¿ç”¨ã—ãŸãƒ‘ã‚¹ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
    File.new("testfile").path               #=> "testfile"
    File.new("/tmp/../tmp/xxx", "w").path   #=> "/tmp/../tmp/xxx"

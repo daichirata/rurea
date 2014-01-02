@@ -6,6 +6,6 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 502 (Bad Gateway) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 502 (Bad Gateway) を表現するクラスです。
 
-�ܤ����� [[RFC:2616]] �򸫤Ƥ���������
+詳しくは [[RFC:2616]] を見てください。

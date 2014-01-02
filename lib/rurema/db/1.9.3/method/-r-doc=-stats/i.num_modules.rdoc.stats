@@ -4,5 +4,5 @@ kind=defined
 
 --- num_modules -> Integer
 
-���Ϥ����⥸�塼��ο����֤��ޤ���
+解析したモジュールの数を返します。
 

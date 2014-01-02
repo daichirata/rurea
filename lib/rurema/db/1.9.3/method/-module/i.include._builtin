@@ -4,11 +4,11 @@ kind=defined
 
 --- include(*mod) -> self
 
-�⥸�塼�� mod �򥤥󥯥롼�ɤ��ޤ���
+モジュール mod をインクルードします。
 
-@param mod [[c:Module]] �Υ��󥹥���( [[c:Enumerable]] �ʤ�)����ꤷ�ޤ���
+@param mod [[c:Module]] のインスタンス( [[c:Enumerable]] など)を指定します。
 
-@raise ArgumentError �Ѿ��ط����۴Ĥ��Ƥ��ޤ��褦�� include ��Ԥä�����ȯ�����ޤ���
+@raise ArgumentError 継承関係が循環してしまうような include を行った場合に発生します。
 
   module M
   end
@@ -19,16 +19,16 @@ kind=defined
     include M2
   end
 
-�¹Է��:
+実行結果:
 
   -:3:in `append_features': cyclic include detected (ArgumentError)
           from -:3:in `include'
           from -:3
 
 
-���󥯥롼�ɤȤϡ����ꤵ�줿�⥸�塼������
-(�᥽�åɡ����) ������Ѥ����ȤǤ���
-���󥯥롼�ɤ�¿�ŷѾ���������Ѥ����Ƥ��ꡢ mix-in �Ȥ�ƤӤޤ���
+インクルードとは、指定されたモジュールの定義
+(メソッド、定数) を引き継ぐことです。
+インクルードは多重継承の代わりに用いられており、 mix-in とも呼びます。
 
   class C
     include FileTest
@@ -39,13 +39,13 @@ kind=defined
 
   # => [C, Math, FileTest, Object, Kernel]
 
-�⥸�塼��ε�ǽ�ɲäϡ����饹�ηѾ��ط��δ֤ˤ��Υ⥸�塼�뤬����
-����뤳�ȤǼ¸�����Ƥ��ޤ������äơ��᥽�åɤ�õ���ʤɤ�
-�����ѡ����饹���⥤�󥯥롼�ɤ��줿�⥸�塼��Τۤ���
-��˹Ԥ��ޤ�
-(������ [[m:Module#ancestors]] �η�̤��᥽�å�õ���ν���Ǥ�)��
+モジュールの機能追加は、クラスの継承関係の間にそのモジュールが挿入
+されることで実現されています。従って、メソッドの探索などは
+スーパークラスよりもインクルードされたモジュールのほうが
+先に行われます
+(上の例の [[m:Module#ancestors]] の結果がメソッド探索の順序です)。
 
-Ʊ���⥸�塼������ʾ� include ���������ܰʹߤ�̵�뤵��ޤ���
+同じモジュールを二回以上 include すると二回目以降は無視されます。
 
   module M
   end
@@ -53,11 +53,11 @@ kind=defined
     include M
   end
   class C2 < C1
-    include M   # ���� include ��̵�뤵���
+    include M   # この include は無視される
   end
 
   p C2.ancestors  # => [C2, C1, M, Object, Kernel]
 
-������ʣ���Υ⥸�塼�����ꤷ����硢
-�Ǹ�ΰ��������˥��󥯥롼�ɤ��ޤ���
+引数に複数のモジュールを指定した場合、
+最後の引数から順にインクルードします。
 

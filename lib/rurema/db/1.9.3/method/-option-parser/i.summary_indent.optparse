@@ -4,7 +4,7 @@ kind=defined
 
 --- summary_indent          -> String
 
-���ޥ��ɽ��������Υ���ǥ�Ȥ�ʸ������֤��ޤ���
+サマリを表示する時のインデントを文字列で返します。
 
-@return ���ޥ��ɽ��������Υ���ǥ�Ȥ�ʸ������֤��ޤ���
+@return サマリを表示する時のインデントを文字列で返します。
 

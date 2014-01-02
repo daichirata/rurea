@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- read_timeout -> Interger
-�ɤ߹��ߤǥ֥��å����Ƥ褤�����ÿ����֤��ޤ���
+読み込みでブロックしてよい最大秒数を返します。
 
-�����ÿ����äƤ��ɤߤ���ʤ�����㳰 TimeoutError ��ȯ�����ޤ���
+この秒数たっても読みこめなければ例外 TimeoutError を発生します。
 
-�ǥե���Ȥ�60�äǤ���
+デフォルトは60秒です。
 
 @see [[m:Net::POP3#read_timeout=]]
 

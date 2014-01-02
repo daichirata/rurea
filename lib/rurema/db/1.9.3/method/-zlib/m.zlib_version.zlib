@@ -4,5 +4,5 @@ kind=defined
 
 --- zlib_version -> String
 
-zlib �饤�֥��ΥС�������ɽ��ʸ������֤��ޤ���
+zlib ライブラリのバージョンを表す文字列を返します。
 

@@ -4,15 +4,15 @@
 = class UnboundMethod < Method
 #@end
 
-¥ì¥·¡¼¥Ğ¤ò»ı¤¿¤Ê¤¤¥á¥½¥Ã¥É¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
-¸Æ¤Ó½Ğ¤¹¤¿¤á¤Ë¤Ï¥ì¥·¡¼¥Ğ¤Ë¥Ğ¥¤¥ó¥É¤¹¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹¡£
+ãƒ¬ã‚·ãƒ¼ãƒã‚’æŒãŸãªã„ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
+å‘¼ã³å‡ºã™ãŸã‚ã«ã¯ãƒ¬ã‚·ãƒ¼ãƒã«ãƒã‚¤ãƒ³ãƒ‰ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
-[[m:Module#instance_method]] ¤ä
-[[m:Method#unbind]] ¤Ë¤è¤êÀ¸À®¤·¡¢¸å¤Ç
-[[m:UnboundMethod#bind]] ¤Ë¤è¤ê¥ì¥·¡¼¥Ğ¤ò
-³ä¤êÅö¤Æ¤¿ [[c:Method]] ¥ª¥Ö¥¸¥§¥¯¥È¤òºî¤ë¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
+[[m:Module#instance_method]] ã‚„
+[[m:Method#unbind]] ã«ã‚ˆã‚Šç”Ÿæˆã—ã€å¾Œã§
+[[m:UnboundMethod#bind]] ã«ã‚ˆã‚Šãƒ¬ã‚·ãƒ¼ãƒã‚’
+å‰²ã‚Šå½“ã¦ãŸ [[c:Method]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-Îã: [[c:Method]] ¥¯¥é¥¹¤ÎËÁÆ¬¤Ë¤¢¤ëÎã¤ò UnboundMethod ¤Ç½ñ¤¯¤È°Ê²¼¤Î¤è¤¦¤Ë¤Ê¤ê¤Ş¤¹¡£
+ä¾‹: [[c:Method]] ã‚¯ãƒ©ã‚¹ã®å†’é ­ã«ã‚ã‚‹ä¾‹ã‚’ UnboundMethod ã§æ›¸ãã¨ä»¥ä¸‹ã®ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
 
   class Foo
     def foo() "foo" end
@@ -20,20 +20,20 @@
     def baz() "baz" end
   end
 
-  # Ç¤°Õ¤Î¥­¡¼¤È¥á¥½¥Ã¥É¤Î´Ø·¸¤ò¥Ï¥Ã¥·¥å¤ËÊİ»ı¤·¤Æ¤ª¤¯
-  # ¥ì¥·¡¼¥Ğ¤Î¾ğÊó¤¬¤³¤³¤Ë¤Ï¤Ê¤¤¤³¤È¤ËÃí°Õ
+  # ä»»æ„ã®ã‚­ãƒ¼ã¨ãƒ¡ã‚½ãƒƒãƒ‰ã®é–¢ä¿‚ã‚’ãƒãƒƒã‚·ãƒ¥ã«ä¿æŒã—ã¦ãŠã
+  # ãƒ¬ã‚·ãƒ¼ãƒã®æƒ…å ±ãŒã“ã“ã«ã¯ãªã„ã“ã¨ã«æ³¨æ„
   methods = {1 => Foo.instance_method(:foo),
              2 => Foo.instance_method(:bar),
              3 => Foo.instance_method(:baz)}
 
-  # ¥­¡¼¤ò»È¤Ã¤Æ´ØÏ¢¤¹¤ë¥á¥½¥Ã¥É¤ò¸Æ¤Ó½Ğ¤¹
-  # ¥ì¥·¡¼¥Ğ¤ÏÇ¤°Õ(Foo ¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤Ç¤Ê¤±¤ì¤Ğ¤Ê¤é¤Ê¤¤)
+  # ã‚­ãƒ¼ã‚’ä½¿ã£ã¦é–¢é€£ã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³å‡ºã™
+  # ãƒ¬ã‚·ãƒ¼ãƒã¯ä»»æ„(Foo ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã§ãªã‘ã‚Œã°ãªã‚‰ãªã„)
   p methods[1].bind(Foo.new).call      # => "foo"
   p methods[2].bind(Foo.new).call      # => "bar"
   p methods[3].bind(Foo.new).call      # => "baz"
 
-Îã: °Ê²¼¤Ï¥á¥½¥Ã¥É¤ÎºÆÄêµÁ¤ò UnboundMethod ¤ò»È¤Ã¤Æ¹Ô¤¦ÊıË¡¤Ç¤¹¡£ÉáÄÌ¤Ï
-alias ¤ä super ¤ò»È¤¤¤Ş¤¹¡£
+ä¾‹: ä»¥ä¸‹ã¯ãƒ¡ã‚½ãƒƒãƒ‰ã®å†å®šç¾©ã‚’ UnboundMethod ã‚’ä½¿ã£ã¦è¡Œã†æ–¹æ³•ã§ã™ã€‚æ™®é€šã¯
+alias ã‚„ super ã‚’ä½¿ã„ã¾ã™ã€‚
 
   class Foo
     def foo
@@ -53,118 +53,65 @@ alias ¤ä super ¤ò»È¤¤¤Ş¤¹¡£
 
 == Instance Methods
 
-#@if (version < "1.8.0")
---- [](*args)            
---- call(*args)          
---- call(*args) { ... }  
-
-¾ï¤ËÎã³° [[c:TypeError]] ¤¬È¯À¸¤·¤Ş¤¹¡£
-UnboundMethod ¤Ï [[m:UnboundMethod#bind]] ¤·¤Ê¤±¤ì¤Ğµ¯Æ°¤Ç¤­¤Ş¤»¤ó¡£
-
-@raise TypeError ¾ï¤ËÈ¯À¸¤·¤Ş¤¹¡£
-
-    class Foo
-      def foo
-      end
-    end
-    Foo.instance_method(:foo).call
-
-    # => -:5:in `call': you cannot call unbound method; bind first (TypeError)
-#@end
-
 --- bind(obj)    -> Method
 
-self ¤ò obj ¤Ë¥Ğ¥¤¥ó¥É¤·¤¿ [[c:Method]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·ÊÖ¤·¤Ş¤¹¡£
+self ã‚’ obj ã«ãƒã‚¤ãƒ³ãƒ‰ã—ãŸ [[c:Method]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—è¿”ã—ã¾ã™ã€‚
 
-@param obj ¼«¿È¤ò¥Ğ¥¤¥ó¥É¤·¤¿¤¤¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£¤¿¤À¤·¥Ğ¥¤¥ó¥É¤Ç¤­¤ë¤Î¤Ï¡¢
-           unbind ¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È¤Î¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤«¡¢¥á¥½¥Ã¥ÉÄêµÁ¸µ¤Î¥â¥¸¥å¡¼¥ë¤ò
-           ¥¤¥ó¥¯¥ë¡¼¥É¤·¤¿¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤À¤±¤Ç¤¹¡£
+#@until 1.9.1
+NOTE: Ruby 1.8.xã§ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’bindã™ã‚‹ã¨ä¸å¯©ãªæŒ™å‹•ã‚’
+ã™ã‚‹ã®ã§é¿ã‘ã‚‹ã¹ãã§ã‚ã‚‹ã€‚
+#@end
 
-@raise TypeError obj ¤Î¥¯¥é¥¹¤¬¡¢unbind ¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È¤Î¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤«¡¢
-                 ¥á¥½¥Ã¥ÉÄêµÁ¸µ¤Î¥â¥¸¥å¡¼¥ë¤ò¥¤¥ó¥¯¥ë¡¼¥É¤·¤¿¥¯¥é¥¹¤Ç¤Ê¤±¤ì¤Ğ¡¢È¯À¸¤·¤Ş¤¹¡£
+@param obj è‡ªèº«ã‚’ãƒã‚¤ãƒ³ãƒ‰ã—ãŸã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚ãŸã ã—ãƒã‚¤ãƒ³ãƒ‰ã§ãã‚‹ã®ã¯ã€
+           ç”Ÿæˆå…ƒã®ã‚¯ãƒ©ã‚¹ã‹ãã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®ã¿ã§ã™ã€‚
 
-    # ¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤Î UnboundMethod ¤Î¾ì¹ç
+@raise TypeError objãŒbindã§ããªã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã‚ã‚‹å ´åˆã«ç™ºç”Ÿã—ã¾ã™
 
+    # ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã® UnboundMethod ã®å ´åˆ
     class Foo
       def foo
         "foo"
       end
     end
-
-    # UnboundMethod `m' ¤òÀ¸À®
-    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo(Foo)#foo>
-
-    # Foo ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò¥ì¥·¡¼¥Ğ¤È¤¹¤ë Method ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®
-    p m.bind(Foo.new)               # => #<Method: Foo(Foo)#foo>
-
-    # Foo ¤Î¥µ¥Ö¥¯¥é¥¹ Bar ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò¥ì¥·¡¼¥Ğ¤È¤¹¤ë Method
-#@if (version < "1.8.0")
-    # ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®(¤³¤ì¤Ïµö¤µ¤ì¤Ê¤¤)
-#@end
-    #@#  ruby 1.8 feature: µö¤µ¤ì¤ë¤è¤¦¤Ë¤Ê¤ê¤Ş¤·¤¿
-
+    
+    # UnboundMethod `m' ã‚’ç”Ÿæˆ
+    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo#foo>
+    
+    # Foo ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ãƒ¬ã‚·ãƒ¼ãƒã¨ã™ã‚‹ Method ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆ
+    p m.bind(Foo.new)               # => #<Method: Foo#foo>
+    
+    # Foo ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ Bar ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ãƒ¬ã‚·ãƒ¼ãƒã¨ã™ã‚‹ Method
     class Bar < Foo
     end
-    # p m.bind(Bar.new)               # => -18:in `bind': bind argument must be an instance of Foo (TypeError)
+    p m.bind(Bar.new)               # => #<Method: Bar(Foo)#foo>
 
-    # Æ±Ì¾¤ÎÆÃ°Û¥á¥½¥Ã¥É¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ë¤È¥À¥á
-    class << obj = Foo.new
-      def foo
-      end
-    end
-    p m.bind(obj)                   # => -:25:in `bind': method `foo' overridden (TypeError)
 
-    # ¥â¥¸¥å¡¼¥ë¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤Î UnboundMethod ¤Î¾ì¹ç
-
+    # ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã® UnboundMethod ã®å ´åˆ
     module Foo
       def foo
         "foo"
       end
     end
-
-    # UnboundMethod `m' ¤òÀ¸À®
-    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo(Foo)#foo>
-
-    # Foo ¤ò¥¤¥ó¥¯¥ë¡¼¥É¤·¤¿¥¯¥é¥¹ Bar ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò¥ì¥·¡¼¥Ğ¤È
-    # ¤¹¤ë Method ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®
+    
+    # UnboundMethod `m' ã‚’ç”Ÿæˆ
+    p m = Foo.instance_method(:foo) # => #<UnboundMethod: Foo#foo>
+    
+    # Foo ã‚’ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã—ãŸã‚¯ãƒ©ã‚¹ Bar ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ãƒ¬ã‚·ãƒ¼ãƒã¨
+    # ã™ã‚‹ Method ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆ
     class Bar
       include Foo
     end
     p m.bind(Bar.new)               # => #<Method: Bar(Foo)#foo>
 
-    # Bar ¤Î¥µ¥Ö¥¯¥é¥¹¤Ï Foo ¤ò¥¤¥ó¥¯¥ë¡¼¥É¤·¤Æ¤¤¤ë¤Î¤ÈÆ±Åù¤Ê¤Î¤Ç¤è¤¤
-    class Baz <Bar
-    end
-    p m.bind(Baz.new)               # => #<Method: Baz(Foo)#foo>
-
-    # Æ±Ì¾¤ÎÆÃ°Û¥á¥½¥Ã¥É¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ë¤È¥À¥á
-    class << obj = Baz.new
-      def foo
-      end
-    end
-    p m.bind(obj)                   # => -:27:in `bind': method `foo' overridden (TypeError)
-
-#@if (version < "1.8.0")
---- to_proc    -> Proc
-
-self ¤ò call ¤¹¤ë [[c:Proc]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Ş¤¹¡£
-#@end
-
-#@if (version < "1.8.0")
---- unbind    -> self
-
-self ¤òÊÖ¤·¤Ş¤¹¡£
-#@end
-
 --- arity    -> Integer
 
-¥á¥½¥Ã¥É¤¬¼õ¤±ÉÕ¤±¤ë°ú¿ô¤Î¿ô¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ¡ã‚½ãƒƒãƒ‰ãŒå—ã‘ä»˜ã‘ã‚‹å¼•æ•°ã®æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤¿¤À¤·¡¢¥á¥½¥Ã¥É¤¬²ÄÊÑÄ¹°ú¿ô¤ò¼õ¤±ÉÕ¤±¤ë¾ì¹ç¡¢Éé¤ÎÀ°¿ô
-  -(É¬Í×¤È¤µ¤ì¤ë°ú¿ô¤Î¿ô + 1)
-¤òÊÖ¤·¤Ş¤¹¡£C ¸À¸ì¥ì¥Ù¥ë¤Ç¼ÂÁõ¤µ¤ì¤¿¥á¥½¥Ã¥É¤¬²ÄÊÑÄ¹°ú¿ô¤ò
-¼õ¤±ÉÕ¤±¤ë¾ì¹ç¡¢-1 ¤òÊÖ¤·¤Ş¤¹¡£
-  
+ãŸã ã—ã€ãƒ¡ã‚½ãƒƒãƒ‰ãŒå¯å¤‰é•·å¼•æ•°ã‚’å—ã‘ä»˜ã‘ã‚‹å ´åˆã€è² ã®æ•´æ•°
+  -(å¿…è¦ã¨ã•ã‚Œã‚‹å¼•æ•°ã®æ•° + 1)
+ã‚’è¿”ã—ã¾ã™ã€‚C è¨€èªãƒ¬ãƒ™ãƒ«ã§å®Ÿè£…ã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãŒå¯å¤‰é•·å¼•æ•°ã‚’
+å—ã‘ä»˜ã‘ã‚‹å ´åˆã€-1 ã‚’è¿”ã—ã¾ã™ã€‚
+
   class C
     def one;    end
     def two(a); end
@@ -188,12 +135,14 @@ self ¤òÊÖ¤·¤Ş¤¹¡£
   String.instance_method(:count).arity     #=> -1
 
 --- ==(other)     -> bool
---- ===(other)    -> bool
+#@since 1.9.1
+--- eql?(other)   -> bool
+#@end
 
-¼«¿È¤È other ¤¬Æ±¤¸¥¯¥é¥¹¤¢¤ë¤¤¤ÏÆ±¤¸¥â¥¸¥å¡¼¥ë¤ÎÆ±¤¸¥á¥½¥Ã¥É¤òÉ½¤¹¾ì¹ç¤Ë
-true ¤òÊÖ¤·¤Ş¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ã¨ other ãŒåŒã˜ã‚¯ãƒ©ã‚¹ã‚ã‚‹ã„ã¯åŒã˜ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®åŒã˜ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¡¨ã™å ´åˆã«
+true ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã« false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ÈÈæ³Ó¤·¤¿¤¤¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param other è‡ªèº«ã¨æ¯”è¼ƒã—ãŸã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   a = String.instance_method(:size)
   b = String.instance_method(:size)
@@ -202,38 +151,56 @@ true ¤òÊÖ¤·¤Ş¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Ş¤¹¡£
   c = Array.instance_method(:size)
   p a == c                            #=> false
 
-@see [[m:UnboundMethod#eql?]]
+--- clone -> Method
 
---- eql?(other)     -> bool
---- equal?(other)   -> bool
+è‡ªèº«ã‚’è¤‡è£½ã—ãŸ [[c:UnboundMethod]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-»ØÄê¤µ¤ì¤¿ other ¤¬ self ¼«¿È¤Ç¤¢¤ë¾ì¹ç¤Î¤ß¿¿¤òÊÖ¤·¤Ş¤¹¡£
-¤³¤ì¤Ï [[c:Object]] ¥¯¥é¥¹¤ÇÄêµÁ¤µ¤ì¤¿¥Ç¥Õ¥©¥ë¥È¤ÎÆ°ºî¤Ç
-¤¹¡£
+--- inspect -> String
+--- to_s    -> String
 
-@param other ¼«¿È¤ÈÈæ³Ó¤·¤¿¤¤¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+self ã‚’èª­ã¿ã‚„ã™ã„æ–‡å­—åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-  a = String.instance_method(:size)
-  b = String.instance_method(:size)
-  p a.eql?(b)                        #=> false
-  p a.eql?(a)                        #=> true
+è©³ã—ãã¯ [[m:Method#inspect]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@see [[m:UnboundMethod#==]]
+@see [[m:Method#inspect]]
 
+#@since 1.9.1
 --- hash    -> Integer
 
-¼«¿È¤Î [[m:Object#object_id]] ¤òÊÖ¤·¤Ş¤¹¡£¤³¤ì¤Ï [[c:Object]] ¥¯¥é¥¹¤ÇÄêµÁ¤µ¤ì¤¿¥Ç¥Õ¥©¥ë¥È¤ÎÆ°ºî¤Ç¤¹¡£
+è‡ªèº«ã®ãƒãƒƒã‚·ãƒ¥å€¤ã‚’è¿”ã—ã¾ã™ã€‚
+#@end
 
 #@since 1.8.7
+#@until 1.9.1
 --- name    -> String
-#@since 1.9.1
+#@else
 --- name    -> Symbol
 #@end
 
-¤³¤Î¥á¥½¥Ã¥É¤ÎÌ¾Á°¤òÊÖ¤·¤Ş¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã®åå‰ã‚’è¿”ã—ã¾ã™ã€‚
 
 --- owner    -> Class | Module
 
-¤³¤Î¥á¥½¥Ã¥É¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ë class ¤« module ¤òÊÖ¤·¤Ş¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹ class ã‹ module ã‚’è¿”ã—ã¾ã™ã€‚
+#@end
 
+#@since 1.9.1
+--- source_location -> [String, Fixnum] | nil
+
+ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®ãƒ•ã‚¡ã‚¤ãƒ«åã¨è¡Œç•ªå·ã‚’é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
+
+ãã®æ‰‹ç¶šã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒ ruby ã§å®šç¾©ã•ã‚Œã¦ã„ãªã„(ã¤ã¾ã‚Šãƒã‚¤ãƒ†ã‚£ãƒ–
+ã§ã‚ã‚‹)å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
+
+@see [[m:Proc#source_location]], [[m:Method#source_location]]
+#@end
+
+#@since 1.9.2
+--- parameters -> [object]
+
+UnboundMethod ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å¼•æ•°ã®æƒ…å ±ã‚’è¿”ã—ã¾ã™ã€‚
+
+è©³ã—ãã¯ [[m:Method#parameters]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
+
+@see [[m:Proc#parameters]], [[m:Method#parameters]]
 #@end

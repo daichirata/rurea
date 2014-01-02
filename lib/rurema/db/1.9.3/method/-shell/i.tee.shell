@@ -4,11 +4,11 @@ kind=defined
 
 --- tee(file) -> Shell::Filter
 
-�¹Ԥ����, ���������ƤȤ��� Filter ���֥������Ȥ��֤��ޤ�.
+実行すると, それらを内容とする Filter オブジェクトを返します.
 
-@param file �����륳�ޥ��tee ��Ϳ����ե�����̾��ʸ����ǻ��ꤷ�ޤ���
+@param file シェルコマンドtee に与えるファイル名を文字列で指定します。
 
-ư����
+動作例
   require 'shell'
   Shell.def_system_command("head")
   sh = Shell.new

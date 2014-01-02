@@ -3,12 +3,12 @@ visibility=public
 kind=added
 
 --- verify_callback=(proc)
-¸¡¾Ú¤ò¥Õ¥£¥ë¥¿¤¹¤ë¥³¡¼¥ë¥Ğ¥Ã¥¯¤òÀßÄê¤·¤Ş¤¹¡£
+æ¤œè¨¼ã‚’ãƒ•ã‚£ãƒ«ã‚¿ã™ã‚‹ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-¾Ü¤·¤¯¤Ï [[m:OpenSSL::X509::Store#verify_callback=]] ¤ä
-[[m:OpenSSL::SSL::SSLContext#verify_callback=]] ¤ò¸«¤Æ¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ [[m:OpenSSL::X509::Store#verify_callback=]] ã‚„
+[[m:OpenSSL::SSL::SSLContext#verify_callback=]] ã‚’è¦‹ã¦ãã ã•ã„ã€‚
 
-@param proc ÀßÄê¤¹¤ë [[c:Proc]] ¥ª¥Ö¥¸¥§¥¯¥È
+@param proc è¨­å®šã™ã‚‹ [[c:Proc]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 @see [[m:Net::HTTP#verify_callback]],
      [[m:OpenSSL::X509::Store#verify_callback=]],
      [[m:OpenSSL::SSL::SSLContext#verify_callback=]]

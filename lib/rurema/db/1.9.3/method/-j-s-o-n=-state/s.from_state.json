@@ -4,12 +4,12 @@ kind=defined
 
 --- from_state(options) -> JSON::State
 
-Ϳ����줿 options �ˤ�ä��������� [[c:JSON::State]] �Υ��󥹥��󥹤��֤��ޤ���
+与えられた options によって生成した [[c:JSON::State]] のインスタンスを返します。
 
-@param options [[c:JSON::State]] �Υ��󥹥��󥹤����ϥå������ꤷ�ޤ���
+@param options [[c:JSON::State]] のインスタンスか、ハッシュを指定します。
 
-@return options ���ϥå���Ǥ�����ϡ�����ˤ�äƽ�������� [[c:JSON::State]] ��
-        �֤��ޤ���options �� [[c:JSON::State]] �Υ��󥹥��󥹤Ǥ������ñ��
-        options ���֤��ޤ���������Ǥ�̵�����ϡ��������ꤵ��Ƥ��ʤ� [[c:JSON::State]] ��
-        ���󥹥��󥹤��֤��ޤ���
+@return options がハッシュである場合は、それによって初期化した [[c:JSON::State]] を
+        返します。options が [[c:JSON::State]] のインスタンスである場合は単に
+        options を返します。いずれでも無い場合は、何も設定されていない [[c:JSON::State]] の
+        インスタンスを返します。
 

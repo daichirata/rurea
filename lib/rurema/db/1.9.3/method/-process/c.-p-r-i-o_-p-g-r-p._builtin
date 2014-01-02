@@ -2,9 +2,9 @@ names=PRIO_PGRP
 visibility=public
 kind=defined
 
---- PRIO_PGRP
+--- PRIO_PGRP -> Fixnum
 
-┬╨╛▌д╚д╣дые╫ещедекеъе╞егдме╫еэе╗е╣е░еыб╝е╫е╫ещедекеъе╞егд╟двдыд│д╚дЄ╔╜д╣─ъ┐Їд╟д╣бг
+хп╛ш▒буБиуБЩуВЛуГЧуГйуВдуВкуГкуГЖуВгуБМуГЧуГнуВ╗уВ╣уВ░уГлуГ╝уГЧуГЧуГйуВдуВкуГкуГЖуВгуБзуБВуВЛуБУуБиуВТшбиуБЩхоЪцХ░уБзуБЩуАВ
 
-[[m:Process.#getpriority]] д▐д┐д╧ [[m:Process.#setpriority]] д╟╗╚дядьд▐д╣бг
+[[m:Process.#getpriority]] уБ╛уБЯуБп [[m:Process.#setpriority]] уБзф╜┐уВПуВМуБ╛уБЩуАВ
 

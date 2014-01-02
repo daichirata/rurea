@@ -4,9 +4,9 @@ kind=defined
 
 --- add!{ ... } -> self
 
-Ϳ����줿�֥��å��μ¹Ի��֤� self �˲û������֤��ޤ���
+与えられたブロックの実行時間を self に加算して返します。
 
-���Υ᥽�åɤ� self ���˲�Ū���ѹ����ޤ���
+このメソッドは self を破壊的に変更します。
 
 @see [[m:Benchmark.#measure]]
 

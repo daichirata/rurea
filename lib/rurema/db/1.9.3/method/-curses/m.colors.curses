@@ -5,7 +5,7 @@ kind=defined
 --- colors -> Integer
 @todo ???
 
-���ο����֤��ޤ���
+色の数を返します。
 
-@raise NotImplementedError ���ݡ��Ȥ��Ƥ��ʤ��Ķ���ȯ�����ޤ���
+@raise NotImplementedError サポートしていない環境で発生します。
 

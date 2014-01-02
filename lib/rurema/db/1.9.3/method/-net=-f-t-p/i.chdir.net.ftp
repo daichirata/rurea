@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- chdir(dirname) -> nil
-��⡼�ȥ����ФǤΥ����ȥǥ��쥯�ȥ�� dirname ���ѹ����ޤ���
+リモートサーバでのカレントディレクトリを dirname に変更します。
 
-@param dirname �ѹ���Υǥ��쥯�ȥ��Ϳ���ޤ���
-@raise Net::FTPReplyError ���������ɤ����顼�Ǥ������ȯ�����ޤ��������ȥǥ��쥯�ȥ��ѹ��˼��Ԥ�������ȯ�����ޤ���
+@param dirname 変更先のディレクトリを与えます。
+@raise Net::FTPReplyError 応答コードがエラーである場合に発生します。カレントディレクトリ変更に失敗した場合に発生します。
 

@@ -4,8 +4,8 @@ kind=defined
 
 --- gem_spec -> Gem::Specification
 
-package �������åȤǻ��Ѥ��� gemspec ���֤��ޤ���
+package ターゲットで使用する gemspec を返します。
 
-gemspec �ˤϥѥå�����̾���С�����󡢥ѥå������˴ޤޤ��ե�����ʤɤ����
-����Ƥ���Τǡ�����������Ū�˻��ꤹ��ɬ�פϤ���ޤ���
+gemspec にはパッケージ名、バージョン、パッケージに含まれるファイルなどが定義
+されているので、それらを明示的に指定する必要はありません。
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- name_list    -> [String]
-ÍøÍÑ²ÄÇ½¤Ê¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤ÎÌ¾Á°¤òÊ¸»úÎó¤ÎÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+åˆ©ç”¨å¯èƒ½ãªã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã®åå‰ã‚’æ–‡å­—åˆ—ã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   p Encoding.name_list
   #=> ["US-ASCII", "ASCII-8BIT", "UTF-8",
        "ISO-8859-1", "Shift_JIS", "EUC-JP",

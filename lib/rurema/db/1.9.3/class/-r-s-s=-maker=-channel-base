@@ -6,18 +6,18 @@ library=rss
 aliases=
 aliasof=
 
-channel���Ǥ��ͤ����ꤷ�ޤ���
+channel要素の値を設定します．
 
-RSS 1.0�������������about��title��link��
-description�����ꤷ�ʤ���Ф����ޤ���
+RSS 1.0を生成する場合はabout，title，link，
+descriptionを設定しなければいけません．
 
-RSS 0.91�������������title��link��
-description��language�����ꤷ�ʤ���Ф����ޤ���
+RSS 0.91を生成する場合はtitle，link，
+description，languageを設定しなければいけません．
 
-RSS 2.0�������������title��link��
-description�����ꤷ�ʤ���Ф����ޤ���
+RSS 2.0を生成する場合はtitle，link，
+descriptionを設定しなければいけません．
 
-maker.channel�ˤʤ�餫���ͤ����ꤷ�Ƥ����ʤ��顤�嵭
-��maker.channel���׵᤹���ͤ����ꤷ�Ƥ��ʤ�����
-RSS::NotSetError�㳰��ȯ�����ޤ����ɤ��ͤ����ꤷ�Ƥ���
-�������㳰��ȯ�����ޤ���
+maker.channelになんらかの値を設定しておきながら，上記
+のmaker.channelが要求する値を設定していない場合は
+RSS::NotSetError例外が発生します．どの値も設定していな
+い場合は例外は発生しません．

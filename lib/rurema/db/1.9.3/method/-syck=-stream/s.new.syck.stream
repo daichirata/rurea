@@ -4,10 +4,10 @@ kind=defined
 
 --- new(opts = {}) -> Syck::Stream
 
-���ȥ꡼����֤��ޤ������ȥ꡼���YAML�ɥ�����Ȥ�ʣ���ݻ����뤳�Ȥ��Ǥ��ޤ���
+ストリームを返します。ストリームはYAMLドキュメントを複数保持することができます。
 
-@param opts ���ץ�������ꤷ�ޤ��������ǽ�ʥ��ץ�����
-            [[m:Syck::DEFAULTS]] �򻲾Ȥ��Ƥ���������
+@param opts オプションを指定します。設定可能なオプションは
+            [[m:Syck::DEFAULTS]] を参照してください。
 
 @see [[m:Syck::Stream#options]], [[m:Syck::Stream#options=]]
 

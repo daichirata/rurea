@@ -4,10 +4,10 @@ kind=defined
 
 --- store(key, value) -> String
 
-key ¤ËÂĞ¤·¤Æ value ¤ò³ÊÇ¼¤·¤Ş¤¹¡£
+key ã«å¯¾ã—ã¦ value ã‚’æ ¼ç´ã—ã¾ã™ã€‚
 
-@param key   ¥­¡¼¡£
-@param value ÃÍ¡£
+@param key   ã‚­ãƒ¼ã€‚
+@param value å€¤ã€‚
 
 @see [[m:DBM#[]=]]
 

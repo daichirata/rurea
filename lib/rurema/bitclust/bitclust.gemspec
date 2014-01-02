@@ -17,7 +17,8 @@ EOD
 
   s.rubyforge_project = ""
 
-  s.files         = FileList["**/*"].exclude("*~", "pkg", "pkg/*")
+  s.files         = FileList["ChangeLog", "Gemfile", "README", "Rakefile", "bitclust.gemspec",
+                             "data/**/*", "lib/**/*.rb", "theme/**/*"].exclude("*~")
   s.test_files    = FileList["test/**/*.rb"].exclude("*~")
   s.executables   = ["bitclust"]
   s.require_paths = ["lib"]
@@ -26,5 +27,8 @@ EOD
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
   s.add_development_dependency "test-unit", ">= 2.3.0"
+  s.add_development_dependency "test-unit-notify"
+  s.add_development_dependency "test-unit-rr"
   s.add_runtime_dependency "rack"
+  s.add_runtime_dependency "progressbar"
 end

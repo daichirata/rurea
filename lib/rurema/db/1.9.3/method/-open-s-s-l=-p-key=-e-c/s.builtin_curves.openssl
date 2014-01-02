@@ -4,9 +4,9 @@ kind=defined
 
 --- builtin_curves -> [[String, String]]
 
-ÁÈ¤ß¹þ¤ß¤Î¶ÊÀþ¤ÎÌ¾Á°¤È¡¢¤½¤ì¤ËÂÐ¤¹¤ëÀâÌÀ¤òÊ¸»úÎó¤ÎÇÛÎó¥Ú¥¢¤ÎÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+çµ„ã¿è¾¼ã¿ã®æ›²ç·šã®åå‰ã¨ã€ãã‚Œã«å¯¾ã™ã‚‹èª¬æ˜Žã‚’æ–‡å­—åˆ—ã®é…åˆ—ãƒšã‚¢ã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   OpenSSL::PKey::EC.builtin_curves
   # => [["secp112r1", "SECG/WTLS curve over a 112 bit prime field"],
   #     ["secp112r2", "SECG curve over a 112 bit prime field"], 

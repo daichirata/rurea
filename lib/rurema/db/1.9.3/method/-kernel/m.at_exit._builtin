@@ -4,13 +4,13 @@ kind=defined
 
 --- at_exit{ ... } -> Proc
 
-Ϳ����줿�֥��å��򥤥󥿥ץ꥿��λ���˼¹Ԥ��ޤ���
+与えられたブロックをインタプリタ終了時に実行します。
 
-at_exit���᥽�åɤǤ�����������С�END �֥��å��ˤ�뽪λ
-��������Ͽ��Ʊ���Ǥ�����Ͽ������������ä����ȤϤǤ��ޤ���
-[[d:spec/terminate]]�⻲�Ȥ��Ƥ���������
+at_exitがメソッドである点を除けば、END ブロックによる終了
+処理の登録と同等です。登録した処理を取り消すことはできません。
+[[d:spec/terminate]]も参照してください。
 
-@return ��Ͽ���������� [[c:Proc]] ���֥������Ȥ��֤��ޤ���
+@return 登録した処理を [[c:Proc]] オブジェクトで返します。
 
   3.times do |i|
     at_exit{puts "at_exit#{i}"}

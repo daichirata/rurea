@@ -3,18 +3,18 @@ visibility=public
 kind=defined
 
 --- new(obj) -> OpenSSL::SSL::Session
-���������å���󥪥֥������Ȥ��������ޤ���
+新しいセッションオブジェクトを生成します。
 
-������ [[c:OpenSSL::SSL::SSLSocket]] ���Ϥ��줿���ϡ�
-����˷���դ���줿���å�����ɽ�����֥������Ȥ��֤��ޤ���
-[[m:OpenSSL::SSL::SSLSocket#session]] ��Ʊ��ư��򤷤ޤ���
+引数に [[c:OpenSSL::SSL::SSLSocket]] が渡された場合は、
+それに結び付けられたセッションを表すオブジェクトを返します。
+[[m:OpenSSL::SSL::SSLSocket#session]] と同じ動作をします。
 
-������ʸ����ξ�硢 PEM �����⤷���� DER ��������¸���줿
-���å����ǡ����Ǥ���Ȥߤʤ������å���󥪥֥������Ȥ��������ޤ���
-������ [[c:IO]] ���֥������ȤǤ�����ϡ��ǡ������ɤߤ���
-PEM �����⤷���� DER �����Ȥߤʤ��ƥ��å���󥪥֥������Ȥ��������ޤ���
+引数が文字列の場合、 PEM 形式もしくは DER 形式で保存された
+セッションデータであるとみなし、セッションオブジェクトを生成します。
+引数が [[c:IO]] オブジェクトである場合は、データを読みだし
+PEM 形式もしくは DER 形式とみなしてセッションオブジェクトを生成します。
 
-@param obj ���å���󥪥֥������Ȥ����������֥�������
-@raise OpenSSL::SSL::Session::SessionError ���֥������Ȥ�������
-       ���Ԥ�������ȯ�����ޤ�
+@param obj セッションオブジェクトの生成元オブジェクト
+@raise OpenSSL::SSL::Session::SessionError オブジェクトの生成に
+       失敗した場合に発生します
 

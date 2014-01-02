@@ -2,8 +2,8 @@ names=front
 visibility=public
 kind=defined
 
---- front
-@todo
-The front object of the DRbServer.
+--- front -> object
+サーバに設定されたフロントオブジェクトを返します。
 
-This object receives remote method calls made on the server��s URI alone, with an object id.
+@see [[m:DRb::DRbServer.new]], [[m:DRb.#start_service]]
+

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- O_EXCL -> Integer
-�ե����뤬¸�ߤ�����˼��Ԥ��ޤ���[[m:Fcntl::O_CREAT]] �Ȱ��˻��Ѥ��ޤ���
+ファイルが存在する場合に失敗します。[[m:Fcntl::O_CREAT]] と一緒に使用します。
 

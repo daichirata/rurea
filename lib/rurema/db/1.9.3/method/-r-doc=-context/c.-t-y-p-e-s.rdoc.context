@@ -4,5 +4,5 @@ kind=defined
 
 --- TYPES -> ["class", "instance"]
 
-�᥽�åɤμ����ʸ�����������֤��ޤ���
+メソッドの種類を文字列の配列で返します。
 

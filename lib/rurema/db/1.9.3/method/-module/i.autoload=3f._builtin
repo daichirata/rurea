@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- autoload?(const_name) -> String | nil
-autoload ������ޤ��������Ƥʤ�(�����ɤ���Ƥ��ʤ�) �Ȥ��ˤ��Υѥ�̾���֤��ޤ���
-�ޤ��������ɺѤߤʤ� nil ���֤��ޤ���
+autoload 定数がまだ定義されてない(ロードされていない) ときにそのパス名を返します。
+また、ロード済みなら nil を返します。
 
-@param const_name [[c:String]] �ޤ��� [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param const_name [[c:String]] または [[c:Symbol]] で指定します。
 
 @see [[m:Kernel.#autoload?]]
 

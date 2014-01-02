@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-ASN.1 ¤Î GeneralString ·¿(Universal ¥¿¥°¤Î¥¿¥°ÈÖ¹æ27)¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+ASN.1 ã® GeneralString å‹(Universal ã‚¿ã‚°ã®ã‚¿ã‚°ç•ªå·27)ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

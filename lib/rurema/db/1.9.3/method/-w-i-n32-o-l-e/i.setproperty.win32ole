@@ -5,36 +5,36 @@ kind=defined
 --- setproperty(name, val) -> ()
 --- setproperty(name, args..., val) -> ()
 
-���֥������ȤΥץ��ѥƥ������ꤷ�ޤ���
+オブジェクトのプロパティを設定します。
 
-�ץ��ѥƥ�̾����ꤷ��OLE�����ȥ᡼����󥪥֥������ȤΥץ��ѥƥ�
-��Ruby��°���������ˤ����ꤷ�ޤ���
+プロパティ名を指定してOLEオートメーションオブジェクトのプロパティ
+（Rubyの属性に相当）を設定します。
 
-�ʤ���OLE�����ȥ᡼�����λ��ͤˤ�ꡢ�ץ��ѥƥ�̾����ʸ������ʸ���϶�
-�̤���ޤ���
+なお、OLEオートメーションの仕様により、プロパティ名の大文字、小文字は区
+別されません。
 
-@param name �ץ��ѥƥ�̾��ʸ����ޤ��ϥ���ܥ�ǻ��ꤷ�ޤ���
-@param val �ץ��ѥƥ������ꤹ���ͤ���ꤷ�ޤ���
-@param args ����Ū�ʥץ��ѥƥ����Ф���������ܤ����ꤹ�뤿��ΰ������
-            �ꤷ�ޤ���
-@raise WIN32OLERuntimeError �����ȥ᡼����󥵡��ФθƤӽФ��˼��Ԥ��ޤ�����
-                            ��ͳ�ϥ�å�������HRESULT��Ĵ�٤Ƥ���������
+@param name プロパティ名を文字列またはシンボルで指定します。
+@param val プロパティに設定する値を指定します。
+@param args 集合的なプロパティに対する設定項目を特定するための引数を指
+            定します。
+@raise WIN32OLERuntimeError オートメーションサーバの呼び出しに失敗しました。
+                            理由はメッセージのHRESULTを調べてください。
 
-OLE�����ȥ᡼�����Υץ��ѥƥ���Ruby��°���Ȱۤʤꡢ�ѥ�᡼�����뤳
-�Ȥ��Ǥ��ޤ���
+OLEオートメーションのプロパティはRubyの属性と異なり、パラメータを取るこ
+とができます。
 
-���Ȥ���Excel��Worksheet���֥������Ȥ�Cells�ץ��ѥƥ��Ϸ���֤ȹ��ֹ��
-2�ĤΥѥ�᡼������ޤ���
+たとえばExcelのWorksheetオブジェクトのCellsプロパティは桁位置と行番号の
+2つのパラメータを取ります。
 
-�����VB�Ǥϼ��Τ褦�˵��ҤǤ��ޤ���
+これはVBでは次のように記述できます。
 
-  sheet.Cells(1, 1) = sheet.Cells(1, 2) ' ����B1�����Ƥ򥻥�A1��
+  sheet.Cells(1, 1) = sheet.Cells(1, 2) ' セルB1の内容をセルA1へ
 
-Ruby�ǤϾ嵭�Υ����ɤα��դ�VB��Ʊ������sheet.Cells(1, 2)�פΤ褦�˵���
-�Ǥ��ޤ��������դε��ҤϤǤ��ޤ���
+Rubyでは上記のコードの右辺をVBと同じく「sheet.Cells(1, 2)」のように記述
+できますが、左辺の記述はできません。
 
-���Τ��ᡢ������Τ褦��setproperty�᥽�åɤ����Ѥ��ơ��ѥ�᡼���դ���
-���ѥƥ������ꤷ�ޤ���
+そのため、次の例のようにsetpropertyメソッドを利用して、パラメータ付きプ
+ロパティを設定します。
 
 
    excel = WIN32OLE.new('Excel.Application')

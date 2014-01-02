@@ -4,13 +4,13 @@ kind=defined
 
 --- parse(obj) -> Array
 
-�С�������ɬ�׾���ѡ���������ӱ黻�ҤȥС����������ǤȤ��������Ǥ�������֤��ޤ���
+バージョンの必要上件をパースして比較演算子とバージョンを要素とする二要素の配列を返します。
 
-@param obj ɬ�׾���ɽ��ʸ����ޤ��� [[c:Gem::Version]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param obj 必要上件を表す文字列または [[c:Gem::Version]] のインスタンスを指定します。
 
-@return ��ӱ黻�Ҥ� [[c:Gem::Version]] �Υ��󥹥��󥹤����ǤȤ��������Ǥ�������֤��ޤ���
+@return 比較演算子と [[c:Gem::Version]] のインスタンスを要素とする二要素の配列を返します。
 
-@raise ArgumentError obj �������ʥ��֥������Ȥ���ꤹ���ȯ�����ޤ���
+@raise ArgumentError obj に不正なオブジェクトを指定すると発生します。
 
 
 

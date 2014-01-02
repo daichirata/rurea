@@ -4,5 +4,5 @@ kind=defined
 
 --- VERSION -> "0.1"
 
-[[lib:yaml/dbm]] �ΥС�������ʸ������֤��ޤ���
+[[lib:yaml/dbm]] のバージョンを文字列で返します。
 

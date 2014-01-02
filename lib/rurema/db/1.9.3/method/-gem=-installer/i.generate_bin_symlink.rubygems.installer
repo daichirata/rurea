@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- generate_bin_symlink(filename, bindir)
-Gem �����äƤ��륢�ץꥱ��������¹Ԥ��뤿��Υ���ܥ�å���󥯤�������ޤ���
+Gem に入っているアプリケーションを実行するためのシンボリックリンクを作成します。
 
-���ߥ��󥹥ȡ��뤵��Ƥ��� Gem ���⿷���� Gem �򥤥󥹥ȡ��뤹��Ȥ��ϡ�
-����ܥ�å���󥯤򹹿����ޤ���
+現在インストールされている Gem よりも新しい Gem をインストールするときは、
+シンボリックリンクを更新します。
 
-@param filename �ե�����̾����ꤷ�ޤ���
+@param filename ファイル名を指定します。
 
-@param bindir �¹ԥե���������֤���ǥ��쥯�ȥ����ꤷ�ޤ���
+@param bindir 実行ファイルを配置するディレクトリを指定します。
 

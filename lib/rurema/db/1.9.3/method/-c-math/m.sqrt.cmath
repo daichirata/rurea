@@ -4,13 +4,13 @@ kind=defined
 
 --- sqrt(z) -> Float | Complex
 
-z ¤ÎÊ¿Êýº¬¤òÊÖ¤·¤Þ¤¹¡£
+z ã®å¹³æ–¹æ ¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param z ¿ôÃÍ
+@param z æ•°å€¤
 
-@raise TypeError z ¤Ë¿ôÃÍ°Ê³°¤ò»ØÄê¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise TypeError z ã«æ•°å€¤ä»¥å¤–ã‚’æŒ‡å®šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require "cmath"
   CMath.sqrt(-1)               # => (0+1.0i)

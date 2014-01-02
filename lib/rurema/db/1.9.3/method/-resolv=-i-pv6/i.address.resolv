@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- address -> String
-IPv6���ɥ쥹��ɽ�� 16 byte ��ʸ����(�Х�����)���֤��ޤ���
+IPv6アドレスを表す 16 byte の文字列(バイト列)を返します。
 

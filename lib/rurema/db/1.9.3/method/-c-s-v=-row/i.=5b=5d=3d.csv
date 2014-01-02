@@ -4,27 +4,27 @@ kind=defined
 
 --- []=(header_or_index, value)
 
-�إå���̾��������ǥå����ǥե�����ɤ�õ�����ͤ򥻥åȤ��ޤ���
+ヘッダの名前かインデックスでフィールドを探し、値をセットします。
 
-����������Υ���ǥå�������ꤹ��ȡ��إå���̾���� nil �ˤʤ�ޤ���
-¸�ߤ��ʤ��إå�����ꤹ��ȡ����������Ǥ��������ɲä��ޤ���
+末尾より後ろのインデックスを指定すると、ヘッダの名前は nil になります。
+存在しないヘッダを指定すると、新しい要素を末尾に追加します。
 
-@param header_or_index �إå���̾��������ǥå�������ꤷ�ޤ���
+@param header_or_index ヘッダの名前かインデックスを指定します。
 
-@param value �ͤ���ꤷ�ޤ���
+@param value 値を指定します。
 
 @see [[m:CSV::Row#field]]
 
 --- []=(header, offset, value)
 
-�إå���̾���ǥե�����ɤ�õ�����ͤ򥻥åȤ��ޤ���
+ヘッダの名前でフィールドを探し、値をセットします。
 
-@param header �إå���̾������ꤷ�ޤ���
+@param header ヘッダの名前を指定します。
 
-@param offset ���Υ���ǥå�������ǡ��إå���̾����õ���ޤ���
-              ��ʣ���Ƥ���إå���������������Ǥ���
+@param offset このインデックスより後で、ヘッダの名前を探します。
+              重複しているヘッダがある場合に便利です。
 
-@param value �ͤ���ꤷ�ޤ���
+@param value 値を指定します。
 
 @see [[m:CSV::Row#field]]
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- check_closed
-���Ȥ˴�Ϣ�դ���줿 IO ������ close ����Ƥ��뤫�ɤ��������å����ޤ���
+自身に関連付けられた IO が既に close されているかどうかチェックします。
 
-@raise IOError ���Ȥ˴�Ϣ�դ���줿 IO ������ close ����Ƥ������ȯ
-               �����ޤ���
+@raise IOError 自身に関連付けられた IO が既に close されている場合に発
+               生します。
 

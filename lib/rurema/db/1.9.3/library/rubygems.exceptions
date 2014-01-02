@@ -3,5 +3,6 @@ classes=Gem=Exception,Gem=CommandLineError,Gem=DependencyError,Gem=DependencyRem
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-RubyGems ¤Ç»ÈÍÑ¤¹¤ëÎã³°¥¯¥é¥¹¤òÄêµÁ¤·¤¿¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+RubyGems ã§ä½¿ç”¨ã™ã‚‹ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’å®šç¾©ã—ãŸãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

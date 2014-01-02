@@ -4,13 +4,13 @@ kind=defined
 
 --- IA5String(value) -> OpenSSL::ASN1::IA5String -> OpenSSL::ASN1::IA5String
 --- IA5String(value, tag, tagging, tag_class) -> OpenSSL::ASN1::IA5String
-ASN.1 д╬ IA5String ╖┐д╬├═дЄ╔╜╕╜д╣ды Ruby д╬еке╓е╕езепе╚дЄ
-└╕└од╖д▐д╣бг
+ASN.1 уБо IA5String хЮЛуБохАдуВТшбичП╛уБЩуВЛ Ruby уБоуВкуГЦуВ╕уВзуВпуГИуВТ
+чФЯцИРуБЧуБ╛уБЩуАВ
 
-[[m:OpenSSL::ASN1::IA5String.new]] д╚╞▒д╕д╟д╣бг
+[[m:OpenSSL::ASN1::IA5String.new]] уБихРМуБШуБзуБЩуАВ
 
-@param value ASN.1 ├═дЄ╔╜д╣ Ruby д╬еке╓е╕езепе╚(╩╕╗·╬є)
-@param tag е┐е░╚╓╣ц
-@param tagging е┐е░╔╒д▒д╬╩¤╦б(:IMPLICIT дтд╖дпд╧ :EXPLICIT)
-@param tag_class е┐е░епеще╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE д╬ддд║дьдл)
+@param value ASN.1 хАдуВТшбиуБЩ Ruby уБоуВкуГЦуВ╕уВзуВпуГИ(цЦЗхнЧхИЧ)
+@param tag уВ┐уВ░чХкхП╖
+@param tagging уВ┐уВ░ф╗ШуБСуБоцЦ╣ц│Х(:IMPLICIT уВВуБЧуБПуБп :EXPLICIT)
+@param tag_class уВ┐уВ░уВпуГйуВ╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE уБоуБДуБЪуВМуБЛ)
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- get_instance(server, *options) -> self
 
-²¿¤â¤»¤º¤Ë¼«¿È¤òÊÖ¤·¤Ş¤¹¡£
+ä½•ã‚‚ã›ãšã«è‡ªèº«ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param server [[m:WEBrick::HTTPServer#mount]] Âè3°ú¿ô°Ê¹ß¤Ë»ØÄê¤µ¤ì¤¿ÃÍ¤¬¤½¤Î¤Ş¤ŞÍ¿¤¨¤é¤ì¤Ş¤¹¡£
+@param server [[m:WEBrick::HTTPServer#mount]] ç¬¬3å¼•æ•°ä»¥é™ã«æŒ‡å®šã•ã‚ŒãŸå€¤ãŒãã®ã¾ã¾ä¸ãˆã‚‰ã‚Œã¾ã™ã€‚
 
-@param options [[m:WEBrick::HTTPServer#mount]] Âè3°ú¿ô°Ê¹ß¤Ë»ØÄê¤µ¤ì¤¿ÃÍ¤¬¤½¤Î¤Ş¤ŞÍ¿¤¨¤é¤ì¤Ş¤¹¡£
+@param options [[m:WEBrick::HTTPServer#mount]] ç¬¬3å¼•æ•°ä»¥é™ã«æŒ‡å®šã•ã‚ŒãŸå€¤ãŒãã®ã¾ã¾ä¸ãˆã‚‰ã‚Œã¾ã™ã€‚
 
 @see [[m:WEBrick::HTTPServlet::AbstractServlet.get_instance]]
 

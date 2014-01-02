@@ -6,4 +6,7 @@ library=rexml
 aliases=
 aliasof=
 
+あるノード(親ノード)に子ノードとして保持されている
+ノードを表すクラスです。
 
+親にアクセスするためには [[m:REXML::Child#parent]] を使います。

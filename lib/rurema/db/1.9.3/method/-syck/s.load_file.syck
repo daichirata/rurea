@@ -4,35 +4,35 @@ kind=defined
 
 --- load_file(file) -> object
 
-Ϳ����줿̾���Υե����뤫�� YAML �ե����ޥåȤ�ʸ����ɤ߹���
-Ruby �Υ��֥������Ȥ����������֤��ޤ���
-�ե����뤬ʣ���� YAML �ɥ�����Ȥ�ޤ�Ǥ��Ƥ⡢
-�ǽ�Τ�Τ��� Ruby �Υ��֥������Ȥ��Ѵ����ޤ���
+与えられた名前のファイルから YAML フォーマットの文書を読み込み
+Ruby のオブジェクトを生成して返します。
+ファイルが複数の YAML ドキュメントを含んでいても、
+最初のものしか Ruby のオブジェクトに変換しません。
 
-@param file YAML�ե����ޥåȤΥե�����
+@param file YAMLフォーマットのファイル
 
   ---
   - Monday
   -
-   - ��� 
-   - ����
-   - ����
-   - �Ҳ�
-   - �ΰ�
+   - 国語 
+   - 算数
+   - 理科
+   - 社会
+   - 体育
   ---
   - Friday
   -
-   - �ΰ�
-   - ����
-   - ����
-   - ��� 
-   - �Ҳ�
+   - 体育
+   - 算数
+   - 理科
+   - 国語 
+   - 社会
   #end of jikanwari.yaml
 
   require 'yaml'
   
   puts YAML.load_file('jikanwari.yaml').join(",")
   
-  #=> Monday,���,����,����,�Ҳ�,�ΰ�
+  #=> Monday,国語,算数,理科,社会,体育
 
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- start(ap_path = nil) -> ()
 
-[[c:IRB]] ���������ơ��ȥåץ�٥�� irb �򳫻Ϥ��ޤ���
+[[c:IRB]] を初期化して、トップレベルの irb を開始します。
 
-@param ap_path irb ���ޥ�ɤΥѥ�����ꤷ�ޤ���
+@param ap_path irb コマンドのパスを指定します。
 

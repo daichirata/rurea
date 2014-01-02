@@ -3,5 +3,6 @@ classes=TkTextTag,TkTextNamedTag,TkTextTagSel
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

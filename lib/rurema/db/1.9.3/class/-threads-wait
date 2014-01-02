@@ -6,4 +6,4 @@ library=thwait
 aliases=ThWait
 aliasof=
 
-ʣ������åɤν�λ���Ԥĵ�ǽ���󶡤��ޤ���
+複数スレッドの終了を待つ機能を提供します。

@@ -1,11 +1,10 @@
-names=verbose,verbose=
+names=verbose
 visibility=public
 kind=defined
 
---- verbose
---- verbose= 
-@todo
-Get the default value of the :verbose option. 
-See new(). The initial default value is false.
+--- verbose -> bool
+サーバ起動時の :verbose オプションのデフォルト値を返します。
 
+@see [[m:DRb::DRbServer.new]], [[m:DRb.#start_service]], 
+     [[m:DRb::DRbServer.verbose=]]
 

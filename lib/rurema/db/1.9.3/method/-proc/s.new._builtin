@@ -5,10 +5,10 @@ kind=defined
 --- new -> Proc
 --- new { ... } -> Proc
 
-�֥��å��򥳥�ƥ����ȤȤȤ�˥��֥������Ȳ������֤��ޤ���
+ブロックをコンテキストとともにオブジェクト化して返します。
 
-�֥��å�����ꤷ�ʤ���С����Υ᥽�åɤ�ƤӽФ����᥽�åɤ�
-�֥��å���ȼ���Ȥ��ˡ������ Proc ���֥������ȤȤ������������֤��ޤ���
+ブロックを指定しなければ、このメソッドを呼び出したメソッドが
+ブロックを伴うときに、それを Proc オブジェクトとして生成して返します。
 
   def foo
     pr = Proc.new
@@ -17,7 +17,7 @@ kind=defined
   foo {|arg| p arg }
   # => 1
 
-����ϰʲ���Ʊ���Ǥ���
+これは以下と同じです。
 
   def foo
     yield(1)
@@ -25,8 +25,8 @@ kind=defined
   foo {|arg| p arg }
   # => 1
 
-�ƤӽФ����Υ᥽�åɤ��֥��å���ȼ��ʤ���С��㳰
-[[c:ArgumentError]] ��ȯ�����ޤ���
+呼び出し元のメソッドがブロックを伴わなければ、例外
+[[c:ArgumentError]] が発生します。
 
   def foo
     Proc.new
@@ -36,7 +36,7 @@ kind=defined
           from -:2:in `foo'
           from -:4
 
-Proc.new �ϡ�Proc#initialize ���������Ƥ����
-���֥������Ȥν�����Τ���ˤ����ƤӽФ��ޤ������Τ��Ȥ�
-�����С�[[m:Kernel.#proc]] ��Ʊ���Ǥ���
+Proc.new は、Proc#initialize が定義されていれば
+オブジェクトの初期化のためにこれを呼び出します。このことを
+除けば、[[m:Kernel.#proc]] と同じです。
 

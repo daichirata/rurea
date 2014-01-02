@@ -2,9 +2,10 @@ names=default_load_limit
 visibility=public
 kind=defined
 
---- default_load_limit(sz)
-@todo
+--- default_load_limit(sz) -> ()
+サーバ起動時の :load_limit オプションのデフォルト値を指定します。
 
-Set the default value for the :load_limit option.
-See new(). The initial default value is 25 MB. 
+初期値は25MBです。
+
+@see [[m:DRb::DRbServer.new]], [[m:DRb.#start_service]]
 

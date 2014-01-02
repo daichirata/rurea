@@ -2,6 +2,9 @@ names=write
 visibility=public
 kind=defined
 
---- write(out, indent = -1)
-@todo
+--- write(out, indent = -1) -> ()
+self を out に出力します。
+
+@param out 出力先の IO オブジェクト
+@param indent インデント数(無視されます)
 

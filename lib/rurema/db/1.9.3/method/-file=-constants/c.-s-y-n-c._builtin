@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- SYNC -> Integer
-�ե������Ʊ���⡼�ɤǳ����ޤ���
-open(2) �� O_SYNC������Ǥ�����˻Ȥ��ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+ファイルを同期モードで開きます。
+open(2) で O_SYNCが指定できる場合に使えます。
+[[m:File.open]]で使用します。
 

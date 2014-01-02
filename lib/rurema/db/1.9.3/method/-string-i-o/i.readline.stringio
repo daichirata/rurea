@@ -4,21 +4,21 @@ kind=defined
 
 --- readline(rs = $/)    -> String
 
-���Ȥ��� 1 ���ɤ߹���ǡ�����ʸ������֤��ޤ���
+自身から 1 行読み込んで、その文字列を返します。
 
-ʸ����ν�ü����ã�������ˤϡ��㳰 EOFError ��ȯ�������ޤ���
-[[m:IO#readline]] �Ȱ㤤�ɤ߹����ʸ������ѿ� [[m:$_]] �˥��åȤ��ޤ���
+文字列の終端に到達した時には、例外 EOFError を発生させます。
+[[m:IO#readline]] と違い読み込んだ文字列を変数 [[m:$_]] にセットしません。
 
-@param rs �Ԥζ��ڤ��ʸ����ǻ��ꤷ�ޤ���rs �� nil ����ꤹ��ȹԶ��ڤ�ʤ��Ȥߤʤ��ޤ�����ʸ���� "" ����ꤹ���Ϣ³������Ԥ�Ԥζ��ڤ�Ȥߤʤ��ޤ�(�ѥ饰��ե⡼��)��
+@param rs 行の区切りを文字列で指定します。rs に nil を指定すると行区切りなしとみなします。空文字列 "" を指定すると連続する改行を行の区切りとみなします(パラグラフモード)。
 
-@raise EOFError ʸ����ν�ü����ã��������ȯ�����ޤ���
+@raise EOFError 文字列の終端に到達した時に発生します。
 
-@raise IOError ���Ȥ��ɤ߹����Ѥ˥����ץ󤵤�Ƥ��ʤ����ȯ�����ޤ���
+@raise IOError 自身が読み込み用にオープンされていなければ発生します。
 
   a = StringIO.new("hoge\nfoo\nbar\n")
   a.readline                           #=> "hoge\n"
   a.readline(nil)                      #=> "foo\nbar\n"
-  a.readline                           #=> EOFError ��ȯ������
+  a.readline                           #=> EOFError が発生する
 
 @see [[m:$/]]
 

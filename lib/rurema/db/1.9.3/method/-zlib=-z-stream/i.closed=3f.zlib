@@ -5,4 +5,4 @@ kind=defined
 --- closed? -> bool
 --- ended? -> bool
 
-���ȥ꡼�ब�Ĥ����Ƥ�����˿����֤��ޤ���
+ストリームが閉じられている時に真を返します。

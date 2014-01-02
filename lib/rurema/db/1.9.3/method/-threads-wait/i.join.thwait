@@ -4,9 +4,9 @@ kind=defined
 
 --- join(*threads) -> ()
 
-��λ���Ԥĥ���åɤ��оݤȤ��ơ�threads �ǻ��ꤵ�줿����åɤ���ꤷ�ޤ���
+終了を待つスレッドの対象として、threads で指定されたスレッドを指定します。
 
-@param threads ʣ������åɤν�λ���Ԥĥ���åɤ˻��ꤵ�줿threads��ä��ޤ���
+@param threads 複数スレッドの終了を待つスレッドに指定されたthreadsを加えます。
 
   require 'thwait'
 

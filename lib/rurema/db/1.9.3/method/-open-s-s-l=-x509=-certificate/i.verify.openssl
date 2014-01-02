@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- verify(key) -> bool
-�������ȯ�ԼԤθ������ǽ�̾�򸡾ڤ��ޤ���
+証明書の発行者の公開鍵で署名を検証します。
 
-���ڤ��������������ʤ�� self �� key �ǽ�̾���줿���Ȥ�
-��ǧ���줿���˿����֤��ޤ���
+検証に成功した、すなわち self が key で署名されたことが
+確認された場合に真を返します。
 
-@param key ���ڤ����Ѥ���ȯ�ԼԤθ�����
+@param key 検証に利用する発行者の公開鍵
 

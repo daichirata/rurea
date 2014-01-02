@@ -6,6 +6,6 @@ library=rubygems.package
 aliases=
 aliasof=
 
-���Υ��饹�� [[c:FileUtils]] �Υ�åѡ��Ǥ���
+このクラスは [[c:FileUtils]] のラッパーです。
 
-�����󥰤ε�ǽ���ɲä��Ƥ��ޤ���
+ロギングの機能を追加しています。

@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- put(path, data, initheader = nil) -> Net::HTTPResponse
-�����о�� path �ˤ��륨��ƥ��ƥ����Ф�ʸ���� data ��
-PUT ������ޤ���
+サーバ上の path にあるエンティティに対し文字列 data を
+PUT で送ります。
 
-�֤��ͤ� [[c:Net::HTTPResponse]] �Υ��󥹥��󥹤Ǥ���
+返り値は [[c:Net::HTTPResponse]] のインスタンスです。
 
-@param path �������륨��ƥ��ƥ��Υѥ���ʸ����ǻ��ꤷ�ޤ���
-@param data ����ǡ�����ʸ����ǻ��ꤷ�ޤ���
-@param initheader �ꥯ�����Ȥ� HTTP �إå���ϥå���ǻ��ꤷ�ޤ���
+@param path 取得するエンティティのパスを文字列で指定します。
+@param data 送るデータを文字列で指定します。
+@param initheader リクエストの HTTP ヘッダをハッシュで指定します。
 
 @see [[m:Net::HTTP#request_put]]
 
-1.1 �ߴ��⡼�ɤξ��ϡ��쥹�ݥ󥹤˱������㳰��ȯ�����ޤ���
+1.1 互換モードの場合は、レスポンスに応じて例外が発生します。
 

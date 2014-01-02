@@ -4,7 +4,7 @@ kind=defined
 
 --- header=(val)
 
-�إå���ɽ������򥻥åȤ��ޤ���
+ヘッダを表す配列をセットします。
 
-@param val �إå���ɽ���������ꤷ�ޤ���
+@param val ヘッダを表す配列を指定します。
 

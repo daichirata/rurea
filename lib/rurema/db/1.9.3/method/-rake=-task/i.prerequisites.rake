@@ -4,5 +4,5 @@ kind=defined
 
 --- prerequisites -> Array
 
-�����������Υꥹ�Ȥ��֤��ޤ���
+事前タスクのリストを返します。
 

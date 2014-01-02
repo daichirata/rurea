@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- FNM_NOESCAPE -> Integer
-����������ʸ�� `\' �����̤�ʸ���Ȥߤʤ��ޤ���
-[[m:File.fnmatch]], [[m:Dir.glob]]�ǻ��Ѥ��ޤ���
+エスケープ文字 `\' を普通の文字とみなします。
+[[m:File.fnmatch]], [[m:Dir.glob]]で使用します。
 

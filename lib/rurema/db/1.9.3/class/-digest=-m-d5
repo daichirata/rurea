@@ -6,5 +6,5 @@ library=digest.md5
 aliases=
 aliasof=
 
-[[RFC:1321]] ¤Ëµ­½Ò¤µ¤ì¤Æ¤¤¤ë RSA Data Security, Inc. ¤Î MD5 Message-Digest
-Algorithm¤ò¼ÂÁõ¤¹¤ë¥¯¥é¥¹¤Ç¤¹¡£
+[[RFC:1321]] ã«è¨˜è¿°ã•ã‚Œã¦ã„ã‚‹ RSA Data Security, Inc. ã® MD5 Message-Digest
+Algorithmã‚’å®Ÿè£…ã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

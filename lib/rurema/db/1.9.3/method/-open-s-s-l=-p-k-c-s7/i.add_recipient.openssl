@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- add_recipient(recipient) -> self
-�����Ԥ��ɲä��ޤ���
+送信者を追加します。
 
-���Υ᥽�åɤϻȤ�ʤ��Ǥ���������
-���Υ᥽�åɤ� PKCS#7 �����٥� API �Ǥ��ꡢ�������Ȥ��Τ�
-�񤷤��Ǥ��礦��
+このメソッドは使わないでください。
+このメソッドは PKCS#7 の低レベル API であり、正しく使うのは
+難しいでしょう。
 
-@param recipient �ɲä���������([[c:OpenSSL::PKCS7::RecipientInfo]])
+@param recipient 追加する送信者([[c:OpenSSL::PKCS7::RecipientInfo]])
 

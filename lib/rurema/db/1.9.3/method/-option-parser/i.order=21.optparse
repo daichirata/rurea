@@ -5,24 +5,24 @@ kind=defined
 --- order!(argv = self.default_argv)             -> [String]
 --- order!(argv = self.default_argv) {|s| ...}   -> [String]
 
-Ϳ����줿 argv ����֤��˲�Ū�˥ѡ������ޤ���
-argv ���饪�ץ���󤬤��٤Ƽ�������ޤ���
-argv ���֤��ޤ���
+与えられた argv を順番に破壊的にパースします。
+argv からオプションがすべて取り除かれます。
+argv を返します。
 
-���ץ����ǤϤʤ����ޥ�ɤΰ���(������Ǹ����� somefile)�˽в񤦤ȡ��ѡ��������Ǥ��ޤ���
-�֥��å���Ϳ�����Ƥ�����ϡ��ѡ��������Ǥ�����
-������֥��å����Ϥ��ƥ֥��å���ɾ�������ѡ������³���ޤ���argv ���֤��ޤ���
+オプションではないコマンドの引数(下の例で言うと somefile)に出会うと、パースを中断します。
+ブロックが与えられている場合は、パースを中断せずに
+引数をブロックに渡してブロックを評価し、パースを継続します。argv を返します。
 
-������Ǹ����ȡ����ޥ�ɤΰ��� somefile �������˥��ץ������֤����Ȥ��Ǥ��ޤ���
--b �⥳�ޥ�ɤΥ��ץ����ǤϤʤ������Ȥ��ư����Ƥ��ޤ��ޤ���
+下の例で言うと、コマンドの引数 somefile よりも後ろにオプションを置くことができません。
+-b もコマンドのオプションではない引数として扱われてしまいます。
 
-@param argv �ѡ���������������ʸ���������ǻ��ꤷ�ޤ���
+@param argv パースしたい引数を文字列の配列で指定します。
 
-@raise OptionParser::ParseError �ѡ����˼��Ԥ�����硢ȯ�����ޤ���
-                                �ºݤ� OptionParser::ParseError �Υ��֥�
-                                �饹�ˤʤ�ޤ���
+@raise OptionParser::ParseError パースに失敗した場合、発生します。
+                                実際は OptionParser::ParseError のサブク
+                                ラスになります。
 
-��:
+例:
   $ cat opt.rb
   require 'optparse'
   opt = OptionParser.new

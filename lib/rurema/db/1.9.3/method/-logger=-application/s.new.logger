@@ -4,7 +4,7 @@ kind=defined
 
 --- new(appname = nil) -> Logger::Application
 
-���Υ��饹���������ޤ���
+このクラスを初期化します。
 
-@param appname ���ץꥱ�������̾����ꤷ�ޤ���
+@param appname アプリケーション名を指定します。
 

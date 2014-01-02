@@ -4,10 +4,10 @@ kind=defined
 
 --- <=(other) -> bool
 
-��ӱ黻�ҡ����ͤȤ����������ޤ��Ͼ�������Ƚ�ꤷ�ޤ���
+比較演算子。数値として等しいまたは小さいか判定します。
 
-@param other ����оݤο���
-@return      self ���� other �������礭����礫��
-             ξ�Ԥ���������� true ���֤��ޤ���
-             �����Ǥʤ���� false ���֤��ޤ���
+@param other 比較対象の数値
+@return      self よりも other の方が大きい場合か、
+             両者が等しい場合 true を返します。
+             そうでなければ false を返します。
 

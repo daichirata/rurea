@@ -5,7 +5,7 @@ kind=defined
 --- hexdigest -> String
 --- to_s -> String
 --- inspect -> String
-���֥������Ȥ��������֤��黻�Ф��줿 HMAC ��
-16�ʤ�ʸ������֤��ޤ���
+オブジェクトの内部状態から算出された HMAC を
+16進の文字列で返します。
 
 

@@ -5,12 +5,12 @@ kind=defined
 --- delete(key) -> String | nil
 --- delete(key) {|key| ... } -> String | nil
 
-key ���б�����Ķ��ѿ���������ޤ����������줿�Ķ��ѿ���
-�ͤ��֤��ޤ�����key ���б�����Ķ��ѿ���¸�ߤ��ʤ����ˤ�
-nil ���֤��ޤ���
+key に対応する環境変数を取り除きます。取り除かれた環境変数の
+値を返しますが、key に対応する環境変数が存在しない時には
+nil を返します。
 
-�֥��å���Ϳ����줿���ˤ� key �˥ޥå������Τ��ʤ��ä���
-��ɾ������ޤ���
+ブロックが与えられた時には key にマッチするものがなかった時
+に評価されます。
 
-@param key  �Ķ��ѿ�̾����ꤷ�ޤ��� to_str ��ʸ���󲽤���ޤ���
+@param key  環境変数名を指定します。 to_str で文字列化されます。
 

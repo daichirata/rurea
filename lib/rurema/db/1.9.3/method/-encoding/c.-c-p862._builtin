@@ -4,10 +4,10 @@ kind=defined
 
 --- IBM862 -> Encoding
 --- CP862 -> Encoding
-CP862 ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+CP862 ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-¥Ø¥Ö¥é¥¤¸ì¤ËÍÑ¤¤¤é¤ì¤ë¡¢
-8bit single-byte ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+ãƒ˜ãƒ–ãƒ©ã‚¤èªã«ç”¨ã„ã‚‰ã‚Œã‚‹ã€
+8bit single-byte ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[url:http://en.wikipedia.org/wiki/Code_page_861]]
 

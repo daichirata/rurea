@@ -5,5 +5,5 @@ kind=defined
 --- pwd   -> String
 --- getwd -> String
 
-�ץ������Υ����ȥǥ��쥯�ȥ��ʸ������֤��ޤ���
+プロセスのカレントディレクトリを文字列で返します。
 

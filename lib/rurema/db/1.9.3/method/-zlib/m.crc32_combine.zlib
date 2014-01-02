@@ -4,11 +4,11 @@ kind=defined
 
 --- crc32_combine(crc1, crc2, length) -> Ingeter
 
-Ϳ����줿��Ĥ� CRC-32 �����å�������ĤˤĤʤ��ޤ���
+与えられた二つの CRC-32 チェックサムを一つにつなげます。
 
-@param crc1 CRC-32 �����å��������ꤷ�ޤ���
+@param crc1 CRC-32 チェックサムを指定します。
 
-@param crc2 CRC-32 �����å��������ꤷ�ޤ���
+@param crc2 CRC-32 チェックサムを指定します。
 
-@param length crc2 ����������Τ˻��Ѥ���ʸ�����Ĺ������ꤷ�ޤ���
+@param length crc2 を生成するのに使用した文字列の長さを指定します。
 

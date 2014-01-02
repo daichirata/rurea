@@ -4,12 +4,12 @@ kind=defined
 
 --- noecho
 
-�桼�����������Ƥ���̤�ɽ�����ʤ��褦�ˤ��ޤ���
-�Ĥޤꡢ���ϤΥ�������ߤ�ޤ���
+ユーザの入力内容を画面に表示しないようにします。
+つまり、入力のエコーを止めます。
 
-�ܤ����ϡ� man �ڡ����� curs_inopts(3X) �� noecho �ؿ��򻲾Ȥ���������
+詳しくは、 man ページの curs_inopts(3X) の noecho 関数を参照ください。
 
-���Υ᥽�åɤ���� [[m:Curses.#init_screen]] ��ƤӽФ��ޤ���
+このメソッドの中で [[m:Curses.#init_screen]] を呼び出します。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、例外 SecurityError を発生します。
 

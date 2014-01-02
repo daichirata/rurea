@@ -4,7 +4,7 @@ kind=defined
 
 --- free=(cfunc)
 
-GC �����Ȥ��������Τ˻Ȥ��ؿ��� [[c:DL::CFunc]] �ǻ��ꤷ�ޤ���
+GC が自身を解放するのに使う関数を [[c:DL::CFunc]] で指定します。
 
-@param cfunc ���Ȥ��������Τ˻Ȥ���ؿ��� [[c:DL::CFunc]] �������ǻ��ꤷ�ޤ���
+@param cfunc 自身を解放するのに使われる関数を [[c:DL::CFunc]] か整数で指定します。
 

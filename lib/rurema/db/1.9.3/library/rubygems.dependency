@@ -3,5 +3,6 @@ classes=Gem=Dependency
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Gem ¤Î°ÍÂ¸´Ø·¸¤ò´ÉÍı¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Gem ã®ä¾å­˜é–¢ä¿‚ã‚’ç®¡ç†ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

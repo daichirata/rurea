@@ -4,11 +4,11 @@ kind=defined
 
 --- do_POST(request, response) -> ()
 
-POST еъепеие╣е╚дЄ╜ш═¤д╖д▐д╣бг
+POST уГкуВпуВиуВ╣уГИуВТхЗжчРЖуБЧуБ╛уБЩуАВ
 
-@param request епещедевеєе╚длдщд╬еъепеие╣е╚дЄ╔╜д╣ [[c:WEBrick::HTTPRequest]] еке╓е╕езепе╚д╟д╣бг
+@param request уВпуГйуВдуВвуГ│уГИуБЛуВЙуБоуГкуВпуВиуВ╣уГИуВТшбиуБЩ [[c:WEBrick::HTTPRequest]] уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 
-@param response епещедевеєе╚д╪д╬еье╣е▌еєе╣дЄ╔╜д╣ [[c:WEBrick::HTTPResponse]] еке╓е╕езепе╚д╟д╣бг
+@param response уВпуГйуВдуВвуГ│уГИуБ╕уБоуГмуВ╣уГЭуГ│уВ╣уВТшбиуБЩ [[c:WEBrick::HTTPResponse]] уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 
-@raise WEBrick::HTTPStatus::NotFound ┬╨╛▌д╚д╩дые╤е╣дм╕лд─длдщд╩длд├д┐╛ь╣чд╦╚п└╕д╖д▐д╣бг
+@raise WEBrick::HTTPStatus::NotFound хп╛ш▒буБиуБкуВЛуГСуВ╣уБМшжЛуБдуБЛуВЙуБкуБЛуБгуБЯха┤хРИуБлчЩ║чФЯуБЧуБ╛уБЩуАВ
 

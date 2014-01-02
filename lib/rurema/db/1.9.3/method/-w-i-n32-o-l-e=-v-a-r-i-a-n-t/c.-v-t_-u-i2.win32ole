@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- VT_UI2 -> Integer
-���ʤ�16�ӥå�������unsigned short�ˤ򼨤��ޤ���18�ˡ�
+符号なし16ビット整数（unsigned short）を示します（18）。
 
-OLE�����ȥ᡼�����Ǥ����ѤǤ��ޤ��������VT_I2�����Ѥ��Ƥ���������
+OLEオートメーションでは利用できません。代わりにVT_I2を利用してください。
 

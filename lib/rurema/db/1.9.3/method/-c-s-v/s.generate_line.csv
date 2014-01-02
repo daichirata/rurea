@@ -4,16 +4,16 @@ kind=defined
 
 --- generate_line(row, options = Hash.new) -> String
 
-���Υ᥽�åɤϰ�Ĥ� [[c:Array]] ���֥������Ȥ� CSV ʸ������Ѵ����뤿��Υ��硼�ȥ��åȤǤ���
+このメソッドは一つの [[c:Array]] オブジェクトを CSV 文字列に変換するためのショートカットです。
 
-���Υ᥽�åɤϲ�ǽ�Ǥ���� row �˴ޤޤ��ǽ�� nil �Ǥʤ��ͤ��Ѥ��ƽ��Ϥ�
-���󥳡��ǥ��󥰤��¬���ޤ���
+このメソッドは可能であれば row に含まれる最初の nil でない値を用いて出力の
+エンコーディングを推測します。
 
-@param row ʸ������������ꤷ�ޤ���
+@param row 文字列の配列を指定します。
 
-@param options [[m:CSV.new]] �Υ��ץ�����Ʊ�����ץ��������Ǥ��ޤ���
-               :encoding �Ȥ�����������Ѥ���Ƚ��ϤΥ��󥳡��ǥ��󥰤���ꤹ�뤳�Ȥ��Ǥ��ޤ���
-               :row_sep �Ȥ����������ͤˤ� [[m:$/]] �����åȤ���ޤ���
+@param options [[m:CSV.new]] のオプションと同じオプションを指定できます。
+               :encoding というキーを使用すると出力のエンコーディングを指定することができます。
+               :row_sep というキーの値には [[m:$/]] がセットされます。
 
 @see [[m:CSV.new]]
 

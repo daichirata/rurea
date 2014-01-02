@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- METHODS -> [Symbol]
-���Ѳ�ǽ�ʥ᥽�å�(�ץ��ȥ���)�� [[c:Symbol]] ��������֤��ޤ���
+利用可能なメソッド(プロトコル)を [[c:Symbol]] の配列で返します。
 
   require 'openssl'
   OpenSSL::SSL::SSLContext::METHODS

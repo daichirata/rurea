@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- version -> Float
-TypeLib¤Î¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¤ò¼èÆÀ¤·¤Þ¤¹¡£
+TypeLibã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return TypeLib¤Î¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¤òÀ°¿ôÉô¤Ë¥á¥¸¥ã¡¼¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¡¢¾®¿ôÅÀ
-        ¿ôÉô¤Ë¥Þ¥¤¥Ê¡¼¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¤òÀßÄê¤·¤¿Float¤ÇÊÖ¤·¤Þ¤¹¡£
-@raise WIN32OLERuntimeError TypeLib¤ÎÂ°À­¤¬ÆÉ¤ß¼è¤ì¤Ê¤¤¾ì¹ç¤ËÄÌÃÎ¤·¤Þ¤¹¡£
+@return TypeLibã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’æ•´æ•°éƒ¨ã«ãƒ¡ã‚¸ãƒ£ãƒ¼ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã€å°æ•°ç‚¹
+        æ•°éƒ¨ã«ãƒžã‚¤ãƒŠãƒ¼ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’è¨­å®šã—ãŸFloatã§è¿”ã—ã¾ã™ã€‚
+@raise WIN32OLERuntimeError TypeLibã®å±žæ€§ãŒèª­ã¿å–ã‚Œãªã„å ´åˆã«é€šçŸ¥ã—ã¾ã™ã€‚
 
    tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 14.0 Object Library')
    puts tlib.version # => 1.7

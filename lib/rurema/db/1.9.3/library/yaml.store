@@ -1,10 +1,11 @@
-requires=
+requires=yaml,pstore
 classes=YAML=Store
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Ruby¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òYAML·Á¼°¤Î³°Éô¥Õ¥¡¥¤¥ë¤Ë³ÊÇ¼¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+Rubyã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’YAMLå½¢å¼ã®å¤–éƒ¨ãƒ•ã‚¡ã‚¤ãƒ«ã«æ ¼ç´ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
   require "yaml/store"
 

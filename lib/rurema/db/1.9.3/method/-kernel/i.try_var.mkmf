@@ -5,9 +5,9 @@ kind=added
 --- try_var(var, headers = nil) -> bool
 --- try_var(var, headers = nil){ ... } -> bool
 
-[[m:Kernel#have_var]] ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
+[[m:Kernel#have_var]] ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚
 
-@param var ¸¡ºº¤·¤¿¤¤ÊÑ¿ôÌ¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param var æ¤œæŸ»ã—ãŸã„å¤‰æ•°åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param headers ÄÉ²Ã¤Î¥Ø¥Ã¥À¤ò»ØÄê¤·¤Ş¤¹¡£
+@param headers è¿½åŠ ã®ãƒ˜ãƒƒãƒ€ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

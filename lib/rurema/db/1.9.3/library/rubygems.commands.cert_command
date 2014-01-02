@@ -1,27 +1,28 @@
-requires=rubygems.command,rubygems.user_interaction,rubygems.security,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system,rubygems.gem_openssl
+requires=rubygems.command,rubygems.user_interaction,rubygems.security,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.gem_openssl
 classes=Gem=Commands=CertCommand
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¾ÚÌÀ½ñ¤ä½ğÌ¾¤ÎÀßÄê¤ò´ÉÍı¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®è¨¼æ˜æ›¸ã‚„ç½²åã®è¨­å®šã‚’ç®¡ç†ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
   Usage: gem cert [options]
     Options:
-      -a, --add CERT                   ¿®Íê¤µ¤ì¤¿¾ÚÌÀ½ñ¤òÄÉ²Ã¤·¤Ş¤¹
-      -l, --list                       ¿®Íê¤µ¤ì¤Æ¤¤¤ë¾ÚÌÀ½ñ¤Î°ìÍ÷¤òÉ½¼¨¤·¤Ş¤¹
-      -r, --remove STRING              STRING ¤ò´Ş¤à¾ÚÌÀ½ñ¤òºï½ü¤·¤Ş¤¹
-      -b, --build EMAIL_ADDR           EMAIL_ADDR ¤ËÂĞ¤¹¤ë¼«¸Ê½ğÌ¾¾ÚÌÀ½ñ¤ÈÈëÌ©¸°
-                                       ¤òºîÀ®¤·¤Ş¤¹
-      -C, --certificate CERT           --sign ¤Ç»ÈÍÑ¤¹¤ë¾ÚÌÀ½ñ¤ò»ØÄê¤·¤Ş¤¹
-      -K, --private-key KEY            --sign ¤Ç»ÈÍÑ¤¹¤ëÈëÌ©¸°¤ò»ØÄê¤·¤Ş¤¹
-      -s, --sign NEWCERT               ¾ÚÌÀ½ñ¤ËÈëÌ©¸°¤Ç½ğÌ¾¤·¤Ş¤¹
+      -a, --add CERT                   ä¿¡é ¼ã•ã‚ŒãŸè¨¼æ˜æ›¸ã‚’è¿½åŠ ã—ã¾ã™
+      -l, --list                       ä¿¡é ¼ã•ã‚Œã¦ã„ã‚‹è¨¼æ˜æ›¸ã®ä¸€è¦§ã‚’è¡¨ç¤ºã—ã¾ã™
+      -r, --remove STRING              STRING ã‚’å«ã‚€è¨¼æ˜æ›¸ã‚’å‰Šé™¤ã—ã¾ã™
+      -b, --build EMAIL_ADDR           EMAIL_ADDR ã«å¯¾ã™ã‚‹è‡ªå·±ç½²åè¨¼æ˜æ›¸ã¨ç§˜å¯†éµ
+                                       ã‚’ä½œæˆã—ã¾ã™
+      -C, --certificate CERT           --sign ã§ä½¿ç”¨ã™ã‚‹è¨¼æ˜æ›¸ã‚’æŒ‡å®šã—ã¾ã™
+      -K, --private-key KEY            --sign ã§ä½¿ç”¨ã™ã‚‹ç§˜å¯†éµã‚’æŒ‡å®šã—ã¾ã™
+      -s, --sign NEWCERT               è¨¼æ˜æ›¸ã«ç§˜å¯†éµã§ç½²åã—ã¾ã™
     Common Options:
-      -h, --help                       ¤³¤Î¥³¥Ş¥ó¥É¤Î¥Ø¥ë¥×¤òÉ½¼¨¤·¤Ş¤¹
-      -V, --[no-]verbose               É½¼¨¤ò¾ÜºÙ¤Ë¤·¤Ş¤¹
-      -q, --quiet                      ÀÅ¤«¤Ë¼Â¹Ô¤·¤Ş¤¹
-          --config-file FILE           »ØÄê¤µ¤ì¤¿ÀßÄê¥Õ¥¡¥¤¥ë¤ò»ÈÍÑ¤·¤Ş¤¹
-          --backtrace                  ¥Ğ¥Ã¥¯¥È¥ì¡¼¥¹¤òÉ½¼¨¤·¤Ş¤¹
-          --debug                      Ruby ¼«ÂÎ¤Î¥Ç¥Ğ¥Ã¥°¥ª¥×¥·¥ç¥ó¤òÍ­¸ú¤Ë¤·¤Ş¤¹
+      -h, --help                       ã“ã®ã‚³ãƒãƒ³ãƒ‰ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã—ã¾ã™
+      -V, --[no-]verbose               è¡¨ç¤ºã‚’è©³ç´°ã«ã—ã¾ã™
+      -q, --quiet                      é™ã‹ã«å®Ÿè¡Œã—ã¾ã™
+          --config-file FILE           æŒ‡å®šã•ã‚ŒãŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ç”¨ã—ã¾ã™
+          --backtrace                  ãƒãƒƒã‚¯ãƒˆãƒ¬ãƒ¼ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™
+          --debug                      Ruby è‡ªä½“ã®ãƒ‡ãƒãƒƒã‚°ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æœ‰åŠ¹ã«ã—ã¾ã™
     Summary:
       Manage RubyGems certificates and signing settings

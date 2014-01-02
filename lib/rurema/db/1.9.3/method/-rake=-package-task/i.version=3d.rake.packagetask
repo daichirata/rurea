@@ -4,7 +4,7 @@ kind=defined
 
 --- version=(str)
 
-��������ѥå������ΥС������򥻥åȤ��ޤ���
+作成するパッケージのバージョンをセットします。
 
-@param str �С�������ɽ��ʸ�������ꤷ�ޤ���
+@param str バージョンを表す文字列を指定します。
 

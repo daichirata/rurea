@@ -3,13 +3,14 @@ classes=YAML=DBM
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:DBM]] ���ͤ�ʸ����ʳ����Ǽ�Ǥ���褦�˳�ĥ���뤿��Υ��֥饤�֥�
-��Ǥ���
+[[c:DBM]] の値に文字列以外も格納できるように拡張するためのサブライブラ
+リです。
 
-[[c:DBM]] �ϥ������ͤΤɤ����ʸ����Ǥ���ɬ�פ�����ޤ�����
-[[c:YAML::DBM]] �� YAML �������Ѵ��Ǥ��륪�֥������ȤǤ�����ͤȤ��Ƴ�
-Ǽ��������Ǥ��ޤ�����������������ʸ����Ǥ���ɬ�פ�����ޤ���
+[[c:DBM]] はキー、値のどちらも文字列である必要がありますが、
+[[c:YAML::DBM]] は YAML 形式に変換できるオブジェクトであれば値として格
+納する事ができます。ただし、キーは文字列である必要があります。
 
-�Ȥ����� [[c:DBM]] ��Ʊ���Ǥ���[[c:DBM]] �� [[c:YAML]] ��ʻ���ƻ��Ȥ���
-����������
+使い方は [[c:DBM]] と同じです。[[c:DBM]] と [[c:YAML]] も併せて参照して
+ください。

@@ -3,10 +3,11 @@ classes=
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤Ï¸Å¤¤ Rakefile ¤ò»ÈÍÑ¤¹¤ë¾ì¹ç¤Î¤ß»ÈÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¯å¤ã„ Rakefile ã‚’ä½¿ç”¨ã™ã‚‹å ´åˆã®ã¿ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
 
-°Ê²¼¤ÎÄê¿ô¤¬ÄêµÁ¤µ¤ì¤Ş¤¹¡£
+ä»¥ä¸‹ã®å®šæ•°ãŒå®šç¾©ã•ã‚Œã¾ã™ã€‚
 
  * Task = Rake::Task
  * FileTask = Rake::FileTask

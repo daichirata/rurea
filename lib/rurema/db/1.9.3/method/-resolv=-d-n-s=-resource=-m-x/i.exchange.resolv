@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- exchange -> Resolv::DNS::Name
-MX�Υۥ���̾���֤��ޤ���
+MXのホスト名を返します。
 
 

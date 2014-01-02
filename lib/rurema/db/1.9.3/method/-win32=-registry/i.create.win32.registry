@@ -5,5 +5,5 @@ kind=defined
 --- create(subkey, desired = KEY_ALL_ACCESS, opt = REG_OPTION_RESERVED)
 @todo
 
-[[m:Win32::Registry.create]](self, subkey, desired, opt) ¤ÈÆ±¤¸¤Ç¤¹¡£
+[[m:Win32::Registry.create]](self, subkey, desired, opt) ã¨åŒã˜ã§ã™ã€‚
 

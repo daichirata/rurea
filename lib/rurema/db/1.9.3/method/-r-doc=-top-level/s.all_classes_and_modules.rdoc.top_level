@@ -4,5 +4,5 @@ kind=defined
 
 --- all_classes_and_modules -> [RDoc::NormalClass | RDoc::SingleClass | RDoc::NormalModule]
 
-RDoc ¤¬¼ý½¸¤·¤¿¥¯¥é¥¹¡¢¥â¥¸¥å¡¼¥ë¤òÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+RDoc ãŒåŽé›†ã—ãŸã‚¯ãƒ©ã‚¹ã€ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚’é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 

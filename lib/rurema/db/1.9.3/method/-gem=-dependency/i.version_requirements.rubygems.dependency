@@ -4,5 +4,5 @@ kind=defined
 
 --- version_requirements -> Gem::Requirement
 
-��¸���Ƥ���С��������֤��ޤ���
+依存しているバージョンを返します。
 

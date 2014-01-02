@@ -2,10 +2,7 @@ names=precs
 visibility=public
 kind=defined
 
---- precs
-@todo
-a ¤ÎÍ­¸ú¿ô»ú (n) ¤ÈºÇÂçÍ­¸ú¿ô»ú (m) ¤ÎÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£ 
+--- precs -> [Integer, Integer]
 
-    n, m = a.precs
-
+self ã®æœ‰åŠ¹æ•°å­—ã¨æœ€å¤§æœ‰åŠ¹æ•°å­—ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 

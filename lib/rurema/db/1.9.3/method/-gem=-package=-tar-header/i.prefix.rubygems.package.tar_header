@@ -4,5 +4,5 @@ kind=defined
 
 --- prefix -> String
 
-tar �Υإå��˴ޤޤ�� prefix ���֤��ޤ���
+tar のヘッダに含まれる prefix を返します。
 

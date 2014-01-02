@@ -4,7 +4,7 @@ kind=defined
 
 --- cache(all = false) -> Gem::SourceInfoCache
 
-���ȤΥ��󥹥��󥹤��������뤿��Υ᥽�åɤǤ���
+自身のインスタンスを生成するためのメソッドです。
 
-@param all ������ꤹ��ȡ����󥹥��������������ƤΥ���å����ƺ������ޤ���
+@param all 真を指定すると、インスタンス生成時に全てのキャッシュを再作成します。
 

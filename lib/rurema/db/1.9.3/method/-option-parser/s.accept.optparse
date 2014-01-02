@@ -4,14 +4,14 @@ kind=defined
 
 --- accept(klass, pat = /.*/){|str| ...}    -> ()
 
-���ץ����ΰ�����ʸ���󤫤� Ruby �Υ��֥������Ȥ��Ѵ����뤿���
-�֥��å�����Ͽ���ޤ������٤Ƥ� OptionParser ���󥹥��󥹤˶��̤Ǥ���
+オプションの引数を文字列から Ruby のオブジェクトに変換するための
+ブロックを登録します。すべての OptionParser インスタンスに共通です。
 
-�֥��å��ˤϡ�ʸ����Ȥ���Ϳ�����륪�ץ����ΰ������� klass �Υ��󥹥��󥹤����������֤���Τ���ꤷ�ޤ���
+ブロックには、文字列として与えられるオプションの引数から klass のインスタンスを生成して返すものを指定します。
 
-[[m:OptionParser#on]] �� klass ����ꤷ����硢
-���ޥ�ɥ饤��Υ��ץ�����Ϳ����줿�����ϡ����� accept ����Ͽ�����֥��å���
-klass �Υ��󥹥��󥹤��Ѵ�����Ƥ��顢OptionParser#on �᥽�åɤ���Ͽ�����֥��å����Ϥ���ޤ���
+[[m:OptionParser#on]] で klass を指定した場合、
+コマンドラインのオプションに与えられた引数は、この accept で登録したブロックで
+klass のインスタンスに変換されてから、OptionParser#on メソッドで登録したブロックに渡されます。
 
   require "optparse"
   require "time"
@@ -32,10 +32,10 @@ klass �Υ��󥹥��󥹤��Ѵ�����Ƥ��顢OptionParser#on �᥽�åɤ���Ͽ�����֥��å�
 
   opts.parse!(ARGV)
 
-�����Ĥ��Υ��饹���Ф��Ƥ��Ѵ��ѤΥ֥��å����ǥե���Ȥ���Ͽ�����
-���ޤ���[[m:OptionParser#on]] �򻲾Ȥ��Ʋ�������
+いくつかのクラスに対しては変換用のブロックがデフォルトで登録されて
+います。[[m:OptionParser#on]] を参照して下さい。
 
-@param klass ���饹���֥������Ȥ�Ϳ���ޤ���
+@param klass クラスオブジェクトを与えます。
 
-@param pat match �᥽�åɤ���ä����֥�������([[c:Regexp]] ���֥������Ȥʤ�)��Ϳ���ޤ���
+@param pat match メソッドを持ったオブジェクト([[c:Regexp]] オブジェクトなど)を与えます。
 

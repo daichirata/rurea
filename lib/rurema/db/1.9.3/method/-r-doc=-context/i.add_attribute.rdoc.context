@@ -4,7 +4,7 @@ kind=defined
 
 --- add_attribute(an_attribute) -> ()
 
-�����ǻ��ꤷ�� [[c:RDoc::Attr]] ���֥������Ȥ��ɲä��ޤ���
+引数で指定した [[c:RDoc::Attr]] オブジェクトを追加します。
 
-@param an_attribute [[c:RDoc::Attr]] ���֥������Ȥ���ꤷ�ޤ���
+@param an_attribute [[c:RDoc::Attr]] オブジェクトを指定します。
 

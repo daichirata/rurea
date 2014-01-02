@@ -4,7 +4,7 @@ kind=defined
 
 --- insch(ch) -> nil
 
-stdscr ¤Î¥«¡¼¥½¥ë¤Î°ÌÃÖ¤Ë ch (1 ¥Ð¥¤¥È) ¤òÁÞÆþ¤·¤Þ¤¹¡£
+stdscr ã®ã‚«ãƒ¼ã‚½ãƒ«ã®ä½ç½®ã« ch (1 ãƒã‚¤ãƒˆ) ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
 
-@param ch Ê¸»ú¤ò»ØÄê¤·¤Þ¤¹¡£
+@param ch æ–‡å­—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

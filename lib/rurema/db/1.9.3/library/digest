@@ -3,14 +3,15 @@ classes=Digest,Digest=Class,Digest=Instance,Digest=Base
 methods=Kernel/i.Digest.digest
 sublibraries=digest.md5,digest.rmd160,digest.sha1,digest.sha2,digest.bubblebabble,digest.hmac
 is_sublibrary=false
+category=Text
 
-��å����������������ȥ饤�֥��Ǥ���
+メッセージダイジェストライブラリです。
 
-[[c:Digest::MD5]] �� [[c:Digest::SHA1]] �ʤɤ�
-���ƤΥ�å����������������Ȥμ������饹�ϡ�
-���쥯�饹�Ǥ��� [[c:Digest::Base]] ��Ʊ�����󥿥ե�����������ޤ���
-����Ū�ʻȤ����ϡ�MD5��SHA1�ʤɡ��ɤΥ��르�ꥺ��Ǥ�Ʊ���Ǥ���
-�ܤ����� [[c:Digest::Base]] �򻲾Ȥ��Ƥ���������
+[[c:Digest::MD5]] や [[c:Digest::SHA1]] などの
+全てのメッセージダイジェストの実装クラスは、
+基底クラスである [[c:Digest::Base]] と同じインタフェースを持ちます。
+基本的な使い方は、MD5やSHA1など、どのアルゴリズムでも同じです。
+詳しくは [[c:Digest::Base]] を参照してください。
 
-�ʤ����֥�å����������������ȡפȤϡ�
-�ǡ����������Ĺ�ε����������������黻��ˡ�Τ��ȤǤ���
+なお、「メッセージダイジェスト」とは、
+データから固定長の疑似乱数を生成する演算手法のことです。

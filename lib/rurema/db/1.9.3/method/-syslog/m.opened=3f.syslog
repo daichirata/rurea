@@ -4,9 +4,9 @@ kind=defined
 
 --- opened? -> bool
 
-syslog ¤ò¥ª¡¼¥×¥ó¤·¤Æ¤¤¤ì¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
+syslog ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã—ã¦ã„ã‚Œã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
   require 'syslog'
 
   p Syslog.opened? #=> false

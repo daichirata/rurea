@@ -4,9 +4,9 @@ kind=defined
 
 --- specification_version=(version)
 
-¤³¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤ËÍÑ¤¤¤é¤ì¤Æ¤¤¤ë gemspec ¤Î¥Ğ¡¼¥¸¥ç¥ó¤ò¥»¥Ã¥È¤·¤Ş¤¹¡£
+ã“ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã«ç”¨ã„ã‚‰ã‚Œã¦ã„ã‚‹ gemspec ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param version gemspec ¤Î¥Ğ¡¼¥¸¥ç¥ó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param version gemspec ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Gem::Specification::SPECIFICATION_VERSION_HISTORY]]
 

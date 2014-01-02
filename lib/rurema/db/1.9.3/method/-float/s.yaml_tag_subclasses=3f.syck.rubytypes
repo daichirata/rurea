@@ -4,7 +4,7 @@ kind=added
 
 --- yaml_tag_subclasses? -> true
 
-��� true ���֤��ޤ���
+常に true を返します。
 
-�饤�֥�������ǻ��Ѥ��ޤ���
+ライブラリ内部で使用します。
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- session_new_cb -> Proc | nil
-���å�����������줿�Ȥ��˸ƤӽФ���륳����Хå����֤��ޤ���
+セッションが生成されたときに呼び出されるコールバックを返します。
 
-���ꤵ��Ƥ��ʤ��Ȥ��� nil ���֤��ޤ���
+設定されていないときは nil を返します。
 
 @see [[m:OpenSSL::SSL::SSLContext#session_new_cb=]]
 

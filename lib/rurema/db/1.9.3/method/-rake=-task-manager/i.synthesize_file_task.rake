@@ -4,12 +4,12 @@ kind=defined
 
 --- synthesize_file_task(task_name) -> Rake::FileTask | nil
 
-Ϳ����줿������̾���Ȥ˥ե����륿������������ޤ���
+与えられたタスク名をもとにファイルタスクを合成します。
 
-@param task_name ������̾����ꤷ�ޤ���
+@param task_name タスク名を指定します。
 
-@return Ϳ����줿������̾��Ʊ̾�Υե����뤬¸�ߤ�����ϡ��ե����륿��������������֤��ޤ���
-        �����Ǥʤ����� nil ���֤��ޤ���
+@return 与えられたタスク名と同名のファイルが存在する場合は、ファイルタスクを作成して返します。
+        そうでない場合は nil を返します。
 
-@raise RuntimeError ������������Ǥ��ʤ��ä�����ȯ�����ޤ���
+@raise RuntimeError タスクを合成できなかった場合に発生します。
 

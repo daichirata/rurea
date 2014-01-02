@@ -4,13 +4,13 @@ kind=defined
 
 --- round(ndigits=0) -> Time
 
-���ʾ��������ǻ��ꤷ����������٤Ǵݤ�򤷡�
-���� [[c:Time]] ���֥��������֤��ޤ���
-(�ǥե���Ȥ�0���Ĥޤ꾮�����ν�Ǵݤ�ޤ�)��
+十進小数点数で指定した桁数の精度で丸めをし、
+その [[c:Time]] オブジェクト返します。
+(デフォルトは0、つまり小数点の所で丸めます)。
 
-ndigits �ˤ� 0 �ʾ���������Ϥ��ޤ���
+ndigits には 0 以上の整数を渡します。
 
-@param ndigits ���ʤǤ�����(���)
+@param ndigits 十進での精度(桁数)
 
     require 'time'
 

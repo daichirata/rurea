@@ -4,9 +4,9 @@ kind=defined
 
 --- array_attribute(name) -> ()
 
-[[m:Gem::Specification.attribute]] ¤ÈÆ±¤¸¤Ç¤¹¤¬¡¢ÃÍ¤òÇÛÎó¤Ë³ÊÇ¼¤¹¤ë¥¢¥¯¥»¥µ¤òºî¤ê¤Ş¤¹¡£
+[[m:Gem::Specification.attribute]] ã¨åŒã˜ã§ã™ãŒã€å€¤ã‚’é…åˆ—ã«æ ¼ç´ã™ã‚‹ã‚¢ã‚¯ã‚»ã‚µã‚’ä½œã‚Šã¾ã™ã€‚
 
-@param name Â°À­¤ÎÌ¾Á°¤ò»ØÄê¤·¤Ş¤¹¡£
+@param name å±æ€§ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Gem::Specification.attribute]]
 

@@ -3,30 +3,30 @@ visibility=public
 kind=defined
 
 --- new(issuer_cert=nil, subject_cert=nil, subject_req=nil, crl=nil) -> OpenSSL::X509::ExtensionFactory
-ExtensionFactory еке╓е╕езепе╚дЄ└╕└од╖д▐д╣бг
+ExtensionFactory уВкуГЦуВ╕уВзуВпуГИуВТчФЯцИРуБЧуБ╛уБЩуАВ
 
-╛┌╠└╜ёд╬╚п╣╘╝╘дф╜ъ═н╝╘д╬ [[c:OpenSSL::X509::Certificate]] еке╓е╕езепе╚дф
-[[c:OpenSSL::X509::Request]]бв[[c:OpenSSL::X509::CRL]] еке╓е╕езепе╚дЄ
-┼╧д╣д│д╚д╦дшд├д╞бв│╚─е╬╬░шд╬├ц┐╚дЄ ExtensionFactory еке╓е╕езепе╚дм
-╖╫╗╗д╣дыд│д╚дмд╟днд▐д╣бг
-╬удид╨бв"subjectKeyIdentifier" │╚─е╬╬░шд╧╛┌╠└╜ёд╬░ь╔Їд╬е╧е├е╖ех├═
-дЄ├═д╚д╖д╞╗¤д┴д▐д╣дмбв
-[[c:OpenSSL::X509::Certificate]] еке╓е╕езепе╚дЄдвдщдлд╕дс┼╧д╖д╞дкдпд│д╚д╦дшд├д╞
-[[m:OpenSSL::X509::ExtensionFactory#create_extension]] дмд╜д╬├═дЄ╖╫╗╗д╖д▐д╣бг
-д│дьдщд╬╛Ё╩єдм╔м═╫д╩дд╛ь╣чд╧ nil дЄ┼╧д╖д▐д╣бг
+ши╝цШОцЫ╕уБочЩ║шбМшАЕуВДцЙАцЬЙшАЕуБо [[c:OpenSSL::X509::Certificate]] уВкуГЦуВ╕уВзуВпуГИуВД
+[[c:OpenSSL::X509::Request]]уАБ[[c:OpenSSL::X509::CRL]] уВкуГЦуВ╕уВзуВпуГИуВТ
+ц╕буБЩуБУуБиуБлуВИуБгуБжуАБцЛбх╝╡щаШхЯЯуБоф╕нш║луВТ ExtensionFactory уВкуГЦуВ╕уВзуВпуГИуБМ
+шиИчоЧуБЩуВЛуБУуБиуБМуБзуБНуБ╛уБЩуАВ
+ф╛ЛуБИуБ░уАБ"subjectKeyIdentifier" цЛбх╝╡щаШхЯЯуБпши╝цШОцЫ╕уБоф╕АщГиуБоуГПуГГуВ╖уГехАд
+уВТхАдуБиуБЧуБжцМБуБбуБ╛уБЩуБМуАБ
+[[c:OpenSSL::X509::Certificate]] уВкуГЦуВ╕уВзуВпуГИуВТуБВуВЙуБЛуБШуВБц╕буБЧуБжуБКуБПуБУуБиуБлуВИуБгуБж
+[[m:OpenSSL::X509::ExtensionFactory#create_extension]] уБМуБЭуБохАдуВТшиИчоЧуБЧуБ╛уБЩуАВ
+уБУуВМуВЙуБоцГЕха▒уБМх┐ЕшжБуБкуБДха┤хРИуБп nil уВТц╕буБЧуБ╛уБЩуАВ
 
-░╩▓╝д╬есе╜е├е╔д╦дшд├д╞еке╓е╕езепе╚└╕└о╕хд╦╛┌╠└╜ёеке╓е╕езепе╚┼∙дЄ
-└▀─ъд╣дыд│д╚дмд╟днд▐д╣бг
+ф╗еф╕ЛуБоуГбуВ╜уГГуГЙуБлуВИуБгуБжуВкуГЦуВ╕уВзуВпуГИчФЯцИРх╛МуБлши╝цШОцЫ╕уВкуГЦуВ╕уВзуВпуГИчнЙуВТ
+шинхоЪуБЩуВЛуБУуБиуБМуБзуБНуБ╛уБЩуАВ
   * [[m:OpenSSL::X509::ExtensionFactory#issuer_certificate=]]
   * [[m:OpenSSL::X509::ExtensionFactory#subject_certificate=]]
   * [[m:OpenSSL::X509::ExtensionFactory#subject_request=]]
   * [[m:OpenSSL::X509::ExtensionFactory#crl=]] 
 
-@param issuer_cert ╛┌╠└╜ё╚п╣╘╝╘бвд╣д╩дяд┴ CA д╬ 
-       [[c:OpenSSL::X509::Certificate]] еке╓е╕езепе╚
-@param subject_cert ╛┌╠└╜ё╜ъ═н╝╘д╬
-       [[c:OpenSSL::X509::Certificate]] еке╓е╕езепе╚
-@param subject_req ┤╪╧вд╣ды╛┌╠└╜ё╜Ё╠╛═╫╡с([[c:OpenSSL::X509::Request]])
-       еке╓е╕езепе╚
-@param crl ┤╪╧вд╣ды ╛┌╠└╜ё╝║╕·еъе╣е╚([[c:OpenSSL::X509::CRL]])еке╓е╕езепе╚
+@param issuer_cert ши╝цШОцЫ╕чЩ║шбМшАЕуАБуБЩуБкуВПуБб CA уБо 
+       [[c:OpenSSL::X509::Certificate]] уВкуГЦуВ╕уВзуВпуГИ
+@param subject_cert ши╝цШОцЫ╕цЙАцЬЙшАЕуБо
+       [[c:OpenSSL::X509::Certificate]] уВкуГЦуВ╕уВзуВпуГИ
+@param subject_req щЦвщАгуБЩуВЛши╝цШОцЫ╕ч╜▓хРНшжБц▒В([[c:OpenSSL::X509::Request]])
+       уВкуГЦуВ╕уВзуВпуГИ
+@param crl щЦвщАгуБЩуВЛ ши╝цШОцЫ╕хд▒хК╣уГкуВ╣уГИ([[c:OpenSSL::X509::CRL]])уВкуГЦуВ╕уВзуВпуГИ
 

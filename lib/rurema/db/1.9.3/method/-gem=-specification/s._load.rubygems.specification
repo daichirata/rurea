@@ -4,7 +4,7 @@ kind=defined
 
 --- _load(str) -> Gem::Specification
 
-�ޡ�����뤵�줿�ǡ���������ɤ��뤿��Υ᥽�åɤǤ���
+マーシャルされたデータをロードするためのメソッドです。
 
-@param str �ޡ�����뤵�줿�ǡ�������ꤷ�ޤ���
+@param str マーシャルされたデータを指定します。
 

@@ -5,7 +5,7 @@ kind=defined
 --- started? -> bool
 --- active? -> bool
 
-HTTP ���å���󤬳��Ϥ���Ƥ����鿿���֤��ޤ���
+HTTP セッションが開始されていたら真を返します。
 
-active? �ϻ����٤�Υ᥽�åɤǤ���
+active? は時代遅れのメソッドです。
 

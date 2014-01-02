@@ -4,5 +4,5 @@ kind=defined
 
 --- scope_name(scope, task_name) -> String
 
-Ϳ����줿�������פȥ�����̾�򥳥����Ϣ�뤷���֤��ޤ���
+与えられたスコープとタスク名をコロンで連結して返します。
 

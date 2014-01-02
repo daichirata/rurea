@@ -5,17 +5,17 @@ kind=defined
 --- options                -> OptionParser
 --- options{|opt| ... }    -> object | nil
 
-���Ȥ�ѡ������뤿��� [[c:OptionParser]] ���֥������Ȥ��֤��ޤ���
-���ƤӽФ����˼�ưŪ����������ޤ���
-���� [[m:OptionParser#default_argv]] �ˤ� self �����åȤ���Ƥ��ޤ���
+自身をパースするための [[c:OptionParser]] オブジェクトを返します。
+初回呼び出し時に自動的に生成されます。
+この [[m:OptionParser#default_argv]] には self がセットされています。
 
-�֥��å���Ϳ�������ϡ�[[c:OptionParser]] ������Ȥ��ƥ֥��å���¹Ԥ��ޤ���
-�֥��å��μ¹Է�̤��֤��ޤ���
-�֥��å��μ¹������ [[c:OptionParser::ParseError]]
-��ȯ���������ϡ����� rescue �������顼��å���������Ϥ���
-nil ���֤��ޤ���
+ブロックを与えた場合は、[[c:OptionParser]] を引数としてブロックを実行します。
+ブロックの実行結果を返します。
+ブロックの実行途中で [[c:OptionParser::ParseError]]
+が発生した場合は、全て rescue し、エラーメッセージを出力し、
+nil を返します。
 
-��:
+例:
 
  require 'optparse'
  

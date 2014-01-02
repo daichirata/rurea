@@ -4,5 +4,5 @@ kind=defined
 
 --- tab_width -> Integer
 
-���ޥ�ɥ饤������� --tab-width ���ץ����ǻ��ꤷ�����ͤ��֤��ޤ���
+コマンドライン引数の --tab-width オプションで指定した数値を返します。
 

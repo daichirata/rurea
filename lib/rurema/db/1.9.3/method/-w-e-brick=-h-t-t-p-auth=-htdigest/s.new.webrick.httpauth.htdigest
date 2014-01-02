@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- new(path) -> WEBrick::HTTPAuth::Htdigest
-Htdigest еке╓е╕езепе╚дЄ└╕└од╖д▐д╣бг
+Htdigest уВкуГЦуВ╕уВзуВпуГИуВТчФЯцИРуБЧуБ╛уБЩуАВ
 
-@param path е╤е╣еяб╝е╔дЄ╩▌┬╕д╣дые╒ебедеыд╬е╤е╣дЄ═┐дид▐д╣бг
+@param path уГСуВ╣уГпуГ╝уГЙуВТф┐ЭхнШуБЩуВЛуГХуВбуВдуГлуБоуГСуВ╣уВТф╕ОуБИуБ╛уБЩуАВ
 

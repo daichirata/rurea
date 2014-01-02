@@ -4,7 +4,7 @@ kind=defined
 
 --- summary_width         -> Integer
 
-¥µ¥Þ¥ê¤òÉ½¼¨¤¹¤ë¤È¤­¤ÎÉý¤òÀ°¿ô¤ÇÊÖ¤·¤Þ¤¹¡£
+ã‚µãƒžãƒªã‚’è¡¨ç¤ºã™ã‚‹ã¨ãã®å¹…ã‚’æ•´æ•°ã§è¿”ã—ã¾ã™ã€‚
 
-@return ¥µ¥Þ¥ê¤òÉ½¼¨¤¹¤ë¤È¤­¤ÎÉý¤òÀ°¿ô¤ÇÊÖ¤·¤Þ¤¹¡£
+@return ã‚µãƒžãƒªã‚’è¡¨ç¤ºã™ã‚‹ã¨ãã®å¹…ã‚’æ•´æ•°ã§è¿”ã—ã¾ã™ã€‚
 

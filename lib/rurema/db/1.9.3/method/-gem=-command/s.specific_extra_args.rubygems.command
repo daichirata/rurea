@@ -4,9 +4,9 @@ kind=defined
 
 --- specific_extra_args(cmd) -> Array
 
-Ϳ����줿���ޥ�ɤ��б������ɲäΰ������֤��ޤ���
+与えられたコマンドに対応する追加の引数を返します。
 
-���̤��ɲð����ϥץ������γ��ϻ��� Gem ������ե����뤫���ɤ߹��ޤ�ޤ���
+特別な追加引数はプログラムの開始時に Gem の設定ファイルから読み込まれます。
 
-@param cmd ���ޥ��̾����ꤷ�ޤ���
+@param cmd コマンド名を指定します。
 

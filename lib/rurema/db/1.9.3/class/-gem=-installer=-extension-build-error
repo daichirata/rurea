@@ -6,4 +6,4 @@ library=rubygems.installer
 aliases=
 aliasof=
 
-��ĥ�饤�֥���ӥ����˥��顼��ȯ����������ȯ�����ޤ���
+拡張ライブラリをビルド中にエラーが発生した場合に発生します。

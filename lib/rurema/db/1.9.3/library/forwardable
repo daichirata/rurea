@@ -3,12 +3,13 @@ classes=Forwardable,SingleForwardable
 methods=
 sublibraries=
 is_sublibrary=false
+category=DesignPattern
 
-¥¯¥é¥¹¤ä¥ª¥Ö¥¸¥§¥¯¥È¤Ë¡¢¥á¥½¥Ã¥É¤Î°Ñ¾ùµ¡Ç½¤òÄÉ²Ã¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ã‚¯ãƒ©ã‚¹ã‚„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã€ãƒ¡ã‚½ãƒƒãƒ‰ã®å§”è­²æ©Ÿèƒ½ã‚’è¿½åŠ ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
 
 
 
-=== »²¹Í
+=== å‚è€ƒ
 
-  * Rubyist Magazine 0012 ¹æ É¸½àÅºÉÕ¥é¥¤¥Ö¥é¥ê¾Ò²ğ¡ÚÂè 6 ²ó¡Û°Ñ¾ù ([[url:http://jp.rubyist.net/magazine/?0012-BundledLibraries]])
+  * Rubyist Magazine 0012 å· æ¨™æº–æ·»ä»˜ãƒ©ã‚¤ãƒ–ãƒ©ãƒªç´¹ä»‹ã€ç¬¬ 6 å›ã€‘å§”è­² ([[url:http://jp.rubyist.net/magazine/?0012-BundledLibraries]])

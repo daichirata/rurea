@@ -4,8 +4,8 @@ kind=defined
 
 --- generator -> Generator
 
-���ޥ�ɥ饤������� --fmt ���ץ����ǻ��ꤷ��ʸ����˱�����
-Generator ���֤��ޤ���
+コマンドライン引数の --fmt オプションで指定した文字列に応じた
+Generator を返します。
 
-���ꤷ�ʤ��ä����ϡ�HTML ���б����� Generator ���֤��ޤ���
+指定しなかった場合は、HTML に対応する Generator を返します。
 

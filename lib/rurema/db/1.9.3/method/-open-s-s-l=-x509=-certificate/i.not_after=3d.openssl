@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- not_after=(time)
-¾ÚÌÀ½ñ¤¬Ìµ¸ú¤Ë¤Ê¤ë»ş¹ï¤òÀßÄê¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ãŒç„¡åŠ¹ã«ãªã‚‹æ™‚åˆ»ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param time ¾ÚÌÀ½ñ¤Î½ªÎ»»ş¹ï
-@raise OpenSSL::X509::CertificateError ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param time è¨¼æ˜æ›¸ã®çµ‚äº†æ™‚åˆ»
+@raise OpenSSL::X509::CertificateError è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

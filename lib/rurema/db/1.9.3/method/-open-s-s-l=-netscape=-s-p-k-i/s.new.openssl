@@ -5,11 +5,11 @@ kind=defined
 --- new() -> OpenSSL::Netscape::SPKI
 --- new(buf) -> OpenSSL::Netscape::SPKI
 
-SPKI ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
+SPKI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-Ê¸»úÎó¤òÅÏ¤¹¤È¡¢PEM ·Á¼°¡¢¤â¤·¤¯¤Ï DER ·Á¼°¤Î¥Ç¡¼¥¿¤È¤ß¤Ê¤·¡¢
-¤½¤ÎÆâÍÆ¤òÆÉ¤ß¹þ¤ß¤Þ¤¹¡£
+æ–‡å­—åˆ—ã‚’æ¸¡ã™ã¨ã€PEM å½¢å¼ã€ã‚‚ã—ãã¯ DER å½¢å¼ã®ãƒ‡ãƒ¼ã‚¿ã¨ã¿ãªã—ã€
+ãã®å†…å®¹ã‚’èª­ã¿è¾¼ã¿ã¾ã™ã€‚
 
-@param buf SPKI ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤¹¤ë¤¿¤á¤ÎÊ¸»úÎó¥Ç¡¼¥¿
-@raise OpenSSL::Netscape::SPKIError ¥ª¥Ö¥¸¥§¥¯¥È¤ÎÀ¸À®¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@param buf SPKI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹ãŸã‚ã®æ–‡å­—åˆ—ãƒ‡ãƒ¼ã‚¿
+@raise OpenSSL::Netscape::SPKIError ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ç”Ÿæˆã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

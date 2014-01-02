@@ -4,8 +4,8 @@ kind=defined
 
 --- endgrent -> nil
 
-[[m:Etc.#getgrent]] �ˤ�äƳ��Ϥ��줿 /etc/group �ե�������ɤ�
-�ץ�������λ�����ե�������Ĥ��ޤ���
+[[m:Etc.#getgrent]] によって開始された /etc/group ファイルを読む
+プロセスを終了させファイルを閉じます。
 
 @see [[man:getgrent(3)]]
 

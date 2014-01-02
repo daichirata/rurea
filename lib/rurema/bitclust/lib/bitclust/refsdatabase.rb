@@ -6,10 +6,12 @@
 #
 
 module BitClust
+
+  # Corresponds to db-x.y.z/refs file.
   class RefsDatabase
     def self.load(src)
       if src.respond_to?(:to_str)
-        buf = fopen(src.to_str, 'r:EUC-JP'){|f| f.read}
+        buf = fopen(src.to_str, 'r:UTF-8'){|f| f.read}
       elsif src.respond_to?(:to_io)
         buf = src.to_io.read
       else
@@ -20,12 +22,12 @@ module BitClust
       buf.each_line{|l|
         if /((?:\\,|[^,])+),((?:\\,|[^,])+),((?:\\,|[^,])+),((?:\\,|[^,])+)\n/ =~ l
           type, id, linkid, desc = [$1, $2, $3, $4].map{|e| e.gsub(/\\(.)/){|s| $1 == ',' ? ',' : s } }
-          refs[type, id, linkid] = desc          
+          refs[type, id, linkid] = desc
         end
       }
       refs
     end
-    
+
     def initialize
       @h = {}
     end
@@ -41,7 +43,7 @@ module BitClust
     def save(s)
       if s.respond_to?(:to_str)
         path = s.to_str
-        io = fopen(path, 'w:EUC-JP')
+        io = fopen(path, 'w:UTF-8')
       elsif s.respond_to?(:to_io)
         io = s.to_io
       else
@@ -51,6 +53,7 @@ module BitClust
       @h.each{|k, v|
         io.write(  [k, v].flatten.map{|e| e.gsub(/,/, '\\,') }.join(',') + "\n" )
       }
+      io.close
     end
 
     def extract(entry)

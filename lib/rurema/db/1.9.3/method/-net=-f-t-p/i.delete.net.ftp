@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- delete(filename) -> nil
-¥Õ¥¡¥¤¥ë¤òºï½ü¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
-¥ê¥â¡¼¥È¥µ¡¼¥Ð¾å¤Î fromname ¤È¤¤¤¦Ì¾Á°¤Î¥Õ¥¡¥¤¥ë¤òºï½ü¤·¤Þ¤¹¡£
+ãƒªãƒ¢ãƒ¼ãƒˆã‚µãƒ¼ãƒä¸Šã® fromname ã¨ã„ã†åå‰ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
-ºï½ü¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤Ë¤Ï Îã³°¤¬È¯À¸¤·¤Þ¤¹¡£
+å‰Šé™¤ã«å¤±æ•—ã—ãŸå ´åˆã«ã¯ ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-@param filename ºï½ü¤¹¤ë¥Õ¥¡¥¤¥ë¤ÎÌ¾Á°¤òÍ¿¤¨¤Þ¤¹¡£
+@param filename å‰Šé™¤ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã®åå‰ã‚’ä¸Žãˆã¾ã™ã€‚
 
-@raise Net::FTPPermError ±þÅú¥³¡¼¥É¤¬ 5yz ¤Ç¤¢¤Ã¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
-@raise Net::FTPReplyError ±þÅú¥³¡¼¥É¤¬ 5yz °Ê³°¤ÇÀµ¤·¤¯¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Net::FTPPermError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ 5yz ã§ã‚ã£ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
+@raise Net::FTPReplyError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ 5yz ä»¥å¤–ã§æ­£ã—ããªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

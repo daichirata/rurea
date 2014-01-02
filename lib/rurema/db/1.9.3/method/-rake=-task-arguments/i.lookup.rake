@@ -4,7 +4,7 @@ kind=defined
 
 --- lookup(name) -> object
 
-Ϳ����줿̾�����б������ͤ��֤��ޤ���
+与えられた名前に対応する値を返します。
 
-@param name �ѥ�᡼��̾����ꤷ�ޤ���
+@param name パラメータ名を指定します。
 

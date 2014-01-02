@@ -4,11 +4,11 @@ kind=added
 
 --- Inspector(inspect, init = nil) -> IRB::Inspector
 
-[[c:IRB::Inspector]] ���֥������Ȥ��������ޤ���
+[[c:IRB::Inspector]] オブジェクトを生成します。
 
-@param inspect �¹Է�̤ν��ϤΤ���μ�³�����֥������Ȥ���ꤷ�ޤ���
+@param inspect 実行結果の出力のための手続きオブジェクトを指定します。
 
-@param init inspect_mode �ν�����Τ���μ�³�����֥������Ȥ���ꤷ�ޤ���
-            ���餫���� require ��ɬ�פʾ��ʤɤˡ�proc { require "foo" }
-            �Ȥ��ä������Ԥ��ޤ���
+@param init inspect_mode の初期化のための手続きオブジェクトを指定します。
+            あらかじめ require が必要な場合などに、proc { require "foo" }
+            といった指定を行います。
 

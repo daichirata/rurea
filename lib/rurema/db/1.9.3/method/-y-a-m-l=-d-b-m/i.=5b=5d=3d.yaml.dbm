@@ -5,14 +5,14 @@ kind=defined
 --- []=(key, value) -> object
 --- store(key, value) -> object
 
-key ���Ф��� value ���Ǽ���ޤ���
+key に対して value を格納します。
 
-val �ǻ��ꤷ�����֥������Ȥ��֤��ޤ���
+val で指定したオブジェクトを返します。
 
-@param key ������ʸ����ǻ��ꤷ�ޤ���
+@param key キーを文字列で指定します。
 
-@param value �ͤ���ꤷ�ޤ���YAML �������Ѵ��Ǥ��륪�֥������Ȥ������
-             ���ޤ���
+@param value 値を指定します。YAML 形式に変換できるオブジェクトが指定で
+             きます。
 
-@raise DBMError ���Ǥγ�Ǽ�˼��Ԥ�������ȯ�����ޤ���
+@raise DBMError 要素の格納に失敗した場合に発生します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- run(args = []) -> Fixnum | nil
 
-���ƤΥƥ��Ȥ�¹Ԥ��뤿��Υ᥽�åɤǤ���
+全てのテストを実行するためのメソッドです。
 
-@param args ���ޥ�ɥ饤���������ꤷ�ޤ���
+@param args コマンドライン引数を指定します。
 

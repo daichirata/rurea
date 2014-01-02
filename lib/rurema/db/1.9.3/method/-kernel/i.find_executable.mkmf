@@ -4,16 +4,16 @@ kind=added
 
 --- find_executable(bin, path = nil) -> String | nil
 
-�ѥ� path ����¹ԥե����� bin ��õ���ޤ���
+パス path から実行ファイル bin を探します。
 
-�¹ԥե����뤬���Ĥ��ä����ϡ����Υե�ѥ����֤��ޤ���
-�¹ԥե����뤬���Ĥ���ʤ��ä����ϡ�nil���֤��ޤ���
+実行ファイルが見つかった場合は、そのフルパスを返します。
+実行ファイルが見つからなかった場合は、nilを返します。
 
-���Υ᥽�åɤ� Makefile ���ѹ����ޤ���
+このメソッドは Makefile を変更しません。
 
-@param bin �¹ԥե������̾������ꤷ�ޤ���
+@param bin 実行ファイルの名前を指定します。
 
-@param path �ѥ�����ꤷ�ޤ����ǥե���ȤϴĶ��ѿ� PATH �Ǥ���
-            �Ķ��ѿ� PATH ���������Ƥ��ʤ����� /usr/local/bin,
-            /usr/ucb, /usr/bin, /bin ��Ȥ��ޤ���
+@param path パスを指定します。デフォルトは環境変数 PATH です。
+            環境変数 PATH が定義されていない場合は /usr/local/bin,
+            /usr/ucb, /usr/bin, /bin を使います。
 

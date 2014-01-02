@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- public_key -> OpenSSL::PKey::PKey
-�����Ԥθ��������֤��ޤ���
+申請者の公開鍵を返します。
 
-�ºݤˤ� [[c:OpenSSL::PKey::PKey]] ���ΤΥ��󥹥��󥹤Ǥʤ���
-���Υ��֥��饹���֤��ޤ���
+実際には [[c:OpenSSL::PKey::PKey]] 自体のインスタンスでなく、
+そのサブクラスを返します。
 
-@raise OpenSSL::X509::RequestError �������μ����˼��Ԥ�������ȯ�����ޤ�
-@raise OpenSSL::PKey::PKeyError ���η����������Ǥ��ä�����ȯ�����ޤ�
+@raise OpenSSL::X509::RequestError 公開鍵の取得に失敗した場合に発生します
+@raise OpenSSL::PKey::PKeyError 鍵の形式が不正であった場合に発生します
 

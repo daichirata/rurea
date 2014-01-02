@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- to -> [Net::IMAP::Address] | nil
-To �� [[c:Net::IMAP::Address]] ���֥������Ȥ�������֤��ޤ���
+To を [[c:Net::IMAP::Address]] オブジェクトの配列で返します。
 
-����٥����פ�¸�ߤ��ʤ��Ȥ��� nil ���֤��ޤ���
+エンベロープに存在しないときは nil を返します。
 
 

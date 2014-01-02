@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- generate_key! -> self
-¸°¥Ñ¥é¥á¡¼¥¿ p ¤È g ¤«¤é¸°ÂÐ¤òÀ¸À®¤·¤Ê¤ª¤·¡¢
-¼«¿È¤Ë¥»¥Ã¥È¤·¤Þ¤¹¡£
+éµãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ p ã¨ g ã‹ã‚‰éµå¯¾ã‚’ç”Ÿæˆã—ãªãŠã—ã€
+è‡ªèº«ã«ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-°ÊÁ°¤Î¸°ÂÐ¤ÎÃÍ¤ÏÇÑ´þ¤µ¤ì¤Þ¤¹¡£
+ä»¥å‰ã®éµå¯¾ã®å€¤ã¯å»ƒæ£„ã•ã‚Œã¾ã™ã€‚
 
-À¸À®¤·¤¿ÃÍ¤Ï [[m:OpenSSL::PKey::DH#params_ok?]] ¤Ç
-°ÂÁ´¤«¤É¤¦¤«¥Á¥§¥Ã¥¯¤·¤Æ¤«¤éÍøÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ç”Ÿæˆã—ãŸå€¤ã¯ [[m:OpenSSL::PKey::DH#params_ok?]] ã§
+å®‰å…¨ã‹ã©ã†ã‹ãƒã‚§ãƒƒã‚¯ã—ã¦ã‹ã‚‰åˆ©ç”¨ã—ã¦ãã ã•ã„ã€‚
 
-@raise OpenSSL::PKey::DHError ¸°¤ÎÀ¸À®¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@raise OpenSSL::PKey::DHError éµã®ç”Ÿæˆã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

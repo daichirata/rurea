@@ -3,13 +3,13 @@ visibility=public
 kind=added
 
 --- cert_store=(store)
-��³���ξ�����θ��ڤΤ���˻Ȥ������ꤷ�Ƥ��� CA �������
-�ޤ�����񥹥ȥ������ꤷ�ޤ���
+接続相手の証明書の検証のために使う、信頼している CA 証明書を
+含む証明書ストアを設定します。
 
-�̾�� [[m:Net::HTTP#ca_file=]] �� [[m:Net::HTTP#ca_path=]] ��
-���ꤷ�ޤ��������ܺ٤�����򤷤������ˤϤ�������Ѥ��ޤ���
+通常は [[m:Net::HTTP#ca_file=]] や [[m:Net::HTTP#ca_path=]] で
+設定しますが、より詳細な設定をしたい場合にはこちらを用います。
 
-�ǥե���Ȥ� nil (�����񥹥ȥ�����ꤷ�ʤ�)�Ǥ���
+デフォルトは nil (証明書ストアを指定しない)です。
 
 @see [[m:Net::HTTP#cert_store=]], [[m:OpenSSL::SSL::SSLContext#cert_store]]
 

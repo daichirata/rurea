@@ -4,7 +4,7 @@ kind=added
 
 --- isjis -> bool
 
-self �� ISO-2022-JP �ʥХ�����Ȥ��������Ǥ��뤫�ɤ�����Ƚ�ꤷ�ޤ���
+self が ISO-2022-JP なバイト列として正当であるかどうかを判定します。
 
-Kconv.isjis(self) ��Ʊ���Ǥ���
+Kconv.isjis(self) と同じです。
 

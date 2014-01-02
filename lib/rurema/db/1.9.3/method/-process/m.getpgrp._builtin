@@ -4,11 +4,11 @@ kind=defined
 
 --- getpgrp            -> Integer
 
-���ߤΥץ������Υץ��������롼�� ID ���������֤��ޤ���
+現在のプロセスのプロセスグループ ID を整数で返します。
 
-@raise Errno::EXXX �ץ��������롼�פμ����˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX プロセスグループの取得に失敗した場合に発生します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 
 @see [[man:getpgrp(2)]]
 

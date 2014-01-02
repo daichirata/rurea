@@ -3,5 +3,6 @@ classes=TkCanvasItemConfig,TkCanvas,TkcItem,TkcArc,TkcBitmap,TkcImage,TkcLine,Tk
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

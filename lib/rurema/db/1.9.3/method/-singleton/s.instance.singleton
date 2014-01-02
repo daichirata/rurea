@@ -4,8 +4,8 @@ kind=defined
 
 --- instance -> object
 
-���Υ��饹��ͣ��Υ��󥹥��󥹤��֤��ޤ���
-�ǽ�˸ƤФ줿�Ȥ��Ϥ��Υ��󥹥��󥹤��������ޤ���
+そのクラスの唯一のインスタンスを返します。
+最初に呼ばれたときはそのインスタンスを生成します。
 
-Singleton �� include �������饹���������ޤ��Τǡ�
-���Τˤ� Singleton �⥸�塼��Υ᥽�åɤǤϤ���ޤ���
+Singleton を include したクラスで定義されますので、
+正確には Singleton モジュールのメソッドではありません。

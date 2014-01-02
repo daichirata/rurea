@@ -4,6 +4,6 @@ kind=defined
 
 --- irb_context -> IRB::Context
 
-irb ¤Î¸½ºß¤ÎÀßÄê([[c:IRB::Context]])¤òÊÖ¤·¤Þ¤¹¡£
+irb ã®ç¾åœ¨ã®è¨­å®š([[c:IRB::Context]])ã‚’è¿”ã—ã¾ã™ã€‚
 
 

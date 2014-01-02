@@ -4,7 +4,7 @@ kind=defined
 
 --- default_argv    -> [String]
 
-���Ȥ��ǥե���Ȥǥѡ������������ʸ�����������֤��ޤ���
+自身がデフォルトでパースする引数を文字列の配列で返します。
 
-@param argv �ǥե���Ȥǥѡ�������ʸ�����������֤��ޤ���
+@param argv デフォルトでパースする文字列の配列を返します。
 

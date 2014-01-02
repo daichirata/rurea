@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- prev_year(n = 1) -> Date
-n Ç¯Á°¤òÊÖ¤·¤Ş¤¹¡£
+n å¹´å‰ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param n Ç¯¿ô
+@param n å¹´æ•°
 

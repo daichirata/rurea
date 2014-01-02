@@ -6,8 +6,8 @@ library=net.imap
 aliases=
 aliasof=
 
-GETACL �α����γ����Ǥ�ɽ�����饹�Ǥ���
+GETACL の応答の各要素を表すクラスです。
 
-[[m:Net::IMAP#getacl]] ���֤��ͤȤ����Ѥ����ޤ���
+[[m:Net::IMAP#getacl]] の返り値として用いられます。
 
-�ܤ����� [[RFC:2086]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2086]] を参照してください。

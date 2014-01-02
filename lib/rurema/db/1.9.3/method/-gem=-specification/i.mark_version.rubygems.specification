@@ -4,5 +4,5 @@ kind=defined
 
 --- mark_version -> String
 
-RubyGems �ΥС������������˥��åȤ��ޤ���
+RubyGems のバージョンを内部にセットします。
 

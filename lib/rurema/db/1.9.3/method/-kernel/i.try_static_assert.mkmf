@@ -8,10 +8,10 @@ kind=added
 
 ...
 
-@param expr C ����μ�����ꤷ�ޤ���
+@param expr C 言語の式を指定します。
 
-@param headers �ɲäΥإå��ե��������ꤷ�ޤ���
+@param headers 追加のヘッダファイルを指定します。
 
-@param opt ����ѥ�����Ϥ����ץ�������ꤷ�ޤ���
-           $CFLAGS �⥳��ѥ���ˤ��Ϥ���ޤ���
+@param opt コンパイラに渡すオプションを指定します。
+           $CFLAGS もコンパイラには渡されます。
 

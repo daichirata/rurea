@@ -5,5 +5,5 @@ kind=defined
 --- last_description -> String
 --- last_comment -> String
 
-Rakefile ��κǿ��ξܺ����������פ��뤿��Υ᥽�åɤǤ���
+Rakefile 内の最新の詳細説明を追跡するためのメソッドです。
 

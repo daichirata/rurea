@@ -6,4 +6,4 @@ library=rubygems.source_info_cache_entry
 aliases=
 aliasof=
 
-[[c:Gem::SourceInfoCache]] ¤¬»ı¤Ä¥¨¥ó¥È¥ê¤òÉ½¤¹¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+[[c:Gem::SourceInfoCache]] ãŒæŒã¤ã‚¨ãƒ³ãƒˆãƒªã‚’è¡¨ã™ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

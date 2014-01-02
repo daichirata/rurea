@@ -6,4 +6,4 @@ library=resolv
 aliases=
 aliasof=
 
-DNS �����ФؤΥꥯ�����Ȥ˼��Ԥ�������ȯ�������㳰�Υ��饹�Ǥ���
+DNS サーバへのリクエストに失敗した場合に発生する例外のクラスです。

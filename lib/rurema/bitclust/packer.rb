@@ -1,5 +1,5 @@
 #!/usr/bin/ruby -Ke
-# -*- coding: euc-jp -*-
+# -*- coding: utf-8 -*-
 
 require 'fileutils'
 require 'optparse'
@@ -17,14 +17,14 @@ end
 
 bitclust_src_path = File.dirname(File.expand_path(__FILE__))
 parent_path = File.dirname(bitclust_src_path)
-output_path = File.join(parent_path, "ruby-refm-1.9.1-dynamic")
+output_path = File.join(parent_path, "ruby-refm-1.9.3-dynamic")
 bitclust_dest_dir = "bitclust"
 rubydoc_refm_api_src_path = File.join(parent_path, "rubydoc/refm/api/src")
 rubydoc_refm_capi_src_path = File.join(parent_path, "rubydoc/refm/capi/src/*")
-database_encoding = "euc-jp"
+database_encoding = "utf-8"
 database_versions = [
   "1.8.7",
-  "1.9.2",
+  "1.9.3",
 ]
 database_version_to_dir = proc {|version| "db-" + version.tr(".", "_") }
 title = "bitclust"
@@ -64,6 +64,7 @@ rescue OptionParser::ParseError => err
 end
 
 bitclust_command = File.join(bitclust_src_path, "bin/bitclust")
+bitclust_libdir = File.join(bitclust_src_path, "lib")
 
 def system_verbose(*args)
   puts args.inspect
@@ -85,9 +86,9 @@ end
 database_versions.each do |version|
   database_path = File.join(output_path, database_version_to_dir.call(version))
   unless File.exist?(database_path)
-    system_verbose(ruby, "-Ke", bitclust_command, "--database=#{database_path}", "init", "encoding=#{database_encoding}", "version=#{version}")
-    system_verbose(ruby, "-Ke", bitclust_command, "--database=#{database_path}", "update", "--stdlibtree=#{rubydoc_refm_api_src_path}")
-    system_verbose(ruby, "-Ke", bitclust_command, "--database=#{database_path}", "--capi", "update", *Dir.glob(rubydoc_refm_capi_src_path).to_a)
+    system_verbose(ruby, "-Ku", "-I#{bitclust_libdir}", bitclust_command, "--database=#{database_path}", "init", "encoding=#{database_encoding}", "version=#{version}")
+    system_verbose(ruby, "-Ku", "-I#{bitclust_libdir}", bitclust_command, "--database=#{database_path}", "update", "--stdlibtree=#{rubydoc_refm_api_src_path}")
+    system_verbose(ruby, "-Ku", "-I#{bitclust_libdir}", bitclust_command, "--database=#{database_path}", "--capi", "update", *Dir.glob(rubydoc_refm_capi_src_path).to_a)
   end
 end
 
@@ -96,16 +97,21 @@ unless File.exist?(server_rb)
   puts "write #{server_rb}"
   File.open(server_rb, "wb", 0755) do |f|
     f.puts <<-RUBY
-#!/usr/bin/ruby -Ke
-Dir.chdir File.dirname(__FILE__)
-standalone = "#{bitclust_dest_dir}/standalone.rb"
-src = File.read(standalone).sub(/\\$0/) { standalone.dump }
-ARGV.unshift "--bind-address=127.0.0.1"
-ARGV.unshift "--baseurl="
-ARGV.unshift "--debug"
-ARGV.unshift "--auto"
-ARGV.unshift "--capi"
-eval src, binding, standalone, 1
+#!/usr/bin/ruby -Ku
+require 'pathname'
+lib_dir = "#{bitclust_dest_dir}/lib"
+$LOAD_PATH.unshift(lib_dir)
+require "bitclust"
+require "bitclust/runner"
+argv = [
+        "server",
+        "--bind-address=127.0.0.1",
+        "--baseurl=",
+        "--debug",
+        "--auto",
+        "--capi"
+       ]
+BitClust::Runner.new.run(argv)
     RUBY
   end
 end
@@ -119,30 +125,30 @@ unless File.exist?(readme_html)
 
 <html lang="ja-JP">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Language" content="ja-JP">
   <link rel="stylesheet" type="text/css" href="./bitclust/theme/default/style.css">
-  <title>Ruby ¥ê¥Õ¥¡¥ì¥ó¥¹¥Ş¥Ë¥å¥¢¥ëºş¿··×²è</title>
+  <title>Ruby ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãƒãƒ‹ãƒ¥ã‚¢ãƒ«åˆ·æ–°è¨ˆç”»</title>
 </head>
 <body>
-<h1>Ruby ¥ê¥Õ¥¡¥ì¥ó¥¹¥Ş¥Ë¥å¥¢¥ëºş¿··×²è</h1>
+<h1>Ruby ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãƒãƒ‹ãƒ¥ã‚¢ãƒ«åˆ·æ–°è¨ˆç”»</h1>
 
-<h2>¤³¤ì¤Ï²¿¡©</h2>
+<h2>ã“ã‚Œã¯ä½•ï¼Ÿ</h2>
 <p>
-Ruby ¥ê¥Õ¥¡¥ì¥ó¥¹¥Ş¥Ë¥å¥¢¥ë¤Î´Ê°× Web ¥µ¡¼¥Ğ¥·¥¹¥Æ¥à¤Ç¤¹¡£
+Ruby ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ã®ç°¡æ˜“ Web ã‚µãƒ¼ãƒã‚·ã‚¹ãƒ†ãƒ ã§ã™ã€‚
 </p>
 
 <!--links-->
 
 <p>
-»È¤¤Êı¤Ë´Ø¤·¤Æ¤Ï°Ê²¼¤Î URL ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+ä½¿ã„æ–¹ã«é–¢ã—ã¦ã¯ä»¥ä¸‹ã® URL ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 </p>
 <ul>
   <li><a href="http://bugs.ruby-lang.org/projects/rurema/wiki/ReleasePackageHowTo">http://bugs.ruby-lang.org/projects/rurema/wiki/ReleasePackageHowTo</a></li>
 </ul>
 
 <p>
-¥×¥í¥¸¥§¥¯¥ÈÁ´ÂÎ¤Ë´Ø¤·¤Æ¤Ï°Ê²¼¤Î URL ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆå…¨ä½“ã«é–¢ã—ã¦ã¯ä»¥ä¸‹ã® URL ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 </p>
 <ul>
   <li><a href="http://bugs.ruby-lang.org/projects/rurema/wiki">http://bugs.ruby-lang.org/projects/rurema/wiki</a></li>

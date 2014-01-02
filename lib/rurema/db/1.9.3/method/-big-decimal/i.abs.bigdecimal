@@ -2,10 +2,10 @@ names=abs
 visibility=public
 kind=defined
 
---- abs
-@todo
+--- abs -> BigDecimal
 
-a ¤ÎÀäÂÐÃÍ
+self ã®çµ¶å¯¾å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-    c = a.abs
+  BigDecimal('5').abs.to_i  # => 5
+  BigDecimal('-3').abs.to_i # => 3
 

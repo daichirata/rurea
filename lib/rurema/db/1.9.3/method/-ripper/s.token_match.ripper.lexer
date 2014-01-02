@@ -4,8 +4,8 @@ kind=added
 
 --- Ripper.token_match(src, pattern) -> Ripper::TokenPattern::MatchData | nil
 
-Ruby �ץ������ src ���Ф��ƥѥ����� pattern ��ޥå�����
-�ޥå��ǡ������֤��ޤ���
+Ruby プログラム src に対してパターン pattern をマッチし、
+マッチデータを返します。
 
-�饤�֥�������ǻ��Ѥ��ޤ���
+ライブラリ内部で使用します。
 

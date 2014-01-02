@@ -4,7 +4,7 @@ kind=defined
 
 --- external=(flag)
 
-�����Υ������ͳ�� rdoc ���ޥ�ɤ�¹Ԥ��뤫�ɤ������åȤ��ޤ���
+外部のシェル経由で rdoc コマンドを実行するかどうかセットします。
 
-@param flag ���ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真または偽を指定します。
 

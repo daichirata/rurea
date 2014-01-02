@@ -4,12 +4,12 @@ kind=defined
 
 --- execute(*obj) -> IRB::Irb
 
-���ꤷ������ irb �˰�ư���ޤ���
+指定したサブ irb に移動します。
 
-@param obj ��ư���륵�� irb ���̤���ʲ��Τ����줫�Υ��֥������Ȥ���ꤷ�ޤ���
+@param obj 移動するサブ irb を識別する以下のいずれかのオブジェクトを指定します。
 
- * irb ���󥿥ץ꥿�ֹ�
- * irb ���֥�������
- * ����å� ID
- * �ƥ��󥿥ץ꥿�� self (��irb(obj)�פǵ�ư�������� obj)
+ * irb インタプリタ番号
+ * irb オブジェクト
+ * スレッド ID
+ * 各インタプリタの self (「irb(obj)」で起動した時の obj)
 

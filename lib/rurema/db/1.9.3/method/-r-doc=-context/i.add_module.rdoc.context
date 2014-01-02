@@ -4,16 +4,16 @@ kind=defined
 
 --- add_module(class_type, name) -> RDoc::NormalModule | RDoc::SingleClass | RDoc::NormalClass
 
-�����ǻ��ꤷ���⥸�塼����ɲä��ޤ���
+引数で指定したモジュールを追加します。
 
-�����������饹�Ȥ��ƴ���Ʊ̾�Τ�Τ���Ͽ����Ƥ������ϡ����⤻���ˤ�
-�Υ��饹���֤��ޤ���
+ただし、クラスとして既に同名のものが登録されていた場合は、何もせずにそ
+のクラスを返します。
 
-@param class_type �ɲä��륯�饹���⥸�塼��� [[c:RDoc::NormalClass]]��
-                  [[c:RDoc::SingleClass]]��[[c:RDoc::NormalModule]] ��
-                  �֥������ȤΤ����줫�ǻ��ꤷ�ޤ���
+@param class_type 追加するクラス、モジュールを [[c:RDoc::NormalClass]]、
+                  [[c:RDoc::SingleClass]]、[[c:RDoc::NormalModule]] オ
+                  ブジェクトのいずれかで指定します。
 
-@param name ���饹̾��ʸ����ǻ��ꤷ�ޤ���
+@param name クラス名を文字列で指定します。
 
 @see [[m:RDoc::Context#add_class]]
 

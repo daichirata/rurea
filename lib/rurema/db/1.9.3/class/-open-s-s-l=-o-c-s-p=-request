@@ -6,7 +6,7 @@ library=openssl
 aliases=
 aliasof=
 
-OCSP ¥ê¥¯¥¨¥¹¥È¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+OCSP ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-Ìä¹ç¤»¤¿¤¤¾ÚÌÀ½ñ¤ò [[c:OpenSSL::OCSP::CertificateId]] ¥ª¥Ö¥¸¥§¥¯¥È¤Î
-·Á¤ÇÊ£¿ô»ý¤Ä¤³¤È¤¬¤Ç¤­¤Þ¤¹¡£
+å•åˆã›ãŸã„è¨¼æ˜Žæ›¸ã‚’ [[c:OpenSSL::OCSP::CertificateId]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®
+å½¢ã§è¤‡æ•°æŒã¤ã“ã¨ãŒã§ãã¾ã™ã€‚

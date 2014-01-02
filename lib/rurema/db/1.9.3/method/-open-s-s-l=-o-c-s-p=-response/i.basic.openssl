@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- basic -> OpenSSL::OCSP::BasicResponse | nil
-Response еке╓е╕езепе╚дм╩▌╗¤д╖д╞ддды BasicResponse еке╓е╕езепе╚дЄ
-╩╓д╖д▐д╣бг
+Response уВкуГЦуВ╕уВзуВпуГИуБМф┐ЭцМБуБЧуБжуБДуВЛ BasicResponse уВкуГЦуВ╕уВзуВпуГИуВТ
+ш┐ФуБЧуБ╛уБЩуАВ
 
 @see [[c:OpenSSL::OCSP::BasicResponse]]
 

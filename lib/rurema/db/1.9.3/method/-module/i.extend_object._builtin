@@ -2,20 +2,27 @@ names=extend_object
 visibility=private 
 kind=defined
 
---- extend_object(module) -> Module
+--- extend_object(obj) -> object
 
-[[m:Object#extend]] ¤Î¼ÂÂÎ¤Ç¤¹¡£¥ª¥Ö¥¸¥§¥¯¥È¤Ë¥â¥¸¥å¡¼¥ë¤Îµ¡Ç½¤òÄÉ²Ã¤·¤Ş¤¹¡£
+[[m:Object#extend]] ã®å®Ÿä½“ã§ã™ã€‚ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®æ©Ÿèƒ½ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-[[m:Object#extend]] ¤Ï¡¢Ruby ¤Ç½ñ¤¯¤È°Ê²¼¤Î¤è¤¦¤ËÄêµÁ¤Ç¤­¤Ş¤¹¡£
+[[m:Object#extend]] ã¯ã€Ruby ã§æ›¸ãã¨ä»¥ä¸‹ã®ã‚ˆã†ã«å®šç¾©ã§ãã¾ã™ã€‚
 
   def extend(*modules)
-    modules.each {|mod| mod.__send__ :extend_object, self }
+    modules.reverse_each do |mod|
+      # extend_object ã‚„ extended ã¯ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãƒ¡ã‚½ãƒƒãƒ‰ãªã®ã§
+      # ç›´æ¥ mod.extend_object(self) ãªã©ã¨ã¯æ›¸ã‘ãªã„
+      mod.__send__(:extend_object, self)
+      mod.__send__(:extended, self)
+    end
   end
 
-extend_object ¤Î¥Ç¥Õ¥©¥ë¥È¤Î¼ÂÁõ¤Ç¤Ï¡¢self ¤ËÄêµÁ¤µ¤ì¤Æ
-¤¤¤ë¥á¥½¥Ã¥É¤ò object ¤ÎÆÃ°Û¥á¥½¥Ã¥É¤È¤·¤ÆÄÉ²Ã¤·¤Ş¤¹¡£
+extend_object ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å®Ÿè£…ã§ã¯ã€self ã«å®šç¾©ã•ã‚Œã¦
+ã„ã‚‹ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’ obj ã®ç‰¹ç•°ãƒ¡ã‚½ãƒƒãƒ‰ã¨ã—ã¦è¿½åŠ ã—ã¾ã™ã€‚
 
-@param module [[c:Enumerable]] ¤Ê¤É [[c:Module]] ¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param obj self ã®æ©Ÿèƒ½ã‚’è¿½åŠ ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return module ¤Ç»ØÄê¤µ¤ì¤¿¥â¥¸¥å¡¼¥ë¤òÊÖ¤·¤Ş¤¹¡£
+@return obj ã§æŒ‡å®šã•ã‚ŒãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
+
+@see [[m:Module#extended]]
 

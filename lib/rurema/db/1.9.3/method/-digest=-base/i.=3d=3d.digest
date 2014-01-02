@@ -2,11 +2,11 @@ names===
 visibility=public
 kind=defined
 
---- ==(md)
+--- ==(md)  -> bool
 
-Í¿¤¨¤é¤ì¤¿¥À¥¤¥¸¥§¥¹¥È¥ª¥Ö¥¸¥§¥¯¥È¤ÈÈæ³Ó¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¯”è¼ƒã—ã¾ã™ã€‚
 
-@param md Èæ³ÓÂĞ¾İ¤Î¥À¥¤¥¸¥§¥¹¥È¥ª¥Ö¥¸¥§¥¯¥È
+@param md æ¯”è¼ƒå¯¾è±¡ã®ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
         require 'digest/md5'
         digest1 = Digest::MD5.new
@@ -17,11 +17,11 @@ kind=defined
         digest2.update("RUBY")
         p digest1 == digest2 # => false
 
---- ==(str)
+--- ==(str) -> bool
 
-Í¿¤¨¤é¤ì¤¿Ê¸»úÎó¤ò hexdigest ÃÍ¤È¸«¤Æ¡¢¼«¿È¤Î hexdigest ÃÍ¤ÈÈæ³Ó¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸæ–‡å­—åˆ—ã‚’ hexdigest å€¤ã¨è¦‹ã¦ã€è‡ªèº«ã® hexdigest å€¤ã¨æ¯”è¼ƒã—ã¾ã™ã€‚
 
-@param str Èæ³ÓÂĞ¾İ¤Î hexdigest Ê¸»úÎó
+@param str æ¯”è¼ƒå¯¾è±¡ã® hexdigest æ–‡å­—åˆ—
 
         require 'digest/md5'
         digest = Digest::MD5.new

@@ -4,7 +4,7 @@ kind=defined
 
 --- gregorian_leap? (year) -> bool
 --- leap? (year) -> bool
-���쥴�ꥪ��α�ǯ�ʤ鿿���֤��ޤ���
+グレゴリオ暦の閏年なら真を返します。
 
-@param year ǯ
+@param year 年
 

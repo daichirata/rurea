@@ -4,5 +4,5 @@ kind=defined
 
 --- content_length -> Fixnum
 
-ENV['CONTENT_LENGTH'] ค๒สึคทคÞคนกฃ
+ENV['CONTENT_LENGTH'] ใ’่ฟ”ใ—ใพใใ€
 

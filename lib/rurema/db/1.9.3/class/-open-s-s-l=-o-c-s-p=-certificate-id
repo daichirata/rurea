@@ -6,9 +6,9 @@ library=openssl
 aliases=
 aliasof=
 
-�������֤��䤤��碌�����ġ��ξ������ɽ�����饹�Ǥ���
+失効状態を問い合わせたい個々の証明書を表すクラスです。
 
-�������issuer�ξ���+�����ղä������֥������ȤǤ���
+証明書にissuerの情報+αを付加したオブジェクトです。
 
-CertificateId ���֥������Ȥ�ʣ�� [[c:OpenSSL::OCSP::Request]] �˴ޤᡢ
-Ʊ�����䤤��碌�뤳�Ȥ��Ǥ��ޤ���
+CertificateId オブジェクトを複数 [[c:OpenSSL::OCSP::Request]] に含め、
+同時に問い合わせることができます。

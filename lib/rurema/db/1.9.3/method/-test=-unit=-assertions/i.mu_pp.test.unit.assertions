@@ -4,8 +4,8 @@ kind=defined
 
 --- mu_pp(obj)     -> String
 
-obj ��ʹ֤��ɤߤ䤹������ʸ����ɽ���ˤ����֤��ޤ���
+obj を人間が読みやすい形の文字列表現にして返します。
 
-@param obj Ǥ�դΥ��֥�������
+@param obj 任意のオブジェクト
 
-@return obj ��ʹ֤��ɤߤ䤹�������ˤ���ʸ����
+@return obj を人間が読みやすい形式にした文字列

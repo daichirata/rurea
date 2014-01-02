@@ -2,8 +2,7 @@ names=+@
 visibility=public
 kind=defined
 
---- +@
-@todo
+--- +@ -> self
 
-
+self を返します。
 

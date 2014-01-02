@@ -4,13 +4,13 @@ kind=defined
 
 --- set_comment(comment) -> ()
 
-���Ȥ˥����Ȥ����ꤷ�ޤ���
+自身にコメントを設定します。
 
-@param comment ʸ�������ꤷ�ޤ���
+@param comment 文字列を指定します。
 
-comment �κǽ�ιԤ� :section: ��ޤ�Ǥ�����硢���ι԰ʹߤ�ʸ�����
-���ȤȤ������ꤷ�ޤ��������Ǥʤ����� comment ���٤Ƥ򥳥��ȤȤ���
-���ꤷ�ޤ���
+comment の最初の行に :section: を含んでいた場合、その行以降の文字列をコ
+メントとして設定します。そうでない場合は comment すべてをコメントとして
+設定します。
 
   # ---------------------
   # :section: The title

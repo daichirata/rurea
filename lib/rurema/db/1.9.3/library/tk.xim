@@ -3,5 +3,6 @@ classes=TkXIM
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

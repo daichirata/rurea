@@ -2,10 +2,10 @@ names=install_acl
 visibility=public
 kind=defined
 
---- install_acl(acl)
-@todo
+--- install_acl(acl) -> ()
+サーバ起動時の :acl オプションのデフォルト値を指定します。
 
-Set the default acl.
+内部的には [[m:DRb::DRbServer.default_acl]] を呼び出すだけです。
 
-See [[m:DRb::DRbServer.default_acl]].
+@see [[c:ACL]]
 

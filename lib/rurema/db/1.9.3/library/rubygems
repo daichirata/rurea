@@ -1,101 +1,102 @@
-requires=rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system
+requires=rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder
 classes=Gem,Gem=LoadError,Gem=QuickLoader
 methods=Kernel/i.gem.rubygems
-sublibraries=rubygems.gem_runner,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.platform,rubygems.builder,rubygems.defaults.operating_system,rubygems.command,rubygems.user_interaction,rubygems.command_manager,rubygems.commands.build_command,rubygems.commands.cert_command,rubygems.commands.check_command,rubygems.commands.cleanup_command,rubygems.commands.contents_command,rubygems.commands.dependency_command,rubygems.commands.environment_command,rubygems.commands.fetch_command,rubygems.commands.generate_index_command,rubygems.commands.help_command,rubygems.commands.install_command,rubygems.commands.list_command,rubygems.commands.lock_command,rubygems.commands.mirror_command,rubygems.commands.outdated_command,rubygems.commands.pristine_command,rubygems.commands.query_command,rubygems.commands.rdoc_command,rubygems.commands.search_command,rubygems.commands.server_command,rubygems.commands.sources_command,rubygems.commands.specification_command,rubygems.commands.stale_command,rubygems.commands.uninstall_command,rubygems.commands.unpack_command,rubygems.commands.update_command,rubygems.commands.which_command,rubygems.security,rubygems.version_option,rubygems.validator,rubygems.dependency_list,rubygems.local_remote_options,rubygems.source_info_cache,rubygems.indexer,rubygems.doc_manager,rubygems.install_update_options,rubygems.dependency_installer,rubygems.spec_fetcher,rubygems.format,rubygems.installer,rubygems.server,rubygems.remote_fetcher,rubygems.uninstaller,rubygems.config_file,rubygems.custom_require,rubygems.digest.digest_adapter,rubygems.digest.md5,rubygems.digest.sha1,rubygems.digest.sha2,rubygems.ext,rubygems.ext.builder,rubygems.ext.configure_builder,rubygems.ext.ext_conf_builder,rubygems.ext.rake_builder,rubygems.package,rubygems.gem_openssl,rubygems.require_paths_builder,rubygems.old_format,rubygems.specification,rubygems.package.f_sync_dir,rubygems.package.tar_header,rubygems.package.tar_input,rubygems.package.tar_output,rubygems.package.tar_reader,rubygems.package.tar_reader.entry,rubygems.package.tar_writer,rubygems.source_info_cache_entry,rubygems.test_utilities,rubygems.timer
+sublibraries=rubygems.gem_runner,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.platform,rubygems.builder,rubygems.command,rubygems.user_interaction,rubygems.command_manager,rubygems.commands.build_command,rubygems.commands.cert_command,rubygems.commands.check_command,rubygems.commands.cleanup_command,rubygems.commands.contents_command,rubygems.commands.dependency_command,rubygems.commands.environment_command,rubygems.commands.fetch_command,rubygems.commands.generate_index_command,rubygems.commands.help_command,rubygems.commands.install_command,rubygems.commands.list_command,rubygems.commands.lock_command,rubygems.commands.mirror_command,rubygems.commands.outdated_command,rubygems.commands.pristine_command,rubygems.commands.query_command,rubygems.commands.rdoc_command,rubygems.commands.search_command,rubygems.commands.server_command,rubygems.commands.sources_command,rubygems.commands.specification_command,rubygems.commands.stale_command,rubygems.commands.uninstall_command,rubygems.commands.unpack_command,rubygems.commands.update_command,rubygems.commands.which_command,rubygems.security,rubygems.version_option,rubygems.validator,rubygems.dependency_list,rubygems.local_remote_options,rubygems.source_info_cache,rubygems.indexer,rubygems.doc_manager,rubygems.install_update_options,rubygems.dependency_installer,rubygems.spec_fetcher,rubygems.format,rubygems.installer,rubygems.server,rubygems.remote_fetcher,rubygems.uninstaller,rubygems.config_file,rubygems.custom_require,rubygems.digest.digest_adapter,rubygems.digest.md5,rubygems.digest.sha1,rubygems.digest.sha2,rubygems.ext,rubygems.ext.builder,rubygems.ext.configure_builder,rubygems.ext.ext_conf_builder,rubygems.ext.rake_builder,rubygems.package,rubygems.gem_openssl,rubygems.require_paths_builder,rubygems.old_format,rubygems.specification,rubygems.package.f_sync_dir,rubygems.package.tar_header,rubygems.package.tar_input,rubygems.package.tar_output,rubygems.package.tar_reader,rubygems.package.tar_reader.entry,rubygems.package.tar_writer,rubygems.source_info_cache_entry,rubygems.test_utilities,rubygems.timer
 is_sublibrary=false
+category=
 
-RubyGems ¤ò°·¤¦¤¿¤á¤Î¥¯¥é¥¹¤ä¥â¥¸¥å¡¼¥ë¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+RubyGems ã‚’æ‰±ã†ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã‚„ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
 
-=== gem ¥³¥Ş¥ó¥É¤Î»È¤¤Êı
+=== gem ã‚³ãƒãƒ³ãƒ‰ã®ä½¿ã„æ–¹
 
   $ gem help
   
-    RubyGems ¤Ï Ruby ¤Î¤¿¤á¤Î¹âµ¡Ç½¤Ê¥Ñ¥Ã¥±¡¼¥¸´ÉÍı¥Ä¡¼¥ë¤Ç¤¹¡£
-    ¤³¤ì¤Ï¤è¤êÂ¿¤¯¤Î¾ğÊó¤Ø¤Î¥İ¥¤¥ó¥¿¤ò´Ş¤ó¤Ç¤¤¤ë´ğËÜÅª¤Ê¥Ø¥ë¥×¥á¥Ã¥»¡¼¥¸¤Ç¤¹¡£
+    RubyGems ã¯ Ruby ã®ãŸã‚ã®é«˜æ©Ÿèƒ½ãªãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ç®¡ç†ãƒ„ãƒ¼ãƒ«ã§ã™ã€‚
+    ã“ã‚Œã¯ã‚ˆã‚Šå¤šãã®æƒ…å ±ã¸ã®ãƒã‚¤ãƒ³ã‚¿ã‚’å«ã‚“ã§ã„ã‚‹åŸºæœ¬çš„ãªãƒ˜ãƒ«ãƒ—ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã§ã™ã€‚
   
-      »ÈÍÑÊıË¡:
+      ä½¿ç”¨æ–¹æ³•:
         gem -h/--help
         gem -v/--version
         gem command [arguments...] [options...]
   
-      Îã:
+      ä¾‹:
         gem install rake
         gem list --local
         gem build package.gemspec
         gem help install
   
-      ¤µ¤é¤Ë¥Ø¥ë¥×:
-        gem help commands            Á´¤Æ¤Î 'gem' ¥³¥Ş¥ó¥É¤ò¥ê¥¹¥È¥¢¥Ã¥×¤·¤Ş¤¹
-        gem help examples            ¤¤¤¯¤Ä¤«¤Î»ÈÍÑÊıË¡¤ÎÎã¤òÉ½¼¨¤·¤Ş¤¹
-        gem help platforms           ¥×¥é¥Ã¥È¥Õ¥©¡¼¥à¤Ë´Ø¤¹¤ë¾ğÊó¤òÉ½¼¨¤·¤Ş¤¹
-        gem help <COMMAND>           COMMAND ¤Ë´Ø¤¹¤ë¥Ø¥ë¥×¤òÉ½¼¨¤·¤Ş¤¹
+      ã•ã‚‰ã«ãƒ˜ãƒ«ãƒ—:
+        gem help commands            å…¨ã¦ã® 'gem' ã‚³ãƒãƒ³ãƒ‰ã‚’ãƒªã‚¹ãƒˆã‚¢ãƒƒãƒ—ã—ã¾ã™
+        gem help examples            ã„ãã¤ã‹ã®ä½¿ç”¨æ–¹æ³•ã®ä¾‹ã‚’è¡¨ç¤ºã—ã¾ã™
+        gem help platforms           ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«é–¢ã™ã‚‹æƒ…å ±ã‚’è¡¨ç¤ºã—ã¾ã™
+        gem help <COMMAND>           COMMAND ã«é–¢ã™ã‚‹ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã—ã¾ã™
                                        (e.g. 'gem help install')
-      ¤è¤ê¾Ü¤·¤¤¾ğÊó:
+      ã‚ˆã‚Šè©³ã—ã„æƒ…å ±:
         http://rubygems.rubyforge.org
 
-==== Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë
+==== Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 
-Îã¤¨¤Ğ rak ( [[url:http://rak.rubyforge.org/]] ) ¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï¡¢°Ê²¼¤Î¤¤¤º¤ì¤«¤ò¼Â¹Ô¤·¤Ş¤¹¡£
+ä¾‹ãˆã° rak ( [[url:http://rak.rubyforge.org/]] ) ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã«ã¯ã€ä»¥ä¸‹ã®ã„ãšã‚Œã‹ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
 
   $ gem install rak
   $ sudo gem install rak
 
-ÆÃÄê¤Î¥Ğ¡¼¥¸¥ç¥ó¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
+ç‰¹å®šã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã«ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
-  $ gem install rak --version 0.8.1    # ¥Ğ¡¼¥¸¥ç¥ó 0.8.1 ¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë
-  $ gem install rak --version '>= 0.5' # ¥Ğ¡¼¥¸¥ç¥ó 0.5 °Ê¾å¤Î¤â¤Î¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë
+  $ gem install rak --version 0.8.1    # ãƒãƒ¼ã‚¸ãƒ§ãƒ³ 0.8.1 ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
+  $ gem install rak --version '>= 0.5' # ãƒãƒ¼ã‚¸ãƒ§ãƒ³ 0.5 ä»¥ä¸Šã®ã‚‚ã®ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 
-Proxy ¥µ¡¼¥Ğ·ĞÍ³¤Ç Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
+Proxy ã‚µãƒ¼ãƒçµŒç”±ã§ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã«ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
   $ gem install rak -p http://user:pasword@proxy.example.com/
 
-==== Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¢¥ó¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë
+==== Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 
-Îã¤¨¤Ğ rak ¤ò¥¢¥ó¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï¡¢°Ê²¼¤Î¤¤¤º¤ì¤«¤ò¼Â¹Ô¤·¤Ş¤¹¡£
+ä¾‹ãˆã° rak ã‚’ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã«ã¯ã€ä»¥ä¸‹ã®ã„ãšã‚Œã‹ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
 
   $ gem uninstall rak
   $ sudo gem uninstall rak
 
-ÆÃÄê¤Î¥Ğ¡¼¥¸¥ç¥ó¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¢¥ó¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
+ç‰¹å®šã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã«ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
   $ gem uninstall rak --version 0.8.1
 
-==== Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¹¹¿·¤¹¤ë
+==== Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’æ›´æ–°ã™ã‚‹
 
-¥¤¥ó¥¹¥È¡¼¥ë¤µ¤ì¤Æ¤¤¤ë Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¹¹¿·¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
+ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’æ›´æ–°ã™ã‚‹ã«ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
   $ gem update
   $ sudo gem update
 
-ÆÃÄê¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¹¹¿·¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
+ç‰¹å®šã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’æ›´æ–°ã™ã‚‹ã«ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
   $ gem update rak
 
-==== Gem ¥Ñ¥Ã¥±¡¼¥¸¤òÃµ¤¹
+==== Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’æ¢ã™
 
-¥Ñ¥Ã¥±¡¼¥¸Ì¾¤«¤é Gem ¥Ñ¥Ã¥±¡¼¥¸¤òÃµ¤¹¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
-'active' ¤È¤¤¤¦Ê¸»úÎó¤ò¥Ñ¥Ã¥±¡¼¥¸Ì¾¤Ë´Ş¤à¥Ñ¥Ã¥±¡¼¥¸¤òÃµ¤¹¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
+ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã‹ã‚‰ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’æ¢ã™ã“ã¨ãŒã§ãã¾ã™ã€‚
+'active' ã¨ã„ã†æ–‡å­—åˆ—ã‚’ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã«å«ã‚€ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’æ¢ã™ã«ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
-  $ gem search active       # ¥Ç¥Õ¥©¥ë¥È¤Ç¤Ï¥í¡¼¥«¥ë¤Ë¥¤¥ó¥¹¥È¡¼¥ë¤µ¤ì¤Æ¤¤¤ë¤â¤Î¤«¤é¸¡º÷¤·¤Ş¤¹
-  $ gem search active -r    # -r ¥ª¥×¥·¥ç¥ó¤ò¤Ä¤±¤ë¤ò¥ê¥İ¥¸¥È¥ê¤«¤é¸¡º÷¤·¤Ş¤¹
-  $ gem search active -r -a # -a ¥ª¥×¥·¥ç¥ó¤ò¤Ä¤±¤ë¤ÈÁ´¤Æ¤Î¥Ğ¡¼¥¸¥ç¥ó¤òÉ½¼¨¤·¤Ş¤¹
+  $ gem search active       # ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ã¯ãƒ­ãƒ¼ã‚«ãƒ«ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã‹ã‚‰æ¤œç´¢ã—ã¾ã™
+  $ gem search active -r    # -r ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã¤ã‘ã‚‹ã‚’ãƒªãƒã‚¸ãƒˆãƒªã‹ã‚‰æ¤œç´¢ã—ã¾ã™
+  $ gem search active -r -a # -a ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã¤ã‘ã‚‹ã¨å…¨ã¦ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¡¨ç¤ºã—ã¾ã™
 
-¤è¤ê¾ÜºÙ¤Ê¾ò·ï¤Ç¸¡º÷¤·¤¿¤¤¾ì¹ç¤Ï query ¤ò»ÈÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã‚ˆã‚Šè©³ç´°ãªæ¡ä»¶ã§æ¤œç´¢ã—ãŸã„å ´åˆã¯ query ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
 
-  $ gem query -n ^rails$ -r # rails ¤Ë¤Á¤ç¤¦¤É°ìÃ×¤¹¤ë¤â¤Î¤ò¸¡º÷¤¹¤ë
-  $ gem query -n ^rails -r  # rails ¤Ç»Ï¤Ş¤ë¤â¤Î¤ò¸¡º÷¤¹¤ë
+  $ gem query -n ^rails$ -r # rails ã«ã¡ã‚‡ã†ã©ä¸€è‡´ã™ã‚‹ã‚‚ã®ã‚’æ¤œç´¢ã™ã‚‹
+  $ gem query -n ^rails -r  # rails ã§å§‹ã¾ã‚‹ã‚‚ã®ã‚’æ¤œç´¢ã™ã‚‹
 
-¥Ñ¥Ã¥±¡¼¥¸¤Î¾ÜºÙ¤«¤é¥­¡¼¥ï¡¼¥É¸¡º÷¤¹¤ë¤³¤È¤Ï¤Ç¤­¤Ş¤»¤ó¡£
+ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®è©³ç´°ã‹ã‚‰ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰æ¤œç´¢ã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚
 
-==== Gem ¥Ñ¥Ã¥±¡¼¥¸¤òºîÀ®¤¹¤ë
+==== Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½œæˆã™ã‚‹
 
-ºîÀ®¤·¤¿ gemspec ¥Õ¥¡¥¤¥ë¤ò¸µ¤Ë¤·¤Æ Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò´ÊÃ±¤ËºîÀ®¤¹¤ë¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
+ä½œæˆã—ãŸ gemspec ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å…ƒã«ã—ã¦ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ç°¡å˜ã«ä½œæˆã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
   $ gem build <gemspec filename>
 
-ºÇ¾®¤Î gemspec ¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤Ê¤ê¤Ş¤¹¡£¥Ó¥ë¥É¤¹¤ë¤¿¤á¤ËÉ¬Í×¤ÊºÇ¾®¤Î gemspec ¤Ê¤Î¤Ç½ĞÍè¾å¤¬¤ë¤Î¤Ï
-¥á¥¿¥Ç¡¼¥¿¤Î¤ß¤ò´Ş¤à Gem ¥Ñ¥Ã¥±¡¼¥¸¤Ç¤¹¡£¤Ş¤¿¡¢¤¤¤¯¤Ä¤«¤Î·Ù¹ğ¤¬É½¼¨¤µ¤ì¤Ş¤¹¡£
+æœ€å°ã® gemspec ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚ãƒ“ãƒ«ãƒ‰ã™ã‚‹ãŸã‚ã«å¿…è¦ãªæœ€å°ã® gemspec ãªã®ã§å‡ºæ¥ä¸ŠãŒã‚‹ã®ã¯
+ãƒ¡ã‚¿ãƒ‡ãƒ¼ã‚¿ã®ã¿ã‚’å«ã‚€ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã§ã™ã€‚ã¾ãŸã€ã„ãã¤ã‹ã®è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
 
   Gem::Specification.new do |s|
     s.name    = 'hello'
@@ -103,8 +104,8 @@ Proxy ¥µ¡¼¥Ğ·ĞÍ³¤Ç Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
     s.summary = 'hello summary'
   end
 
-¼ÂÍÑÅª¤Ê¥é¥¤¥Ö¥é¥ê¤òºîÀ®¤¹¤ë¤¿¤á¤Î gemspec ¤ÎÎã¤ò¼¨¤·¤Ş¤¹¡£
-·Ù¹ğ¥á¥Ã¥»¡¼¥¸¤¬½ĞÎÏ¤µ¤ì¤Ê¤¤¤è¤¦¤Ë¤¤¤¯¤Ä¤«ÀßÄê¤òÄÉ²Ã¤·¤Æ¤¤¤Ş¤¹¡£
+å®Ÿç”¨çš„ãªãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½œæˆã™ã‚‹ãŸã‚ã® gemspec ã®ä¾‹ã‚’ç¤ºã—ã¾ã™ã€‚
+è­¦å‘Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå‡ºåŠ›ã•ã‚Œãªã„ã‚ˆã†ã«ã„ãã¤ã‹è¨­å®šã‚’è¿½åŠ ã—ã¦ã„ã¾ã™ã€‚
 
   Gem::Specification.new do |s|
     s.name              = 'hello'
@@ -119,25 +120,25 @@ Proxy ¥µ¡¼¥Ğ·ĞÍ³¤Ç Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
   end
 
 : name
-  ¤³¤Î Gem ¤ÎÌ¾Á°¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : version
-  ¤³¤Î Gem ¤Î¥Ğ¡¼¥¸¥ç¥ó¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : summary
-  ¤³¤Î Gem ¤ÎÃ»¤¤ÀâÌÀ¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã®çŸ­ã„èª¬æ˜ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : files
-  ¤³¤Î Gem ¤Ë´Ş¤à¥Õ¥¡¥¤¥ë¤Î¥ê¥¹¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã«å«ã‚€ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒªã‚¹ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : authors
-  ¤³¤Î Gem ¤Îºî¼Ô¤Î¥ê¥¹¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã®ä½œè€…ã®ãƒªã‚¹ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : email
-  ¤³¤Î Gem ¤Îºî¼Ô¤ÎÏ¢ÍíÀè¥á¡¼¥ë¥¢¥É¥ì¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã®ä½œè€…ã®é€£çµ¡å…ˆãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : homepage
-  ¤³¤Î Gem ¤Î¥¦¥§¥Ö¥µ¥¤¥È¤Î URI ¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã®ã‚¦ã‚§ãƒ–ã‚µã‚¤ãƒˆã® URI ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : description
-  ¤³¤Î Gem ¤ÎÄ¹¤¤ÀâÌÀ¤ò»ØÄê¤·¤Ş¤¹¡£
+  ã“ã® Gem ã®é•·ã„èª¬æ˜ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 : rubyforge_project
-  Rubyforge ¤Ë¥×¥í¥¸¥§¥¯¥È¤¬¤¢¤ë¾ì¹ç¡¢¤½¤Î¥×¥í¥¸¥§¥¯¥ÈÌ¾¤ò»ØÄê¤·¤Ş¤¹¡£
+  Rubyforge ã«ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆãŒã‚ã‚‹å ´åˆã€ãã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆåã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-¼Â¹Ô²ÄÇ½¤Ê¥Õ¥¡¥¤¥ë (¥³¥Ş¥ó¥É) ¤ò´Ş¤à¾ì¹ç¤Î gemspec ¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤Ê¤ê¤Ş¤¹¡£
+å®Ÿè¡Œå¯èƒ½ãªãƒ•ã‚¡ã‚¤ãƒ« (ã‚³ãƒãƒ³ãƒ‰) ã‚’å«ã‚€å ´åˆã® gemspec ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
 
   Gem::Specification.new do |s|
     s.name              = 'hello'
@@ -152,9 +153,9 @@ Proxy ¥µ¡¼¥Ğ·ĞÍ³¤Ç Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
     s.description       = 'hello description'
   end
 
-¥é¥¤¥Ö¥é¥ê¤ÎÎã¤Ë²Ã¤¨¤Æ executables ¤òÄÉ²Ã¤·¤Æ¤¤¤Ş¤¹¡£
+ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ä¾‹ã«åŠ ãˆã¦ executables ã‚’è¿½åŠ ã—ã¦ã„ã¾ã™ã€‚
 
-¤Ş¤¿¡¢°Ê²¼¤Î¤è¤¦¤Ë Rakefile ¤Ë¥¿¥¹¥¯¤òÄÉ²Ã¤¹¤ë¤³¤È¤â¤Ç¤­¤Ş¤¹¡£
+ã¾ãŸã€ä»¥ä¸‹ã®ã‚ˆã†ã« Rakefile ã«ã‚¿ã‚¹ã‚¯ã‚’è¿½åŠ ã™ã‚‹ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
 
   require 'rake/gempackagetask'
   
@@ -183,16 +184,16 @@ Proxy ¥µ¡¼¥Ğ·ĞÍ³¤Ç Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
 
 @see [[c:Gem::Specification]], [[lib:rake]]
 
-=== gem ¥³¥Ş¥ó¥É¤ÎÀßÄê
-  * GEM_HOME Gem ¤Î¥Û¡¼¥à¥Ç¥£¥ì¥¯¥È¥ê
-  * GEM_PATH Gem ¤Î¥µ¡¼¥Á¥Ñ¥¹
+=== gem ã‚³ãƒãƒ³ãƒ‰ã®è¨­å®š
+  * GEM_HOME Gem ã®ãƒ›ãƒ¼ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
+  * GEM_PATH Gem ã®ã‚µãƒ¼ãƒãƒ‘ã‚¹
   * $HOME/.gemrc
 
-´Ä¶­ÊÑ¿ô GEM_HOME, GEM_PATH ¤òÀßÄê¤¹¤ë»ö¤Ë¤è¤Ã¤Æ Gem ¥³¥Ş¥ó¥É¤ÎÆ°ºî¤òÊÑ¹¹¤¹¤ë¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
-¤Ş¤¿¡¢¥Û¡¼¥à¥Ç¥£¥ì¥¯¥È¥ê¤Ë .gemrc ¤È¤¤¤¦ YAML ¥Õ¥©¡¼¥Ş¥Ã¥È¤Ç½ñ¤«¤ì¤¿¥Õ¥¡¥¤¥ë¤òÃÖ¤¯¤³¤È¤Ç¤â
-Æ°ºî¤òÊÑ¹¹¤¹¤ë¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
+ç’°å¢ƒå¤‰æ•° GEM_HOME, GEM_PATH ã‚’è¨­å®šã™ã‚‹äº‹ã«ã‚ˆã£ã¦ Gem ã‚³ãƒãƒ³ãƒ‰ã®å‹•ä½œã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
+ã¾ãŸã€ãƒ›ãƒ¼ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã« .gemrc ã¨ã„ã† YAML ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã§æ›¸ã‹ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç½®ãã“ã¨ã§ã‚‚
+å‹•ä½œã‚’å¤‰æ›´ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   --- 
   :backtrace: false
@@ -208,8 +209,8 @@ Proxy ¥µ¡¼¥Ğ·ĞÍ³¤Ç Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
   gem: --no-rdoc --no-ri
 
 
-=== »²¹Í
-: Rubyist Magazine - ¥·¥ê¡¼¥º ¥Ñ¥Ã¥±¡¼¥¸¥Ş¥Í¥¸¥á¥ó¥È ¡ÚÂè 1 ²ó¡Û RubyGems (1)
+=== å‚è€ƒ
+: Rubyist Magazine - ã‚·ãƒªãƒ¼ã‚º ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãƒãƒã‚¸ãƒ¡ãƒ³ãƒˆ ã€ç¬¬ 1 å›ã€‘ RubyGems (1)
   [[url:http://jp.rubyist.net/magazine/?0006-PackageManagement]]
-: Rubyist Magazine - ¥·¥ê¡¼¥º ¥Ñ¥Ã¥±¡¼¥¸¥Ş¥Í¥¸¥á¥ó¥È ¡ÚÂè 2 ²ó¡Û RubyGems (2)
+: Rubyist Magazine - ã‚·ãƒªãƒ¼ã‚º ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãƒãƒã‚¸ãƒ¡ãƒ³ãƒˆ ã€ç¬¬ 2 å›ã€‘ RubyGems (2)
   [[url:http://jp.rubyist.net/magazine/?0010-PackageManagement]]

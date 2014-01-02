@@ -4,14 +4,14 @@ kind=defined
 
 --- search_with_source(pattern, only_platform = false, all = false) -> Array
 
-Ϳ����줿���������� [[c:Gem::Specification]] �� URL �Υꥹ�Ȥ��֤��ޤ���
+与えられた条件を満たす [[c:Gem::Specification]] と URL のリストを返します。
 
-@param pattern ���������� Gem ��ɽ�� [[c:Gem::Dependency]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param pattern 検索したい Gem を表す [[c:Gem::Dependency]] のインスタンスを指定します。
 
-@param only_platform ������ꤹ��ȥץ�åȥե����ब���פ����ΤΤߤ��֤��ޤ����ǥե���Ȥϵ��Ǥ���
+@param only_platform 真を指定するとプラットフォームが一致するもののみを返します。デフォルトは偽です。
 
-@param all ������ꤹ��ȥ���å���򹹿����Ƥ��鸡����¹Ԥ��ޤ���
+@param all 真を指定するとキャッシュを更新してから検索を実行します。
 
-@return ������Ǥ� [[c:Gem::Specification]]���������Ǥ�������� URL �Ȥ�����������ǤȤ���������֤��ޤ���
+@return 第一要素を [[c:Gem::Specification]]、第二要素を取得元の URL とする配列を要素とする配列を返します。
 
 

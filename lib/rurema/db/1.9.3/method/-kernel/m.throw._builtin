@@ -4,21 +4,21 @@ kind=defined
 
 --- throw(tag, value = nil) -> ()
 
-[[m:Kernel.#catch]]�Ȥ��Ȥ߹�碌�����æ�Ф�Ԥ��ޤ��� throw 
-��Ʊ�� tag ����ꤷ�� catch �Υ֥��å��ν����ޤǥ����פ��ޤ���
+[[m:Kernel.#catch]]との組み合わせで大域脱出を行います。 throw 
+は同じ tag を指定した catch のブロックの終わりまでジャンプします。
 
-throw ��õ�����˸ƤӽФ������å��򤵤��Τܤ�Τǡ�
-���������Ʊ���᥽�å���ˤ���Ȥϸ¤�ޤ���
-�⤷ ensure�� ��¸�ߤ���ʤ饸�������˼¹Ԥ��ޤ���
+throw は探索時に呼び出しスタックをさかのぼるので、
+ジャンプ先は同じメソッド内にあるとは限りません。
+もし ensure節 が存在するならジャンプ前に実行します。
 
-�⤷Ʊ�� tag ���ԤäƤ��� catch ��¸�ߤ��ʤ����� [[c:NameError]] ��
-����åɤ���λ���ޤ���
+もし同じ tag で待っている catch が存在しない場合は [[c:NameError]] で
+スレッドが終了します。
 
-Ʊ�������Ǥ���Ȥ� [[m:Object#object_id]] ��Ʊ���Ǥ���Ȥ�����̣�Ǥ���
+同じタグであるとは [[m:Object#object_id]] が同じであるという意味です。
 
-@param tag catch �ΰ������б�����Ǥ�դΥ��֥������ȤǤ���
-@param value catch ������ͤˤʤ�ޤ���
-@raise NameError Ʊ�� tag ���ԤäƤ��� catch ��¸�ߤ��ʤ�����ȯ�����ޤ���
+@param tag catch の引数に対応する任意のオブジェクトです。
+@param value catch の戻り値になります。
+@raise NameError 同じ tag で待っている catch が存在しない場合に発生します。
 
   def foo
     throw :exit, 25
@@ -27,7 +27,7 @@ throw ��õ�����˸ƤӽФ������å��򤵤��Τܤ�Τǡ�
   ret = catch(:exit) do
     begin
       foo
-      some_process()    # ���Ф˼¹Ԥ���ʤ�
+      some_process()    # 絶対に実行されない
       10
     ensure
       puts "ensure"

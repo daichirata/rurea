@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- g -> OpenSSL::BN
-DSA ���Υѥ�᡼�� g ���֤��ޤ���
+DSA 鍵のパラメータ g を返します。
 
-g �ϸ���������̩����ξ����°�������Ǥ���
+g は公開鍵、秘密鍵の両方に属する情報です。
 

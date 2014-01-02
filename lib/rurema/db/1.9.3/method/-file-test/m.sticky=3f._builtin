@@ -4,8 +4,8 @@ kind=defined
 
 --- sticky?(file)    -> bool
 
-�ե������ sticky �ӥå�([[man:chmod(2)]] ����)��
-Ω�äƤ�����˿����֤��ޤ��������Ǥʤ���硢�ե����뤬¸�ߤ��ʤ���硢���뤤�ϥ����ƥॳ����˼��Ԥ������ʤɤˤ� false ���֤��ޤ���
+ファイルの sticky ビット([[man:chmod(2)]] 参照)が
+立っている時に真を返します。そうでない場合、ファイルが存在しない場合、あるいはシステムコールに失敗した場合などには false を返します。
 
-@param file �ե�����̾��ɽ��ʸ�������ꤷ�ޤ���
+@param file ファイル名を表す文字列を指定します。
 

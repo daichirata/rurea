@@ -4,5 +4,5 @@ kind=defined
 
 --- setpos(y, x) -> nil
 
-¥¦¥£¥ó¥É¥¦Æâ¤Î (x, y) ¤Ë¥«¡¼¥½¥ë¤ò°ÜÆ°¤·¤Þ¤¹¡£
+ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦å†…ã® (x, y) ã«ã‚«ãƒ¼ã‚½ãƒ«ã‚’ç§»å‹•ã—ã¾ã™ã€‚
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- RESPONSE_STATUS_INTERNALERROR -> Integer
-[[m:OpenSSL::OCSP::Response#status]] ¤Î¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤Ç ¡¢
-OCSP ¥ì¥¹¥Ý¥ó¥À¤ÎÆâÉô¥¨¥é¡¼¤Ë¤è¤êÂÅÅö¤Ê±þÅú¤òÊÖ¤»¤Ê¤¤¤³¤È¤ò°ÕÌ£¤·¤Þ¤¹¡£
+[[m:OpenSSL::OCSP::Response#status]] ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ã§ ã€
+OCSP ãƒ¬ã‚¹ãƒãƒ³ãƒ€ã®å†…éƒ¨ã‚¨ãƒ©ãƒ¼ã«ã‚ˆã‚Šå¦¥å½“ãªå¿œç­”ã‚’è¿”ã›ãªã„ã“ã¨ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
-¾Ü¤·¤¯¤Ï [[RFC:2560]] 2.3 ¤ò¸«¤Æ¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ [[RFC:2560]] 2.3 ã‚’è¦‹ã¦ãã ã•ã„ã€‚
 
 

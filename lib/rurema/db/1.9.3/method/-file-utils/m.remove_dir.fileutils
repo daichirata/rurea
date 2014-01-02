@@ -4,9 +4,9 @@ kind=defined
 
 --- remove_dir(path, force = false) -> ()
 
-�ǥ��쥯�ȥ� path �������ޤ���
+ディレクトリ path を削除します。
 
-@param path �������ǥ��쥯�ȥꡣ
+@param path 削除するディレクトリ。
 
-@param force ���ΤȤ��Ϻ�����ȯ������ [[c:StandardError]] ��̵�뤷�ޤ���
+@param force 真のときは削除中に発生した [[c:StandardError]] を無視します。
 

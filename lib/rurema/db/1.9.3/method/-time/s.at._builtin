@@ -4,20 +4,20 @@ kind=defined
 
 --- at(time)    -> Time
 
-time �ǻ��ꤷ������� Time ���֥������Ȥ��֤��ޤ���
+time で指定した時刻の Time オブジェクトを返します。
 
-���������ͤξ�硢�������줿 Time ���֥������ȤΥ����ॾ������������Ȥʤ�ޤ���
+引数が数値の場合、生成された Time オブジェクトのタイムゾーンは地方時となります。
 
-@param time Time ���֥������ȡ��⤷���ϵ���������ηв��ÿ���ɽ�魯���ͤǻ��ꤷ�ޤ���
+@param time Time オブジェクト、もしくは起算時からの経過秒数を表わす数値で指定します。
 
 --- at(time, usec)    -> Time
 
-time + (usec/1000000) �λ����ɽ�� Time ���֥������Ȥ��֤��ޤ���
-��ư�����������٤Ǥ��Խ�ʬ�ʾ��˻��Ѥ��ޤ���
+time + (usec/1000000) の時刻を表す Time オブジェクトを返します。
+浮動小数点の精度では不十分な場合に使用します。
 
-�������줿 Time ���֥������ȤΥ����ॾ������������Ȥʤ�ޤ���
+生成された Time オブジェクトのタイムゾーンは地方時となります。
 
-@param time ����������ηв��ÿ���ɽ�魯��������ꤷ�ޤ���
+@param time 起算時からの経過秒数を表わす整数を指定します。
 
-@param usec �ޥ������ä������ǻ��ꤷ�ޤ���
+@param usec マイクロ秒を整数で指定します。
 

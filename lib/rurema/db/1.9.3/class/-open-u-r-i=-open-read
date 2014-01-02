@@ -6,4 +6,4 @@ library=open=2duri
 aliases=
 aliasof=
 
-[[c:URI::HTTP]] �� [[c:URI::FTP]] ���ĥ���뤿����Ѱդ��줿�⥸�塼��Ǥ���
+[[c:URI::HTTP]] と [[c:URI::FTP]] を拡張するために用意されたモジュールです。

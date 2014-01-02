@@ -2,6 +2,6 @@ names=remove
 visibility=public
 kind=defined
 
---- remove
-@todo
+--- remove -> ()
+self を所属する要素から取り除きます。
 

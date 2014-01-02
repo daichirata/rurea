@@ -4,8 +4,8 @@ kind=defined
 
 --- rubygems_version=(version)
 
-���� Gem �ѥå�������������� RubyGems �ΥС������򥻥åȤ��ޤ���
-����°���� Gem �ѥå��������������줿���˼�ưŪ�˥��åȤ���ޤ���
+この Gem パッケージを作成した RubyGems のバージョンをセットします。
+この属性は Gem パッケージが作成された時に自動的にセットされます。
 
-@param version RubyGems �ΥС���������ꤷ�ޤ���
+@param version RubyGems のバージョンを指定します。
 

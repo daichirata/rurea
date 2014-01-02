@@ -4,8 +4,8 @@ kind=defined
 
 --- from_source_index(src_index) -> Gem::DependencyList
 
-Í¿¤¨¤é¤ì¤¿ [[c:Gem::SourceIndex]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤«¤é¼«¿È¤òºîÀ®¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸ [[c:Gem::SourceIndex]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‹ã‚‰è‡ªèº«ã‚’ä½œæˆã—ã¾ã™ã€‚
 
-@param src_index [[c:Gem::SourceIndex]] ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param src_index [[c:Gem::SourceIndex]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[c:Gem::SourceIndex]]

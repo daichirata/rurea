@@ -2,9 +2,9 @@ names=gecos
 visibility=public
 kind=defined
 
---- gecos
+--- gecos -> String
 
-���Υ桼���Υե�͡������ξܺپ�����֤��ޤ���
+このユーザのフルネーム等の詳細情報を返します。
 
-�͡��ʹ�¤�����줿������֤� Unix �����ƥ��¸�ߤ��ޤ���������ϥ����ƥ��¸�Ǥ���
+様々な構造化された情報を返す Unix システムも存在しますが、それはシステム依存です。
 

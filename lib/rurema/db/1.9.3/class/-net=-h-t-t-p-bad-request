@@ -6,6 +6,6 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 400 (Bad Request) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 400 (Bad Request) を表現するクラスです。
 
-�ܤ����� [[RFC:2616]] �򸫤Ƥ���������
+詳しくは [[RFC:2616]] を見てください。

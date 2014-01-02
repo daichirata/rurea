@@ -4,7 +4,7 @@ kind=defined
 
 --- members(group) -> [String]
 
-[[m:WEBrick::HTTPAuth::Htgroup#reload]] ��Ƥ�Ǥ���Ϳ����줿���롼�פ˽�°������ФΥꥹ�Ȥ��֤��ޤ���
+[[m:WEBrick::HTTPAuth::Htgroup#reload]] を呼んでから与えられたグループに所属するメンバのリストを返します。
 
-@param group ���롼��̾����ꤷ�ޤ���
+@param group グループ名を指定します。
 

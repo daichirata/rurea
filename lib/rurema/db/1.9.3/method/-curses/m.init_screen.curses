@@ -5,21 +5,21 @@ kind=defined
 --- init_screen -> Curses::Window
 --- stdscr -> Curses::Window
 
-ü���μ���� curses �˴ؤ���ǡ����������������̤򥯥ꥢ���ޤ���
-stdscr �ȸƤФ��������Τ�ɽ��������ɥ����֤��ޤ���
+端末の種類や curses に関するデータを初期化し、画面をクリアします。
+stdscr と呼ばれる画面全体を表すウィンドウを返します。
 
-ncurses �����Ѥ��Ƥ����硢
-���Υ᥽�åɤ˼��Ԥ����ɸ�२�顼���Ϥ˥��顼��å���������Ϥ�����λ���ޤ���
-�����Ǥʤ���硢���Υ᥽�åɤ˼��Ԥ�����㳰 RuntimeError ��ȯ�����ޤ���
+ncurses を利用している場合、
+このメソッドに失敗すると標準エラー出力にエラーメッセージを出力し、終了します。
+そうでない場合、このメソッドに失敗すると例外 RuntimeError を発生します。
 
-�ܤ����ϡ� man �ڡ����� curs_initscr(3X) �� initscr �ؿ��ȡ�
-curs_clear(3X) �� clear �ؿ��򻲾Ȥ���������
+詳しくは、 man ページの curs_initscr(3X) の initscr 関数と、
+curs_clear(3X) の clear 関数を参照ください。
 
-[[c:Curses]] �Τ����Ĥ��Υ᥽�åɤϡ������Ǥ��Υ᥽�åɤ�ƤӽФ��ޤ���
-����ˤ�ꡢ���Υ᥽�åɤ�ƤӽФ��Ƥ��ʤ����Ǥ⡢
-�����Ĥ��ν�����Ǥ���褦�ˤʤäƤ��ޤ���
+[[c:Curses]] のいくつかのメソッドは、内部でこのメソッドを呼び出します。
+これにより、このメソッドを呼び出していない場合でも、
+いくつかの処理をできるようになっています。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、例外 SecurityError を発生します。
 
 @see [[m:Curses.#close_screen]]
 

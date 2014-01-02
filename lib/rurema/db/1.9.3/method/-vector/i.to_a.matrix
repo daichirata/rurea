@@ -4,9 +4,9 @@ kind=defined
 
 --- to_a -> Array
 
-ฅูฅฏฅศฅ๋([[c:Vector]])คซค้วÛฮ๓ ([[c:Array]]) คหสัดนคทคÞคนกฃ
+ใใฏใใซ([[c:Vector]])ใใ้…ๅ— ([[c:Array]]) ใซๅคๆใ—ใพใใ€
 
-ฮใ:
+ไพ:
 
   require 'matrix'
 

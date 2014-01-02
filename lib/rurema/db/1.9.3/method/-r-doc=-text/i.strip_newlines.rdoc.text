@@ -4,7 +4,7 @@ kind=defined
 
 --- strip_newlines(text) -> String
 
-°ú¿ô¤«¤éÀèÆ¬¤ÈËöÈø¤Î²þ¹Ô¤òºï½ü¤·¤Þ¤¹¡£
+å¼•æ•°ã‹ã‚‰å…ˆé ­ã¨æœ«å°¾ã®æ”¹è¡Œã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
-@param text Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param text æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

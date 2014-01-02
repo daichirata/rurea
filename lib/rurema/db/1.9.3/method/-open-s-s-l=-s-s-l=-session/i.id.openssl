@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- id -> String
-���å���� ID ���֤��ޤ���
+セッション ID を返します。
 
-SSL/TLS �Ϥ��Υ��å���� ID �ǥ��å������̤��ޤ���
+SSL/TLS はこのセッション ID でセッションを識別します。
 

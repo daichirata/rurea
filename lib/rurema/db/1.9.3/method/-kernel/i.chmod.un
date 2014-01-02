@@ -3,13 +3,13 @@ visibility=private
 kind=added
 
 --- chmod -> ()
-е╒ебедеыд╬евепе╗е╣╕вдЄ╩╤╣╣д╖д▐д╣бг
+уГХуВбуВдуГлуБоуВвуВпуВ╗уВ╣цийуВТхдЙцЫ┤уБЧуБ╛уБЩуАВ
 
 Change the mode of each FILE to OCTAL-MODE.
 
   ruby -run -e chmod -- [OPTION] OCTAL-MODE FILE
 
-  -v          ╛▄║┘╔╜╝и
+  -v          шй│ч┤░шбичд║
 
 @see [[man:chmod(1)]]
 

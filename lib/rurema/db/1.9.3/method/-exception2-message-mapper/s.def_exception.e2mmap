@@ -4,17 +4,17 @@ kind=defined
 
 --- def_exception(klass, exception_name, message_format, superklass = StandardError) -> Class
 
-exception_name �Ȥ���̾�����㳰���饹��������ޤ���
+exception_name という名前の例外クラスを定義します。
 
-@param klass �쳬�ؾ�Ȥʤ륯�饹̾����ꤷ�ޤ���
+@param klass 一階層上となるクラス名を指定します。
 
-@param exception_name �㳰���饹��̾���򥷥�ܥ�ǻ��ꤷ�ޤ���
+@param exception_name 例外クラスの名前をシンボルで指定します。
 
-@param message_format ��å������Υե����ޥåȤ���ꤷ�ޤ���
-                    [[m:Kernel.#sprintf]] �Υե����ޥå�ʸ�����Ʊ����������ѤǤ��ޤ���
+@param message_format メッセージのフォーマットを指定します。
+                    [[m:Kernel.#sprintf]] のフォーマット文字列と同じ形式を使用できます。
 
-@param superklass ��������㳰���饹�Υ����ѡ����饹����ꤷ�ޤ���
-                  ��ά����� [[c:StandardError]] ����Ѥ��ޤ���
+@param superklass 定義する例外クラスのスーパークラスを指定します。
+                  省略すると [[c:StandardError]] を使用します。
 
-@return ��������㳰���饹���֤��ޤ���
+@return 定義した例外クラスを返します。
 

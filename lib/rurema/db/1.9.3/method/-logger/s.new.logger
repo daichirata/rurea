@@ -4,24 +4,24 @@ kind=defined
 
 --- new(logdev, shift_age = 0, shift_size = 1048576) -> Logger
 
-Logger ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤¹¤ë¡£
+Logger ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹ã€‚
 
-@param logdev ¥í¥°¤ò½ñ¤­¹þ¤à¥Õ¥¡¥¤¥ëÌ¾¤«¡¢ IO ¥ª¥Ö¥¸¥§¥¯¥È(STDOUT, STDERR ¤Ê¤É)¤ò»ØÄê¤·¤Þ¤¹¡£
+@param logdev ãƒ­ã‚°ã‚’æ›¸ãè¾¼ã‚€ãƒ•ã‚¡ã‚¤ãƒ«åã‹ã€ IO ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ(STDOUT, STDERR ãªã©)ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param shift_age ¥í¥°¥Õ¥¡¥¤¥ë¤òÊÝ»ý¤¹¤ë¿ô¤«¡¢¥í¥°¥Õ¥¡¥¤¥ë¤òÀÚ¤êÂØ¤¨¤ëÉÑÅÙ¤ò»ØÄê¤·¤Þ¤¹¡£
-                 ÉÑÅÙ¤Ë¤Ï daily, weekly, monthly ¤òÊ¸»úÎó¤Ç»ØÄê¤¹¤ë¤³¤È¤¬¤Ç¤­¤Þ¤¹¡£
-                 ¾ÊÎ¬¤¹¤ë¤È¡¢¥í¥°¤ÎÊÝÂ¸Àè¤òÀÚ¤êÂØ¤¨¤Þ¤»¤ó¡£
+@param shift_age ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¿æŒã™ã‚‹æ•°ã‹ã€ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«ã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹é »åº¦ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+                 é »åº¦ã«ã¯ daily, weekly, monthly ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
+                 çœç•¥ã™ã‚‹ã¨ã€ãƒ­ã‚°ã®ä¿å­˜å…ˆã‚’åˆ‡ã‚Šæ›¿ãˆã¾ã›ã‚“ã€‚
 
-@param shift_size shift_age ¤òÀ°¿ô¤Ç»ØÄê¤·¤¿¾ì¹ç¤Î¤ßÍ­¸ú¤Ç¤¹¡£
-                  ¤³¤Î¥µ¥¤¥º¤Ç¥í¥°¥Õ¥¡¥¤¥ë¤òÀÚ¤êÂØ¤¨¤Þ¤¹¡£
+@param shift_size shift_age ã‚’æ•´æ•°ã§æŒ‡å®šã—ãŸå ´åˆã®ã¿æœ‰åŠ¹ã§ã™ã€‚
+                  ã“ã®ã‚µã‚¤ã‚ºã§ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«ã‚’åˆ‡ã‚Šæ›¿ãˆã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   logger = Logger.new(STDERR)
   logger = Logger.new(STDOUT)
   logger = Logger.new('logfile.log')
   
-  file = File.open('foo.log', File::WRONLY | File::APPEND)
+  file = File.open('foo.log', File::WRONLY | File::APPEND | File::CREAT)
   logger = Logger.new(file, 'daily')
 
 

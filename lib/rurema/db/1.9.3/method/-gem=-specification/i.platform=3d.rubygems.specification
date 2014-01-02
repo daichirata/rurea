@@ -4,10 +4,10 @@ kind=defined
 
 --- platform=(platform)
 
-���� Gem �ѥå���������ѤǤ���ץ�åȥե�����򥻥åȤ��ޤ���
+この Gem パッケージを使用できるプラットフォームをセットします。
 
-@param platform ���� Gem �ѥå���������ѤǤ���ץ�åȥե��������ꤷ�ޤ���
-       �ǥե���Ȥ� [[m:Gem::Platform::RUBY]] �Ǥ���
+@param platform この Gem パッケージを使用できるプラットフォームを指定します。
+       デフォルトは [[m:Gem::Platform::RUBY]] です。
 
 @see [[m:Gem::Platform::RUBY]]
 

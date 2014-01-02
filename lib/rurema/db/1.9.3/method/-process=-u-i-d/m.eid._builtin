@@ -4,5 +4,5 @@ kind=defined
 
 --- eid    -> Integer
 
-���ߤμ¸��桼�� ID ���֤��ޤ���
+現在の実効ユーザ ID を返します。
 

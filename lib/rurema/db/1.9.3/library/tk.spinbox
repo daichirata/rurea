@@ -3,5 +3,6 @@ classes=TkSpinbox,TkSpinbox=SpinCommand,TkSpinbox=SpinCommand=ValidateArgs
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

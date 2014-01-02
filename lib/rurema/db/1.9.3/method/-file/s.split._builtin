@@ -4,12 +4,12 @@ kind=defined
 
 --- split(pathname)    -> [String]
 
-pathname ¤ò dirname ¤Èbasename ¤ËÊ¬³ä¤·¤Æ¡¢2 Í×
-ÁÇ¤ÎÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
+pathname ã‚’ dirname ã¨basename ã«åˆ†å‰²ã—ã¦ã€2 è¦
+ç´ ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
   [File.dirname(pathname), File.basename(pathname)]
 
-¤ÈÆ±¤¸¤Ç¤¹¡£
+ã¨åŒã˜ã§ã™ã€‚
 
-@param pathname ¥Ñ¥¹Ì¾¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£ 
+@param pathname ãƒ‘ã‚¹åã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚ 
 

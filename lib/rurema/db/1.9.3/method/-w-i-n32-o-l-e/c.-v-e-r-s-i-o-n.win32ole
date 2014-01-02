@@ -4,5 +4,5 @@ kind=defined
 
 --- VERSION  -> String
 
-Major.Minor.Patch������WIN32OLE�ΥС�������ֹ�򼨤�ʸ����Ǥ���
+Major.Minor.Patch形式のWIN32OLEのバージョン番号を示す文字列です。
 

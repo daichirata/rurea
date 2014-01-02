@@ -3,5 +3,6 @@ classes=Gem=Builder
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:Gem::Specification]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤«¤é Gem ¥Ñ¥Ã¥±¡¼¥¸¤òºîÀ®¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:Gem::Specification]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‹ã‚‰ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½œæˆã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

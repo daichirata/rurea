@@ -4,8 +4,8 @@ kind=defined
 
 --- <<(num) -> IPAddr
 
-�ӥåȤ��Ȥκ����եȱ黻�ˤ�ꡢ������ IPAddr ���֥������Ȥ��������ޤ���
+ビットごとの左シフト演算により、新しい IPAddr オブジェクトを生成します。
 
-@param num �����եȤ�������
+@param num 左シフトする桁数。
 
 

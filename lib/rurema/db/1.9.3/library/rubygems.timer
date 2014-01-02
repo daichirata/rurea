@@ -3,5 +3,6 @@ classes=
 methods=Kernel/i.time.rubygems.timer
 sublibraries=
 is_sublibrary=true
+category=
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤Ï¡¢¥í¥°¼èÆÀ¤Î¤¿¤á¤Ë $log ¤È¤¤¤¦¥°¥í¡¼¥Ğ¥ëÊÑ¿ô¤òÄêµÁ¤·¤Ş¤¹¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¯ã€ãƒ­ã‚°å–å¾—ã®ãŸã‚ã« $log ã¨ã„ã†ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°ã‚’å®šç¾©ã—ã¾ã™ã€‚

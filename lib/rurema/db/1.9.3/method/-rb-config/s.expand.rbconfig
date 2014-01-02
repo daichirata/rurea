@@ -4,12 +4,12 @@ kind=defined
 
 --- expand(val, config = CONFIG) -> String
 
-Í¿¤¨¤é¤ì¤¿¥Ñ¥¹¤òÅ¸³«¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸãƒ‘ã‚¹ã‚’å±•é–‹ã—ã¾ã™ã€‚
 
   RbConfig.expand("$(bindir)") # => /home/foobar/all-ruby/ruby19x/bin
 
-@param val Å¸³«¤·¤¿¤¤ÊÑ¿ôÌ¾¤ò Makefile ¤Ë½ñ¤¯·Á¼°¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param val å±•é–‹ã—ãŸã„å¤‰æ•°åã‚’ Makefile ã«æ›¸ãå½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param config ÊÑ¿ôÅ¸³«¤Ë»ÈÍÑ¤¹¤ëÀßÄê¤ò [[c:Hash]] ¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param config å¤‰æ•°å±•é–‹ã«ä½¿ç”¨ã™ã‚‹è¨­å®šã‚’ [[c:Hash]] ã§æŒ‡å®šã—ã¾ã™ã€‚
   
 @see [[m:RbConfig::MAKEFILE_CONFIG]]

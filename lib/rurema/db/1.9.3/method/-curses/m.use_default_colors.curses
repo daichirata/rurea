@@ -4,9 +4,9 @@ kind=defined
 
 --- use_default_colors -> nil
 
-���ʿ����طʿ���ü���Υǥե������ (-1) �����ꤷ�ޤ���
+前景色と背景色を端末のデフォルト値 (-1) に設定します。
 
-@raise  NotImplementedError ���ݡ��Ȥ��Ƥ��ʤ��Ķ���ȯ�����ޤ���
+@raise  NotImplementedError サポートしていない環境で発生します。
 
 @see [[man:default_colors(3X)]]
 

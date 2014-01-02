@@ -4,11 +4,11 @@ kind=defined
 
 --- remove_instance_variable(name) -> object
 
-���֥������Ȥ��饤�󥹥����ѿ� name ������������Υ���
-�����ѿ������ꤵ��Ƥ����ͤ��֤��ޤ���
+オブジェクトからインスタンス変数 name を取り除き、そのインス
+タンス変数に設定されていた値を返します。
 
-@param name ������륤�󥹥����ѿ���̾���򥷥�ܥ뤫ʸ����ǻ��ꤷ�ޤ���
-@raise NameError ���֥������Ȥ����󥹥����ѿ� name ������ʤ�����ȯ�����ޤ���
+@param name 削除するインスタンス変数の名前をシンボルか文字列で指定します。
+@raise NameError オブジェクトがインスタンス変数 name を持たない場合に発生します。
 
     class Foo
       def foo
@@ -20,4 +20,5 @@ kind=defined
     Foo.new.foo
 
 @see [[m:Module#remove_class_variable]],[[m:Module#remove_const]]
+
 

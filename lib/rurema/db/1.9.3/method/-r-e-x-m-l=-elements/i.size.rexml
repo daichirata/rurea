@@ -2,6 +2,12 @@ names=size
 visibility=public
 kind=defined
 
---- size
-@todo
+--- size -> Integer
+保持している要素の個数を返します。
+  require 'rexml/document'
+  doc = REXML::Document.new '<a>sean<b/>elliott<b/>russell<b/></a>'
+  # doc.root は3つの要素と3つのテキストノードを持つため、6を返す
+  doc.root.size            # => 6
+  # そのうち要素は3つであるため、以下は3を返す
+  doc.root.elements.size   # => 3
 

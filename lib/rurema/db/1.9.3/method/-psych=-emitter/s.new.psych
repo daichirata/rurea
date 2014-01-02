@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- new(io) -> Psych::Emitter
-@todo
+Emitter オブジェクトを生成して返します。
 
-���Ȥ��������ޤ���
+@param io 出力先の IO オブジェクト
 

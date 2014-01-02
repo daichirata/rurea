@@ -4,11 +4,12 @@ kind=defined
 
 --- []=(offset, n)
 
-���Ȥλؤ����ɥ쥹�� offset �Х��Ȥ�­���������ΰ����ꤵ�줿 n �˽񤭴����ޤ���
+自身の指すアドレスに offset バイトを足したメモリ領域を指定された n に書き換えます。
 
-@param n ��������ꤷ�ޤ���
+@param n 整数を指定します。
+@raise DL::DLError self の保持するポインタが NULL である場合に発生します
 
-��:
+例:
 
  require 'dl'
 
@@ -20,20 +21,21 @@ kind=defined
 
 --- []=(offset, len, v) 
 
-���Ȥλؤ����ɥ쥹�� offset �Х��Ȥ�­���������ΰ����Ƭ len �Х��Ȥ�
-ʸ���� str �򥳥ԡ����ޤ���
+自身の指すアドレスに offset バイトを足したメモリ領域の先頭 len バイトに
+文字列 str をコピーします。
 
-str �Υ������� len ��꾮�������ϡ��Ĥ���ΰ�� 0 �����ޤ���
-���ԡ�����ΰ褬 len ����礭�������ڤ��ޤ���
+str のサイズが len より小さい場合は、残りの領域を 0 で埋めます。
+コピー先の領域が len より大きいか検証しません。
 
-@param offset �񤭴������������ΰ�Υ��ե��åȤ�������Ϳ���ޤ���
+@param offset 書き換えたいメモリ領域のオフセットを整数で与えます。
 
-@param len �񤭴������������ΰ�Υ������������ǻ��ꤷ�ޤ���
+@param len 書き換えたいメモリ領域のサイズを整数で指定します。
 
-@param v �����ΰ�˥��åȤ������Х������ʸ����ǻ��ꤷ�ޤ���
+@param v メモリ領域にセットしたいバイト列を文字列で指定します。
 
+@raise DL::DLError self の保持するポインタが NULL である場合に発生します
 
-��:
+例:
 
  require 'dl'
  

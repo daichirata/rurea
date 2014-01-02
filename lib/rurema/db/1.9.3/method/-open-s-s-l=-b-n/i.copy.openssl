@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- copy(other) -> self
-other �����Ƥ򼫿Ȥ˥��ԡ����ޤ���
+other の内容を自身にコピーします。
 
-@param other ���ԡ����� [[c:OpenSSL::BN]] �Υ��֥�������
-@raise OpenSSL::BNError ���ԡ��˼���
+@param other コピーする [[c:OpenSSL::BN]] のオブジェクト
+@raise OpenSSL::BNError コピーに失敗
 

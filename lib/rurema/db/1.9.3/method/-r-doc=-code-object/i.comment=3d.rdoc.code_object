@@ -4,9 +4,9 @@ kind=defined
 
 --- comment=(comment)
 
-���ȤΥ����Ȥ� comment �����ꤷ�ޤ���
+自身のコメントを comment に設定します。
 
-��������comment ����ʸ������ä����ϲ��⤷�ޤ���
+ただし、comment が空文字列だった場合は何もしません。
 
-@param comment �����Ȥ�ʸ����ǻ��ꤷ�ޤ���
+@param comment コメントを文字列で指定します。
 

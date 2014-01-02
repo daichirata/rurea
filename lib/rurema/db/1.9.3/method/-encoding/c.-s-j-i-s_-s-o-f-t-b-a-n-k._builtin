@@ -4,10 +4,10 @@ kind=defined
 
 --- SJIS_SOFTBANK -> Encoding
 --- SJIS_SoftBank -> Encoding
-SJIS-SoftBank ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+SJIS-SoftBank ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
-Shift_JIS, CP932 ¤Î°¡¼ï¤Ç¤¹¡£
-SoftBank ¤Î·ÈÂÓÅÅÏÃ¤Ç»È¤ï¤ì¤ë³¨Ê¸»ú¤¬´Ş¤Ş¤ì¤Æ¤¤¤Ş¤¹¡£
+Shift_JIS, CP932 ã®äºœç¨®ã§ã™ã€‚
+SoftBank ã®æºå¸¯é›»è©±ã§ä½¿ã‚ã‚Œã‚‹çµµæ–‡å­—ãŒå«ã¾ã‚Œã¦ã„ã¾ã™ã€‚
 
 @see [[url:http://creation.mb.softbank.jp/web/web_pic_about.html]],
      [[url:http://www2.developers.softbankmobile.co.jp/dp/tool_dl/download.php?docid=120&companyid=]]

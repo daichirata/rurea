@@ -4,11 +4,11 @@ kind=defined
 
 --- sync(string) -> bool
 
-string �����ϥХåե����������ɲä������� full flush
-point �ޤ��ɤ����Ф��ޤ������ϥХåե���� full flush point
-��¸�ߤ��ʤ����ϡ����ϥХåե�����ˤ� false ���֤��ޤ���
-���ϥХåե���� full flush point �����Ĥ��ä�����
-true ���֤����Ĥ�Υǡ��������ϥХåե�����ݻ�����ޤ���
+string を入力バッファの末尾に追加し、次の full flush
+point まで読み飛ばします。入力バッファ内に full flush point
+が存在しない場合は、入力バッファを空にし false を返します。
+入力バッファ内に full flush point が見つかった場合は
+true を返し、残りのデータは入力バッファ内に保持されます。
 
-@param string ���ϥХåե����������ɲä���ʸ�������ꤷ�ޤ���
+@param string 入力バッファの末尾に追加する文字列を指定します。
 

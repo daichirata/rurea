@@ -12,7 +12,7 @@ the bottom margin line causes all lines in the scrolling region
 to scroll one line in the direction of the first line.
 Only the text of the window is scrolled.
 
-@param top ¾åÊı¸ş¤Î¥Ş¡¼¥¸¥ó¹Ô¿ô¤ò»ØÄê¤·¤Ş¤¹¡£
+@param top ä¸Šæ–¹å‘ã®ãƒãƒ¼ã‚¸ãƒ³è¡Œæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param bottom ²¼Êı¸ş¤Î¥Ş¡¼¥¸¥ó¹Ô¿ô¤ò»ØÄê¤·¤Ş¤¹¡£
+@param bottom ä¸‹æ–¹å‘ã®ãƒãƒ¼ã‚¸ãƒ³è¡Œæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

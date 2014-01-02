@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- list -> [Encoding]
-¸½ºß¥í¡¼¥É¤µ¤ì¤Æ¤¤¤ë¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Î¥ê¥¹¥È¤òÊÖ¤·¤Þ¤¹¡£
+ç¾åœ¨ãƒ­ãƒ¼ãƒ‰ã•ã‚Œã¦ã„ã‚‹ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã®ãƒªã‚¹ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
     Encoding.list
     => [#<Encoding:ASCII-8BIT>, #<Encoding:EUC-JP>,
         #<Encoding:Shift_JIS>, #<Encoding:UTF-8>,

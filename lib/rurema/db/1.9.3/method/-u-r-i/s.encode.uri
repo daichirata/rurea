@@ -5,26 +5,26 @@ kind=defined
 --- escape(str, unsafe = URI::UNSAFE)    -> String
 --- encode(str, unsafe = URI::UNSAFE)    -> String
 
-URI Ê¸»úÎó¤ò¥¨¥ó¥³¡¼¥É¤·¤¿Ê¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£
+URI æ–‡å­—åˆ—ã‚’ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï obsolete ¤Ç¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ obsolete ã§ã™ã€‚
 
-Âå¤ï¤ê¤Ë
+ä»£ã‚ã‚Šã«
 [[m:ERB::Util.url_encode]],
 [[m:CGI.escape]],
 [[m:URI.encode_www_form_component]],
 [[m:WEBrick::HTTPUtils.escape_form]],
 [[m:WEBrick::HTTPUtils.escape]]
-¤Ê¤É¤Î»ÈÍÑ¤ò¸¡Æ¤¤·¤Æ¤¯¤À¤µ¤¤¡£
-¾ÜºÙ¤Ï [[ruby-core:29293]] ¤«¤é¤Î¥¹¥ì¥Ã¥É¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+ãªã©ã®ä½¿ç”¨ã‚’æ¤œè¨ã—ã¦ãã ã•ã„ã€‚
+è©³ç´°ã¯ [[ruby-core:29293]] ã‹ã‚‰ã®ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
-  p URI.escape('http://images.google.co.jp/images?q=¥â¥Ê¥ê¥¶&ie=EUC-JP') 
+  p URI.escape('http://images.google.co.jp/images?q=ãƒ¢ãƒŠãƒªã‚¶&ie=EUC-JP') 
 
   #=> "http://images.google.co.jp/images?q=%A5%E2%A5%CA%A5%EA%A5%B6&ie=EUC-JP"
 
-@param str URI ¤òÊ¸»úÎó¤È¤·¤ÆÍ¿¤¨¤Ş¤¹¡£
+@param str URI ã‚’æ–‡å­—åˆ—ã¨ã—ã¦ä¸ãˆã¾ã™ã€‚
 
-@param unsafe URI ¤È¤·¤Æ»ØÄê¤Ç¤­¤Ê¤¤Ê¸»ú¤òÀµµ¬É½¸½¤«Ê¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param unsafe URI ã¨ã—ã¦æŒ‡å®šã§ããªã„æ–‡å­—ã‚’æ­£è¦è¡¨ç¾ã‹æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 

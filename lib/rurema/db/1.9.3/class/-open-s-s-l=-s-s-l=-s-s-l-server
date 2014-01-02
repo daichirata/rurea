@@ -6,16 +6,16 @@ library=openssl
 aliases=
 aliasof=
 
-SSL �����С��Τ���Υ��饹��
+SSL サーバーのためのクラス。
 
-[[c:TCPServer]] ���åפ��륯�饹�ǡ�TCPServer ����³����
-�����åȤ� [[c:OpenSSL::SSL::SSLSocket]] �ǥ�åפ��뵡ǽ������ޤ���
-�����褽 TCPServer ��Ʊ�ͤΥ᥽�åɤ�����ޤ���
+[[c:TCPServer]] をラップするクラスで、TCPServer で接続した
+ソケットを [[c:OpenSSL::SSL::SSLSocket]] でラップする機能を持ちます。
+おおよそ TCPServer と同様のメソッドを持ちます。
 
-����Ū�ˤ� SSL �����Ф��ñ�˼������뤿��Υ��饹�Ǥ��ꡢ
-��������Ѥ����Ȥ� SSL �����Ф�������뤳�Ȥϲ�ǽ�Ǥ���
+基本的には SSL サーバを簡単に実装するためのクラスであり、
+これを利用せずとも SSL サーバを実装することは可能です。
 
-�ʲ��ϥ��饤����Ȥ�������Ϥ�ɸ����Ϥ˽��Ϥ�������Υ����ФǤ���
+以下はクライアントからの入力を標準出力に出力するだけのサーバです。
 
   require 'socket'
   require 'openssl'

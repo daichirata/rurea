@@ -5,10 +5,10 @@ kind=defined
 --- nl -> nil
 @todo
 
-cooked ¥â¡¼¥É¤Î¤È¤­¡¢return ¥­¡¼¤ÎÆşÎÏ¤ËÂĞ¤·¤Æ
-LF (Ctrl-j) ¤òÊÖ¤¹¤è¤¦¤Ë¤·¤Ş¤¹¡£
+cooked ãƒ¢ãƒ¼ãƒ‰ã®ã¨ãã€return ã‚­ãƒ¼ã®å…¥åŠ›ã«å¯¾ã—ã¦
+LF (Ctrl-j) ã‚’è¿”ã™ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
-¾Ü¤·¤¯¤Ï¡¢ man ¥Ú¡¼¥¸¤Î curs_outopts(3X) ¤Î nl ´Ø¿ô¤ò»²¾È¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ã€ man ãƒšãƒ¼ã‚¸ã® curs_outopts(3X) ã® nl é–¢æ•°ã‚’å‚ç…§ãã ã•ã„ã€‚
 
  Enable the underlying display device to translate
  the return key into newline on input, and whether it

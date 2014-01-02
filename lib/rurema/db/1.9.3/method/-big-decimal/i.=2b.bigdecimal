@@ -2,10 +2,11 @@ names=+
 visibility=public
 kind=defined
 
---- +(other)
-@todo
+--- +(other) -> BigDecimal
 
-�û� (c = a + b)��
+和を計算します。
 
-c �����٤ˤĤ��Ƥϡַ׻����٤ˤĤ��ơפ򻲾Ȥ��Ƥ��������� 
+@param other self に足す数を指定します。
+
+計算結果の精度については[[ref:lib:bigdecimal#precision]]を参照してください。
 

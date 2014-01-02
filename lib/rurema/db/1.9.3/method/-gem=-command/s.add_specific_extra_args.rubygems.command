@@ -4,9 +4,9 @@ kind=defined
 
 --- add_specific_extra_args(cmd, args)
 
-Ϳ����줿���ޥ�ɤ��б������ɲäΰ������ɲä��ޤ���
+与えられたコマンドに対応する追加の引数を追加します。
 
-@param cmd ���ޥ��̾����ꤷ�ޤ���
+@param cmd コマンド名を指定します。
 
-@param args �ɲäΰ��������󤫡�����Ƕ��ڤä�ʸ����ǻ��ꤷ�ޤ���
+@param args 追加の引数を配列か、空白で区切った文字列で指定します。
 

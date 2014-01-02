@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- inspect -> String
-StringScanner���֥������Ȥ�ɽ��ʸ������֤��ޤ���
+StringScannerオブジェクトを表す文字列を返します。
 
-ʸ����ˤϥ��饹̾��¾���ʲ��ξ��󤬴ޤޤ�ޤ���
+文字列にはクラス名の他、以下の情報が含まれます。
 
-    * ������ʥݥ��󥿤θ��߰��֡�
-    * ��������оݤ�ʸ�����Ĺ����
-    * �������ݥ��󥿤�����ˤ���ʸ�����嵭�¹���� @ ���������ݥ��󥿤�ɽ���ޤ���
+    * スキャナポインタの現在位置。
+    * スキャン対象の文字列の長さ。
+    * スキャンポインタの前後にある文字。上記実行例の @ がスキャンポインタを表します。
 
-������
+使用例
       require 'strscan'
 
       s = StringScanner.new('test string')

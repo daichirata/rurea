@@ -7,31 +7,31 @@ kind=defined
 --- post2(path, data, header = nil) -> Net::HTTPResponse
 --- post2(path, data, header = nil) {|response| .... } -> Net::HTTPResponse
 
-�����о�� path �ˤ��륨��ƥ��ƥ����Ф�ʸ���� data ��
-POST ������ޤ���
-�֤��ͤ� [[c:Net::HTTPResponse]] �Υ��󥹥��󥹤Ǥ���
+サーバ上の path にあるエンティティに対し文字列 data を
+POST で送ります。
+返り値は [[c:Net::HTTPResponse]] のインスタンスです。
 
-header �� nil
-�Ǥʤ���С��ꥯ�����Ȥ�����Ȥ��ˤ������Ƥ� HTTP �إå��Ȥ���
-����ޤ��� header �� { 'Accept' = > '*/*', ... } �Ȥ���
-���Υϥå���Ǥʤ���Ф����ޤ���
+header が nil
+でなければ、リクエストを送るときにその内容を HTTP ヘッダとして
+送ります。 header は { 'Accept' = > '*/*', ... } という
+形のハッシュでなければいけません。
 
-�֥��å��ȤȤ�˸ƤӽФ��줿�Ȥ��ϡ�
-����ƥ��ƥ��ܥǥ��򥽥��åȤ����ɤ߽Ф����ˡ�
-��³��ݻ��������֤� [[c:Net::HTTPResponse]]
-���֥������Ȥ�֥��å����Ϥ��ޤ���
+ブロックとともに呼び出されたときは、
+エンティティボディをソケットから読み出す前に、
+接続を維持した状態で [[c:Net::HTTPResponse]]
+オブジェクトをブロックに渡します。
 
-POST ������ˤϥإå��� Content-Type: ����ꤹ��ɬ�פ�����ޤ���
-�⤷ header �˻��ꤷ�ʤ��ä��ʤ�С� Content-Type �Ȥ���
-"application/x-www-form-urlencoded" ���Ѥ��ޤ���
+POST する場合にはヘッダに Content-Type: を指定する必要があります。
+もし header に指定しなかったならば、 Content-Type として
+"application/x-www-form-urlencoded" を用います。
 
-@param path POST��Υ���ƥ��ƥ��Υѥ���ʸ����ǻ��ꤷ�ޤ���
-@param data POST����ǡ�����Ϳ���ޤ���
-@param header �ꥯ�����Ȥ� HTTP �إå���ϥå���ǻ��ꤷ�ޤ���
+@param path POST先のエンティティのパスを文字列で指定します。
+@param data POSTするデータを与えます。
+@param header リクエストの HTTP ヘッダをハッシュで指定します。
 
-post2 �ϻ����٤�ʤΤǻȤ�ʤ��Ǥ���������
+post2 は時代遅れなので使わないでください。
 
-  # ��
+  # 例
   response = http.request_post('/cgi-bin/nice.rb', 'datadatadata...')
   p response.status
   puts response.body          # body is already read

@@ -2,10 +2,8 @@ names=PF_MAX
 visibility=public
 kind=defined
 
---- PF_MAX
-@todo
+--- PF_MAX -> Integer
+ãƒ—ãƒ­ãƒˆã‚³ãƒ«ãƒ•ã‚¡ãƒŸãƒªãƒ¼ã®æœ€å¤§æ•°ã€‚
 
-[[m:Socket.open]] ¤ÎÂè»°°ú¿ô protocol ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
-
-@see [[m:Socket.open]]
+@see [[m:Socket::Constants::AF_MAX]]
 

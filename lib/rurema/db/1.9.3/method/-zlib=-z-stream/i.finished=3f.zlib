@@ -5,5 +5,5 @@ kind=defined
 --- finished? -> bool
 --- stream_end? -> bool
 
-���ȥ꡼��ؤ����Ϥ���λ���Ƥ�����˿����֤��ޤ���
+ストリームへの入力が終了している時に真を返します。
 

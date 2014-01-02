@@ -4,7 +4,7 @@ kind=defined
 
 --- indent=(string)
 
-����ǥ�Ȥ˻��Ѥ���ʸ����򥻥åȤ��ޤ���
+インデントに使用する文字列をセットします。
 
-@param string ����ǥ�Ȥ˻��Ѥ���ʸ�������ꤷ�ޤ���
+@param string インデントに使用する文字列を指定します。
 

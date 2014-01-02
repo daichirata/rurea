@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- content_type         -> String | nil
-Content-Type ¥Ø¥Ã¥À¤ÎÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+Content-Type ãƒ˜ãƒƒãƒ€ã®å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 

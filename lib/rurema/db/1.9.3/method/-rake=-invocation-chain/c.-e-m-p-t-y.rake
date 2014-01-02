@@ -4,5 +4,5 @@ kind=defined
 
 --- EMPTY -> Rake::InvocationChain::EmptyInvocationChain
 
-[[c:Rake::InvocationChain::EmptyInvocationChain]] §Œ•§•Û•π•ø•Û•π§Ú…Ω§∑§ﬁ§π°£
+[[c:Rake::InvocationChain::EmptyInvocationChain]] „ÅÆ„Ç§„É≥„Çπ„Çø„É≥„Çπ„ÇíË°®„Åó„Åæ„Åô„ÄÇ
 

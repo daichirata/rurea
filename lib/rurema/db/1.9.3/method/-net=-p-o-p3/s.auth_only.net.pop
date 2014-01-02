@@ -3,25 +3,25 @@ visibility=public
 kind=defined
 
 --- auth_only(address, port = nil, account, password, isapop=false)
-POP ¥»¥Ã¥·¥ç¥ó¤ò³«¤­¡¢Ç§¾Ú¤À¤±¤ò¹Ô¤Ã¤ÆÀÜÂ³¤òÀÚ¤ê¤Ş¤¹¡£
+POP ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‚’é–‹ãã€èªè¨¼ã ã‘ã‚’è¡Œã£ã¦æ¥ç¶šã‚’åˆ‡ã‚Šã¾ã™ã€‚
 
-¼ç¤Ë POP before SMTP ¤Î¤¿¤á¤ËÍÑ°Õ¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
+ä¸»ã« POP before SMTP ã®ãŸã‚ã«ç”¨æ„ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 
-»ÈÍÑÎã:
+ä½¿ç”¨ä¾‹:
 
   require 'net/pop'
 
   Net::POP3.auth_only('pop.example.com', nil,     # using default port (110)
                       'YourAccount', 'YourPassword')
 
-@param address POP3¥µ¡¼¥Ğ¤Î¥Û¥¹¥ÈÌ¾Ê¸»úÎó
-@param port ÀÜÂ³¤¹¤ëPOP3¥µ¡¼¥Ğ¤Î¥İ¡¼¥ÈÈÖ¹æ
-@param account ¥¢¥«¥¦¥ó¥ÈÌ¾Ê¸»úÎó
-@param password ¥Ñ¥¹¥ï¡¼¥ÉÊ¸»úÎó
-@param isapop ¿¿¤ÇAPOP¤òÍøÍÑ¤·¤Ş¤¹
+@param address POP3ã‚µãƒ¼ãƒã®ãƒ›ã‚¹ãƒˆåæ–‡å­—åˆ—
+@param port æ¥ç¶šã™ã‚‹POP3ã‚µãƒ¼ãƒã®ãƒãƒ¼ãƒˆç•ªå·
+@param account ã‚¢ã‚«ã‚¦ãƒ³ãƒˆåæ–‡å­—åˆ—
+@param password ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰æ–‡å­—åˆ—
+@param isapop çœŸã§APOPã‚’åˆ©ç”¨ã—ã¾ã™
 
-@raise Net::POPAuthenticationError Ç§¾Ú¤Ë¼ºÇÔ¤·¤¿¡¢¤â¤·¤¯¤ÏAPOP¤òÍøÍÑ¤·¤è¤¦¤È¤·¤¿¤¬¥µ¡¼¥Ğ¤¬APOP¤òÄó¶¡¤·¤Æ¤¤¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
-@raise Net::POPError ¥µ¡¼¥Ğ¤¬Ç§¾Ú¼ºÇÔ°Ê³°¤Î¥¨¥é¡¼¤òÊó¹ğ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
-@raise Net::POPBadResponse ¥µ¡¼¥Ğ¤«¤é¤Î±şÅú¤¬¥×¥í¥È¥³¥ë¾åÉÔÀµ¤Ç¤¢¤Ã¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@raise Net::POPAuthenticationError èªè¨¼ã«å¤±æ•—ã—ãŸã€ã‚‚ã—ãã¯APOPã‚’åˆ©ç”¨ã—ã‚ˆã†ã¨ã—ãŸãŒã‚µãƒ¼ãƒãŒAPOPã‚’æä¾›ã—ã¦ã„ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™
+@raise Net::POPError ã‚µãƒ¼ãƒãŒèªè¨¼å¤±æ•—ä»¥å¤–ã®ã‚¨ãƒ©ãƒ¼ã‚’å ±å‘Šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
+@raise Net::POPBadResponse ã‚µãƒ¼ãƒã‹ã‚‰ã®å¿œç­”ãŒãƒ—ãƒ­ãƒˆã‚³ãƒ«ä¸Šä¸æ­£ã§ã‚ã£ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

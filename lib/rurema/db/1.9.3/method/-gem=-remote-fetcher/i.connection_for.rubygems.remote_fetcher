@@ -4,10 +4,10 @@ kind=defined
 
 --- connection_for(uri) -> Net::HTTP
 
-HTTP ���ͥ����������������֤��ޤ���
+HTTP コネクションを生成して返します。
 
-������³���Ƥ��� URI �Ǥ���С������ѤߤΥ��ͥ��������֤��ޤ���
-�ޤ���ɬ�פ�����Хץ���������Ѥ��ޤ���
+既に接続している URI であれば、生成済みのコネクションを返します。
+また、必要があればプロキシを使用します。
 
-@param uri ��³��� URI ����ꤷ�ޤ���
+@param uri 接続先の URI を指定します。
 

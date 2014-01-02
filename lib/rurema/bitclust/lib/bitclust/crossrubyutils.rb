@@ -6,6 +6,8 @@
 
 module BitClust
 
+  # Provides utility methods like print_crossruby_table.
+  # Used by subcommands "ancestors" "classes" etc.
   module CrossRubyUtils
 
     private
@@ -40,7 +42,7 @@ module BitClust
       ver.split[1].tr('.', '')
     end
 
-    def get_ruby(version)      
+    def get_ruby(version)
       forall_ruby(ENV['PATH']) do |ruby, |
         v = `#{ruby} -e 'print RUBY_VERSION'`
         patch = `#{ruby} -e 'print RUBY_PATCHLEVEL if defined? RUBY_PATCHLEVEL'`
@@ -50,7 +52,7 @@ module BitClust
       end
       return nil
     end
-    
+
     def build_crossruby_table
       ENV.delete 'RUBYOPT'
       ENV.delete 'RUBYLIB'

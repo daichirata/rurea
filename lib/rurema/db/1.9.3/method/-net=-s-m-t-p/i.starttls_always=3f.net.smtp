@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- starttls_always? -> bool
-¤½¤Î Net::SMTP ¥ª¥Ö¥¸¥§¥¯¥È¤¬ ¾ï¤ËSTARTTLS¤òÍøÍÑ¤¹¤ë
-(ÍøÍÑ¤Ç¤­¤Ê¤¤¾ì¹ç¤Ë¤ÏÎã³°¤òÈ¯À¸¤¹¤ë)¤Ê¤é¤Ð
-¿¿¤òÊÖ¤·¤Þ¤¹¡£
+ãã® Net::SMTP ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒ å¸¸ã«STARTTLSã‚’åˆ©ç”¨ã™ã‚‹
+(åˆ©ç”¨ã§ããªã„å ´åˆã«ã¯ä¾‹å¤–ã‚’ç™ºç”Ÿã™ã‚‹)ãªã‚‰ã°
+çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Net::SMTP#starttls?]], [[m:Net::SMTP#starttls_auto?]], [[m:Net::SMTP#enable_starttls]]
 

@@ -4,14 +4,14 @@ kind=defined
 
 --- feed(obj) -> nil
 
-Enumerator ÆâÉô¤Î yield ¤¬ÊÖ¤¹ÃÍ¤òÀßÄê¤·¤Þ¤¹¡£
+Enumerator å†…éƒ¨ã® yield ãŒè¿”ã™å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-¤³¤ì¤ÇÃÍ¤òÀßÄê¤·¤Ê¤«¤Ã¤¿¾ì¹ç¤Ï yield ¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+ã“ã‚Œã§å€¤ã‚’è¨­å®šã—ãªã‹ã£ãŸå ´åˆã¯ yield ã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤³¤ÎÃÍ¤ÏÆâÉô¤Ç yield ¤µ¤ì¤¿»þÅÀ¤Ç¥¯¥ê¥¢¤µ¤ì¤Þ¤¹¡£
+ã“ã®å€¤ã¯å†…éƒ¨ã§ yield ã•ã‚ŒãŸæ™‚ç‚¹ã§ã‚¯ãƒªã‚¢ã•ã‚Œã¾ã™ã€‚
 
-  # Îã
-  # (1), (2), ... (10) ¤Î½ç¤Ë¼Â¹Ô¤µ¤ì¤ë
+  # ä¾‹
+  # (1), (2), ... (10) ã®é †ã«å®Ÿè¡Œã•ã‚Œã‚‹
   o = Object.new
   def o.each
     x = yield         # (2) blocks
@@ -28,7 +28,7 @@ Enumerator ÆâÉô¤Î yield ¤¬ÊÖ¤¹ÃÍ¤òÀßÄê¤·¤Þ¤¹¡£
   e.next              # (4)
   e.next              # (7)
                       # (10)
-@param obj Enumerator ÆâÉô¤Î yield ¤¬ÊÖ¤¹ÃÍ
-@raise TypeError ¤¹¤Ç¤ËÃÍ¤ò¤³¤Î¥á¥½¥Ã¥É¤Ç¥»¥Ã¥È¤·¤Æ¤¤¤ë¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@param obj Enumerator å†…éƒ¨ã® yield ãŒè¿”ã™å€¤
+@raise TypeError ã™ã§ã«å€¤ã‚’ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã‚»ãƒƒãƒˆã—ã¦ã„ã‚‹å ´åˆã«ç™ºç”Ÿã—ã¾ã™
 
 

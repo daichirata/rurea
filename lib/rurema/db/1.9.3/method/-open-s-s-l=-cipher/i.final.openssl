@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- final -> String
-�Ź楪�֥������������˻Ĥ��줿�ǡ�����Ź沽/���沽����ʸ�����
-�֤��ޤ���
+暗号オブジェクト内部に残されたデータを暗号化/復号化し、文字列で
+返します。
 
-�ѥǥ���([[m:OpenSSL::Cipher#padding=]])��ͭ���ˤ��Ƥ�����ϡ�
-�Ĥ��줿�ǡ����˥ѥǥ��󥰤��ղä�����ǰŹ沽���ޤ���
+パディング([[m:OpenSSL::Cipher#padding=]])を有効にしている場合は、
+残されたデータにパディングを付加した上で暗号化します。
 

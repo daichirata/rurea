@@ -4,10 +4,10 @@ kind=defined
 
 --- trusted_cert_path(cert, options) -> String
 
-Ϳ����줿������ؤΥѥ����֤��ޤ���
+与えられた証明書へのパスを返します。
 
-@param cert �����񥪥֥������Ȥ���ꤷ�ޤ���
+@param cert 証明書オブジェクトを指定します。
 
-@param options ����¾�Υ��ץ�������ꤷ�ޤ���
+@param options その他のオプションを指定します。
 
 

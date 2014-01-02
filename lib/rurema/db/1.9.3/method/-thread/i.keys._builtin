@@ -4,8 +4,8 @@ kind=defined
 
 --- keys    -> [Symbol]
 
-����åɸ�ͭ�ǡ����˴�Ϣ�Ť���줿������������֤��ޤ���������
-[[c:Symbol]] ���֤���ޤ���
+スレッド固有データに関連づけられたキーの配列を返します。キーは
+[[c:Symbol]] で返されます。
 
     th = Thread.current
     th[:foo] = 'FOO'

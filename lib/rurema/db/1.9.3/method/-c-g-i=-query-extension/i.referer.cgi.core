@@ -4,5 +4,5 @@ kind=defined
 
 --- referer -> String
 
-ENV['HTTP_REFERER'] ค๒สึคทคÞคนกฃ
+ENV['HTTP_REFERER'] ใ’่ฟ”ใ—ใพใใ€
 

@@ -7,9 +7,10 @@ kind=defined
 --- each_codepoint -> Enumerator
 --- codepoints     -> Enumerator
 
-Ê¸»úÎó¤Î³Æ¥³¡¼¥É¥Ý¥¤¥ó¥È¤ËÂÐ¤·¤Æ·«¤êÊÖ¤·¤Þ¤¹¡£
+æ–‡å­—åˆ—ã®å„ã‚³ãƒ¼ãƒ‰ãƒã‚¤ãƒ³ãƒˆã«å¯¾ã—ã¦ç¹°ã‚Šè¿”ã—ã¾ã™ã€‚
 
    #coding:UTF-8
-   "hello ¤ï¡¼¤ë¤É".codepoints.to_a
+   "hello ã‚ãƒ¼ã‚‹ã©".each_codepoint.to_a
    # => [104, 101, 108, 108, 111, 32, 12431, 12540, 12427, 12393]
+
 

@@ -5,22 +5,22 @@ kind=defined
 --- open!(ident=$0, options=Syslog::LOG_PID|Syslog::LOG_CONS, facility=Syslog::LOG_USER) { |syslog| ... } -> self
 --- reopen(ident=$0, options=Syslog::LOG_PID|Syslog::LOG_CONS, facility=Syslog::LOG_USER) { |syslog| ... } -> self
 
-³«¤¤¤Æ¤¤¤¿ syslog ¤òºÇ½é¤Ë¥¯¥í¡¼¥º¤¹¤ëÅÀ¤ò½ü¤¤¤Æ[[m:Syslog.#open]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+é–‹ã„ã¦ã„ãŸ syslog ã‚’æœ€åˆã«ã‚¯ãƒ­ãƒ¼ã‚ºã™ã‚‹ç‚¹ã‚’é™¤ã„ã¦[[m:Syslog.#open]] ã¨åŒã˜ã§ã™ã€‚
 
-@param ident ¤¹¤Ù¤Æ¤Î¥í¥°¤Ë¤Ä¤¯¼±ÊÌ»Ò¤Ç¡¢¤É¤Î¥×¥í¥°¥é¥à¤«¤éÁ÷¤é¤ì
-             ¤¿¥í¥°¤Ê¤Î¤«¤ò¼±ÊÌ¤¹¤ë¤¿¤á¤Ë»È¤ï¤ì¤ëÊ¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
-             »ØÄê¤·¤Ê¤¤¾ì¹ç¤Ï¥×¥í¥°¥é¥àÌ¾¤¬»È¤ï¤ì¤Ş¤¹¡£
+@param ident ã™ã¹ã¦ã®ãƒ­ã‚°ã«ã¤ãè­˜åˆ¥å­ã§ã€ã©ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‹ã‚‰é€ã‚‰ã‚Œ
+             ãŸãƒ­ã‚°ãªã®ã‹ã‚’è­˜åˆ¥ã™ã‚‹ãŸã‚ã«ä½¿ã‚ã‚Œã‚‹æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+             æŒ‡å®šã—ãªã„å ´åˆã¯ãƒ—ãƒ­ã‚°ãƒ©ãƒ åãŒä½¿ã‚ã‚Œã¾ã™ã€‚
 
-@param options Syslog.open ¤ä Syslog.log ¤ÎÆ°ºî¤òÀ©¸æ¤¹¤ë¥Õ¥é¥°¤ò»ØÄê¤·¤Ş¤¹¡£
-               »ØÄê¤·¤Ê¤¤¾ì¹ç¤Ï¡¢Syslog::LOG_PID|Syslog::LOG_CONS¤ÎÃÍ¤¬»È¤ï¤ì
-               ¤Ş¤¹¡£»ÈÍÑ¤Ç¤­¤ëÃÍ¤Ï[[c:Syslog::Constants]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param options Syslog.open ã‚„ Syslog.log ã®å‹•ä½œã‚’åˆ¶å¾¡ã™ã‚‹ãƒ•ãƒ©ã‚°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+               æŒ‡å®šã—ãªã„å ´åˆã¯ã€Syslog::LOG_PID|Syslog::LOG_CONSã®å€¤ãŒä½¿ã‚ã‚Œ
+               ã¾ã™ã€‚ä½¿ç”¨ã§ãã‚‹å€¤ã¯[[c:Syslog::Constants]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
                
-@param facility ¥í¥°½ĞÎÏ¤ò¹Ô¤¦¥×¥í¥°¥é¥à¤Î¼ïÊÌ¤ò»ØÄê¤·¤Ş¤¹¡£syslog ¤Ï¤³¤ÎÃÍ
-                ¤Ë¤·¤¿¤¬¤Ã¤Æ½ĞÎÏÀè¤È¤Ê¤ë¥í¥°¥Õ¥¡¥¤¥ë¤ò·èÄê¤·¤Ş¤¹¡£ ¾Ü¤·¤¯¤Ï¡¢
-                [[man:syslog.conf(5)]], [[c:Syslog::Constants]] ¤ò»²¾È¤·¤Æ¤¯
-                ¤À¤µ¤¤¡£
+@param facility ãƒ­ã‚°å‡ºåŠ›ã‚’è¡Œã†ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ç¨®åˆ¥ã‚’æŒ‡å®šã—ã¾ã™ã€‚syslog ã¯ã“ã®å€¤
+                ã«ã—ãŸãŒã£ã¦å‡ºåŠ›å…ˆã¨ãªã‚‹ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ±ºå®šã—ã¾ã™ã€‚ è©³ã—ãã¯ã€
+                [[man:syslog.conf(5)]], [[c:Syslog::Constants]] ã‚’å‚ç…§ã—ã¦ã
+                ã ã•ã„ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
   require 'syslog'
 
   Syslog.open("syslogtest")
@@ -29,7 +29,7 @@ kind=defined
     Syslog.open!("syslogtest2")
     Syslog.log(Syslog::LOG_WARNING, "the sky is falling in %d seconds!", 200)
   rescue RuntimeError => err
-    # RuntimeError ¤ÏÈ¯À¸¤·¤Ê¤¤¡£
+    # RuntimeError ã¯ç™ºç”Ÿã—ãªã„ã€‚
     puts err 
   end
   File.foreach('/var/log/system.log'){|line|

@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- authenticate(user, secret, authtype) -> ()
-Ç§¾Ú¤ò¹Ô¤¤¤Ş¤¹¡£
+èªè¨¼ã‚’è¡Œã„ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï¥»¥Ã¥·¥ç¥ó³«»Ï([[m:Net::SMTP#start]])¸å¡¢
-¥á¡¼¥ë¤òÁ÷¤ëÁ°¤Ë¸Æ¤Ó¤À¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã‚»ãƒƒã‚·ãƒ§ãƒ³é–‹å§‹([[m:Net::SMTP#start]])å¾Œã€
+ãƒ¡ãƒ¼ãƒ«ã‚’é€ã‚‹å‰ã«å‘¼ã³ã ã—ã¦ãã ã•ã„ã€‚
 
-ÄÌ¾ï¤Ï [[m:Net::SMTP.start]] ¤ä [[m:Net::SMTP#start]] ¤ÇÇ§¾Ú¤ò
-¹Ô¤¦¤¿¤á¤³¤ì¤òÍøÍÑ¤¹¤ëÉ¬Í×¤Ï¤Ê¤¤¤Ï¤º¤Ç¤¹¡£
+é€šå¸¸ã¯ [[m:Net::SMTP.start]] ã‚„ [[m:Net::SMTP#start]] ã§èªè¨¼ã‚’
+è¡Œã†ãŸã‚ã“ã‚Œã‚’åˆ©ç”¨ã™ã‚‹å¿…è¦ã¯ãªã„ã¯ãšã§ã™ã€‚
 
-@param user Ç§¾Ú¤Ç»È¤¦¥¢¥«¥¦¥ó¥ÈÌ¾
-@param secret Ç§¾Ú¤Ç»È¤¦¥Ñ¥¹¥ï¡¼¥É
-@param authtype Ç§¾Ú¤Î¼ïÎà(:plain, :login, :cram_md5 ¤Î¤¤¤º¤ì¤«)
+@param user èªè¨¼ã§ä½¿ã†ã‚¢ã‚«ã‚¦ãƒ³ãƒˆå
+@param secret èªè¨¼ã§ä½¿ã†ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰
+@param authtype èªè¨¼ã®ç¨®é¡(:plain, :login, :cram_md5 ã®ã„ãšã‚Œã‹)
 
 @see [[m:Net::SMTP.start]], [[m:Net::SMTP#start]], [[m:Net::SMTP#auth_plain]], [[m:Net::SMTP#auth_login]], [[m:Net::SMTP#auth_cram_md5]]
 

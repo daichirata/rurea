@@ -4,5 +4,5 @@ kind=defined
 
 --- ui -> Gem::ConsoleUI
 
-�ǥե���Ȥ� UI ���֤��ޤ���
+デフォルトの UI を返します。
 

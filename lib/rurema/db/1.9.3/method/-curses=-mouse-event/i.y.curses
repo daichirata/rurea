@@ -4,7 +4,7 @@ kind=defined
 
 --- y -> Integer
 
-�ޥ����Υ��٥�Ȥ�ȯ������ʸ���ΰ��֤� Y ��ɸ���֤��ޤ���
+マウスのイベントが発生した文字の位置の Y 座標を返します。
 
 @see [[m:Curses.#getmouse]]
 

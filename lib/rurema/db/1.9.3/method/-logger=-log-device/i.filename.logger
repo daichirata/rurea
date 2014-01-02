@@ -4,7 +4,7 @@ kind=defined
 
 --- filename -> String | nil
 
-������Υե�����̾��������ޤ���
+出力先のファイル名を取得します。
 
-�����褬�ե�����ǤϤʤ����� nil ���֤��ޤ���
+出力先がファイルではない場合は nil を返します。
 

@@ -12,6 +12,7 @@ require 'bitclust/exception'
 
 module BitClust
 
+  # Entry for general documents (doc/**/*.rd, etc.)
   class DocEntry < Entry
 
     def self.type_id
@@ -68,7 +69,7 @@ module BitClust
     end
 
     def error_classes
-      classes.select{|c| c.ancestors.any?{|k| k.name == 'Exception' }}
+      classes.select{|c| c.error_class? }
     end
     
     def methods

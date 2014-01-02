@@ -4,6 +4,5 @@ kind=defined
 
 --- owner    -> Class | Module
 
-���Υ᥽�åɤ��������Ƥ��� class �� module ���֤��ޤ���
-
+このメソッドが定義されている class か module を返します。
 

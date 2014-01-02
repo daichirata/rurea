@@ -4,5 +4,5 @@ kind=defined
 
 --- tty_output? -> bool
 
-TTY �˽��Ϥ��Ƥ�����Ͽ����֤��ޤ��������Ǥʤ����ϵ����֤��ޤ���
+TTY に出力している場合は真を返します。そうでない場合は偽を返します。
 

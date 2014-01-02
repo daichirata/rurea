@@ -3,19 +3,19 @@ visibility=public
 kind=defined
 
 --- commercial(cwyear = -4712, cweek = 1, cwday = 1, start = Date::ITALY) -> Date
-�����դ������������ե��֥������Ȥ��������ޤ���
+暦週日付に相当する日付オブジェクトを生成します。
 
-��������ӽ����� (����) ���顢
-�ޤ������ο��Ǥʤ���Фʤ�ޤ���(��ΤȤ��ϺǸ夫��ν���)��
-���Ǥ��äƤϤʤ�ޤ���
+週、および週の日 (曜日) は負、
+または正の数でなければなりません(負のときは最後からの序数)。
+零であってはなりません。
 
-���Υ᥽�åɤ˲����������դ�Ϳ���뤳�ȤϤǤ��ޤ���
+このメソッドに改暦前の日付を与えることはできません。
 
-[[m:Date.jd]]������� [[m:Date.new]] �⻲�Ȥ��Ƥ���������
+[[m:Date.jd]]、および [[m:Date.new]] も参照してください。
 
-@param cwyear ǯ
-@param cweek ��
-@param cwday ������ (����)
-@param start ���쥴�ꥪ���Ĥ����Ϥ᤿���򤢤�魯��ꥦ����
-@raise ArgumentError �������ʤ����դˤʤ��Ȥ߹�碌�Ǥ������ȯ�����ޤ���
+@param cwyear 年
+@param cweek 週
+@param cwday 週の日 (曜日)
+@param start グレゴリオ暦をつかい始めた日をあらわすユリウス日
+@raise ArgumentError 正しくない日付になる組み合わせである場合に発生します。
 

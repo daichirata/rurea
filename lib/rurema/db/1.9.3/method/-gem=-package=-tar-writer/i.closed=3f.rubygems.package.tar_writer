@@ -4,6 +4,6 @@ kind=defined
 
 --- closed? -> bool
 
-¼«¿È¤¬´û¤Ë close ¤µ¤ì¤Æ¤¤¤ë¾ì¹ç¤Ï¡¢¿¿¤òÊÖ¤·¤Þ¤¹¡£
-¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ï¡¢µ¶¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒæ—¢ã« close ã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ã€çœŸã‚’è¿”ã—ã¾ã™ã€‚
+ãã†ã§ãªã„å ´åˆã¯ã€å½ã‚’è¿”ã—ã¾ã™ã€‚
 

@@ -2,8 +2,8 @@ names=SEPARATOR_PAT
 visibility=public
 kind=defined
 
---- SEPARATOR_PAT
-�ѥ�̾�Τʤ��Υǥ��쥯�ȥ����ڤ���ʬ�˥ޥå���������ɽ���Ǥ���
+--- SEPARATOR_PAT -> Regexp
+パス名のなかのディレクトリを区切る部分にマッチする正規表現です。
 
-�����ͤϴĶ���¸�Ǥ���
+この値は環境依存です。
 

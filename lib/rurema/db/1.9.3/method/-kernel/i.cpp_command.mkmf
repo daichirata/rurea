@@ -4,11 +4,11 @@ kind=added
 
 --- cpp_command(outfile, opt = "") -> String
 
-�ºݤ˥ץ�ץ����å���¹Ԥ���ݤ˻��Ѥ��륳�ޥ�ɤ��֤��ޤ���
+実際にプリプロセッサを実行する際に使用するコマンドを返します。
 
-@param outfile ���ϥե������̾������ꤷ�ޤ���
+@param outfile 出力ファイルの名前を指定します。
 
-@param opt �ץ�ץ����å���Ϳ�����ɲäΥ��ޥ�ɥ饤���������ꤷ�ޤ���
+@param opt プリプロセッサに与える追加のコマンドライン引数を指定します。
 
 @see [[m:RbConfig.expand]]
 

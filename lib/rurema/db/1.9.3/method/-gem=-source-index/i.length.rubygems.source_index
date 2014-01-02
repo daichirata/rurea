@@ -5,5 +5,5 @@ kind=defined
 --- size   -> Integer
 --- length -> Integer
 
-���Ȥ˴ޤޤ�� Gem �θĿ����֤��ޤ���
+自身に含まれる Gem の個数を返します。
 

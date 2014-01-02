@@ -3,5 +3,6 @@ classes=TkPlace
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

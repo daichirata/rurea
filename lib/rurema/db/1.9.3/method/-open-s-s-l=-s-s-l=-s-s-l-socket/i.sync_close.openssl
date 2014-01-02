@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- sync_close -> bool
-SSLSocket �� close ����Ȥ��˥�åפ��Ƥ��륽���åȤ� close ���뤫�ɤ�����
-�֤��ޤ���
+SSLSocket を close するときにラップしているソケットも close するかどうかを
+返します。
 
-true �ǥ����åȤ� close ���ޤ���
+true でソケットも close します。
 

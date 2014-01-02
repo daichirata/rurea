@@ -5,11 +5,11 @@ kind=defined
 --- []=(key, value)
 --- store(key, value) -> String
 
-key ���б�����Ķ��ѿ����ͤ� value �ˤ��ޤ���
-value �� nil �λ���key ���б�����Ķ��ѿ���������ޤ��� 
+key に対応する環境変数の値を value にします。
+value が nil の時、key に対応する環境変数を取り除きます。 
 
-@param key    �Ķ��ѿ�̾����ꤷ�ޤ��� to_str ��ʸ���󲽤���ޤ���
-@param value  �֤�������٤��ͤ���ꤷ�ޤ��� to_str ��ʸ���󲽤���ޤ���
+@param key    環境変数名を指定します。 to_str で文字列化されます。
+@param value  置き換えるべき値を指定します。 to_str で文字列化されます。
 
-@return value ���֤��ޤ���
+@return value を返します。
 

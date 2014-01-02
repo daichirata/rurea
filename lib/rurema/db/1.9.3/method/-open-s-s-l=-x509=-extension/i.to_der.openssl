@@ -4,7 +4,7 @@ kind=defined
 
 ---to_der -> String
 
-DER �����ΥХ�������Ѵ������֤��ޤ���
+DER 形式のバイト列に変換して返します。
 
-@raise OpenSSL::X509::Extension �Ѵ��˼��Ԥ�������ȯ�����ޤ�
+@raise OpenSSL::X509::Extension 変換に失敗した場合に発生します
 

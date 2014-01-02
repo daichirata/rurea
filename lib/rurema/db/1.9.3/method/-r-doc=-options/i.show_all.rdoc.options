@@ -4,6 +4,6 @@ kind=defined
 
 --- show_all -> bool
 
-���ޥ�ɥ饤������� --all ���ץ�������ꤷ�Ƥ�����硢true ���֤���
-���������Ǥʤ����� false ���֤��ޤ���
+コマンドライン引数の --all オプションを指定していた場合、true を返しま
+す。そうでない場合は false を返します。
 

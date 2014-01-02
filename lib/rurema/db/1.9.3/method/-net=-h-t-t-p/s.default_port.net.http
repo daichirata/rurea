@@ -4,5 +4,5 @@ kind=defined
 
 --- http_default_port -> Integer
 --- default_port -> Integer
-HTTP �Υǥե���ȥݡ��� (80) ���֤��ޤ���
+HTTP のデフォルトポート (80) を返します。
 

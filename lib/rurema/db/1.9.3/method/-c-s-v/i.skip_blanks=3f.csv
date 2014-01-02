@@ -4,7 +4,7 @@ kind=defined
 
 --- skip_blanks? -> bool
 
-���Ǥ�����ϡ����Ԥ��ɤ����Ф��ޤ���
+真である場合は、空行を読み飛ばします。
 
 @see [[m:CSV.new]]
 

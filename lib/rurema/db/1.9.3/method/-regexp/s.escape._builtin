@@ -5,11 +5,11 @@ kind=defined
 --- escape(string) -> String
 --- quote(string) -> String
 
-string ¤ÎÃæ¤ÇÀµµ¬É½¸½¤Ë¤ª¤¤¤ÆÆÃÊÌ¤Ê°ÕÌ£¤ò»ý¤ÄÊ¸»ú¤ÎÄ¾Á°¤Ë¥¨
-¥¹¥±¡¼¥×Ê¸»ú(¥Ð¥Ã¥¯¥¹¥é¥Ã¥·¥å)¤òÁÞÆþ¤·¤¿Ê¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+string ã®ä¸­ã§æ­£è¦è¡¨ç¾ã«ãŠã„ã¦ç‰¹åˆ¥ãªæ„å‘³ã‚’æŒã¤æ–‡å­—ã®ç›´å‰ã«ã‚¨
+ã‚¹ã‚±ãƒ¼ãƒ—æ–‡å­—(ãƒãƒƒã‚¯ã‚¹ãƒ©ãƒƒã‚·ãƒ¥)ã‚’æŒ¿å…¥ã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
 
-@param string Àµµ¬É½¸½¤Ë¤ª¤¤¤ÆÆÃÊÌ¤Ê°ÕÌ£¤ò¤â¤ÄÊ¸»ú¤ò¤â¤ÄÊ¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param string æ­£è¦è¡¨ç¾ã«ãŠã„ã¦ç‰¹åˆ¥ãªæ„å‘³ã‚’ã‚‚ã¤æ–‡å­—ã‚’ã‚‚ã¤æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 
   rp = Regexp.escape("$bc^")

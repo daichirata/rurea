@@ -4,7 +4,7 @@ kind=defined
 
 --- name=(value)
 
-���å�����̾���򥻥åȤ��ޤ���
+クッキーの名前をセットします。
 
-@param value ̾������ꤷ�ޤ��� 
+@param value 名前を指定します。 
 

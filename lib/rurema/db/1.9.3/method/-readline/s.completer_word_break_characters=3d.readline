@@ -4,19 +4,19 @@ kind=defined
 
 --- completer_word_break_characters=(string)
 
-¥æ¡¼¥¶¤ÎÆşÎÏ¤ÎÊä´°¤ò¹Ô¤¦ºİ¡¢
-Ã±¸ì¤Î¶èÀÚ¤ê¤ò¼¨¤¹Ê£¿ô¤ÎÊ¸»ú¤Ç¹½À®¤µ¤ì¤ëÊ¸»úÎó string ¤ò»ØÄê¤·¤Ş¤¹¡£
-[[m:Readline.basic_word_break_characters=]] ¤È¤Î°ã¤¤¤Ï¡¢
-GNU Readline ¤Î rl_complete_internal ´Ø¿ô¤Ç»ÈÍÑ¤µ¤ì¤ë¤³¤È¤Ç¤¹¡£
+ãƒ¦ãƒ¼ã‚¶ã®å…¥åŠ›ã®è£œå®Œã‚’è¡Œã†éš›ã€
+å˜èªã®åŒºåˆ‡ã‚Šã‚’ç¤ºã™è¤‡æ•°ã®æ–‡å­—ã§æ§‹æˆã•ã‚Œã‚‹æ–‡å­—åˆ— string ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+[[m:Readline.basic_word_break_characters=]] ã¨ã®é•ã„ã¯ã€
+GNU Readline ã® rl_complete_internal é–¢æ•°ã§ä½¿ç”¨ã•ã‚Œã‚‹ã“ã¨ã§ã™ã€‚
 
-GNU Readline ¤Î¥Ç¥Õ¥©¥ë¥È¤ÎÃÍ¤Ï¡¢ 
-[[m:Readline.basic_word_break_characters]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+GNU Readline ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å€¤ã¯ã€ 
+[[m:Readline.basic_word_break_characters]] ã¨åŒã˜ã§ã™ã€‚
 
-@param string Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param string æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise NotImplementedError ¥µ¥İ¡¼¥È¤·¤Æ¤¤¤Ê¤¤´Ä¶­¤ÇÈ¯À¸¤·¤Ş¤¹¡£
+@raise NotImplementedError ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ãªã„ç’°å¢ƒã§ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise SecurityError ¥»¡¼¥Õ¥ì¥Ù¥ë ($SAFE) ¤¬ 4 ¤Î¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise SecurityError ã‚»ãƒ¼ãƒ•ãƒ¬ãƒ™ãƒ« ($SAFE) ãŒ 4 ã®å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:Readline.completer_word_break_characters]]
 

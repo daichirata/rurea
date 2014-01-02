@@ -4,6 +4,9 @@ kind=defined
 
 --- length -> Fixnum
 --- size -> Fixnum
-(���Υ᥽�åɤ� Struct �β��̥��饹�ˤΤ��������Ƥ��ޤ�)
-��¤�ΤΥ��Фο����֤��ޤ���
+構造体のメンバの数を返します。
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
 

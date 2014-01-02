@@ -4,5 +4,8 @@ kind=defined
 
 --- version -> String
 
-IRB �ΥС�������ʸ������֤��ޤ���
+IRB のバージョンを文字列で返します。
+
+~/.irbrc などの設定ファイル内で IRB.conf[:VERSION] を設定していた場合は
+任意のバージョンを返すように設定できます。
 

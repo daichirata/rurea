@@ -4,14 +4,14 @@ kind=defined
 
 --- assert_empty(object, message = nil) -> true
 
-Ϳ����줿���֥������Ȥ����Ǥ����硢�����˥ѥ��������Ȥˤʤ�ޤ���
+与えられたオブジェクトが空である場合、検査にパスしたことになります。
 
-@param object Ǥ�դΥ��֥������Ȥ���ꤷ�ޤ���
+@param object 任意のオブジェクトを指定します。
 
-@param message �����˼��Ԥ�������ɽ�������å���������ꤷ�ޤ���
-               ʸ���� [[c:Proc]] ����ꤷ�ޤ���[[c:Proc]] �Ǥ������ [[m:Proc#call]] ����
-               ��̤���Ѥ��ޤ���
+@param message 検査に失敗した場合に表示するメッセージを指定します。
+               文字列か [[c:Proc]] を指定します。[[c:Proc]] である場合は [[m:Proc#call]] した
+               結果を使用します。
 
-@raise MiniTest::Assertion Ϳ����줿���֥������Ȥ� empty? �᥽�åɤ�����ʤ�����ȯ�����ޤ���
-                           �ޤ���Ϳ����줿���֥������Ȥ����Ǥʤ����ˤ�ȯ�����ޤ���
+@raise MiniTest::Assertion 与えられたオブジェクトが empty? メソッドを持たない場合に発生します。
+                           また、与えられたオブジェクトが空でない場合にも発生します。
 

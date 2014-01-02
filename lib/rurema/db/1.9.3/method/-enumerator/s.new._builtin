@@ -4,15 +4,15 @@ kind=defined
 
 --- new(obj, method = :each, *args) -> Enumerator
 
-���֥������� obj �ˤĤ��ơ� each ������� method �Ȥ���
-̾���Υ᥽�åɤ�ȤäƷ����֤����֥������Ȥ����������֤��ޤ���
-args ����ꤹ��ȡ� method �θƤӽФ������Ϥ���ޤ���
+オブジェクト obj について、 each の代わりに method という
+名前のメソッドを使って繰り返すオブジェクトを生成して返します。
+args を指定すると、 method の呼び出し時に渡されます。
 
-@param obj ���ƥ졼���᥽�åɤΥ쥷���ФȤʤ륪�֥�������
-@param method ���ƥ졼���᥽�åɤ�̾����ɽ������ܥ�ޤ���ʸ����
-@param args ���ƥ졼���᥽�åɤθƤӽФ����Ϥ�Ǥ�ոĤΰ���
+@param obj イテレータメソッドのレシーバとなるオブジェクト
+@param method イテレータメソッドの名前を表すシンボルまたは文字列
+@param args イテレータメソッドの呼び出しに渡す任意個の引数
 
-��:
+例:
 
   str = "xyz"
   
@@ -22,17 +22,17 @@ args ����ꤹ��ȡ� method �θƤӽФ������Ϥ���ޤ���
 
 --- new{|y| ... }                   -> Enumerator
 
-Enumerator ���֥������Ȥ����������֤��ޤ���Ϳ����줿�֥��å��� Enumerator::Yielder ���֥������Ȥ�
-�����Ȥ��Ƽ¹Ԥ���ޤ���
+Enumerator オブジェクトを生成して返します。与えられたブロックは Enumerator::Yielder オブジェクトを
+引数として実行されます。
 
-�������줿 Enumerator ���֥������Ȥ��Ф��� each ��Ƥ֤ȡ������������˻��ꤵ�줿�֥��å���
-�¹Ԥ���Yielder ���֥������Ȥ��Ф��� << �᥽�åɤ��ƤФ�뤿�Ӥˡ�
-each ���Ϥ��줿�֥��å��������֤���ޤ���
+生成された Enumerator オブジェクトに対して each を呼ぶと、この生成時に指定されたブロックを
+実行し、Yielder オブジェクトに対して << メソッドが呼ばれるたびに、
+each に渡されたブロックが繰り返されます。
 
-new ���Ϥ��줿�֥��å�����λ���������� each �η����֤��������ޤ���
-���ΤȤ��Υ֥��å����֤��ͤ� each ���֤��ͤȤʤ�ޤ���
+new に渡されたブロックが終了した時点で each の繰り返しが終わります。
+このときのブロックの返り値が each の返り値となります。
 
-��:
+例:
 
   enum = Enumerator.new{|y|
     (1..10).each{|i|   

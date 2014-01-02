@@ -4,5 +4,5 @@ kind=defined
 
 --- type_id -> String
 
-���ȤΥ�����ʸ������֤��ޤ���
+自身のタグを文字列で返します。
 

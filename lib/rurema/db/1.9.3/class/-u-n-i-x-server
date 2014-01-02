@@ -6,4 +6,4 @@ library=socket
 aliases=
 aliasof=
 
-UNIX���ȥ꡼�෿��³�Υ�����¦�Υ����åȤΥ��饹��
+UNIXストリーム型接続のサーバ側のソケットのクラス。

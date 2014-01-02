@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- status  -> Integer
-¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤òÀ°¿ô¤ÇÊÖ¤·¤Þ¤¹¡£
+ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’æ•´æ•°ã§è¿”ã—ã¾ã™ã€‚
 
-°Ê²¼¤Î¤¤¤º¤ì¤«¤òÊÖ¤·¤Þ¤¹¡£
+ä»¥ä¸‹ã®ã„ãšã‚Œã‹ã‚’è¿”ã—ã¾ã™ã€‚
   * [[m:OpenSSL::OCSP::RESPONSE_STATUS_SUCCESSFUL]]
   * [[m:OpenSSL::OCSP::RESPONSE_STATUS_MALFORMEDREQUEST]]
   * [[m:OpenSSL::OCSP::RESPONSE_STATUS_INTERNALERROR]]

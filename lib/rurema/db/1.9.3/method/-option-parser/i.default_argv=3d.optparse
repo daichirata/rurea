@@ -4,10 +4,10 @@ kind=defined
 
 --- default_argv=(argv)
 
-���Ȥ��ǥե���Ȥǥѡ������������ʸ���������ǻ��ꤷ�ޤ���
+自身がデフォルトでパースする引数を文字列の配列で指定します。
 
-[[m:OptionParser#parse]] �ΰ��������ꤵ��ʤ��ä��Ȥ��˻Ȥ��ޤ���
+[[m:OptionParser#parse]] の引数が指定されなかったときに使われます。
 
-@param argv �ǥե���Ȥǥѡ���������ʸ������������ꤷ�ޤ���
+@param argv デフォルトでパースしたい文字列の配列を指定します。
 
 

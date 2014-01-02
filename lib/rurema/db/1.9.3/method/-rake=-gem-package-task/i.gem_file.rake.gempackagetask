@@ -4,5 +4,5 @@ kind=defined
 
 --- gem_file -> String
 
-Gem �ѥå�������̾�����֤��ޤ���
+Gem パッケージの名前を返します。
 

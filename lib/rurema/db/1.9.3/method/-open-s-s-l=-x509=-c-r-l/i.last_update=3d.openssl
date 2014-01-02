@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- last_update=(time)
-CRL ¤¬ºÇ¸å¤Ë¹¹¿·¤µ¤ì¤¿Æü»ş¤ò Time ¥ª¥Ö¥¸¥§¥¯¥È¤ÇÀßÄê¤·¤Ş¤¹¡£
+CRL ãŒæœ€å¾Œã«æ›´æ–°ã•ã‚ŒãŸæ—¥æ™‚ã‚’ Time ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§è¨­å®šã—ã¾ã™ã€‚
 
-@param time ºÇ½ª¹¹¿·Æü»ş
-@raise OpenSSL::X509::CRLError ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param time æœ€çµ‚æ›´æ–°æ—¥æ™‚
+@raise OpenSSL::X509::CRLError è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::X509::CRL#last_update]]
 

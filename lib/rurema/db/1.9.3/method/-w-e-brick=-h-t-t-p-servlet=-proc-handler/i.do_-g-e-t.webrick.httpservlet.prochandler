@@ -5,9 +5,9 @@ kind=defined
 --- do_GET(request, response) -> ()
 --- do_POST(request, response) -> ()
 
-GET, POST еъепеие╣е╚дЄ╜ш═¤д╖д▐д╣бг
+GET, POST уГкуВпуВиуВ╣уГИуВТхЗжчРЖуБЧуБ╛уБЩуАВ
 
-@param request епещедевеєе╚длдщд╬еъепеие╣е╚дЄ╔╜д╣ [[c:WEBrick::HTTPRequest]] еке╓е╕езепе╚д╟д╣бг
+@param request уВпуГйуВдуВвуГ│уГИуБЛуВЙуБоуГкуВпуВиуВ╣уГИуВТшбиуБЩ [[c:WEBrick::HTTPRequest]] уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 
-@param response епещедевеєе╚д╪д╬еье╣е▌еєе╣дЄ╔╜д╣ [[c:WEBrick::HTTPResponse]] еке╓е╕езепе╚д╟д╣бг
+@param response уВпуГйуВдуВвуГ│уГИуБ╕уБоуГмуВ╣уГЭуГ│уВ╣уВТшбиуБЩ [[c:WEBrick::HTTPResponse]] уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 

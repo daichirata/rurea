@@ -5,7 +5,7 @@ kind=defined
 --- message -> String
 --- to_s    -> String
 
-ɸ�२�顼�˽��Ϥ����å��������֤��ޤ���
+標準エラーに出力するメッセージを返します。
 
-@return ʸ������֤��ޤ���
+@return 文字列を返します。
 

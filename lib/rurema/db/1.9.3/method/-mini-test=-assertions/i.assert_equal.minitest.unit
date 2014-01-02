@@ -4,17 +4,17 @@ kind=defined
 
 --- assert_equal(expected, actual, message = nil) -> true
 
-Ϳ����줿�����ͤȼºݤ��ͤ���������硢�����˥ѥ��������Ȥˤʤ�ޤ���
+与えられた期待値と実際の値が等しい場合、検査にパスしたことになります。
 
-@param expected �����ͤ���ꤷ�ޤ���
+@param expected 期待値を指定します。
 
-@param actual �ºݤ��ͤ���ꤷ�ޤ���
+@param actual 実際の値を指定します。
 
-@param message �����˼��Ԥ�������ɽ�������å���������ꤷ�ޤ���
-               ʸ���� [[c:Proc]] ����ꤷ�ޤ���[[c:Proc]] �Ǥ������ [[m:Proc#call]] ����
-               ��̤���Ѥ��ޤ���
+@param message 検査に失敗した場合に表示するメッセージを指定します。
+               文字列か [[c:Proc]] を指定します。[[c:Proc]] である場合は [[m:Proc#call]] した
+               結果を使用します。
 
-@raise MiniTest::Assertion Ϳ����줿�����ͤȼºݤ��ͤ��������ʤ�����ȯ�����ޤ���
+@raise MiniTest::Assertion 与えられた期待値と実際の値が等しくない場合に発生します。
 
 @see [[m:Object#==]]
 

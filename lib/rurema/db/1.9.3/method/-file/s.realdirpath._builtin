@@ -4,14 +4,14 @@ kind=defined
 
 --- realdirpath(pathname, basedir = nil) -> String
 
-Ϳ����줿 pathname ���б��������Хѥ����֤��ޤ���
+与えられた pathname に対応する絶対パスを返します。
 
-pathname �κǸ�Υ���ݡ��ͥ�Ȥ�¸�ߤ��Ƥ��ʤ��Ƥ��㳰��ȯ�����ޤ���
+pathname の最後のコンポーネントは存在していなくても例外は発生しません。
 
-@param pathname �ե�����̾����ꤷ�ޤ���
+@param pathname ファイル名を指定します。
 
-@param basedir �١����ǥ��쥯�ȥ����ꤷ�ޤ�����ά����ȥ����ȥǥ��쥯�ȥ����Ѥ��ޤ���
+@param basedir ベースディレクトリを指定します。省略するとカレントディレクトリを使用します。
 
-@raise Errno::ENOENT �ե����뤬¸�ߤ��ʤ�����ȯ�����ޤ���
+@raise Errno::ENOENT ファイルが存在しない場合に発生します。
 
 

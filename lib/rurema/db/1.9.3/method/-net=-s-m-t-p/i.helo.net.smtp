@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- helo(domain) -> Net::SMTP::Response
-HELO ���ޥ�ɤ�����ޤ�(ɸ��Ū�� SMTP ��Ȥ��ޤ�)��
+HELO コマンドを送ります(標準的な SMTP を使います)。
 
-�̾�� [[m:Net::SMTP.start]], [[m:Net::SMTP#start]] �� HELO ��
-�����뤿�����Ѥ���ɬ�פϤʤ��Ϥ��Ǥ���
+通常は [[m:Net::SMTP.start]], [[m:Net::SMTP#start]] で HELO が
+送られるため利用する必要はないはずです。
 
 
-@param domain HELO������ɥᥤ��̾
+@param domain HELOで送るドメイン名
 

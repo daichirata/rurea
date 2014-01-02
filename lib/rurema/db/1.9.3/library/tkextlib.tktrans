@@ -3,5 +3,6 @@ classes=
 methods=
 sublibraries=tkextlib.tktrans.setup,tkextlib.tktrans.tktrans
 is_sublibrary=true
+category=
 
 

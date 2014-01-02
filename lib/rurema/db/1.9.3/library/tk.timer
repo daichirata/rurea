@@ -3,5 +3,6 @@ classes=TkTimer,TkAfter,TkRTTimer
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- VT_BSTR -> Integer
-ʸ�����BSTR�ˤ򼨤��ޤ���8�ˡ�
+文字列（BSTR）を示します（8）。
 
-OLE�����ȥ᡼������BSTR��Unicode��ɽ�����줿Ĺ���դ�ʸ����Ǥ���Ruby
-��String��BSTR������Ѵ��ϡ�WIN32OLE��[[m:WIN32OLE#codepage]]�˴�Ť���
-��ưŪ�˹Ԥ��ޤ���
+OLEオートメーションのBSTRはUnicodeで表現された長さ付き文字列です。Ruby
+のStringとBSTRの相互変換は、WIN32OLEが[[m:WIN32OLE#codepage]]に基づいて
+自動的に行います。
 

@@ -3,5 +3,6 @@ classes=Singleton
 methods=
 sublibraries=
 is_sublibrary=false
+category=DesignPattern
 
-Singleton ¥Ñ¥¿¡¼¥ó¤ò°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Singleton ãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

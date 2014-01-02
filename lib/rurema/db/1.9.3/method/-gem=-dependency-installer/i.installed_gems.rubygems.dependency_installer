@@ -4,5 +4,5 @@ kind=defined
 
 --- installed_gems -> Array
 
-[[m:Gem::DependencyInstaller#install]] �ǥ��󥹥ȡ��뤵�줿 Gem �Υꥹ�Ȥ��֤��ޤ���
+[[m:Gem::DependencyInstaller#install]] でインストールされた Gem のリストを返します。
 

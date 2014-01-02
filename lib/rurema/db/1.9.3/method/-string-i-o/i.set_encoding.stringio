@@ -4,7 +4,7 @@ kind=defined
 
 --- set_encoding(encoding) -> self
 
-���ȤΥ��󥳡��ǥ��󥰤���ꤵ�줿���󥳡��ǥ��󥰤����ꤷ�ޤ���
+自身のエンコーディングを指定されたエンコーディングに設定します。
 
-@param encoding ���󥳡��ǥ��󥰤���ꤷ�ޤ���
+@param encoding エンコーディングを指定します。
 

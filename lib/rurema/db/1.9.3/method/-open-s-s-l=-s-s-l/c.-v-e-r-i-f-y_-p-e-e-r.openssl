@@ -3,23 +3,23 @@ visibility=public
 kind=defined
 
 --- VERIFY_PEER -> Integer
-[[m:OpenSSL::SSL::SSLContext#verify_mode=]] �ǻ���Ǥ���ե饰�Ǥ���
+[[m:OpenSSL::SSL::SSLContext#verify_mode=]] で指定できるフラグです。
 
-�����С��⡼�ɤǤ��뤫���饤����ȥ⡼�ɤǤ��뤫�ˤ�äư�̣�����Ȥʤ�ޤ���
+サーバーモードであるかクライアントモードであるかによって意味がことなります。
 
-�����С��⡼��: �����С��ϥ��饤����Ȥ˾�������׵ᤷ�ޤ���
-�����Ƥ���������ϸ��ڤ���ޤ������ڤ����Ԥ�����硢
-TLS/SSL �ϥ�ɥ���������¨�¤˽�λ�����ޤ���
-���饤����Ȥ��׵��̵�뤹�뤳�Ȥ��ǽ�Ǥ���
-[[m:OpenSSL::SSL::VERIFY_FAIL_IF_NO_PEER_CERT]] ��Ʊ���˻��ꤷ������
-���饤����Ȥ��׵��̵�뤷�����ˤϥϥ�ɥ���������¨�¤���ߤ��ޤ���
+サーバーモード: サーバーはクライアントに証明書を要求します。
+送られてきた証明書は検証されます。検証が失敗した場合、
+TLS/SSL ハンドシェイクを即座に終了させます。
+クライアントは要求を無視することも可能です。
+[[m:OpenSSL::SSL::VERIFY_FAIL_IF_NO_PEER_CERT]] と同時に指定した場合は
+クライアントが要求を無視した場合にはハンドシェイクを即座に停止します。
 
-���饤����ȥ⡼��: �����С��ξ�����򸡾ڤ��ޤ���
-���ڤ����Ԥ�����硢TLS/SSL �ϥ�ɥ���������¨�¤˽�λ�����ޤ���
-�����С�����������֤����ˡ�anonymous cipher ���Ѥ����硢
-VERIFY_PEER ��̵�뤵��ޤ�����������anonymous cipher �ϥǥե���ȤǤ�
-̵���ˤʤäƤ��ޤ���
+クライアントモード: サーバーの証明書を検証します。
+検証が失敗した場合、TLS/SSL ハンドシェイクを即座に終了させます。
+サーバーが証明書を返さずに、anonymous cipher を用いる場合、
+VERIFY_PEER は無視されます。ただし、anonymous cipher はデフォルトでは
+無効になっています。
 
-anonymous cipher ��ͭ���Ǥ��뤫�ɤ�����
-[[m:OpenSSL::SSLContext#cipher=]] ������Ǥ��ޤ���
+anonymous cipher が有効であるかどうかは
+[[m:OpenSSL::SSLContext#cipher=]] で設定できます。
 

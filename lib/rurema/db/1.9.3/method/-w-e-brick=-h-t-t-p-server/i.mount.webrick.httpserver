@@ -4,13 +4,13 @@ kind=defined
 
 --- mount(dir, servlet, *options)    -> ()
 
-¥µ¡¼¥Ð¾å¤Î¥Ç¥£¥ì¥¯¥È¥ê dir ¤Ë¥µ¡¼¥Ö¥ì¥Ã¥È servlet ¤òÂÐ±þ¤µ¤»¤Þ¤¹¡£
+ã‚µãƒ¼ãƒä¸Šã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª dir ã«ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆ servlet ã‚’å¯¾å¿œã•ã›ã¾ã™ã€‚
 
-@param dir ¥Ç¥£¥ì¥¯¥È¥ê¤ò¤¢¤é¤ï¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param dir ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ã‚ã‚‰ã‚ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param servlet [[c:WEBrick::HTTPServlet::AbstractServlet]] ¤Î¥µ¥Ö¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Þ¤¹¡£
+@param servlet [[c:WEBrick::HTTPServlet::AbstractServlet]] ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param options ¥µ¡¼¥Ö¥ì¥Ã¥È¤Î¥³¥ó¥¹¥È¥é¥¯¥¿¤Î°ú¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
+@param options ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã®å¼•æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   include WEBrick
   srv = HTTPServer.new( { :BindAddress => '127.0.0.1', :Port => 10080 } )

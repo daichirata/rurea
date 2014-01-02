@@ -4,7 +4,7 @@ kind=defined
 
 --- normalize_yaml_input(input) -> String
 
-YAML ·Á¼°¤Î gemspec ¤òÀµ¤·¤¯¥Õ¥©¡¼¥Þ¥Ã¥È¤·¤Þ¤¹¡£
+YAML å½¢å¼ã® gemspec ã‚’æ­£ã—ããƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param input Ê¸»úÎó¤« [[c:IO]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£
+@param input æ–‡å­—åˆ—ã‹ [[c:IO]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

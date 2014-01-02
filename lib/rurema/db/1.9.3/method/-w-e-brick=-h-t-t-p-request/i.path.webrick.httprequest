@@ -4,5 +4,5 @@ kind=defined
 
 --- path    -> String
 
-�ꥯ������ URI �Υѥ���ɽ��ʸ������֤��ޤ���
+リクエスト URI のパスを表す文字列を返します。
 

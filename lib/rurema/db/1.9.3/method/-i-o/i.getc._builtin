@@ -4,15 +4,15 @@ kind=defined
 
 --- getc    -> String | nil
 
-IO �ݡ��Ȥ��鳰�����󥳡��ǥ��󥰤˽��� 1 ʸ���ɤ߹�����֤��ޤ���
-EOF ����ã�������ˤ� nil ���֤��ޤ���
+IO ポートから外部エンコーディングに従い 1 文字読み込んで返します。
+EOF に到達した時には nil を返します。
 
-�ƥ������ɤ߹��ߥ᥽�åɤȤ���ư��ޤ���
-[[m:IO#readchar]] �Ȥΰ㤤�� EOF �Ǥο����񤤤ΤߤǤ���
+テキスト読み込みメソッドとして動作します。
+[[m:IO#readchar]] との違いは EOF での振る舞いのみです。
 
-@raise IOError ���Ȥ��ɤ߹����Ѥ˥����ץ󤵤�Ƥ��ʤ����ȯ�����ޤ���
+@raise IOError 自身が読み込み用にオープンされていなければ発生します。
 
-��:
+例:
 
 
 @see [[m:IO#readchar]]

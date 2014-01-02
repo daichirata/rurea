@@ -4,12 +4,12 @@ kind=defined
 
 --- dump(obj, io = nil) -> String | IO
 
-Ϳ����줿 obj �� YAML �ե����ޥåȤ��Ѵ�����io �˽񤭹��ߤޤ���io ����
-���ޤ���io ��Ϳ�����Ƥ��ʤ����ϡ�YAML �ե����ޥåȤ�ʸ������֤���
-����
+与えられた obj を YAML フォーマットに変換し、io に書き込みます。io を返
+します。io が与えられていない場合は、YAML フォーマットの文字列を返しま
+す。
 
-@param obj YAML�ե����ޥåȤ��Ѵ�����륪�֥�������
-@param io �������IO���֥�������
+@param obj YAMLフォーマットに変換されるオブジェクト
+@param io 出力先のIOオブジェクト
 
   YAML.dump( ['badger', 'elephant', 'tiger'],
              File.open('sample.yml', 'w')    )

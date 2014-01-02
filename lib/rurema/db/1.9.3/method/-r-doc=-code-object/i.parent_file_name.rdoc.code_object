@@ -4,7 +4,7 @@ kind=defined
 
 --- parent_file_name -> String
 
-self.parent ¤Î¥Õ¥¡¥¤¥ëÌ¾¤òÊÖ¤·¤Ş¤¹¡£
+self.parent ã®ãƒ•ã‚¡ã‚¤ãƒ«åã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:RDoc::CodeObject#parent]]
 

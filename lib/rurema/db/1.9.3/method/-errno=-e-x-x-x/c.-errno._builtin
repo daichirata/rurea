@@ -2,11 +2,11 @@ names=Errno
 visibility=public
 kind=defined
 
---- Errno
+--- Errno -> Fixnum
 
-Errno::EXXX ¤Î³Æ¥¯¥é¥¹¤ËÂÐ±þ¤¹¤ë¥·¥¹¥Æ¥à°ÍÂ¸¤Î¥¨¥é¡¼¥³¡¼¥ÉÃÍ(À°¿ô)¤Ç¤¹¡£
+Errno::EXXX ã®å„ã‚¯ãƒ©ã‚¹ã«å¯¾å¿œã™ã‚‹ã‚·ã‚¹ãƒ†ãƒ ä¾å­˜ã®ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰å€¤(æ•´æ•°)ã§ã™ã€‚
 
-Îã:
+ä¾‹:
 
     p Errno::EAGAIN::Errno            # => 11
     p Errno::EWOULDBLOCK::Errno       # => 11

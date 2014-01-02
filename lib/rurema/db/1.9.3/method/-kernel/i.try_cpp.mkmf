@@ -5,21 +5,21 @@ kind=added
 --- try_cpp(src, opt = "", *opts) -> bool
 --- try_cpp(src, opt = "", *opts){ ... } -> bool
 
-C �ץ������Υ����������� src ��ץ�ץ��������ޤ���
+C プログラムのソースコード src をプリプロセスします。
 
-[[m:$CPPFLAGS]], [[m:$CFLAGS]] ���ͤ�ץ�ץ����å��˥��ޥ�ɥ饤�����
-�Ȥ����Ϥ��ޤ���
+[[m:$CPPFLAGS]], [[m:$CFLAGS]] の値もプリプロセッサにコマンドライン引数
+として渡します。
 
-���Υ᥽�åɤϥإå��ե������¸�ߥ����å��ʤɤ˻��Ѥ��ޤ���
+このメソッドはヘッダファイルの存在チェックなどに使用します。
 
-@param src C �ץ������Υ����������ɤ���ꤷ�ޤ���
+@param src C プログラムのソースコードを指定します。
 
-@param opt �ץ�ץ����å��˥��ޥ�ɥ饤������Ȥ����Ϥ��ͤ���ꤷ�ޤ���
+@param opt プリプロセッサにコマンドライン引数として渡す値を指定します。
 
-@return ����ʤ��ץ�ץ������Ǥ����� true ���֤��ޤ���
-        �ץ�ץ������˼��Ԥ����� false ���֤��ޤ���
+@return 問題なくプリプロセスできたら true を返します。
+        プリプロセスに失敗したら false を返します。
 
-�㡧
+例：
 
   if try_cpp("#include <stdio.h>")
     $stderr.puts "stdio.h exists"

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- resume=(boolean)
-¸½ºß¤Î¥ê¥¸¥å¡¼¥à¥â¡¼¥É¤òÀßÄê¤·¤Ş¤¹¡£
+ç¾åœ¨ã®ãƒªã‚¸ãƒ¥ãƒ¼ãƒ ãƒ¢ãƒ¼ãƒ‰ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param boolean true¤Ê¤é¤Ğ¥ê¥¸¥å¡¼¥à¥â¡¼¥É¤ò on ¤Ë¤·¤Ş¤¹¡£
+@param boolean trueãªã‚‰ã°ãƒªã‚¸ãƒ¥ãƒ¼ãƒ ãƒ¢ãƒ¼ãƒ‰ã‚’ on ã«ã—ã¾ã™ã€‚
 @see [[m:Net::FTP#resume]]
 

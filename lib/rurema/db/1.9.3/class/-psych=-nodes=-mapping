@@ -2,8 +2,26 @@ type=class
 superclass=Psych=Nodes=Node
 included=
 extended=
-library=psych.nodes.mapping
+library=psych
 aliases=
 aliasof=
 
+YAML の mapping [[url:http://yaml.org/spec/1.1/#mapping]] を表すクラスです。
 
+Psych::Nodes::Mapping は 0 個以上の子ノードを持つことができます。
+子ノードの個数は偶数でなければなりません。
+子ノードは以下のいずれかクラスのインスタンスでなければなりません。
+  * [[c:Psych::Nodes::Sequence]]
+  * [[c:Psych::Nodes::Mapping]]
+  * [[c:Psych::Nodes::Scalar]]
+  * [[c:Psych::Nodes::Alias]]
+
+子ノードは mapping のキーと値が交互に並んでいます。
+  ast = Psych.parse(<<EOS)
+  %YAML 1.1
+  ---
+  x: y
+  u: v
+  EOS
+  
+  p ast.root.children.map{|v| v.value } # => ["x", "y", "u", "v"]

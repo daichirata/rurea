@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-���̸��Ź��Ϣ�Υ��顼��ȯ�������㳰�Υ��饹��
+共通鍵暗号関連のエラーで発生する例外のクラス。

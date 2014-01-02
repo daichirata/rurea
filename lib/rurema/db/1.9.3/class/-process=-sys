@@ -6,8 +6,8 @@ library=_builtin
 aliases=
 aliasof=
 
-�桼�� ID�����롼�� ID �����륷���ƥॳ�����ľ�ܸƤ֤���Υ⥸�塼��Ǥ���
+ユーザ ID・グループ ID を操作するシステムコールを直接呼ぶためのモジュールです。
 
-�ݡ����֥�˥桼�� ID�����롼�� ID �����뤿��Υ⥸�塼�� [[c:Process::UID]], [[c:Process::GID]] 
-���󶡤���Ƥ��ޤ���Process::Sys �� [[c:Process::UID]] �� [[c:Process::GID]] ��Ʊ���˻Ȥ����Ȥ�
-��侩�Ǥ���
+ポータブルにユーザ ID・グループ ID を操作するためのモジュール [[c:Process::UID]], [[c:Process::GID]] 
+も提供されています。Process::Sys と [[c:Process::UID]] や [[c:Process::GID]] を同時に使うことは
+非推奨です。

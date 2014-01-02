@@ -4,9 +4,9 @@ kind=defined
 
 --- enclosed?    -> bool
 
-¼«¿È¤¬ enclose ¤µ¤ì¤Æ¤¤¤ë¤Ê¤é true ¤òÊÖ¤·¤Ş¤¹¡£¤½¤¦¤Ç¤Ê¤¤¤Ê¤é false ¤òÊÖ¤·¤Ş¤¹¡£¥Ç¥Õ¥©¥ë¥È¤Ï false ¤Ç¤¹¡£
+è‡ªèº«ãŒ enclose ã•ã‚Œã¦ã„ã‚‹ãªã‚‰ true ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„ãªã‚‰ false ã‚’è¿”ã—ã¾ã™ã€‚ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ false ã§ã™ã€‚
 
-freeze ¤µ¤ì¤¿ ThreadGroup ¤Ë¤Ï Thread ¤ÎÄÉ²Ã/ºï½ü¤¬¤Ç¤­¤Ş¤»¤ó¤¬¡¢enclosed? ¤Ï false ¤òÊÖ¤·¤Ş¤¹¡£
+freeze ã•ã‚ŒãŸ ThreadGroup ã«ã¯ Thread ã®è¿½åŠ /å‰Šé™¤ãŒã§ãã¾ã›ã‚“ãŒã€enclosed? ã¯ false ã‚’è¿”ã—ã¾ã™ã€‚
 
     thg = ThreadGroup.new
     p thg.enclosed?         # => false

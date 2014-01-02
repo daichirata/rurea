@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- methods(include_inherited = true) -> [Symbol]
-¤½¤Î¥ª¥Ö¥¸¥§¥¯¥È¤ËÂĞ¤·¤Æ¸Æ¤Ó½Ğ¤»¤ë¥á¥½¥Ã¥ÉÌ¾¤Î°ìÍ÷¤òÊÖ¤·¤Ş¤¹¡£
-¤³¤Î¥á¥½¥Ã¥É¤Ï public ¥á¥½¥Ã¥É¤ª¤è¤Ó protected ¥á¥½¥Ã¥É¤ÎÌ¾Á°¤òÊÖ¤·¤Ş¤¹¡£
+ãã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¯¾ã—ã¦å‘¼ã³å‡ºã›ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰åã®ä¸€è¦§ã‚’è¿”ã—ã¾ã™ã€‚
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ public ãƒ¡ã‚½ãƒƒãƒ‰ãŠã‚ˆã³ protected ãƒ¡ã‚½ãƒƒãƒ‰ã®åå‰ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤¿¤À¤·ÆÃÊÌ¤Ë¡¢°ú¿ô¤¬µ¶¤Î»ş¤Ï [[m:Object#singleton_methods]](false) ¤ÈÆ±¤¸¤Ë¤Ê¤Ã¤Æ¤¤¤Ş¤¹¡£
+ãŸã ã—ç‰¹åˆ¥ã«ã€å¼•æ•°ãŒå½ã®æ™‚ã¯ [[m:Object#singleton_methods]](false) ã¨åŒã˜ã«ãªã£ã¦ã„ã¾ã™ã€‚
 
 
-@param include_inherited °ú¿ô¤¬µ¶¤Î»ş¤Ï [[m:Object#singleton_methods]](false) ¤ÈÆ±¤¸¤Ë¤Ê¤ê¤Ş¤¹¡£
+@param include_inherited å¼•æ•°ãŒå½ã®æ™‚ã¯ [[m:Object#singleton_methods]](false) ã¨åŒã˜ã«ãªã‚Šã¾ã™ã€‚
 
-  #Îã1:
+  #ä¾‹1:
   
   class Parent
     private;   def private_parent()   end
@@ -32,30 +32,30 @@ kind=defined
       public;    def public_singleton()    end
   end
   
-  # ¤¢¤ë¥ª¥Ö¥¸¥§¥¯¥È¤Î±şÅú¤Ç¤­¤ë¥á¥½¥Ã¥É¤Î°ìÍ÷¤òÆÀ¤ë¡£
+  # ã‚ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å¿œç­”ã§ãã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã®ä¸€è¦§ã‚’å¾—ã‚‹ã€‚
   p obj.methods(false)
   p obj.public_methods(false)
   p obj.private_methods(false)
   p obj.protected_methods(false)
   
-  #¼Â¹Ô·ë²Ì
+  #å®Ÿè¡Œçµæœ
   
   [:protected_singleton, :public_singleton]
   [:public_singleton, :public_foo]
   [:private_singleton, :private_foo]
   [:protected_singleton, :protected_foo]
   
-  #Îã2:
+  #ä¾‹2:
     
-  # ¤¢¤ë¥ª¥Ö¥¸¥§¥¯¥È¤Î±şÅú¤Ç¤­¤ë¥á¥½¥Ã¥É¤Î°ìÍ÷¤òÆÀ¤ë¡£
-  # ¼«¿È¤Î¥¯¥é¥¹¤Î¿Æ¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤â´Ş¤á¤ë¤¿¤á¤Ë true ¤ò»ØÄê¤·¤Æ
-  # ¤¤¤ë¤¬¡¢Object ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤Ï°ìÍ÷¤«¤éÇÓ½ü¤·¤Æ¤¤¤ë¡£
+  # ã‚ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å¿œç­”ã§ãã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã®ä¸€è¦§ã‚’å¾—ã‚‹ã€‚
+  # è‡ªèº«ã®ã‚¯ãƒ©ã‚¹ã®è¦ªã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã‚‚å«ã‚ã‚‹ãŸã‚ã« true ã‚’æŒ‡å®šã—ã¦
+  # ã„ã‚‹ãŒã€Object ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä¸€è¦§ã‹ã‚‰æ’é™¤ã—ã¦ã„ã‚‹ã€‚
   p obj.methods(true)           - Object.instance_methods(true)
   p obj.public_methods(true)    - Object.public_instance_methods(true)
   p obj.private_methods(true)   - Object.private_instance_methods(true)
   p obj.protected_methods(true) - Object.protected_instance_methods(true)
   
-  #¼Â¹Ô·ë²Ì
+  #å®Ÿè¡Œçµæœ
   
   [:protected_singleton, :public_singleton, :protected_foo, :public_foo, :protected_parent, :public_parent]
   [:public_singleton, :public_foo, :public_parent]

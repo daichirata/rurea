@@ -2,6 +2,7 @@ names=ipv6_unspecified?
 visibility=public
 kind=defined
 
---- ipv6_unspecified?
-@todo
+--- ipv6_unspecified? -> bool
+
+IPv6 の不特定アドレス(unspecified address)(::)であれば真を返します。
 

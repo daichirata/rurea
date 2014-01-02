@@ -3,5 +3,6 @@ classes=TkPanedWindow,TkPanedwindow
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -4,8 +4,8 @@ kind=defined
 
 --- marshal_load(obj) -> object
 
-е╖еъевещеде║д╡дьд┐еке╓е╕езепе╚длдщбв[[m:Delegator#__getobj__]] дм╩╓д╣еке╓е╕езепе╚дЄ║╞╕╜д╖д▐д╣бг
+уВ╖уГкуВвуГйуВдуВ║уБХуВМуБЯуВкуГЦуВ╕уВзуВпуГИуБЛуВЙуАБ[[m:Delegator#__getobj__]] уБМш┐ФуБЩуВкуГЦуВ╕уВзуВпуГИуВТхЖНчП╛уБЧуБ╛уБЩуАВ
 
-@param obj [[m:Delegator#marshal_dump]]д╬╠сдъ├═д╬е│е╘б╝
+@param obj [[m:Delegator#marshal_dump]]уБоцИ╗уВКхАдуБоуВ│уГФуГ╝
 
 

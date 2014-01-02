@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- private? -> bool
-���Ȥ���̩������äƤ��뤫�ɤ���Ƚ�ꤷ�ޤ���
+自身が秘密鍵を持っているかどうか判定します。
 

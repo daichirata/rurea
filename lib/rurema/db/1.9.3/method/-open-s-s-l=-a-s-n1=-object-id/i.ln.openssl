@@ -5,9 +5,9 @@ kind=defined
 --- ln -> String | nil
 --- long_name -> String | nil
 
-¥ª¥Ö¥¸¥§¥¯¥È¼±ÊÌ»Ò¤ËÂÐ±þ¤¹¤ë long name ¤òÊÖ¤·¤Þ¤¹¡£
+ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè­˜åˆ¥å­ã«å¯¾å¿œã™ã‚‹ long name ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require "openssl"
   oid = OpenSSL::ASN1::ObjectId.new("subjectAltName")
   p oid.ln   #=> "X509v3 Subject Alternative Name"

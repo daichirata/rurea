@@ -4,9 +4,9 @@ kind=defined
 
 --- ISO_8859_3 -> Encoding
 --- ISO8859_3 -> Encoding
-ISO8859-3 ���󥳡��ǥ��󥰡�
+ISO8859-3 エンコーディング。
 
-�ȥ륳�졢�ޥ륿�졢�����ڥ��Ȥ򰷤� 8bit single-byte ���󥳡��ǥ��󥰤Ǥ���
+トルコ語、マルタ語、エスペラントを扱う 8bit single-byte エンコーディングです。
 
 
 

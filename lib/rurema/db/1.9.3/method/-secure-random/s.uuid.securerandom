@@ -4,12 +4,12 @@ kind=defined
 
 --- uuid   -> String
 
-¥Ð¡¼¥¸¥ç¥ó 4 ¤Î UUID (Universally Unique IDentifier) ¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+ãƒãƒ¼ã‚¸ãƒ§ãƒ³ 4 ã® UUID (Universally Unique IDentifier) ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-version 4 ¤Î UUID ¤ÏÁ´¤¯¥é¥ó¥À¥à¤Ç¤¹ (¥Ð¡¼¥¸¥ç¥ó¤ò½ü¤¤¤Æ)¡£
-¤³¤Î UUID ¤Ï MAC ¥¢¥É¥ì¥¹¤ä»þ¹ï¤Ê¤É¤Î¤è¤¦¤Ê°ÕÌ£¤Î¤¢¤ë¾ðÊó¤ò´Þ¤ß¤Þ¤»¤ó¡£
+version 4 ã® UUID ã¯å…¨ããƒ©ãƒ³ãƒ€ãƒ ã§ã™ (ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’é™¤ã„ã¦)ã€‚
+ã“ã® UUID ã¯ MAC ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚„æ™‚åˆ»ãªã©ã®ã‚ˆã†ãªæ„å‘³ã®ã‚ã‚‹æƒ…å ±ã‚’å«ã¿ã¾ã›ã‚“ã€‚
 
-@raise NotImplementedError °ÂÁ´¤ÊÍð¿ôÈ¯À¸´ï¤¬»È¤¨¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise NotImplementedError å®‰å…¨ãªä¹±æ•°ç™ºç”Ÿå™¨ãŒä½¿ãˆãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
    p SecureRandom.uuid #=> "2d931510-d99f-494a-8c67-87feb05e1594"
    p SecureRandom.uuid #=> "62936e70-1815-439b-bf89-8492855a7e6b"

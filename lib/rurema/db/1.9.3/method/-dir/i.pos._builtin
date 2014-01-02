@@ -5,11 +5,11 @@ kind=defined
 --- pos     -> Integer
 --- tell    -> Integer
 
-�ǥ��쥯�ȥꥹ�ȥ꡼��θ��ߤΰ��֤��������֤��ޤ���
+ディレクトリストリームの現在の位置を整数で返します。
 
-@raise IOError ���˼��Ȥ� close ���Ƥ������ȯ�����ޤ���
+@raise IOError 既に自身が close している場合に発生します。
 
-��:
+例:
 
   Dir.open("/tmp") {|d|
     d.each {|f|

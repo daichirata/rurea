@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- BLOCK_SIZE -> Integer
-�����ΥХåե��Υ��������֤��ޤ���
+内部のバッファのサイズを返します。
 

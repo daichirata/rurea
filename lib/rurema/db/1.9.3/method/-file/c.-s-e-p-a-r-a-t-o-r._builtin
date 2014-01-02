@@ -2,10 +2,10 @@ names=SEPARATOR,Separator
 visibility=public
 kind=defined
 
---- SEPARATOR
---- Separator
+--- SEPARATOR -> "/"
+--- Separator -> "/"
 
-�ե�����ѥ��Υ��ѥ졼���Ǥ����ե�����򰷤��᥽�åɤ˥ѥ�̾���Ϥ�
-���ʤɥ�����ץ���Υѥ�̾�ϴĶ��ˤ�餺���Υ��ѥ졼�������줵��
-�ޤ����ͤ� "/" �Ǥ���
+ファイルパスのセパレータです。ファイルを扱うメソッドにパス名を渡す
+場合などスクリプト内のパス名は環境によらずこのセパレータで統一され
+ます。値は "/" です。
 

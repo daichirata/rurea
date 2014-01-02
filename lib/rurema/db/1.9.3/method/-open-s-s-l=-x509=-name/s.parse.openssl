@@ -4,11 +4,11 @@ kind=defined
 
 --- parse(str, template=OBJECT_TYPE_TEMPLATE) -> OpenSSL::X509::Name
 --- parse_openssl(str, template=OBJECT_TYPE_TEMPLATE) -> OpenSSL::X509::Name
-Ê¸»úÎó¤ò¥Ñ¡¼¥¹¤·¤Æ [[c:OpenSSL::X509::Name]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹¡£
+æ–‡å­—åˆ—ã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦ [[c:OpenSSL::X509::Name]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   OpenSSL::X509::Name.parse('/C=JP/ST=Kanagawa/L=Yokohama/O=Example Company/OU=Lab3/CN=foobar/emailAddress=foobar@lab3.example.co.jp')
 
-@param str ¥Ñ¡¼¥¹¤¹¤ëÊ¸»úÎó
-@param template Â°À­·¿¤ËÂĞ±ş¤¹¤ë¥Ç¡¼¥¿·¿¤òÉ½¤ï¤¹¥Ï¥Ã¥·¥å
+@param str ãƒ‘ãƒ¼ã‚¹ã™ã‚‹æ–‡å­—åˆ—
+@param template å±æ€§å‹ã«å¯¾å¿œã™ã‚‹ãƒ‡ãƒ¼ã‚¿å‹ã‚’è¡¨ã‚ã™ãƒãƒƒã‚·ãƒ¥
 

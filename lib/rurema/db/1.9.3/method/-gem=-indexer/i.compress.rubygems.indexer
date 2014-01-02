@@ -4,9 +4,9 @@ kind=defined
 
 --- compress(filename, extension)
 
-Ϳ����줿�ե�����򰵽̤�����¸���ޤ���
+与えられたファイルを圧縮して保存します。
 
-@param filename �����оݤΥե�����̾����ꤷ�ޤ���
+@param filename 圧縮対象のファイル名を指定します。
 
-@param extension ��¸����ե�����̾�γ�ĥ�Ҥ���ꤷ�ޤ���
+@param extension 保存するファイル名の拡張子を指定します。
 

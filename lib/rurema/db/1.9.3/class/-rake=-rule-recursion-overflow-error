@@ -6,4 +6,4 @@ library=rake
 aliases=
 aliasof=
 
-�롼��Υͥ��Ȥ�¿���������ȯ�������㳰�Ǥ���
+ルールのネストが多すぎる場合に発生する例外です。

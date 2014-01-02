@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- strict_decode64(str) -> String
-Ϳ����줿ʸ����� Base64 �ǥ����ɤ����ǡ������֤��ޤ���
+与えられた文字列を Base64 デコードしたデータを返します。
 
-���Υ᥽�åɤ� [[RFC:4648]] ���б����Ƥ��ޤ���
+このメソッドは [[RFC:4648]] に対応しています。
 
 
-@param str Base64 �ǥ����ɤ���ʸ�������ꤷ�ޤ���
+@param str Base64 デコードする文字列を指定します。
 
-@raise ArgumentError Ϳ����줿������ Base64 ���󥳡��ɤ��줿�ǡ����Ȥ��������������ǤϤʤ�����ȯ�����ޤ���
-       �㤨�С�����ե��٥åȤǤʤ�ʸ����� CR, LF �ʤɤ��ޤޤ�Ƥ�����ˤ����㳰��ȯ�����ޤ���
+@raise ArgumentError 与えられた引数が Base64 エンコードされたデータとして正しい形式ではない場合に発生します。
+       例えば、アルファベットでない文字列や CR, LF などが含まれている場合にこの例外は発生します。
 

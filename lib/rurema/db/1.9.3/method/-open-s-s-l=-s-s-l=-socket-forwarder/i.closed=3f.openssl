@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- closed? -> bool
-��åפ���Ƥ��륽���åȤ�
-close ���Ƥ����� true ���֤��ޤ���
+ラップされているソケットが
+close していたら true を返します。
 

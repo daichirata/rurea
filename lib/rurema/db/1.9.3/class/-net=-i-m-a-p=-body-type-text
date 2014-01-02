@@ -6,7 +6,7 @@ library=net.imap
 aliases=
 aliasof=
 
-Content-Type �� text �Ǥ����å�������ɽ�����饹�Ǥ���
+Content-Type が text であるメッセージを表すクラスです。
 
-ʿʸ�Υ᡼���ɽ���ޤ���
-�ܤ����� MIME ��RFC([[RFC:2045]])�򻲾Ȥ��Ƥ���������
+平文のメールを表します。
+詳しくは MIME のRFC([[RFC:2045]])を参照してください。

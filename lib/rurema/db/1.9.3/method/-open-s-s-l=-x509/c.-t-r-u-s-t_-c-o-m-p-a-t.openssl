@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- TRUST_COMPAT -> Integer
-�롼�� CA �����񤬼�ʬ���Ȥ���̩���ǽ�̾����Ƥ��ޤ���
+ルート CA 証明書が自分自身の秘密鍵で署名されています。
 

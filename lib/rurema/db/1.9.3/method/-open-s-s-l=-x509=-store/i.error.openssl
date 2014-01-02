@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- error -> Integer | nil
-�Ǹ�� [[m:OpenSSL::X509::Store#verify]] ��Ƥӡ�
-���ڤ����Ȥ��Υ��顼�����ɤ��֤��ޤ���
+最後に [[m:OpenSSL::X509::Store#verify]] を呼び、
+検証したときのエラーコードを返します。
 
-���顼�����ɤ������ͤ� [[c:OpenSSL::X509]] ��������������Ƥ��ޤ���
-�ܤ����� [[ref:c:OpenSSL::X509#verify_error]] �򸫤Ƥ���������
-���ڤ������������� [[m:OpenSSL::X509::V_OK]] ���֤��ޤ���
+エラーコードの整数値は [[c:OpenSSL::X509]] に定数が定義されています。
+詳しくは [[ref:c:OpenSSL::X509#verify_error]] を見てください。
+検証に成功した場合は [[m:OpenSSL::X509::V_OK]] を返します。
 
-verify ����٤�ƤӤ����Ƥ��ʤ����� nil ���֤��ޤ���
+verify を一度も呼びだしていない場合は nil を返します。
 
-�֤��ͤ� verify ��Ƥ֤��Ȥ˹�������ޤ���
+返り値は verify を呼ぶごとに更新されます。
 

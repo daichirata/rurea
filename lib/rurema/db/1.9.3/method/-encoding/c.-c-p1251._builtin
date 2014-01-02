@@ -6,9 +6,9 @@ kind=defined
 --- CP1251 -> Encoding
 --- WINDOWS_1251 -> Encoding
 
-Windows-1251 ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+Windows-1251 ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-¥­¥ê¥ëÊ¸»ú¤òÍÑ¤¤¤ë¸À¸ì¤ò¼è¤ê°·¤¦8bit single-byte¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+ã‚­ãƒªãƒ«æ–‡å­—ã‚’ç”¨ã„ã‚‹è¨€èªã‚’å–ã‚Šæ‰±ã†8bit single-byteã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[url:http://www.iana.org/assignments/character-sets]],
      [[url:http://www.microsoft.com/globaldev/reference/sbcs/1251.mspx]],

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- REVOKED_STATUS_KEYCOMPROMISE -> Integer
-[[m:OpenSSL::OCSP::BasicResponse#status]] ¤Î¼º¸úÍýÍ³¥³¡¼¥É¤Ç¡¢
-¸°¤¬´íËØ²½¤·¤¿¤³¤È¤ò°ÕÌ£¤·¤Þ¤¹¡£
+[[m:OpenSSL::OCSP::BasicResponse#status]] ã®å¤±åŠ¹ç†ç”±ã‚³ãƒ¼ãƒ‰ã§ã€
+éµãŒå±æ®†åŒ–ã—ãŸã“ã¨ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
-¾Ü¤·¤¯¤Ï [[RFC:3280]] ¤ä X.509 ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ [[RFC:3280]] ã‚„ X.509 ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 

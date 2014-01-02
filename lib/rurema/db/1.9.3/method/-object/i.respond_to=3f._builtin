@@ -4,13 +4,16 @@ kind=defined
 
 --- respond_to?(name, include_private = false) -> bool
 
-���֥������Ȥ� public �᥽�å� name ����ĤȤ������֤��ޤ���
-include_private �����ΤȤ��� private �᥽�åɤ��Ф��Ƥ⿿���֤��ޤ���
+オブジェクトがメソッド name を持つとき真を返します。
 
-���֥������Ȥ� �᥽�å� name ����ĤȤ����Τϡ�
-���֥������Ȥ� �᥽�å� name �˱������뤳�Ȥ��Ǥ��뤳�Ȥ򤤤��ޤ���
+オブジェクトが メソッド name を持つというのは、
+オブジェクトが メソッド name に応答することができることをいいます。
 
-@param name [[c:Symbol]] �ޤ���ʸ����ǻ��ꤹ��᥽�å�̾�Ǥ���
+@param name [[c:Symbol]] または文字列で指定するメソッド名です。
+
+@param include_private private メソッドを確認の対象に含めるかを true か
+                       false で指定します。省略した場合は false(含めな
+                       い) を指定した事になります。
 
   class F
     def hello
@@ -19,7 +22,7 @@ include_private �����ΤȤ��� private �᥽�åɤ��Ф��Ƥ⿿���֤��ޤ���
   end
   
   class D
-  private
+    private
     def hello
       "Guten Tag"
     end

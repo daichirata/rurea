@@ -4,8 +4,8 @@ kind=defined
 
 --- &(other)    -> Integer
 
-self.to_i & other ��Ʊ���Ǥ���
-���Υ᥽�åɤϸ����ߴ����Τ���ˤ���ޤ���
+self.to_i & other と同じです。
+このメソッドは後方互換性のためにあります。
 
-@param other ���ȤȤ� & �黻�򤷤�����������ꤷ�ޤ���
+@param other 自身との & 演算をしたい整数を指定します。
 

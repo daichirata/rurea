@@ -2,8 +2,10 @@ names=to_obj
 visibility=public
 kind=defined
 
---- to_obj(ref)
-@todo
+--- to_obj(ref) -> Object
+
+識別子をオブジェクトに変換します。
+
 
 
 

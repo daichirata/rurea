@@ -4,6 +4,6 @@ kind=defined
 
 --- gather_dependencies -> Array
 
-��¸�ط���̵�뤹��褦�˻��ꤵ��Ƥ��ʤ��¤ꡢ���󥹥ȡ��뤹��褦�˻��ꤵ�줿
-Gem ����¸���Ƥ��� Gem �ξ���򽸤���֤��ޤ���
+依存関係を無視するように指定されていない限り、インストールするように指定された
+Gem が依存している Gem の情報を集めて返します。
 

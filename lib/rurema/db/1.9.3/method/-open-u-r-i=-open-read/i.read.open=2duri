@@ -4,12 +4,12 @@ kind=defined
 
 --- read(options = {})     -> String
 
-���Ȥ�ɽ�����Ƥ��ɤ߹����ʸ����Ȥ����֤��ޤ���
-self.open(options={}).read ��Ʊ���Ǥ���
-���Υ᥽�åɤˤ�ä��֤����ʸ����� [[c:OpenURI::Meta]]
-�ˤ�ä� extend ����Ƥ��ޤ���
+自身が表す内容を読み込んで文字列として返します。
+self.open(options={}).read と同じです。
+このメソッドによって返される文字列は [[c:OpenURI::Meta]]
+によって extend されています。
 
-@param options �ϥå����Ϳ���ޤ���
+@param options ハッシュを与えます。
 
   require 'open-uri'
   uri = URI.parse('http://www.example.com/')

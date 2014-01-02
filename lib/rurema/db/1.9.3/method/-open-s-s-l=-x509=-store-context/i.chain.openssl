@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- chain -> [OpenSSL::X509::Certificate] | nil
-¸¡¾Ú¤ËÍøÍÑ¤·¤¿¾ÚÌÀ½ñ¥Á¥§¥¤¥ó¤ò¾ÚÌÀ½ñ¥ª¥Ö¥¸¥§¥¯¥È
-([[c:OpenSSL::X509::Certificate]]¤Î¥¤¥ó¥¹¥¿¥ó¥¹)¤ÎÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+æ¤œè¨¼ã«åˆ©ç”¨ã—ãŸè¨¼æ˜Žæ›¸ãƒã‚§ã‚¤ãƒ³ã‚’è¨¼æ˜Žæ›¸ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+([[c:OpenSSL::X509::Certificate]]ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹)ã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-[[m:OpenSSL::X509::StoreContext#verify]] ¤ò¸Æ¤ÖÁ°¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+[[m:OpenSSL::X509::StoreContext#verify]] ã‚’å‘¼ã¶å‰ã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 

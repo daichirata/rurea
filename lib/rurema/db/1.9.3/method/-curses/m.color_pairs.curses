@@ -7,5 +7,5 @@ kind=defined
 
 Returns the COLOR_PAIRS available, if the curses library supports it.
 
-@raise NotImplementedError ¥µ¥İ¡¼¥È¤·¤Æ¤¤¤Ê¤¤´Ä¶­¤ÇÈ¯À¸¤·¤Ş¤¹¡£
+@raise NotImplementedError ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ãªã„ç’°å¢ƒã§ç™ºç”Ÿã—ã¾ã™ã€‚
 

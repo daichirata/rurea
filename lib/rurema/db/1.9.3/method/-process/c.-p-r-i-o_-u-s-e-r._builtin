@@ -2,9 +2,9 @@ names=PRIO_USER
 visibility=public
 kind=defined
 
---- PRIO_USER
+--- PRIO_USER -> Fixnum
 
-┬╨╛▌д╚д╣дые╫ещедекеъе╞егдмецб╝е╢е╫ещедекеъе╞егд╟двдыд│д╚дЄ╔╜д╣─ъ┐Їд╟д╣бг
+хп╛ш▒буБиуБЩуВЛуГЧуГйуВдуВкуГкуГЖуВгуБМуГжуГ╝уВ╢уГЧуГйуВдуВкуГкуГЖуВгуБзуБВуВЛуБУуБиуВТшбиуБЩхоЪцХ░уБзуБЩуАВ
 
-[[m:Process.#getpriority]] д▐д┐д╧ [[m:Process.#setpriority]] д╟╗╚дядьд▐д╣бг
+[[m:Process.#getpriority]] уБ╛уБЯуБп [[m:Process.#setpriority]] уБзф╜┐уВПуВМуБ╛уБЩуАВ
 

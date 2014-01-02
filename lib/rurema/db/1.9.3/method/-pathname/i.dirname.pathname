@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- dirname -> Pathname
-Pathname.new(File.dirname(self.to_s)) ¤ÈÆ±¤¸¤Ç¤¹¡£
+Pathname.new(File.dirname(self.to_s)) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:File.dirname]]
 

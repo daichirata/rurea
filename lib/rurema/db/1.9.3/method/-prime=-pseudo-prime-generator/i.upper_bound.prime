@@ -4,5 +4,5 @@ kind=defined
 
 --- upper_bound -> Integer | nil
 
-���ߤ����峦���֤��ޤ��� nil �Ͼ峦���ʤ�̵�¤��ǿ�����󤹤٤��Ǥ��뤳�Ȥ��̣���ޤ���
+現在の列挙上界を返します。 nil は上界がなく無限に素数を列挙すべきであることを意味します。
 

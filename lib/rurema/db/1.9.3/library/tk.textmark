@@ -3,5 +3,6 @@ classes=TkTextMark,TkTextNamedMark,TkTextMarkInsert,TkTextMarkCurrent,TkTextMark
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -4,17 +4,19 @@ kind=defined
 
 --- append_features(module_or_class) -> self
 
-�⥸�塼��(���뤤�ϥ��饹)�� self �ε�ǽ���ɲä��ޤ���
+モジュール(あるいはクラス)に self の機能を追加します。
 
-���Υ᥽�åɤ� [[m:Module#include]] �μ��ΤǤ��ꡢ
-include �� Ruby �ǽ񤯤Ȱʲ��Τ褦������Ǥ��ޤ���
+このメソッドは [[m:Module#include]] の実体であり、
+include を Ruby で書くと以下のように定義できます。
 
   def include(*modules)
-    modules.each {|mod|
-      # append_features �ϥץ饤�١��ȥ᥽�åɤʤΤ�
-      # ľ�� mod.append_features(self) �ȤϽ񤱤ʤ�
+    modules.reverse_each do |mod|
+      # append_features や included はプライベートメソッドなので
+      # 直接 mod.append_features(self) などとは書けない
       mod.__send__(:append_features, self)
       mod.__send__(:included, self)
-    }
+    end
   end
+
+@see [[m:Module#included]]
 

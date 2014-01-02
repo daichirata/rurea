@@ -12,7 +12,7 @@ require 'bitclust/exception'
 
 module BitClust
 
-  # Represents a class, a module and a singleton object.
+  # Represents a class, a module or a singleton object (like ARGF, main, etc.).
   class ClassEntry < Entry
 
     include Enumerable
@@ -87,6 +87,16 @@ module BitClust
       property :source,     'String'
     }
 
+    # FIXME: do not use superclass property aliasing (#6826)
+    alias orig_superclass superclass
+    def superclass
+      if alias?
+        aliasof.superclass
+      else
+        orig_superclass
+      end
+    end
+
     def save
       super
       save_index
@@ -116,6 +126,14 @@ module BitClust
       !! aliasof()
     end
 
+    def error_class?
+      if alias?
+        aliasof.error_class?
+      else
+        ancestors.any?{|k| k.name == 'Exception' }
+      end
+    end
+    
     def include(m)
       included().push m
     end

@@ -6,9 +6,9 @@ library=webrick.httpauth.basicauth
 aliases=
 aliasof=
 
-HTTP ¤Î Basic Ç§¾Ú¤Î¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+HTTP ã® Basic èªè¨¼ã®ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-Îã
+ä¾‹
 
     realm = "WEBrick's realm"
     srv = HTTPServer.new({ :BindAddress => '127.0.0.1', :Port => 10080})

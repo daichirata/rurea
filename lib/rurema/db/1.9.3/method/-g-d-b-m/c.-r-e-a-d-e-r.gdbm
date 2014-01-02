@@ -4,7 +4,7 @@ kind=defined
 
 --- READER -> Fixnum
 
-[[m:GDBM.open]] ����3�����˻��ꤷ�ޤ���
+[[m:GDBM.open]] の第3引数に指定します。
 
-�ɤ߹��ߥ⡼�ɤǥ����ץ󤷤ޤ���
+読み込みモードでオープンします。
 

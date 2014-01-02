@@ -6,5 +6,5 @@ library=zlib
 aliases=
 aliasof=
 
-�եå����˵�Ͽ����Ƥ��� CRC �ͤȼºݤ�Ÿ�������ǡ����� CRC �ͤ�
-�ۤʤ����ȯ�����ޤ���
+フッターに記録されている CRC 値と実際に展開したデータの CRC 値が
+異なる時に発生します。

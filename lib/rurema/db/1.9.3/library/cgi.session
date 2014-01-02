@@ -3,80 +3,81 @@ classes=CGI=Session,CGI=Session=NoSession,CGI=Session=FileStore,CGI=Session=Memo
 methods=
 sublibraries=cgi.session.pstore
 is_sublibrary=true
+category=
 
-CGI �Υ��å���������Ԥ��饤�֥�ꡣ
+CGI のセッション管理を行うライブラリ。
 
-���å����Ȥϡ�HTTP �ΰ�Ϣ�Υꥯ�����Ȥȥ쥹�ݥ󥹤�°����٤�
-����ƥ����� (����) �Τ��Ȥ򤤤��ޤ���
-���å��������ˤϽ����̤� [[lib:cgi]] �饤�֥�꤬�󶡤���
-���å�������Ѥ��Ƥ⤤���Ǥ�����
-���� cgi/session ����Ѥ����������狼��䤹���Ǥ��礦��
-���å�������� [[c:Hash]] �饤���ʥ��󥿡��ե������Ǥ���
+セッションとは、HTTP の一連のリクエストとレスポンスが属するべき
+コンテクスト (状況) のことをいいます。
+セッション管理には従来通り [[lib:cgi]] ライブラリが提供する
+クッキーを使用してもいいですが、
+この cgi/session を使用した方がよりわかりやすいでしょう。
+セッション情報は [[c:Hash]] ライクなインターフェースです。
 
-���å����ϥ��å���� ID �ȥץ�����ब��Ͽ����
-���å������󤫤鹽������ޤ���
-�ǥե���ȤǤ� [[c:CGI::Session::FileStore]] �����Ѥ��졢
-��Ͽ�Ǥ���Τ�ʸ����ΤߤǤ���
+セッションはセッション ID とプログラムが記録した
+セッション情報から構成されます。
+デフォルトでは [[c:CGI::Session::FileStore]] が使用され、
+記録できるのは文字列のみです。
 
-���å�������� [[c:CGI::Session::FileStore]] ��
-[[c:CGI::Session::PStore]] ����Ѥ�������
-�����ФΥ�������ե�����˵�Ͽ���졢
-����Υꥯ�����Ȼ������Ѥ���ޤ���
-�ǥե���ȤǤ�����Ū������Ԥʤ�ʤ��Ƥ�
-�ץ�����ཪλ���˥��å�������ϥե��������¸����ޤ���
-���å������˿������ե����뤬��������ޤ���
+セッション情報は [[c:CGI::Session::FileStore]] か
+[[c:CGI::Session::PStore]] を使用した場合は
+サーバのローカルファイルに記録され、
+次回のリクエスト時に利用されます。
+デフォルトでは明示的に操作を行なわなくても
+プログラム終了時にセッション情報はファイルに保存されます。
+セッション毎に新しいファイルが作成されます。
 
-���饤����Ȥˤϥ��å���������б����륻�å���� ID ��
-���å������뤤�� form �� hidden input �Ȥ����Ϥ����Ȥˤʤ�ޤ���
-���å����ϥǥե���ȤǤ� expires �����ꤵ��Ƥ��ʤ�����ˡ�
-�֥饦����λ���������Ǿ��Ǥ��ޤ���
+クライアントにはセッション情報に対応するセッション ID を
+クッキーあるいは form の hidden input として渡すことになります。
+クッキーはデフォルトでは expires が指定されていないために、
+ブラウザを終了した時点で消滅します。
 
-=== �Ȥ��� (����)
+=== 使い方 (生成)
 
   require 'cgi/session'
   cgi = CGI.new
   session = CGI::Session.new(cgi)
 
-[[m:CGI::Session.new]] �� [[c:CGI]] ���֥������Ȥ��Ϥ��ޤ������饤����Ȥ����Ϥ��줿
-���å���� ID �ϥ��å����������꡼�Ȥ��� cgi �˳�Ǽ����Ƥ��뤿�ᡢ�ռ�����ɬ�פϤ���ޤ���
+[[m:CGI::Session.new]] に [[c:CGI]] オブジェクトを渡します。クライアントから渡された
+セッション ID はクッキーかクエリーとして cgi に格納されているため、意識する必要はありません。
 
-=== �Ȥ��� (���å��������Ͽ����)
+=== 使い方 (セッション情報を記録する)
 
   session['name'] = "value"
 
-[[c:CGI::Session]] ���֥������Ȥ� [[c:Hash]] �Τ褦�ʤ�Τǡ��������б������ͤ�Ͽ���ޤ���
-�ǥե���ȤǤϥץ�����ཪλ���˥��å�������ϥե�����˵�Ͽ����ޤ���
+[[c:CGI::Session]] オブジェクトは [[c:Hash]] のようなもので、キーに対応する値を記録します。
+デフォルトではプログラム終了時にセッション情報はファイルに記録されます。
 
-=== �Ȥ��� (���å������������)
+=== 使い方 (セッション情報を得る)
 
   name = session['name']
 
-�̤� CGI �Ǥ��Υ��å����������Ф��Ȥ��ϡ����Τ褦�ˤ��ޤ���
+別な CGI でこのセッション情報を取り出すときは、このようにします。
 
-=== �Ȥ��� (�إå�����)
+=== 使い方 (ヘッダ出力)
 
-�إå����Ϥ� [[m:CGI#out]]��[[m:CGI#header]] ��ȤäƤ���¤�
-�̾��̤�ǹ����ޤ���
-cgi/session ������Ū�˥��å�������Ѥ��Ƥ��ޤ�����
-�����Υ᥽�åɤ����ݤ򸫤Ƥ����Τǡ��ռ��򤹤�ɬ�פϤ���ޤ���
+ヘッダ出力は [[m:CGI#out]]、[[m:CGI#header]] を使っている限り
+通常通りで構いません。
+cgi/session は内部的にクッキーを使用していますが、
+これらのメソッドが面倒を見てくれるので、意識をする必要はありません。
 
-=== umask ��
+=== umask 値
 
-umask �ͤ� 0022 �ʤ��
-���å�������ե�����Υѡ��ߥå���� 644 �ˤʤ�Τǡ�
-Ǥ�դΥ桼�������Υ��å�������ե�����򸫤뤳�Ȥ��Ǥ��ޤ���
-���줬���ʾ��� CGI::Session ���֥��������������� umask �ͤ����ꤷ�Ƥ���������
+umask 値が 0022 ならば
+セッション情報ファイルのパーミッションが 644 になるので、
+任意のユーザがそのセッション情報ファイルを見ることができます。
+それが嫌な場合は CGI::Session オブジェクト生成前に umask 値を設定してください。
 
-���å�������ե������ 0600 �Ǻ��������褦�ˤʤ�ޤ�����
+セッション情報ファイルは 0600 で作成されるようになりました。
 
-=== CGI::HtmlExtension#form �ν���
+=== CGI::HtmlExtension#form の出力
 
-[[m:CGI::Session.new]] ��� [[m:CGI::HtmlExtension#form]] �ϡ����å���� ID ��
-������������ե�����ɤ�ư���Ϥ���褦�ˤʤ�ޤ���
-[[m:CGI::Session.new]] �ϡ�����ˤ�ä��������줿�ե�����ե�������ͤ򡢥��å���� ID �Ȥ��Ƽ�ưǧ�����ޤ���
+[[m:CGI::Session.new]] 後の [[m:CGI::HtmlExtension#form]] は、セッション ID を
+埋め込んだ隠しフィールドを自動出力するようになります。
+[[m:CGI::Session.new]] は、これによって生成されたフォームフィールド値を、セッション ID として自動認識します。
 
-[[m:CGI::HtmlExtension#form]] ��Ȥ���<INPUT TYPE="submit"> �ǥڡ������ܤ򤹤�褦�ˤ���С�
-���å������Ȥ��ʤ��Ķ��ǤΥ��å����ݻ������ѤǤ��ޤ���
+[[m:CGI::HtmlExtension#form]] を使い、<INPUT TYPE="submit"> でページ遷移をするようにすれば、
+クッキーが使えない環境でのセッション維持に利用できます。
 
   #!/usr/bin/ruby
   require 'cgi'
@@ -91,10 +92,10 @@ umask �ͤ� 0022 �ʤ��
       cgi.body {
         cgi.form('action'=>"#{CGI.escapeHTML(cgi.script_name)}") {
           cgi.p {
-            '���ʤ���̾���ϡ�' +
+            'あなたの名前は？' +
             cgi.text_field('name') +
             cgi.hidden('cmd', 'hello') +
-            cgi.submit('�Ǥ���')
+            cgi.submit('です。')
           }
         }
       }
@@ -107,21 +108,21 @@ umask �ͤ� 0022 �ʤ��
     <BODY>
       <FORM METHOD="post" ENCTYPE="application/x-www-form-urlencoded" action="/sample.rb">
         <P>
-          ���ʤ���̾���ϡ�
+          あなたの名前は？
           <INPUT NAME="name" SIZE="40" TYPE="text">
           <INPUT NAME="cmd" TYPE="hidden" VALUE="hello">
-          <INPUT TYPE="submit" VALUE="�Ǥ���">
+          <INPUT TYPE="submit" VALUE="です。">
         </P>
-        <INPUT TYPE="HIDDEN" NAME="_session_id" VALUE="bc315cc069266e21">    # ����
+        <INPUT TYPE="HIDDEN" NAME="_session_id" VALUE="bc315cc069266e21">    # これ
       </FORM>
     </BODY>
   </HTML>
 
-=== ������
+=== 使用例
 
-����̾�������Ϥ���Ȥ������Ĥ򤹤�����ΤĤޤ�ʤ� CGI ������ץȡ�
+ただ名前を入力するとあいさつをするだけのつまらない CGI スクリプト。
 
-������������
+ソースコード
 
   #!/usr/bin/ruby
   require 'kconv'
@@ -131,9 +132,9 @@ umask �ͤ� 0022 �ʤ��
   class SessionDemo
     def initialize
       @cgi = CGI.new
-      File.umask(0077)                                # ���å����ե������ï�ˤ��ɤޤ줿���ʤ���
-      @session = CGI::Session.new(@cgi)               # ���å����Ϥ��������������롣
-      @cmd = "#{@cgi['cmd'].first}"                   # ruby 1.8 �Ǥ�ư���褦��(warning �ϽФޤ�)
+      File.umask(0077)                                # セッションファイルは誰にも読まれたくないよ
+      @session = CGI::Session.new(@cgi)               # セッションはこうして生成する。
+      @cmd = "#{@cgi['cmd'].first}"                   # ruby 1.8 でも動くように(warning は出ます)
       @cmd = 'start' if @cmd.empty?
       @header = { "type" => "text/html", "charset" => "euc-jp" }
       
@@ -147,10 +148,10 @@ umask �ͤ� 0022 �ʤ��
         <body>
          <form action="#{CGI.escapeHTML(ENV['SCRIPT_NAME'])}" method="get">
          <p>
-         ���ʤ���̾���ϡ�
+         あなたの名前は？
          <input type="text" name="name">
          <input type="hidden" name="cmd" value="hello">
-         <input type="submit" value="�Ǥ���">
+         <input type="submit" value="です。">
          </p>
          </form>
         </body></html>
@@ -160,26 +161,26 @@ umask �ͤ� 0022 �ʤ��
     
     def cmd_hello
       name = Kconv.toeuc(@cgi['name'].first)
-      @session['name'] = name                         # ���å����˵���
-      @cgi.out(@header) {                             # ���å�������ϱ��쥯�å������ݻ�����뤿�ᡢCGI#out�ǽ���
+      @session['name'] = name                         # セッションに記憶
+      @cgi.out(@header) {                             # セッション情報は隠れクッキーで保持されるため、CGI#outで出力
         <<-END
         <html><head><title>CGI::Session Demo</title></head>
         <body>
-         <p>����ˤ��ϡ�#{CGI.escapeHTML(name)}����</p>
-         <p><a href="#{CGI.escapeHTML(ENV['SCRIPT_NAME'])}?cmd=bye">[����]</a></p>
+         <p>こんにちは、#{CGI.escapeHTML(name)}さん</p>
+         <p><a href="#{CGI.escapeHTML(ENV['SCRIPT_NAME'])}?cmd=bye">[次へ]</a></p>
         </body></html>
         END
       }
     end
     
     def cmd_bye
-      name = @session['name']                         # ���å����ǡ���������Ф�
+      name = @session['name']                         # セッションデータから取り出し
       @cgi.out(@header) {
         <<-END
         <html><head><title>CGI::Session Demo</title></head>
         <body>
-         <p>#{CGI.escapeHTML(name)}���󡢤��褦�ʤ�</p>
-         <p><a href="#{CGI.escapeHTML(ENV['SCRIPT_NAME'])}">[���]</a></p>
+         <p>#{CGI.escapeHTML(name)}さん、さようなら</p>
+         <p><a href="#{CGI.escapeHTML(ENV['SCRIPT_NAME'])}">[戻る]</a></p>
         </body></html>
         END
       }
@@ -188,7 +189,7 @@ umask �ͤ� 0022 �ʤ��
   
   SessionDemo.new
 
-=== ����URL
+=== 参考URL
 
   * [[url:http://www.shugo.net/article/webdb2/#label:13]]
   * [[url:http://www.modruby.net/doc/faq.ja.jis.html#label-13]]

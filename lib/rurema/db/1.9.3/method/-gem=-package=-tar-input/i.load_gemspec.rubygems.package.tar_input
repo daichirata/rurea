@@ -4,9 +4,9 @@ kind=defined
 
 --- load_gemspec(io) -> Gem::Specification | nil
 
-YAML ������ gemspec �� io �����ɤ߹��ߤޤ���
+YAML 形式の gemspec を io から読み込みます。
 
-@param io ʸ���� [[c:IO]] ���֥������Ȥ���ꤷ�ޤ���
+@param io 文字列か [[c:IO]] オブジェクトを指定します。
 
 @see [[m:Gem::Specification.from_yaml]]
 

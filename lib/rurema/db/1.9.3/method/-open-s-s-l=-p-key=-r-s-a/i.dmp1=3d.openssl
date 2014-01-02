@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- dmp1=(new_dmp1)
-���� exponent1 �����ꤷ�ޤ���
+鍵の exponent1 を設定します。
 
-�̾盧�Υ᥽�åɤ��ͤ��ѹ����뤳�ȤϤ���ޤ���
-�褯�ͤ���ɬ�פʾ��Τ����Ѥ��Ƥ���������
+通常このメソッドで値を変更することはありません。
+よく考えて必要な場合のみ利用してください。
 
-@param new_dmp1 ���ꤹ������
+@param new_dmp1 設定する整数
 

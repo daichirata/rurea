@@ -5,10 +5,10 @@ kind=defined
 --- [](name, wtype = nil)
 @todo
 
-�쥸���ȥ��� name �� value ��񤭹��ߤޤ���
+レジストリ値 name に value を書き込みます。
 
-���ץ������� wtype ����ꤷ�����ϡ����η��ǽ񤭹��ߤޤ���
-���ꤷ�ʤ��ä���硤value �Υ��饹�˱����Ƽ��η��ǽ񤭹��ߤޤ�:
+オプション引数 wtype を指定した場合は，その型で書き込みます。
+指定しなかった場合，value のクラスに応じて次の型で書き込みます:
   * Integer
     REG_DWORD
   * String

@@ -4,7 +4,7 @@ kind=defined
 
 --- display_thread_id=(flag)
 
-����å� ID ��ɽ�����뤫�ɤ��������ꤷ�ޤ���
+スレッド ID を表示するかどうかを設定します。
 
-@param flag ����å� ID ��ɽ������ʤ�С�������ꤷ�ޤ���
+@param flag スレッド ID を表示するならば、真を指定します。
 

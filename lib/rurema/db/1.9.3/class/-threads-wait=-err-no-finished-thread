@@ -6,6 +6,6 @@ library=thwait
 aliases=
 aliasof=
 
-nonblock ¤¬true ¤Ç¤«¤Ä¡¢¥­¥å¡¼¤¬¶õ¤Î»ş¡¢È¯À¸¤·¤Ş¤¹¡£
+nonblock ãŒtrue ã§ã‹ã¤ã€ã‚­ãƒ¥ãƒ¼ãŒç©ºã®æ™‚ã€ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:ThreadsWait#next_wait]]

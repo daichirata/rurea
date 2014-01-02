@@ -1,20 +1,9 @@
-names=TYPE_CHAR,TYPE_DOUBLE,TYPE_FLOAT,TYPE_INT,TYPE_LONG,TYPE_LONG_LONG,TYPE_SHORT,TYPE_VOID,TYPE_VOIDP
+names=TYPE_CHAR
 visibility=public
 kind=defined
 
---- TYPE_CHAR
---- TYPE_DOUBLE
---- TYPE_FLOAT
---- TYPE_INT
---- TYPE_LONG
---- TYPE_LONG_LONG
---- TYPE_SHORT
---- TYPE_VOID
---- TYPE_VOIDP
+--- TYPE_CHAR -> Integer
+C ã® char åž‹ã‚’è¡¨ã™å®šæ•°ã€‚
 
-ÊÑ¿ô¤Î·¿¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£unsigned char ¤Ê¤É¤òÉ½¤·¤¿¤¤¾ì¹ç¤Ï - ¤òÉÕ¤±¤Æ
-
- - TYPE_CHAR
-
-¤Ê¤É¤È¤·¤Þ¤¹¡£
-
+unsigned char ã‚’è¡¨ã™ã«ã¯ç¬¦å·ã‚’é€†è»¢ã•ã›ã¾ã™ã€‚
+         

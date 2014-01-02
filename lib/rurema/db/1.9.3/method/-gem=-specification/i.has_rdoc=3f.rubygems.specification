@@ -4,7 +4,7 @@ kind=defined
 
 --- has_rdoc? -> bool
 
-¿¿¤Î¾ì¹ç¤Ï RDoc ¤òÀ¸À®¤·¤»¤ó¡£µ¶¤Î¾ì¹ç¤Ï RDoc ¤òÀ¸À®¤·¤Þ¤¹¡£
+çœŸã®å ´åˆã¯ RDoc ã‚’ç”Ÿæˆã—ã›ã‚“ã€‚å½ã®å ´åˆã¯ RDoc ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
 @see [[m:Gem::Specification#has_rdoc]]
 

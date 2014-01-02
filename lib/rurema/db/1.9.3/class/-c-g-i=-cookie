@@ -6,9 +6,9 @@ library=cgi.cookie
 aliases=
 aliasof=
 
-¥¯¥Ã¥­¡¼¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+ã‚¯ãƒƒã‚­ãƒ¼ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-Îã:
+ä¾‹:
   cookie1 = CGI::Cookie.new("name", "value1", "value2", ...)
   cookie1 = CGI::Cookie.new({"name" => "name", "value" => "value"})
   cookie1 = CGI::Cookie.new({'name'    => 'name',

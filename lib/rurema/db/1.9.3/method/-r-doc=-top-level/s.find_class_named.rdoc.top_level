@@ -4,8 +4,8 @@ kind=defined
 
 --- find_class_named(name) -> RDoc::NormalClass | RDoc::SingleClass | nil
 
-RDoc �������������饹���⡢name �ǻ��ꤷ��̾���Υ��饹���֤��ޤ�������
-����ʤ��ä����� nil ���֤��ޤ���
+RDoc が収集したクラスの内、name で指定した名前のクラスを返します。見つ
+からなかった場合は nil を返します。
 
-@param name ���饹̾��ʸ����ǻ��ꤷ�ޤ���
+@param name クラス名を文字列で指定します。
 

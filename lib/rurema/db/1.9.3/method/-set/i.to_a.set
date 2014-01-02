@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- to_a -> Array
-¼«¿È¤òÇÛÎó¤ËÊÑ´¹¤·¤Þ¤¹¡£Í×ÁÇ¤Î½ç½ø¤ÏÉÔÄê¤Ç¤¹¡£
+è‡ªèº«ã‚’é…åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚è¦ç´ ã®é †åºã¯ä¸å®šã§ã™ã€‚
 
   set = Set['hello', 'world']
   p set.to_a

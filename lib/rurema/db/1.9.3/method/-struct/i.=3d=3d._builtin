@@ -4,10 +4,10 @@ kind=defined
 
 --- ==(other)    -> bool
 
-���Ȥ� other �Υ��饹��Ʊ���Ǥ��ꡢ�ƥ��Ф� == �᥽�åɤ���Ӥ�������������
-true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+self と other のクラスが同じであり、各メンバが == メソッドで比較して等しい場合に
+true を返します。そうでない場合に false を返します。
 
-@param other ���Ȥ���Ӥ��������֥������Ȥ���ꤷ�ޤ���
+@param other self と比較したいオブジェクトを指定します。
 
   Dog = Struct.new(:name, :age)
   dog1 = Dog.new("fred", 5)
@@ -16,6 +16,10 @@ true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
   p dog1 == dog2                #=> true
   p dog1.eql?(dog2)             #=> true
   p dog1.equal?(dog2)           #=> false
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
 
 @see [[m:Struct#eql?]]
 

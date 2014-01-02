@@ -4,20 +4,20 @@ kind=defined
 
 --- guess(str) -> Encoding | nil
 
-ʸ���� str �Υ��󥳡��ǥ��󥰤�Ƚ�ꤷ�ޤ�������ͤ�
-Kconv ������Ǥ���
+文字列 str のエンコーディングを判定します。戻り値は
+Kconv の定数です。
 
-���Υ⥸�塼��ؿ���Ƚ��Ǥ���Τϡ�
+このモジュール関数で判定できるのは、
   * ISO-2022-JP ([[m:Kconv::JIS]])
   * Shift_JIS ([[m:Kconv::SJIS]])
   * EUC-JP ([[m:Kconv::EUC]])
   * ASCII ([[m:Kconv::ASCII]])
   * UTF-8 ([[m:Kconv::UTF8]])
   * UTF-16BE ([[m:Kconv::UTF16]])
-  * ���� ([[m:Kconv::UNKNOWN]])
-  * �ʾ�Τɤ�Ǥ�ʤ� ([[m:Kconv::BINARY]])
-�Τ����줫�Ǥ���
+  * 不明 ([[m:Kconv::UNKNOWN]])
+  * 以上のどれでもない ([[m:Kconv::BINARY]])
+のいずれかです。
 
-@param str ���󥳡��ǥ���Ƚ���оݤ�ʸ����
+@param str エンコーディング判定対象の文字列
 
 

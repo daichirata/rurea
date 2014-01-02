@@ -4,9 +4,9 @@ kind=defined
 
 --- respond_to?(m) -> bool
 
-[[m:Delegator#__getobj__]] ���֤����֥������Ȥ� �᥽�å� m ����ĤȤ������֤��ޤ���
+[[m:Delegator#__getobj__]] が返すオブジェクトが メソッド m を持つとき真を返します。
 
-@param m �᥽�å�̾
+@param m メソッド名
 
 @see [[m:Object#respond_to?]]
 

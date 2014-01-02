@@ -2,11 +2,11 @@ names=print
 visibility=public
 kind=defined
 
---- print(*opts)
+--- print(*objs)
 
-[[c:NotImplementedError]] ¤¬È¯À¸¤·¤Ş¤¹¡£
+[[c:NotImplementedError]] ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-@param objs Ç¤°Õ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param objs ä»»æ„ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise NotImplementedError É¬¤ºÈ¯À¸¤·¤Ş¤¹¡£
+@raise NotImplementedError å¿…ãšç™ºç”Ÿã—ã¾ã™ã€‚
 

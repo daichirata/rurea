@@ -4,11 +4,11 @@ kind=defined
 
 --- adler32_combine(adler1, adler2, length) -> Integer
 
-Ϳ����줿��Ĥ� Adler-32 �����å�������ĤˤĤʤ��ޤ���
+与えられた二つの Adler-32 チェックサムを一つにつなげます。
 
-@param adler1 Adler-32 �����å��������ꤷ�ޤ���
+@param adler1 Adler-32 チェックサムを指定します。
 
-@param adler2 Adler-32 �����å��������ꤷ�ޤ���
+@param adler2 Adler-32 チェックサムを指定します。
 
-@param length adler2 ����������Τ˻��Ѥ���ʸ�����Ĺ������ꤷ�ޤ���
+@param length adler2 を生成するのに使用した文字列の長さを指定します。
 

@@ -66,9 +66,9 @@ digest/sha2
 #@since 1.8.0
 dl
 dl/import
+dl/types
 #@until 1.9.1
 dl/struct
-dl/types
 dl/win32
 #@end
 #@end
@@ -95,6 +95,13 @@ fcntl
 #@since 1.9.1
 fiber
 #@end
+#@since 1.9.1
+fiddle
+#@since 2.0.0
+fiddle/import
+fiddle/types
+#@end
+#@end
 #@since 1.8.0
 fileutils
 #@end
@@ -118,10 +125,16 @@ getopts
 #@end
 #@since 1.8.0
 gserver
+#@until 2.0.0
 iconv
+#@end
 #@end
 #@until 1.9.1
 importenv
+#@end
+#@since 1.9.3
+io/console
+io/console/size
 #@end
 #@since 1.8.0
 io/nonblock
@@ -138,6 +151,15 @@ irb/cmd/subirb
 irb/completion
 irb/context
 irb/extend-command
+irb/ext/change-ws
+irb/ext/history
+irb/ext/loader
+irb/ext/math-mode
+irb/ext/multi-irb
+irb/ext/save-history
+irb/ext/tracer
+irb/ext/use-loader
+irb/ext/workspaces
 irb/frame
 irb/help
 irb/init
@@ -152,6 +174,12 @@ irb/src_encoding
 #@end
 irb/notifier
 irb/output-method
+irb/ruby-lex
+irb/ruby-token
+irb/slex
+irb/version
+irb/workspace
+irb/ws-for-case-2
 irb/xmp
 #@until 1.9.1
 jcode
@@ -235,35 +263,6 @@ profiler
 pstore
 #@since 1.9.2
 psych
-psych/coder
-psych/core_ext
-psych/deprecated
-psych/handler
-psych/json
-psych/json/stream
-psych/json/tree_builder
-psych/nodes
-psych/nodes/alias
-psych/nodes/document
-psych/nodes/mapping
-psych/nodes/node
-psych/nodes/scalar
-psych/nodes/sequence
-psych/nodes/stream
-psych/omap
-psych/parser
-psych/scalar_scanner
-psych/set
-psych/stream
-psych/streaming
-psych/tree_builder
-psych/visitors
-psych/visitors/depth_first
-psych/visitors/emitter
-psych/visitors/json_tree
-psych/visitors/to_ruby
-psych/visitors/visitor
-psych/visitors/yaml_tree
 #@end
 pty
 #@since 1.8.0
@@ -557,6 +556,7 @@ stringio
 #@since 1.8.0
 strscan
 #@end
+#@until 2.0.0
 syck
 #@since 1.9.2
 syck/basenode
@@ -568,6 +568,7 @@ syck/stringio
 syck/tag
 syck/yamlnode
 syck/ypath
+#@end
 #@end
 sync
 syslog
@@ -690,8 +691,56 @@ tkextlib/itk
 tkextlib/iwidgets
 tkextlib/pkg_checker
 tkextlib/tcllib
+tkextlib/tcllib/autoscroll
+tkextlib/tcllib/ctext
+tkextlib/tcllib/cursor
+tkextlib/tcllib/datefield
+tkextlib/tcllib/ico
+tkextlib/tcllib/ip_entry
+tkextlib/tcllib/plotchart
+tkextlib/tcllib/style
+tkextlib/tcllib/tkpiechart
+#@since 1.8.4
+tkextlib/tcllib/dialog
+tkextlib/tcllib/getstring
+tkextlib/tcllib/history
+tkextlib/tcllib/panelframe
+tkextlib/tcllib/ruler
+tkextlib/tcllib/screenruler
+tkextlib/tcllib/scrollwin
+tkextlib/tcllib/superframe
+tkextlib/tcllib/swaplist
+tkextlib/tcllib/tablelist
+tkextlib/tcllib/tablelist_core
+tkextlib/tcllib/tablelist_tile
+tkextlib/tcllib/tooltip
+tkextlib/tcllib/widget
+#@end
 tkextlib/tclx
 tkextlib/tile
+#@since 1.8.4
+tkextlib/tile/dialog
+#@end
+tkextlib/tile/style
+tkextlib/tile/tbutton
+tkextlib/tile/tcheckbutton
+tkextlib/tile/tlabel
+tkextlib/tile/tmenubutton
+tkextlib/tile/tnotebook
+tkextlib/tile/tradiobutton
+#@since 1.8.3
+tkextlib/tile/tcombobox
+tkextlib/tile/tentry
+tkextlib/tile/tframe
+tkextlib/tile/tlabelframe
+tkextlib/tile/tpaned
+tkextlib/tile/tprogressbar
+tkextlib/tile/treeview
+tkextlib/tile/tscale
+tkextlib/tile/tscrollbar
+tkextlib/tile/tseparator
+tkextlib/tile/tsquare
+#@end
 tkextlib/tkDND
 tkextlib/tkHTML
 tkextlib/tkimg
@@ -700,6 +749,7 @@ tkextlib/tktrans
 tkextlib/treectrl
 tkextlib/vu
 tkextlib/winico
+tkextlib/winico/winico
 #@end
 tkutil
 #@since 1.8.0

@@ -4,12 +4,12 @@ kind=defined
 
 --- authenticate(request, response) -> true
 
-���饤����Ȥ��������Ƥ����桼��̾�ȥѥ���ɤ�ǧ�ڤ��ޤ���
-ǧ�ڤ˼��Ԥ������� challenge ��ƤӤޤ���
+クライアントから送られてきたユーザ名とパスワードを認証します。
+認証に失敗した場合は challenge を呼びます。
 
-@param request [[c:WEBrick::HTTPRequest]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param request [[c:WEBrick::HTTPRequest]] のインスタンスを指定します。
 
-@param response [[c:WEBrick::HTTPResponse]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param response [[c:WEBrick::HTTPResponse]] のインスタンスを指定します。
 
-@raise WEBrick::HTTPStatus::Unauthorized ǧ�ڤ˼��Ԥ�������ȯ�����ޤ���
+@raise WEBrick::HTTPStatus::Unauthorized 認証に失敗した場合に発生します。
 

@@ -4,15 +4,15 @@ kind=defined
 
 --- pointer=(n)
 --- pos=(n)
-�������ݥ��󥿤Υ���ǥå����� n �˥��åȤ��ޤ���
+スキャンポインタのインデックスを n にセットします。
 
-@param n �����ǡ��Х���ñ�̤ǻ��ꤷ�ޤ���
-         �������ꤹ���ʸ�������������Υ��ե��åȤȤ��ư����ޤ���
-@raise RangeError  �ޥå��оݤ�ʸ�����Ĺ����Ķ�����ͤ���ꤹ���ȯ�����ޤ���
+@param n 整数で、バイト単位で指定します。
+         負数を指定すると文字列の末尾からのオフセットとして扱います。
+@raise RangeError  マッチ対象の文字列の長さを超える値を指定すると発生します。
 
-@return n ���֤��ޤ���
+@return n を返します。
 
-������
+使用例
       require 'strscan'
 
       s = StringScanner.new('test string')

@@ -3,4 +3,4 @@ visibility=public
 kind=defined
 
 --- write_require_paths_file_if_needed(spec = @spec, gem_home = @gem_home)
-É¬Í×¤Ç¤¢¤ì¤Ğ¡¢'.require_paths' ¤È¤¤¤¦¥Õ¥¡¥¤¥ë¤ò Gem ¤´¤È¤ËºîÀ®¤·¤Ş¤¹¡£
+å¿…è¦ã§ã‚ã‚Œã°ã€'.require_paths' ã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ Gem ã”ã¨ã«ä½œæˆã—ã¾ã™ã€‚

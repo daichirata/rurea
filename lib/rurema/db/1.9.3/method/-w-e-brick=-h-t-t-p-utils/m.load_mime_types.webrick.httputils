@@ -4,10 +4,10 @@ kind=defined
 
 --- load_mime_types(file)    -> Hash
 
-Apache ¤Î mime.types ¥Õ¥¡¥¤¥ë·Á¼°¤Î file ¤òÆÉ¤ß¹þ¤ß
-³ÈÄ¥»Ò¤ò¥­¡¼¡¢MIME ¥¿¥¤¥×¤òÃÍ¤È¤¹¤ë¥Ï¥Ã¥·¥å¤òÊÖ¤·¤Þ¤¹¡£¥­¡¼¤âÃÍ¤âÊ¸»úÎó¤Ç¤¹¡£
+Apache ã® mime.types ãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã® file ã‚’èª­ã¿è¾¼ã¿
+æ‹¡å¼µå­ã‚’ã‚­ãƒ¼ã€MIME ã‚¿ã‚¤ãƒ—ã‚’å€¤ã¨ã™ã‚‹ãƒãƒƒã‚·ãƒ¥ã‚’è¿”ã—ã¾ã™ã€‚ã‚­ãƒ¼ã‚‚å€¤ã‚‚æ–‡å­—åˆ—ã§ã™ã€‚
 
-@param file Apache ¤Î mime.types ¥Õ¥¡¥¤¥ë·Á¼°¤Î¥Õ¥¡¥¤¥ë¤ÎÌ¾Á°¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param file Apache ã® mime.types ãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã®ãƒ•ã‚¡ã‚¤ãƒ«ã®åå‰ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
   p WEBrick::HTTPUtils.load_mime_types('/etc/mime.types')
   # => {"htm"=>"text/html", "rpm"=>"application/x-rpm", ... }

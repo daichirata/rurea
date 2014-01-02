@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- finish -> ()
-SMTP ���å�����λ���ޤ���
+SMTP セッションを終了します。
 
-@raise IOError ���å���󳫻����ˤ��Υ᥽�åɤ��ƤФ줿����ȯ�����ޤ�
+@raise IOError セッション開始前にこのメソッドが呼ばれた場合に発生します
 
 @see [[m:Net::SMTP#start]]
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- default_port     -> Integer | nil
 
-self.class.default_port ¤òÊÖ¤·¤Ş¤¹¡£
+self.class.default_port ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:URI::Generic.default_port]]
 

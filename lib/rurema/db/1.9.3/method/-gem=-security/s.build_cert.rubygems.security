@@ -4,11 +4,11 @@ kind=defined
 
 --- build_cert(name, key, options = {}) -> OpenSSL::X509::Certificate
 
-Ϳ����줿 DN ����̩������Ѥ��ƾ������������ޤ���
+与えられた DN と秘密鍵を使用して証明書を作成します。
 
-@param name DN ����ꤷ�ޤ���
+@param name DN を指定します。
 
-@param key ��̩������ꤷ�ޤ���
+@param key 秘密鍵を指定します。
 
-@param options ���ץ�������ꤷ�ޤ���
+@param options オプションを指定します。
 

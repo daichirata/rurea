@@ -5,20 +5,20 @@ kind=defined
 --- open(dbname, mode = 0666, flags = nil) -> DBM
 --- open(dbname, mode = 0666, flags = nil) {|db| ... } -> ()
 
-dbname �ǻ��ꤷ���ǡ����١�����⡼�ɤ� mode �����ꤷ�ƥ����ץ󤷤ޤ���
+dbname で指定したデータベースをモードを mode に設定してオープンします。
 
-mode �ξ�ά�ͤ� 0666 �Ǥ���mode �Ȥ��� nil ����ꤹ���
-�ǡ����١�����¸�ߤ��ʤ����ˤϿ����ʥǡ����١������餺 nil ���֤��ޤ���
+mode の省略値は 0666 です。mode として nil を指定すると
+データベースが存在しない時には新たなデータベースを作らず nil を返します。
 
-@param dbname �ǡ����١���̾
-@param mode   �ǡ����١����Υ����ץ�⡼��
-@param flags  �ʲ��Τ����줫����ꤷ�ޤ���
+@param dbname データベース名
+@param mode   データベースのオープンモード
+@param flags  以下のいずれかを指定します。
 : DBM::READER
-  �ǡ����١������ɤ߹��ߤΤߤ�Ԥ�
+  データベースの読み込みのみを行う
 : DBM::WRITER
-  �ǡ����١����ο��������Ϥ����ɤ߽񤭤���
+  データベースの新規作成はせず読み書きする
 : DBM::WRCREAT
-  �ǡ����١�����¸�ߤ��ʤ���п������������ɤ߽񤭤���
+  データベースが存在しなければ新規作成して読み書きする
 : DBM::NEWDB
-  �ǡ����١������˿����������ƴ�¸�Υǡ������˴�����
+  データベースを常に新規作成して既存のデータは破棄する
 

@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- DRAFT -> Symbol
-��:Draft�פȤ�������ܥ���֤��ޤ���
+「:Draft」というシンボルを返します。
 
-��å���������ƤǤ��뤳�Ȥ��̣���ޤ���
+メッセージが草稿であることを意味します。
 
-�ե饰��å�����°���Ȥ����Ѥ����ޤ�
-([[m:Net::IMAP::FetchData#attr]])��
+フラグメッセージ属性として用いられます
+([[m:Net::IMAP::FetchData#attr]])。
 
-�ܤ����� [[RFC:2060]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] を参照してください。
 

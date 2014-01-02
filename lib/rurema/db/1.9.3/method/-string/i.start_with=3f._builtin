@@ -4,11 +4,11 @@ kind=defined
 
 --- start_with?(str) -> bool
 
-self ¤ÎÀèÆ¬¤¬ str ¤Ç¤¢¤ë¤È¤­ true ¤òÊÖ¤·¤Ş¤¹¡£
+self ã®å…ˆé ­ãŒ str ã§ã‚ã‚‹ã¨ã true ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param str    ¥Ñ¥¿¡¼¥ó¤òÉ½¤¹Ê¸»úÎó
+@param str    ãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’è¡¨ã™æ–‡å­—åˆ—
 
-Îã:
+ä¾‹:
     "string".start_with?("str")   # => true
     "string".start_with?("ing")   # => false
 

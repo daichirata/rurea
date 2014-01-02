@@ -2,26 +2,28 @@ type=class
 superclass=Psych=Visitors=YAMLTree
 included=
 extended=
-library=psych.stream
+library=psych
 aliases=
 aliasof=
 
-Psych::Stream is a streaming YAML emitter.  It will not buffer your YAML,
-but send it straight to an IO.
+入力されたオブジェクトから変換された YAML document を指定した
+IO に出力する機能を持つクラスです。
 
-Here is an example use:
-
+start で変換を開始し、push で変換する Ruby オブジェクトを渡し、
+最後に finish を呼ぶことで変換を完了します。
   stream = Psych::Stream.new($stdout)
   stream.start
   stream.push({:foo => 'bar'})
   stream.finish
 
-YAML will be immediately emitted to $stdout with no buffering.
+YAML document は(バッファリングされずに)直接 $stdout に出力されます。
 
-Psych::Stream#start will take a block and ensure that Psych::Stream#finish
-is called, so you can do this form:
+finish を確実に呼び出すためには [[m:Psych::Stream#start]] メソッドを
+ブロック付きで呼び出すとよいでしょう。
 
   stream = Psych::Stream.new($stdout)
   stream.start do |em|
     em.push(:foo => 'bar')
   end
+
+基本的な仕組みは [[c:Psych::Visitors::YAMLTree]] と似ています。

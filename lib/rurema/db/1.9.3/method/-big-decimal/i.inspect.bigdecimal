@@ -2,15 +2,13 @@ names=inspect
 visibility=public
 kind=defined
 
---- inspect
-@todo
+--- inspect -> String
 
-¥Ç¥Ð¥Ã¥°½ÐÎÏ¤Ë»ÈÍÑ¤µ¤ì¤Þ¤¹¡£
+[[c:BigDecimal]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-    p a = BigDecimal::new("3.14",10)
+  BigDecimal.new("1234.5678").inspect
+  # => "#<BigDecimal:b7ea1130,'0.12345678E4',8(12)>"
 
-¤È¤¹¤ë¤È¡¢[0x112344:'0.314E1',4(12)] ¤Î¤è¤¦¤Ë½ÐÎÏ¤µ¤ì¤Þ¤¹¡£
-ºÇ½é¤Î16¿Ê¿ô¤Ï¥ª¥Ö¥¸¥§¥¯¥È¤Î¥¢¥É¥ì¥¹¡¢¼¡¤Î '0.314E1' ¤ÏÃÍ¡¢
-¼¡¤Î4¤Ï¸½ºß¤ÎÍ­¸ú·å¿ô(É½¼¨¤è¤ê¼ã´³Âç¤­¤¤¤³¤È¤¬¤¢¤ê¤Þ¤¹)¡¢
-ºÇ¸å¤Ï¥ª¥Ö¥¸¥§¥¯¥È¤¬¼è¤êÆÀ¤ëºÇÂç·å¿ô¤Ë¤Ê¤ê¤Þ¤¹¡£ 
+æœ€åˆã®16é€²æ•°ã¯ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã€æ¬¡ã®æ–‡å­—åˆ— '0.12345678E4' ã¯å€¤ã€
+æœ€å¾Œã®å€¤ 8(12) ã¯ç¾åœ¨ã®æœ‰åŠ¹æ¡æ•°(æœ€å¤§æœ‰åŠ¹æ•°å­—)ã‚’è¡¨ã—ã¾ã™ã€‚
 

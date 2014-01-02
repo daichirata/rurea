@@ -2,11 +2,25 @@ names=load_stream
 visibility=public
 kind=defined
 
---- load_stream(yaml)
-@todo
+--- load_stream(yaml, filename=nil) -> [object]
+--- load_stream(yaml, filename=nil){|obj| ... } -> ()
+複数の YAML ドキュメントを含むデータを
+Ruby のオブジェクトに変換します。
 
-Load multiple documents given in +yaml+.  Returns the parsed documents
-as a list.  For example:
+ブロックなしの場合はオブジェクトの配列を返します。
 
   Psych.load_stream("--- foo\n...\n--- bar\n...") # => ['foo', 'bar']
+
+ブロックありの場合は各オブジェクト引数としてそのブロックを呼び出します。
+  list = []
+  Psych.load_stream("--- foo\n...\n--- bar\n...") do |ruby|
+    list << ruby
+  end
+  list # => ['foo', 'bar']
+
+filename はパース中に発生した例外のメッセージに用います。
+
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@param filename 例外メッセージのためのファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
 

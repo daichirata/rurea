@@ -4,6 +4,6 @@ kind=defined
 
 --- inch -> Integer
 
-stdscr �Υ���������֤��� 1 �Х����ɤߤȤä��֤��ޤ���
+stdscr のカーソル位置から 1 バイト読みとって返します。
 
 

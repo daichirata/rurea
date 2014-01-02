@@ -4,6 +4,6 @@ kind=defined
 
 --- title -> String
 
-RDoc �Υ����ȥ���֤��ޤ���
-�ǥե�����ͤϤ���ޤ���
+RDoc のタイトルを返します。
+デフォルト値はありません。
 

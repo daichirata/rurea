@@ -5,7 +5,7 @@ kind=defined
 --- size -> Integer
 --- length -> Integer
 
-���Υ᥽�åɤ� obsolete �Ǥ���
+このメソッドは obsolete です。
 
-�إå��ե�����ɤο����֤��ޤ���
+ヘッダフィールドの数を返します。
 

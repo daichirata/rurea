@@ -4,15 +4,15 @@ kind=defined
 
 --- cosh(x) -> Float
 
-x ���ж���;���ؿ����ͤ��֤��ޤ���
+x の双曲線余弦関数の値を返します。
 
-=== ���
+=== 定義
 
     cosh(x) = (exp(x) + exp(-x)) / 2
 
-@param x �¿�
+@param x 実数
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 

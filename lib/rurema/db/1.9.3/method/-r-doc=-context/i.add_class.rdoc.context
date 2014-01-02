@@ -4,14 +4,14 @@ kind=defined
 
 --- add_class(class_type, name, superclass) -> RDoc::SingleClass | RDoc::NormalClass
 
-░·┐Їд╟╗╪─ъд╖д┐епеще╣дЄ─╔▓├д╖д▐д╣бг
+х╝ХцХ░уБзцМЗхоЪуБЧуБЯуВпуГйуВ╣уВТш┐╜хКауБЧуБ╛уБЩуАВ
 
-@param class_type ─╔▓├д╣дыепеще╣бвете╕ехб╝еыдЄ [[c:RDoc::NormalClass]]бв
-                  [[c:RDoc::SingleClass]]бв[[c:RDoc::NormalModule]] ек
-                  е╓е╕езепе╚д╬ддд║дьдлд╟╗╪─ъд╖д▐д╣бг
+@param class_type ш┐╜хКауБЩуВЛуВпуГйуВ╣уАБуГвуВ╕уГеуГ╝уГлуВТ [[c:RDoc::NormalClass]]уАБ
+                  [[c:RDoc::SingleClass]]уАБ[[c:RDoc::NormalModule]] уВк
+                  уГЦуВ╕уВзуВпуГИуБоуБДуБЪуВМуБЛуБзцМЗхоЪуБЧуБ╛уБЩуАВ
 
-@param name епеще╣╠╛дЄ╩╕╗·╬єд╟╗╪─ъд╖д▐д╣бг
+@param name уВпуГйуВ╣хРНуВТцЦЗхнЧхИЧуБзцМЗхоЪуБЧуБ╛уБЩуАВ
 
-@param superclass ─╔▓├д╣дыепеще╣д╬┐╞епеще╣дЄ [[c:RDoc::NormalClass]] ек
-                  е╓е╕езепе╚д╟╗╪─ъд╖д▐д╣бг
+@param superclass ш┐╜хКауБЩуВЛуВпуГйуВ╣уБошжкуВпуГйуВ╣уВТ [[c:RDoc::NormalClass]] уВк
+                  уГЦуВ╕уВзуВпуГИуБзцМЗхоЪуБЧуБ╛уБЩуАВ
 

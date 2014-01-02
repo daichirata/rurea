@@ -4,7 +4,17 @@ kind=defined
 
 --- included_modules -> [Module]
 
-¥¤¥ó¥¯¥ë¡¼¥É¤µ¤ì¤Æ¤¤¤ë¥â¥¸¥å¡¼¥ë¤ÎÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
+self ã«ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã•ã‚Œã¦ã„ã‚‹ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+
+  module Mixin
+  end
+
+  module Outer
+    include Mixin
+  end
+
+  Mixin.included_modules   #=> []
+  Outer.included_modules   #=> [Mixin]
 
 @see [[m:Module#ancestors]]
 

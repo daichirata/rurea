@@ -4,11 +4,11 @@ kind=defined
 
 --- route_to(dst)     -> URI::Generic
 
-¼«¿È¤«¤é dst ¤Ø¤ÎÁêÂĞ¥Ñ¥¹¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ã‹ã‚‰ dst ã¸ã®ç›¸å¯¾ãƒ‘ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param dst URI ¤òÊ¸»úÎó¤«URI¥ª¥Ö¥¸¥§¥¯¥È¤ÇÍ¿¤¨¤Ş¤¹¡£
+@param dst URI ã‚’æ–‡å­—åˆ—ã‹URIã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ä¸ãˆã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
   p URI.parse('http://www.ruby-lang.org/').route_to('http://www.ruby-lang.org/en/raa.html')
   

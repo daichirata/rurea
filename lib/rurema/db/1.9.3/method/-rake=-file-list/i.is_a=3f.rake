@@ -5,5 +5,5 @@ kind=defined
 --- is_a?(klass) -> bool
 --- kind_of?(klass) -> bool
 
-���Ȥ� [[c:Array]] �Υե�򤵤��ޤ���
+自身に [[c:Array]] のフリをさせます。
 

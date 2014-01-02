@@ -4,9 +4,9 @@ kind=defined
 
 --- visible? -> bool
 
-ÊÑ¿ô¤Î²Ä»ëÀ­¤ò¼èÆÀ¤·¤Ş¤¹¡£
+å¤‰æ•°ã®å¯è¦–æ€§ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return public¥¢¥¯¥»¥¹²ÄÇ½¤Ç¤¢¤ì¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
+@return publicã‚¢ã‚¯ã‚»ã‚¹å¯èƒ½ã§ã‚ã‚Œã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'XlSheetType')
    puts tobj.variables.map {|v| v.visible?}.uniq # => true

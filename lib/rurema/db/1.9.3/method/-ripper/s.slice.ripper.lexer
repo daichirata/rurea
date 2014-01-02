@@ -4,29 +4,29 @@ kind=added
 
 --- Ripper.slice(src, pattern, n = 0) -> String | nil
 
-Ruby �ץ������ src �Τ�����
-�ѥ����� pattern �� n ���ܤγ�̤˥ޥå�����ʸ�������Ф��ޤ���
+Ruby プログラム src のうち、
+パターン pattern の n 番目の括弧にマッチする文字列を取り出します。
 
-�ޥå����ʤ����� nil ���֤��ޤ���
+マッチしない場合は nil を返します。
 
-@param src Ruby �ץ�������ʸ���� IO ���֥������Ȥǻ��ꤷ�ޤ���
+@param src Ruby プログラムを文字列か IO オブジェクトで指定します。
 
-@param pattern ���Ф��ץ������Υѥ������ʸ����ǻ��ꤷ�ޤ���
+@param pattern 取り出すプログラムのパターンを文字列で指定します。
 
-@param n pattern �ǻ��ꤷ��ʸ������⡢n ���ܤγ�̤����ʸ���������ɬ
-         �פʻ��˻��ꤷ�ޤ�����ά����� 0 (pattern ����)�ˤʤ�ޤ���
+@param n pattern で指定した文字列の内、n 番目の括弧の中の文字列だけが必
+         要な時に指定します。省略すると 0 (pattern 全体)になります。
 
-pattern �� Ripper �Υ��٥�� ID �Υꥹ�Ȥ�ʸ����ǵ��Ҥ��ޤ���
-�ޤ� pattern �ˤ� Ruby ������ɽ����Ʊ���᥿ʸ����Ȥ��ޤ���
-��������.�פ�Ǥ�դΥȡ����� 1 �Ĥ˥ޥå�����
-����¾�Υ᥿ʸ���⤹�٤�ʸ��ñ�̤ǤϤʤ��ȡ�����ñ�̤�ư��ޤ���
+pattern は Ripper のイベント ID のリストを文字列で記述します。
+また pattern には Ruby の正規表現と同じメタ文字も使えます。
+ただし「.」は任意のトークン 1 つにマッチし、
+その他のメタ文字もすべて文字単位ではなくトークン単位で動作します。
 
-������
+使用例
 
   require 'ripper'
   p Ripper.slice(%(<<HERE\nstring\#{nil}\nHERE),
                  "heredoc_beg .*? nl $(.*?) heredoc_end", 1)
       # => "string\#{nil}\n"
 
-���٥�� ID �� [[m:Ripper::SCANNER_EVENTS]] �ǳ�ǧ�Ǥ��ޤ���
+イベント ID は [[m:Ripper::SCANNER_EVENTS]] で確認できます。
 

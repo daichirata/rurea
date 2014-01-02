@@ -4,10 +4,10 @@ kind=defined
 
 --- new(width = 0, fmtstr = nil) -> Benchmark::Report
 
-[[c:Benchmark::Report]] �Υ��󥹥��󥹤����������֤��ޤ���
+[[c:Benchmark::Report]] のインスタンスを初期化して返します。
 
-�̾盧�Υ᥽�åɤ��桼�����ˤ�ä�ľ�ܸƤӽФ���뤳�ȤϤ���ޤ���
+通常このメソッドがユーザーによって直接呼び出されることはありません。
 
-@param width  ��٥����
-@param fmtstr �ե����ޥå�ʸ����
+@param width  ラベルの幅
+@param fmtstr フォーマット文字列
 

@@ -4,6 +4,6 @@ kind=defined
 
 --- info?    -> bool
 
-���ȤΥ�����٥뤬 INFO �ʾ�λ��� true ���֤��ޤ���
-�����Ǥʤ����� false ���֤��ޤ���
+自身のログレベルが INFO 以上の時に true を返します。
+そうでない場合に false を返します。
 

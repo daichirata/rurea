@@ -3,30 +3,31 @@ classes=Curses,Curses=Key,Curses=MouseEvent,Curses=Window
 methods=
 sublibraries=
 is_sublibrary=false
+category=CUI
 
-Ruby �� curses �饤�֥��(�ʲ���Ruby curses)�ϡ�C �Υץ�����फ��ü��
-�β��̤����椹�뤿��� curses �饤�֥��(�ʲ���C curses)�����Ѥ��ơ�ü
-���˰�¸���ʤ������ǥƥ����ȥ桼�����󥿥ե��������ۤ��뤿��Υ饤��
-���Ǥ���
+Ruby の curses ライブラリ(以下、Ruby curses)は、C のプログラムから端末
+の画面を制御するための curses ライブラリ(以下、C curses)を利用して、端
+末に依存しない形式でテキストユーザインタフェースを構築するためのライブ
+ラリです。
 
-C curses �ˤϡ����Τ褦�ʼ���������ޤ���
+C curses には、次のような実装があります。
 
   * [[url:http://www.gnu.org/software/ncurses/ncurses.html]]
   * [[url:http://pdcurses.sourceforge.net/]]
 
-Ruby curses ��Ȥäƥƥ����ȥ桼�����󥿥ե�����(�ʲ���TUI)��
-���ۤ���ή��ϼ��Τ褦�ˤʤ�ޤ���
+Ruby curses を使ってテキストユーザインタフェース(以下、TUI)を
+構築する流れは次のようになります。
 
-  (1) [[m:Curses.#init_screen]] �ǽ������Ԥ��ޤ���
-  (2) [[c:Curses]] �Υ⥸�塼��ؿ���Ȥ���
-      ���ϤΥ�������̵���ˤ���ʤɤ� Ruby curses �������Ԥ��ޤ���
-  (3) [[m:Curses.#stdscr]] �䤽�Υ��֥�����ɥ�������TUI ���ۤ��ޤ���
-  (4) [[m:Curses.#getch]] �� [[m:Curses.#getstr]] �ˤ�ꡢ
-      �桼����������Ϥ�������ޤ������Ϥ�������˽��äƽ�����Ԥ���
-      �����ơ����Ϥ��ԤĤȤ������Ȥ򷫤��֤��ޤ���
-  (5) �Ǹ�� [[m:Curses.#close_screen]] �ǽ�λ������Ԥ��ޤ���
+  (1) [[m:Curses.#init_screen]] で初期化を行います。
+  (2) [[c:Curses]] のモジュール関数を使い、
+      入力のエコーを無効にするなどの Ruby curses の設定を行います。
+  (3) [[m:Curses.#stdscr]] やそのサブウインドウを操作し、TUI を構築します。
+  (4) [[m:Curses.#getch]] や [[m:Curses.#getstr]] により、
+      ユーザからの入力を取得します。入力した情報に従って処理を行い、
+      そして、入力を待つということを繰り返します。
+  (5) 最後に [[m:Curses.#close_screen]] で終了処理を行います。
 
-��: ��������ˡ�Hello World!�פ�ɽ�������������Ϥ�����Ƚ�λ���롣
+例: 画面中央に「Hello World!」と表示し、何か入力があると終了する。
 
   require "curses"
   
@@ -41,7 +42,7 @@ Ruby curses ��Ȥäƥƥ����ȥ桼�����󥿥ե�����(�ʲ���TUI)��
     Curses.close_screen
   end
 
-��: �嵭�����Ʊ�ͤ�����Curses �⥸�塼��� include ������
+例: 上記の例と同様だが、Curses モジュールを include する場合
 
   require "curses"
 
@@ -58,15 +59,15 @@ Ruby curses ��Ȥäƥƥ����ȥ桼�����󥿥ե�����(�ʲ���TUI)��
     close_screen
   end
 
-�ʤ���C curses �����ѤǤ��ʤ��Ķ��� Ruby �򥳥�ѥ��뤷�Ƥ����硢
-Ruby curses �����ѤǤ��ޤ���
-���ѤǤ��ʤ���硢require �λ������㳰 LoadError ��ȯ�����ޤ���
+なお、C curses を利用できない環境で Ruby をコンパイルしている場合、
+Ruby curses は利用できません。
+利用できない場合、require の時点で例外 LoadError が発生します。
 
   foo:1:in `require': no such file to load -- curses (LoadError)
           from foo:1:in `<main>'
 
-Ruby curses �����ˤ�äƤϡ�
-���Ѥ��� C curses ���󶡤��Ƥ��ʤ���ǽ��Ȥ���Τ�����ޤ���
-���Τ褦������Ԥä���硢�㳰 NotImplementedError ��ȯ�����ޤ���
+Ruby curses の操作によっては、
+利用する C curses が提供していない機能を使うものがあります。
+そのような操作を行った場合、例外 NotImplementedError が発生します。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�����Ĥ��������㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、いくつかの操作で例外 SecurityError を発生します。

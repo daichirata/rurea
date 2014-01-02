@@ -4,5 +4,5 @@ kind=defined
 
 --- arg_names -> Array
 
-���ȤΥѥ�᡼��̾�Υꥹ�Ȥ��֤��ޤ���
+自身のパラメータ名のリストを返します。
 

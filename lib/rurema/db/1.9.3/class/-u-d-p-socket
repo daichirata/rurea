@@ -6,4 +6,4 @@ library=socket
 aliases=
 aliasof=
 
-UDP/IP�ǡ�������෿�����åȤΥ��饹��
+UDP/IPデータグラム型ソケットのクラス。

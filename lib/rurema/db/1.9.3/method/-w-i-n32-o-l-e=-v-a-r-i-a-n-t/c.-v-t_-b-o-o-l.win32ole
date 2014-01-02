@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- VT_BOOL -> Integer
-�����ͤ򼨤��ޤ���11�ˡ�
+真偽値を示します（11）。
 

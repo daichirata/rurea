@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 ---critical=(bool)
-¤½¤Î³ÈÄ¥ÎÎ°è¤Î½ÅÍ×ÅÙ(critical)¤ò¿¿µ¶ÃÍ¤ÇÀßÄê¤·¤Ş¤¹¡£
+ãã®æ‹¡å¼µé ˜åŸŸã®é‡è¦åº¦(critical)ã‚’çœŸå½å€¤ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param bool ÀßÄê¤¹¤ë½ÅÍ×ÅÙ¤Î¿¿µ¶ÃÍ
+@param bool è¨­å®šã™ã‚‹é‡è¦åº¦ã®çœŸå½å€¤
 @see [[c:OpenSSL::X509::Extension#critical?]]
 

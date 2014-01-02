@@ -4,11 +4,11 @@ kind=defined
 
 --- to_s -> String
 
-���֥������Ȥ�ʸ����ɽ�����֤��ޤ���
+オブジェクトの文字列表現を返します。
 
-[[m:Kernel.#print]] �� [[m:Kernel.#sprintf]] ��ʸ����ʳ���
-���֥������Ȥ��������Ϥ��줿��礳�Υ᥽�åɤ�Ȥä�ʸ������Ѵ���
-�ޤ���
+[[m:Kernel.#print]] や [[m:Kernel.#sprintf]] は文字列以外の
+オブジェクトが引数に渡された場合このメソッドを使って文字列に変換し
+ます。
 
   class Foo
     def initialize num

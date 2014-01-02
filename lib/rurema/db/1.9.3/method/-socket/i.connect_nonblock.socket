@@ -2,20 +2,38 @@ names=connect_nonblock
 visibility=public
 kind=defined
 
---- connect_nonblock(server_sockaddr) -> Fixnum
+--- connect_nonblock(server_sockaddr) -> 0
 
-¥½¥±¥Ã¥È¤ò¥Î¥ó¥Ö¥í¥Ã¥­¥ó¥°¥â¡¼¥É¤ËÀßÄê¤·¤¿¸å¡¢
-[[man:connect(2)]] ¤ò¸Æ¤Ó½Ğ¤·¤Ş¤¹¡£
+ã‚½ã‚±ãƒƒãƒˆã‚’ãƒãƒ³ãƒ–ãƒ­ãƒƒã‚­ãƒ³ã‚°ãƒ¢ãƒ¼ãƒ‰ã«è¨­å®šã—ãŸå¾Œã€
+[[man:connect(2)]] ã‚’å‘¼ã³å‡ºã—ã¾ã™ã€‚
 
-°ú¿ô¡¢ÊÖ¤êÃÍ¤Ï [[m:Socket#connect]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+å¼•æ•°ã€è¿”ã‚Šå€¤ã¯ [[m:Socket#connect]] ã¨åŒã˜ã§ã™ã€‚
 
-connect(2)¤¬¥¨¥é¡¼¤Ë¤Ê¤Ã¤¿¾ì¹ç¡¢
-EINPROGRESS ¤ò´Ş¤áÎã³° [[c:Errno::EXXX]] ¤¬È¯À¸¤·¤Ş¤¹¡£
+connect ãŒ EINPROGRESS ã‚¨ãƒ©ãƒ¼ã‚’å ±å‘Šã—ãŸå ´åˆã€ãã®ä¾‹å¤–(Errno::EINPROGRESS)
+ã«ã¯ [[c:IO::WaitWritable]] ãŒ [[m:Object#extend]] ã•ã‚Œã¾ã™ã€‚
+ã“ã‚Œã‚’ connect_nonblock ã‚’ãƒªãƒˆãƒ©ã‚¤ã™ã‚‹ãŸã‚ã«ä½¿ã†ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-@param server_sockaddr ¥½¥±¥Ã¥È¥¢¥É¥ì¥¹¹½Â¤ÂÎ¤ò pack ¤·¤¿Ê¸»úÎó[[ref:lib:socket#pack_string]]¤ò»ØÄê¤·¤Ş¤¹¡£
+  # Pull down Google's web page
+  require 'socket'
+  include Socket::Constants
+  socket = Socket.new(AF_INET, SOCK_STREAM, 0)
+  sockaddr = Socket.sockaddr_in(80, 'www.google.com')
+  begin # emulate blocking connect
+    socket.connect_nonblock(sockaddr)
+  rescue IO::WaitWritable
+    IO.select(nil, [socket]) # wait 3-way handshake completion
+    begin
+      socket.connect_nonblock(sockaddr) # check connection failure
+    rescue Errno::EISCONN
+    end
+  end
+  socket.write("GET / HTTP/1.0\r\n\r\n")
+  results = socket.read
 
-@raise Errno::EXXX connect(2)¤¬¥¨¥é¡¼¤Ë¤Ê¤Ã¤¿¾ì¹ç¡¢ EINPROGRESS ¤ò´Ş¤áÎã³° [[c:Errno::EXXX]] ¤¬È¯À¸¤·¤Ş¤¹¡£
 
-@return [[m:Socket#connect]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+
+@param server_sockaddr æ¥ç¶šå…ˆã‚¢ãƒ‰ãƒ¬ã‚¹
+@raise Errno::EXXX [[man:connect(2)]] ãŒã‚¨ãƒ©ãƒ¼ã‚’å ±å‘Šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚è©³ã—ãã¯
+       man ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 

@@ -3,8 +3,9 @@ classes=Tempfile
 methods=
 sublibraries=
 is_sublibrary=false
+category=File
 
-¥Æ¥ó¥İ¥é¥ê¥Õ¥¡¥¤¥ë¤òÁàºî¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹
+ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ“ä½œã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™
 
-=== »²¹Í
-É¸½àÅºÉÕ¥é¥¤¥Ö¥é¥ê¾Ò²ğ ¡ÚÂè 15 ²ó¡Û tmpdir, tempfile  [[url:http://jp.rubyist.net/magazine/?0029-BundledLibraries]]
+=== å‚è€ƒ
+æ¨™æº–æ·»ä»˜ãƒ©ã‚¤ãƒ–ãƒ©ãƒªç´¹ä»‹ ã€ç¬¬ 15 å›ã€‘ tmpdir, tempfile  [[url:http://jp.rubyist.net/magazine/?0029-BundledLibraries]]

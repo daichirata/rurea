@@ -4,9 +4,9 @@ kind=defined
 
 --- to_s(flags=nil) -> String
 
-DN¤ÎÊ¸»úÎóÉ½¸½¤òÊÖ¤·¤Þ¤¹¡£
+DNã®æ–‡å­—åˆ—è¡¨ç¾ã‚’è¿”ã—ã¾ã™ã€‚
 
-flags ¤Ë¤ÏÄÌ¾ï¤Ï°Ê²¼¤Î¤¤¤º¤ì¤«¤òÅÏ¤·¤Þ¤¹¡£
+flags ã«ã¯é€šå¸¸ã¯ä»¥ä¸‹ã®ã„ãšã‚Œã‹ã‚’æ¸¡ã—ã¾ã™ã€‚
   * nil
   * [[m:OpenSSL::X509::Name::COMPAT]]
   * [[m:OpenSSL::X509::Name::RFC2253]]
@@ -14,7 +14,7 @@ flags ¤Ë¤ÏÄÌ¾ï¤Ï°Ê²¼¤Î¤¤¤º¤ì¤«¤òÅÏ¤·¤Þ¤¹¡£
   * [[m:OpenSSL::X509::Name::MULTILINE]]
 
 * 
-Îã:
+ä¾‹:
   n = OpenSSL::X509::Name.parse('/C=JP/ST=Kanagawa/L=Yokohama/O=Example Company/OU=Lab3/CN=foobar/emailAddress=foobar@lab3.example.co.jp')
   n.to_s 
   # => "/C=JP/ST=Kanagawa/L=Yokohama/O=Example Company/OU=Lab3/CN=foobar/emailAddress=foobar@lab3.example.co.jp"

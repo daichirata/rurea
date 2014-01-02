@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- name -> String | nil
-�᡼�륢�ɥ쥹�� [[RFC:822]] �θĿ�̾(personal name)���֤��ޤ���
+メールアドレスの [[RFC:822]] の個人名(personal name)を返します。
 
-�Ŀ�̾��¸�ߤ��ʤ����� nil ���֤��ޤ���
+個人名が存在しない場合は nil を返します。
 
-�̾�� nil ���֤��ޤ���
+通常は nil を返します。
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- defaults -> Hash
 
-�ǥե���ȤΥ��ץ������֤��ޤ���
+デフォルトのオプションを返します。
 

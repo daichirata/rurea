@@ -6,4 +6,4 @@ library=iconv
 aliases=
 aliasof=
 
-[[c:Iconv]] ���������㳰�Τ���Υ⥸�塼��Ǥ���
+[[c:Iconv]] が起こす例外のためのモジュールです。

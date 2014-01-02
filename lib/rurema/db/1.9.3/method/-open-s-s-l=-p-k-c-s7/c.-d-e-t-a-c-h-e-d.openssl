@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- DETACHED -> Integer
-Ê¿Ê¸¤Ë½ğÌ¾¤òÉÕ¤±¤ë·Á¼° (multipart/signed) ¤Ç¹Ô¤¤¤Ş¤¹¡£ 
+å¹³æ–‡ã«ç½²åã‚’ä»˜ã‘ã‚‹å½¢å¼ (multipart/signed) ã§è¡Œã„ã¾ã™ã€‚ 
 
-[[m:OpenSSL::PKCS7.sign]]¡¢[[m:OpenSSL::PKCS7.write_smime]]
-¤ÇÍøÍÑ²ÄÇ½¤Ê¥Õ¥é¥°¤Ç¤¹¡£
+[[m:OpenSSL::PKCS7.sign]]ã€[[m:OpenSSL::PKCS7.write_smime]]
+ã§åˆ©ç”¨å¯èƒ½ãªãƒ•ãƒ©ã‚°ã§ã™ã€‚
 

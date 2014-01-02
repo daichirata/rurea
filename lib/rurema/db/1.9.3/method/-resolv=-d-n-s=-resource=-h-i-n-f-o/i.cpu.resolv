@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- cpu -> String
-�ۥ��ȤǻȤ��� CPU ̾(�ϡ��ɥ�����̾)���֤��ޤ���
+ホストで使われる CPU 名(ハードウェア名)を返します。
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- add(thread)    -> self
 
-����å� thread ��°���륰�롼�פ򼫿Ȥ��ѹ����ޤ���
+スレッド thread が属するグループを自身に変更します。
 
-@param thread ���Ȥ˲ä���������åɤ���ꤷ�ޤ���
+@param thread 自身に加えたいスレッドを指定します。
 
-@raise ThreadError ���Ȥ� freeze ����Ƥ��뤫 enclose ����Ƥ�����ˡ�ȯ�����ޤ����ޤ����� thread ��°���� ThreadGroup �� freeze ����Ƥ��뤫 enclose ����Ƥ�����ˤ�ȯ�����ޤ���
+@raise ThreadError 自身が freeze されているか enclose されている場合に、発生します。また引数 thread が属する ThreadGroup が freeze されているか enclose されている場合にも発生します。
 

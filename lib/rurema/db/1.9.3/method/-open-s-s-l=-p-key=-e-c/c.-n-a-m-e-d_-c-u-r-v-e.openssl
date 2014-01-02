@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- NAMED_CURVE -> Integer
-���η���̾������Ķ��������������Ƥ��뤳�Ȥ��̣����ե饰�Ǥ���
+その群が名前を持つ曲線から定義されていることを意味するフラグです。
 
-[[m:OpenSSL::PKey::EC::Group#asn1_flag=]] �����Ѥ���ޤ���
+[[m:OpenSSL::PKey::EC::Group#asn1_flag=]] で利用されます。
 

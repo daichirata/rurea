@@ -2,6 +2,27 @@ names=each
 visibility=public
 kind=defined
 
---- each(xpath = nil) {|element| ... }
-@todo
+--- each(xpath = nil) {|element| ... } -> [REXML::Elements]
+全ての子要素に対しブロックを呼び出します。
+
+xpath を指定した場合には、その XPath 文字列に
+マッチする要素に対しブロックを呼び出します。
+
+[[m:REXML::XPath.each]] などとは異なり、要素以外の
+テキストノードなどはすべて無視されることに注意してください。
+
+@param xpath XPath文字列
+
+==== 例
+  require 'rexml/document'
+  require 'rexml/xpath'
+  doc = REXML::Document.new '<a><b/><c/><d/>sean<b/><c/><d/></a>'
+  # <b/>,<c/>,<d/>,<b/>,<c/>, <d/> がブロックに渡される
+  doc.root.elements.each {|e|p e} 
+  # <b/>, <b/> がブロックに渡される
+  doc.root.elements.each('b') {|e|p e}  #-> Yields b, b elements
+  # <b/>,<c/>,<d/>,<b/>,<c/>,<d/> がブロックに渡される
+  doc.root.elements.each('child::node()')  {|e|p e}
+  # <b/>,<c/>,<d/>,"sean",<b/>,<c/>,<d/> がブロックに渡される
+  REXML::XPath.each(doc.root, 'child::node()'){|node| p node }
 

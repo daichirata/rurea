@@ -5,11 +5,11 @@ kind=defined
 --- downto(min) {|n| ... } -> self
 --- downto(min) -> Enumerator
 
-self ¤«¤é min ¤Þ¤Ç 1 ¤º¤Ä¸º¤é¤·¤Ê¤¬¤é¥Ö¥í¥Ã¥¯¤ò·«¤êÊÖ¤·¼Â¹Ô¤·¤Þ¤¹¡£
-self < min ¤Ç¤¢¤ì¤Ð²¿¤â¤·¤Þ¤»¤ó¡£
+self ã‹ã‚‰ min ã¾ã§ 1 ãšã¤æ¸›ã‚‰ã—ãªãŒã‚‰ãƒ–ãƒ­ãƒƒã‚¯ã‚’ç¹°ã‚Šè¿”ã—å®Ÿè¡Œã—ã¾ã™ã€‚
+self < min ã§ã‚ã‚Œã°ä½•ã‚‚ã—ã¾ã›ã‚“ã€‚
 
-@param min   ¿ôÃÍ
-@return      self ¤òÊÖ¤·¤Þ¤¹¡£
+@param min   æ•°å€¤
+@return      self ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Integer#upto]], [[m:Numeric#step]], [[m:Integer#times]]
 

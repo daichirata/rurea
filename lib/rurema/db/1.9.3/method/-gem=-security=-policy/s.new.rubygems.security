@@ -4,7 +4,7 @@ kind=defined
 
 --- new(policy = {}, options = {}) -> Gem::Security::Policy
 
-@param policy ¥â¡¼¥É¤ò»ØÄê¤·¤Ş¤¹¡£
+@param policy ãƒ¢ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param options ¤½¤ÎÂ¾¤Î¥ª¥×¥·¥ç¥ó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param options ãã®ä»–ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

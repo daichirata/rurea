@@ -5,9 +5,9 @@ kind=defined
 --- Windows_1256 -> Encoding
 --- CP1256 -> Encoding
 --- WINDOWS_1256 -> Encoding
-Windows-1256 ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+Windows-1256 ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-Windows¤ÇÍÑ¤¤¤é¤ì¤ë¡¢¥¢¥é¥Ó¥¢Ê¸»ú¤ò°·¤¦ 8bit single-byte ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+Windowsã§ç”¨ã„ã‚‰ã‚Œã‚‹ã€ã‚¢ãƒ©ãƒ“ã‚¢æ–‡å­—ã‚’æ‰±ã† 8bit single-byte ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[m:Encoding::ISO_8859_6]],
      [[url:http://www.iana.org/assignments/character-sets]],

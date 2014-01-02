@@ -4,7 +4,7 @@ kind=defined
 
 --- executables=(executables)
 
-�¹Բ�ǽ�ե�����̾�Υꥹ�Ȥ򥻥åȤ��ޤ���
+実行可能ファイル名のリストをセットします。
 
-@param executables �¹Բ�ǽ�ե�����̾�Υꥹ�Ȥ���ꤷ�ޤ���
+@param executables 実行可能ファイル名のリストを指定します。
 

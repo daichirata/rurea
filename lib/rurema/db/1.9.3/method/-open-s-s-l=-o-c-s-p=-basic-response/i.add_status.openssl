@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- add_status(cid, status, reason, revtime, thisupd, nextupd, exts) -> self
-¾ÚÌÀ½ñ¤Î¾õÂÖ¤ÎÌä¤¤¹ç¤ï¤»¤Î·ë²Ì¤ò¥ª¥Ö¥¸¥§¥¯¥È¤ËÄÉ²Ã¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã®çŠ¶æ…‹ã®å•ã„åˆã‚ã›ã®çµæœã‚’ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚
 
-¾Ü¤·¤¯¤Ï [[m:OpenSSL::OCSP::BasicResponse#status]] ¤ò¸«¤Æ¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ [[m:OpenSSL::OCSP::BasicResponse#status]] ã‚’è¦‹ã¦ãã ã•ã„ã€‚
 
-@param cid Ìä¤¤¹ç¤ï¤»¤Î([[c:OpenSSL::OCSP::CertificateId]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param status ¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É(À°¿ô)
-@param reason ¼º¸úÍıÍ³¥³¡¼¥É(À°¿ô)
-@param revtime ¼º¸ú»ş¹ï([[c:Time]] ¥ª¥Ö¥¸¥§¥¯¥È¤â¤·¤¯¤Ï nil)
-@param thisupd ºÇ½ª¹¹¿·»ş¹ï([[c:Time]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param nextupd ¼¡²ó¹¹¿·»ş¹ï([[c:Time]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param exts  ³ÈÄ¥ÎÎ°è([[c:OpenSSL::X509::Extension]] ¥ª¥Ö¥¸¥§¥¯¥È¤ÎÇÛÎó)
+@param cid å•ã„åˆã‚ã›ã®([[c:OpenSSL::OCSP::CertificateId]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param status ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰(æ•´æ•°)
+@param reason å¤±åŠ¹ç†ç”±ã‚³ãƒ¼ãƒ‰(æ•´æ•°)
+@param revtime å¤±åŠ¹æ™‚åˆ»([[c:Time]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚‚ã—ãã¯ nil)
+@param thisupd æœ€çµ‚æ›´æ–°æ™‚åˆ»([[c:Time]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param nextupd æ¬¡å›æ›´æ–°æ™‚åˆ»([[c:Time]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param exts  æ‹¡å¼µé ˜åŸŸ([[c:OpenSSL::X509::Extension]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é…åˆ—)
 
 

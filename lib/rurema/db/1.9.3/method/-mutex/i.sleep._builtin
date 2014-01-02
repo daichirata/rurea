@@ -4,8 +4,10 @@ kind=defined
 
 --- sleep(timeout = nil)    -> self
 
-Ϳ����줿�ÿ��δ֥��꡼�פ��Ƥ�����å���������ޤ���
+与えられた秒数の間スリープしてからロックを解放します。
 
-@param timeout ���꡼�פ����ÿ�����ꤷ�ޤ�����ά����ȥ��꡼�פ�³���ޤ���
+@param timeout スリープする秒数を指定します。省略するとスリープし続けます。
 
-@raise ThreadError ���Ȥ������ȥ���åɤˤ�äƥ��å�����Ƥ��ʤ�����ȯ�����ޤ���
+@raise ThreadError 自身がカレントスレッドによってロックされていない場合に発生します。
+
+

@@ -5,29 +5,29 @@ kind=defined
 --- cp(src, dest, options = {})   -> ()
 --- copy(src, dest, options = {}) -> ()
 
-�ե����� src �� dest �˥��ԡ����ޤ���
+ファイル src を dest にコピーします。
 
-src �˥ե����뤬��Ĥ���Ϳ����줿��硢
-dest ���ǥ��쥯�ȥ�ʤ�dest/src �˥��ԡ����ޤ���
-dest ������¸�ߤ�������ǥ��쥯�ȥ�Ǥʤ��Ȥ��Ͼ�񤭤��ޤ���
+src にファイルが一つだけ与えられた場合、
+dest がディレクトリならdest/src にコピーします。
+dest が既に存在ししかもディレクトリでないときは上書きします。
 
-src �˥ե����뤬ʣ��Ϳ����줿��硢
-file1 �� dest/file1 �˥��ԡ���file2 �� dest/file2 �˥��ԡ���
-�Ȥ����褦�ˡ��ǥ��쥯�ȥ� dest ����˥ե����� file1��file2 �Ĥ�
-Ʊ��̾���ǥ��ԡ����ޤ���dest ���ǥ��쥯�ȥ�Ǥʤ������㳰
-[[c:Errno::ENOTDIR]] ��ȯ�����ޤ���
+src にファイルが複数与えられた場合、
+file1 を dest/file1 にコピー、file2 を dest/file2 にコピー、
+というように、ディレクトリ dest の中にファイル file1、file2 …を
+同じ名前でコピーします。dest がディレクトリでない場合は例外
+[[c:Errno::ENOTDIR]] が発生します。
 
-@param src ���ԡ�������Ĥξ���ʸ����Ǥ�����ǽ�Ǥ���
-           ��İʾ���ꤹ���������ǻ��ꤷ�ޤ���
+@param src コピー元。一つの場合は文字列でも指定可能です。
+           二つ以上指定する場合は配列で指定します。
 
-@param dest ���ԡ���Υե����뤫�ǥ��쥯�ȥ�Ǥ���
+@param dest コピー先のファイルかディレクトリです。
 
-@param options :preserve, :noop, :verbose ������Ǥ��ޤ���
+@param options :preserve, :noop, :verbose が指定できます。
                [[ref:c:FileUtils#options]]
 
-@raise Errno::ENOTDIR src ��ʣ���Υե����뤫�ġ�dest ���ǥ��쥯�ȥ�Ǥʤ�����ȯ�����ޤ���
+@raise Errno::ENOTDIR src が複数のファイルかつ、dest がディレクトリでない場合に発生します。
 
-��:
+例:
 
   FileUtils.cp 'eval.c', 'eval.c.org'
   FileUtils.cp(['cgi.rb', 'complex.rb', 'date.rb'], '/usr/lib/ruby/1.8')

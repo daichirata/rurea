@@ -5,9 +5,9 @@ kind=defined
 --- imag      -> 0
 --- imaginary -> 0
 
-��� 0 ���֤��ޤ���
+常に 0 を返します。
 
-Numeric �Υ��֥��饹�ϡ����Υ᥽�åɤ�Ŭ�ڤ˺�������ʤ���Фʤ�ޤ���
+Numeric のサブクラスは、このメソッドを適切に再定義しなければなりません。
 
-@see [[m:Numeric#real]]��[[m:Complex#imag]]
+@see [[m:Numeric#real]]、[[m:Complex#imag]]
 

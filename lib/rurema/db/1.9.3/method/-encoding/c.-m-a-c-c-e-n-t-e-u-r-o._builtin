@@ -4,11 +4,11 @@ kind=defined
 
 --- MacCentEuro -> Encoding
 --- MACCENTEURO -> Encoding
-MacCentEuro ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+MacCentEuro ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-Mac OS¤Ç»È¤ï¤ì¤ë
-8bit single-byte¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¡¢
-Ãæ²¤¤ª¤è¤ÓÆîÅì²¤¤Î¸À¸ì¤ò¼è¤ê°·¤¦¤â¤Î¤Ç¤¹¡£
+Mac OSã§ä½¿ã‚ã‚Œã‚‹
+8bit single-byteã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã€
+ä¸­æ¬§ãŠã‚ˆã³å—æ±æ¬§ã®è¨€èªã‚’å–ã‚Šæ‰±ã†ã‚‚ã®ã§ã™ã€‚
 
 @see [[url:http://en.wikipedia.org/wiki/Macintosh_Central_European_encoding]]
 

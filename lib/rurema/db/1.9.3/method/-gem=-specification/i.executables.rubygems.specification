@@ -4,5 +4,5 @@ kind=defined
 
 --- executables -> [String]
 
-�¹Բ�ǽ�ե�����̾�Υꥹ�Ȥ��֤��ޤ���
+実行可能ファイル名のリストを返します。
 

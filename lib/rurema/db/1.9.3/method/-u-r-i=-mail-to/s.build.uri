@@ -5,18 +5,18 @@ kind=defined
 --- build(ary)     -> URI::MailTo 
 --- build(hash)    -> URI::MailTo 
 
-°ú¿ô¤ÇÍ¿¤¨¤é¤ì¤¿ URI ¹½À®Í×ÁÇ¤«¤é URI::MailTo ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
-°ú¿ô¤ÎÀµÅöÀ­¤ò¥Á¥§¥Ã¥¯¤·¤Þ¤¹¡£
+å¼•æ•°ã§ä¸Žãˆã‚‰ã‚ŒãŸ URI æ§‹æˆè¦ç´ ã‹ã‚‰ URI::MailTo ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+å¼•æ•°ã®æ­£å½“æ€§ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
 
-@param ary ¹½À®Í×ÁÇ¤ò
+@param ary æ§‹æˆè¦ç´ ã‚’
       [to, headers]
-¤È¤¤¤¦Ê¸»úÎó¤ÎÇÛÎó¤ÇÍ¿¤¨¤Þ¤¹¡£headers ¤Ï¡¢°Ê²¼¤Î¤è¤¦¤ÊÊ¸»úÎó¤«ÇÛÎó¤Ç
-Í¿¤¨¤Þ¤¹¡£
+ã¨ã„ã†æ–‡å­—åˆ—ã®é…åˆ—ã§ä¸Žãˆã¾ã™ã€‚headers ã¯ã€ä»¥ä¸‹ã®ã‚ˆã†ãªæ–‡å­—åˆ—ã‹é…åˆ—ã§
+ä¸Žãˆã¾ã™ã€‚
   "subject=subscribe&cc=addr"
   
   [["subject", "subscribe"], ["cc", "addr"]]
 
-@param hash ¹½À®Í×ÁÇ¤ò¥Ï¥Ã¥·¥å¤ÇÍ¿¤¨¤Þ¤¹¡£¥Ï¥Ã¥·¥å¤Î¥­¡¼¤Ï :to, :headers ¤Ç¤¹¡£¥Ï¥Ã¥·¥å¤ÎÃÍ¤Ï ary ¤ÈÆ±ÍÍ¤Ç¤¹¡£
+@param hash æ§‹æˆè¦ç´ ã‚’ãƒãƒƒã‚·ãƒ¥ã§ä¸Žãˆã¾ã™ã€‚ãƒãƒƒã‚·ãƒ¥ã®ã‚­ãƒ¼ã¯ :to, :headers ã§ã™ã€‚ãƒãƒƒã‚·ãƒ¥ã®å€¤ã¯ ary ã¨åŒæ§˜ã§ã™ã€‚
 
-@raise URI::InvalidComponentError ÉÔÀµ¤Ê°ú¿ô¤ËÂÐ¤·¤ÆÈ¯À¸¤·¤Þ¤¹¡£
+@raise URI::InvalidComponentError ä¸æ­£ãªå¼•æ•°ã«å¯¾ã—ã¦ç™ºç”Ÿã—ã¾ã™ã€‚
 

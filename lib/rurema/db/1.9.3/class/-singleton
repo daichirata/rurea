@@ -6,19 +6,19 @@ library=singleton
 aliases=
 aliasof=
 
-Singleton �ѥ�������󶡤���⥸�塼��Ǥ���
+Singleton パターンを提供するモジュールです。
 
-Mix-in �ˤ�� singleton �ѥ�������󶡤��ޤ���
+Mix-in により singleton パターンを提供します。
 
-Singleton �⥸�塼��� include ���뤳�Ȥˤ�ꡢ���饹��
-�⡹�ҤȤĤΥ��󥹥��󥹤��������ʤ����Ȥ��ݾڤ���ޤ���
+Singleton モジュールを include することにより、クラスは
+高々ひとつのインスタンスしか持たないことが保証されます。
 
-Singleton �� Mix-in �������饹��
-���饹�᥽�å� instance �Ϥ���ͣ��Υ��󥹥��󥹤��֤��ޤ���
+Singleton を Mix-in したクラスの
+クラスメソッド instance はその唯一のインスタンスを返します。
 
-new �� private �᥽�åɤ˰ܤ��졢��������ƤӽФ����Ȥ���ȥ��顼�ˤʤ�ޤ���
+new は private メソッドに移され、外部から呼び出そうとするとエラーになります。
 
-=== ����ץ륳����
+=== サンプルコード
 
   require 'singleton'
   class SomeSingletonClass

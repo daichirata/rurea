@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- unused_bits -> Integer | nil
-Bit String¤ËÀßÄê¤µ¤ì¤¿¥Õ¥é¥°¤òÊÖ¤·¤Ş¤¹¡£
+Bit Stringã«è¨­å®šã•ã‚ŒãŸãƒ•ãƒ©ã‚°ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::ASN1::BitString#unused_bits=]]

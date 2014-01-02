@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- subdomain_of?(other) -> bool
-other ¤¬ self ¤Î¥µ¥Ö¥É¥á¥¤¥ó¤Ç¤¢¤ë¤«¤É¤¦¤«¤òÊÖ¤·¤Ş¤¹¡£
+other ãŒ self ã®ã‚µãƒ–ãƒ‰ãƒ¡ã‚¤ãƒ³ã§ã‚ã‚‹ã‹ã©ã†ã‹ã‚’è¿”ã—ã¾ã™ã€‚
 
-=== Îã
+=== ä¾‹
   domain = Resolv::DNS::Name.create("y.z")
   p Resolv::DNS::Name.create("w.x.y.z").subdomain_of?(domain) #=> true
   p Resolv::DNS::Name.create("x.y.z").subdomain_of?(domain) #=> true

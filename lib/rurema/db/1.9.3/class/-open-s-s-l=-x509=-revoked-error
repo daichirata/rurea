@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-[[c:OpenSSL::X509::Revoked]] ´ØÏ¢¤Î¥¨¥é¡¼¤¬À¸¤¸¤¿¤È¤­¤ËÈ¯À¸¤·¤Ş¤¹¡£
+[[c:OpenSSL::X509::Revoked]] é–¢é€£ã®ã‚¨ãƒ©ãƒ¼ãŒç”Ÿã˜ãŸã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚

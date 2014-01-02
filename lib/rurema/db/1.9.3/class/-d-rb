@@ -6,4 +6,4 @@ library=drb
 aliases=
 aliasof=
 
-
+drb ライブラリの名前空間となるモジュール。

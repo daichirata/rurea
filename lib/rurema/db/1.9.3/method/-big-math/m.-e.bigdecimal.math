@@ -1,16 +1,16 @@
 names=E
 visibility=public
-kind=defined
+kind=added
 
 --- E(prec) -> BigDecimal
 
-¼«Á³ÂĞ¿ô¤ÎÄì e ¤ò prec ¤Ç»ØÄê¤·¤¿ÀºÅÙ¤Ç·×»»¤·¤Ş¤¹¡£
+è‡ªç„¶å¯¾æ•°ã®åº• e ã‚’ prec ã§æŒ‡å®šã—ãŸç²¾åº¦ã§è¨ˆç®—ã—ã¾ã™ã€‚
 
-@param prec ·×»»·ë²Ì¤ÎÀºÅÙ¡£
+@param prec è¨ˆç®—çµæœã®ç²¾åº¦ã€‚
 
-@raise ArgumentError prec ¤Ë 0 °Ê²¼¤¬»ØÄê¤µ¤ì¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise ArgumentError prec ã« 0 ä»¥ä¸‹ãŒæŒ‡å®šã•ã‚ŒãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
 
   require "bigdecimal/math"

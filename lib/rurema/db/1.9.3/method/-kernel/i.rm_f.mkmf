@@ -4,10 +4,10 @@ kind=added
 
 --- rm_f(*files) -> ()
 
-[[m:FileUtils.#rm_f]] �Υ�åѡ��᥽�åɤǤ���
+[[m:FileUtils.#rm_f]] のラッパーメソッドです。
 
-@param files �ե�����Υꥹ�Ȥ���[[m:Dir.glob]]�����ѤǤ��� glob �ѥ��������ꤷ�ޤ���
-             �Ǹ�����Ǥ� [[c:Hash]] �ξ��� [[m:FileUtils.#rm_f]] ����������ˤʤ�ޤ���
+@param files ファイルのリストか、[[m:Dir.glob]]で利用できる glob パターンを指定します。
+             最後の要素が [[c:Hash]] の場合は [[m:FileUtils.#rm_f]] の第二引数になります。
 
 @see [[m:FileUtils.#rm_f]], [[m:Dir.glob]]
 

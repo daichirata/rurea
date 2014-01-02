@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- DEFAULT_CERT_FILE -> String
-�ǥե���Ȥ� CA ������ե�����̾�Ǥ���
+デフォルトの CA 証明書ファイル名です。
 
-[[m:OpenSSL::X509::Store#set_default_paths]] ���ɤ߹��ޤ�ޤ���
+[[m:OpenSSL::X509::Store#set_default_paths]] で読み込まれます。
 
-[[m:OpenSSL::X509::DEFAULT_CERT_FILE_ENV]] ��������Ķ��ѿ���ä�
-��񤭲�ǽ�Ǥ���
+[[m:OpenSSL::X509::DEFAULT_CERT_FILE_ENV]] で得られる環境変数よって
+上書き可能です。
 
 

@@ -4,8 +4,8 @@ kind=defined
 
 --- syck? -> bool
 
-[[lib:syck]] �饤�֥��������ξ��� true ���֤��ޤ�������ʳ��ξ��
-�� false ���֤��ޤ���
+[[lib:syck]] ライブラリを使用中の場合に true を返します。それ以外の場合
+は false を返します。
 
   require "psych"
   require "yaml"

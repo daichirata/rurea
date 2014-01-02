@@ -4,5 +4,5 @@ kind=defined
 
 --- fsync -> 0 | nil
 
-[[m:IO#fsync]] �˰Ѿ����ޤ���
+[[m:IO#fsync]] に委譲します。
 

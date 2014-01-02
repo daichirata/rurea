@@ -2,9 +2,12 @@ names=to_f
 visibility=public
 kind=defined
 
---- to_f
-@todo
+--- to_f -> Float
 
-[[c:Float]] ���֥������Ȥ��Ѵ����ޤ���
-��꤭��٤����ͤ�ɬ�פʤ�� [[m:BigDecimal#split]] �᥽�åɤ����Ѥ��Ƥ��������� 
+self の近似値を表す [[c:Float]] オブジェクトに変換します。
+
+仮数部や指数部の情報が必要な場合は、[[m:BigDecimal#split]] メソッドを利
+用してください。
+
+@see [[m:BigDecimal#split]]
 

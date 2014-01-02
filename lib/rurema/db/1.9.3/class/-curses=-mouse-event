@@ -6,18 +6,18 @@ library=curses
 aliases=
 aliasof=
 
-�ޥ����ΰ��֤���֤ʤɤξ����������뤿��Υ��饹�Ǥ���
-ncurses �����Ѥ��� curses �饤�֥��򥤥󥹥ȡ��뤷�����ˤ�����
-�ܥ��饹���������Ƥ��ޤ���
+マウスの位置や状態などの情報を取得するためのクラスです。
+ncurses を利用して curses ライブラリをインストールした場合にだけ、
+本クラスが定義されています。
 
-�ܥ��饹�Υ��󥹥��󥹤�ľ���������뤳�ȤϤǤ��ޤ���
-[[m:Curses.#getmouse]] ���������ޤ���
+本クラスのインスタンスを直接生成することはできません。
+[[m:Curses.#getmouse]] で生成します。
 
-�ʤ���ncurses �ǥޥ����Υ��٥�Ȥ�����Ǥ���褦�ˤ���ˤϡ�
-�����Ĥ��ξ�郎ɬ�פʤ褦�Ǥ���
-�ܤ����� man �ڡ����� curs_mouse(3X) �� BUGS �򻲾Ȥ���������
+なお、ncurses でマウスのイベントを取得できるようにするには、
+いくつかの条件が必要なようです。
+詳しくは man ページの curs_mouse(3X) の BUGS を参照ください。
 
-��: ����å��������֤ʤɤ�������롣
+例: クリックした位置などを取得する。
 
   require "curses"
   

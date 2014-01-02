@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- logout -> Net::IMAP::TaggedResponse
-LOGOUT ���ޥ�ɤ����ꡢ���ͥ����������Ǥ��뤳�Ȥ�
-�����Ф������ޤ���
+LOGOUT コマンドを送り、コネクションを切断することを
+サーバに伝えます。
 

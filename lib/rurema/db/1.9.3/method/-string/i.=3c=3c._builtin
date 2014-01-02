@@ -5,15 +5,15 @@ kind=defined
 --- <<(other) -> self
 --- concat(other) -> self
 
-self ��ʸ���� other ���˲�Ū��Ϣ�뤷�ޤ���
-other �� 0 ���� 255 �ΤޤǤ������Ǥ������
-���� 1 �Х��Ȥ��������ɲä��ޤ� (�Ĥޤꡢ���������� ASCII �����ɤ�ʸ�����ɲä���ޤ�)��
+self に文字列 other を破壊的に連結します。
+other が 0 から 255 のまでの整数である場合は
+その 1 バイトを末尾に追加します (つまり、整数が示す ASCII コードの文字が追加されます)。
 
-self ���֤��ޤ���
+self を返します。
 
-@param other    ʸ����⤷���� 0 ���� 255 �ޤǤ��ϰϤ�����
+@param other    文字列もしくは 0 から 255 までの範囲の整数
 
-��:
+例:
 
     str = "string"
     str.concat "XXX"
@@ -22,7 +22,7 @@ self ���֤��ޤ���
     str << "YYY"
     p str    # => "stringXXXYYY"
 
-    str << 56  # ʸ��A��ASCII������
+    str << 65  # 文字AのASCIIコード
     p str    # => "stringXXXYYYA"
 
 

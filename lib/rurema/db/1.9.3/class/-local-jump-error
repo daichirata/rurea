@@ -6,8 +6,8 @@ library=_builtin
 aliases=
 aliasof=
 
-¤¢¤ë [[c:Proc]] ¥ª¥Ö¥¸¥§¥¯¥È¤ÎºîÀ®¸µ¥¹¥³¡¼¥×¤¬¤¹¤Ç¤Ë½ªÎ»¤·¤Æ¤¤¤ë¤È¤­¡¢
-¤½¤Î [[c:Proc]] ¥ª¥Ö¥¸¥§¥¯¥ÈÆâ¤Ç
-return, break, retry ¤Î¤¤¤º¤ì¤«¤ò¼Â¹Ô¤¹¤ë¤ÈÈ¯À¸¤·¤Þ¤¹¡£
+ã‚ã‚‹ [[c:Proc]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ä½œæˆå…ƒã‚¹ã‚³ãƒ¼ãƒ—ãŒã™ã§ã«çµ‚äº†ã—ã¦ã„ã‚‹ã¨ãã€
+ãã® [[c:Proc]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå†…ã§
+return, break, retry ã®ã„ãšã‚Œã‹ã‚’å®Ÿè¡Œã™ã‚‹ã¨ç™ºç”Ÿã—ã¾ã™ã€‚
 
-[[c:Proc]] ¤ÎÎã¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[c:Proc]] ã®ä¾‹ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚

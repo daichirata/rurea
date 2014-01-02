@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- mountpoint? -> bool
-self ���ޥ���ȥݥ���ȤǤ���п����֤��ޤ���
+self がマウントポイントであれば真を返します。
 

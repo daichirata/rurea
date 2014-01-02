@@ -3,9 +3,9 @@ visibility=public
 kind=added
 
 --- ssl_timeout -> Integer | nil
-SSL/TLS д╬е┐едеревеже╚╔├┐ЇдЄ╩╓д╖д▐д╣бг
+SSL/TLS уБоуВ┐уВдуГауВвуВжуГИчзТцХ░уВТш┐ФуБЧуБ╛уБЩуАВ
 
-└▀─ъд╡дьд╞ддд╩дд╛ь╣чд╧ nil дЄ╩╓д╖д▐д╣бг
+шинхоЪуБХуВМуБжуБДуБкуБДха┤хРИуБп nil уВТш┐ФуБЧуБ╛уБЩуАВ
 
 @see [[m:Net::HTTP#ssl_timeout=]],
      [[m:OpenSSL::SSL::SSLContext#ssl_timeout]]

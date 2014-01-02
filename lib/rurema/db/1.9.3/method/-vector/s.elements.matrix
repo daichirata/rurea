@@ -4,13 +4,13 @@ kind=defined
 
 --- elements(a, copy = true) -> Vector
 
-ÇÛÎó a ¤òÍ×ÁÇ¤È¤¹¤ë¥Ù¥¯¥È¥ë¤òÀ¸À®¤·¤Þ¤¹¡£
-¤¿¤À¤·¡¢¥ª¥×¥·¥ç¥ó°ú¿ô copy ¤¬µ¶ (false) ¤Ê¤é¤Ð¡¢Ê£À½¤ò¹Ô¤¤¤Þ¤»¤ó¡£
+é…åˆ— a ã‚’è¦ç´ ã¨ã™ã‚‹ãƒ™ã‚¯ãƒˆãƒ«ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+ãŸã ã—ã€ã‚ªãƒ—ã‚·ãƒ§ãƒ³å¼•æ•° copy ãŒå½ (false) ãªã‚‰ã°ã€è¤‡è£½ã‚’è¡Œã„ã¾ã›ã‚“ã€‚
 
-@param a     [[c:Vector]]¤òÀ¸À®¤¹¤ëºÝ¤ÎÍ×ÁÇ¤ÎÇÛÎó
-@param copy  °ú¿ô¤ÎÇÛÎó a ¤Î¥³¥Ô¡¼¤ò¤¹¤ë¤«¤É¤¦¤«¤Î¥Õ¥é¥°
+@param a     [[c:Vector]]ã‚’ç”Ÿæˆã™ã‚‹éš›ã®è¦ç´ ã®é…åˆ—
+@param copy  å¼•æ•°ã®é…åˆ— a ã®ã‚³ãƒ”ãƒ¼ã‚’ã™ã‚‹ã‹ã©ã†ã‹ã®ãƒ•ãƒ©ã‚°
 
-Îã:
+ä¾‹:
 
   a = [1, 2, 3, 4]
   v1 = Vector.elements(a, true)

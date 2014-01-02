@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- VT_UINT -> Integer
-���ʤ�������unsigned int�ˤ򼨤��ޤ���23�ˡ�
+符号なし整数（unsigned int）を示します（23）。
 
-OLE�����ȥ᡼�����Ǥ����ѤǤ��ޤ��������VT_I4�����Ѥ��Ƥ���������
+OLEオートメーションでは利用できません。代わりにVT_I4を利用してください。
 

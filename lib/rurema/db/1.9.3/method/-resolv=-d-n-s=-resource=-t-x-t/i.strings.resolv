@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- strings -> [String]
-TXT �쥳���ɤ�ʸ�����������֤��ޤ���
+TXT レコードの文字列を配列で返します。
 
 

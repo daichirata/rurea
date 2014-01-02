@@ -1,2 +1,0 @@
-.def_notifier	IRB::Notifier.#def_notifier
-#def_notifier	IRB::Notifier.#def_notifier

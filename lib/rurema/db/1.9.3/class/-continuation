@@ -6,26 +6,26 @@ library=continuation
 aliases=
 aliasof=
 
-��³��ɽ�����饹�Ǥ���
+継続を表すクラスです。
 
-[[m:Kernel.#callcc]] { |cont| ... } �θƤӽФ�
-�ϡ�ľ���ξ���(���������ѿ�������������å��ե졼��)�� cont �˵���
-���ƥ֥��å���¹Ԥ��ޤ���cont �ϡ�Continuation ���饹�Υ��󥹥�
-�󥹤ǡ�[[m:Continuation#call]] �᥽�åɤ�¹Ԥ��뤳
-�ȤǤ��ĤǤ⵭���������֤��³���뤳�Ȥ��Ǥ��ޤ���
+[[m:Kernel.#callcc]] { |cont| ... } の呼び出し
+は、直前の状態(ローカル変数の定義、スタックフレーム)を cont に記憶
+してブロックを実行します。cont は、Continuation クラスのインスタ
+ンスで、[[m:Continuation#call]] メソッドを実行するこ
+とでいつでも記憶した状態を継続することができます。
 
-C ����� setjmp()/longjmp() ���狼��ͤ�
+C 言語の setjmp()/longjmp() がわかる人は
   setjmp() == callcc {|c| }
   longjmp() == c.call
-�ȹͤ���С��狼��䤹�������Τ�ޤ���(��������callcc �ϥ����å�������
-�ʤ������ˤ⥸���׽����Ȥ����㤤������ޤ�)
+と考えれば、わかりやすいかも知れません(ただし、callcc はスタックが深く
+なる方向にもジャンプ出来るという違いがあります)
 
-callcc() �ϡ��֥��å�������ͤ��֤��ޤ�����Continuation#call(args)
-���ƤӽФ��줿�Ȥ��� args ���֤��ޤ���
+callcc() は、ブロックの戻り値を返しますが、Continuation#call(args)
+が呼び出されたときは args を返します。
 
-��:
+例:
 
-  �ʲ��ϡ�Continuation�ˤ��̵�¥롼�פ���
+  以下は、Continuationによる無限ループの例
   
   def LOOP
     c = nil
@@ -42,4 +42,4 @@ callcc() �ϡ��֥��å�������ͤ��֤��ޤ�����Continuation#call(args)
        :
        :
 
-callcc �Ȥϡ�call-with-current-continuation ��ά�Ǥ���
+callcc とは、call-with-current-continuation の略です。

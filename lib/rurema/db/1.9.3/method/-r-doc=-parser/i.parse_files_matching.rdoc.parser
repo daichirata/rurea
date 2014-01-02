@@ -4,14 +4,14 @@ kind=defined
 
 --- parse_files_matching(regexp) -> ()
 
-regexp �ǻ��ꤷ������ɽ���˥ޥå�����ե��������ϤǤ���ѡ����Ȥ��ơ�
-���Ȥ���Ͽ���ޤ���
+regexp で指定した正規表現にマッチするファイルを解析できるパーサとして、
+自身を登録します。
 
-@param regexp ����ɽ������ꤷ�ޤ���
+@param regexp 正規表現を指定します。
 
-�������ѡ��������������˻��Ѥ��ޤ���
+新しいパーサを作成する時に使用します。
 
-��:
+例:
 
   class RDoc::Parser::Xyz < RDoc::Parser
     parse_files_matching /\.xyz$/

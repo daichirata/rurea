@@ -4,8 +4,8 @@ kind=defined
 
 --- key?(name)     -> bool
 
-name ���б���������åɤ˸�ͭ�Υǡ������������Ƥ����
-true ���֤��ޤ���
+name に対応したスレッドに固有のデータが定義されていれば
+true を返します。
 
-@param name ʸ���� [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param name 文字列か [[c:Symbol]] で指定します。
 

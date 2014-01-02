@@ -3,5 +3,6 @@ classes=ERB,ERB=Util,ERB=DefMethod
 methods=
 sublibraries=
 is_sublibrary=false
+category=Text
 
-eRuby ¥¹¥¯¥ê¥×¥È¤ò°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+eRuby ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

@@ -4,9 +4,9 @@ kind=defined
 
 --- run(options) -> Gem::Server
 
-Ϳ����줿���ץ�������Ѥ��ƥ����Ф�ư���ޤ���
+与えられたオプションを使用してサーバを起動します。
 
-@param options ���ץ�����ɽ���ϥå������ꤷ�ޤ����ޤޤ�륭���� :gemdir, :port, :daemon �Ǥ���
+@param options オプションを表すハッシュを指定します。含まれるキーは :gemdir, :port, :daemon です。
 
 @see [[m:Gem::Server.new]]
 

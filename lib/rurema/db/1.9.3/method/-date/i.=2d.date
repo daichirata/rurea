@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- - (x) -> Rational | Date
-x �����ե��֥������Ȥʤ顢�դ��Ĥκ����֤��ޤ���
-���뤤��
-x �����ͤʤ�С�self ��� x ���������դ��֤��ޤ���
+x が日付オブジェクトなら、ふたつの差を返します。
+あるいは
+x が数値ならば、self より x 日前の日付を返します。
 
-@param x ���������뤤�����ե��֥�������
-@raise TypeError x �����ͤǤ����ե��֥������ȤǤ�ʤ�����ȯ�����ޤ���
+@param x 日数、あるいは日付オブジェクト
+@raise TypeError x が数値でも日付オブジェクトでもない場合に発生します。
 

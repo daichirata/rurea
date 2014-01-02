@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- prev_month(n = 1) -> Date
-n ¥ö·îÁ°¤òÊÖ¤·¤Þ¤¹¡£
+n ãƒ¶æœˆå‰ã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:Date#<<]] ¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:Date#<<]] ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param n ·î¿ô
+@param n æœˆæ•°
 

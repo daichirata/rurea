@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- options=(options)
-еке╫е╖ечеєдЄ└▀─ъд╖д▐д╣бг
+уВкуГЧуВ╖уГзуГ│уВТшинхоЪуБЧуБ╛уБЩуАВ
 
-░╩▓╝д╬├═д╬ OR д╟╗╪─ъд╖д▐д╣бг
+ф╗еф╕ЛуБохАдуБо OR уБзцМЗхоЪуБЧуБ╛уБЩуАВ
   * [[m:OpenSSL::SSL::OP_ALL]]
   * [[m:OpenSSL::SSL::OP_CIPHER_SERVER_PREFERENCE]]
   * [[m:OpenSSL::SSL::OP_EPHEMERAL_RSA]]
@@ -22,6 +22,6 @@ kind=defined
   * [[m:OpenSSL::SSL::OP_SINGLE_ECDH_USE]]
   * [[m:OpenSSL::SSL::OP_TLS_ROLLBACK_BUG]]
 
-@param options └▀─ъд╣дыеке╫е╖ечеєе╒еще░(└░┐Ї├═)
+@param options шинхоЪуБЩуВЛуВкуГЧуВ╖уГзуГ│уГХуГйуВ░(цХ┤цХ░хАд)
 @see [[m:OpenSSL::SSL::SSLContext#options]]
 

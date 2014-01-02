@@ -6,18 +6,18 @@ kind=defined
 --- open(string = '', mode = 'r+')                -> StringIO
 --- open(string = '', mode = 'r+') {|io| ... }    -> StringIO
 
-StringIO ���֥������Ȥ����������֤��ޤ���
+StringIO オブジェクトを生成して返します。
 
-Ϳ����줿 string ���ե꡼������Ƥ�����ˤϡ�mode �ϥǥե���ȤǤ��ɤ߼��Τߤ����ꤵ��ޤ���
-�֥��å���Ϳ���������������� StringIO ���֥������Ȥ�����Ȥ��ƥ֥��å���ɾ�����ޤ���
+与えられた string がフリーズされている場合には、mode はデフォルトでは読み取りのみに設定されます。
+ブロックを与えた場合は生成した StringIO オブジェクトを引数としてブロックを評価します。
 
-@param string ��������� StringIO �Υǡ�����ʸ����ǻ��ꤷ�ޤ���
-              ����ʸ����ϥХåե��Ȥ��ƻȤ��ޤ���[[m:StringIO#write]] �ʤɤˤ�äơ�
-              string ���Ȥ�񤭴������ޤ���
+@param string 生成される StringIO のデータを文字列で指定します。
+              この文字列はバッファとして使われます。[[m:StringIO#write]] などによって、
+              string 自身も書き換えられます。
 
-@param mode [[m:Kernel.#open]] Ʊ��ʸ���������ǻ��ꤷ�ޤ���
+@param mode [[m:Kernel.#open]] 同様文字列か整数で指定します。
 
-@raise Errno::EACCES string ���ե꡼������Ƥ��ơ�mode ���񤭹��߲�ǽ�����ꤵ��Ƥ������ȯ�����ޤ���
+@raise Errno::EACCES string がフリーズされていて、mode が書き込み可能に設定されている場合に発生します。
 
         require 'stringio'
          

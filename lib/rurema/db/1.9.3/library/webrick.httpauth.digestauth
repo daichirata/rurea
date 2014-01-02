@@ -3,5 +3,6 @@ classes=WEBrick=HTTPAuth=DigestAuth,WEBrick=HTTPAuth=ProxyDigestAuth
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-HTTP ¤Î Digest Ç§¾Ú¤Î¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+HTTP ã® Digest èªè¨¼ã®ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

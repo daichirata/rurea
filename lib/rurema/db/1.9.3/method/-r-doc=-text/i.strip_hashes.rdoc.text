@@ -4,7 +4,7 @@ kind=defined
 
 --- strip_hashes(text) -> String
 
-��������ƹԤι�Ƭ�� # �������ޤ���
+引数から各行の行頭の # を削除します。
 
-@param text ʸ�������ꤷ�ޤ���
+@param text 文字列を指定します。
 

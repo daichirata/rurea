@@ -9,5 +9,5 @@ event the given state data and screen-relative character-cell coordinates.
 
 The Curses.ungetmouse function behaves analogously to Curses.ungetch.
 
-@param mevent ÆşÎÏ¥­¥å¡¼¤ËÌá¤¹¥Ş¥¦¥¹¥¤¥Ù¥ó¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param mevent å…¥åŠ›ã‚­ãƒ¥ãƒ¼ã«æˆ»ã™ãƒã‚¦ã‚¹ã‚¤ãƒ™ãƒ³ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

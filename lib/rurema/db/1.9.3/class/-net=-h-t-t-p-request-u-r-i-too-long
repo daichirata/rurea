@@ -6,6 +6,6 @@ library=net.http
 aliases=Net=HTTPRequestURITooLarge
 aliasof=
 
-HTTP �쥹�ݥ� 414 (Request-URI Too Large) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 414 (Request-URI Too Large) を表現するクラスです。
 
-�ܤ����� [[RFC:2616]] �򸫤Ƥ���������
+詳しくは [[RFC:2616]] を見てください。

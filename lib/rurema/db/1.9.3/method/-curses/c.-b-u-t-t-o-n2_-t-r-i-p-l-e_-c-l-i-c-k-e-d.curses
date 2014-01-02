@@ -4,7 +4,7 @@ kind=defined
 
 --- BUTTON2_TRIPLE_CLICKED -> Integer
 
-�ޥ����ܥ��� 2 ��ȥ�ץ륯��å��������Ȥ�ɽ���ޥ������٥���Ѥ�����Ǥ���
+マウスボタン 2 をトリプルクリックしたことを表すマウスイベント用の定数です。
 
 @see [[m:Curses.getmouse]]
 

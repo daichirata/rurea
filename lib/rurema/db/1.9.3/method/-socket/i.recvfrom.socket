@@ -2,17 +2,21 @@ names=recvfrom
 visibility=public
 kind=defined
 
---- recvfrom(maxlen[, flags]) -> Array
+--- recvfrom(maxlen, flags=0) -> [String, Addrinfo]
 
-recv ��Ʊ�ͤ˥����åȤ���ǡ�����������ޤ�����
-����ͤ�ʸ�������꥽���åȤΥ��ɥ쥹�Υڥ��Ǥ��������ˤĤ�
-�Ƥ� recv ��Ʊ�ͤǤ���
+ソケットからデータを受け取ります。
 
-@param maxlen  the number of bytes to receive from the socket
+[[m:Socket#recv]] と同様ですが、返り値として
+データ文字列と相手ソケットのアドレスのペアが返されます。
 
-@param flags   zero or more of the +MSG_+ options 
+flags には Socket::MSG_* という定数の bitwise OR を渡します。
+詳しくは [[man:recvfrom(2)]] を参照してください。
 
-��:
+@param maxlen ソケットから受けとるデータの最大値
+@param flags フラグ
+@raise Errno::EXXX [[man:recvfrom(2)]] がエラーを報告した場合に発生します。詳しくは
+       Errno と man を見てください。
+例:
 
   s1 = Socket.new(Socket::AF_INET, Socket::SOCK_DGRAM, 0)
   s2 = Socket.new(Socket::AF_INET, Socket::SOCK_DGRAM, 0)

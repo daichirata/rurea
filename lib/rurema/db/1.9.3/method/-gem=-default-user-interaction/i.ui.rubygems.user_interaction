@@ -4,7 +4,7 @@ kind=defined
 
 --- ui -> Gem::ConsoleUI
 
-¥Ç¥Õ¥©¥ë¥È¤Î UI ¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã® UI ã‚’è¿”ã—ã¾ã™ã€‚
 
-@see [[m:Gem::DefaultUserInteraction.#ui]]
+@see [[m:Gem::DefaultUserInteraction.ui]]
 

@@ -1,7 +1,0 @@
-requires=
-classes=RDoc=Require
-methods=
-sublibraries=
-is_sublibrary=true
-
-[[c:RDoc::Require]] を定義するサブライブラリです。

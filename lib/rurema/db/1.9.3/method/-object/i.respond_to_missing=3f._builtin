@@ -4,18 +4,20 @@ kind=defined
 
 --- respond_to_missing?(symbol, include_private) -> bool
 
-¼«¿È¤¬ symbol ¤ÇÉ½¤µ¤ì¤ë¥á¥½¥Ã¥É¤ËÂĞ¤· [[m:Object#method_missing]] ¤Ç
-È¿±ş¤¹¤ë¤Ä¤â¤ê¤Ê¤é¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ãŒ symbol ã§è¡¨ã•ã‚Œã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã«å¯¾ã—
+[[m:BasicObject#method_missing]] ã§åå¿œã™ã‚‹ã¤ã‚‚ã‚Šãªã‚‰ã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:Object#respond_to?]] ¤Ï¥á¥½¥Ã¥É¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹ç¡¢
-¥Ç¥Õ¥©¥ë¥È¤Ç¤³¤Î¥á¥½¥Ã¥É¤ò¸Æ¤Ó¤À¤·Ìä¹ç¤»¤Ş¤¹¡£
+[[m:Object#respond_to?]] ã¯ãƒ¡ã‚½ãƒƒãƒ‰ãŒå®šç¾©ã•ã‚Œã¦ã„ãªã„å ´åˆã€
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã³ã ã—å•åˆã›ã¾ã™ã€‚
 
-[[m:Object#method_missing]] ¤ò override ¤·¤¿¾ì¹ç¤Ë
-¤³¤Î¥á¥½¥Ã¥É¤â override ¤µ¤ì¤ë¤Ù¤­¤Ç¤¹¡£
+[[m:BasicObject#method_missing]] ã‚’ override ã—ãŸå ´åˆã«ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚‚
+override ã•ã‚Œã‚‹ã¹ãã§ã™ã€‚
 
-false ¤òÊÖ¤·¤Ş¤¹¡£
+false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param symbol ¥á¥½¥Ã¥ÉÌ¾¥·¥ó¥Ü¥ë
-@param include_private private method ¤â´Ş¤á¤¿¤¤¾ì¹ç¤Ë true ¤¬ÅÏ¤µ¤ì¤Ş¤¹
+@param symbol ãƒ¡ã‚½ãƒƒãƒ‰åã‚·ãƒ³ãƒœãƒ«
+@param include_private private method ã‚‚å«ã‚ãŸã„å ´åˆã« true ãŒæ¸¡ã•ã‚Œã¾ã™
 
-@see [[m:Object#respond_to?]]
+@see [[m:Object#respond_to?]], [[m:BasicObject#method_missing]]
+
+

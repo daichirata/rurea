@@ -6,13 +6,13 @@ kind=defined
 --- rationalize      -> Rational
 --- rationalize(eps) -> Rational
 
-¼«¿È¤ò [[c:Rational]] ¤ËÊÑ´¹¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’ [[c:Rational]] ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-@param eps µöÍÆ¤¹¤ë¸íº¹¡£¾ï¤ËÌµ»ë¤µ¤ì¤Þ¤¹¡£
+@param eps è¨±å®¹ã™ã‚‹èª¤å·®ã€‚å¸¸ã«ç„¡è¦–ã•ã‚Œã¾ã™ã€‚
 
-@raise RangeError µõÉô¤¬ 0 ¤Ç¤Ï¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise RangeError è™šéƒ¨ãŒå®Ÿæ•°ã‹ã€0 ã§ã¯ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Complex(3).to_r    # => (3/1)
   Complex(3, 2).to_r # => RangeError

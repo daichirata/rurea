@@ -6,4 +6,4 @@ library=_builtin
 aliases=
 aliasof=
 
-�����ƥॳ����Υ��顼�����ɤ�ɽ���㳰���饹�Ǥ����ܺ٤� [[c:Errno::EXXX]] �򻲾Ȥ��Ƥ���������
+システムコールのエラーコードを表す例外クラスです。詳細は [[c:Errno::EXXX]] を参照してください。

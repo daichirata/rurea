@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- sync_mode -> Symbol
-���ߤΥ��å����֤��֤��ޤ���
+現在のロック状態を返します。
 

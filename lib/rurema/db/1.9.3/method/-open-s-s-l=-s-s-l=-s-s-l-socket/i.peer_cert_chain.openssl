@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- peer_cert_chain -> [OpenSSL::X509::Certificate] | nil
-��³���ξ������������� [[c:OpenSSL::X509::Certificate]] ���֥�������
-��������֤��ޤ���
+接続相手の証明書チェインを [[c:OpenSSL::X509::Certificate]] オブジェクト
+の配列で返します。
 
-[[m:OpenSSL::SSL::SSLSocket#connect]] �� [[m:OpenSSL::SSL::SSLSocket#accept]] 
-�� SSL/TLS �ϥ�ɥ���������Ԥ����ˤ��Υ᥽�åɤ�Ƥ֤� nil ���֤��ޤ���
+[[m:OpenSSL::SSL::SSLSocket#connect]] や [[m:OpenSSL::SSL::SSLSocket#accept]] 
+で SSL/TLS ハンドシェイクを行う前にこのメソッドを呼ぶと nil を返します。
 
-�ʲ��ν��������֤��ޤ���
-  [��³���ξ�����, ����CA�ξ�����,... ���CA�ξ�����]
-�롼�� CA �ξ�����ϴޤޤ�ʤ����Ȥ����դ��Ƥ���������
+以下の順の配列を返します。
+  [接続相手の証明書, 下位CAの証明書,... 中間CAの証明書]
+ルート CA の証明書は含まれないことに注意してください。
 
 @see [[m:OpenSSL::SSL::SSLSocket#peer_cert]]
 

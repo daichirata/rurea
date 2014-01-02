@@ -4,5 +4,5 @@ kind=defined
 
 --- tasks -> Array
 
-�������Υꥹ�Ȥ��֤��ޤ���
+タスクのリストを返します。
 

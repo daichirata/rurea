@@ -6,4 +6,4 @@ library=irb.input=2dmethod
 aliases=
 aliasof=
 
-ɸ�����Ϥ�ɽ�����饹�Ǥ����饤�֥�������ǻ��Ѥ��ޤ���
+標準入力を表すクラスです。ライブラリ内部で使用します。

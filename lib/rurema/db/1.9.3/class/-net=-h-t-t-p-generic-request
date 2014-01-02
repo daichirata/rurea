@@ -6,7 +6,7 @@ library=net.http
 aliases=
 aliasof=
 
-[[c:Net::HTTPRequest]] �Υ����ѡ����饹�Ǥ���
-���Υ��饹��ľ�ܤϻȤ�ʤ��Ǥ���������
+[[c:Net::HTTPRequest]] のスーパークラスです。
+このクラスは直接は使わないでください。
 
-[[c:Net::HTTPRequest]] �Υ��֥��饹��ȤäƤ���������
+[[c:Net::HTTPRequest]] のサブクラスを使ってください。

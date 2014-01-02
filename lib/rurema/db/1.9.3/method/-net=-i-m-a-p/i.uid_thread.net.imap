@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- uid_thread(algorithm, search_keys, charset)  -> [Net::IMAP::ThreadMember]
-THREAD¥³¥Ş¥ó¥É¤òÁ÷¤ê¡¢¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤ò¸¡º÷¤·¤¿·ë²Ì¤ò
-¥¹¥ì¥Ã¥É·Á¼°¤ÎÌÚ¹½Â¤¤ÇÊÖ¤·¤Ş¤¹¡£
+THREADã‚³ãƒãƒ³ãƒ‰ã‚’é€ã‚Šã€ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ã‚’æ¤œç´¢ã—ãŸçµæœã‚’
+ã‚¹ãƒ¬ãƒƒãƒ‰å½¢å¼ã®æœ¨æ§‹é€ ã§è¿”ã—ã¾ã™ã€‚
 
-¤Û¤Ü [[m:Net::IMAP#thread]] ¤ÈÆ±¤¸¤Ç¤¹¤¬¡¢ÊÖ¤Ã¤Æ¤¯¤ë¥ª¥Ö¥¸¥§¥¯¥È¤Î
-[[m:Net::IMAP::ThreadMember#seqno]] ¤ÎÆâÍÆ¤¬ message sequence number
-¤Ç¤Ï¤Ê¤¯ UID ¤È¤Ê¤ê¤Ş¤¹¡£
+ã»ã¼ [[m:Net::IMAP#thread]] ã¨åŒã˜ã§ã™ãŒã€è¿”ã£ã¦ãã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®
+[[m:Net::IMAP::ThreadMember#seqno]] ã®å†…å®¹ãŒ message sequence number
+ã§ã¯ãªã UID ã¨ãªã‚Šã¾ã™ã€‚
 
-@param algorithm ¥¹¥ì¥Ã¥É¹½Â¤¹½ÃÛ¥¢¥ë¥´¥ê¥º¥àÌ¾(Ê¸»úÎó)
-@param search_key ¸¡º÷¾ò·ï(Ê¸»úÎóÇÛÎó)
-@param charset ¸¡º÷¾ò·ï¤Î²ò¼á¤ËÍÑ¤¤¤ëCHARSETÌ¾(Ê¸»úÎó)
+@param algorithm ã‚¹ãƒ¬ãƒƒãƒ‰æ§‹é€ æ§‹ç¯‰ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ å(æ–‡å­—åˆ—)
+@param search_key æ¤œç´¢æ¡ä»¶(æ–‡å­—åˆ—é…åˆ—)
+@param charset æ¤œç´¢æ¡ä»¶ã®è§£é‡ˆã«ç”¨ã„ã‚‹CHARSETå(æ–‡å­—åˆ—)
 @see [[c:Net::IMAP::ThreadMember]], [[m:Net::IMAP#thread]]
 
 

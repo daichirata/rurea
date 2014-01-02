@@ -4,8 +4,8 @@ kind=defined
 
 --- reset(connection) -> Net::HTTP
 
-Ϳ����줿���ͥ�������ꥻ�åȤ��ޤ���
+与えられたコネクションをリセットします。
 
-@param connection ���ͥ���������ꤷ�ޤ���
+@param connection コネクションを指定します。
 
 

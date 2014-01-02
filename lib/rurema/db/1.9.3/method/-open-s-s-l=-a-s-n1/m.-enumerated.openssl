@@ -4,13 +4,13 @@ kind=defined
 
 --- Enumerated(value) -> OpenSSL::ASN1::Enumerated
 --- Enumerated(value, tag, tagging, tag_class) -> OpenSSL::ASN1::Enumerated
-ASN.1 ¤Î Enumerated ·¿¤ÎÃÍ¤òÉ½¸½¤¹¤ë Ruby ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤ò
-À¸À®¤·¤Ş¤¹¡£
+ASN.1 ã® Enumerated å‹ã®å€¤ã‚’è¡¨ç¾ã™ã‚‹ Ruby ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’
+ç”Ÿæˆã—ã¾ã™ã€‚
 
-[[m:OpenSSL::ASN1::Enumerated.new]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+[[m:OpenSSL::ASN1::Enumerated.new]] ã¨åŒã˜ã§ã™ã€‚
 
-@param value ASN.1 ÃÍ¤òÉ½¤¹ Ruby ¤Î¥ª¥Ö¥¸¥§¥¯¥È(0°Ê¾å¤ÎÀ°¿ô)
-@param tag ¥¿¥°ÈÖ¹æ
-@param tagging ¥¿¥°ÉÕ¤±¤ÎÊıË¡(:IMPLICIT ¤â¤·¤¯¤Ï :EXPLICIT)
-@param tag_class ¥¿¥°¥¯¥é¥¹(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE ¤Î¤¤¤º¤ì¤«)
+@param value ASN.1 å€¤ã‚’è¡¨ã™ Ruby ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ(0ä»¥ä¸Šã®æ•´æ•°)
+@param tag ã‚¿ã‚°ç•ªå·
+@param tagging ã‚¿ã‚°ä»˜ã‘ã®æ–¹æ³•(:IMPLICIT ã‚‚ã—ãã¯ :EXPLICIT)
+@param tag_class ã‚¿ã‚°ã‚¯ãƒ©ã‚¹(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE ã®ã„ãšã‚Œã‹)
 

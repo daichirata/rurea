@@ -4,8 +4,8 @@ kind=defined
 
 --- allow_nan? -> bool
 
-NaN, Infinity, -Infinity �������Ǥ����硢�����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+NaN, Infinity, -Infinity を生成できる場合、真を返します。
+そうでない場合は偽を返します。
 
 @see [[rfc:4627]]
 

@@ -3,5 +3,6 @@ classes=Tk=OptionObj
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

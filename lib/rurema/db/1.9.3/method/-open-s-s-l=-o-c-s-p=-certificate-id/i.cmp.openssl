@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- cmp(other) -> bool
-2д─д╬ CertificateId еке╓е╕езепе╚дЄ╚ц│╙д╖бв
-╞▒д╕дтд╬д╟двдьд╨┐┐дЄ╩╓д╖д▐д╣бг
+2уБдуБо CertificateId уВкуГЦуВ╕уВзуВпуГИуВТцпФш╝ГуБЧуАБ
+хРМуБШуВВуБоуБзуБВуВМуБ░чЬЯуВТш┐ФуБЧуБ╛уБЩуАВ
 
-@param other ╚ц│╙д╣ды [[c:OpenSSL::OCSP::CertificateId]] еке╓е╕езепе╚
+@param other цпФш╝ГуБЩуВЛ [[c:OpenSSL::OCSP::CertificateId]] уВкуГЦуВ╕уВзуВпуГИ
 @see [[m:OpenSSL::OCSP::CertificateId#cmp_issuer]]
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- mtime -> Integer
 
-tar ¤Î¥Ø¥Ã¥À¤Ë´Ş¤Ş¤ì¤ë mtime ¤òÊÖ¤·¤Ş¤¹¡£
+tar ã®ãƒ˜ãƒƒãƒ€ã«å«ã¾ã‚Œã‚‹ mtime ã‚’è¿”ã—ã¾ã™ã€‚
 

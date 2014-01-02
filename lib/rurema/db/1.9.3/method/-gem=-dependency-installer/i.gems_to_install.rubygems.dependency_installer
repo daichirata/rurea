@@ -4,5 +4,5 @@ kind=defined
 
 --- gems_to_install -> Array
 
-��¸�ط��ˤ�ꥤ�󥹥ȡ��뤵���ͽ��� Gem �Υꥹ�Ȥ��֤��ޤ���
+依存関係によりインストールされる予定の Gem のリストを返します。
 

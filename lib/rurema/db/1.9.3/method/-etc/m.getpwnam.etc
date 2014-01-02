@@ -4,12 +4,12 @@ kind=defined
 
 --- getpwnam(name) -> Struct::Passwd
 
-passwd �ǡ����١����򸡺�����
-̾���� name �Ǥ��� passwd ����ȥ���֤��ޤ���
+passwd データベースを検索し、
+名前が name である passwd エントリを返します。
 
-@param name ��������桼��̾��
+@param name 検索するユーザ名。
 
-@raise ArgumentError ����ȥ꤬���Ĥ���ʤ��ä�����ȯ�����ޤ���
+@raise ArgumentError エントリが見つからなかった場合に発生します。
 
 @see [[man:getpwnam(3)]], [[c:Struct::Passwd]]
 

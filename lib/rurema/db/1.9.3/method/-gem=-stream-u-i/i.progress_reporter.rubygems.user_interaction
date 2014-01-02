@@ -4,11 +4,11 @@ kind=defined
 
 --- progress_reporter(*args) -> SilentProgressReporter | SimpleProgressReporter | VerboseProgressReporter
 
-╜ш═¤д╬┐╩─╜дЄ╩є╣Ёд╣дыд┐дсд╬еке╓е╕езепе╚дЄ╩╓д╖д▐д╣бг
+хЗжчРЖуБощА▓цНЧуВТха▒хСКуБЩуВЛуБЯуВБуБоуВкуГЦуВ╕уВзуВпуГИуВТш┐ФуБЧуБ╛уБЩуАВ
 
-╩╓д╡дьдыеке╓е╕езепе╚д╬╝я╬рд╧╕╜║▀д╬└▀─ъд╦дшдъд▐д╣бг
+ш┐ФуБХуВМуВЛуВкуГЦуВ╕уВзуВпуГИуБочиощбЮуБпчП╛хЬиуБошинхоЪуБлуВИуВКуБ╛уБЩуАВ
 
-@param args ╩╓├═д╚д╩дыеке╓е╕езепе╚дЄ╜щ┤№▓╜д╣дыд┐дсд╬░·┐Їд╟д╣бг
+@param args ш┐ФхАдуБиуБкуВЛуВкуГЦуВ╕уВзуВпуГИуВТхИЭцЬЯхМЦуБЩуВЛуБЯуВБуБох╝ХцХ░уБзуБЩуАВ
 
 @see [[c:Gem::StreamUI::SilentProgressReporter]], [[c:Gem::StreamUI::SimpleProgressReporter]], [[c:Gem::StreamUI::VerboseProgressReporter]]
 

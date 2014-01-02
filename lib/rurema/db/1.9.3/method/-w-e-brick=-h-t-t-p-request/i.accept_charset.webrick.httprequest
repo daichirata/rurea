@@ -4,6 +4,6 @@ kind=defined
 
 --- accept_charset    -> [String]
 
-Accept-Charset  �إå������Ƥ�ʸ�����åȤ�ɽ��ʸ�����������֤��ޤ���
-������ʼ�����(qvalue)�ǥ����Ȥ���Ƥ��ޤ���
+Accept-Charset  ヘッダの内容を文字セットを表す文字列の配列で返します。
+配列は品質係数(qvalue)でソートされています。
 

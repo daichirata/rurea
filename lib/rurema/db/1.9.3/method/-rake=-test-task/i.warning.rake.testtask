@@ -4,5 +4,5 @@ kind=defined
 
 --- warning -> bool
 
-�����ͤ����Ǥ����硢�ƥ��ȼ¹Ի��� ruby -w ��¹Ԥ����Τ�Ʊ�����̤������ޤ���
+この値が真である場合、テスト実行時に ruby -w を実行したのと同じ効果が生じます。
 

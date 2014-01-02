@@ -4,6 +4,6 @@ kind=defined
 
 --- default -> Gem::Requirement
 
-�����ʾ� ( '>= 0' ) ����ꤷ�ƺ������줿 [[c:Gem::Requirement]] �Υ��󥹥��󥹤��֤��ޤ���
+ゼロ以上 ( '>= 0' ) を指定して作成された [[c:Gem::Requirement]] のインスタンスを返します。
 
 

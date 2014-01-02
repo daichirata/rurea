@@ -4,5 +4,5 @@ kind=defined
 
 --- sync_locked? -> bool
 --- locked? -> bool
-���å�����Ƥ��뤫�ɤ������֤��ޤ���
+ロックされているかどうかを返します。
 

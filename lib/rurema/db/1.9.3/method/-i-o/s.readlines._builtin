@@ -2,17 +2,28 @@ names=readlines
 visibility=public
 kind=defined
 
---- readlines(path, rs = $/)    -> [String]
+--- readlines(path, rs = $/, opts={})
+--- readlines(path, limit, opts={})
+--- readlines(path, rs, limit, opts={})
 
-path �ǻ��ꤵ�줿�ե�����������ɤ߹���ǡ����γƹԤ����ǤȤ��Ƥ��������֤��ޤ���
+path で指定されたファイルを全て読み込んで、その各行を要素としてもつ配列を返します。
 
-�ƥ������ɤ߹��ߥ᥽�åɤȤ���ư��ޤ���
-���� EOF ��ã���Ƥ���ж����� [] ���֤��ޤ���
-[[m:Kernel.#open]] ��Ʊ�� path ����Ƭ�� "|" �ʤ�С�"|" ��³�����ޥ�ɤν��Ϥ��ɤ߼��ޤ���
+[[m:Kernel.#open]] と同様 path の先頭が "|" ならば、"|" に続くコマンドの出力を読み取ります。
 
-@param path �ե�����̾��ɽ��ʸ���� "|���ޥ��̾" ����ꤷ�ޤ���
+テキスト読み込みメソッドとして動作します。
 
-@param rs �Ԥζ��ڤ��ʸ����ǻ��ꤷ�ޤ���rs �� nil ����ꤹ��ȹԶ��ڤ�ʤ��Ȥߤʤ��ޤ�����ʸ���� "" ����ꤹ���Ϣ³������Ԥ�Ԥζ��ڤ�Ȥߤʤ��ޤ�(�ѥ饰��ե⡼��)��
+limit で最大読み込みバイト数を指定します。ただしマルチバイト文字が途中で
+切れないように余分に読み込む場合があります。
 
-@raise Errno::EXXX path �Υ����ץ󡢥ե�������ɤ߹��ߤ˼��Ԥ�������ȯ�����ޤ���
+opts でファイルを開くときのオプションを指定します。エンコーディングなど
+を指定できます。
+[[m:File.open]] と同様なのでそちらを参照してください。
+
+@param path ファイル名を表す文字列か "|コマンド名" を指定します。
+
+@param rs 行の区切りを文字列で指定します。rs に nil を指定すると行区切りなしとみなします。空文字列 "" を指定すると連続する改行を行の区切りとみなします(パラグラフモード)。
+@param limit 最大の読み込みバイト数
+@param opts ファイルを開くときのオプション引数
+
+@raise Errno::EXXX path のオープン、ファイルの読み込みに失敗した場合に発生します。
 

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- block_size -> Integer
-�Ź沽�Υ֥��å��Υ�������Х��ȿ����֤��ޤ���
+暗号化のブロックのサイズをバイト数で返します。
 

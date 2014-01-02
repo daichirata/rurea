@@ -4,17 +4,17 @@ kind=defined
 
 --- _strptime(str, format = '%FT%T%z') -> Hash
 
-Í¿¤¨¤é¤ì¤¿¿÷·¿¤ÇÆü»şÉ½¸½¤ò²òÀÏ¤·¡¢¤½¤Î¾ğÊó¤Ë´ğ¤Å¤¤¤Æ¥Ï¥Ã¥·¥å¤òÀ¸À®¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸé››å‹ã§æ—¥æ™‚è¡¨ç¾ã‚’è§£æã—ã€ãã®æƒ…å ±ã«åŸºã¥ã„ã¦ãƒãƒƒã‚·ãƒ¥ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param str Æü»ş¤ò¤¢¤é¤ï¤¹Ê¸»úÎó
-@param format ½ñ¼°
+@param str æ—¥æ™‚ã‚’ã‚ã‚‰ã‚ã™æ–‡å­—åˆ—
+@param format æ›¸å¼
 
-Îã:
+ä¾‹:
 
   DateTime._strptime('2001-02-03T12:13:14Z')
   # => {:sec=>14, :zone=>"Z", :year=>2001, :hour=>12, :mday=>3, :min=>13, :offset=>0, :mon=>2}
 
-[[m:DateTime.strptime]] ¤ÎÆâÉô¤Ç»ÈÍÑ¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
+[[m:DateTime.strptime]] ã®å†…éƒ¨ã§ä½¿ç”¨ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 @see [[m:Date._strptime]], [[m:DateTime.strptime]]
 

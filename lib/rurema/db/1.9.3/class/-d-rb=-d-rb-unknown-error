@@ -6,4 +6,6 @@ library=drb
 aliases=
 aliasof=
 
-An exception wrapping a [[c:DRb::DRbUnknown]] object
+[[c:DRb::DRbUnknown]] をラップする例外クラスです。
+
+@see [[m:DRb::DRbUnknown#exception]]

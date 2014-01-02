@@ -4,9 +4,9 @@ kind=defined
 
 --- exception_details(exception, message) -> String
 
-Ϳ����줿�㳰�ξܺ٤�ʸ����Ȥ����֤��ޤ���
+与えられた例外の詳細を文字列として返します。
 
-@param exception �㳰����ꤷ�ޤ���
+@param exception 例外を指定します。
 
-@param message ��å���������ꤷ�ޤ���
+@param message メッセージを指定します。
 

@@ -4,28 +4,28 @@ kind=defined
 
 --- add_response_handler(handler) -> ()
 --- add_response_handler(handler){|resp| ...} -> ()
-�쥹�ݥ󥹥ϥ�ɥ���ɲä��ޤ���
+レスポンスハンドラを追加します。
 
-�쥹�ݥ󥹥ϥ�ɥ�ϥ����Ф�������������뤴�Ȥ�
-�ƤӤ�����ޤ����ϥ�ɥ�ˤ�
-[[c:Net::IMAP::TaggedResponse]] �⤷����
-[[c:Net::IMAP::UntaggedResponse]] ���֥������Ȥ�
-�Ϥ���ޤ���
+レスポンスハンドラはサーバから応答を受け取るごとに
+呼びだされます。ハンドラには
+[[c:Net::IMAP::TaggedResponse]] もしくは
+[[c:Net::IMAP::UntaggedResponse]] オブジェクトが
+渡されます。
 
-��˥����Ф������Ʊ��Ū�ʥ��٥�Ȥ������뤿��
-���Ѥ��ޤ����㤨�� EXISTS ������������
-(�᡼��ܥå����˿����ʥ᡼�뤬�ɲä��줿�����ߥ󥰤�ȯ�����ޤ�)
-����ʤɤ��Ѥ����ޤ���
+主にサーバからの非同期的なイベントを受け取るため
+に用います。例えば EXISTS 応答を受け取る
+(メールボックスに新たなメールが追加されたタイミングで発生します)
+ためなどに用いられます。
 
-�쥹�ݥ󥹥ϥ�ɥ�ϥᥤ��Υ���åɤȤ��̤Υ���åɤ�
-�ƤӤ�����뤳�Ȥ����դ��Ƥ���������
+レスポンスハンドラはメインのスレッドとは別のスレッドで
+呼びだされることに注意してください。
 
-��:
+例:
 
   imap.add_response_handler do |resp|
     p resp
   end
 
-@param handler �ɲä���ϥ�ɥ�([[c:Proc]] �� [[c:Method]] ���֥�������)
+@param handler 追加するハンドラ([[c:Proc]] や [[c:Method]] オブジェクト)
 @see [[m:Net::IMAP#remove_response_handler]]
 

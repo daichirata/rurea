@@ -3,5 +3,6 @@ classes=Observable
 methods=
 sublibraries=
 is_sublibrary=false
+category=DesignPattern
 
-Observer ¥Ñ¥¿¡¼¥ó¤ò°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Observer ãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

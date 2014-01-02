@@ -4,9 +4,9 @@ kind=defined
 
 --- close    -> nil
 
-�ǥ��쥯�ȥꥹ�ȥ꡼��򥯥��������ޤ����ʹߤΥǥ��쥯�ȥ��
-�Ф��������㳰 [[c:IOError]] ��ȯ�������ޤ���
-������������������� nil ���֤��ޤ���
+ディレクトリストリームをクローズします。以降のディレクトリに
+対する操作は例外 [[c:IOError]] を発生させます。
+クローズに成功すれば nil を返します。
 
-@raise IOError close �˼��Ԥ�������ȯ�����ޤ����ޤ����˼��Ȥ� close ���Ƥ������ȯ�����ޤ���
+@raise IOError close に失敗した場合に発生します。また既に自身が close している場合に発生します。
 

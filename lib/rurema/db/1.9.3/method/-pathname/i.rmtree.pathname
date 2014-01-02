@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- rmtree -> nil
-FileUtils.rm_r(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileUtils.rm_r(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileUtils.#rm_r]]
 

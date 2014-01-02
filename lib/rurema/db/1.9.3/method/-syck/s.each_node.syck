@@ -4,11 +4,11 @@ kind=defined
 
 --- each_node(io) {|obj| ...} -> nil
 
-Ϳ����줿 io ���� YAML �ե����ޥåȤ�ʸ��򤹤٤ƽ���ɤ߹���
-[[c:Syck::Map]] ���֥������Ȥ��Ѵ�����
-�����������֥������Ȥ�����Ȥ��ƥ֥��å���ɾ�����Ƥ����ޤ���
+与えられた io から YAML フォーマットの文書をすべて順に読み込み
+[[c:Syck::Map]] オブジェクトに変換し、
+生成したオブジェクトを引数としてブロックを評価していきます。
 
-@param io YAML �ե����ޥåȤ�ʸ��� IO ���֥�������
+@param io YAML フォーマットの文書の IO オブジェクト
 
   food:
    - apple

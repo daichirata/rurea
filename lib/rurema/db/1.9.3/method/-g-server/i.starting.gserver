@@ -4,6 +4,6 @@ kind=defined
 
 --- starting -> ()
 
-[[m:GServer#audit]] �����ʤ�С������е�ư���˸ƤФ�ޤ���
-���֥��饹�ǥ����С��饤�ɤ��ޤ���
+[[m:GServer#audit]] が真ならば、サーバ起動時に呼ばれます。
+サブクラスでオーバーライドします。
 

@@ -6,9 +6,9 @@ library=Win32API
 aliases=
 aliasof=
 
-Win32 API ค๒ธฦคำฝะคนคฟคแคฮฅฏฅ้ฅนควคนกฃ
+Win32 API ใ’ๅ‘ผใณๅบใใใใฎใฏใฉในใงใใ€
 
-=== ปศอัฮใ 1: MessageBox
+=== ไฝฟ็”จไพ 1: MessageBox
 
   require 'Win32API'
   # require 'dl/win32'
@@ -46,10 +46,10 @@ Win32 API ค๒ธฦคำฝะคนคฟคแคฮฅฏฅ้ฅนควคนกฃ
   
   p Win32API.MessageBox(0, "test message", "test caption")
   p Win32API.MessageBoxEx(0, "test message", "test caption")
-  p Win32API.MessageBox(0, "คฦคนคศ", "ฅฦฅนฅศ")
-  p Win32API.MessageBoxEx(0, "คฦคนคศ", "ฅฦฅนฅศ")
+  p Win32API.MessageBox(0, "ใฆใใจ", "ใในใ")
+  p Win32API.MessageBoxEx(0, "ใฆใใจ", "ใในใ")
 
-=== ปศอัฮใ 2: Cygwin คฮ uname ฅณฅÞฅ๓ฅษคฮยๅค๏ค๊
+=== ไฝฟ็”จไพ 2: Cygwin ใฎ uname ใณใใณใใฎไปฃใใ
 
   require 'Win32API'
   
@@ -68,7 +68,7 @@ Win32 API ค๒ธฦคำฝะคนคฟคแคฮฅฏฅ้ฅนควคนกฃ
   
   => ["CYGWIN_98-4.10", "hoge", "1.1.7(0.31/3/2)", "2000-12-25 12:39", "i586"]
 
-=== ปศอัฮใ 3: Cygwin คฮ cygpath ฅณฅÞฅ๓ฅษคฮยๅค๏ค๊
+=== ไฝฟ็”จไพ 3: Cygwin ใฎ cygpath ใณใใณใใฎไปฃใใ
 
   require 'Win32API'
   

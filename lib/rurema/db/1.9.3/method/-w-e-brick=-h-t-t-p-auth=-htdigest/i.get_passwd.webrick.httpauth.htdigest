@@ -4,11 +4,11 @@ kind=defined
 
 --- get_passwd(realm, user, reload_db) -> String
 
-Ϳ����줿����ȥ桼��̾����ѥ���ɤΥϥå����ͤ���������֤��ޤ���
+与えられたレルムとユーザ名からパスワードのハッシュ値を取得して返します。
 
-@param realm �������ꤷ�ޤ���
+@param realm レルムを指定します。
 
-@param user �桼��̾����ꤷ�ޤ���
+@param user ユーザ名を指定します。
 
-@param reload_db ������ꤹ��� [[m:WEBrick::HTTPAuth::Htdigest#reload]] ��Ƥ�Ǥ����ͤ��֤��ޤ���
+@param reload_db 真を指定すると [[m:WEBrick::HTTPAuth::Htdigest#reload]] を呼んでから値を返します。
 

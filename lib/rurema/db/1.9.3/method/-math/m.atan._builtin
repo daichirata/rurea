@@ -4,13 +4,13 @@ kind=defined
 
 --- atan(x) -> Float
 
-x �ε����ܴؿ����ͤ�饸������֤��ޤ���
+x の逆正接関数の値をラジアンで返します。
 
-@param x �¿�
+@param x 実数
 
-@return �֤�����ͤ��ϰϤ� [-��/2, +��/2] �Ǥ���
+@return 返される値の範囲は [-π/2, +π/2] です。
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 

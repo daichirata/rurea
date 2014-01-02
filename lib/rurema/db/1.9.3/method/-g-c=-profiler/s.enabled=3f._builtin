@@ -4,9 +4,9 @@ kind=defined
 
 --- enabled? -> bool
 
-GC ¤Î¥×¥í¥Õ¥¡¥¤¥é¤òµ¯Æ°Ãæ¤Ç¤¢¤ì¤Ğ true¡¢Ää»ßÃæ¤Ç¤¢¤ì¤Ğ false ¤òÊÖ¤·¤Ş¤¹¡£
+GC ã®ãƒ—ãƒ­ãƒ•ã‚¡ã‚¤ãƒ©ã‚’èµ·å‹•ä¸­ã§ã‚ã‚Œã° trueã€åœæ­¢ä¸­ã§ã‚ã‚Œã° false ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   GC::Profiler.enabled? #=> false
   GC::Profiler.enable
   GC::Profiler.enabled? #=> true

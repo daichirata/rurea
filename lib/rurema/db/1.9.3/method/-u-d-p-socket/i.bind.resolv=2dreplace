@@ -3,10 +3,10 @@ visibility=public
 kind=redefined
 
 --- bind(host, port) -> Integer
-[[m:UDPSocket#bind]]¤Î¥Ñ¥é¥á¡¼¥¿ host ¤ÎÌ¾Á°²ò·è¤Ë [[lib:resolv]] 
-¥é¥¤¥Ö¥é¥ê¤ò»È¤¤¤Ş¤¹¡£
+[[m:UDPSocket#bind]]ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ host ã®åå‰è§£æ±ºã« [[lib:resolv]] 
+ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ã„ã¾ã™ã€‚
 
-@param host bind¤¹¤ë¥Û¥¹¥ÈÌ¾¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
-@param port bind¤¹¤ë¥İ¡¼¥È¤ò»ØÄê¤·¤Ş¤¹¡£
-@raise SocketError Ì¾Á°²ò·è¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@param host bindã™ã‚‹ãƒ›ã‚¹ãƒˆåã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
+@param port bindã™ã‚‹ãƒãƒ¼ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@raise SocketError åå‰è§£æ±ºã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

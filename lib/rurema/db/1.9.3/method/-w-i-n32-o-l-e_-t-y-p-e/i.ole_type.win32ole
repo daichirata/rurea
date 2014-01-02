@@ -3,35 +3,35 @@ visibility=public
 kind=defined
 
 --- ole_type -> String | nil
-self�η��μ����TYPEKIND�ˤ�������ޤ���
+selfの型の種類（TYPEKIND）を取得します。
 
-@return self�η��μ����ʸ������֤��ޤ������󤬼����Ǥ��ʤ�����nil���֤��ޤ���
+@return selfの型の種類を文字列で返します。情報が取得できない場合はnilを返します。
 
   tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Application')
   p tobj.ole_type  # => Class
 
-ole_type�ˤϰʲ�������ޤ���
+ole_typeには以下があります。
 
 : Enum
-  ���ҡ�0��
+  列挙子（0）
 : Record
-  �桼��������ʥ᥽�åɤ�����ʤ���¤�Ρˡ�1��
+  ユーザ定義型（メソッドを持たない構造体）（1）
 : Module
-  �⥸�塼�����Ū�ؿ���ǡ����������ݻ��ˡ�2��
+  モジュール（静的関数やデータだけを保持）（2）
 : Interface
-  COM�Υ��󥿡��ե������ʥ᥽�å�����ν���ˡ�3��
+  COMのインターフェイス（メソッド定義の集合）（3）
 : Dispatch
-  OLE�����ȥ᡼����󥵡��С�4��
+  OLEオートメーションサーバ（4）
 : Class
-  ����ݡ��ͥ�ȥ��饹��Interface��Dispatch�μ����ˡ�5��
+  コンポーネントクラス（InterfaceやDispatchの実装）（5）
 : Alias
-  ¾�η�����̾��6��
+  他の型の別名（6）
 : Union
-  �����Ρ�7��
+  共用体（7）
 : Max
-  ���μ���򼨤�����Τν�ü�ޡ�����8��
+  型の種類を示す列挙体の終端マーカ（8）
 
-Max��TYPEKIND�ν�ü�ޡ����ʤΤǰ�̣������ޤ���
+MaxはTYPEKINDの終端マーカなので意味を持ちません。
 
 @see [[m:WIN32OLE_TYPE#typekind]]
 

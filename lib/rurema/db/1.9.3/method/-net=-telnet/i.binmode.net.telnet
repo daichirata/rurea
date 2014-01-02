@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- binmode(mode=nil) -> bool|()
-��������ꤷ�ʤ����ˤ�"Binmode"���ͤ��֤��ޤ���
-������Ϳ��������"Binmode"���ͤ��ѹ����ޤ���
+引数を指定しない場合には"Binmode"の値を返します。
+引数を与えた場合は"Binmode"の値を変更します。
 
-����ϲ���ʸ�����Ѵ��򤹤뤫�ɤ������̣���ޤ���
+これは改行文字の変換をするかどうかを意味します。
 
 
-@param mode ���ꤹ���ͤ�true/false��Ϳ���ޤ�
+@param mode 設定する値をtrue/falseで与えます
 @see [[m:Net::Telnet.new]]
 
 

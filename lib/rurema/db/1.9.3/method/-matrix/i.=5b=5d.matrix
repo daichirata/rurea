@@ -6,17 +6,13 @@ kind=defined
 --- element(i, j) -> ()
 --- component(i, j) -> ()
 
-(i,j)Í×ÁÇ¤òÊÖ¤·¤Þ¤¹¡£
+(i,j)è¦ç´ ã‚’è¿”ã—ã¾ã™ã€‚
+è¡Œåˆ—ã®ç¯„å›²å¤–ã®å€¤ã‚’æŒ‡å®šã—ãŸå ´åˆã«ã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param i Í×ÁÇ¤Î¹ÔÀ®Ê¬¤ò0¥ª¥ê¥¸¥ó¤Ç»ØÄê¤·¤Þ¤¹¡£
-@param j Í×ÁÇ¤ÎÎóÀ®Ê¬¤ò0¥ª¥ê¥¸¥ó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param i è¦ç´ ã®è¡Œæˆåˆ†ã‚’0ã‚ªãƒªã‚¸ãƒ³ã§æŒ‡å®šã—ã¾ã™ã€‚
+@param j è¦ç´ ã®åˆ—æˆåˆ†ã‚’0ã‚ªãƒªã‚¸ãƒ³ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-===== Ãí°Õ
-
-¹ÔÀ®Ê¬¤Ë[[m:Matrix#row_size]]¤è¤êÂç¤­¤ÊÃÍ¤ò»ØÄê¤·¤¿¾ì¹ç¤Ë¤ÏÎã³°¤¬È¯À¸¤·¤Þ¤¹¡£
-ÎóÀ®Ê¬¤Ë[[m:Matrix#column_size]]¤è¤êÂç¤­¤ÊÃÍ¤ò»ØÄê¤·¤¿¾ì¹ç¤Ë¤Ïnil¤òÊÖ¤·¤Þ¤¹¡£
-
-Îã:
+ä¾‹:
   a1 = [1, 2, 3]
   a2 = [10, 15, 20]
   a3 = [-1, 2, 1.5]

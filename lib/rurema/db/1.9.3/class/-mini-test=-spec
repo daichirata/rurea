@@ -6,4 +6,4 @@ library=minitest.spec
 aliases=
 aliasof=
 
-BDD É÷¤Ë¥Æ¥¹¥È¤ò½ñ¤¯¤¿¤á¤Î [[c:MiniTest::Unit::TestCase]] ¤ËÂĞ¤¹¤ë¥é¥Ã¥Ñ¡¼¥¯¥é¥¹¤Ç¤¹¡£
+BDD é¢¨ã«ãƒ†ã‚¹ãƒˆã‚’æ›¸ããŸã‚ã® [[c:MiniTest::Unit::TestCase]] ã«å¯¾ã™ã‚‹ãƒ©ãƒƒãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

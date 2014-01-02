@@ -6,4 +6,17 @@ library=rexml
 aliases=
 aliasof=
 
+XML の DTD(文書型定義、Document Type Definition)を表すクラスです。
 
+rexml では DTD は積極的にはサポートされていません。
+デフォルトの実体定義(gt, lt, amp, quot apos)の解決のため DTD は
+ある程度はサポートされますが、スキーマの定義や検証をしたい場合は
+XML schema や RELAX NG などを使ってください。
+
+子ノード([[m:REXML::Parent#children]])として、
+  * [[c:REXML::ElementDecl]]
+  * [[c:REXML::ExternalEntity]]
+  * [[c:REXML::Entity]]
+  * [[c:REXML::NotationDecl]]
+  * [[c:REXML::AttlistDecl]]
+などを保持しています。

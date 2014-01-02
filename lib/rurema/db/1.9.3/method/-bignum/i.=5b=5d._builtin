@@ -4,12 +4,12 @@ kind=defined
 
 --- [](nth) -> Fixnum
 
-nth ���ܤΥӥå�(�ǲ��̥ӥå�(LSB)�� 0 ����)��Ω�äƤ���� 1
-�򡢤����Ǥʤ���� 0 ���֤��ޤ���
+nth 番目のビット(最下位ビット(LSB)が 0 番目)が立っている時 1
+を、そうでなければ 0 を返します。
 
-@param nth  ���ӥå��ܤ�ؤ����ο���
-@return     1 �� 0
+@param nth  何ビット目を指すかの数値
+@return     1 か 0
 
-self[nth]=bit (�Ĥޤ�ӥåȤν���) ���ʤ��Τϡ�Numeric ��Ϣ���饹��
-immutable �Ǥ��뤿��Ǥ���
+self[nth]=bit (つまりビットの修正) がないのは、Numeric 関連クラスが
+immutable であるためです。
 

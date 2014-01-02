@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- private_key=(privkey)
-ÈëÌ©¸°¤È¤Ê¤ëÀ°¿ô¤òÀßÄê¤·¤Þ¤¹¡£
+ç§˜å¯†éµã¨ãªã‚‹æ•´æ•°ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-nil ¤òÅÏ¤¹¤³¤È¤Ç EC ¥ª¥Ö¥¸¥§¥¯¥È¤¬¸ø³«¸°¤Î¤ß¤ò»ý¤Ä¾õÂÖ¤ËÊÑ¹¹¤Ç¤­¤Þ¤¹¡£
+nil ã‚’æ¸¡ã™ã“ã¨ã§ EC ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå…¬é–‹éµã®ã¿ã‚’æŒã¤çŠ¶æ…‹ã«å¤‰æ›´ã§ãã¾ã™ã€‚
 
-@param privkey ÀßÄê¤¹¤ëÈëÌ©¸°([[c:OpenSSL::BN]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@raise OpenSSL::PKey::ECError ÈëÌ©¸°¤ÎÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@param privkey è¨­å®šã™ã‚‹ç§˜å¯†éµ([[c:OpenSSL::BN]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@raise OpenSSL::PKey::ECError ç§˜å¯†éµã®è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::PKey::EC#private_key]]
 

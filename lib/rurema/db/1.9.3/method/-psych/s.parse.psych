@@ -2,14 +2,29 @@ names=parse
 visibility=public
 kind=defined
 
---- parse(yaml) -> object
-@todo
+--- parse(yaml, filename = nil) -> Psych::Nodes::Document
+YAML ドキュメントをパースし、YAML の AST を返します。
 
-Parse a YAML string in +yaml+.  Returns the first object of a YAML AST.
+入力に複数のドキュメントが含まれている場合は、先頭のものを AST に変換して
+返します。
 
-Example:
+filename はパース中に発生した例外のメッセージに用います。
 
-  Psych.parse("---\n - a\n - b") # => #<Psych::Nodes::Sequence:0x00>
+AST については [[c:Psych::Nodes]] を参照してください。
 
-[[c:Psych::Nodes]] for more information about YAML AST.
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@param filename 例外メッセージのためのファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+@see [[m:Psych.load]]
+
+==== 例
+
+  Psych.parse("---\n - a\n - b") # => #<Psych::Nodes::Document:...>
+
+  begin
+    Psych.parse("--- `", "file.txt")
+  rescue Psych::SyntaxError => ex
+    p ex.file    # => 'file.txt'
+    p ex.message # => "(file.txt): found character that cannot start any token while scanning for the next token at line 1 column 5"
+  end
 

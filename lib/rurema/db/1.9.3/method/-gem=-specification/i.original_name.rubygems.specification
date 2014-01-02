@@ -4,7 +4,7 @@ kind=defined
 
 --- original_name -> String
 
-���Υ᥽�åɤϸ����ߴ����Τ���˻Ĥ���Ƥ��ޤ���
+このメソッドは後方互換性のために残されています。
 
 @see [[m:Gem::Specification#full_name]]
 

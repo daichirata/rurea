@@ -5,5 +5,5 @@ kind=defined
 --- set_value(val)
 @todo
 
-ÃÍ¤ò val ¤ËÀßÄê¤·¡¢self ¤òÊÖ¤·¤Ş¤¹¡£
+å€¤ã‚’ val ã«è¨­å®šã—ã€self ã‚’è¿”ã—ã¾ã™ã€‚
 

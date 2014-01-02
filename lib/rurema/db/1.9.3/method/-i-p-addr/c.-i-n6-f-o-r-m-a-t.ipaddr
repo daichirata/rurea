@@ -2,9 +2,9 @@ names=IN6FORMAT
 visibility=protected 
 kind=defined
 
---- IN6FORMAT
+--- IN6FORMAT -> String
 
-IPv6 ���ɥ쥹��狼��䤹��ɽ�����뤿��Υե����ޥå�ʸ����
+IPv6 アドレスをわかりやすく表示するためのフォーマット文字列。
 
   "%.4x:%.4x:%.4x:%.4x:%.4x:%.4x:%.4x:%.4x"
 

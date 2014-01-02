@@ -5,5 +5,5 @@ kind=defined
 --- response -> Net::HTTPResponse
 --- data -> Net::HTTPResponse
 
-�㳰�θ����Ȥʤä��쥹�ݥ󥹥��֥������Ȥ��֤��ޤ���
+例外の原因となったレスポンスオブジェクトを返します。
 

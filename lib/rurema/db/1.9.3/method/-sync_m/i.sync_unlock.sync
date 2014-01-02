@@ -4,8 +4,8 @@ kind=defined
 
 --- sync_unlock(mode = EX) -> self
 --- unlock(mode = EX) -> self
-���å��������ޤ���
+ロックを解除します。
 
-@param mode �ѹ���ξ��֤���ꤷ�ޤ���
-            �̾ [[m:Sync_m::UN]], [[m:Sync_m::EX]], [[m:Sync_m::SH]] �Τɤ줫����ꤷ�ޤ���
+@param mode 変更後の状態を指定します。
+            通常、 [[m:Sync_m::UN]], [[m:Sync_m::EX]], [[m:Sync_m::SH]] のどれかを指定します。
 

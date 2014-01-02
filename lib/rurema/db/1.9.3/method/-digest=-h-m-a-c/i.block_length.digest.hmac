@@ -4,5 +4,5 @@ kind=defined
 
 --- block_length -> Integer
 
-�����������ȤΥ֥��å�Ĺ���֤��ޤ���
+ダイジェストのブロック長を返します。
 

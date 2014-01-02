@@ -4,5 +4,5 @@ kind=defined
 
 --- limit -> Integer
 
-�񤭹��߲�ǽ�ʺ���Υ��������֤��ޤ���
+書き込み可能な最大のサイズを返します。
 

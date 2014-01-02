@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- lchown(owner, group) -> Integer
-File.lchown(owner, group, self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+File.lchown(owner, group, self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
-@param owner ¥ª¡¼¥Ê¡¼¤ò»ØÄê¤·¤Ş¤¹¡£
+@param owner ã‚ªãƒ¼ãƒŠãƒ¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param group ¥°¥ë¡¼¥×¤ò»ØÄê¤·¤Ş¤¹¡£
+@param group ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:File.lchown]]
 

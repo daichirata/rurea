@@ -4,12 +4,12 @@ kind=defined
 
 --- form_data=(params)
 --- set_form_data(params, sep = '&') -> ()
-HTML�Υե�����Υǡ��� params ����
-�إå��ե�����ɤȥܥǥ������ꤷ�ޤ���
+HTMLのフォームのデータ params から
+ヘッダフィールドとボディを設定します。
 
-�إå��ե������ Content-Type: �ˤ�
-'application/x-www-form-urlencoded' �����ꤵ��ޤ���
+ヘッダフィールド Content-Type: には
+'application/x-www-form-urlencoded' が設定されます。
 
-@param params HTML �Υե�����ǡ����� [[c:Hash]] ��Ϳ���ޤ���
-@param sep �ǡ����Υ��ѥ졼����ʸ�����Ϳ���ޤ���
+@param params HTML のフォームデータの [[c:Hash]] を与えます。
+@param sep データのセパレータを文字列で与えます。
 

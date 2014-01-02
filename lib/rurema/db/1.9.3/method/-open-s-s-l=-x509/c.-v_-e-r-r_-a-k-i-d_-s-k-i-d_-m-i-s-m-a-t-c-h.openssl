@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- V_ERR_AKID_SKID_MISMATCH -> Integer
-¾ÚÌÀ½ñ¤Î authorityKeyIdentifier ³ÈÄ¥ÎÎ°è¤ÎÆâÍÆ¤¬
-issuer(È¯¹Ô¼Ô)¤Î¾ÚÌÀ½ñ¤Î subjectKeyIdentifier ¤ÎÆâÍÆ¤È
-¿©¤¤°ã¤Ã¤Æ¤¤¤ë¤³¤È¤ò°ÕÌ£¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã® authorityKeyIdentifier æ‹¡å¼µé ˜åŸŸã®å†…å®¹ãŒ
+issuer(ç™ºè¡Œè€…)ã®è¨¼æ˜æ›¸ã® subjectKeyIdentifier ã®å†…å®¹ã¨
+é£Ÿã„é•ã£ã¦ã„ã‚‹ã“ã¨ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- cmp(other) ->  -1 | 0 | 1 
 --- <=>(ohter) ->  -1 | 0 | 1 
-Â¾¤Î [[c:OpenSSL::X509::Name]] ¥ª¥Ö¥¸¥§¥¯¥È¤ÈÈæ³Ó¤·¤Þ¤¹¡£
+ä»–ã® [[c:OpenSSL::X509::Name]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¯”è¼ƒã—ã¾ã™ã€‚
 
-¼«¿È¤¬ other ¤È°ìÃ×¤¹¤ë¾ì¹ç¤Ï 0¡¢other¤è¤êÂç¤­¤¤¾ì¹ç¤Ï1¡¢
-¾®¤µ¤¤¾ì¹ç¤Ï -1 ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒ other ã¨ä¸€è‡´ã™ã‚‹å ´åˆã¯ 0ã€otherã‚ˆã‚Šå¤§ãã„å ´åˆã¯1ã€
+å°ã•ã„å ´åˆã¯ -1 ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other Èæ³Ó¤¹¤ë¥ª¥Ö¥¸¥§¥¯¥È
+@param other æ¯”è¼ƒã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 

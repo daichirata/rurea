@@ -4,5 +4,5 @@ kind=defined
 
 --- each_key              -> Enumerator
 --- each_key {|key| ... } -> self
-key ������Ȥ��ƥ֥��å���ɾ�����ޤ���
+key を引数としてブロックを評価します。
 

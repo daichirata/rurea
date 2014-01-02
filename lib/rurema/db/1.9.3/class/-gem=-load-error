@@ -6,4 +6,4 @@ library=rubygems
 aliases=
 aliasof=
 
-Gem ������ɤǤ��ʤ��ä�����ȯ�����륨�顼�Ǥ���
+Gem をロードできなかった場合に発生するエラーです。

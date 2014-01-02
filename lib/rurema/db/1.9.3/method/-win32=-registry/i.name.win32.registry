@@ -6,6 +6,6 @@ kind=defined
 --- to_s
 @todo
 
-�����Υե�ѥ��� 'HKEY_CURRENT_USER\SOFTWARE\foo\bar'
-�Τ褦�ʷ����֤��ޤ���
+キーのフルパスを 'HKEY_CURRENT_USER\SOFTWARE\foo\bar'
+のような形で返します。
 

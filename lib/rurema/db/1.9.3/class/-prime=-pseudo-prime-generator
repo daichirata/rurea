@@ -6,9 +6,9 @@ library=prime
 aliases=
 aliasof=
 
-�����ǿ�������ҤΤ������ݥ��饹�Ǥ���
+擬似素数列の列挙子のための抽象クラスです。
 
-[[c:Prime]] �γƥ᥽�åɤ����Ѥ�������ε����ǿ����Ҥϡ� Prime::PseudoPrimeGenerator �Υ��󥹥��󥹤Ǥ��뤳�Ȥ����Ԥ���Ƥ��ޤ���
-���Υ��饹��Ѿ������ݥ��饹�� succ, next, rewind �򥪡��С��饤�ɤ��ʤ���Фʤ�ޤ���
+[[c:Prime]] の各メソッドが使用する低水準の疑似素数列挙子は、 Prime::PseudoPrimeGenerator のインスタンスであることが期待されています。
+このクラスを継承する具象クラスは succ, next, rewind をオーバーライドしなければなりません。
 
-�ȼ����ǿ���󥢥르�ꥺ���������褦�Ȥ����������ơ��桼���������Υ��饹�����Ѥ���ɬ�פϤ���ޤ��󡣹���� [[c:Prime]] ���饹�����Ѥ��Ƥ���������
+独自の素数列挙アルゴリズムを実装しようとする場合を除いて、ユーザーがこのクラスを利用する必要はありません。高水準の [[c:Prime]] クラスを利用してください。

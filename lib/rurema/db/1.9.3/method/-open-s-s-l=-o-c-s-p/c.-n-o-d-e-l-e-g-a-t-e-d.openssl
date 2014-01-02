@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- NODELEGATED -> Integer
-delegated trust ����Ĥ��ʤ����Ȥ��̣���ޤ���
+delegated trust を許可しないことを意味します。
 
-���Υե饰����ϻȤ��Ƥ��ޤ���
+このフラグ定数は使われていません。
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- append(mailbox, message, flags = nil, date_time = nil) -> Net::IMAP::TaggedResponse
 
-APPEND ¥³¥Þ¥ó¥É¤òÁ÷¤Ã¤Æ¥á¥Ã¥»¡¼¥¸¤ò¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤ÎËöÈø¤ËÄÉ²Ã¤·¤Þ¤¹¡£
+APPEND ã‚³ãƒžãƒ³ãƒ‰ã‚’é€ã£ã¦ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ã®æœ«å°¾ã«è¿½åŠ ã—ã¾ã™ã€‚
 
 
-Îã:
+ä¾‹:
   imap.append("inbox", <<EOF.gsub(/\n/, "\r\n"), [:Seen], Time.now)
   Subject: hello
   From: someone@example.com
@@ -16,10 +16,10 @@ APPEND ¥³¥Þ¥ó¥É¤òÁ÷¤Ã¤Æ¥á¥Ã¥»¡¼¥¸¤ò¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤ÎËöÈø¤ËÄÉ²Ã¤·¤Þ¤¹¡£
   hello world
   EOF
 
-@param mailbox ¥á¥Ã¥»¡¼¥¸¤òÄÉ²Ã¤¹¤ë¥á¡¼¥ë¥Ü¥Ã¥¯¥¹Ì¾(Ê¸»úÎó)
-@param message ¥á¥Ã¥»¡¼¥¸Ê¸»úÎó
-@param flags ¥á¥Ã¥»¡¼¥¸¤ËÉÕ²Ã¤¹¤ë¥Õ¥é¥°([[c:Symbol]] ¤ÎÇÛÎó)
-@param date_time ¥á¥Ã¥»¡¼¥¸¤Î»þ¹ï([[c:Time]] ¥ª¥Ö¥¸¥§¥¯¥È)¡£¾ÊÎ¬»þ¤Ï¸½ºß»þ¹ï¤¬»È¤ï¤ì¤ë
-@raise Net::IMAP::NoResponseError ¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤¬Â¸ºß¤·¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@param mailbox ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¿½åŠ ã™ã‚‹ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹å(æ–‡å­—åˆ—)
+@param message ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ–‡å­—åˆ—
+@param flags ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«ä»˜åŠ ã™ã‚‹ãƒ•ãƒ©ã‚°([[c:Symbol]] ã®é…åˆ—)
+@param date_time ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®æ™‚åˆ»([[c:Time]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)ã€‚çœç•¥æ™‚ã¯ç¾åœ¨æ™‚åˆ»ãŒä½¿ã‚ã‚Œã‚‹
+@raise Net::IMAP::NoResponseError ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ãŒå­˜åœ¨ã—ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™
 
 

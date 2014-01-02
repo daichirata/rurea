@@ -4,9 +4,9 @@ kind=defined
 
 --- relative?    -> bool
 
-¼«¿È¤Ë scheme ¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤Ê¤¤¤Ê¤é true ¤òÊÖ¤·¤Ş¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ï false ¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ã« scheme ãŒè¨­å®šã•ã‚Œã¦ã„ãªã„ãªã‚‰ true ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã¯ false ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   p URI.parse('http://example.com/').relative?    #=> false
   p URI.parse('./').relative?                     #=> true
 

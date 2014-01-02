@@ -4,10 +4,10 @@ kind=defined
 
 --- [](key) -> Array
 
-ʸ���� key ���б�����ѥ�᡼����������֤��ޤ���
-key ���б�����ѥ�᡼�������Ĥ���ʤ��ä����ϡ�nil ���֤��ޤ�����[[m:CGI#params]]�������Ǥ���
+文字列 key に対応するパラメータを配列で返します。
+key に対応するパラメータが見つからなかった場合は、nil を返します。（[[m:CGI#params]]と等価です）
 
-�ե����फ�����Ϥ��줿�ͤ䡢URL �������ޤ줿 QUERY_STRING �Υѡ�����̤μ����ʤɤ˻��Ѥ��ޤ���
+フォームから入力された値や、URL に埋め込まれた QUERY_STRING のパース結果の取得などに使用します。
 
-@param key ������ʸ����ǻ��ꤷ�ޤ���
+@param key キーを文字列で指定します。
 

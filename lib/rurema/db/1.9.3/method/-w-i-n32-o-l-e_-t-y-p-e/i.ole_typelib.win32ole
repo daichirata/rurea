@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- ole_typelib -> WIN32OLE_TYPELIB | nil
-¤³¤Î·¿¤òÅÐÏ¿¤·¤Æ¤¢¤ë·¿¾ðÊó¥é¥¤¥Ö¥é¥ê¡ÊTypeLib¡Ë¤ò¼èÆÀ¤·¤Þ¤¹¡£
+ã“ã®åž‹ã‚’ç™»éŒ²ã—ã¦ã‚ã‚‹åž‹æƒ…å ±ãƒ©ã‚¤ãƒ–ãƒ©ãƒªï¼ˆTypeLibï¼‰ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return ¤³¤Î·¿¤òÅÐÏ¿¤·¤Æ¤¤¤ëTypeLib¤ò[[c:WIN32OLE_TYPELIB]]¥ª¥Ö¥¸¥§¥¯¥È
-        ¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£¸«¤Ä¤«¤é¤Ê¤¤¾ì¹ç¤Ïnil¤òÊÖ¤·¤Þ¤¹¡£
+@return ã“ã®åž‹ã‚’ç™»éŒ²ã—ã¦ã„ã‚‹TypeLibã‚’[[c:WIN32OLE_TYPELIB]]ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+        ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚è¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã¯nilã‚’è¿”ã—ã¾ã™ã€‚
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Worksheet')
    puts tobj.ole_typelib.name  # => 'Microsoft Excel 14.0 Object Library'

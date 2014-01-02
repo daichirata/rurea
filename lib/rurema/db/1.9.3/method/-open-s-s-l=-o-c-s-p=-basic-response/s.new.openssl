@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- new -> OpenSSL::OCSP::BasicResponse
-¶õ¤Î BasicResponse ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Ş¤¹¡£
+ç©ºã® BasicResponse ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::OCSP::Response.create]]
 

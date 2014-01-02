@@ -4,8 +4,8 @@ kind=defined
 
 --- binding -> Binding
 
-ÊÑ¿ô¡¦¥á¥½¥Ã¥É¤Ê¤É¤Î´Ä¶­¾ðÊó¤ò´Þ¤ó¤À [[c:Binding]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò
-À¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£ÄÌ¾ï¡¢[[m:Kernel.#eval]] ¤ÎÂèÆó°ú¿ô¤È¤·¤Æ»È¤¤¤Þ¤¹¡£
+å¤‰æ•°ãƒ»ãƒ¡ã‚½ãƒƒãƒ‰ãªã©ã®ç’°å¢ƒæƒ…å ±ã‚’å«ã‚“ã  [[c:Binding]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’
+ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚é€šå¸¸ã€[[m:Kernel.#eval]] ã®ç¬¬äºŒå¼•æ•°ã¨ã—ã¦ä½¿ã„ã¾ã™ã€‚
 
   def foo
     a = 1
@@ -14,5 +14,5 @@ kind=defined
 
   eval("p a", foo)  #=> 1
 
-@see [[m:Kernel.#eval]],[[m:Kernel::TOPLEVEL_BINDING]]
+@see [[m:Kernel.#eval]],[[m:Object::TOPLEVEL_BINDING]]
 

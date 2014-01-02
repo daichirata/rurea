@@ -2,12 +2,12 @@ names=__setobj__
 visibility=public
 kind=defined
 
---- __setobj__(obj)
+--- __setobj__(obj) -> object
 
-�Ѿ���Υ��֥������Ȥ򥻥åȤ��ޤ���
+委譲先のオブジェクトをセットします。
 
-@param obj �Ѿ���ΤΥ��֥������Ȥ���ꤷ�ޤ���
+@param obj 委譲先ののオブジェクトを指定します。
 
-@raise NotImplementedError ���֥��饹�ˤ��ܥ᥽�åɤ����������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError サブクラスにて本メソッドが再定義されていない場合に発生します。
 
 

@@ -5,10 +5,10 @@ kind=defined
 --- new(banner = nil, width = 32, indent = ' ' * 4)              -> OptionParser
 --- new(banner = nil, width = 32, indent = ' ' * 4) {|opt| ...}  -> OptionParser
 
-OptionParser ���֥������Ȥ����������֤��ޤ���
+OptionParser オブジェクトを生成して返します。
 
-�֥��å���Ϳ����줿��硢�������� OptionParser ���֥������Ȥ�����Ȥ��ƥ֥��å���ɾ
-�����ޤ����Ĥޤꡢ�ʲ��Τ褦�ʽ�������ǽ�Ǥ���
+ブロックが与えられた場合、生成した OptionParser オブジェクトを引数としてブロックを評
+価します。つまり、以下のような書き方が可能です。
 
   require 'optparse'
   OptionParser.new do |opt|
@@ -19,9 +19,9 @@ OptionParser ���֥������Ȥ����������֤��ޤ���
     opt.parse!(ARGV)
   end
 
-@param banner �إ��(���ޥ�)�κǽ����ʬ��ɽ������롢���ץꥱ�������������ʤɤ�ʸ�����Ϳ���ޤ���
+@param banner ヘルプ(サマリ)の最初の部分に表示される、アプリケーションの説明などを文字列で与えます。
 
-@param width ���ޥ������������Ϳ���ޤ���
+@param width サマリの幅を整数で与えます。
 
-@param indent ���ޥ�Υ���ǥ�Ȥ�ʸ�����Ϳ���ޤ���
+@param indent サマリのインデントを文字列で与えます。
 

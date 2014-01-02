@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- find(name) -> Encoding
-»ØÄê¤µ¤ì¤¿ name ¤È¤¤¤¦Ì¾Á°¤ò»ý¤Ä Encoding ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+æŒ‡å®šã•ã‚ŒãŸ name ã¨ã„ã†åå‰ã‚’æŒã¤ Encoding ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-@param name ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°Ì¾¤òÉ½¤¹ [[c:String]] ¤« [[c:Symbol]] ¤ò»ØÄê¤·¤Þ¤¹¡£
-@return È¯¸«¤µ¤ì¤¿ Encoding ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
-@raise ArgumentError »ØÄê¤·¤¿Ì¾Á°¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤¬È¯¸«¤Ç¤­¤Ê¤¤¤ÈÈ¯À¸¤·¤Þ¤¹¡£
+@param name ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°åã‚’è¡¨ã™ [[c:String]] ã‹ [[c:Symbol]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@return ç™ºè¦‹ã•ã‚ŒãŸ Encoding ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
+@raise ArgumentError æŒ‡å®šã—ãŸåå‰ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ãŒç™ºè¦‹ã§ããªã„ã¨ç™ºç”Ÿã—ã¾ã™ã€‚
 
-ÆÃ¼ì¤Ê¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°Ì¾¤È¤·¤Æ¡¢¥í¥±¡¼¥ë¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤òÉ½¤¹ locale¡¢default_external ¤òÉ½¤¹ external¡¢default_internal ¤òÉ½¤¹ internal¡¢¥Õ¥¡¥¤¥ë¥·¥¹¥Æ¥à¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤òÉ½¤¹ filesystem ¤¬¤¢¤ê¤Þ¤¹¡£
+ç‰¹æ®Šãªã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°åã¨ã—ã¦ã€ãƒ­ã‚±ãƒ¼ãƒ«ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’è¡¨ã™ localeã€default_external ã‚’è¡¨ã™ externalã€default_internal ã‚’è¡¨ã™ internalã€ãƒ•ã‚¡ã‚¤ãƒ«ã‚·ã‚¹ãƒ†ãƒ ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’è¡¨ã™ filesystem ãŒã‚ã‚Šã¾ã™ã€‚
 
-Îã:
+ä¾‹:
  p Encoding.find(:Shift_JIS)    #=> #<Encoding:Shift_JIS>
  p Encoding.find("utf-8")       #=> #<Encoding:UTF-8>
 

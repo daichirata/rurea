@@ -2,7 +2,7 @@ names=TO_PATH
 visibility=public
 kind=defined
 
---- TO_PATH
-����Ū�˻ȤäƤ�������Ǥ������ѼԤ��Ȥ����ȤϤ���ޤ���
+--- TO_PATH -> Symbol
+内部的に使っている定数です。利用者が使うことはありません。
 
 

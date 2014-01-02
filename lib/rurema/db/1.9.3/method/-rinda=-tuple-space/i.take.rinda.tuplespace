@@ -6,10 +6,10 @@ kind=defined
 --- take(tuple, sec = nil) {|template| ... }
 @todo
 
-tuple �˥ޥå����륿�ץ�򥿥ץ륹�ڡ���������Ф����֤��ޤ���
-�ޥå����륿�ץ뤬¸�ߤ��ʤ����ϡ��ޥå����륿�ץ뤬���ץ륹�ڡ�����
-���������ޤ��Ԥ��ޤ���
+tuple にマッチするタプルをタプルスペースから取り出して返します。
+マッチするタプルが存在しない場合は、マッチするタプルがタプルスペースに
+投入されるまで待ちます。
 
-�Ԥ����֤� sec �ä�᤮�����ˤ� take �򤢤����
-�㳰 [[c:Rinda::RequestExpiredError]] ���ꤲ�ޤ���
+待ち時間が sec 秒を過ぎた時には take をあきらめ
+例外 [[c:Rinda::RequestExpiredError]] を投げます。
 

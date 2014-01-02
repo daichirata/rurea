@@ -4,12 +4,12 @@ kind=added
 
 --- must_include(object) -> true
 
-���Ȥ�Ϳ����줿���֥������Ȥ��ޤޤ�Ƥ����硢�����˥ѥ��������Ȥˤʤ�ޤ���
+自身に与えられたオブジェクトが含まれている場合、検査にパスしたことになります。
 
-@param object Ǥ�դΥ��֥������Ȥ���ꤷ�ޤ���
+@param object 任意のオブジェクトを指定します。
 
-@raise MiniTest::Assertion ���Ȥ� include? �᥽�åɤ�����ʤ�����ȯ�����ޤ���
-                           ���Ȥ�Ϳ����줿���֥������Ȥ��ޤޤ�Ƥ��ʤ�����ȯ�����ޤ���
+@raise MiniTest::Assertion 自身が include? メソッドを持たない場合に発生します。
+                           自身に与えられたオブジェクトが含まれていない場合に発生します。
 
 @see [[m:MiniTest::Assertions#assert_includes]]
 

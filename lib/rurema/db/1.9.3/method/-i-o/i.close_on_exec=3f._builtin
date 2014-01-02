@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- close_on_exec?   -> bool
-¼«¿È¤Ë close-on-exec ¥Õ¥é¥°¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤¿¾ì¹ç true ¤òÊÖ¤·¤Ş¤¹¡£
-¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ã« close-on-exec ãƒ•ãƒ©ã‚°ãŒè¨­å®šã•ã‚Œã¦ã„ãŸå ´åˆ true ã‚’è¿”ã—ã¾ã™ã€‚
+ãã†ã§ãªã„å ´åˆã« false ã‚’è¿”ã—ã¾ã™ã€‚
 
    f = open("/dev/null")
    f.close_on_exec?                 #=> false

@@ -4,22 +4,22 @@ kind=defined
 
 --- def_system_command(command, path = command) -> nil
 
-Shell �Υ᥽�åɤȤ��� command ����Ͽ���ޤ�.
+Shell のメソッドとして command を登録します.
 
-OS��Υ��ޥ�ɤ�¹Ԥ���ˤϤޤ�, Shell�Υ᥽�åɤȤ���������ޤ�.
-��) ���ޥ�ɤ�������ʤ��Ȥ�ľ�ܼ¹ԤǤ��� [[m:Shell#system]] ���ޥ�ɤ⤢��ޤ�.
+OS上のコマンドを実行するにはまず, Shellのメソッドとして定義します.
+注) コマンドを定義しなくとも直接実行できる [[m:Shell#system]] コマンドもあります.
 
-@param command Shell �Υ᥽�åɤȤ���������륳�ޥ�ɤ�ʸ����ǻ��ꤷ�ޤ���
+@param command Shell のメソッドとして定義するコマンドを文字列で指定します。
 
-@param path command �Υѥ�����ꤷ�ޤ���
-            ���ꤷ�ʤ�����command ��Ʊ���ˤʤ�ޤ���
+@param path command のパスを指定します。
+            指定しない場合はcommand と同じになります。
 
-��)
+例)
   Shell.def_system_command "ls"
-  # ls �����
+  # ls を定義
 
   Shell.def_system_command "sys_sort", "sort"
-  # sort���ޥ�ɤ�sys_sort�Ȥ������
+  # sortコマンドをsys_sortとして定義
 
   sh = Shell.new
   sh.transact {

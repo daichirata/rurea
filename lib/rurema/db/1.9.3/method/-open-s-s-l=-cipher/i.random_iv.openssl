@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- random_iv -> String
-IV ¤òÍð¿ô¤ÇÀ¸À®¤·¡¢°Å¹æ¥ª¥Ö¥¸¥§¥¯¥È¤ËÀßÄê¤·¤Þ¤¹¡£
+IV ã‚’ä¹±æ•°ã§ç”Ÿæˆã—ã€æš—å·ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¨­å®šã—ã¾ã™ã€‚
 
-À¸À®¤·¤¿ IV ¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+ç”Ÿæˆã—ãŸ IV ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 

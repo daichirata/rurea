@@ -6,4 +6,4 @@ library=rubygems.version_option
 aliases=
 aliasof=
 
-[[c:Gem::Command]] ¤Î --version, --platform ¥ª¥×¥·¥ç¥ó¤Î¤¿¤á¤Î¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+[[c:Gem::Command]] ã® --version, --platform ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®ãŸã‚ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚

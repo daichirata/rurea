@@ -4,16 +4,16 @@ kind=defined
 
 --- new(server, root, options = {}, default = WEBrick::Config::FileHandler)
 
-FileHandler �����֥�åȤ��������ޤ����桼����ľ�ܻȤ����ȤϤ��ޤꤢ��
-�ޤ���
+FileHandler サーブレットを生成します。ユーザが直接使うことはあまりあり
+ません。
 
-@param server [[c:WEBrick::GenericServer]] �Υ��֥��饹�Υ��󥹥��󥹤�
-              ���ꤷ�ޤ���
+@param server [[c:WEBrick::GenericServer]] のサブクラスのインスタンスを
+              指定します。
 
-@param root �����֥�åȤ˥롼�ȥǥ��쥯�ȥ�Ȥ���ǧ�������롢
-            ��������Υե����륷���ƥ�Υǥ��쥯�ȥ��ʸ�����Ϳ���롣
+@param root サーブレットにルートディレクトリとして認識させる、
+            ローカルのファイルシステムのディレクトリを文字列で与える。
 
-@param options �������¸�����ϥå��塢
+@param options 設定を保存したハッシュ、
 
-@param default �ǥե���Ȥ��������¸�����ϥå����Ϳ���롣
+@param default デフォルトの設定を保存したハッシュを与える。
 

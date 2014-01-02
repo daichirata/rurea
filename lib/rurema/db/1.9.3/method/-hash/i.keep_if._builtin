@@ -7,14 +7,14 @@ kind=defined
 --- keep_if -> Enumerator
 --- select! -> Enumerator
 
-�������ͤ�����Ȥ��ƥ֥��å���ɾ��������̤����Ǥ���褦�����Ǥ� self
-�˻Ĥ��ޤ���
+キーと値を引数としてブロックを評価した結果が真であるような要素を self
+に残します。
 
-keep_if �Ͼ�� self ���֤��ޤ���
-select! �ϥ��֥������Ȥ��ѹ����줿���� self ��
-����Ƥ��ʤ����� nil ���֤��ޤ���
+keep_if は常に self を返します。
+select! はオブジェクトが変更された場合に self を、
+されていない場合に nil を返します。
 
-�֥��å���Ϳ�����ʤ��ä����ϡ����Ȥ� keep_if ������������
-[[c:Enumerator]] ���֥������Ȥ��֤��ޤ���
+ブロックが与えられなかった場合は、自身と keep_if から生成した
+[[c:Enumerator]] オブジェクトを返します。
 
 @see [[m:Hash#select]], [[m:Hash#delete_if]],[[m:Hash#reject!]]

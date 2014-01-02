@@ -4,7 +4,7 @@ kind=defined
 
 --- each_classmodule {|m| ... } -> [RDoc::SingleClass | RDoc::NormalClass | RDoc::NormalModule]
 
-─╔▓├д╡дьд┐епеще╣бвете╕ехб╝еыд╦┬╨д╖д╞е╓еэе├епдЄ╔╛▓┴д╖д▐д╣бг
+ш┐╜хКауБХуВМуБЯуВпуГйуВ╣уАБуГвуВ╕уГеуГ╝уГлуБлхп╛уБЧуБжуГЦуГнуГГуВпуВТшйХф╛буБЧуБ╛уБЩуАВ
 
 @see [[m:RDoc::Context#classes]], [[m:RDoc::Context#modules]]
 

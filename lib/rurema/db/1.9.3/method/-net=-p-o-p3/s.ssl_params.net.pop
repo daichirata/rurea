@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- ssl_params -> Hash|nil
-SSL �Ǥ���³��ͭ���ˤ��Ƥ�����ˤϡ�
-SSL ������Υϥå�����֤��ޤ���
+SSL での接続を有効にしている場合には、
+SSL の設定のハッシュを返します。
 
-���Υϥå���ϡ���³�������������
-[[c:OpenSSL::SSL::SSLContext]] ���֥������Ȥ�
-[[m:OpenSSL::SSL::SSLContext#set_params]] ���Ϥ���ޤ���
-���Υϥå�����ѹ����뤳�Ȥǡ����Ѥ����ѥ�᡼����
-�ѹ�����ޤ���
+このハッシュは、接続時に生成される
+[[c:OpenSSL::SSL::SSLContext]] オブジェクトの
+[[m:OpenSSL::SSL::SSLContext#set_params]] に渡されます。
+このハッシュを変更することで、利用されるパラメータが
+変更されます。
 
-SSL ��ͭ���ˤ��Ƥ��ʤ����ˤ� nil ���֤��ޤ���
+SSL を有効にしていない場合には nil を返します。
 
 

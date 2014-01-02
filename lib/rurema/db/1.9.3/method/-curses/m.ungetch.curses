@@ -4,10 +4,10 @@ kind=defined
 
 --- ungetch(ch) -> nil
 
-ʸ�� ch (ASCII �����ɤ򼨤�����) �򥹥ȥ꡼����ᤷ�ޤ���
+文字 ch (ASCII コードを示す整数) をストリームに戻します。
 
-���ƤΥ�����ɥ��ǰ�Ĥ������塼������ޤ���
+全てのウインドウで一つだけキューがあります。
 
-@param ch ʸ������ ASCII �����ɤǻ��ꤷ�ޤ���
+@param ch 文字を一つ ASCII コードで指定します。
 
 

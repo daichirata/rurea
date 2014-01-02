@@ -4,7 +4,7 @@ kind=added
 
 --- taguri=(val)
 
-���ȤΥ��� URI �� val �����ꤷ�ޤ���
+自身のタグ URI を val に設定します。
 
-@param val ���� URI ��ʸ����ǻ��ꤷ�ޤ���
+@param val タグ URI を文字列で指定します。
 

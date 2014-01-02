@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- AUTO -> nil
-�����ɤ�ưȽ�̤��뤳�Ȥ�ɽ���ޤ���
+コードを自動判別することを表します。
 
-NKF�⥸�塼�뼫�Τ�������Ѥ��ޤ���
+NKFモジュール自体からは利用しません。
 
 

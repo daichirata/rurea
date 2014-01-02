@@ -3,11 +3,12 @@ classes=Net=Telnet
 methods=
 sublibraries=
 is_sublibrary=false
+category=Network
 
-Telnet �ץ��ȥ���򥯥饤�����¦�ǰ����饤�֥��Ǥ���
+Telnet プロトコルをクライアント側で扱うライブラリです。
 
-=== ����ʸ��
-Telnet �˴ؤ��� RFC �Ͽ�¿��¸�ߤ��ޤ���
+=== 参考文献
+Telnet に関する RFC は数多く存在します。
 [[RFC:854]], [[RFC:855]], [[RFC:856]], [[RFC:857]], [[RFC:858]], 
-[[RFC:859]], [[RFC:860]], [[RFC:861]], �ǥץ��ȥ����
-���ܤ��������Ƥ��ޤ���
+[[RFC:859]], [[RFC:860]], [[RFC:861]], でプロトコルの
+基本が定義されています。

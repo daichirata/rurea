@@ -4,5 +4,5 @@ kind=defined
 
 --- closed_read?    -> bool
 
-���Ȥ��Ф����ɤ߼�꤬�ػߤ���Ƥ���ʤ� true ���֤��ޤ��������Ǥʤ����ϡ�false ���֤��ޤ���
+自身に対する読み取りが禁止されているなら true を返します。そうでない場合は、false を返します。
 

@@ -19,7 +19,7 @@ on the screen immediately change to the new definition.
 
 @param color ???
 
-@param r ¥ì¥Ã¥É¤ÎÎÌ¤ò»ØÄê¤·¤Ş¤¹¡£
-@param g ¥°¥ê¡¼¥ó¤ÎÎÌ¤ò»ØÄê¤·¤Ş¤¹¡£
-@param b ¥Ö¥ë¡¼¤ÎÎÌ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param r ãƒ¬ãƒƒãƒ‰ã®é‡ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@param g ã‚°ãƒªãƒ¼ãƒ³ã®é‡ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@param b ãƒ–ãƒ«ãƒ¼ã®é‡ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

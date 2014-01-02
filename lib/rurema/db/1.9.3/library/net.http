@@ -3,24 +3,25 @@ classes=Net=HTTP,HTTPSession,Net=HTTPHeader,Net=HTTPGenericRequest,Net=HTTPReque
 methods=
 sublibraries=
 is_sublibrary=false
+category=Network
 
-���ѥǡ���ž���ץ��ȥ��� HTTP �򰷤��饤�֥��Ǥ���
-������ [[RFC:2616]] �˴𤭤ޤ���
+汎用データ転送プロトコル HTTP を扱うライブラリです。
+実装は [[RFC:2616]] に基きます。
 
-=== ������
+=== 使用例
 
-==== �����֥����Ф���ɥ�����Ȥ����� (GET)
+==== ウェブサーバからドキュメントを得る (GET)
 
-��1: GET ���� ɽ���������
+例1: GET して 表示するだけ
   require 'net/http'
   Net::HTTP.get_print 'www.example.com', '/index.html'
 
-��2: [[c:URI]] ��Ȥ�
+例2: [[c:URI]] を使う
   require 'net/http'
   require 'uri'
   Net::HTTP.get_print URI.parse('http://www.example.com/index.html')
 
-��3: �������Ū����
+例3: より汎用的な例
 
   require 'net/http'
   require 'uri'
@@ -31,7 +32,7 @@ is_sublibrary=false
   }
   puts res.body
 
-��4: ������ꤵ�������Ū����
+例4: 上の例よりさらに汎用的な例
   require 'net/http'
   
   url = URI.parse('http://www.example.com/index.html')
@@ -41,21 +42,21 @@ is_sublibrary=false
   }
   puts res.body
 
-==== �ե�����ξ������������ (POST)
+==== フォームの情報を送信する (POST)
   require 'net/http'
   require 'uri'
 
-  #��1: POST�������
+  #例1: POSTするだけ
   res = Net::HTTP.post_form(URI.parse('http://www.example.com/search'),
                             {'q'=>'ruby', 'max'=>'50'})
   puts res.body
   
-  #��2: ǧ���դ��� POST ����
+  #例2: 認証付きで POST する
   res = Net::HTTP.post_form(URI.parse('http://jack:pass@www.example.com/todo.cgi'),
                             {'from'=>'2005-01-01', 'to'=>'2005-03-31'})
   puts res.body
 
-  #��3: ���٤������椹��
+  #例3: より細かく制御する
   url = URI.parse('http://www.example.com/todo.cgi')
   req = Net::HTTP::Post.new(url.path)
   req.basic_auth 'jack', 'pass'
@@ -68,12 +69,12 @@ is_sublibrary=false
     res.value
   end
 
-==== �ץ�������ͳ�Υ�������
+==== プロクシ経由のアクセス
 
-[[m:Net::HTTP.Proxy]] �ϥץ�������ͳ�Ǥ���³��Ԥʤ����饹��
-���������֤��ޤ������Υ��饹�� [[c:Net::HTTP]] ��Ʊ��
-�᥽�åɤ������Ʊ���褦��ư��򤷤ޤ���������
-��³����ݤˤϾ�˥ץ�������ͳ�Ȥʤ�ޤ���
+[[m:Net::HTTP.Proxy]] はプロクシ経由での接続を行なうクラスを
+生成して返します。このクラスは [[c:Net::HTTP]] と同じ
+メソッドを持ち、同じように動作をします。ただし
+接続する際には常にプロクシ経由となります。
   require 'net/http'
   
   proxy_addr = 'your.proxy.host'
@@ -84,13 +85,13 @@ is_sublibrary=false
           :
   }
 
-�ޤ� [[m:Net::HTTP.Proxy]] ���������� nil ���� 
-Net::HTTP ���Ȥ��֤��Τ�
-��Υ����ɤΤ褦�˽񤤤Ƥ����Хץ������ʤ��ξ��ˤ��б��Ǥ��ޤ���
+また [[m:Net::HTTP.Proxy]] は第一引数が nil だと 
+Net::HTTP 自身を返すので
+上のコードのように書いておけばプロクシなしの場合にも対応できます。
 
-[[m:Net::HTTP.Proxy]] �ˤϥ桼��̾�ȥѥ���ɤ���
-���ץ������������ꡢ�ʲ��Τ褦�ˤ���
-�ץ�������ǧ�ڤ򤹤뤳�Ȥ��Ǥ��ޤ���
+[[m:Net::HTTP.Proxy]] にはユーザ名とパスワードを取る
+オプション引数があり、以下のようにして
+プロクシの認証をすることができます。
   proxy_host = 'your.proxy.host'
   proxy_port = 8080
   uri = URI.parse(ENV['http_proxy'])
@@ -100,13 +101,13 @@ Net::HTTP ���Ȥ��֤��Τ�
     # always connect to your.proxy.addr:8080 using specified username and password
           :
   }
-���Υ饤�֥��ϴĶ��ѿ� HTTP_PROXY ����ڹ�θ���ʤ�����
-�����դ��Ƥ����������ץ�������Ȥ��������Ͼ����Τ褦��
-����Ū�˼�갷��ʤ���Фʤ�ޤ���
+このライブラリは環境変数 HTTP_PROXY を一切考慮しないこと
+に注意してください。プロクシを使いたい場合は上の例のように
+明示的に取り扱わなければなりません。
 
-==== ������쥯�Ȥ��б�����
-�ʲ������ fetch �ϥ�����쥯�Ȥ��б����Ƥ��ޤ���
-limit ����ʾ������쥯�Ȥ����饨�顼�ˤ��ޤ���
+==== リダイレクトに対応する
+以下の例の fetch はリダイレクトに対応しています。
+limit 回数以上リダイレクトしたらエラーにします。
 
   require 'net/http'
   require 'uri'
@@ -128,10 +129,10 @@ limit ����ʾ������쥯�Ȥ����饨�顼�ˤ��ޤ���
 
   print fetch('http://www.example.org')
 
-���ܤ����� [[c:Net::HTTPResponse]]�� [[c:Net::HTTPSuccess]]��
-[[c:Net::HTTPRedirection]] �򻲾Ȥ��Ƥ���������
+より詳しくは [[c:Net::HTTPResponse]]、 [[c:Net::HTTPSuccess]]、
+[[c:Net::HTTPRedirection]] を参照してください。
 
-==== Basic ǧ��
+==== Basic 認証
 
   require 'net/http'
   
@@ -146,24 +147,24 @@ limit ����ʾ������쥯�Ȥ����饨�顼�ˤ��ޤ���
 
 
 
-=== �ե�������ͤζ��ڤ�ʸ���ˤĤ���
+=== フォームの値の区切り文字について
 
-POST�� application/x-www-form-urlencoded �Ȥ���ʣ���Υե�������ͤ������硢
-���߹����Ԥʤ��Ƥ���Τϡ� name0=value0&name1=value1 �Τ褦�˥���ѥ����
-(`&') �Ƕ��ڤ��꤫���Ǥ���
-������ˡ�ϡ�[[RFC:1866]] Hypertext Markup Language - 2.0 �ǽ��Ƹ������о줷��
-HTML 4.01 Specification �� 17.13.4 Form content types
-�Ǥ⤽�Τ褦�˽񤫤�Ƥ��ޤ���
+POSTで application/x-www-form-urlencoded として複数のフォームの値を送る場合、
+現在広く行なわれているのは、 name0=value0&name1=value1 のようにアンパサンド
+(`&') で区切るやりかたです。
+この方法は、[[RFC:1866]] Hypertext Markup Language - 2.0 で初めて公式に登場し、
+HTML 4.01 Specification の 17.13.4 Form content types
+でもそのように書かれています。
 
-�Ȥ�������Ʊ�� HTML 4.01 Specification ��
-B.2.2 Ampersands in URI attribute values �Ǥϡ�
-���� `&' ��SGML��ʸ�����λ��Ȥ��Ѥ����뤳�Ȥ���Ŧ����Ƥ��ꡢ
-CGI�䥵���Фμ����Ԥ��Ф� `&' �������
-���ߥ����� `;' �򥵥ݡ��Ȥ��뤳�Ȥ򾩤�Ƥ��ޤ���
+ところが、同じ HTML 4.01 Specification の
+B.2.2 Ampersands in URI attribute values では、
+この `&' がSGMLの文字実体参照で用いられることが指摘されており、
+CGIやサーバの実装者に対し `&' の代わりに
+セミコロン `;' をサポートすることを奨めています。
 
-���������ºݤˤ� `;' ���ᤷ�ʤ�CGI�䥵���Ф�ޤ��ޤ����������뤿��
-���Υ�ե���󥹥ޥ˥奢��Ǥ���Ȥ��� `&' ���Ѥ��ޤ�����
+しかし、実際には `;' を解釈しないCGIやサーバもまだまだ見受けられるため
+このリファレンスマニュアルでは例として `&' を用いました。
 
-�ʤ� Ruby ɸ��� [[lib:cgi]] �饤�֥��Ǥ� '&' �� ';' ��ξ�����ݡ��Ȥ��Ƥ��ޤ��Τǡ�
-[[lib:cgi]] �饤�֥���Ȥä� CGI ������ץȤ�񤯾��Ϥ����ΰ㤤�򵤤ˤ���
-ɬ�פϤ���ޤ���
+なお Ruby 標準の [[lib:cgi]] ライブラリでは '&' と ';' の両方サポートしていますので、
+[[lib:cgi]] ライブラリを使って CGI スクリプトを書く場合はこれらの違いを気にする
+必要はありません。

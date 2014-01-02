@@ -5,9 +5,9 @@ kind=defined
 --- url_encode(s)  -> String
 --- u(s) -> String
 
-ʸ���� s �� URL���󥳡��ɤ���ʸ������֤��ޤ���
+文字列 s を URLエンコードした文字列を返します。
 
-ʸ���� s ��˴ޤޤ�� 2�Х���ʸ����Ⱦ�ѥ��ڡ����ˤĤ��� URL ���󥳡��ɤ�Ԥä�ʸ������֤��ޤ�([[m:CGI.escape]]�Ȥۤ�Ʊ���Ǥ�)��
+文字列 s 中に含まれる 2バイト文字や半角スペースについて URL エンコードを行った文字列を返します([[m:CGI.escape]]とほぼ同じです)。
 
-@param s URL���󥳡��ɤ�Ԥ�ʸ����
+@param s URLエンコードを行う文字列
 

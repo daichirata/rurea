@@ -5,5 +5,5 @@ kind=defined
 --- eof -> bool
 --- eof? -> bool
 
-[[m:IO#eof]], [[m:IO#eof?]] �˰Ѿ����ޤ���
+[[m:IO#eof]], [[m:IO#eof?]] に委譲します。
 

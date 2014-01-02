@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- VT_I2 -> Integer
-����դ�16�ӥå�������short�ˤ򼨤��ޤ���2�ˡ�
+符号付き16ビット整数（short）を示します（2）。
 

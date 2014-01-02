@@ -4,6 +4,6 @@ kind=defined
 
 --- comment -> String | nil
 
-gzip �ե�����Υإå����˵�Ͽ����Ƥ��륳���Ȥ��֤��ޤ���
-�����Ȥ�¸�ߤ��ʤ����� nil ���֤��ޤ���
+gzip ファイルのヘッダーに記録されているコメントを返します。
+コメントが存在しない場合は nil を返します。
 

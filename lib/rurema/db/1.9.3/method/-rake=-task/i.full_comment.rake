@@ -4,5 +4,5 @@ kind=defined
 
 --- full_comment -> String
 
-���ȤΥ����Ȥ������֤��ޤ���
+自身のコメントを全て返します。
 

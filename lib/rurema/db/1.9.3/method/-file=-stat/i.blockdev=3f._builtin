@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- blockdev? -> bool
-¥Ö¥í¥Ã¥¯¥¹¥Ú¥·¥ã¥ë¥Õ¥¡¥¤¥ë¤Î»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ–ãƒ­ãƒƒã‚¯ã‚¹ãƒšã‚·ãƒ£ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ã®æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   Dir.glob("/dev/*") {|bd|
     if File::Stat.new(bd).blockdev?
       puts bd
     end
   }
-  #Îã
+  #ä¾‹
   #...
   #=> /dev/hda1
   #=> /dev/hda3

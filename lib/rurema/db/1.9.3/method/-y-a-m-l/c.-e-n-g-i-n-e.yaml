@@ -4,7 +4,7 @@ kind=defined
 
 --- ENGINE -> YAML::EngineManager
 
-[[c:YAML::EngineManager]] ¤òÊÖ¤·¤Ş¤¹¡£
+[[c:YAML::EngineManager]] ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:YAML::EngineManager#yamler]], [[m:YAML::EngineManager#yamler=]]
 

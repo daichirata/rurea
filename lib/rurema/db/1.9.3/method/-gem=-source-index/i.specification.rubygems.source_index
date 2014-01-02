@@ -4,7 +4,7 @@ kind=defined
 
 --- specification(full_name) -> Gem::Specification | nil
 
-���ꤵ�줿̾���� [[c:Gem::Specification]] ���֥������Ȥ��֤��ޤ���
+指定された名前の [[c:Gem::Specification]] オブジェクトを返します。
 
-@param full_name Gem �Υե�͡������ꤷ�ޤ���
+@param full_name Gem のフルネームを指定します。
 

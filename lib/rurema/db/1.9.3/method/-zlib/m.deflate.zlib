@@ -5,7 +5,7 @@ kind=defined
 --- deflate(string, level = Zlib::DEFAULT_COMPRESSION ) -> String
 @todo
 
-string ¤ò°µ½Ì¤·¤Ş¤¹¡£
+string ã‚’åœ§ç¸®ã—ã¾ã™ã€‚
 
 @see [[m:Zlib::Deflate.deflate]]
 

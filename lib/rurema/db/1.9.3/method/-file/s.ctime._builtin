@@ -4,10 +4,10 @@ kind=defined
 
 --- ctime(filename)    -> Time
 
-���֤��Ǹ���ѹ����줿������֤��ޤ���
-���֤��ѹ��Ȥ� chmod �ʤɤˤ���ΤǤ���
+状態が最後に変更された時刻を返します。
+状態の変更とは chmod などによるものです。
 
-@param filename �ե�����̾��ɽ��ʸ���� IO ���֥������Ȥ���ꤷ�ޤ���
+@param filename ファイル名を表す文字列か IO オブジェクトを指定します。
 
-@raise Errno::EXXX �ե�����λ���μ����˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX ファイルの時刻の取得に失敗した場合に発生します。
 

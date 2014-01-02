@@ -4,76 +4,76 @@ kind=defined
 
 --- setup_argv(original_argv = ARGV) { |files| ... } -> [String]
 
-original_argv�ǻ��ꤵ�줿���ץ�������Ϥ��ơ��ƥ����оݤˤʤ�ե�����
-��require���ޤ���
+original_argvで指定されたオプションを解析して、テスト対象になるファイル
+をrequireします。
 
-@param original_argv ���ץ�������ꤷ�ޤ�����ά���줿���ϡ�
-                     [[m:Kernel::ARGV]]�����Ѥ���ޤ���
+@param original_argv オプションを指定します。省略された場合は、
+                     [[m:Object::ARGV]]が使用されます。
 
-@raise ArgumentError ���ꤵ�줿�ե����뤬¸�ߤ��ʤ�����ȯ�����ޤ���
+@raise ArgumentError 指定されたファイルが存在しない場合に発生します。
 
-�֥��å������ꤵ�줿���ˤϥ֥��å���ɾ�����ơ����η�̤�require���о�
-�ˤ��ޤ���
+ブロックが指定された場合にはブロックを評価して、その結果をrequireの対象
+にします。
 
-�֥��å��ѥ�᡼���ˤϾ嵭��original_argv����-x�ǻ��ꤵ�줿��ΰʳ��Υ�
-�ץ����������Ϥ���ޤ����ե�����̾������˥ǥ��쥯�ȥ����ꤹ��
-�ȡ��ǥ��쥯�ȥ����ˤ���test_*.rb������require���ޤ���
+ブロックパラメータには上記のoriginal_argvから-xで指定されたもの以外のオ
+プションが配列で渡されます。ファイル名の代わりにディレクトリを指定する
+と、ディレクトリの中にあるtest_*.rbを全てrequireします。
 
-���Υ᥽�åɼ��Τϡ����ץ�������Ϥ���require��Ԥ��ʳ��ν����ϹԤ���
-���󤬡�test/unit.rb��require���ƸƤӽФ��᥽�åɤΤ��ᡢ���Ū�˥�˥�
-�ȥƥ��Ȥ��¹Ԥ���ޤ���testrb���ޥ�ɤΤ褦�ˡ���˥åȥƥ��Ȥ�¹Ԥ�
-��ץ����������������˻��Ѥ��ޤ���
+このメソッド自体は、オプションを解析してrequireを行う以外の処理は行いま
+せんが、test/unit.rbをrequireして呼び出すメソッドのため、結果的にユニッ
+トテストが実行されます。testrbコマンドのように、ユニットテストを実行す
+るプログラムを作成する場合に使用します。
 
-===== ���Ѳ�ǽ�ʥ��ץ����
+===== 使用可能なオプション
 
 : -v
-  �ܺ٤�ɽ�����ޤ���
+  詳細を表示します。
 
 : -n, --name
-  ���ꤵ�줿�ƥ��ȥ᥽�åɤ�¹Ԥ��ޤ����ƥ��ȥ᥽�åɤλ��������ɽ��
-  ��Ȥ��ޤ����ʤ���--name=test_foo�Τ褦�ʻ���ϹԤ��ޤ���--name test_foo
-  �Τ褦�˻��ꤷ�Ƥ���������
+  指定されたテストメソッドを実行します。テストメソッドの指定に正規表現
+  も使えます。なお、--name=test_fooのような指定は行えません。--name test_foo
+  のように指定してください。
 
 : -x
-  ���ꤵ�줿�ե������������ޤ����ե�����λ��������ɽ����Ȥ��ޤ���
+  指定されたファイルを除外します。ファイルの指定に正規表現も使えます。
 
 : -s, --seed
-  [[m:Kernel.#rand]] ������μ����ꤷ���ͤ����ꤷ�ޤ���
+  [[m:Kernel.#rand]] の乱数の種を指定した値に設定します。
 
 : --jobs-status
 
-  �ƥ��Ȥ���ե�����ξ��֤�ɽ�����ޤ���--jobs �����ꤵ��ʤ��ä�����ͭ���ˤʤ�ޤ���
+  テストするファイルの状態を表示します。--jobs が指定されなかった場合は有効になりません。
 
 : -j, --jobs
 
-  ����¹Ԥ��������ꤷ�ޤ���
+  並列実行する数を指定します。
 
 : --no-retry
 
-  --jobs ���ץ�������ꤵ�줿���ˡ���ȥ饤��ǽ��̵�������ޤ���
+  --jobs オプションも指定された場合に、リトライ機能を無効化します。
 
 : --ruby
 
-  ruby ���ޥ�ɤΥѥ�����ꤷ�ޤ�����ά�������ϡ�[[m:RbConfig.ruby]] ���ͤ���Ѥ��ޤ���
+  ruby コマンドのパスを指定します。省略した場合は、[[m:RbConfig.ruby]] の値を使用します。
 
 : -q, --hide-skip
 
-  �����åפ����ƥ��Ȥ�ɽ�����ޤ���
+  スキップしたテストを表示しません。
 
 : -I
 
-  �饤�֥��Υ����ɥѥ��˻��ꤷ���ͤ��ɲä��ޤ���
+  ライブラリのロードパスに指定した値を追加します。
 
 : --gc-stress
 
-  [[m:GC.stress]] �� true �����ꤷ�ޤ���
+  [[m:GC.stress]] に true を設定します。
 
 : --no-gc-stress
 
-  [[m:GC.stress]] �� false �����ꤷ�ޤ���
+  [[m:GC.stress]] に false を設定します。
 
-===== ����
+===== 注意
 
-Test::Unit.setup_argv��original_argv�λ���˴ؤ�餺��ARGV��files���֤�
-�����ޤ����֤�������줿ARGV��[[lib:minitest/unit]]�ˤ�äƤ⤦1�ٲ��Ϥ���ޤ���
+Test::Unit.setup_argvはoriginal_argvの指定に関わらず、ARGVをfilesで置き
+換えます。置き換えられたARGVは[[lib:minitest/unit]]によってもう1度解析されます。
 

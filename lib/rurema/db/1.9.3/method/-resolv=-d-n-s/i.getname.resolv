@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- getname(address) -> Resolv::DNS::Name
-IP ���ɥ쥹 address �Υۥ���̾���å����åפ���
-��å����å׷�̤κǽ�Υۥ���̾���֤��ޤ���
+IP アドレス address のホスト名をルックアップし、
+ルックアップ結果の最初のホスト名を返します。
 
-@param address IP���ɥ쥹��ʸ���� Resolv::IPv4 �Υ��󥹥��󥹡�
-               Resolv::IPv6 �Υ��󥹥��󥹡��Τ����줫Ϳ���ޤ���
+@param address IPアドレスを文字列、 Resolv::IPv4 のインスタンス、
+               Resolv::IPv6 のインスタンス、のいずれか与えます。
                
-@raise Resolv::ResolvError ��å����åפ˼��Ԥ����Ȥ���ȯ�����ޤ���
+@raise Resolv::ResolvError ルックアップに失敗したときに発生します。
 

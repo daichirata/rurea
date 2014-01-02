@@ -5,6 +5,6 @@ kind=defined
 --- version           -> Integer
 --- version=(value)
 
-Cookie ¤Î¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¤òÀ°¿ô¤ÇÉ½¤¹¥¢¥¯¥»¥µ¤Ç¤¹¡£
+Cookie ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’æ•´æ•°ã§è¡¨ã™ã‚¢ã‚¯ã‚»ã‚µã§ã™ã€‚
 
-@param value Cookie ¤Î¥Ð¡¼¥¸¥ç¥óÈÖ¹æ¤òÀ°¿ô¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param value Cookie ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã‚’æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚

@@ -4,8 +4,8 @@ kind=defined
 
 --- readbyte   -> Integer
 
-IO ¤«¤é1¥Ð¥¤¥È¤òÆÉ¤ß¹þ¤ßÀ°¿ô¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£
-´û¤Ë EOF ¤ËÃ£¤·¤Æ¤¤¤ì¤Ð EOFError ¤¬È¯À¸¤·¤Þ¤¹¡£
+IO ã‹ã‚‰1ãƒã‚¤ãƒˆã‚’èª­ã¿è¾¼ã¿æ•´æ•°ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
+æ—¢ã« EOF ã«é”ã—ã¦ã„ã‚Œã° EOFError ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise EOFError ´û¤Ë EOF ¤ËÃ£¤·¤Æ¤¤¤ë¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise EOFError æ—¢ã« EOF ã«é”ã—ã¦ã„ã‚‹å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

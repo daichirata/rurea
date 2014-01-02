@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- serial -> Integer
-Á÷¿®Àè¤Î¾ÚÌÀ½ñ¤Î¼±ÊÌÈÖ¹æ¤òÊÖ¤·¤Þ¤¹¡£
+é€ä¿¡å…ˆã®è¨¼æ˜Žæ›¸ã®è­˜åˆ¥ç•ªå·ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤³¤ì¤È [[m:OpenSSL::PKCS7::RecipientInfo#issuer]] ¤Ç
-Á÷¿®Àè¤ò°ì°Õ¤Ë¼±ÊÌ¤·¤Þ¤¹¡£
+ã“ã‚Œã¨ [[m:OpenSSL::PKCS7::RecipientInfo#issuer]] ã§
+é€ä¿¡å…ˆã‚’ä¸€æ„ã«è­˜åˆ¥ã—ã¾ã™ã€‚
 
 

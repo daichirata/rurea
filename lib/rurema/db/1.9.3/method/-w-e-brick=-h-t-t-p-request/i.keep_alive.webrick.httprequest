@@ -5,7 +5,7 @@ kind=defined
 --- keep_alive     -> bool
 --- keep_alive?    -> bool
 
-�ꥯ�����Ȥ� Keep-Alive ���׵ᤷ�Ƥ��뤫�򿿵����֤��ޤ���
-http_version �� 1.1 ��꾮�������� Keep-Alive ���׵ᤷ�Ƥ��Ƥ�̵�뤷��
-false �Ȥʤ�ޤ���
+リクエストが Keep-Alive を要求しているかを真偽で返します。
+http_version が 1.1 より小さい場合は Keep-Alive を要求していても無視して
+false となります。
 

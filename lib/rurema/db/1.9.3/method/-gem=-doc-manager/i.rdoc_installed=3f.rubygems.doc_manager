@@ -4,6 +4,6 @@ kind=defined
 
 --- rdoc_installed? -> bool
 
-RDoc �����󥹥ȡ���Ѥߤξ��ϡ������֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+RDoc がインストール済みの場合は、真を返します。
+そうでない場合は偽を返します。
 

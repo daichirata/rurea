@@ -6,9 +6,9 @@ library=webrick.httpserver
 aliases=
 aliasof=
 
-HTTP ¥µ¡¼¥Ð¤Îµ¡Ç½¤òÄó¶¡¤¹¤ë¥¯¥é¥¹¤Ç¤¹¡£
+HTTP ã‚µãƒ¼ãƒã®æ©Ÿèƒ½ã‚’æä¾›ã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-°Ê²¼¤Ï HTTP ¥µ¡¼¥Ð¤È¤·¤Æ¤Á¤ã¤ó¤ÈÆ°ºî¤¹¤ëÎã¤Ç¤¹¡£
+ä»¥ä¸‹ã¯ HTTP ã‚µãƒ¼ãƒã¨ã—ã¦ã¡ã‚ƒã‚“ã¨å‹•ä½œã™ã‚‹ä¾‹ã§ã™ã€‚
 
  require 'webrick'
  srv = WEBrick::HTTPServer.new({:DocumentRoot => '/home/username/public_html/',

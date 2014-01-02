@@ -4,9 +4,9 @@ kind=defined
 
 --- numerator -> Integer
 
-¼«¿È¤ò [[c:Rational]] ¤ËÊÑ´¹¤·¤¿»þ¤ÎÊ¬»Ò¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’ [[c:Rational]] ã«å¤‰æ›ã—ãŸæ™‚ã®åˆ†å­ã‚’è¿”ã—ã¾ã™ã€‚
 
-@return Ê¬»Ò¤òÊÖ¤·¤Þ¤¹¡£
+@return åˆ†å­ã‚’è¿”ã—ã¾ã™ã€‚
 
   2.0.numerator           # => 2
   0.5.numerator           # => 1

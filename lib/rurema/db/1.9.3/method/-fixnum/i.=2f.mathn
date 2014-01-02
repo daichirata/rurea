@@ -5,6 +5,5 @@ kind=redefined
 --- /(other)
 @todo
 
-Fixnum#quo ��Ʊ��Ư���򤷤ޤ�(ͭ�����ޤ����������֤��ޤ�)��
-
+Fixnum#quo と同じ働きをします(有理数または整数を返します)。
 

@@ -4,9 +4,9 @@ kind=added
 
 --- to_yaml_properties -> [String]
 
-���ȤΥ��󥹥����ѿ��ΰ�����ʸ�����������֤��ޤ���
+自身のインスタンス変数の一覧を文字列の配列で返します。
 
-@return ���ȤΥ��󥹥����ѿ�̾������
+@return 自身のインスタンス変数名の配列
 
   require 'yaml'
   

@@ -4,5 +4,5 @@ kind=defined
 
 --- files -> [String]
 
-���� Gem �ѥå������˴ޤޤ��ե�����̾��������֤��ޤ���
+この Gem パッケージに含まれるファイル名の配列を返します。
 

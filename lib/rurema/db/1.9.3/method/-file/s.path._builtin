@@ -4,7 +4,7 @@ kind=defined
 
 --- path(filename)    -> String
 
-���ꤵ�줿�ե�����̾��ʸ������֤��ޤ���filename ��ʸ����Ǥʤ����ϡ�to_path �᥽�åɤ�ƤӤޤ���
+指定されたファイル名を文字列で返します。filename が文字列でない場合は、to_path メソッドを呼びます。
 
-@param filename �ե�����̾��ɽ��ʸ���� to_path �᥽�åɤ�������줿���֥������Ȥ���ꤷ�ޤ���
+@param filename ファイル名を表す文字列か to_path メソッドが定義されたオブジェクトを指定します。
 

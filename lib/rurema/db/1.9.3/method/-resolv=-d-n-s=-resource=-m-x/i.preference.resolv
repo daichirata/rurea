@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- preference -> Integer
-����MX�쥳���ɤ�ͥ���٤��֤��ޤ���
+このMXレコードの優先度を返します。
 

@@ -3,5 +3,6 @@ classes=TclTkIp,TclTkLib,TclTkLib=EventFlag,TclTkLib=VarAccessFlag,TkCallbackBre
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

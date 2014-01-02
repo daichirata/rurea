@@ -4,13 +4,13 @@ kind=defined
 
 --- tan(x) -> Float
 
-x �����ܴؿ����ͤ�饸������֤��ޤ���
+x の正接関数の値をラジアンで返します。
 
-@param x �¿�
+@param x 実数
 
-@return �¿�
+@return 実数
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 

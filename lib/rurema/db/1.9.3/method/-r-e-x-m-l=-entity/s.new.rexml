@@ -2,6 +2,29 @@ names=new
 visibility=public
 kind=defined
 
---- new(stream, value = nil, parent = nil, reference = false)
-@todo
+--- new(name, value, parent=nil, reference=false) -> REXML::Entity
+--- new(array) -> REXML::Entity
+新たな Entity オブジェクトを生成して返します。
+
+name, value で実体の名前とその値を定義します。
+parent はその entity オブジェクトが属するノードを渡します。
+reference でその実体宣言がパラメータ実体(parameter entity)かどうかを指定します。
+
+このコンストラクタでは単純な内部実体(internal entity)宣言のみを実現できます。
+
+それ以外の内容を保持する Entity オブジェクトが欲しい場合は、
+文書に適切な DTD を含めておいてそれを [[m:REXML::Document.new]] で
+パースするようにしてください。
+
+配列を使うほうは rexml のパーサが内部的に利用するため通常は利用しません。
+
+@paran name 実体参照の名前
+@param value 参照の値
+@param parent 親ノード
+@param reference パラメータ実体であるかどうかの真偽値
+@param array 初期化のための配列
+
+==== 例
+「&gt;」「>」 の対応は以下のように実現されます。
+  REXML::Entity.new("gt", ">")
 

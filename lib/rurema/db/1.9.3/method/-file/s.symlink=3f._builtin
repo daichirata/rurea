@@ -4,7 +4,7 @@ kind=defined
 
 --- symlink?(path)    -> bool
 
-[[m:FileTest.#symlink?]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+[[m:FileTest.#symlink?]] ã¨åŒã˜ã§ã™ã€‚
 
-@param path ¥Ñ¥¹¤òÉ½¤¹Ê¸»úÎó¤« IO ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param path ãƒ‘ã‚¹ã‚’è¡¨ã™æ–‡å­—åˆ—ã‹ IO ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

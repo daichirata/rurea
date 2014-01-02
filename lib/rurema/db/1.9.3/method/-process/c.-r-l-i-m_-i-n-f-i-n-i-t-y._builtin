@@ -2,10 +2,10 @@ names=RLIM_INFINITY
 visibility=public
 kind=defined
 
---- RLIM_INFINITY
+--- RLIM_INFINITY -> Integer
 
-¥ê¥½¡¼¥¹¤ËÀ©¸Â¤¬¤Ê¤¤¤³¤È¤ò°ÕÌ£¤¹¤ëÄê¿ô¤Ç¤¹¡£
+ãƒªã‚½ãƒ¼ã‚¹ã«åˆ¶é™ãŒãªã„ã“ã¨ã‚’æ„å‘³ã™ã‚‹å®šæ•°ã§ã™ã€‚
 
-[[m:Process.#getrlimit]]¡¢[[m:Process.#setrlimit]] ¤Ç»È¤ï¤ì¤Ş¤¹¡£
+[[m:Process.#getrlimit]]ã€[[m:Process.#setrlimit]] ã§ä½¿ã‚ã‚Œã¾ã™ã€‚
 
 

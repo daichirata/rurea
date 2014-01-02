@@ -4,10 +4,10 @@ kind=defined
 
 --- each {...} -> object
 
-�������Υѥ�᡼���˽��äƥ֥��å��򷫤��֤��ޤ���
-�������˻��ꤷ�����ƥ졼��������ͤ򤽤Τޤ��֤��ޤ���
+生成時のパラメータに従ってブロックを繰り返します。
+生成時に指定したイテレータの戻り値をそのまま返します。
 
-��:
+例:
   str = "Yet Another Ruby Hacker"
   
   enum = Enumerator.new(str, :scan, /\w+/)

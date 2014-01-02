@@ -3,5 +3,6 @@ classes=NKF
 methods=
 sublibraries=
 is_sublibrary=false
+category=CharacterEncoding
 
-nkf ¤ò Ruby ¤«¤é»È¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+nkf ã‚’ Ruby ã‹ã‚‰ä½¿ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

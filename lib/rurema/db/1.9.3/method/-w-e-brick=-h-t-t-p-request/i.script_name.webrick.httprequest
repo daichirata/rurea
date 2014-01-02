@@ -4,5 +4,5 @@ kind=defined
 
 --- script_name          -> String
 
-CGI �ǤδĶ��ѿ� SCRIPT_NAME ��ʸ�����ɽ�����������Ǥ���
+CGI での環境変数 SCRIPT_NAME を文字列で表すアクセサです。
 

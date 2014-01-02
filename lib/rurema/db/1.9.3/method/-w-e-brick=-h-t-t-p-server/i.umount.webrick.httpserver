@@ -5,9 +5,9 @@ kind=defined
 --- unmount(dir)    -> ()
 --- umount(dir)     -> ()
 
-�����о�Υǥ��쥯�ȥ� dir �ȥ����֥�åȤȤ��б����ä��ޤ���
+サーバ上のディレクトリ dir とサーブレットとの対応を解消します。
 
-@param dir �б����ä���ǥ��쥯�ȥ����ꤷ�ޤ���
+@param dir 対応を解消するディレクトリを指定します。
 
   srv.mount('/img')
 

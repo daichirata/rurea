@@ -4,9 +4,9 @@ kind=defined
 
 --- from_io(io, gem_path = '(io)') -> Gem::OldFormat
 
-Gem �ե����뤫��ǡ������ɤ߹���� IO �������ꡢ���Ȥ����������֤��ޤ���
+Gem ファイルからデータを読み込んだ IO を受け取り、自身を初期化して返します。
 
-@param io Gem �ѥå����������Ƥ��ɤ߹���� IO ���֥������Ȥ���ꤷ�ޤ���
+@param io Gem パッケージの内容を読み込んだ IO オブジェクトを指定します。
 
-@param gem_path Gem �ե�����Υѥ�����ꤷ�ޤ���
+@param gem_path Gem ファイルのパスを指定します。
 

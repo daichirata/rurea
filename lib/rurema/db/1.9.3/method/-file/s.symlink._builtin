@@ -4,14 +4,14 @@ kind=defined
 
 --- symlink(old, new)    -> 0
 
-old �ؤ� new �Ȥ���̾���Υ���ܥ�å���󥯤��������ޤ���
+old への new という名前のシンボリックリンクを生成します。
 
-����ܥ�å���󥯤κ�������������� 0 ���֤��ޤ������Ԥ�������
-�㳰 [[c:Errno::EXXX]] ��ȯ�����ޤ���
+シンボリックリンクの作成に成功すれば 0 を返します。失敗した場合は
+例外 [[c:Errno::EXXX]] が発生します。
 
-@param old �ե�����̾��ɽ��ʸ�������ꤷ�ޤ��� 
+@param old ファイル名を表す文字列を指定します。 
 
-@param new ����ܥ�å���󥯤�ɽ��ʸ�������ꤷ�ޤ��� 
+@param new シンボリックリンクを表す文字列を指定します。 
 
-@raise Errno::EXXX ���Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX 失敗した場合に発生します。
 

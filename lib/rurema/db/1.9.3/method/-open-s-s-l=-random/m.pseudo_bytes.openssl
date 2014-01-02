@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- pseudo_bytes(len) -> String
-�Ź���Ū��ͽ¬�Բ�ǽ��������ʤ�(����®��)
-���������ˤ�äơ� len �Х��Ȥ�
-������ʥХ�������֤��ޤ���
+暗号論的な予測不可能性を持たない(が高速な)
+乱数生成器によって、 len バイトの
+ランダムなバイト列を返します。
 
-@param len ɬ�פʥ�����Х������Ĺ��
+@param len 必要なランダムバイト列の長さ
 

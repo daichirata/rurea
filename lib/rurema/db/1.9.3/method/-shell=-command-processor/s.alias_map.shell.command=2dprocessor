@@ -4,5 +4,5 @@ kind=defined
 
 --- alias_map -> Hash
 
-[[m:Shell::CommandProcessor.alias_command]] ¤ÇÄêµÁ¤·¤¿¥¨¥¤¥ê¥¢¥¹¤Î°ìÍ÷¤òÊÖ¤·¤Ş¤¹¡£
+[[m:Shell::CommandProcessor.alias_command]] ã§å®šç¾©ã—ãŸã‚¨ã‚¤ãƒªã‚¢ã‚¹ã®ä¸€è¦§ã‚’è¿”ã—ã¾ã™ã€‚
 

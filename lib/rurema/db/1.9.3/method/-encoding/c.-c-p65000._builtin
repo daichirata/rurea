@@ -5,9 +5,9 @@ kind=defined
 --- UTF_7 -> Encoding
 --- CP65000 -> Encoding
 
-UTF-7 �Ǥ���
+UTF-7 です。
 
-7�ӥåȤ��ϰ����ɽ������롢Unicode �Υ��󥳡��ǥ��󥰤ΰ��Ǥ���
-���ߡ����󥳡��ǥ��󥰤Ǥ���
+7ビットの範囲内で表現される、Unicode のエンコーディングの一種です。
+ダミーエンコーディングです。
 
 

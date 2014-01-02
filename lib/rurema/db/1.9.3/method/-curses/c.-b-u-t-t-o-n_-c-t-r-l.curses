@@ -4,7 +4,7 @@ kind=defined
 
 --- BUTTON_CTRL -> Integer
 
-�ޥ��������� CTRL �����򲡲����Ƥ��뤳�Ȥ�ɽ���ޥ������٥���Ѥ�����Ǥ���
+マウス操作中に CTRL キーを押下していることを表すマウスイベント用の定数です。
 
 @see [[m:Curses.getmouse]]
 

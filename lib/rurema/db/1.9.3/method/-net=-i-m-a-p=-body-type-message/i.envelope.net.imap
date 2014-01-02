@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- envelope -> Net::IMAP::Envelpe | nil
-��å������Υ���٥����פ��֤��ޤ���
+メッセージのエンベロープを返します。
 

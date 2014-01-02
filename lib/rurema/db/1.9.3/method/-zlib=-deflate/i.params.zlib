@@ -4,14 +4,14 @@ kind=defined
 
 --- params(level, strategy) -> nil
 
-���̥��ȥ꡼���������ѹ����ޤ����ܤ����� zlib.h ��
-���Ȥ��Ʋ�������������ѹ���ȼ�����ȥ꡼�फ��ν��Ϥ�
-���ϥХåե�����¸����ޤ���
+圧縮ストリームの設定を変更します。詳しくは zlib.h を
+参照して下さい。設定の変更に伴うストリームからの出力は
+出力バッファに保存されます。
 
-@param level 0-9���ϰϤ�����, �ޤ��� [[m:Zlib::DEFAULT_COMPRESSION]] ����ꤷ�ޤ���
-             �ܺ٤�zlib.h�򻲾Ȥ��Ƥ���������
+@param level 0-9の範囲の整数, または [[m:Zlib::DEFAULT_COMPRESSION]] を指定します。
+             詳細はzlib.hを参照してください。
 @param strategy [[m:Zlib::FILTERED]], [[m:Zlib::HUFFMAN_ONLY]],
-                [[m:Zlib::DEFAULT_STRATEGY]] �ʤɻ��ꤷ�ޤ����ܺ٤� zlib.h �򻲾Ȥ��Ƥ���������
+                [[m:Zlib::DEFAULT_STRATEGY]] など指定します。詳細は zlib.h を参照してください。
 
   require 'zlib'
 

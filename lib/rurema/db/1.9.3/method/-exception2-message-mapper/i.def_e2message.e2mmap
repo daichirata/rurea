@@ -4,17 +4,17 @@ kind=defined
 
 --- def_e2message(exception_class, message_format) -> Class
 
-¤¹¤Ç¤ËÂ¸ºß¤¹¤ëÎã³°¥¯¥é¥¹ exception_class ¤Ë¡¢
-¥¨¥é¡¼¥á¥Ã¥»¡¼¥¸ÍÑ¥Õ¥©¡¼¥Ş¥Ã¥È message_format ¤ò´ØÏ¢¤Å¤±¤Ş¤¹¡£
+ã™ã§ã«å­˜åœ¨ã™ã‚‹ä¾‹å¤–ã‚¯ãƒ©ã‚¹ exception_class ã«ã€
+ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ç”¨ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ message_format ã‚’é–¢é€£ã¥ã‘ã¾ã™ã€‚
 
-¤³¤Î¥Õ¥©¡¼¥Ş¥Ã¥È¤Ï [[m:Exception2MessageMapper#Raise]],
-[[m:Exception2MessageMapper#Fail]] ¤Ç»ÈÍÑ¤·¤Ş¤¹¡£
+ã“ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã¯ [[m:Exception2MessageMapper#Raise]],
+[[m:Exception2MessageMapper#Fail]] ã§ä½¿ç”¨ã—ã¾ã™ã€‚
 
-@param exception_class ¥á¥Ã¥»¡¼¥¸¤òÅĞÏ¿¤¹¤ëÎã³°¥¯¥é¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param exception_class ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç™»éŒ²ã™ã‚‹ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param message_format ¥á¥Ã¥»¡¼¥¸¤Î¥Õ¥©¡¼¥Ş¥Ã¥È¤ò»ØÄê¤·¤Ş¤¹¡£
-                    [[m:Kernel.#sprintf]] ¤Î¥Õ¥©¡¼¥Ş¥Ã¥ÈÊ¸»úÎó¤ÈÆ±¤¸·Á¼°¤ò»ÈÍÑ¤Ç¤­¤Ş¤¹¡£
+@param message_format ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
+                    [[m:Kernel.#sprintf]] ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆæ–‡å­—åˆ—ã¨åŒã˜å½¢å¼ã‚’ä½¿ç”¨ã§ãã¾ã™ã€‚
 
-@return exception_class ¤òÊÖ¤·¤Ş¤¹¡£
+@return exception_class ã‚’è¿”ã—ã¾ã™ã€‚
 
 

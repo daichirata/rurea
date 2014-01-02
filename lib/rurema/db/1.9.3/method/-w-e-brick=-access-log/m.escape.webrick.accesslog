@@ -4,7 +4,7 @@ kind=defined
 
 --- escape(data) -> String
 
-Ϳ����줿ʸ���󤬱�������Ƥ����硢����ʸ����̵�������ޤ���
+与えられた文字列が汚染されている場合、制御文字を無効化します。
 
-@param data ���������פ���ʸ�������ꤷ�ޤ���
+@param data エスケープする文字列を指定します。
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- yydebug -> bool
 
-yydebug�ι�ʸ���ϴ�����׵�ǽ��ͭ����̵�������֤��ޤ���
+yydebugの構文解析器の追跡機能が有効か無効かを返します。
 

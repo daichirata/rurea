@@ -4,10 +4,10 @@ kind=defined
 
 --- signal -> Thread | nil
 
-�����ѿ����ԤäƤ��륹��åɤ�1�ĺƳ����ޤ����Ƴ����줿
-����åɤ� [[m:ConditionVariable#wait]]
-�ǻ��ꤷ�� mutex �Υ��å����ߤޤ���
+状態変数を待っているスレッドを1つ再開します。再開された
+スレッドは [[m:ConditionVariable#wait]]
+で指定した mutex のロックを試みます。
 
-@return ���֤��ԤäƤ��륹��åɤ����ä����ϡ����Υ���åɤ��֤��ޤ���
-        �����Ǥʤ���� nil ���֤��ޤ���
+@return 状態を待っているスレッドがあった場合は、そのスレッドを返します。
+        そうでなければ nil を返します。
 

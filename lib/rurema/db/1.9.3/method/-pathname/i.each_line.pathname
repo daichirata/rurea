@@ -4,7 +4,7 @@ kind=defined
 
 --- each_line(*args){|line| ... } -> nil
 --- each_line(*args) -> Enumerator
-IO.foreach(self.to_s, *args, &block) ¤ÈÆ±¤¸¤Ç¤¹¡£
+IO.foreach(self.to_s, *args, &block) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:IO.foreach]]
 

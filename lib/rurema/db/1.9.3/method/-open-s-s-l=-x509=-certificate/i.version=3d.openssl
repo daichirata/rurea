@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- version=(version)
-¾ÚÌÀ½ñ¤Î¥Ğ¡¼¥¸¥ç¥ó¤òÀßÄê¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param version ¥Ğ¡¼¥¸¥ç¥ó(0°Ê¾å¤ÎÀ°¿ô)
-@raise OpenSSL::X509::CertificateError ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param version ãƒãƒ¼ã‚¸ãƒ§ãƒ³(0ä»¥ä¸Šã®æ•´æ•°)
+@raise OpenSSL::X509::CertificateError è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

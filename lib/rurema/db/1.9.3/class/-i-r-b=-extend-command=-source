@@ -6,4 +6,4 @@ library=irb.cmd.load
 aliases=
 aliasof=
 
-irb ��� irb_source ���ޥ�ɤΤ���γ�ĥ������������饹�Ǥ���
+irb 中の irb_source コマンドのための拡張を定義したクラスです。

@@ -4,7 +4,7 @@ kind=defined
 
 --- filter_backtrace(backtrace) -> Array
 
-�Хå��ȥ졼�����餳�Υ饤�֥��˴ؤ�����ʬ�����������̤��֤��ޤ���
+バックトレースからこのライブラリに関する部分を取り除いた結果を返します。
 
-@param backtrace �Хå��ȥ졼������ꤷ�ޤ���
+@param backtrace バックトレースを指定します。
 

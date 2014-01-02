@@ -5,21 +5,21 @@ kind=defined
 --- start(address, port = nil, account=nil, password=nil, isapop=false) -> Net::POP3
 --- start(address, port = nil, account=nil, password=nil, isapop=false) {|pop| .... } -> object
 
-[[c:Net::POP3]] ���֥������Ȥ��������������Ф���³���ޤ���
+[[c:Net::POP3]] オブジェクトを生成し、サーバへ接続します。
 
-�֥��å���Ϳ���ʤ����ˤ������������֥������Ȥ��֤��ޤ���
+ブロックを与えない場合には生成したオブジェクトを返します。
 
-�֥��å���Ϳ�������ˤϡ��������� [[c:Net::POP3]] ���֥������Ȥ�
-�֥��å����Ϥ��졢�֥��å�������ä��Ȥ��˥��å�����λ�����ޤ���
-���ξ���֤��ͤϥ֥��å����֤��ͤȤʤ�ޤ���
+ブロックを与えた場合には、生成した [[c:Net::POP3]] オブジェクトが
+ブロックに渡され、ブロックが終わったときにセッションを終了させます。
+この場合返り値はブロックの返り値となります。
 
-port �� nil ���Ϥ��ȡ�Ŭ���ʥݡ���(�̾��110��SSL���ѻ��ˤ� 995)��
-�Ȥ��ޤ���
+port に nil を渡すと、適当なポート(通常は110、SSL利用時には 995)を
+使います。
 
-�ʲ��Υ����ɤ�Ʊ��ư��򤷤ޤ���
+以下のコードと同じ動作をします。
   Net::POP3.new(address, port, isapop).start(account, password)
 
-������:
+使用例:
 
   require 'net/pop'
 
@@ -30,15 +30,15 @@ port �� nil ���Ϥ��ȡ�Ŭ���ʥݡ���(�̾��110��SSL���ѻ��ˤ� 995)��
     end
   }
 
-@param address POP3�����ФΥۥ���̾ʸ����
-@param port ��³����POP3�����ФΥݡ����ֹ�
-@param account ���������̾ʸ����
-@param password �ѥ����ʸ����
-@param isapop ����APOP�����Ѥ��ޤ�
+@param address POP3サーバのホスト名文字列
+@param port 接続するPOP3サーバのポート番号
+@param account アカウント名文字列
+@param password パスワード文字列
+@param isapop 真でAPOPを利用します
 
-@raise TimeoutError ��³�������ॢ���Ȥ�������ȯ�����ޤ�
-@raise Net::POPAuthenticationError ǧ�ڤ˼��Ԥ������⤷����APOP�����Ѥ��褦�Ȥ����������Ф�APOP���󶡤��Ƥ��ʤ�����ȯ�����ޤ�
-@raise Net::POPError �����Ф�ǧ�ڼ��԰ʳ��Υ��顼����𤷤�����ȯ�����ޤ�
-@raise Net::POPBadResponse �����Ф���α������ץ��ȥ���������Ǥ��ä�����ȯ�����ޤ�
+@raise TimeoutError 接続がタイムアウトした場合に発生します
+@raise Net::POPAuthenticationError 認証に失敗した、もしくはAPOPを利用しようとしたがサーバがAPOPを提供していない場合に発生します
+@raise Net::POPError サーバが認証失敗以外のエラーを報告した場合に発生します
+@raise Net::POPBadResponse サーバからの応答がプロトコル上不正であった場合に発生します
 
 @see [[m:Net::POP3#start]]

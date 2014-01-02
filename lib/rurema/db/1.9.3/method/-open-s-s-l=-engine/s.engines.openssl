@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- engines -> [OpenSSL::Engine]
-¥í¡¼¥É¤µ¤ì¤Æ¤¤¤ÆÍøÍÑ²ÄÇ½¤Ê engine ¤òÇÛÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+ãƒ­ãƒ¼ãƒ‰ã•ã‚Œã¦ã„ã¦åˆ©ç”¨å¯èƒ½ãª engine ã‚’é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::Engine.load]]
 

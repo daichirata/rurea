@@ -5,13 +5,13 @@ kind=added
 --- have_header(header, preheaders = nil) -> bool
 --- have_header(header, preheaders = nil){ ... } -> bool
 
-�إå��ե����� header �������ƥ��¸�ߤ��뤫�ɤ����������ޤ���
+ヘッダファイル header がシステムに存在するかどうか検査します。
 
-�إå��ե����� header ��¸�ߤ�����ϡ��������Х��ѿ� [[m:$defs]] ��
-"-DHAVE_header" ���ɲä��� true ���֤��ޤ����إå��ե����� header ��¸
-�ߤ��ʤ����� $defs ���ѹ����� false ���֤��ޤ���
+ヘッダファイル header が存在する場合は、グローバル変数 [[m:$defs]] に
+"-DHAVE_header" を追加して true を返します。ヘッダファイル header が存
+在しない場合は $defs は変更せず false を返します。
 
-@param header �����������إå��ե��������ꤷ�ޤ���
+@param header 検査したいヘッダファイルを指定します。
 
-@param preheaders �إå��ե�����򸡺����������ɤ߹���Ǥ����إå��ե��������ꤷ�ޤ���
+@param preheaders ヘッダファイルを検査する前に読み込んでおくヘッダファイルを指定します。
 

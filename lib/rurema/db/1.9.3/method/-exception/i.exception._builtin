@@ -5,17 +5,17 @@ kind=defined
 --- exception                   -> self
 --- exception(error_message)    -> Exception
 
-∞˙øÙ§ÚªÿƒÍ§∑§ §§æÏπÁ§œ self §Ú ÷§∑§ﬁ§π°£∞˙øÙ§ÚªÿƒÍ§∑§øæÏπÁ º´ø»§Œ•≥•‘°º
-§Ú¿∏¿Æ§∑ [[m:Exception#message]] ¬∞¿≠§Ú error_message §À§∑§∆ ÷§∑§ﬁ§π°£
+ÂºïÊï∞„ÇíÊåáÂÆö„Åó„Å™„ÅÑÂ†¥Âêà„ÅØ self „ÇíËøî„Åó„Åæ„Åô„ÄÇÂºïÊï∞„ÇíÊåáÂÆö„Åó„ÅüÂ†¥Âêà Ëá™Ë∫´„ÅÆ„Ç≥„Éî„Éº
+„ÇíÁîüÊàê„Åó [[m:Exception#message]] Â±ûÊÄß„Çí error_message „Å´„Åó„Å¶Ëøî„Åó„Åæ„Åô„ÄÇ
 
-[[m:Kernel.#raise]] §œ°¢º¬º¡≈™§À°¢Œ„≥∞•™•÷•∏•ß•Ø•»§Œ exception
-•·•Ω•√•…§Œ∏∆§”Ω–§∑§«§π°£
+[[m:Kernel.#raise]] „ÅØ„ÄÅÂÆüË≥™ÁöÑ„Å´„ÄÅ‰æãÂ§ñ„Ç™„Éñ„Ç∏„Çß„ÇØ„Éà„ÅÆ exception
+„É°„ÇΩ„ÉÉ„Éâ„ÅÆÂëº„Å≥Âá∫„Åó„Åß„Åô„ÄÇ
 
-@param error_message •®•È°º•·•√•ª°º•∏§Ú…Ω§π ∏ª˙ŒÛ§ÚªÿƒÍ§∑§ﬁ§π°£
+@param error_message „Ç®„É©„Éº„É°„ÉÉ„Çª„Éº„Ç∏„ÇíË°®„ÅôÊñáÂ≠óÂàó„ÇíÊåáÂÆö„Åó„Åæ„Åô„ÄÇ
 
   begin
-   ...        # ≤ø§´ΩËÕ˝
+   ...        # ‰Ωï„ÅãÂá¶ÁêÜ
   rescue => e
-   raise e.exception("an error occurs during hogehoge process")  # æ‹§∑§§•®•È°º•·•√•ª°º•∏
+   raise e.exception("an error occurs during hogehoge process")  # Ë©≥„Åó„ÅÑ„Ç®„É©„Éº„É°„ÉÉ„Çª„Éº„Ç∏
   end
 

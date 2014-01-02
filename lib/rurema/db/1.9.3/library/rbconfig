@@ -3,5 +3,6 @@ classes=RbConfig,Config
 methods=
 sublibraries=
 is_sublibrary=false
+category=Development
 
-Ruby ¥¤¥ó¥¿¥×¥ê¥¿ºîÀ®»ş¤ËÀßÄê¤µ¤ì¤¿¾ğÊó¤ò³ÊÇ¼¤·¤¿¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Ruby ã‚¤ãƒ³ã‚¿ãƒ—ãƒªã‚¿ä½œæˆæ™‚ã«è¨­å®šã•ã‚ŒãŸæƒ…å ±ã‚’æ ¼ç´ã—ãŸãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

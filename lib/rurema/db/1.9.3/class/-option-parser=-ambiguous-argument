@@ -6,4 +6,4 @@ library=optparse
 aliases=
 aliasof=
 
-���ץ����ΰ�����ۣ��ˤ����䴰�Ǥ��ʤ������ꤲ���ޤ���
+オプションの引数が曖昧にしか補完できない場合に投げられます。

@@ -4,5 +4,5 @@ kind=defined
 
 --- CP_ACP -> Fixnum
 
-Windows�����ANSI�����ɥڡ�����0�ˤ򼨤��ޤ���
+Windows既定のANSIコードページ（0）を示します。
 

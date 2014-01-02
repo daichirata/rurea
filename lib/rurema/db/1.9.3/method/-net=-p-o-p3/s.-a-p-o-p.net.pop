@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- APOP(is_apop) -> Class
-bool ¤¬¿¿¤Ê¤é [[c:Net::APOP]] ¥¯¥é¥¹¡¢µ¶¤Ê¤é [[c:Net::POP3]] ¥¯¥é¥¹¤òÊÖ¤·¤Ş¤¹¡£
+bool ãŒçœŸãªã‚‰ [[c:Net::APOP]] ã‚¯ãƒ©ã‚¹ã€å½ãªã‚‰ [[c:Net::POP3]] ã‚¯ãƒ©ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-»ÈÍÑÎã:
+ä½¿ç”¨ä¾‹:
 
   require 'net/pop'
 
@@ -14,5 +14,5 @@ bool ¤¬¿¿¤Ê¤é [[c:Net::APOP]] ¥¯¥é¥¹¡¢µ¶¤Ê¤é [[c:Net::POP3]] ¥¯¥é¥¹¤òÊÖ¤·¤Ş¤¹¡£
     ....
   }
 
-@param is_apop ¿¿¤Î¾ì¹ç¤Ë Net::APOP ¤òÊÖ¤·¤Ş¤¹¡£
+@param is_apop çœŸã®å ´åˆã« Net::APOP ã‚’è¿”ã—ã¾ã™ã€‚
 

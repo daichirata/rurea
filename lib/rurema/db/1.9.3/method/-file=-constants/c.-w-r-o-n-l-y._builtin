@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- WRONLY -> Integer
-�񤭹��ߤΤߤΥ⡼�ɤǥե�����򳫤��Ȥ��˻��ꤷ�ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+書き込みのみのモードでファイルを開くときに指定します。
+[[m:File.open]]で使用します。
 

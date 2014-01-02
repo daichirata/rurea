@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- add_signer(singer) -> self
-��̾�Ԥ��ɲä��ޤ���
+署名者を追加します。
 
-���Υ᥽�åɤϻȤ�ʤ��Ǥ���������
-���Υ᥽�åɤ� PKCS#7 �����٥� API �Ǥ��ꡢ�������Ȥ��Τ�
-�񤷤��Ǥ��礦��
+このメソッドは使わないでください。
+このメソッドは PKCS#7 の低レベル API であり、正しく使うのは
+難しいでしょう。
 
-@param signer �ɲä����̾��([[c:OpenSSL::PKCS7::SignerInfo]] ���֥�������)
+@param signer 追加する署名者([[c:OpenSSL::PKCS7::SignerInfo]] オブジェクト)
 

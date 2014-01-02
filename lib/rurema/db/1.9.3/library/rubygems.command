@@ -3,5 +3,6 @@ classes=Gem=Command
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-gem ¥³¥Ş¥ó¥É¤ò°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+gem ã‚³ãƒãƒ³ãƒ‰ã‚’æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

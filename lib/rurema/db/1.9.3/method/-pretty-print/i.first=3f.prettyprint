@@ -4,10 +4,10 @@ kind=defined
 
 --- first?    -> bool
 
-���Υ᥽�åɤ� obsolete �Ǥ���
+このメソッドは obsolete です。
 
-���ߤΥ��롼�פ� first? ���Ф���ǽ�θƤӽФ����ɤ�����Ƚ�ꤹ��
-�Ҹ�Ǥ�������ϥ���ޤǶ��ڤ�줿�ͤ���������Τ�ͭ�ѤǤ���
+現在のグループで first? に対する最初の呼び出しかどうかを判定する
+述語です。これはカンマで区切られた値を整形するのに有用です。
 
   pp.group(1, '[', ']') {
     xxx.each {|yyy|

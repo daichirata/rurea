@@ -6,9 +6,9 @@ library=net.ftp
 aliases=
 aliasof=
 
-net/ftp �饤�֥���Ϣ�Υ��顼���̤�ɽ���㳰���饹�Ǥ���
+net/ftp ライブラリ関連のエラー全般を表す例外クラスです。
 
-�����Фα��������ɤ����顼�򼨤��Ƥ������ȯ�����ޤ���
+サーバの応答コードがエラーを示している場合に発生します。
 
-�㳰ȯ���θ����Ȥʤä������б����� [[m:Exception#message]]
-���������ޤ���
+例外発生の原因となったサーバ応答は [[m:Exception#message]]
+から得られます。

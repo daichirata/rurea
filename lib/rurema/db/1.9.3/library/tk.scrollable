@@ -3,5 +3,6 @@ classes=Tk=Scrollable,Tk=X_Scrollable,Tk=Y_Scrollable
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

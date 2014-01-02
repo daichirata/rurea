@@ -4,14 +4,14 @@ kind=defined
 
 --- add_to(array, thing) -> ()
 
-array ¤Ë thing ¤òÄÉ²Ã¤·¤Ş¤¹¡£
+array ã« thing ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-@param array ÇÛÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param array é…åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param thing ÄÉ²Ã¤¹¤ëÍ×ÁÇ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param thing è¿½åŠ ã™ã‚‹è¦ç´ ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-[[m:RDoc::Context#add_alias]] ¤Ê¤É¤Ç»È¤ï¤ì¤Æ¤¤¤Ş¤¹¡£¥é¥¤¥Ö¥é¥êÆâÉô¤Ç»È
-ÍÑ¤·¤Ş¤¹¡£
+[[m:RDoc::Context#add_alias]] ãªã©ã§ä½¿ã‚ã‚Œã¦ã„ã¾ã™ã€‚ãƒ©ã‚¤ãƒ–ãƒ©ãƒªå†…éƒ¨ã§ä½¿
+ç”¨ã—ã¾ã™ã€‚
 
 @see [[m:RDoc::Context#add_alias]], [[m:RDoc::Context#add_attribute]],
      [[m:RDoc::Context#add_constant]], [[m:RDoc::Context#add_include]],

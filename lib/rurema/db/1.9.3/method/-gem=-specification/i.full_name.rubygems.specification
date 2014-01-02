@@ -4,7 +4,7 @@ kind=defined
 
 --- full_name -> String
 
-���� Gem �ѥå������ΥС�������ޤര����̾�� (name-version) ���֤��ޤ���
+この Gem パッケージのバージョンを含む完全な名前 (name-version) を返します。
 
-�ץ�åȥե�����ξ��󤬻��ꤵ��Ƥ�����ϡ������ޤߤޤ� (name-version-platform)��
+プラットフォームの情報が指定されている場合は、それも含みます (name-version-platform)。
 

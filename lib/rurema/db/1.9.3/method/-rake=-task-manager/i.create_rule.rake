@@ -4,7 +4,7 @@ kind=defined
 
 --- create_rule(*args){ ... }
 
-Ϳ����줿�ѥ�᡼���˽��äƥ롼���������ޤ���
+与えられたパラメータに従ってルールを作成します。
 
-@param args �롼���Ϳ����ѥ�᡼������ꤷ�ޤ���
+@param args ルールに与えるパラメータを指定します。
 

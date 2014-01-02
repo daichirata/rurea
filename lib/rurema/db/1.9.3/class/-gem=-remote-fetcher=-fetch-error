@@ -6,4 +6,4 @@ library=rubygems.remote_fetcher
 aliases=
 aliasof=
 
-[[c:Gem::RemoteFetcher]] ¤Ç¤Î½èÍı¤ÇÈ¯À¸¤¹¤ë IO ¤ä HTTP ¤ÎÎã³°¤ò¥é¥Ã¥×¤¹¤ëÎã³°¥¯¥é¥¹¤Ç¤¹¡£
+[[c:Gem::RemoteFetcher]] ã§ã®å‡¦ç†ã§ç™ºç”Ÿã™ã‚‹ IO ã‚„ HTTP ã®ä¾‹å¤–ã‚’ãƒ©ãƒƒãƒ—ã™ã‚‹ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

@@ -4,7 +4,7 @@ kind=defined
 
 --- finish -> IO
 
-GzipFile ���֥������Ȥ򥯥��������ޤ���[[m:Zlib::GzipFile#close]]�Ȱ㤤��
-���Υ᥽�åɤϴ�Ϣ�դ����Ƥ��� IO ���֥������Ȥ� close �᥽�åɤ�
-�ƤӽФ��ޤ��󡣴�Ϣ�դ����Ƥ��� IO ���֥������Ȥ��֤��ޤ���
+GzipFile オブジェクトをクローズします。[[m:Zlib::GzipFile#close]]と違い、
+このメソッドは関連付けられている IO オブジェクトの close メソッドを
+呼び出しません。関連付けられている IO オブジェクトを返します。
 

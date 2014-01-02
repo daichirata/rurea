@@ -4,18 +4,18 @@ kind=defined
 
 --- conv(to, from, str)     -> String
 
-Ϳ����줿ʸ�������ɤˤ������ä� str ���Ѵ�������̤�ʸ����Ȥ����֤��ޤ���
+与えられた文字コードにしたがって str を変換し、結果を文字列として返します。
 
-���ξ�ά���Ǥ���
+次の省略形です。
   Iconv.iconv(to, from, str).join
 
-@param to �Ѵ����ʸ���������ηϤ�ɽ��ʸ�������ꤷ�ޤ���
+@param to 変換先の文字コード体系を表す文字列を指定します。
 
-@param from �Ѵ�����ʸ���������ηϤ�ɽ��ʸ�������ꤷ�ޤ���
+@param from 変換前の文字コード体系を表す文字列を指定します。
 
-@param str �Ѵ�������ʸ�������ꤷ�ޤ���
+@param str 変換したい文字列を指定します。
 
-���Υ᥽�åɤ�
-[[m:Iconv.new]], [[m:Iconv.open]] ����� [[m:Iconv#iconv]] ���㳰
-�򵯤����ޤ���
+このメソッドは
+[[m:Iconv.new]], [[m:Iconv.open]] および [[m:Iconv#iconv]] の例外
+を起こします。
 

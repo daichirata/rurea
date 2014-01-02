@@ -4,7 +4,7 @@ kind=defined
 
 --- path     -> String | nil
 
-¼«¿È¤Î path ¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£ÀßÄê¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã® path ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚è¨­å®šã•ã‚Œã¦ã„ãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
   p URI.parse('http://example.com/hoge').path       #=> "/hoge"
   p URI.parse('http://example.com').path            #=> ""

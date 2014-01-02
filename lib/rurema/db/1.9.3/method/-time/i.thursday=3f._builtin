@@ -4,6 +4,6 @@ kind=defined
 
 --- thursday? -> bool
 
-¼«¿È¤ÎÉ½¤¹»þ¹ï¤¬ÌÚÍËÆü¤Ç¤¢¤ë¾ì¹ç¤Ë true ¤òÊÖ¤·¤Þ¤¹¡£
-¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã®è¡¨ã™æ™‚åˆ»ãŒæœ¨æ›œæ—¥ã§ã‚ã‚‹å ´åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚
+ãã†ã§ãªã„å ´åˆã« false ã‚’è¿”ã—ã¾ã™ã€‚
 

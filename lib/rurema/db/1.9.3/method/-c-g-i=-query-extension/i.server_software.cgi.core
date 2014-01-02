@@ -4,5 +4,5 @@ kind=defined
 
 --- server_software -> String
 
-ENV['SERVER_SOFTWARE'] ค๒สึคทคÞคนกฃ
+ENV['SERVER_SOFTWARE'] ใ’่ฟ”ใ—ใพใใ€
 

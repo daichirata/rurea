@@ -4,9 +4,9 @@ kind=defined
 
 --- body=(body)
 
-�����Ф�����ꥯ�����ȤΥ���ƥ��ƥ��ܥǥ���ʸ��������ꤷ�ޤ���
+サーバに送るリクエストのエンティティボディを文字列で設定します。
 
-@param body ���ꤹ��ܥǥ���ʸ�����Ϳ���ޤ���
+@param body 設定するボディを文字列で与えます。
 @see [[m:Net::HTTPGenericRequest#body]]
 
 

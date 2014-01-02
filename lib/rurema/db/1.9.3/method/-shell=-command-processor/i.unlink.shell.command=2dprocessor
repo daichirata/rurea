@@ -4,9 +4,9 @@ kind=defined
 
 --- unlink(path) -> self
 
-path ¤¬¥Õ¥¡¥¤¥ë¤Ê¤é [[m:File.unlink]]¡¢path ¤¬¥Ç¥£¥ì¥¯¥È¥ê¤Ê¤é [[m:Dir.unlink]] ¤ÎÆ°ºî¤ò¤·¤Ş¤¹¡£
+path ãŒãƒ•ã‚¡ã‚¤ãƒ«ãªã‚‰ [[m:File.unlink]]ã€path ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãªã‚‰ [[m:Dir.unlink]] ã®å‹•ä½œã‚’ã—ã¾ã™ã€‚
 
-@param path ºï½ü¤·¤¿¤¤¥Ñ¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param path å‰Šé™¤ã—ãŸã„ãƒ‘ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:File.unlink]], [[m:Dir.unlink]]
 

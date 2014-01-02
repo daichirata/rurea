@@ -5,9 +5,9 @@ kind=defined
 --- ISO_8859_7 -> Encoding
 --- ISO8859_7 -> Encoding
 
-ISO8859-7 ���󥳡��ǥ��󥰡�
+ISO8859-7 エンコーディング。
 
-���ꥷ���򰷤� 8bit single-byte ���󥳡��ǥ��󥰤Ǥ���
+ギリシャ語を扱う 8bit single-byte エンコーディングです。
 
 @see [[m:Encoding::Windows_1253]]
 

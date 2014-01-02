@@ -3,6 +3,7 @@ classes=Gem=Package=TarInput
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-gem-format ¤Ê tar ¥Õ¥¡¥¤¥ë¤òÆÉ¤ß¹ş¤à [[c:Gem::Package::TarReader]] ¤Î¥é¥Ã
-¥Ñ¡¼¥¯¥é¥¹¤òÄó¶¡¤¹¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+gem-format ãª tar ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚€ [[c:Gem::Package::TarReader]] ã®ãƒ©ãƒƒ
+ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã‚’æä¾›ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

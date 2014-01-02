@@ -3,5 +3,6 @@ classes=TkTextTagConfig,TkText,TkText=IndexModMethods,TkText=IndexString,TkText=
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

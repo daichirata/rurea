@@ -5,5 +5,5 @@ kind=defined
 --- gmt?    -> bool
 --- utc?    -> bool
 
-self �Υ����ॾ���󤬶��������������ꤵ��Ƥ���п����֤��ޤ���
+self のタイムゾーンが協定世界時に設定されていれば真を返します。
 

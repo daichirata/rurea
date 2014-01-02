@@ -5,9 +5,9 @@ kind=defined
 --- ISO_8859_2 -> Encoding
 --- ISO8859_2 -> Encoding
 
-ISO8859-2 ���󥳡��ǥ��󥰡�
+ISO8859-2 エンコーディング。
 
-���첤�θ���򰷤� 8bit single-byte ���󥳡��ǥ��󥰤Ǥ���
+中東欧の言語を扱う 8bit single-byte エンコーディングです。
 
 
 

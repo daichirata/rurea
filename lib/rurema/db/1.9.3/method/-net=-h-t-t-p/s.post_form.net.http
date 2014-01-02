@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- post_form(uri, params) -> Net::HTTPResponse
-[[c:URI]] �ǻ��ꤷ���оݤ� �ե�����Υǡ����� HTTP �� 
-POST ���ޤ���
+[[c:URI]] で指定した対象に フォームのデータを HTTP で 
+POST します。
 
-����ǡ����� params ��ʸ���󤫤�ʸ����ؤ� [[c:Hash]] �Ȥ���
-�Ϥ��ޤ���
+送るデータは params に文字列から文字列への [[c:Hash]] として
+渡します。
 
-@param uri POST �����оݤ� [[c:URI]] �ǻ��ꤷ�ޤ���
-@param params POST ����ǡ����Ǥ���
+@param uri POST する対象を [[c:URI]] で指定します。
+@param params POST するデータです。
 
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- group -> OpenSSL::PKey::EC::Group
-╕░е╤ещесб╝е┐д╚д╩ды╖▓дЄ╔╜д╣еке╓е╕езепе╚дЄ╩╓д╖д▐д╣бг
+щН╡уГСуГйуГбуГ╝уВ┐уБиуБкуВЛч╛дуВТшбиуБЩуВкуГЦуВ╕уВзуВпуГИуВТш┐ФуБЧуБ╛уБЩуАВ
 
 @see [[m:OpenSSL::PKey::EC#group=]]
 

@@ -5,9 +5,9 @@ kind=defined
 --- subtype -> String
 --- media_subtype -> String
 
-MIME ¤Î¥á¥Ç¥£¥¢¥¿¥¤¥×¤Î¥µ¥Ö¥¿¥¤¥×¤òÊÖ¤·¤Ş¤¹¡£
+MIME ã®ãƒ¡ãƒ‡ã‚£ã‚¢ã‚¿ã‚¤ãƒ—ã®ã‚µãƒ–ã‚¿ã‚¤ãƒ—ã‚’è¿”ã—ã¾ã™ã€‚
  
-media_subtype ¤Ï obsolete ¤Ç¤¹¡£
+media_subtype ã¯ obsolete ã§ã™ã€‚
 
 @see [[m:Net::IMAP::BodyTypeMessage#media_type]]
 

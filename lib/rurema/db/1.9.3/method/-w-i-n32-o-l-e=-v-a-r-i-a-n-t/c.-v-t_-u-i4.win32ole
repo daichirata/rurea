@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- VT_UI4 -> Integer
-���ʤ�32�ӥå�������unsigned int�ˤ򼨤��ޤ���19�ˡ�
+符号なし32ビット整数（unsigned int）を示します（19）。
 
-OLE�����ȥ᡼�����Ǥ����ѤǤ��ޤ��������VT_I4�����Ѥ��Ƥ���������
+OLEオートメーションでは利用できません。代わりにVT_I4を利用してください。
 

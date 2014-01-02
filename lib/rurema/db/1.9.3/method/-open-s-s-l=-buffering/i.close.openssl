@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- close -> nil
-��³���Ĥ��ޤ���
+接続を閉じます。
 
-[[m:OpenSSL::Buffering#flush]] ��Ƥ�Ǥ����Ĥ��ޤ���
+[[m:OpenSSL::Buffering#flush]] を呼んでから閉じます。
 

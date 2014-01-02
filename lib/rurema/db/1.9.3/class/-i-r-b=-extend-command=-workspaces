@@ -6,4 +6,4 @@ library=irb.cmd.pushws
 aliases=
 aliasof=
 
-irb Ãæ¤Î irb_workspaces ¥³¥Ş¥ó¥É¤Î¤¿¤á¤Î³ÈÄ¥¤òÄêµÁ¤·¤¿¥¯¥é¥¹¤Ç¤¹¡£
+irb ä¸­ã® irb_workspaces ã‚³ãƒãƒ³ãƒ‰ã®ãŸã‚ã®æ‹¡å¼µã‚’å®šç¾©ã—ãŸã‚¯ãƒ©ã‚¹ã§ã™ã€‚

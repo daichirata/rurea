@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- binread(path, length = nil, offset = 0)     -> String | nil
-path �ǻ��ꤷ���ե������ open ����offset �ν�ޤ� seek ����
-length �Х����ɤ߹��ߤޤ���
+path で指定したファイルを open し、offset の所まで seek し、
+length バイト読み込みます。
 
-length ���ά����ȥե�����������ޤ��ɤ߹��ߤޤ���
+length を省略するとファイルの末尾まで読み込みます。
 
-�ե�����򳫤��Ȥ��� mode �� "rb:ASCII-8BIT" �Ǥ���
+ファイルを開くときの mode は "rb:ASCII-8BIT" です。
 
 @see [[m:IO.read]]
 

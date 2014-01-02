@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- issuer_certificate=(cert)
-¼«¿È¤ËÈ¯¹Ô¼Ô(issuer)¤Î¾ÚÌÀ½ñ¥ª¥Ö¥¸¥§¥¯¥È¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã«ç™ºè¡Œè€…(issuer)ã®è¨¼æ˜æ›¸ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param cert ÀßÄê¤¹¤ë¾ÚÌÀ½ñ([[c:OpenSSL::X509::Certificate]])¥ª¥Ö¥¸¥§¥¯¥È
+@param cert è¨­å®šã™ã‚‹è¨¼æ˜æ›¸([[c:OpenSSL::X509::Certificate]])ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 @see [[m:OpenSSL::X509::ExtensionFactory.new]]

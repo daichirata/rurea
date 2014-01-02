@@ -4,17 +4,17 @@ kind=defined
 
 --- kconv(str, out_code, in_code = Kconv::AUTO) -> String
 
-ʸ���� str �Υ��󥳡��ǥ��󥰤� out_code ���Ѵ�������Τ�
-�֤��ޤ���in_code ����ꤵ��Ƥ����� str �Υ��󥳡��ǥ��󥰤�
-in_code ���Ȥ���ư��ޤ���
+文字列 str のエンコーディングを out_code に変換したものを
+返します。in_code も指定されていたら str のエンコーディングが
+in_code だとして動作します。
 
-���Υ᥽�åɤ�MIME ���󥳡��ɤ��줿ʸ�����Ÿ������
-������Ⱦ�ѥ��ʤ����Ѥ��Ѵ����ޤ���
-�������Ѵ��������ʤ����ϡ� [[m:NKF.#nkf]] ��ȤäƤ���������
+このメソッドはMIME エンコードされた文字列を展開し、
+いわゆる半角カナを全角に変換します。
+これらを変換したくない場合は、 [[m:NKF.#nkf]] を使ってください。
 
-@param str �Ѵ�����ʸ����
-@param out_code �Ѵ���Υ��󥳡��ǥ���
-@param in_code str�Υ��󥳡��ǥ���
+@param str 変換元の文字列
+@param out_code 変換後のエンコーディング
+@param in_code strのエンコーディング
 
 @see [[m:String#kconv]]
 

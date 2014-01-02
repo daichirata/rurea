@@ -3,5 +3,6 @@ classes=TkItemConfigOptkeys,TkItemConfigMethod
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

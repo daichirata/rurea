@@ -4,5 +4,5 @@ kind=defined
 
 --- total_out -> Integer
 
-���ȥ꡼��ν��Ϥ����ǡ��������Х��ȿ����֤��ޤ���
+ストリームの出力したデータの総バイト数を返します。
 

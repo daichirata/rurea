@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- truncate(length) -> 0
-File.truncate(self.to_s, length) ¤ÈÆ±¤¸¤Ç¤¹¡£
+File.truncate(self.to_s, length) ã¨åŒã˜ã§ã™ã€‚
 
-@param length ÊÑ¹¹¤·¤¿¤¤¥µ¥¤¥º¤òÀ°¿ô¤ÇÍ¿¤¨¤Ş¤¹¡£
+@param length å¤‰æ›´ã—ãŸã„ã‚µã‚¤ã‚ºã‚’æ•´æ•°ã§ä¸ãˆã¾ã™ã€‚
 
 @see [[m:File.truncate]]
 

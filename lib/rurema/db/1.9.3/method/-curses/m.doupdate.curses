@@ -4,15 +4,15 @@ kind=defined
 
 --- doupdate -> nil
 
-�������Τ�ɽ��������ɥ� stdscr ��ɽ���򹹿����ޤ���
-[[m:Curses.#refresh]] �ʾ��ǽΨ�ɤ�����������Ԥ��ޤ���
+画面全体を表すウィンドウ stdscr の表示を更新します。
+[[m:Curses.#refresh]] 以上に能率良く更新処理を行います。
 
-�ܤ����ϡ� man �ڡ����� curs_refresh(3X) �� doupdate �ؿ��򻲾Ȥ���������
+詳しくは、 man ページの curs_refresh(3X) の doupdate 関数を参照ください。
 
-���Ѥ��Ƥ��� curses �Υ饤�֥�꤬ doupdate �ؿ����󶡤��Ƥ��ʤ���硢
-doupdate �ؿ�������ˡ�refresh �ؿ���ƤӽФ��ޤ���
+利用している curses のライブラリが doupdate 関数を提供していない場合、
+doupdate 関数の代わりに、refresh 関数を呼び出します。
 
-���Υ᥽�åɤ���� [[m:Curses.#init_screen]] ��ƤӽФ��ޤ���
+このメソッドの中で [[m:Curses.#init_screen]] を呼び出します。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、例外 SecurityError を発生します。
 

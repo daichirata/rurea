@@ -6,4 +6,4 @@ library=json
 aliases=JSON=UnparserError
 aliasof=
 
-JSON ·Á¼°¤ÎÊ¸»úÎó¤òÀ¸À®¤¹¤ë¤È¤­¤ËÈ¯À¸¤·¤¿¥¨¥é¡¼¤òÄÌÃÎ¤¹¤ëÎã³°¤Ç¤¹¡£
+JSON å½¢å¼ã®æ–‡å­—åˆ—ã‚’ç”Ÿæˆã™ã‚‹ã¨ãã«ç™ºç”Ÿã—ãŸã‚¨ãƒ©ãƒ¼ã‚’é€šçŸ¥ã™ã‚‹ä¾‹å¤–ã§ã™ã€‚

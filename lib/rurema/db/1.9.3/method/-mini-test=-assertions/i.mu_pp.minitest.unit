@@ -4,9 +4,9 @@ kind=defined
 
 --- mu_pp(object) -> String
 
-[[m:Object#inspect]] ������̤Υ��󥳡��ǥ��󥰤��ѹ������֤��ޤ���
+[[m:Object#inspect]] した結果のエンコーディングを変更して返します。
 
-���󥳡��ǥ��󥰤� [[m:Encoding.default_external]] ���ѹ�����ޤ���
+エンコーディングは [[m:Encoding.default_external]] に変更されます。
 
-@param object Ǥ�դΥ��֥������Ȥ���ꤷ�ޤ���
+@param object 任意のオブジェクトを指定します。
 

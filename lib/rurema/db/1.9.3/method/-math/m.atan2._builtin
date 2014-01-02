@@ -2,20 +2,20 @@ names=atan2
 visibility=public
 kind=defined
 
---- atan2(x, y) -> Float
+--- atan2(y, x) -> Float
 
-x / y �ε����ܴؿ����ͤ��֤��ޤ���
+y / x の逆正接関数の値を返します。
 
-@param x �¿�
-@param y �¿�
+@param y 実数
+@param x 実数
 
-@return �֤�����ͤ��ϰϤ� [-��/2, ��/2] �Ǥ���
+@return 返される値の範囲は [-π, π] です。
 
 
   Math.atan2(1,0)   #=>  1.5707963267949
   Math.atan2(-1,0)  #=> -1.5707963267949
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError y, x に数値以外を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError y, x に実数以外の数値を指定した場合に発生します。
 

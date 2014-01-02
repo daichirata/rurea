@@ -5,10 +5,10 @@ kind=defined
 --- new -> OpenSSL::OCSP::Request
 --- new(der) -> OpenSSL::OCSP::Request
 
-Request ���֥������Ȥ��������ޤ���
-�����ʤ��ξ��ϡ���Ȥ����Υ��֥������Ȥ��������ޤ���
-ʸ������Ϥ������� der �����Ǥ���ȸ��ʤ����ɤ߹��ߤޤ���
+Request オブジェクトを生成します。
+引数なしの場合は、中身が空のオブジェクトを生成します。
+文字列を渡した場合は der 形式であると見なして読み込みます。
 
-@param der �ꥯ�����Ȥξ���򥨥󥳡��ɤ���der������ʸ����
-@raise OpenSSL::OCSP::OCSPError ʸ����Υǥ����ɤ˼��Ԥ�������ȯ�����ޤ�
+@param der リクエストの情報をエンコードしたder形式の文字列
+@raise OpenSSL::OCSP::OCSPError 文字列のデコードに失敗した場合に発生します
 

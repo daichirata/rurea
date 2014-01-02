@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- EXCL -> Integer
-CREAT��ʻ�Ѥ����⤷�ե����뤬���ˤ�����ˤϼ��Ԥ��ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+CREATと併用し、もしファイルが既にある場合には失敗します。
+[[m:File.open]]で使用します。
 

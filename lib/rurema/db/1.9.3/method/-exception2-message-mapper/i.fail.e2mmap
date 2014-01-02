@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- fail(exception_class = nil, *rest) -> ()
-��Ͽ����Ƥ���������Ѥ��ơ��㳰��ȯ�������ޤ���
+登録されている情報を使用して、例外を発生させます。
 
-@param exception_class �㳰���饹��
+@param exception_class 例外クラス。
 
-@param rest ��å��������������͡�
+@param rest メッセージに埋め込む値。
 
-@raise Exception2MessageMapper::ErrNotRegisteredException ���ꤵ�줿�㳰���饹���б������å�������¸�ߤ��ʤ�����ȯ�����ޤ���
+@raise Exception2MessageMapper::ErrNotRegisteredException 指定された例外クラスに対応するメッセージが存在しない場合に発生します。
 

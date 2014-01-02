@@ -4,7 +4,7 @@ kind=defined
 
 --- rdoc_files=(filelist)
 
-RDoc �������˻��Ѥ���ե�����ꥹ�Ȥ򥻥åȤ��ޤ���
+RDoc の生成に使用するファイルリストをセットします。
 
-@param filelist �ե�����ꥹ�Ȥ���ꤷ�ޤ���
+@param filelist ファイルリストを指定します。
 

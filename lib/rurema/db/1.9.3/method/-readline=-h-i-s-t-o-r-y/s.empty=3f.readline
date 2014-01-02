@@ -4,12 +4,12 @@ kind=defined
 
 --- empty? -> bool
 
-�ҥ��ȥ�˳�Ǽ���줿���Ƥο��� 0 �ξ��� true ��
-�����Ǥʤ����� false ���֤��ޤ���
+ヒストリに格納された内容の数が 0 の場合は true を、
+そうでない場合は false を返します。
 
-@raise SecurityError �����ե�٥� ($SAFE) �� 4 �ξ���ȯ�����ޤ���
+@raise SecurityError セーフレベル ($SAFE) が 4 の場合に発生します。
 
-��:
+例:
 
   require "readline"
   

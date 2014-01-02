@@ -2,15 +2,13 @@ names=update
 visibility=public
 kind=defined
 
---- update(other) -> YAML::DBM
+--- update(other) -> self
 
-¼«¿È¤È other ¤ÎÆâÍÆ¤ò¥Þ¡¼¥¸(Åý¹ç)¤·¤Þ¤¹¡£
+è‡ªèº«ã¨ other ã®å†…å®¹ã‚’ãƒžãƒ¼ã‚¸(çµ±åˆ)ã—ã¾ã™ã€‚
 
-½ÅÊ£¤¹¤ë¥­¡¼¤ËÂÐ±þ¤¹¤ëÃÍ¤Ï other ¤ÎÆâÍÆ¤Ç¾å½ñ¤­¤µ¤ì¤Þ¤¹¡£
+é‡è¤‡ã™ã‚‹ã‚­ãƒ¼ã«å¯¾å¿œã™ã‚‹å€¤ã¯ other ã®å†…å®¹ã§ä¸Šæ›¸ãã•ã‚Œã¾ã™ã€‚
 
-@param other [[c:Hash]]¡¢[[c:DBM]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£
+@param other [[c:Hash]]ã€[[c:DBM]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise DBMError ¹¹¿·¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
-
-¼«¿È¤òÊÖ¤·¤Þ¤¹¡£
+@raise DBMError æ›´æ–°ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

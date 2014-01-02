@@ -4,11 +4,11 @@ kind=defined
 
 --- native -> self | IPAddr
 
-IPv4 �ͱ� IPv6 ���ɥ쥹�� IPv4 �ߴ� IPv6 ���ɥ쥹���顢
-IPv4 ���ɥ쥹�ο����� IPAddr ���֥������Ȥ��֤��ޤ���
-IPv4 �ߴ��Ǥ� IPv4 �Ȥ߹��ߤǤ�ʤ��ʤ� self ���֤��ޤ���
+IPv4 射影 IPv6 アドレスや IPv4 互換 IPv6 アドレスから、
+IPv4 アドレスの新しい IPAddr オブジェクトを返します。
+IPv4 互換でも IPv4 組み込みでもないなら self を返します。
 
-��:
+例:
 
   require "ipaddr"
   p IPAddr.new("0000:0000:0000:0000:0000:ffff:c0a8:0001").native

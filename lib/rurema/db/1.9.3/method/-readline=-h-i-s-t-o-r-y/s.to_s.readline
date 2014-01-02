@@ -4,9 +4,9 @@ kind=defined
 
 --- to_s -> "HISTORY"
 
-Ê¸»úÎó"HISTORY"¤òÊÖ¤·¤Þ¤¹¡£
+æ–‡å­—åˆ—"HISTORY"ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Readline::HISTORY.to_s #=> "HISTORY"
 

@@ -1,20 +1,20 @@
 names=sqrt
 visibility=public
-kind=defined
+kind=added
 
 --- sqrt(x, prec) -> BigDecimal
 
-x ¤ÎÊ¿Êıº¬¤ò prec ¤Ç»ØÄê¤·¤¿ÀºÅÙ¤Ç·×»»¤·¤Ş¤¹¡£
+x ã®å¹³æ–¹æ ¹ã‚’ prec ã§æŒ‡å®šã—ãŸç²¾åº¦ã§è¨ˆç®—ã—ã¾ã™ã€‚
 
-@param x Ê¿Êıº¬¤òµá¤á¤ë¿ô¡£
+@param x å¹³æ–¹æ ¹ã‚’æ±‚ã‚ã‚‹æ•°ã€‚
 
-@param prec ·×»»·ë²Ì¤ÎÀºÅÙ¡£
+@param prec è¨ˆç®—çµæœã®ç²¾åº¦ã€‚
 
-@raise FloatDomainError x ¤Ë 0 °Ê²¼¡¢¤â¤·¤¯¤Ï NaN ¤¬»ØÄê¤µ¤ì¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise FloatDomainError x ã« 0 ä»¥ä¸‹ã€ã‚‚ã—ãã¯ NaN ãŒæŒ‡å®šã•ã‚ŒãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise ArgumentError prec ¤Ë 0 Ì¤Ëş¤¬»ØÄê¤µ¤ì¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise ArgumentError prec ã« 0 æœªæº€ãŒæŒ‡å®šã•ã‚ŒãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
 
   require "bigdecimal/math"

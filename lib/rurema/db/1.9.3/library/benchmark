@@ -3,5 +3,6 @@ classes=Benchmark,Benchmark=Tms,Benchmark=Job,Benchmark=Report
 methods=
 sublibraries=
 is_sublibrary=false
+category=Development
 
-¥Ù¥ó¥Á¥Ş¡¼¥¯¤ò¼è¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+ãƒ™ãƒ³ãƒãƒãƒ¼ã‚¯ã‚’å–ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

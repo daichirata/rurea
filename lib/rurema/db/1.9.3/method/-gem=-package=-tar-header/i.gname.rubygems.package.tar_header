@@ -4,5 +4,5 @@ kind=defined
 
 --- gname -> String
 
-tar �Υإå��˴ޤޤ�륰�롼��̾���֤��ޤ���
+tar のヘッダに含まれるグループ名を返します。
 

@@ -5,53 +5,53 @@ kind=defined
 --- setrlimit(resource, cur_limit, max_limit)    -> nil
 --- setrlimit(resource, limit)                   -> nil
 
-�����ȥץ������ǤΥ꥽�����������ͤ����ꤷ�ޤ���
+カレントプロセスでのリソースの制限値を設定します。
 
-@param resource �꥽�����μ���򼨤��������ꤷ�ޤ�������Ǥ�������ϥ����ƥ�˰�¸���ޤ���
+@param resource リソースの種類を示す定数を指定します。指定できる定数はシステムに依存します。
 
-@param limit resource �ˤ�äư�̣����ޤ������ͤ�ɽ�������⤷�����������ꤷ�ޤ���
-             soft limit �� hard limit ξ���ˤ����ͤ��Ȥ��ޤ���
+@param limit resource によって意味が決まる制限値を表す整数もしくは定数を指定します。
+             soft limit と hard limit 両方にこの値が使われます。
 
-@param cur_limit ���ߤ�������(soft limit)��ɽ�������⤷�����������ꤷ�ޤ���
+@param cur_limit 現在の制限値(soft limit)を表す整数もしくは定数を指定します。
 
-@param max_limit soft limit �Ȥ��������ǽ�ʺ�����(hard limit)��ɽ�������⤷�����������ꤷ�ޤ���
+@param max_limit soft limit として設定可能な最大値(hard limit)を表す整数もしくは定数を指定します。
 
-@raise Errno::EXXX �꥽�����������ͤ�����˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX リソースの制限値の設定に失敗した場合に発生します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 
-���� resource ��ͭ��������ϰʲ��ΤȤ���Ǥ���
+引数 resource で有効な定数は以下のとおりです。
 
 : [[m:Process::RLIMIT_CORE]]
- core �ե�����Υ����� (�Х���) (SUSv3)
+ core ファイルのサイズ (バイト) (SUSv3)
 : [[m:Process::RLIMIT_CPU]]
- �ץ������� CPU ���� (��) (SUSv3)
+ プロセスの CPU 時間 (秒) (SUSv3)
 : [[m:Process::RLIMIT_DATA]]
- �ץ������Υǡ����ΰ�Υ����� (�Х���) (SUSv3)
+ プロセスのデータ領域のサイズ (バイト) (SUSv3)
 : [[m:Process::RLIMIT_FSIZE]]
- �ץ���������������ե�����Υ����� (�Х���) (SUSv3)
+ プロセスが生成するファイルのサイズ (バイト) (SUSv3)
 : [[m:Process::RLIMIT_NOFILE]]
- �ץ������������ץ�Ǥ���ե�����ο� (SUSv3)
+ プロセスがオープンできるファイルの数 (SUSv3)
 : [[m:Process::RLIMIT_STACK]]
- �ץ������Υ����å��ΰ�Υ����� (�Х���) (SUSv3)
+ プロセスのスタック領域のサイズ (バイト) (SUSv3)
 : [[m:Process::RLIMIT_AS]]
- �ץ������β��ۥ��ꥵ���� (�Х���) (SUSv3, NetBSD, FreeBSD, OpenBSD but 4.4BSD-Lite))
+ プロセスの仮想メモリサイズ (バイト) (SUSv3, NetBSD, FreeBSD, OpenBSD but 4.4BSD-Lite))
 : [[m:Process::RLIMIT_MEMLOCK]]
- [[man:mlock(2)]] �ǥ��å��Ǥ���ȡ�����Υ����� (�Х���) (4.4BSD, GNU/Linux)
+ [[man:mlock(2)]] でロックできるトータルのサイズ (バイト) (4.4BSD, GNU/Linux)
 : [[m:Process::RLIMIT_NPROC]]
- ���Υ桼���Υץ������κ���� (4.4BSD, GNU/Linux)
+ そのユーザのプロセスの最大数 (4.4BSD, GNU/Linux)
 : [[m:Process::RLIMIT_RSS]]
- ���ѤǤ���¥���κ��祵���� (�Х���) (4.2BSD, GNU/Linux)
+ 使用できる実メモリの最大サイズ (バイト) (4.2BSD, GNU/Linux)
 : [[m:Process::RLIMIT_SBSIZE]]
- �����åȥХåե��Υ����� (�Х���) (NetBSD, FreeBSD)
+ ソケットバッファのサイズ (バイト) (NetBSD, FreeBSD)
 
-���� limit, cur_limit, max_limit ��ͭ��������ϰʲ��ΤȤ���Ǥ���
+引数 limit, cur_limit, max_limit で有効な定数は以下のとおりです。
 
- * [[m:Process::RLIM_INFINITY]] �꥽���������¤��ߤ��ʤ����Ȥ��̣���ޤ���
+ * [[m:Process::RLIM_INFINITY]] リソースに制限を設けないことを意味します。
  * [[m:Process::RLIM_SAVED_CUR]]
  * [[m:Process::RLIM_SAVED_MAX]]
 
-�ʲ������ RLIMIT_CORE �����¤� hard limit (max limit) �ޤǰ����夲����ǽ�ʤ� core ��Ĥ��褦�ˤ��ޤ���
+以下の例は RLIMIT_CORE の制限を hard limit (max limit) まで引き上げ、可能なら core を残すようにします。
 
   Process.setrlimit(Process::RLIMIT_CORE, 
                     Process.getrlimit(Process::RLIMIT_CORE)[1])

@@ -3,13 +3,13 @@ visibility=public
 kind=added
 
 --- ca_file=(path)
-���ꤹ�� CA ������ե�����Υѥ���ʸ��������ꤷ�ޤ���
+信頼する CA 証明書ファイルのパスを文字列で設定します。
 
-�ե�����ˤ�ʣ���ξ������ޤ�Ǥ��Ƥ⹽���ޤ���
-�ܤ����� [[m:OpenSSL::SSL::SSLContext#ca_file=]] �򸫤Ƥ���������
+ファイルには複数の証明書を含んでいても構いません。
+詳しくは [[m:OpenSSL::SSL::SSLContext#ca_file=]] を見てください。
 
-�ǥե���Ȥ� nil (����ʤ�)�Ǥ���
+デフォルトは nil (指定なし)です。
 
-@param path �ե�����ѥ�ʸ����
+@param path ファイルパス文字列
 @see [[m:Net::HTTP#ca_file]], [[m:OpenSSL::SSL::SSLContext#ca_file=]]
 

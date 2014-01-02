@@ -2,6 +2,39 @@ names=union
 visibility=public
 kind=defined
 
---- union
-@todo
+--- union(signature) -> Class
+C の共用体型に対応する Ruby のクラスを構築して返します。
+
+共用体型を Ruby 上で定義する方法は [[m:DL::Importer#struct]] と
+ほぼ同様です。C における
+  typedef union epoll_data
+  {
+    void *ptr;
+    int fd;
+    uint32_t u32;
+    uint64_t u64;
+  } epoll_data_t;
+は、Ruby上では
+  require 'dl/import
+  
+  module M
+    extend DL::Importer
+    dlload "libc.so.6"
+    typealias("uint32_t", "unsigned int")
+    typealias("uint64_t", "unsigned long long")
+  
+    EPollData = union(["void *ptr",
+                       "int fd",
+                       "uint32_t u32",
+                       "uint64_t u64",
+                      ])
+  end
+となります。
+
+返されるクラスは [[c:DL::CUnion]] を継承しています。
+
+1.9.x ではこのメソッドで返されるクラスは正しく動作しません。
+2.0以降では修正されています。
+
+@param signature 共用体の各要素を文字列で表現したものの配列
 

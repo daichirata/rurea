@@ -2,10 +2,10 @@ names=zero?
 visibility=public
 kind=defined
 
---- zero?
-@todo
+--- zero? -> bool
 
-a �� 0 �ʤ� true ���֤��ޤ��� 
+self が 0 のときに true を返します。それ以外のときに false を返します。
 
-    c = a.zero? 
+  BigDecimal("0").zero? # => true
+  BigDecimal("1").zero? # => false
 

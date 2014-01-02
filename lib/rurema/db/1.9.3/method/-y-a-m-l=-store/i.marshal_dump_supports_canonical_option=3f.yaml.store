@@ -4,6 +4,6 @@ kind=defined
 
 --- marshal_dump_supports_canonical_option? -> false
 
-[[c:YAML::Store]] ¤Ç¤Ï [[m:Marshal.#dump]] ¤ò»ÈÍÑ¤·¤Ê¤¤¤Î¤Ç¾ï¤Ëµ¶¤òÊÖ¤·¤Ş¤¹¡£
+[[c:YAML::Store]] ã§ã¯ [[m:Marshal.#dump]] ã‚’ä½¿ç”¨ã—ãªã„ã®ã§å¸¸ã«å½ã‚’è¿”ã—ã¾ã™ã€‚
 
 

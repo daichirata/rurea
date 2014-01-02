@@ -4,5 +4,5 @@ kind=defined
 
 --- DEFAULT_UPDATE_SOURCES -> true
 
-��� [[c:Gem::SourceInfoCache]] �򹹿����뤫�ɤ����Υǥե�����ͤǤ���
+毎回 [[c:Gem::SourceInfoCache]] を更新するかどうかのデフォルト値です。
 

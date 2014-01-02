@@ -4,11 +4,11 @@ kind=defined
 
 --- select!(ypath_str) -> [object]
 
-�����ǻ��ꤷ���ѥ��ΥΡ��ɤ򸡺����ޤ������Ĥ��ä��Ρ��ɤ򤽤줾��
-[[m:Syck::Node#transform]] �� Ruby �Υ��֥������Ȥˤ���������֤�
-�ޤ���
+引数で指定したパスのノードを検索します。見つかったノードをそれぞれ
+[[m:Syck::Node#transform]] で Ruby のオブジェクトにした配列を返し
+ます。
 
-@param ypath_str ��������ѥ���ʸ����ǻ��ꤷ�ޤ���
+@param ypath_str 検索するパスを文字列で指定します。
 
   require 'syck'
   require 'yaml'

@@ -4,5 +4,5 @@ kind=defined
 
 --- kind -> "map" | "seq" | "scalar"
 
-�Ρ��ɤμ��̤�ʸ������֤��ޤ���
+ノードの種別を文字列で返します。
 

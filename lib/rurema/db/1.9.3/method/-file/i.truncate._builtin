@@ -4,12 +4,12 @@ kind=defined
 
 --- truncate(length)    -> 0
 
-¥Õ¥¡¥¤¥ë¤Î¥µ¥¤¥º¤òºÇÂç length ¥Ð¥¤¥È¤Ë¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚µã‚¤ã‚ºã‚’æœ€å¤§ length ãƒã‚¤ãƒˆã«ã—ã¾ã™ã€‚
 
-¥µ¥¤¥º¤ÎÊÑ¹¹¤ËÀ®¸ù¤¹¤ì¤Ð 0 ¤òÊÖ¤·¤Þ¤¹¡£¼ºÇÔ¤·¤¿¾ì¹ç¤ÏÎã³°
-[[c:Errno::EXXX]] ¤¬È¯À¸¤·¤Þ¤¹¡£
+ã‚µã‚¤ã‚ºã®å¤‰æ›´ã«æˆåŠŸã™ã‚Œã° 0 ã‚’è¿”ã—ã¾ã™ã€‚å¤±æ•—ã—ãŸå ´åˆã¯ä¾‹å¤–
+[[c:Errno::EXXX]] ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise IOError ¼«¿È¤¬½ñ¤­¹þ¤ßÍÑ¤Ë¥ª¡¼¥×¥ó¤µ¤ì¤Æ¤¤¤Ê¤±¤ì¤ÐÈ¯À¸¤·¤Þ¤¹¡£
+@raise IOError è‡ªèº«ãŒæ›¸ãè¾¼ã¿ç”¨ã«ã‚ªãƒ¼ãƒ—ãƒ³ã•ã‚Œã¦ã„ãªã‘ã‚Œã°ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise Errno::EXXX ¥µ¥¤¥º¤ÎÊÑ¹¹¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Errno::EXXX ã‚µã‚¤ã‚ºã®å¤‰æ›´ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

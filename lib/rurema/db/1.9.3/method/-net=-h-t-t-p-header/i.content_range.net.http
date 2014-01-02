@@ -4,8 +4,8 @@ kind=defined
 
 --- content_range -> Range|nil
 
-Content-Range: ¥Ø¥Ã¥À¥Õ¥£¡¼¥ë¥É¤ÎÃÍ¤ò Range ¤ÇÊÖ¤·¤Ş¤¹¡£
-Range ¤ÎÉ½¤ï¤¹Ä¹¤µ¤Ï [[m:Net::HTTPHeader#range_length]] ¤ÇÆÀ¤é¤ì¤Ş¤¹¡£
+Content-Range: ãƒ˜ãƒƒãƒ€ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å€¤ã‚’ Range ã§è¿”ã—ã¾ã™ã€‚
+Range ã®è¡¨ã‚ã™é•·ã•ã¯ [[m:Net::HTTPHeader#range_length]] ã§å¾—ã‚‰ã‚Œã¾ã™ã€‚
 
-¥Ø¥Ã¥À¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹ç¤Ë¤Ï nil ¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ˜ãƒƒãƒ€ãŒè¨­å®šã•ã‚Œã¦ã„ãªã„å ´åˆã«ã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 

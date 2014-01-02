@@ -4,5 +4,5 @@ kind=defined
 
 --- names -> Array
 
-�ѥ�᡼��̾�Υꥹ�Ȥ��֤��ޤ���
+パラメータ名のリストを返します。
 

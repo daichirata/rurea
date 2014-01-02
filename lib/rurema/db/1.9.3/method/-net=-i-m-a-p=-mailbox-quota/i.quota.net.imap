@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- quota -> Integer
-�᡼��ܥå����˻��ꤵ��Ƥ������ͤ��֤��ޤ���
+メールボックスに指定されている上限値を返します。
 
 

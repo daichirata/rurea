@@ -4,5 +4,5 @@ kind=defined
 
 --- member?(task_name) -> bool
 
-µ¶¤òÊÖ¤·¤Þ¤¹¡£
+å½ã‚’è¿”ã—ã¾ã™ã€‚
 

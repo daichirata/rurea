@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- to_der -> String
-SPKI ¥ª¥Ö¥¸¥§¥¯¥È¤ò DER ·Á¼°¤ÎÊ¸»úÎó¤ËÊÑ´¹¤·¤Þ¤¹¡£
+SPKI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ DER å½¢å¼ã®æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
 
 

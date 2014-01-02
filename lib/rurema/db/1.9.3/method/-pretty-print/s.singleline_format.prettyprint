@@ -4,17 +4,17 @@ kind=defined
 
 --- singleline_format(output = '', maxwidth = 79, newline = "\n", genspace = lambda{|n| ' ' * n}) {|pp| ...}    -> object
 
-PrettyPrint ���֥������Ȥ������������������Ȥ��ƥ֥��å���¹Ԥ��ޤ���
-[[m:PrettyPrint.format]] �˻��Ƥ��ޤ��������Ԥ��ޤ���
+PrettyPrint オブジェクトを生成し、それを引数としてブロックを実行します。
+[[m:PrettyPrint.format]] に似ていますが、改行しません。
 
-���� maxwidth, newline �� genspace ��̵�뤵��ޤ����֥��å���� breakable �μ¹Ԥϡ�
-���Ԥ����� text �μ¹ԤǤ��뤫�Τ褦�˰����ޤ���
+引数 maxwidth, newline と genspace は無視されます。ブロック中の breakable の実行は、
+改行せずに text の実行であるかのように扱います。
 
-@param output ���������ꤷ�ޤ���output �� << �᥽�åɤ���äƤ��ʤ���Фʤ�ޤ���
+@param output 出力先を指定します。output は << メソッドを持っていなければなりません。
 
-@param maxwidth ̵�뤵��ޤ���
+@param maxwidth 無視されます。
 
-@param newline ̵�뤵��ޤ���
+@param newline 無視されます。
 
-@param genspace ̵�뤵��ޤ���
+@param genspace 無視されます。
 

@@ -4,6 +4,6 @@ kind=defined
 
 --- title -> String | nil
 
-�ɥ�����ȤΥ����ȥ���֤��ޤ������ꤵ��Ƥ��ʤ����� nil ���֤��ޤ���
+ドキュメントのタイトルを返します。指定されていない場合は nil を返します。
 
 

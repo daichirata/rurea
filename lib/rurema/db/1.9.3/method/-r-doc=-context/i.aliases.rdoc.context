@@ -4,5 +4,5 @@ kind=defined
 
 --- aliases -> [RDoc::Alias]
 
-�ɲä��줿 [[c:RDoc::Alias]] ��������֤��ޤ���
+追加された [[c:RDoc::Alias]] の配列を返します。
 

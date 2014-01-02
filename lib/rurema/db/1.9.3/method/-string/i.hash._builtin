@@ -4,8 +4,8 @@ kind=defined
 
 --- hash -> Integer
 
-self �Υϥå����ͤ��֤��ޤ���
-eql? ��������ʸ����ϡ���˥ϥå����ͤ��������ʤ�ޤ���
+self のハッシュ値を返します。
+eql? で等しい文字列は、常にハッシュ値も等しくなります。
 
 @see [[c:Hash]]
 

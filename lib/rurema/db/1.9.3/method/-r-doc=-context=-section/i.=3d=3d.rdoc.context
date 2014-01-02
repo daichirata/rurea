@@ -4,7 +4,7 @@ kind=defined
 
 --- ==(other) -> bool
 
-���Ȥ� other �Υ��������ֹ����Ӥ�����̤��֤��ޤ���
+自身と other のシーケンス番号を比較した結果を返します。
 
-@param other [[c:RDoc::Context::Section]] ���֥������Ȥ���ꤷ�ޤ���
+@param other [[c:RDoc::Context::Section]] オブジェクトを指定します。
 

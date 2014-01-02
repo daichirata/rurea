@@ -4,7 +4,7 @@ kind=defined
 
 --- defaults=(hash)
 
-���ޥ�ɤǻ��Ѥ���ǥե���ȤΥ��ץ����򥻥åȤ��ޤ���
+コマンドで使用するデフォルトのオプションをセットします。
 
-@param hash ���ץ�����ϥå���ǻ��ꤷ�ޤ���
+@param hash オプションをハッシュで指定します。
 

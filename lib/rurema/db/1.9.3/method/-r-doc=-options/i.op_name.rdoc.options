@@ -4,6 +4,6 @@ kind=defined
 
 --- op_name -> String
 
-���ޥ�ɥ饤������� --opname ���ץ����ǻ��ꤷ��̾����ʸ������֤���
-����
+コマンドライン引数の --opname オプションで指定した名前を文字列で返しま
+す。
 

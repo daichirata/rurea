@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- replacement -> String
-ÊÑ´¹´ï¤ËÀßÄê¤µ¤ì¤Æ¤¤¤ëÃÖ´¹Ê¸»ú¤òÊÖ¤·¤Þ¤¹¡£
+å¤‰æ›å™¨ã«è¨­å®šã•ã‚Œã¦ã„ã‚‹ç½®æ›æ–‡å­—ã‚’è¿”ã—ã¾ã™ã€‚
 
-@return ÊÑ´¹´ï¤ËÀßÄê¤µ¤ì¤Æ¤¤¤ëÃÖ´¹Ê¸»ú
+@return å¤‰æ›å™¨ã«è¨­å®šã•ã‚Œã¦ã„ã‚‹ç½®æ›æ–‡å­—
 
   ec = Encoding::Converter.new("euc-jp", "us-ascii")
   p ec.replacement    #=> "?"

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- pub_key -> OpenSSL::BN
-DH �������Ź�θ��������֤��ޤ���
+DH 鍵共有プロトコルの公開鍵を返します。
 
 @see [[m:OpenSSL::PKey::DH#pub_key=]]
 

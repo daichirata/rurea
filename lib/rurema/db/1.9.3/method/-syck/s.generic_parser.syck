@@ -4,8 +4,8 @@ kind=defined
 
 --- generic_parser -> Syck::Parser
 
-YAML ¥Ñ¡¼¥µ¤òÊÖ¤·¤Ş¤¹¡£¤¿¤À¤·¡¢[[m:YAML.parser]] ¤È¤Ï°Û¤Ê¤ê¡¢¥ê¥¾¥ë¥Ğ¤Ë
-[[m:Syck::GenericResolver]] ¤¬»ØÄê¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
+YAML ãƒ‘ãƒ¼ã‚µã‚’è¿”ã—ã¾ã™ã€‚ãŸã ã—ã€[[m:YAML.parser]] ã¨ã¯ç•°ãªã‚Šã€ãƒªã‚¾ãƒ«ãƒã«
+[[m:Syck::GenericResolver]] ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 @see [[m:YAML.parser]]
 

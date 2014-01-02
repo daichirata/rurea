@@ -4,50 +4,50 @@ kind=defined
 
 --- attr -> { String => object }
 
-�ƥ�å������Υ��ȥ�ӥ塼�Ȥ��ͤ�ϥå���ơ��֥���֤��ޤ���
+各メッセージのアトリビュートの値をハッシュテーブルで返します。
 
-�����ϥ��ȥ�ӥ塼��̾��ʸ�����ͤϥ��ȥ�ӥ塼�Ȥ��ͤȤʤ�ޤ���
-�ͤΥ��饹�ϥ��ȥ�ӥ塼�Ȥˤ�äưۤʤ�ޤ���
+キーはアトリビュート名の文字列、値はアトリビュートの値となります。
+値のクラスはアトリビュートによって異なります。
 
-���Ѳ�ǽ�ʥ��ȥ�ӥ塼�Ȥϰʲ����̤�Ǥ���
+利用可能なアトリビュートは以下の通りです。
 
 : BODY
-    BODYSTRUCTURE �γ�ĥ�ǡ����ʤ��η�����
+    BODYSTRUCTURE の拡張データなしの形式。
     [[c:Net::IMAP::BodyTypeBasic]], [[c:Net::IMAP::BodyTypeText]],
     [[c:Net::IMAP::BodyTypeMessage]], [[c:Net::IMAP::BodyTypeMultipart]]
-    �Τ����줫��
+    のいずれか。
 : BODY[<section>]<<partial>>
-    section �ǻ��ꤵ�줿���������Υܥǥ������ơ�ʸ����
+    section で指定されたセクションのボディの内容。文字列。
 : BODY.PEEK[<section>]<<partial>>
-    section �ǻ��ꤵ�줿���������Υ�å������ܥǥ������ơ�ʸ����
-    ��������������Ƥ򸫤Ƥ� :Seen �ե饰�����ꤷ�ʤ�����
-    BODY[<section>]��Ʊ��
+    section で指定されたセクションのメッセージボディの内容。文字列。
+    ただしこれで内容を見ても :Seen フラグを設定しない点が
+    BODY[<section>]と同様
 : BODYSTRUCTURE
-    MIME-IMB �ǤΥ�å������ܥǥ���
+    MIME-IMB でのメッセージボディ。
     [[c:Net::IMAP::BodyTypeBasic]], [[c:Net::IMAP::BodyTypeText]],
     [[c:Net::IMAP::BodyTypeMessage]], [[c:Net::IMAP::BodyTypeMultipart]]
-    �Τ����줫��
+    のいずれか。
 : ENVELOPE
-    ��å������Υ���٥����ס�
-    [[c:Net::IMAP::Envelope]] ���֥������ȡ�
+    メッセージのエンベロープ。
+    [[c:Net::IMAP::Envelope]] オブジェクト。
 : FLAGS
-    ��å������˥��åȤ��줿�ե饰��
-    [[c:Symbol]] ������[[m:String#capitalize]] �ǥ���ԥ��饤��
-    ����Ƥ��롣
+    メッセージにセットされたフラグ。
+    [[c:Symbol]] の配列。[[m:String#capitalize]] でキャピタライズ
+    されている。
 : INTERNALDATE
-    ��å��������������ա�ʸ����
+    メッセージの内部日付。文字列。
 : RFC822
-    BODY[] ��Ʊ����ʸ����
+    BODY[] と同じ。文字列。
 : RFC822.HEADER
-    BODY.PEEK[HEADER] ��Ʊ����ʸ����
+    BODY.PEEK[HEADER] と同じ。文字列。
 : RFC822.SIZE
-    ��å������� [[RFC:822]] ��������������
+    メッセージの [[RFC:822]] サイズ。整数。
 : RFC822.TEXT
-    BODY[TEXT] ��Ʊ����ʸ����
+    BODY[TEXT] と同じ。文字列。
 : UID
-    UID��������
+    UID。整数。
 
-�ܤ����� [[RFC:2060]] �� FETCH command ����򸫤Ƥ���������
+詳しくは [[RFC:2060]] の FETCH command の節を見てください。
 
 @see [[m:Net::IMAP#fetch]], [[m:Net::IMAP#uid_fetch]]
 

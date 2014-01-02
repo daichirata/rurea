@@ -3,25 +3,25 @@ visibility=public
 kind=defined
 
 --- variable_kind -> String
-�ѿ��μ����VARKIND�ˤ�������ޤ���
+変数の種類（VARKIND）を取得します。
 
-�����ѿ��μ���򼨤�ʸ������֤��ޤ���
+この変数の種類を示す文字列を返します。
 
-@return VARKIND���б�����ʸ������֤��ޤ���
+@return VARKINDに対応する文字列を返します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'XlSheetType')
    puts tobj.variables.map {|v| v.variable_kind}.uniq # => CONSTANT
 
-�����ͤϰʲ��Τ����줫�Ȥʤ�ޤ���
+返送値は以下のいずれかとなります。
 
 : PERINSTANCE
-  ���󥹥�������ѿ�����¤�Τ�桼������ΤΥե�����ɡ�(0)
+  インスタンス毎の変数。構造体やユーザ定義体のフィールド。(0)
 : STATIC
-  ���饹����Ū�ѿ���(1)
+  クラスの静的変数。(1)
 : CONSTANT
-  �����enum��⥸�塼��Υ��С�(2)
+  定数。enumやモジュールのメンバ。(2)
 : DISPATCH
-  �ѿ����������˥����ȥ᡼���������ѡ��췿���Υץ��ѥƥ���(3)
+  変数アクセスにオートメーションを利用。旧型式のプロパティ。(3)
 
 @see [[m:WIN32OLE_VARIABLE#varkind]]
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- instance_method(name) -> UnboundMethod
 
-self ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤ò¥ª¥Ö¥¸¥§¥¯¥È²½¤·¤¿ [[c:UnboundMethod]] ¤òÊÖ¤·¤Ş¤¹¡£
+self ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåŒ–ã—ãŸ [[c:UnboundMethod]] ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param name [[c:Symbol]] ¤« [[c:String]] ¤Ç¤¹¡£
+@param name [[c:Symbol]] ã‹ [[c:String]] ã§ã™ã€‚
 
-@raise NameError self ¤ËÂ¸ºß¤·¤Ê¤¤¥á¥½¥Ã¥É¤ò»ØÄê¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise NameError self ã«å­˜åœ¨ã—ãªã„ãƒ¡ã‚½ãƒƒãƒ‰ã‚’æŒ‡å®šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:Object#method]]
 

@@ -5,5 +5,5 @@ kind=defined
 --- fileno -> Integer
 --- to_i   -> Integer
 
-[[m:IO#fileno]], [[m:IO#to_i]] ¤Ë°Ñ¾ù¤·¤Ş¤¹¡£
+[[m:IO#fileno]], [[m:IO#to_i]] ã«å§”è­²ã—ã¾ã™ã€‚
 

@@ -4,8 +4,8 @@ kind=defined
 
 --- ARGUMENT_FLAGS -> Array
 
-ฦโษ๔ควปศอัคนค๋ฤ๊ฟ๔ควคนกฃ
+ๅ…้จใงไฝฟ็”จใใๅฎๆ•ฐใงใใ€
 
 [[m:GetoptLong::NO_ARGUMENT]], [[m:GetoptLong::REQUIRE_ARGUMENT]],
-[[m:GetoptLong::OPTIONAL_ARGUMENT]] คฌฅปฅรฅศคตค์คฦคคคÞคนกฃ
+[[m:GetoptLong::OPTIONAL_ARGUMENT]] ใใปใใใ•ใใฆใใพใใ€
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- each_attribute {|a| ... } -> [RDoc::Attr]
 
-�ɲä��줿 [[c:RDoc::Attr]] ���Ф��ƥ֥��å���ɾ�����ޤ���
+追加された [[c:RDoc::Attr]] に対してブロックを評価します。
 

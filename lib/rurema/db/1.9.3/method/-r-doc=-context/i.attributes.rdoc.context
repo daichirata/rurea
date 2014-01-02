@@ -4,5 +4,5 @@ kind=defined
 
 --- attributes -> [RDoc::Attr]
 
-�ɲä��줿 [[c:RDoc::Attr]] ��������֤��ޤ���
+追加された [[c:RDoc::Attr]] の配列を返します。
 

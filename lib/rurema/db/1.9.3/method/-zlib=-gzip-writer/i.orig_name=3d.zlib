@@ -4,14 +4,14 @@ kind=defined
 
 --- orig_name=(filename)
 
-gzip �ե�����Υإå����˵�Ͽ���븵�ե�����̾����ꤷ�ޤ���
+gzip ファイルのヘッダーに記録する元ファイル名を指定します。
 
-[[m:Zlib::GzipWriter#write]] ���ν񤭹��߷ϥ᥽�åɤ�
-�Ƥ����ǻ��ꤷ�褦�Ȥ���� [[c:Zlib::GzipFile::Error]] �㳰��
-ȯ�����ޤ���
+[[m:Zlib::GzipWriter#write]] 等の書き込み系メソッドを
+呼んだ後で指定しようとすると [[c:Zlib::GzipFile::Error]] 例外が
+発生します。
 
-@param filename gzip �ե�����Υإå����˵�Ͽ���븵�ե�����̾��ʸ����ǻ��ꤷ�ޤ���
-@return filename ���֤��ޤ���
+@param filename gzip ファイルのヘッダーに記録する元ファイル名を文字列で指定します。
+@return filename を返します。
 
   require 'zlib'
 

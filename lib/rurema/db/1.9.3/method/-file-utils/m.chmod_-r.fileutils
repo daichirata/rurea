@@ -4,19 +4,19 @@ kind=defined
 
 --- chmod_R(mode, list, options = {}) -> Array
 
-�ե����� list �Υѡ��ߥå�����Ƶ�Ū�� mode ���ѹ����ޤ���
+ファイル list のパーミッションを再帰的に mode へ変更します。
 
-@param mode �ѡ��ߥå�����8�ʿ��ǻ��ꤷ�ޤ���
+@param mode パーミッションを8進数で指定します。
 
-@param list �ե�����Υꥹ�Ȥ���ꤷ�ޤ����оݤΥե����뤬��Ĥξ���ʸ����Ǥ�����ǽ�Ǥ���
-           ��İʾ���ꤹ���������ǻ��ꤷ�ޤ���
+@param list ファイルのリストを指定します。対象のファイルが一つの場合は文字列でも指定可能です。
+           二つ以上指定する場合は配列で指定します。
 
-@param options :noop �� :verbose �������ǽ�Ǥ���
+@param options :noop と :verbose が指定可能です。
                [[ref:c:FileUtils#options]]
 
-@return list ������Ȥ����֤��ޤ���
+@return list を配列として返します。
 
-��:
+例:
 
   FileUtils.chmod_R(0700, '/tmp/removing')
 

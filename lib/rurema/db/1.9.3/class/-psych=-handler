@@ -6,4 +6,7 @@ library=psych
 aliases=
 aliasof=
 
+[[c:Psych::Parser]] で用いるイベントハンドラの抽象基底クラスです。
 
+[[c:Psych::Parser]] を使うためには、このクラスを継承し、
+取り扱いたいイベントに対応するメソッドを定義します。

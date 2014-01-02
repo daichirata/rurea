@@ -4,15 +4,15 @@ kind=defined
 
 --- link(old, new)    -> 0
 
-old ��ؤ� new �Ȥ���̾���Υϡ��ɥ�󥯤�
-�������ޤ���old �Ϥ��Ǥ�¸�ߤ��Ƥ���ɬ�פ�����ޤ���
-�ϡ��ɥ�󥯤������������� 0 ���֤��ޤ���
+old を指す new という名前のハードリンクを
+生成します。old はすでに存在している必要があります。
+ハードリンクに成功した場合は 0 を返します。
 
-���Ԥ��������㳰 [[c:Errno::EXXX]] ��ȯ�����ޤ���
+失敗した場合は例外 [[c:Errno::EXXX]] が発生します。
 
-@param old �ե�����̾��ɽ��ʸ�������ꤷ�ޤ��� 
+@param old ファイル名を表す文字列を指定します。 
 
-@param new �ե�����̾��ɽ��ʸ�������ꤷ�ޤ��� 
+@param new ファイル名を表す文字列を指定します。 
 
-@raise Errno::EXXX ���Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX 失敗した場合に発生します。
 

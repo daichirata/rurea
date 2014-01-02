@@ -1,10 +1,11 @@
 requires=
-classes=IRB=MagickFile
+classes=IRB=MagicFile
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-irb ���������Ϥ�ե�������Υޥ��å������Ȥ���������������Υ��֥饤
-�֥��Ǥ���
+irb が扱う入力やファイル中のマジックコメントを正しく扱うためのサブライ
+ブラリです。
 
-�桼����ľ�ܻ��Ѥ����ΤǤϤ���ޤ���
+ユーザが直接使用するものではありません。

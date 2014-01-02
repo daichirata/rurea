@@ -4,9 +4,9 @@ kind=defined
 
 --- begins?(long, short) -> bool
 
-long �� short �ǻϤޤ�ʸ����Ǥ����翿���֤��ޤ��������Ǥʤ����ϵ����֤��ޤ���
+long が short で始まる文字列である場合真を返します。そうでない場合は偽を返します。
 
-@param long Ĺ�����ޥ�ɥ饤�󥪥ץ�������ꤷ�ޤ���
+@param long 長いコマンドラインオプションを指定します。
 
-@param short û�����ޥ�ɥ饤�󥪥ץ�������ꤷ�ޤ���
+@param short 短いコマンドラインオプションを指定します。
 

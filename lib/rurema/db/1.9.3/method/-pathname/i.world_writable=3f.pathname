@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- world_writable? -> bool
-FileTest.world_writable?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.world_writable?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#world_writable?]]
 

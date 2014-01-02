@@ -3,5 +3,6 @@ classes=WEBrick=BasicLog,WEBrick=Log
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

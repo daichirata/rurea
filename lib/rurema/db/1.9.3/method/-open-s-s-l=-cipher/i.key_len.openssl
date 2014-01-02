@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- key_len -> Integer
-�Ź渰��Ĺ����Х��ȿ����֤��ޤ���
+暗号鍵の長さをバイト数で返します。
 

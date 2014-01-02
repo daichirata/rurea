@@ -6,4 +6,4 @@ library=rubygems.exceptions
 aliases=
 aliasof=
 
-Gem ��Ŭ�ڤʥǥ��쥯�ȥ�˥��󥹥ȡ��뤵��Ƥ��ʤ����˻��Ѥ����㳰�Ǥ���
+Gem が適切なディレクトリにインストールされていない場合に使用する例外です。

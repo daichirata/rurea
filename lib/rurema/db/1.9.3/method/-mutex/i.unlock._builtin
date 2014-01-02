@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- unlock     -> self | nil
-mutex ¤Î¥í¥Ã¥¯¤ò²òÊü¤·¤Þ¤¹¡£mutex ¤Î¥í¥Ã¥¯ÂÔ¤Á¤Ë¤Ê¤Ã¤Æ¤¤¤¿¥¹¥ì¥Ã¥É¤Î¼Â¹Ô¤ÏºÆ³«¤µ¤ì¤Þ¤¹¡£
+mutex ã®ãƒ­ãƒƒã‚¯ã‚’è§£æ”¾ã—ã¾ã™ã€‚mutex ã®ãƒ­ãƒƒã‚¯å¾…ã¡ã«ãªã£ã¦ã„ãŸã‚¹ãƒ¬ãƒƒãƒ‰ã®å®Ÿè¡Œã¯å†é–‹ã•ã‚Œã¾ã™ã€‚
 
-@return self ¤¬¥í¥Ã¥¯¤µ¤ì¤Æ¤¤¤Ê¤±¤ì¤Ð nil ¤òÊÖ¤·¤Þ¤¹¡£¤½¤¦¤Ç¤Ê¤±¤ì¤Ðself ¤òÊÖ¤·¤Þ¤¹¡£
+@return self ãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ãªã‘ã‚Œã° nil ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã‘ã‚Œã°self ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
  m = Mutex.new
  begin 
@@ -17,8 +17,8 @@ mutex ¤Î¥í¥Ã¥¯¤ò²òÊü¤·¤Þ¤¹¡£mutex ¤Î¥í¥Ã¥¯ÂÔ¤Á¤Ë¤Ê¤Ã¤Æ¤¤¤¿¥¹¥ì¥Ã¥É¤Î¼Â¹Ô¤ÏºÆ³«¤µ
    m.unlock
  end
 
-Mutex ¤Ï¥í¥Ã¥¯¤·¤¿¥¹¥ì¥Ã¥É°Ê³°¤«¤é¥í¥Ã¥¯¤ò³«Êü¤¹¤ë¤³¤È¤Ï½ÐÍè¤Þ¤»¤ó¡£
-¥í¥Ã¥¯¤·¤¿¥¹¥ì¥Ã¥É°Ê³°¤«¤é unlock ¤¬¸Æ¤Ð¤ì¤ë¤È ThreadError ¤¬È¯À¸¤·¤Þ¤¹¡£
+Mutex ã¯ãƒ­ãƒƒã‚¯ã—ãŸã‚¹ãƒ¬ãƒƒãƒ‰ä»¥å¤–ã‹ã‚‰ãƒ­ãƒƒã‚¯ã‚’é–‹æ”¾ã™ã‚‹ã“ã¨ã¯å‡ºæ¥ã¾ã›ã‚“ã€‚
+ãƒ­ãƒƒã‚¯ã—ãŸã‚¹ãƒ¬ãƒƒãƒ‰ä»¥å¤–ã‹ã‚‰ unlock ãŒå‘¼ã°ã‚Œã‚‹ã¨ ThreadError ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
  m = Mutex.new
  m.lock
@@ -26,5 +26,5 @@ Mutex ¤Ï¥í¥Ã¥¯¤·¤¿¥¹¥ì¥Ã¥É°Ê³°¤«¤é¥í¥Ã¥¯¤ò³«Êü¤¹¤ë¤³¤È¤Ï½ÐÍè¤Þ¤»¤ó¡£
    m.unlock # => ThreadError
  end.join
 
-@raise ThreadError ¼«¿È¤ò¥í¥Ã¥¯¤·¤¿¥¹¥ì¥Ã¥É°Ê³°¤«¤é¸Æ¤Ð¤ì¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise ThreadError è‡ªèº«ã‚’ãƒ­ãƒƒã‚¯ã—ãŸã‚¹ãƒ¬ãƒƒãƒ‰ä»¥å¤–ã‹ã‚‰å‘¼ã°ã‚ŒãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

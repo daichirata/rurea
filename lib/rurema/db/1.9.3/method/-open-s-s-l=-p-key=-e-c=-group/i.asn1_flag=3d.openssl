@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- asn1_flag=(flags)
-¼«¿È¤Ë ASN1 ¥Õ¥é¥°¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã« ASN1 ãƒ•ãƒ©ã‚°ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-¸½ºßÍøÍÑ²ÄÇ½¤Ê¥Õ¥é¥°¤Ï°Ê²¼¤ÎÄÌ¤ê¤Ç¤¹¡£
+ç¾åœ¨åˆ©ç”¨å¯èƒ½ãªãƒ•ãƒ©ã‚°ã¯ä»¥ä¸‹ã®é€šã‚Šã§ã™ã€‚
   * [[m:OpenSSL::PKey::EC::NAMED_CURVE]]
 
 @see [[m:OpenSSL::PKey::EC::Group#asn1_flag]]

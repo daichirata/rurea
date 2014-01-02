@@ -4,5 +4,5 @@ kind=defined
 
 --- EARLY -> Rake::EarlyTime
 
-[[c:Rake::EarlyTime]] ¤ÎÍ£°ì¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÊÖ¤·¤Ş¤¹¡£
+[[c:Rake::EarlyTime]] ã®å”¯ä¸€ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 

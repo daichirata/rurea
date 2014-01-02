@@ -2,9 +2,10 @@ names=bottom
 visibility=public
 kind=defined
 
---- bottom(n = 0)
-@todo
+--- bottom(n = 0) -> Binding
 
-������n���ܤΥ���ƥ����Ȥ���Ф��ޤ���
-n �� 0 ���ǲ��̤ˤʤ�ޤ���
+下から n 番目のコンテキストを取り出します。
+
+@param n 取り出すコンテキストを [[c:Integer]] で指定します。n は 0 が最
+         下位になります。
 

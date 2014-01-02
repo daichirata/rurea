@@ -6,4 +6,4 @@ library=base64
 aliases=
 aliasof=
 
-Base64 ���󥳡��� / �ǥ����ɤ��뤿��Υ᥽�åɤ���������⥸�塼��Ǥ���
+Base64 エンコード / デコードするためのメソッドを定義したモジュールです。

@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- grpowned? -> bool
-¥°¥ë¡¼¥×ID¤¬¼Â¸ú¥°¥ë¡¼¥×ID¤ÈÅù¤·¤¤»þ¤Ë¿¿¤òÊÖ¤·¤Þ¤¹¡£
+ã‚°ãƒ«ãƒ¼ãƒ—IDãŒå®ŸåŠ¹ã‚°ãƒ«ãƒ¼ãƒ—IDã¨ç­‰ã—ã„æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-Êä½õ¥°¥ë¡¼¥×ID¤Ï¹ÍÎ¸¤µ¤ì¤Þ¤»¤ó¡£
+è£œåŠ©ã‚°ãƒ«ãƒ¼ãƒ—IDã¯è€ƒæ…®ã•ã‚Œã¾ã›ã‚“ã€‚
 
   printf "%s %s\n", $:[0], File::Stat.new($:[0]).grpowned?
-  #Îã
+  #ä¾‹
   #=> /usr/local/lib/site_ruby/1.8 false
   printf "%s %s\n", $0, File::Stat.new($0).grpowned?
-  #Îã
+  #ä¾‹
   #=> filestat.rb true
 

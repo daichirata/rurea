@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- greeting -> Net::IMAP::UntaggedResponse
-¥µ¡¼¥Ğ¤«¤éºÇ½é¤ËÁ÷¤é¤ì¤Æ¤¯¤ë¥á¥Ã¥»¡¼¥¸(greeting message)
-¤òÊÖ¤·¤Ş¤¹¡£
+ã‚µãƒ¼ãƒã‹ã‚‰æœ€åˆã«é€ã‚‰ã‚Œã¦ãã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸(greeting message)
+ã‚’è¿”ã—ã¾ã™ã€‚
 

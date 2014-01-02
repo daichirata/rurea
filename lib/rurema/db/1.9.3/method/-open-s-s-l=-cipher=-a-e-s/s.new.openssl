@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- new(bit, mode) -> OpenSSL::Cipher::AES
-AES ���̸��Ź楪�֥������Ȥ����������֤��ޤ���
+AES 共通鍵暗号オブジェクトを生成し、返します。
 
-AES �θ�Ĺ�������⤷����ʸ����(256 or "256") bit �ǡ�
-�⡼�ɤ�ʸ���� mode �ǻ��ꤷ�ޤ���
+AES の鍵長を整数もしくは文字列(256 or "256") bit で、
+モードを文字列 mode で指定します。
 
-�����ǽ�ʸ����ȥ⡼�ɤ� [[m:OpenSSL::Cipher.ciphers]] ��
-�����Ǥ��ޤ���
+指定可能な鍵数とモードは [[m:OpenSSL::Cipher.ciphers]] で
+取得できます。
 
-@param bit ��Ĺ����/ʸ����
-@param mode �⡼��ʸ����
+@param bit 鍵長整数/文字列
+@param mode モード文字列
 

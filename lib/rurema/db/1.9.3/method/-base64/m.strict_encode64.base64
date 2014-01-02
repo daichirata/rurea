@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- strict_encode64(bin) -> String
-Ϳ����줿�ǡ����� Base64 ���󥳡��ɤ���ʸ������֤��ޤ���
+与えられたデータを Base64 エンコードした文字列を返します。
 
-���Υ᥽�åɤ� [[RFC:4648]] ���б����Ƥ��ޤ���
-���ԥ����ɤ��ɲä��뤳�ȤϤ���ޤ���
+このメソッドは [[RFC:4648]] に対応しています。
+改行コードを追加することはありません。
 
-@param bin Base64 ���󥳡��ɤ���ǡ�������ꤷ�ޤ���
+@param bin Base64 エンコードするデータを指定します。
 

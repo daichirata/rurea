@@ -4,5 +4,5 @@ kind=defined
 
 --- sync_exclusive? -> bool
 --- exclusive? -> bool
-��¾���å�����Ƥ��뤫�ɤ������֤��ޤ���
+排他ロックされているかどうかを返します。
 

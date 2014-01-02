@@ -4,16 +4,16 @@ kind=defined
 
 --- backtrace    -> [String]
 
-�Хå��ȥ졼��������֤��ޤ���
+バックトレース情報を返します。
 
-�ǥե���ȤǤ�
+デフォルトでは
 
   * "#{sourcefile}:#{sourceline}:in `#{method}'"
-    (�᥽�å���ξ��)
+    (メソッド内の場合)
   * "#{sourcefile}:#{sourceline}"
-    (�ȥåץ�٥�ξ��)
+    (トップレベルの場合)
 
-�Ȥ��������� [[c:String]] ������Ǥ���
+という形式の [[c:String]] の配列です。
 
  def methd
    raise

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- cmp_issuer(other) -> bool
-2¤Ä¤Î CertificateId ¥ª¥Ö¥¸¥§¥¯¥È¤Î issuer(¾ÚÌÀ½ñÈ¯¹Ô¼Ô)¤òÈæ³Ó¤·¡¢
-Æ±¤¸ issuer ¤Ç¤¢¤ì¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
+2ã¤ã® CertificateId ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã® issuer(è¨¼æ˜æ›¸ç™ºè¡Œè€…)ã‚’æ¯”è¼ƒã—ã€
+åŒã˜ issuer ã§ã‚ã‚Œã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other Èæ³Ó¤¹¤ë [[c:OpenSSL::OCSP::CertificateId]] ¥ª¥Ö¥¸¥§¥¯¥È
+@param other æ¯”è¼ƒã™ã‚‹ [[c:OpenSSL::OCSP::CertificateId]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 @see [[m:OpenSSL::OCSP::CertificateId#cmp]]
 

@@ -6,5 +6,5 @@ library=fileutils
 aliases=
 aliasof=
 
-FileUtils ��Ʊ���᥽�åɤ��������Ƥ�������Ʊ��ư��򤷤ޤ�����
-���褦�Ȥ��Ƥ��뤳�Ȥ�¹�����ɽ�����ޤ���
+FileUtils と同じメソッドが定義されており全く同じ動作をしますが、
+しようとしていることを実行前に表示します。

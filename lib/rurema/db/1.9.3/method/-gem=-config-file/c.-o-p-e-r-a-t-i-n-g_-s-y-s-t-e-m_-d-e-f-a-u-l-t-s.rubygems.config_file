@@ -4,7 +4,7 @@ kind=defined
 
 --- OPERATING_SYSTEM_DEFAULTS -> {}
 
-Ruby ��ѥå������󥰤��Ƥ���ͤ��ǥե���Ȥ������ͤ򥻥åȤ��뤿��˻��Ѥ��ޤ���
+Ruby をパッケージングしている人がデフォルトの設定値をセットするために使用します。
 
-���Ѥ���ե������ rubygems/defaults/operating_system.rb �Ǥ���
+使用するファイルは rubygems/defaults/operating_system.rb です。
 

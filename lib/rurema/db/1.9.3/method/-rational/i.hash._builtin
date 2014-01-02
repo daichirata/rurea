@@ -4,7 +4,7 @@ kind=defined
 
 --- hash -> Integer
 
-���ȤΥϥå����ͤ��֤��ޤ���
+自身のハッシュ値を返します。
 
-@return �ϥå����ͤ��֤��ޤ���
+@return ハッシュ値を返します。
 

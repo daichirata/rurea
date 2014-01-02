@@ -5,11 +5,13 @@ kind=defined
 --- to_enum(method = :each, *args) -> Enumerator
 --- enum_for(method = :each, *args) -> Enumerator
 
-[[m:Enumerator.new]](self, method, *args) ¤òÊÖ¤·¤Þ¤¹¡£
+[[m:Enumerator.new]](self, method, *args) ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param method ¥á¥½¥Ã¥ÉÌ¾¤ÎÊ¸»úÎó¤«¥·¥ó¥Ü¥ë¤Ç¤¹¡£
-@param args ¸Æ¤Ó½Ð¤¹¥á¥½¥Ã¥É¤ËÅÏ¤µ¤ì¤ë°ú¿ô¤Ç¤¹¡£
-@raise NameError Â¸ºß¤·¤Ê¤¤¥á¥½¥Ã¥ÉÌ¾¤ò»ØÄê¤¹¤ë¤ÈÈ¯À¸¤·¤Þ¤¹¡£
+
+
+@param method ãƒ¡ã‚½ãƒƒãƒ‰åã®æ–‡å­—åˆ—ã‹ã‚·ãƒ³ãƒœãƒ«ã§ã™ã€‚
+@param args å‘¼ã³å‡ºã™ãƒ¡ã‚½ãƒƒãƒ‰ã«æ¸¡ã•ã‚Œã‚‹å¼•æ•°ã§ã™ã€‚
+@raise NameError å­˜åœ¨ã—ãªã„ãƒ¡ã‚½ãƒƒãƒ‰åã‚’æŒ‡å®šã™ã‚‹ã¨ç™ºç”Ÿã—ã¾ã™ã€‚
 
   str = "xyz"
 
@@ -21,4 +23,5 @@ kind=defined
   p(a.to_enum) #=> #<Enumerator: [1, 2, 3]:each>
 
 @see [[c:Enumerator]]
+
 

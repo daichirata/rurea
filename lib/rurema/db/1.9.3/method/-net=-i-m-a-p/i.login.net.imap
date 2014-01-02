@@ -3,20 +3,20 @@ visibility=public
 kind=defined
 
 --- login(user, password) -> Net::IMAP::TaggedResponse
-LOGIN ���ޥ�ɤ����ꡢʿʸ�ǥѥ���ɤ����ꥯ�饤�����
-�桼����ǧ�ڤ��ޤ���
+LOGIN コマンドを送り、平文でパスワードを送りクライアント
+ユーザを認証します。
 
-[[m:Net::IMAP#authenticate]] �� "LOGIN" ��Ȥ��ΤȤϰۤʤ�
-���Ȥ����դ��Ƥ���������authenticate �Ǥ� AUTHENTICATE ���ޥ�ɤ�
-����ޤ���
+[[m:Net::IMAP#authenticate]] で "LOGIN" を使うのとは異なる
+ことに注意してください。authenticate では AUTHENTICATE コマンドを
+送ります。
 
-ǧ���������ˤ�
-ǧ�������쥹�ݥ󥹤��֤��ͤȤ����֤��ޤ���
+認証成功時には
+認証成功レスポンスを返り値として返します。
 
-ǧ�ڼ��Ի��ˤ��㳰��ȯ�����ޤ���
+認証失敗時には例外が発生します。
 
-@param user �桼��̾ʸ����
-@param password �ѥ����ʸ����
-@raise Net::IMAP::NoResponseError ǧ�ڤ˼��Ԥ�������ȯ�����ޤ�
+@param user ユーザ名文字列
+@param password パスワード文字列
+@raise Net::IMAP::NoResponseError 認証に失敗した場合に発生します
 @see [[m:Net::IMAP#authenticate]]
 

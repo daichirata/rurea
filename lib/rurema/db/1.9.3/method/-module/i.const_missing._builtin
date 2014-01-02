@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- const_missing(name)
-�������Ƥ��ʤ�����򻲾Ȥ����Ȥ��� Ruby ���󥿥ץ꥿��
-���Υ᥽�åɤ�ƤӤޤ���
+定義されていない定数を参照したときに Ruby インタプリタが
+このメソッドを呼びます。
 
-@param name ���Ȥ������̾�� [[c:Symbol]]
+@param name 参照した定数名の [[c:Symbol]]
 
-@raise NameError ���Υ᥽�åɤ�ƤӽФ�����硢�ǥե���Ȥ�ȯ�������㳰
+@raise NameError このメソッドを呼び出した場合、デフォルトで発生する例外
 
 
   class Foo

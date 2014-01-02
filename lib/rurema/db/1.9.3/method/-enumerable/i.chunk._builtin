@@ -5,23 +5,23 @@ kind=defined
 --- chunk {|elt| ... } -> Enumerator
 --- chunk(initial_state) {|elt, state| ... } -> Enumerator
 
-���Ǥ��������˥֥��å���ɾ���������η�̤ˤ�ä�
-���Ǥ����󥯤�ʬ����(���롼�ײ�����)���Ǥ����
-[[c:Enumerator]] ���֤��ޤ���
+要素を前から順にブロックで評価し、その結果によって
+要素をチャンクに分けた(グループ化した)要素を持つ
+[[c:Enumerator]] を返します。
 
-�֥��å���ɾ���ͤ�Ʊ���ͤ�³����Τ��ĤΥ���󥯤Ȥ���
-��갷���ޤ������ʤ�����֥��å���ɾ���ͤ��������
-�ۤʤ��ǥ���󥯤����ڤ��ޤ���
+ブロックの評価値が同じ値が続くものを一つのチャンクとして
+取り扱います。すなわち、ブロックの評価値が一つ前と
+異なる所でチャンクが区切られます。
 
-�֤��ͤ� [[c:Enumerator]] �ϳƥ���󥯤Υ֥��å�ɾ���ͤ�
-�ƥ���󥯤����Ǥ��������Υڥ�������ǤȤ��ޤ���
-���Τ��ᡢeach���Ȱʲ��Τ褦�ˤʤ�ޤ���
+返り値の [[c:Enumerator]] は各チャンクのブロック評価値と
+各チャンクの要素を持つ配列のペアを各要素とします。
+そのため、eachだと以下のようになります。
 
   enum.chunk {|elt| key }.each {|key, ary| ... }
   enum.chunk(initial_state) {|elt, state| key }.each {|key, ary| ... }
 
-��Ȥ��ơ��������Ϣ³������/������ʬ������򸫤Ƥߤޤ���
-��n.even?�פ��Ѵ�����Ȥ����Ƕ��ڤ��Ƥ���Τ��狼��Ǥ��礦��
+例として、整数列を連続する奇数/偶数に分ける例を見てみます。
+「n.even?」が変換するところで区切られているのがわかるでしょう。
   [3,1,4,1,5,9,2,6,5,3,5].chunk {|n|
     n.even?
   }.each {|even, ary|
@@ -33,10 +33,10 @@ kind=defined
   #   [true, [2, 6]]
   #   [false, [5, 3, 5]]
 
-���Υ᥽�åɤϳ����Ǥ����˥����Ȥ���Ƥ�����������Ǥ���
-�ʲ�����Ǥϡ��ƥ����ȼ���ե�����(��Ȥ������Ȥ���Ƥ���)
-�˴ޤޤ��ñ�����Ƭ��ʸ�����Ȥ˿����Ƥ��ޤ���
-  # line.ord ����Ƭ��ʸ���Υ����ɥݥ���Ȥ��֤�
+このメソッドは各要素が既にソートされている場合に便利です。
+以下の例では、テキスト辞書ファイル(中身がソートされている)
+に含まれる単語を先頭の文字ごとに数えています。
+  # line.ord は先頭の文字のコードポイントを返す
   open("/usr/share/dict/words", "r:iso-8859-1") {|f|
     f.chunk {|line| line.ord }.each {|ch, lines| p [ch.chr, lines.length] }
   }
@@ -47,17 +47,17 @@ kind=defined
   #   ["D", 791]
   #   ...
 
-����ˤ��Υ᥽�åɤϰʲ����ͤ����̰������ޤ���
-  * �֥��å���ɾ���ͤ� nil �⤷���� :_separator �Ǥ��ä���硢
-    �������Ǥ�ΤƤޤ�������󥯤Ϥ�������Ƕ��ڤ��ޤ���
-  * �֥��å���ɾ���� :_alone �Ǥ��ä����Ϥ������Ǥ�
-    ñ�ȤΥ���󥯤�ʤ���ΤȲ�ᤵ��ޤ���
-��������������ǻϤޤ륷��ܥ�Ϥ��Υ᥽�åɤǤ�ͽ�󤵤�Ƥ��ޤ���
-�֥��å����֤��ͤȤ��Ƥ��Ѥ��ʤ��Ǥ���������
+さらにこのメソッドは以下の値を特別扱いします。
+  * ブロックの評価値が nil もしくは :_separator であった場合、
+    その要素を捨てます。チャンクはこの前後で区切られます。
+  * ブロックの評価値 :_alone であった場合はその要素は
+    単独のチャンクをなすものと解釈されます。
+アンダースコアで始まるシンボルはこのメソッドでは予約されています。
+ブロックの返り値としては用いないでください。
 
-nil�� :_separator �Ϥ������Ǥ�̵�뤷���������Ѥ��ޤ���
-��Ȥ��� svn log �ν��ϤΥϥ��ե�ν�Ƕ��ڤꤿ������ͤ��ޤ���
-  sep = "-"*72 + "\n" # �ϥ��ե�72�Ĥι�
+nil、 :_separator はある要素を無視したい場合に用います。
+例として svn log の出力のハイフンの所で区切りたい場合を考えます。
+  sep = "-"*72 + "\n" # ハイフンが72個の行
   IO.popen("svn log README") {|f|
     f.chunk {|line|
       line != sep || nil
@@ -75,16 +75,16 @@ nil�� :_separator �Ϥ������Ǥ�̵�뤷���������Ѥ��ޤ���
   #    "\n"]
   #   ...
 
-�ƥ����Ȥ���ԤǶ��ڤ�줿�����ʬ���������ˤ� nil ���Ȥ��ޤ���
+テキストを空行で区切られた段落に分けたい場合にも nil が使えます。
   File.foreach("README").chunk {|line|
     /\A\s*\z/ !~ line || nil
   }.each {|_, lines|
     pp lines
   }
 
-��:_alone�פ����Ǥ����̤������������Ѥ��ޤ���
-�ʲ�����Ǥϡ�Foo#bar�פȤ��������ιԤ�Ϣ³���Ƥ�����Τ�
-����󥯲���������ʳ������̤����ޤ���
+「:_alone」は要素を素通ししたい場合に用います。
+以下の例では「Foo#bar」という形式の行が連続している場合のみ
+チャンク化し、それ以外は素通しします。
 
   pat = /\A[A-Z][A-Za-z0-9_]+\#/
   open(filename) {|f|
@@ -97,11 +97,11 @@ nil�� :_separator �Ϥ������Ǥ�̵�뤷���������Ѥ��ޤ���
     }
   }
 
-����󥯲��˾������ܤ�ɬ�פʾ��ϡ�
-���ץ������� initial_state �˾��֤��ݻ����륪�֥������Ȥ��Ϥ��ޤ���
-���ξ�硢�֥��å�����2�����ˤϤ��Υ��֥������Ȥ� dup ��ʣ��
-������Ϥ���ޤ���
+チャンク化に状態遷移が必要な場合は、
+オプション引数 initial_state に状態を保持するオブジェクトを渡します。
+この場合、ブロックの第2引数にはこのオブジェクトが dup で複製
+されて渡されます。
 
-@param initial_state ���֤��ݻ����륪�֥�������
-@raise RuntimeError ͽ�󤵤�Ƥ����ͤ��Ѥ�������ȯ�����ޤ�
+@param initial_state 状態を保持するオブジェクト
+@raise RuntimeError 予約されている値を用いた場合に発生します
 

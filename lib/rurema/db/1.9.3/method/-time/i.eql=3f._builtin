@@ -4,8 +4,8 @@ kind=defined
 
 --- eql?(other)    -> bool
 
-other �� Time �����Υ��֥��饹�Υ��󥹥��󥹤Ǥ��꼫�ȤȻ��郎����������
-true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+other が Time かそのサブクラスのインスタンスであり自身と時刻が等しい場合に
+true を返します。そうでない場合に false を返します。
 
-@param other ���Ȥ���Ӥ���������� Time ���֥������Ȥ���ꤷ�ޤ���
+@param other 自身と比較したい時刻を Time オブジェクトを指定します。
 

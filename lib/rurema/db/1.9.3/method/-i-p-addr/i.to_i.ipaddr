@@ -4,9 +4,9 @@ kind=defined
 
 --- to_i -> Integer
 
-À°¿ô¤ËÊÑ´¹¤·¤Þ¤¹¡£
+æ•´æ•°ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require "ipaddr"
   p IPAddr.new("0.0.1.0").to_i   # => 256

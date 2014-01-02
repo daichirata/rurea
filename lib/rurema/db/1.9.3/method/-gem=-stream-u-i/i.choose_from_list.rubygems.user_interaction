@@ -4,13 +4,13 @@ kind=defined
 
 --- choose_from_list(question, list) -> Array
 
-�ꥹ�Ȥ�����������򤹤����򤷤ޤ���
+リストから回答を選択する質問をします。
 
-�ꥹ�Ȥϼ���ξ��ɽ������ޤ���
+リストは質問の上に表示されます。
 
-@param question �������ꤷ�ޤ���
+@param question 質問を指定します。
 
-@param list ������������ʸ���������ǻ��ꤷ�ޤ���
+@param list 回答の選択肢を文字列の配列で指定します。
 
-@return ������̾�Τ������Υ���ǥå��������ǤȤ���������֤��ޤ���
+@return 選択肢の名称と選択肢のインデックスを要素とする配列を返します。
 

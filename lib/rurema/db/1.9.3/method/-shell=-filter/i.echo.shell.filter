@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- echo(*strings) -> Shell::Filter
-�¹Ԥ����, ���������ƤȤ��� Filter ���֥������Ȥ��֤��ޤ�.
+実行すると, それらを内容とする Filter オブジェクトを返します.
 
-@param strings �����륳�ޥ�� echo ��Ϳ���������ʸ����ǻ��ꤷ�ޤ���
+@param strings シェルコマンド echo に与える引数を文字列で指定します。
 
-ư����
+動作例
   require 'shell'
   Shell.def_system_command("head")
   sh = Shell.new

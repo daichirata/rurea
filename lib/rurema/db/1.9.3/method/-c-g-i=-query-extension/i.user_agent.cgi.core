@@ -4,5 +4,5 @@ kind=defined
 
 --- user_agent -> String
 
-ENV['HTTP_USER_AGENT'] ค๒สึคทคÞคนกฃ
+ENV['HTTP_USER_AGENT'] ใ’่ฟ”ใ—ใพใใ€
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- *(other) -> Complex
 
-ÀÑ¤ò·×»»¤·¤Þ¤¹¡£
+ç©ã‚’è¨ˆç®—ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤Ë³Ý¤±¤ë¿ô
+@param other è‡ªèº«ã«æŽ›ã‘ã‚‹æ•°
 
-Îã:
+ä¾‹:
 
   Complex(1, 2) * 2              # => (2+4i)
   Complex(1, 2) * Complex(2, 3)  # => (-4+4i)

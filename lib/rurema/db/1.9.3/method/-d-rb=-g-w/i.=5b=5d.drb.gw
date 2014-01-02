@@ -1,10 +1,9 @@
-names=[],[]=
+names=[]
 visibility=public
 kind=defined
 
---- [](key)
---- []=(key, v)
-@todo
+--- [](key) -> object
+登録したオブジェクトを取り出します。
 
-
+@param key オブジェクトを取り出すためのキー
 

@@ -4,6 +4,6 @@ kind=defined
 
 --- BIT_STRING -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-BIT_STRING ¤Î¥¿¥°ÈÖ¹æ 3 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+BIT_STRING ã®ã‚¿ã‚°ç•ªå· 3 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

@@ -2,8 +2,8 @@ names=WNOHANG
 visibility=public
 kind=defined
 
---- WNOHANG
+--- WNOHANG -> Fixnum
 
-[[m:Process.#waitpid]] ����������˻��ꤹ��ե饰�Ǥ���
-��λ�����ҥץ��������ʤ����Ǥ� waitpid ���֥��å����ޤ���
+[[m:Process.#waitpid]] の第二引数に指定するフラグです。
+終了した子プロセスがない時でも waitpid がブロックしません。
 

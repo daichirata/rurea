@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- name -> String
-�᡼��ܥå�����̾����ʸ������֤��ޤ���
+メールボックスの名前を文字列で返します。
 
 

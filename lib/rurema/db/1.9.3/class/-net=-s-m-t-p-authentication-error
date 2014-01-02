@@ -6,4 +6,4 @@ library=net.smtp
 aliases=
 aliasof=
 
-SMTP ǧ�ڥ��顼(���顼������ 530)���б������㳰���饹�Ǥ���
+SMTP 認証エラー(エラーコード 530)に対応する例外クラスです。

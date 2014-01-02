@@ -2,81 +2,81 @@ names=set_trace_func
 visibility=public
 kind=defined
 
---- set_trace_func(proc)                                         -> object
---- set_trace_func{|event, file, line, id, binding, klass| ... } -> Proc
+--- set_trace_func(proc) -> Proc
 
-Ruby ���󥿥ץ꥿�Υ��٥�Ȥ�ȥ졼������ [[c:Proc]] ���֥������ȤȤ���
-���ꤵ�줿 proc ����Ͽ���ޤ��� proc �� nil ����ꤷ�����ǥȥ졼���򥪥դˤ��ޤ���
-�֥��å�����ꤵ�줿���Ϥ��Υ֥��å���ȥ졼������ Proc ���֥������ȤȤ�����Ͽ���ޤ���
+Ruby インタプリタのイベントをトレースする [[c:Proc]] オブジェクトとして
+指定された proc を登録します。 nil を指定するとトレースがオフになります。
 
-���� proc ���֥��å��� Proc ���֥������Ȥ��Ѵ�������Τ��֤��ޤ���
+Ruby インタプリタがプログラムを実行する過程で、メソッドの呼び出しや
+式の評価などのイベントが発生する度に、以下で説明する6個の引数とともに
+登録された [[c:Proc]] オブジェクトを実行します。
 
-Ruby ���󥿥ץ꥿���ץ�������¹Ԥ�������ǡ��᥽�åɤθƤӽФ���
-����ɾ���ʤɤΥ��٥�Ȥ�ȯ�������٤ˡ��ʲ�����������6�Ĥΰ����ȤȤ��
-��Ͽ���줿 [[c:Proc]] ���֥������Ȥ�¹Ԥ��ޤ���
+標準添付の [[lib:debug]]、[[lib:tracer]]、
+[[lib:profile]] はこの組み込み関数を利用して実現されています。
 
-ɸ��ź�դ� [[lib:debug]]��[[lib:tracer]]��
-[[lib:profile]] �Ϥ����Ȥ߹��ߴؿ������Ѥ��Ƽ¸�����Ƥ��ޤ���
+==== ブロックパラメータの意味
 
-==== �֥��å��ѥ�᡼���ΰ�̣
+渡す Proc オブジェクトのパラメータは
+  proc{|event, file, line, id, binding, klass| ... }
+で、意味は以下の通りです。
 
 : event
- �¹ԤΥ����פ�ɽ�����ʲ��Τ����줫��ʸ����
+ 実行のタイプを表す、以下のいずれかの文字列。
 //emlist{
-  "line":      ����ɾ����
-  "call":      �᥽�åɤθƤӽФ���
-  "return":    �᥽�åɸƤӽФ�����Υ꥿����
-  "c-call":    C�ǵ��Ҥ��줿�᥽�åɤθƤӽФ���
-  "c-return":  C�ǵ��Ҥ��줿�᥽�åɸƤӽФ�����Υ꥿����
-  "class":     ���饹������ðۥ��饹������⥸�塼������ؤ�������
-  "end":       ���饹������ðۥ��饹������⥸�塼������ν�λ��
-  "raise":     �㳰��ȯ����
+  "line":      式の評価。
+  "call":      メソッドの呼び出し。
+  "return":    メソッド呼び出しからのリターン。
+  "c-call":    Cで記述されたメソッドの呼び出し。
+  "c-return":  Cで記述されたメソッド呼び出しからのリターン。
+  "class":     クラス定義、特異クラス定義、モジュール定義への突入。
+  "end":       クラス定義、特異クラス定義、モジュール定義の終了。
+  "raise":     例外の発生。
 //}
 : file
- �¹���Υץ������Υ������ե�����̾ (ʸ����)��
+ 実行中のプログラムのソースファイル名 (文字列)。
 
 : line
- �¹���Υץ������Υ������ե������ι��ֹ� (����)��
+ 実行中のプログラムのソースファイル上の行番号 (整数)。
 
 : id
- event �˱������ʲ��Τ�Τ��Ϥ���ޤ���
- ��ϻ�֥��å������� klass ���б����Ƥ��ޤ���
+ event に応じ、以下のものが渡されます。
+ 第六ブロック引数の klass と対応しています。
 //emlist{
     line
-        �Ǹ�˸ƤӽФ��줿�᥽�åɤ�ɽ�� Symbol ���֥������ȡ�
-        �ȥåץ�٥�Ǥ� nil��
+        最後に呼び出されたメソッドを表す Symbol オブジェクト。
+        トップレベルでは nil。
     call/return/c-call/c-return
-        �ƤӽФ��줿/�꥿���󤹤�᥽�åɤ�ɽ�� Symbol ���֥������ȡ�
+        呼び出された/リターンするメソッドを表す Symbol オブジェクト。
     class/end
-        nil��
+        nil。
     raise
-        �Ǹ�˸ƤӽФ��줿�᥽�åɤ�ɽ�� Symbol ���֥������ȡ�
-        �ȥåץ�٥�Ǥ� nil��
+        最後に呼び出されたメソッドを表す Symbol オブジェクト。
+        トップレベルでは nil。
 //}
 : binding
- �¹���Υץ������Υ���ƥ����Ȥ�ɽ�� [[c:Binding]] ���֥������ȡ�
+ 実行中のプログラムのコンテキストを表す [[c:Binding]] オブジェクト。
 
 : klass
- event �˱������ʲ��Τ�Τ��Ϥ���ޤ���
- ��֥ͥ��å������� id ���б����Ƥ��ޤ���
+ event に応じ、以下のものが渡されます。
+ 第四ブロック引数の id と対応しています。
 //emlist{
     line
-        �Ǹ�˸ƤӽФ��줿�᥽�åɤ�°���륯�饹��ɽ��
-        Class ���֥������ȡ��ȥåץ�٥�Ǥ� false��
+        最後に呼び出されたメソッドが属するクラスを表す
+        Class オブジェクト。トップレベルでは false。
     call/return/c-call/c-return
-        �ƤӽФ��줿/�꥿���󤹤�᥽�åɤ�°���륯�饹
-        ��ɽ�� Class ���֥������ȡ�
+        呼び出された/リターンするメソッドが属するクラス
+        を表す Class オブジェクト。
     class/end
-        false��
+        false。
     raise
-        �Ǹ�˸ƤӽФ��줿�᥽�åɤ�°���륯�饹��ɽ��
-        Class ���֥������ȡ��ȥåץ�٥�Ǥ� false��
+        最後に呼び出されたメソッドが属するクラスを表す
+        Class オブジェクト。トップレベルでは false。
 //}
-@param proc �ȥ졼���� [[c:Proc]] ���֥������Ȥ���ꤷ�ޤ���nil ����ꤷ����硢�ȥ졼���򥪥դˤ��ޤ���
+@param proc トレース用 [[c:Proc]] オブジェクトを指定します。nil を指定した場合、トレースをオフにします。
 
-@return ���� proc �����ꤵ�줿���� proc �򡢥֥��å��ξ��� Proc ���֥������Ȥ��Ѵ�������Τ��֤��ޤ���
+@return proc を返します。
 
-��:
+例:
 
   set_trace_func lambda {|*arg|
     p arg
@@ -85,7 +85,7 @@ Ruby ���󥿥ץ꥿���ץ�������¹Ԥ�������ǡ��᥽�åɤθƤӽФ���
   end
   43.to_s
   
-  #----���----
+  #----結果----
   #["line", "..", 4, nil, #<Binding:0x2b69584>, false]
   #  ["c-call", "..", 4, :inherited, #<Binding:0x2b693b8>, Class]
   #    ["c-return", "..", 4, :inherited, #<Binding:0x2b6937c>, Class]

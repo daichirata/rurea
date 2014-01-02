@@ -3,6 +3,5 @@ visibility=public
 kind=defined
 
 --- clone -> Matrix
-��ʬ���ȤΥ��ԡ����֤��ޤ���
-
+自分自身のコピーを返します。
 

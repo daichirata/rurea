@@ -4,15 +4,15 @@ kind=defined
 
 --- >=(other) -> bool | nil
 
-��ӱ黻�ҡ�self �� other �����Ĥ�Ʊ�쥯�饹�Ǥ����硢 true ���֤��ޤ���
-self �� other �λ�¹�Ǥ����硢false ���֤��ޤ���
+比較演算子。self が other の先祖か同一クラスである場合、 true を返します。
+self が other の子孫である場合、false を返します。
 
-�Ѿ��ط��ˤʤ����饹Ʊ�Τ���ӤǤ�
-nil ���֤��ޤ���
+継承関係にないクラス同士の比較では
+nil を返します。
 
-@param other ����оݤΥ⥸�塼��䥯�饹
+@param other 比較対象のモジュールやクラス
 
-@raise TypeError other �����饹��⥸�塼��ǤϤʤ�����ȯ�����ޤ���
+@raise TypeError other がクラスやモジュールではない場合に発生します。
 
 @see [[m:Module#<]]
 

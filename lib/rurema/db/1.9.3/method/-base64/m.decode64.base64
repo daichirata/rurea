@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- decode64(str) -> String
-Ϳ����줿ʸ����� Base64 �ǥ����ɤ����ǡ������֤��ޤ���
+与えられた文字列を Base64 デコードしたデータを返します。
 
-���Υ᥽�åɤ� [[RFC:2045]] ���б����Ƥ��ޤ���
+このメソッドは [[RFC:2045]] に対応しています。
 
-@param str Base64 �ǥ����ɤ���ʸ�������ꤷ�ޤ���
+@param str Base64 デコードする文字列を指定します。
 
    require 'base64'
    str = 'VGhpcyBpcyBsaW5lIG9uZQpUaGlzIG' +

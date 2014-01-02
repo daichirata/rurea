@@ -4,13 +4,13 @@ kind=defined
 
 --- new(eruby_script, safe_level=nil, trim_mode=nil, eoutvar='_erbout') -> ERB
 
-eRuby������ץ� ���� ERB ���֥������Ȥ����������֤��ޤ���
+eRubyスクリプト から ERB オブジェクトを生成して返します。
 
-@param eruby_script eRuby������ץ�
+@param eruby_script eRubyスクリプト
 
-@param safe_level eRuby������ץȤ��¹Ԥ����Ȥ��Υ����ե�٥�
+@param safe_level eRubyスクリプトが実行されるときのセーフレベル
 
-@param trim_mode �����ε�ư���ѹ����륪�ץ����
+@param trim_mode 整形の挙動を変更するオプション
 
-@param eoutvar eRuby������ץȤ���ǽ��Ϥ򤿤�Ƥ����ѿ���eRuby ������ץȤ���Ǥ���� ERB ��Ȥ��Ȥ����ѹ����ޤ����̾�ϻ��ꤹ��ɬ�פϤ���ޤ���
+@param eoutvar eRubyスクリプトの中で出力をためていく変数。eRuby スクリプトの中でさらに ERB を使うときに変更します。通常は指定する必要はありません。
 

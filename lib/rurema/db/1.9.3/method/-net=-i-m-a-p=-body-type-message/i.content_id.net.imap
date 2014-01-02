@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- content_id -> String | nil
-Content-ID ¤ÎÃÍ¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+Content-ID ã®å€¤ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 @see [[RFC:2045]]
 

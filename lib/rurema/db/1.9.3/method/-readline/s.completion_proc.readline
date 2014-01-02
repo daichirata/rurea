@@ -4,10 +4,10 @@ kind=defined
 
 --- completion_proc -> Proc
 
-¥æ¡¼¥¶¤«¤é¤ÎÆþÎÏ¤òÊä´°¤¹¤ë»þ¤Î¸õÊä¤ò¼èÆÀ¤¹¤ë [[c:Proc]] ¥ª¥Ö¥¸¥§¥¯¥È
-proc ¤ò¼èÆÀ¤·¤Þ¤¹¡£
+ãƒ¦ãƒ¼ã‚¶ã‹ã‚‰ã®å…¥åŠ›ã‚’è£œå®Œã™ã‚‹æ™‚ã®å€™è£œã‚’å–å¾—ã™ã‚‹ [[c:Proc]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+proc ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@raise SecurityError ¥»¡¼¥Õ¥ì¥Ù¥ë ($SAFE) ¤¬ 4 ¤Î¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise SecurityError ã‚»ãƒ¼ãƒ•ãƒ¬ãƒ™ãƒ« ($SAFE) ãŒ 4 ã®å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:Readline.completion_proc]]
 

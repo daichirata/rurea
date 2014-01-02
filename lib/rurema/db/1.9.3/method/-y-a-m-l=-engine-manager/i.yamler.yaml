@@ -4,9 +4,9 @@ kind=defined
 
 --- yamler -> String
 
-������ΥХå�����ɤ�ʸ������֤��ޤ���
+使用中のバックエンドを文字列で返します。
 
-��:
+例:
 
   require "psych"
   require "yaml"

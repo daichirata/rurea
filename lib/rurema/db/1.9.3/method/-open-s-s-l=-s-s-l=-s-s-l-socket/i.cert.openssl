@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- cert -> OpenSSL::X509::Certificate | nil
-╪╚й╛╪╚©х╓Р╬злю╓╧╓К╬злю╫Я╓Рйж╓╥╓ч╓╧║ё
+Х┤╙Е┬├Х┤╙Х╨╚Ц┌▓Х╗╪Ф≤▌Ц│≥Ц┌▀Х╗╪Ф≤▌Ф⌡╦Ц┌▓Х©■Ц│≈Ц│╬Ц│≥Ц─┌
 
-╪╚й╛╪╚©х╓Р╬злю╓╧╓К╬злю╫Я╓Р╩х╓О╓й╓╚╓ц╓©╬Л╧Г╓о nil ╓Рйж╓╥╓ч╓╧║ё
-[[m:OpenSSL::SSL::SSLSocket#connect]] ╓Д [[m:OpenSSL::SSL::SSLSocket#accept]] 
-╓г SSL/TLS ╔о╔С╔и╔╥╔╖╔╓╔╞╓Р╧т╓╕а╟╓к╓Ё╓н╔А╔╫╔ц╔и╓Р╦ф╓С╓ю
-╬Л╧Г╓Б nil ╓Рйж╓╥╓ч╓╧║ё
+Х┤╙Е┬├Х┤╙Х╨╚Ц┌▓Х╗╪Ф≤▌Ц│≥Ц┌▀Х╗╪Ф≤▌Ф⌡╦Ц┌▓Д╫©Ц┌▐Ц│╙Ц│▀Ц│ёЦ│÷Е═╢Е░┬Ц│╞ nil Ц┌▓Х©■Ц│≈Ц│╬Ц│≥Ц─┌
+[[m:OpenSSL::SSL::SSLSocket#connect]] Ц┌└ [[m:OpenSSL::SSL::SSLSocket#accept]] 
+Ц│╖ SSL/TLS Ц┐▐Ц┐ЁЦ┐┴Ц┌╥Ц┌╖Ц┌╓Ц┌╞Ц┌▓Х║▄Ц│├Е┴█Ц│╚Ц│⌠Ц│╝Ц┐║Ц┌╫Ц┐┐Ц┐┴Ц┌▓Е▒╪Ц┌⌠Ц│═
+Е═╢Е░┬Ц┌┌ nil Ц┌▓Х©■Ц│≈Ц│╬Ц│≥Ц─┌
 
 @see [[m:OpenSSL::SSL::SSLContext#cert]]
 

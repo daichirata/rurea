@@ -2,10 +2,9 @@ names=PF_PIP
 visibility=public
 kind=defined
 
---- PF_PIP
-@todo
+--- PF_PIP -> Integer
+Help Identify PIP packetsã€‚
+[[m:Socket.open]] ã®ç¬¬ä¸€å¼•æ•° domain ã«ä½¿ç”¨ã—ã¾ã™ã€‚
 
-[[m:Socket.open]] ¤ÎÂè»°°ú¿ô protocol ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
-
-@see [[m:Socket.open]]
+@see [[man:socket(2freebsd)]]
 

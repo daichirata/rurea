@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- absolute? -> bool
-self �����Хѥ�����Ǥ���п����֤��ޤ���
+self が絶対パス指定であれば真を返します。
 

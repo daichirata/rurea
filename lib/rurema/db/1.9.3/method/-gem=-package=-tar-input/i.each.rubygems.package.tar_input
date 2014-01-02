@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- each{|entry| ... }
-data.tar.gz ¤Î³Æ¥¨¥ó¥È¥ê¤ò¥Ö¥í¥Ã¥¯¤ËÅÏ¤·¤Æ¥Ö¥í¥Ã¥¯¤òÉ¾²Á¤·¤Ş¤¹¡£
+data.tar.gz ã®å„ã‚¨ãƒ³ãƒˆãƒªã‚’ãƒ–ãƒ­ãƒƒã‚¯ã«æ¸¡ã—ã¦ãƒ–ãƒ­ãƒƒã‚¯ã‚’è©•ä¾¡ã—ã¾ã™ã€‚
 
 @see [[m:Gem::Package::TarReader#each]]
 

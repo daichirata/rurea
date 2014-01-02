@@ -4,8 +4,8 @@ kind=defined
 
 --- endpwent -> nil
 
-[[m:Etc.#getpwent]] �ˤ�äƳ��Ϥ��줿 /etc/passwd�ե�������ɤ�
-�ץ�������λ�����ե�������Ĥ��ޤ���
+[[m:Etc.#getpwent]] によって開始された /etc/passwdファイルを読む
+プロセスを終了させファイルを閉じます。
 
 @see [[man:getpwent(3)]]
 

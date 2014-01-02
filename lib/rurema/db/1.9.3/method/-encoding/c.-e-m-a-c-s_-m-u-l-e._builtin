@@ -5,9 +5,9 @@ kind=defined
 --- EMACS_MULE -> Encoding
 --- Emacs_Mule -> Encoding
 
-Emacs-Mule ���󥳡��ǥ��󥰤Ǥ���
+Emacs-Mule エンコーディングです。
 
-Emacs��¿���첽(Mule)�ǻȤ��Ƥ��륹�ơ��ȥ쥹�Υ��󥳡��ǥ��󥰤Ǥ���
+Emacsの多言語化(Mule)で使われているステートレスのエンコーディングです。
 
 @see [[url:http://www.m17n.org/mule/pricai96/mule.en.html]]
 

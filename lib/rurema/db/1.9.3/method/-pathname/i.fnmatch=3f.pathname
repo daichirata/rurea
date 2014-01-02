@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- fnmatch?(pattern, *args) -> bool
-File.fnmatch?(pattern, self.to_s, *args) ¤ÈÆ±¤¸¤Ç¤¹¡£
+File.fnmatch?(pattern, self.to_s, *args) ã¨åŒã˜ã§ã™ã€‚
 
-@param pattern ¥Ñ¥¿¡¼¥ó¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£¥ï¥¤¥ë¥É¥«¡¼¥É¤È¤·¤Æ `*', `?', `[]' ¤¬»ÈÍÑ¤Ç¤­¤Ş
-               ¤¹¡£[[m:Dir.glob]] ¤È¤Ï°ã¤Ã¤Æ `{}' ¤ä `**/' ¤Ï»ÈÍÑ¤Ç¤­¤Ş¤»¤ó¡£
+@param pattern ãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚ãƒ¯ã‚¤ãƒ«ãƒ‰ã‚«ãƒ¼ãƒ‰ã¨ã—ã¦ `*', `?', `[]' ãŒä½¿ç”¨ã§ãã¾
+               ã™ã€‚[[m:Dir.glob]] ã¨ã¯é•ã£ã¦ `{}' ã‚„ `**/' ã¯ä½¿ç”¨ã§ãã¾ã›ã‚“ã€‚
 
-@param args [[m:File.fnmatch]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param args [[m:File.fnmatch]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 @see [[m:File.fnmatch?]]
 

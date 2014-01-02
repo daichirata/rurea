@@ -5,5 +5,5 @@ kind=defined
 --- length -> Fixnum
 --- size -> Fixnum
 
-[[m:Array#length]], [[m:Array#size]] ¤Ë°Ñ¾ù¤·¤Ş¤¹¡£
+[[m:Array#length]], [[m:Array#size]] ã«å§”è­²ã—ã¾ã™ã€‚
 

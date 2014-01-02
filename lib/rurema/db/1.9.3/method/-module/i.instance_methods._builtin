@@ -4,14 +4,14 @@ kind=defined
 
 --- instance_methods(inherited_too = true) -> [Symbol]
 
-¤½¤Î¥â¥¸¥å¡¼¥ë¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ë public ¤ª¤è¤Ó protected ¥á¥½¥Ã¥ÉÌ¾
-¤Î°ìÍ÷¤òÇÛÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+ãã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ public ãŠã‚ˆã³ protected ãƒ¡ã‚½ãƒƒãƒ‰å
+ã®ä¸€è¦§ã‚’é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-@param inherited_too false ¤ò»ØÄê¤¹¤ë¤È¤½¤Î¥â¥¸¥å¡¼¥ë¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ë¥á¥½¥Ã¥É¤Î¤ßÊÖ¤·¤Ş¤¹¡£
+@param inherited_too false ã‚’æŒ‡å®šã™ã‚‹ã¨ãã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã®ã¿è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Object#methods]]
 
-Îã1:
+ä¾‹1:
 
   class Foo
     private;   def private_foo()   end
@@ -19,7 +19,7 @@ kind=defined
     public;    def public_foo()    end
   end
 
-  # ¤¢¤ë¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤Î°ìÍ÷¤òÆÀ¤ë
+  # ã‚ã‚‹ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã®ä¸€è¦§ã‚’å¾—ã‚‹
   p Foo.instance_methods(false)
   p Foo.public_instance_methods(false)
   p Foo.private_instance_methods(false)
@@ -28,14 +28,14 @@ kind=defined
   class Bar < Foo
   end
 
-¼Â¹Ô·ë²Ì
+å®Ÿè¡Œçµæœ
 
      [:protected_foo, :public_foo]
      [:public_foo]
      [:private_foo]
      [:protected_foo]
 
-Îã2:
+ä¾‹2:
 
   class Bar
     private;   def private_foo()   end
@@ -43,15 +43,15 @@ kind=defined
     public;    def public_foo()    end
   end
 
-  # ¤¢¤ë¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤Î°ìÍ÷¤òÆÀ¤ë¡£
-  # ¿Æ¤Î¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤â´Ş¤á¤ë¤¿¤á true ¤ò»ØÄê¤·¤Æ
-  # ¤¤¤ë¤¬¡¢Object ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤Ï°ìÍ÷¤«¤éÇÓ½ü¤·¤Æ¤¤¤ë¡£
+  # ã‚ã‚‹ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã®ä¸€è¦§ã‚’å¾—ã‚‹ã€‚
+  # è¦ªã®ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã‚‚å«ã‚ã‚‹ãŸã‚ true ã‚’æŒ‡å®šã—ã¦
+  # ã„ã‚‹ãŒã€Object ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä¸€è¦§ã‹ã‚‰æ’é™¤ã—ã¦ã„ã‚‹ã€‚
   p Bar.instance_methods(true)           - Object.instance_methods(true)
   p Bar.public_instance_methods(true)    - Object.public_instance_methods(true)
   p Bar.private_instance_methods(true)   - Object.private_instance_methods(true)
   p Bar.protected_instance_methods(true) - Object.protected_instance_methods(true)
 
-¼Â¹Ô·ë²Ì
+å®Ÿè¡Œçµæœ
 
      [:protected_foo, :public_foo]
      [:public_foo]

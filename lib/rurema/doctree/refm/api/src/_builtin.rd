@@ -1,6 +1,8 @@
-ÁÈ¤ß¹ş¤ß¥é¥¤¥Ö¥é¥ê¤Ï Ruby ËÜÂÎ¤ËÁÈ¤ß¹ş¤Ş¤ì¤Æ¤¤¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤Ë´Ş¤Ş¤ì¤ë¥¯¥é¥¹¤ä¥â¥¸¥å¡¼¥ë¤Ï¡¢
-require ¤ò½ñ¤«¤Ê¤¯¤Æ¤â»È¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
+category Builtin
+
+çµ„ã¿è¾¼ã¿ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¯ Ruby æœ¬ä½“ã«çµ„ã¿è¾¼ã¾ã‚Œã¦ã„ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã«å«ã¾ã‚Œã‚‹ã‚¯ãƒ©ã‚¹ã‚„ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã¯ã€
+require ã‚’æ›¸ã‹ãªãã¦ã‚‚ä½¿ã†ã“ã¨ãŒã§ãã¾ã™ã€‚
 
 #@include(_builtin/ARGF)
 #@include(_builtin/ArgumentError)
@@ -27,8 +29,11 @@ require ¤ò½ñ¤«¤Ê¤¯¤Æ¤â»È¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
 #@include(_builtin/Encoding__Converter)
 #@end
 #@include(_builtin/Enumerable)
-#@since 1.8.8
+#@since 1.9.1
 #@include(_builtin/Enumerator)
+#@since 2.0.0
+#@include(_builtin/Enumerator__Lazy)
+#@end
 #@end
 #@since 1.8.7
 #@until 1.9.1
@@ -54,6 +59,10 @@ require ¤ò½ñ¤«¤Ê¤¯¤Æ¤â»È¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
 #@include(_builtin/Hash)
 #@include(_builtin/IO)
 #@include(_builtin/IOError)
+#@since 1.9.2
+#@include(_builtin/IO__WaitReadable)
+#@include(_builtin/IO__WaitWritable)
+#@end
 #@include(_builtin/IndexError)
 #@include(_builtin/Integer)
 #@include(_builtin/Interrupt)
@@ -77,6 +86,9 @@ require ¤ò½ñ¤«¤Ê¤¯¤Æ¤â»È¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
 #@include(_builtin/Numeric)
 #@include(_builtin/Object)
 #@include(_builtin/ObjectSpace)
+#@since 2.0.0
+#@include(_builtin/ObjectSpace__WeakMap)
+#@end
 #@until 1.9.1
 #@include(_builtin/Precision)
 #@end
@@ -96,6 +108,10 @@ require ¤ò½ñ¤«¤Ê¤¯¤Æ¤â»È¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
 #@end
 #@include(_builtin/Regexp)
 #@include(_builtin/RegexpError)
+#@since 1.9.1
+#@include(_builtin/RubyVM)
+#@include(_builtin/RubyVM__InstructionSequence)
+#@end
 #@include(_builtin/RuntimeError)
 #@include(_builtin/ScriptError)
 #@include(_builtin/SecurityError)
@@ -114,11 +130,18 @@ require ¤ò½ñ¤«¤Ê¤¯¤Æ¤â»È¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
 #@include(_builtin/SystemExit)
 #@include(_builtin/SystemStackError)
 #@include(_builtin/Thread)
+#@since 2.0.0
+#@include(_builtin/Thread__Backtrace__Location)
+#@end
 #@include(_builtin/ThreadError)
 #@include(_builtin/ThreadGroup)
 #@include(_builtin/Time)
+#@since 2.0.0
+#@include(_builtin/TracePoint)
+#@end
 #@include(_builtin/TrueClass)
 #@include(_builtin/TypeError)
 #@include(_builtin/UnboundMethod)
 #@include(_builtin/ZeroDivisionError)
 #@include(_builtin/fatal)
+#@include(_builtin/main)

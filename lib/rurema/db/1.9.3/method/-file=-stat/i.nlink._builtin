@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- nlink -> Integer
-¥Ï¡¼¥É¥ê¥ó¥¯¤Î¿ô¤òÊÖ¤·¤Þ¤¹¡£
+ãƒãƒ¼ãƒ‰ãƒªãƒ³ã‚¯ã®æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.nlink    #=> 1
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- LOG_UPTO(priority) -> Fixnum
 
-priority�ޤǤΤ��٤Ƥ�ͥ���٤Υޥ�����������ޤ���
+priorityまでのすべての優先度のマスクを作成します。
 
-@param priority priority ��ͥ���٤򼨤��������ꤷ�ޤ���
-                �ܤ����ϡ�[[c:Syslog::Constants]]�򻲾Ȥ��Ƥ���������
+@param priority priority は優先度を示す定数を指定します。
+                詳しくは、[[c:Syslog::Constants]]を参照してください。
 
-��:
+例:
          Syslog.mask = Syslog::LOG_UPTO(Syslog::LOG_ERR)
 

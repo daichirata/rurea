@@ -4,26 +4,26 @@ kind=defined
 
 --- parse!(source, options = {}) -> object
 
-Ϳ����줿 JSON ������ʸ����� Ruby ���֥������Ȥ��Ѵ������֤��ޤ���
+与えられた JSON 形式の文字列を Ruby オブジェクトに変換して返します。
 
-[[m:JSON.#parse]] ��������ʥǥե�����ͤ����ꤵ��Ƥ���Τ�
-����Ǥ���ʸ����Τߤ����ϤȤ��ƻ��Ѥ���褦�ˤ��Ƥ���������
+[[m:JSON.#parse]] よりも危険なデフォルト値が指定されているので
+信頼できる文字列のみを入力として使用するようにしてください。
 
-@param source JSON ������ʸ�������ꤷ�ޤ���
+@param source JSON 形式の文字列を指定します。
 
-@param options ���ץ�����ϥå���ǻ��ꤷ�ޤ���
-       �����ǽ�ʥ��ץ����ϰʲ����̤�Ǥ���
+@param options オプションをハッシュで指定します。
+       指定可能なオプションは以下の通りです。
 
 : :max_nesting
-  ����ҤˤʤäƤ���ǡ����κ���ο�������ꤷ�ޤ���
-  ���ͤ���ꤹ��ȿ����Υ����å���Ԥ��ޤ���������ꤹ��ȿ����Υ����å���Ԥ��ޤ���
-  �ǥե���Ȥϵ��Ǥ���
+  入れ子になっているデータの最大の深さを指定します。
+  数値を指定すると深さのチェックを行います。偽を指定すると深さのチェックを行いません。
+  デフォルトは偽です。
 : :allow_nan
-  ������ꤹ��� [[rfc:4627]] ��̵�뤷�ƥѡ������� [[m:JSON::NaN]], [[m:JSON::Infinity]],
-  [[m:JSON::MinusInfinity]] ����Ĥ���褦�ˤʤ�ޤ����ǥե���ȤϿ��Ǥ���
+  真を指定すると [[rfc:4627]] を無視してパース時に [[m:JSON::NaN]], [[m:JSON::Infinity]],
+  [[m:JSON::MinusInfinity]] を許可するようになります。デフォルトは真です。
 : :create_additions
-  ������ꤹ��ȥޥå����륯�饹�� [[m:JSON.create_id]] �����Ĥ��äƤ��ղþ�����������ޤ���
-  �ǥե���ȤϿ��Ǥ���
+  偽を指定するとマッチするクラスや [[m:JSON.create_id]] が見つかっても付加情報を生成しません。
+  デフォルトは真です。
 
 @see [[m:JSON::Parser#parse]]
 

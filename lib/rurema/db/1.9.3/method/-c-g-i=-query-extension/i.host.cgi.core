@@ -4,5 +4,5 @@ kind=defined
 
 --- host -> String
 
-ENV['HTTP_HOST'] ค๒สึคทคÞคนกฃ
+ENV['HTTP_HOST'] ใ’่ฟ”ใ—ใพใใ€
 

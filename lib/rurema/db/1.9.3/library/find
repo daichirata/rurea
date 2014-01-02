@@ -3,28 +3,29 @@ classes=Find
 methods=
 sublibraries=
 is_sublibrary=false
+category=File
 
-¥Ç¥£¥ì¥¯¥È¥êÇÛ²¼¤Î¥Õ¥¡¥¤¥ë¤òÃµº÷¤¹¤ë¤¿¤á¤Î¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªé…ä¸‹ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ¢ç´¢ã™ã‚‹ãŸã‚ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚
 
-=== »È¤¤Êı
+=== ä½¿ã„æ–¹
 
   require "find"
   
   Find.find('/foo','/bar') {|f| ...}
 
-¤Ş¤¿¤Ï
+ã¾ãŸã¯
 
   require "find"
   
   include Find
   find('/foo','/bar') {|f| ...}
 
-°Ê²¼¤Ï¡¢ruby ¤Î¥¢¡¼¥«¥¤¥Ö¤Ë´Ş¤Ş¤ì¤ë¥µ¥ó¥×¥ë¥¹¥¯¥ê¥×¥È
-[[unknown:"ruby-src:sample/trojan.rb"]] ¤ò¤³¤Î¥â¥¸¥å¡¼¥ë¤Ç½ñ¤­´¹¤¨¤¿¤â¤Î¤Ç¤¹¡£
+ä»¥ä¸‹ã¯ã€ruby ã®ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–ã«å«ã¾ã‚Œã‚‹ã‚µãƒ³ãƒ—ãƒ«ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
+([[url:http://svn.ruby-lang.org/cgi-bin/viewvc.cgi/trunk/sample/trojan.rb?view=markup]]) ã‚’ã“ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§æ›¸ãæ›ãˆãŸã‚‚ã®ã§ã™ã€‚
 
   #! /usr/bin/env ruby
   require "find"
-  # Â¾¿Í¤¬½ñ¤­¹ş¤ß²ÄÇ½¤Ê´í¸±¤Ê¥³¥Ş¥ó¥É¤òÃµ¤¹
+  # ä»–äººãŒæ›¸ãè¾¼ã¿å¯èƒ½ãªå±é™ºãªã‚³ãƒãƒ³ãƒ‰ã‚’æ¢ã™
   
   for dir in ENV['PATH'].split(File::PATH_SEPARATOR)
     Find.find(dir) do |fpath|

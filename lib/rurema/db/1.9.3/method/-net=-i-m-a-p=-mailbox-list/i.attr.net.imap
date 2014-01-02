@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- attr -> [Symbol]
-�᡼��ܥå�����°���򥷥�ܥ��������֤��ޤ���
+メールボックスの属性をシンボルの配列で返します。
 
-����������륷��ܥ�� [[m:String#capitalize]] �ǥ���ԥ��饤��
-����Ƥ��ޤ���
+これで得られるシンボルは [[m:String#capitalize]] でキャピタライズ
+されています。
 
-��������ˤ��㤨�аʲ��Τ褦���ͤ�ޤ�Ǥ��ޤ���
-�ܤ����� [[RFC:2060]] 7.2.2 �ʤɤ򻲾Ȥ��Ƥ���������
-�ʲ��Τ�ΰʳ��ǡ�IMAP ��Ϣ RFC �ǳ�ĥ���줿�ͤ�ޤ�Ǥ���
-���⤢��ޤ�
+この配列には例えば以下のような値を含んでいます。
+詳しくは [[RFC:2060]] 7.2.2 などを参照してください。
+以下のもの以外で、IMAP 関連 RFC で拡張された値を含んでいる
+場合もあります
   * :Noselect
   * :Noinferiors
   * :Marked

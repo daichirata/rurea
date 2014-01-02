@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- instance_variables -> [Symbol]
-���֥������ȤΥ��󥹥����ѿ�̾�򥷥�ܥ������Ȥ����֤��ޤ���
+オブジェクトのインスタンス変数名をシンボルの配列として返します。
 
     obj = Object.new
     obj.instance_eval { @foo, @bar = nil }

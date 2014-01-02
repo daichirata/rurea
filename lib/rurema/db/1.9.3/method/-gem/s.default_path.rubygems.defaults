@@ -4,5 +4,5 @@ kind=added
 
 --- default_path -> [String]
 
-�ǥե���Ȥ� Gem �ѥå�����������ɤ���ǥ��쥯�ȥ�Υꥹ�Ȥ��֤��ޤ���
+デフォルトの Gem パッケージをロードするディレクトリのリストを返します。
 

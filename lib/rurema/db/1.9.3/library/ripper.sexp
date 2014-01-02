@@ -3,5 +3,6 @@ classes=
 methods=Ripper/s.sexp.ripper.sexp,Ripper/s.sexp_raw.ripper.sexp
 sublibraries=
 is_sublibrary=true
+category=
 
-Ruby ¥×¥í¥°¥é¥à¤ò S ¼°¤È¤·¤Æ°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Ruby ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ S å¼ã¨ã—ã¦æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- version -> Integer
-�С��������֤��ޤ���
+バージョンを返します。
 
-PKCS#10 v1.7([[RFC:2986]])�Ǥ�0���֤��ޤ���
+PKCS#10 v1.7([[RFC:2986]])では0を返します。
 
 @see [[m:OpenSSL::X509::Request#version=]]
 

@@ -3,7 +3,9 @@ visibility=public
 kind=defined
 
 --- backtrace    -> [String] | nil
-����åɤθ��ߤΥХå��ȥ졼�����֤��ޤ���
+スレッドの現在のバックトレースを返します。
 
-����åɤ����Ǥ˽�λ���Ƥ������ nil ���֤��ޤ���
+スレッドがすでに終了している場合は nil を返します。
+
+
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- zero?(path)    -> bool
 
-[[m:FileTest.#zero?]] ��Ʊ���Ǥ���
+[[m:FileTest.#zero?]] と同じです。
 
-@param path �ѥ���ɽ��ʸ���� IO ���֥������Ȥ���ꤷ�ޤ���
+@param path パスを表す文字列か IO オブジェクトを指定します。
 

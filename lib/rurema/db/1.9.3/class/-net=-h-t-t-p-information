@@ -6,7 +6,7 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 1xx (Informational) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 1xx (Informational) を表現するクラスです。
 
-�ꥯ�����Ȥ�����˼�������������³���Ƥ��뤳�Ȥ�ɽ�路��
-���ޤ���
+リクエストが正常に受信し、処理を続けていることを表わして
+います。

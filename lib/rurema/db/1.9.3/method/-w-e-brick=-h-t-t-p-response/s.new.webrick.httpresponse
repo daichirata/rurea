@@ -4,9 +4,9 @@ kind=defined
 
 --- new(config) -> WEBrick::HTTPResponse
 
-HTTPResponse ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+HTTPResponse ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param config ÀßÄê¤òÊÝÂ¸¤·¤¿¥Ï¥Ã¥·¥å¤ò»ØÄê¤·¤Þ¤¹¡£:HTTPVersion ¤ÏÉ¬¿Ü¤Ç¤¹¡£
+@param config è¨­å®šã‚’ä¿å­˜ã—ãŸãƒãƒƒã‚·ãƒ¥ã‚’æŒ‡å®šã—ã¾ã™ã€‚:HTTPVersion ã¯å¿…é ˆã§ã™ã€‚
 
   res = WEBrick::HTTPResponse.new( { :HTTPVersion => "1.1" } )
 

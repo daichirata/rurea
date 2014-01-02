@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- verify(key) -> bool
-È¯¹Ô¼Ô¤Î¸ø³«¸°¤Ç CRL ¤Ëµ­ºÜ¤µ¤ì¤Æ¤¤¤ë½ðÌ¾¤ò¸¡¾Ú¤·¤Þ¤¹¡£
+ç™ºè¡Œè€…ã®å…¬é–‹éµã§ CRL ã«è¨˜è¼‰ã•ã‚Œã¦ã„ã‚‹ç½²åã‚’æ¤œè¨¼ã—ã¾ã™ã€‚
 
-¸¡¾Ú¤ËÀ®¸ù¤·¤¿¾ì¹ç¤Ï true ¤òÊÖ¤·¤Þ¤¹¡£
+æ¤œè¨¼ã«æˆåŠŸã—ãŸå ´åˆã¯ true ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param key ¸ø³«¸°([[c:OpenSSL::PKey::PKey]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@raise OpenSSL::X509::CRLError ¸¡¾Ú»þ¤Ë¥¨¥é¡¼¤¬À¸¤¸¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@param key å…¬é–‹éµ([[c:OpenSSL::PKey::PKey]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@raise OpenSSL::X509::CRLError æ¤œè¨¼æ™‚ã«ã‚¨ãƒ©ãƒ¼ãŒç”Ÿã˜ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

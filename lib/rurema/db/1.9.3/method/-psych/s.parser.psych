@@ -3,7 +3,6 @@ visibility=public
 kind=defined
 
 --- parser -> Psych::Parser
-@todo
+デフォルトで使われるのパーサを返します。
 
-Returns a default parser
 

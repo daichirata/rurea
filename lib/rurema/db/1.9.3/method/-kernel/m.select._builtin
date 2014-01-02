@@ -4,11 +4,11 @@ kind=defined
 
 --- select(reads, writes = [], excepts = [], timeout = nil) -> [[IO]] | nil
 
-[[m:IO.select]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+[[m:IO.select]] ã¨åŒã˜ã§ã™ã€‚
 
-@param reads [[m:IO.select]] »²¾È
-@param writes [[m:IO.select]] »²¾È
-@param excepts [[m:IO.select]] »²¾È
-@param timeout [[m:IO.select]] »²¾È
+@param reads [[m:IO.select]] å‚ç…§
+@param writes [[m:IO.select]] å‚ç…§
+@param excepts [[m:IO.select]] å‚ç…§
+@param timeout [[m:IO.select]] å‚ç…§
 @see [[m:IO.select]]
 

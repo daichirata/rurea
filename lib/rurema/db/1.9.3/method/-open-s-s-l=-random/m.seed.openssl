@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- seed(str) -> str
-Íğ¿ôÀ¸À®´ï¤Ë¥¨¥ó¥È¥í¥Ô¡¼¤ò
-¡Ö¥¨¥ó¥È¥í¥Ô¡¼Í½Â¬ÃÍ = str ¤Î¥Ğ¥¤¥È¿ô¡×¤È¤·¤Æ
-ÄÉ²Ã¤·¤Ş¤¹¡£
+ä¹±æ•°ç”Ÿæˆå™¨ã«ã‚¨ãƒ³ãƒˆãƒ­ãƒ”ãƒ¼ã‚’
+ã€Œã‚¨ãƒ³ãƒˆãƒ­ãƒ”ãƒ¼äºˆæ¸¬å€¤ = str ã®ãƒã‚¤ãƒˆæ•°ã€ã¨ã—ã¦
+è¿½åŠ ã—ã¾ã™ã€‚
 
-OpenSSL::Random.random_add(str, str.size) ¤ÈÆ±¤¸¤Ç¤¹¡£
+OpenSSL::Random.random_add(str, str.size) ã¨åŒã˜ã§ã™ã€‚
 
-@param str Í½Â¬ÉÔ²ÄÇ½¤ÊÆâÍÆ¤ÎÊ¸»úÎó
+@param str äºˆæ¸¬ä¸å¯èƒ½ãªå†…å®¹ã®æ–‡å­—åˆ—
 @see [[m:OpenSSL::Random.#random_add]]
 

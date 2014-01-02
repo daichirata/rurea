@@ -4,7 +4,7 @@ kind=defined
 
 --- version       -> String
 
-�ץ������ΥС�������ʸ������֤��ޤ���
+プログラムのバージョンを文字列で返します。
 
-@return �ץ������ΥС�������ʸ������֤��ޤ���
+@return プログラムのバージョンを文字列で返します。
 

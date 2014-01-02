@@ -4,10 +4,14 @@ kind=defined
 
 --- collect {|x| ... } -> Vector
 --- map {|x| ... } -> Vector
+--- collect -> Enumerator
+--- map -> Enumerator
 
-�٥��ȥ�γ����Ǥ��Ф��ƥ֥��å���ɾ��������̤����ǤȤ��ƻ��ĥ٥��ȥ���������ޤ���
+ベクトルの各要素に対してブロックを評価した結果を、要素として持つベクトルを生成します。
 
-��:
+ブロックを省略した場合は [[c:Enumerator]] を返します。
+
+例:
 
   a = [1, 2, 3.5, -10]
   v1 = Vector.elements(a)

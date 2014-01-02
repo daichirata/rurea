@@ -6,11 +6,11 @@ kind=defined
 --- alias_command(alias, command, *opts){ ... } -> self
 @todo
 
-@param alias �����ꥢ����̾������ꤷ�ޤ���
+@param alias エイリアスの名前を指定します。
 
-@param command ���ޥ��̾����ꤷ�ޤ���
+@param command コマンド名を指定します。
 
-@param opts ���ޥ�ɤ�Ϳ���륪�ץ�������ꤷ�ޤ���
+@param opts コマンドに与えるオプションを指定します。
 
-@raise SyntaxError ���ޥ�ɤΥ����ꥢ�������˼��Ԥ�������ȯ�����ޤ���
+@raise SyntaxError コマンドのエイリアス作成に失敗した時に発生します。
 

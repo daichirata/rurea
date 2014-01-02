@@ -4,7 +4,7 @@ kind=added
 
 --- libpathflag(libpath = $DEFLIBPATH|$LIBPATH) -> String
 
-Ϳ����줿 libpath �� -L �դ���ʸ������Ѵ������֤��ޤ���
+与えられた libpath を -L 付きの文字列に変換して返します。
 
-@param libpath LIBPATH �˻��ꤹ���ͤ���ꤷ�ޤ���
+@param libpath LIBPATH に指定する値を指定します。
 

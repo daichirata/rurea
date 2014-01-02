@@ -3,5 +3,6 @@ classes=TkManageFocus
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

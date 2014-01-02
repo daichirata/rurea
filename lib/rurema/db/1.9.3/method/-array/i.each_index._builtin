@@ -5,12 +5,12 @@ kind=defined
 --- each_index {|index| .... }    -> self
 --- each_index                    -> Enumerator
 
-�����ǤΥ���ǥå������Ф��ƥ֥��å���ɾ�����ޤ���
+各要素のインデックスに対してブロックを評価します。
 
-�ʲ���Ʊ���Ǥ���
+以下と同じです。
 
     (0 ... ary.size).each {|index| ....  }
 
-�֥��å���Ϳ�����ʤ��ä����ϡ����Ȥ� each_index ������������
-[[c:Enumerator]] ���֥������Ȥ��֤��ޤ���
+ブロックが与えられなかった場合は、自身と each_index から生成した
+[[c:Enumerator]] オブジェクトを返します。
 

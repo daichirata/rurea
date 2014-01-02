@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- to_f -> self
-self ¤òÊÖ¤·¤Þ¤¹¡£
+self ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
-  p 3.14.to_f   #=> 3.14
+  3.14.to_f   #=> 3.14
 

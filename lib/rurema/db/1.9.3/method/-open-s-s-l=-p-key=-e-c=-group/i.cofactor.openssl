@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- cofactor -> OpenSSL::BN
-;���Ҥ��֤��ޤ���
+余因子を返します。
 
-@raise OpenSSL::PKey::EC::Group::Error ;���Ҥμ����˼��Ԥ�������ȯ�����ޤ�
+@raise OpenSSL::PKey::EC::Group::Error 余因子の取得に失敗した場合に発生します
 

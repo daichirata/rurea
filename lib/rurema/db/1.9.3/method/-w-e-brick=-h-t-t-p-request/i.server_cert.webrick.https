@@ -4,7 +4,7 @@ kind=added
 
 --- server_cert -> OpenSSL::X509::Certificate
 
-¥µ¡¼¥Ð¾ÚÌÀ½ñ¤òÉ½¤¹¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+ã‚µãƒ¼ãƒè¨¼æ˜Žæ›¸ã‚’è¡¨ã™ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[c:OpenSSL::X509::Certificate]]
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- Null -> WIN32OLE_VARIANT
-NULL����WIN32OLE_VARIANT���֥������ȤǤ���
+NULL型のWIN32OLE_VARIANTオブジェクトです。
 
-���Υ��֥������Ȥϡ�ADO�ʤɤΥǡ����١������󥿡��ե�������NULL����ꤹ
-��Τ����Ѳ�ǽ�Ǥ���
+このオブジェクトは、ADOなどのデータベースインターフェイスでNULLを指定す
+るのに利用可能です。
 
 @see [[m:WIN32OLE::VARIANT::VT_NULL]]
 

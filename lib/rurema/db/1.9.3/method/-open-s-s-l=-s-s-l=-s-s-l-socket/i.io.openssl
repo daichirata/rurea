@@ -4,7 +4,7 @@ kind=defined
 
 --- io -> IO
 --- to_io -> IO
-SSLSocket ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤¹¤ë»þ¤ËÅÏ¤µ¤ì¤¿¥½¥±¥Ã¥È¤òÊÖ¤·¤Þ¤¹¡£
+SSLSocket ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã™ã‚‹æ™‚ã«æ¸¡ã•ã‚ŒãŸã‚½ã‚±ãƒƒãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::SSL::SSLSocket.new]]
 

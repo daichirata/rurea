@@ -6,4 +6,7 @@ library=drb
 aliases=
 aliasof=
 
-Error raised by a dRuby protocol when it doesn't support the scheme specified in a URI. See DRb::DRbProtocol.
+プロトコルクラスが受け取った URI の schema が
+そのクラスでサポートされていないことを、伝えるための例外。
+
+@see [[c:DRb::DRbProtocol]]

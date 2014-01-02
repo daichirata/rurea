@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- enable_starttls_auto(context = Net::SMTP.default_ssl_context) -> ()
-¤½¤Î Net::SMTP ¥ª¥Ö¥¸¥§¥¯¥È¤¬STARTTLS¤¬ÍøÍÑ²ÄÇ½¤Ê¾ì¹ç
-(¤Ä¤Ş¤ê¥µ¡¼¥Ğ¤¬STARTTLS¤ò¹­¹ğ¤·¤¿¾ì¹ç)¤Î¤ß¤ËSTARTTLS¤òÍøÍÑ¤¹¤ë
-¤è¤¦¤ËÀßÄê¤·¤Ş¤¹¡£
+ãã® Net::SMTP ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒSTARTTLSãŒåˆ©ç”¨å¯èƒ½ãªå ´åˆ
+(ã¤ã¾ã‚Šã‚µãƒ¼ãƒãŒSTARTTLSã‚’åºƒå‘Šã—ãŸå ´åˆ)ã®ã¿ã«STARTTLSã‚’åˆ©ç”¨ã™ã‚‹
+ã‚ˆã†ã«è¨­å®šã—ã¾ã™ã€‚
 
 @see [[m:Net::SMTP#starttls?]], [[m:Net::SMTP#starttls_auto?]], [[m:Net::SMTP#enable_starttls_auto]]
-@param context SSLÀÜÂ³¤ÇÍøÍÑ¤¹¤ë [[c:OpenSSL::SSL::SSLContext]] 
+@param context SSLæ¥ç¶šã§åˆ©ç”¨ã™ã‚‹ [[c:OpenSSL::SSL::SSLContext]] 
 @see [[m:Net::SMTP#starttls?]], [[m:Net::SMTP#starttls_auto?]], [[m:Net::SMTP#enable_starttls]]
 

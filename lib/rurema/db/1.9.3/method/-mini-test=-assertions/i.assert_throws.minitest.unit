@@ -4,15 +4,15 @@ kind=defined
 
 --- assert_throws(tag, message = nil){ ... } -> true
 
-Ϳ����줿�֥��å���ɾ����ˡ�Ϳ����줿������ [[m:Kernel.#throw]] ���줿��硢�����˥ѥ��������Ȥˤʤ�ޤ���
+与えられたブロックを評価中に、与えられたタグが [[m:Kernel.#throw]] された場合、検査にパスしたことになります。
 
-@param tag Ϳ����줿�֥��å�ɾ����� [[m:Kernel.#throw]] ����륿����Ǥ�դΥ��֥������ȤȤ��ƻ��ꤷ�ޤ���
+@param tag 与えられたブロック評価中に [[m:Kernel.#throw]] されるタグを任意のオブジェクトとして指定します。
 
-@param message �����˼��Ԥ�������ɽ�������å���������ꤷ�ޤ���
-               ʸ���� [[c:Proc]] ����ꤷ�ޤ���[[c:Proc]] �Ǥ������ [[m:Proc#call]] ����
-               ��̤���Ѥ��ޤ���
+@param message 検査に失敗した場合に表示するメッセージを指定します。
+               文字列か [[c:Proc]] を指定します。[[c:Proc]] である場合は [[m:Proc#call]] した
+               結果を使用します。
 
-@raise MiniTest::Assertion Ϳ����줿������ [[m:Kernel.#throw]] ����ʤ��ä�����ȯ�����ޤ���
+@raise MiniTest::Assertion 与えられたタグが [[m:Kernel.#throw]] されなかった場合に発生します。
 
 @see [[m:Kernel.#throw]]
 

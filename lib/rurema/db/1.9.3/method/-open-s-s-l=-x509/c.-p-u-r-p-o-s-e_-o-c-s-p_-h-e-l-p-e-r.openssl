@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- PURPOSE_OCSP_HELPER -> Integer
-OCSP´ØÏ¢¤ÇOpenSSL¤ÎÆâÉôÅª¤ËÍøÍÑ¤µ¤ì¤Ş¤¹¡£
+OCSPé–¢é€£ã§OpenSSLã®å†…éƒ¨çš„ã«åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚
 
-[[m:OpenSSL::X509::Store#purpose=]] ¤ä
-[[m:OpenSSL::X509::StoreContext#purpose=]] ¤ÇÀßÄê¤·¡¢
-[[m:OpenSSL::X509::Store#verify]] ¤ä
-[[m:OpenSSL::X509::StoreContext#verify]] ¤Ç
-³ÎÇ§¤·¤Ş¤¹¡£
+[[m:OpenSSL::X509::Store#purpose=]] ã‚„
+[[m:OpenSSL::X509::StoreContext#purpose=]] ã§è¨­å®šã—ã€
+[[m:OpenSSL::X509::Store#verify]] ã‚„
+[[m:OpenSSL::X509::StoreContext#verify]] ã§
+ç¢ºèªã—ã¾ã™ã€‚
 

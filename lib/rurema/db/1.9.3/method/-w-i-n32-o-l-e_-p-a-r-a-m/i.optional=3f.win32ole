@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- optional? -> bool
-�ѥ�᡼�������ץ���󤫤ɤ�����������ޤ���
+パラメータがオプションかどうかを取得します。
 
-@return �ѥ�᡼�������ץ����ʾ�ά��ǽ�ˤǤ���п����֤��ޤ���
+@return パラメータがオプション（省略可能）であれば真を返します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 9.0 Object Library', 'Workbook')
    method = WIN32OLE_METHOD.new(tobj, 'SaveAs')

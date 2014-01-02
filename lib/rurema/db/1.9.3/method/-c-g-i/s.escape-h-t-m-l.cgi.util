@@ -5,16 +5,16 @@ kind=added
 --- escapeHTML(string) -> String
 --- escape_html(string) -> String
 
-Í¿¤¨¤é¤ì¤¿Ê¸»úÎóÃæ¤Î &"<> ¤ò¼ÂÂÎ»²¾È¤ËÃÖ´¹¤·¤¿Ê¸»úÎó¤ò¿·¤·¤¯ºîÀ®¤·ÊÖ¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸæ–‡å­—åˆ—ä¸­ã® &"<> ã‚’å®Ÿä½“å‚ç…§ã«ç½®æ›ã—ãŸæ–‡å­—åˆ—ã‚’æ–°ã—ãä½œæˆã—è¿”ã—ã¾ã™ã€‚
 
-@param string Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param string æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
         require "cgi"
 
         p CGI.escapeHTML("3 > 1")   #=> "3 &gt; 1"
 
-        print('<script type="text/javascript">alert("·Ù¹ğ")</script>')
+        print('<script type="text/javascript">alert("è­¦å‘Š")</script>')
 
-        p CGI.escapeHTML('<script type="text/javascript">alert("·Ù¹ğ")</script>')
-        #=> "&lt;script type=&quot;text/javascript&quot;&gt;alert(&quot;·Ù¹ğ&quot;)&lt;/script&gt;"
+        p CGI.escapeHTML('<script type="text/javascript">alert("è­¦å‘Š")</script>')
+        #=> "&lt;script type=&quot;text/javascript&quot;&gt;alert(&quot;è­¦å‘Š&quot;)&lt;/script&gt;"
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- normalize_uri(uri) -> String
 
-URI �Υ���������ʬ���礱�Ƥ������ "http://" ����ä��֤��ޤ���
+URI のスキーム部分が欠けている場合に "http://" を補って返します。
 
-@param uri URI ʸ�������ꤷ�ޤ���
+@param uri URI 文字列を指定します。
 

@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- version=(version)
-���� CRL ����򤷤Ƥ��뵬�ʤΥС����������ꤷ�ޤ���
+その CRL が準拠している規格のバージョンを設定します。
 
-X.509 v2 CRL �Ǥ���� 1 ���Ϥ��ޤ���
+X.509 v2 CRL であれば 1 を渡します。
 
-@param version ���ꤹ��С�����������
-@raise OpenSSL::X509::CRLError ����˼��Ԥ�������ȯ�����ޤ�
+@param version 設定するバージョンの整数
+@raise OpenSSL::X509::CRLError 設定に失敗した場合に発生します
 @see [[m:OpenSSL::X509::CRL#version]]
 

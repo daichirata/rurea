@@ -5,13 +5,13 @@ kind=defined
 --- block_given? -> bool
 --- iterator? -> bool
 
-�᥽�åɤ˥֥��å���Ϳ�����Ƥ���п����֤��ޤ���
+メソッドにブロックが与えられていれば真を返します。
 
-���Υ᥽�åɤϥ����ȥ���ƥ����Ȥ˥֥��å���Ϳ�����Ƥ��뤫��Ĵ�٤�Τǡ�
-�᥽�å������ʳ��ǻȤäƤ�ñ�� false ���֤��ޤ���
+このメソッドはカレントコンテキストにブロックが与えられているかを調べるので、
+メソッド内部以外で使っても単に false を返します。
 
-iterator? �� �ʥ֥��å���ɬ�����ƥ졼�Ȥ���ȤϤ����ʤ��Τǡ˿侩����Ƥ��ʤ���
-�� block_given? ��ȤäƤ���������
+iterator? は （ブロックが必ずイテレートするとはいえないので）推奨されていないの
+で block_given? を使ってください。
 
   def check
     if block_given?

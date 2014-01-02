@@ -4,11 +4,11 @@ kind=defined
 
 --- find_gems(name, source_index) -> Hash
 
-Í¿¤¨¤é¤ì¤¿ Gem ¤ÎÌ¾Á°¤ò¥¤¥ó¥Ç¥Ã¥¯¥¹¤«¤é¸¡º÷¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸ Gem ã®åå‰ã‚’ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ã‹ã‚‰æ¤œç´¢ã—ã¾ã™ã€‚
 
-@param name Gem ¤ÎÌ¾Á°¤ò»ØÄê¤·¤Ş¤¹¡£
+@param name Gem ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param source_index [[c:Gem::SourceIndex]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param source_index [[c:Gem::SourceIndex]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Gem::SourceIndex#search]]
 

@@ -4,14 +4,14 @@ kind=defined
 
 --- lsub(refname, mailbox) -> [Net::IMAP::MailboxList]
 
-LIST ���ޥ�ɤ����ꡢactive/subscribed �ʥ᡼��ܥå���̾�ν��礫��
-�����˥ޥå������Τ��٤Ƥ��֤��ޤ���
+LIST コマンドを送り、active/subscribed なメールボックス名の集合から
+引数にマッチするものすべてを返します。
 
-�ܤ�����  [[RFC:2060]] �� 6.3.8 �򻲾Ȥ��Ƥ���������
+詳しくは  [[RFC:2060]] の 6.3.8 を参照してください。
 
-�֤��ͤ� [[c:Net::IMAP::MailboxList]] ��������֤��ޤ���
-�֤��ͤ�������Ǥ�����϶�������Ǥʤ� nil ���֤��ޤ���
+返り値は [[c:Net::IMAP::MailboxList]] の配列で返します。
+返り値が空集合である場合は空の配列でなく nil を返します。
 
-@param refname ����̾(ʸ����)
-@param mailbox Ĵ�٤�᡼��ܥå�����̾��(ʸ����)���磻��ɥ����ɤ�ޤ�Ǥ��Ƥ⤫�ޤ��ޤ���
+@param refname 参照名(文字列)
+@param mailbox 調べるメールボックスの名前(文字列)。ワイルドカードを含んでいてもかまいません。
 

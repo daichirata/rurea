@@ -4,8 +4,8 @@ kind=defined
 
 --- sanitize(spec) -> Gem::Specification
 
-Ϳ����줿���ڥå��ξܺ٤�ɽ��°���򥵥˥��������ޤ���
+与えられたスペックの詳細を表す属性をサニタイズします。
 
-non-ASCII ��ʸ����ϡ������ȥ���ǥå�����ʸ�����������뤳�Ȥ�����ޤ���
-non-ASCII ��ʸ����� XML ����ƥ��ƥ����ִ����ޤ���
+non-ASCII の文字列は、サイトインデックスを文字化けさせることがあります。
+non-ASCII の文字列を XML エンティティに置換します。
 

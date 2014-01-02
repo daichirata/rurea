@@ -6,7 +6,7 @@ library=_builtin
 aliases=
 aliasof=
 
-GC ¤Ï Ruby ¥¤¥ó¥¿¥×¥ê¥¿¤Î¡Ö¥´¥ß½¸¤á(Garbage Collection)¡×¤òÀ©¸æ
-¤¹¤ë¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+GC ã¯ Ruby ã‚¤ãƒ³ã‚¿ãƒ—ãƒªã‚¿ã®ã€Œã‚´ãƒŸé›†ã‚(Garbage Collection)ã€ã‚’åˆ¶å¾¡
+ã™ã‚‹ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚
 
 @see [[c:ObjectSpace]]

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- multipart?  -> bool
-�ޥ���ѡ��Ȥ��ɤ������֤��ޤ���
-false ���֤��ޤ���
+マルチパートかどうかを返します。
+false を返します。
 
 

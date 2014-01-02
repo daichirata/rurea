@@ -4,35 +4,35 @@ kind=defined
 
 --- advise(advice, offset=0, len=0) -> nil
 
-[[man:posix_fadvise(2)]] ��ƤӤ�����
-�ե�����ؤΥ��������ѥ������OS���Τ餻�ޤ���
+[[man:posix_fadvise(2)]] を呼びだし、
+ファイルへのアクセスパターンをOSに知らせます。
 
-advice �ˤϰʲ��Τ����줫�Υ���ܥ����ꤷ�ޤ���
-  * :normal - �ǥե����
-  * :sequential - �ǡ������������˥������������
-  * :random - �ǡ����ϥ����ॢ�����������
-  * :willneed - �ǡ����Ϥ���ľ��˥������������
-  * :dontneed - �ǡ�����ľ��ˤϥ����������ʤ�
-  * :noreuse - �ǡ����ϰ��٤���������������ʤ�
-������ advice ������Ū�˲��򤹤�Τ��ϥץ�åȥե������¸�Ǥ���
+advice には以下のいずれかのシンボルを指定します。
+  * :normal - デフォルト
+  * :sequential - データは前から順にアクセスされる
+  * :random - データはランダムアクセスされる
+  * :willneed - データはこの直後にアクセスされる
+  * :dontneed - データは直後にはアクセスしない
+  * :noreuse - データは一度しかアクセスされない
+これらの advice が具体的に何をするのかはプラットフォーム依存です。
 
-�����Ǥ����֥ǡ����פ� offset �� len �����ꤹ�뤳�Ȥ��Ǥ��ޤ���
-len �� 0 �ʤ�С�offset ����ե����������ޤǤ���ꤷ�����Ȥˤʤ�ޤ���
-�ǥե���ȤǤ� offset �� len ���Ȥ�� 0 �ʤΤǡ�
-�ե��������Τ���ꤷ�����Ȥˤʤ�ޤ���
+ここでいう「データ」は offset と len で特定することができます。
+len が 0 ならば、offset からファイル末尾までを指定したことになります。
+デフォルトでは offset と len がともに 0 なので、
+ファイル全体を指定したことになります。
 
-posix_fadvise �򥵥ݡ��Ȥ��Ƥ��ʤ��ץ�åȥե������Ǥ�
-���⤷�ޤ���
+posix_fadvise をサポートしていないプラットフォーム上では
+何もしません。
 
-@param advice ���������ѥ������ɽ������ܥ�
-@param offset �ѥ��������ꤹ��ǡ�������Ƭ����
-@param len �ѥ��������ꤹ��ǡ�����Ĺ��
+@param advice アクセスパターンを表すシンボル
+@param offset パターンを指定するデータの先頭位置
+@param len パターンを指定するデータの長さ
 
-@raise IOError ���ȥ꡼�ब�����Ĥ����Ƥ���Ȥ���ȯ�������㳰
-@raise Errno::EBADF �ե�����ǥ�����ץ��������Ǥ���Ȥ���ȯ�������㳰
-@raise Errno::EINVAL advice ������
-@raise Errno::ESPIPE �ե�����ǥ�����ץ��� FIFO �� pipe ��ؤ��Ƥ���
-       ����ȯ�������㳰(Linux �Ϥ��ξ��ˤ� Errno::EINVAL ��ȯ������)
-@raise RangeError offset,len��ͭ���ϰϤ���ФƤ������ȯ�������㳰
+@raise IOError ストリームが既に閉じられているときに発生する例外
+@raise Errno::EBADF ファイルデスクリプタが不正であるときに発生する例外
+@raise Errno::EINVAL advice が不正
+@raise Errno::ESPIPE ファイルデスクリプタが FIFO か pipe を指している
+       場合に発生する例外(Linux はこの場合には Errno::EINVAL を発生する)
+@raise RangeError offset,lenが有効範囲から出ている場合に発生する例外
 
 

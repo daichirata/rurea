@@ -4,12 +4,13 @@ kind=defined
 
 --- index(value) -> String | nil
 
-value ��������ǤΥ������֤��ޤ���
+value を持つ要素のキーを返します。
 
-�б����륭�������Ĥ���ʤ��ä����� nil ���֤��ޤ���
+対応するキーが見つからなかった場合は nil を返します。
 
-@param value �����������ͤ���ꤷ�ޤ���YAML �������Ѵ��Ǥ��륪�֥�����
-             �Ȥ�����Ǥ��ޤ���
+@param value 検索したい値を指定します。YAML 形式に変換できるオブジェク
+             トが指定できます。
 
-[����] ��侩�Υ᥽�åɤǤ�������� #key ����Ѥ��Ƥ���������
+[注意] 非推奨のメソッドです。代わりに #key を使用してください。
+
 

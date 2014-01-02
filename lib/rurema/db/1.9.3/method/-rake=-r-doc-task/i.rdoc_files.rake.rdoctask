@@ -4,6 +4,6 @@ kind=defined
 
 --- rdoc_files -> Rake::FileList
 
-RDoc �������˻��Ѥ���ե�����ꥹ�Ȥ��֤��ޤ���
-�ǥե���Ȥ϶��Ǥ���
+RDoc の生成に使用するファイルリストを返します。
+デフォルトは空です。
 

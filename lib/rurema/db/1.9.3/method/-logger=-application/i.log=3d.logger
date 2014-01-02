@@ -4,8 +4,8 @@ kind=defined
 
 --- log=(logdev)
 
-�����ν�����򥻥åȤ��ޤ���
+ログの出力先をセットします。
 
-@param logdev �����ե�����̾�� IO ���֥������Ȥ���ꤷ�ޤ���
+@param logdev ログファイル名か IO オブジェクトを指定します。
 
 

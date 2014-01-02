@@ -4,10 +4,10 @@ kind=defined
 
 --- <=(other)    -> bool
 
-Èæ³Ó±é»»»Ò <=> ¤ò¤â¤È¤Ë¥ª¥Ö¥¸¥§¥¯¥ÈÆ±»Î¤òÈæ³Ó¤·¤Þ¤¹¡£
-<=> ¤¬Éé¤ÎÀ°¿ô¤« 0 ¤òÊÖ¤·¤¿¾ì¹ç¤Ë¡¢true ¤òÊÖ¤·¤Þ¤¹¡£
-¤½¤ì°Ê³°¤ÎÀ°¿ô¤òÊÖ¤·¤¿¾ì¹ç¤Ë¡¢false ¤òÊÖ¤·¤Þ¤¹¡£
+æ¯”è¼ƒæ¼”ç®—å­ <=> ã‚’ã‚‚ã¨ã«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåŒå£«ã‚’æ¯”è¼ƒã—ã¾ã™ã€‚
+<=> ãŒè² ã®æ•´æ•°ã‹ 0 ã‚’è¿”ã—ãŸå ´åˆã«ã€true ã‚’è¿”ã—ã¾ã™ã€‚
+ãã‚Œä»¥å¤–ã®æ•´æ•°ã‚’è¿”ã—ãŸå ´åˆã«ã€false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ÈÈæ³Ó¤·¤¿¤¤¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£
-@raise ArgumentError <=> ¤¬ nil ¤òÊÖ¤·¤¿¤È¤­¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@param other è‡ªèº«ã¨æ¯”è¼ƒã—ãŸã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@raise ArgumentError <=> ãŒ nil ã‚’è¿”ã—ãŸã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- tagging -> Symbol | nil
-¥¿¥°ÉÕ¤±¤ÎÊý¼°¤òÊÖ¤·¤Þ¤¹¡£
+ã‚¿ã‚°ä»˜ã‘ã®æ–¹å¼ã‚’è¿”ã—ã¾ã™ã€‚
 
-:IMPLICIT¡¢:EXPLICIT¡¢nil ¤Î¤¤¤º¤ì¤«¤òÊÖ¤·¤Þ¤¹¡£
+:IMPLICITã€:EXPLICITã€nil ã®ã„ãšã‚Œã‹ã‚’è¿”ã—ã¾ã™ã€‚
 
-¥¿¥°([[m:OpenSSL::ASN1::ASN1Data#tag]])¤¬ :UNIVERSAL ¤Ê¤é¤Ð
-¤³¤ÎÃÍ¤ÏÌµ»ë¤µ¤ì¤Þ¤¹¡£
+ã‚¿ã‚°([[m:OpenSSL::ASN1::ASN1Data#tag]])ãŒ :UNIVERSAL ãªã‚‰ã°
+ã“ã®å€¤ã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚
 
-nil ¤Ï :IMPLICIT ¤ÈÆ±µÁ¤Ç¤¹¡£
+nil ã¯ :IMPLICIT ã¨åŒç¾©ã§ã™ã€‚
 
 @see [[m:OpenSSL::ASN1::Primitive#tagging=]]

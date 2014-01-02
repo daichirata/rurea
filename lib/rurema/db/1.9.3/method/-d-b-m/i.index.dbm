@@ -4,9 +4,9 @@ kind=defined
 
 --- index(value) -> String | nil
 
-value ¤ò»ý¤ÄÍ×ÁÇ¤Î¥­¡¼¤òÊÖ¤·¤Þ¤¹¡£
+value ã‚’æŒã¤è¦ç´ ã®ã‚­ãƒ¼ã‚’è¿”ã—ã¾ã™ã€‚
 
-¸«¤Ä¤«¤é¤Ê¤«¤Ã¤¿¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+è¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param value ¸¡º÷¤·¤¿¤¤ÃÍ¡£
+@param value æ¤œç´¢ã—ãŸã„å€¤ã€‚
 

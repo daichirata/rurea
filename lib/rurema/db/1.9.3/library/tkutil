@@ -3,5 +3,6 @@ classes=TkKernel,TkUtil,TkCallbackEntry,TkObject,TkUtil=CallbackSubst,Tkutil=Cal
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- flush_left(text) -> String
 
-��������ƹԤι�Ƭ�Υ��ڡ����������ޤ���
+引数から各行の行頭のスペースを削除します。
 
-@param text ʸ�������ꤷ�ޤ���
+@param text 文字列を指定します。
 

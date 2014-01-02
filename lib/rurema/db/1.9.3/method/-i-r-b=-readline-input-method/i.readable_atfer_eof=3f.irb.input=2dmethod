@@ -4,5 +4,5 @@ kind=defined
 
 --- readable_atfer_eof? -> false
 
-���Ϥ� EOF(End Of File)��ã��������ɤ߹��ߤ��Ԥ��뤫�ɤ������֤��ޤ���
+入力が EOF(End Of File)に達した後も読み込みが行えるかどうかを返します。
 

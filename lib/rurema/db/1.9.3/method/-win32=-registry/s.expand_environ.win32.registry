@@ -5,10 +5,10 @@ kind=defined
 --- expand_environ(str)
 @todo
 
-str ¤Î %\w+% ¤È¤¤¤¦ÊÂ¤Ó¤ò´Ä¶­ÊÑ¿ô¤ËÃÖ´¹¤·¤Ş¤¹¡£
-REG_EXPAND_SZ ¤ÇÍÑ¤¤¤é¤ì¤Ş¤¹¡£
+str ã® %\w+% ã¨ã„ã†ä¸¦ã³ã‚’ç’°å¢ƒå¤‰æ•°ã«ç½®æ›ã—ã¾ã™ã€‚
+REG_EXPAND_SZ ã§ç”¨ã„ã‚‰ã‚Œã¾ã™ã€‚
 
-¾ÜºÙ¤Ï°Ê²¼¤Î Win32 API ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+è©³ç´°ã¯ä»¥ä¸‹ã® Win32 API ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
  * ExpandEnvironmentStrings: [[url:http://msdn.microsoft.com/library/en-us/sysinfo/base/expandenvironmentstrings.asp]]
 

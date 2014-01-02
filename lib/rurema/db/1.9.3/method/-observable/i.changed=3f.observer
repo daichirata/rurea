@@ -4,5 +4,5 @@ kind=defined
 
 --- changed? -> bool
 
-�����ե饰�ξ��֤��֤��ޤ���
+更新フラグの状態を返します。
 

@@ -6,15 +6,15 @@ library=_builtin
 aliases=
 aliasof=
 
-�쥷���Ф�����ʤ��᥽�åɤ�ɽ�����饹�Ǥ���
-�ƤӽФ�����ˤϥ쥷���Ф˥Х���ɤ���ɬ�פ�����ޤ���
+レシーバを持たないメソッドを表すクラスです。
+呼び出すためにはレシーバにバインドする必要があります。
 
-[[m:Module#instance_method]] ��
-[[m:Method#unbind]] �ˤ�������������
-[[m:UnboundMethod#bind]] �ˤ��쥷���Ф�
-������Ƥ� [[c:Method]] ���֥������Ȥ��뤳�Ȥ��Ǥ��ޤ���
+[[m:Module#instance_method]] や
+[[m:Method#unbind]] により生成し、後で
+[[m:UnboundMethod#bind]] によりレシーバを
+割り当てた [[c:Method]] オブジェクトを作ることができます。
 
-��: [[c:Method]] ���饹����Ƭ�ˤ������ UnboundMethod �ǽ񤯤Ȱʲ��Τ褦�ˤʤ�ޤ���
+例: [[c:Method]] クラスの冒頭にある例を UnboundMethod で書くと以下のようになります。
 
   class Foo
     def foo() "foo" end
@@ -22,20 +22,20 @@ aliasof=
     def baz() "baz" end
   end
 
-  # Ǥ�դΥ����ȥ᥽�åɤδط���ϥå�����ݻ����Ƥ���
-  # �쥷���Фξ��󤬤����ˤϤʤ����Ȥ�����
+  # 任意のキーとメソッドの関係をハッシュに保持しておく
+  # レシーバの情報がここにはないことに注意
   methods = {1 => Foo.instance_method(:foo),
              2 => Foo.instance_method(:bar),
              3 => Foo.instance_method(:baz)}
 
-  # ������Ȥäƴ�Ϣ����᥽�åɤ�ƤӽФ�
-  # �쥷���Ф�Ǥ��(Foo ���饹�Υ��󥹥��󥹤Ǥʤ���Фʤ�ʤ�)
+  # キーを使って関連するメソッドを呼び出す
+  # レシーバは任意(Foo クラスのインスタンスでなければならない)
   p methods[1].bind(Foo.new).call      # => "foo"
   p methods[2].bind(Foo.new).call      # => "bar"
   p methods[3].bind(Foo.new).call      # => "baz"
 
-��: �ʲ��ϥ᥽�åɤκ������ UnboundMethod ��ȤäƹԤ���ˡ�Ǥ������̤�
-alias �� super ��Ȥ��ޤ���
+例: 以下はメソッドの再定義を UnboundMethod を使って行う方法です。普通は
+alias や super を使います。
 
   class Foo
     def foo

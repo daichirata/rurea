@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- F_WRLCK -> Integer
-�񤭹��ߥ꡼����������ޤ���
+書き込みリースを取得します。
 

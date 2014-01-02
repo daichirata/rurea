@@ -5,17 +5,17 @@ kind=defined
 --- open(filename) -> Zlib::GzipReader
 --- open(filename) {|gz| ... } -> object
 
-filename ¤Ç»ØÄê¤µ¤ì¤ë¥Õ¥¡¥¤¥ë¤ò gzip ¥Õ¥¡¥¤¥ë¤È¤·¤Æ
-¥ª¡¼¥×¥ó¤·¤Ş¤¹¡£GzipReader ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹¡£
-¤½¤ÎÂ¾¾ÜºÙ¤Ï [[m:Zlib::GzipReader.new]] ¤ä [[m:Zlib::GzipReader.wrap]] ¤È
-Æ±¤¸¤Ç¤¹¡£
+filename ã§æŒ‡å®šã•ã‚Œã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ gzip ãƒ•ã‚¡ã‚¤ãƒ«ã¨ã—ã¦
+ã‚ªãƒ¼ãƒ—ãƒ³ã—ã¾ã™ã€‚GzipReader ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
+ãã®ä»–è©³ç´°ã¯ [[m:Zlib::GzipReader.new]] ã‚„ [[m:Zlib::GzipReader.wrap]] ã¨
+åŒã˜ã§ã™ã€‚
 
-@param filename gzip ¥Õ¥¡¥¤¥ëÌ¾¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param filename gzip ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
   require 'zlib'
 
   =begin
-  # hoge.gz ¤¬¤Ê¤¤¾ì¹ç¤Ï¤³¤ì¤ÇºîÀ®¤¹¤ë¡£
+  # hoge.gz ãŒãªã„å ´åˆã¯ã“ã‚Œã§ä½œæˆã™ã‚‹ã€‚
   Zlib::GzipWriter.open('hoge.gz') { |gz|
     gz.puts 'hoge'
   }

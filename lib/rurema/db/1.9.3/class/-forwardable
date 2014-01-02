@@ -6,13 +6,13 @@ library=forwardable
 aliases=
 aliasof=
 
-���饹���Ф����᥽�åɤΰѾ���ǽ���������⥸�塼��Ǥ���
+クラスに対し、メソッドの委譲機能を定義するモジュールです。
 
-=== �Ȥ���
+=== 使い方
 
-���饹���Ф��� [[m:Object#extend]] ���ƻȤ��ޤ���[[m:Module#include]] �Ǥʤ��Ȥ��������դ��Ʋ�������
+クラスに対して [[m:Object#extend]] して使います。[[m:Module#include]] でないところに注意して下さい。
 
-��:
+例:
 
   class Foo
     extend Forwardable

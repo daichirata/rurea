@@ -4,10 +4,10 @@ kind=defined
 
 --- get_passwd(realm, user, reload_db = false) -> String
 
-Ϳ����줿����ȥ桼��̾����ѥ���ɤΥϥå����ͤ���������֤��ޤ���
+与えられたレルムとユーザ名からパスワードのハッシュ値を取得して返します。
 
-@param realm �������ꤷ�ޤ���
+@param realm レルムを指定します。
 
-@param user �桼��̾����ꤷ�ޤ���
+@param user ユーザ名を指定します。
 
-@param reload_db ̵�뤵��ޤ���
+@param reload_db 無視されます。

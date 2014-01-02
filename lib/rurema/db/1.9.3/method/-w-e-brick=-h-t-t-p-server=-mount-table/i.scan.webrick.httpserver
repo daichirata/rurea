@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- scan(path) -> Array
-Ϳ����줿�ѥ��򥹥���ץȤ�̾���� PATH_INFO ��ʬ�䤷�ޤ���
+与えられたパスをスクリプトの名前と PATH_INFO に分割します。
 
-@param path �ѥ�����ꤷ�ޤ���
+@param path パスを指定します。

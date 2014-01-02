@@ -4,7 +4,7 @@ kind=defined
 
 --- version_requirements=(version_requirements)
 
-°ÍÂ¸¤·¤Æ¤¤¤ë¥Ğ¡¼¥¸¥ç¥ó¤òÀßÄê¤·¤Ş¤¹¡£
+ä¾å­˜ã—ã¦ã„ã‚‹ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param version_requirements [[c:Gem::Requirement]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param version_requirements [[c:Gem::Requirement]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

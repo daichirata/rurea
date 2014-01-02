@@ -4,5 +4,5 @@ kind=defined
 
 --- skips -> Fixnum
 
-�¹Ԥ��ʤ��ä��ƥ��ȥ����������֤��ޤ���
+実行しなかったテストケース数を返します。
 

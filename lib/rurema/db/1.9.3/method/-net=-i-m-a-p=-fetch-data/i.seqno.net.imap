@@ -4,8 +4,8 @@ kind=defined
 
 --- seqno -> Integer
 
-¥á¥Ã¥»¡¼¥¸¤Î sequence number ¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã® sequence number ã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:Net::IMAP#uid_fetch]]¡¢[[m:Net::IMAP#uid_store]]¤Ç¤¢¤Ã¤Æ¤â
-UID ¤Ç¤Ï¤Ê¤¯¡¢sequence number¤òÊÖ¤·¤Ş¤¹¡£
+[[m:Net::IMAP#uid_fetch]]ã€[[m:Net::IMAP#uid_store]]ã§ã‚ã£ã¦ã‚‚
+UID ã§ã¯ãªãã€sequence numberã‚’è¿”ã—ã¾ã™ã€‚
 

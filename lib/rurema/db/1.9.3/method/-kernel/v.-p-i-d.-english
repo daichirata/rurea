@@ -5,9 +5,9 @@ kind=added
 --- $PID        -> Fixnum
 --- $PROCESS_ID -> Fixnum
 
-[[m:$$]] ¤ÎÊÌÌ¾
+[[m:$$]] ã®åˆ¥å
  
   require "English"
 
-	p sprintf("something%s", $PID) #=> "something5543" ¤Ê¤É
+	p sprintf("something%s", $PID) #=> "something5543" ãªã©
 

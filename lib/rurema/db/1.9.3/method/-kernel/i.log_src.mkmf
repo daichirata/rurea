@@ -4,7 +4,7 @@ kind=added
 
 --- log_src(src) -> ()
 
-Í¿¤¨¤é¤ì¤¿ C ¥×¥í¥°¥é¥à¤Î¥½¡¼¥¹¥³¡¼¥É¤ò¥í¥°½ÐÎÏ¤·¤Þ¤¹¡£
+ä¸Žãˆã‚‰ã‚ŒãŸ C ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’ãƒ­ã‚°å‡ºåŠ›ã—ã¾ã™ã€‚
 
-@param src C ¥×¥í¥°¥é¥à¤Î¥½¡¼¥¹¥³¡¼¥É¤ò»ØÄê¤·¤Þ¤¹¡£
+@param src C ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

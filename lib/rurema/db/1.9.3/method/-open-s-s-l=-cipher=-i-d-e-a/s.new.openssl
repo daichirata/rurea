@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- new(*args) -> OpenSSL::Cipher::IDEA
-IDEA ░┼╣цеке╓е╕езепе╚дЄ└╕└од╖д▐д╣бг
+IDEA цЪЧхП╖уВкуГЦуВ╕уВзуВпуГИуВТчФЯцИРуБЧуБ╛уБЩуАВ
 
-@param args ░┼╣цд╬е╤ещесб╝е┐
+@param args цЪЧхП╖уБоуГСуГйуГбуГ╝уВ┐
 

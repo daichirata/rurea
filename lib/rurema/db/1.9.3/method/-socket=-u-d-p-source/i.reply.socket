@@ -2,6 +2,8 @@ names=reply
 visibility=public
 kind=defined
 
---- reply
-@todo
+--- reply(msg) -> ()
+msg をリモート側の端点へ送ります。
+
+@param msg 送るメッセージ文字列
 

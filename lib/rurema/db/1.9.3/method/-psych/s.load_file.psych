@@ -2,10 +2,10 @@ names=load_file
 visibility=public
 kind=defined
 
---- load_file(filename)
-@todo
+--- load_file(filename) -> object
+filename で指定したファイルを YAML ドキュメントとして
+Ruby のオブジェクトに変換します。
 
-Load the document contained in +filename+.  Returns the yaml contained in
-+filename+ as a ruby object
-
+@param filename ファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
 

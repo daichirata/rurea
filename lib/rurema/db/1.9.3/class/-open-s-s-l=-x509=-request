@@ -6,35 +6,35 @@ library=openssl
 aliases=
 aliasof=
 
-X.509 ¤Î¾ÚÌÀ½ñ½ğÌ¾Í×µá(Certificate Signing Request, CSR)¤òÉ½¤ï¤¹
-¥¯¥é¥¹¤Ç¤¹¡£
+X.509 ã®è¨¼æ˜æ›¸ç½²åè¦æ±‚(Certificate Signing Request, CSR)ã‚’è¡¨ã‚ã™
+ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-X.509 CSR ¤Ë¤Ä¤¤¤Æ¤Ï [[RFC:2986]] ¤Ê¤É¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+X.509 CSR ã«ã¤ã„ã¦ã¯ [[RFC:2986]] ãªã©ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-=== Îã
+=== ä¾‹
 
-CSR ¤òÀ¸À®¤¹¤ëÎã¡£
+CSR ã‚’ç”Ÿæˆã™ã‚‹ä¾‹ã€‚
   require 'openssl'
-  # ¥Õ¥¡¥¤¥ë¤«¤éÈëÌ©¸°¤òÆÉ¤ß¹ş¤à
+  # ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ç§˜å¯†éµã‚’èª­ã¿è¾¼ã‚€
   rsa = OpenSSL::PKey::RSA.new(File.read("privkey.pem"))
-  # ¿·¤·¤¤ CSR ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®
+  # æ–°ã—ã„ CSR ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆ
   csr = OpenSSL::X509::Request.new
-  # DN ¤òÀ¸À®
+  # DN ã‚’ç”Ÿæˆ
   name = OpenSSL::X509::Name.new
   name.add_entry('C', 'JP')
   name.add_entry('ST', 'Osaka')
   name.add_entry('CN', 'Example Name')
   csr.subject = name
-  # ¥Ğ¡¼¥¸¥ç¥ó¤ò 0 (v1.7) ¤Ë
+  # ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’ 0 (v1.7) ã«
   csr.version = 0
-  # ¸ø³«¸°¤ò CSR ¤ËÀßÄê
+  # å…¬é–‹éµã‚’ CSR ã«è¨­å®š
   csr.public_key = rsa.public_key
-  # attribute ¤òÀßÄê
+  # attribute ã‚’è¨­å®š
   factory = OpenSSL::X509::ExtensionFactory.new
   exts = [ factory.create_ext("subjectAltName", "DNS:foo.example.com") ]
   asn1exts = OpenSSL::ASN1::Set([OpenSSL::ASN1::Sequence(exts)])
   csr.add_attribute(OpenSSL::X509::Attribute.new("extReq", asn1exts))
-  # ½ğÌ¾
+  # ç½²å
   csr.sign(rsa, "sha1")
-  # PEM ·Á¼°¤ÇÉ¸½à½ĞÎÏ¤Ë½ĞÎÏ
+  # PEM å½¢å¼ã§æ¨™æº–å‡ºåŠ›ã«å‡ºåŠ›
   puts csr.to_pem

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- sign(key, digest) -> self
-SPKI ¥ª¥Ö¥¸¥§¥¯¥È¤Ë½ğÌ¾¤ò¤·¤Ş¤¹¡£
+SPKI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ç½²åã‚’ã—ã¾ã™ã€‚
 
-@param key ½ğÌ¾¤Ë»È¤¦ÈëÌ©¸°([[c:OpenSSL::PKey::PKey]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param digest ½ğÌ¾¤Ë»È¤¦¥À¥¤¥¸¥§¥¹¥È´Ø¿ô(Ê¸»úÎó¤â¤·¤¯¤Ï [[c:OpenSSL::Digest]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@raise OpenSSL::Netscape::SPKIError ½ğÌ¾¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param key ç½²åã«ä½¿ã†ç§˜å¯†éµ([[c:OpenSSL::PKey::PKey]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param digest ç½²åã«ä½¿ã†ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆé–¢æ•°(æ–‡å­—åˆ—ã‚‚ã—ãã¯ [[c:OpenSSL::Digest]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@raise OpenSSL::Netscape::SPKIError ç½²åã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::Netscape::SPKI#verify]]
 

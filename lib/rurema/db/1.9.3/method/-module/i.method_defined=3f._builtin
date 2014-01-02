@@ -4,10 +4,10 @@ kind=defined
 
 --- method_defined?(name) -> bool
 
-¥â¥¸¥å¡¼¥ë¤Ë¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É name ¤¬ÄêµÁ¤µ¤ì¤Æ¤¤¤ë¤È¤­
-true ¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã«ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ name ãŒå®šç¾©ã•ã‚Œã¦ã„ã‚‹ã¨ã
+true ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param name [[c:Symbol]] ¤« [[c:String]] ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param name [[c:Symbol]] ã‹ [[c:String]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Module#public_method_defined?]], [[m:Module#private_method_defined?]], [[m:Module#protected_method_defined?]]
 

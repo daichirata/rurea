@@ -5,20 +5,24 @@ kind=defined
 --- /(other)   -> Rational | Float
 --- quo(other) -> Rational | Float
 
-¾¦¤ò·×»»¤·¤Ş¤¹¡£
+å•†ã‚’è¨ˆç®—ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ò³ä¤ë¿ô
+@param other è‡ªèº«ã‚’å‰²ã‚‹æ•°
 
-other ¤Ë [[c:Float]] ¤ò»ØÄê¤·¤¿¾ì¹ç¤Ï¡¢·×»»·ë²Ì¤ò [[c:Float]] ¤ÇÊÖ¤·¤Ş
-¤¹¡£
+other ã« [[c:Float]] ã‚’æŒ‡å®šã—ãŸå ´åˆã¯ã€è¨ˆç®—çµæœã‚’ [[c:Float]] ã§è¿”ã—ã¾
+ã™ã€‚
+ãŸã ã— 0 ä»¥å¤–ã®æ•´æ•°ã«ç­‰ã—ã„å ´åˆã¯ [[c:Rational]] ã§è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   r = Rational(3, 4)
   r / 2                # => (3/8)
-  r / 2.0              # => 0.375
+  r / 2.0              # => (3/8)
+  r / 0.5              # => 1.5
   r / Rational(1, 2)   # => (3/2)
   r / 0                # => ZeroDivisionError
 
-@raise ZeroDivisionError other ¤¬ 0 ¤Î»ş¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise ZeroDivisionError other ãŒ 0 ã®æ™‚ã«ç™ºç”Ÿã—ã¾ã™ã€‚
+
+@see [[m:Numeric#quo]]
 

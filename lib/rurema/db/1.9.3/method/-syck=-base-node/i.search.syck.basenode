@@ -4,9 +4,9 @@ kind=defined
 
 --- search(ypath_str) -> [String]
 
-�����ǻ��ꤷ���ѥ��ΥΡ��ɤ򸡺����ޤ������Ĥ��ä��ѥ���������֤��ޤ���
+引数で指定したパスのノードを検索します。見つかったパスの配列を返します。
 
-@param ypath_str ��������ѥ���ʸ����ǻ��ꤷ�ޤ���
+@param ypath_str 検索するパスを文字列で指定します。
 
   require 'syck'
   require 'yaml'

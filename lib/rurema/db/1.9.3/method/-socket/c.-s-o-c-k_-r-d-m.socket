@@ -2,10 +2,10 @@ names=SOCK_RDM
 visibility=public
 kind=defined
 
---- SOCK_RDM
-@todo
+--- SOCK_RDM -> Integer
 
-[[m:Socket.open]] ¤ÎÂèÆó°ú¿ô type ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+ä¿¡é ¼æ€§ã®ã‚ã‚‹ãƒ‡ãƒ¼ã‚¿ã‚°ãƒ©ãƒ é€šä¿¡ã€‚
+[[m:Socket.open]] ã®ç¬¬äºŒå¼•æ•° type ã«ä½¿ç”¨ã—ã¾ã™ã€‚
 
-@see [[m:Socket.open]]
+@see [[man:socket(2linux)]], [[m:Socket.open]]
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- handle_options(args)
-Ϳ����줿�����Υꥹ�Ȥ�ѡ������Ʒ�̤�Ͽ���ޤ���
+与えられた引数のリストをパースして結果を記録します。
 
-@param args �����Υꥹ�Ȥ���ꤷ�ޤ���
+@param args 引数のリストを指定します。
 

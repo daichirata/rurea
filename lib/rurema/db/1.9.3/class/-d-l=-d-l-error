@@ -6,4 +6,4 @@ library=dl
 aliases=
 aliasof=
 
-
+DL のエラー全般を表すクラス。

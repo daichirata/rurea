@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- default_pop3s_port -> Integer
-�ǥե���Ȥ�POP3S�Υݡ����ֹ�(995)���֤��ޤ���
+デフォルトのPOP3Sのポート番号(995)を返します。
 

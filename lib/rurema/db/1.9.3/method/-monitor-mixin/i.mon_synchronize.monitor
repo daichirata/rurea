@@ -5,9 +5,9 @@ kind=defined
 --- mon_synchronize { ... } -> object
 --- synchronize     { ... } -> object
 
-��˥�������å������֥��å���¹Ԥ��ޤ����¹Ը��ɬ����˥����Υ��å���������ޤ���
+モニターをロックし、ブロックを実行します。実行後に必ずモニターのロックを解放します。
 
-�֥��å���ɾ���ͤ��֤��ͤȤ����֤��ޤ���
+ブロックの評価値を返り値として返します。
 
 @see [[m:MonitorMixin#mon_enter]]
 

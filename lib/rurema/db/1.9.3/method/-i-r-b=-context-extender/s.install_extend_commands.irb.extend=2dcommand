@@ -4,9 +4,9 @@ kind=defined
 
 --- install_extend_commands -> object
 
-ÄêµÁºÑ¤ß¤Î³ÈÄ¥¤òÆÉ¤ß¹ş¤ß¤Ş¤¹¡£
+å®šç¾©æ¸ˆã¿ã®æ‹¡å¼µã‚’èª­ã¿è¾¼ã¿ã¾ã™ã€‚
 
-[[c:IRB::Context]] ¤Ç°Ê²¼¤Î¥á¥½¥Ã¥É¤¬ÍøÍÑ¤Ç¤­¤ë¤è¤¦¤Ë¤Ê¤ê¤Ş¤¹¡£
+[[c:IRB::Context]] ã§ä»¥ä¸‹ã®ãƒ¡ã‚½ãƒƒãƒ‰ãŒåˆ©ç”¨ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚
 
  * eval_history=
  * use_tracer=
@@ -14,8 +14,8 @@ kind=defined
  * use_loader=
  * save_history=
 
-[[lib:irb/extend-command]] ¤¬ require ¤µ¤ì¤¿»ş¤Ë¥é¥¤¥Ö¥é¥êÆâÉô¤Ç¼«Æ°Åª
-¤Ë¼Â¹Ô¤µ¤ì¤Ş¤¹¡£
+[[lib:irb/extend-command]] ãŒ require ã•ã‚ŒãŸæ™‚ã«ãƒ©ã‚¤ãƒ–ãƒ©ãƒªå†…éƒ¨ã§è‡ªå‹•çš„
+ã«å®Ÿè¡Œã•ã‚Œã¾ã™ã€‚
 
 @see [[m:IRB::ContextExtender.def_extend_command]]
 

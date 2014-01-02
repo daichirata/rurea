@@ -4,5 +4,5 @@ kind=defined
 
 --- hierarchical?    -> bool
 
-���Ȥ� path �����ꤵ��Ƥ���ʤ� true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+自身に path が設定されているなら true を返します。そうでない場合は false を返します。
 

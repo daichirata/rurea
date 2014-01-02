@@ -4,18 +4,18 @@ kind=defined
 
 --- on_default(event, token, data) -> object
 
-���٥�ȥϥ�ɥ餬̤����Υ��٥�Ȥ��¹Ԥ��줿���˼¹Ԥ���륤�٥��
-�ϥ�ɥ�Ǥ���
+イベントハンドラが未定義のイベントが実行された場合に実行されるイベント
+ハンドラです。
 
-@param event �¹Ԥ��줿���٥�Ȥ� :on_XXX �����Υ���ܥ�ǻ��ꤵ��ޤ���
+@param event 実行されたイベントを :on_XXX 形式のシンボルで指定されます。
 
-@param token ���ߤΥȡ����󤬻��ꤵ��ޤ���
+@param token 現在のトークンが指定されます。
 
-@param data ���Υ��٥�ȥϥ�ɥ������ͤǤ����ǽ�Υ��٥�Ȥξ���
-            [[m:Ripper::Filter#parse]] �ΰ����ˤʤ�ޤ���
+@param data 前のイベントハンドラの戻り値です。最初のイベントの場合は
+            [[m:Ripper::Filter#parse]] の引数になります。
 
-���Υ᥽�åɤ�����ͤϼ��Υ��٥�ȥϥ�ɥ�� data �������Ϥ���ޤ���
-on_default �򥪡��Х饤�ɤ��ʤ��ä����� data �����򤽤Τޤ��֤��ޤ���
+このメソッドの戻り値は次のイベントハンドラの data 引数に渡されます。
+on_default をオーバライドしなかった場合は data 引数をそのまま返します。
 
 @see [[m:Ripper::Filter#parse]], [[m:Ripper::Filter#on_XXX]]
 

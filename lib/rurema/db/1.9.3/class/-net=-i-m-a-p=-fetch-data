@@ -6,8 +6,8 @@ library=net.imap
 aliases=
 aliasof=
 
-FETCH ¥³¥Ş¥ó¥É¤Î±şÅú¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+FETCH ã‚³ãƒãƒ³ãƒ‰ã®å¿œç­”ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-[[m:Net::IMAP#fetch]]¡¢[[m:Net::IMAP#uid_fetch]]¡¢
-[[m:Net::IMAP#store]]¡¢[[m:Net::IMAP#uid_store]] ¤Î
-ÊÖ¤êÃÍ¤È¤·¤ÆÍøÍÑ¤µ¤ì¤Ş¤¹¡£
+[[m:Net::IMAP#fetch]]ã€[[m:Net::IMAP#uid_fetch]]ã€
+[[m:Net::IMAP#store]]ã€[[m:Net::IMAP#uid_store]] ã®
+è¿”ã‚Šå€¤ã¨ã—ã¦åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚

@@ -6,6 +6,6 @@ library=rubygems.old_format
 aliases=
 aliasof=
 
-RubyGems ¤Î Gem ¥Õ¥¡¥¤¥ë¤ÎÆâÉô¹½Â¤¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+RubyGems ã® Gem ãƒ•ã‚¡ã‚¤ãƒ«ã®å†…éƒ¨æ§‹é€ ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
 @see [[c:Gem::Format]]

@@ -6,4 +6,4 @@ library=rexml
 aliases=
 aliasof=
 
-
+DTD の属性リスト宣言を表すクラスです。

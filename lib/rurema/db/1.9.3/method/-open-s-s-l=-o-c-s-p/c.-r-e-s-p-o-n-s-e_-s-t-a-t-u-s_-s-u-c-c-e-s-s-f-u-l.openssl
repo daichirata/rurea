@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- RESPONSE_STATUS_SUCCESSFUL -> Integer
-[[m:OpenSSL::OCSP::Response#status]] ¤Î¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É¤Ç ¡¢
-Àµ¤·¤¯±þÅú¤·¤¿¤³¤È¤ò°ÕÌ£¤·¤Þ¤¹¡£
+[[m:OpenSSL::OCSP::Response#status]] ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ã§ ã€
+æ­£ã—ãå¿œç­”ã—ãŸã“ã¨ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
-¾Ü¤·¤¯¤Ï [[RFC:2560]] 2.3 ¤ò¸«¤Æ¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ [[RFC:2560]] 2.3 ã‚’è¦‹ã¦ãã ã•ã„ã€‚
 

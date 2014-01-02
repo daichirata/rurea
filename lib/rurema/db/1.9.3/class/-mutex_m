@@ -6,36 +6,36 @@ library=mutex_m
 aliases=
 aliasof=
 
-����å�Ʊ�������Ǥ��� [[c:Mutex]] �Υ⥸�塼���ǤǤ������饹��
-[[m:Module#include]] ���뤳�ȤǤ��Υ��饹�� Mutex ��ǽ��������뤳�Ȥ��Ǥ��ޤ���
-�ޤ������̤Υ��֥������Ȥ� [[m:Object#extend]] �ˤ�� Mutex �ˤ�������Ǥ��ޤ���
+スレッド同期機構である [[c:Mutex]] のモジュール版です。クラスに
+[[m:Module#include]] することでそのクラスに Mutex 機能を持たせることができます。
+また、普通のオブジェクトを [[m:Object#extend]] により Mutex にする事ができます。
 
-���Υ⥸�塼��ˤ����å��Ϻ����Բ�ǽ�Ǥ���������ǽ��Ʊ���ʤ�ɬ�פʾ���
-[[c:Sync_m]] �����Ѥ�ͤ��Ƥ���������
+このモジュールによるロックは再入不可能です。再入可能な同等品が必要な場合は
+[[c:Sync_m]] の利用を考えてください。
 
-��mu_�פ��դ��ʤ��᥽�å�([[m:Mutex_m#lock]], [[m:Mutex_m#synchronize]], 
+「mu_」の付かないメソッド([[m:Mutex_m#lock]], [[m:Mutex_m#synchronize]], 
 [[m:Mutex_m#locked?]], [[m:Mutex_m#try_lock]], [[m:Mutex_m#unlock]])
-�ϥ⥸�塼���include�������ˤ��������ޤ���
+はモジュールにincludeした場合には定義されません。
 
 [[ruby-list:1991]]
 
-=== ��
-���饹�� [[m:Module#include]] ������
+=== 例
+クラスに [[m:Module#include]] する例
   class Foo
     include Mutex_m
     ...
   end
   obj = Foo.new
   obj.synchronize do 
-    # �����ΰ�(critical section)
+    # 危険領域(critical section)
     ...
   end
 
-���֥������Ȥ� [[m:Object#extend]] ������
+オブジェクトに [[m:Object#extend]] する例
   require "mutex_m"
   obj = Object.new
   obj.extend(Mutex_m)
   obj.lock
-  # �����ΰ�(critical section)  
+  # 危険領域(critical section)  
   ... 
   obj.unlock

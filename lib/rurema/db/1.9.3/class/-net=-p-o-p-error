@@ -6,5 +6,5 @@ library=net.pop
 aliases=
 aliasof=
 
-POP3 ¤Î¡¢Ç§¾Ú°Ê³°¤Î¥¨¥é¡¼¤¬µ¯¤­¤¿¤È¤­¤ËÈ¯À¸¤·¤Þ¤¹¡£
-¥µ¡¼¥Ð¤«¤é¤Î "-ERR" ±þÅú¥³¡¼¥É¤ËÂÐ±þ¤·¤Þ¤¹¡£
+POP3 ã®ã€èªè¨¼ä»¥å¤–ã®ã‚¨ãƒ©ãƒ¼ãŒèµ·ããŸã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚
+ã‚µãƒ¼ãƒã‹ã‚‰ã® "-ERR" å¿œç­”ã‚³ãƒ¼ãƒ‰ã«å¯¾å¿œã—ã¾ã™ã€‚

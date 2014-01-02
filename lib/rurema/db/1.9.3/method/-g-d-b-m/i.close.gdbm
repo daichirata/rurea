@@ -4,7 +4,7 @@ kind=defined
 
 --- close -> nil
 
-DBM ¥Õ¥¡¥¤¥ë¤ò¥¯¥í¡¼¥º¤·¤Þ¤¹¡£
+DBM ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚¯ãƒ­ãƒ¼ã‚ºã—ã¾ã™ã€‚
 
-°Ê¸å¤ÎÁàºî¤ÏÎã³° [[c:RuntimeError]] ¤òÈ¯À¸¤µ¤»¤Þ¤¹¡£
+ä»¥å¾Œã®æ“ä½œã¯ä¾‹å¤– [[c:RuntimeError]] ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚
 

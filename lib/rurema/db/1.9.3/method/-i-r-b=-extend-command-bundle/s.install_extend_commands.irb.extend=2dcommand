@@ -4,9 +4,9 @@ kind=defined
 
 --- install_extend_commands -> object
 
-����Ѥߤγ�ĥ���ɤ߹��ߤޤ���
+定義済みの拡張を読み込みます。
 
-irb �ǰʲ��Υ᥽�åɤ����ѤǤ���褦�ˤʤ�ޤ���(���줾�� 1 �Ĥ���ȴ��)
+irb で以下のメソッドが利用できるようになります。(それぞれ 1 つだけ抜粋)
 
  * irb_current_working_workspace
  * irb_change_workspace
@@ -22,8 +22,8 @@ irb �ǰʲ��Υ᥽�åɤ����ѤǤ���褦�ˤʤ�ޤ���(���줾�� 1 �Ĥ���ȴ��)
  * irb_kill
  * irb_help
 
-[[lib:irb/extend-command]] �� require ���줿���˥饤�֥�������Ǽ�ưŪ
-�˼¹Ԥ���ޤ���
+[[lib:irb/extend-command]] が require された時にライブラリ内部で自動的
+に実行されます。
 
 @see [[m:IRB::ExtendCommandBundle.install_extend_commands]]
 

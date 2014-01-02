@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- certificates -> [OpenSSL::X509::Certificate] | nil
-½ðÌ¾¤ËÅºÉÕ¤µ¤ì¤ë¾ÚÌÀ½ñ¤òÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+ç½²åã«æ·»ä»˜ã•ã‚Œã‚‹è¨¼æ˜Žæ›¸ã‚’é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 

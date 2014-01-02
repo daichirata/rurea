@@ -6,18 +6,18 @@ library=rake.testtask
 aliases=
 aliasof=
 
-¥æ¥Ë¥Ã¥È¥Æ¥¹¥È¤ò¼Â¹Ô¤¹¤ë¤¿¤á¤Î¥¿¥¹¥¯¤òºîÀ®¤¹¤ë¥¯¥é¥¹¤Ç¤¹¡£
+ãƒ¦ãƒ‹ãƒƒãƒˆãƒ†ã‚¹ãƒˆã‚’å®Ÿè¡Œã™ã‚‹ãŸã‚ã®ã‚¿ã‚¹ã‚¯ã‚’ä½œæˆã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-Îã:
+ä¾‹:
   Rake::TestTask.new do |t|
     t.libs << "test"
     t.test_files = FileList['test/test*.rb']
     t.verbose = true
   end
 
-°Ê²¼¤Ë test ¥¿¡¼¥²¥Ã¥È¤Î»ÈÍÑÎã¤ò¼¨¤·¤Ş¤¹¡£
+ä»¥ä¸‹ã« test ã‚¿ãƒ¼ã‚²ãƒƒãƒˆã®ä½¿ç”¨ä¾‹ã‚’ç¤ºã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
    rake test                           # run tests normally
    rake test TEST=just_one_file.rb     # run just one test file.
    rake test TESTOPTS="-v"             # run in verbose mode

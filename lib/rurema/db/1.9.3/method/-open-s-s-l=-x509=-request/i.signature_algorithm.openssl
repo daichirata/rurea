@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- signature_algorithm -> String
-�������̾�׵�ν�̾�˻Ȥ��Ƥ��륢�르�ꥺ��̾��ʸ������֤��ޤ���
+証明書署名要求の署名に使われているアルゴリズム名を文字列で返します。
 
 

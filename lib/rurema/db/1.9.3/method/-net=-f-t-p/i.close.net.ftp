@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- close -> ()
-�����ФȤ���³���ڤ�ޤ���
+サーバとの接続を切ります。
 
-�Ƥ� [[m:Net::FTP#connect]] ����³���ʤ��¤�
-���ڤ����Բ�ǽ�ˤʤ�ޤ���
+再び [[m:Net::FTP#connect]] で接続しない限り
+一切の操作が不可能になります。
 

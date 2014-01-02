@@ -4,8 +4,8 @@ kind=defined
 
 --- closed? -> bool
 
-DBM �ե����뤬�����Ĥ����Ƥ��뤫Ĵ�٤ޤ���
+DBM ファイルが既に閉じられているか調べます。
 
-�����Ĥ����Ƥ���� true ���֤��ޤ��������Ǥʤ���� false ���֤��ޤ���
+既に閉じられていれば true を返します。そうでなければ false を返します。
 
 

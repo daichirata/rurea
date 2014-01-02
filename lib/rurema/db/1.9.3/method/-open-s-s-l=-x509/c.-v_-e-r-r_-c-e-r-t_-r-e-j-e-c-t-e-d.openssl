@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- V_ERR_CERT_REJECTED -> Integer
-�롼�� CA ������˻��ꤷ����ɸ�˻ȤäƤϤʤ�ʤ���
-����Ƥ��뤳�Ȥ��̣���ޤ���
+ルート CA 証明書に指定した目標に使ってはならないと
+されていることを意味します。
 
 

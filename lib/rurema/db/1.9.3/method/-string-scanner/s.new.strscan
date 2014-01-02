@@ -4,14 +4,14 @@ kind=defined
 
 --- new(str, dup = false) -> StringScanner 
 
-¿·¤·¤¤ StringScanner ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Ş¤¹¡£
+æ–°ã—ã„ StringScanner ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param str ¥¹¥­¥ã¥óÂĞ¾İ¤ÎÊ¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param str ã‚¹ã‚­ãƒ£ãƒ³å¯¾è±¡ã®æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param dup dup ¤ÏÃ±¤ËÌµ»ë¤·¤Ş¤¹¡£
-           °ú¿ô¤ÎÊ¸»úÎó¤ÏÊ£À½¤â freeze ¤â¤µ¤ì¤º¡¢¤½¤Î¤Ş¤Ş»È¤¤¤Ş¤¹¡£
+@param dup dup ã¯å˜ã«ç„¡è¦–ã—ã¾ã™ã€‚
+           å¼•æ•°ã®æ–‡å­—åˆ—ã¯è¤‡è£½ã‚‚ freeze ã‚‚ã•ã‚Œãšã€ãã®ã¾ã¾ä½¿ã„ã¾ã™ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
     s = StringScanner.new('This is an example string')
     s.eos?            #=> false
 

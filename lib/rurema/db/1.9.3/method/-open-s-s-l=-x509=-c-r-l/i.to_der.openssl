@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- to_der -> String
-DER ทมผฐคหสัดนคทคÞคนกฃ
+DER ๅฝขๅผใซๅคๆใ—ใพใใ€
 
-@raise OpenSSL::X509::CRLError สัดนคหผบวิคทคฟพ์น็คหศฏภธคทคÞคน
+@raise OpenSSL::X509::CRLError ๅคๆใซๅคฑๆ•—ใ—ใๅ ดๅใซ็บ็”ใ—ใพใ

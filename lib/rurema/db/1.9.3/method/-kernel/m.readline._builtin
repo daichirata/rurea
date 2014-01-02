@@ -4,27 +4,27 @@ kind=defined
 
 --- readline(rs = $/) -> String
 
-[[c:ARGF]]�������ɤ߹���ǡ�������֤��ޤ���
-�Ԥζ��ڤ�ϰ��� rs �ǻ��ꤷ��ʸ����ˤʤ�ޤ���
+[[c:ARGF]]から一行読み込んで、それを返します。
+行の区切りは引数 rs で指定した文字列になります。
 
-rs �� nil ����ꤹ��ȹԶ��ڤ�ʤ��Ȥߤʤ��ƥե���������Ƥ�
-���٤��ɤ߹��ߤޤ���ARGV��ʣ���Υե�����̾��¸�ߤ������1�٤�1�ե����뤺���ɤ߹��ߤޤ���
-��ʸ���� "" ����ꤹ���Ϣ³������Ԥ�Ԥζ��ڤ�Ȥߤʤ��ޤ�
-(�ѥ饰��ե⡼��)��
+rs に nil を指定すると行区切りなしとみなしてファイルの内容を
+すべて読み込みます。ARGVに複数のファイル名が存在する場合は1度に1ファイルずつ読み込みます。
+空文字列 "" を指定すると連続する改行を行の区切りとみなします
+(パラグラフモード)。
 
-�ɤ߹����ʸ������Ȥ߹����ѿ� [[m:$_]] �ˤ⥻�åȤ���ޤ���
+読み込んだ文字列は組み込み変数 [[m:$_]] にもセットされます。
 
-@param rs �Ԥζ��ڤ�Ȥʤ�ʸ����Ǥ���
-@raise Errno::EXXX �ɤ߹��ߤ˼��Ԥ�������ȯ�����ޤ���
-@raise EOFError readline �ǥե�������ü(EOF)�򸡽Ф����ȯ�����ޤ���
+@param rs 行の区切りとなる文字列です。
+@raise Errno::EXXX 読み込みに失敗した場合に発生します。
+@raise EOFError readline でファイル末端(EOF)を検出すると発生します。
 
   ---main.rb---
   ARGV << 'b.txt' << 'c.txt'
   p readline #=> "hello\n"
   p readline(nil) #=> "it\ncommon\n"
   p readline("") #=> "ARGF\n\n"
-  p readline('��') #=> "������ץȤ˻��ꤷ������ (Kernel::ARGV �򻲾�) ��ե�����̾��\n�ߤʤ��ơ�"
-  p readline #=> "�����Υե������Ϣ�뤷�� 1 �Ĥβ��ۥե������ɽ�����֥������ȤǤ��� \n"
+  p readline('、') #=> "スクリプトに指定した引数 (Object::ARGV を参照) をファイル名と\nみなして、"
+  p readline #=> "それらのファイルを連結した 1 つの仮想ファイルを表すオブジェクトです。 \n"
   p readline # end of file reached (EOFError)
   --- b.txt ---
   hello
@@ -33,8 +33,8 @@ rs �� nil ����ꤹ��ȹԶ��ڤ�ʤ��Ȥߤʤ��ƥե���������Ƥ�
   --- c.txt ---
   ARGF
   
-  ������ץȤ˻��ꤷ������ (Kernel::ARGV �򻲾�) ��ե�����̾��
-  �ߤʤ��ơ������Υե������Ϣ�뤷�� 1 �Ĥβ��ۥե������ɽ�����֥������ȤǤ��� 
+  スクリプトに指定した引数 (Object::ARGV を参照) をファイル名と
+  みなして、それらのファイルを連結した 1 つの仮想ファイルを表すオブジェクトです。 
 
 @see [[m:$/]],[[c:ARGF]],[[m:Kernel.#readlines]],[[m:Kernel.#gets]]
 

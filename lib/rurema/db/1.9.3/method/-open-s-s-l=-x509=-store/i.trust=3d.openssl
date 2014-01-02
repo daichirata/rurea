@@ -3,8 +3,10 @@ visibility=public
 kind=defined
 
 --- trust=(trust)
+
 @todo
-°Ê²¼¤Î¤¤¤º¤ì¤«¤ÎÄê¿ô¤ÎÃÍ¤ò»ØÄê¤·¤Ş¤¹¡£
+
+ä»¥ä¸‹ã®ã„ãšã‚Œã‹ã®å®šæ•°ã®å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
  * [[m:OpenSSL::X509::TRUST_COMPAT]]
  * [[m:OpenSSL::X509::TRUST_EMAIL]]
@@ -13,7 +15,7 @@ kind=defined
  * [[m:OpenSSL::X509::TRUST_SSL_SERVER]]
  * [[m:OpenSSL::X509::TRUST_OCSP_REQUEST]]
  * [[m:OpenSSL::X509::TRUST_OCSP_SIGN]]
-@param trust À°¿ôÃÍ
+@param trust æ•´æ•°å€¤
 @see [[m:OpenSSL::X509::StoreContext#trust=]]
 
 

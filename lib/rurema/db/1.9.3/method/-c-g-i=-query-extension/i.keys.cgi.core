@@ -4,5 +4,5 @@ kind=defined
 
 --- keys(*args) -> [String]
 
-���٤ƤΥѥ�᡼���Υ���������Ȥ����֤��ޤ���
+すべてのパラメータのキーを配列として返します。
 

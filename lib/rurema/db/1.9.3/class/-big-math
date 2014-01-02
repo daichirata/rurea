@@ -2,8 +2,8 @@ type=module
 superclass=
 included=
 extended=
-library=bigdecimal.math
+library=bigdecimal
 aliases=
 aliasof=
 
-BigDecimal¤ò»È¤Ã¤¿¿ô³ØÅª¤Êµ¡Ç½¤òÄó¶¡¤¹¤ë¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+BigDecimalã‚’ä½¿ã£ãŸæ•°å­¦çš„ãªæ©Ÿèƒ½ã‚’æä¾›ã™ã‚‹ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚

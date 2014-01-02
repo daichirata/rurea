@@ -4,5 +4,5 @@ kind=defined
 
 --- sections -> RDoc::Context::Section
 
-�ɲä��줿 [[c:RDoc::Context::Section]] ��������֤��ޤ���
+追加された [[c:RDoc::Context::Section]] の配列を返します。
 

@@ -4,8 +4,8 @@ kind=defined
 
 --- prepare_range(range, filesize) -> [Integer, Integer]
 
-[[m:WEBrick::HTTPServlet::DefaultFileHandler#make_partial_content]] ¤ÇÍøÍÑ¤¹¤ëÈÏ°Ï¾ğÊó¤òÀ¸À®¤·¤ÆÊÖ¤·¤Ş¤¹¡£
+[[m:WEBrick::HTTPServlet::DefaultFileHandler#make_partial_content]] ã§åˆ©ç”¨ã™ã‚‹ç¯„å›²æƒ…å ±ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param range 2 Í×ÁÇ¤ÎÇÛÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param range 2 è¦ç´ ã®é…åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param filesize ¥Õ¥¡¥¤¥ë¥µ¥¤¥º¤ò»ØÄê¤·¤Ş¤¹¡£
+@param filesize ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã‚’æŒ‡å®šã—ã¾ã™ã€‚

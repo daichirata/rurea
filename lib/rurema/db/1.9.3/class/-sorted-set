@@ -6,9 +6,9 @@ library=set
 aliases=
 aliasof=
 
-�����Ǥ򥽡��Ȥ��줿���ǰ������祯�饹�Ǥ���
+各要素をソートされた形で扱う集合クラスです。
 
-�ƥ᥽�åɤλ�����ˡ�ˤĤ��Ƥϡ�[[c:Set]] �򻲾Ȥ��Ƥ���������
+各メソッドの使用方法については、[[c:Set]] を参照してください。
 
-RBTree �饤�֥�� ([[url:http://raa.ruby-lang.org/project/ruby-rbtree]])
-�����Ѳ�ǽ�Ǥ����硢���������Ȥ��ƥϥå��������� RBTree����Ѥ��ޤ���
+RBTree ライブラリ ([[url:http://raa.ruby-lang.org/project/ruby-rbtree]])
+が利用可能である場合、内部記憶としてハッシュの代わりに RBTreeを使用します。

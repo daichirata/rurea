@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- ultra_safe=(flag)
-���򥻥åȤ���ȡ��ѥե����ޥ󥹤Ȱ��������˥ե����빹���ξ��ͤ��򤱤뤳�Ȥ��Ǥ��ޤ���
+真をセットすると、パフォーマンスと引き換えにファイル更新の衝突を避けることができます。
 
-���Υե饰�θ��̤�����Τϰ����Υץ�åȥե���������Ǥ���
+このフラグの効果があるのは一部のプラットフォームだけです。
 (e.g. all POSIX platforms: Linux, Mac OS X, FreeBSD, etc)
 
-@param flag �����ͤ���ꤷ�ޤ���
+@param flag 真偽値を指定します。
 
 
 

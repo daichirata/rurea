@@ -2,19 +2,22 @@ names=recvfrom_nonblock
 visibility=public
 kind=defined
 
---- recvfrom_nonblock(maxlen[, flags])
-@todo
+--- recvfrom_nonblock(maxlen, flags=0) -> [String, Addrinfo]
 
-�����åȤ�Υ�֥��å��󥰥⡼�ɤ����ꤷ���塢
-[[man:recvfrom(2)]] ��ƤӽФ��ޤ���
+ソケットをノンブロッキングモードに設定した後、
+[[man:recvfrom(2)]] を呼び出します。
 
-�������֤��ͤ� [[m:Socket#recvfrom]] ��Ʊ���Ǥ���
+引数、返り値は [[m:Socket#recvfrom]] と同じです。
 
-[[man:recvfrom(2)]] �����顼�ˤʤä���硢
-EAGAIN, EINTR ��ޤ��㳰 [[c:Errno::EXXX]] ��ȯ�����ޤ���
+[[man:recvfrom(2)]] がエラーになった場合、
+EAGAIN, EINTR を含め例外 [[c:Errno::EXXX]] が発生します。
+Errno::EWOULDBLOCK、Errno::EAGAIN のような待ってからリトライすることが
+可能であることを意味する例外には、[[c:IO::WaitReadable]] が extend
+されています。
 
-@param maxlen [[m:Socket#recvfrom]] ��Ʊ���Ǥ���
-
-@param flags [[m:Socket#recvfrom]]��Ʊ���Ǥ���
+@param maxlen ソケットから受けとるデータの最大値
+@param flags フラグ
+@raise Errno::EXXX [[man:recvfrom(2)]] がエラーを報告した場合に発生します。詳しくは
+       man を参照してください
 
 

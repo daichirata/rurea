@@ -5,7 +5,7 @@ kind=defined
 --- ISO_8859_16 -> Encoding
 --- ISO8859_16 -> Encoding
 
-ISO 8859-16 ���󥳡��ǥ��󥰡�
+ISO 8859-16 エンコーディング。
 
-�첤���濴�Ȥ����ϰ�ν���򰷤� 8bit single-byte ���󥳡��ǥ��󥰤Ǥ���
+東欧を中心とした地域の諸語を扱う 8bit single-byte エンコーディングです。
 

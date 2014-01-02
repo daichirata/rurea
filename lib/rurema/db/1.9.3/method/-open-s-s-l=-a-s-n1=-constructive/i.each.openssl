@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- each {|item| ... } -> self
-��¤���Υǡ����˴ޤޤ������Ǥ��Ф��ƥ֥��å���
-ɾ�����ޤ���
+構造型のデータに含まれる各要素に対してブロックを
+評価します。
 

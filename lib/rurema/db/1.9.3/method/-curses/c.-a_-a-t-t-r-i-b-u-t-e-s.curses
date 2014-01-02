@@ -4,7 +4,7 @@ kind=defined
 
 --- A_ATTRIBUTES -> Integer
 
-°����Ÿ�����뤿��˻��Ѥ���ʸ�����°���ޥ���������Ǥ���
+属性を展開するために使用する文字列の属性マスク用定数です。
 
 @see [[m:Curses.inch]], [[m:Curses::Window.inch]]
 

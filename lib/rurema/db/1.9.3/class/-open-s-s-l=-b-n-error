@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-[[c:OpenSSL::BN]] ´ØÏ¢¤Î¥¨¥é¡¼¤òÉ½¤¹Îã³°¤Ç¤¹¡£
+[[c:OpenSSL::BN]] é–¢é€£ã®ã‚¨ãƒ©ãƒ¼ã‚’è¡¨ã™ä¾‹å¤–ã§ã™ã€‚

@@ -4,12 +4,12 @@ kind=defined
 
 --- enhance_with_matching_rule(task_name, level = 0) -> Rake::Task | nil
 
-Ϳ����줿������̾�˥ޥå������롼�뤬¸�ߤ�����ϡ����Υ������˸��Ĥ��ä��롼���
-�����������ȥ����������ɲä����֤��ޤ���
+与えられたタスク名にマッチしたルールが存在する場合は、そのタスクに見つかったルールの
+事前タスクとアクションを追加して返します。
 
-@param task_name ��������̾������ꤷ�ޤ���
+@param task_name タスクの名前を指定します。
 
-@param level ���ߤΥ롼����Υͥ��Ȥο�������ꤷ�ޤ���
+@param level 現在のルール解決のネストの深さを指定します。
 
-@raise RuntimeError �롼��β����˥����С��ե�����������ȯ�����ޤ���
+@raise RuntimeError ルールの解決時にオーバーフローした場合に発生します。
 

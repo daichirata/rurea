@@ -4,6 +4,6 @@ kind=defined
 
 --- valid_encoding?  -> bool
 
-ʸ��������Ƥ������ߤΥ��󥳡��ǥ��󥰤˾Ȥ餷���碌�������Ǥ����
-true ���֤��ޤ�������ʤ��� false ���֤��ޤ���
+文字列の内容が、現在のエンコーディングに照らしあわせて妥当であれば
+true を返します。さもなくば false を返します。
 

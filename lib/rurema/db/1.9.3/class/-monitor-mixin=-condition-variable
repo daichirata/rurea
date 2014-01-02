@@ -6,7 +6,7 @@ library=monitor
 aliases=
 aliasof=
 
-[[c:MonitorMixin]] ¤È [[c:Monitor]] ¤Î¤¿¤á¤Î
-¾ò·ïÊÑ¿ô¥¯¥é¥¹¤Ç¤¹¡£
-[[m:MonitorMixin#new_cond]] ¤¬ÊÖ¤·¤Ş¤¹¡£¥æ¡¼¥¶¤¬
-MonitorMixin::ConditionVariable.new ¤òÄ¾ÀÜ¸Æ¤Ö¤³¤È¤Ï¤¢¤ê¤Ş¤»¤ó¡£
+[[c:MonitorMixin]] ã¨ [[c:Monitor]] ã®ãŸã‚ã®
+æ¡ä»¶å¤‰æ•°ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
+[[m:MonitorMixin#new_cond]] ãŒè¿”ã—ã¾ã™ã€‚ãƒ¦ãƒ¼ã‚¶ãŒ
+MonitorMixin::ConditionVariable.new ã‚’ç›´æ¥å‘¼ã¶ã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚

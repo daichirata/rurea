@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- value -> nil
-�쥹�ݥ󥹤� 2xx(����)�Ǥʤ��ä����ˡ��б�����
-�㳰��ȯ�������ޤ���
+レスポンスが 2xx(成功)でなかった場合に、対応する
+例外を発生させます。
 
-@raise HTTPError �쥹�ݥ󥹤� 1xx �Ǥ��뤫�� net/http ���Τ�ʤ�
-                 ����Υ쥹�ݥ󥹤Ǥ������ȯ�����ޤ���
-@raise HTTPRetriableError �쥹�ݥ󥹤� 3xx �Ǥ������ȯ�����ޤ���
-@raise HTTPFatalError �쥹�ݥ󥹤� 4xx �Ǥ������ȯ�����ޤ���
-@raise HTTPServerError �쥹�ݥ󥹤� 5xx �Ǥ������ȯ�����ޤ���
+@raise HTTPError レスポンスが 1xx であるか、 net/http が知らない
+                 種類のレスポンスである場合に発生します。
+@raise HTTPRetriableError レスポンスが 3xx である場合に発生します。
+@raise HTTPFatalError レスポンスが 4xx である場合に発生します。
+@raise HTTPServerError レスポンスが 5xx である場合に発生します。
 
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- >> (n) -> Date
-self ���� n ���������ե��֥������Ȥ��֤��ޤ���
-n �Ͽ��ͤǤʤ���Фʤ�ޤ���
+self から n ヶ月後の日付オブジェクトを返します。
+n は数値でなければなりません。
 
-[[m:Date#next_month]] �⻲�Ȥ��Ƥ���������
+[[m:Date#next_month]] も参照してください。
 
-@param n ���
+@param n 月数
 

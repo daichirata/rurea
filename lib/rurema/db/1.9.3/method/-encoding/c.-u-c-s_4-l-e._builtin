@@ -4,7 +4,7 @@ kind=defined
 
 --- UTF_32LE -> Encoding
 --- UCS_4LE -> Encoding
-UTF-32LE (��ȥ륨��ǥ�����) �Ǥ���
+UTF-32LE (リトルエンディアン) です。
 
-BOM ��ޤߤޤ���
+BOM を含みません。
 

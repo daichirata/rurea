@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- request_uri        -> URI | nil
-�ꥯ�����Ȥ� URI ���֤��ޤ���
+リクエストの URI を返します。
 

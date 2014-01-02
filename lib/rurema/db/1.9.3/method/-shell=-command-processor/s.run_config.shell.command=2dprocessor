@@ -4,7 +4,7 @@ kind=defined
 
 --- run_config -> ()
 
-�桼���Υۡ���ǥ��쥯�ȥ�� "~/.rb_shell" �Ȥ����ե����뤬¸�ߤ���С������ [[m:Kernel.#load]] ���ޤ���
+ユーザのホームディレクトリに "~/.rb_shell" というファイルが存在すれば、それを [[m:Kernel.#load]] します。
 
-¸�ߤ��ʤ����ϲ��⤷�ޤ���
+存在しない時は何もしません。
 

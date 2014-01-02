@@ -5,9 +5,9 @@ kind=defined
 --- IBM737 -> Encoding
 --- CP737 -> Encoding
 
-CP437 ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+CP437 ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-¥®¥ê¥·¥ã¸ì¤ò¼è¤ê°·¤¦ 8bit single-byte¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+ã‚®ãƒªã‚·ãƒ£èªã‚’å–ã‚Šæ‰±ã† 8bit single-byteã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[url:http://en.wikipedia.org/wiki/Code_page_737]]
 

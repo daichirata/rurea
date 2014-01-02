@@ -6,4 +6,4 @@ library=rubygems.exceptions
 aliases=
 aliasof=
 
-Gem �θ��ڤǥ��顼�ˤʤä����˻��Ѥ����㳰�Ǥ���
+Gem の検証でエラーになった場合に使用する例外です。

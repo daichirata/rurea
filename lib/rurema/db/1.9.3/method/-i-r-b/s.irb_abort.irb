@@ -4,14 +4,14 @@ kind=defined
 
 --- irb_abort(irb, exception = Abort)
 
-�¹���ν��������Ǥ��ޤ���ɬ���㳰��ȯ�����뤿�ᡢ�����֤��ޤ���
+実行中の処理を中断します。必ず例外が発生するため、何も返しません。
 
-@param irb ���ߤ� [[c:IRB::Irb]] ���֥������Ȥ���ꤷ�ޤ���
+@param irb 現在の [[c:IRB::Irb]] オブジェクトを指定します。
 
-@param exception ȯ���������㳰����ꤷ�ޤ������ꤷ�ʤ��ä�����
-                 [[c:IRB::Abort]] ��ȯ�����ޤ���
+@param exception 発生させる例外を指定します。指定しなかった場合は
+                 [[c:IRB::Abort]] が発生します。
 
-@raise exception ���� exception �ǻ��ꤷ���㳰��ȯ�����ޤ���
+@raise exception 引数 exception で指定した例外が発生します。
 
-�桼����ľ�ܻ��Ѥ����ΤǤϤ���ޤ���
+ユーザが直接使用するものではありません。
 

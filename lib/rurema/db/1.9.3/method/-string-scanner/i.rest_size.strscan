@@ -4,13 +4,13 @@ kind=defined
 
 --- rest_size -> Fixnum
 --- restsize -> Fixnum
-Ê¸»úÎó¤Î»Ä¤ê¤ÎÄ¹¤µ¤òÊÖ¤·¤Þ¤¹¡£
-stringscanner.rest.size ¤ÈÆ±¤¸¤Ç¤¹¡£
+æ–‡å­—åˆ—ã®æ®‹ã‚Šã®é•·ã•ã‚’è¿”ã—ã¾ã™ã€‚
+stringscanner.rest.size ã¨åŒã˜ã§ã™ã€‚
 
-[[m:StringScanner#restsize]] ¤Ï¾­Íè¤Î¥Ð¡¼¥¸¥ç¥ó¤Çºï½ü¤µ¤ì¤ëÍ½Äê¤Ç¤¹¡£
-Âå¤ï¤ê¤Ë[[m:StringScanner#rest_size]] ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
+[[m:StringScanner#restsize]] ã¯å°†æ¥ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§å‰Šé™¤ã•ã‚Œã‚‹äºˆå®šã§ã™ã€‚
+ä»£ã‚ã‚Šã«[[m:StringScanner#rest_size]] ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
       s = StringScanner.new('test string')
       p s.rest_size # => 11
       p s.rest.size # => 11

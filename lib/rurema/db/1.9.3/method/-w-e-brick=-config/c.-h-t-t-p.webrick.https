@@ -4,5 +4,5 @@ kind=redefined
 
 --- HTTP -> Hash
 
-[[m:WEBrick::Config::SSL]] ¤ÎÆâÍÆ¤¬¥Þ¡¼¥¸¤µ¤ì¤Æ¤¤¤Þ¤¹¡£
+[[m:WEBrick::Config::SSL]] ã®å†…å®¹ãŒãƒžãƒ¼ã‚¸ã•ã‚Œã¦ã„ã¾ã™ã€‚
 

@@ -3,36 +3,36 @@ visibility=public
 kind=defined
 
 --- readchar -> Fixnum
-IO ¥¯¥é¥¹¤ÎÆ±Ì¾¥á¥½¥Ã¥É[[m:IO#readchar]]¤ÈÆ±¤¸¤Ç¤¹¡£
+IO ã‚¯ãƒ©ã‚¹ã®åŒåãƒ¡ã‚½ãƒƒãƒ‰[[m:IO#readchar]]ã¨åŒã˜ã§ã™ã€‚
 
-Ã¢¤·¡¢gzip ¥Õ¥¡¥¤¥ëÃæ¤Ë
-¥¨¥é¡¼¤¬¤¢¤Ã¤¿¾ì¹ç [[c:Zlib::Error]] Îã³°¤ä
-[[c:Zlib::GzipFile::Error]] Îã³°¤¬È¯À¸¤·¤Ş¤¹¡£
+ä½†ã—ã€gzip ãƒ•ã‚¡ã‚¤ãƒ«ä¸­ã«
+ã‚¨ãƒ©ãƒ¼ãŒã‚ã£ãŸå ´åˆ [[c:Zlib::Error]] ä¾‹å¤–ã‚„
+[[c:Zlib::GzipFile::Error]] ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-gzip ¥Õ¥¡¥¤¥ë¤Î¥Õ¥Ã¥¿¡¼¤Î½èÍı¤ËÃí°Õ¤·¤Æ²¼¤µ¤¤¡£
-gzip ¥Õ¥¡¥¤¥ë¤Î¥Õ¥Ã¥¿¡¼¤Ë¤Ï°µ½ÌÁ°¥Ç¡¼¥¿¤Î¥Á¥§¥Ã¥¯¥µ¥à¤¬
-µ­Ï¿¤µ¤ì¤Æ¤¤¤Ş¤¹¡£GzipReader ¥ª¥Ö¥¸¥§¥¯¥È¤Ï¡¢¼¡¤Î»ş¤ËÅ¸³«¤·¤¿
-¥Ç¡¼¥¿¤È¥Õ¥Ã¥¿¡¼¤Î¾È¹ç¤ò¹Ô¤¤¡¢¥¨¥é¡¼¤¬¤¢¤Ã¤¿¾ì¹ç¤Ï
+gzip ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ•ãƒƒã‚¿ãƒ¼ã®å‡¦ç†ã«æ³¨æ„ã—ã¦ä¸‹ã•ã„ã€‚
+gzip ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ•ãƒƒã‚¿ãƒ¼ã«ã¯åœ§ç¸®å‰ãƒ‡ãƒ¼ã‚¿ã®ãƒã‚§ãƒƒã‚¯ã‚µãƒ ãŒ
+è¨˜éŒ²ã•ã‚Œã¦ã„ã¾ã™ã€‚GzipReader ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ã€æ¬¡ã®æ™‚ã«å±•é–‹ã—ãŸ
+ãƒ‡ãƒ¼ã‚¿ã¨ãƒ•ãƒƒã‚¿ãƒ¼ã®ç…§åˆã‚’è¡Œã„ã€ã‚¨ãƒ©ãƒ¼ãŒã‚ã£ãŸå ´åˆã¯
 [[c:Zlib::GzipFile::NoFooter]], [[c:Zlib::GzipFile::CRCError]],
-[[c:Zlib::GzipFile::LengthError]] Îã³°¤òÈ¯À¸¤µ¤»¤Ş¤¹¡£
+[[c:Zlib::GzipFile::LengthError]] ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚
 
-  * EOF (°µ½Ì¥Ç¡¼¥¿¤ÎºÇ¸å) ¤ò±Û¤¨¤ÆÆÉ¤ß¹ş¤ßÍ×µá¤ò¼õ¤±¤¿»ş¡£
-    ¤¹¤Ê¤ï¤Á [[m:Zlib::GzipReader#read]],
-    [[m:Zlib::GzipReader#gets]] ¥á¥½¥Ã¥ÉÅù¤¬ nil ¤òÊÖ¤¹»ş¡£
-  * EOF ¤Ş¤ÇÆÉ¤ß¹ş¤ó¤À¸å¡¢[[m:Zlib::GzipFile#close]] ¥á¥½¥Ã¥É¤¬
-    ¸Æ¤Ó½Ğ¤µ¤ì¤¿»ş¡£
-  * EOF ¤Ş¤ÇÆÉ¤ß¹ş¤ó¤À¸å¡¢[[m:Zlib::GzipReader#unused]] ¥á¥½¥Ã¥É¤¬
-    ¸Æ¤Ó½Ğ¤µ¤ì¤¿»ş¡£
+  * EOF (åœ§ç¸®ãƒ‡ãƒ¼ã‚¿ã®æœ€å¾Œ) ã‚’è¶Šãˆã¦èª­ã¿è¾¼ã¿è¦æ±‚ã‚’å—ã‘ãŸæ™‚ã€‚
+    ã™ãªã‚ã¡ [[m:Zlib::GzipReader#read]],
+    [[m:Zlib::GzipReader#gets]] ãƒ¡ã‚½ãƒƒãƒ‰ç­‰ãŒ nil ã‚’è¿”ã™æ™‚ã€‚
+  * EOF ã¾ã§èª­ã¿è¾¼ã‚“ã å¾Œã€[[m:Zlib::GzipFile#close]] ãƒ¡ã‚½ãƒƒãƒ‰ãŒ
+    å‘¼ã³å‡ºã•ã‚ŒãŸæ™‚ã€‚
+  * EOF ã¾ã§èª­ã¿è¾¼ã‚“ã å¾Œã€[[m:Zlib::GzipReader#unused]] ãƒ¡ã‚½ãƒƒãƒ‰ãŒ
+    å‘¼ã³å‡ºã•ã‚ŒãŸæ™‚ã€‚
 
-@raise EOFError  EOF ¤ËÅşÃ£¤·¤¿¤È¤­È¯À¸¤·¤Ş¤¹¡£
-@raise Zlib::Error [[c:Zlib::Error]] ¤ò»²¾È
-@raise Zlib::GzipFile::Error [[c:Zlib::GzipFile::Error]]¤ò»²¾È
-@raise Zlib::GzipFile::NoFooter [[c:Zlib::GzipFile::NoFooter]]¤ò»²¾È
-@raise Zlib::GzipFile::CRCError [[c:Zlib::GzipFile::CRCError]]¤ò»²¾È
-@raise Zlib::GzipFile::LengthError [[c:Zlib::GzipFile::LengthError]]¤ò»²¾È
+@raise EOFError  EOF ã«åˆ°é”ã—ãŸã¨ãç™ºç”Ÿã—ã¾ã™ã€‚
+@raise Zlib::Error [[c:Zlib::Error]] ã‚’å‚ç…§
+@raise Zlib::GzipFile::Error [[c:Zlib::GzipFile::Error]]ã‚’å‚ç…§
+@raise Zlib::GzipFile::NoFooter [[c:Zlib::GzipFile::NoFooter]]ã‚’å‚ç…§
+@raise Zlib::GzipFile::CRCError [[c:Zlib::GzipFile::CRCError]]ã‚’å‚ç…§
+@raise Zlib::GzipFile::LengthError [[c:Zlib::GzipFile::LengthError]]ã‚’å‚ç…§
 
   =begin
-  # hoge.gz ¤¬¤Ê¤¤¾ì¹ç¤Ï²¼µ­¤ÇºîÀ®¤Ç¤­¤ë¡£
+  # hoge.gz ãŒãªã„å ´åˆã¯ä¸‹è¨˜ã§ä½œæˆã§ãã‚‹ã€‚
   Zlib::GzipWriter.open('hoge.gz') { |gz|
     gz.puts 'hoge'
   }

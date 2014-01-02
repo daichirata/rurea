@@ -5,8 +5,8 @@ kind=defined
 --- delete_key(name, recursive = false)
 @todo
 
-���֥��� name �Ȥ��Υ��������Ĥ��٤Ƥ��ͤ������ޤ���
+サブキー name とそのキーが持つすべての値を削除します。
 
-recursive �� false �ξ�硤���Υ��֥����ϥ��֥�������äƤ��ƤϤʤ�ޤ���
-true �ξ�硤�����ϺƵ�Ū�˺������ޤ���
+recursive が false の場合，そのサブキーはサブキーを持っていてはなりません。
+true の場合，キーは再帰的に削除されます。
 

@@ -2,8 +2,12 @@ names=new_with_uri
 visibility=public
 kind=defined
 
---- new_with_uri(uri)
-@todo
+--- new_with_uri(uri) -> DRb::DRbObject
+URI から新しい DRbObject を生成します。
 
-Create a new DRbObject from a URI alone.
+別プロセスの [[m:DRb.#start_service]] で指定したフロントオブジェクトを
+指すリモートオブジェクトを取り出します。
+
+@param uri URI リモートオブジェクトを指定するための URI (文字列)
+
 

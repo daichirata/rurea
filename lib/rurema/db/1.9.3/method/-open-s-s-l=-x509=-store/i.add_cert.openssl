@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- add_cert(cert) -> self
-CA ╬злю╫Я╓Р©╝мЙ╓╧╓К╬злю╫Я╓х╓╥╓ф╬злю╫Я╔╧╔х╔╒╓к╡ц╓╗╓ч╓╧║ё
+CA Х╗╪Ф≤▌Ф⌡╦Ц┌▓Д©║И═╪Ц│≥Ц┌▀Х╗╪Ф≤▌Ф⌡╦Ц│╗Ц│≈Ц│╕Х╗╪Ф≤▌Ф⌡╦Ц┌╧Ц┐┬Ц┌╒Ц│╚Е┼═Ц│┬Ц│╬Ц│≥Ц─┌
 
-@param cert ди╡ц╓╧╓К CA ╬злю╫Я╓н [[c:OpenSSL::X509::Certificate]] ╔╙╔ж╔╦╔╖╔╞╔х
-@raise OpenSSL::X509::StoreError ди╡ц╓к╪╨гт╓╥╓©╬Л╧Г╓кх╞ю╦╓╥╓ч╓╧
+@param cert Х©╫Е┼═Ц│≥Ц┌▀ CA Х╗╪Ф≤▌Ф⌡╦Ц│╝ [[c:OpenSSL::X509::Certificate]] Ц┌╙Ц┐√Ц┌╦Ц┌╖Ц┌╞Ц┐┬
+@raise OpenSSL::X509::StoreError Х©╫Е┼═Ц│╚Е╓╠Ф∙≈Ц│≈Ц│÷Е═╢Е░┬Ц│╚Г≥╨Г■÷Ц│≈Ц│╬Ц│≥
 

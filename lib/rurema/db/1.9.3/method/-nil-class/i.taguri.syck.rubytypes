@@ -4,5 +4,5 @@ kind=added
 
 --- taguri -> String
 
-���ȤΥ��� URI ���֤��ޤ���
+自身のタグ URI を返します。
 

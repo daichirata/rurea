@@ -4,15 +4,15 @@ kind=defined
 
 --- new(first, last, exclude_end = false) -> Range
 
-first ���� last �ޤǤ��ϰϥ��֥������Ȥ����������֤���
-����
+first から last までの範囲オブジェクトを生成して返しま
+す。
 
-exclude_end �����ʤ�н�ü��ޤޤʤ��ϰϥ��֥������Ȥ���
-�����ޤ���exclude_end ��ά���ˤϽ�ü��ޤߤޤ���
+exclude_end が真ならば終端を含まない範囲オブジェクトを生
+成します。exclude_end 省略時には終端を含みます。
 
-@param first �ǽ�Υ��֥�������
-@param last �Ǹ�Υ��֥�������
-@param exclude_end ���򥻥åȤ�����罪ü��ޤޤʤ��ϰϥ��֥������Ȥ��������ޤ�
+@param first 最初のオブジェクト
+@param last 最後のオブジェクト
+@param exclude_end 真をセットした場合終端を含まない範囲オブジェクトを生成します
 
-@raise ArgumentError first <=> last �� nil �ξ���ȯ�����ޤ�
+@raise ArgumentError first <=> last が nil の場合に発生します
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- add_bindir(executables) -> Array | nil
 
-�¹ԥ��ޥ�ɤγ�Ǽ�����֤��ޤ���
+実行コマンドの格納場所を返します。
 
-@param executables �¹ԥ��ޥ��̾���Ǽ�����������ꤷ�ޤ���
+@param executables 実行コマンド名を格納した配列を指定します。
 

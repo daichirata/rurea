@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- sign(data)
-���Ȥ�����ѤߤΥ����������ȥ��르�ꥺ����Ѥ���Ϳ����줿�ǡ����˽�̾���ޤ���
+自身に設定済みのダイジェストアルゴリズムを用いて与えられたデータに署名します。
 
-@param data ��̾�оݤΥǡ�������ꤷ�ޤ���
+@param data 署名対象のデータを指定します。
 

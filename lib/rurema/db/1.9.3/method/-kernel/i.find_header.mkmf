@@ -4,13 +4,13 @@ kind=added
 
 --- find_header(header, *paths) -> bool
 
-Ϳ����줿 paths ���� header �򸡺��������Ĥ��ä����Ͽ����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+与えられた paths から header を検索し、見つかった場合は真を返します。
+そうでない場合は偽を返します。
 
-�إå������Ĥ��ä��ǥ��쥯�ȥ�򥳥�ѥ�����Ϥ����ޥ�ɥ饤�󥪥ץ���
-����ɲä��ޤ�(-I ���ץ������ͳ���ޤ�)��
+ヘッダが見つかったディレクトリをコンパイラに渡すコマンドラインオプショ
+ンに追加します(-I オプションを経由します)。
 
-@param header �إå�����ꤷ�ޤ���
+@param header ヘッダを指定します。
 
-@param paths �إå��򸡺�����ѥ�����ꤷ�ޤ���
+@param paths ヘッダを検索するパスを指定します。
 

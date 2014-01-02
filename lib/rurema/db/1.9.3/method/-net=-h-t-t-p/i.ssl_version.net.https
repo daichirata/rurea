@@ -3,7 +3,7 @@ visibility=public
 kind=added
 
 --- ssl_version -> String | Symbol | nil
-อ๘อัคนค๋ฅืฅํฅศฅณฅ๋คฮผ๏ฮเค๒สึคทคÞคนกฃ
+ๅฉ็”จใใใ—ใญใใณใซใฎ็จฎ้กใ’่ฟ”ใ—ใพใใ€
 
 @see [[m:Net::HTTP#ssl_version=]]
 

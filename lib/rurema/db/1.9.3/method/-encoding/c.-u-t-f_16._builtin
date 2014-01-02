@@ -2,8 +2,8 @@ names=UTF_16
 visibility=public
 kind=defined
 
---- UTF_16
-UTF-16 (BOM��ޤ�) �Ǥ���
+--- UTF_16 -> Encoding
+UTF-16 (BOMを含む) です。
 
-���ߡ����󥳡��ǥ��󥰤Ǥ���
+ダミーエンコーディングです。
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- transliterate? -> bool
 
-ʸ������Ѵ����ˡ�ɽ���Ǥ��ʤ�ʸ����Ʊ�������ܤ�ʸ����"����"���뤫�ɤ�
-�����֤��ޤ���
+文字列の変換時に、表現できない文字を同じ見た目の文字に"翻訳"するかどう
+かを返します。
 
-@raise NotImplementedError �¹ԥץ�åȥե�����ǥ��ݡ��Ȥ���Ƥ��ʤ���
-                           ���ȯ�����ޤ���
+@raise NotImplementedError 実行プラットフォームでサポートされていない場
+                           合に発生します。
 

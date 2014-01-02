@@ -4,19 +4,20 @@ kind=defined
 
 --- shutdown(how = Socket::SHUT_RDWR) -> 0
 
-�����åȤΰʹߤ���³��λ�����ޤ���
-how ���ͤˤ�äưʲ��Τ褦����³����λ���ޤ���
+ソケットの以降の接続を終了させます。
 
-  * Socket::SHUT_RD: ����ʹߤμ��������ݤ���ޤ�
-  * Socket::SHUT_WR: ����ʹߤ����������ݤ���ޤ�
-  * Socket::SHUT_RDWR: ����ʹߤ������������Ȥ�˵��ݤ���ޤ�
+how の値によって以下のように接続が終了します。
 
-how ���ά����� Socket::SHUT_RDWR ����ꤷ�����Ȥˤʤ�ޤ���
-[[man:shutdown(2)]] �򻲾Ȥ��Ƥ���������
+  * Socket::SHUT_RD: それ以降の受信が拒否されます
+  * Socket::SHUT_WR: それ以降の送信が拒否されます
+  * Socket::SHUT_RDWR: それ以降の送信、受信ともに拒否されます
 
-@param how ��³�ν�λ�λ����� Socket::SHUT_RD, Socket::SHUT_WR, Socket::SHUT_RDWR �ʤɤǻ��ꤷ�ޤ���
+how を省略すると Socket::SHUT_RDWR を指定したことになります。
+[[man:shutdown(2)]] を参照してください。
 
-@raise Errno::EXXX �����åȤΰʹߤ���³��λ�����Ԥ�������ȯ�����ޤ���
-@raise ArgumentError how ���ϰϳ������������Ϥ�������ȯ�����ޤ���
-@raise SecurityError �����ե�٥뤬 4 �ʾ�ǡ������åȤ˱����ޡ������Ĥ��Ƥ��ʤ����ȯ�����ޤ���
+@param how 接続の終了の仕方を Socket::SHUT_RD, Socket::SHUT_WR, Socket::SHUT_RDWR などで指定します。
+
+@raise Errno::EXXX ソケットの以降の接続を終了操作が失敗した場合に発生します。
+@raise ArgumentError how に範囲外の整数を入力した場合に発生します。
+@raise SecurityError セーフレベルが 4 以上で、ソケットに汚染マークがついていない場合発生します。
 

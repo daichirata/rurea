@@ -4,13 +4,13 @@ kind=defined
 
 --- to=(s) 
 
-¼«¿È¤Î e-mail ¥¢¥É¥ì¥¹¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Þ¤¹¡£
+è‡ªèº«ã® e-mail ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î e-mail ¥¢¥É¥ì¥¹¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param s è‡ªèº«ã® e-mail ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise URI::InvalidComponentError ÉÔÀµ¤Ê°ú¿ô s ¤ËÂÐ¤·¤ÆÈ¯À¸¤·¤Þ¤¹¡£
+@raise URI::InvalidComponentError ä¸æ­£ãªå¼•æ•° s ã«å¯¾ã—ã¦ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   m = URI.parse("mailto:nospam@example.com")
   m.to = "nospaaaam@example.com"
   p m                                        #=> #<URI::MailTo:0xb7bf0614 URL:mailto:nospaaaam@example.com>

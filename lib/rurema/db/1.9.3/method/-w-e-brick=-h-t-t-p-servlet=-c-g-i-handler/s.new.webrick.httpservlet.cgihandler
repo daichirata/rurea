@@ -4,11 +4,11 @@ kind=defined
 
 --- new(server, name) -> WEBrick::HTTPServlet::CGIHandler
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-@param server [[c:WEBrick::GenericServer]] �Υ��֥��饹�Υ��󥹥��󥹤�
-              ���ꤷ�ޤ���
+@param server [[c:WEBrick::GenericServer]] のサブクラスのインスタンスを
+              指定します。
 
-@param name �¹Ԥ����� CGI �Υե������ʸ�����Ϳ���ޤ���
+@param name 実行したい CGI のファイルを文字列で与えます。
 
 

@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- os -> String
-�ۥ��ȤǻȤ��� OS ̾���֤��ޤ���
+ホストで使われる OS 名を返します。
 
 

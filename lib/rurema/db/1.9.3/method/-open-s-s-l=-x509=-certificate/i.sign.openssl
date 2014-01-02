@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- sign(pkey, digest) -> self
-¾ÚÌÀ½ñ¤Ë½ğÌ¾¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã«ç½²åã—ã¾ã™ã€‚
 
-DSA ¤Ç½ğÌ¾¤¹¤ë¾ì¹ç¤Ï digest ¤Ï "dss1" ¤Ç¤Ê¤±¤ì¤Ğ¤Ê¤ê¤Ş¤»¤ó¡£
+DSA ã§ç½²åã™ã‚‹å ´åˆã¯ digest ã¯ "dss1" ã§ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚
 
-@param pkey È¯¹Ô¼Ô(issuer)¤ÎÈëÌ©¸°
-@param digest ¥Ï¥Ã¥·¥å´Ø¿ô¤òÉ½¤¹Ê¸»úÎó
+@param pkey ç™ºè¡Œè€…(issuer)ã®ç§˜å¯†éµ
+@param digest ãƒãƒƒã‚·ãƒ¥é–¢æ•°ã‚’è¡¨ã™æ–‡å­—åˆ—
 

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- mailbox -> String
-�䤤��碌�����᡼��ܥå�����̾�����֤��ޤ���
+問い合わせしたメールボックスの名前を返します。
 

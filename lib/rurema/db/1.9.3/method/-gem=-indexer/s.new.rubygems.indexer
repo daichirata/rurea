@@ -4,5 +4,5 @@ kind=defined
 
 --- new(directory) -> Gem::Indexer
 
-Ϳ����줿�ǥ��쥯�ȥ�� Gem ��ݥ��ȥ�Υ���ǥå�����������뤿���
-���Ȥ��������ޤ���
+与えられたディレクトリに Gem リポジトリのインデックスを作成するために
+自身を初期化します。

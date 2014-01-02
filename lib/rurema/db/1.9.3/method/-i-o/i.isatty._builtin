@@ -5,7 +5,7 @@ kind=defined
 --- isatty    -> bool
 --- tty?      -> bool
 
-�����ϥݡ��Ȥ�tty�˷�礷�Ƥ�����������֤��ޤ��������Ǥʤ���� false ���֤��ޤ���
+入出力ポートがttyに結合している時、真を返します。そうでない場合 false を返します。
 
-@raise IOError ���� close ����Ƥ������ȯ�����ޤ���
+@raise IOError 既に close されている場合に発生します。
 

@@ -4,4 +4,4 @@ kind=defined
 
 --- indent    -> Integer
 
-���ߤΥ���ǥ�Ȥο������֤��ޤ���
+現在のインデントの深さを返します。

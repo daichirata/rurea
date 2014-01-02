@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- NOCHAIN  -> Integer
-��̾���ڻ��ˡ���å������˴ޤޤ����������� CA �Ȥ������Ѥ��ޤ���
+署名検証時に、メッセージに含まれる証明書を中間 CA として利用しません。
 
-[[m:OpenSSL::PKCS7#verify]] �����Ѳ�ǽ�ʥե饰�Ǥ���
+[[m:OpenSSL::PKCS7#verify]] で利用可能なフラグです。
 

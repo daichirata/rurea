@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- pending -> Integer | nil
-OpenSSL�����ΥХåե����ݻ����Ƥ��롢ľ�����ɤ߼���ǽ��
-�ǡ����ΥХ��ȿ����֤��ޤ���
+OpenSSL内部のバッファが保持している、直ちに読み取り可能な
+データのバイト数を返します。
 
-�ϥ�ɥ��������������ˤ� nil ���֤��ޤ���
+ハンドシェイク開始前には nil を返します。
 
 

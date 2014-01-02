@@ -4,20 +4,20 @@ kind=defined
 
 --- add_word_pair(start, stop, name) -> ()
 
-start �� stop �ǤϤ��ޤ��ʸ����(��. *bold*)��ե����ޥåȤ��оݤˤ���
-����
+start と stop ではさまれる文字列(例. *bold*)をフォーマットの対象にしま
+す。
 
-@param start ���ϤȤʤ�ʸ�������ꤷ�ޤ���
+@param start 開始となる文字列を指定します。
 
-@param stop ��λ�Ȥʤ�ʸ�������ꤷ�ޤ���start ��Ʊ��ʸ����ˤ������
-            ��ǽ�Ǥ���
+@param stop 終了となる文字列を指定します。start と同じ文字列にする事も
+            可能です。
 
-@param name [[c:SM::ToHtml]] �ʤɤΥե����ޥå��˼��̤��������̾����
-            [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param name [[c:SM::ToHtml]] などのフォーマッタに識別させる時の名前を
+            [[c:Symbol]] で指定します。
 
-@raise RuntimeError start �� "<" �ǻϤޤ�ʸ�������ꤷ������ȯ�����ޤ���
+@raise RuntimeError start に "<" で始まる文字列を指定した場合に発生します。
 
-��:
+例:
 
   require 'rdoc/markup/simple_markup'
   require 'rdoc/markup/simple_markup/to_html'
@@ -28,6 +28,6 @@ start �� stop �ǤϤ��ޤ��ʸ����(��. *bold*)��ե����ޥåȤ��оݤˤ���
   h.add_tag(:STRIKE, "<strike>", "</strike>")
   puts m.convert(input_string, h)
 
-�Ѵ����˼ºݤ˥ե����ޥåȤ�Ԥ��ˤ� [[m:SM::ToHtml#add_tag]] �Τ褦�ˡ�
-�ե����ޥå�¦�Ǥ�����Ԥ�ɬ�פ�����ޤ���
+変換時に実際にフォーマットを行うには [[m:SM::ToHtml#add_tag]] のように、
+フォーマッタ側でも操作を行う必要があります。
 

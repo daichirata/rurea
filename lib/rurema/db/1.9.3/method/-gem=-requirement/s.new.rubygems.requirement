@@ -4,9 +4,9 @@ kind=defined
 
 --- new(requirements) -> Gem::Requirement
 
-[[c:Gem::Requirement]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òºîÀ®¤·¤Ş¤¹¡£
+[[c:Gem::Requirement]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½œæˆã—ã¾ã™ã€‚
 
-@param requirements Ê¸»úÎó¤«ÇÛÎó¤« [[c:Gem::Version]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param requirements æ–‡å­—åˆ—ã‹é…åˆ—ã‹ [[c:Gem::Version]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Gem::Requirement#parse]], [[m:Gem::Requirement.create]]
 

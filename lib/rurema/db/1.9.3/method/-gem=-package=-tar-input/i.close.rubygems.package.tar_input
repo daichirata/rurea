@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- close
-¼«¿È¤È¼«¿È¤Ë´ØÏ¢ÉÕ¤±¤é¤ì¤¿ IO ¤ò close ¤·¤Ş¤¹¡£
+è‡ªèº«ã¨è‡ªèº«ã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸ IO ã‚’ close ã—ã¾ã™ã€‚
 

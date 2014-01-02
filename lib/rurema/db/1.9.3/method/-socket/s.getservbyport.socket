@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- getservbyport(port, protocol_name="tcp") -> String
-@todo
-¥Ý¡¼¥ÈÈÖ¹æ¤ËÂÐ±þ¤¹¤ë¥µ¡¼¥Ó¥¹¤ÎÀµ¼°Ì¾¤òÊÖ¤·¤Þ¤¹¡£
 
-@param port ¥Ý¡¼¥ÈÈÖ¹æ
-@param protocol_name "tcp" ¤ä "udp" ¤Ê¤É¤Î¥×¥í¥È¥³¥ëÌ¾
-@return ¥µ¡¼¥Ó¥¹¤ÎÀµ¼°Ì¾
+ãƒãƒ¼ãƒˆç•ªå·ã«å¯¾å¿œã™ã‚‹ã‚µãƒ¼ãƒ“ã‚¹ã®æ­£å¼åã‚’è¿”ã—ã¾ã™ã€‚
+
+@param port ãƒãƒ¼ãƒˆç•ªå·
+@param protocol_name "tcp" ã‚„ "udp" ãªã©ã®ãƒ—ãƒ­ãƒˆã‚³ãƒ«å
+@return ã‚µãƒ¼ãƒ“ã‚¹ã®æ­£å¼å
 
    Socket.getservbyport(80)         #=> "www"
    Socket.getservbyport(514, "tcp") #=> "shell"

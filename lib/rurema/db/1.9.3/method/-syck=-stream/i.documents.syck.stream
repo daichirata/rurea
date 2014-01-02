@@ -4,7 +4,7 @@ kind=defined
 
 --- documents -> Array
 
-���ȤΥɥ�����Ȥ�������֤��ޤ���
+自身のドキュメントを配列で返します。
 
   require 'yaml'
   

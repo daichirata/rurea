@@ -6,4 +6,4 @@ library=rubygems.user_interaction
 aliases=
 aliasof=
 
-¤³¤Î¥â¥¸¥å¡¼¥ë¤Ï¥Ç¥Õ¥©¥ë¥È¤Î [[c:Gem::UserInteraction]] ¤òÄêµÁ¤·¤Æ¤¤¤Ş¤¹¡£
+ã“ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã® [[c:Gem::UserInteraction]] ã‚’å®šç¾©ã—ã¦ã„ã¾ã™ã€‚

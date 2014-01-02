@@ -4,15 +4,15 @@ kind=defined
 
 --- create_listeners(address, port, logger = nil) -> [TCPServer]
 
-Í¿¤¨¤é¤ì¤¿¥¢¥É¥ì¥¹¤È¥İ¡¼¥È¤Ç [[c:TCPServer]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·
-¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸã‚¢ãƒ‰ãƒ¬ã‚¹ã¨ãƒãƒ¼ãƒˆã§ [[c:TCPServer]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—
+ã¾ã™ã€‚
 
-@param address ¥¢¥É¥ì¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param address ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param port ¥İ¡¼¥ÈÈÖ¹æ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param port ãƒãƒ¼ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param logger ¥í¥¬¡¼¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param logger ãƒ­ã‚¬ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise ArgumentError port ¤ò»ØÄê¤·¤Ê¤«¤Ã¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise ArgumentError port ã‚’æŒ‡å®šã—ãªã‹ã£ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:Socket.getaddrinfo]], [[c:TCPServer]]

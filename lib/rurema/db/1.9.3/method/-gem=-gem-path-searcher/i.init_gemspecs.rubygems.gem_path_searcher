@@ -4,7 +4,7 @@ kind=defined
 
 --- init_gemspecs -> [Gem::Specification]
 
-���󥹥ȡ���Ѥߤ� Gem �� [[c:Gem::Specification]] �Υꥹ�Ȥ��֤��ޤ���
+インストール済みの Gem の [[c:Gem::Specification]] のリストを返します。
 
-�ꥹ�Ȥϥ���ե��٥åȽ礫�ĥС������ο�������˥����Ȥ���Ƥ��ޤ���
+リストはアルファベット順かつバージョンの新しい順にソートされています。
 

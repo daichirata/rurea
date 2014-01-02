@@ -4,5 +4,5 @@ kind=defined
 
 --- has_rdoc=(flag)
 
-RDoc ���������뤫�ɤ����򥻥åȤ��ޤ����ǥե���Ȥϵ��Ǥ���
+RDoc を生成するかどうかをセットします。デフォルトは偽です。
 

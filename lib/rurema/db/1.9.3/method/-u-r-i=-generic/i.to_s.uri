@@ -4,8 +4,8 @@ kind=defined
 
 --- to_s      -> String
 
-¼«¿È¤¬É½¤¹ URI ¤òÊ¸»úÎó¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒè¡¨ã™ URI ã‚’æ–‡å­—åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
  p URI.parse('http://example.com/').to_s #=> "http://example.com/"
 

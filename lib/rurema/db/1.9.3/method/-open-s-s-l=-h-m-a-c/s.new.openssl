@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- new(key, digest) -> OpenSSL::HMAC
-HMAC ��׻����뤿��Υ��֥������Ȥ��������ޤ���
+HMAC を計算するためのオブジェクトを生成します。
 
-�������줿���֥������Ȥ��������֤����Ϥʤ��ξ��֤˥ꥻ�åȤ���ޤ���
+生成されたオブジェクトの内部状態は入力なしの状態にリセットされます。
 
-digest �ˤ����Ѥ���ϥå���ؿ���ɽ��ʸ����("md5", "sha256" �ʤ�)
-���Ϥ��ޤ���
+digest には利用するハッシュ関数を表す文字列("md5", "sha256" など)
+を渡します。
 
-@param key ���Ѥ��븰��ʸ����
-@param digest ���Ѥ���ϥå���ؿ�
+@param key 利用する鍵の文字列
+@param digest 利用するハッシュ関数
 

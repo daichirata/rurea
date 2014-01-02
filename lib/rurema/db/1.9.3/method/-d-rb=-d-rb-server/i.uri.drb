@@ -2,7 +2,6 @@ names=uri
 visibility=public
 kind=defined
 
---- uri
-@todo
-The URI of this DRbServer.
+--- uri -> String|nil
+サーバに紐付けけられた URI を返します。
 

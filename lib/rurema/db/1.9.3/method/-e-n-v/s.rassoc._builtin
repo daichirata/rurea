@@ -4,10 +4,10 @@ kind=defined
 
 --- rassoc(value) -> Array | nil
 
-���Ȥ�Ϳ����줿�ͤ��б��������Ǥ���ĤȤ������Ĥ��ä����ǤΥ������ͤΥڥ���
-����Ȥ����֤��ޤ���
+自身が与えられた値に対応する要素を持つとき、見つかった要素のキーと値のペアを
+配列として返します。
 
-@param value ���������ͤ���ꤷ�ޤ���
+@param value 検索する値を指定します。
 
 @see [[m:Hash#rassoc]]
 

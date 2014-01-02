@@ -4,5 +4,5 @@ kind=defined
 
 --- user          -> String
 
-REMOTE_USER ��ʸ����Ȥ����֤��ޤ���
+REMOTE_USER を文字列として返します。
 

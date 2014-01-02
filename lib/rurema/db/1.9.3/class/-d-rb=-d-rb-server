@@ -6,8 +6,16 @@ library=drb
 aliases=
 aliasof=
 
-Class representing a drb server instance.
+dRuby サーバクラス。
 
-A DRbServer must be running in the local process before any incoming dRuby calls can be accepted, or any local objects can be passed as dRuby references to remote processes, even if those local objects are never actually called remotely. You do not need to start a DRbServer in the local process if you are only making outgoing dRuby calls passing marshalled parameters.
+dRuby サーバは
+  * リモートからのメソッド呼び出しを受け取る
+  * ローカルオブジェクトをリモートプロセスにリモートオブジェクトとして
+    渡す
+などを実現するために必要です。そのため、このような操作をする前に
+サーバを起動する必要があります。
+他のプロセスのリモートメソッドをマーシャリング可能な
+引数のみで呼び出すならばサーバは必要ありません。
 
-Unless multiple servers are being used, the local DRbServer is normally started by calling DRb.start_service.
+複数のサーバを起動することもできますが、通常は
+[[m:DRb.#start_service]] でサーバを起動します。

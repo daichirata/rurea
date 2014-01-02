@@ -4,13 +4,13 @@ kind=defined
 
 --- verbose(value = nil){ ... }
 
-�ܺ٤���Ϥ��뤫�ɤ��������椷�ޤ���
+詳細を出力するかどうかを制御します。
 
-@param value ������ꤹ��Ⱦܺ٤���Ϥ��ޤ���
+@param value 真を指定すると詳細を出力します。
 
-��
-    verbose              # ���ߤξ��֤��֤��ޤ���
-    verbose(v)           # Ϳ����줿���֤��ѹ����ޤ���
-    verbose(v) { code }  # �֥��å���ɾ������֤���Ϳ����줿���֤��ѹ����ޤ���
-                         # �֥��å���ɾ���������ȸ����ͤ��ᤷ�ޤ���
+例
+    verbose              # 現在の状態を返します。
+    verbose(v)           # 与えられた状態に変更します。
+    verbose(v) { code }  # ブロックを評価する間だけ与えられた状態に変更します。
+                         # ブロックの評価が終わると元の値に戻します。
 

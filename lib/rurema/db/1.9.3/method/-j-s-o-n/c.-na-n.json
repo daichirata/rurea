@@ -4,7 +4,7 @@ kind=defined
 
 --- NaN -> Float
 
-NaN (Not a Number) ¤òÉ½¤·¤Ş¤¹¡£
+NaN (Not a Number) ã‚’è¡¨ã—ã¾ã™ã€‚
 
 @see [[c:Float]]
 

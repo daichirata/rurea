@@ -5,36 +5,36 @@ kind=defined
 --- get(path, header = nil, dest = nil) -> Net::HTTPResponse
 --- get(path, header = nil, dest = nil) {|body_segment| .... } -> Net::HTTPResponse
 
-�����о�� path �ˤ��륨��ƥ��ƥ����������
-[[c:Net::HTTPResponse]] �Υ��󥹥��󥹤Ȥ����֤��ޤ���
+サーバ上の path にあるエンティティを取得し、
+[[c:Net::HTTPResponse]] のインスタンスとして返します。
 
-header �� nil
-�Ǥʤ���С��ꥯ�����Ȥ�����Ȥ��ˤ������Ƥ� HTTP �إå��Ȥ���
-����ޤ��� header �� { 'Accept' = > '*/*', ... } �Ȥ���
-���Υϥå���Ǥʤ���Ф����ޤ���
+header が nil
+でなければ、リクエストを送るときにその内容を HTTP ヘッダとして
+送ります。 header は { 'Accept' = > '*/*', ... } という
+形のハッシュでなければいけません。
 
-�֥��å��Ȱ��˸ƤӤ����줿�Ȥ���
-����ƥ��ƥ��ܥǥ��򾯤�����ʸ����Ȥ���
-�֥��å���Ϳ���ޤ������ΤȤ�����ͤ� 
-[[c:Net::HTTPResponse]] ���֥������Ȥ�ͭ���� body ��
-�����ޤ���
+ブロックと一緒に呼びだされたときは
+エンティティボディを少しずつ文字列として
+ブロックに与えます。このとき戻り値の 
+[[c:Net::HTTPResponse]] オブジェクトは有効な body を
+持ちません。
 
-dest �ϻ����٤�ΰ����Ǥ������Ѥ��ʤ��Ǥ���������
-dest ����ꤷ�����ˤ�
-�ܥǥ��򾯤����ļ������ƽ缡
-��dest << �ܥǥ������ҡפ�¹Ԥ��ޤ���
+dest は時代遅れの引数です。利用しないでください。
+dest を指定した場合には
+ボディを少しずつ取得して順次
+「dest << ボディの断片」を実行します。
 
-@param path �������륨��ƥ��ƥ��Υѥ���ʸ����ǻ��ꤷ�ޤ���
-@param header �ꥯ�����Ȥ� HTTP �إå���ϥå���ǻ��ꤷ�ޤ���
-@param dest ���Ѥ��ʤ��Ǥ���������
+@param path 取得するエンティティのパスを文字列で指定します。
+@param header リクエストの HTTP ヘッダをハッシュで指定します。
+@param dest 利用しないでください。
 
-1.1 �ߴ��⡼�ɤξ��ϡ��쥹�ݥ󥹤˱������㳰��ȯ�����ޤ���
-�ޤ����֤��ͤ� [�쥹�ݥ󥹥��֥�������, ���Υܥǥ�] �Ȥʤ�ޤ���
+1.1 互換モードの場合は、レスポンスに応じて例外が発生します。
+また、返り値が [レスポンスオブジェクト, そのボディ] となります。
 
-  # net/http version 1.1 (Ruby 1.6.x)
+  # net/http version 1.1
   response, body = http.get( '/index.html' )
   
-  # net/http version 1.2 (Ruby 1.8.x or later)
+  # net/http version 1.2
   response = http.get('/index.html')
   
   # compatible in both version

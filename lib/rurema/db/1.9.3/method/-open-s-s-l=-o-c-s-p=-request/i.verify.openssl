@@ -3,19 +3,19 @@ visibility=public
 kind=defined
 
 --- verify(certs, store, flags=0) -> bool
-Request ���֥������Ȥν�̾�򸡾ڤ��ޤ���
+Request オブジェクトの署名を検証します。
 
-���ڤ������������Ͽ����֤��ޤ���
+検証に成功した場合は真を返します。
 
-flags �ˤϰʲ����ͤ� OR ���ä���Τ��Ϥ��ޤ���
+flags には以下の値の OR を取ったものを渡します。
   * [[m:OpenSSL::OCSP::TRUSTOTHER]]
   * [[m:OpenSSL::OCSP::NOSIGS]]
   * [[m:OpenSSL::OCSP::NOVERIFY]]
   * [[m:OpenSSL::OCSP::NOINTERN]]
 
-TRUSTOTHER ��ͭ���ˤ���� certs �ǻ��ꤷ��������򸡾ڤ����˿��ꤷ�ޤ���
+TRUSTOTHER を有効にすると certs で指定した証明書を検証せずに信頼します。
 
-@param certs ���ڤ��Ѥ����ɲ�Ū�ʾ�����([[c:OpenSSL::X509::Certificate]] ���֥������Ȥ�����)
-@param store ���ڤ��Ѥ�������񥹥ȥ�([[c:OpenSSL::X509::Store]] ���֥�������)
-@param flags �ե饰(����)
+@param certs 検証に用いる追加的な証明書([[c:OpenSSL::X509::Certificate]] オブジェクトの配列)
+@param store 検証に用いる証明書ストア([[c:OpenSSL::X509::Store]] オブジェクト)
+@param flags フラグ(整数)
 

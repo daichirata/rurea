@@ -4,9 +4,9 @@ kind=defined
 
 --- import(array) -> self
 
-Ϳ����줿����򼫿Ȥ˥���ݡ��Ȥ��ޤ���
+与えられた配列を自身にインポートします。
 
-@param array �ե�����̾�Υꥹ�Ȥ���ꤷ�ޤ���
+@param array ファイル名のリストを指定します。
 
 
 

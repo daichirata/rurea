@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- to_der -> String
-DER �����ΥХ��ʥ�����Ѵ����ޤ���
+DER 形式のバイナリ列に変換します。
 
 

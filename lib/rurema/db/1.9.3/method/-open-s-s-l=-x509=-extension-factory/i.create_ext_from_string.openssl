@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- create_ext_from_string(str)  -> OpenSSL::X509::Extension
-Ê¸»úÎó¤«¤é [[c:OpenSSL::X509::Extension]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
+æ–‡å­—åˆ—ã‹ã‚‰ [[c:OpenSSL::X509::Extension]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-Ê¸»úÎó¤Ï "oid = value" ¤â¤·¤¯¤Ï "oid = critical, value" ¤È¤¤¤¦
-·Á¼°¤Ç¤¢¤ëÉ¬Í×¤¬¤¢¤ê¤Þ¤¹¡£
+æ–‡å­—åˆ—ã¯ "oid = value" ã‚‚ã—ãã¯ "oid = critical, value" ã¨ã„ã†
+å½¢å¼ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
-@param str À¸À®¤¹¤ë³ÈÄ¥ÎÎ°è¤Î¥Ç¡¼¥¿¤ÎÊ¸»úÎó
+@param str ç”Ÿæˆã™ã‚‹æ‹¡å¼µé ˜åŸŸã®ãƒ‡ãƒ¼ã‚¿ã®æ–‡å­—åˆ—
 @see [[m:OpenSSL::X509::ExtensionFactory#create_ext]]
 
 

@@ -3,12 +3,13 @@ classes=Fcntl
 methods=
 sublibraries=
 is_sublibrary=false
+category=I/O
 
-¥Õ¥¡¥¤¥ë¥Ç¥£¥¹¥¯¥ê¥×¥¿¤ò°·¤¦ Unix ¤Î¥·¥¹¥Æ¥à¥³¡¼¥ë [[m:IO#fcntl]] (¤Ä¤Ş¤ê
-[[man:fcntl(2)]]) ¤Ç»ÈÍÑ¤Ç¤­¤ëÄê¿ô¤ò½¸¤á¤¿¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‡ã‚£ã‚¹ã‚¯ãƒªãƒ—ã‚¿ã‚’æ‰±ã† Unix ã®ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ¼ãƒ« [[m:IO#fcntl]] (ã¤ã¾ã‚Š
+[[man:fcntl(2)]]) ã§ä½¿ç”¨ã§ãã‚‹å®šæ•°ã‚’é›†ã‚ãŸãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚
 
 
-Îã:
+ä¾‹:
     require "fcntl"
     m = s.fcntl(Fcntl::F_GETFL, 0)
     f.fcntl(Fcntl::F_SETFL, Fcntl::O_NONBLOCK|m)

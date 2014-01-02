@@ -3,5 +3,6 @@ classes=Gem=Package=FSyncDir
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

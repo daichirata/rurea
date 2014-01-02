@@ -3,5 +3,6 @@ classes=Tk=BWidget
 methods=
 sublibraries=tkextlib.bwidget.setup
 is_sublibrary=true
+category=
 
 

@@ -4,12 +4,12 @@ kind=defined
 
 --- [](nth) -> String | nil
 
-����ޥå���������ɽ���� nth ���ܤΤ��ä����б�������ʬʸ�����
-�֤��ޤ�������ǥå��� 0 �ϥޥå�������ʬ���ΤǤ�������Υޥå���
-���Ԥ��Ƥ���Ⱦ�� nil ���֤��ޤ���
+前回マッチした正規表現の nth 番目のかっこに対応する部分文字列を
+返します。インデックス 0 はマッチした部分全体です。前回のマッチが
+失敗していると常に nil を返します。
 
-@param nth ����ޥå���������ɽ���� nth ���ܤΤ��ä����б�������ʬʸ�����
-           �֤��ޤ���
+@param nth 前回マッチした正規表現の nth 番目のかっこに対応する部分文字列を
+           返します。
 
 
       s = StringScanner.new('test string')

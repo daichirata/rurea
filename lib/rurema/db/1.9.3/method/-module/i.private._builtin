@@ -4,22 +4,22 @@ kind=defined
 
 --- private(*name) -> self
 
-�᥽�åɤ� private �����ꤷ�ޤ���
+メソッドを private に設定します。
 
-�����ʤ��ΤȤ��Ϻ��夳�Υ��饹�ޤ��ϥ⥸�塼�������ǿ����������
-���᥽�åɤ�ؿ������Ǥ����ƤӽФ���褦��(private)���ꤷ�ޤ���
+引数なしのときは今後このクラスまたはモジュール定義内で新規に定義さ
+れるメソッドを関数形式でだけ呼び出せるように(private)設定します。
 
-������Ϳ����줿���ˤϰ����ˤ�äƻ��ꤵ�줿�᥽�åɤ� private ��
-���ꤷ�ޤ���
+引数が与えられた時には引数によって指定されたメソッドを private に
+設定します。
 
-@param name [[c:String]] �ޤ��� [[c:Symbol]] �� 0 �İʾ���ꤷ�ޤ���
+@param name [[c:String]] または [[c:Symbol]] を 0 個以上指定します。
 
-@raise NameError ¸�ߤ��ʤ��᥽�å�̾����ꤷ������ȯ�����ޤ���
+@raise NameError 存在しないメソッド名を指定した場合に発生します。
 
   class Foo
-    def foo1() 1 end      # �ǥե���ȤǤ� public
-    private               # �Ļ����� private ���ѹ�
-    def foo2() 2 end      # foo2 �� private �᥽�å�
+    def foo1() 1 end      # デフォルトでは public
+    private               # 可視性を private に変更
+    def foo2() 2 end      # foo2 は private メソッド
   end
 
   foo = Foo.new

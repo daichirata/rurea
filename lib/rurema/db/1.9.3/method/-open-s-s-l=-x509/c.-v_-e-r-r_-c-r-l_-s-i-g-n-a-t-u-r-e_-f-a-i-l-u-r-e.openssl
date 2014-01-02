@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- V_ERR_CRL_SIGNATURE_FAILURE -> Integer
-CRL �ˤʤ��줿��̾�θ��ڤ˼��Ԥ������Ȥ��̣���ޤ���
+CRL になされた署名の検証に失敗したことを意味します。
 
-[[m:OpenSSL::X509::Store#error]] ��
-[[m:OpenSSL::X509::StoreContext#error]] �Υ��顼�����ɤȤ���
-�Ȥ��ޤ���
+[[m:OpenSSL::X509::Store#error]] や
+[[m:OpenSSL::X509::StoreContext#error]] のエラーコードとして
+使われます。
 

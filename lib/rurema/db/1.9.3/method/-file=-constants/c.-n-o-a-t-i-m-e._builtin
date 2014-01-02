@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- NOATIME -> Integer
-�ե������ɤ߹��߻��� atime �򹹿����ޤ���
-open(2) �� O_ATIME ������Ǥ�����˻Ȥ��ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+ファイル読み込み時に atime を更新しません。
+open(2) で O_ATIME が指定できる場合に使えます。
+[[m:File.open]]で使用します。
 
-atime ����������ʤ��Τϳμ¤ǤϤʤ��Ȥ������Ȥ����դ��Ƥ���������
-�������ǽ�Τ���Υ��ץ����Ǥ���
+atime が更新されないのは確実ではないということに注意してください。
+これは性能のためのオプションです。
 

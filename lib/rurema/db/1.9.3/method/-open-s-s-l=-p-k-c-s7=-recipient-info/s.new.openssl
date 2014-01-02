@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- new(cert) -> RecipientInfo
-┴ў┐о└шеке╓е╕езепе╚дЄ╛┌╠└╜ёдлдщ└╕└од╖д▐д╣бг
+щАБф┐бхЕИуВкуГЦуВ╕уВзуВпуГИуВТши╝цШОцЫ╕уБЛуВЙчФЯцИРуБЧуБ╛уБЩуАВ
 
-@param cert ╛┌╠└╜ё([[c:OpenSSL::X509::Certificate]] еке╓е╕езепе╚)
+@param cert ши╝цШОцЫ╕([[c:OpenSSL::X509::Certificate]] уВкуГЦуВ╕уВзуВпуГИ)
 

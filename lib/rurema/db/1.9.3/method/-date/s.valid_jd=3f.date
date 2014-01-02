@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- valid_jd? (jd, start = Date::GREGORIAN) -> bool
-�����֤��ޤ���
+真を返します。
 
-�о����Τ����Ѱդ���Ƥ��ޤ������º�Ū�˰�̣�Ϥ���ޤ���
+対称性のため用意されていますが、実際的に意味はありません。
 
-[[m:Date.jd]] �⻲�Ȥ��Ƥ���������
+[[m:Date.jd]] も参照してください。
 
-@param jd ��ꥦ����
-@param start ���쥴�ꥪ���Ĥ����Ϥ᤿���򤢤�魯��ꥦ����
+@param jd ユリウス日
+@param start グレゴリオ暦をつかい始めた日をあらわすユリウス日
 

@@ -5,13 +5,13 @@ kind=defined
 --- fast_generate(object) -> String
 --- fast_unparse(object) -> String
 
-Ϳ����줿���֥������Ȥ��Ԥ� JSON ������ʸ������Ѵ������֤��ޤ���
+与えられたオブジェクトを一行の JSON 形式の文字列に変換して返します。
 
-���Υ᥽�åɤϽ۴Ļ��ȤΥ����å���̵���ˤ��Ƥ��ޤ����ޤ���
-[[m:JSON::NaN]], [[m:JSON::Infinity]], [[m:JSON::MinusInfinity]] ���������뤳�Ȥ�����ޤ���
-���Τ����ưפ�̵�¥롼�פ�ȯ�������뤳�Ȥ��Ǥ���Τǡ�����Ĥ��Ƥ���������
+このメソッドは循環参照のチェックを無効にしています。また、
+[[m:JSON::NaN]], [[m:JSON::Infinity]], [[m:JSON::MinusInfinity]] を生成することがあります。
+このため容易に無限ループを発生させることができるので、気をつけてください。
 
-fast_unparse �Ͼ����������ͽ��Ǥ���
+fast_unparse は将来削除される予定です。
 
-@param object JSON ������ʸ������Ѵ����륪�֥������Ȥ���ꤷ�ޤ���
+@param object JSON 形式の文字列に変換するオブジェクトを指定します。
 

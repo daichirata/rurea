@@ -4,10 +4,10 @@ kind=defined
 
 --- new(proc) -> WEBrick::HTTPServlet::ProcHandler
 
-╝л┐╚дЄ╜щ┤№▓╜д╖д▐д╣бг
+шЗкш║луВТхИЭцЬЯхМЦуБЧуБ╛уБЩуАВ
 
-@param proc [[c:Proc]] еке╓е╕езепе╚дЄ═┐дид▐д╣бгепещедевеєе╚длдщд╬еъепеие╣е╚дмдвд├д┐╗■бв
-            proc.call(request, response) д╬дшджд╦╕╞д╙╜╨д╡дьд▐д╣бг
-            request, response д╧д╜дьд╛дь [[c:WEBrick::HTTPRequest]] еке╓е╕езепе╚д╚
-            [[c:WEBrick::HTTPResponse]] еке╓е╕езепе╚д╟д╣бг
+@param proc [[c:Proc]] уВкуГЦуВ╕уВзуВпуГИуВТф╕ОуБИуБ╛уБЩуАВуВпуГйуВдуВвуГ│уГИуБЛуВЙуБоуГкуВпуВиуВ╣уГИуБМуБВуБгуБЯцЩВуАБ
+            proc.call(request, response) уБоуВИуБЖуБлхС╝уБ│хЗ║уБХуВМуБ╛уБЩуАВ
+            request, response уБпуБЭуВМуБЮуВМ [[c:WEBrick::HTTPRequest]] уВкуГЦуВ╕уВзуВпуГИуБи
+            [[c:WEBrick::HTTPResponse]] уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 

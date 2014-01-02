@@ -4,5 +4,5 @@ kind=added
 
 --- trace_func(*vars) -> object | nil
 
-[[lib:debug]] ¥é¥¤¥Ö¥é¥ê¤ÎÆâÉô¤Ç»ÈÍÑ¤·¤Ş¤¹¡£
+[[lib:debug]] ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®å†…éƒ¨ã§ä½¿ç”¨ã—ã¾ã™ã€‚
 

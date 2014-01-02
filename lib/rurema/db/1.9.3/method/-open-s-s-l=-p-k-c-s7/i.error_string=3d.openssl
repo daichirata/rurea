@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- error_string=(str)
-¸¡¾Ú¥¨¥é¡¼¤ÎÍıÍ³¤òÉ½¤¹Ê¸»úÎó¤òÀßÄê¤·¤Ş¤¹¡£
+æ¤œè¨¼ã‚¨ãƒ©ãƒ¼ã®ç†ç”±ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param str ÀßÄê¤¹¤ë¥¨¥é¡¼Ê¸»úÎó
+@param str è¨­å®šã™ã‚‹ã‚¨ãƒ©ãƒ¼æ–‡å­—åˆ—
 @see [[m:OpenSSL::PKCS7#error_string]]
 

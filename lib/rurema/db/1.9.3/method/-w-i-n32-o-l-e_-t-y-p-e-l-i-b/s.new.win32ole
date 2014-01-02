@@ -3,21 +3,21 @@ visibility=public
 kind=defined
 
 --- new(libname, mjv = nil, miv = nil) -> WIN32OLE_TYPELIB
-WIN32OLE_TYPELIB���֥������Ȥ��������ޤ���
+WIN32OLE_TYPELIBオブジェクトを生成します。
 
-@param libname ��������TypeLib�Υ쥸���ȥ��Υɥ������ʸ����
-              ��[[m:WIN32OLE_TYPELIB#name]]�ˤޤ���
-               GUID��[[m:WIN32OLE_TYPELIB#guid]]�ˤޤ���TLB�ե�����̾��
-               ʸ����ǻ��ꤷ�ޤ���
-@param mjv ��������TypeLib�Υ᥸�㡼�С�������ֹ��Integer�ǻ��ꤷ�ޤ���
-           �ޤ����������˥᥸�㡼�С�����󡢾����������˥ޥ��ʡ��С�����
-           �����ꤷ��Float�ǻ��ꤷ�ޤ���libname��̾������ꤷ������
-           ̵�뤷�ޤ���
-@param miv ��������TypeLib�Υޥ��ʡ��С�������ֹ�������ǻ��ꤷ�ޤ���
-           mjv��Float��Ϳ������礪���libname��̾������ꤷ������̵
-           �뤷�ޤ���
-@return libname�ǻ��ꤷ��WIN32OLE_TYPELIB���֥������Ȥ��֤��ޤ���
-@raise WIN32OLERuntimeError �����ǻ��ꤷ��TypeLib�����Ĥ���ޤ���
+@param libname 生成するTypeLibのレジストリ上のドキュメント文字列
+              （[[m:WIN32OLE_TYPELIB#name]]）または
+               GUID（[[m:WIN32OLE_TYPELIB#guid]]）またはTLBファイル名を
+               文字列で指定します。
+@param mjv 作成するTypeLibのメジャーバージョン番号をIntegerで指定します。
+           または整数部にメジャーバージョン、小数点数部にマイナーバージョ
+           ンを指定したFloatで指定します。libnameに名前を指定した場合は
+           無視します。
+@param miv 作成するTypeLibのマイナーバージョン番号を整数で指定します。
+           mjvにFloatを与えた場合およびlibnameに名前を指定した場合は無
+           視します。
+@return libnameで指定したWIN32OLE_TYPELIBオブジェクトを返します。
+@raise WIN32OLERuntimeError 引数で指定したTypeLibが見つかりません。
 
     tlib1 = WIN32OLE_TYPELIB.new('Microsoft Excel 14.0 Object Library')
     tlib2 = WIN32OLE_TYPELIB.new('{00020813-0000-0000-C000-000000000046}')
@@ -30,10 +30,10 @@ WIN32OLE_TYPELIB���֥������Ȥ��������ޤ���
     puts tlib4.name  # => 'Microsoft Excel 14.0 Object Library'
     puts tlib5.name  # => 'Microsoft Shell Controls And Automation'
 
-TypeLib�ϡ��쥸���ȥ��HKEY_CLASS_ROOT\TypeLib�����β���GUID�򥭡��Ȥ�
-�Ƴ�Ǽ����Ƥ��ޤ���GUID�����β��˥С�������ֹ業�����¤ӡ��ɥ�����
-��ʸ����ϥС�������ֹ業���δ����ͤ����ꤵ��Ƥ��ޤ���
+TypeLibは、レジストリのHKEY_CLASS_ROOT\TypeLibキーの下にGUIDをキーとし
+て格納されています。GUIDキーの下にバージョン番号キーが並び、ドキュメン
+ト文字列はバージョン番号キーの既定値に設定されています。
 
-�ɥ������ʸ����ϡ�����ƥ����ȥإ�פʤɤ����Ѳ�ǽ��TypeLib�δ�ñ��
-����ʸ�ǡ��̾�С�������ֹ��ޤߤޤ���
+ドキュメント文字列は、コンテキストヘルプなどに利用可能なTypeLibの簡単な
+説明文で、通常バージョン番号を含みます。
 

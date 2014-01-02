@@ -6,6 +6,6 @@ library=net.imap
 aliases=
 aliasof=
 
-��å������Υ���٥����פ�ɽ�����饹�Ǥ���
+メッセージのエンベロープを表すクラスです。
 
-[[m:Net::IMAP::FetchData#attr]] �����ǤȤ����Ѥ����ޤ���
+[[m:Net::IMAP::FetchData#attr]] の要素として用いられます。

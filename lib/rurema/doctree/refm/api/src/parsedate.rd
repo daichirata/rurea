@@ -1,21 +1,41 @@
-#@until 1.9.0
-���դ���Ϥ��ޤ���
+#@until 1.9.1
+category Date/Time
+
+#@# TODO: date/format に対応した場合にコメントインする。
+#@# require 'date/format'
+
+日時を表す文字列を解析するライブラリです。
+
+[注意] このライブラリは obsolete です。1.9 以降では利用することが出来ま
+せん。代わりに [[m:Date.parse]] や [[m:Date._parse]] を利用してください。
 
 = module ParseDate
+
+日時を表す文字列を解析するためのモジュールです。
+
+解析した結果の各要素を配列 (年、月、日、時、分、秒、タイムゾーン、曜日)に
+して返す [[m:ParseDate.#parsedate]] を提供します。
+
+例:
+
+  require 'parsedate'
+
+  ParseDate.parsedate "Tuesday, July 6th, 2007, 18:35:20 UTC"
+  # => [2007, 7, 6, 18, 35, 20, "UTC", 2]
 
 == Module Functions
 
 --- parsedate(str, complete = false) -> Array | nil
-str ��Ϳ����줿����ɽ������Ϥ����������������Ǥ�
-���� (ǯ�����������ʬ���á������ॾ��������) ���֤��ޤ���
+str で与えられた日付表現を解析し、見いだした要素を
+配列 (年、月、日、時、分、秒、タイムゾーン、曜日) で返します。
 
-complete �����ǡ�ǯ�� "00" ���� "99" ���ϰϤǤ���С�
-ǯ�β�2���ɽ���Ǥ���Ȥߤʤ���2����䤤�ޤ���
-69 �ʾ�ʤ� 1900 ǯ��Ȥߤʤ��ޤ���
-69 ̤���ʤ� 2000 ǯ��Ȥߤʤ��ޤ���
+complete が真で、年が "00" から "99" の範囲であれば、
+年の下2桁の表現であるとみなし上2桁を補います。
+69 以上なら 1900 年代とみなします。
+69 未満なら 2000 年代とみなします。
 
-parsedate �Ϥ��������ʽ񼰤򤢤Ĥ����ޤ���
-���Ȥ��С��Ĥ��Τ褦��ɽ��������Ĥ��ޤ���
+parsedate はいろいろな書式をあつかえます。
+たとえば、つぎのような表現を受けつけます。
 
   Sat
   Saturday
@@ -32,19 +52,17 @@ parsedate �Ϥ��������ʽ񼰤򤢤Ĥ����ޤ���
   08/28/1999
   1999/08/28
 
-���Υ饤�֥��ϡ�1.9.0 �ʹ����Ѥ��뤳�Ȥ�����ޤ���
+日付解析し直ちに [[c:Date]]、
+あるいは [[c:DateTime]] オブジェクトを生成するには、
+[[lib:date]] で提供される [[m:Date.parse]]、
+[[m:DateTime.parse]] や [[m:Date.strptime]]、
+[[m:DateTime.strptime]] などをつかうことができます。
 
-���ղ��Ϥ�ľ���� [[c:Date]]��
-���뤤�� [[c:DateTime]] ���֥������Ȥ���������ˤϡ�
-[[lib:date]] ���󶡤���� [[m:Date.parse]]��
-[[m:DateTime.parse]] �� [[m:Date.strptime]]��
-[[m:DateTime.strptime]] �ʤɤ�Ĥ������Ȥ��Ǥ��ޤ���
+日付解析し直ちに [[c:Time]] オブジェクトを生成するには、
+[[lib:time]] で提供される [[m:Time.parse]] をつかうことができます。
 
-���ղ��Ϥ�ľ���� [[c:Time]] ���֥������Ȥ���������ˤϡ�
-[[lib:time]] ���󶡤���� [[m:Time.parse]] ��Ĥ������Ȥ��Ǥ��ޤ���
-
-@param str ���դ򤢤�魯ʸ����
-@param complete ǯ���䴰���뤫
+@param str 日付をあらわす文字列
+@param complete 年を補完するか
 
   require 'parsedate'
 

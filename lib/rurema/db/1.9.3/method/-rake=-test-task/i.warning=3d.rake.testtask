@@ -4,7 +4,7 @@ kind=defined
 
 --- warning=(flag)
 
-�ƥ��ȼ¹Ի��˷ٹ��ɽ�������뤫�ɤ����򥻥åȤ��ޤ���
+テスト実行時に警告を表示させるかどうかをセットします。
 
-@param flag ���ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真または偽を指定します。
 

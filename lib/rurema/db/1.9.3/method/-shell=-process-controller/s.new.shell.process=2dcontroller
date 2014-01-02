@@ -4,7 +4,7 @@ kind=defined
 
 --- new(shell)
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-@param shell [[c:Shell]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param shell [[c:Shell]] のインスタンスを指定します。
 

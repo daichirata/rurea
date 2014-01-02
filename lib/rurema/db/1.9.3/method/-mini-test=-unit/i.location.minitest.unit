@@ -4,5 +4,5 @@ kind=defined
 
 --- location(exception) -> String
 
-Ϳ����줿�㳰��ȯ�����������֤��ޤ���
+与えられた例外の発生した場所を返します。
 

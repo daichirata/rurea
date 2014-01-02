@@ -4,17 +4,17 @@ kind=added
 
 --- $defs -> [String]
 
-��ĥ�饤�֥��򥳥�ѥ��뤹��Ȥ��Υޥ����������ꤹ������Ǥ���
+拡張ライブラリをコンパイルするときのマクロ定義を指定する配列です。
 
-�����ѿ����ͤϡ��㤨��
+この変数の値は、例えば
 
   ["-DHAVE_FUNC", "-DHAVE_HEADER_H"]
 
-�Τ褦�ʷ���������Ǥ���
+のような形式の配列です。
 
-[[m:Kernel#have_func]] �ޤ��� [[m:Kernel#have_header]]
-��ƤӽФ��ȡ����θ�����̤� $defs ���ɲä���ޤ���
+[[m:Kernel#have_func]] または [[m:Kernel#have_header]]
+を呼び出すと、その検査結果が $defs に追加されます。
 
 [[m:Kernel#create_header]]
-�Ϥ����ѿ����ͤ򻲾Ȥ��ƥإå��ե�������������ޤ���
+はこの変数の値を参照してヘッダファイルを生成します。
 

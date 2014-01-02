@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- utime -> Float
-�桼���� CPU ���֤��֤��ޤ���
+ユーザー CPU 時間を返します。
 

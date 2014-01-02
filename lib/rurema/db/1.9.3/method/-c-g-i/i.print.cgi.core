@@ -5,10 +5,10 @@ kind=defined
 --- print(*strings)
 @todo
 
-°ú¿ô¤ÎÊ¸»úÎó¤òÉ¸½à½ĞÎÏ¤Ë½ĞÎÏ¤·¤Ş¤¹¡£
-cgi.print ¤Ï $DEFAULT_OUTPUT.print ¤ÈÅù²Á¤Ç¤¹¡£
+å¼•æ•°ã®æ–‡å­—åˆ—ã‚’æ¨™æº–å‡ºåŠ›ã«å‡ºåŠ›ã—ã¾ã™ã€‚
+cgi.print ã¯ $DEFAULT_OUTPUT.print ã¨ç­‰ä¾¡ã§ã™ã€‚
 
-Îã¡§
+ä¾‹ï¼š
        cgi = CGI.new
        cgi.print "This line is a part of content body.\r\n"
 

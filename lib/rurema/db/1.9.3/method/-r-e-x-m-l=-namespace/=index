@@ -5,5 +5,4 @@
 #name	REXML::Namespace#local_name
 #name=	REXML::Namespace#name=
 #prefix	REXML::Namespace#prefix
-#prefix=	REXML::Namespace#prefix
-:NAMESPLIT	REXML::Namespace::NAMESPLIT
+#prefix=	REXML::Namespace#prefix=

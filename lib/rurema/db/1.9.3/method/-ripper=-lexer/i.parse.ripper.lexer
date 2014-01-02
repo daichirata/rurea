@@ -4,7 +4,7 @@ kind=defined
 
 --- parse -> [[Integer, Integer], Symbol, String]
 
-���Ȥλ��� Ruby �ץ�������ȡ������ʬ�䤷�����Υꥹ�Ȥ��֤��ޤ�����
-���� [[m:Ripper::Lexer#lex]] �Ȱ㤤����̤򥽡��Ȥ��ޤ���
+自身の持つ Ruby プログラムをトークンに分割し、そのリストを返します。た
+だし [[m:Ripper::Lexer#lex]] と違い、結果をソートしません。
 
-�饤�֥�������ǻ��Ѥ��ޤ���
+ライブラリ内部で使用します。

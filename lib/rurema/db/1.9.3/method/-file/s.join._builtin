@@ -4,11 +4,11 @@ kind=defined
 
 --- join(*item)    -> String
 
-File::SEPARATOR��֤������ʸ�����Ϣ�뤷�ޤ���
+File::SEPARATORを間に入れて文字列を連結します。
 
   [item, item, ...].join(File::SEPARATOR)
 
-��Ʊ���Ǥ���[[d:platform/DOSISH-support]]�ǴĶ���¸�ˤʤ�ͽ��Ǥ���
+と同じです。[[d:platform/DOSISH-support]]で環境依存になる予定です。
 
-@param item Ϣ�뤷�����ǥ��쥯�ȥ�̾��ե�����̾��ʸ�����Ϳ���ޤ���
+@param item 連結したいディレクトリ名やファイル名を文字列で与えます。
 

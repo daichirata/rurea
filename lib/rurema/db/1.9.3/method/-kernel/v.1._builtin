@@ -14,17 +14,17 @@ kind=defined
 --- $10 -> String | nil
 --- $11 -> String | nil
 
-�Ǹ�����������ѥ�����ޥå��� n ���ܤγ�̤˥ޥå������ͤ���Ǽ����ޤ���
-���������̤��ʤ���� nil �����äƤ��ޤ���(�Ф���: \���� �Τ褦�ʤ��)
+最後に成功したパターンマッチで n 番目の括弧にマッチした値が格納されます。
+該当する括弧がなければ nil が入っています。(覚え方: \数字 のようなもの)
 
-�ֹ� n �Ϥ�����Ǥ��礭�������������ѤǤ��ޤ���
+番号 n はいくらでも大きな正整数を利用できます。
 
 [[m:Regexp.last_match]][1],
-[[m:Regexp.last_match]][2], ... ��Ʊ����
+[[m:Regexp.last_match]][2], ... と同じ。
 
-�������ѿ��ϥ������륹�����פ��ĥ���åɥ������롢�ɤ߼�����ѤǤ���
+これらの変数はローカルスコープかつスレッドローカル、読み取り専用です。
 
-=== ��
+=== 例
  str = '<p><a href="http://example.com">example.com</a></p>'
  if %r[<a href="(.*?)">(.*?)</a>] =~ str
    print $1

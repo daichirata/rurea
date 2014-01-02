@@ -4,14 +4,14 @@ kind=defined
 
 --- <<(object)    -> self
 
-object ����Ϥ��ޤ���object ��ʸ����Ǥʤ����ˤϥ᥽��
-�� to_s ���Ѥ���ʸ������Ѵ����ޤ���
+object を出力します。object が文字列でない時にはメソッ
+ド to_s を用いて文字列に変換します。
 
-�ʲ��Τ褦�� << ��Ϣ����Ȥ����Ȥ��Ǥ��ޤ���
+以下のような << の連鎖を使うことができます。
 
   STDOUT << 1 << " is a " << Fixnum << "\n"
 
-@param object ���Ϥ��������֥������Ȥ�Ϳ���ޤ���
+@param object 出力したいオブジェクトを与えます。
 
-@raise Errno::EXXX ���Ϥ˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX 出力に失敗した場合に発生します。
 

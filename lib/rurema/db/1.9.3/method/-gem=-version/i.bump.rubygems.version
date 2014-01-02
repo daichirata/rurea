@@ -4,9 +4,9 @@ kind=defined
 
 --- bump -> Gem::Version
 
-ºÇ¸å¤Î°ì·å¤òÀÚ¤ê¾å¤²¤¿¿·¤·¤¤ [[c:Gem::Version]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÊÖ¤·¤Þ¤¹¡£
+æœ€å¾Œã®ä¸€æ¡ã‚’åˆ‡ã‚Šä¸Šã’ãŸæ–°ã—ã„ [[c:Gem::Version]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   ver1 = Gem::Version.create('5.3.1') # => #<Gem::Version "5.3.1">
   ver2 = ver1.bump                    # => #<Gem::Version "5.4">

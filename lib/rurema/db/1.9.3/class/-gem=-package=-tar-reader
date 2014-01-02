@@ -6,4 +6,4 @@ library=rubygems.package.tar_reader
 aliases=
 aliasof=
 
-gem-format ¤Ê tar ¥Õ¥¡¥¤¥ë¤òÆÉ¤à¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+gem-format ãª tar ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã‚€ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

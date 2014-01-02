@@ -6,4 +6,4 @@ library=_builtin
 aliases=
 aliasof=
 
-�����ʷ����ͤ�ɾ�������Ȥ���ȯ�����ޤ���
+不正な型の値を評価したとき、期待される振る舞いを持たないオブジェクトが渡された時に発生します（cf. [[c:ArgumentError]] ）。

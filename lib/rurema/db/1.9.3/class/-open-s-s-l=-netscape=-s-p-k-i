@@ -6,5 +6,5 @@ library=openssl
 aliases=
 aliasof=
 
-Netscape SPKI¡¢¤â¤·¤¯¤Ï SPKAC(Signed Public Key And Challenge) ¤È¸Æ¤Ğ¤ì¤ë
-¥Ç¡¼¥¿¥Õ¥©¡¼¥Ş¥Ã¥È¤ò°·¤¦¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+Netscape SPKIã€ã‚‚ã—ãã¯ SPKAC(Signed Public Key And Challenge) ã¨å‘¼ã°ã‚Œã‚‹
+ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’æ‰±ã†ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

@@ -4,9 +4,9 @@ kind=defined
 
 --- roots -> Array
 
-�롼�Ȥν����������֤��ޤ���
+ルートの集合を配列で返します。
 
-@raise PStore::Error �ȥ�󥶥�����󳰤Ǥ��Υ᥽�åɤ��ƤӽФ��줿����ȯ�����ޤ���
+@raise PStore::Error トランザクション外でこのメソッドが呼び出された場合に発生します。
 
 @see [[m:Hash#keys]]
 

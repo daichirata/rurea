@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- reason_phrase         -> String | nil
-HTTP ¤Î¥ì¥¹¥İ¥ó¥¹¤ÎºÇ½é¤Î¹Ô¤Î reason phrase ¤òÊÖ¤·¤Ş¤¹¡£
-¤³¤ÎÃÍ¤¬ nil ¤Î¾ì¹ç reason phrase ¤Ï status ¤«¤éÀ¸À®¤µ¤ì¤Ş¤¹¡£
-¥Ç¥Õ¥©¥ë¥È¤Ï nil ¤Ç¤¹¡£
+HTTP ã®ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã®æœ€åˆã®è¡Œã® reason phrase ã‚’è¿”ã—ã¾ã™ã€‚
+ã“ã®å€¤ãŒ nil ã®å ´åˆ reason phrase ã¯ status ã‹ã‚‰ç”Ÿæˆã•ã‚Œã¾ã™ã€‚
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ nil ã§ã™ã€‚
 

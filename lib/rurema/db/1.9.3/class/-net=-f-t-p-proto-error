@@ -6,5 +6,5 @@ library=net.ftp
 aliases=
 aliasof=
 
-�����Фα����� FTP �Υץ��ȥ���˱�äƤ��ʤ�����
-ȯ�������㳰�Υ��饹�Ǥ���
+サーバの応答が FTP のプロトコルに沿っていない場合に
+発生する例外のクラスです。

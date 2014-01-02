@@ -4,9 +4,9 @@ kind=defined
 
 --- refresh(source_uri, all) -> Gem::SourceIndex
 
-����������ǥå����򹹿����ޤ���
+ソースインデックスを更新します。
 
-@param source_uri �ǡ������������ URI ����ꤷ�ޤ���
+@param source_uri データを取得する URI を指定します。
 
-@param all ���ƤΥ���ǥå����򹹿����뤫�ɤ�������ꤷ�ޤ���
+@param all 全てのインデックスを更新するかどうかを指定します。
 

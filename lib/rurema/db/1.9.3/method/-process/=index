@@ -1,6 +1,6 @@
 .abort	Process.abort
-.daemon	Process.daemon
-.detach	Process.detach
+.daemon	Process.#daemon
+.detach	Process.#detach
 .egid	Process.#egid
 .egid=	Process.#egid=
 .euid	Process.#euid
@@ -37,6 +37,8 @@
 .waitall	Process.#waitall
 .waitpid	Process.#waitpid
 .waitpid2	Process.#waitpid
+#daemon	Process.#daemon
+#detach	Process.#detach
 #egid	Process.#egid
 #egid=	Process.#egid=
 #euid	Process.#euid

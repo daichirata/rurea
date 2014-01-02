@@ -4,18 +4,18 @@ kind=defined
 
 --- assert_equal(expected, actual, message = nil)    -> ()
 
-expected == actual ¤Ê¤é¤Ğ¥Ñ¥¹¤·¤Ş¤¹¡£
+expected == actual ãªã‚‰ã°ãƒ‘ã‚¹ã—ã¾ã™ã€‚
 
-[[m:MiniTest::Assertions#assert_same]]¤È¤Î°ã¤¤¤ËÃí°Õ¤·¤Æ²¼¤µ¤¤¡£
+[[m:MiniTest::Assertions#assert_same]]ã¨ã®é•ã„ã«æ³¨æ„ã—ã¦ä¸‹ã•ã„ã€‚
 
-@param expected ´üÂÔ¤¹¤ë¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param expected æœŸå¾…ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param actual ¸¡¾Ú¤¹¤ë¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param actual æ¤œè¨¼ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param message assert ¤¬¼ºÇÔ¤·¤¿»ş¤ËÉ½¼¨¤¹¤ë¥á¥Ã¥»¡¼¥¸¤òÊ¸»úÎó¤Ç»ØÄê¤·
-               ¤Ş¤¹¡£»ØÄê¤·¤Ê¤«¤Ã¤¿¾ì¹ç¤ÏÉ½¼¨¤·¤Ş¤»¤ó¡£
+@param message assert ãŒå¤±æ•—ã—ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—
+               ã¾ã™ã€‚æŒ‡å®šã—ãªã‹ã£ãŸå ´åˆã¯è¡¨ç¤ºã—ã¾ã›ã‚“ã€‚
 
-@raise MiniTest::Assertion assert ¤¬¼ºÇÔ¤·¤¿»ş¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise MiniTest::Assertion assert ãŒå¤±æ•—ã—ãŸæ™‚ã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:Test::Unit::Assertions#assert_not_equal]], [[m:Object#==]]
 

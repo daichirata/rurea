@@ -4,36 +4,36 @@ kind=defined
 
 --- new(options = {}) -> Gem::DependencyInstaller
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-���ץ����Ȥ��ưʲ��Τ�Τ����ѤǤ��ޤ���
+オプションとして以下のものを利用できます。
 
 : :cache_dir
-  *.gem �ե��������¸����ǥ��쥯�ȥ����ꤷ�ޤ���
+  *.gem ファイルを保存するディレクトリを指定します。
 : :domain
-  :local (�����ȥǥ��쥯�ȥ�Τ߸������ޤ�), :remote ([[m:Gem.sources]] �򸡺����ޤ�),
-  :both (:local, :remote ��ξ���򸡺����ޤ�) �Τ����줫������ǽ�Ǥ���
+  :local (カレントディレクトリのみ検索します), :remote ([[m:Gem.sources]] を検索します),
+  :both (:local, :remote の両方を検索します) のいずれかを指定可能です。
 : :env_shebang
-  [[m:Gem::Installer.new]] �򻲾Ȥ��Ƥ���������
+  [[m:Gem::Installer.new]] を参照してください。
 : :force
-  �С����������å��ȥ������ƥ��ݥꥷ���Υ����å���Ԥ鷺�˥��󥹥ȡ����¹Ԥ��ޤ���
-  ����������̾�դ��� Gem �Τߤ򥤥󥹥ȡ��뤹��ݥꥷ�������ꤵ��Ƥ�����Ͼ嵭�Υ����å���
-  �¹Ԥ��ޤ���
+  バージョンチェックとセキュリティポリシーのチェックを行わずにインストールを実行します。
+  ただし、署名付きの Gem のみをインストールするポリシーが指定されている場合は上記のチェックを
+  実行します。
 : :format_executable
-  [[m:Gem::Installer.new]] �򻲾Ȥ��Ƥ���������
+  [[m:Gem::Installer.new]] を参照してください。
 : :ignore_dependencies
-  ��¸���Ƥ��� Gem �򥤥󥹥ȡ��뤷�ޤ���
+  依存している Gem をインストールしません。
 : :install_dir
-   Gem �򥤥󥹥ȡ��뤹��ǥ��쥯�ȥ�Ǥ���
+   Gem をインストールするディレクトリです。
 : :security_policy
-  �������ƥ��ݥꥷ������ꤷ�ޤ���
+  セキュリティポリシーを指定します。
 : :user_install
-  false ����ꤹ��ȥ桼���Υۡ���ǥ��쥯�ȥ�˥��󥹥ȡ��뤷�ޤ���
-  nil ����ꤹ��ȥ桼���Υۡ���ǥ��쥯�ȥ�˥��󥹥ȡ��뤷�褦�Ȥ��ޤ�����
-  �ٹ��ɽ�����ޤ���
+  false を指定するとユーザのホームディレクトリにインストールしません。
+  nil を指定するとユーザのホームディレクトリにインストールしようとしますが、
+  警告を表示します。
 : :wrappers
-  ������ꤹ��ȥ�åѡ��򥤥󥹥ȡ��뤷�ޤ���
-  ������ꤹ��ȡ�����ܥ�å���󥯤򥤥󥹥ȡ��뤷�ޤ���
+  真を指定するとラッパーをインストールします。
+  偽を指定すると、シンボリックリンクをインストールします。
 
 @see [[m:Gem::Installer.new]], [[m:Gem::Installer#install]], [[c:Gem::Security]]
 

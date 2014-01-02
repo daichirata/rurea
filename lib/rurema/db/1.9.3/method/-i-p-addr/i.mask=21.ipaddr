@@ -4,7 +4,7 @@ kind=defined
 
 --- mask!(mask) -> self
 
-Ϳ����줿 mask ����Ѥ��Ƥ��Υ��֥������Ȥ� IP ���ɥ쥹���˲�Ū���ѹ����ޤ���
+与えられた mask を使用してこのオブジェクトの IP アドレスを破壊的に変更します。
 
-@param mask �ץ�ե��å���Ĺ��ɽ��ʸ���󤫡����֥ͥåȥޥ�����ɽ��ʸ����
+@param mask プレフィックス長を表す文字列か、サブネットマスクを表す文字列。
 

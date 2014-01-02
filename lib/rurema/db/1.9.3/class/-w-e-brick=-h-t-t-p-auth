@@ -6,4 +6,4 @@ library=webrick.httpauth
 aliases=
 aliasof=
 
-�桼��ǧ�ڤε�ǽ���󶡤���⥸�塼��Ǥ���
+ユーザ認証の機能を提供するモジュールです。

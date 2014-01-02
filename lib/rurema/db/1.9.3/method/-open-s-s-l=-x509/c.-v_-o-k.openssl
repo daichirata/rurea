@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- V_OK -> Integer
-╔╗╔И║╪╓╛х╞ю╦╓╥╓ф╓╓╓й╓╓╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+Ц┌╗Ц┐╘Ц┐╪Ц│▄Г≥╨Г■÷Ц│≈Ц│╕Ц│└Ц│╙Ц│└Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::X509::Store#error]] ╓Д
-[[m:OpenSSL::X509::StoreContext#error]] ╓н╔╗╔И║╪╔Ё║╪╔и╓х╓╥╓ф
-╩х╓О╓Л╓ч╓╧║ё
+[[m:OpenSSL::X509::Store#error]] Ц┌└
+[[m:OpenSSL::X509::StoreContext#error]] Ц│╝Ц┌╗Ц┐╘Ц┐╪Ц┌ЁЦ┐╪Ц┐┴Ц│╗Ц│≈Ц│╕
+Д╫©Ц┌▐Ц┌▄Ц│╬Ц│≥Ц─┌
 

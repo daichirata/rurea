@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- iqmp -> OpenSSL::BN
-¸°¤Î coefficient (inverse of q mod p) ¤Ç¤¹¡£
+éµã® coefficient (inverse of q mod p) ã§ã™ã€‚
 
-ÈëÌ©¸°¤Î¾ğÊó¤Ç¤¹¡£
+ç§˜å¯†éµã®æƒ…å ±ã§ã™ã€‚
 

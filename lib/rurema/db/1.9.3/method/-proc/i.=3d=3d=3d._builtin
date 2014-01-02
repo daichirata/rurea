@@ -7,12 +7,12 @@ kind=defined
 --- ===(*arg) -> ()
 --- yield(*arg) -> ()
 
-��³�����֥������Ȥ�¹Ԥ��Ƥ��η�̤��֤��ޤ���
+手続きオブジェクトを実行してその結果を返します。
 
-�������Ϥ������ϥ��֥������Ȥ�������ˡ�ˤ�äưۤʤ�ޤ���
-�ܤ����� [[m:Proc#lambda?]] �򻲾Ȥ��Ƥ���������
+引数の渡され方はオブジェクトの生成方法によって異なります。
+詳しくは [[m:Proc#lambda?]] を参照してください。
 
-��===�פ� when �ν�˼�³�����Ϥ���褦�ˤ��뤿��Τ�ΤǤ���
+「===」は when の所に手続きを渡せるようにするためのものです。
 
   def sign(n)
     case n
@@ -27,8 +27,8 @@ kind=defined
   p sign(7)  #=> 1
 
 
-@param arg ��³�����֥������Ȥ�Ϳ�����������ꤷ�ޤ���
+@param arg 手続きオブジェクトに与える引数を指定します。
 
-@raise LocalJumpError Proc�����������᥽�åɤ���꥿���󤷤Ƥ��ޤä�����ȯ�����ޤ���
+@raise LocalJumpError Procを生成したメソッドからリターンしてしまった場合に発生します。
 
 

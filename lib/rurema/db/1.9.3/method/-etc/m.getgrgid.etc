@@ -4,12 +4,12 @@ kind=defined
 
 --- getgrgid(gid) -> Struct::Group
 
-group �ǡ����١����򸡺��������롼�� ID �� gid
-�Ǥ��륰�롼�ץ���ȥ���֤��ޤ���
+group データベースを検索し、グループ ID が gid
+であるグループエントリを返します。
 
-@param gid �������� gid
+@param gid 検索する gid
 
-@raise ArgumentError ����ȥ꤬���Ĥ���ʤ��ä�����ȯ�����ޤ���
+@raise ArgumentError エントリが見つからなかった場合に発生します。
 
 @see [[man:getgrgid(3)]], [[c:Struct::Group]]
 

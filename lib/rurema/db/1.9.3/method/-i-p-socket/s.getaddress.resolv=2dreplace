@@ -3,9 +3,9 @@ visibility=public
 kind=redefined
 
 --- getaddress(host) -> String
-[[m:IPSocket.getaddress]] ¤òÃÖ¤­¤«¤¨¡¢
-[[lib:resolv]] ¥é¥¤¥Ö¥é¥ê¤ò»È¤¤Ì¾Á°²ò·è¤·¤Ş¤¹¡£
+[[m:IPSocket.getaddress]] ã‚’ç½®ãã‹ãˆã€
+[[lib:resolv]] ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ã„åå‰è§£æ±ºã—ã¾ã™ã€‚
 
-@param host ¥Û¥¹¥ÈÌ¾¤ò»ØÄê¤·¤Ş¤¹¡£
-@raise SocketError Ì¾Á°²ò·è¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@param host ãƒ›ã‚¹ãƒˆåã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@raise SocketError åå‰è§£æ±ºã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

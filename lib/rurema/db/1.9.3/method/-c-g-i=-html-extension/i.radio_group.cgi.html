@@ -3,19 +3,19 @@ visibility=public
 kind=defined
 
 --- radio_group(name = "", *values) -> String
-�����פ� radio �Ǥ��� input ���ǤΥꥹ�Ȥ��������ޤ���
+タイプが radio である input 要素のリストを生成します。
 
-��������� input ���Ǥ� name °���Ϥ��٤�Ʊ���ˤʤꡢ
-���줾��� input ���Ǥθ���ˤϥ�٥뤬³���ޤ���
+生成される input 要素の name 属性はすべて同じになり、
+それぞれの input 要素の後ろにはラベルが続きます。
 
-@param name name °�����ͤ���ꤷ�ޤ���
+@param name name 属性の値を指定します。
 
-@param values value °���Υꥹ�Ȥ���ꤷ�ޤ���
-              ���줾��ΰ�������ñ���ʸ����ξ�硢value °�����ͤȥ�٥��Ʊ����Τ����Ѥ���ޤ���
-              ���줾��ΰ������������Ǥޤ��ϻ����Ǥ�����ξ�硢�ǽ����Ǥ� true �Ǥ���С�
-              checked °���򥻥åȤ��ޤ�����Ƭ�����Ǥ� value °�����ͤˤʤ�ޤ���
+@param values value 属性のリストを指定します。
+              それぞれの引数が、単純な文字列の場合、value 属性の値とラベルに同じものが使用されます。
+              それぞれの引数が、二要素または三要素の配列の場合、最終要素が true であれば、
+              checked 属性をセットします。先頭の要素は value 属性の値になります。
 
-��:
+例:
   radio_group("name", "foo", "bar", "baz")
     # <INPUT TYPE="radio" NAME="name" VALUE="foo">foo
     # <INPUT TYPE="radio" NAME="name" VALUE="bar">bar
@@ -32,14 +32,14 @@ kind=defined
     # <INPUT TYPE="radio" NAME="name" VALUE="Baz">Baz
   
 --- radio_group(attributes) -> String
-�����פ� radio �Ǥ��� input ���ǤΥꥹ�Ȥ��������ޤ���
+タイプが radio である input 要素のリストを生成します。
 
-��������� input ���Ǥ� name °���Ϥ��٤�Ʊ���ˤʤꡢ
-���줾��� input ���Ǥθ���ˤϥ�٥뤬³���ޤ���
+生成される input 要素の name 属性はすべて同じになり、
+それぞれの input 要素の後ろにはラベルが続きます。
 
-@param attributes °����ϥå���ǻ��ꤷ�ޤ���
+@param attributes 属性をハッシュで指定します。
 
-��:
+例:
   radio_group({ "NAME" => "name",
                 "VALUES" => ["foo", "bar", "baz"] })
   

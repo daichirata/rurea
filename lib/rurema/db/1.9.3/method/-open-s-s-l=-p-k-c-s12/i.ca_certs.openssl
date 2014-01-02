@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- ca_certs -> [OpenSSL::X509::Certificate]
-¼«¿È¤¬ÊÝ»ý¤·¤Æ¤¤¤ëCA¾ÚÌÀ½ñ¤òÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒä¿æŒã—ã¦ã„ã‚‹CAè¨¼æ˜Žæ›¸ã‚’é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 

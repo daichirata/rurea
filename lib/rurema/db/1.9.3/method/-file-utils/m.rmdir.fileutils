@@ -4,17 +4,17 @@ kind=defined
 
 --- rmdir(dir, options = {}) -> ()
 
-�ǥ��쥯�ȥ� dir �������ޤ���
+ディレクトリ dir を削除します。
 
-@param dir �������ǥ��쥯�ȥ����ꤷ�ޤ�����Ĥξ���ʸ����Ǥ�����ǽ�Ǥ���
-           ��İʾ���ꤹ���������ǻ��ꤷ�ޤ���
+@param dir 削除するディレクトリを指定します。一つの場合は文字列でも指定可能です。
+           二つ以上指定する場合は配列で指定します。
 
-@param options :noop, :verbose ������Ǥ��ޤ���
+@param options :noop, :verbose が指定できます。
                [[ref:c:FileUtils#options]]
 
-@raise Errno::ENOTEMPTY �������ǥ��쥯�ȥ꤬���Ǥʤ�����ȯ�����ޤ���
+@raise Errno::ENOTEMPTY 削除するディレクトリが空でない場合に発生します。
 
-��:
+例:
 
   FileUtils.rmdir('somedir')
   FileUtils.rmdir(%w(somedir anydir otherdir))

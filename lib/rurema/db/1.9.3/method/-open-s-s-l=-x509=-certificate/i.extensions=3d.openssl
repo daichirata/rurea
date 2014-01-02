@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- extensions=(extensions)
-¾ÚÌÀ½ñ¤Î³ÈÄ¥ÎÎ°è¤ÎÆâÍÆ¤òÀßÄê¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã®æ‹¡å¼µé ˜åŸŸã®å†…å®¹ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param extensions ÀßÄê¤¹¤ë³ÈÄ¥([[c:OpenSSL::X509::Extension]] ¥ª¥Ö¥¸¥§¥¯¥È)¤ÎÇÛÎó
-@raise OpenSSL::X509::CertificateError ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param extensions è¨­å®šã™ã‚‹æ‹¡å¼µ([[c:OpenSSL::X509::Extension]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)ã®é…åˆ—
+@raise OpenSSL::X509::CertificateError è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

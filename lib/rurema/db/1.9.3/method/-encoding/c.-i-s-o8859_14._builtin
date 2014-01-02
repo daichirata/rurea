@@ -5,9 +5,9 @@ kind=defined
 --- ISO_8859_14 -> Encoding
 --- ISO8859_14 -> Encoding
 
-ISO8859-14 ���󥳡��ǥ��󥰡�
+ISO8859-14 エンコーディング。
 
-����ȸ��ɤθ���򰷤�8bit single-byte���󥳡��ǥ��󥰤Ǥ���
+ケルト語派の言語を扱う8bit single-byteエンコーディングです。
 
 @see [[m:Encoding::Windows_1257]]
 

@@ -4,6 +4,6 @@ kind=defined
 
 --- new_item
 @todo
-������item����������֤��ޤ����������줿
-item��item�ꥹ�ȤκǸ���ɲä���Ƥ��ޤ���
+新しくitemを作成し，返します．作成された
+itemはitemリストの最後に追加されています．
 

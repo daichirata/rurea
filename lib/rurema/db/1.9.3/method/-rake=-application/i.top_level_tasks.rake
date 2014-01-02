@@ -4,5 +4,5 @@ kind=defined
 
 --- top_level_tasks -> Array
 
-���ޥ�ɥ饤��ǻ��ꤵ�줿�������Υꥹ�Ȥ��֤��ޤ���
+コマンドラインで指定されたタスクのリストを返します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- new(file_name) -> RDoc::TopLevel
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-@param file_name �ե�����̾��ʸ����ǻ��ꤷ�ޤ���
+@param file_name ファイル名を文字列で指定します。
 

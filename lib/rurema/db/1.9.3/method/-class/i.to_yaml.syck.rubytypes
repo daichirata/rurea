@@ -4,9 +4,9 @@ kind=added
 
 --- to_yaml(opts = {}) -> String
 
-�㳰��ȯ�����ޤ���
+例外を発生します。
 
-@param opts YAML�ɥ�����Ƚ��ϤκݤΥ��ץ�������ꤷ�ޤ����Ȥ��ޤ���
+@param opts YAMLドキュメント出力の際のオプションを指定しますが使われません。
 
 @raise TypeError
 

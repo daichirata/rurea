@@ -5,10 +5,10 @@ kind=defined
 --- IBM860 -> Encoding
 --- CP860 -> Encoding
 
-CP860 ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+CP860 ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-¥İ¥ë¥È¥¬¥ë¸ì¤ËÍÑ¤¤¤é¤ì¤ë¡¢
-8bit single-byte ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+ãƒãƒ«ãƒˆã‚¬ãƒ«èªã«ç”¨ã„ã‚‰ã‚Œã‚‹ã€
+8bit single-byte ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[url:http://en.wikipedia.org/wiki/Code_page_860]]
 

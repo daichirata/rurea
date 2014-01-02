@@ -4,5 +4,5 @@ kind=defined
 
 --- remove_spec(full_name) -> Gem::Specification
 
-�����ǻ��ꤵ�줿̾������� Gem �򥤥�ǥå������������ޤ���
+引数で指定された名前を持つ Gem をインデックスから削除します。
 

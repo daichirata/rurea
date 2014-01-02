@@ -4,16 +4,16 @@ kind=defined
 
 --- new(name) -> OpenSSL::Cipher
 
-���̸��Ź�Υ��르�ꥺ��̾���Ϥ����б�����Ź楪�֥������Ȥ��������ޤ���
+共通鍵暗号のアルゴリズム名を渡し、対応する暗号オブジェクトを生成します。
 
-���ѤǤ��륢�르�ꥺ��ϥ����ƥ�˥��󥹥ȡ��뤵��Ƥ��� openssl �˰�¸���ޤ���
-[[m:OpenSSL::Cipher.ciphers]] �����Ѳ�ǽ�ʰŹ�Υ��르�ꥺ��̾�������ޤ���
+利用できるアルゴリズムはシステムにインストールされている openssl に依存します。
+[[m:OpenSSL::Cipher.ciphers]] で利用可能な暗号のアルゴリズム名が得られます。
 
-���ޤ��ޤ�����������ޤ�����2006ǯ���� aes256 (aes-256-cbc) 
-���Ѥ���Τ��¿��Ǥ��礦��
+さまざまな方式がありますが、2006年現在 aes256 (aes-256-cbc) 
+を用いるのが安心でしょう。
 
 
-@param name �Ź沽������̾��
-@raise RuntimeError ���Ѳ�ǽ�Ǥʤ��Ź沽����̾����ꤷ������ȯ�����ޤ�
-@raise OpenSSL::Cipher::CipherError ������˼��Ԥ�������ȯ�����ޤ�
+@param name 暗号化方式の名前
+@raise RuntimeError 利用可能でない暗号化方式名を指定した場合に発生します
+@raise OpenSSL::Cipher::CipherError 初期化に失敗した場合に発生します
 

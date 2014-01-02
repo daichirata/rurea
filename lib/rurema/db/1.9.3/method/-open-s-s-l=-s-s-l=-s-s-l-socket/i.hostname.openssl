@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- hostname -> String | nil
-TLS �� Server Name Indication ��ĥ�����Ѥ��륵���ФΥۥ���̾���֤��ޤ���
+TLS の Server Name Indication 拡張で利用するサーバのホスト名を返します。
 
-[[m:OpenSSL::SSL::SSLSocket#hostname=]] �����ꤷ���ͤ����Τޤ��֤���ޤ���
+[[m:OpenSSL::SSL::SSLSocket#hostname=]] で設定した値がそのまま返されます。
 
-���ꤷ�Ƥ��ʤ����� nil ���֤��ޤ���
+設定していない場合は nil を返します。
 
 @see [[m:OpenSSL::SSL::SSLSocket#hostname=]]

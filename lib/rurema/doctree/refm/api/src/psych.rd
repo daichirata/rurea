@@ -1,174 +1,213 @@
-require psych/nodes
-require psych/streaming
-require psych/visitors
-require psych/handler
-require psych/tree_builder
-require psych/parser
-require psych/omap
-require psych/set
-require psych/coder
-require psych/core_ext
-require psych/deprecated
-require psych/json
-#@# �ʲ��� autoload �Ǥ���������ա�
-require psych/stream
+category FileFormat
 
-[[lib:yaml]] �ΥХå�����ɥ饤�֥��Ǥ���libyaml �١����Ǻ�������Ƥ�
-�ꡢYAML �С������ 1.1 �򰷤������Ǥ��ޤ���
+[[lib:yaml]] のバックエンドライブラリです。libyaml ベースで作成されてお
+り、YAML バージョン 1.1 を扱う事ができます。
 
-#@# �嵭��libyaml ������������������С����Ҥ��ѹ��򤪴ꤤ���ޤ���
+#@# 上記、libyaml が更新される事があれば、記述の変更をお願いします。
 
-=== Overview
+=== 概要
 
-Psych is a YAML parser and emitter.  Psych leverages
-libyaml[http://libyaml.org] for it's YAML parsing and emitting capabilities.
-In addition to wrapping libyaml, Psych also knows how to serialize and
-de-serialize most Ruby objects to and from the YAML format.
+Psych を用いると YAML のパースと出力ができます。
+これらの機能は libyaml [[url:http://pyyaml.org/wiki/LibYAML]] を用いて
+実装されています。さらに Ruby の大半のオブジェクトと YAML フォーマットの
+データの間を相互に変換することができます。
 
-=== I NEED TO PARSE OR EMIT YAML RIGHT NOW!
+=== 基本的な使いかた
 
-  # Parse some YAML
+  require 'psych'
+  # YAML のテキストをパースする
   Psych.load("--- foo") # => "foo"
 
-  # Emit some YAML
+  # YAML のデータを出力
   Psych.dump("foo")     # => "--- foo\n...\n"
   { :a => 'b'}.to_yaml  # => "---\n:a: b\n"
 
-Got more time on your hands?  Keep on reading!
+基本的な使い方はこれだけです。簡単な用事は
+[[m:Psych.load]]、[[m:Psych.dump]] で片付きます。
 
-==== YAML Parsing
 
-Psych provides a range of interfaces for parsing a YAML document ranging from
-low level to high level, depending on your parsing needs.  At the lowest
-level, is an event based parser.  Mid level is access to the raw YAML AST,
-and at the highest level is the ability to unmarshal YAML to ruby objects.
+==== YAML のパース
 
-===== Low level parsing
+Psych は YAML ドキュメントのパースができます。
+ユーザの必要に応じ、高水準な API から低水準な API まで用意されています。
+最も低水準なものは、イベントベースな API です。中程度の水準のものとして
+YAML の AST(Abstract Syntax Tree)にアクセスする APIがあります。
+高水準な API では、YAML のドキュメントを Ruby のオブジェクトに変換する
+ことができます。
 
-The lowest level parser should be used when the YAML input is already known,
-and the developer does not want to pay the price of building an AST or
-automatic detection and conversion to ruby objects.  See Psych::Parser for
-more information on using the event based parser.
+===== 低水準 パース API
 
-===== Mid level parsing
+低水準のパース API は利用者が入力となる YAML ドキュメントについて
+すでに良く知っていて、AST を構築したり Ruby のオブジェクトに変換する
+のが無駄である場合に使います。この API については
+[[c:Psych::Parser]] を参照してください。イベントベースの API です。
 
-Psych provides access to an AST produced from parsing a YAML document.  This
-tree is built using the Psych::Parser and Psych::TreeBuilder.  The AST can
-be examined and manipulated freely.  Please see Psych::parse_stream,
-Psych::Nodes, and Psych::Nodes::Node for more information on dealing with
-YAML syntax trees.
+===== 中水準 パース API
 
-===== High level parsing
+Psych には YAML ドキュメントの AST にアクセスする API があります。
+この AST は [[c:Psych::Parser]] と [[c:Psych::TreeBuilder]] で構築します。
+[[m:Psych.parse_stream]]、[[c:Psych::Nodes]]、[[c:Psych::Nodes::Node]]
+などを経由して AST を解析したり操作したりできます。
 
-The high level YAML parser provided by Psych simply takes YAML as input and
-returns a Ruby data structure.  For information on using the high level parser
-see Psych.load
+===== 高水準 パース API
 
-==== YAML Emitting
+YAML ドキュメントをパースして Ruby のオブジェクトに変換することができます。
+詳しくは [[m:Psych.load]] を見てください。
 
-Psych provides a range of interfaces ranging from low to high level for
-producing YAML documents.  Very similar to the YAML parsing interfaces, Psych
-provides at the lowest level, an event based system, mid-level is building
-a YAML AST, and the highest level is converting a Ruby object straight to
-a YAML document.
 
-===== Low level emitting
+==== YAML ドキュメントの出力
 
-The lowest level emitter is an event based system.  Events are sent to a
-Psych::Emitter object.  That object knows how to convert the events to a YAML
-document.  This interface should be used when document format is known in
-advance or speed is a concern.  See Psych::Emitter for more information.
+Psych は YAML ドキュメントを出力する機能があります。
+高・中・底の三つの水準の API があります。
+低水準 API はイベントベースの API で、中水準のものは AST を構築する API、
+高水準の API は Ruby のオブジェクトを直接 YAML ドキュメントに変換する API
+です。これはパースの高・中・底水準 API と対応しています。
 
-===== Mid level emitting
 
-At the mid level is building an AST.  This AST is exactly the same as the AST
-used when parsing a YAML document.  Users can build an AST by hand and the
-AST knows how to emit itself as a YAML document.  See Psych::Nodes,
-Psych::Nodes::Node, and Psych::TreeBuilder for more information on building
-a YAML AST.
+===== 低水準出力 API
 
-===== High level emitting
+低水準出力 API はイベントベースな仕組みです。
+各イベントは [[c:Psych::Emitter]] オブジェクトに送られます。
+このオブジェクトには、
+各イベントをどのように YAML ドキュメントに変換するかをセットしておきます。
+この API は出力フォーマットがあらかじめわかっている場合や性能が重要な
+場合に利用します。
 
-The high level emitter has the easiest interface.  Psych simply takes a Ruby
-data structure and converts it to a YAML document.  See Psych.dump for more
-information on dumping a Ruby data structure.
+詳しくは [[c:Psych::Emitter]] を見てください。
+
+=====  中水準出力 API 
+
+中水準 API では、利用者が AST を構築し YAML ドキュメントに変換します。
+この AST は YAML ドキュメントをパースして得られるものと同じものです。
+詳しくは
+[[c:Psych::Nodes]]、[[c:Psych::Nodes::Node]]、[[c:Psych::TreeBuilder]]
+を参照してください。
+
+===== 高水準出力 API
+
+高水準 API を使うと Ruby のデータ構造(オブジェクト)を YAML のドキュメントに
+変換できます。
+詳しくは [[m:Psych.dump]] を参照してください。
 
 = module Psych
 
-[[lib:yaml]] �ΥХå�����ɤΤ���Υ⥸�塼��Ǥ���
+[[lib:yaml]] のバックエンドのためのモジュールです。
 
 == Constants
 
 --- VERSION -> String
-#@todo
-
-The version is Psych you're using
+Psych のバージョン。
 
 --- LIBYAML_VERSION -> String
-#@todo
-
-The version of libyaml Psych is using
+libyaml のバージョン。
 
 == Class Methods
 
-#@# psych.so ��ꡣ
---- libyaml_version
-#@todo
+--- libyaml_version -> [Integer, Integer, Integer]
+libyaml のバージョンを返します。
 
-Returns the version of libyaml being used
+[major, minor patch-level] という 3 つの整数からなる配列を返します。
 
---- load(yaml) -> object
-#@todo
+@see [[m:Psych::LIBYAML_VERSION]]
 
-Load +yaml+ in to a Ruby data structure.  If multiple documents are
-provided, the object contained in the first document will be returned.
+--- load(yaml, filename = nil) -> object
+YAML ドキュメントを Ruby のデータ構造(オブジェクト)に変換します。
 
-Example:
+入力に複数のドキュメントが含まれている場合は、先頭のものを変換して
+返します。
 
+filename はパース中に発生した例外のメッセージに用います。
+
+
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@param filename 例外メッセージのためのファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+@see [[m:Psych.parse]]
+
+==== 例
   Psych.load("--- a")           # => 'a'
   Psych.load("---\n - a\n - b") # => ['a', 'b']
 
---- parse(yaml) -> object
-#@todo
+  begin
+    Psych.load("--- `", "file.txt")
+  rescue Psych::SyntaxError => ex
+    p ex.file    # => 'file.txt'
+    p ex.message # => "(file.txt): found character that cannot start any token while scanning for the next token at line 1 column 5"
+  end
 
-Parse a YAML string in +yaml+.  Returns the first object of a YAML AST.
+--- parse(yaml, filename = nil) -> Psych::Nodes::Document
+YAML ドキュメントをパースし、YAML の AST を返します。
 
-Example:
+入力に複数のドキュメントが含まれている場合は、先頭のものを AST に変換して
+返します。
 
-  Psych.parse("---\n - a\n - b") # => #<Psych::Nodes::Sequence:0x00>
+filename はパース中に発生した例外のメッセージに用います。
 
-[[c:Psych::Nodes]] for more information about YAML AST.
+AST については [[c:Psych::Nodes]] を参照してください。
 
---- parse_file(filename) -> object
-#@todo
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@param filename 例外メッセージのためのファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+@see [[m:Psych.load]]
 
-Parse a file at +filename+. Returns the YAML AST.
+==== 例
+
+  Psych.parse("---\n - a\n - b") # => #<Psych::Nodes::Document:...>
+
+  begin
+    Psych.parse("--- `", "file.txt")
+  rescue Psych::SyntaxError => ex
+    p ex.file    # => 'file.txt'
+    p ex.message # => "(file.txt): found character that cannot start any token while scanning for the next token at line 1 column 5"
+  end
+
+--- parse_file(filename) -> Psych::Nodes::Document
+filename で指定したファイルをパースして YAML の AST を返します。
+
+@param filename パースするファイルの名前
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
 
 --- parser -> Psych::Parser
-#@todo
+デフォルトで使われるのパーサを返します。
 
-Returns a default parser
 
---- parse_stream(yaml)
-#@todo
+--- parse_stream(yaml) -> Psych::Nodes::Stream
+--- parse_stream(yaml){|node| ... } -> ()
 
-Parse a YAML string in +yaml+.  Returns the full AST for the YAML document.
-This method can handle multiple YAML documents contained in +yaml+.
+YAML ドキュメントをパースします。
+yaml が 複数の YAML ドキュメントを含む場合を取り扱うことができます。
 
-Example:
+ブロックなしの場合は YAML の AST (すべての YAML ドキュメントを
+保持した [[c:Psych::Nodes::Stream]] オブジェクト)を返します。
 
+ブロック付きの場合は、そのブロックに最初の YAML ドキュメント
+の Psych::Nodes::Document オブジェクトが渡されます。
+この場合の返り値には意味がありません。
+
+
+@see [[c:Psych::Nodes]]
+
+==== 例
   Psych.parse_stream("---\n - a\n - b") # => #<Psych::Nodes::Stream:0x00>
 
-See Psych::Nodes for more information about YAML AST.
+--- dump(o, options = {}) -> String
+--- dump(o, io, options = {}) -> ()
+Ruby のオブジェクト o を YAML ドキュメントに変換します。
 
---- dump(o, io = nil, options = {})
-#@todo
+io に IO オブジェクトを指定した場合は、変換されたドキュメントが
+その IO に書き込まれます。
+指定しなかった場合は変換されたドキュメントが文字列としてメソッドの返り値と
+なります。
 
-Dump Ruby object +o+ to a YAML string.  Optional +options+ may be passed in
-to control the output format.  If an IO object is passed in, the YAML will
-be dumped to that IO object.
+options で出力に関するオプションを以下の指定できます。
 
-Example:
+#@include(psych/dump_options)
+
+@param o 変換するオブジェクト
+@param io 出力先
+@param options 出力オプション
+
+==== 例
 
   # Dump an array, get back a YAML string
   Psych.dump(['a', 'b'])  # => "---\n- a\n- b\n"
@@ -182,35 +221,68 @@ Example:
   # Dump an array to an IO with indentation set
   Psych.dump(['a', ['b']], StringIO.new, :indentation => 3)
 
---- dump_stream(*objects)
-#@todo
+--- dump_stream(*objects) -> String
+オブジェクト列を YAML ドキュメント列に変換します。
 
-Dump a list of objects as separate documents to a document stream.
+@param objects 変換対象のオブジェクト列
 
-Example:
-
+==== 例
   Psych.dump_stream("foo\n  ", {}) # => "--- ! \"foo\\n  \"\n--- {}\n"
 
 --- to_json(o) -> String
-#@todo
+Ruby のオブジェクト o を JSON の文字列に変換します。
 
-Dump Ruby object +o+ to a JSON string.
+@param o 変換対象となるオブジェクト
 
---- load_stream(yaml)
-#@todo
+--- load_stream(yaml, filename=nil) -> [object]
+--- load_stream(yaml, filename=nil){|obj| ... } -> ()
+複数の YAML ドキュメントを含むデータを
+Ruby のオブジェクトに変換します。
 
-Load multiple documents given in +yaml+.  Returns the parsed documents
-as a list.  For example:
+ブロックなしの場合はオブジェクトの配列を返します。
 
   Psych.load_stream("--- foo\n...\n--- bar\n...") # => ['foo', 'bar']
 
---- load_file(filename)
-#@todo
+ブロックありの場合は各オブジェクト引数としてそのブロックを呼び出します。
+  list = []
+  Psych.load_stream("--- foo\n...\n--- bar\n...") do |ruby|
+    list << ruby
+  end
+  list # => ['foo', 'bar']
 
-Load the document contained in +filename+.  Returns the yaml contained in
-+filename+ as a ruby object
+filename はパース中に発生した例外のメッセージに用います。
 
-#@# �ʲ��Υ᥽�åɤˤĤ��Ƥϡ�stopdoc �����ꤵ��Ƥ��뤿�ᡢ��ά��
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@param filename 例外メッセージのためのファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+
+--- load_file(filename) -> object
+filename で指定したファイルを YAML ドキュメントとして
+Ruby のオブジェクトに変換します。
+
+@param filename ファイル名
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+
+--- load_documents(yaml) ->[object]
+--- load_documents(yaml){|obj| ... } -> ()
+複数の YAML ドキュメントを含むデータを
+Ruby のオブジェクトに変換します。
+このメソッドは deprecated です。[[m:Psych.load_stream]] を代わりに
+使ってください。
+
+@param yaml YAML ドキュメント(文字列 or IO オブジェクト)
+@raise Psych::SyntaxError YAMLドキュメントに文法エラーが発見されたときに発生します
+
+#@# Deprecated methods, no documents in psych lib
+#@# --- quick_emit
+#@# --- detect_implicit
+#@# --- add_ruby_type
+#@# --- add_private_type
+#@# --- tagurize
+#@# --- read_type_class
+#@# --- object_maker
+
+#@# For internal use, :nodoc:
 #@# --- add_domain_type(domain, type_tag, &block)
 #@# --- add_builtin_type(type_tag, &block)
 #@# --- remove_type(type_tag)
@@ -223,193 +295,55 @@ Load the document contained in +filename+.  Returns the yaml contained in
 #@# --- domain_types=(val)
 
 = class Psych::Exception < RuntimeError
+Psych 関連のエラーを表す例外です。
 
-#@# �ʹߡ�psych.so ��ꡣ
-= class Psych::Parser
+= class Psych::BadAlias < Psych::Exception
+YAML の alias が不正である(本体が見つからない)というエラーを表す例外です。
 
-== Constants
-
---- ANY
-#@todo
-
-Any encoding: Let the parser choose the encoding
-
---- UTF8
-#@todo
-
-UTF-8 Encoding
-
---- UTF16LE
-#@todo
-
-UTF-16-LE Encoding with BOM
-
---- UTF16BE
-#@todo
-
-UTF-16-BE Encoding with BOM
+= class Psych::SyntaxError < SyntaxError
+YAML の文法エラーを表すクラスです。
 
 == Instance Methods
-
---- parse(yaml)
-#@todo
-
-Parse the YAML document contained in yaml.  Events will be called on
-the handler set on the parser instance.
-
-@see [[c:Psych::Parser]], [[m:Psych::Parser#handler]]
-
---- mark -> Psych::Parser::Mark
-#@todo
-
-Returns a Psych::Parser::Mark object that contains line, column, and index
-information.
-
---- external_encoding=(encoding)
-#@todo
-
-���ȤΥ��󥳡��ǥ��󥰤� encoding �ǻ��ꤷ����Τ����ꤷ�ޤ���
-
-@param encoding
-
-@raise Psych::Exception 2 ��ʾ奨�󥳡��ǥ��󥰤���ꤷ������ȯ�����ޤ���
-
-= class Psych::Handler
-
-= class Psych::Emitter < Psych::Handler
-
-== Class Methods
-
---- new(io) -> Psych::Emitter
-#@todo
-
-���Ȥ��������ޤ���
-
-== Instance Methods
-
---- start_stream(encoding) -> Psych::Emitter
-#@todo
-
-Start a stream emission with +encoding+
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#start_stream]]
-
---- end_stream -> Psych::Emitter
-#@todo
-
-End a stream emission
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#end_stream]]
-
---- start_document(version, tags, implicit) -> Psych::Emitter
-#@todo
-
-Start a document emission with YAML +version+, +tags+, and an +implicit+
-start.
-
-���Ȥ��֤��ޤ���
-
-@raise RuntimeError tag tuple ��Ĺ���� 2 �ʲ��ξ���ȯ�����ޤ���
-
-@see [[m:Psych::Handler#start_document]]
-
---- end_document(implicit) -> Psych::Emitter
-#@todo
-
-End a document emission with an +implicit+ ending.
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#end_document]]
-
---- scalar(value, anchor, tag, plain, quoted, style) -> Psych::Emitter
-#@todo
-
-Emit a scalar with +value+, +anchor+, +tag+, and a +plain+ or +quoted+
-string type with +style+.
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#scalar]]
-
---- start_sequence(anchor, tag, implicit, style) -> Psych::Emitter
-#@todo
-
-Start emitting a sequence with +anchor+, a +tag+, +implicit+ sequence
-start and end, along with +style+.
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#start_sequence]]
-
---- end_sequence -> Psych::Emitter
-#@todo
-
-End sequence emission.
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#end_sequence]]
-
---- start_mapping(anchor, tag, implicit, style) -> Psych::Emitter
-#@todo
-
-Start emitting a YAML map with +anchor+, +tag+, an +implicit+ start
-and end, and +style+.
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#start_mapping]]
-
---- end_mapping -> Psych::Emitter
-#@todo
-
-Emit the end of a mapping.
-
-���Ȥ��֤��ޤ���
-
-See Psych::Handler#end_mapping
-
---- alias(anchor) -> Psych::Emitter
-#@todo
-
-Emit an alias with +anchor+.
-
-���Ȥ��֤��ޤ���
-
-@see [[m:Psych::Handler#alias]]
-
---- canonical -> bool
-#@todo
-
-Get the output style, canonical or not.
-
---- canonical=(bool)
-#@todo
-
-Set the output style to canonical, or not.
-
---- indentation -> Integer
-#@todo
-
-Get the indentation level.
-
---- indentation=(level)
-#@todo
-
-Set the indentation level to +level+.  The level must be less than 10 and
-greater than 1.
-
---- line_width -> Integer
-#@todo
-
-Get the preferred line width.
-
---- line_width=(width)
-#@todo
-
-Set the preferred line with to +width+.
+--- file -> String|nil
+エラーが生じたファイルの名前を返します。
+
+[[m:Psych.load_file]] で指定したファイルの名前や
+[[m:Psych.load]] の第2引数で指定した名前が返されます。
+パース時にファイル名を指定しなかった場合は nil が返されます。
+
+--- line -> Integer
+エラーが生じた行番号を返します。
+
+--- column -> Integer
+エラーが生じた行内の位置を返します。
+
+--- offset -> Integer
+エラーが生じた位置の offset をバイト数で
+返します。
+
+offset とは、
+[[m:Psych::SyntaxError#line]], [[m:Psych::SyntaxError#column]] 
+で指示される位置からの相対位置です。
+この位置から 0 バイトの位置でエラーが発生することが多いため、
+このメソッドはしばしば 0 を返します。
+
+--- problem -> String
+生じたエラーの中身を文字列で返します。
+
+--- context -> String
+エラーが生じたコンテキストを文字列で返します。
+
+= class Psych::Set < Hash
+YAML の unordered set を表すクラスです。
+
+= class Psych::Omap < Hash
+YAML の ordered mapping を表すクラスです。
+
+#@include(psych/Psych__Parser)
+#@include(psych/Psych__Handler)
+#@include(psych/Psych__TreeBuilder)
+#@include(psych/Psych__Nodes)
+#@include(psych/Psych__Visitors)
+#@include(psych/Psych__Stream)
+#@include(psych/Psych__ScalarScanner)
+#@include(psych/core_ext.rd)

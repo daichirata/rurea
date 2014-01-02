@@ -6,7 +6,7 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 3xx (Redirection) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 3xx (Redirection) を表現するクラスです。
 
-�ꥯ�����Ȥ�����˼������ޤ�������������λ���뤿��ˤ�
-����ʤ�ư�ɬ�פʤ��Ȥ�ɽ���ޤ���
+リクエストが正常に受信しましたが、処理を完了するためには
+さらなる動作が必要なことを表します。

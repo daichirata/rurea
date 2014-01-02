@@ -4,12 +4,12 @@ kind=defined
 
 --- step(limit, step = 1){|date| ...} -> self
 --- step(limit, step = 1) -> Enumerator
-�֥��å���ɾ���򷫤��֤��ޤ����֥��å������ե��֥������Ȥ�Ȥ�ޤ���
-limit �����ե��֥������ȤǤʤ���Фʤ�ޤ���
-�ޤ� step �������Ǥʤ���Фʤ�ޤ���
+ブロックの評価を繰り返します。ブロックは日付オブジェクトをとります。
+limit は日付オブジェクトでなければなりません、
+また step は非零でなければなりません。
 
-@param limit ���ե��֥�������
-@param step ����
+@param limit 日付オブジェクト
+@param step 歩幅
 
 @see [[m:Date#downto]], [[m:Date#upto]]
 

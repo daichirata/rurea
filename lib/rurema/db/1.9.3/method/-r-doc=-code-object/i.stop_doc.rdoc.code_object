@@ -4,12 +4,12 @@ kind=defined
 
 --- stop_doc -> ()
 
-�ʹߤ˲��Ϥ��������Ȥ� [[m:RDoc::CodeObject#start_doc]] ��ƤӽФ���
-�Ǥδ֡��ɥ�����Ȥ˴ޤ�ޤ���
+以降に解析したコメントを [[m:RDoc::CodeObject#start_doc]] を呼び出すま
+での間、ドキュメントに含めません。
 
-:stopdoc: �򸫤Ĥ������˸ƤӽФ���ޤ���
-[[m:RDoc::CodeObject#document_self]] ��
-[[m:RDoc::CodeObject#document_children]] �� false �����ꤷ�ޤ���
+:stopdoc: を見つけた時に呼び出されます。
+[[m:RDoc::CodeObject#document_self]] と
+[[m:RDoc::CodeObject#document_children]] を false に設定します。
 
 @see [[m:RDoc::CodeObject#start_doc]]
 

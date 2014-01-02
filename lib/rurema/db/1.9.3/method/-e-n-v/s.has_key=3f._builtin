@@ -7,7 +7,7 @@ kind=defined
 --- key?(key)     -> bool
 --- member?(key)  -> bool
 
-key �ǻ��ꤵ���Ķ��ѿ���¸�ߤ�����������֤��ޤ���
+key で指定される環境変数が存在する時、真を返します。
 
-@param key   �Ķ��ѿ���̾������ꤷ�ޤ���to_str ��ʸ���󲽤���ޤ���
+@param key   環境変数の名前を指定します。to_str で文字列化されます。
 

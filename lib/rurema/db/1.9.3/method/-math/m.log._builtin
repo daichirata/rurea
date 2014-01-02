@@ -5,13 +5,13 @@ kind=defined
 --- log(x) -> Float
 --- log(x, b) -> Float
 
-x ���п����֤��ޤ���
+x の対数を返します。
 
-@param x ���μ¿�����ꤷ�ޤ���
+@param x 正の実数を指定します。
 
-@param b �����ꤷ�ޤ�����ά�������ϼ����п���׻����ޤ���
+@param b 底を指定します。省略した場合は自然対数を計算します。
 
-@raise TypeError �����Τɤ��餫�˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError 引数のどちらかに数値以外を指定した場合に発生します。
 
-@raise RangeError �����Τɤ��餫�˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError 引数のどちらかに実数以外の数値を指定した場合に発生します。
 

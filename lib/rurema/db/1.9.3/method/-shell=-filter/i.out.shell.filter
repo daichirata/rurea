@@ -4,14 +4,14 @@ kind=defined
 
 --- out(dev = STDOUT, &block) -> ()
 
-[[m:Shell#transact]] ¤ò¸Æ¤Ó½Ğ¤·¤½¤Î·ë²Ì¤ò dev ¤Ë½ĞÎÏ¤·¤Ş¤¹¡£
+[[m:Shell#transact]] ã‚’å‘¼ã³å‡ºã—ãã®çµæœã‚’ dev ã«å‡ºåŠ›ã—ã¾ã™ã€‚
 
-@param dev  ½ĞÎÏÀè¤òIO ¥ª¥Ö¥¸¥§¥¯¥È¤Ê¤É¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param dev  å‡ºåŠ›å…ˆã‚’IO ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãªã©ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param block transact ÆâÉô¤Ç¼Â¹Ô¤¹¤ë¥·¥§¥ë¤ò»ØÄê¤·¤Ş¤¹¡£
+@param block transact å†…éƒ¨ã§å®Ÿè¡Œã™ã‚‹ã‚·ã‚§ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 
-»ÈÍÑÎã:
+ä½¿ç”¨ä¾‹:
   require 'shell'
   Shell.def_system_command("head")
   sh = Shell.new

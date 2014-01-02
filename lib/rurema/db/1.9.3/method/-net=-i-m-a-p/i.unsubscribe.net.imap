@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- unsubscribe(mailbox) -> Net::IMAP::TaggedResponse
-UNSUBSCRIBE ���ޥ�ɤ����ꡢ���ꤷ���᡼��ܥå�����
-"active" �⤷���� "subscribe" �ʥ᡼��ܥå����ν��礫��
-������ޤ���
+UNSUBSCRIBE コマンドを送り、指定したメールボックスを
+"active" もしくは "subscribe" なメールボックスの集合から
+削除します。
 
-@param mailbox ������뤹��᡼��ܥå�����̾��(ʸ����)
-@raise Net::IMAP::NoResponseError ���ꤷ��̾���Υ᡼��ܥå�����
-       ����Ǥ��ʤ��ä�����ȯ�����ޤ���
-       ���ꤷ��̾���Υ᡼��ܥå����� active/subscribe �Ǥʤ��ä�
-       ���ʤɤ�ȯ�����ޤ���
+@param mailbox 削除するするメールボックスの名前(文字列)
+@raise Net::IMAP::NoResponseError 指定した名前のメールボックスを
+       削除できなかった場合に発生します。
+       指定した名前のメールボックスが active/subscribe でなかった
+       場合などに発生します。
 

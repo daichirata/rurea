@@ -1,9 +1,0 @@
-names=debug_level=
-visibility=public
-kind=defined
-
---- debug_level=(n)
-@todo
-
-irb のデバッグレベルの設定
-

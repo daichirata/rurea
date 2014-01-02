@@ -4,7 +4,7 @@ kind=defined
 
 --- field_size_limit -> Fixnum
 
-�ե�����ɥ������κ����ͤ��֤��ޤ���
+フィールドサイズの最大値を返します。
 
 @see [[m:CSV.new]]
 

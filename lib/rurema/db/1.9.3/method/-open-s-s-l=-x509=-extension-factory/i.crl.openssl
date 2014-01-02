@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- crl -> OpenSSL::X509::CRL | nil
-���Ȥ����ꤵ�줿�����񼺸��ꥹ�ȥ��֥������Ȥ��֤��ޤ���
+自身に設定された証明書失効リストオブジェクトを返します。
 
-���ꤵ��Ƥ��ʤ����� nil ���֤��ޤ���
+設定されていない場合は nil を返します。

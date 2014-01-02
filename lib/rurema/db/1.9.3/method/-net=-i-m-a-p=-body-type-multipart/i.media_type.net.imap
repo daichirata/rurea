@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- media_type -> String
-MIME д╬есе╟егеве┐еде╫дЄ╩╓д╖д▐д╣бг
+MIME уБоуГбуГЗуВгуВвуВ┐уВдуГЧуВТш┐ФуБЧуБ╛уБЩуАВ
 
-"MULTIPART" дЄ╩╓д╖д▐д╣бг
+"MULTIPART" уВТш┐ФуБЧуБ╛уБЩуАВ
 
 @see [[m:Net::IMAP::BodyTypeMultipart#subtype]]
 

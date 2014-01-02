@@ -2,11 +2,10 @@ names=to_json
 visibility=public 
 kind=defined
 
---- to_json(state = nil, depth = 0) -> String
+--- to_json(state = nil) -> String
 
-¼«¿È¤«¤éÀ¸À®¤·¤¿ JSON ·Á¼°¤ÎÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã‹ã‚‰ç”Ÿæˆã—ãŸ JSON å½¢å¼ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param state À¸À®¤¹¤ë JSON ·Á¼°¤ÎÊ¸»úÎó¤ò¥«¥¹¥¿¥Þ¥¤¥º¤¹¤ë¤¿¤á¤Ë [[c:JSON::State]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Þ¤¹¡£
+@param state ç”Ÿæˆã™ã‚‹ JSON å½¢å¼ã®æ–‡å­—åˆ—ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã™ã‚‹ãŸã‚ã« [[c:JSON::State]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param depth ¥Í¥¹¥È¤Î¿¼¤µ¤ò¸«¤Ä¤±¤ë¤¿¤á¤Ë»ÈÍÑ¤µ¤ì¤Þ¤¹¡£
 

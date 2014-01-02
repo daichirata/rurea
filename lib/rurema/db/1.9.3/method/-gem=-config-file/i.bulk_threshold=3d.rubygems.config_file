@@ -4,7 +4,7 @@ kind=defined
 
 --- bulk_threshold=(bulk_threshold)
 
-°ì³ç¥À¥¦¥ó¥í¡¼¥É¤ÎïçÃÍ¤òÀßÄê¤·¤Ş¤¹¡£
+ä¸€æ‹¬ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã®é–¾å€¤ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param bulk_threshold ¿ôÃÍ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param bulk_threshold æ•°å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

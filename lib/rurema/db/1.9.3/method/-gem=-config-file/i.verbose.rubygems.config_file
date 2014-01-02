@@ -4,7 +4,7 @@ kind=defined
 
 --- verbose -> bool | Symbol
 
-�����ν��ϥ�٥���֤��ޤ���
+ログの出力レベルを返します。
 
 @see [[m:Gem::ConfigFile#verbose=]]
 

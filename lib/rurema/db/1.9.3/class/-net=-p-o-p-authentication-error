@@ -6,4 +6,4 @@ library=net.pop
 aliases=
 aliasof=
 
-POP3 ��ǧ�ڤ˼��Ԥ����Ȥ���ȯ�����ޤ���
+POP3 で認証に失敗したときに発生します。

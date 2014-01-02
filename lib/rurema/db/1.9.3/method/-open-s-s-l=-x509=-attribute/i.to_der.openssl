@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- to_der -> String
-���Ȥ� DER �����ΥХ�������Ѵ����ޤ���
+自身を DER 形式のバイト列に変換します。
 
-@raise OpenSSL::X509::AttributeError �Ѵ��˼��Ԥ�������ȯ�����ޤ�
+@raise OpenSSL::X509::AttributeError 変換に失敗した場合に発生します
 

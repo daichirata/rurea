@@ -3,8 +3,10 @@ visibility=public
 kind=defined
 
 --- indentation=(level)
-@todo
+インデントのレベルを指定します。
 
-Set the indentation level to +level+.  The level must be less than 10 and
-greater than 1.
+1 から 9 までの整数で指定します。
+
+@param level インデントレベル
+@see [[m:Psych::Emitter#indentation]]
 

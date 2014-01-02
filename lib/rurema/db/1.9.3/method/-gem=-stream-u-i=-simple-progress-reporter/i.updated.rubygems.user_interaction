@@ -4,7 +4,7 @@ kind=defined
 
 --- updated(message) -> nil
 
-�ɥåȤ�ɽ�����ޤ���
+ドットを表示します。
 
-@param message ���ꤷ�Ƥ��̣������ޤ���
+@param message 指定しても意味がありません。
 

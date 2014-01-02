@@ -4,23 +4,23 @@ kind=added
 
 --- count_nodes(result_hash = nil) -> Hash
 
-�Ρ��ɤμ��ऴ�Ȥο����Ǽ�����ϥå�����֤��ޤ���
+ノードの種類ごとの数を格納したハッシュを返します。
 
-@param result_hash ����ͤΤ���Υϥå������ꤷ�ޤ�����ά�������Ͽ�
-                   �����ϥå����������ޤ���result_hash �����ƤϾ��
-                   ����ޤ����ץ����ָ��̤��򤱤뤿��˻��Ѥ��ޤ���
+@param result_hash 戻り値のためのハッシュを指定します。省略した場合は新
+                   しくハッシュを作成します。result_hash の内容は上書き
+                   されます。プローブ効果を避けるために使用します。
 
-@raise TypeError result_hash �˥ϥå���ʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError result_hash にハッシュ以外を指定した時に発生します。
 
-�ܥ᥽�åɤ����̤� Ruby �ץ�����޸����Υ᥽�åɤǤϤ���ޤ��󡣥ѥե���
-�ޥ󥹤��������˶�̣�Τ��� C Ruby �γ�ȯ�Ը����Τ�ΤǤ���
+本メソッドは普通の Ruby プログラマ向けのメソッドではありません。パフォー
+マンスやメモリ管理に興味のある C Ruby の開発者向けのものです。
 
-��:
+例:
 
   ObjectSpace.count_nodes
   # => {:NODE_METHOD=>2027, :NODE_FBODY=>1927, :NODE_CFUNC=>1798, ...}
 
-����ͤΥϥå���Ͻ����Ϥ˰�¸���ޤ�������Ͼ����ѹ��ˤʤ뤫�⤷��ޤ���
+戻り値のハッシュは処理系に依存します。これは将来変更になるかもしれません。
 
-�ܥ᥽�åɤ� C Ruby �ʳ��Ǥ�ư��ޤ���
+本メソッドは C Ruby 以外では動作しません。
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- new(server, name) -> WEBrick::HTTPServlet::ERBHandler
 
-¼«¿È¤ò½é´ü²½¤·¤Ş¤¹¡£
+è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param server [[c:WEBrick::GenericServer]] ¤Î¥µ¥Ö¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò
-              »ØÄê¤·¤Ş¤¹¡£
+@param server [[c:WEBrick::GenericServer]] ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’
+              æŒ‡å®šã—ã¾ã™ã€‚
 
-@param name ¼Â¹Ô¤·¤¿¤¤ ERB ¤Î¥Õ¥¡¥¤¥ëÌ¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param name å®Ÿè¡Œã—ãŸã„ ERB ã®ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

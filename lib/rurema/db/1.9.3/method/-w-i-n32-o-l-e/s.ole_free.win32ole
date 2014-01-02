@@ -4,15 +4,15 @@ kind=defined
 
 --- ole_free(aWIN32OLE) -> Integer
 
-�����ǻ��ꤷ�����֥������Ȥ�������ޤ���
+引数で指定したオブジェクトを解放します。
 
-���Υ᥽�åɤϼ��WIN32OLE�ΥǥХå������WIN32OLE�����Ѥ���ߥɥ륦��
-���μ����Τ�����Ѱդ���Ƥ��ޤ������Τ��ᡢ�᥽�åɤ�����ư��������
-����COM�λ��ͤ�WIN32OLE�����������˽��Τ��Ƥ��ʤ����ϻ��Ѥ��ʤ��Ǥ���
-������
+このメソッドは主にWIN32OLEのデバッグおよびWIN32OLEを利用するミドルウェ
+アの実装のために用意されています。このため、メソッドの内部動作は不定で
+す。COMの仕様とWIN32OLEの内部処理に熟知していない場合は使用しないでくだ
+さい。
 
-@param aWIN32OLE ��������WIN32OLE���֥������ȡ�
+@param aWIN32OLE 解放するWIN32OLEオブジェクト。
 
-@return Release������͡�COM�λ��;�ϸ��ߤΥ��֥������Ȥλ��ȥ������
-        �ͤ򼨤��ޤ���
+@return Releaseの戻り値。COMの仕様上は現在のオブジェクトの参照カウント
+        値を示します。
 

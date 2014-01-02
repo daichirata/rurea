@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- compute_key(bn) -> String
-¼«Ê¬¤ÎÈëÌ©¸°¤ÈÁê¼ê¤Î¸ø³«¸°¤«¤é¸°Ê¸»úÎó¤ò·×»»¤·¡¢ÊÖ¤·¤Þ¤¹¡£
+è‡ªåˆ†ã®ç§˜å¯†éµã¨ç›¸æ‰‹ã®å…¬é–‹éµã‹ã‚‰éµæ–‡å­—åˆ—ã‚’è¨ˆç®—ã—ã€è¿”ã—ã¾ã™ã€‚
 
-Áê¼ê¤Î¸ø³«¸°¤Ï [[c:OpenSSL::BN]] ¤« [[c:Integer]] ¤Ç¤¢¤ëÉ¬Í×¤¬¤¢¤ê¤Þ¤¹¡£
+ç›¸æ‰‹ã®å…¬é–‹éµã¯ [[c:OpenSSL::BN]] ã‹ [[c:Integer]] ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
-@param bn Áê¼ê¤Î¸ø³«¸°(OpenSSL::BN)
+@param bn ç›¸æ‰‹ã®å…¬é–‹éµ(OpenSSL::BN)
 
 

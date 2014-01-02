@@ -1,4 +1,7 @@
-Ruby�Υ��֥������Ȥ�YAML�����γ����ե�����˳�Ǽ���뤿��Υ��饹�Ǥ���
+require yaml
+require pstore
+
+RubyのオブジェクトをYAML形式の外部ファイルに格納するためのクラスです。
 
   require "yaml/store"
 
@@ -9,72 +12,79 @@ Ruby�Υ��֥������Ȥ�YAML�����γ����ե�����˳�Ǽ���뤿��Υ��饹�Ǥ���
 
 = class YAML::Store < PStore
 
-[[c:PStore]] �� [[c:YAML]] �ǤǤ���
-[[m:Marshal.#dump]] �����Х��ʥ������
-����� YAML �����ǥե��������¸���ޤ���
+[[c:PStore]] の [[c:YAML]] 版です。
+[[m:Marshal.#dump]] したバイナリ形式の
+代わりに YAML 形式でファイルに保存します。
 
-�Ȥ����� [[c:PStore]] �ȤۤȤ��Ʊ���Ǥ���
-���󥿡��ե������� [[c:Hash]] �˻��Ƥ��ޤ��� 
+使い方は [[c:PStore]] とほとんど同じです。
+インターフェースは [[c:Hash]] に似ています。
 
 == Class Methods
 --- new(*options) -> YAML::Store
 
-YAML �����Υե�������ɤ߹��ޤ��������ϡ��ǽ�ΰ����˥ե�����̾��ʸ����ǻ��ꤷ�ޤ���
-�Ǹ�ΰ������ϥå���Ǥ��ä����ϡ�YAML �Υǥե���Ȥ�������ѹ����ޤ���
+自身を初期化します。
 
-@param options �ɤ߹��ޤ������ե�����䡢���ץ�����Ϳ���ޤ���
+YAML 形式のファイルを読み込ませたい場合は、最初の引数にファイル名を文字列で指定します。
+最後の引数がハッシュであった場合は、YAML 出力時のオプションを変更します。
 
-@see [[m:YAML::DEFAULTS]]
+@param options 読み込ませたいファイルや、オプションを与えます。
+
+#@since 1.9.2
+@see [[m:Object#to_yaml]]
+#@else
+@see [[m:Object#to_yaml]], [[m:YAML::DEFAULTS]]
+#@end
 
 == Instance Methods
 #@since 1.8.2
 --- dump(table) -> String
 
-YAML ������ʸ������֤��ޤ���
+YAML 形式の文字列を返します。
 
-@param table ���Ѥ���ޤ���
+@param table 使用されません。
 
 --- load(content) -> object
 
-YAML ������ʸ���󤫤�ǡ������ɤ߹��ߤޤ���
+YAML 形式の文字列からデータを読み込みます。
 
-@param content YAML ������ʸ�������ꤷ�ޤ���
+@param content YAML 形式の文字列を指定します。
 
 #@until 1.8.7
 --- load_file(file) -> object
 
-[[c:File]] ���֥������Ȥ��� YAML �����Υǡ������ɤ߹��ߤޤ���
+[[c:File]] オブジェクトから YAML 形式のデータを読み込みます。
 
-@param file [[c:File]] ���֥������Ȥ���ꤷ�ޤ���
+@param file [[c:File]] オブジェクトを指定します。
 
 #@end
 #@end
 #@since 1.8.7
 --- empty_marshal_checksum -> String
 
-���Υǡ����Υ����å�������֤��ޤ���
+空のデータのチェックサムを返します。
 
 --- empty_marshal_data -> String
 
-���Υǡ������֤��ޤ���
+空のデータを返します。
 
 --- marshal_dump_supports_canonical_option? -> false
 
-[[c:YAML::Store]] �Ǥ� [[m:Marshal.#dump]] ����Ѥ��ʤ��ΤǾ�˵����֤��ޤ���
+[[c:YAML::Store]] では [[m:Marshal.#dump]] を使用しないので常に偽を返します。
 
 #@end
 #@until 1.8.2
 --- transaction(read_only = false) -> ()
-�ȥ�󥶥�����������ޤ������Υ֥��å�����ǤΤߥǡ����١������ɤ߽񤭤��Ǥ��ޤ���
-�ɤ߹������ѤΥȥ�󥶥�����󤬻��Ѳ�ǽ�Ǥ��� 
+トランザクションに入ります。このブロックの中でのみデータベースの読み書きができます。
+読み込み専用のトランザクションが使用可能です。
 
-@param read_only ������ꤹ��ȡ��ɤ߹������ѤΥȥ�󥶥������ˤʤ�ޤ��� 
+@param read_only 真を指定すると、読み込み専用のトランザクションになります。
 
-@raise PStore::Error read_only �򿿤ˤ����Ȥ��ˡ��ǡ����١������ѹ����褦��������ȯ�����ޤ��� 
+@raise PStore::Error read_only を真にしたときに、データベースを変更しよ
+                     うした場合に発生します。
 
   require 'yaml/store'
 
-p  db = YAML::Store.new("/tmp/store.yaml")
+  db = YAML::Store.new("/tmp/store.yaml")
   db.transaction {
     db["hoge"] = [ 1, 2, 3, 4]
   }
@@ -84,13 +94,13 @@ p  db = YAML::Store.new("/tmp/store.yaml")
       db["hoge"] = [ 1, 2, 3, 4]
     }
   rescue PStore::Error
-    puts "�ɤ߹������ѤΥȥ�󥶥������˽񤭹��⤦�Ȥ��ޤ����� "
+    puts "読み込み専用のトランザクションに書き込もうとしました。 "
   end
 
 
-�Ȥ����� [[c:PStore]] �ȤۤȤ��Ʊ���Ǥ���
+使い方は [[c:PStore]] とほとんど同じです。
 
-��
+例
 
   require "yaml/store"
 
@@ -104,7 +114,7 @@ p  db = YAML::Store.new("/tmp/store.yaml")
     1: 100
     bar: 101
 
-[[c:PStore]] Ʊ�͡��桼��������������饹�Υ��֥������Ȥ���¸���뤳�Ȥ�Ǥ��ޤ���
+[[c:PStore]] 同様、ユーザが定義したクラスのオブジェクトを保存することもできます。
 
   require "yaml/store"
   
@@ -128,11 +138,10 @@ p  db = YAML::Store.new("/tmp/store.yaml")
 #@since 1.8.7
 --- EMPTY_MARSHAL_CHECKSUM -> String
 
-�����ǻ��Ѥ��ޤ���
+内部で使用します。
 
 --- EMPTY_MARSHAL_DATA -> String
 
-�����ǻ��Ѥ��ޤ���
+内部で使用します。
 
 #@end
-

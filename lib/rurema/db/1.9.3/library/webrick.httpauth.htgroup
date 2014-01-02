@@ -3,8 +3,9 @@ classes=WEBrick=HTTPAuth=Htgroup
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Apache д╟╛┌╟зд╦╗╚═╤д╣дыецб╝е╢е░еыб╝е╫д╬░ь═ўдм│╩╟╝д╡дьд╞дддые╞ене╣е╚е╒ебедеыдЄ
-╞╔д▀╜ёднд╣ды╡б╟╜дЄ─є╢бд╣дыещеде╓ещеъд╟д╣бг
+Apache уБзши╝шкНуБлф╜┐чФиуБЩуВЛуГжуГ╝уВ╢уВ░уГлуГ╝уГЧуБоф╕АшжзуБМца╝ч┤НуБХуВМуБжуБДуВЛуГЖуВнуВ╣уГИуГХуВбуВдуГлуВТ
+шкнуБ┐цЫ╕уБНуБЩуВЛцйЯшГ╜уВТцПРф╛ЫуБЩуВЛуГйуВдуГЦуГйуГкуБзуБЩуАВ
 
  * [[url:http://httpd.apache.org/docs/2.2/mod/mod_authz_groupfile.html#authgroupfile]]

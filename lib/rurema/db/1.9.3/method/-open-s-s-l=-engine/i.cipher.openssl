@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- cipher(name) -> OpenSSL::Cipher
-engine ����Ź沽/���沽���֥������Ȥ��������ޤ���
+engine から暗号化/復号化オブジェクトを生成します。
 
-@param name �Ź沽����̾(ʸ����)
-@raise OpenSSL::Engine::EngineError ���ꤷ���Ź沽������¸�ߤ��ʤ����⤷����
-       engine �����ݡ��Ȥ��Ƥ��ʤ�����ȯ�����ޤ���
+@param name 暗号化方式名(文字列)
+@raise OpenSSL::Engine::EngineError 指定した暗号化方式が存在しない、もしくは
+       engine がサポートしていない場合に発生します。
 
 

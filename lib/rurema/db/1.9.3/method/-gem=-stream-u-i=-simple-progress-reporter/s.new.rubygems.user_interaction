@@ -4,13 +4,13 @@ kind=defined
 
 --- new(out_stream, size, initial_message, terminal_message = nil)
 
-¤³¤Î¥¯¥é¥¹¤ò½é´ü²½¤·¤Ş¤¹¡£
+ã“ã®ã‚¯ãƒ©ã‚¹ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param out_stream ½ĞÎÏ¥¹¥È¥ê¡¼¥à¤ò»ØÄê¤·¤Ş¤¹¡£
+@param out_stream å‡ºåŠ›ã‚¹ãƒˆãƒªãƒ¼ãƒ ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param size ½èÍı¤¹¤ëÁ´ÂÎ¤Î¿ô¤Ç¤¹¡£
+@param size å‡¦ç†ã™ã‚‹å…¨ä½“ã®æ•°ã§ã™ã€‚
 
-@param initial_message ½é´ü²½¤¬½ª¤ï¤Ã¤¿¤È¤­¤ËÉ½¼¨¤¹¤ë¥á¥Ã¥»¡¼¥¸¤ò»ØÄê¤·¤Ş¤¹¡£
+@param initial_message åˆæœŸåŒ–ãŒçµ‚ã‚ã£ãŸã¨ãã«è¡¨ç¤ºã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param terminal_message ½ªÎ»»ş¤ËÉ½¼¨¤¹¤ë¥á¥Ã¥»¡¼¥¸¤Ç¤¹¡£
+@param terminal_message çµ‚äº†æ™‚ã«è¡¨ç¤ºã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã§ã™ã€‚
 

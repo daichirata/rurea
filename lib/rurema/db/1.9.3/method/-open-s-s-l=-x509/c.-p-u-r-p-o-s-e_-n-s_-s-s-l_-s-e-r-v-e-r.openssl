@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- PURPOSE_NS_SSL_SERVER -> Integer
-¾ÚÌÀ½ñ¤¬ 
-Netscape SSL server ¤Î¾ÚÌÀ½ñ¤È¤·¤Æ»È¤¨¤ë¤«
-¥Á¥§¥Ã¥¯¤¹¤ë¤³¤È¤ò°ÕÌ£¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ãŒ 
+Netscape SSL server ã®è¨¼æ˜æ›¸ã¨ã—ã¦ä½¿ãˆã‚‹ã‹
+ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã“ã¨ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
-[[m:OpenSSL::X509::Store#purpose=]] ¤ä
-[[m:OpenSSL::X509::StoreContext#purpose=]] ¤ÇÀßÄê¤·¡¢
-[[m:OpenSSL::X509::Store#verify]] ¤ä
-[[m:OpenSSL::X509::StoreContext#verify]] ¤Ç
-¤³¤Î¤³¤È¤ò³ÎÇ§¤·¤Ş¤¹¡£
+[[m:OpenSSL::X509::Store#purpose=]] ã‚„
+[[m:OpenSSL::X509::StoreContext#purpose=]] ã§è¨­å®šã—ã€
+[[m:OpenSSL::X509::Store#verify]] ã‚„
+[[m:OpenSSL::X509::StoreContext#verify]] ã§
+ã“ã®ã“ã¨ã‚’ç¢ºèªã—ã¾ã™ã€‚
 

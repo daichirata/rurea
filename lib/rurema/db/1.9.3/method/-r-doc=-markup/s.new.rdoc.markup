@@ -4,8 +4,8 @@ kind=defined
 
 --- new(attribute_manager = nil) -> RDoc::Markup
 
-¼«¿È¤ò½é´ü²½¤·¤Ş¤¹¡£
+è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param attribute_manager [[c:Rdoc::AttributeManager]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»Ø
-                         Äê¤·¤Ş¤¹¡£
+@param attribute_manager [[c:Rdoc::AttributeManager]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡
+                         å®šã—ã¾ã™ã€‚
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- passive=(bool)
-passive ¥â¡¼¥É¤òÀßÄê¤·¤Ş¤¹¡£
+passive ãƒ¢ãƒ¼ãƒ‰ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 @see [[m:Net::FTP#passive]]
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- VERSION
 
-WEBrick ¤Î¥Ð¡¼¥¸¥ç¥ó¤òÉ½¤¹Ê¸»úÎó¤Ç¤¹¡£
+WEBrick ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™ã€‚
 
  p WEBrick::VERSION   #=> "1.3.1"
 

@@ -6,15 +6,15 @@ library=_builtin
 aliases=
 aliasof=
 
-��ӱ黻��������饹�Τ���� Mix-in �Ǥ������Υ⥸�塼��򥤥󥯥롼
-�ɤ��륯�饹�ϡ�����Ū����ӱ黻�ҤǤ��� <=> �黻�Ҥ�������Ƥ�
-��ɬ�פ�����ޤ���
+比較演算を許すクラスのための Mix-in です。このモジュールをインクルー
+ドするクラスは、基本的な比較演算子である <=> 演算子を定義してい
+る必要があります。
 
-self <=> other ��
- * self �� other ����礭���ʤ���������
- * self �� other ���������ʤ� 0
- * self �� other ��꾮�����ʤ��������
- * self �� other ����ӤǤ��ʤ����� nil
-�򤽤줾���֤����Ȥ����Ԥ���Ƥ��ޤ���
+self <=> other は
+ * self が other より大きいなら正の整数
+ * self と other が等しいなら 0
+ * self が other より小さいなら負の整数
+ * self と other が比較できない場合は nil
+をそれぞれ返すことが期待されています。
 
-¾����ӱ黻�Ҥϡ� <=> �黻�Ҥ����Ѥ����������ޤ���
+他の比較演算子は、 <=> 演算子を利用して定義されます。

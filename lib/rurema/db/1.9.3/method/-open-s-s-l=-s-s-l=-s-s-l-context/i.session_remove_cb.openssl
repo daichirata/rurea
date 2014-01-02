@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- session_remove_cb -> Proc | nil
-���å������������å��夫���˴����줿�Ȥ��˸ƤӽФ����
-������Хå����֤��ޤ���
+セッションが内部キャッシュから破棄されたときに呼び出される
+コールバックを返します。
 
-���ꤵ��Ƥ��ʤ��Ȥ��� nil ���֤��ޤ���
+設定されていないときは nil を返します。
 
 @see [[m:OpenSSL::SSL::SSLContext#session_remove_cb=]]
 

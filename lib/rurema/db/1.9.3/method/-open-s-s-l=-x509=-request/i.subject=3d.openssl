@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- subject=(subject)
-¾ÚÌÀ½ñ½ğÌ¾Í×µá¤Î¿½ÀÁ¼ÔÌ¾¤òÀßÄê¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ç½²åè¦æ±‚ã®ç”³è«‹è€…åã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param subject ÀßÄê¤¹¤ëÌ¾Á°¤ò [[c:OpenSSL::X509::Name]] ¤ÇÅÏ¤·¤Ş¤¹
-@raise OpenSSL::X509::RequestError Ì¾Á°¤ÎÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param subject è¨­å®šã™ã‚‹åå‰ã‚’ [[c:OpenSSL::X509::Name]] ã§æ¸¡ã—ã¾ã™
+@raise OpenSSL::X509::RequestError åå‰ã®è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::X509::Request#subject]]
 

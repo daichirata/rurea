@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- jd -> Integer
-��ꥦ�������֤��ޤ���
-�����ޤߤޤ���
+ユリウス日を返します。
+時刻を含みません。
 
-[[m:Date#ajd]] �⻲�Ȥ��Ƥ���������
+[[m:Date#ajd]] も参照してください。
 

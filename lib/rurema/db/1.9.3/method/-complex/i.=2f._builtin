@@ -5,12 +5,14 @@ kind=defined
 --- /(other)   -> Complex
 --- quo(other) -> Complex
 
-¾¦¤ò·×»»¤·¤Þ¤¹¡£
+å•†ã‚’è¨ˆç®—ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ò³ä¤ë¿ô
+@param other è‡ªèº«ã‚’å‰²ã‚‹æ•°
 
-Îã:
+ä¾‹:
 
   Complex(10.0) / 3  # => (3.3333333333333335+(0/1)*i)
   Complex(10)   / 3  # => ((10/3)+(0/1)*i)
+
+@see [[m:Numeric#quo]]
 

@@ -6,4 +6,4 @@ library=json
 aliases=JSON=Ext=Generator=GeneratorMethods=String=Extend
 aliasof=
 
-[[c:String]] ¤Ë JSON ¤Ç»ÈÍÑ¤¹¤ëÆÃ°Û¥á¥½¥Ã¥É¤òÄÉ²Ã¤¹¤ë¤¿¤á¤Î¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+[[c:String]] ã« JSON ã§ä½¿ç”¨ã™ã‚‹ç‰¹ç•°ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¿½åŠ ã™ã‚‹ãŸã‚ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚

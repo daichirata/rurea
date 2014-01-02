@@ -7,22 +7,22 @@ kind=defined
 --- open(filename, options = Hash.new){|csv| ... } -> nil
 --- open(filename, options = Hash.new) -> CSV
 
-���Υ᥽�åɤ� [[c:IO]] ���֥������Ȥ򥪡��ץ󤷤� [[c:CSV]] �ǥ�åפ��ޤ���
-����� CSV �ե������񤯤���μ��פʥ��󥿡��ե������Ȥ��ƻȤ����Ȥ�տޤ��Ƥ��ޤ���
+このメソッドは [[c:IO]] オブジェクトをオープンして [[c:CSV]] でラップします。
+これは CSV ファイルを書くための主要なインターフェイスとして使うことを意図しています。
 
-���Υ᥽�åɤ� [[m:IO.open]] ��Ʊ���褦��ư���ޤ����֥��å���Ϳ����줿����
-�֥��å��� [[c:CSV]] ���֥������Ȥ��Ϥ����֥��å���λ���ˤ���򥯥��������ޤ���
-�֥��å���Ϳ�����ʤ��ä����� [[c:CSV]] ���֥������Ȥ��֤��ޤ���
-���ε�ư�� Ruby1.8 �� CSV �饤�֥��Ȥϰ㤤�ޤ���Ruby1.8 �ǤϹԤ�֥��å����Ϥ��ޤ���
-Ruby1.9 �Ǥ� [[m:CSV.foreach]] ��Ȥ��ȥ֥��å��˹Ԥ��Ϥ��ޤ���
+このメソッドは [[m:IO.open]] と同じように動きます。ブロックが与えられた場合は
+ブロックに [[c:CSV]] オブジェクトを渡し、ブロック終了時にそれをクローズします。
+ブロックが与えられなかった場合は [[c:CSV]] オブジェクトを返します。
+この挙動は Ruby1.8 の CSV ライブラリとは違います。Ruby1.8 では行をブロックに渡します。
+Ruby1.9 以降では [[m:CSV.foreach]] を使うとブロックに行を渡します。
 
-�ǡ����� [[m:Encoding.default_external]] �Ȱۤʤ���ϡ�mode �˥��󥳡�
-�ǥ��󥰤���ꤹ��ʸ����������ޤʤ���Фʤ�ޤ��󡣥ǡ�����ɤΤ褦
-�˲��Ϥ��뤫���ꤹ�뤿��� CSV �饤�֥��ϥ桼���� mode �˻��ꤷ������
-�����ǥ��󥰤�����å����ޤ���"rb:UTF-32BE:UTF-8" �Τ褦�� mode �����
-����� UTF-32BE �Υǡ������ɤ߹����UTF-8 ���Ѵ����Ƥ�����Ϥ��ޤ���
+データが [[m:Encoding.default_external]] と異なる場合は、mode にエンコー
+ディングを指定する文字列を埋め込まなければなりません。データをどのよう
+に解析するか決定するために CSV ライブラリはユーザが mode に指定したエン
+コーディングをチェックします。"rb:UTF-32BE:UTF-8" のように mode を指定
+すると UTF-32BE のデータを読み込んでUTF-8 に変換してから解析します。
 
-CSV ���֥������Ȥ�¿���Υ᥽�åɤ� [[c:IO]] �� [[c:File]] �˰Ѿ����ޤ���
+CSV オブジェクトは多くのメソッドを [[c:IO]] や [[c:File]] に委譲します。
 
   * [[m:IO#binmode]]
   * [[m:IO#binmode?]]
@@ -57,11 +57,11 @@ CSV ���֥������Ȥ�¿���Υ᥽�åɤ� [[c:IO]] �� [[c:File]] �˰Ѿ����ޤ���
   * [[m:File#truncate]]
   * [[m:IO#tty?]]
 
-@param filename �ե�����̾����ꤷ�ޤ���
+@param filename ファイル名を指定します。
 
-@param mode [[m:IO.open]] �˻���Ǥ����Τ�Ʊ����Τ����Ǥ��ޤ���
+@param mode [[m:IO.open]] に指定できるものと同じものを指定できます。
 
-@param options [[m:CSV.new]] �Υ��ץ�����Ʊ�����ץ��������Ǥ��ޤ���
+@param options [[m:CSV.new]] のオプションと同じオプションを指定できます。
 
 @see [[m:CSV.new]], [[m:IO.open]]
 

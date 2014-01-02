@@ -4,7 +4,7 @@ kind=defined
 
 --- backtrace=(backtrace)
 
-���顼ȯ�����˥Хå��ȥ졼������Ϥ��뤫�ɤ������ꤷ�ޤ���
+エラー発生時にバックトレースを出力するかどうか設定します。
 
-@param backtrace ������ꤹ��ȥ��顼ȯ�����˥Хå��ȥ졼������Ϥ���褦�ˤʤ�ޤ���
+@param backtrace 真を指定するとエラー発生時にバックトレースを出力するようになります。
 

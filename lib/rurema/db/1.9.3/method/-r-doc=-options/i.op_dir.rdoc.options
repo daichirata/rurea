@@ -4,9 +4,9 @@ kind=defined
 
 --- op_dir -> String
 
-���ޥ�ɥ饤������� --op ���ץ����ǻ��ꤷ���ǥ��쥯�ȥ���֤��ޤ���
+コマンドライン引数の --op オプションで指定したディレクトリを返します。
 
---ri��--ri-site��--ri-system ���ץ����ˤ�ƶ������������դ��Ƥ���������
+--ri、--ri-site、--ri-system オプションにも影響される事に注意してください。
 
-@return ���ꤵ�줿�ǥ��쥯�ȥ��ʸ������֤��ޤ���
+@return 設定されたディレクトリを文字列で返します。
 

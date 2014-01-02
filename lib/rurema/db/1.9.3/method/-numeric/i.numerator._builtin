@@ -4,9 +4,9 @@ kind=defined
 
 --- numerator -> Integer
 
-¼«¿È¤ò [[c:Rational]] ¤ËÊÑ´¹¤·¤¿»ş¤ÎÊ¬»Ò¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ã‚’ [[c:Rational]] ã«å¤‰æ›ã—ãŸæ™‚ã®åˆ†å­ã‚’è¿”ã—ã¾ã™ã€‚
 
-@return Ê¬»Ò¤òÊÖ¤·¤Ş¤¹¡£
+@return åˆ†å­ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Numeric#denominator]]
 

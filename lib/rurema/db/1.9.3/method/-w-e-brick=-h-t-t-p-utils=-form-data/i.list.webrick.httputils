@@ -5,9 +5,9 @@ kind=defined
 --- list      -> Array
 --- to_ary    -> Array
 
-¼«¿È¤¬É½¤¹³Æ¥Õ¥©¡¼¥à¥Ç¡¼¥¿¤ò¼ýÇ¼¤·¤¿ÇÛÎó¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒè¡¨ã™å„ãƒ•ã‚©ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã‚’åŽç´ã—ãŸé…åˆ—ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
  require "webrick/cgi"
  class MyCGI < WEBrick::CGI

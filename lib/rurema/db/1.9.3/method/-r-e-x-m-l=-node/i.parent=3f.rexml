@@ -2,6 +2,11 @@ names=parent?
 visibility=public
 kind=defined
 
---- parent?
-@todo
+--- parent? -> bool
+子を持つノードであれば真を返します。
+
+[[c:REXML::Parent]] のサブクラスでは真を返します。
+それ以外では偽を返します。
+
+@see [[m:REXML::Parent#parent?]]
 

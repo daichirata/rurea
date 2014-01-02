@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- pipe? -> bool
-ÌµÌ¾¥Ñ¥¤¥×¤ª¤è¤ÓÌ¾Á°¤Ä¤­¥Ñ¥¤¥×(FIFO)¤Î»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+ç„¡åãƒ‘ã‚¤ãƒ—ãŠã‚ˆã³åå‰ã¤ããƒ‘ã‚¤ãƒ—(FIFO)ã®æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   system("mkfifo /tmp/pipetest")
   p File::Stat.new("/tmp/pipetest").pipe? #=> true

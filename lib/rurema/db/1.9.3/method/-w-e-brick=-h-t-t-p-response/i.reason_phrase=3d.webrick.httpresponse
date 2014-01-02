@@ -4,11 +4,11 @@ kind=defined
 
 --- reason_phrase=(val)
 
-HTTP ¤Î¥ì¥¹¥Ý¥ó¥¹¤ÎºÇ½é¤Î¹Ô¤Î reason phrase ¤ò¥»¥Ã¥È¤·¤Þ¤¹¡£
-¤³¤ÎÃÍ¤¬ nil ¤Î¾ì¹ç reason phrase ¤Ï status ¤«¤éÀ¸À®¤µ¤ì¤Þ¤¹¡£
-¥Ç¥Õ¥©¥ë¥È¤Ï nil ¤Ç¤¹¡£
+HTTP ã®ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã®æœ€åˆã®è¡Œã® reason phrase ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
+ã“ã®å€¤ãŒ nil ã®å ´åˆ reason phrase ã¯ status ã‹ã‚‰ç”Ÿæˆã•ã‚Œã¾ã™ã€‚
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ nil ã§ã™ã€‚
 
-@param val reason phrase ¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param val reason phrase ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   require 'webrick'
   res = WEBrick::HTTPResponse.new( { :HTTPVersion => "1.1" } )

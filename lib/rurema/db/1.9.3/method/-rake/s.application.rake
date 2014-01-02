@@ -4,5 +4,5 @@ kind=defined
 
 --- application -> Rake::Application
 
-���ߤ� Rake ���ץꥱ���������֤��ޤ���
+現在の Rake アプリケーションを返します。
 

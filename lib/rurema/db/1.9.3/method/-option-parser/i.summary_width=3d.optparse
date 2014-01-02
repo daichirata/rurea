@@ -4,7 +4,7 @@ kind=defined
 
 --- summary_width=(width)
 
-¥µ¥Þ¥ê¤òÉ½¼¨¤¹¤ë¤È¤­¤ÎÉý¤òÀ°¿ô¤Ç»ØÄê¤·¤Þ¤¹¡£
+ã‚µãƒžãƒªã‚’è¡¨ç¤ºã™ã‚‹ã¨ãã®å¹…ã‚’æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param width ¥µ¥Þ¥ê¤òÉ½¼¨¤¹¤ë¤È¤­¤ÎÉý¤òÀ°¿ô¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param width ã‚µãƒžãƒªã‚’è¡¨ç¤ºã™ã‚‹ã¨ãã®å¹…ã‚’æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚
 

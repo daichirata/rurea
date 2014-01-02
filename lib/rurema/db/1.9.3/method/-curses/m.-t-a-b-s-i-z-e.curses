@@ -4,7 +4,7 @@ kind=defined
 
 --- TABSIZE -> Integer
 
-¥¿¥ÖÉý¤ò¼èÆÀ¤·¤Þ¤¹¡£
+ã‚¿ãƒ–å¹…ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@raise  NotImplementedError ¥µ¥Ý¡¼¥È¤·¤Æ¤¤¤Ê¤¤´Ä¶­¤ÇÈ¯À¸¤·¤Þ¤¹¡£
+@raise  NotImplementedError ã‚µãƒãƒ¼ãƒˆã—ã¦ã„ãªã„ç’°å¢ƒã§ç™ºç”Ÿã—ã¾ã™ã€‚
 

@@ -3,5 +3,6 @@ classes=TkListItemConfig,TkListbox
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

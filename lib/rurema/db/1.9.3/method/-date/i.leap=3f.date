@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- leap? -> bool
-��ǯ�ʤ鿿���֤��ޤ���
+閏年なら真を返します。
 

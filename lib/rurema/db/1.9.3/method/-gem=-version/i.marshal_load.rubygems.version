@@ -4,7 +4,7 @@ kind=defined
 
 --- marshal_load(array) -> String
 
-¥À¥ó¥×¤µ¤ì¤¿¾ðÊó¤ò¥í¡¼¥É¤·¤Þ¤¹¡£
+ãƒ€ãƒ³ãƒ—ã•ã‚ŒãŸæƒ…å ±ã‚’ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 
-@param array ¥Ð¡¼¥¸¥ç¥ó¾ðÊó¤ò´Þ¤àÇÛÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param array ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ±ã‚’å«ã‚€é…åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

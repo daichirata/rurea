@@ -5,5 +5,5 @@ kind=defined
 --- class_name -> String
 @todo
 
-�ӥ�����Υ��饹̾���֤��ޤ���
+ビルダーのクラス名を返します。
 

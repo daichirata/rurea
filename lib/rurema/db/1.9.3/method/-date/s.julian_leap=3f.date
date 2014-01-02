@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- julian_leap? (year) -> bool
-��ꥦ����α�ǯ�ʤ鿿���֤��ޤ���
+ユリウス暦の閏年なら真を返します。
 
-����4ǯ�Ͽ��ˤʤ�ޤ�����
-��������Ū�ˤ�����������ޤ���
+西暦4年は真になりますが、
+これは歴史的には正しくありません。
 
-@param year ǯ
+@param year 年
 

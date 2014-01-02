@@ -3,22 +3,22 @@ visibility=public
 kind=defined
 
 --- enable_ssl(verify_or_params={}, certs=nil) -> ()
-¿·¤·¤¯À¸À®¤¹¤ë [[c:Net::POP3]] ¥ª¥Ö¥¸¥§¥¯¥È¤¬
-SSL ¤Ë¤è¤ëÄÌ¿®ÍøÍÑ¤¹¤ë¤è¤¦¤ËÀßÄê¤·¤Ş¤¹¡£
+æ–°ã—ãç”Ÿæˆã™ã‚‹ [[c:Net::POP3]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒ
+SSL ã«ã‚ˆã‚‹é€šä¿¡åˆ©ç”¨ã™ã‚‹ã‚ˆã†ã«è¨­å®šã—ã¾ã™ã€‚
 
-verify_or_params ¤Ë¥Ï¥Ã¥·¥å¤òÅÏ¤·¤¿¾ì¹ç¤Ë¤Ï¡¢ÀÜÂ³»ş¤ËÀ¸À®¤µ¤ì¤ë
-[[c:OpenSSL::SSL::SSLContext]] ¥ª¥Ö¥¸¥§¥¯¥È¤Î
-[[m:OpenSSL::SSL::SSLContext#set_params]] ¤ËÅÏ¤µ¤ì¤Ş¤¹¡£
-certs ¤ÏÌµ»ë¤µ¤ì¤Ş¤¹¡£
+verify_or_params ã«ãƒãƒƒã‚·ãƒ¥ã‚’æ¸¡ã—ãŸå ´åˆã«ã¯ã€æ¥ç¶šæ™‚ã«ç”Ÿæˆã•ã‚Œã‚‹
+[[c:OpenSSL::SSL::SSLContext]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®
+[[m:OpenSSL::SSL::SSLContext#set_params]] ã«æ¸¡ã•ã‚Œã¾ã™ã€‚
+certs ã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚
 
-verify_or_params ¤¬¥Ï¥Ã¥·¥å¤Ç¤Ê¤¤¾ì¹ç¤Ë¤Ï¡¢ÀÜÂ³»ş¤ËÀ¸À®¤µ¤ì¤ë
-[[c:OpenSSL::SSL::SSLContext]] ¥ª¥Ö¥¸¥§¥¯¥È¤Î
-[[m:OpenSSL::SSL::SSLContext#set_params]] ¤Ë
+verify_or_params ãŒãƒãƒƒã‚·ãƒ¥ã§ãªã„å ´åˆã«ã¯ã€æ¥ç¶šæ™‚ã«ç”Ÿæˆã•ã‚Œã‚‹
+[[c:OpenSSL::SSL::SSLContext]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®
+[[m:OpenSSL::SSL::SSLContext#set_params]] ã«
   { :verify_mode => verify_or_params, :ca_path => certs }
-¤È¤¤¤¦¥Ï¥Ã¥·¥å¤¬ÅÏ¤µ¤ì¤Ş¤¹¡£
+ã¨ã„ã†ãƒãƒƒã‚·ãƒ¥ãŒæ¸¡ã•ã‚Œã¾ã™ã€‚
 
-@param verify_or_params SSL¤ÎÀßÄê¤Î¥Ï¥Ã¥·¥å¡¢¤â¤·¤¯¤Ï SSL ¤Î verify_mode
-@param certs SSL ¤Î ca_path
+@param verify_or_params SSLã®è¨­å®šã®ãƒãƒƒã‚·ãƒ¥ã€ã‚‚ã—ãã¯ SSL ã® verify_mode
+@param certs SSL ã® ca_path
 
 @see [[m:Net::POP3.disable_ssl]], [[m:Net::POP3.use_ssl?]]
 

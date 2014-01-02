@@ -4,5 +4,5 @@ kind=defined
 
 --- modules -> [RDoc::NormalModule]
 
-�ɲä��줿 [[c:RDoc::NormalModule]] ��������֤��ޤ���
+追加された [[c:RDoc::NormalModule]] の配列を返します。
 

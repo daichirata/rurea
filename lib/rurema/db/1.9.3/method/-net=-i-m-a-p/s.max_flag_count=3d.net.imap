@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- max_flag_count=(count)
-�����Ф���Υ쥹�ݥ󥹤˴ޤޤ�� flag �ξ�¤����ꤷ�ޤ���
+サーバからのレスポンスに含まれる flag の上限を設定します。
 
-�����ۤ��� flag ���쥹�ݥ󥹤˴ޤޤ�Ƥ�����ϡ�
-[[c:Net::IMAP::FlagCountError]] �㳰��ȯ�����ޤ���
+これを越えた flag がレスポンスに含まれている場合は、
+[[c:Net::IMAP::FlagCountError]] 例外が発生します。
 
-�ǥե���Ȥ� 10000 �Ǥ����̾���Ѥ���ɬ�פϤʤ��Ǥ��礦��
+デフォルトは 10000 です。通常は変える必要はないでしょう。
 
-@param count ���ꤹ������ͤ�����
+@param count 設定する最大値の整数
 @see [[m:Net::IMAP.max_flag_count]]
 

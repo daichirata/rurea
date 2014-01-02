@@ -4,7 +4,7 @@ kind=defined
 
 --- array_attributes -> Array
 
-@@array_attributes ¤ÎÊ£À½¤òÊÖ¤·¤Ş¤¹¡£
+@@array_attributes ã®è¤‡è£½ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Object#dup]]
 

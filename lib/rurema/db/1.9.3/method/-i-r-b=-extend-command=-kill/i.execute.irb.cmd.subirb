@@ -4,11 +4,11 @@ kind=defined
 
 --- execute(*obj) -> object
 
-���ꤷ������ irb ����ߤ��ޤ���
+指定したサブ irb を停止します。
 
-@param obj ��ߤ��륵�� irb ���̤���ʲ��Τ����줫�Υ��֥������Ȥ���ꤷ�ޤ���
+@param obj 停止するサブ irb を識別する以下のいずれかのオブジェクトを指定します。
 
- * irb ���󥿥ץ꥿�ֹ�
- * irb ���֥�������
- * ����å� ID
- * �ƥ��󥿥ץ꥿�� self (��irb(obj)�פǵ�ư�������� obj)
+ * irb インタプリタ番号
+ * irb オブジェクト
+ * スレッド ID
+ * 各インタプリタの self (「irb(obj)」で起動した時の obj)

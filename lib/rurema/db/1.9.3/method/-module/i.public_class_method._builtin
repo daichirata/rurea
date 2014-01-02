@@ -4,8 +4,8 @@ kind=defined
 
 --- public_class_method(*name) -> self
 
-name �ǻ��ꤷ�����饹�᥽�å� (���饹���ðۥ᥽�å�) ��
-�Ļ����� public ���ѹ����ޤ���
+name で指定したクラスメソッド (クラスの特異メソッド) の
+可視性を public に変更します。
 
-@param name 0 �İʾ�� [[c:String]] �� [[c:Symbol]] ����ꤷ�ޤ���
+@param name 0 個以上の [[c:String]] か [[c:Symbol]] を指定します。
 

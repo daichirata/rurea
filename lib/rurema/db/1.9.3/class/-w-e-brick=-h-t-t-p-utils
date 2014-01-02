@@ -6,4 +6,4 @@ library=webrick.httputils
 aliases=
 aliasof=
 
-HTTP �Τ���Υ桼�ƥ���ƥ��ؿ����󶡤��ޤ���
+HTTP のためのユーティリティ関数を提供します。

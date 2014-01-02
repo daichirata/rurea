@@ -4,8 +4,8 @@ kind=defined
 
 --- uidl -> String
 --- unique_id -> String
-�᡼����Ф��ƿ���줿�������о�ǰ�դʼ��̻� (UIDL) �򤫤����ޤ���
+メールに対して振られた、サーバ上で一意な識別子 (UIDL) をかえします。
 
-[[m:Net::POPMail#number]] �Ȱ㤤��
-���� UIDL ����³���ʤ����Ƥ��Ѳ����ޤ���
+[[m:Net::POPMail#number]] と違い、
+この UIDL は接続しなおしても変化しません。
 

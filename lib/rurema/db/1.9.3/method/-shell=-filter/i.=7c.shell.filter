@@ -4,13 +4,13 @@ kind=defined
 
 --- |(filter) -> object
 
-¥Ñ¥¤¥×·ë¹ç¤ò filter ¤ËÂĞ¤·¤Æ¹Ô¤¤¤Ş¤¹¡£
+ãƒ‘ã‚¤ãƒ—çµåˆã‚’ filter ã«å¯¾ã—ã¦è¡Œã„ã¾ã™ã€‚
 
-@param filter Shell::Filter ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param filter Shell::Filter ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return filter ¤òÊÖ¤·¤Ş¤¹¡£
+@return filter ã‚’è¿”ã—ã¾ã™ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
   Shell.def_system_command("tail")
   Shell.def_system_command("head")
   Shell.def_system_command("wc")

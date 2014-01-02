@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- mailfrom(from_addr) -> Net::SMTP::Response
-MAILFROM ¥³¥Ş¥ó¥É¤òÁ÷¤ê¤Ş¤¹¡£
+MAILFROM ã‚³ãƒãƒ³ãƒ‰ã‚’é€ã‚Šã¾ã™ã€‚
 
-ÄÌ¾ï¤Ï [[m:Net::SMTP#send_message]], [[m:Net::SMTP#open_message_stream]] ¤Ç
-MAILFROM ¤¬Á÷¤é¤ì¤ë¤¿¤áÍøÍÑ¤¹¤ëÉ¬Í×¤Ï¤Ê¤¤¤Ï¤º¤Ç¤¹¡£
+é€šå¸¸ã¯ [[m:Net::SMTP#send_message]], [[m:Net::SMTP#open_message_stream]] ã§
+MAILFROM ãŒé€ã‚‰ã‚Œã‚‹ãŸã‚åˆ©ç”¨ã™ã‚‹å¿…è¦ã¯ãªã„ã¯ãšã§ã™ã€‚
 
-@param from_addr Á÷¿®¸µ¥á¡¼¥ë¥¢¥É¥ì¥¹
+@param from_addr é€ä¿¡å…ƒãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹
 

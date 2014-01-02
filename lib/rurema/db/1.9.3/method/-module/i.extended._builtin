@@ -2,12 +2,12 @@ names=extended
 visibility=private 
 kind=defined
 
---- extended(class_or_module) -> ()
+--- extended(obj) -> ()
 
-self ¤¬Â¾¤Î¥ª¥Ö¥¸¥§¥¯¥È ¤Ë [[m:Object#extend]] ¤µ¤ì¤¿¤È¤­¤Ë
-¸Æ¤Ð¤ì¤Þ¤¹¡£°ú¿ô¤Ë¤Ï extend ¤ò¹Ô¤Ã¤¿¥ª¥Ö¥¸¥§¥¯¥È¤¬ÅÏ¤µ¤ì¤Þ¤¹¡£
+self ãŒä»–ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ ã« [[m:Object#extend]] ã•ã‚ŒãŸã¨ãã«
+å‘¼ã°ã‚Œã¾ã™ã€‚å¼•æ•°ã«ã¯ extend ã‚’è¡Œã£ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒæ¸¡ã•ã‚Œã¾ã™ã€‚
 
-@param class_or_module [[m:Object#extend]] ¤ò¹Ô¤Ã¤¿¥ª¥Ö¥¸¥§¥¯¥È
+@param obj [[m:Object#extend]] ã‚’è¡Œã£ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
   module Foo
     def self.extended(mod)
@@ -18,4 +18,7 @@ self ¤¬Â¾¤Î¥ª¥Ö¥¸¥§¥¯¥È ¤Ë [[m:Object#extend]] ¤µ¤ì¤¿¤È¤­¤Ë
   Object.new.extend Foo
 
   # => "#<Object:0x401cbc3c> extend Foo"
+
+@see [[m:Module#extend_object]]
+
 

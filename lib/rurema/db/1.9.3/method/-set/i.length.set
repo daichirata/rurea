@@ -5,7 +5,7 @@ kind=defined
 --- size -> Integer
 --- length -> Integer
 
-½¸¹ç¤ÎÍ×ÁÇ¿ô¤òÊÖ¤·¤Þ¤¹¡£
+é›†åˆã®è¦ç´ æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
   p Set[10, 20, 30, 10].size #=> 3
 

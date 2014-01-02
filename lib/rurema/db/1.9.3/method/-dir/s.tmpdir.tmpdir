@@ -4,11 +4,11 @@ kind=added
 
 --- tmpdir    -> String
 
-�ƥ�ݥ��ե�������������Τ˻Ȥ��ǥ��쥯�ȥ�(�ƥ�ݥ��ǥ��쥯�ȥ�)�����Хѥ���
-ʸ����Ȥ����֤��ޤ���
-[[m:$SAFE]] �ˤ�ä��֤�ʸ������Ѥ��ޤ���
+テンポラリファイルを作成するのに使うディレクトリ(テンポラリディレクトリ)の絶対パスを
+文字列として返します。
+[[m:$SAFE]] によって返す文字列は変わります。
 
-  # WindowsXP�ξ��
+  # WindowsXPの場合
 
   require "tmpdir"
 
@@ -20,6 +20,6 @@ kind=added
   $SAFE = 3
   p Dir.tmpdir #=> "C:/WINDOWS/temp"
 
-  # Linux�ξ�� /tmp �˲ä����Ķ��ѿ� ENV['TMPDIR'], ENV['TMP'], ENV['TEMP'], ENV['USERPROFILE']�򻲾Ȥ��ޤ�
+  # Linuxの場合 /tmp に加え、環境変数 ENV['TMPDIR'], ENV['TMP'], ENV['TEMP'], ENV['USERPROFILE']を参照します
   
 

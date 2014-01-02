@@ -4,48 +4,48 @@ kind=defined
 
 --- new(config = {}, default = WEBrick::Config::General) -> WEBrick::GenericServer
 
-GenericServer ���֥������Ȥ����������֤��ޤ���
+GenericServer オブジェクトを生成して返します。
 
-@param config �����Ф��������¸�����ϥå������ꤷ�ޤ���ͭ���ʥ�����
-              �ͤϰʲ��ΤȤ���Ǥ���
+@param config サーバの設定を保存したハッシュを指定します。有効なキーと
+              値は以下のとおりです。
 
 : :ServerName
-  �����ФΥۥ���̾��ɽ��ʸ�������ꤷ�ޤ����ǥե���Ȥ� Utils.getservername �� /etc/hostname
-  �˽񤫤�Ƥ���ʸ����Ǥ���
+  サーバのホスト名を表す文字列を指定します。デフォルトの Utils.getservername は /etc/hostname
+  に書かれている文字列です。
 : :BindAddress
-  �����ФΥ��ɥ쥹����ꤷ�ޤ����ǥե���Ȥ� nil �� "0.0.0.0", "::" �ʤɤ���ꤷ��
-  ���ϻ��Ѳ�ǽ�ʤ��٤ƤΥͥåȥ�����󥿡��ե��������Ф��� listen �򳫻Ϥ��ޤ���
-  [[ref:lib:socket#host_format]] �򻲾Ȥ��Ʋ�������
+  サーバのアドレスを指定します。デフォルトの nil や "0.0.0.0", "::" などを指定した
+  場合は使用可能なすべてのネットワークインターフェースに対して listen を開始します。
+  [[ref:lib:socket#host_format]] を参照して下さい。
 : :Port
-  �����ФΥݡ��Ȥ���ꤷ�ޤ���[[ref:lib:socket#service_format]]�򻲾Ȥ򻲾Ȥ��Ʋ�������
+  サーバのポートを指定します。[[ref:lib:socket#service_format]]を参照を参照して下さい。
 : :MaxClients
-  ���饤����Ȥκ�����³����ɽ�������Ǥ���
+  クライアントの最大接続数を表す整数です。
 : :ServerType
-  �����ФΥ����פ�ɽ�����饹����ꤷ�ޤ������ꤹ�륯�饹�ϥ֥��å�����start�Ȥ���̾���Υ��饹�᥽�åɤ����ɬ�פ�����ޤ��������Фϡ�start�᥽�åɤ���ǥ��饤����Ȥ���α����Ԥ��Υ롼�׽�����¹Ԥ��ޤ���WEBrick�ϸƤФ줿����å���Ǽ¹Ԥ���[[c:WEBrick::SimpleServer]] �ȡ��ҥץ�������fork���ƥǡ����Ȥ��Ƽ¹Ԥ���[[c:WEBrick::Daemon]] ���󶡤��ޤ����ޤ���[[c:Thread]]����ꤹ��ȥ����Фϥ���å���Ǽ¹Ԥ���뤿��[[m:WEBrick::GenericServer#start]]�ϸƤӽФ�ľ��˸ƤӽФ�����������ᤷ�ޤ���
+  サーバのタイプを表すクラスを指定します。指定するクラスはブロックを取るstartという名前のクラスメソッドを持つ必要があります。サーバは、startメソッドの中でクライアントからの応答待ちのループ処理を実行します。WEBrickは呼ばれたスレッド内で実行する[[c:WEBrick::SimpleServer]] と、子プロセスをforkしてデーモンとして実行する[[c:WEBrick::Daemon]] を提供します。また、[[c:Thread]]を指定するとサーバはスレッド内で実行されるため[[m:WEBrick::GenericServer#start]]は呼び出し直後に呼び出し元に制御を戻します。
 : :Logger
-  ������Ȥ륪�֥�������(Logger ���֥�������)����ꤷ�ޤ����̾�� [[c:WEBrick::Log]] �Υ��󥹥��󥹤���ꤷ�ޤ���
-  WEBrick::Log.new(log_file, level) �Τ褦�˽�����ȥ�����٥�����ꤹ�뤳�Ȥ��Ǥ��ޤ���
-  Logger ���֥������Ȥ��������Ƥ���٤��᥽�åɤ˴ؤ��Ƥ� [[c:WEBrick::Log]] �򻲾Ȥ��Ʋ�������
+  ログをとるオブジェクト(Logger オブジェクト)を指定します。通常は [[c:WEBrick::Log]] のインスタンスを指定します。
+  WEBrick::Log.new(log_file, level) のように出力先とログレベルを設定することができます。
+  Logger オブジェクトに定義されているべきメソッドに関しては [[c:WEBrick::Log]] を参照して下さい。
 : :ServerSoftware
-  �����Х��եȥ�����̾��ʸ����ǻ��ꤷ�ޤ���[[c:WEBrick::HTTPServer]] �Ǥ� Server �إå��ˤ����ͤ����Ϥ���ޤ���
+  サーバソフトウェア名を文字列で指定します。[[c:WEBrick::HTTPServer]] では Server ヘッダにこの値が出力されます。
 : :DoNotListen
-  true �ξ�硢GenericServer ���֥������Ȥ��������������Ǥ� listen �򳫻Ϥ��ޤ���
+  true の場合、GenericServer オブジェクトを生成しただけでは listen を開始しません。
 : :StartCallback
-  start ���ϻ��˸ƤФ�� [[c:Proc]] ���֥������ȡ��ƤФ����˰�����
-  �ä�Ϳ�����ޤ���
+  start 開始時に呼ばれる [[c:Proc]] オブジェクト。呼ばれる時に引数は
+  特に与えられません。
 : :StopCallback
-  �����Ф� stop �������˸ƤФ�� [[c:Proc]] ���֥������Ȥ���ꤷ�ޤ����ƤФ����˰�����
-  �ä�Ϳ�����ޤ���
+  サーバを stop した時に呼ばれる [[c:Proc]] オブジェクトを指定します。呼ばれる時に引数は
+  特に与えられません。
 : :AcceptCallback
-  ���饤����Ȥ������³�� accept �����Ȥ��˸ƤФ�� [[c:Proc]] ���֥������Ȥ���ꤷ�ޤ���
-  ���饤����Ȥ���³���줿 [[c:TCPSocket]] ���֥������Ȥ�����Ȥ��ƸƤФ�ޤ���
+  クライアントからの接続を accept したときに呼ばれる [[c:Proc]] オブジェクトを指定します。
+  クライアントと接続された [[c:TCPSocket]] オブジェクトを引数として呼ばれます。
 : :DoNotReverseLookup
-  true �ξ�硢�ۥ���̾�ؤεհ�����Ԥ�ʤ��ʤ�ޤ���
+  true の場合、ホスト名への逆引きを行わなくなります。
   [[m:BasicSocket#do_not_reverse_lookup]]
-  �⻲�Ȥ��Ʋ�������
+  も参照して下さい。
 
-@param default �����ФΥǥե���Ȥ��������¸�����ϥå������ꤷ�ޤ������ꤵ�줿 config ��
-               ���꤬�ʤ��ä����ܤ˴ؤ��ƤϤ��� default ���ͤ��Ȥ��ޤ���
+@param default サーバのデフォルトの設定を保存したハッシュを指定します。指定された config で
+               設定がなかった項目に関してはこの default の値が使われます。
 
 @see [[m:WEBrick::Config::General]]
 

@@ -2,6 +2,6 @@ names=fully_expanded_name
 visibility=public
 kind=defined
 
---- fully_expanded_name
-@todo
+--- fully_expanded_name -> String
+完全修飾名を返します。
 

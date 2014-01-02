@@ -4,8 +4,8 @@ kind=defined
 
 --- new(si, size) -> Gem::SourceInfoCacheEntry
 
-����å���Υ���ȥ��������ޤ���
+キャッシュのエントリを作成します。
 
-@param si [[c:Gem::SourceIndex]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param si [[c:Gem::SourceIndex]] のインスタンスを指定します。
 
-@param size ����ȥ�Υ���������ꤷ�ޤ���
+@param size エントリのサイズを指定します。

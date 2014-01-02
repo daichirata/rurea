@@ -3,5 +3,6 @@ classes=MiniTest=Mock,MockExpectationError
 methods=
 sublibraries=
 is_sublibrary=false
+category=Development
 
-¥·¥ó¥×¥ë¤Ê¥â¥Ã¥¯¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ã‚·ãƒ³ãƒ—ãƒ«ãªãƒ¢ãƒƒã‚¯ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

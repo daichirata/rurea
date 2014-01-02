@@ -4,5 +4,5 @@ kind=defined
 
 --- package_files -> Rake::FileList
 
-�ѥå������˴ޤ�ե�����ꥹ�Ȥ��֤��ޤ���
+パッケージに含むファイルリストを返します。
 

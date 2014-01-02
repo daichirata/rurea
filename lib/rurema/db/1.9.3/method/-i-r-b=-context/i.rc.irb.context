@@ -1,10 +1,14 @@
-names=rc
+names=rc,rc?
 visibility=public
 kind=defined
 
---- rc
-@todo
+--- rc  -> bool
+--- rc? -> bool
 
-~/.irbrc ���ɤ߹���Ǥ����� true ���֤��ޤ���
-�ɤ߹���Ǥ��ʤ���� false ���֤��ޤ���
+~/.irbrc などの設定ファイルがあれば読み込みを行うかどうかを返します。
+
+@return 設定ファイルの読み込みを行う場合は true を返します。行わない場
+        合(irb の起動時に -f オプションを指定した場合)は false を返しま
+        す。
+
 

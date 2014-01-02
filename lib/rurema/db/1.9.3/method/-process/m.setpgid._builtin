@@ -4,16 +4,16 @@ kind=defined
 
 --- setpgid(pid, pgrp)    -> 0
 
-�ץ����� ID �� pid �Ǥ���ץ������Υץ��������롼�פ� pgrp �����ꤷ�ޤ���
+プロセス ID が pid であるプロセスのプロセスグループを pgrp に設定します。
 
-@param pid �ץ����� ID �������ǻ��ꤷ�ޤ���pid �� 0 �λ��ϥ����ȥץ������� ID ����ꤷ���Τ�Ʊ���Ǥ���
-           �ץ��������롼�פ������������������ 0 ���֤��ޤ���
+@param pid プロセス ID を整数で指定します。pid が 0 の時はカレントプロセスの ID を指定したのと同じです。
+           プロセスグループの設定に成功した場合は 0 を返します。
 
-@param pgrp �ץ��������롼�� ID �������ǻ��ꤷ�ޤ���pgrp �� 0 �λ��� pid ����ꤷ���Τ�Ʊ���Ǥ���
+@param pgrp プロセスグループ ID を整数で指定します。pgrp が 0 の時は pid を指定したのと同じです。
 
-@raise Errno::EXXX �ץ��������롼�פ�����˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX プロセスグループの設定に失敗した場合に発生します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 
 @see [[man:setpgid(2)]]
 

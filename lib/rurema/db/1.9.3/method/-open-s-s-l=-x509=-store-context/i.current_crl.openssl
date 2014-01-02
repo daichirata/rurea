@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- current_crl -> OpenSSL::X509::CRL | nil
-ľ���˸��ڤ����Ѥ��� CRL �Υ��֥������Ȥ��֤��ޤ���
+直前に検証に利用した CRL のオブジェクトを返します。
 
-�������������γƾ����񸡾ڸ�
-������Хå�([[m:OpenSSL::X509::Store#verify_callback=]])�ƤӽФ���
-�Ϥ���� StoreContext ���֥������Ȥˤ��Υ᥽�åɤ�ƤӽФ���
-ľ���˸��ڤ����Ѥ��� CRL ���֥������Ȥ��֤��ޤ���
+証明書チェインの各証明書検証後
+コールバック([[m:OpenSSL::X509::Store#verify_callback=]])呼び出しに
+渡される StoreContext オブジェクトにこのメソッドを呼び出すと
+直前に検証に利用した CRL オブジェクトを返します。
 
 

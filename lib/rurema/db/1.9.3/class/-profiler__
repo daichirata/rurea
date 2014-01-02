@@ -6,16 +6,16 @@ library=profiler
 aliases=
 aliasof=
 
-¥×¥í¥Õ¥¡¥¤¥é¤Î¼ÂÁõ¤Ç¤¹¡£
-Profiler__.start_profile ¼Â¹Ô¤«¤é¡¢Profiler__.stop_profile ¤Þ¤Ç¤Î
-¶è´Ö¤Î¼Â¹Ô¥³¡¼¥É¤Î¥×¥í¥Õ¥¡¥¤¥ë¤ò¼èÆÀ¤·¤Þ¤¹¡£
+ãƒ—ãƒ­ãƒ•ã‚¡ã‚¤ãƒ©ã®å®Ÿè£…ã§ã™ã€‚
+Profiler__.start_profile å®Ÿè¡Œã‹ã‚‰ã€Profiler__.stop_profile ã¾ã§ã®
+åŒºé–“ã®å®Ÿè¡Œã‚³ãƒ¼ãƒ‰ã®ãƒ—ãƒ­ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-°Ê²¼¤Î»ÈÍÑÎã¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+ä»¥ä¸‹ã®ä½¿ç”¨ä¾‹ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
     require 'profiler'
 
     Profiler__.start_profile
-    require 'tk'    # ¤³¤Î¥³¡¼¥É¤Î¥×¥í¥Õ¥¡¥¤¥ë¤¬Â¬Äê¤µ¤ì¤ë
+    require 'tk'    # ã“ã®ã‚³ãƒ¼ãƒ‰ã®ãƒ—ãƒ­ãƒ•ã‚¡ã‚¤ãƒ«ãŒæ¸¬å®šã•ã‚Œã‚‹
     Profiler__.print_profile(STDOUT)
 
     # =>

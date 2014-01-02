@@ -4,18 +4,18 @@ kind=added
 
 --- to_d(nFig = 0) -> BigDecimal
 
-¼«¿È¤ò [[c:BigDecimal]] ¤ËÊÑ´¹¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’ [[c:BigDecimal]] ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-nFig ·å¤Þ¤Ç·×»»¤ò¹Ô¤¤¤Þ¤¹¡£
-°ú¿ô¤ò¾ÊÎ¬¤·¤¿¤ê 0 ¤ò»ØÄê¤¹¤ë»È¤¤Êý¤ÏÈó¿ä¾©¤Ç¤¹¡£¾­Íèºï½ü¤µ¤ì¤Þ¤¹¡£
+nFig æ¡ã¾ã§è¨ˆç®—ã‚’è¡Œã„ã¾ã™ã€‚
+å¼•æ•°ã‚’çœç•¥ã—ãŸã‚Š 0 ã‚’æŒ‡å®šã™ã‚‹ä½¿ã„æ–¹ã¯éžæŽ¨å¥¨ã§ã™ã€‚å°†æ¥å‰Šé™¤ã•ã‚Œã¾ã™ã€‚
 
-@param nFig ·×»»¤ò¹Ô¤¦·å¿ô
+@param nFig è¨ˆç®—ã‚’è¡Œã†æ¡æ•°
 
-@return [[c:BigDecimal]] ¤ËÊÑ´¹¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È
+@return [[c:BigDecimal]] ã«å¤‰æ›ã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
-@raise ArgumentError nFig ¤ËÉé¤Î¿ô¤ò»ØÄê¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise ArgumentError nFig ã«è² ã®æ•°ã‚’æŒ‡å®šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require "rational"
   require "bigdecimal"

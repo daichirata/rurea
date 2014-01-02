@@ -5,5 +5,7 @@ kind=defined
 --- ==(other) -> bool
 --- eql?(other) -> bool
 
-��ʬ���Ȥ� other ����Ӥ���Ʊ�ͤǤ���п�(true)���֤��ޤ���
+自分自身と other を比較し、同値であれば真(true)を返します。
+
+@param other 比較対称のオブジェクト
 

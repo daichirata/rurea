@@ -4,5 +4,5 @@ kind=defined
 
 --- exit    -> ()
 
-�����ȥ���åɤ��Ф��� [[m:Thread#exit]] ��ƤӤޤ���
+カレントスレッドに対して [[m:Thread#exit]] を呼びます。
 

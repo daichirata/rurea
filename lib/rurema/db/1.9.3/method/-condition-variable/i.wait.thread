@@ -4,8 +4,8 @@ kind=defined
 
 --- wait(mutex) -> self
 
-mutex �Υ��å���������������ȥ���åɤ���ߤ��ޤ���
-[[m:ConditionVariable#signal]]�ޤ��ϡ�
-[[m:ConditionVariable#broadcast]]������줿�����ʥ��
-�������ȡ�mutex�Υ��å�����������¹Ծ��֤Ȥʤ�ޤ���
+mutex のロックを解放し、カレントスレッドを停止します。
+[[m:ConditionVariable#signal]]または、
+[[m:ConditionVariable#broadcast]]で送られたシグナルを
+受け取ると、mutexのロックを取得し、実行状態となります。
 

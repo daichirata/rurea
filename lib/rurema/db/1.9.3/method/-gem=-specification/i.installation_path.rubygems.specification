@@ -4,5 +4,5 @@ kind=defined
 
 --- installation_path -> String
 
-���� Gem �ѥå������Υ��󥹥ȡ�����Υѥ����֤��ޤ���
+この Gem パッケージのインストール先のパスを返します。
 

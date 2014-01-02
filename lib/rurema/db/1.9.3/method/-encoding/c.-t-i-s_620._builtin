@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- TIS_620 -> Encoding
-TIS-620 ���󥳡��ǥ��󥰡�
+TIS-620 エンコーディング。
 
-������򰷤�����Υ��󥳡��ǥ��󥰤ǡ� ISO8859-11 �Ȥۤ�
-Ʊ��Υ��󥳡��ǥ��󥰤Ǥ���
+タイ語を扱うためのエンコーディングで、 ISO8859-11 とほぼ
+同一のエンコーディングです。
 
 @see [[url:http://en.wikipedia.org/wiki/Thai_Industrial_Standard_620-2533]]
 

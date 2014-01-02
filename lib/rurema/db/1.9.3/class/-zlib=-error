@@ -6,10 +6,10 @@ library=zlib
 aliases=
 aliasof=
 
-�饤�֥�� zlib ��ȯ�Ԥ������Ƥ��㳰�Υ����ѡ����饹�Ǥ���
+ライブラリ zlib の発行する全ての例外のスーパークラスです。
 
-�ʲ����㳰�� Zlib::Error �Υ��֥��饹�Ȥ����������Ƥ��ޤ���
-���줾�� zlib �饤�֥��ؿ����֤����顼���б����Ƥ��ޤ���
+以下の例外が Zlib::Error のサブクラスとして定義されています。
+それぞれ zlib ライブラリ関数の返すエラーと対応しています。
 
 * [[c:Zlib::StreamEnd]]
 * [[c:Zlib::NeedDict]]

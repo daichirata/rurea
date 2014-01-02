@@ -3,5 +3,6 @@ classes=
 methods=
 sublibraries=tkextlib.tkDND.setup,tkextlib.tkDND.tkdnd,tkextlib.tkDND.shape
 is_sublibrary=true
+category=
 
 

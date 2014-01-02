@@ -6,4 +6,4 @@ library=minitest.mock
 aliases=
 aliasof=
 
-��å��θ��ڤ˼��Ԥ�������ȯ�������㳰�Ǥ���
+モックの検証に失敗した場合に発生する例外です。

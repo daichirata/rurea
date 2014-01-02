@@ -5,7 +5,7 @@ kind=defined
 --- kill(signal, job) -> Integer
 @todo
 
-����֤˥����ʥ������ޤ���
+ジョブにシグナルを送ります。
 
 @param signal
 

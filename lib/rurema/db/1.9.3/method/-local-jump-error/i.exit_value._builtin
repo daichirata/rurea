@@ -4,10 +4,10 @@ kind=defined
 
 --- exit_value -> object
 
-Îã³° LocalJumpError ¤òÈ¯À¸¤¹¤ë¸¶°ø¤È¤Ê¤Ã¤¿
-break ¤ä return ¤ËÅÏ¤·¤¿ÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+ä¾‹å¤– LocalJumpError ã‚’ç™ºç”Ÿã™ã‚‹åŸå› ã¨ãªã£ãŸ
+break ã‚„ return ã«æ¸¡ã—ãŸå€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   def foo
     proc { return 10 }

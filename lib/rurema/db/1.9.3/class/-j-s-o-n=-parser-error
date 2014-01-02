@@ -6,4 +6,4 @@ library=json
 aliases=
 aliasof=
 
-JSON �Υѡ������顼�����Τ����㳰�Ǥ���
+JSON のパースエラーを通知する例外です。

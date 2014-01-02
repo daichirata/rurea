@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- md5 -> String | nil
-�ܥǥ��� MD5 �ͤ�ʸ������֤��ޤ���
+ボディの MD5 値を文字列で返します。
 

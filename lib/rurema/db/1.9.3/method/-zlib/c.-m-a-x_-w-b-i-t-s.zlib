@@ -4,6 +4,6 @@ kind=defined
 
 --- MAX_WBITS
 
-[[m:Zlib::Deflate.new]] ¤ä [[m:Zlib::Inflate.new]] ¤Ç¤Î
-windowBits ¤Î¥Ç¥Õ¥©¥ë¥ÈÃÍ¤Ç¤¹¡£
+[[m:Zlib::Deflate.new]] ã‚„ [[m:Zlib::Inflate.new]] ã§ã®
+windowBits ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã§ã™ã€‚
 

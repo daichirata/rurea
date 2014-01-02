@@ -4,8 +4,8 @@ kind=defined
 
 --- ==(other) -> bool
 
-���Ȥ� other ��Ʊ���إå���ե�����ɤ���ľ��˿����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+自身が other と同じヘッダやフィールドを持つ場合に真を返します。
+そうでない場合は偽を返します。
 
-@param other ����оݤ� [[c:CSV::Row]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param other 比較対象の [[c:CSV::Row]] のインスタンスを指定します。
 

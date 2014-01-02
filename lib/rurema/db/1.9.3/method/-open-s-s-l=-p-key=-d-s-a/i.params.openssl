@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- params -> {String => OpenSSL::BN}
-���Υѥ�᡼���� {�ѥ�᡼��̾ => ����������} �Ȥ����ϥå�����֤��ޤ���
+鍵のパラメータを {パラメータ名 => その整数値} というハッシュで返します。
 
-�������ˤ����� priv_key �Τ褦�˼��Ȥ����äƤ��ʤ��ѥ�᡼����
-0 �����åȤ���ޤ���
+公開鍵における priv_key のように自身が持っていないパラメータは
+0 がセットされます。
 
 

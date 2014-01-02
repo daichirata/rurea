@@ -4,7 +4,7 @@ kind=defined
 
 --- egid    -> Integer
 
-¥«¥ì¥ó¥È¥×¥í¥»¥¹¤Î¼Â¸ú¥°¥ë¡¼¥× ID ¤òÀ°¿ô¤ÇÊÖ¤·¤Þ¤¹¡£
+ã‚«ãƒ¬ãƒ³ãƒˆãƒ—ãƒ­ã‚»ã‚¹ã®å®ŸåŠ¹ã‚°ãƒ«ãƒ¼ãƒ— ID ã‚’æ•´æ•°ã§è¿”ã—ã¾ã™ã€‚
 
 @see [[man:getegid(2)]]
 

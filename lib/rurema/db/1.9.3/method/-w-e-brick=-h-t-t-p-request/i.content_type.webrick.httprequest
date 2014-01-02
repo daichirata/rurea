@@ -4,6 +4,6 @@ kind=defined
 
 --- content_type    -> String | nil
 
-�ꥯ�����Ȥ� Content-Type �إå���ʸ������֤��ޤ���
+リクエストの Content-Type ヘッダを文字列で返します。
 
 

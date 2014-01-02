@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- cleanpath(consider_symlink = false) -> Pathname
-;�פ� "."��".." �� "/" ��������������� Pathname ���֥������Ȥ��֤��ޤ���
+余計な "."、".." や "/" を取り除いた新しい Pathname オブジェクトを返します。
 
-cleanpath �ϡ��ºݤ˥ե����륷���ƥ�򻲾Ȥ��뤳�Ȥʤ���ʸ�������
-�����ǽ�����Ԥ��ޤ���
+cleanpath は、実際にファイルシステムを参照することなく、文字列操作
+だけで処理を行います。
 
-@param consider_symlink ���ʤ�ѥ����Ǥ˥���ܥ�å���󥯤����ä����
-                        �ˤ�����ʤ��褦�� .. ��Ĥ��ޤ���
+@param consider_symlink 真ならパス要素にシンボリックリンクがあった場合
+                        にも問題ないように .. を残します。
 
     require "pathname"
     path = Pathname.new("//.././../")

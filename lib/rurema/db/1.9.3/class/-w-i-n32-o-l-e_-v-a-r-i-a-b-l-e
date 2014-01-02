@@ -6,20 +6,20 @@ library=win32ole
 aliases=
 aliasof=
 
-OLE�����ȥ᡼�������ѿ������Ruby�ǻ��Ȥ��뤿��Υ��饹�Ǥ���
+OLEオートメーションの変数情報をRubyで参照するためのクラスです。
 
-OLE�����ȥ᡼����󥵡��Фϡ������[[m:WIN32OLE.const_load]]�ˡ��᥽��
-��/�ץ��ѥƥ���[[c:WIN32OLE_METHOD]]�ˡ����٥�ȡ�[[c:WIN32OLE_EVENT]]��
-�Τۤ����ѿ��򥯥饤����Ȥ��󶡤Ǥ��ޤ���WIN32OLE_VARIABLE���饹�ϡ�����
-�Ф��󶡤����ѿ��ξ���򥪥֥������Ȳ����ޤ����ѿ�����ˤ�COM�Ƿ����
-����¤�Τ�桼��������Υե�����ɾ���ʤɤ�����ޤ������Ǥ��ɤ����Ѥ�
-���Τ�enum����󷿡ˤΥ��о���Ǥ���enum�Υ��Ф�����Ȥ������Ѥ�
-���ޤ���
+OLEオートメーションサーバは、定数（[[m:WIN32OLE.const_load]]）、メソッ
+ド/プロパティ（[[c:WIN32OLE_METHOD]]）、イベント（[[c:WIN32OLE_EVENT]]）
+のほかに変数をクライアントへ提供できます。WIN32OLE_VARIABLEクラスは、サー
+バが提供する変数の情報をオブジェクト化します。変数情報にはCOMで決められ
+た構造体やユーザ定義型のフィールド情報などがありますが、最も良く利用さ
+れるのはenum（列挙型）のメンバ情報です。enumのメンバは定数として利用で
+きます。
 
-WIN32OLE_VARIABLE�Υ��֥������Ȥϡ�[[m:WIN32OLE_TYPE#variables]]�᥽��
-�ɤ����Ѥ��Ƽ������ޤ���
+WIN32OLE_VARIABLEのオブジェクトは、[[m:WIN32OLE_TYPE#variables]]メソッ
+ドを利用して取得します。
 
-=== ����ץ륳����
+=== サンプルコード
 
    require 'win32ole'
 
@@ -29,7 +29,7 @@ WIN32OLE_VARIABLE�Υ��֥������Ȥϡ�[[m:WIN32OLE_TYPE#variables]]�᥽��
      puts "#{variable.name}=#{variable.value}"
    end
 
-�¹Է�̤ϰʲ��Ȥʤ�ޤ���
+実行結果は以下となります。
 
  xlChart=-4109
  xlDialogSheet=-4116

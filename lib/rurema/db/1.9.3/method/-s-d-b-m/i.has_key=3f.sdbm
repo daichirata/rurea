@@ -7,7 +7,7 @@ kind=defined
 --- include?(key) -> bool
 --- member?(key) -> bool
 
-key ¤¬¥Ç¡¼¥¿¥Ù¡¼¥¹Ãæ¤ËÂ¸ºß¤¹¤ë»þ¡¢¿¿¤òÊÖ¤·¤Þ¤¹¡£
+key ãŒãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ä¸­ã«å­˜åœ¨ã™ã‚‹æ™‚ã€çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-@param key ¸¡º÷¤·¤¿¤¤¥­¡¼¡£
+@param key æ¤œç´¢ã—ãŸã„ã‚­ãƒ¼ã€‚
 

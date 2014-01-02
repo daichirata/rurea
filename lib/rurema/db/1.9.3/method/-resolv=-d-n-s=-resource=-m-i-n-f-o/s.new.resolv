@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- new(rmailbx, emailbx) -> Resolv::DNS::Resource::MINFO
-Resolv::DNS::Resource::MINFO ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+Resolv::DNS::Resource::MINFO ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param rmailbx ¤³¤Î¥á¡¼¥ë¥ê¥¹¥È¥É¥á¥¤¥óÌ¾
+@param rmailbx ã“ã®ãƒ¡ãƒ¼ãƒ«ãƒªã‚¹ãƒˆãƒ‰ãƒ¡ã‚¤ãƒ³å
 @param emailbx
 
 

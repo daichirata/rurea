@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- replacement=(string)
-ÃÖ´¹Ê¸»ú¤òÀßÄê¤·¤Þ¤¹¡£
+ç½®æ›æ–‡å­—ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param string ÊÑ´¹´ï¤ËÀßÄê¤¹¤ëÃÖ´¹Ê¸»ú
+@param string å¤‰æ›å™¨ã«è¨­å®šã™ã‚‹ç½®æ›æ–‡å­—
 
   ec = Encoding::Converter.new("utf-8", "us-ascii", :undef => :replace)
   ec.replacement = "<undef>"

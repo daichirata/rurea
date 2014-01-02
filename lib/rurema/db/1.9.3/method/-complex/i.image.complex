@@ -4,9 +4,9 @@ kind=added
 
 --- image -> Numeric
 
-¼«¿È¤ÎµõÉô¤òÊÖ¤·¤Þ¤¹¡£[[m:Complex#imag]] ¤Î¥¨¥¤¥ê¥¢¥¹¤Ç¤¹¡£
+è‡ªèº«ã®è™šéƒ¨ã‚’è¿”ã—ã¾ã™ã€‚[[m:Complex#imag]] ã®ã‚¨ã‚¤ãƒªã‚¢ã‚¹ã§ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'complex'
   Complex(3, 2).image # => 2

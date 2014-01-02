@@ -5,5 +5,5 @@ kind=defined
 --- to_a -> Array
 --- to_ary -> Array
 
-ÆâÉôÅª¤ÊÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
+å†…éƒ¨çš„ãªé…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 

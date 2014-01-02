@@ -4,11 +4,11 @@ kind=defined
 
 --- new_category
 @todo
-¿·¤·¤¯category¤òºîÀ®¤·¡¤ÊÖ¤·¤Ş¤¹¡¥ºîÀ®¤µ¤ì¤¿
-category¤Ïcategory¥ê¥¹¥È¤ÎºÇ¸å
-¤ËÄÉ²Ã¤µ¤ì¤Æ¤¤¤Ş¤¹¡¥
+æ–°ã—ãcategoryã‚’ä½œæˆã—ï¼Œè¿”ã—ã¾ã™ï¼ä½œæˆã•ã‚ŒãŸ
+categoryã¯categoryãƒªã‚¹ãƒˆã®æœ€å¾Œ
+ã«è¿½åŠ ã•ã‚Œã¦ã„ã¾ã™ï¼
 
-item.categories.new_category¤¬ºîÀ®¤¹¤ë
-category¤Ï
-maker.channel.categories.new_category¤¬ºîÀ®¤¹¤ë
-category¤ÈÆ±¤¸API¤ò»ı¤Á¤Ş¤¹¡¥
+item.categories.new_categoryãŒä½œæˆã™ã‚‹
+categoryã¯
+maker.channel.categories.new_categoryãŒä½œæˆã™ã‚‹
+categoryã¨åŒã˜APIã‚’æŒã¡ã¾ã™ï¼

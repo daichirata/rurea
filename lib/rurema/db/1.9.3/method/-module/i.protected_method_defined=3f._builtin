@@ -4,11 +4,11 @@ kind=defined
 
 --- protected_method_defined?(name) -> bool
 
-���󥹥��󥹥᥽�å� name ���⥸�塼����������Ƥ��ꡢ
-�����⤽�βĻ����� protected �Ǥ���Ȥ��� true ���֤��ޤ���
-�����Ǥʤ���� false ���֤��ޤ���
+インスタンスメソッド name がモジュールに定義されており、
+しかもその可視性が protected であるときに true を返します。
+そうでなければ false を返します。
 
-@param name [[c:Symbol]] �� [[c:String]] ����ꤷ�ޤ���
+@param name [[c:Symbol]] か [[c:String]] を指定します。
 
 @see [[m:Module#method_defined?]]
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- name -> String
 
-�����ɤ˼��Ԥ��� Gem ��̾�����֤��ޤ���
+ロードに失敗した Gem の名前を返します。
 

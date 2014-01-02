@@ -2,6 +2,7 @@ names=notations
 visibility=public
 kind=defined
 
---- notations
-@todo
+--- notations -> [REXML::NotationDecl]
+DTD に含まれている記法宣言 ([[c:REXML::NotationDecl]]) を
+配列で返します。
 

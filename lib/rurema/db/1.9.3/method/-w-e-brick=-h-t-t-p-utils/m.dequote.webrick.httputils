@@ -4,7 +4,7 @@ kind=defined
 
 --- dequote(str) -> String
 
-Ϳ����줿ʸ���󤫤���֥륯�����ȤȥХå�����å�����������֤��ޤ���
+与えられた文字列からダブルクオートとバックスラッシュを削除して返します。
 
-@param str ʸ�������ꤷ�ޤ���
+@param str 文字列を指定します。
 

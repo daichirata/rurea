@@ -2,6 +2,7 @@ names=node_type
 visibility=public
 kind=defined
 
---- node_type
-@todo
+--- node_type -> Symbol
+[[c:Symbol]] :doctype を返します。
+
 

@@ -5,15 +5,15 @@ kind=defined
 --- each_with_index                      -> Enumerator
 --- each_with_index {|item, index| ... } -> self
 
-���ǤȤ��Υ���ǥå�����֥��å����Ϥ��Ʒ����֤��ޤ���
+要素とそのインデックスをブロックに渡して繰り返します。
 
-self ���֤��ޤ���
+self を返します。
 
-�֥��å����ά�������ϡ�
-���ǤȤ��Υ���ǥå����򷫤��֤��褦��
-[[c:Enumerator]] ���֤��ޤ���
+ブロックを省略した場合は、
+要素とそのインデックスを繰り返すような
+[[c:Enumerator]] を返します。
 
-��:
+例:
     [5, 10, 15].each_with_index do |n, idx|
       p [n, idx]
     end

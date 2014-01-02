@@ -4,14 +4,14 @@ kind=defined
 
 --- setbyte(index, b) -> Integer
 
-index �Х����ܤΥХ��Ȥ� b ���ѹ����ޤ��� 
+index バイト目のバイトを b に変更します。 
 
-index �������ꤹ�������������������֤��ѹ����ޤ���
+index に負を指定すると末尾から数えた位置を変更します。
 
-���åȤ����ͤ��֤��ޤ���
+セットした値を返します。
 
-@param index �Х��Ȥ򥻥åȤ������
-@param b ���åȤ���Х���(0 ���� 255 �ޤǤ�����)
-@raise IndexError �ϰϳ����ͤ򥻥åȤ��褦�Ȥ�������ȯ�����ޤ���
+@param index バイトをセットする位置
+@param b セットするバイト(0 から 255 までの整数)
+@raise IndexError 範囲外に値をセットしようとした場合に発生します。
 
 

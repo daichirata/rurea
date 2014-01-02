@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- message_id -> String | nil
-message_id ��ʸ������֤��ޤ���
+message_id を文字列で返します。
 
-����٥����פ�¸�ߤ��ʤ��Ȥ��� nil ���֤��ޤ���
+エンベロープに存在しないときは nil を返します。
 

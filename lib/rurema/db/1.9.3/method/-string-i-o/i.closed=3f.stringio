@@ -4,7 +4,7 @@ kind=defined
 
 --- closed?    -> bool
 
-¼«¿È¤¬´û¤Ë close ¤µ¤ì¤Æ¤¤¤¿¾ì¹ç¤Ë true ¤òÊÖ¤·¤Ş¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ï¡¢false ¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ãŒæ—¢ã« close ã•ã‚Œã¦ã„ãŸå ´åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã¯ã€false ã‚’è¿”ã—ã¾ã™ã€‚
 
       sio = StringIO.open("hoge")
       p sio.closed? # => false

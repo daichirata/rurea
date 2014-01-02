@@ -2,5 +2,33 @@ names=get_attribute_ns
 visibility=public
 kind=defined
 
---- get_attribute_ns(namespace, name)
-@todo
+--- get_attribute_ns(namespace, name) -> REXML::Attribute | nil
+namespace と name で特定される属性を返します。
+
+namespace で名前空間を、 name で prefix を含まない属性名を
+指定します。
+
+指定された属性が存在しない場合は nil を返します。
+
+XML プロセッサが prefix を置き換えてしまった場合でも、このメソッドを
+使うことで属性を正しく指定することができます。
+
+@param namespace 名前空間(URI, 文字列)
+@param name 属性名(文字列)
+
+==== 例
+  require 'rexml/document'
+  
+  doc = REXML::Document.new(<<-EOS)
+  <root xmlns:foo="http://example.org/foo"
+        xmlns:bar="http://example.org/bar">
+    <a foo:att='1' bar:att='2' att='&lt;'/>
+  </root>
+  EOS
+  a = doc.get_elements("/root/a").first
+  
+  a.attributes.get_attribute_ns("", "att") # => att='&lt;'
+  a.attributes.get_attribute_ns("http://example.org/foo", "att") # => foo:att='1'
+  a.attributes.get_attribute_ns("http://example.org/baz", "att") # => nil
+  a.attributes.get_attribute_ns("http://example.org/foo", "attt") # => nil
+

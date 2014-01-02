@@ -6,4 +6,4 @@ library=rake
 aliases=
 aliasof=
 
-ÄÌ¾ï¤Î¥¿¥¹¥¯¤ÈÆ±¤¸¤Ç¤¹¤¬¡¢[[lib:thread]] ¤òÍÑ¤¤¤Æ»öÁ°¥¿¥¹¥¯¤òÊÂÎó¼Â¹Ô¤·¤Þ¤¹¡£
+é€šå¸¸ã®ã‚¿ã‚¹ã‚¯ã¨åŒã˜ã§ã™ãŒã€[[lib:thread]] ã‚’ç”¨ã„ã¦äº‹å‰ã‚¿ã‚¹ã‚¯ã‚’ä¸¦åˆ—å®Ÿè¡Œã—ã¾ã™ã€‚

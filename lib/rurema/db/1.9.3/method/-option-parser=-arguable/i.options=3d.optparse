@@ -4,9 +4,9 @@ kind=defined
 
 --- options=(opt)
 
-���Ȥ�ѡ������뤿��� [[c:OptionParser]] ���֥������Ȥ򥻥åȤ��ޤ���
+自身をパースするための [[c:OptionParser]] オブジェクトをセットします。
 
-@param opt ���Ȥ�ѡ������� [[c:OptionParser]] �����뤤�� nil �� false ����ꤷ�ޤ���
-           nil �� false �Ǥ����硢���Ȥ� options= �᥽�åɤ� options �᥽�åɤ�
-           undef ���ޤ���
+@param opt 自身をパースする [[c:OptionParser]] 、あるいは nil か false を指定します。
+           nil か false である場合、自身の options= メソッドと options メソッドを
+           undef します。
 

@@ -3,21 +3,22 @@ classes=WEBrick
 methods=
 sublibraries=webrick.compat,webrick.config,webrick.log,webrick.server,webrick.utils,webrick.accesslog,webrick.htmlutils,webrick.httputils,webrick.cookie,webrick.httpversion,webrick.httpstatus,webrick.httprequest,webrick.httpresponse,webrick.httpserver,webrick.httpservlet,webrick.httpauth,webrick.cgi,webrick.httpauth.basicauth,webrick.httpauth.digestauth,webrick.httpauth.htpasswd,webrick.httpauth.htdigest,webrick.httpauth.htgroup,webrick.httpauth.authenticator,webrick.httpauth.userdb,webrick.httpproxy,webrick.https,webrick.ssl,webrick.httpservlet.abstract,webrick.httpservlet.filehandler,webrick.httpservlet.cgihandler,webrick.httpservlet.erbhandler,webrick.httpservlet.prochandler
 is_sublibrary=false
+category=Network
 
-����HTTP�����С��ե졼�����Ǥ���HTTP�����Ф���ñ�˺��ޤ���
+汎用HTTPサーバーフレームワークです。HTTPサーバが簡単に作れます。
 
-WEBrick �ϥ����֥�åȤˤ�äƵ�ǽ���ޤ��������֥�åȤȤ�
-�����Фε�ǽ�򥪥֥������Ȳ�������ΤǤ���
-�ե�������ɤ߹�����֤���fork���ƥ�����ץȤ�¹Ԥ��롦�ƥ�ץ졼�Ȥ�Ŭ�Ѥ��� 
-�ʤɡ��֥����Ф��ԤʤäƤ����͡��ʤ��ȡפ���ݲ������֥������Ȥˤ�����Τ�
-�����֥�åȤǤ��������֥�åȤ� [[c:WEBrick::HTTPServlet::AbstractServlet]] ��
-���֥��饹�Υ��󥹥��󥹤Ȥ��Ƽ�������ޤ���
+WEBrick はサーブレットによって機能します。サーブレットとは
+サーバの機能をオブジェクト化したものです。
+ファイルを読み込んで返す・forkしてスクリプトを実行する・テンプレートを適用する 
+など、「サーバが行なっている様々なこと」を抽象化しオブジェクトにしたものが
+サーブレットです。サーブレットは [[c:WEBrick::HTTPServlet::AbstractServlet]] の
+サブクラスのインスタンスとして実装されます。
 
-WEBrick �ϥ��å��������ε�ǽ���󶡤��ޤ���
+WEBrick はセッション管理の機能を提供しません。
 
-=== WEBrick �γ���
+=== WEBrick の概要
 
-�ʲ��� Web �����ФȤ��ƴ�����ư��륹����ץȤǤ���
+以下は Web サーバとして完全に動作するスクリプトです。
 
  require 'webrick'
  srv = WEBrick::HTTPServer.new({ :DocumentRoot => './',
@@ -28,17 +29,17 @@ WEBrick �ϥ��å��������ε�ǽ���󶡤��ޤ���
  trap("INT"){ srv.shutdown }
  srv.start
 
-�֥饦���� http://127.0.0.1:20080/ �˥����������뤳�Ȥˤ�äƳ�ǧ�Ǥ��ޤ���
-�ޤ� http://127.0.0.1:20080/view.cgi �˥�����������ȥ����ȥǥ��쥯�ȥ���֤���Ƥ���
-view.rb ��CGI������ץȤȤ��Ƽ¹Ԥ���ޤ���http://127.0.0.1:20080/foo.html �˥������������
-�����ȥǥ��쥯�ȥ겼�� hoge.html �����Ƥ�ɽ������ޤ��� 
+ブラウザで http://127.0.0.1:20080/ にアクセスすることによって確認できます。
+また http://127.0.0.1:20080/view.cgi にアクセスするとカレントディレクトリに置かれている
+view.rb がCGIスクリプトとして実行されます。http://127.0.0.1:20080/foo.html にアクセスすると
+カレントディレクトリ下の hoge.html の内容が表示されます。 
 
-��Υ�����ץȤǤϰʲ��Τ褦��ή��� view.rb �ϼ¹Ԥ���ޤ���
+上のスクリプトでは以下のような流れで view.rb は実行されます。
 
- (1) �����ФΥѥ� /view.cgi �� CGIHandler ���ޥ���Ȥˤ���ӤĤ����ޤ���
- (2) �ѥ� /view.cgi �˥������������뤿�Ӥ˥����Ф� 'view.rb' ������Ȥ��� CGIHandler ���֥������Ȥ��������ޤ���
- (3) �����Фϥꥯ�����ȥ��֥������Ȥ�����Ȥ��� CGIHandler#service �᥽�åɤ�ƤӤޤ���
- (4) CGIHandler ���֥������Ȥ� view.rb �� CGI ������ץȤȤ��Ƽ¹Ԥ��ޤ���
+ (1) サーバのパス /view.cgi と CGIHandler がマウントにより結びつけられます。
+ (2) パス /view.cgi にアクセスがあるたびにサーバは 'view.rb' を引数として CGIHandler オブジェクトを生成します。
+ (3) サーバはリクエストオブジェクトを引数として CGIHandler#service メソッドを呼びます。
+ (4) CGIHandler オブジェクトは view.rb を CGI スクリプトとして実行します。
 
-���Τ褦�� WEBrick �Ǥ� Web �����Фε�ǽ������ʬ�������֥�åȤη����󶡤���Ƥ��ޤ���
-�ޤ������֥�åȤ�������뤳�Ȥˤ�꿷���ʵ�ǽ�� Web �����Ф��ɲä��뤳�Ȥ�Ǥ��ޤ���
+このように WEBrick では Web サーバの機能の大部分がサーブレットの形で提供されています。
+またサーブレットを作成することにより新たな機能を Web サーバに追加することもできます。

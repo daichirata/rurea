@@ -6,10 +6,10 @@ library=rinda.rinda
 aliases=
 aliasof=
 
-���ץ�Υޥå��󥰤Τ���Υ��饹�Ǥ���
-�桼�������Υ��饹��ľ�ܻȤ����ȤϤ���ޤ���
+タプルのマッチングのためのクラスです。
+ユーザがこのクラスを直接使うことはありません。
 
-=== ��
+=== 例
 
  require 'rinda/rinda'
  

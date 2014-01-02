@@ -4,7 +4,7 @@ kind=defined
 
 --- version=(version)
 
-���� Gem �ѥå������ΥС������򥻥åȤ��ޤ���
+この Gem パッケージのバージョンをセットします。
 
-@param version �С�������ʸ���� [[c:Gem::Version]] �Υ��󥹥��󥹤ǻ��ꤷ�ޤ���
+@param version バージョンを文字列か [[c:Gem::Version]] のインスタンスで指定します。
 

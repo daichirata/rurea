@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- LOCK_NB -> Integer
-���å��κݤ˥֥��å����ʤ���¾�λ���� or ���뤳�Ȥǻ��ꤷ�ޤ���
-[[m:File#flock]] �ǻ��Ѥ��ޤ���
+ロックの際にブロックしない。他の指定と or することで指定します。
+[[m:File#flock]] で使用します。
 
 

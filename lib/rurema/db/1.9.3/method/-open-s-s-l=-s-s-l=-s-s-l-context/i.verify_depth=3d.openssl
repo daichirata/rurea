@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- verify_depth=(depth)
-��������������θ��ڤ������ο��������ꤷ�ޤ���
+証明書チェイン上の検証する最大の深さを設定します。
 
-�ǥե���Ȥ� nil �ǡ����ξ�� OpenSSL �Υǥե������(9)���Ȥ��ޤ���
+デフォルトは nil で、この場合 OpenSSL のデフォルト値(9)が使われます。
 
-@param depth ���翼����ɽ������
+@param depth 最大深さを表す整数
 @see [[m:OpenSSL::SSL::SSLContext#verify_depth]]
 

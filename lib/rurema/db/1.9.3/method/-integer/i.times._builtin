@@ -5,14 +5,14 @@ kind=defined
 --- times {|n| ... } -> self
 --- times -> Enumerator
 
-self ²ó¤À¤±·«¤êÊÖ¤·¤Ş¤¹¡£
-self ¤¬Àµ¤ÎÀ°¿ô¤Ç¤Ê¤¤¾ì¹ç¤Ï²¿¤â¤·¤Ş¤»¤ó¡£
+self å›ã ã‘ç¹°ã‚Šè¿”ã—ã¾ã™ã€‚
+self ãŒæ­£ã®æ•´æ•°ã§ãªã„å ´åˆã¯ä½•ã‚‚ã—ã¾ã›ã‚“ã€‚
 
-¤Ş¤¿¥Ö¥í¥Ã¥¯¥Ñ¥é¥á¡¼¥¿¤Ë¤Ï 0 ¤«¤é self - 1 ¤Ş¤Ç¤Î¿ôÃÍ¤¬ÅÏ¤µ¤ì¤Ş¤¹¡£
+ã¾ãŸãƒ–ãƒ­ãƒƒã‚¯ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«ã¯ 0 ã‹ã‚‰ self - 1 ã¾ã§ã®æ•°å€¤ãŒæ¸¡ã•ã‚Œã¾ã™ã€‚
 
-  3.times { puts "Hello, World!" }  # Hello, World! ¤È3¹ÔÂ³¤¤¤ÆÉ½¼¨¤µ¤ì¤ë¡£
-  0.times { puts "Hello, World!" }  # ²¿¤âÉ½¼¨¤µ¤ì¤Ê¤¤¡£
-  5.times {|n| print n }            # 01234 ¤ÈÉ½¼¨¤µ¤ì¤ë¡£
+  3.times { puts "Hello, World!" }  # Hello, World! ã¨3è¡Œç¶šã„ã¦è¡¨ç¤ºã•ã‚Œã‚‹ã€‚
+  0.times { puts "Hello, World!" }  # ä½•ã‚‚è¡¨ç¤ºã•ã‚Œãªã„ã€‚
+  5.times {|n| print n }            # 01234 ã¨è¡¨ç¤ºã•ã‚Œã‚‹ã€‚
 
 @see [[m:Integer#upto]], [[m:Integer#downto]], [[m:Numeric#step]]
 

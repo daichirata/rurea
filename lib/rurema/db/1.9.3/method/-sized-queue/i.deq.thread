@@ -6,9 +6,9 @@ kind=defined
 --- shift(non_block = false) -> object
 --- deq(non_block = false)   -> object
 
-���塼����ҤȤ��ͤ���Ф��ޤ���
-���塼�� push ���褦���ԤäƤ��륹��åɤ�����С��¹Ԥ�Ƴ������ޤ���
+キューからひとつ値を取り出します。
+キューに push しようと待っているスレッドがあれば、実行を再開させます。
 
-@param non_block true ��Ϳ����ȡ����塼�����λ����㳰 [[c:ThreadError]] ��ȯ�����ޤ���
+@param non_block true を与えると、キューが空の時に例外 [[c:ThreadError]] が発生します。
 
 @see [[m:Queue#pop]]

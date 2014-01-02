@@ -4,6 +4,6 @@ kind=defined
 
 --- execute(*obj) -> [IRB::WorkSpace]
 
-UNIX �����륳�ޥ�ɤ� popd ��Ʊ���Ǥ���
+UNIX シェルコマンドの popd と同じです。
 
-@param obj ���Ѥ��ޤ���
+@param obj 使用しません。

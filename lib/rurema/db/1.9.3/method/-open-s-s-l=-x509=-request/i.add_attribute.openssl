@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- add_attribute(attr) -> OpenSSL::X509::Attribute
-¿·¤¿¤Ê attribute ¤ò CSR ¤ËÄÉ²Ã¤·¤Ş¤¹¡£
+æ–°ãŸãª attribute ã‚’ CSR ã«è¿½åŠ ã—ã¾ã™ã€‚
 
-@param attr ÄÉ²Ã¤¹¤ë attribute([[c:OpenSSL::X509::Attribute]] ¤Î
-       ¥¤¥ó¥¹¥¿¥ó¥¹)
-@return ÅÏ¤·¤¿ attribute ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹
+@param attr è¿½åŠ ã™ã‚‹ attribute([[c:OpenSSL::X509::Attribute]] ã®
+       ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹)
+@return æ¸¡ã—ãŸ attribute ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™
 @see [[m:OpenSSL::X509::Request#attribute]], 
      [[m:OpenSSL::X509::Request#attribute=]]
 

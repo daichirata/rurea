@@ -4,15 +4,15 @@ kind=defined
 
 --- parse!(argv = self.default_argv)   -> [String]
 
-Ϳ����줿 argv ��ѡ������ޤ���
+与えられた argv をパースします。
 
-[[m:OptionParser#permute!]] ��Ʊ�ͤ� argv ���˲�Ū�˥ѡ������ޤ���
-�Ķ��ѿ��� POSIXLY_CORRECT �����ꤵ��Ƥ�����ϡ�
-[[m:OptionParser#order!]] ��Ʊ�ͤ˿��񤤤ޤ���
+[[m:OptionParser#permute!]] と同様に argv を破壊的にパースします。
+環境変数に POSIXLY_CORRECT が設定されている場合は、
+[[m:OptionParser#order!]] と同様に振舞います。
 
-@param argv �ѡ���������������ʸ���������ǻ��ꤷ�ޤ���
+@param argv パースしたい引数を文字列の配列で指定します。
 
-@raise OptionParser::ParseError �ѡ����˼��Ԥ�����硢ȯ�����ޤ���
-                                �ºݤ� OptionParser::ParseError �Υ��֥�
-                                �饹�ˤʤ�ޤ���
+@raise OptionParser::ParseError パースに失敗した場合、発生します。
+                                実際は OptionParser::ParseError のサブク
+                                ラスになります。
 

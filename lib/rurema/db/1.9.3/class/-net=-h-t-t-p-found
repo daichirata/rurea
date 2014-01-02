@@ -6,5 +6,5 @@ library=net.http
 aliases=Net=HTTPMovedTemporarily
 aliasof=
 
-HTTP �쥹�ݥ� 302 (Found) ��ɽ�����륯�饹�Ǥ���
-�ܤ����� [[RFC:2616]] �򸫤Ƥ���������
+HTTP レスポンス 302 (Found) を表現するクラスです。
+詳しくは [[RFC:2616]] を見てください。

@@ -4,13 +4,13 @@ kind=defined
 
 --- filter_backtrace(array) -> [String]
 
-array �ǻ��ꤵ�줿�Хå��ȥ졼������ optparse �饤�֥��˴ؤ���Ԥ��
-�����ޤ���
+array で指定されたバックトレースから optparse ライブラリに関する行を除
+外します。
 
-�ǥХå��⡼��([[m:$DEBUG]]����)�ξ��ϲ��⤷�ޤ���
+デバッグモード([[m:$DEBUG]]が真)の場合は何もしません。
 
-@param array �Хå��ȥ졼����ʸ���������ǻ��ꤷ�ޤ���
+@param array バックトレースを文字列の配列で指定します。
 
-@return array ���֤��ޤ���
+@return array を返します。
 
 

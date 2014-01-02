@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- names -> [String]
-����ɽ���˴ޤޤ��̾���դ�����ץ���(named capture)��̾����
-ʸ�����������֤��ޤ���
+正規表現に含まれる名前付きキャプチャ(named capture)の名前を
+文字列の配列で返します。
 
   /(?<foo>.)(?<bar>.)(?<baz>.)/.names
   

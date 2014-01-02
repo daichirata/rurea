@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- name -> Resolv::DNS::Name
-�ɥᥤ��̾���֤��ޤ���
+ドメイン名を返します。
 
 

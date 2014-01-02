@@ -4,7 +4,7 @@ kind=defined
 
 --- version_requirement -> Get::Requirement
 
-¥í¡¼¥É¤Ë¼ºÇÔ¤·¤¿ Gem ¤ÎÉ¬Í×¾ò·ï¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ­ãƒ¼ãƒ‰ã«å¤±æ•—ã—ãŸ Gem ã®å¿…è¦æ¡ä»¶ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[c:Gem::Requirement]], [[m:Gem::Dependency#version_requirements]]
 

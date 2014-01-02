@@ -1,8 +1,0 @@
-requires=
-classes=Syck=YPath
-methods=
-sublibraries=
-is_sublibrary=true
-
-YAML ドキュメントから特定のデータを検索する機能を提供するサブライブラリ
-です。

@@ -4,8 +4,8 @@ kind=defined
 
 --- webcvs -> String | nil
 
-���ޥ�ɥ饤������� --webcvs ���ץ����ǻ��ꤷ�� URL ��ʸ������֤���
-����
+コマンドライン引数の --webcvs オプションで指定した URL を文字列で返しま
+す。
 
-���ꤷ�ʤ��ä����� nil ���֤��ޤ���
+指定しなかった場合は nil を返します。
 

@@ -3,5 +3,6 @@ classes=WEBrick=HTTPAuth
 methods=
 sublibraries=webrick.httpauth.basicauth,webrick.httpauth.digestauth,webrick.httpauth.htpasswd,webrick.httpauth.htdigest,webrick.httpauth.htgroup,webrick.httpauth.authenticator,webrick.httpauth.userdb
 is_sublibrary=true
+category=
 
-¥æ¡¼¥¶Ç§¾Ú¤Îµ¡Ç½¤òÄó¶¡¤¹¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ãƒ¦ãƒ¼ã‚¶èªè¨¼ã®æ©Ÿèƒ½ã‚’æä¾›ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

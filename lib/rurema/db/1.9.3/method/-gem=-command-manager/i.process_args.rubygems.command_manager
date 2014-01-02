@@ -4,7 +4,7 @@ kind=defined
 
 --- process_args(args) -> ()
 
-���� args ��������� gem ���ޥ�ɤ�¹Ԥ��뤿���ɬ�פʽ�����Ԥ��ޤ���
+引数 args を処理して gem コマンドを実行するために必要な処理を行います。
 
-@param args ���ޥ�ɥ饤�󤫤������ä���������ꤷ�ޤ���
+@param args コマンドラインから受け取った引数を指定します。
 

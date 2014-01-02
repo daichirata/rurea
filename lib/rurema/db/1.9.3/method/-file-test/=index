@@ -4,7 +4,7 @@
 .executable?	FileTest.#executable?
 .executable_real?	FileTest.#executable_real?
 .exist?	FileTest.#exist?
-.exists?	FileTest.#exists?
+.exists?	FileTest.#exist?
 .file?	FileTest.#file?
 .grpowned?	FileTest.#grpowned?
 .identical?	FileTest.#identical?
@@ -30,7 +30,7 @@
 #executable?	FileTest.#executable?
 #executable_real?	FileTest.#executable_real?
 #exist?	FileTest.#exist?
-#exists?	FileTest.#exists?
+#exists?	FileTest.#exist?
 #file?	FileTest.#file?
 #grpowned?	FileTest.#grpowned?
 #identical?	FileTest.#identical?

@@ -4,6 +4,6 @@ kind=defined
 
 --- space_before -> String
 
-JSON ·Á¼°¤ÎÊ¸»úÎóÃæ¤Ç JavaScript ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òÉ½¤¹ÉôÊ¬¤Ë¤¢¤ë ':' ¤Î
-Á°¤ËÁÞÆþ¤¹¤ëÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+JSON å½¢å¼ã®æ–‡å­—åˆ—ä¸­ã§ JavaScript ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¡¨ã™éƒ¨åˆ†ã«ã‚ã‚‹ ':' ã®
+å‰ã«æŒ¿å…¥ã™ã‚‹æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 

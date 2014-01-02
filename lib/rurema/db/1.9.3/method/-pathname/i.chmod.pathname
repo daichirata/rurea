@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- chmod(mode) -> Integer
-File.chmod(mode, self.to_s) д╚╞▒д╕д╟д╣бг
+File.chmod(mode, self.to_s) уБихРМуБШуБзуБЩуАВ
 
-@param mode е╒ебедеыд╬евепе╗е╣╕в╕┬дЄ└░┐Їд╟╗╪─ъд╖д▐д╣бг
+@param mode уГХуВбуВдуГлуБоуВвуВпуВ╗уВ╣цийщЩРуВТцХ┤цХ░уБзцМЗхоЪуБЧуБ╛уБЩуАВ
 
 @see [[m:File.chmod]]
 

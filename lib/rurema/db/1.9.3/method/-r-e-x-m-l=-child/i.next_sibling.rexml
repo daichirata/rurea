@@ -2,6 +2,10 @@ names=next_sibling
 visibility=public
 kind=defined
 
---- next_sibling
-@todo
+--- next_sibling -> REXML::Node
+次の隣接ノードを返します。
+
+[[m:REXML::Node#next_sibling_node]] の別名です。
+
+@see [[m:REXML::Child#next_sibling=]]
 

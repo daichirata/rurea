@@ -5,15 +5,15 @@ kind=defined
 --- with_object(obj) -> Enumerator
 --- with_object(obj) {|(*args), memo_obj| ... } -> object
 
-�����֤��γ����Ǥ� obj ��ź���ƥ֥��å��򷫤��֤���obj ���֤��ͤȤ����֤��ޤ���
+繰り返しの各要素に obj を添えてブロックを繰り返し、obj を返り値として返します。
 
-obj �ˤ�Ǥ�դΥ��֥������Ȥ��Ϥ����Ȥ��Ǥ��ޤ���
+obj には任意のオブジェクトを渡すことができます。
 
-�֥��å����Ϥ���ʤ��ä����ϡ�����������������֤���¹Ԥ���
-�Ǹ�� obj ���֤� [[c:Enumerator]] ���֤��ޤ���
+ブロックが渡されなかった場合は、上で説明した繰り返しを実行し、
+最後に obj を返す [[c:Enumerator]] を返します。
 
-==== ��
-  # 0,1,2 �ȸƤӤ��� enumerator����
+==== 例
+  # 0,1,2 と呼びだす enumeratorを作る
   to_three = Enumerator.new do |y|
     3.times do |x|
       y << x
@@ -28,7 +28,7 @@ obj �ˤ�Ǥ�դΥ��֥������Ȥ��Ϥ����Ȥ��Ǥ��ޤ���
   # => foo:1
   # => foo:2
 
-@param obj �����֤��γ����Ǥ�ź�����Ϥ���륪�֥�������
+@param obj 繰り返しの各要素に添えて渡されるオブジェクト
 @see [[m:Enumerable#each_with_object]]
 
 

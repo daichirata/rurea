@@ -4,16 +4,16 @@ kind=defined
 
 --- each_strongly_connected_component_from(node) {|nodes| ...} -> ()
 
-node ¤«¤éÅþÃ£²ÄÇ½¤Ê¶¯Ï¢·ëÀ®Ê¬¤Ë¤Ä¤¤¤Æ¤Î¥¤¥Æ¥ì¡¼¥¿¤Ç¤¹¡£
+node ã‹ã‚‰åˆ°é”å¯èƒ½ãªå¼·é€£çµæˆåˆ†ã«ã¤ã„ã¦ã®ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ã§ã™ã€‚
 
-ÊÖ¤¹ÃÍ¤Ïµ¬Äê¤µ¤ì¤Æ¤¤¤Þ¤»¤ó¡£
+è¿”ã™å€¤ã¯è¦å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚
 
-each_strongly_connected_component_from ¤Ï
-tsort_each_node ¤ò¸Æ¤Ó¤Þ¤»¤ó¡£
+each_strongly_connected_component_from ã¯
+tsort_each_node ã‚’å‘¼ã³ã¾ã›ã‚“ã€‚
 
-@param node ¥Î¡¼¥É¤ò»ØÄê¤·¤Þ¤¹¡£
+@param node ãƒŽãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-  #Îã ÅþÃ£²ÄÇ½¤Ê¥Î¡¼¥É¤òÉ½¼¨¤¹¤ë
+  #ä¾‹ åˆ°é”å¯èƒ½ãªãƒŽãƒ¼ãƒ‰ã‚’è¡¨ç¤ºã™ã‚‹
   require 'tsort'
 
   class Hash
@@ -35,7 +35,7 @@ tsort_each_node ¤ò¸Æ¤Ó¤Þ¤»¤ó¡£
     }
   }
 
-  #½ÐÎÏ
+  #å‡ºåŠ›
   #=> [4]
   #=> 4 -> 4
   #=> [2, 3]

@@ -6,4 +6,4 @@ library=shell.error
 aliases=
 aliasof=
 
-���Υǥ��쥯�ȥꥹ���å��������Ǥ���Ф����Ȥ����Ȥ���ȯ�������㳰�Ǥ���
+空のディレクトリスタックから要素を取り出そうとしたときに発生する例外です。

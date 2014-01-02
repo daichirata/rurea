@@ -5,7 +5,7 @@ kind=defined
 --- pos    -> Integer
 --- tell   -> Integer
 
-�ե�����ݥ��󥿤θ��ߤΰ��֤��������֤��ޤ���
+ファイルポインタの現在の位置を整数で返します。
 
-@raise IOError ���� close ����Ƥ������ȯ�����ޤ���
+@raise IOError 既に close されている場合に発生します。
 

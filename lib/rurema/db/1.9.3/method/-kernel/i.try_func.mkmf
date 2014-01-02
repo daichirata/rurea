@@ -5,14 +5,14 @@ kind=added
 --- try_func(func, libs, headers = nil) -> bool
 --- try_func(func, libs, headers = nil){ ... } -> bool
 
-�ؿ� func �������ƥ��¸�ߤ��뤫�ɤ����������ޤ���
-[[m:Kernel#have_func]] ��ȤäƤ���������
+関数 func がシステムに存在するかどうか検査します。
+[[m:Kernel#have_func]] を使ってください。
 
-@param func �ؿ�̾����ꤷ�ޤ���
+@param func 関数名を指定します。
 
-@param libs �饤�֥���̾������ꤷ�ޤ���
+@param libs ライブラリの名前を指定します。
 
-@param headers �ؿ� func ����Ѥ���Τ�ɬ�פʥإå��ե�����̾����ꤷ��
-               ��������ϴؿ��η�������å����뤿��ǤϤʤ����ؿ����º�
-               �ˤϥޥ������������Ƥ�����ʤɤΤ���˻��Ѥ��ޤ���
+@param headers 関数 func を使用するのに必要なヘッダファイル名を指定しま
+               す。これは関数の型をチェックするためではなく、関数が実際
+               にはマクロで定義されている場合などのために使用します。
 

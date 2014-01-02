@@ -4,7 +4,7 @@ kind=defined
 
 --- original_platform=(platform)
 
-����°���ϸŤ��С������� Gem �ѥå������򥢥󥤥󥹥ȡ��뤹�뤿��˻Ĥ���Ƥ��ޤ���
+この属性は古いバージョンの Gem パッケージをアンインストールするために残されています。
 
-@param platform �ץ�åȥե��������ꤷ�ޤ���
+@param platform プラットフォームを指定します。
 

@@ -2,6 +2,6 @@ names=to_s
 visibility=public
 kind=defined
 
---- to_s
-@todo
+--- to_s -> String
+self を文字列化したものを返します。
 

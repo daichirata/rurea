@@ -1,47 +1,12 @@
-names====,=~
+names====
 visibility=public
 kind=defined
 
---- =~(string) -> Fixnum | nil
 --- ===(string) -> bool
+æ–‡å­—åˆ— string ã¨ã®æ­£è¦è¡¨ç¾ãƒãƒƒãƒã‚’è¡Œã„ã¾ã™ã€‚
+ãƒãƒƒãƒã—ãŸå ´åˆã¯çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-Ê¸»úÎó string ¤È¤ÎÀµµ¬É½¸½¥Ş¥Ã¥Á¤ò¹Ô¤¤¤Ş¤¹¡£¥Ş¥Ã¥Á¤·¤¿¾ì¹ç¡¢
-¥Ş¥Ã¥Á¤·¤¿°ÌÃÖ¤Î¥¤¥ó¥Ç¥Ã¥¯¥¹¤òÊÖ¤·¤Ş¤¹(ÀèÆ¬¤Ï0)¡£¥Ş¥Ã¥Á¤·¤Ê¤«¤Ã¤¿
-¾ì¹ç¡¢¤¢¤ë¤¤¤Ï string ¤¬ nil ¤Î¾ì¹ç¤Ë¤Ï nil ¤òÊÖ
-¤·¤Ş¤¹¡£
+string ãŒæ–‡å­—åˆ—ã§ã‚‚ã‚·ãƒ³ãƒœãƒ«ã§ã‚‚ãªã„å ´åˆã«ã¯ false ã‚’è¿”ã—ã¾ã™ã€‚
 
-  p /foo/ =~ "foo"  #=> 0
-  p /foo/ =~ "afoo" #=> 1
-  p /foo/ =~ "bar"  #=> nil
-
-ÁÈ¤ß¹ş¤ßÊÑ¿ô [[m:$~]] ¤â¤·¤¯¤Ï [[m:Regexp.last_match]] ¤Ë¥Ş¥Ã¥Á¤Ë´Ø¤¹¤ë¾ğÊó [[c:MatchData]] ¤¬ÀßÄê¤µ¤ì¤Ş¤¹¡£
-
-string ¤¬nil ¤Ç¤â [[c:String]] ¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤â¤Ê¤±¤ì
-¤ĞÎã³° [[c:TypeError]] ¤¬È¯À¸¤·¤Ş¤¹¡£
-
-Regexp#=== ¤Ï¡¢¿¿µ¶ÃÍ¤òÊÖ¤·¤Ş¤¹¡£°ú¿ô¤¬Ê¸
-»úÎó¤Ç¤Ê¤¤¤«¡¢¥Ş¥Ã¥Á¤·¤Ê¤±¤ì¤Ğ false ¤ò¡¢¥Ş¥Ã¥Á¤¹¤ì¤Ğ
-true ¤òÊÖ¤·¤Ş¤¹¡£
-
-@param string Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
-
-@raise TypeError string ¤¬nil ¤Ç¤â [[c:String]] ¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤â¤Ê¤¤
-                 ¾ì¹çÈ¯À¸¤·¤Ş¤¹¡£
-
-  p /foo/ =~ "foo"        #=> 0
-  p Regexp.last_match(0)  #=> "foo"
-  p /foo/ =~ "afoo"       #=> 1
-  p $~[0]                 #=> "foo"
-  p /foo/ =~ "bar"        #=> nil
-
-  unless /foo/ === "bar"
-    puts "not match " #=> not match
-  end
-
-  str = []
-  begin
-    /ugo/ =~ str
-  rescue TypeError
-    printf "! %s\t%s\n", $!, $@ #=> ! can't convert Array into String       r5.rb:15
-  end
+@param string ãƒãƒƒãƒå¯¾è±¡æ–‡å­—åˆ—
 

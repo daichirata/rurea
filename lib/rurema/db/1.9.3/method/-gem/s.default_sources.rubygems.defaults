@@ -4,5 +4,5 @@ kind=added
 
 --- default_sources -> [String]
 
-�ǥե���ȤΥѥå��������������Υꥹ�Ȥ��֤��ޤ���
+デフォルトのパッケージ情報取得先のリストを返します。
 

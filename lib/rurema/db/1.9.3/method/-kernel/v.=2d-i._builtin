@@ -5,46 +5,43 @@ kind=defined
 --- $:         -> [String]
 --- $LOAD_PATH -> [String]
 --- $-I        -> [String]
-Ruby�饤�֥�������ɤ���Ȥ��θ����ѥ��Ǥ���
+Rubyライブラリをロードするときの検索パスです。
 
-[[m:Kernel.#load]] �� [[m:Kernel.#require]]
-���ե����������ɤ�����˸�������ǥ��쥯�ȥ�Υꥹ�Ȥ�ޤ�����Ǥ���
+[[m:Kernel.#load]] や [[m:Kernel.#require]]
+がファイルをロードする時に検索するディレクトリのリストを含む配列です。
 
-��ư���ˤϥ��ޥ�ɥ饤�󥪥ץ���� -I �ǻ��ꤷ���ǥ��쥯�ȥꡢ
-�Ķ��ѿ� RUBYLIB ���͡�
-����ѥ�����˻��ꤷ���ǥե�����͡�
-"." (�����ȥǥ��쥯�ȥ�) �򤳤ν��֤Ǵޤߤޤ���
+起動時にはコマンドラインオプション -I で指定したディレクトリ、
+環境変数 RUBYLIB の値、
+コンパイル時に指定したデフォルト値
+をこの順番で含みます。
 
-�ʲ���ŵ��Ū�� UNIX �����ƥ��ǤΥ����ɥѥ��򼨤��ޤ���
+以下に典型的な UNIX システム上でのロードパスを示します。
 
-  -I �ǻ��ꤷ���ѥ�
-  �Ķ��ѿ� RUBYLIB ����
-  /usr/local/lib/ruby/site_ruby/VERSION        �����ȸ�ͭ���С�������¸�Υ饤�֥��
-  /usr/local/lib/ruby/site_ruby/VERSION/ARCH   �����ȸ�ͭ�������ƥ��¸����ĥ�饤�֥��
-  /usr/local/lib/ruby/site_ruby                �����ȸ�ͭ�饤�֥��
-  /usr/local/lib/ruby/VERSION                  ɸ��饤�֥��
-  /usr/local/lib/ruby/VERSION/ARCH             ɸ�ࡢ�����ƥ��¸����ĥ�饤�֥��
-  .                                            �����ȥǥ��쥯�ȥ�
+  -I で指定したパス
+  環境変数 RUBYLIB の値
+  /usr/local/lib/ruby/site_ruby/VERSION        サイト固有、バージョン依存のライブラリ
+  /usr/local/lib/ruby/site_ruby/VERSION/ARCH   サイト固有、システム依存、拡張ライブラリ
+  /usr/local/lib/ruby/site_ruby                サイト固有ライブラリ
+  /usr/local/lib/ruby/VERSION                  標準ライブラリ
+  /usr/local/lib/ruby/VERSION/ARCH             標準、システム依存、拡張ライブラリ
 
-�嵭ɽ��� VERSION �� Ruby �ΥС�������ɽ��ʸ����ǡ�
-��1.6�פ��1.8�פǤ���
-ARCH �ϥϡ��ɥ������� OS ��ɽ��ʸ����ǡ�
-��i686-linux�פ��alpha-osf5.1�פʤɤǤ���
-ARCH ���ͤ� Config::CONFIG['arch'] �������ޤ���
+上記表中の VERSION は Ruby のバージョンを表す文字列で、
+「1.6」や「1.8」です。
+ARCH はハードウェアと OS を表す文字列で、
+「i686-linux」や「alpha-osf5.1」などです。
+ARCH の値は Config::CONFIG['arch'] で得られます。
 
-����ѥ�����Υǥե���ȥѥ���
-¿���� UNIX �����ƥ�Ǥ� "/usr/local/lib/ruby" �Ǥ���
-[[d:platform/mswin32]]��[[d:platform/mingw32]]��[[d:platform/Cygwin]]��
-[[d:platform/bccwin32]]��[[d:platform/mswince]] �Ķ��Ǥ�
-ruby.dll �ΰ��֤�������ФǷ�ޤ�ޤ���
-[[d:platform/DJGPP]] �� [[d:platform/emx]] (OS/2) �Ǥ�
-ruby.exe �ΰ��֤�������ФǷ�ޤ�ޤ���
+コンパイル時のデフォルトパスは
+多くの UNIX システムでは "/usr/local/lib/ruby" です。
+[[d:platform/mswin32]]、[[d:platform/mingw32]]、[[d:platform/Cygwin]]、
+[[d:platform/bccwin32]]、[[d:platform/mswince]] 環境では
+ruby.dll の位置からの相対で決まります。
+[[d:platform/DJGPP]] と [[d:platform/emx]] (OS/2) では
+ruby.exe の位置からの相対で決まります。
 
--T ���ץ����ǵ�ư���� [[m:$SAFE]] �� 1 �ʾ��
-���ꤷ���Ȥ��� "." (�����ȥǥ��쥯�ȥ�) �ϥ����ɥѥ�������ޤ���
 
-require 'foo' ��¹Ԥ���ȡ�
-�ʲ��Τ褦�� foo.rb �� foo.so ����ߤ�õ������ޤ���
+require 'foo' を実行すると、
+以下のように foo.rb と foo.so が交互に探索されます。
 
   /usr/local/lib/ruby/site_ruby/VERSION/foo.rb
   /usr/local/lib/ruby/site_ruby/VERSION/foo.so
@@ -53,18 +50,18 @@ require 'foo' ��¹Ԥ���ȡ�
     :
     :
 
-�ʤ�����ͭ�饤�֥��γ�ĥ�Ҥ� .so �Ǥʤ������ƥ�Ǥ�
-��.so�פ�Ŭ�ڤʳ�ĥ�Ҥ��ѹ�����ޤ���
-�㤨�� HP-UX �Ǥ� require 'foo.so' �Ȥ���� foo.sl �򸡺����ޤ���
-�������ä� Ruby �ǵ��Ҥ��줿�����ɤǤϾ�� .so ��Ȥ��٤��Ǥ���
+なお、共有ライブラリの拡張子が .so でないシステムでは
+「.so」が適切な拡張子に変更されます。
+例えば HP-UX では require 'foo.so' とすると foo.sl を検索します。
+したがって Ruby で記述されたコードでは常に .so を使うべきです。
 
-�ʤ��������ɥѥ��򥳥ޥ�ɥ饤�󤫤�Ĵ�٤�ˤ�
+なお、ロードパスをコマンドラインから調べるには
 
   $ ruby -e 'puts $:'
 
-�Ȥ��ޤ���
+とします。
 
-�����ѿ��ϥ������Х륹�����פǤ���
+この変数はグローバルスコープです。
 
 @see [[d:spec/rubycmd]], [[d:spec/envvars]]
 

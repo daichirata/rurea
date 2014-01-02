@@ -1,17 +1,18 @@
-requires=rdoc.parser,rdoc,rdoc.code_objects,rdoc.code_object,rdoc.context,rdoc.top_level,rdoc.class_module,rdoc.normal_class,rdoc.normal_module,rdoc.anon_class,rdoc.single_class,rdoc.any_method,rdoc.alias,rdoc.ghost_method,rdoc.meta_method,rdoc.attr,rdoc.constant,rdoc.require,rdoc.include,rdoc.stats,rdoc.parser.simple,rdoc.parser.ruby,e2mmap,irb.slex,rdoc.token_stream,rdoc.known_classes
+requires=rdoc.parser,rdoc,rdoc.code_objects,rdoc.code_object,rdoc.context,rdoc.top_level,rdoc.class_module,rdoc.normal_class,rdoc.normal_module,rdoc.anon_class,rdoc.single_class,rdoc.any_method,rdoc.alias,rdoc.ghost_method,rdoc.meta_method,rdoc.attr,rdoc.constant,rdoc.require,rdoc.include,rdoc.stats,rdoc.parser.simple,rdoc.parser.ruby,e2mmap,irb.slex,irb.notifier,irb.output=2dmethod,rdoc.token_stream,rdoc.known_classes
 classes=RDoc=Parser=C
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-C ¸À¸ì¤Çµ­½Ò¤µ¤ì¤¿¥½¡¼¥¹¥³¡¼¥É¤«¤éÁÈ¤ß¹ş¤ß¥¯¥é¥¹/¥â¥¸¥å¡¼¥ë¤Î¥É¥­¥å¥á¥ó
-¥È¤ò²òÀÏ¤¹¤ë¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+C è¨€èªã§è¨˜è¿°ã•ã‚ŒãŸã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‹ã‚‰çµ„ã¿è¾¼ã¿ã‚¯ãƒ©ã‚¹/ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³
+ãƒˆã‚’è§£æã™ã‚‹ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-C ¸À¸ì¤Çµ­½Ò¤µ¤ì¤¿³ÈÄ¥¥é¥¤¥Ö¥é¥ê¤Ê¤É¤ò²òÀÏ¤¹¤ë¤Î¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
-[[f:rb_define_class]] ¤ä [[f:rb_define_method]] ¤Ê¤É¤ÇÄêµÁ¤µ¤ì¤¿¤â¤Î¤Ë
-ÂĞ±ş¤¹¤ë C ¸À¸ì¤Î´Ø¿ô¤Î¥³¥á¥ó¥È¤ò²òÀÏ¤·¤Ş¤¹¡£
+C è¨€èªã§è¨˜è¿°ã•ã‚ŒãŸæ‹¡å¼µãƒ©ã‚¤ãƒ–ãƒ©ãƒªãªã©ã‚’è§£æã™ã‚‹ã®ã«ä½¿ç”¨ã—ã¾ã™ã€‚
+[[f:rb_define_class]] ã‚„ [[f:rb_define_method]] ãªã©ã§å®šç¾©ã•ã‚ŒãŸã‚‚ã®ã«
+å¯¾å¿œã™ã‚‹ C è¨€èªã®é–¢æ•°ã®ã‚³ãƒ¡ãƒ³ãƒˆã‚’è§£æã—ã¾ã™ã€‚
 
-Îã: Array#flatten ¤Î¾ì¹ç¡£rb_ary_flatten ¤Î¥³¥á¥ó¥È¤¬²òÀÏ¤µ¤ì¤Ş¤¹¡£
+ä¾‹: Array#flatten ã®å ´åˆã€‚rb_ary_flatten ã®ã‚³ãƒ¡ãƒ³ãƒˆãŒè§£æã•ã‚Œã¾ã™ã€‚
 
   /*
    * Returns a new array that is a one-dimensional flattening of this
@@ -40,33 +41,33 @@ C ¸À¸ì¤Çµ­½Ò¤µ¤ì¤¿³ÈÄ¥¥é¥¤¥Ö¥é¥ê¤Ê¤É¤ò²òÀÏ¤¹¤ë¤Î¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
      ...
      rb_define_method(rb_cArray, "flatten", rb_ary_flatten, 0);
 
-¾åµ­¤ÎÎã¤Î¾ì¹ç¡¢rb_ary_flatten ´Ø¿ô¤È Init_Array ´Ø¿ô¤ÏÆ±¤¸¥Õ¥¡¥¤¥ë¤Ëµ­
-½Ò¤µ¤ì¤Æ¤¤¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹¡£
+ä¸Šè¨˜ã®ä¾‹ã®å ´åˆã€rb_ary_flatten é–¢æ•°ã¨ Init_Array é–¢æ•°ã¯åŒã˜ãƒ•ã‚¡ã‚¤ãƒ«ã«è¨˜
+è¿°ã•ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 
-¤Ş¤¿¡¢Ruby ¤Î¥½¡¼¥¹¥³¡¼¥É¤È¤ÏÊÌ¤Ë¥³¥á¥ó¥È¤Ë¤ÏÆÃÊÌ¤ÊÌ¿Îá¤ò»ØÄê¤¹¤ë»ö¤¬¤Ç
-¤­¤Ş¤¹¡£
+ã¾ãŸã€Ruby ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¨ã¯åˆ¥ã«ã‚³ãƒ¡ãƒ³ãƒˆã«ã¯ç‰¹åˆ¥ãªå‘½ä»¤ã‚’æŒ‡å®šã™ã‚‹äº‹ãŒã§
+ãã¾ã™ã€‚
 
 : Document-class: name
 
-  µ­½Ò¤¹¤ëÆâÍÆ¤ò name ¤Ç»ØÄê¤·¤¿ Ruby ¤Î¥¯¥é¥¹¤Î¤â¤Î¤Ë»ØÄê¤·¤Ş¤¹¡£Æ±¤¸
-  .c ¥Õ¥¡¥¤¥ë¤ËÊ£¿ô¤Î¥¯¥é¥¹ÄêµÁ¤¬¤¢¤ë¾ì¹ç¤Ê¤É¤Î¤è¤¦¤Ë¡¢Init_xxx ´Ø¿ô¤Î
-  xxx ¤ÎÉôÊ¬¤¬¥¯¥é¥¹Ì¾¤ÈÆ±°ì¤Ç¤Ï¤Ê¤¤¾ì¹ç¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+  è¨˜è¿°ã™ã‚‹å†…å®¹ã‚’ name ã§æŒ‡å®šã—ãŸ Ruby ã®ã‚¯ãƒ©ã‚¹ã®ã‚‚ã®ã«æŒ‡å®šã—ã¾ã™ã€‚åŒã˜
+  .c ãƒ•ã‚¡ã‚¤ãƒ«ã«è¤‡æ•°ã®ã‚¯ãƒ©ã‚¹å®šç¾©ãŒã‚ã‚‹å ´åˆãªã©ã®ã‚ˆã†ã«ã€Init_xxx é–¢æ•°ã®
+  xxx ã®éƒ¨åˆ†ãŒã‚¯ãƒ©ã‚¹åã¨åŒä¸€ã§ã¯ãªã„å ´åˆã«ä½¿ç”¨ã—ã¾ã™ã€‚
 
 : Document-method: name
 
-  µ­½Ò¤¹¤ëÆâÍÆ¤ò name ¤Ç»ØÄê¤·¤¿ Ruby ¤Î¥á¥½¥Ã¥É¤Î¤â¤Î¤Ë»ØÄê¤·¤Ş¤¹¡£
-  RDoc ¤¬ÂĞ±ş¤¹¤ë¥á¥½¥Ã¥É¤ò¸«¤Ä¤±¤é¤ì¤Ê¤«¤Ã¤¿¾ì¹ç¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+  è¨˜è¿°ã™ã‚‹å†…å®¹ã‚’ name ã§æŒ‡å®šã—ãŸ Ruby ã®ãƒ¡ã‚½ãƒƒãƒ‰ã®ã‚‚ã®ã«æŒ‡å®šã—ã¾ã™ã€‚
+  RDoc ãŒå¯¾å¿œã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¦‹ã¤ã‘ã‚‰ã‚Œãªã‹ã£ãŸå ´åˆã«ä½¿ç”¨ã—ã¾ã™ã€‚
 
 : call-seq:
 
-  »ØÄê¤·¤¿¼¡¤Î¹Ô¤«¤é¼¡¤Î¶õ¹Ô¤Ş¤Ç¤ò¥á¥½¥Ã¥É¸Æ¤Ó½Ğ¤·Îó¤È²ò¼á¤·¤Ş¤¹¡£
+  æŒ‡å®šã—ãŸæ¬¡ã®è¡Œã‹ã‚‰æ¬¡ã®ç©ºè¡Œã¾ã§ã‚’ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—åˆ—ã¨è§£é‡ˆã—ã¾ã™ã€‚
 
-¤Ş¤¿¡¢RDoc ¤Ï rb_define_method ¤Ê¤É¤ÎÄêµÁ¤È C ¸À¸ì¤Î´Ø¿ô¤Î¼ÂÁõ¤¬Æ±¤¸¥Õ¥¡
-¥¤¥ë¤Ë¤¢¤ë»ö¤òÁ°Äó¤È¤·¤Æ¤¤¤Ş¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ï°Ê²¼¤Î¤è¤¦¤Ê»ØÄê¤ò¹Ô¤¤¤Ş¤¹¡£
+ã¾ãŸã€RDoc ã¯ rb_define_method ãªã©ã®å®šç¾©ã¨ C è¨€èªã®é–¢æ•°ã®å®Ÿè£…ãŒåŒã˜ãƒ•ã‚¡
+ã‚¤ãƒ«ã«ã‚ã‚‹äº‹ã‚’å‰æã¨ã—ã¦ã„ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã¯ä»¥ä¸‹ã®ã‚ˆã†ãªæŒ‡å®šã‚’è¡Œã„ã¾ã™ã€‚
 
-  rb_define_method(....);  // in ¥Õ¥¡¥¤¥ëÌ¾
+  rb_define_method(....);  // in ãƒ•ã‚¡ã‚¤ãƒ«å
 
-Îã:
+ä¾‹:
 
   /*
    * Document-class:  MyClass

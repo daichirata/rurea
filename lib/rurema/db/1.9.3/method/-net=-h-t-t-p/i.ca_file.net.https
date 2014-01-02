@@ -3,7 +3,7 @@ visibility=public
 kind=added
 
 --- ca_file -> String | nil
-���ꤹ�� CA ������ե�����Υѥ����֤��ޤ���
+信頼する CA 証明書ファイルのパスを返します。
 
 @see [[m:Net::HTTP#ca_file=]], [[m:OpenSSL::SSL::SSLContext#ca_file]]
 

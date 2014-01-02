@@ -1,19 +1,12 @@
-names=AI_ADDRCONFIG,AI_ALL,AI_CANONNAME,AI_DEFAULT,AI_MASK,AI_NUMERICHOST,AI_PASSIVE,AI_V4MAPPED,AI_V4MAPPED_CFG
+names=AI_ADDRCONFIG
 visibility=public
 kind=defined
 
---- AI_ADDRCONFIG
---- AI_ALL
---- AI_CANONNAME
---- AI_DEFAULT
---- AI_MASK
---- AI_NUMERICHOST
---- AI_PASSIVE
---- AI_V4MAPPED
---- AI_V4MAPPED_CFG
-@todo
+--- AI_ADDRCONFIG -> Integer
+Accept only if any address is assignedã€‚
 
-¥Õ¥é¥°:
-[[m:Socket.getaddrinfo]] ¤Î flags °ú¿ô¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
-[[man:getaddrinfo(3)]]¤â»²¾È¤·¤Æ²¼¤µ¤¤¡£
+[[m:Socket.getaddrinfo]], [[m:Addrinfo.getaddrinfo]] ã®å¼•æ•° flags ã«æ¸¡ã™
+å®šæ•°ã§ã™ã€‚
+
+@see [[man:getaddrinfo(3)]]
 

@@ -4,10 +4,10 @@ kind=defined
 
 --- attr_accessor(*name) -> nil
 
-���󥹥����ѿ� name ���Ф����ɤ߼��᥽�åɤȽ񤭹��ߥ᥽�åɤ�ξ����
-������ޤ���
+インスタンス変数 name に対する読み取りメソッドと書き込みメソッドの両方を
+定義します。
 
-���Υ᥽�åɤ���������᥽�åɤ�����ϰʲ����̤�Ǥ���
+このメソッドで定義されるメソッドの定義は以下の通りです。
 
   def name
     @name
@@ -16,5 +16,5 @@ kind=defined
     @name = val
   end
 
-@param name [[c:String]] �ޤ��� [[c:Symbol]] �� 1 �İʾ���ꤷ�ޤ���
+@param name [[c:String]] または [[c:Symbol]] を 1 つ以上指定します。
 

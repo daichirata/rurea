@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- rewind -> self
-�����֤򴬤��ᤷ�ޤ���
+列挙状態を巻き戻します。
 
-next �᥽�åɤˤ�볰�����ξ��֤�ǽ�ޤǴ����ᤷ�ޤ��� self ���֤��ޤ���
+next メソッドによる外部列挙の状態を最初まで巻き戻します。 self を返します。
 
-���񤹤륪�֥������Ȥ� rewind �᥽�åɤ���ĤȤ�(respond_to?(:rewind) ��
-�����֤��Ȥ�) �ϡ����� rewind �᥽�åɤ�ƤӽФ��ޤ���
+内包するオブジェクトが rewind メソッドを持つとき(respond_to?(:rewind) に
+真を返すとき) は、その rewind メソッドを呼び出します。
 
 @see [[m:Enumerator#next]]
 
-��:
+例:
     str = "xyz"
     enum = str.each_byte
     

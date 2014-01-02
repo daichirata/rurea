@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- ONELINE -> Integer
-[[m:OpenSSL::X509::Name#to_s]] �Υե饰�Ȥ��ƻȤ��ޤ���
+[[m:OpenSSL::X509::Name#to_s]] のフラグとして使います。
 
-1�Ԥ��ɤߤ䤹���ե����ޥåȤ���ޤ���
+1行で読みやすくフォーマットされます。
 

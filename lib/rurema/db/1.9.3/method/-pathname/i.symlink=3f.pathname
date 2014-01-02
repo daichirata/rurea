@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- symlink? -> bool
-FileTest.symlink?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.symlink?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#symlink?]]
 

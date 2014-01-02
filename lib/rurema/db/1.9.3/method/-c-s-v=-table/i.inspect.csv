@@ -4,9 +4,9 @@ kind=defined
 
 --- inspect -> String
 
-¥â¡¼¥É¤È¥µ¥¤¥º¤ò US-ASCII ¤ÊÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+ãƒ¢ãƒ¼ãƒ‰ã¨ã‚µã‚¤ã‚ºã‚’ US-ASCII ãªæ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'csv'
   csv = CSV.new("a,b,c\n1,2,3", headers: true)
   table = csv.read

@@ -4,19 +4,19 @@ kind=defined
 
 --- <=>(o) -> Fixnum | nil
 
-¥Õ¥¡¥¤¥ë¤ÎºÇ½ª¹¹¿·»ş¹ï¤òÈæ³Ó¤·¤Ş¤¹¡£self ¤¬ other ¤è¤ê¤â
-¿·¤·¤±¤ì¤ĞÀµ¤Î¿ô¤ò¡¢Åù¤·¤±¤ì¤Ğ 0 ¤ò¸Å¤±¤ì¤ĞÉé¤Î¿ô¤òÊÖ¤·¤Ş¤¹¡£
-Èæ³Ó¤Ç¤­¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ã®æœ€çµ‚æ›´æ–°æ™‚åˆ»ã‚’æ¯”è¼ƒã—ã¾ã™ã€‚self ãŒ other ã‚ˆã‚Šã‚‚
+æ–°ã—ã‘ã‚Œã°æ­£ã®æ•°ã‚’ã€ç­‰ã—ã‘ã‚Œã° 0 ã‚’å¤ã‘ã‚Œã°è² ã®æ•°ã‚’è¿”ã—ã¾ã™ã€‚
+æ¯”è¼ƒã§ããªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param o [[c:File::Stat]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param o [[c:File::Stat]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   require 'tempfile' # for Tempfile
 
   fp1 = Tempfile.open("first")
-  fp1.print "¸Å¤¤Êı\n"
+  fp1.print "å¤ã„æ–¹\n"
   sleep(1)
   fp2 = Tempfile.open("second")
-  fp2.print "¿·¤·¤¤Êı\n"
+  fp2.print "æ–°ã—ã„æ–¹\n"
 
   p File::Stat.new(fp1.path) <=> File::Stat.new(fp2.path) #=> -1
   p File::Stat.new(fp2.path) <=> File::Stat.new(fp1.path) #=>  1

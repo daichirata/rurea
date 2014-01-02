@@ -6,12 +6,12 @@ library=openssl
 aliases=
 aliasof=
 
-�����åȤ��åפ��� SSL �Ǥ�ǧ�ڤȰŹ��̿���¸����뤿��Υ��饹�Ǥ���
+ソケットをラップして SSL での認証と暗号通信を実現するためのクラスです。
 
 
-=== ��
+=== 例
 
-SSL/TLS �����Ф���³���� write ���ޤ���
+SSL/TLS サーバに接続して write します。
 
   require 'socket'
   require 'openssl'

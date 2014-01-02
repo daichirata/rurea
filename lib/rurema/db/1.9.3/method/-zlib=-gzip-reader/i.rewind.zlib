@@ -4,12 +4,12 @@ kind=defined
 
 --- rewind -> 0
 
-�ե�����ݥ��󥿤� [[m:Zlib::GzipReader.new]] ��ƤӽФ���ľ���
-�������ᤷ�ޤ�����Ϣ�դ����Ƥ��� IO ���֥������Ȥ�
-seek �᥽�åɤ��������Ƥ���ɬ�פ�����ޤ���
+ファイルポインタを [[m:Zlib::GzipReader.new]] を呼び出した直後の
+時点に戻します。関連付けられている IO オブジェクトに
+seek メソッドが定義されている必要があります。
 
   =begin
-  # hoge.gz ���ʤ����Ϥ���Ǻ������롣
+  # hoge.gz がない場合はこれで作成する。
   Zlib::GzipWriter.open('hoge.gz') { |gz|
     gz.puts 'hoge'
     gz.puts 'fuga'

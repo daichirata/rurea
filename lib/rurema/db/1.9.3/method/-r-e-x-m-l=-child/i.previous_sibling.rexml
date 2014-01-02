@@ -2,6 +2,10 @@ names=previous_sibling
 visibility=public
 kind=defined
 
---- previous_sibling
-@todo
+--- previous_sibling -> REXML::Node
+前の隣接ノードを返します。
+
+[[m:REXML::Node#previous_sibling_node]] の別名です。
+
+@see [[m:REXML::Child#previous_sibling=]]
 

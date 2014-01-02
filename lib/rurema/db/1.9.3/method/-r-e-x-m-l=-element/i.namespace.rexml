@@ -2,6 +2,19 @@ names=namespace
 visibility=public
 kind=defined
 
---- namespace
-@todo
+--- namespace(prefix=nil) -> String
+self の文脈で prefix が指している名前空間の URI を返します。
+
+prefix を省略すると、デフォルトの名前空間の URI を返します。
+
+prefix で指示される名前空間の宣言が存在しない場合は nil を返します。
+
+  require 'rexml/document'
+  doc = REXML::Document.new("<a xmlns='1' xmlns:y='2'><b/><c xmlns:z='3'/><y:d /></a>")
+  b = doc.elements['//b']
+  b.namespace      # => "1"
+  b.namespace("y") # => "2"
+  b.namespace("z") # => nil
+  d = doc.elements['//y:d']
+  d.namespace      # => "2"
 

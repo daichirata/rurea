@@ -4,5 +4,5 @@ kind=defined
 
 --- Default -> ThreadGroup
 
-�ǥե���Ȥ��������Ƥ��� [[c:ThreadGroup]] �Ǥ����ᥤ�󥹥�å�
-�Ϻǽ餳�Υ��롼�פ�°���ޤ���
+デフォルトで定義されている [[c:ThreadGroup]] です。メインスレッド
+は最初このグループに属します。

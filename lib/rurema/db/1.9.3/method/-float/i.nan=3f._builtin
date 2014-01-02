@@ -4,9 +4,9 @@ kind=defined
 
 --- nan? -> bool
 
-¿ôÃÍ¤¬ NaN(Not a number)¤Î¤È¤­¿¿¤òÊÖ¤·¤Ş¤¹¡£
+æ•°å€¤ãŒ NaN(Not a number)ã®ã¨ãçœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   nan = 0.0/0.0
   p nan

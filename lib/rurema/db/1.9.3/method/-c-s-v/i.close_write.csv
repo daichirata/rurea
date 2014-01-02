@@ -4,5 +4,5 @@ kind=defined
 
 --- close_write -> nil
 
-[[m:IO#close_write]] �˰Ѿ����ޤ���
+[[m:IO#close_write]] に委譲します。
 

@@ -3,20 +3,20 @@ visibility=public
 kind=defined
 
 --- new(ole_type,  method) -> WIN32OLE_METHOD
-[[c:WIN32OLE_TYPE]]�ȥ᥽�å�̾����ꤷ��WIN32OLE_METHOD�Υ��󥹥���
-���������ޤ���
+[[c:WIN32OLE_TYPE]]とメソッド名を指定してWIN32OLE_METHODのインスタンス
+を生成します。
 
-OLE�����ȥ᡼����󥵡��Фη�����ȥ᥽�å�̾����WIN32OLE_METHOD�Υ���
-�����󥹤��������ޤ���
+OLEオートメーションサーバの型情報とメソッド名からWIN32OLE_METHODのイン
+スタンスを生成します。
 
-���ץꥱ�������ץ������Ǥϡ�WIN32OLE_METHOD���֥������Ȥ�new�᥽��
-�ɤ�����������⡢[[m:WIN32OLE#ole_method]]�ʤɤΥ᥽�åɤ򻲾Ȥ����
-������ñ�Ǥ���
+アプリケーションプログラムでは、WIN32OLE_METHODオブジェクトをnewメソッ
+ドで生成するよりも、[[m:WIN32OLE#ole_method]]などのメソッドを参照するほ
+うが簡単です。
 
-@param ole_type [[c:WIN32OLE_TYPE]]�Υ��󥹥��󥹡�
-@param method �᥽�å�̾��ʸ����ǻ��ꤷ�ޤ���
-@return method�ѥ�᡼�����б�����WIN32OLE_METHOD�Υ��󥹥��󥹡�
-@raise WIN32OLERuntimeError method�ѥ�᡼���ǻ��ꤷ���᥽�åɤ����Ĥ���ޤ���
+@param ole_type [[c:WIN32OLE_TYPE]]のインスタンス。
+@param method メソッド名を文字列で指定します。
+@return methodパラメータに対応するWIN32OLE_METHODのインスタンス。
+@raise WIN32OLERuntimeError methodパラメータで指定したメソッドが見つかりません。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Workbook')
    method = WIN32OLE_METHOD.new(tobj, 'SaveAs')

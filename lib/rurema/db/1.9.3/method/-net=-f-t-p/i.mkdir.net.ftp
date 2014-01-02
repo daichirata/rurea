@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- mkdir(dirname) -> String
-��⡼�ȥ����о�˥ǥ��쥯�ȥ��������ޤ���
+リモートサーバ上にディレクトリを作成します。
 
-�����˼��Ԥ������ˤ��㳰��ȯ�����ޤ���
+作成に失敗した場合には例外が発生します。
 
-@param dirname ��������ǥ��쥯�ȥ�̾��ʸ����ǻ��ꤷ�ޤ���
+@param dirname 作成するディレクトリ名を文字列で指定します。
 
-@raise Net::FTPTempError ���������ɤ� 4yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPPermError ���������ɤ� 5yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPProtoError ���������ɤ� RFC Ū���������ʤ�����ȯ�����ޤ���
-@raise Net::FTPReplyError ���������ɤ���ξ��ʳ����������ʤ�����ȯ�����ޤ���
+@raise Net::FTPTempError 応答コードが 4yz のときに発生します。
+@raise Net::FTPPermError 応答コードが 5yz のときに発生します。
+@raise Net::FTPProtoError 応答コードが RFC 的に正しくない場合に発生します。
+@raise Net::FTPReplyError 応答コードが上の場合以外で正しくない場合に発生します。
 

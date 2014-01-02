@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-Engine([[c:OpenSSL::Engine]]) ´ØÏ¢¤Î¥¨¥é¡¼¤¬À¸¤¸¤¿¤È¤­¤ËÈ¯À¸¤¹¤ëÎã³°¤Ç¤¹¡£
+Engine([[c:OpenSSL::Engine]]) é–¢é€£ã®ã‚¨ãƒ©ãƒ¼ãŒç”Ÿã˜ãŸã¨ãã«ç™ºç”Ÿã™ã‚‹ä¾‹å¤–ã§ã™ã€‚

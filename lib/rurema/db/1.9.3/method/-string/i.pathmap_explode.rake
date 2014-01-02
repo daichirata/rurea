@@ -4,7 +4,7 @@ kind=added
 
 --- pathmap_explode -> Array
 
-���Ȥ�ѥ���ɽ����ʬ���Ȥ�ʬ�򤷤�����ˤ����֤��ޤ���
+自身をパスを表す部分ごとに分解して配列にして返します。
 
 @see [[m:String#pathmap]]
 

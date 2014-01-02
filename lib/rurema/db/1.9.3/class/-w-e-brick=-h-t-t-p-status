@@ -6,10 +6,10 @@ library=webrick.httpstatus
 aliases=
 aliasof=
 
-HTTP �Υ��ơ�������ɽ���㳰���饹���󶡤���⥸�塼��Ǥ���
-���ơ����������� 200 �ʤɤ������ξ���ޤޤ�ޤ���
+HTTP のステータスを表す例外クラスを提供するモジュールです。
+ステータスコード 200 などの成功の場合も含まれます。
 
-�ʲ��Τ褦�ʷѾ��ˤ�볬�ؤ������Ƥ��ޤ���
+以下のような継承による階層を構成しています。
 
  StandardError
   * WEBrick::HTTPStatus::Status

@@ -6,4 +6,4 @@ library=webrick.httpstatus
 aliases=
 aliasof=
 
-HTTP ¤Î¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É 301 Moved Permanently ¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+HTTP ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ 301 Moved Permanently ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

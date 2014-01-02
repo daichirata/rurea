@@ -4,5 +4,5 @@ kind=defined
 
 --- __name__ -> String
 
-���Ȥ�̾�����֤��ޤ���
+自身の名前を返します。
 

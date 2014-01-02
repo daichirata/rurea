@@ -3,5 +3,6 @@ classes=Tk=Clock
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

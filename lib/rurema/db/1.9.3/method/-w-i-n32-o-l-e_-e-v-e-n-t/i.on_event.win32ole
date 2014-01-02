@@ -4,43 +4,43 @@ kind=defined
 
 --- on_event(event = nil) {|*args| ... } -> ()
 
-���٥�����Τ������֥��å�����Ͽ���ޤ���
+イベント通知を受けるブロックを登録します。
 
-�����ˤϥ��٥�ȤΥ᥽�å�̾����ꤷ�ޤ����������ά�������ϡ����٤�
-�Υ��٥�Ȥ��оݤȤ���֥��å�����Ͽ�Ȥʤ�ޤ���
+引数にはイベントのメソッド名を指定します。引数を省略した場合は、すべて
+のイベントを対象とするブロックの登録となります。
 
-@param event ���٥��̾��ʸ���󤫥���ܥ�ǻ��ꤷ�ޤ������٥��̾����ʸ
-             ����ʸ������̤��ޤ�����ά���ˤϤ��٤ƤΥ��٥�Ȥ��оݤȤʤ�ޤ���
+@param event イベント名を文字列かシンボルで指定します。イベント名は大文
+             字小文字を区別します。省略時にはすべてのイベントが対象となります。
 
-@param args �����Ф����٥�����λ��˻��ꤷ�������Ǥ���
-            event�ѥ�᡼�����ά������硢��1�����ˤϥ��٥�ȤΥ᥽��
-            ��̾��ʸ�����Ϳ�����ޤ����������ѹ���ɬ�פʾ��ϡ�
-            [[m:WIN32OLE_EVENT#on_event_with_outargs]]�����Ѥ��Ƥ���������
+@param args サーバがイベント通知時に指定した引数です。
+            eventパラメータを省略した場合、第1引数にはイベントのメソッ
+            ド名が文字列で与えられます。引数の変更が必要な場合は、
+            [[m:WIN32OLE_EVENT#on_event_with_outargs]]を利用してください。
 
-@raise WIN32OLERuntimeError [[m:WIN32OLE_EVENT#unadvise]]�ˤ�äƥ��٥�
-                            �ȥ����������ǺѤߤǤ���
-
-  ie = WIN32OLE.new('InternetExplorer.Application')
-  ev = WIN32OLE_EVENT.new(ie, 'DWebBrowserEvents2')
-  ev.on_event("NavigateComplete2") do |browser, url| 
-    puts url
-  end
-
-Ʊ�����֥������Ȥ��Ф���event�ѥ�᡼������ꤷ���֥��å��Ȼ��ꤷ�ʤ���
-���å������ߤ��Ƥ����硢���Τ��줿���٥�Ȥ��б�����֥��å��������
-������������ƤӽФ���ޤ���
+@raise WIN32OLERuntimeError [[m:WIN32OLE_EVENT#unadvise]]によってイベン
+                            トソースと切断済みです。
 
   ie = WIN32OLE.new('InternetExplorer.Application')
   ev = WIN32OLE_EVENT.new(ie, 'DWebBrowserEvents2')
   ev.on_event("NavigateComplete2") do |browser, url| 
     puts url
   end
-  ev.on_event do |*args|   # <- NavigateComplete2���٥�Ȼ��ϼ¹Ԥ���ʤ�
+
+同じオブジェクトに対してeventパラメータを指定したブロックと指定しないブ
+ロックが混在している場合、通知されたイベントに対応するブロックがあれば
+そちらだけが呼び出されます。
+
+  ie = WIN32OLE.new('InternetExplorer.Application')
+  ev = WIN32OLE_EVENT.new(ie, 'DWebBrowserEvents2')
+  ev.on_event("NavigateComplete2") do |browser, url| 
+    puts url
+  end
+  ev.on_event do |*args|   # <- NavigateComplete2イベント時は実行されない
     puts args[0]
   end
   ...
 
-���᥽�åɤϥ��٥��̾����ʸ����ʸ������̤���ۤ������٥��̾��¸�߳�
-ǧ��Ԥ��ޤ��󡣤��Τ��ᡢ���ä����٥��̾�򵭽Ҥ��Ƥ⥨�顼�ȤϤʤ餺��
-ñ�˥��٥�Ȥ�������ʤ��ʤ�ޤ���
+当メソッドはイベント名の大文字小文字を区別するほか、イベント名の存在確
+認を行いません。このため、誤ったイベント名を記述してもエラーとはならず、
+単にイベントを受け取れなくなります。
 

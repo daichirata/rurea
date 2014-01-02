@@ -4,9 +4,9 @@ kind=defined
 
 --- name -> String
 --- to_s -> String
-self¤Î·¿Ì¾¤ò¼èÆÀ¤·¤Þ¤¹¡£
+selfã®åž‹åã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return self¤Î·¿Ì¾¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+@return selfã®åž‹åã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Application')
    p tobj.name   # => "Application"

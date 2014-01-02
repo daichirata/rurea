@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- cwyear -> Integer
-�񽵤ˤ�����ǯ���֤��ޤ���
+暦週における年を返します。
 

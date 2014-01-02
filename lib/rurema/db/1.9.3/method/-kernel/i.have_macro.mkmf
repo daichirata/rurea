@@ -5,12 +5,12 @@ kind=added
 --- have_macro(macro, headers = nil, opt = "") -> bool
 --- have_macro(macro, headers = nil, opt = ""){ ... } -> bool
 
-Ϳ����줿 macro �����̤Υإå��ե����뤫 headers ���������Ƥ�����Ͽ����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+与えられた macro が共通のヘッダファイルか headers に定義されている場合は真を返します。
+そうでない場合は偽を返します。
 
-@param macro �ޥ�����̾������ꤷ�ޤ���
+@param macro マクロの名前を指定します。
 
-@param headers �ɲäΥإå��ե��������ꤷ�ޤ���
+@param headers 追加のヘッダファイルを指定します。
 
-@param opt C ����ѥ�����Ϥ����ޥ�ɥ饤���������ꤷ�ޤ���
+@param opt C コンパイラに渡すコマンドライン引数を指定します。
 

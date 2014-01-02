@@ -4,18 +4,18 @@ kind=defined
 
 --- ===(other) -> bool
 
-other �� SystemCallError �Υ��֥��饹�Υ��󥹥��󥹤ǡ�
-���ġ�other.errno ���ͤ� self::Errno ��Ʊ�����˿����֤��ޤ��������Ǥʤ����ϵ����֤��ޤ���
+other が SystemCallError のサブクラスのインスタンスで、
+かつ、other.errno の値が self::Errno と同じ場合に真を返します。そうでない場合は偽を返します。
 
-���äơ��ä� other �� self.kind_of?(other) �Ǥ�����ˤ� [[m:Module#===]] ��Ʊ�ͤ˿����֤��ޤ���
-����¾�ˡ� Errno::EXXX::Errno == Errno::EYYY::Errno �Ǥ�����ˤ� Errno::EXXX == Errno::EYYY.new �Ͽ����֤��ޤ���
+従って、特に other が self.kind_of?(other) である場合には [[m:Module#===]] と同様に真を返します。
+その他に、 Errno::EXXX::Errno == Errno::EYYY::Errno である場合にも Errno::EXXX == Errno::EYYY.new は真を返します。
 
-���顼̾�ϰۤʤ뤬���顼�����ɤ�Ʊ���Ǥ���褦�� Errno::EXXX �㳰��ޤȤ����ª���뤿��� [[m:Module#===]] ���񤭤��Ƥ��ޤ�����
-��������Ruby 1.8 �Υ�꡼�������Ǥ�Ʊ�� errno �ͤ���ĥ��饹�ϰ�Ĥ�������ʤ��褦�ˤʤ�ޤ��������Τ��ḽ�ߤϤ��Υ᥽�åɤϼ¼��� [[m:Module#===]] ��Ʊ����̣��������ޤ���
+エラー名は異なるがエラーコードは同じであるような Errno::EXXX 例外をまとめて捕捉するために [[m:Module#===]] を上書きしていました。
+しかし、Ruby 1.8 のリリース時点では同じ errno 値を持つクラスは一つしか作られないようになりました。そのため現在はこのメソッドは実質上 [[m:Module#===]] と同じ意味しかありません。
 
-@param other Ǥ�դΥ��֥�������
+@param other 任意のオブジェクト
 
-��
+例
     p Errno::EAGAIN::Errno
     p Errno::EWOULDBLOCK::Errno
     begin

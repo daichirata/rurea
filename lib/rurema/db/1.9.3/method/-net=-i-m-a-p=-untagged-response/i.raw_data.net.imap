@@ -4,6 +4,6 @@ kind=defined
 
 --- raw_data -> String
 
-¥ì¥¹¥İ¥ó¥¹Ê¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ¬ã‚¹ãƒãƒ³ã‚¹æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Net::IMAP::UntaggedResponse#data]]

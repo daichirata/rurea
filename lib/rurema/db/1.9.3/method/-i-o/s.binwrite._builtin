@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- binwrite(path, string, offset=nil) -> Integer
-path �ǻ��ꤵ���ե�����򳫤���string ��񤭹��ߡ�
-�Ĥ��ޤ���
+path で指定されるファイルを開き、string を書き込み、
+閉じます。
 
-offset ����ꤹ��Ȥ��ΰ��֤ޤǥ��������ޤ���
+offset を指定するとその位置までシークします。
 
-offset ����ꤷ�ʤ��ȡ��񤭹��ߤ������ǥե������
-�ڤ�ΤƤޤ���
+offset を指定しないと、書き込みの末尾でファイルを
+切り捨てます。
 
-@param path �ե�����̾ʸ����
-@param string �񤭹���ʸ����
-@param offset �񤭹��߳��ϰ���
+@param path ファイル名文字列
+@param string 書き込む文字列
+@param offset 書き込み開始位置
 
 @see [[m:IO.write]]
 

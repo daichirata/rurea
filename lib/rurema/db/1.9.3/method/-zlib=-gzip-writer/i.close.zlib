@@ -5,13 +5,13 @@ kind=defined
 --- close -> File
 --- finish -> File
 
-¥Õ¥Ã¥¿¡¼¤ò½ñ¤­½Ð¤·¡¢GzipWriter ¥ª¥Ö¥¸¥§¥¯¥È¤ò¥¯¥í¡¼¥º¤·¤Þ¤¹¡£close ¤È
-finish ¤Î°ã¤¤¤Ï [[m:Zlib::GzipFile#close]], [[m:Zlib::GzipFile#finish]] ¤ò
-»²¾È¤·¤Æ²¼¤µ¤¤¡£
+ãƒ•ãƒƒã‚¿ãƒ¼ã‚’æ›¸ãå‡ºã—ã€GzipWriter ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ã‚¯ãƒ­ãƒ¼ã‚ºã—ã¾ã™ã€‚close ã¨
+finish ã®é•ã„ã¯ [[m:Zlib::GzipFile#close]], [[m:Zlib::GzipFile#finish]] ã‚’
+å‚ç…§ã—ã¦ä¸‹ã•ã„ã€‚
 
-Ãí°Õ: Ruby ¤Î finalizer ¤ÎÀ©Ìó¤Î¤¿¤á¡¢GzipWriter ¥ª¥Ö¥¸¥§¥¯¥È¤Ï
-É¬¤º¥¯¥í¡¼¥º¤·¤Æ¤¯¤À¤µ¤¤¡£¤½¤¦¤·¤Ê¤±¤ì¤Ð¥Õ¥Ã¥¿¡¼¤ò½ñ¤­½Ð¤¹¤³¤È¤¬
-¤Ç¤­¤º¡¢²õ¤ì¤¿ gzip ¥Õ¥¡¥¤¥ë¤òÀ¸À®¤·¤Æ¤·¤Þ¤¦²ÄÇ½À­¤¬¤¢¤ê¤Þ¤¹¡£
+æ³¨æ„: Ruby ã® finalizer ã®åˆ¶ç´„ã®ãŸã‚ã€GzipWriter ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯
+å¿…ãšã‚¯ãƒ­ãƒ¼ã‚ºã—ã¦ãã ã•ã„ã€‚ãã†ã—ãªã‘ã‚Œã°ãƒ•ãƒƒã‚¿ãƒ¼ã‚’æ›¸ãå‡ºã™ã“ã¨ãŒ
+ã§ããšã€å£Šã‚ŒãŸ gzip ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¦ã—ã¾ã†å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚
 
   require 'zlib'
    
@@ -21,7 +21,7 @@ finish ¤Î°ã¤¤¤Ï [[m:Zlib::GzipFile#close]], [[m:Zlib::GzipFile#finish]] ¤ò
     gz.puts "hogehoge\n" * 100
     f = gz.finish
     p f.atime
-    # Îã
+    # ä¾‹
     #=> Sun Jul 06 15:43:57 +0900 2008
   end
  

@@ -5,7 +5,7 @@ kind=defined
 --- append(to, filter) -> Shell::AppendFile | Shell::AppendIO
 @todo
 
-@param to Ê¸»úÎó¤« [[c:IO]] ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param to æ–‡å­—åˆ—ã‹ [[c:IO]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param filter [[c:Shell::Filter]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò¤·¤Æ¤¤¤Ş¤¹¡£
+@param filter [[c:Shell::Filter]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ã—ã¦ã„ã¾ã™ã€‚
 

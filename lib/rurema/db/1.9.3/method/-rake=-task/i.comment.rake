@@ -4,5 +4,5 @@ kind=defined
 
 --- comment -> String
 
-���Ȥ�û�������Ȥ��֤��ޤ���
+自身の短いコメントを返します。
 

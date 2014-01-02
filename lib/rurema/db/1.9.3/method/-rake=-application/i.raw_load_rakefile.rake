@@ -4,7 +4,7 @@ kind=defined
 
 --- raw_load_rakefile
 
-Rakefile ¤ò¥í¡¼¥É¤·¤Ş¤¹¡£
+Rakefile ã‚’ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 
-@raise RuntimeError Rakefile ¤¬¸«¤Ä¤«¤é¤Ê¤«¤Ã¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise RuntimeError Rakefile ãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

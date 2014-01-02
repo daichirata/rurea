@@ -4,15 +4,15 @@ kind=defined
 
 --- umask           -> Integer
 
-¸½ºß¤Î umask ¤ÎÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+ç¾åœ¨ã® umask ã®å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[man:umask(2)]]
 
 --- umask(umask)    -> Integer
 
-umask ¤òÊÑ¹¹¤·¤Ş¤¹¡£ÊÑ¹¹Á°¤Î umask ¤ÎÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+umask ã‚’å¤‰æ›´ã—ã¾ã™ã€‚å¤‰æ›´å‰ã® umask ã®å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param umask ÀßÄê¤·¤¿¤¤ umask ¤ÎÃÍ¤òÀ°¿ô¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param umask è¨­å®šã—ãŸã„ umask ã®å€¤ã‚’æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[man:umask(2)]]
 

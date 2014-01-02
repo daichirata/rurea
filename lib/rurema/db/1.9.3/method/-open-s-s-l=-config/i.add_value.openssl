@@ -3,19 +3,19 @@ visibility=public
 kind=defined
 
 --- add_value(section, name, value) -> String
-section �ǻ��ꤷ�����������ˤ��� name �Ȥ���������
-����� value ���ѹ����ޤ���
+section で指定したセクションにある name というキーの
+情報を value に変更します。
 
-���ꤷ�� section ��¸�ߤ��ʤ����ˤϿ����ˤ��Υ��������
-���֥���������˺���ޤ���
-���ꤷ�� name ��¸�ߤ��ʤ�����Ʊ�ͤ˿������ΰ褬
-���Υ��֥���������˺���ޤ������ꤷ�� name ��¸�ߤ������ˤ�
-���󤬾�񤭤���ޤ���
+指定した section が存在しない場合には新たにそのセクションが
+オブジェクト内に作られます。
+指定した name が存在しない場合も同様に新たな領域が
+そのオブジェクト内に作られます。指定した name が存在した場合には
+情報が上書きされます。
 
-value ���֤��ޤ���
+value を返します。
 
-@param section ����������ɽ��ʸ����
-@param name ������ɽ��ʸ����
-@param value �ѹ�����ͤ�ʸ����
-@raise OpenSSL::ConfigError ����˼��Ԥ�������ȯ�����ޤ�
+@param section セクションを表す文字列
+@param name キーを表す文字列
+@param value 変更後の値の文字列
+@raise OpenSSL::ConfigError 設定に失敗した場合に発生します
 

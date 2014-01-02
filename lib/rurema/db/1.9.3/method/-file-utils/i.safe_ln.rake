@@ -4,11 +4,11 @@ kind=added
 
 --- safe_ln(*args)
 
-�����˥�󥯤�������ޤ���
+安全にリンクを作成します。
 
-��󥯤κ����˼��Ԥ������ϥե�����򥳥ԡ����ޤ���
+リンクの作成に失敗した場合はファイルをコピーします。
 
-@param args [[m:FileUtils.#cp]], [[m:FileUtils.#ln]] ���Ϥ���������ꤷ�ޤ���
+@param args [[m:FileUtils.#cp]], [[m:FileUtils.#ln]] に渡す引数を指定します。
 
 @see [[m:FileUtils.#cp]], [[m:FileUtils.#ln]]
 

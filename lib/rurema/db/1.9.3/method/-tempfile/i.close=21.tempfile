@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- close! -> nil
-е╞еєе▌ещеъе╒ебедеыдЄепеэб╝е║д╖бвд╣д░д╦║я╜№д╖д▐д╣бг
+уГЖуГ│уГЭуГйуГкуГХуВбуВдуГлуВТуВпуГнуГ╝уВ║уБЧуАБуБЩуБРуБлхЙКщЩдуБЧуБ╛уБЩуАВ
 
   require "tempfile"
   tf = Tempfile.open("bar")

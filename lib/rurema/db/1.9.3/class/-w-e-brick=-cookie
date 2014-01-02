@@ -6,8 +6,8 @@ library=webrick.cookie
 aliases=
 aliasof=
 
-Cookie ¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£[[rfc:2109]] ¤Ë½àµò¤·¤Æ¤¤¤Ş¤¹¡£
-RFC2109 ¤Ï [[rfc:2965]] ¤Ë¤è¤êÇË´ş¤µ¤ì¤Ş¤·¤¿¤¬¡¢WEBrick::Cookie ¥¯¥é¥¹¤Ï RFC2965 ¤ËÂĞ±ş¤·¤Æ¤¤¤Ş¤»¤ó¡£
+Cookie ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚[[rfc:2109]] ã«æº–æ‹ ã—ã¦ã„ã¾ã™ã€‚
+RFC2109 ã¯ [[rfc:2965]] ã«ã‚ˆã‚Šç ´æ£„ã•ã‚Œã¾ã—ãŸãŒã€WEBrick::Cookie ã‚¯ãƒ©ã‚¹ã¯ RFC2965 ã«å¯¾å¿œã—ã¦ã„ã¾ã›ã‚“ã€‚
 
  * [[url:http://www.studyinghttp.net/translations#RFC2965]]  
  * [[url:http://www.studyinghttp.net/cookies]]

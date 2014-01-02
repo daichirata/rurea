@@ -4,13 +4,13 @@ kind=defined
 
 --- attr_writer(*name) -> nil
 
-���󥹥����ѿ� name �ؤν񤭹��ߥ᥽�å� (name=) ��������ޤ���
+インスタンス変数 name への書き込みメソッド (name=) を定義します。
 
-���Υ᥽�åɤ���������᥽�åɤ�����ϰʲ����̤�Ǥ���
+このメソッドで定義されるメソッドの定義は以下の通りです。
 
   def name=(val)
     @name = val
   end
 
-@param name [[c:String]] �ޤ��� [[c:Symbol]] �� 1 �İʾ���ꤷ�ޤ���
+@param name [[c:String]] または [[c:Symbol]] を 1 つ以上指定します。
 

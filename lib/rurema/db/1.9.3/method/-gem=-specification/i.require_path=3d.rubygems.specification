@@ -4,9 +4,9 @@ kind=defined
 
 --- require_path=(path)
 
-[[m:Gem::Specification#require_paths=]] ¤ÎÃ±¿ô¥Ğ¡¼¥¸¥ç¥ó¤Ç¤¹¡£
+[[m:Gem::Specification#require_paths=]] ã®å˜æ•°ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§ã™ã€‚
 
-@param path ¤³¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò»ÈÍÑ¤·¤¿ºİ¤Ë require ¤¹¤ë¥Õ¥¡¥¤¥ë¤¬ÃÖ¤«¤ì¤Æ¤¤¤ë¥Ç¥£¥ì¥¯¥È¥ê¤ò»ØÄê¤·¤Ş¤¹¡£
+@param path ã“ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½¿ç”¨ã—ãŸéš›ã« require ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ãŒç½®ã‹ã‚Œã¦ã„ã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Gem::Specification#require_paths=]]
 

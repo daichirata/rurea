@@ -4,5 +4,5 @@ kind=defined
 
 --- rid    -> Integer
 
-���ߤμ¥桼�� ID ���֤��ޤ���
+現在の実ユーザ ID を返します。
 

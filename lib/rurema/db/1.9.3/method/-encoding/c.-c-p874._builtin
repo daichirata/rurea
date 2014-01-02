@@ -6,9 +6,9 @@ kind=defined
 --- CP874 -> Encoding
 --- WINDOWS_874 -> Encoding
 
-Windows-874 ���󥳡��ǥ��󥰡�
+Windows-874 エンコーディング。
 
-������򰷤����󥳡��ǥ��󥰤ǡ�ISO8859-11�ΰ���Ǥ���
+タイ語を扱うエンコーディングで、ISO8859-11の亜種です。
 
 
 @see [[m:Encoding::TIS_620]], [[m:Encoding::ISO_8859_11]],

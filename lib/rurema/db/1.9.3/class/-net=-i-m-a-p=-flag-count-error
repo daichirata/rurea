@@ -6,6 +6,6 @@ library=net.imap
 aliases=
 aliasof=
 
-�����Ф���Υ쥹�ݥ󥹤˴ޤޤ��ե饰��¿������Ȥ���ȯ�������㳰�Ǥ���
+サーバからのレスポンスに含まれるフラグが多すぎるときに発生する例外です。
 
-���ξ�¤� [[m:Net::IMAP.max_flag_count=]] �����ꤷ�ޤ���
+この上限は [[m:Net::IMAP.max_flag_count=]] で設定します。

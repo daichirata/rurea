@@ -1,16 +1,17 @@
-names=NI_DGRAM,NI_MAXHOST,NI_MAXSERV,NI_NAMEREQD,NI_NOFQDN,NI_NUMERICHOST,NI_NUMERICSERV
+names=NI_DGRAM
 visibility=public
 kind=defined
 
---- NI_DGRAM
---- NI_MAXHOST
---- NI_MAXSERV
---- NI_NAMEREQD
---- NI_NOFQDN
---- NI_NUMERICHOST
---- NI_NUMERICSERV
-@todo
+--- NI_DGRAM -> Integer
+The service specified is a datagram service (looks up UDP ports)ã€‚
 
-Socket.getnameinfo¤ÎÂè2°ú¿ô flags ¤ËÍ¿¤¨¤ëÄê¿ô¤Ç¤¹¡£
-[[man:getnameinfo(3)]]¤â»²¾È¤·¤Æ²¼¤µ¤¤¡£
+[[m:Socket.getnameinfo]], [[m:Addrinfo#getnameinfo]] ã®å¼•æ•° flags ã«æ¸¡ã™
+å®šæ•°ã§ã™ã€‚
+
+  Socket.getnameinfo([ Socket::AF_INET, 514, "127.0.0.1"], Socket::NI_DGRAM)
+  # => ["localhost", "syslog"]
+  Socket.getnameinfo([ Socket::AF_INET, 514, "127.0.0.1"])
+  # => ["localhost", "shell"]
+
+@see [[man:getnameinfo(3)]]
 

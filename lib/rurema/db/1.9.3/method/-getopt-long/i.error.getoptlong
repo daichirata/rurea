@@ -5,6 +5,6 @@ kind=defined
 --- error  -> Class | nil
 --- error? -> Class | nil
 
-���ߤΥ��顼�η����֤��ޤ������顼��ȯ�����Ƥ��ʤ���С�nil
-���֤��ޤ���
+現在のエラーの型を返します。エラーが発生していなければ、nil
+を返します。
 

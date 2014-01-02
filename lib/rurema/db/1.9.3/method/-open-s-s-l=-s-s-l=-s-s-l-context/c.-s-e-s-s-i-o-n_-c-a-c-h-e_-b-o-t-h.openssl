@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- SESSION_CACHE_BOTH -> Integer
-������¦�����饤�����¦ξ���ǥ��å����򥭥�å��夹�뤳�Ȥ��̣���ޤ���
+サーバ側、クライアント側両方でセッションをキャッシュすることを意味します。
 
-[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] ��
-�Ϥ��ե饰�Ȥ����Ѥ��ޤ���
+[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] に
+渡すフラグとして用います。
 
-�ºݤˤ�
-[[m:OpenSSL::SSL::SSLContext::SESSION_CACHE_SERVER]] ��
-[[m:OpenSSL::SSL::SSLContext::SESSION_CACHE_CLIENT]] �Υӥå�������
-���ä��ͤǤ���
+実際には
+[[m:OpenSSL::SSL::SSLContext::SESSION_CACHE_SERVER]] と
+[[m:OpenSSL::SSL::SSLContext::SESSION_CACHE_CLIENT]] のビット論理和
+を取った値です。
 
 

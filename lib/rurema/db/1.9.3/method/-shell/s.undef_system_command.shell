@@ -4,15 +4,15 @@ kind=defined
 
 --- undef_system_command(command) -> Shell::CommandProcessor
 
-command¤òºï½ü¤·¤Ş¤¹.
+commandã‚’å‰Šé™¤ã—ã¾ã™.
 
-@param command ºï½ü¤¹¤ë¥³¥Ş¥ó¥É¤ÎÊ¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param command å‰Šé™¤ã™ã‚‹ã‚³ãƒãƒ³ãƒ‰ã®æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Æ°ºîÎã¡§
+å‹•ä½œä¾‹ï¼š
   Shell.def_system_command("ls")
-  # ls ¤òÄêµÁ
+  # ls ã‚’å®šç¾©
   Shell.undef_system_command("ls")
-  # ls ¤ò ºï½ü
+  # ls ã‚’ å‰Šé™¤
 
   sh = Shell.new
   begin

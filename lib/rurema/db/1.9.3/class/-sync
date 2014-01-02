@@ -6,5 +6,5 @@ library=sync
 aliases=Synchronizer
 aliasof=
 
-[[c:Sync_m]] ¤ò include ¤·¤¿¥¯¥é¥¹¤Ç Synchronizer ¤ÎÊÌÌ¾¤Ç¤¹¡£
-»È¤¤Êı¤Ï [[c:Sync_m]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[c:Sync_m]] ã‚’ include ã—ãŸã‚¯ãƒ©ã‚¹ã§ Synchronizer ã®åˆ¥åã§ã™ã€‚
+ä½¿ã„æ–¹ã¯ [[c:Sync_m]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚

@@ -4,5 +4,5 @@ kind=defined
 
 --- fcntl(cmd, arg = 0)    -> Integer
 
-[[m:IO#fcntl]] ¤Ë°Ñ¾ù¤·¤Ş¤¹¡£
+[[m:IO#fcntl]] ã«å§”è­²ã—ã¾ã™ã€‚
 

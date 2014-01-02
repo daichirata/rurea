@@ -4,12 +4,12 @@ kind=defined
 
 --- challenge(request, response, stale = false)
 
-¥¯¥é¥¤¥¢¥ó¥È¤Ë¥Ñ¥¹¥ï¡¼¥É¤òÍ×µá¤¹¤ë¤¿¤á¤Ë¥ì¥¹¥İ¥ó¥¹¤Ë WWW-Authenticate ¥Ø¥Ã¥À¤ò
-ÀßÄê¤·¡¢Îã³° WEBrick::HTTPStatus::Unauthorized ¤òÈ¯À¸¤µ¤»¤Ş¤¹¡£
+ã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆã«ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¦æ±‚ã™ã‚‹ãŸã‚ã«ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã« WWW-Authenticate ãƒ˜ãƒƒãƒ€ã‚’
+è¨­å®šã—ã€ä¾‹å¤– WEBrick::HTTPStatus::Unauthorized ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚
 
-@param request [[c:WEBrick::HTTPRequest]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param request [[c:WEBrick::HTTPRequest]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param response [[c:WEBrick::HTTPResponse]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param response [[c:WEBrick::HTTPResponse]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise WEBrick::HTTPStatus::Unauthorized ¤³¤Î¥á¥½¥Ã¥É¤ò¸Æ¤Ö¤ÈÉ¬¤ºÈ¯À¸¤·¤Ş¤¹¡£
+@raise WEBrick::HTTPStatus::Unauthorized ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å‘¼ã¶ã¨å¿…ãšç™ºç”Ÿã—ã¾ã™ã€‚
 

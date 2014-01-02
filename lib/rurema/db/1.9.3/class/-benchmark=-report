@@ -6,7 +6,7 @@ library=benchmark
 aliases=
 aliasof=
 
-[[m:Benchmark.#benchmark]] �᥽�åɤ� [[m:Benchmark.#bm]] �᥽�åɤ�
-�����ǻ��Ѥ���Ƥ��륯�饹�Ǥ���
+[[m:Benchmark.#benchmark]] メソッドや [[m:Benchmark.#bm]] メソッドの
+内部で使用されているクラスです。
 
-���Υ饤�֥��Υ桼������ľ�ܰռ�����ɬ�פϤ���ޤ���
+このライブラリのユーザーが直接意識する必要はありません。

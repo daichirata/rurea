@@ -2,17 +2,24 @@ names=new
 visibility=public
 kind=defined
 
---- new(lib)                    -> DL::Handle
---- new(lib) {|handle| ... }    -> DL::Handle
+--- new(lib, flags=DL::RTLD_LAZY|DL::RTLD_GLOBAL) -> DL::Handle
+--- new(lib, flags=DL::RTLD_LAZY|DL::RTLD_GLOBAL) {|handle| ... }    -> DL::Handle
 
-�饤�֥�� lib �򥪡��ץ󤷡�Handle ���֥������ȤȤ����֤��ޤ���
+ライブラリ lib をオープンし、Handle オブジェクトとして返します。
 
-�֥��å�����ꤹ��С��������� Handle ������Ȥ��ƥ֥��å���¹Ԥ��ޤ���
-Handle �ϥ֥��å��ν���Ǽ�ưŪ�˥�����������ޤ���
+ブロックを指定すれば、生成した Handle を引数としてブロックを実行します。
+Handle はブロックの終りで自動的にクローズされます。
 
-@param lib �饤�֥���ʸ����ǻ��ꤷ�ޤ���
+flags で [[man:dlopen(3)]] の第2引数として渡すフラグを指定できます。
+[[m:DL::RTLD_LAZY]]、[[m:DL::RTLD_NOW]] のどちらか一方を指定する必要があり、
+またそれに [[m:DL::RTLD_GLOBAL]] と OR を取ることができます。
+詳しい意味は manpage([[man:dlopen(3)]]) を参照してください。
 
-��:
+@param lib ライブラリを文字列で指定します。
+@param flags フラグ
+@raise DL::DLError ライブラリのオープンに失敗した場合に発生します
+
+例:
 
  require 'dl'
 

@@ -3,17 +3,18 @@ classes=Rake=GemPackageTask
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Gem Spec �ե�����򸵤ˤ��� Gem �ѥå�������������륿������������뤿��Υ饤�֥��Ǥ���
+Gem Spec ファイルを元にして Gem パッケージを作成するタスクを定義するためのライブラリです。
 
-Gem �ѥå����������Ǥʤ� zip, tgz, tar.gz, tar.bz2 �γƥե����������������Ǥ��ޤ���
+Gem パッケージだけでなく zip, tgz, tar.gz, tar.bz2 の各ファイルを作成する事もできます。
 
-�ʲ��Υ�������������ޤ���
+以下のタスクを定義します。
 
 : PACKAGE_DIR/NAME-VERSION.gem
-  Gem �ѥå�������������ޤ���
+  Gem パッケージを作成します。
 
-��:
+例:
    require 'rubygems'
    
    spec = Gem::Specification.new do |s|

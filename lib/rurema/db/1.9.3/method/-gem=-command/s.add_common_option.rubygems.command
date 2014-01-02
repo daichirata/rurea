@@ -4,7 +4,7 @@ kind=defined
 
 --- add_common_option(*args){|value, options| ... }
 
-���ƤΥ��ޥ�ɤ˶��̤��륪�ץ�������Ͽ���뤿��Υ᥽�åɤǤ���
+全てのコマンドに共通するオプションを登録するためのメソッドです。
 
-@param args �ɲä��륪�ץ����ξ������ꤷ�ޤ���
+@param args 追加するオプションの情報を指定します。
 

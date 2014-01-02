@@ -4,5 +4,5 @@ kind=defined
 
 --- status -> Process::Status
 
-�ҥץ������ν�λ���ơ�������[[c:Process::Status]]���֥������Ȥ��֤��ޤ���
+子プロセスの終了ステータスを[[c:Process::Status]]オブジェクトで返します。
 

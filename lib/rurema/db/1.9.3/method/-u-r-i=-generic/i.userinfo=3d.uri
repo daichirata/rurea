@@ -4,16 +4,16 @@ kind=defined
 
 --- userinfo=(s)
 
-¼«¿È¤Î userinfo ¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã® userinfo ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î userinfo ¤ò "username" ¤« "username:password" ¤È¤¤¤¦·Á¼°¤ÎÊ¸»úÎó¡¢¤¢¤ë¤¤¤Ï
-         [username, password] ¤È¤¤¤¦·Á¼°¤ÎÊ¸»úÎó¤ÎÇÛÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param s è‡ªèº«ã® userinfo ã‚’ "username" ã‹ "username:password" ã¨ã„ã†å½¢å¼ã®æ–‡å­—åˆ—ã€ã‚ã‚‹ã„ã¯
+         [username, password] ã¨ã„ã†å½¢å¼ã®æ–‡å­—åˆ—ã®é…åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise URI::InvalidComponentError ÉÔÀµ¤Ê°ú¿ô s ¤ËÂĞ¤·¤ÆÈ¯À¸¤·¤Ş¤¹¡£
+@raise URI::InvalidComponentError ä¸æ­£ãªå¼•æ•° s ã«å¯¾ã—ã¦ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise URI::InvalidURIError userinfo ¤È registry ¤òÆ±»ş¤ËÀßÄê¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise URI::InvalidURIError userinfo ã¨ registry ã‚’åŒæ™‚ã«è¨­å®šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
   u = URI.parse('http://example.com/')
   u.userinfo = 'hoge-san:jfae82kj'

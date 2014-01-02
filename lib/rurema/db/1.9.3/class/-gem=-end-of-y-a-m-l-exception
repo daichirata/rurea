@@ -6,4 +6,4 @@ library=rubygems.exceptions
 aliases=
 aliasof=
 
-YAML �ǡ����������Ǥ�����˻��Ѥ����㳰�Ǥ���
+YAML データが不正である場合に使用する例外です。

@@ -4,13 +4,13 @@ kind=defined
 
 --- make_passwd(realm, user, pass) -> String
 
-[[m:WEBrick::HTTPAuth::UserDB#auth_type]] ¤Î make_passwd ¤ò¸Æ¤Ó½Ğ¤·¤Ş¤¹¡£
+[[m:WEBrick::HTTPAuth::UserDB#auth_type]] ã® make_passwd ã‚’å‘¼ã³å‡ºã—ã¾ã™ã€‚
 
-@param realm ¥ì¥ë¥à¤ò»ØÄê¤·¤Ş¤¹¡£
+@param realm ãƒ¬ãƒ«ãƒ ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param user ¥æ¡¼¥¶Ì¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param user ãƒ¦ãƒ¼ã‚¶åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param pass ¥Ñ¥¹¥ï¡¼¥É¤ò»ØÄê¤·¤Ş¤¹¡£
+@param pass ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:WEBrick::HTTPAuth::BasicAuth#make_passwd]], [[m:WEBrick::HTTPAuth::DigestAuth#make_passwd]]
 

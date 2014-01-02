@@ -3,6 +3,7 @@ classes=RDoc=Parser=RubyTools
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:RDoc::RubyLex]] ¤È [[c:RDoc::RubyToken]] ¤ò»È¤Ã¤Æ Ruby ¤Î¥½¡¼¥¹¥³¡¼
-¥É¤Î¥Ñ¡¼¥µ¤òµ­½Ò¤¹¤ë¤¿¤á¤Î¥â¥¸¥å¡¼¥ë¤òÄêµÁ¤¹¤ë¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:RDoc::RubyLex]] ã¨ [[c:RDoc::RubyToken]] ã‚’ä½¿ã£ã¦ Ruby ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼
+ãƒ‰ã®ãƒ‘ãƒ¼ã‚µã‚’è¨˜è¿°ã™ã‚‹ãŸã‚ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚’å®šç¾©ã™ã‚‹ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

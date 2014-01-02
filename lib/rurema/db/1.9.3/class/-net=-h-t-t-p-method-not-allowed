@@ -6,6 +6,6 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 405  (Method Not Allowed) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 405  (Method Not Allowed) を表現するクラスです。
 
-�ܤ����� [[RFC:2616]] �򸫤Ƥ���������
+詳しくは [[RFC:2616]] を見てください。

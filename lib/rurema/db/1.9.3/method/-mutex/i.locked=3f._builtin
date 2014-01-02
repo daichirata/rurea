@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- locked? -> bool
-mutex ¤¬¥í¥Ã¥¯¤µ¤ì¤Æ¤¤¤ë»þ¡¢¿¿¤òÊÖ¤·¤Þ¤¹¡£
+mutex ãŒãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã‚‹æ™‚ã€çœŸã‚’è¿”ã—ã¾ã™ã€‚
 

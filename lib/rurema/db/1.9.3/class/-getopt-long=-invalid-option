@@ -6,4 +6,4 @@ library=getoptlong
 aliases=
 aliasof=
 
-�Τ�ʤ����ץ����Ϳ����줿����ȯ�������㳰�Ǥ���
+知らないオプションが与えられた場合に発生する例外です。

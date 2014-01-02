@@ -4,5 +4,5 @@ kind=defined
 
 --- spec -> Gem::Specification
 
-���󥹥ȡ��뤷�褦�Ȥ��Ƥ��� Gem ���б����� [[c:Gem::Specification]] �Υ��󥹥��󥹤��֤��ޤ���
+インストールしようとしている Gem に対応する [[c:Gem::Specification]] のインスタンスを返します。
 

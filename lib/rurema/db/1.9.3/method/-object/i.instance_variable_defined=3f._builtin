@@ -4,9 +4,9 @@ kind=defined
 
 --- instance_variable_defined?(var) -> bool
 
-���󥹥����ѿ� var ���������Ƥ����鿿���֤��ޤ���
+インスタンス変数 var が定義されていたら真を返します。
 
-@param var ���󥹥����ѿ�̾��ʸ���� [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param var インスタンス変数名を文字列か [[c:Symbol]] で指定します。
 
    class Fred
      def initialize(p1, p2)

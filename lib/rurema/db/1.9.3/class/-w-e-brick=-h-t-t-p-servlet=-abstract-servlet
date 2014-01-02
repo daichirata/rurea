@@ -6,11 +6,11 @@ library=webrick.httpservlet.abstract
 aliases=
 aliasof=
 
-�����֥�åȤ���ݥ��饹�Ǥ��������� AbstractServlet �Υ��֥��饹�ǹԤ��ޤ���
+サーブレットの抽象クラスです。実装は AbstractServlet のサブクラスで行います。
 
-�����֥�åȤϰʲ��Τ褦�˻Ȥ��ޤ���[[c:WEBrick::HTTPServlet::CGIHandler]] ��
-[[lib:webrick/httpservlet/cgihandler]] ���󶡤���Ƥ��륵���֥�åȤǤ���
-CGIHandler �� AbstractServlet �Υ��֥��饹�Ǥ���
+サーブレットは以下のように使われます。[[c:WEBrick::HTTPServlet::CGIHandler]] は
+[[lib:webrick/httpservlet/cgihandler]] で提供されているサーブレットです。
+CGIHandler は AbstractServlet のサブクラスです。
 
  require 'webrick'
  srv = WEBrick::HTTPServer.new({ :DocumentRoot => './',
@@ -20,13 +20,13 @@ CGIHandler �� AbstractServlet �Υ��֥��饹�Ǥ���
  trap("INT"){ srv.shutdown }
  srv.start
 
-��Υ�����ץȤǤϰʲ��Τ褦��ή��� view.rb �ϼ¹Ԥ���ޤ���
+上のスクリプトでは以下のような流れで view.rb は実行されます。
 
- (1) �����ФΥѥ� /view.cgi �� CGIHandler ���ޥ���Ȥˤ���ӤĤ����ޤ���
- (2) �ѥ� /view.cgi �˥������������뤿�Ӥ˥�����(WEBrick::HTTPServer ���֥�������)�� 'view.rb' 
-     ������Ȥ��� CGIHandler ���֥������Ȥ��������ޤ���
- (3) �����Фϥꥯ�����ȥ��֥������Ȥ�����Ȥ��� CGIHandler#service �᥽�åɤ�ƤӤޤ���
- (4) CGIHandler ���֥������Ȥ� view.rb �� CGI ������ץȤȤ��Ƽ¹Ԥ��ޤ���
+ (1) サーバのパス /view.cgi と CGIHandler がマウントにより結びつけられます。
+ (2) パス /view.cgi にアクセスがあるたびにサーバ(WEBrick::HTTPServer オブジェクト)は 'view.rb' 
+     を引数として CGIHandler オブジェクトを生成します。
+ (3) サーバはリクエストオブジェクトを引数として CGIHandler#service メソッドを呼びます。
+ (4) CGIHandler オブジェクトは view.rb を CGI スクリプトとして実行します。
 
-���Τ褦�� [[c:WEBrick]] �Ǥ� Web �����Фε�ǽ������ʬ�������֥�åȤη����󶡤���Ƥ��ޤ���
-�ޤ������֥�åȤ�������뤳�Ȥˤ�꿷���ʵ�ǽ�� Web �����Ф��ɲä��뤳�Ȥ�Ǥ��ޤ���
+このように [[c:WEBrick]] では Web サーバの機能の大部分がサーブレットの形で提供されています。
+またサーブレットを作成することにより新たな機能を Web サーバに追加することもできます。

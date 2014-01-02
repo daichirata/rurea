@@ -4,11 +4,11 @@ kind=defined
 
 --- host=(s)
 
-¼«¿È¤Î host ¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã® host ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î host ¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param s è‡ªèº«ã® host ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise URI::InvalidComponentError ÉÔÀµ¤Ê°ú¿ô s ¤ËÂĞ¤·¤ÆÈ¯À¸¤·¤Ş¤¹¡£
+@raise URI::InvalidComponentError ä¸æ­£ãªå¼•æ•° s ã«å¯¾ã—ã¦ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise URI::InvalidURIError host ¤È registry ¤òÆ±»ş¤ËÀßÄê¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise URI::InvalidURIError host ã¨ registry ã‚’åŒæ™‚ã«è¨­å®šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

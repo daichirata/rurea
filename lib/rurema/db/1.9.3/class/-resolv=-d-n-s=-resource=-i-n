@@ -6,7 +6,7 @@ library=resolv
 aliases=
 aliasof=
 
-DNS �Υ��󥿡��ͥåȥ��饹�꥽������ɽ���⥸�塼��Ǥ���
+DNS のインターネットクラスリソースを表すモジュールです。
 
-���󥿡��ͥåȥ��饹�꥽���������Ѥ��� class ��
-mixin�������Ѥ��ޤ���
+インターネットクラスリソースを利用する class に
+mixinして利用します。

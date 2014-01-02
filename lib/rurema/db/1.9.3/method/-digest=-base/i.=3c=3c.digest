@@ -2,16 +2,16 @@ names=<<,update
 visibility=public
 kind=defined
 
---- update(str)
---- <<(str)
+--- update(str) -> self
+--- <<(str)     -> self
 
-Ê¸»úÎó¤òÄÉ²Ã¤·¤Ş¤¹¡£self ¤òÊÖ¤·¤Ş¤¹¡£
-Ê£¿ô²óupdate¤ò¸Æ¤Ö¤³¤È¤ÏÊ¸»úÎó¤òÏ¢·ë¤·¤Æupdate¤ò¸Æ¤Ö¤³¤È¤ÈÆ±¤¸¤Ç¤¹¡£
-¤¹¤Ê¤ï¤Á m.update(a); m.update(b) ¤Ï
-m.update(a + b) ¤È¡¢ m << a << b ¤Ï m << a + b ¤È¤½¤ì¤¾¤ìÅù²Á
-¤Ç¤¹¡£
+æ–‡å­—åˆ—ã‚’è¿½åŠ ã—ã¾ã™ã€‚self ã‚’è¿”ã—ã¾ã™ã€‚
+è¤‡æ•°å›updateã‚’å‘¼ã¶ã“ã¨ã¯æ–‡å­—åˆ—ã‚’é€£çµã—ã¦updateã‚’å‘¼ã¶ã“ã¨ã¨åŒã˜ã§ã™ã€‚
+ã™ãªã‚ã¡ m.update(a); m.update(b) ã¯
+m.update(a + b) ã¨ã€ m << a << b ã¯ m << a + b ã¨ãã‚Œãã‚Œç­‰ä¾¡
+ã§ã™ã€‚
 
-@param str ÄÉ²Ã¤¹¤ëÊ¸»úÎó
+@param str è¿½åŠ ã™ã‚‹æ–‡å­—åˆ—
 
         require 'digest/md5'
 

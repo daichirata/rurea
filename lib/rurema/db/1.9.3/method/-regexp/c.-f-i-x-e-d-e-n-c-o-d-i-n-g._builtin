@@ -4,7 +4,7 @@ kind=defined
 
 --- FIXEDENCODING -> Fixnum
 
-����ɽ��������Υ��󥳡��ǥ��󥰤�ʸ����ˤ����ޥå����ʤ����Ȥ��̣���ޤ���
+正規表現が特定のエンコーディングの文字列にしかマッチしないことを意味します。
 
 @see [[m:Regexp#fixed_encoding?]]
 

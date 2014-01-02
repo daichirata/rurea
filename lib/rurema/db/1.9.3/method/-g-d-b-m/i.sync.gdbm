@@ -4,10 +4,10 @@ kind=defined
 
 --- sync -> self
 
-���Ǥ��ѹ���ե������ȿ�Ǥ��ޤ���
+要素の変更をファイルに反映します。
 
-FAST �⡼��([[m:GDBM.open]] ����3������ [[m:GDBM::FAST]] �����)�ΤȤ�������̣������ޤ���
+FAST モード([[m:GDBM.open]] の第3引数に [[m:GDBM::FAST]] を指定)のときだけ意味があります。
 
-==== ����
-GNU gdbm version 1.8 �ʹߤ�� FAST �⡼�ɤ��ǥե���Ȥˤʤ�ޤ�����
+==== 注意
+GNU gdbm version 1.8 以降より FAST モードがデフォルトになりました。
 

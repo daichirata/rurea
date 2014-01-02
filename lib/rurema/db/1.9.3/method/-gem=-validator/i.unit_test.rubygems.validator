@@ -4,7 +4,7 @@ kind=defined
 
 --- unit_test(gem_spec)
 
-Ϳ����줿 Gem ���ڥå��ˤ������äƥ�˥åȥƥ��Ȥ�¹Ԥ��ޤ���
+与えられた Gem スペックにしたがってユニットテストを実行します。
 
-@param gem_spec [[c:Gem::Specification]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param gem_spec [[c:Gem::Specification]] のインスタンスを指定します。
 

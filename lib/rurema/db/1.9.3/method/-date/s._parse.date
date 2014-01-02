@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- _parse(str, complete = true) -> Hash
-���Υ᥽�åɤ� [[m:Date.parse]] �Ȼ��Ƥ��ޤ��������ե��֥������Ȥ����������ˡ�
-�������������Ǥ�ϥå�����֤��ޤ���
+このメソッドは [[m:Date.parse]] と似ていますが、日付オブジェクトを生成せずに、
+見いだした要素をハッシュで返します。
 
-[[m:Date.parse]] �⻲�Ȥ��Ƥ���������
+[[m:Date.parse]] も参照してください。
 
-@param str ���դ򤢤�魯ʸ����
-@param complete ǯ���䴰���뤫
+@param str 日付をあらわす文字列
+@param complete 年を補完するか
 

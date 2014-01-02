@@ -5,15 +5,15 @@ kind=defined
 --- build(extension, directory, dest_path, results) -> Array
 @todo
 
-Makefile ¤¬Â¸ºß¤·¤Ê¤¤¾ì¹ç¤Ï¡¢extconf.rb ¤ò¼Â¹Ô¤·¤Æ
-Makefile ¤òºîÀ®¤·¤Æ¤«¤é make ¤ò¼Â¹Ô¤·¤Ş¤¹¡£
+Makefile ãŒå­˜åœ¨ã—ãªã„å ´åˆã¯ã€extconf.rb ã‚’å®Ÿè¡Œã—ã¦
+Makefile ã‚’ä½œæˆã—ã¦ã‹ã‚‰ make ã‚’å®Ÿè¡Œã—ã¾ã™ã€‚
 
-@param extension ¥Õ¥¡¥¤¥ëÌ¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param extension ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param directory ¤³¤Î¥á¥½¥Ã¥É¤Ç¤Ï»ÈÍÑ¤·¤Æ¤¤¤Ş¤»¤ó¡£
+@param directory ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã¯ä½¿ç”¨ã—ã¦ã„ã¾ã›ã‚“ã€‚
 
 @param dest_path ???
 
-@param results ¥³¥Ş¥ó¥É¤Î¼Â¹Ô·ë²Ì¤ò³ÊÇ¼¤·¤Ş¤¹¡£ÇË²õÅª¤ËÊÑ¹¹¤µ¤ì¤Ş¤¹¡£
+@param results ã‚³ãƒãƒ³ãƒ‰ã®å®Ÿè¡Œçµæœã‚’æ ¼ç´ã—ã¾ã™ã€‚ç ´å£Šçš„ã«å¤‰æ›´ã•ã‚Œã¾ã™ã€‚
 
 @see [[m:Gem::Ext::Builder.make]]

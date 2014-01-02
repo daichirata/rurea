@@ -4,5 +4,5 @@ kind=defined
 
 --- rakefile_location -> String
 
-Rakefile ¤Î¥Ñ¥¹¤òÊÖ¤·¤Ş¤¹¡£
+Rakefile ã®ãƒ‘ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 

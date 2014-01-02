@@ -4,13 +4,13 @@ kind=defined
 
 --- mime_type(filename, mime_tab)    -> String
 
-¥Õ¥¡¥¤¥ëÌ¾ filename ¤Î³ÈÄ¥»Ò¤ò¤â¤È¤Ë¤½¤Î MIME ¥¿¥¤¥×¤ò»ØÄê¤µ¤ì¤¿ mime_tab 
-¤«¤éÃµ¤·¤ÆÊ¸»úÎó¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£MIME ¥¿¥¤¥×¤¬¸«¤Ä¤«¤é¤Ê¤¤¾ì¹ç¤Ï "application/octet-stream"
-¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«å filename ã®æ‹¡å¼µå­ã‚’ã‚‚ã¨ã«ãã® MIME ã‚¿ã‚¤ãƒ—ã‚’æŒ‡å®šã•ã‚ŒãŸ mime_tab 
+ã‹ã‚‰æŽ¢ã—ã¦æ–‡å­—åˆ—ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚MIME ã‚¿ã‚¤ãƒ—ãŒè¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã¯ "application/octet-stream"
+ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param filename ¥Õ¥¡¥¤¥ëÌ¾¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param filename ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param mime_tab ³ÈÄ¥»Ò¤ò¥­¡¼¡¢MIME ¥¿¥¤¥×¤òÃÍ¤È¤¹¤ë¥Ï¥Ã¥·¥å¤ò»ØÄê¤·¤Þ¤¹¡£
+@param mime_tab æ‹¡å¼µå­ã‚’ã‚­ãƒ¼ã€MIME ã‚¿ã‚¤ãƒ—ã‚’å€¤ã¨ã™ã‚‹ãƒãƒƒã‚·ãƒ¥ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   include WEBrick::HTTPUtils
   p mime_type('index.html', DefaultMimeTypes)     #=> "text/html"

@@ -1,33 +1,32 @@
 requires=
-classes=BigMath
-methods=
+classes=
+methods=BigMath/m.sqrt.bigdecimal.math,BigMath/m.sin.bigdecimal.math,BigMath/m.cos.bigdecimal.math,BigMath/m.atan.bigdecimal.math,BigMath/m.PI.bigdecimal.math,BigMath/m.E.bigdecimal.math
 sublibraries=
 is_sublibrary=true
+category=
 
-BigDecimal¤ò»È¤Ã¤¿¿ô³ØÅª¤Êµ¡Ç½¤òÄó¶¡¤·¤Ş¤¹¡£
+BigDecimalã‚’ä½¿ã£ãŸæ•°å­¦çš„ãªæ©Ÿèƒ½ã‚’æä¾›ã—ã¾ã™ã€‚
 
-°Ê²¼¤Î·×»»¤¬¹Ô¤¨¤Ş¤¹¡£
+ä»¥ä¸‹ã®è¨ˆç®—ãŒè¡Œãˆã¾ã™ã€‚
 
  * sqrt(x, prec)
  * sin (x, prec)
  * cos (x, prec)
  * atan(x, prec)
- * exp (x, prec)
- * log (x, prec)
  * PI  (prec)
  * E   (prec)
 
-°ú¿ô:
+å¼•æ•°:
 
 : x
 
-  ·×»»ÂĞ¾İ¤Î BigDecimal ¥ª¥Ö¥¸¥§¥¯¥È¡£
+  è¨ˆç®—å¯¾è±¡ã® BigDecimal ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã€‚
 
 : prec
 
-  ·×»»·ë²Ì¤ÎÀºÅÙ¡£
+  è¨ˆç®—çµæœã®ç²¾åº¦ã€‚
 
-Îã:
+ä¾‹:
 
   require "bigdecimal"
   require "bigdecimal/math"

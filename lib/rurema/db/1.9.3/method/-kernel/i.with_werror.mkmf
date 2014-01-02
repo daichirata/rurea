@@ -4,7 +4,7 @@ kind=added
 
 --- with_werror(opt, opts = nil){|opt| ... } -> object
 --- with_werror(opt, opts = nil){|opt, opts| ... } -> object
-@todo ÆâÉôÍÑ¡©
+@todo å†…éƒ¨ç”¨ï¼Ÿ
 
 ???
 
@@ -12,5 +12,5 @@ kind=added
 
 @param opts ????
 
-@return ¥Ö¥í¥Ã¥¯¤òÉ¾²Á¤·¤¿·ë²Ì¤òÊÖ¤·¤Ş¤¹¡£
+@return ãƒ–ãƒ­ãƒƒã‚¯ã‚’è©•ä¾¡ã—ãŸçµæœã‚’è¿”ã—ã¾ã™ã€‚
 

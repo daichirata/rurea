@@ -2,10 +2,10 @@ names=RLIMIT_SBSIZE
 visibility=public
 kind=defined
 
---- RLIMIT_SBSIZE
+--- RLIMIT_SBSIZE -> Fixnum
 
-�꥽�����μ��ब�����åȥХåե��Υ������Ǥ��뤳�Ȥ򼨤�����Ǥ���
+リソースの種類がソケットバッファのサイズであることを示す定数です。
 
-[[m:Process.#getrlimit]]��[[m:Process.#setrlimit]] �ǻȤ��ޤ���
-�����ƥ�ˤ�äƤ��������Ƥ��ޤ���
+[[m:Process.#getrlimit]]、[[m:Process.#setrlimit]] で使われます。
+システムによっては定義されていません。
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- required_attribute(name, default = nil) -> ()
 
-É¬¿Ü¤ÎÂ°À­¤òºîÀ®¤·¤Ş¤¹¡£
+å¿…é ˆã®å±æ€§ã‚’ä½œæˆã—ã¾ã™ã€‚
 
-@param name Â°À­Ì¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param name å±æ€§åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param default ¥Ç¥Õ¥©¥ë¥ÈÃÍ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param default ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:Gem::Specification.attribute]]
 

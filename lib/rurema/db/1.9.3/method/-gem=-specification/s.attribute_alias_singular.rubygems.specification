@@ -4,20 +4,20 @@ kind=defined
 
 --- attribute_alias_singular(singular, plural) -> ()
 
-����¸�ߤ���ʣ������°����ñ�����С�������������ޤ���
+既に存在する複数形の属性の単数形バージョンを定義します。
 
-�����ñ�˰�Ĥΰ����������ꤽ���������ɲä���褦�ʥإ�ѡ��᥽�åɤ��������Ȥ������ȤǤ���
+これは単に一つの引数を受け取りそれを配列に追加するようなヘルパーメソッドを定義するということです。
 
-��:
+例:
 
-  # ���Τ褦����������
+  # このように定義すると
   attribute_alias_singular :require_path, :require_paths
-  # �����񤯤�����
+  # こう書くかわりに
   s.require_paths = ['mylib']
-  # �����񤯤��Ȥ��Ǥ��ޤ���
+  # こう書くことができます。
   s.require_path = 'mylib'
 
-@param singular °��̾��ñ��������ꤷ�ޤ���
+@param singular 属性名の単数形を指定します。
 
-@param plural °��̾��ʣ��������ꤷ�ޤ���
+@param plural 属性名の複数形を指定します。
 

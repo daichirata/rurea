@@ -6,9 +6,9 @@ library=yaml.store
 aliases=
 aliasof=
 
-[[c:PStore]] �� [[c:YAML]] �ǤǤ���
-[[m:Marshal.#dump]] �����Х��ʥ������
-����� YAML �����ǥե��������¸���ޤ���
+[[c:PStore]] の [[c:YAML]] 版です。
+[[m:Marshal.#dump]] したバイナリ形式の
+代わりに YAML 形式でファイルに保存します。
 
-�Ȥ����� [[c:PStore]] �ȤۤȤ��Ʊ���Ǥ���
-���󥿡��ե������� [[c:Hash]] �˻��Ƥ��ޤ���
+使い方は [[c:PStore]] とほとんど同じです。
+インターフェースは [[c:Hash]] に似ています。

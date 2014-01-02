@@ -1,7 +1,0 @@
-requires=yaml.ypath
-classes=YAML=BaseNode
-methods=
-sublibraries=
-is_sublibrary=true
-
-YAML のノードを検索するためのサブライブラリです。

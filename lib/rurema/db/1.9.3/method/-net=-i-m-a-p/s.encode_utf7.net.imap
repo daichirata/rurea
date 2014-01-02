@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- encode_utf7(str) -> String
-UTF-8 ��ʸ����� modified UTF-7 ��ʸ������Ѵ����ޤ���
+UTF-8 の文字列を modified UTF-7 の文字列に変換します。
 
-modified UTF-7 �� IMAP �Υ᡼��ܥå���̾�˻Ȥ��륨�󥳡��ǥ��󥰤ǡ�
-UTF-7 ����������ΤǤ���
+modified UTF-7 は IMAP のメールボックス名に使われるエンコーディングで、
+UTF-7 を修正したものです。
 
-�ܤ����� [[m:Net::IMAP.encode_utf7]] �򸫤Ƥ���������
+詳しくは [[m:Net::IMAP.encode_utf7]] を見てください。
 
-@param str �Ѵ��оݤ� UTF-8 �ǥ��󥳡��ɤ��줿ʸ����
+@param str 変換対象の UTF-8 でエンコードされた文字列
 @see [[m:Net::IMAP.decode_utf7]]
 
 

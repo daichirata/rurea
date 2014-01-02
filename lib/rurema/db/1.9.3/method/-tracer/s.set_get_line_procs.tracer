@@ -5,14 +5,14 @@ kind=defined
 --- set_get_line_procs(filename, proc)
 --- set_get_line_procs(filename) {|line| .... }
 
-����ե�����ˤĤ������Ѥ��롢���ֹ椫�饽�����Τ��ιԤ����Ƥ��֤�
-��³������ꤷ�ޤ���������ꤷ�ʤ���Хǥե���Ȥ�ư����Ѥ���ޤ���
-���ꤹ���³���Ϲ��ֹ��ͣ��ΰ����Ȥ��ƸƤӽФ���ޤ���
+あるファイルについて利用する、行番号からソースのその行の内容を返す
+手続きを指定します。何も指定しなければデフォルトの動作が利用されます。
+指定する手続きは行番号を唯一の引数として呼び出されます。
 
-@param filename �������ե�����ξ���ʸ����ǻ��ꤷ�ޤ���
-@param proc �̾ʸ������֤���³�����֥������Ȥ���ꤷ�ޤ���
+@param filename ソースファイルの場所を文字列で指定します。
+@param proc 通常、文字列を返す手続きオブジェクトを指定します。
 
-  # �� dummy.rb ��3���ܤ���6 ���ܤΥȥ졼�����Ϥ� !! ��Ĥ���
+  # 例 dummy.rb の3行目から6 行目のトレース出力に !! をつける
   require 'tracer'
 
   Tracer.set_get_line_procs('./dummy.rb'){|line|

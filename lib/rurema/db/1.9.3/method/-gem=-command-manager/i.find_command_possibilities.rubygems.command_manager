@@ -4,7 +4,7 @@ kind=defined
 
 --- find_command_possibilities(command_name) -> Array
 
-��Ͽ����Ƥ��륳�ޥ�ɤǥޥå������ǽ���Τ����Τ��֤��ޤ���
+登録されているコマンドでマッチする可能性のあるものを返します。
 
-@param command_name ���ޥ��̾��ʸ����ǻ��ꤷ�ޤ���
+@param command_name コマンド名を文字列で指定します。
 

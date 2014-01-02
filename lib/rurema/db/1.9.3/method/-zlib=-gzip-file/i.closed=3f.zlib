@@ -5,7 +5,7 @@ kind=defined
 --- closed? -> bool
 --- to_io -> IO
 
-IO епеще╣д╬╞▒╠╛есе╜е├е╔д╚╞▒д╕бг
+IO уВпуГйуВ╣уБохРМхРНуГбуВ╜уГГуГЙуБихРМуБШуАВ
 
 @see [[m:IO#to_io]], [[m:IO#closed?]]
 

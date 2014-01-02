@@ -2,18 +2,19 @@ names=read,readlines
 visibility=public
 kind=defined
 
---- read(path, options = Hash.new) -> [Array]
---- readlines(path, options = Hash.new) -> [Array]
+--- read(path, options = Hash.new) -> [Array] | CSV::Table
+--- readlines(path, options = Hash.new) -> [Array] | CSV::Table
 
-CSV �ե���������������ˤ��뤿��˻Ȥ��ޤ���
+CSV ファイルを配列の配列にするために使います。
+headers オプションに偽でない値を指定した場合は [[c:CSV::Table]] オブジェクトを返します。
 
 
-@param path CSV �ե�����Υѥ�����ꤷ�ޤ���
+@param path CSV ファイルのパスを指定します。
 
-@param options [[m:CSV.new]] �Υ��ץ�����Ʊ�����ץ��������Ǥ��ޤ���
-               :encoding �Ȥ�����������Ѥ�������ϤΥ��󥳡��ǥ��󥰤���ꤹ�뤳�Ȥ��Ǥ��ޤ���
-               ���ϤΥ��󥳡��ǥ��󥰤� [[m:Encoding.default_external]] �Ȱۤʤ����
-               ɬ�����ꤷ�ʤ���Фʤ�ޤ���
+@param options [[m:CSV.new]] のオプションと同じオプションを指定できます。
+               :encoding というキーを使用すると入力のエンコーディングを指定することができます。
+               入力のエンコーディングか [[m:Encoding.default_external]] と異なる場合は
+               必ず指定しなければなりません。
 
-@see [[m:CSV.new]]
+@see [[m:CSV.new]], [[m:CSV.table]]
 

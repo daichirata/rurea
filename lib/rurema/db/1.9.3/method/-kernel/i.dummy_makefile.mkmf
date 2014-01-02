@@ -4,7 +4,7 @@ kind=added
 
 --- dummy_makefile(srcdir) -> String
 
-¥À¥ß¡¼¤Î Makefile ¤òºîÀ®¤·¤Þ¤¹¡£
+ãƒ€ãƒŸãƒ¼ã® Makefile ã‚’ä½œæˆã—ã¾ã™ã€‚
 
-@param srcdir ¥½¡¼¥¹¥Ç¥£¥ì¥¯¥È¥ê¤ò»ØÄê¤·¤Þ¤¹¡£
+@param srcdir ã‚½ãƒ¼ã‚¹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

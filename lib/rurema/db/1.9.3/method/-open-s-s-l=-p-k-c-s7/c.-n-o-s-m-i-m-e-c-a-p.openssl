@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- NOSMIMECAP -> Integer
-��̾�Ԥ����Ѳ�ǽ�ʰŹ楢�르�ꥺ��ξ���ʤ�(SMIMECapabilities)���ά���ޤ���
+署名者が使用可能な暗号アルゴリズムの情報など(SMIMECapabilities)を省略します。
 
-[[m:OpenSSL::PKCS7.sign]] �����Ѳ�ǽ�ʥե饰�Ǥ���
+[[m:OpenSSL::PKCS7.sign]] で利用可能なフラグです。
 

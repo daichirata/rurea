@@ -1,14 +1,14 @@
-names===,===
+names===,eql?
 visibility=public
 kind=defined
 
 --- ==(other)     -> bool
---- ===(other)    -> bool
+--- eql?(other)   -> bool
 
-¼«¿È¤È other ¤¬Æ±¤¸¥¯¥é¥¹¤¢¤ë¤¤¤ÏÆ±¤¸¥â¥¸¥å¡¼¥ë¤ÎÆ±¤¸¥á¥½¥Ã¥É¤òÉ½¤¹¾ì¹ç¤Ë
-true ¤òÊÖ¤·¤Þ¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã¨ other ãŒåŒã˜ã‚¯ãƒ©ã‚¹ã‚ã‚‹ã„ã¯åŒã˜ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®åŒã˜ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¡¨ã™å ´åˆã«
+true ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã« false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ÈÈæ³Ó¤·¤¿¤¤¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£
+@param other è‡ªèº«ã¨æ¯”è¼ƒã—ãŸã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   a = String.instance_method(:size)
   b = String.instance_method(:size)
@@ -16,6 +16,4 @@ true ¤òÊÖ¤·¤Þ¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Þ¤¹¡£
   
   c = Array.instance_method(:size)
   p a == c                            #=> false
-
-@see [[m:UnboundMethod#eql?]]
 

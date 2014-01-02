@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- delete_passwd(realm, user)
-realm ¤ËÂ°¤¹¤ë¥æ¡¼¥¶ user ¤Î¥Ñ¥¹¥ï¡¼¥É¤òºï½ü¤·¤Ş¤¹¡£
+realm ã«å±ã™ã‚‹ãƒ¦ãƒ¼ã‚¶ user ã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
-@param realm ¥ì¥ë¥à¤ò»ØÄê¤·¤Ş¤¹¡£
+@param realm ãƒ¬ãƒ«ãƒ ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param user ¥æ¡¼¥¶Ì¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param user ãƒ¦ãƒ¼ã‚¶åã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

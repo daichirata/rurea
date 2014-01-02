@@ -5,19 +5,19 @@ kind=added
 --- check_sizeof(type, headers = nil) -> Integer | nil
 --- check_sizeof(type, headers = nil){ ... } -> Integer | nil
 
-Ϳ����줿���Υ��������֤��ޤ���
+与えられた型のサイズを返します。
 
-�� type �������ƥ��¸�ߤ�����ϡ��������Х��ѿ� [[m:$defs]] ��
-"-DSIZEOF_type=X" ���ɲä������Υ��������֤��ޤ����� type �������ƥ��
-¸�ߤ��ʤ����ϡ�nil ���֤��ޤ���
+型 type がシステムに存在する場合は、グローバル変数 [[m:$defs]] に
+"-DSIZEOF_type=X" を追加し、型のサイズを返します。型 type がシステムに
+存在しない場合は、nil を返します。
 
-�㤨�С�
+例えば、
 
   check_sizeof('mystruct') # => 12
 
-�Ǥ����硢SIZEOF_MYSTRUCT=12 �Ȥ����ץ�ץ����å��ޥ����򥳥�ѥ�����Ϥ��ޤ���
+である場合、SIZEOF_MYSTRUCT=12 というプリプロセッサマクロをコンパイラに渡します。
 
-@param type ����������������ꤷ�ޤ���
+@param type 検査したい型を指定します。
 
-@param headers �ɲäΥإå��ե��������ꤷ�ޤ���
+@param headers 追加のヘッダファイルを指定します。
 

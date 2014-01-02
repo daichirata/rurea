@@ -4,6 +4,6 @@ kind=defined
 
 --- info? -> bool
 
-���ߤ� Logger ���֥������Ȥ� INFO �ʾ�Υ�����٥�Υ�å�������Ͽ����ʤ�
-�����֤��ޤ���
+現在の Logger オブジェクトが INFO 以上のログレベルのメッセージを記録するなら
+真を返します。
 

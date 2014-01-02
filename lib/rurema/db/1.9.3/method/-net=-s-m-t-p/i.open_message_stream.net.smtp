@@ -4,19 +4,19 @@ kind=defined
 
 --- open_message_stream(from_addr, *to_addrs) {|f| .... } -> ()
 --- ready(from_addr, *to_addrs) {|f| .... } -> ()
-�᡼��񤭹��ߤν����򤷡��񤭹�����Υ��ȥ꡼�४�֥������Ȥ�
-�֥��å����Ϥ��ޤ����֥��å���λ�塢�񤭤������̤�
-�����ޤ���
+メール書き込みの準備をし、書き込み先のストリームオブジェクトを
+ブロックに渡します。ブロック終了後、書きこんだ結果が
+送られます。
 
-�Ϥ���륹�ȥ꡼�४�֥������Ȥϰʲ��Υ᥽�åɤ���äƤ��ޤ���
-  * puts(str = '') str����Ϥ��� CR LF�����
-  * print(str)     str�����
-  * printf(fmt, *args)   sprintf(fmt,*args) �����
-  * write(str)::         str ����Ϥ��ƽ񤭹�����Х��ȿ����֤�
-  * <<(str)::            str ����Ϥ��ƥ��ȥ꡼�४�֥������ȼ��Ȥ��֤�
+渡されるストリームオブジェクトは以下のメソッドを持っています。
+  * puts(str = '') strを出力して CR LFを出力
+  * print(str)     strを出力
+  * printf(fmt, *args)   sprintf(fmt,*args) を出力
+  * write(str)::         str を出力して書き込んだバイト数を返す
+  * <<(str)::            str を出力してストリームオブジェクト自身を返す
 
-from_domain �������Υ᡼�륢�ɥ쥹 ('...@...'�Τ�����) ��
-to_addrs �ˤ�������᡼�륢�ɥ쥹��ʸ������Ϥ��ޤ���
+from_domain は送り主のメールアドレス ('...@...'のかたち) 、
+to_addrs には送信先メールアドレスを文字列で渡します。
 
   require 'net/smtp'
 
@@ -30,18 +30,18 @@ to_addrs �ˤ�������᡼�륢�ɥ쥹��ʸ������Ϥ��ޤ���
     }
   }
 
-ready �� obsolete �Ǥ���
+ready は obsolete です。
 
-@param from_addr �������Υ᡼�륢�ɥ쥹
-@param to_addrs ������Υ᡼�륢�ɥ쥹(ʣ���ġ����ʤ��Ȥ�1��)
+@param from_addr 送信元のメールアドレス
+@param to_addrs 送信先のメールアドレス(複数可、少なくとも1個)
 
-@raise IOError ���Ǥ˥��å���󤬽�λ���Ƥ������ȯ�����ޤ�
-@raise TimeoutError ��³�������ॢ���Ȥ�������ȯ�����ޤ�
-@raise Net::SMTPServerBusy SMTP���顼������420,450�ξ���ȯ�����ޤ�
-@raise Net::SMTPSyntaxError SMTP���顼������500�ξ���ȯ�����ޤ�
-@raise Net::SMTPFatalError SMTP���顼������5xx�ξ���ȯ�����ޤ�
-@raise Net::SMTPAuthenticationError ������ɬ�פ�ǧ�ڤ�ԤäƤ��ʤ��ä�����ȯ�����ޤ�
-@raise Net::SMTPUnknownError SMTP���顼�����ɤ��ץ��ȥ���������ʾ���ȯ�����ޤ�
+@raise IOError すでにセッションが終了している場合に発生します
+@raise TimeoutError 接続がタイムアウトした場合に発生します
+@raise Net::SMTPServerBusy SMTPエラーコード420,450の場合に発生します
+@raise Net::SMTPSyntaxError SMTPエラーコード500の場合に発生します
+@raise Net::SMTPFatalError SMTPエラーコード5xxの場合に発生します
+@raise Net::SMTPAuthenticationError 送信に必要な認証を行っていなかった場合に発生します
+@raise Net::SMTPUnknownError SMTPエラーコードがプロトコル上不正な場合に発生します
 
 @see [[m:Net::SMTP#send_message]]
 

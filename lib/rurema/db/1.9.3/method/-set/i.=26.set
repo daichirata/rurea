@@ -5,12 +5,12 @@ kind=defined
 --- intersection(enum) -> Set
 --- &(enum) -> Set
 
-������ʬ�����ʤ����2�Ĥν���Τ�����ˤ�°���뤹�٤Ƥ����Ǥ���ʤ�
-�������������ޤ���
+共通部分、すなわち、2つの集合のいずれにも属するすべての要素からなる
+新しい集合を作ります。
 
-@param enum each �᥽�åɤ�������줿���֥������Ȥ���ꤷ�ޤ���
-@raise NoMethodError ���� enum �� each �᥽�åɤ��������Ƥ��ʤ�����
-       ȯ�����ޤ���
+@param enum each メソッドが定義されたオブジェクトを指定します。
+@raise NoMethodError 引数 enum に each メソッドが定義されていない場合に
+       発生します。
 
   s1 = Set[10, 20, 30]
   s2 = Set[10, 30, 50]

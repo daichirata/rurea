@@ -5,26 +5,26 @@ kind=defined
 --- spawn(command, options={}) -> Integer
 --- spawn(env, command, options={}) -> Integer
 
-�����������ޥ�ɤȤ��Ƽ¹Ԥ��ޤ�������������
-�ҥץ������ν�λ���Ԥ���碌�ޤ������������ҥץ������Υץ�����ID���֤��ޤ���
+引数を外部コマンドとして実行しますが、生成した
+子プロセスの終了を待ち合わせません。生成した子プロセスのプロセスIDを返します。
 
 
-==== �����β��
+==== 引数の解釈
 
-���η����Ǥ� command �� shell �Υ᥿ʸ��
+この形式では command が shell のメタ文字
 //emlist{
   * ? {} [] <> () ~ & | \ $ ; ' ` " \n
 //}
-��ޤ��硢shell ��ͳ�Ǽ¹Ԥ���ޤ���
-�����Ǥʤ���Х��󥿥ץ꥿����ľ�ܼ¹Ԥ���ޤ���
+を含む場合、shell 経由で実行されます。
+そうでなければインタプリタから直接実行されます。
 
 
-@param command ���ޥ�ɤ�ʸ����ǻ��ꤷ�ޤ���
-@param env ��������Ķ��ѿ���ɽ�� Hash
-@param options ���ץ����ѥ�᡼�� Hash
-@raise Errno::EXXX ��ư�˼��Ԥ���ruby ���󥿥ץ꥿�����椬��ä�����ȯ�����ޤ���
+@param command コマンドを文字列で指定します。
+@param env 更新する環境変数を表す Hash
+@param options オプションパラメータ Hash
+@raise Errno::EXXX 起動に失敗し、ruby インタプリタに制御が戻った場合に発生します。
 
-@raise Errno::EXXX ���ޥ�ɤ��¹ԤǤ��ʤ��ä�����ȯ�����ޤ���
+@raise Errno::EXXX コマンドが実行できなかった場合に発生します。
 
 
 @see [[m:Kernel.#system]],[[m:Kernel.#exec]]
@@ -32,229 +32,229 @@ kind=defined
 --- spawn(program, *args) -> Integer
 --- spawn(env, program, *args, options={}) -> Integer
 
-�����������ޥ�ɤȤ��Ƽ¹Ԥ��ޤ�������������
-�ҥץ������ν�λ���Ԥ���碌�ޤ������������ҥץ������Υץ�����ID���֤��ޤ���
+引数を外部コマンドとして実行しますが、生成した
+子プロセスの終了を待ち合わせません。生成した子プロセスのプロセスIDを返します。
 
-env �� Hash ���Ϥ����Ȥǡ�[[man:exec(2)]] �ǻҥץ��������
-�ե������¹Ԥ������˴Ķ��ѿ����ѹ����뤳�Ȥ��Ǥ��ޤ���
-Hash �Υ����ϴĶ��ѿ�̾ʸ����Hash ���ͤ����ꤹ���ͤȤ��ޤ���
-nil �Ȥ��뤳�ȤǴĶ��ѿ������([[man:unsetenv(3)]])����ޤ���
-  # FOO �� BAR �ˤ��� BAZ ��������
+env に Hash を渡すことで、[[man:exec(2)]] で子プロセス内で
+ファイルを実行する前に環境変数を変更することができます。
+Hash のキーは環境変数名文字列、Hash の値に設定する値とします。
+nil とすることで環境変数が削除([[man:unsetenv(3)]])されます。
+  # FOO を BAR にして BAZ を削除する
   pid = spawn({"FOO"=>"BAR", "BAZ"=>nil}, command)
 
-�ƥץ������� [[m:Process.#waitpid]] �ǻҥץ������ν�λ���Ԥ���碌�뤫
-�⤷���� [[m:Process.#detach]] �ǻҥץ��������ڤ�Υ�������Ƥ���������
-�����Ǥʤ��ȥ���ӥץ��������Ĥ��礬����ޤ���
+親プロセスは [[m:Process.#waitpid]] で子プロセスの終了を待ち合わせるか
+もしくは [[m:Process.#detach]] で子プロセスを切り離すかしてください。
+そうでないとゾンビプロセスが残る場合があります。
 
-==== �����β��
+==== 引数の解釈
 
-���η����ǸƤӽФ�����硢����� shell �Υ᥿����饯����
-���Τޤ� program �ΰ������Ϥ���ޤ���
-��Ƭ�ΰ�����2���Ǥ�����Ǥ��ä���硢��1���Ǥ�ʸ���󤬼ºݤ�
-��ư����ץ������Υѥ��Ǥ��ꡢ��2���Ǥ��֤ߤ������פΥץ�
-�����̾�ˤʤ�ޤ���
-�ޤ�����1���Ǥϥե�ѥ��ǻ��ꤷ�ʤ��Ƥ�Ķ��ѿ� PATH ����õ���ޤ���
+この形式で呼び出した場合、空白や shell のメタキャラクタも
+そのまま program の引数に渡されます。
+先頭の引数が2要素の配列であった場合、第1要素の文字列が実際に
+起動するプログラムのパスであり、第2要素が「みせかけ」のプロ
+グラム名になります。
+また、第1要素はフルパスで指定しなくても環境変数 PATH から探します。
 
-==== option�����γ���
-Hash �� options �Ȥ����Ϥ����Ȥǡ���ư�����ҥץ�������
-  * �ץ��������롼��
+==== option引数の概要
+Hash を options として渡すことで、起動される子プロセスの
+  * プロセスグループ
   * resource limit
-  * �����ȥǥ��쥯�ȥ�
+  * カレントディレクトリ
   * umask
-  * �ҥץ������ǤΥ�����쥯��
-�ʤɤ��ѹ��Ǥ��ޤ����Ķ��ѿ��Υ��ꥢ�ʤɤ����Ǥ��ޤ���
+  * 子プロセスでのリダイレクト
+などを変更できます。環境変数のクリアなども指定できます。
 
-�ʲ��Υ��ץ���󤬻���Ǥ��ޤ���
+以下のオプションが指定できます。
 
 : :unsetenv_others 
-  ����� true �ˤ���ȡ�env�ǻ��ꤷ���Ķ��ѿ��ʳ��򤹤٤ƥ��ꥢ���ޤ���
-  false ���ȥ��ꥢ���ޤ���false ���ǥե���ȤǤ���
+  これを true にすると、envで指定した環境変数以外をすべてクリアします。
+  false だとクリアしません。false がデフォルトです。
 
 : :pgroup
-  ������ true or 0 ���Ϥ��ȿ������ץ��������롼�פ��������������ư���ޤ���
-  �������Ϥ��ȡ����ꤷ���ץ��������롼�פ�°���ޤ�
-  nil ���Ϥ��ȥץ��������롼�פ��ѹ����ޤ��󡣥ǥե���Ȥ� nil �Ǥ���
+  引数に true or 0 を渡すと新しいプロセスグループを作成し、そこで動きます。
+  整数を渡すと、指定したプロセスグループに属します
+  nil を渡すとプロセスグループを変更しません。デフォルトは nil です。
 
 : :rlimit_core, :rlimit_cpu, etc
-  resource limit �����ꤷ�ޤ����ܤ����� [[m:Process.#setrlimit]] �򸫤�
-  ���������������ˤ��������⤷��������2�Ĥ�������Ϥ��ޤ���
+  resource limit を設定します。詳しくは [[m:Process.#setrlimit]] を見て
+  ください。引数には整数、もしくは整数2つの配列を渡します。
 
 : :chdir
-  ���ꤷ��ʸ����򥫥��ȥǥ��쥯�ȥ�ˤ��ޤ���
+  指定した文字列をカレントディレクトリにします。
 
 : :umask
-  ���ꤷ�������� umask �����ꤷ�ޤ���
+  指定した整数を umask に設定します。
 
-: ������쥯�ȴ�Ϣ
+: リダイレクト関連
 
-  Hash �Υ����˻ҥץ�����¦�Υե�����ǥ�����ץ���
-  �б������ͤ˿ƥץ�����¦�Υե�����ǥ�����ץ���
-  �ե�����̾����ꤹ�뤳�Ȥǥ�����쥯�Ȥ�¸��Ǥ��ޤ���
+  Hash のキーに子プロセス側のファイルデスクリプタを、
+  対応する値に親プロセス側のファイルデスクリプタや
+  ファイル名を指定することでリダイレクトを実現できます。
 
 : :close_others
-  ����� true �����ꤹ���
-  ������쥯�Ȥ���Ƥ��ʤ���0(stdin), 1(stdout), 2(stderr) �ʳ���
-  �ե�����ǥ�����ץ��򤹤٤��Ĥ��ޤ���
-  true ���ǥե���ȤǤ���
+  これを true に設定すると
+  リダイレクトされていない、0(stdin), 1(stdout), 2(stderr) 以外の
+  ファイルデスクリプタをすべて閉じます。
+  true がデフォルトです。
 
-==== option�����ˤ�������쥯�Ȥγ���
-Hash �Υ���(�ҥץ�����¦)�ˤϰʲ��Τ����줫������Ǥ��ޤ���
-  * ñ��Υե�����ǥ�����ץ�
-  * �ե�����ǥ�����ץ�������
-������Ϥ����Ȥ�ʣ���Υե�����ǥ�����ץ���Ʊ���˥�����쥯�ȤǤ��ޤ���
+==== option引数によるリダイレクトの概要
+Hash のキー(子プロセス側)には以下のいずれかが指定できます。
+  * 単一のファイルデスクリプタ
+  * ファイルデスクリプタの配列
+配列を渡すことで複数のファイルデスクリプタを同時にリダイレクトできます。
 
-Hash ����(�ƥץ�����¦)�ˤϰʲ��Τ����줫������Ǥ��ޤ���
-  * ñ��Υե�����ǥ�����ץ�
-  * ������쥯����Υե�����̾ʸ����
-  * [������쥯����Υե�����̾ʸ����]����������Ǥˤ��뤳�Ȥ�
-    [[m:File::RDONLY]] �ǥե�����򳫤��ƥ�����쥯�Ȥ��ޤ���
-  * [������쥯����Υե�����̾ʸ����, �⡼��ʸ����]
-    open(�ե�����̾, �⡼��, 0644) �ǥե�����򳫤��ƥ�����쥯��
-    ���ޤ���
-  * [������쥯����Υե�����̾ʸ����, �⡼��ʸ����, �ѡ��ߥ����(����)]
-    open(�ե�����̾, �⡼��, �ѡ��ߥå����) �ǥե������
-    �����ƥ�����쥯�Ȥ��ޤ���
-  * [:child, �ե�����ǥ�����ץ�]
-    �ҥץ�����¦�Υե�����ǥ�����ץ������Ǥ��ޤ���
-  * :close �����ǻ��ꤷ���ե�����ǥ�����ץ���ҥץ�����¦���Ĥ��ޤ�
+Hash の値(親プロセス側)には以下のいずれかが指定できます。
+  * 単一のファイルデスクリプタ
+  * リダイレクト先のファイル名文字列
+  * [リダイレクト先のファイル名文字列]、配列の要素にすることで
+    [[m:File::RDONLY]] でファイルを開いてリダイレクトします。
+  * [リダイレクト先のファイル名文字列, モード文字列]
+    open(ファイル名, モード, 0644) でファイルを開いてリダイレクト
+    します。
+  * [リダイレクト先のファイル名文字列, モード文字列, パーミション(整数)]
+    open(ファイル名, モード, パーミッション) でファイルを
+    開いてリダイレクトします。
+  * [:child, ファイルデスクリプタ]
+    子プロセス側のファイルデスクリプタを指定できます。
+  * :close キーで指定したファイルデスクリプタを子プロセス側で閉じます
 
-�ե�����ǥ�����ץ���ɽ������ˤϡ��ʲ������ѤǤ��ޤ���
-  * :in  ɸ������, �ե�����ǥ�����ץ�0
-  * :out ɸ�����, �ե�����ǥ�����ץ�1
-  * :err ɸ�२�顼����, �ե�����ǥ�����ץ�2
-  * ���� ���ꤷ��������ɽ���ե�����ǥ�����ץ�
-  * [[c:IO]] [[m:IO#fileno]] ��ɽ�����ե�����ǥ�����ץ�
+ファイルデスクリプタを表すためには、以下が利用できます。
+  * :in  標準入力, ファイルデスクリプタ0
+  * :out 標準出力, ファイルデスクリプタ1
+  * :err 標準エラー出力, ファイルデスクリプタ2
+  * 整数 指定した整数が表すファイルデスクリプタ
+  * [[c:IO]] [[m:IO#fileno]] で表されるファイルデスクリプタ
 
-==== option�����ξܺ٤������
+==== option引数の詳細および例
 
-��:unsetenv_others�פ�Ȥ��ȡ�env�ǻ��ꤷ����ΰʳ��δĶ��ѿ���
-���ꥢ���ޤ���
-  # ���٤ƤδĶ��ѿ��򥯥ꥢ
+「:unsetenv_others」を使うと、envで指定したもの以外の環境変数を
+クリアします。
+  # すべての環境変数をクリア
   pid = spawn(command, :unsetenv_others=>true)
-  # FOO ����
+  # FOO だけ
   pid = spawn({"FOO"=>"BAR"}, command, :unsetenv_others=>true)
 
-��:pgroup�פǥץ��������롼�פ����Ǥ��ޤ���
-  # true, 0 �ǿ������ץ��������롼�פ��ꤽ�Υ꡼�����ˤʤ�ޤ���
+「:pgroup」でプロセスグループを指定できます。
+  # true, 0 で新しいプロセスグループを作りそのリーダーになります。
   pid = spawn(command, :pgroup => true)
-  # �������Ϥ��Ȥ��Υ��롼�פ˽�°���ޤ���
+  # 整数を渡すとそのグループに所属します。
   pid = spawn(command, :pgroup => 10)
 
-��:rlimit_core�ס�:rlimit_cpu�פʤɤǡ�resource limit ����ꤷ�ޤ���
-�ܤ����� [[m:Process.#setrlimit]] �򸫤Ƥ���������
-���Υ��ץ����ˤ� ���� or ����2�Ĥ����󡢤��Ϥ����Ȥ��Ǥ��ޤ���
-���줾�� [[m:Process.#setrlimit]] �ΰ�����2�ġ�3�Ĥξ����б����ޤ���
-  # ���ץ������� core �� resource limit �����
+「:rlimit_core」「:rlimit_cpu」などで、resource limit を指定します。
+詳しくは [[m:Process.#setrlimit]] を見てください。
+このオプションには 整数 or 整数2つの配列、を渡すことができます。
+それぞれ [[m:Process.#setrlimit]] の引数が2個、3個の場合に対応します。
+  # 現プロセスの core の resource limit を取得
   cur, max = Process.getrlimit(:CORE)
-  # ���Ū�˻ҥץ������� core dump ��ߤ��
+  # 一時的に子プロセスの core dump を止める
   pid = spawn(command, :rlimit_core=>[0,max]) # disable core temporary.
-  # �ҥץ������� core dump ��Ф���褦�ˤ���
+  # 子プロセスで core dump を出せるようにする
   pid = spawn(command, :rlimit_core=>max) # enable core dump
-  # �ҥץ������� core dump ��Ф��ʤ�����
+  # 子プロセスで core dump を出せなくする
   pid = spawn(command, :rlimit_core=>0) # never dump core.
 
-��:chdir�פǻҥץ������Υ����ȥǥ��쥯�ȥ���ѹ��Ǥ��ޤ���
+「:chdir」で子プロセスのカレントディレクトリを変更できます。
   pid = spawn(command, :chdir=>"/var/tmp")
 
-��:umask�פǻҥץ������� umask �����Ǥ��ޤ���
+「:umask」で子プロセスの umask を指定できます。
    pid = spawn(command, :umask=>077)
 
-������쥯�Ȥ��͡��ʤ�꤫�����Ȥ��ޤ���
-Hash �Υ������ҥץ�����¦���ͤ��ƥץ�����¦�Ǥ���
-  # �ʲ�����Ϥ��٤� stderr �� stdout �˥�����쥯�Ȥ��ޤ�
+リダイレクトは様々なやりかたが使えます。
+Hash のキーが子プロセス側、値が親プロセス側です。
+  # 以下の例はすべて stderr を stdout にリダイレクトします
   pid = spawn(command, :err=>:out)
   pid = spawn(command, 2=>1)
   pid = spawn(command, STDERR=>:out)
   pid = spawn(command, STDERR=>STDOUT)
-������Ǥϻҥץ�����¦�� stdout �ˤϿ���Ƥ��ʤ��Τǡ�
-�ƥץ�������������Ѥ���ޤ���
+この例では子プロセス側の stdout には触れていないので、
+親プロセスから引き継がれます。
 
-Hash ���ͤˤϥե�����̾�����Ǥ��ޤ���
+Hash の値にはファイル名も指定できます。
   pid = spawn(command, :in=>"/dev/null") # read mode
   pid = spawn(command, :out=>"/dev/null") # write mode
   pid = spawn(command, :err=>"log") # write mode
   pid = spawn(command, 3=>"/dev/null") # read mode
-stdout �� stderr �������쥯�Ȥ������ϡ�
-�ե������ write mode �� open ����ޤ�������ʳ��ξ���
-read mode �� open ����ޤ���
+stdout と stderr をリダイレクトした場合は、
+ファイルは write mode で open されます。それ以外の場合は
+read mode で open されます。
 
-�ե�����Υե饰(write/read mode)��ѡ��ߥå���������������
-���ϡ�������Ѥ��ޤ���
-  # �ʤˤ���꤬�ʤ���Хǥե���Ȥ� read mode ���Ȥ��롣
+ファイルのフラグ(write/read mode)やパーミッションを明示したい
+場合は、配列を用います。
+  # なにも指定がなければデフォルトで read mode が使われる。
   pid = spawn(command, :in=>["file"]) 
-  # read mode �� file �� open ����������쥯�Ȥ��롣
+  # read mode で file を open し、リダイレクトする。
   pid = spawn(command, :in=>["file", "r"])
-  # write mode �� file �� open ����������쥯�Ȥ��롣
-  # �ѡ��ߥå����ϥǥե���Ȥ� 644��
+  # write mode で file を open し、リダイレクトする。
+  # パーミッションはデフォルトで 644。
   pid = spawn(command, :out=>["log", "w"]) # 0644 assumed
-  # write mode���ѡ��ߥå���� 0600 �ǥե�����򥪡��ץ󤷡�������쥯�Ȥ��롣
+  # write mode、パーミッション 0600 でファイルをオープンし、リダイレクトする。
   pid = spawn(command, :out=>["log", "w", 0600])
-  # flag��ʸ����Ǥʤ��ӥåȤǻ��ꤹ��
+  # flagを文字列でなくビットで指定する
   pid = spawn(command, :out=>["log", File::WRONLY|File::EXCL|File::CREAT, 0600])
 
-�����ʣ���Υե�����ǥ�����ץ���Ʊ���˥�����쥯�ȤǤ��ޤ���
-  # stdout �� stderr �� "log" �ե�����˥�����쥯��
+配列で複数のファイルデスクリプタを同時にリダイレクトできます。
+  # stdout と stderr を "log" ファイルにリダイレクト
   pid = spawn(command, [:out, :err]=>["log", "w"])
 
-ʣ���Υե�����ǥ�����ץ����碌�ƥ�����쥯�Ȥ���ˤϡ�
-[ :child, FileDescriptor ] ��Ȥ����Ȥ�Ǥ��ޤ���
-����ϻҥץ�����¦�� FileDescriptor �˥�����쥯�Ȥ��뤳�Ȥ��̣���ޤ���
-����ϥե�����ǥ�����ץ���ľ�ܻ��ꤹ��ΤȰۤʤ�Ȥ������Ȥ�
-���դ��Ƥ���������
-�㤨�С�
+複数のファイルデスクリプタを合わせてリダイレクトするには、
+[ :child, FileDescriptor ] を使うこともできます。
+これは子プロセス側で FileDescriptor にリダイレクトすることを意味します。
+これはファイルデスクリプタを直接指定するのと異なるということに
+注意してください。
+例えば、
   :err => :out 
-�Ȥ���ȡ��ҥץ������� stderr ��ƥץ������� stdout �˥�����쥯�Ȥ��ޤ���
+とすると、子プロセスの stderr を親プロセスの stdout にリダイレクトします。
   :err => [:child, :out]
-�Ȥ���ȡ��ҥץ������� stderr ��ҥץ������� stdout �˥�����쥯�Ȥ��ޤ���
-������Ѥ��ơ�[[m:IO.popen]] �ǡ��ҥץ�������
-stderr �� stdout �򺮤������ʲ��˼����ޤ���
+とすると、子プロセスの stderr を子プロセスの stdout にリダイレクトします。
+これを用いて、[[m:IO.popen]] で、子プロセスの
+stderr と stdout を混ぜる例を以下に示します。
   io = IO.popen(["sh", "-c", "echo out; echo err >&2", :err=>[:child, :out]])
   p io.read #=> "out\nerr\n
 
-spawn �� IO.popen �Ǥ�
-�ǥե���ȤǤ���ɸ��Ū�ʥե�����ǥ�����ץ�(3�ʹ�)�򤹤٤��Ĥ��ޤ���
-��:close_others�ץ��ץ����Ǥ��ε�ư������Ǥ��ޤ���
-ɸ��Ū�ե�����ǥ�����ץ�(0,1,2)�� :close ������Ū���Ĥ��ʤ�
-�¤ꡢ���Υ��ץ����αƶ�������ޤ���
+spawn と IO.popen では
+デフォルトでは非標準的なファイルデスクリプタ(3以降)をすべて閉じます。
+「:close_others」オプションでこの挙動を制御できます。
+標準的ファイルデスクリプタ(0,1,2)は :close で明示的に閉じない
+限り、このオプションの影響を受けません。
   pid = spawn(command, :close_others=>true)  # close 3,4,5,... (default)
   pid = spawn(command, :close_others=>false) # don't close 3,4,5,...
 
-��������Ѥ��� spawn �� [[m:IO.popen]] �Τ褦�˻Ȥ����Ȥ��Ǥ��ޤ���
+これを利用して spawn を [[m:IO.popen]] のように使うことができます。
   # similar to r = IO.popen(command)
   r, w = IO.pipe
-  pid = spawn(command, :out=>w)   # r �ϻҥץ��������Ĥ�����
+  pid = spawn(command, :out=>w)   # r は子プロセスで閉じられる
   w.close
 
-��:close�פ�Ȥäƥե�����ǥ�����ץ�������Ū���Ĥ��뤳�Ȥ�Ǥ��ޤ���
+「:close」を使ってファイルデスクリプタを明示的に閉じることもできます。
   f = open(foo)
-  # f �ϷѾ�����ʤ�
-  # system �� :close_others=>false ���ǥե���ȤʤΤǤ���ʳ��ϷѾ������
+  # f は継承されない
+  # system は :close_others=>false がデフォルトなのでそれ以外は継承される
   system(command, f=>:close)        # don't inherit f.
 
-spawn ������Υե�����ǥ�����ץ�������Ѿ����������ϡ�
-io => io �Ȥ������Υ��ץ�������ꤷ�ޤ���
-  # valgrind �� --log-fd �Ȥ������ץ����ǥ����ν���������Ǥ��ޤ���
-  # ����ǻ��ꤷ���ե�����ǥ�����ץ��Ͽƥץ���������
-  # �ҥץ������˷Ѿ�����ʤ���Фʤ�ʤ����ᡢ log_w=>log_w �Ȥ��ޤ���
+spawn で特定のファイルデスクリプタだけを継承したい場合は、
+io => io という形のオプションを指定します。
+  # valgrind は --log-fd というオプションでログの出力先を指定できます。
+  # これで指定したファイルデスクリプタは親プロセスから
+  # 子プロセスに継承されなければならないため、 log_w=>log_w とします。
   log_r, log_w = IO.pipe
   pid = spawn("valgrind", "--log-fd=#{log_w.fileno}", "echo", "a", log_w=>log_w)
   log_w.close
   p log_r.read
 
-�ե�����ǥ�����ץ��������ؤ��뤳�Ȥ�Ǥ��ޤ���
-  # stdout �� stderr �������ؤ�������쥯��
+ファイルデスクリプタを入れ替えることもできます。
+  # stdout と stderr を入れ替えリダイレクト
   pid = spawn(command, :out=>:err, :err=>:out)
-���Τ褦����߻��Ȥ��褹�뤿�ᡢspawn�������ǿ�����
-�ե�����ǥ�����ץ����ꡢ���Ѥ��ޤ���
+このような相互参照を解決するため、spawnの内部で新しい
+ファイルデスクリプタを作り、利用します。
 
-@param env ��������Ķ��ѿ���ɽ�� Hash
-@param program ʸ����2���Ǥ��������ꤷ�ޤ���
-@param args �Ϥ��������Ǥ���0 �İʾ��ʸ�������ꤷ�ޤ���
-@param options ���ץ����ѥ�᡼�� Hash
+@param env 更新する環境変数を表す Hash
+@param program 文字列か2要素の配列を指定します。
+@param args 渡される引数です。0 個以上の文字列を指定します。
+@param options オプションパラメータ Hash
 
-@raise ArgumentError �����������󤫤����ǿ��� 2 �Ǥʤ�����ȯ�����ޤ���
+@raise ArgumentError 第一引数が配列かつ要素数が 2 でない場合に発生します。
 
-@raise Errno::EXXX ���ޥ�ɤ��¹ԤǤ��ʤ��ä�����ȯ�����ޤ���
+@raise Errno::EXXX コマンドが実行できなかった場合に発生します。
 
 @see [[m:Kernel.#system]],[[m:Kernel.#exec]]
 

@@ -5,9 +5,11 @@ kind=defined
 --- eql?(other)     -> bool
 --- ==(other)       -> bool
 
-�ݥ��󥿤λؤ����ɥ쥹��Ʊ�줫�ɤ�����Ƚ�ꤷ�ޤ���
+ポインタの指すアドレスが同一かどうかを判定します。
 
-��:
+@param other 比較対象の CPtr オブジェクト
+
+例:
 
  require 'dl' 
  

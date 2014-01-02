@@ -8,18 +8,18 @@ kind=defined
 --- to_pem(cipher=nil, pass=nil){|flag| ... } -> String
 --- to_s(cipher=nil, pass=nil) -> String
 --- to_s(cipher=nil, pass=nil){|flag| ... } -> String
-���� PEM �����ǽ��Ϥ��ޤ���
+鍵を PEM 形式で出力します。
 
-cipher �� pass �����ꤵ�줿��硢
-��̩����Ź� cipher [[c:OpenSSL::Cipher::Cipher]] 
-�ȥѥ���� pass ��ȤäưŹ沽���ޤ���
+cipher と pass が指定された場合、
+秘密鍵を暗号 cipher [[c:OpenSSL::Cipher::Cipher]] 
+とパスワード pass を使って暗号化します。
 
-cipher ����ꤷ�� pass ���ά��������
-�Ϥ��줿�֥��å���ƤӤ����ƥѥ��ե졼�����׵ᤷ�ޤ����֥��å����֤��ͤ�
-�ѥ��ե졼���Ȥߤʤ��ưŹ沽���ޤ���
-�֥��å��ΰ������̾�� true ���Ϥ���ޤ�����
-����Ϥ��Υѥ��ե졼������̩���ΰŹ沽�˻Ȥ��뤳�Ȥ��̣���ޤ���
-�֥��å����Ϥ���ʤ��ä����ˤϥ����ߥʥ���䤤��碌�򤷤ޤ���
+cipher を指定して pass を省略した場合は
+渡されたブロックを呼びだしてパスフレーズを要求します。ブロックの返り値を
+パスフレーズとみなして暗号化します。
+ブロックの引数は通常は true が渡されますが、
+これはそのパスフレーズが秘密鍵の暗号化に使われることを意味します。
+ブロックが渡されなかった場合にはターミナルに問い合わせをします。
 
-����������Ϥ������ cipher �� pass ��̵�뤵��ޤ���
+公開鍵を出力する場合は cipher と pass は無視されます。
 

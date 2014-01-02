@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- media_type -> String
-MIME д╬есе╟егеве┐еде╫дЄ╩╓д╖д▐д╣бг
+MIME уБоуГбуГЗуВгуВвуВ┐уВдуГЧуВТш┐ФуБЧуБ╛уБЩуАВ
 
 @see [[m:Net::IMAP::BodyTypeBasic#subtype]]
 

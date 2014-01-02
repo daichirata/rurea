@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- request_method          -> String | nil
-�ꥯ�����Ȥ� HTTP �᥽�åɤ��֤��ޤ���
+リクエストの HTTP メソッドを返します。
 

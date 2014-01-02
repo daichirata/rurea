@@ -4,9 +4,9 @@ kind=defined
 
 --- [](i) -> object
 
-i���ܤΥɥ�����Ȥ򻲾Ȥ��ޤ���
+i番目のドキュメントを参照します。
 
-@param i ���Ȥ������ɥ�����Ȥ��ֹ����ꤷ�ޤ���
+@param i 参照したいドキュメントの番号を指定します。
 
   require 'yaml'
   

@@ -4,8 +4,8 @@ kind=defined
 
 --- path_ok?(spec) -> bool
 
-���󥤥󥹥ȡ�����ꤵ��Ƥ��� Gem �����󥹥ȡ��뤵��Ƥ���ѥ�������å����ޤ���
+アンインストール指定されている Gem がインストールされているパスをチェックします。
 
-@param spec [[c:Gem::Specification]] ����ꤷ�ޤ���
+@param spec [[c:Gem::Specification]] を指定します。
 
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- newline    -> String
 
-���Ȥβ���ʸ�����֤��ޤ���
+自身の改行文字を返します。
 

@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-ASN.1 ¤Î Boolean ·¿(Universal ¥¿¥°¤Î¥¿¥°ÈÖ¹æ1)¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+ASN.1 ã® Boolean å‹(Universal ã‚¿ã‚°ã®ã‚¿ã‚°ç•ªå·1)ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

@@ -5,10 +5,10 @@ kind=defined
 --- html_escape(s) -> String
 --- h(s) -> String
 
-ʸ���� s �� HTML�Ѥ˥��������פ���ʸ������֤��ޤ���
+文字列 s を HTML用にエスケープした文字列を返します。
 
-ʸ���� s ��˴ޤޤ��  &"<> �򡢼��λ��� &amp; &quot; &lt; &gt; �ˤ��줾���ѹ�����ʸ������֤��ޤ�
-([[m:CGI.escapeHTML]]�Ȥۤ�Ʊ���Ǥ�)��
+文字列 s 中に含まれる  &"<> を、実体参照 &amp; &quot; &lt; &gt; にそれぞれ変更した文字列を返します
+([[m:CGI.escapeHTML]]とほぼ同じです)。
 
-@param s HTML���������פ�Ԥ�ʸ����
+@param s HTMLエスケープを行う文字列
 

@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- delete(path, initheader = nil) -> Net::HTTPResponse
-�����Ф� path �� DELETE �ꥯ�����Ȥ�
-�إå��� initheader �Ȥ�������ޤ���
+サーバの path に DELETE リクエストを
+ヘッダを initheader として送ります。
 
-�쥹�ݥ󥹤� [[c:Net::HTTPResponse]] �Υ��֥�������
-���֤��ޤ���
+レスポンスを [[c:Net::HTTPResponse]] のオブジェクト
+で返します。
 
-@param path �ꥯ�����Ȥ�����ѥ���ʸ�����Ϳ���ޤ���
-@param initheader �ꥯ�����ȤΥإå����ʸ����=>ʸ����פ�
-                  �ϥå����Ϳ���ޤ���
+@param path リクエストを送るパスを文字列で与えます。
+@param initheader リクエストのヘッダを「文字列=>文字列」の
+                  ハッシュで与えます。
 
 @see [[c:Net::HTTP::Delete]]
 

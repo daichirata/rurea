@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- new(address, protocol, bitmap) -> Resolv::DNS::Resource::IN::WKS
-Resolv::DNS::Resource::IN::WKS ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+Resolv::DNS::Resource::IN::WKS ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param address IPv4¥¢¥É¥ì¥¹
-@param protocol IP¥×¥í¥È¥³¥ëÈÖ¹æ
-@param bitmap ¥Ó¥Ã¥È¥Ş¥Ã¥×
+@param address IPv4ã‚¢ãƒ‰ãƒ¬ã‚¹
+@param protocol IPãƒ—ãƒ­ãƒˆã‚³ãƒ«ç•ªå·
+@param bitmap ãƒ“ãƒƒãƒˆãƒãƒƒãƒ—
 
 

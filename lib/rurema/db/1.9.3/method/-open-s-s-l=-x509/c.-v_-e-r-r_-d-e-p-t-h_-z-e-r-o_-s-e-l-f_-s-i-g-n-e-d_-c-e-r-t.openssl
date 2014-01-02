@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- V_ERR_DEPTH_ZERO_SELF_SIGNED_CERT -> Integer
-╦║╬з╓╥╓ф╓╓╓К╬злю╫Я╓╛╔К║╪╔х CA (╪╚╦й╫Пл╬╬злю╫Я)╓г╓╒╓Й║╒
-╓╫╓Л╓╛©╝мЙ╓╣╓Л╓ф╓╓╓К╬злю╫Я╓г╓й╓╓╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+Ф╓°Х╗╪Ц│≈Ц│╕Ц│└Ц┌▀Х╗╪Ф≤▌Ф⌡╦Ц│▄Ц┐╚Ц┐╪Ц┐┬ CA (Х┤╙Е╥╠Г╫╡Е░█Х╗╪Ф≤▌Ф⌡╦)Ц│╖Ц│┌Ц┌┼Ц─│
+Ц│²Ц┌▄Ц│▄Д©║И═╪Ц│∙Ц┌▄Ц│╕Ц│└Ц┌▀Х╗╪Ф≤▌Ф⌡╦Ц│╖Ц│╙Ц│└Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::X509::Store#error]] ╓Д
-[[m:OpenSSL::X509::StoreContext#error]] ╓н╔╗╔И║╪╔Ё║╪╔и╓х╓╥╓ф
-╩х╓О╓Л╓ч╓╧║ё
+[[m:OpenSSL::X509::Store#error]] Ц┌└
+[[m:OpenSSL::X509::StoreContext#error]] Ц│╝Ц┌╗Ц┐╘Ц┐╪Ц┌ЁЦ┐╪Ц┐┴Ц│╗Ц│≈Ц│╕
+Д╫©Ц┌▐Ц┌▄Ц│╬Ц│≥Ц─┌
 
 @see [[m:OpenSSL::X509::Store#add_file]],
      [[m:OpenSSL::X509::Store#add_path]],

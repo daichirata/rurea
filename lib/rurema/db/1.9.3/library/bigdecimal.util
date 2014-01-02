@@ -3,9 +3,10 @@ classes=
 methods=Float/i.to_d.bigdecimal.util,String/i.to_d.bigdecimal.util,BigDecimal/i.to_digits.bigdecimal.util,BigDecimal/i.to_d.bigdecimal.util,Rational/i.to_d.bigdecimal.util,Integer/i.to_d.bigdecimal.util
 sublibraries=
 is_sublibrary=true
+category=
 
-String¡¢Integer¡¢Float¡¢Rational ¥ª¥Ö¥¸¥§¥¯¥È¤ò
-BigDecimal ¥ª¥Ö¥¸¥§¥¯¥È¤ËÊÑ´¹¤¹¤ëµ¡Ç½¤òÄó¶¡¤·¤Ş¤¹¡£
+Stringã€Integerã€Floatã€Rational ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’
+BigDecimal ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¤‰æ›ã™ã‚‹æ©Ÿèƒ½ã‚’æä¾›ã—ã¾ã™ã€‚
 
  * [[m:String#to_d]]
  * [[m:Integer#to_d]]
@@ -13,5 +14,5 @@ BigDecimal ¥ª¥Ö¥¸¥§¥¯¥È¤ËÊÑ´¹¤¹¤ëµ¡Ç½¤òÄó¶¡¤·¤Ş¤¹¡£
  * [[m:Rational#to_d]]
 
 
-¤³¤ì¤é¤Î¥á¥½¥Ã¥É¤ò»È¤¦¤Ë¤Ï 'bigdecimal' ¤È 'bigdecimal/util'¤ò require
-¤¹¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹¡£
+ã“ã‚Œã‚‰ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’ä½¿ã†ã«ã¯ 'bigdecimal' ã¨ 'bigdecimal/util'ã‚’ require
+ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚

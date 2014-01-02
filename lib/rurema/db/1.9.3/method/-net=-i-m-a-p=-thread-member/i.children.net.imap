@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- children -> [Net::IMAP::ThreadMember]
-����åɤ��ڹ�¤�ˤ����뼫�Ȥβ��̤���ʬ���֤��ޤ���
+スレッドの木構造における自身の下位の部分を返します。
 
 

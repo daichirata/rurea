@@ -3,34 +3,35 @@ classes=Win32=Registry,Win32=Registry=API,Win32=Registry=Error,Win32=Registry=Pr
 methods=
 sublibraries=
 is_sublibrary=false
+category=Windows
 
-win32/registry ¤Ï Win32 ¥×¥é¥Ã¥È¥Õ¥©¡¼¥à¤Ç¥ì¥¸¥¹¥È¥ê¤ò¥¢¥¯¥»¥¹¤¹¤ë¤¿¤á¤Î
-¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£Win32 API ¤Î¸Æ¤Ó½Ğ¤·¤Ë [[c:Win32API]] ¤ò»È¤¤¤Ş¤¹¡£
+win32/registry ã¯ Win32 ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ãƒ¬ã‚¸ã‚¹ãƒˆãƒªã‚’ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ãŸã‚ã®
+ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚Win32 API ã®å‘¼ã³å‡ºã—ã« [[c:Win32API]] ã‚’ä½¿ã„ã¾ã™ã€‚
 
 //emlist{
 Win32::Registry::HKEY_CURRENT_USER.open('SOFTWARE\foo') do |reg|
-  value = reg['foo']                               # ÃÍ¤ÎÆÉ¤ß¹ş¤ß
-  value = reg['foo', Win32::Registry::REG_SZ]      # ·¿¤ò¸ÂÄê¤·¤¿ÆÉ¤ß¹ş¤ß
-  type, value = reg.read('foo')                    # ÃÍ¤ÎÆÉ¤ß¹ş¤ß
-  reg['foo'] = 'bar'                               # ÃÍ¤Î½ñ¤­¹ş¤ß
-  reg['foo', Win32::Registry::REG_SZ] = 'bar'      # ·¿»ØÄêÉÕ¤­ÃÍ¤Î½ñ¤­¹ş¤ß
-  reg.write('foo', Win32::Registry::REG_SZ, 'bar') # ÃÍ¤Î½ñ¤­¹ş¤ß
+  value = reg['foo']                               # å€¤ã®èª­ã¿è¾¼ã¿
+  value = reg['foo', Win32::Registry::REG_SZ]      # å‹ã‚’é™å®šã—ãŸèª­ã¿è¾¼ã¿
+  type, value = reg.read('foo')                    # å€¤ã®èª­ã¿è¾¼ã¿
+  reg['foo'] = 'bar'                               # å€¤ã®æ›¸ãè¾¼ã¿
+  reg['foo', Win32::Registry::REG_SZ] = 'bar'      # å‹æŒ‡å®šä»˜ãå€¤ã®æ›¸ãè¾¼ã¿
+  reg.write('foo', Win32::Registry::REG_SZ, 'bar') # å€¤ã®æ›¸ãè¾¼ã¿
 
-  reg.each_value { |name, type, data| ... }        # ÃÍ¤ÎÎóµó
-  reg.each_key { |key, wtime| ... }                # ¥µ¥Ö¥­¡¼¤ÎÎóµó
+  reg.each_value { |name, type, data| ... }        # å€¤ã®åˆ—æŒ™
+  reg.each_key { |key, wtime| ... }                # ã‚µãƒ–ã‚­ãƒ¼ã®åˆ—æŒ™
 
-  reg.delete_value('foo')                          # ÃÍ¤Îºï½ü
-  reg.delete_key('foo')                            # ¥µ¥Ö¥­¡¼¤Îºï½ü
-  reg.delete_key('foo', true)                      # ¥µ¥Ö¥­¡¼¤ÎºÆµ¢ºï½ü
+  reg.delete_value('foo')                          # å€¤ã®å‰Šé™¤
+  reg.delete_key('foo')                            # ã‚µãƒ–ã‚­ãƒ¼ã®å‰Šé™¤
+  reg.delete_key('foo', true)                      # ã‚µãƒ–ã‚­ãƒ¼ã®å†å¸°å‰Šé™¤
 end
 //}
 
-=== WSH ¤òÍÑ¤¤¤¿¥ì¥¸¥¹¥È¥ê¥¢¥¯¥»¥¹
+=== WSH ã‚’ç”¨ã„ãŸãƒ¬ã‚¸ã‚¹ãƒˆãƒªã‚¢ã‚¯ã‚»ã‚¹
 
-¥ì¥¸¥¹¥È¥ê¤ò¥¢¥¯¥»¥¹¤¹¤ë¤Ë¤Ï [[c:WIN32OLE]] ¤ò»È¤Ã¤Æ WScript.Shell ¥ª¥Ö¥¸¥§¥¯¥È·ĞÍ³¤Ç¥¢¥¯¥»¥¹¤¹¤ëÊıË¡¤â¤¢¤ê¤Ş¤¹¡£
+ãƒ¬ã‚¸ã‚¹ãƒˆãƒªã‚’ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ã«ã¯ [[c:WIN32OLE]] ã‚’ä½¿ã£ã¦ WScript.Shell ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆçµŒç”±ã§ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹æ–¹æ³•ã‚‚ã‚ã‚Šã¾ã™ã€‚
 
   wsh = WIN32OLE.new('WScript.Shell')
   value = wsh.RegRead 'HKLM\Software\Microsoft\Windows\...'
   wsh.RegWrite 'HKCR\foofile\shell\open\command\', 'REG_SZ', '"C:\..." "%1"'
 
-¤¿¤À¤·¡¤¥­¡¼¤òÎóµó¤·¤¿¤ê¡¤¼«Í³¤Ê¥Ğ¥¤¥Ê¥êÃÍ¤òÆÉ¤ß½ñ¤­¤¹¤ë¤³¤È¤¬¤Ç¤­¤Ş¤»¤ó¡£
+ãŸã ã—ï¼Œã‚­ãƒ¼ã‚’åˆ—æŒ™ã—ãŸã‚Šï¼Œè‡ªç”±ãªãƒã‚¤ãƒŠãƒªå€¤ã‚’èª­ã¿æ›¸ãã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚

@@ -4,7 +4,7 @@ kind=defined
 
 --- [](command_name) -> Gem::Command | nil
 
-�����ǻ��ꤵ�줿���ޥ��̾���б����륯�饹�Υ��󥹥��󥹤��֤��ޤ���
+引数で指定されたコマンド名に対応するクラスのインスタンスを返します。
 
-@param command_name ���ޥ��̾��ʸ����ǻ��ꤷ�ޤ���
+@param command_name コマンド名を文字列で指定します。
 

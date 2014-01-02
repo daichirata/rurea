@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- METHOD_DSA -> Integer
-�ǥե���Ȥ� DSA ���르�ꥺ��Τ���� engine �����ꤹ�뤳�Ȥ��̣���ޤ���
+デフォルトの DSA アルゴリズムのための engine に設定することを意味します。
 
-[[m:OpenSSL::Engine#set_default]] �Υե饰�Ȥ��ƻȤ��ޤ���
+[[m:OpenSSL::Engine#set_default]] のフラグとして使います。
 

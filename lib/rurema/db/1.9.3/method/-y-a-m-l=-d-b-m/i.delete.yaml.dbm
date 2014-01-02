@@ -4,12 +4,12 @@ kind=defined
 
 --- delete(key) -> object | nil
 
-key �򥭡��Ȥ������Ǥ������ޤ���
+key をキーとする要素を削除します。
 
-����������Ǥ��֤��ޤ���key ���б������ͤ����Ĥ���ʤ��ä����� nil ��
-�֤��ޤ���
+削除した要素を返します。key に対応する値が見つからなかった場合は nil を
+返します。
 
-@param key ������ʸ����ǻ��ꤷ�ޤ���
+@param key キーを文字列で指定します。
 
-@raise DBMError ���Ǥκ���˼��Ԥ�������ȯ�����ޤ���
+@raise DBMError 要素の削除に失敗した場合に発生します。
 

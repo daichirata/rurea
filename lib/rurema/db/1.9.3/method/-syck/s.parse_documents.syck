@@ -4,11 +4,11 @@ kind=defined
 
 --- parse_documents(io) {|obj| ...} -> nil
 
-Ϳ����줿 io ���� YAML �ե����ޥåȤ�ʸ���ѡ�����
-[[c:Syck::Node]]���֥������Ȥ��Ѵ�����
-�����������֥������Ȥ�����Ȥ��ƥ֥��å���ɾ�����Ƥ����ޤ���
+与えられた io から YAML フォーマットの文書をパースし
+[[c:Syck::Node]]オブジェクトに変換し、
+生成したオブジェクトを引数としてブロックを評価していきます。
 
-@param io YAML �ե����ޥåȤ�ʸ��� IO ���֥������Ȥ⤷����ʸ����
+@param io YAML フォーマットの文書の IO オブジェクトもしくは文字列
 
   require 'syck'
   require 'yaml'
@@ -40,5 +40,5 @@ kind=defined
   #=> "/dog/shiba/1/name"
   #=> "-->"
 
-[����] �֥��å�����ꤷ�ʤ��� NoMethodError ��ȯ������������դ��Ƥ���������
+[注意] ブロックを指定しないと NoMethodError が発生する事に注意してください。
 

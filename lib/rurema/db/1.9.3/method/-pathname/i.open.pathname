@@ -4,7 +4,7 @@ kind=defined
 
 --- open(mode = 'r', perm = 0666) -> File
 --- open(mode = 'r', perm = 0666){|file| ... } -> object
-File.open(self.to_s, *args, &block) ¤ÈÆ±¤¸¤Ç¤¹¡£
+File.open(self.to_s, *args, &block) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:File.open]]
 

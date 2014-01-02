@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- private_key? -> bool
-EC ¥ª¥Ö¥¸¥§¥¯¥È¤¬ÈëÌ©¸°¤òÊÝ»ý¤·¤Æ¤¤¤ì¤Ð¿¿¤òÊÖ¤·¤Þ¤¹¡£
+EC ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒç§˜å¯†éµã‚’ä¿æŒã—ã¦ã„ã‚Œã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 

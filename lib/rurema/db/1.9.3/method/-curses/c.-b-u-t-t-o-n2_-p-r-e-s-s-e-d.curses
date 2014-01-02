@@ -4,7 +4,7 @@ kind=defined
 
 --- BUTTON2_PRESSED -> Integer
 
-�ޥ����ܥ��� 2 �򲡤������Ȥ�ɽ���ޥ������٥���Ѥ�����Ǥ���
+マウスボタン 2 を押したことを表すマウスイベント用の定数です。
 
 @see [[m:Curses.getmouse]]
 

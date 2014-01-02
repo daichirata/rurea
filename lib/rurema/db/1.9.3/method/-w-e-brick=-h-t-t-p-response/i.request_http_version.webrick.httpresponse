@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- request_http_version           -> WEBrick::HTTPVersion
-�ꥯ�����Ȥ� HTTP �С��������֤��ޤ���
-�ǥե���ȤǤϼ��Ȥ� [[m:WEBrick::HTTPResponse#http_version]] ���Ȥ��ޤ���
+リクエストの HTTP バージョンを返します。
+デフォルトでは自身の [[m:WEBrick::HTTPResponse#http_version]] が使われます。
 

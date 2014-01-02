@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- time -> Time
-���å���󤬳�Ω���줿������֤��ޤ���
+セッションが確立された時刻を返します。
 
 @see [[m:OpenSSL::SSL::Session#time=]],
      [[m:OpenSSL::SSL::Session#timeout]]

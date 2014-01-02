@@ -6,4 +6,4 @@ library=psych
 aliases=
 aliasof=
 
-
+Psych 関連のエラーを表す例外です。

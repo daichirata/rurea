@@ -5,7 +5,7 @@ kind=defined
 --- hexdigest(string) -> String
 @todo
 
-Í¿¤¨¤é¤ì¤¿Ê¸»úÎó¤Î¥Ø¥Ã¥¯¥¹¥À¥¤¥¸¥§¥¹¥È¤òÊÖ¤·¤Þ¤¹¡£
+ä¸Žãˆã‚‰ã‚ŒãŸæ–‡å­—åˆ—ã®ãƒ˜ãƒƒã‚¯ã‚¹ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-@param string ¥À¥¤¥¸¥§¥¹¥È¤ò¼èÆÀ¤·¤¿¤¤Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param string ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚’å–å¾—ã—ãŸã„æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

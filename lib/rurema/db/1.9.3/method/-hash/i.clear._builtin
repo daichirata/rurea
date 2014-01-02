@@ -4,10 +4,10 @@ kind=defined
 
 --- clear -> self
 
-�ϥå������Ȥ���ˤ��ޤ���
+ハッシュの中身を空にします。
 
-���ˤ������self���֤��ޤ���
-�ǥե�����ͤ�����ϥ��ꥢ����ޤ���
+空にした後のselfを返します。
+デフォルト値の設定はクリアされません。
 
   h = Hash.new("default value")
   h[:some] = "some"

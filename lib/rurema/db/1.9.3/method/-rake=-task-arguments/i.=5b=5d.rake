@@ -4,7 +4,7 @@ kind=defined
 
 --- [](key) -> object
 
-Ϳ����줿�ѥ�᡼��̾���б������ͤ��֤��ޤ���
+与えられたパラメータ名に対応する値を返します。
 
-@param key �ѥ�᡼����̾������ꤷ�ޤ���
+@param key パラメータの名前を指定します。
 

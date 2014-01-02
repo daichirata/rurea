@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- RESPID_KEY -> Integer
-OCSP �쥹�ݥ�� �� ID �Ȥ��Ƹ������Υϥå����ͤ��Ѥ��뤳��
-���̣���ޤ���
+OCSP レスポンダ の ID として公開鍵のハッシュ値を用いること
+を意味します。
 
-�ܤ����� [[RFC:2560]] ����� X.509 ���ǧ���Ƥ���������
+詳しくは [[RFC:2560]] および X.509 を確認してください。
 

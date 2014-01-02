@@ -4,5 +4,5 @@ kind=defined
 
 --- SCANNER_EVENT_TABLE -> {Symbol => Integer}
 
-������ʥ��٥�ȤΥ��٥�� ID (����ܥ�) ���б�����ϥ�ɥ�ΰ����θĿ�
-�Υꥹ�Ȥ�ϥå�����֤��ޤ���
+スキャナイベントのイベント ID (シンボル) と対応するハンドラの引数の個数
+のリストをハッシュで返します。

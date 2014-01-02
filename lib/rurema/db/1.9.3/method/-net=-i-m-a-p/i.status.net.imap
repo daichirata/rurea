@@ -3,20 +3,20 @@ visibility=public
 kind=defined
 
 --- status(mailbox, attr) -> {String => Integer}
-STATUS ���ޥ�ɤ����ꡢmailbox �Υ��ơ����������ޤ���
+STATUS コマンドを送り、mailbox のステータスを得ます。
 
-�䤤��碌�������ơ������� attr ��ʸ�����������Ϥ��ޤ���
+問い合わせたいステータスは attr に文字列の配列で渡します。
 
-�֤��ͤ� ���ȥ�ӥ塼��ʸ����򥭡��Ȥ���ϥå���Ǥ���
+返り値は アトリビュート文字列をキーとするハッシュです。
 
-�ܤ����� [[RFC:2060]] �� 6.3.10 �򻲹ͤˤ��Ƥ���������
+詳しくは [[RFC:2060]] の 6.3.10 を参考にしてください。
 
-��:
+例:
   p imap.status("inbox", ["MESSAGES", "RECENT"])
   #=> {"RECENT"=>0, "MESSAGES"=>44}
 
-@param mailbox �䤤��碌�оݤΥ᡼��ܥå���(ʸ����)
-@param attr ��礻�������ȥ�ӥ塼��̾(ʸ����)������
-@raise Net::IMAP::NoResponseError �᡼��ܥå�����¸�ߤ��ʤ����䡢
-       ���ȥ�ӥ塼��̾��¸�ߤ��ʤ�����ȯ�����ޤ�
+@param mailbox 問い合わせ対象のメールボックス(文字列)
+@param attr 問合せたいアトリビュート名(文字列)の配列
+@raise Net::IMAP::NoResponseError メールボックスが存在しない場合や、
+       アトリビュート名が存在しない場合に発生します
 

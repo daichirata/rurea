@@ -4,8 +4,8 @@ kind=defined
 
 --- close      -> nil
 
-���Ȥ� close ���ޤ����ʸ塢���Ȥ��Ф����ɤ߽񤭤��ػߤ���ޤ���
-close ���줿 StringIO ���ɤ߽������Ԥ���� IOError ��ȯ�����ޤ���
+自身を close します。以後、自身に対する読み書きが禁止されます。
+close された StringIO に読み書き等が行われると IOError が発生します。
 
-@raise IOError ���Ȥ����Ǥ� close ����Ƥ�������ȯ�����ޤ���
+@raise IOError 自身がすでに close されていた時に発生します。
 

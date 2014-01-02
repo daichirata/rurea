@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- default_port -> Integer
-SMTP�Υǥե���ȤΥݡ����ֹ�(25)���֤��ޤ���
+SMTPのデフォルトのポート番号(25)を返します。
 

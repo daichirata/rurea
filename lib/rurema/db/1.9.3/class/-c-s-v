@@ -6,54 +6,54 @@ library=csv
 aliases=
 aliasof=
 
-���Υ��饹�� CSV �ե������ǡ������Ф��봰���ʥ��󥿡��ե��������󶡤��ޤ���
+このクラスは CSV ファイルやデータに対する完全なインターフェイスを提供します。
 
-=== �ɤ߹���
+=== 読み込み
 
-  # �ե����뤫���Ԥ���
+  # ファイルから一行ずつ
   CSV.foreach("path/to/file.csv") do |row|
     # use row here...
   end
 
-  # �ե����뤫����٤�
+  # ファイルから一度に
   arr_of_arrs = CSV.read("path/to/file.csv")
 
-  # ʸ���󤫤��Ԥ���
+  # 文字列から一行ずつ
   CSV.parse("CSV,data,String") do |row|
     # use row here...
   end
 
-  # ʸ���󤫤��Ԥ���
+  # 文字列から一行ずつ
   arr_of_arrs = CSV.parse("CSV,data,String")
 
-=== �񤭹���
+=== 書き込み
 
-  # �ե�����ؽ񤭹���
+  # ファイルへ書き込み
   CSV.open("path/to/file.csv", "wb") do |csv|
     csv << ["row", "of", "CSV", "data"]
     csv << ["another", "row"]
     # ...
   end
 
-  # ʸ����ؽ񤭹���
+  # 文字列へ書き込み
   csv_string = CSV.generate do |csv|
     csv << ["row", "of", "CSV", "data"]
     csv << ["another", "row"]
     # ...
   end
 
-=== ����Ѵ�
+=== 一行変換
 
   csv_string = ["CSV", "data"].to_csv   # => "CSV,data"
   csv_array  = "CSV,String".parse_csv   # => ["CSV", "String"]
 
-=== ���硼�ȥ��å�
+=== ショートカット
 
   CSV             { |csv_out| csv_out << %w{my data here} }  # to $stdout
   CSV(csv = "")   { |csv_str| csv_str << %w{my data here} }  # to a String
   CSV($stderr)    { |csv_err| csv_err << %w{my data here} }  # to $stderr
 
-=== CSV ��ʸ�����󥳡��ǥ��� (M17n or Multilingualization)
+=== CSV と文字エンコーディング (M17n or Multilingualization)
 
 This new CSV parser is m17n savvy.  The parser works in the Encoding of the IO
 or String object being read from or written to.  Your data is never transcoded

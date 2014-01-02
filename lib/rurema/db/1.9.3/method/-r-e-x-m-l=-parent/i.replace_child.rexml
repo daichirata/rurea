@@ -2,6 +2,12 @@ names=replace_child
 visibility=public
 kind=defined
 
---- replace_child(to_replace, replacement)
-@todo
+--- replace_child(to_replace, replacement) -> ()
+子ノード列上の to_replace を replacement に置き換えます。
+
+to_replace の parent は nil に、
+replacement の parent は selfに変更されます。
+
+@param to_replace 置き換え元のノード
+@param replacement 置き換え先のノード
 

@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- cert_store=(store) 
-��³���ξ�����θ��ڤΤ���˻Ȥ������ꤷ�Ƥ��� CA �������
-�ޤ�����񥹥ȥ������ꤷ�ޤ���
+接続相手の証明書の検証のために使う、信頼している CA 証明書を
+含む証明書ストアを設定します。
 
-�̾�� [[m:OpenSSL::SSL::SSLContext#ca_path=]] ��
-[[m:OpenSSL::SSL::SSLContext#ca_file=]] �Ǿ���������ꤷ�ޤ�����
-CRL ��Ȥ������ʤɡ����ܺ٤�����򤷤������ˤϤ����Ȥ��ޤ���
+通常は [[m:OpenSSL::SSL::SSLContext#ca_path=]] や
+[[m:OpenSSL::SSL::SSLContext#ca_file=]] で証明書を設定しますが、
+CRL を使いたいなど、より詳細な設定をしたい場合にはこれを使います。
 
-�ǥե���Ȥ� nil (�����񥹥ȥ�����ꤷ�ʤ�)�Ǥ���
+デフォルトは nil (証明書ストアを指定しない)です。
 
-@param store ���ꤹ������񥹥ȥ�([[c:OpenSSL::X509::Store]] �Υ��󥹥���)
+@param store 設定する証明書ストア([[c:OpenSSL::X509::Store]] のインスタンス)
 @see [[m:OpenSSL::SSL::SSLContext#cert_store]]
 

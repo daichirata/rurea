@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- debug -> bool
-�ǥХå��⡼�ɤ� on �ʤ�� true ���֤��ޤ���
+デバッグモードが on ならば true を返します。
 
 @see [[m:OpenSSL.#debug=]]
 

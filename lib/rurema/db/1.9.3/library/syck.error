@@ -3,5 +3,6 @@ classes=Syck=Error,Syck=ParseError,Syck=TypeError
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-YAML ´ØÏ¢¤Î¥¨¥é¡¼¤ò°·¤¦¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+YAML é–¢é€£ã®ã‚¨ãƒ©ãƒ¼ã‚’æ‰±ã†ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

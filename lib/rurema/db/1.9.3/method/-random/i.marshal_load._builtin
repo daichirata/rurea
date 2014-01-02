@@ -4,14 +4,14 @@ kind=defined
 
 --- marshal_load(array) -> Random
 
-[[m:Random#marshal_dump]] ¤ÇÆÀ¤é¤ì¤¿ÇÛÎó¤ò´ğ¤Ë¡¢Random¥ª¥Ö¥¸¥§¥¯¥È¤òÉü¸µ¤·¤Ş¤¹¡£
+[[m:Random#marshal_dump]] ã§å¾—ã‚‰ã‚ŒãŸé…åˆ—ã‚’åŸºã«ã€Randomã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å¾©å…ƒã—ã¾ã™ã€‚
 
-@param array »°Í×ÁÇ°Ê²¼¤«¤é¤Ê¤ëÇÛÎó¤ò»ØÄê¤·¤Ş¤¹¡£
-             ²¿¤ò»ØÄê¤¹¤ë¤«¤Ï[[m:Random#marshal_dump]]¤ò»²¹Í¤Ë¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param array ä¸‰è¦ç´ ä»¥ä¸‹ã‹ã‚‰ãªã‚‹é…åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+             ä½•ã‚’æŒ‡å®šã™ã‚‹ã‹ã¯[[m:Random#marshal_dump]]ã‚’å‚è€ƒã«ã—ã¦ãã ã•ã„ã€‚
 
-@raise ArgumentError array ¤¬3¤è¤êÂç¤­¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise ArgumentError array ãŒ3ã‚ˆã‚Šå¤§ãã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Æ°ºîÎã:
+å‹•ä½œä¾‹:
   r1 = Random.new(1)
   a1 = r1.marshal_dump
   r2 = Random.new(3)

@@ -4,8 +4,8 @@ kind=defined
 
 --- template -> String
 
-���ޥ�ɥ饤������� --template ���ץ����ǻ��ꤷ��̾����ʸ���������
-���֤��ޤ���
+コマンドライン引数の --template オプションで指定した名前を文字列の配列
+で返します。
 
-���ꤷ�ʤ��ä����� 'html' ���֤��ޤ���
+指定しなかった場合は 'html' を返します。
 

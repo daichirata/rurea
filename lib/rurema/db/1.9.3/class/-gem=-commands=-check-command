@@ -6,4 +6,4 @@ library=rubygems.commands.check_command
 aliases=
 aliasof=
 
-���󥹥ȡ��뤵��Ƥ��� Gem �ѥå������򸡾ڤ��뤿��Υ��饹�Ǥ���
+インストールされている Gem パッケージを検証するためのクラスです。

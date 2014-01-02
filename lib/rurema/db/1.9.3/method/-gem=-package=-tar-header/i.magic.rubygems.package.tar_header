@@ -4,5 +4,5 @@ kind=defined
 
 --- magic -> String
 
-tar �Υإå��˴ޤޤ�� magic ���֤��ޤ���
+tar のヘッダに含まれる magic を返します。
 

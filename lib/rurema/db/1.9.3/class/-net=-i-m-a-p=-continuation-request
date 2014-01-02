@@ -6,10 +6,10 @@ library=net.imap
 aliases=
 aliasof=
 
-IMAP �� continuation request (̿���³�׵�) ��ɽ�����饹�Ǥ���
+IMAP の continuation request (命令継続要求) を表すクラスです。
 
-�̾盧�Υ��饹��ľ�ܰ������ȤϤ���ޤ���
-�쥹�ݥ󥹥ϥ�ɥ�([[c:Net::IMAP#add_response_handler]])
-���Ϥ���ޤ���
+通常このクラスを直接扱うことはありません。
+レスポンスハンドラ([[c:Net::IMAP#add_response_handler]])
+に渡されます。
 
-�ܤ����� [[RFC:2060]] �� 7.5 �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] の 7.5 を参照してください。

@@ -6,7 +6,7 @@ library=openssl
 aliases=
 aliasof=
 
-X.509 ¾ÚÌÀ½ñ½ğÌ¾Í×µá¤Î attribute ¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+X.509 è¨¼æ˜æ›¸ç½²åè¦æ±‚ã® attribute ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-[[m:OpenSSL::X509::Request#attributes]] ¤Ç¼è¤ê½Ğ¤¹¤³¤È¤ä¡¢
-[[m:OpenSSL::X509::Request#add_attribute]] ¤ÇÄÉ²Ã¤¹¤ë¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
+[[m:OpenSSL::X509::Request#attributes]] ã§å–ã‚Šå‡ºã™ã“ã¨ã‚„ã€
+[[m:OpenSSL::X509::Request#add_attribute]] ã§è¿½åŠ ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚

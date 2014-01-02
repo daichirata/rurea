@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- ANSWERED -> Symbol
-��:Answered�פȤ�������ܥ���֤��ޤ���
+「:Answered」というシンボルを返します。
 
-���Υ�å������������������Ȥ��̣���ޤ���
+そのメッセージに返答したことを意味します。
 
-�ե饰��å�����°���Ȥ����Ѥ����ޤ�
-([[m:Net::IMAP::FetchData#attr]])��
+フラグメッセージ属性として用いられます
+([[m:Net::IMAP::FetchData#attr]])。
 
-�ܤ����� [[RFC:2060]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] を参照してください。
 

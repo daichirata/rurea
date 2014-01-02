@@ -4,5 +4,5 @@ kind=defined
 
 --- ARRAY_METHODS -> Array
 
-[[c:Array]] ���������Ƥ���᥽�åɤΥꥹ�ȤǤ���
+[[c:Array]] に定義されているメソッドのリストです。
 

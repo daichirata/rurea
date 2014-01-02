@@ -5,7 +5,7 @@ kind=defined
 --- stress -> bool
 --- stress=(value)
 
-GC.stress ���������ꤵ��Ƥ���֤ϡ�GC ��Ԥ��뤹�٤Ƥε���� GC ��Ԥ��ޤ���
+GC.stress が真に設定されている間は、GC を行えるすべての機会に GC を行います。
 
-@param value Ǥ�դΥ��֥������ȡ������ͤȤ��Ʋ�ᤵ��ޤ���
+@param value 任意のオブジェクト。真偽値として解釈されます。
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- ctrl_cmd(cmd, val=nil) -> self
-engine ¤Ë¥³¥Ş¥ó¥É¤òÁ÷¤ê¤Ş¤¹¡£
+engine ã«ã‚³ãƒãƒ³ãƒ‰ã‚’é€ã‚Šã¾ã™ã€‚
 
-@param cmd ¥³¥Ş¥ó¥ÉÌ¾(Ê¸»úÎó)
-@param val ¥³¥Ş¥ó¥É°ú¿ô(Ê¸»úÎó)
+@param cmd ã‚³ãƒãƒ³ãƒ‰å(æ–‡å­—åˆ—)
+@param val ã‚³ãƒãƒ³ãƒ‰å¼•æ•°(æ–‡å­—åˆ—)
 @see [[m:OpenSSL::Engine#ctrl_cmd]]
 
 

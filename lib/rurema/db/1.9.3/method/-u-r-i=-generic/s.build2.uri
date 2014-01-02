@@ -5,17 +5,17 @@ kind=defined
 --- build2(ary)     -> URI::Generic
 --- build2(hash)    -> URI::Generic
 
-URI::Generic.build ¤ÈÆ±¤¸¤Ç¤¹¤¬¡¢Îã³° URI::InvalidComponentError
-¤¬È¯À¸¤·¤¿¾ì¹ç¤Ë¡¢°ú¿ô¤Î³ÆÍ×ÁÇ¤ò URI.escape ¤·¤ÆºÆÅÙ build ¤ò»î¤ß
-¤Ş¤¹¡£
+URI::Generic.build ã¨åŒã˜ã§ã™ãŒã€ä¾‹å¤– URI::InvalidComponentError
+ãŒç™ºç”Ÿã—ãŸå ´åˆã«ã€å¼•æ•°ã®å„è¦ç´ ã‚’ URI.escape ã—ã¦å†åº¦ build ã‚’è©¦ã¿
+ã¾ã™ã€‚
 
-@param ary ¹½À®Í×ÁÇ¤òÉ½¤¹Ê¸»úÎó¤ÎÇÛÎó¤òÍ¿¤¨¤Ş¤¹¡£Í×ÁÇ¤Ï°Ê²¼¤Î½ç¤Ç¤¹¡£
+@param ary æ§‹æˆè¦ç´ ã‚’è¡¨ã™æ–‡å­—åˆ—ã®é…åˆ—ã‚’ä¸ãˆã¾ã™ã€‚è¦ç´ ã¯ä»¥ä¸‹ã®é †ã§ã™ã€‚
 //emlist{
       [scheme, userinfo, host, port, registry, path, opaque, query, fragment]
 //}
 
-@param hash  ¹½À®Í×ÁÇ¤òÉ½¤¹¥Ï¥Ã¥·¥å¤òÍ¿¤¨¤Ş¤¹¡£¥Ï¥Ã¥·¥å¤Î¥­¡¼¤Ï¥·¥ó¥Ü¥ë¤Ï°Ê²¼
-            ¤Î¤¤¤º¤ì¤«¤Ç¤¹¡£ ¥Ï¥Ã¥·¥å¤ÎÃÍ¤ÏÊ¸»úÎó¤ÇÍ¿¤¨¤Ş¤¹¡£
+@param hash  æ§‹æˆè¦ç´ ã‚’è¡¨ã™ãƒãƒƒã‚·ãƒ¥ã‚’ä¸ãˆã¾ã™ã€‚ãƒãƒƒã‚·ãƒ¥ã®ã‚­ãƒ¼ã¯ã‚·ãƒ³ãƒœãƒ«ã¯ä»¥ä¸‹
+            ã®ã„ãšã‚Œã‹ã§ã™ã€‚ ãƒãƒƒã‚·ãƒ¥ã®å€¤ã¯æ–‡å­—åˆ—ã§ä¸ãˆã¾ã™ã€‚
 //emlist{
       :scheme, :userinfo, :host, :port, :registry, :path, :opaque, :query, :fragment 
 //}

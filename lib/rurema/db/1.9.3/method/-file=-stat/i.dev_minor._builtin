@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- dev_minor -> Integer
-dev ¤Î minor ÈÖ¹æÉô¤òÊÖ¤·¤Þ¤¹¡£
+dev ã® minor ç•ªå·éƒ¨ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
   p fs.dev_minor
-  #Îã
+  #ä¾‹
   #=> nil
 
 

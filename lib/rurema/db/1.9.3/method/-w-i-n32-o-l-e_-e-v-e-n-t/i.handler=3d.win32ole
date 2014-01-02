@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- handler=(obj) -> ()
-���٥�Ƚ�����¹Ԥ��륪�֥������Ȥ���Ͽ���ޤ���
+イベント処理を実行するオブジェクトを登録します。
 
-���٥�ȥϥ�ɥ��᥽�åɤȤ��ƻ��ĥ��֥������Ȥ򥤥٥�ȥϥ�ɥ�Ȥ�
-����Ͽ���ޤ���
+イベントハンドラをメソッドとして持つオブジェクトをイベントハンドラとし
+て登録します。
 
-���٥�ȥϥ�ɥ�ϥ��٥��̾�ˡ�on�פ����֤��ޤ����⤷�����٥�Ȥ��б�
-����on�᥽�åɤ���������Ƥ��ʤ����method_missing���ƤФ�ޤ������٥�
-��̾����ʸ����ʸ������̤��뤿�ᡢ���Τʵ��Ҥ�ɬ�פǤ���
+イベントハンドラはイベント名に「on」を前置します。もし、イベントに対応
+するonメソッドが実装されていなければmethod_missingが呼ばれます。イベン
+ト名は大文字小文字を区別するため、正確な記述が必要です。
 
-@param obj ���٥�Ȥ��б�����᥽�åɤ���ĥ��֥������ȡ����٥�ȼ�����
-           �������ˤ�nil����ꤷ�ޤ���
+@param obj イベントに対応するメソッドを持つオブジェクト。イベント受信を
+           解除するにはnilを指定します。
 
   class IeHandler
     def initialize
@@ -41,6 +41,6 @@ kind=defined
   end
   ie.Quit
 
-[[m:WIN32OLE_EVENT#on_event]]�ʤɤθƤӽФ��ǥ֥��å�����Ͽ����Ƥ����
-�硢�����餬ͥ�褵��ޤ���
+[[m:WIN32OLE_EVENT#on_event]]などの呼び出しでブロックが登録されている場
+合、そちらが優先されます。
 

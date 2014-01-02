@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- params_ok? -> bool
-¥Ñ¥é¥á¡¼¥¿ p ¤È g ¤¬°ÂÁ´¤«¤É¤¦¤«¤òÈ½Äê¤·¤Ş¤¹¡£
+ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ p ã¨ g ãŒå®‰å…¨ã‹ã©ã†ã‹ã‚’åˆ¤å®šã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::PKey::DH#generate_key!]],
      [[m:OpenSSL::PKey::DH.generate]]

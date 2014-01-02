@@ -4,9 +4,12 @@ kind=defined
 
 --- rank -> Fixnum
 
-³¬¿ô (rank) ¤òÊÖ¤·¤Þ¤¹¡£
+éšŽæ•° (rank) ã‚’è¿”ã—ã¾ã™ã€‚
 
-self¤Î¹ÔÎó¤Î³¬¿ô(rank)¤òÊÖ¤·¤Þ¤¹¡£
-¹ÔÎó¤ÎÀ®Ê¬¤¬[[c:Float]]¤Î¾ì¹ç¤ÏÀµ¤·¤¤ÃÍ¤òÊÖ¤µ¤Ê¤¤¾ì¹ç¤¬¤¢¤ê¤Þ¤¹¡£
-¤½¤Î¾ì¹ç¤Ï¹ÔÎóÀ®Ê¬¤Ë[[c:Rational]]¤òÍÑ¤¤¤ë¤«¡¢[[m:Matrix#rank_e]]¤ò»ÈÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+selfã®è¡Œåˆ—ã®éšŽæ•°(rank)ã‚’è¿”ã—ã¾ã™ã€‚
+è¡Œåˆ—ã®æˆåˆ†ãŒ[[c:Float]]ã®å ´åˆã¯æ­£ã—ã„å€¤ã‚’è¿”ã•ãªã„å ´åˆãŒã‚ã‚Šã¾ã™ã€‚
+ãã®å ´åˆã¯è¡Œåˆ—æˆåˆ†ã« [[c:Rational]]
+ã‚‚ã—ãã¯ [[c:BigDecimal]]
+ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
+
 

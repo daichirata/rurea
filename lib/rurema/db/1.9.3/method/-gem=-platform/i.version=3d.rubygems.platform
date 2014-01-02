@@ -4,7 +4,7 @@ kind=defined
 
 --- version=(version)
 
-�ץ�åȥե�����ΥС������򥻥åȤ��ޤ���
+プラットフォームのバージョンをセットします。
 
-@param version �ץ�åȥե�����ΥС���������ꤷ�ޤ���
+@param version プラットフォームのバージョンを指定します。
 

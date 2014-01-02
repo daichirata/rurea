@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- time=(time)
-¼º¸ú¤·¤¿Æü»ş¤ò Time ¥ª¥Ö¥¸¥§¥¯¥È¤ÇÀßÄê¤·¤Ş¤¹¡£
+å¤±åŠ¹ã—ãŸæ—¥æ™‚ã‚’ Time ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§è¨­å®šã—ã¾ã™ã€‚
 
-@param time ¼º¸úÆü»ş
+@param time å¤±åŠ¹æ—¥æ™‚
 @see [[m:OpenSSL::X509::Revoked#time]]
 

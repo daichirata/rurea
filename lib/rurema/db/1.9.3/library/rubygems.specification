@@ -1,14 +1,15 @@
-requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system
+requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder
 classes=Gem=Specification
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¥á¥¿¥Ç¡¼¥¿¤ò°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®ãƒ¡ã‚¿ãƒ‡ãƒ¼ã‚¿ã‚’æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-ÄÌ¾ï gemspec ¥Õ¥¡¥¤¥ë¤ä Rakefile ¤Ç¥á¥¿¥Ç¡¼¥¿¤òÄêµÁ¤·¤Ş¤¹¡£
+é€šå¸¸ gemspec ãƒ•ã‚¡ã‚¤ãƒ«ã‚„ Rakefile ã§ãƒ¡ã‚¿ãƒ‡ãƒ¼ã‚¿ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
    spec = Gem::Specification.new do |s|
      s.name = 'rfoo'

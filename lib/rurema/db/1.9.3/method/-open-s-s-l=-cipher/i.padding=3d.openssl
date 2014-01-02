@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- padding=(padding)
-�ѥǥ��󥰤����ꤷ�ޤ���
+パディングを設定します。
 
-1 �ǥХǥ��󥰤�ͭ���ˡ�0��̵���ˤ��ޤ���
+1 でバディングを有効に、0で無効にします。
 
-�ѥǥ��󥰤�̵�����������ˤϡ��Ź沽����ǡ����Υ������ϥ֥��å���������
-�ܿ��Ǥʤ���Фʤ�ޤ���
+パディングを無効化した場合には、暗号化するデータのサイズはブロックサイズの
+倍数でなければなりません。
 
-�Ź沽����¦�����沽����¦�ǥѥǥ��󥰤��������פ����Ƥ����ʤ���Фʤ�ޤ���
+暗号化する側と復号化する側でパディングの設定を一致させておかなければなりません。
 
-@param padding 1�ǥѥǥ��󥰤�ͭ����0��̵��
-@raise OpenSSL::Cipher::CipherError ����˼��Ԥ�������ȯ�����ޤ�
+@param padding 1でパディングを有効、0で無効
+@raise OpenSSL::Cipher::CipherError 設定に失敗した場合に発生します
 

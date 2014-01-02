@@ -4,13 +4,13 @@ kind=defined
 
 --- def_exception(exception_name, message_format, superclass = StandardError) -> Class
 
-exception_name �Ȥ���̾�����㳰���饹��������ޤ���
+exception_name という名前の例外クラスを定義します。
 
-@param exception_name ��������㳰���饹��̾���򥷥�ܥ�ǻ��ꤷ�ޤ���
+@param exception_name 定義する例外クラスの名前をシンボルで指定します。
 
-@param message_format ��å������Υե����ޥåȡ�
+@param message_format メッセージのフォーマット。
 
-@param superclass ��������㳰�Υ����ѡ����饹����ꤷ�ޤ���
-                  ��ά����� [[c:StandardError]] ����Ѥ��ޤ���
+@param superclass 定義する例外のスーパークラスを指定します。
+                  省略すると [[c:StandardError]] を使用します。
 
 

@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- return_vtype -> Integer
-�᥽�åɤ��֤��ͤη��򼨤����ͤ�������ޤ���
+メソッドの返り値の型を示す数値を取得します。
 
-@return �֤��ͤη��򼨤����͡�VARENUM�ˤ��֤��ޤ���
-@raise WIN32OLERuntimeError �᥽�åɤη����������Ǥ��ʤ��ä��������Τ��ޤ���
+@return 返り値の型を示す数値（VARENUM）を返します。
+@raise WIN32OLERuntimeError メソッドの型情報を取得できなかった場合に通知します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Application')
    method = WIN32OLE_METHOD.new(tobj, 'Visible')
    puts method.return_vtype # => 11
 
-VARENUM������ϡ�Platform SDK��wtypes.h�ˤ���ޤ���
+VARENUMの定義は、Platform SDKのwtypes.hにあります。
 

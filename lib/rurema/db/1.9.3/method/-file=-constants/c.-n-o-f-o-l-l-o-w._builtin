@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- NOFOLLOW -> Integer
-�ե����뤬����ܥ�å���󥯤Ǥ��ä�����
-�㳰��ȯ�������ޤ���
-open(2) �� O_NOFOLLOW ������Ǥ�����˻Ȥ��ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+ファイルがシンボリックリンクであった場合に
+例外を発生させます。
+open(2) で O_NOFOLLOW が指定できる場合に使えます。
+[[m:File.open]]で使用します。
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- filename -> String
 
-���Ȥλ��� Ruby �ץ������Υե�����̾��ʸ������֤��ޤ���
+自身の持つ Ruby プログラムのファイル名を文字列で返します。
 

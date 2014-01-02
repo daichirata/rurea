@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- chardev? -> bool
-FileTest.chardev?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.chardev?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#chardev?]]
 

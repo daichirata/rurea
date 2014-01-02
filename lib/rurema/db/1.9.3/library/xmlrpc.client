@@ -3,8 +3,9 @@ classes=XMLRPC=Client,XMLRPC=Client=Proxy
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-XML-RPC епещедевеєе╚д╬д┐дсд╬ещеде╓ещеъд╟д╣бг
+XML-RPC уВпуГйуВдуВвуГ│уГИуБоуБЯуВБуБоуГйуВдуГЦуГйуГкуБзуБЩуАВ
 
   require "xmlrpc/client"
   

@@ -5,12 +5,12 @@ kind=defined
 --- sockaddr_un(path) -> String
 --- pack_sockaddr_un(path) -> String
 
-»ØÄê¤·¤¿¥¢¥É¥ì¥¹¤ò[[ref:lib:socket#pack_string]]
-¤ÇÊÖ¤·¤Ş¤¹¡£
+æŒ‡å®šã—ãŸã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’[[ref:lib:socket#pack_string]]
+ã§è¿”ã—ã¾ã™ã€‚
 
-@param path ¥Ñ¥¹¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param path ãƒ‘ã‚¹ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'socket'
   p Socket.sockaddr_un("/tmp/.X11-unix/X0")

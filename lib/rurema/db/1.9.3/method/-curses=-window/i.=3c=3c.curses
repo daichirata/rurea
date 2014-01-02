@@ -5,7 +5,7 @@ kind=defined
 --- addstr(str) -> nil
 --- <<(str)     -> nil
 
-������ɥ��Υ���������֤�ʸ���� str ���񤭤��ޤ���
+ウィンドウのカーソル位置に文字列 str を上書きします。
 
-@param str ʸ�������ꤷ�ޤ���
+@param str 文字列を指定します。
 

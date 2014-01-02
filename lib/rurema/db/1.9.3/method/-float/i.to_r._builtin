@@ -4,9 +4,9 @@ kind=defined
 
 --- to_r -> Rational
 
-¼«¿È¤ò [[c:Rational]] ¤ËÊÑ´¹¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’ [[c:Rational]] ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   0.5.to_r      # => (1/2)
 

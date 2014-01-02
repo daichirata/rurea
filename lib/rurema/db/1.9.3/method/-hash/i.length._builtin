@@ -5,7 +5,7 @@ kind=defined
 --- length -> Integer
 --- size -> Integer
 
-¥Ï¥Ã¥·¥å¤ÎÍ×ÁÇ¤Î¿ô¤òÊÖ¤·¤Þ¤¹¡£
+ãƒãƒƒã‚·ãƒ¥ã®è¦ç´ ã®æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
   puts({ant: 9 ,dog: 101 ,cat: 3}.length) #=> 3
 

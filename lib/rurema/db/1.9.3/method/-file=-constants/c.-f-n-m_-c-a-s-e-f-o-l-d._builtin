@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- FNM_CASEFOLD -> Integer
-����ե��٥åȤ��羮ʸ������̤����˥ѥ�����ޥå���Ԥ��ޤ���
-[[m:File.fnmatch]], [[m:Dir.glob]]�ǻ��Ѥ��ޤ���
+アルファベットの大小文字を区別せずにパターンマッチを行います。
+[[m:File.fnmatch]], [[m:Dir.glob]]で使用します。
 

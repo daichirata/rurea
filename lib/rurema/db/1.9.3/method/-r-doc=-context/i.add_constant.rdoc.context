@@ -4,7 +4,7 @@ kind=defined
 
 --- add_constant(const) -> ()
 
-°ú¿ô¤Ç»ØÄê¤·¤¿ [[c:RDoc::Constant]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÄÉ²Ã¤·¤Ş¤¹¡£
+å¼•æ•°ã§æŒ‡å®šã—ãŸ [[c:RDoc::Constant]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-@param const [[c:RDoc::Constant]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param const [[c:RDoc::Constant]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

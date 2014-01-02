@@ -12,7 +12,8 @@ require 'bitclust/exception'
 
 module BitClust
 
-  # Represents a method, a constant, and a special variable.
+  # Entry for methods(instance methods/singleton methods/module_functions),
+  # constants and special variables(like $!).
   class MethodEntry < Entry
 
     def MethodEntry.type_id
@@ -120,6 +121,10 @@ module BitClust
     def short_label
       c, t, m, lib = methodid2specparts(@id)
       "#{t == '#' ? '' : t}#{m}"
+    end
+
+    def index_id
+      "#{methodid2typechar(@id)}_#{encodename_fs(name).gsub(/=/, '--')}".upcase
     end
 
     def labels

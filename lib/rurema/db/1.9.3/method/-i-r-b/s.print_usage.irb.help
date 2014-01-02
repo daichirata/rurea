@@ -4,4 +4,4 @@ kind=added
 
 --- print_usage -> ()
 
-irb ���ޥ�ɤΥإ�פ�ɽ�����ޤ���
+irb コマンドのヘルプを表示します。

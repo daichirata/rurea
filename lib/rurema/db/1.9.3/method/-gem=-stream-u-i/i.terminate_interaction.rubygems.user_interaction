@@ -4,9 +4,9 @@ kind=defined
 
 --- terminate_interaction(status = 0) -> ()
 
-���ץꥱ��������λ���ޤ���
+アプリケーションを終了します。
 
-@param status ��λ���ơ���������ꤷ�ޤ����ǥե���Ȥ� 0 (����) �Ǥ���
+@param status 終了ステータスを指定します。デフォルトは 0 (成功) です。
 
-@raise Gem::SystemExitException ���Υ᥽�åɤ�ƤӽФ���ɬ��ȯ�������㳰�Ǥ���
+@raise Gem::SystemExitException このメソッドを呼び出すと必ず発生する例外です。
 

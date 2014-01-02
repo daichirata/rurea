@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- FNM_DOTMATCH -> Integer
-�磻��ɥ����� `*', `?', `[]' ����Ƭ�� `.' �˥ޥå�����褦�ˤʤ�ޤ���
-[[m:File.fnmatch]], [[m:Dir.glob]]�ǻ��Ѥ��ޤ���
+ワイルドカード `*', `?', `[]' が先頭の `.' にマッチするようになります。
+[[m:File.fnmatch]], [[m:Dir.glob]]で使用します。
 
-1.8.0�����Ǥϡ�FNM_DOTMATCH�Ȥ���̾���Ǥ�����
+1.8.0以前では、FNM_DOTMATCHという名前でした。
 

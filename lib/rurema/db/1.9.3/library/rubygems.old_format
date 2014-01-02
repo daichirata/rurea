@@ -3,7 +3,8 @@ classes=Gem=OldFormat
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-RubyGems ¤Î Gem ¥Õ¥¡¥¤¥ë¤ÎÆâÉô¹½Â¤¤ò°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+RubyGems ã® Gem ãƒ•ã‚¡ã‚¤ãƒ«ã®å†…éƒ¨æ§‹é€ ã‚’æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
 @see [[lib:rubygems/format]]

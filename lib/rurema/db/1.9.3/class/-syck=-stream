@@ -6,10 +6,10 @@ library=syck.stream
 aliases=
 aliasof=
 
-YAML ¥É¥­¥å¥á¥ó¥È¤òÊ£¿ôÊİ»ı¤¹¤ë¤³¤È¤¬¤Ç¤­¤ë¥¹¥È¥ê¡¼¥à¥¯¥é¥¹¤Ç¤¹¡£
+YAML ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’è¤‡æ•°ä¿æŒã™ã‚‹ã“ã¨ãŒã§ãã‚‹ã‚¹ãƒˆãƒªãƒ¼ãƒ ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-=== »²¹Í
+=== å‚è€ƒ
 
 Rubyist Magazine: [[url:http://jp.rubyist.net/magazine/]]
 
- * ¥×¥í¥°¥é¥Ş¡¼¤Î¤¿¤á¤Î YAML ÆşÌç (ÃæµéÊÔ): [[url:http://jp.rubyist.net/magazine/?0010-YAML]]
+ * ãƒ—ãƒ­ã‚°ãƒ©ãƒãƒ¼ã®ãŸã‚ã® YAML å…¥é–€ (ä¸­ç´šç·¨): [[url:http://jp.rubyist.net/magazine/?0010-YAML]]

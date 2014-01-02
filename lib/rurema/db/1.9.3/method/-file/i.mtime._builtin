@@ -4,11 +4,11 @@ kind=defined
 
 --- mtime    -> Time
 
-ºÇ½ª¹¹¿·»þ¹ï¤ò Time ¥ª¥Ö¥¸¥§¥¯¥È¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+æœ€çµ‚æ›´æ–°æ™‚åˆ»ã‚’ Time ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@raise IOError ¼«¿È¤¬ close ¤µ¤ì¤Æ¤¤¤ë¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise IOError è‡ªèº«ãŒ close ã•ã‚Œã¦ã„ã‚‹å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise Errno::EXXX ¥Õ¥¡¥¤¥ë¤Î»þ¹ï¤Î¼èÆÀ¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Errno::EXXX ãƒ•ã‚¡ã‚¤ãƒ«ã®æ™‚åˆ»ã®å–å¾—ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:File#lstat]], [[m:File#atime]], [[m:File#ctime]]
 

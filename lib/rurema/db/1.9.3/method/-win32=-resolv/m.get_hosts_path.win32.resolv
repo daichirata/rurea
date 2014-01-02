@@ -4,9 +4,9 @@ kind=defined
 
 --- get_hosts_path -> String | nil
 
-hosts ¥Õ¥¡¥¤¥ë¤Î¥Ñ¥¹¤òÊÖ¤·¤Þ¤¹¡£¥Õ¥¡¥¤¥ë¤¬Â¸ºß¤·¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+hosts ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚ãƒ•ã‚¡ã‚¤ãƒ«ãŒå­˜åœ¨ã—ãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require "win32/resolv"
   p Win32::Resolv.get_hosts_path #=> "C:\Windows\System32\drivers\etc\hosts"

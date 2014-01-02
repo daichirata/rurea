@@ -4,9 +4,9 @@ kind=defined
 
 --- before(type = :each){ ... } -> Proc
 
-�ƥƥ��Ȥ����˼¹Ԥ���֥��å�����Ͽ���ޤ���
+各テストの前に実行するブロックを登録します。
 
-@param type :each ����ꤹ�뤳�Ȥ��Ǥ��ޤ���
+@param type :each を指定することができます。
 
-@raise RuntimeError type �� :each �ʳ�����ꤹ���ȯ�����ޤ���
+@raise RuntimeError type に :each 以外を指定すると発生します。
 

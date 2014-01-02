@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- media_type -> String
-MIME ¤Î¥á¥Ç¥£¥¢¥¿¥¤¥×¤òÊÖ¤·¤Þ¤¹¡£
+MIME ã®ãƒ¡ãƒ‡ã‚£ã‚¢ã‚¿ã‚¤ãƒ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤³¤ì¤Ï "TEXT" ¤òÊÖ¤·¤Þ¤¹¡£
+ã“ã‚Œã¯ "TEXT" ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Net::IMAP::BodyTypeText#subtype]]
 

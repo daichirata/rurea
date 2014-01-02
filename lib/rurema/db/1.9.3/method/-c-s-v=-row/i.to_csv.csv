@@ -5,5 +5,5 @@ kind=defined
 --- to_csv -> String
 --- to_s -> String
 
-���Ȥ� CSV ��ʸ����Ȥ����֤��ޤ����إå��ϻ��Ѥ��ޤ���
+自身を CSV な文字列として返します。ヘッダは使用しません。
 

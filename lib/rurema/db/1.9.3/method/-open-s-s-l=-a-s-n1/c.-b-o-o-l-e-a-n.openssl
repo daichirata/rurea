@@ -4,6 +4,6 @@ kind=defined
 
 --- BOOLEAN -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-BOOLEAN ¤Î¥¿¥°ÈÖ¹æ 1 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+BOOLEAN ã®ã‚¿ã‚°ç•ªå· 1 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

@@ -5,23 +5,23 @@ kind=defined
 --- divide {|o| ... } -> Set
 --- divide {|o1, o2| ... } -> Set
 
-���ν����֥��å�����������ط���ʬ�䤷�����η�̤򽸹�Ȥ����֤��ޤ���
+元の集合をブロックで定義される関係で分割し、その結果を集合として返します。
 
-�֥��å��ѥ�᡼���� 1 �Ĥξ�硢block.call(o1) == block.call(o2) ����
-�ʤ�С�o1 �� o2 ��Ʊ��ʬ���°���ޤ���
+ブロックパラメータが 1 個の場合、block.call(o1) == block.call(o2) が真
+ならば、o1 と o2 は同じ分割に属します。
 
-�֥��å��ѥ�᡼���� 2 �Ĥξ�硢block.call(o1, o2) �����ʤ�С�
-o1 �� o2 ��Ʊ��ʬ���°���ޤ���
-���ξ�硢block.call(o1, o2) == block.call(o2, o1)
-����Ω���ʤ��֥��å���Ϳ����ȴ����̤�η�̤������ޤ���
+ブロックパラメータが 2 個の場合、block.call(o1, o2) が真ならば、
+o1 と o2 は同じ分割に属します。
+この場合、block.call(o1, o2) == block.call(o2, o1)
+が成立しないブロックを与えると期待通りの結果が得られません。
 
-==== ��1
+==== 例1
   numbers = Set.new(1..6)
   set = numbers.divide {|i| i % 3}
   p set
   #=> #<Set: {#<Set: {5, 2}>, #<Set: {1, 4}>, #<Set: {6, 3}>}>
 
-==== ��2
+==== 例2
   numbers = Set[1, 3, 4, 6, 9, 10, 11]
   set = numbers.divide {|i, j| (i - j).abs == 1}
   p set     #=> #<Set: {#<Set: {1}>,
@@ -29,8 +29,8 @@ o1 �� o2 ��Ʊ��ʬ���°���ޤ���
             #           #<Set: {3, 4}>,
             #           #<Set: {6}>}>
 
-==== ������
-8x2 �Υ������׾�ǡ��ʥ��Ȥ���ã�Ǥ�����֤˴ؤ���ʬ���������ޤ���
+==== 応用例
+8x2 のチェス盤上で、ナイトが到達できる位置に関する分類を作成します。
 
   require 'set'
 

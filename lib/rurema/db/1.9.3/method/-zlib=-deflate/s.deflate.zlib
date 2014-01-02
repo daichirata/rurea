@@ -4,12 +4,12 @@ kind=defined
 
 --- deflate(string, level = Zlib::DEFAULT_COMPRESSION ) -> String
 
-string ¤ò°µ½Ì¤·¤Þ¤¹¡£level ¤ÎÍ­¸ú¤ÊÃÍ¤Ï
+string ã‚’åœ§ç¸®ã—ã¾ã™ã€‚level ã®æœ‰åŠ¹ãªå€¤ã¯
 [[m:Zlib::NO_COMPRESSION]], [[m:Zlib::BEST_SPEED]],
 [[m:Zlib::BEST_COMPRESSION]], [[m:Zlib::DEFAULT_COMPRESSION]]
-µÚ¤Ó 0 ¤«¤é 9 ¤ÎÀ°¿ô¤Ç¤¹¡£
+åŠã³ 0 ã‹ã‚‰ 9 ã®æ•´æ•°ã§ã™ã€‚
 
-¤Á¤Ê¤ß¤Ë¡¢¤³¤Î¥á¥½¥Ã¥É¤Ï°Ê²¼¤Î¥³¡¼¥É¤È¤Û¤ÜÆ±¤¸¤Ç¤¹:
+ã¡ãªã¿ã«ã€ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä»¥ä¸‹ã®ã‚³ãƒ¼ãƒ‰ã¨ã»ã¼åŒã˜ã§ã™:
 
   def deflate(string, level)
     z = Zlib::Deflate.new(level)
@@ -18,12 +18,12 @@ string ¤ò°µ½Ì¤·¤Þ¤¹¡£level ¤ÎÍ­¸ú¤ÊÃÍ¤Ï
     dst
   end
 
-@param string °µ½Ì¤¹¤ëÊ¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£ 
-@param level °µ½Ì¤Î¿å½à¤ò¾ÜºÙ¤Ë»ØÄê¤·¤Þ¤¹¡£
-             Í­¸ú¤ÊÃÍ¤Ï Zlib::NO_COMPRESSION, Zlib::BEST_SPEED,
-             Zlib::BEST_COMPRESSION, Zlib::DEFAULT_COMPRESSION µÚ¤Ó 0 ¤«¤é 9 ¤ÎÀ°¿ô¤Ç¤¹¡£
+@param string åœ§ç¸®ã™ã‚‹æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚ 
+@param level åœ§ç¸®ã®æ°´æº–ã‚’è©³ç´°ã«æŒ‡å®šã—ã¾ã™ã€‚
+             æœ‰åŠ¹ãªå€¤ã¯ Zlib::NO_COMPRESSION, Zlib::BEST_SPEED,
+             Zlib::BEST_COMPRESSION, Zlib::DEFAULT_COMPRESSION åŠã³ 0 ã‹ã‚‰ 9 ã®æ•´æ•°ã§ã™ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
   require 'zlib'
 
   srand(1)
@@ -39,10 +39,10 @@ string ¤ò°µ½Ì¤·¤Þ¤¹¡£level ¤ÎÍ­¸ú¤ÊÃÍ¤Ï
     Zlib::DEFAULT_COMPRESSION ].each { |level|
     deflate_str = Zlib::Deflate.deflate(str, level)
     p deflate_str.size
-    # Å¸³«¤¹¤ë¾ì¹ç¤Ï¡¢²¼µ­¤ò¼Â¹Ô¤¹¤ë
+    # å±•é–‹ã™ã‚‹å ´åˆã¯ã€ä¸‹è¨˜ã‚’å®Ÿè¡Œã™ã‚‹
     #puts Zlib::Inflate.inflate(str)
   }
-  #½ÐÎÏÎã
+  #å‡ºåŠ›ä¾‹
   #=> 511
   #=> 200
   #=> 194

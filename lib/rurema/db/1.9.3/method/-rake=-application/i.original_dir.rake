@@ -4,5 +4,5 @@ kind=defined
 
 --- original_dir -> String
 
-rake ���ޥ�ɤ�¹Ԥ����ǥ��쥯�ȥ���֤��ޤ���
+rake コマンドを実行したディレクトリを返します。
 

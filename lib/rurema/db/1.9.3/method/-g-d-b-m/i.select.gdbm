@@ -4,7 +4,7 @@ kind=defined
 
 --- select{|key, value| ... } -> [[String]]
 
-�֥��å���ɾ�����ƿ��ˤʤä����ǤΤߤ�����˳�Ǽ�����֤��ޤ���
+ブロックを評価して真になった要素のみを配列に格納して返します。
 
   require 'gdbm'
   

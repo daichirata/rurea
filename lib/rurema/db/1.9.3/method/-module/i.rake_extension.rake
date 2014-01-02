@@ -4,12 +4,12 @@ kind=added
 
 --- rake_extension(method){ ... } -> ()
 
-Ϳ����줿�֥��å���Ǵ���¸�ߤ���᥽�åɤ��������褦�Ȥ�������
-�ٹ��ɽ�����ޤ������ξ�硢�֥��å���ɾ������ޤ���
+与えられたブロック内で既に存在するメソッドを再定義しようとした場合に
+警告を表示します。この場合、ブロックは評価されません。
 
-@param method �֥��å���Ǻ��������ͽ��Υ᥽�å�̾����ꤷ�ޤ���
+@param method ブロック内で再定義する予定のメソッド名を指定します。
 
-��:
+例:
    class String
      rake_extension("xyz") do
        def xyz

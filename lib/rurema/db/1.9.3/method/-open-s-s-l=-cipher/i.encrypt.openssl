@@ -5,14 +5,14 @@ kind=defined
 --- encrypt -> self
 --- encrypt(pass, iv = nil) -> self
 
-�Ź沽�ν����򤷤ޤ���
+暗号化の準備をします。
 
-�Ź楪�֥������Ȥ��������֤�Ź沽�Τ���˽�������ޤ���
+暗号オブジェクトの内部状態を暗号化のために初期化します。
 
-pass �� iv ���Ϥ��줿��硢�������Ѥ��Ƹ������������Ź楪�֥������Ȥ�
-���� IV �����ꤷ�ޤ������Τ�꤫������ɸ��Ū�Ǥ��뤿�����Ѥ��٤��ǤϤ���ޤ���
+pass と iv が渡された場合、これらを用いて鍵を生成し、暗号オブジェクトに
+鍵と IV を設定します。このやりかたは非標準的であるため利用すべきではありません。
 
-@param pass �ѥ����ʸ����
-@param iv IVʸ����
-@raise OpenSSL::Cipher::CipherError �����˼��Ԥ�������ȯ�����ޤ�
+@param pass パスワード文字列
+@param iv IV文字列
+@raise OpenSSL::Cipher::CipherError 準備に失敗した場合に発生します
 

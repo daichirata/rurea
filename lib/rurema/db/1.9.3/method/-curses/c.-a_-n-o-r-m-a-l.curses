@@ -5,7 +5,7 @@ kind=defined
 --- A_NORMAL -> Integer
 @todo
 
-???¤òÉ½¤¹Â°À­¥Ş¥¹¥¯ÍÑ¤ÎÄê¿ô¤Ç¤¹¡£
+???ã‚’è¡¨ã™å±æ€§ãƒã‚¹ã‚¯ç”¨ã®å®šæ•°ã§ã™ã€‚
 
 @see [[m:Curses.attrset]]
 

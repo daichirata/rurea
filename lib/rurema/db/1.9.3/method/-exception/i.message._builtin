@@ -5,10 +5,10 @@ kind=defined
 --- message    -> String
 --- to_s       -> String
 
-¥¨¥é¡¼¥á¥Ã¥»¡¼¥¸¤ò¤¢¤é¤ï¤¹Ê¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ã‚ã‚‰ã‚ã™æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-  begin 
-    1 + nil 
+  begin
+    1 + nil
   rescue => e
     p e.message   #=>  "nil can't be coerced into Fixnum"
   end

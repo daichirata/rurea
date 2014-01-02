@@ -2,6 +2,18 @@ names=whitespace
 visibility=public
 kind=defined
 
---- whitespace
-@todo
+--- whitespace -> bool
+要素(self)内で空白が考慮されるならば真を返します。
+
+これは、
+  * [[m:REXML::Element#context]] に :respect_whitespace も :compress_whitespace も
+    含まれない
+  * context の :respect_whitespace に self の要素名が含まれていて、
+    :compress_whitespace に self の要素名が含まれていない。
+    「含まれている」というのには :all が指定されている場合と、
+    配列に含まれている場合の両方があります。
+のいずれかの場合に真を返します。
+
+要素名として [[m:REXML::Namespace#expanded_name]] が使われるので、
+名前空間の prefix は判定に影響します。
 

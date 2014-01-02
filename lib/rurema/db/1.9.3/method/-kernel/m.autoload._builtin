@@ -4,15 +4,15 @@ kind=defined
 
 --- autoload(const_name, feature) -> nil
 
-��� const_name ��ǽ�˻��Ȥ������� feature ��
-[[m:Kernel.#require]] ����褦�����ꤷ�ޤ���
+定数 const_name を最初に参照した時に feature を
+[[m:Kernel.#require]] するように設定します。
 
-const_name �ˤϡ� "::" �黻�Ҥ�ޤ�뤳�ȤϤǤ��ޤ���
-�ʥͥ��Ȥ����������ꤹ����ˡ�ϸ�ҡˡ�
+const_name には、 "::" 演算子を含めることはできません
+（ネストした定数を指定する方法は後述）。
 
-@param const_name �����String �ޤ��� Symbol �ǻ��ꤷ�ޤ���
-@param feature require ��Ʊ�ͤ���ˡ�� autoload �����оݤ���ꤷ�ޤ���
-@raise LoadError feature�Υ����ɤ˼��Ԥ����ȯ�����ޤ���
+@param const_name 定数をString または Symbol で指定します。
+@param feature require と同様な方法で autoload する対象を指定します。
+@raise LoadError featureのロードに失敗すると発生します。
 
     ------- /tmp/foo.rb ---------
     class Bar
@@ -22,14 +22,14 @@ const_name �ˤϡ� "::" �黻�Ҥ�ޤ�뤳�ȤϤǤ��ޤ���
     autoload :Bar, '/tmp/foo'
     p Bar #=> Bar
 
-==== �ͥ��Ȥ������������
+==== ネストした定義内の定数
 
-const_name �ˤϡ� "::" �黻�Ҥ�ޤ�뤳�ȤϤǤ��ʤ��Τǡ� Kernel.#autoload 
-�Ǥϥȥåץ�٥�������������Ǥ��ޤ���
+const_name には、 "::" 演算子を含めることはできないので、 Kernel.#autoload 
+ではトップレベルの定数しか指定できません。
 
-[[m:Module#autoload]] ���Ȥ߹�碌�뤳�Ȥǡ�Ǥ�դΥ��饹���⥸�塼�������� autoload �Ǥ��ޤ���
-��Ϥ�const_name �� "::" �黻�Ҥ�ޤ�뤳�ȤϤ�
-���ޤ��󤬡��ʲ��Τ褦�������������Ǥ��ޤ���
+[[m:Module#autoload]] と組み合わせることで、任意のクラス／モジュールの定数を autoload できます。
+やはりconst_name に "::" 演算子を含めることはで
+きませんが、以下のように定義する事ができます。
 
     ------- /tmp/foo.rb ---------
     class Foo
@@ -43,16 +43,16 @@ const_name �ˤϡ� "::" �黻�Ҥ�ޤ�뤳�ȤϤǤ��ʤ��Τǡ� Kernel.#autoload
     end
     p Foo::Bar #=> Foo::Bar
 
-���뤤�ϡ��ʲ��Τ褦�ˤ�Ǥ��ޤ���
+あるいは、以下のようにもできます。
 
     class Foo
     end
     Foo.autoload :Bar, '/tmp/foo'
     p Foo::Bar #=> Foo::Bar
 
-�ʲ��Τ褦�ˡ�autoload �����饤�֥�꤬�ͥ��Ȥ��������������ʤ���
-�硢�츫�������ư��Ƥ���褦�˸�����Τ����դ�ɬ�פǤ�(�ٹ���
-���������ФƤ��ޤ�)��
+以下のように、autoload したライブラリがネストした定数を定義しない場
+合、一見、正常に動作しているように見えるので注意が必要です(警告メッ
+セージが出ています)。
 
       ------- /tmp/bar.rb ---------
       class Bar
@@ -68,7 +68,7 @@ const_name �ˤϡ� "::" �黻�Ҥ�ޤ�뤳�ȤϤǤ��ʤ��Τǡ� Kernel.#autoload
       #   Bar
       #   nil
 
-����ϰʲ��Τ褦�˥ͥ��Ȥ�������������Τ�Ʊ�����ȤǤ���
+これは以下のようにネストせずに定義したのと同じことです。
 
       class Foo
       end

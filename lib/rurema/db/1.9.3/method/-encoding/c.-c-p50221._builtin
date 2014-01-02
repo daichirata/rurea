@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- CP50221 -> Encoding
-Windows ���Ѥ����롢ISO-2022-JP ����Ǥ���
+Windows で用いられる、ISO-2022-JP 亜種です。
 
-ISO-2022-JP �˲ä���ESC ( I �Ǥ�����Ⱦ�ѥ��ʤ������Windows �ε����¸ʸ���򰷤����Ȥ��Ǥ��ޤ���
+ISO-2022-JP に加え、ESC ( I でいわゆる半角カナを許し、Windows の機種依存文字を扱うことができます。
 
 @see [[url:http://legacy-encoding.sourceforge.jp/wiki/index.php?cp50221]]
 

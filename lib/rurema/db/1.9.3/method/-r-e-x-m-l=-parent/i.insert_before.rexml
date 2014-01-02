@@ -2,6 +2,17 @@ names=insert_before
 visibility=public
 kind=defined
 
---- insert_before(child1, child2)
-@todo
+--- insert_before(child1, child2) -> self
+child2 を child1 で指定したノードの前に挿入します。
+
+child1 が REXML::Child のインスタンスであるならば、その
+子ノードの前に挿入されます。
+child1 が 文字列であるならば、XPath で場所を指定します。
+具体的には [[m:REXML::XPath.first]](self, child1) で特定されるノードの
+前に挿入されます。
+
+挿入されるノード(child2)の親は self に変更されます。
+
+@param child1 挿入場所の指定
+@param child2 挿入されるノード
 

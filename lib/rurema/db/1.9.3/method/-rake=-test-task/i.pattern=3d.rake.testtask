@@ -4,6 +4,6 @@ kind=defined
 
 --- pattern=(pattern)
 
-�ƥ��ȥե�����˥ޥå����� glob �ѥ��������ꤷ�ޤ���
+テストファイルにマッチする glob パターンを指定します。
 
 

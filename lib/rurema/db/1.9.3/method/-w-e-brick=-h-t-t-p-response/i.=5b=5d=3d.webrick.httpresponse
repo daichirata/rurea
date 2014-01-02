@@ -4,11 +4,11 @@ kind=defined
 
 --- []=(field, val)
 
-�쥹�ݥ󥹤γ�������إå��� val �����ꤷ�ޤ���
+レスポンスの該当するヘッダに val を設定します。
 
-@param field �إå�̾��ʸ����ǻ��ꤷ�ޤ�����ʸ���Ⱦ�ʸ������̤��ޤ���
+@param field ヘッダ名を文字列で指定します。大文字と小文字を区別しません。
 
-@param val �إå����ͤ���ꤷ�ޤ���to_s �᥽�åɤˤ�ä�ʸ������Ѵ�����ޤ���
+@param val ヘッダの値を指定します。to_s メソッドによって文字列に変換されます。
 
   require 'time'
   res['last-modified'] = Time.now.httpdate

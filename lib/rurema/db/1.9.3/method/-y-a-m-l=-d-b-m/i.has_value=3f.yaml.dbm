@@ -4,8 +4,8 @@ kind=defined
 
 --- has_value?(value) -> bool
 
-value ¤òÃÍ¤È¤¹¤ëÁÈ¤¬¥Ç¡¼¥¿¥Ù¡¼¥¹Ãæ¤ËÂ¸ºß¤¹¤ë»þ¡¢¿¿¤òÊÖ¤·¤Þ¤¹¡£
+value ã‚’å€¤ã¨ã™ã‚‹çµ„ãŒãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ä¸­ã«å­˜åœ¨ã™ã‚‹æ™‚ã€çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-@param value ¸¡º÷¤·¤¿¤¤ÃÍ¤ò»ØÄê¤·¤Þ¤¹¡£YAML ·Á¼°¤ËÊÑ´¹¤Ç¤­¤ë¥ª¥Ö¥¸¥§¥¯
-             ¥È¤¬»ØÄê¤Ç¤­¤Þ¤¹¡£
+@param value æ¤œç´¢ã—ãŸã„å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚YAML å½¢å¼ã«å¤‰æ›ã§ãã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯
+             ãƒˆãŒæŒ‡å®šã§ãã¾ã™ã€‚
 

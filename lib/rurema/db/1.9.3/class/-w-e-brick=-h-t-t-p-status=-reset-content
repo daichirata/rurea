@@ -6,4 +6,4 @@ library=webrick.httpstatus
 aliases=
 aliasof=
 
-HTTP ¤Î¥¹¥Æ¡¼¥¿¥¹¥³¡¼¥É 205 Reset Content ¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+HTTP ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰ 205 Reset Content ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

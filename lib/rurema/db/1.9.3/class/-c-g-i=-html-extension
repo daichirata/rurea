@@ -6,8 +6,8 @@ library=cgi.html
 aliases=
 aliasof=
 
-HTML ¤òÀ¸À®¤¹¤ë¤¿¤á¤Î¥á¥½¥Ã¥É¤òÄó¶¡¤¹¤ë¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+HTML ã‚’ç”Ÿæˆã™ã‚‹ãŸã‚ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’æä¾›ã™ã‚‹ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚
 
-Îã:
+ä¾‹:
    cgi.a("http://www.example.com") { "Example" }
      # => "<A HREF=\"http://www.example.com\">Example</A>"

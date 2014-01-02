@@ -5,11 +5,11 @@ kind=added
 --- try_type(type, headers = nil, opt = "") -> bool
 --- try_type(type, headers = nil, opt = ""){ ... } -> bool
 
-[[m:Kernel#have_type]] ��ȤäƤ���������
+[[m:Kernel#have_type]] を使ってください。
 
-@param type ��������������̾������ꤷ�ޤ���
+@param type 検査したい型の名前を指定します。
 
-@param headers �ɲäΥإå�����ꤷ�ޤ���
+@param headers 追加のヘッダを指定します。
 
-@param opt ����ѥ�����Ϥ��ɲäΥ��ץ�������ꤷ�ޤ���
+@param opt コンパイラに渡す追加のオプションを指定します。
 

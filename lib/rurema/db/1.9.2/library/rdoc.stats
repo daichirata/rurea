@@ -1,7 +1,0 @@
-requires=
-classes=RDoc=Stats
-methods=
-sublibraries=
-is_sublibrary=true
-
-RDoc のステータスを管理するサブライブラリです。

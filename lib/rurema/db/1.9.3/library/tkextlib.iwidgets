@@ -3,5 +3,6 @@ classes=Tk=Iwidgets
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

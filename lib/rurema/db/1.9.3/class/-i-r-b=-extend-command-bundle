@@ -6,4 +6,4 @@ library=irb.extend=2dcommand
 aliases=
 aliasof=
 
-irb �Υ��ޥ�ɤ��ĥ���뤿��Υ⥸�塼��Ǥ���
+irb のコマンドを拡張するためのモジュールです。

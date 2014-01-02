@@ -3,21 +3,24 @@ visibility=public
 kind=defined
 
 --- require_relative(relative_feature) -> bool
-���ߤΥե����뤫������Хѥ��� require ���ޤ���
+現在のファイルからの相対パスで require します。
 
   require File.expand_path(relative_feature, File.dirname(__FILE__))
-�Ȥۤ�Ʊ���Ǥ���
+とほぼ同じです。
 
-@param feature �ե�����̾��ʸ����Ǥ���
-@raise LoadError �����ɤ˼��Ԥ�������ȯ�����ޤ���
+[[m:Kernel.#eval]] などで文字列を評価した場合に、そこから
+require_relative を呼出すと必ず失敗します。
+
+@param relative_feature ファイル名の文字列です。
+@raise LoadError ロードに失敗した場合に発生します。
 @see [[m:Kernel.#require]]
 
-==== require �� load �Υ�������
+==== require と load のスコープ
 
-���������ѿ��ϥե�����֤Ǥ϶�ͭ����ޤ��󡣤Ǥ��Τǡ�
-�����ɤ����饤�֥��Υ��������ѿ���
-�����ɸ��Υ�����ץȤ���ľ�ܼ������뤳�ȤϤǤ��ޤ���
-���Υ������פΰ�������[[m:Kernel.#load]]�Ǥ�Ʊ�ͤǤ���
+ローカル変数はファイル間では共有されません。ですので、
+ロードしたライブラリのローカル変数を
+ロード元のスクリプトから直接取得することはできません。
+このスコープの扱い方は[[m:Kernel.#load]]でも同様です。
 
   ---------- some.rb -----------
   $a = 1

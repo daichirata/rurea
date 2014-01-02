@@ -4,5 +4,5 @@ kind=added
 
 --- callcc {|cont| .... } -> object
 
-·ÑÂ³¤òºîÀ®¤·¤Þ¤¹¡£ [[c:Continuation]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+ç¶™ç¶šã‚’ä½œæˆã—ã¾ã™ã€‚ [[c:Continuation]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 

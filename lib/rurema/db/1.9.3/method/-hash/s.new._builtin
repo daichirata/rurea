@@ -4,24 +4,24 @@ kind=defined
 
 --- new(ifnone = nil) -> Hash
 
-���ο������ϥå�����������ޤ���ifnone �ϥ�������
-�������ͤ�¸�ߤ��ʤ����Υǥե�����ͤǤ������ꤷ���ǥե�����ͤ�[[m:Hash#default]]�ǻ��ȤǤ��ޤ���
+空の新しいハッシュを生成します。ifnone はキーに対
+応する値が存在しない時のデフォルト値です。設定したデフォルト値は[[m:Hash#default]]で参照できます。
 
-ifnone���ά���� Hash.new �� {} ��Ʊ���Ǥ���
+ifnoneを省略した Hash.new は {} と同じです。
 
-�ǥե�����ͤȤ��ơ����Ʊ��Υ��֥�������ifnone���֤��ޤ���
-����ˤ�ꡢ��ս�Υǥե�����ͤ��ѹ���¾���ͤΥǥե�����ͤˤ�ƶ����ޤ���
+デフォルト値として、毎回同一のオブジェクトifnoneを返します。
+それにより、一箇所のデフォルト値の変更が他の値のデフォルト値にも影響します。
 
   h = Hash.new([])
   h[0] << 0
   h[1] << 1
   p h.default #=> [0, 1]
 
-������򤱤�ˤϡ��˲�Ū�Ǥʤ��᥽�åɤǺ���������ɬ�פ�ͭ��ޤ���
-�ޤ������Τ褦�ʥߥ����ɤ�����ˤ�ifnone�� freeze �����˲�Ū����ػߤ��Ƥ����Τ�̵��Ǥ���
+これを避けるには、破壊的でないメソッドで再代入する必要が有ります。
+また、このようなミスを防ぐためにもifnoneは freeze して破壊的操作を禁止しておくのが無難です。
 
 
-@param ifnone �������б������ͤ�¸�ߤ��ʤ����Υǥե�����ͤǤ���
+@param ifnone キーに対応する値が存在しない時のデフォルト値です。
 
   h = Hash.new([])
 
@@ -37,22 +37,22 @@ ifnone���ά���� Hash.new �� {} ��Ʊ���Ǥ���
 
 
   h = Hash.new([].freeze)
-  h[0] += [0] #�˲�Ū�Ǥʤ��᥽�åɤ�OK
+  h[0] += [0] #破壊的でないメソッドはOK
   h[1] << 1
-  # ���顼 `<<': can't modify frozen array (TypeError)
+  # エラー `<<': can't modify frozen array (TypeError)
 
 --- new {|hash, key| ... } -> Hash
-���ο������ϥå�����������ޤ����֥��å���ɾ����̤��ǥե�����ͤˤʤ��
-�������ꤷ���ǥե�����ͤ�[[m:Hash#default_proc]]�ǻ��ȤǤ��ޤ���
+空の新しいハッシュを生成します。ブロックの評価結果がデフォルト値になりま
+す。設定したデフォルト値は[[m:Hash#default_proc]]で参照できます。
 
-�ͤ����ꤵ��Ƥ��ʤ��ϥå������Ǥ򻲾Ȥ���Ȥ������٥֥��å���
-�¹Ԥ������η�̤��֤��ޤ���
-�֥��å��ˤϤ��Υϥå���ȥϥå���򻲾Ȥ����Ȥ��Υ������Ϥ���ޤ���
+値が設定されていないハッシュ要素を参照するとその都度ブロックを
+実行し、その結果を返します。
+ブロックにはそのハッシュとハッシュを参照したときのキーが渡されます。
 
-@raise ArgumentError �֥��å����̾������Ʊ����Ϳ�����ȯ�����ޤ���
+@raise ArgumentError ブロックと通常引数を同時に与えると発生します。
 
-  # �֥��å��ǤϤʤ��ǥե�����ͤ�����Ʊ��Υ��֥������ȤʤΤǡ�
-  # �˲�Ū�ѹ��ˤ�ä�¾�Υ������б������ͤ��ѹ�����ޤ���
+  # ブロックではないデフォルト値は全部同一のオブジェクトなので、
+  # 破壊的変更によって他のキーに対応する値も変更されます。
   h = Hash.new("foo")
   
   p h[1]                  #=> "foo"
@@ -65,8 +65,8 @@ ifnone���ά���� Hash.new �� {} ��Ʊ���Ǥ���
   
   p h                     #=> {}
   
-  # �֥��å���Ϳ����ȡ��б������ͤ��ޤ�̵���������ƤӽФ�����٤�
-  # �֥��å���ɾ������Τǡ������̤Υ��֥������Ȥˤʤ�ޤ���
+  # ブロックを与えると、対応する値がまだ無いキーが呼び出される度に
+  # ブロックを評価するので、全て別のオブジェクトになります。
   h = Hash.new {|hash, key| hash[key] = "foo"}
   
   p h[1]                  #=> "foo"
@@ -79,12 +79,12 @@ ifnone���ά���� Hash.new �� {} ��Ʊ���Ǥ���
   
   p h                     #=> {1=>"foobar", 2=>"foo"}
 
-  # �ͤ����ꤵ��Ƥ��ʤ��Ȥ���(fetch�Τ褦��)�㳰�򤢤���褦�ˤ�Ǥ���
+  # 値が設定されていないときに(fetchのように)例外をあげるようにもできる
   h = Hash.new {|hash, key|
                   raise(IndexError, "hash[#{key}] has no value")
                }
   h[1]
-  # ���顼 hash[1] has no value (IndexError)
+  # エラー hash[1] has no value (IndexError)
 
 @see [[m:Hash#default=]],[[m:Hash#default]],[[m:Hash#default_proc]]
 

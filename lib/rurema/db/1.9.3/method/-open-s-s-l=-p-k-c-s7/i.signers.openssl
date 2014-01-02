@@ -4,8 +4,8 @@ kind=defined
 
 --- signers -> [OpenSSL::PKCS7::SignerInfo]
 
-��å������ν�̾�Ԥ�ɽ�� [[c:OpenSSL::PKCS7::SignerInfo]] ���֥������Ȥ�
-������֤��ޤ���
+メッセージの署名者を表す [[c:OpenSSL::PKCS7::SignerInfo]] オブジェクトの
+配列を返します。
 
-����ϥ�å��������̾�������ˤΤ߰�̣������ޤ���
+これはメッセージを署名した場合にのみ意味があります。
 

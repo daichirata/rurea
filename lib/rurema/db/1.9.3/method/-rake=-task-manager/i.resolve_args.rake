@@ -4,9 +4,9 @@ kind=defined
 
 --- resolve_args(args) -> Array
 
-¥¿¥¹¥¯¤ä¥ë¡¼¥ë¤ËÍ¿¤¨¤é¤ì¤¿¥Ñ¥é¥á¡¼¥¿¤ò²ò¼á¤·¤Ş¤¹¡£
+ã‚¿ã‚¹ã‚¯ã‚„ãƒ«ãƒ¼ãƒ«ã«ä¸ãˆã‚‰ã‚ŒãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’è§£é‡ˆã—ã¾ã™ã€‚
 
-@param args ¥Ñ¥é¥á¡¼¥¿¤ò»ØÄê¤·¤Ş¤¹¡£
+@param args ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return [task_name, arg_name_list, prerequisites] ¤òÊÖ¤·¤Ş¤¹¡£
+@return [task_name, arg_name_list, prerequisites] ã‚’è¿”ã—ã¾ã™ã€‚
 

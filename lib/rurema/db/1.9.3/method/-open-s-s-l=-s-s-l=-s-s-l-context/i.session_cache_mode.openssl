@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- session_cache_mode -> Integer
-е╗е├е╖ечеєенеуе├е╖ехд╬етб╝е╔дЄ╩╓д╖д▐д╣бг
+уВ╗уГГуВ╖уГзуГ│уВнуГгуГГуВ╖уГеуБоуГвуГ╝уГЙуВТш┐ФуБЧуБ╛уБЩуАВ
 
 @see [[m:OpenSSL::SSL::SSLContext#session_cache_mode=]]
 

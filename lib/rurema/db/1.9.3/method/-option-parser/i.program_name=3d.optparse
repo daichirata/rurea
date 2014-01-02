@@ -4,7 +4,7 @@ kind=defined
 
 --- program_name=(name)
 
-�ץ�������̾����ʸ����ǻ��ꤷ�ޤ���
+プログラムの名前を文字列で指定します。
 
-@param name �ץ�������̾����ʸ����ǻ��ꤷ�ޤ���
+@param name プログラムの名前を文字列で指定します。
 

@@ -6,5 +6,5 @@ library=webrick.httpauth.authenticator
 aliases=
 aliasof=
 
-���Υ⥸�塼��ϥץ������Τ���˥�����������ǧ�ڤȥ١����å�ǧ�ڤ�ξ��
-�ΰ���Ū�ʥ��ݡ��Ȥ��󶡤��ޤ���
+このモジュールはプロキシのためにダイジェスト認証とベーシック認証の両方
+の一般的なサポートを提供します。

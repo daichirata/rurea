@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- absolute? -> bool
-���Хѥ������Ǥ��뤫�ɤ������֤��ޤ���
+絶対パス形式であるかどうかを返します。
 
 

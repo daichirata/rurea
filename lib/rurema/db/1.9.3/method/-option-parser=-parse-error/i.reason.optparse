@@ -4,7 +4,7 @@ kind=defined
 
 --- reason -> String
 
-���顼�����Ƥ�ʸ������֤��ޤ���
+エラーの内容を文字列で返します。
 
-@return ʸ������֤��ޤ���
+@return 文字列を返します。
 

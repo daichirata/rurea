@@ -6,4 +6,4 @@ library=optparse
 aliases=
 aliasof=
 
-������ɬ�פʥ��ץ����˰�����Ϳ�����ʤ��ä������ꤲ���ޤ���
+引数が必要なオプションに引数が与えられなかった場合に投げられます。

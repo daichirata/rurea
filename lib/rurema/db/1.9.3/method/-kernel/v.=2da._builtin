@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- $-a -> bool
-��ư split �⡼�ɤ�ɽ���ե饰�Ǥ���
+自動 split モードを表すフラグです。
 
-���ޥ�ɥ饤�󥪥ץ���� -a ��Ȥä��Ȥ� true �����ꤵ��ޤ���
-�����ѿ��ˤ������Ǥ��ޤ���
+コマンドラインオプション -a を使ったとき true に設定されます。
+この変数には代入できません。
 
-�����ѿ��ϥ������Х륹�����פǤ���
+この変数はグローバルスコープです。
 
 @see [[d:spec/rubycmd]]
 

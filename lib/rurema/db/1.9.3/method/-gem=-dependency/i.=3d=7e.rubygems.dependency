@@ -4,8 +4,8 @@ kind=defined
 
 --- =~(other) -> bool
 
-self �� other ����Ӥ��ƿ����ͤ��֤��ޤ���
+self と other を比較して真偽値を返します。
 
-self �� [[m:Gem::Dependency#name]] ������ɽ���Ȥ��� other �ȥޥå����ʤ����ϵ����֤��ޤ���
-self �� other �Ȥΰ�¸�ط����������Ƥ���п����֤��ޤ����������Ƥ��ʤ���е����֤��ޤ���
+self の [[m:Gem::Dependency#name]] が正規表現として other とマッチしない場合は偽を返します。
+self が other との依存関係を満たしていれば真を返します。満たしていなければ偽を返します。
 

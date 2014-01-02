@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- peeraddr -> Array
-��åפ���Ƥ��륽���åȤ���³�����ξ�����֤��ޤ���
+ラップされているソケットの接続先相手の情報を返します。
 
-[[m:IPSocket#peeraddr]] ��Ʊ�ͤǤ���
+[[m:IPSocket#peeraddr]] と同様です。
 

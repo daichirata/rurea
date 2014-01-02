@@ -3,22 +3,22 @@ visibility=public
 kind=defined
 
 --- sign(signer_cert, signer_key, certs = [], flags=0) -> self
-Response �˽�̾���ޤ���
+Response に署名します。
 
-OCSP �쥹�ݥ��(�⤷���� CA)�ϥ쥹�ݥ󥹤˽�̾�򤹤뤳�Ȥǡ�
-�쥹�ݥ󥹤����Ƥ��ݾڤ��ޤ���
+OCSP レスポンダ(もしくは CA)はレスポンスに署名をすることで、
+レスポンスの内容を保証します。
 
-flags �ˤϰʲ����ͤ� OR ���Ϥ����Ȥ��Ǥ��ޤ���
+flags には以下の値の OR を渡すことができます。
   * [[m:OpenSSL::OCSP::NOTIME]]
   * [[m:OpenSSL::OCSP::RESPID_KEY]]
   * [[m:OpenSSL::OCSP::NOCERTS]]
 
-certs �˾������������Ϥ����Ȥǡ����ν�̾�򸡾ڤ��뤿���
-ɬ�פȤʤ��̤ξ�������ղä��뤳�Ȥ��Ǥ��ޤ���
+certs に証明書の配列を渡すことで、この署名を検証するために
+必要となる別の証明書を付加することができます。
 
-@param signer_cert ��̾�Ԥξ�����([[c:OpenSSL::X509::Certificate]] ���֥�������)
-@param signer_key �������Ѥ�����̩��([[c:OpenSSL::PKey::PKey]] ���֥�������)
-@param certs ź�դ��������([[c:OpenSSL::X509::Certificate]] ���֥������Ȥ�����)
-@param flags �ե饰(����)
+@param signer_cert 署名者の証明書([[c:OpenSSL::X509::Certificate]] オブジェクト)
+@param signer_key 証明に用いる秘密鍵([[c:OpenSSL::PKey::PKey]] オブジェクト)
+@param certs 添付する証明書([[c:OpenSSL::X509::Certificate]] オブジェクトの配列)
+@param flags フラグ(整数)
 
 

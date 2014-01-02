@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- NONBLOCK -> Integer
-�ե����뤬���Ѳ�ǽ����ʤ��Ƥ�֥��å����ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+ファイルが利用可能じゃなくてもブロックしません。
+[[m:File.open]]で使用します。
 

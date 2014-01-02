@@ -4,7 +4,7 @@ kind=defined
 
 --- new(config) -> WEBrick::HTTPRequest
 
-WEBrick::HTTPRequest ¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+WEBrick::HTTPRequest ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param config ÀßÄê¤òÊÝ»ý¤·¤¿¥Ï¥Ã¥·¥å¤ò»ØÄê¤·¤Þ¤¹¡£
+@param config è¨­å®šã‚’ä¿æŒã—ãŸãƒãƒƒã‚·ãƒ¥ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

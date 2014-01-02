@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- src_type -> String | nil
-self��¾�η�����̾�ʤ�С����η�̾��������ޤ���
+selfが他の型の別名ならば、元の型名を取得します。
 
-@return self����̾�ʤ�и��η�̾��ʸ������֤��ޤ�����̾�Ǥʤ����nil��
-        �֤��ޤ���
+@return selfが別名ならば元の型名を文字列で返します。別名でなければnilを
+        返します。
 
    tobj =  WIN32OLE_TYPE.new('Microsoft Office 14.0 Object Library', 'MsoRGBType')
    p tobj.src_type   # => "I4"
 
-������ϡ�Office��MsoRGBType��������դ�32�ӥå�������I4�ˤ���̾���Ȥ�
-�����Ȥ򼨤��ޤ���
+この例は、OfficeのMsoRGBType型は符号付き32ビット整数（I4）の別名だとい
+うことを示します。
 

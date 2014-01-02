@@ -4,10 +4,10 @@ kind=defined
 
 --- formatter=(formatter)
 
-¥í¥°¤ò½ĞÎÏ¤¹¤ëºİ¤Ë»ÈÍÑ¤¹¤ë¥Õ¥©¡¼¥Ş¥Ã¥¿¡¼¤ò¥»¥Ã¥È¤·¤Ş¤¹¡£
+ãƒ­ã‚°ã‚’å‡ºåŠ›ã™ã‚‹éš›ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ¼ãƒãƒƒã‚¿ãƒ¼ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param formatter 4 ¤Ä¤Î°ú¿ô (severity, time, program name, message) ¤ò¼õ¤±¼è¤ë call ¥á¥½¥Ã¥É¤ò
-                 »ı¤Ä¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£call ¥á¥½¥Ã¥É¤ÎÊÖ¤êÃÍ¤ÏÊ¸»úÎó¤Ë¤·¤Æ¤¯¤À¤µ¤¤¡£
+@param formatter 4 ã¤ã®å¼•æ•° (severity, time, program name, message) ã‚’å—ã‘å–ã‚‹ call ãƒ¡ã‚½ãƒƒãƒ‰ã‚’
+                 æŒã¤ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚call ãƒ¡ã‚½ãƒƒãƒ‰ã®è¿”ã‚Šå€¤ã¯æ–‡å­—åˆ—ã«ã—ã¦ãã ã•ã„ã€‚
 
   logger = Logger.new
   logger.formatter = proc{|severity, datetime, progname, message|

@@ -4,11 +4,11 @@ kind=defined
 
 --- denominator -> Integer
 
-Ê¬Êì¤òÊÖ¤·¤Þ¤¹¡£¾ï¤ËÀµ¤ÎÀ°¿ô¤òÊÖ¤·¤Þ¤¹¡£
+åˆ†æ¯ã‚’è¿”ã—ã¾ã™ã€‚å¸¸ã«æ­£ã®æ•´æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
-@return Ê¬Êì¤òÊÖ¤·¤Þ¤¹¡£
+@return åˆ†æ¯ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Rational(7).denominator       # => 1
   Rational(7, 1).denominator    # => 1

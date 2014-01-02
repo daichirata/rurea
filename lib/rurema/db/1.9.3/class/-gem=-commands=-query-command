@@ -6,4 +6,4 @@ library=rubygems.commands.query_command
 aliases=
 aliasof=
 
-Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¾ğÊó¤ò¸¡º÷¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®æƒ…å ±ã‚’æ¤œç´¢ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

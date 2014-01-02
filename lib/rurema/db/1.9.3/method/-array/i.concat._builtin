@@ -4,14 +4,14 @@ kind=defined
 
 --- concat(other)    -> self
 
-���� other �򼫿Ȥ��������˲�Ū��Ϣ�뤷�ޤ���
+配列 other を自身の末尾に破壊的に連結します。
 
-@param other ���Ȥ�Ϣ�뤷�����������ꤷ�ޤ���
+@param other 自身と連結したい配列を指定します。
 
     array = [1, 2]
     a     = [3, 4]
     array.concat a
     p array          # => [1, 2, 3, 4]
-    p a              # => [3, 4]       # ��������Ѥ��ʤ�
+    p a              # => [3, 4]       # こちらは変わらない
 
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- list    -> [Thread] 
 
-self ��°���륹��åɤ�������֤��ޤ���
-version 1.8 �Ǥϡ�aborting ���֤Ǥ��륹��å�
-�����Ǥ˴ޤޤ�ޤ����Ĥޤ�������Ƥ���ץ���åɤ�������֤��ޤ���
+self に属するスレッドの配列を返します。
+version 1.8 では、aborting 状態であるスレッド
+も要素に含まれます。つまり「生きている」スレッドの配列を返します。
 

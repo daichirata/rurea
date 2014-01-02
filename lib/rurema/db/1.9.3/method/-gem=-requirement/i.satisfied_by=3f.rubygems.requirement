@@ -4,10 +4,10 @@ kind=defined
 
 --- satisfied_by?(version) -> bool
 
-���� version �����Ȥ˴ޤޤ�����Ƥ�ɬ�׾������������˿����֤��ޤ���
-�����Ǥʤ���е����֤��ޤ���
+引数 version が自身に含まれる全ての必要条件を満たす場合に真を返します。
+そうでなければ偽を返します。
 
-@param version [[c:Gem::Version]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param version [[c:Gem::Version]] のインスタンスを指定します。
 
 @see [[m:Gem::Requirement#satisfy?]]
 

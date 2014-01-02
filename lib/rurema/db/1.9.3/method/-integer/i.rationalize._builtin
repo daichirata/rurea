@@ -5,13 +5,13 @@ kind=defined
 --- rationalize      -> Rational
 --- rationalize(eps) -> Rational
 
-¼«¿È¤ò [[c:Rational]] ¤ËÊÑ´¹¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’ [[c:Rational]] ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-@param eps µöÍÆ¤¹¤ë¸íº¹
+@param eps è¨±å®¹ã™ã‚‹èª¤å·®
 
-°ú¿ô eps ¤Ï¾ï¤ËÌµ»ë¤µ¤ì¤Þ¤¹¡£
+å¼•æ•° eps ã¯å¸¸ã«ç„¡è¦–ã•ã‚Œã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   2.rationalize      # => (2/1)
   2.rationalize(100) # => (2/1)

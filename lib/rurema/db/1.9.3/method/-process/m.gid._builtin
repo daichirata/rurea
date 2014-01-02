@@ -4,7 +4,7 @@ kind=defined
 
 --- gid        -> Integer
 
-�����ȥץ������μ¥��롼�� ID ���֤��ޤ���
+カレントプロセスの実グループ ID を返します。
 
 @see [[man:getgid(2)]]
 

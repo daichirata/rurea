@@ -4,8 +4,7 @@ kind=defined
 
 --- zero(n) -> Matrix
 
-n¼¡¤ÎÎí¹ÔÎó¤òÀ¸À®¤·¤Þ¤¹¡£
-Îí¹ÔÎó¤È¤Ï¡¢Í×ÁÇ¤¬Á´¤Æ0¤Î¹ÔÎó¤Ç¤¹¡£
-
-@param n À¸À®¤¹¤ë¹ÔÎó¤Î¼¡¸µ
+n Ã— n ã®é›¶è¡Œåˆ—ï¼ˆè¦ç´ ãŒå…¨ã¦ 0 ã®è¡Œåˆ—ï¼‰ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
+ 
+@param n ç”Ÿæˆã™ã‚‹æ­£æ–¹é›¶è¡Œåˆ—ã®æ¬¡æ•°
 

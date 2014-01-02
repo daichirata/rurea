@@ -5,6 +5,6 @@ kind=defined
 --- keyname
 @todo
 
-[[m:Win32::Registry.open]] ¤Ş¤¿¤Ï [[m:Win32::Registry.create]] ¤Ë»ØÄê¤µ¤ì¤¿
-subkey ¤ÎÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+[[m:Win32::Registry.open]] ã¾ãŸã¯ [[m:Win32::Registry.create]] ã«æŒ‡å®šã•ã‚ŒãŸ
+subkey ã®å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 

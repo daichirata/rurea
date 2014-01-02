@@ -6,7 +6,7 @@ library=net.imap
 aliases=
 aliasof=
 
-[[m:Net::IMAP#getquota]] ¤ä [[m:Net::IMAP#getquotaroot]] ¤ÇÆÀ¤é¤ì¤ë
-quota ¤Î¾ğÊó¤òÉ½¤¹¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤¹¡£
+[[m:Net::IMAP#getquota]] ã‚„ [[m:Net::IMAP#getquotaroot]] ã§å¾—ã‚‰ã‚Œã‚‹
+quota ã®æƒ…å ±ã‚’è¡¨ã™ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
 
-¾Ü¤·¤¯¤Ï [[RFC:2087]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯ [[RFC:2087]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚

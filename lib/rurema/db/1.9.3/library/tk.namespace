@@ -3,5 +3,6 @@ classes=TkNamespace,TkNamespace=Ensemble,TkNamespace=ScopeArgs,TkNamespace=NsCod
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

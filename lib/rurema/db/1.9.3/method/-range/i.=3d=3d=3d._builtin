@@ -6,27 +6,27 @@ kind=defined
 --- include?(obj) -> bool
 --- member?(obj) -> bool
 
-obj ���ϰ���˴ޤޤ�Ƥ�����˿����֤��ޤ���
+obj が範囲内に含まれている時に真を返します。
 
-[[m:Range#===]] �ϼ�� case ���Ǥ���Ӥ��Ѥ����ޤ���
+[[m:Range#===]] は主に case 式での比較に用いられます。
 
-<=> �᥽�åɤˤ��黻�ˤ���ϰ��⤫�ɤ�����Ƚ�ꤹ��ˤ� [[m:Range#cover?]] ����Ѥ��Ƥ���������
+<=> メソッドによる演算により範囲内かどうかを判定するには [[m:Range#cover?]] を使用してください。
 
-@param obj ����оݤΥ��֥������Ȥ���ꤷ�ޤ���
+@param obj 比較対象のオブジェクトを指定します。
 
   p (0.1 .. 0.2).include?(0.15) # => true
-  # 1.8.1 ����
+  # 1.8.1 以前
   p (0.1 .. 0.2).member?(0.15)  # => cannot iterate from Float (TypeError)
-  # 1.8.2 �ʹ�
+  # 1.8.2 以降
   p (0.1 .. 0.2).member?(0.15)  # => true
   
-  # ʸ����ξ�硢include? �ϼ�������Ӥˤʤ�
+  # 文字列の場合、include? は辞書順の比較になる
   p ("a" .. "c").include?("ba") # => true
-  # 1.8.1 ����
+  # 1.8.1 以前
   p ("a" .. "c").member?("ba")  # => false
-  # 1.8.2 �ʹ�
+  # 1.8.2 以降
   p ("a" .. "c").member?("ba")  # => true
-  # 1.9.1 �ʹ�
+  # 1.9.1 以降
   p ("a" .. "c").include?("ba") # => false
   p ("a" .. "c").member?("ba")  # => false
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- edit(doc_num, doc) -> ()
 
-doc_num���ܤΥɥ�����Ȥ�doc���ѹ����ޤ���
-�⤷��doc_num�����ߤΥɥ�����ȿ�����礭�����ϴ֤ˤ�nil����������ޤ���
+doc_num番目のドキュメントをdocに変更します。
+もし、doc_numが現在のドキュメント数より大きい場合は間にはnilが挿入されます。
 
-@param doc_num �ѹ������ɥ�����Ȥ��ֹ�
-@param doc Ŭ�ڤʥ��֥�������
+@param doc_num 変更されるドキュメントの番号
+@param doc 適切なオブジェクト
 
   require 'yaml'
   

@@ -3,5 +3,6 @@ classes=Readline,Readline=HISTORY
 methods=
 sublibraries=
 is_sublibrary=false
+category=CUI
 
-GNU Readline ¤Ë¤è¤ë¥³¥Ş¥ó¥É¥é¥¤¥óÆşÎÏ¥¤¥ó¥¿¥Õ¥§¡¼¥¹¤òÄó¶¡¤¹¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+GNU Readline ã«ã‚ˆã‚‹ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³å…¥åŠ›ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹ã‚’æä¾›ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

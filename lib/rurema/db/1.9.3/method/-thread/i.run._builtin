@@ -4,9 +4,9 @@ kind=defined
 
 --- run    -> self
 
-��߾���(stop)�Υ���åɤ�Ƴ������ޤ���
-[[m:Thread#wakeup]] �Ȱۤʤꤹ���˥���åɤ��ڤ��ؤ�
-��Ԥ��ޤ���
+停止状態(stop)のスレッドを再開させます。
+[[m:Thread#wakeup]] と異なりすぐにスレッドの切り替え
+を行います。
 
-@raise ThreadError ���Ǥ��륹��åɤ��Ф��Ƽ¹Ԥ����ȯ�����ޤ���
+@raise ThreadError 死んでいるスレッドに対して実行すると発生します。
 

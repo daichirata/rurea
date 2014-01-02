@@ -4,5 +4,5 @@ kind=defined
 
 --- http_version -> String
 
-�����Ф����ݡ��Ȥ��Ƥ��� HTTP �ΥС�������ʸ������֤��ޤ���
+サーバがサポートしている HTTP のバージョンを文字列で返します。
 

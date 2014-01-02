@@ -4,7 +4,7 @@ kind=defined
 
 --- cookies=(value)
 
-���å����򥻥åȤ��ޤ���
+クッキーをセットします。
 
-@param value ���å�����̾�����ͤ�ڥ��ˤ������Ǥ���ĥϥå������ꤷ�ޤ���
+@param value クッキーの名前と値をペアにした要素を持つハッシュを指定します。
 

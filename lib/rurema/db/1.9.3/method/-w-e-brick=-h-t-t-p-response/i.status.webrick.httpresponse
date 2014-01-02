@@ -4,6 +4,6 @@ kind=defined
 
 --- status           -> Integer
 
-�쥹�ݥ󥹤Υ��ơ����������ɤ�ɽ���������֤��ޤ���
-�ǥե���Ȥ� [[m:WEBrick::HTTPStatus::RC_OK]] �Ǥ���
+レスポンスのステータスコードを表す整数を返します。
+デフォルトは [[m:WEBrick::HTTPStatus::RC_OK]] です。
 

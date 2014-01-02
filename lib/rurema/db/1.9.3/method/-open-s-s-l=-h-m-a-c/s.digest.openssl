@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- digest(digest, key, data) -> String
-�Ϥ��줿 digest �� key ���Ѥ��� data �� HMAC ��׻�����
-�����ͤ�Х��ʥ�ʸ����Ȥ����֤��ޤ���
+渡された digest と key を用いて data の HMAC を計算し、
+その値をバイナリ文字列として返します。
 
-digest �ˤ����Ѥ���ϥå���ؿ���ɽ��ʸ����("md5", "sha256" �ʤ�)
-���Ϥ��ޤ���
+digest には利用するハッシュ関数を表す文字列("md5", "sha256" など)
+を渡します。
 
-@param digest ���Ѥ���ϥå���ؿ�
-@param key ���Ѥ��븰��ʸ����
-@param data HMAC ��׻�����ʸ����
+@param digest 利用するハッシュ関数
+@param key 利用する鍵の文字列
+@param data HMAC を計算する文字列
 

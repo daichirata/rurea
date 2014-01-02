@@ -4,7 +4,7 @@ kind=defined
 
 --- default_value(name) -> object
 
-Ϳ����줿̾����°���Υǥե�����ͤ��֤��ޤ���
+与えられた名前の属性のデフォルト値を返します。
 
-@param name °��̾����ꤷ�ޤ���
+@param name 属性名を指定します。
 

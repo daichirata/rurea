@@ -4,5 +4,5 @@ kind=defined
 
 --- has_test_suite? -> bool
 
-¤³¤Î¥á¥½¥Ã¥É¤ÏÈó¿ä¾©¤Ç¤¹¡£ [[m:Gem::Specification#has_unit_tests?]] ¤ò»ÈÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯éæ¨å¥¨ã§ã™ã€‚ [[m:Gem::Specification#has_unit_tests?]] ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
 

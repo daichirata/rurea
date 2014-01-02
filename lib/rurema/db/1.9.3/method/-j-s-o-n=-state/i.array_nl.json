@@ -4,5 +4,5 @@ kind=defined
 
 --- array_nl -> String
 
-JSON ������θ�˽��Ϥ���ʸ������֤��ޤ���
+JSON の配列の後に出力する文字列を返します。
 

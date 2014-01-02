@@ -3,36 +3,36 @@ visibility=public
 kind=defined
 
 --- new(gem, options = {}) -> Gem::Installer
-@todo �񤤤Ƥʤ����ץ���󤬤��äѤ�����
+@todo 書いてないオプションがいっぱいある
 
-Ϳ����줿�����Ǽ��Ȥ��������ޤ���
+与えられた引数で自身を初期化します。
 
-@param gem ���󥹥ȡ����оݤ� Gem �Υѥ�����ꤷ�ޤ���
+@param gem インストール対象の Gem のパスを指定します。
 
-@param options ���󥹥ȡ��餬���Ѥ��륪�ץ�����ϥå���ǻ��ꤷ�ޤ���
-               ���ѤǤ��륭���ϰʲ����̤�Ǥ���
+@param options インストーラが使用するオプションをハッシュで指定します。
+               使用できるキーは以下の通りです。
 : :env_shebang
-  ���ޥ�ɤΥ�åѡ��� shebang line �� /usr/bin/env ����Ѥ��ޤ���
+  コマンドのラッパーで shebang line に /usr/bin/env を使用します。
 : :force
-  ��̾���줿 Gem �Τߤ򥤥󥹥ȡ��뤹��Ȥ����ݥꥷ���ʳ���
-  ���ƤΥС����������å��ȥ������ƥ��ݥꥷ���Υ����å���Ԥ�ʤ��褦�ˤ��ޤ���
+  署名された Gem のみをインストールするというポリシー以外、
+  全てのバージョンチェックとセキュリティポリシーのチェックを行わないようにします。
 : :ignore_dependencies
-  ��¸�ط����������Ƥ��ʤ����Ǥ��㳰��ȯ�������ޤ���
+  依存関係を満たしていない場合でも例外を発生させません。
 : :install_dir
-  Gem �򥤥󥹥ȡ��뤹��ǥ��쥯�ȥ����ꤷ�ޤ���
+  Gem をインストールするディレクトリを指定します。
 : :format_executable
-  �¹ԥե������̾���� ruby ��Ʊ���ե����ޥåȤˤ��뤫�ɤ������ꤷ�ޤ���
-  ���󥹥ȡ��뤵��Ƥ��� ruby �� ruby19 �Ȥ���̾���ξ�硢foo_exec �Ȥ���̾����
-  �¹ԥե������ foo_exec19 �Ȥ���̾���ǥ��󥹥ȡ��뤵��ޤ���
+  実行ファイルの名前を ruby と同じフォーマットにするかどうか指定します。
+  インストールされている ruby が ruby19 という名前の場合、foo_exec という名前の
+  実行ファイルは foo_exec19 という名前でインストールされます。
 : :security_policy
-  ����Υ������ƥ��ݥꥷ������Ѥ��ޤ����ܺ٤� [[c:Gem::Security]] �򻲾Ȥ��Ƥ���������
+  特定のセキュリティポリシーを使用します。詳細は [[c:Gem::Security]] を参照してください。
 : :wrappers
-  �����ͤ����ξ��ϡ���åѡ��򥤥󥹥ȡ��뤷�ޤ������ξ��ϡ�����ܥ�å���󥯤�������ޤ���
+  この値が真の場合は、ラッパーをインストールします。偽の場合は、シンボリックリンクを作成します。
 : :user_install
-  �����ͤ� false �ξ��ϡ��桼���Υۡ���ǥ��쥯�ȥ�� Gem �򥤥󥹥ȡ��뤷�ޤ���
-  �����ͤ� nil �ξ��ϡ��桼���Υۡ���ǥ��쥯�ȥ�� Gem �򥤥󥹥ȡ��뤷�ޤ������ٹ�ɽ������ޤ���
+  この値が false の場合は、ユーザのホームディレクトリに Gem をインストールしません。
+  この値が nil の場合は、ユーザのホームディレクトリに Gem をインストールしますが、警告が表示されます。
 
-@raise Gem::InstallError Gem �Υե����ޥåȤ������Ǥ������ȯ�����ޤ���
+@raise Gem::InstallError Gem のフォーマットが不正である場合に発生します。
 
-@raise Gem::FilePermissionError �񤭹�����Υǥ��쥯�ȥ�˽񤭹��߸��¤��ʤ�����ȯ�����ޤ���
+@raise Gem::FilePermissionError 書き込み先のディレクトリに書き込み権限がない場合に発生します。
 

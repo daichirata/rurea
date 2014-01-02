@@ -5,16 +5,17 @@ kind=added
 --- rfc2822 -> String
 --- rfc822 -> String
 
-[[RFC:2822]] ¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ë date-time ¤È¤·¤ÆÉ½¸½¤µ¤ì¤ë
-°Ê²¼¤Î·Á¼°¤ÎÊ¸»úÎó¤òÊÖ¤·¤Ş¤¹:
+[[RFC:2822]] ã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ date-time ã¨ã—ã¦è¡¨ç¾ã•ã‚Œã‚‹å½¢å¼ã®æ–‡å­—åˆ—ã‚’
+è¿”ã—ã¾ã™ã€‚
 
- day-of-week, DD month-name CCYY hh:mm:ss zone
+@return ä»¥ä¸‹ã®å½¢å¼ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+//emlist{
+  day-of-week, DD month-name CCYY hh:mm:ss zone
+//}
+        ãŸã ã— zone ã¯ [+-]hhmm ã§ã™ã€‚
+        self ãŒ UTC time ã®å ´åˆã€zone ã¯ +0000 ã«ãªã‚Šã¾ã™ã€‚
 
-¤¿¤À¤· zone ¤Ï [+-]hhmm ¤Ç¤¹¡£
-
-self ¤¬ UTC time ¤Î¾ì¹ç¡¢zone ¤Ï +0000 ¤Ë¤Ê¤ê¤Ş¤¹¡£
-
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
   require 'time'
 
   iso8601_time = '2008-08-31T12:34:56+09:00'

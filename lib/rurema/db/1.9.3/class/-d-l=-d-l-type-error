@@ -6,4 +6,4 @@ library=dl
 aliases=
 aliasof=
 
-
+DL の型変換エラーを表すクラス。

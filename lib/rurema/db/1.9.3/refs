@@ -1,49 +1,54 @@
-class,IO,m17n,Â¿¸À¸ì²½¤È IO ¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-class,IO,io_encoding,IO ¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤È¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤ÎÊÑ´¹
-class,Proc,should_use_next,¼êÂ³¤­¤òÃæÃÇ¤·¤ÆÃÍ¤òÊÖ¤¹
-class,Proc,block,Proc ¥ª¥Ö¥¸¥§¥¯¥È¤ò¥Ö¥í¥Ã¥¯ÉÕ¤­¥á¥½¥Ã¥É¸Æ¤Ó½Ğ¤·¤Ë»È¤¦
-class,Proc,lambda_proc,lambda ¤È proc ¤È Proc.new ¤È¥¤¥Æ¥ì¡¼¥¿¤Î°ã¤¤
-class,Proc,orphan,orphan ¤Ê¼êÂ³¤­¥ª¥Ö¥¸¥§¥¯¥È¤ÎµóÆ°
-class,String,mutable,ÇË²õÅª¤ÊÊÑ¹¹
-class,String,m17n,Â¿¸À¸ì²½¤ÈÊ¸»úÎó¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-class,Thread,exception,Îã³°È¯À¸»ş¤Î¥¹¥ì¥Ã¥É¤Î¿¶¤ëÉñ¤¤
-class,FileUtils,options,¥ª¥×¥·¥ç¥ó¤ÎÀâÌÀ
-class,OpenSSL::X509,verify_error,¸¡¾Ú»ş¥¨¥é¡¼Äê¿ô
-library,iconv,gnu_options,´Ä¶­°ÍÂ¸¤Îµ¡Ç½
-library,irb,inspect_mode,¼Â¹Ô·ë²Ì¤Î½ĞÎÏÊı¼°
-library,openssl,references,»²¹ÍÊ¸¸¥
-library,optparse,optiondef,¥ª¥×¥·¥ç¥ó¤ÎÄêµÁ
-library,optparse,optionarg,¥ª¥×¥·¥ç¥ó¤Î°ú¿ô
-library,optparse,longoption,¥í¥ó¥°¥ª¥×¥·¥ç¥ó
-library,optparse,help,¥Ø¥ë¥×
-library,optparse,subcmd,¥µ¥Ö¥³¥Ş¥ó¥É
-library,optparse,argv,ARGV ¤Îµ¡Ç½
-library,optparse,hyphen_start_file,'-'¤Ç»Ï¤Ş¤ë¥Õ¥¡¥¤¥ëÌ¾
-library,rdoc,usage,»È¤¤¤«¤¿
+class,IO,m17n,å¤šè¨€èªåŒ–ã¨ IO ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+class,IO,io_encoding,IO ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã¨ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã®å¤‰æ›
+class,Proc,should_use_next,æ‰‹ç¶šãã‚’ä¸­æ–­ã—ã¦å€¤ã‚’è¿”ã™
+class,Proc,block,Proc ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ–ãƒ­ãƒƒã‚¯ä»˜ããƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã«ä½¿ã†
+class,Proc,lambda_proc,lambda ã¨ proc ã¨ Proc.new ã¨ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ã®é•ã„
+class,Proc,orphan,orphan ãªæ‰‹ç¶šãã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æŒ™å‹•
+class,String,mutable,ç ´å£Šçš„ãªå¤‰æ›´
+class,String,m17n,å¤šè¨€èªåŒ–ã¨æ–‡å­—åˆ—ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+class,Thread,exception,ä¾‹å¤–ç™ºç”Ÿæ™‚ã®ã‚¹ãƒ¬ãƒƒãƒ‰ã®æŒ¯ã‚‹èˆã„
+class,FileUtils,options,ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®èª¬æ˜
+class,OpenSSL::X509,verify_error,æ¤œè¨¼æ™‚ã‚¨ãƒ©ãƒ¼å®šæ•°
+library,bigdecimal,internal_structure,å†…éƒ¨æ§‹é€ 
+library,bigdecimal,precision,è¨ˆç®—ç²¾åº¦ã«ã¤ã„ã¦
+library,iconv,gnu_options,ç’°å¢ƒä¾å­˜ã®æ©Ÿèƒ½
+library,irb,customize_prompt,ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã®ã‚«ã‚¹ã‚¿ãƒã‚¤ã‚º
+library,irb,configure_sub_irb,ã‚µãƒ– irb ã®è¨­å®š
+library,irb,history,å±¥æ­´ã®ä¿å­˜
+library,irb,inspect_mode,å®Ÿè¡Œçµæœã®å‡ºåŠ›æ–¹å¼
+library,openssl,references,å‚è€ƒæ–‡çŒ®
+library,optparse,optiondef,ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®å®šç¾©
+library,optparse,optionarg,ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®å¼•æ•°
+library,optparse,longoption,ãƒ­ãƒ³ã‚°ã‚ªãƒ—ã‚·ãƒ§ãƒ³
+library,optparse,help,ãƒ˜ãƒ«ãƒ—
+library,optparse,subcmd,ã‚µãƒ–ã‚³ãƒãƒ³ãƒ‰
+library,optparse,argv,ARGV ã®æ©Ÿèƒ½
+library,optparse,hyphen_start_file,'-'ã§å§‹ã¾ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«å
+library,rdoc,usage,ä½¿ã„ã‹ãŸ
 library,rdoc,markup,Markup
-library,rdoc,list,¥ê¥¹¥È
-library,rdoc,labeled_list,¥é¥Ù¥ëÉÕ¤­¥ê¥¹¥È
-library,rdoc,headline,¸«½Ğ¤·
-library,rdoc,ruled_line,·ÓÀş
-library,rdoc,italic_bold_typewriter,¥¤¥¿¥ê¥Ã¥¯ÂÎ¡¢¥Ü¡¼¥ë¥ÉÂÎ¡¢¥¿¥¤¥×¥é¥¤¥¿¡¼ÂÎ
-library,rdoc,escape,¥¨¥¹¥±¡¼¥×
-library,rdoc/markup,output_format,½ĞÎÏ²ÄÇ½¤Ê·Á¼°
-library,socket,host_format,¥Û¥¹¥È»ØÄê·Á¼°
-library,socket,service_format,¥µ¡¼¥Ó¥¹»ØÄê·Á¼°
-library,socket,pack_string,¥½¥±¥Ã¥È¥¢¥É¥ì¥¹¹½Â¤ÂÎ¤ò pack ¤·¤¿Ê¸»úÎó
-method,Kernel.#lambda,should_use_next,¼êÂ³¤­¤òÃæÃÇ¤·¤ÆÃÍ¤òÊÖ¤¹
-method,Kernel.#proc,should_use_next,¼êÂ³¤­¤òÃæÃÇ¤·¤ÆÃÍ¤òÊÖ¤¹
-method,Kernel.#lambda,block,Proc ¥ª¥Ö¥¸¥§¥¯¥È¤ò¥Ö¥í¥Ã¥¯ÉÕ¤­¥á¥½¥Ã¥É¸Æ¤Ó½Ğ¤·¤Ë»È¤¦
-method,Kernel.#proc,block,Proc ¥ª¥Ö¥¸¥§¥¯¥È¤ò¥Ö¥í¥Ã¥¯ÉÕ¤­¥á¥½¥Ã¥É¸Æ¤Ó½Ğ¤·¤Ë»È¤¦
-method,Kernel.#lambda,lambda_proc,lambda ¤È proc ¤È Proc.new ¤È¥¤¥Æ¥ì¡¼¥¿¤Î°ã¤¤
-method,Kernel.#proc,lambda_proc,lambda ¤È proc ¤È Proc.new ¤È¥¤¥Æ¥ì¡¼¥¿¤Î°ã¤¤
-method,Kernel.#lambda,orphan,orphan ¤Ê¼êÂ³¤­¥ª¥Ö¥¸¥§¥¯¥È¤ÎµóÆ°
-method,Kernel.#proc,orphan,orphan ¤Ê¼êÂ³¤­¥ª¥Ö¥¸¥§¥¯¥È¤ÎµóÆ°
-method,String#scanf,format,scanf¥Õ¥©¡¼¥Ş¥Ã¥ÈÊ¸»úÎó
+library,rdoc,list,ãƒªã‚¹ãƒˆ
+library,rdoc,labeled_list,ãƒ©ãƒ™ãƒ«ä»˜ããƒªã‚¹ãƒˆ
+library,rdoc,headline,è¦‹å‡ºã—
+library,rdoc,ruled_line,ç½«ç·š
+library,rdoc,italic_bold_typewriter,ã‚¤ã‚¿ãƒªãƒƒã‚¯ä½“ã€ãƒœãƒ¼ãƒ«ãƒ‰ä½“ã€ã‚¿ã‚¤ãƒ—ãƒ©ã‚¤ã‚¿ãƒ¼ä½“
+library,rdoc,escape,ã‚¨ã‚¹ã‚±ãƒ¼ãƒ—
+library,rdoc/markup,output_format,å‡ºåŠ›å¯èƒ½ãªå½¢å¼
+library,socket,host_format,ãƒ›ã‚¹ãƒˆæŒ‡å®šå½¢å¼
+library,socket,service_format,ã‚µãƒ¼ãƒ“ã‚¹æŒ‡å®šå½¢å¼
+library,socket,pack_string,ã‚½ã‚±ãƒƒãƒˆã‚¢ãƒ‰ãƒ¬ã‚¹æ§‹é€ ä½“ã‚’ pack ã—ãŸæ–‡å­—åˆ—
+method,Kernel.#lambda,should_use_next,æ‰‹ç¶šãã‚’ä¸­æ–­ã—ã¦å€¤ã‚’è¿”ã™
+method,Kernel.#proc,should_use_next,æ‰‹ç¶šãã‚’ä¸­æ–­ã—ã¦å€¤ã‚’è¿”ã™
+method,Kernel.#lambda,block,Proc ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ–ãƒ­ãƒƒã‚¯ä»˜ããƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã«ä½¿ã†
+method,Kernel.#proc,block,Proc ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ–ãƒ­ãƒƒã‚¯ä»˜ããƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã«ä½¿ã†
+method,Kernel.#lambda,lambda_proc,lambda ã¨ proc ã¨ Proc.new ã¨ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ã®é•ã„
+method,Kernel.#proc,lambda_proc,lambda ã¨ proc ã¨ Proc.new ã¨ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ã®é•ã„
+method,Kernel.#lambda,orphan,orphan ãªæ‰‹ç¶šãã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æŒ™å‹•
+method,Kernel.#proc,orphan,orphan ãªæ‰‹ç¶šãã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æŒ™å‹•
+method,String#scanf,format,scanfãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆæ–‡å­—åˆ—
 doc,spec/call,super,super
-doc,spec/call,block,¥Ö¥í¥Ã¥¯ÉÕ¤­¥á¥½¥Ã¥É¸Æ¤Ó½Ğ¤·
+doc,spec/call,block,ãƒ–ãƒ­ãƒƒã‚¯ä»˜ããƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—
 doc,spec/call,yield,yield
-doc,spec/call,block_arg,¥Ö¥í¥Ã¥¯¥Ñ¥é¥á¡¼¥¿¤ÎµóÆ°
+doc,spec/call,block_arg,ãƒ–ãƒ­ãƒƒã‚¯ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æŒ™å‹•
 doc,spec/control,if,if
 doc,spec/control,unless,unless
 doc,spec/control,case,case
@@ -59,80 +64,81 @@ doc,spec/control,begin,begin
 doc,spec/control,return,return
 doc,spec/control,BEGIN,BEGIN
 doc,spec/control,END,END
-doc,spec/def,class,¥¯¥é¥¹ÄêµÁ
-doc,spec/def,singleton_class,ÆÃ°Û¥¯¥é¥¹ÄêµÁ
-doc,spec/def,module,¥â¥¸¥å¡¼¥ëÄêµÁ
-doc,spec/def,method,¥á¥½¥Ã¥ÉÄêµÁ
-doc,spec/def,operator,±é»»»Ò¼°¤ÎÄêµÁ
-doc,spec/def,nest_method,¥á¥½¥Ã¥ÉÄêµÁ¤Î¥Í¥¹¥È
-doc,spec/def,eval_method,¥á¥½¥Ã¥É¤ÎÉ¾²Á
-doc,spec/def,singleton_method,ÆÃ°Û¥á¥½¥Ã¥ÉÄêµÁ
-doc,spec/def,class_method,¥¯¥é¥¹¥á¥½¥Ã¥É¤ÎÄêµÁ
-doc,spec/def,limit,¸Æ¤Ó½Ğ¤·À©¸Â
+doc,spec/def,class,ã‚¯ãƒ©ã‚¹å®šç¾©
+doc,spec/def,singleton_class,ç‰¹ç•°ã‚¯ãƒ©ã‚¹å®šç¾©
+doc,spec/def,module,ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«å®šç¾©
+doc,spec/def,method,ãƒ¡ã‚½ãƒƒãƒ‰å®šç¾©
+doc,spec/def,operator,æ¼”ç®—å­å¼ã®å®šç¾©
+doc,spec/def,nest_method,ãƒ¡ã‚½ãƒƒãƒ‰å®šç¾©ã®ãƒã‚¹ãƒˆ
+doc,spec/def,eval_method,ãƒ¡ã‚½ãƒƒãƒ‰ã®è©•ä¾¡
+doc,spec/def,singleton_method,ç‰¹ç•°ãƒ¡ã‚½ãƒƒãƒ‰å®šç¾©
+doc,spec/def,class_method,ã‚¯ãƒ©ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã®å®šç¾©
+doc,spec/def,limit,å‘¼ã³å‡ºã—åˆ¶é™
 doc,spec/def,alias,alias
 doc,spec/def,undef,undef
 doc,spec/def,defined,defined?
-doc,spec/lambda_proc,def,¼êÂ³¤­¥ª¥Ö¥¸¥§¥¯¥È¤È¤Ï
-doc,spec/lambda_proc,should_use_next,¼êÂ³¤­¤òÃæÃÇ¤·¤ÆÃÍ¤òÊÖ¤¹
-doc,spec/lambda_proc,block,Proc ¥ª¥Ö¥¸¥§¥¯¥È¤ò¥Ö¥í¥Ã¥¯ÉÕ¤­¥á¥½¥Ã¥É¸Æ¤Ó½Ğ¤·¤Ë»È¤¦
-doc,spec/lambda_proc,lambda_proc,lambda ¤È proc ¤È Proc.new ¤È¥¤¥Æ¥ì¡¼¥¿¤Î°ã¤¤
-doc,spec/lambda_proc,orphan,orphan ¤Ê¼êÂ³¤­¥ª¥Ö¥¸¥§¥¯¥È¤ÎµóÆ°
-doc,spec/lexical,identifier,¼±ÊÌ»Ò
-doc,spec/lexical,comment,¥³¥á¥ó¥È
-doc,spec/lexical,embed,Ëä¤á¹ş¤ß¥É¥­¥å¥á¥ó¥È
-doc,spec/lexical,reserved,Í½Ìó¸ì
-doc,spec/literal,num,¿ôÃÍ¥ê¥Æ¥é¥ë
-doc,spec/literal,string,Ê¸»úÎó¥ê¥Æ¥é¥ë
-doc,spec/literal,backslash,¥Ğ¥Ã¥¯¥¹¥é¥Ã¥·¥åµ­Ë¡
-doc,spec/literal,exp,¼°Å¸³«
-doc,spec/literal,command,¥³¥Ş¥ó¥É½ĞÎÏ
-doc,spec/literal,here,¥Ò¥¢¥É¥­¥å¥á¥ó¥È (¹Ô»Ø¸şÊ¸»úÎó¥ê¥Æ¥é¥ë)
-doc,spec/literal,regexp,Àµµ¬É½¸½¥ê¥Æ¥é¥ë
-doc,spec/literal,array,ÇÛÎó¼°
-doc,spec/literal,hash,¥Ï¥Ã¥·¥å¼°
-doc,spec/literal,range,ÈÏ°Ï¥ª¥Ö¥¸¥§¥¯¥È
-doc,spec/literal,symbol,¥·¥ó¥Ü¥ë
-doc,spec/literal,percent,%µ­Ë¡
-doc,spec/m17n,m17n_prog,M17N ¥×¥í¥°¥é¥ß¥ó¥°¤Î´ğËÜ
-doc,spec/m17n,convert,¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤ÎÊÑ¹¹
-doc,spec/m17n,ruby18,Ruby 1.8 ¤«¤é¤Î°Ü¹Ô
-doc,spec/m17n,encoding,Ruby ¤¬¥µ¥İ¡¼¥È¤¹¤ë¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-doc,spec/m17n,ascii_compat,ASCII¸ß´¹¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-doc,spec/m17n,7bit_clean,7bit ¥¯¥ê¡¼¥ó¤ÊÊ¸»úÎó
-doc,spec/m17n,binary,¥Ğ¥¤¥Ê¥ê¤Î¼è°·¤¤
-doc,spec/m17n,dummy,¥À¥ß¡¼¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-doc,spec/m17n,script_encoding,¥¹¥¯¥ê¥×¥È¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
+doc,spec/lambda_proc,def,æ‰‹ç¶šãã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨ã¯
+doc,spec/lambda_proc,should_use_next,æ‰‹ç¶šãã‚’ä¸­æ–­ã—ã¦å€¤ã‚’è¿”ã™
+doc,spec/lambda_proc,block,Proc ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ–ãƒ­ãƒƒã‚¯ä»˜ããƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ã«ä½¿ã†
+doc,spec/lambda_proc,lambda_proc,lambda ã¨ proc ã¨ Proc.new ã¨ã‚¤ãƒ†ãƒ¬ãƒ¼ã‚¿ã®é•ã„
+doc,spec/lambda_proc,orphan,orphan ãªæ‰‹ç¶šãã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æŒ™å‹•
+doc,spec/lexical,identifier,è­˜åˆ¥å­
+doc,spec/lexical,comment,ã‚³ãƒ¡ãƒ³ãƒˆ
+doc,spec/lexical,embed,åŸ‹ã‚è¾¼ã¿ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ
+doc,spec/lexical,reserved,äºˆç´„èª
+doc,spec/literal,num,æ•°å€¤ãƒªãƒ†ãƒ©ãƒ«
+doc,spec/literal,string,æ–‡å­—åˆ—ãƒªãƒ†ãƒ©ãƒ«
+doc,spec/literal,backslash,ãƒãƒƒã‚¯ã‚¹ãƒ©ãƒƒã‚·ãƒ¥è¨˜æ³•
+doc,spec/literal,exp,å¼å±•é–‹
+doc,spec/literal,command,ã‚³ãƒãƒ³ãƒ‰å‡ºåŠ›
+doc,spec/literal,here,ãƒ’ã‚¢ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ (è¡ŒæŒ‡å‘æ–‡å­—åˆ—ãƒªãƒ†ãƒ©ãƒ«)
+doc,spec/literal,regexp,æ­£è¦è¡¨ç¾ãƒªãƒ†ãƒ©ãƒ«
+doc,spec/literal,array,é…åˆ—å¼
+doc,spec/literal,hash,ãƒãƒƒã‚·ãƒ¥å¼
+doc,spec/literal,range,ç¯„å›²ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+doc,spec/literal,symbol,ã‚·ãƒ³ãƒœãƒ«
+doc,spec/literal,percent,%è¨˜æ³•
+doc,spec/m17n,m17n_prog,M17N ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°ã®åŸºæœ¬
+doc,spec/m17n,convert,ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã®å¤‰æ›´
+doc,spec/m17n,ruby18,Ruby 1.8 ã‹ã‚‰ã®ç§»è¡Œ
+doc,spec/m17n,encoding,Ruby ãŒã‚µãƒãƒ¼ãƒˆã™ã‚‹ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+doc,spec/m17n,ascii_compat,ASCIIäº’æ›ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+doc,spec/m17n,7bit_clean,7bit ã‚¯ãƒªãƒ¼ãƒ³ãªæ–‡å­—åˆ—
+doc,spec/m17n,binary,ãƒã‚¤ãƒŠãƒªã®å–æ‰±ã„
+doc,spec/m17n,dummy,ãƒ€ãƒŸãƒ¼ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+doc,spec/m17n,script_encoding,ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
 doc,spec/m17n,magic_comment,magic comment
-doc,spec/m17n,incompat,1.8 ¤«¤é¤Î¥¹¥¯¥ê¥×¥È¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ë´Ø¤¹¤ëÈó¸ß´¹À­
-doc,spec/m17n,literal,¥ê¥Æ¥é¥ë¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-doc,spec/operator,assign,ÂåÆş
-doc,spec/operator,selfassign,¼«¸ÊÂåÆş
-doc,spec/operator,multiassign,Â¿½ÅÂåÆş
-doc,spec/operator,range,ÈÏ°Ï¼°
-doc,spec/operator,range_cond,¾ò·ï¼°¤È¤·¤Æ¤ÎÈÏ°Ï¼°
+doc,spec/m17n,incompat,1.8 ã‹ã‚‰ã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã«é–¢ã™ã‚‹éäº’æ›æ€§
+doc,spec/m17n,literal,ãƒªãƒ†ãƒ©ãƒ«ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+doc,spec/operator,assign,ä»£å…¥
+doc,spec/operator,selfassign,è‡ªå·±ä»£å…¥
+doc,spec/operator,multiassign,å¤šé‡ä»£å…¥
+doc,spec/operator,range,ç¯„å›²å¼
+doc,spec/operator,range_cond,æ¡ä»¶å¼ã¨ã—ã¦ã®ç¯„å›²å¼
 doc,spec/operator,and,and
 doc,spec/operator,or,or
 doc,spec/operator,not,not
-doc,spec/operator,cond,¾ò·ï±é»»»Ò
-doc,spec/program,exp,¼°
-doc,spec/program,terminate,¥×¥í¥°¥é¥à¤Î½ª¤ê
-doc,spec/regexp,regexp,Àµµ¬É½¸½µ­¹æ
-doc,spec/regexp,backref,¸åÊı»²¾È
-doc,spec/regexp,string,Ê¸»ú¥¯¥é¥¹
-doc,spec/regexp,backtrack,¥Ğ¥Ã¥¯¥È¥é¥Ã¥¯
-doc,spec/regexp,sample,¥µ¥ó¥×¥ë
-doc,spec/rubycmd,cmd_option,¥³¥Ş¥ó¥É¥é¥¤¥ó¥ª¥×¥·¥ç¥ó
-doc,spec/rubycmd,shebang,¥¤¥ó¥¿¥×¥ê¥¿¹Ô¤Î²ò¼á
-doc,spec/safelevel,level4,¥ì¥Ù¥ë 4
-doc,spec/thread,exception,Îã³°È¯À¸»ş¤Î¥¹¥ì¥Ã¥É¤Î¿¶¤ëÉñ¤¤
-doc,spec/variables,local,¥í¡¼¥«¥ëÊÑ¿ô
-doc,spec/variables,instance,¥¤¥ó¥¹¥¿¥ó¥¹ÊÑ¿ô
-doc,spec/variables,class,¥¯¥é¥¹ÊÑ¿ô
-doc,spec/variables,class_var_scope,¥¯¥é¥¹ÊÑ¿ô¤Î¥¹¥³¡¼¥×
-doc,spec/variables,global,¥°¥í¡¼¥Ğ¥ëÊÑ¿ô
-doc,spec/variables,pseudo,µ¿»÷ÊÑ¿ô
-doc,spec/variables,const,Äê¿ô
-doc,spec/variables,prio,Äê¿ô»²¾È¤ÎÍ¥Àè½ç°Ì
+doc,spec/operator,cond,æ¡ä»¶æ¼”ç®—å­
+doc,spec/program,exp,å¼
+doc,spec/program,terminate,ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®çµ‚ã‚Š
+doc,spec/regexp,regexp,æ­£è¦è¡¨ç¾è¨˜å·
+doc,spec/regexp,backref,å¾Œæ–¹å‚ç…§
+doc,spec/regexp,string,æ–‡å­—ã‚¯ãƒ©ã‚¹
+doc,spec/regexp,backtrack,ãƒãƒƒã‚¯ãƒˆãƒ©ãƒƒã‚¯
+doc,spec/regexp,sample,ã‚µãƒ³ãƒ—ãƒ«
+doc,spec/rubycmd,cmd_option,ã‚³ãƒãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³ã‚ªãƒ—ã‚·ãƒ§ãƒ³
+doc,spec/rubycmd,shebang,ã‚¤ãƒ³ã‚¿ãƒ—ãƒªã‚¿è¡Œã®è§£é‡ˆ
+doc,spec/safelevel,level4,ãƒ¬ãƒ™ãƒ« 4
+doc,spec/thread,exception,ä¾‹å¤–ç™ºç”Ÿæ™‚ã®ã‚¹ãƒ¬ãƒƒãƒ‰ã®æŒ¯ã‚‹èˆã„
+doc,spec/variables,local,ãƒ­ãƒ¼ã‚«ãƒ«å¤‰æ•°
+doc,spec/variables,instance,ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹å¤‰æ•°
+doc,spec/variables,class,ã‚¯ãƒ©ã‚¹å¤‰æ•°
+doc,spec/variables,class_var_scope,ã‚¯ãƒ©ã‚¹å¤‰æ•°ã®ã‚¹ã‚³ãƒ¼ãƒ—
+doc,spec/variables,global,ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°
+doc,spec/variables,builtin,çµ„ã¿è¾¼ã¿å¤‰æ•°
+doc,spec/variables,pseudo,ç–‘ä¼¼å¤‰æ•°
+doc,spec/variables,const,å®šæ•°
+doc,spec/variables,prio,å®šæ•°å‚ç…§ã®å„ªå…ˆé †ä½
 doc,symref,ex,!
 doc,symref,q,?
 doc,symref,num,#

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- DEBUG -> Integer
-������٥�:�ǥХå���ɽ������Ǥ���
+ログレベル:デバッグを表す定数です。
 

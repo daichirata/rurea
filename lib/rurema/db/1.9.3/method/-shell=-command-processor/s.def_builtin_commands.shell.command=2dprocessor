@@ -5,10 +5,10 @@ kind=defined
 --- def_builtin_commands(delegation_class, commands_specs) -> ()
 @todo
 
-@param delegation_class ������Ѿ����������饹���⥸�塼�����ꤷ�ޤ���
+@param delegation_class 処理を委譲したいクラスかモジュールを指定します。
 
-@param commands_specs ���ޥ�ɤλ��ͤ�ʸ���������ǻ��ꤷ�ޤ���
-                      [[���ޥ��̾, [����1, ����2, ...]], ...]
+@param commands_specs コマンドの仕様を文字列の配列で指定します。
+                      [[コマンド名, [引数1, 引数2, ...]], ...]
 
 
 

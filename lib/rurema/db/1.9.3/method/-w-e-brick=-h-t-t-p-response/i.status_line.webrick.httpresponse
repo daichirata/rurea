@@ -4,7 +4,7 @@ kind=defined
 
 --- status_line    -> String
 
-HTTP ¤Î¥¹¥Æ¡¼¥¿¥¹¥é¥¤¥ó¤ò CR+LF ÉÕ¤­Ê¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+HTTP ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã‚’ CR+LF ä»˜ãæ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
   require 'webrick'
   res = WEBrick::HTTPResponse.new( { :HTTPVersion => "1.1" } )

@@ -2,18 +2,18 @@ names=toutf32
 visibility=public
 kind=defined
 
---- toutf32(str)
+--- toutf32(str) -> String
 
-ʸ���� str �Υ��󥳡��ǥ��󥰤� UTF-32 ���Ѵ������֤��ޤ���
+文字列 str のエンコーディングを UTF-32 に変換して返します。
 
-���Υ᥽�åɤ� MIME ���󥳡��ɤ��줿ʸ�����Ÿ������
-������Ⱦ�ѥ��ʤ����Ѥ��Ѵ����ޤ���
-�������Ѵ��������ʤ����ϡ� [[m:NKF.#nkf]]('-w32xm0', str)
-��ȤäƤ���������
+このメソッドは MIME エンコードされた文字列を展開し、
+いわゆる半角カナを全角に変換します。
+これらを変換したくない場合は、 [[m:NKF.#nkf]]('-w32xm0', str)
+を使ってください。
 
-Kconv.kconv(str, Kconv::UTF32)��Ʊ���Ǥ���
+Kconv.kconv(str, Kconv::UTF32)と同じです。
 
-@param str �Ѵ�����ʸ����
+@param str 変換元の文字列
 @see [[m:String#toutf32]]
 
 

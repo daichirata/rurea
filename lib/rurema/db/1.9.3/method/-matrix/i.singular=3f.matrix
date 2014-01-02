@@ -4,7 +4,13 @@ kind=defined
 
 --- singular? -> bool
 
-�ð�(singular)�ʤ鿿(true)���֤��ޤ���
+行列が正方で特異なら真を/正則なら偽を返します。
 
-�����ð�(singular)�Ǥ���Ȥϡ���§�Ǥʤ����ȤǤ���
+行列が特異(singular)であるとは、正則でないことです。
+行列式が0であること同値です。
+
+正方行列でない場合には例外 ExceptionForMatrix::ErrDimensionMismatch を
+発生させます。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
 

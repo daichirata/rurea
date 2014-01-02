@@ -4,17 +4,17 @@ kind=defined
 
 --- new(ole_method,  index) -> WIN32OLE_PARAM
 
-�᥽�åɤȥѥ�᡼�����֤���ꤷ��WIN32OLE_PARAM�Υ��󥹥��󥹤�������ޤ���
+メソッドとパラメータ位置を指定してWIN32OLE_PARAMのインスタンスを作成します。
 
-���ץꥱ�������ץ������Ǥϡ�WIN32OLE_PARAM���֥������Ȥ�new�᥽�å�
-������������⡢[[m:WIN32OLE_METHOD#params]]�򻲾Ȥ���ۤ�����ñ�Ǥ���
+アプリケーションプログラムでは、WIN32OLE_PARAMオブジェクトをnewメソッド
+で生成するよりも、[[m:WIN32OLE_METHOD#params]]を参照するほうが簡単です。
 
-@param ole_method �ѥ�᡼�����������[[c:WIN32OLE_METHOD]]�Υ��󥹥��󥹡�
-@param index �ѥ�᡼���ΰ��֡��Ǻ�ü��1�Ȥ��ޤ���
-@return �᥽�åɤλ�����֤Υѥ�᡼���ξ������ĥ��֥������Ȥ��֤��ޤ���
-@raise TypeError ole_method�ѥ�᡼����[[c:WIN32OLE_METHOD]]�Υ��󥹥��󥹤ǤϤ���ޤ���
-@raise IndexError index�ѥ�᡼����1����ѥ�᡼���ο����ϰϤˤ���ޤ���
-@raise RuntimeError �����᥽�åɤΥ᥿�ǡ����������Ǥ��ޤ���
+@param ole_method パラメータを取得する[[c:WIN32OLE_METHOD]]のインスタンス。
+@param index パラメータの位置。最左端を1とします。
+@return メソッドの指定位置のパラメータの情報を持つオブジェクトを返します。
+@raise TypeError ole_methodパラメータが[[c:WIN32OLE_METHOD]]のインスタンスではありません。
+@raise IndexError indexパラメータが1からパラメータの数の範囲にありません。
+@raise RuntimeError 該当メソッドのメタデータが取得できません。
 
 
    excel = WIN32OLE.new('Excel.Application')

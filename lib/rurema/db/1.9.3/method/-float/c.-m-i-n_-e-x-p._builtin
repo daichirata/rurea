@@ -4,5 +4,5 @@ kind=defined
 
 --- MIN_EXP -> Fixnum
 
-�Ǿ��� Float::RADIX �ʤλؿ�
+最小の Float::RADIX 進の指数
 

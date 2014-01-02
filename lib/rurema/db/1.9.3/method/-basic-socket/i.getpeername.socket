@@ -4,10 +4,10 @@ kind=defined
 
 --- getpeername -> String
 
-ÀÜÂ³¤ÎÁê¼êÀè¤Î¥½¥±¥Ã¥È¤Î¾ğÊó¤ò¼èÆÀ¤·¤Ş¤¹¡£sockaddr ¹½Â¤ÂÎ¤ò¥Ñ¥Ã
-¥¯¤·¤¿Ê¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£[[man:getpeername(2)]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+æ¥ç¶šã®ç›¸æ‰‹å…ˆã®ã‚½ã‚±ãƒƒãƒˆã®æƒ…å ±ã‚’å–å¾—ã—ã¾ã™ã€‚sockaddr æ§‹é€ ä½“ã‚’ãƒ‘ãƒƒ
+ã‚¯ã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚[[man:getpeername(2)]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-Îã:
+ä¾‹:
 
   serv = TCPServer.open("", 0)
   c = TCPSocket.open(*Socket.unpack_sockaddr_in(serv.getsockname).reverse)

@@ -4,35 +4,35 @@ kind=defined
 
 --- new(ole, event = nil) -> WIN32OLE_EVENT
 
-OLE�����ȥ᡼����󥵡��ФΥ��٥�ȼ��������򥪥֥������Ȳ������֤��ޤ���
+OLEオートメーションサーバのイベント受信機構をオブジェクト化して返します。
 
-new�᥽�åɤϡ�OLE�����ȥ᡼����󥵡��Ф����٥�����Τ����Ѥ��륤�󥿡�
-�ե�����������������֥������ȤȤ����֤��ޤ���
+newメソッドは、OLEオートメーションサーバがイベント通知に利用するインター
+フェイスを取得し、オブジェクトとして返します。
 
-@param ole ���٥�Ȥ����θ���WIN32OLE���֥������Ȥ���ꤷ�ޤ���
+@param ole イベントの通知元のWIN32OLEオブジェクトを指定します。
 
-@param event ���٥�ȤΥ��󥿡��ե������򼨤����󥿡��ե�����̾�ޤ���
-             IID��ʸ����ǻ��ꤷ�ޤ�����ά���ˤ�ole�ѥ�᡼���ǻ��ꤷ��
-             ���֥������Ȥδ���Υ��٥�ȥ��󥿡��ե����������Ѥ��ޤ���
+@param event イベントのインターフェイスを示すインターフェイス名または
+             IIDを文字列で指定します。省略時にはoleパラメータで指定した
+             オブジェクトの既定のイベントインターフェイスを利用します。
 
-@return ���ꤷ�����֥������ȤΥ��٥�Ȥ��������WIN32OLE_EVENT���֥������ȡ�
+@return 指定したオブジェクトのイベントを管理するWIN32OLE_EVENTオブジェクト。
 
-@raise RuntimeError event�ѥ�᡼���ǻ��ꤷ��IID�����Ĥ���ޤ��󡣤ޤ�
-                    �ϥ��֥������Ȥ����٥�Ȥ򥵥ݡ��Ȥ��Ƥ��ޤ���
+@raise RuntimeError eventパラメータで指定したIIDが見つかりません。また
+                    はオブジェクトがイベントをサポートしていません。
 
-�ʲ���3��Ϥ������Ʊ���Ǥ���
+以下の3例はいずれも同等です。
 
-�ǥե���ȥ��٥�ȥ��󥿡��ե���������ꤷ����
+デフォルトイベントインターフェイスを指定した例
 
    ie = WIN32OLE.new('InternetExplorer.Application')
    ev = WIN32OLE_EVENT.new(ie)
 
-���󥿡��ե�����̾����ꤷ����
+インターフェイス名を指定した例
 
    ie = WIN32OLE.new('InternetExplorer.Application')
    ev = WIN32OLE_EVENT.new(ie, 'DWebBrowserEvents2')
 
-IID����ꤷ����
+IIDを指定した例
 
    ie = WIN32OLE.new('InternetExplorer.Application')
    ev = WIN32OLE_EVENT.new(ie, '{34A715A0-6587-11D0-924A-0020AFC7AC4D}')

@@ -2,9 +2,9 @@ names=IN4MASK
 visibility=protected 
 kind=defined
 
---- IN4MASK
+--- IN4MASK -> Integer
 
-IPv4 ฅขฅษฅ์ฅนคฮพ์น็คหปศอัคนค๋ฅÞฅนฅฏรอกฃ
+IPv4 ใขใใฌในใฎๅ ดๅใซไฝฟ็”จใใใในใฏๅ€คใ€
 
   0xffffffff
 

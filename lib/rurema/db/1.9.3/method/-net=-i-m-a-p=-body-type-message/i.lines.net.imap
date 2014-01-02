@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- lines -> Integer
-�ܥǥ��Υƥ����ȤιԿ����֤��ޤ���
+ボディのテキストの行数を返します。
 

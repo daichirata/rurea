@@ -4,10 +4,10 @@ kind=added
 
 --- time(msg, width = 25){ ... } -> object
 
-Ϳ����줿�֥��å��μ¹Ի��֤��¬����ɽ�����ޤ���
+与えられたブロックの実行時間を計測して表示します。
 
-@param msg ɽ�������å���������ꤷ�ޤ���
+@param msg 表示するメッセージを指定します。
 
-@param width ɽ������������ꤷ�ޤ���
+@param width 表示する幅を指定します。
 
-@return �֥��å��μ¹Է�̤��֤��ޤ���
+@return ブロックの実行結果を返します。

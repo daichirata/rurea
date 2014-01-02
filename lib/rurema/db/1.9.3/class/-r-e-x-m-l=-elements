@@ -6,4 +6,10 @@ library=rexml
 aliases=
 aliasof=
 
+要素の集合を表すクラスです。
 
+XPath による探索をサポートします。
+
+[[m:REXML::Element#elements]] はこのオブジェクトを返します。
+XPath で相対パスを指定した場合は、この REXML::Element#elements の
+レシーバが基準要素となります。

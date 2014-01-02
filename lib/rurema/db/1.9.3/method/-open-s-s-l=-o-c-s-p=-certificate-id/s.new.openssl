@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- new(subject, issuer, digest=nil) -> OpenSSL::OCSP::CertificateId
-CertificateId ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Ş¤¹¡£
+CertificateId ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-subject ¤Ë¤ÏÌä¹ç¤»ÂĞ¾İ¤Î¾ÚÌÀ½ñ¤ò¡¢issuer¤Ë¤Ïsubject¤Îissuer(È¯¹Ô¼Ô)
-¤Î¾ÚÌÀ½ñ¤òÅÏ¤·¤Ş¤¹¡£
+subject ã«ã¯å•åˆã›å¯¾è±¡ã®è¨¼æ˜æ›¸ã‚’ã€issuerã«ã¯subjectã®issuer(ç™ºè¡Œè€…)
+ã®è¨¼æ˜æ›¸ã‚’æ¸¡ã—ã¾ã™ã€‚
 
-@param subject Ìä¹ç¤»ÂĞ¾İ¤Î¾ÚÌÀ½ñ([[c:OpenSSL::X509::Certificate]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param issuer subject¤Îissuer(È¯¹Ô¼Ô)¤Î¾ÚÌÀ½ñ([[c:OpenSSL::X509::Certificate]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param digest issuer¤ÎÌ¾Á°¤Î¥Ï¥Ã¥·¥åÃÍ¤ò¼è¤ë¤¿¤á¤Î¥Ï¥Ã¥·¥å¥¢¥ë¥´¥ê¥º¥à¡£nil¤Ç¥Ç¥Õ¥©¥ë¥È¤Î¥¢¥ë¥´¥ê¥º¥à¤¬»È¤ï¤ì¤Ş¤¹
+@param subject å•åˆã›å¯¾è±¡ã®è¨¼æ˜æ›¸([[c:OpenSSL::X509::Certificate]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param issuer subjectã®issuer(ç™ºè¡Œè€…)ã®è¨¼æ˜æ›¸([[c:OpenSSL::X509::Certificate]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param digest issuerã®åå‰ã®ãƒãƒƒã‚·ãƒ¥å€¤ã‚’å–ã‚‹ãŸã‚ã®ãƒãƒƒã‚·ãƒ¥ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã€‚nilã§ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ãŒä½¿ã‚ã‚Œã¾ã™
 
-@raise OpenSSL::OCSP::OCSPError ¥ª¥Ö¥¸¥§¥¯¥È¤ÎÀ¸À®¤Ë¼ºÇÔ¤·¤¿ºİ¤ËÈ¯À¸¤·¤Ş¤¹
+@raise OpenSSL::OCSP::OCSPError ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ç”Ÿæˆã«å¤±æ•—ã—ãŸéš›ã«ç™ºç”Ÿã—ã¾ã™
 

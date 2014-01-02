@@ -4,11 +4,11 @@ kind=defined
 
 --- <=>(other)    -> -1 | 0 | 1 | nil
 
-���ȤȻ��ꤵ�줿 other �ΥС���������Ӥ��ޤ���
-���Ȥ� other ��꿷�����ʤ� 1��Ʊ���ʤ� 0���Ť��ʤ� -1 ���֤��ޤ���
-��ӤǤ��ʤ����� nil ���֤��ޤ���
+自身と指定された other のバージョンを比較します。
+自身が other より新しいなら 1、同じなら 0、古いなら -1 を返します。
+比較できない場合に nil を返します。
 
-@param other HTTP �ΥС�������ɽ�� WEBrick::HTTPVersion ���֥������Ȥ�ʸ�������ꤷ�ޤ���
+@param other HTTP のバージョンを表す WEBrick::HTTPVersion オブジェクトか文字列を指定します。
 
   require 'webrick'
   v = WEBrick::HTTPVersion.new('1.1')

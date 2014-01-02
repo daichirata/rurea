@@ -4,7 +4,7 @@ kind=defined
 
 --- euid        -> Integer
 
-�����ȥץ������μ¸��桼�� ID ���������֤��ޤ���
+カレントプロセスの実効ユーザ ID を整数で返します。
 
 @see [[man:geteuid(2)]]
 

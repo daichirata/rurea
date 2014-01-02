@@ -5,20 +5,8 @@ kind=defined
 --- determinant -> Rational | Float
 --- det -> Rational | Float
 
-¹ÔÎó¼° (determinant) ¤òÊÖ¤·¤Þ¤¹¡£
+è¡Œåˆ—å¼ (determinant) ã®å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-¹ÔÎó¼° (determinant) ¤ÎÃÍ¤òÊÖ¤·¤Þ¤¹¡£
-self ¤¬ÀµÊý¹ÔÎó¤Ç¤Ï¤Ê¤¤¾ì¹ç¤Ï0¤òÊÖ¤·¤Þ¤¹¡£
+@raise ExceptionForMatrix::ErrDimensionMismatch æ­£æ–¹è¡Œåˆ—ã§ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™
 
-===== Ãí°Õ
-
-Á´¤Æ¤ÎÍ×ÁÇ¤¬À°¿ô¤Ç¤¢¤ë¾ì¹ç¡¢Àµ¤·¤¤Åú¤òÊÖ¤µ¤Ê¤¤¤«¤âÃÎ¤ì¤Þ¤»¤ó¡£
-¤½¤Î¾ì¹ç¤Ï [[lib:mathn]] ¤ò require ¤·¤Æ²¼¤µ¤¤¡£
-
- p Matrix[[2, 1], [-1, 2]].det #=> 6
- 
- p Matrix[[2.0, 1.0], [-1.0, 2.0]].det #=> 5.0
-
- require 'mathn'
- p Matrix[[2, 1], [-1, 2]].det #=> 5
 

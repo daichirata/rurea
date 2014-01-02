@@ -3,6 +3,7 @@ classes=SecureRandom
 methods=
 sublibraries=
 is_sublibrary=false
+category=
 
-���������ȯ����Τ���Υ��󥿡��ե��������󶡤���饤�֥��Ǥ���
-HTTP �Υ��å���󥭡��ʤɤ�Ŭ���Ƥ��ޤ���
+安全な乱数発生器のためのインターフェースを提供するライブラリです。
+HTTP のセッションキーなどに適しています。

@@ -2,8 +2,8 @@ names=here?
 visibility=public
 kind=defined
 
---- here?(uri)
-@todo
+--- here?(uri) -> bool
+uri がカレントサーバに紐付けられたものであれば真を返します。
 
-Is uri the URI for the current local server?
+@see [[m:DRb.#current_server]]
 

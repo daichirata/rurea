@@ -4,13 +4,13 @@ kind=defined
 
 --- new(level = Zlib::DEFAULT_COMPRESSION, windowBits = Zlib::MAX_WBITS, memlevel = Zlib::DEF_MEM_LEVEL, strategy = Zlib::DEFAULT_STRATEGY) -> Zlib::Deflate
 
-���̥��ȥ꡼���������ޤ����ư����ξܺ٤� zlib.h ��
-���Ȥ��Ʋ�������nil �ξ��ϥǥե���Ȥ��ͤ���Ѥ��ޤ���
+圧縮ストリームを作成します。各引数の詳細は zlib.h を
+参照して下さい。nil の場合はデフォルトの値を使用します。
 
-@param level 0-9���ϰϤ�����, �ޤ���Zlib::DEFAULT_COMPRESSION����ꤷ�ޤ����ܺ٤�zlib.h�򻲾Ȥ��Ƥ���������
-@param windowBits ������ɤ��礭���������ǻ��ꤷ�ޤ����ܺ٤�zlib.h�򻲾Ȥ��Ƥ���������
-@param memlevel 0-9���ϰϤ������ǻ��ꤷ�ޤ����ܺ٤�zlib.h�򻲾Ȥ��Ƥ���������
-@param strategy [[m:Zlib::FILTERED]], [[m:Zlib::HUFFMAN_ONLY]], [[m:Zlib::DEFAULT_STRATEGY]]�ʤɻ��ꤷ�ޤ����ܺ٤�zlib.h �򻲾Ȥ��Ƥ���������
+@param level 0-9の範囲の整数, またはZlib::DEFAULT_COMPRESSIONを指定します。詳細はzlib.hを参照してください。
+@param windowBits ウィンドの大きさを整数で指定します。詳細はzlib.hを参照してください。
+@param memlevel 0-9の範囲の整数で指定します。詳細はzlib.hを参照してください。
+@param strategy [[m:Zlib::FILTERED]], [[m:Zlib::HUFFMAN_ONLY]], [[m:Zlib::DEFAULT_STRATEGY]]など指定します。詳細はzlib.h を参照してください。
 
   require 'zlib'
 

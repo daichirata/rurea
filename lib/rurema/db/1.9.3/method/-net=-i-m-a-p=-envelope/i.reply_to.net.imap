@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- reply_to -> [Net::IMAP::Address] | nil
-Reply-To ¤ò [[c:Net::IMAP::Address]] ¥ª¥Ö¥¸¥§¥¯¥È¤ÎÇÛÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+Reply-To ã‚’ [[c:Net::IMAP::Address]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-¥¨¥ó¥Ù¥í¡¼¥×¤ËÂ¸ºß¤·¤Ê¤¤¤È¤­¤Ï nil ¤òÊÖ¤·¤Ş¤¹¡£
+ã‚¨ãƒ³ãƒ™ãƒ­ãƒ¼ãƒ—ã«å­˜åœ¨ã—ãªã„ã¨ãã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
 

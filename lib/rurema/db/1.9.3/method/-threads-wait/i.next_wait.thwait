@@ -4,15 +4,15 @@ kind=defined
 
 --- next_wait(nonblock = nil) -> Thread
 
-»ØÄê¤·¤¿¥¹¥ì¥Ã¥É¤Î¤É¤ì¤«¤¬½ªÎ»¤¹¤ë¤Ş¤ÇÂÔ¤Á¤Ş¤¹¡£
+æŒ‡å®šã—ãŸã‚¹ãƒ¬ãƒƒãƒ‰ã®ã©ã‚Œã‹ãŒçµ‚äº†ã™ã‚‹ã¾ã§å¾…ã¡ã¾ã™ã€‚
 
-@param nonblock true ¤òÍ¿¤¨¤ë¤È¡¢¥­¥å¡¼¤¬¶õ¤Î»ş¡¢Îã³° [[c:ThreadsWait::ErrNoFinishedThread]] ¤¬È¯À¸¤·¤Ş¤¹¡£
+@param nonblock true ã‚’ä¸ãˆã‚‹ã¨ã€ã‚­ãƒ¥ãƒ¼ãŒç©ºã®æ™‚ã€ä¾‹å¤– [[c:ThreadsWait::ErrNoFinishedThread]] ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise ErrNoWaitingThread ½ªÎ»¤ò¤Ş¤Ä¥¹¥ì¥Ã¥É¤¬Â¸ºß¤·¤Ê¤¤»ş¡¢È¯À¸¤·¤Ş¤¹¡£
+@raise ErrNoWaitingThread çµ‚äº†ã‚’ã¾ã¤ã‚¹ãƒ¬ãƒƒãƒ‰ãŒå­˜åœ¨ã—ãªã„æ™‚ã€ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise ErrNoFinishedThread nonblock ¤¬true ¤Ç¤«¤Ä¡¢¥­¥å¡¼¤¬¶õ¤Î»ş¡¢È¯À¸¤·¤Ş¤¹¡£
+@raise ErrNoFinishedThread nonblock ãŒtrue ã§ã‹ã¤ã€ã‚­ãƒ¥ãƒ¼ãŒç©ºã®æ™‚ã€ç™ºç”Ÿã—ã¾ã™ã€‚
 
-  #»ÈÍÑÎã
+  #ä½¿ç”¨ä¾‹
   require 'thwait'
 
   threads = []

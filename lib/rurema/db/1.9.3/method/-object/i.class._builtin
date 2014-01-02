@@ -4,7 +4,7 @@ kind=defined
 
 --- class -> Class
 
-¥ì¥·¡¼¥Ð¤Î¥¯¥é¥¹¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ¬ã‚·ãƒ¼ãƒã®ã‚¯ãƒ©ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
   p "ruby".class #=> String
   p 999999999999999.class #=> Bignum

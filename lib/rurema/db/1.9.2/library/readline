@@ -1,7 +1,0 @@
-requires=
-classes=Readline,Readline=HISTORY
-methods=
-sublibraries=
-is_sublibrary=false
-
-GNU Readline によるコマンドライン入力インタフェースを提供するライブラリです。

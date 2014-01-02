@@ -6,37 +6,37 @@ library=openssl
 aliases=
 aliasof=
 
-RSA °Å¹æ¸°¤Î¥¯¥é¥¹¤Ç¤¹¡£
+RSA æš—å·éµã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-ÄÌ¾ï¤³¤Î¥¯¥é¥¹¤ÇÍøÍÑ¤¹¤ë¤Î¤Ï¡¢
+é€šå¸¸ã“ã®ã‚¯ãƒ©ã‚¹ã§åˆ©ç”¨ã™ã‚‹ã®ã¯ã€
 [[m:OpenSSL::PKey::RSA.generate]], [[m:OpenSSL::PKey::RSA.new]],
 [[m:OpenSSL::PKey::RSA#public?]], [[m:OpenSSL::PKey::RSA#private?]],
 [[m:OpenSSL::PKey::RSA#public_key]], [[m:OpenSSL::PKey::RSA#to_text]],
 [[m:OpenSSL::PKey::RSA#to_pem]], [[m:OpenSSL::PKey::RSA#to_der]]
-¤Î¤¤¤º¤ì¤«¤Ç¤·¤ç¤¦¡£¤³¤ì°Ê³°¤Î¥á¥½¥Ã¥É¤òÍøÍÑ¤¹¤ë¤È¤­¤Ï
-RSA ¤Ë¤Ä¤¤¤Æ¤è¤¯Íı²ò¤·¡¢É¬Í×¤Ê¾ì¹ç¤Î¤ß¤Ë¤¹¤Ù¤­¤Ç¤¹¡£
+ã®ã„ãšã‚Œã‹ã§ã—ã‚‡ã†ã€‚ã“ã‚Œä»¥å¤–ã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’åˆ©ç”¨ã™ã‚‹ã¨ãã¯
+RSA ã«ã¤ã„ã¦ã‚ˆãç†è§£ã—ã€å¿…è¦ãªå ´åˆã®ã¿ã«ã™ã¹ãã§ã™ã€‚
 
 
-Îã:
+ä¾‹:
   # initialize random seed
   OpenSSL::Random.seed(File.read("/dev/random", 16))
-  # ¸°ÂĞ¤òÀ¸À®
+  # éµå¯¾ã‚’ç”Ÿæˆ
   rsa = OpenSSL::PKey::RSA.generate(2048)
-  # ÈëÌ©¸°¤òAES256¤Ç°Å¹æ²½¤·¤Æ private_key.pem ¤Ë PEM ·Á¼°¤ÇÊİÂ¸
+  # ç§˜å¯†éµã‚’AES256ã§æš—å·åŒ–ã—ã¦ private_key.pem ã« PEM å½¢å¼ã§ä¿å­˜
   passphrase = "!secret passphrase!"
   File.open("private_key.pem", "w") do |f|
     f.write(rsa.export(OpenSSL::Cipher::Cipher.new("aes256"), passphrase))
   end
-  # ¸ø³«¸°¤òpublic_key.pem¤ËÊİÂ¸
+  # å…¬é–‹éµã‚’public_key.pemã«ä¿å­˜
   public_key = rsa.public_key
   File.open("public_key.pem", "w") do |f|
     f.write(public_key.export)
   end
   
-  # ÈëÌ©¸°¤Ç½ğÌ¾
+  # ç§˜å¯†éµã§ç½²å
   data = "foobar"
   sign = rsa.sign("sha256", data)
-  # ¸ø³«¸°¤Ç¸¡¾Ú
+  # å…¬é–‹éµã§æ¤œè¨¼
   p public_key.verify("sha256", sign, data)
-  # ÉÔÀµ¤Ê¥Ç¡¼¥¿¤ò¸¡¾Ú
+  # ä¸æ­£ãªãƒ‡ãƒ¼ã‚¿ã‚’æ¤œè¨¼
   p public_key.verify("sha256", sign, "foobarbaz")

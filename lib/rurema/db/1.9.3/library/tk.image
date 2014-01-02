@@ -3,5 +3,6 @@ classes=TkImage,TkBitmapImage,TkPhotoImage
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

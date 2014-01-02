@@ -4,6 +4,6 @@ kind=defined
 
 --- GENERALIZEDTIME -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-GENERALIZEDTIME ¤Î¥¿¥°ÈÖ¹æ 24 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+GENERALIZEDTIME ã®ã‚¿ã‚°ç•ªå· 24 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

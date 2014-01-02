@@ -4,10 +4,10 @@ kind=defined
 
 --- SESSION_CACHE_NO_INTERNAL -> Integer
 [[m:OpenSSL::SSL::SSLContext::SESSION_CACHE_NO_INTERNAL_STORE]]
-╓х
+Ц│╗
 [[m:OpenSSL::SSL::SSLContext::SESSION_CACHE_NO_INTERNAL_LOOKUP]]
-╓нн╬йЩ╓Рм╜╦З╓к╓╧╓К╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+Ц│╝Д╦║Ф√╧Ц┌▓Ф°┴Е┼╧Ц│╚Ц│≥Ц┌▀Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] ╓к
-ео╓╧╔у╔И╔╟╓х╓╥╓фмя╓╓╓ч╓╧║ё
+[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] Ц│╚
+Ф╦║Ц│≥Ц┐∙Ц┐╘Ц┌╟Ц│╗Ц│≈Ц│╕Г■╗Ц│└Ц│╬Ц│≥Ц─┌
 

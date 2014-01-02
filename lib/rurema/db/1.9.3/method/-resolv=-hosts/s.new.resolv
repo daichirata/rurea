@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- new(hosts = DefaultFileName) -> Resolv::Hosts
-hosts �Ȥ����ե�����̾�Υե��������󸻤Ȥ���
-�꥾��Ф����������֤��ޤ���
+hosts というファイル名のファイルを情報源とする
+リゾルバを生成し、返します。
 
-@param hosts �ۥ��Ⱦ��󤬽񤫤줿�ե������̾����ʸ�����Ϳ���ޤ���
+@param hosts ホスト情報が書かれたファイルの名前を文字列で与えます。
 

@@ -4,15 +4,15 @@ kind=defined
 
 --- execute(file_name) -> bool
 
-�ե����� file_name �򸽺ߤ� irb ���󥿥ץ꥿��Ǽ¹Ԥ��ޤ���
+ファイル file_name を現在の irb インタプリタ上で実行します。
 
-file_name �� Ruby ������ץȤ���ꤷ�����ϡ�[[m:Kernel.#kernel]] �Ȱ�
-�ʤꡢfile_name �����Ƥ� irb �ǰ�Ԥ��ĥ����פ������Τ褦�ˡ�irb ��ǰ�
-�Ԥ���ɾ������ޤ���require �������������� true �򡢤����Ǥʤ�����
-false ���֤��ޤ���
+file_name に Ruby スクリプトを指定した場合は、[[m:Kernel.#kernel]] と異
+なり、file_name の内容を irb で一行ずつタイプしたかのように、irb 上で一
+行ずつ評価されます。require に成功した場合は true を、そうでない場合は
+false を返します。
 
-��ĥ�饤�֥��(*.so,*.o,*.dll �ʤ�)����ꤷ������ñ��� require ����
-�ޤ���
+拡張ライブラリ(*.so,*.o,*.dll など)を指定した場合は単純に require され
+ます。
 
-@param file_name �ե�����̾��ʸ����ǻ��ꤷ�ޤ���
+@param file_name ファイル名を文字列で指定します。
 

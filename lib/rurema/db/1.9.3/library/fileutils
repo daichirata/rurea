@@ -3,5 +3,6 @@ classes=FileUtils,FileUtils=Verbose,FileUtils=NoWrite,FileUtils=DryRun
 methods=
 sublibraries=
 is_sublibrary=false
+category=File
 
-ºÆµ¢Åª¤Êºï½ü¤Ê¤É¤Î´ğËÜÅª¤Ê¥Õ¥¡¥¤¥ëÁàºî¤ò¹Ô¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+å†å¸°çš„ãªå‰Šé™¤ãªã©ã®åŸºæœ¬çš„ãªãƒ•ã‚¡ã‚¤ãƒ«æ“ä½œã‚’è¡Œã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

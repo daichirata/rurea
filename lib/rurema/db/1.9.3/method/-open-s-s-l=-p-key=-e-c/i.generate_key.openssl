@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- generate_key -> self
-¸°¥Ú¥¢¤òÍð¿ô¤ÇÀ¸À®¤·¤Þ¤¹¡£
+éµãƒšã‚¢ã‚’ä¹±æ•°ã§ç”Ÿæˆã—ã¾ã™ã€‚
 
-@raise OpenSSL::PKey::ECError ¸°¥Ú¥¢¤ÎÀ¸À®¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹
+@raise OpenSSL::PKey::ECError éµãƒšã‚¢ã®ç”Ÿæˆã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

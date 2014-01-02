@@ -3,5 +3,26 @@ visibility=public
 kind=defined
 
 --- []=(index, element)
-@todo
+集合に要素 element を追加/更新します。
+
+index で要素の更新する位置を指定します。
+index には整数、文字列が指定できます。
+整数を指定した場合は index 番目の要素を変更します(1-originです)。
+文字列の場合は XPath としてマッチした要素を更新します。
+
+整数/文字列どちらの場合でも対応する要素が存在しない場合は、
+末尾に追加されます。
+
+@param index 要素を更新する位置
+@param element 要素([[c:REXML::Element]]オブジェクト)
+
+  require 'rexml/document'
+  doc = REXML::Document.new '<a/>'
+  doc.root.elements[10] = REXML::Element.new('b')
+  doc.root.to_s # => "<a><b/></a>"
+  doc.root.elements[1] # => <b/>
+  doc.root.elements[1] = REXML::Element.new('c')
+  doc.root.to_s # => "<a><c/></a>"
+  doc.root.elements['c'] = REXML::Element.new('d')
+  doc.root.to_s # => "<a><d/></a>"
 

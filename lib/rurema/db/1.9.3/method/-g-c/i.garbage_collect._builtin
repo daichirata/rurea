@@ -4,9 +4,9 @@ kind=defined
 
 --- garbage_collect -> nil
 
-�����١������쥯�Ȥ򳫻Ϥ��ޤ���
+ガーベージコレクトを開始します。
 
-[[m:GC.start]] �� [[m:ObjectSpace.#garbage_collect]] ��Ʊ��Ư���򤷤ޤ���
-[[m:GC.disable]] �ˤ�� GC ���ػߤ���Ƥ�����ϲ��⤷�ޤ���
+[[m:GC.start]] や [[m:ObjectSpace.#garbage_collect]] と同じ働きをします。
+[[m:GC.disable]] により GC が禁止されている場合は何もしません。
 
-nil ���֤��ޤ���
+nil を返します。

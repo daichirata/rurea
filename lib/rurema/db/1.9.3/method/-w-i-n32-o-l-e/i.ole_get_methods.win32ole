@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- ole_get_methods -> [WIN32OLE_METHOD]
-���֥������Ȥλ��Ȳ�ǽ�ץ��ѥƥ������[[c:WIN32OLE_METHOD]]������Ȥ���
-�֤��ޤ���
+オブジェクトの参照可能プロパティ情報を[[c:WIN32OLE_METHOD]]の配列として
+返します。
 
-ole_get_methods�᥽�åɤϡ�OLE�����ȥ᡼����󥵡��ФΥ᥽�åɤΤ�����
-�߼���ǽ�ʥץ��ѥƥ���[[c:WIN32OLE_METHOD]]������Ȥ����֤��ޤ���
+ole_get_methodsメソッドは、OLEオートメーションサーバのメソッドのうち読
+み取り可能なプロパティを[[c:WIN32OLE_METHOD]]の配列として返します。
 
-@return [[c:WIN32OLE_METHOD]]������
-@raise WIN32OLERuntimeError �����ȥ᡼����󥵡��ФθƤӽФ��˼��Ԥ��ޤ�����
-                            ������饤�֥��(TypeLib)���󶡤���Ƥ��ʤ����ʤɤ�ȯ�����ޤ���
+@return [[c:WIN32OLE_METHOD]]の配列。
+@raise WIN32OLERuntimeError オートメーションサーバの呼び出しに失敗しました。
+                            型情報ライブラリ(TypeLib)が提供されていない場合などに発生します。
 
    excel = WIN32OLE.new('Excel.Application')
    excel.ole_get_methods.each do |prop|
@@ -22,7 +22,6 @@ ole_get_methods�᥽�åɤϡ�OLE�����ȥ᡼����󥵡��ФΥ᥽�åɤΤ�����
      end
    end
 
-@see [[m:WIN32OLE#ole_methods]]
-@see [[m:WIN32OLE#ole_function_methods]]
-@see [[m:WIN32OLE#ole_put_methods]]
+@see [[m:WIN32OLE#ole_methods]], [[m:WIN32OLE#ole_func_methods]],
+     [[m:WIN32OLE#ole_put_methods]]
 

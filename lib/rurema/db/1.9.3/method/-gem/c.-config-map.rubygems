@@ -4,5 +4,5 @@ kind=defined
 
 --- ConfigMap -> Hash
 
-[[m:RbConfig::CONFIG]] ���椫�餳�Υ饤�֥��ǻ��Ѥ����Τ���Ф�����������ϥå��塣
+[[m:RbConfig::CONFIG]] の中からこのライブラリで使用するものを抽出して定義したハッシュ。
 

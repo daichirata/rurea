@@ -4,16 +4,16 @@ kind=defined
 
 --- new(addr, type = DL::TYPE_VOID, name = '', calltype = :cdecl)
 
-���ꤵ�줿 addr ���ؤ��饤�֥��ؿ���ɽ�� CFunc ���֥������Ȥ����������֤��ޤ���
+指定された addr が指すライブラリ関数を表す CFunc オブジェクトを生成して返します。
 
-@param addr [[m:DL::Handle#sym]] ���֤�����������ꤷ�ޤ���
+@param addr [[m:DL::Handle#sym]] が返した整数を指定します。
 
-@param type �ؿ����֤��ͤη��� [[c:DL]] ��������줿����ǻ��ꤷ�ޤ���
+@param type 関数の返り値の型を [[c:DL]] で定義された定数で指定します。
 
-@param name �ؿ���̾����ʸ����ǻ��ꤷ�ޤ���
+@param name 関数の名前を文字列で指定します。
 
-@param calltype �ؿ��θƽе���� Symbol ���֥������Ȥǻ��ꤷ�ޤ������ݡ��Ȥ���Ƥ���
-                ����� :cdecl �� :stdcall �Ǥ���
+@param calltype 関数の呼出規約を Symbol オブジェクトで指定します。サポートされている
+                規約は :cdecl と :stdcall です。
 
 @see [[url:http://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84]]
 

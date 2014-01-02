@@ -4,5 +4,5 @@ kind=defined
 
 --- quiet  -> true | false
 --- quiet? -> true | false
-�Žͥ⡼�ɤ�ͭ���Ǥ���С������֤��ޤ��������Ǥʤ���С������֤��ޤ���
+静粛モードが有効であれば、真を返します。そうでなければ、偽を返します。
 

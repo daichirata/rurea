@@ -4,13 +4,13 @@ kind=defined
 
 --- datetime_format -> String | nil
 
-�����˵�Ͽ����������դΥե����ޥåȤǤ���
+ログに記録する時の日付のフォーマットです。
 
-�ǥե���ȤǤ� nil �Ǥ����������ͤ� nil �ξ������դΥե����ޥåȤȤ���
-"%Y-%m-%dT%H:%M:%S.%06d " ����Ѥ��ޤ���
+デフォルトでは nil ですが、この値が nil の場合は日付のフォーマットとして
+"%Y-%m-%dT%H:%M:%S.%06d " を使用します。
 
-�ʤ���"%06d" �ˤ� [[m:Time#strftime]] �ǤϤʤ���ñ�� [[m:Time#usec]] ��
-�ͤ� [[m:String#%]] �ǥե����ޥåȤ�����Τ�����ޤ���
+なお、"%06d" には [[m:Time#strftime]] ではなく、単に [[m:Time#usec]] の
+値を [[m:String#%]] でフォーマットしたものが入ります。
 
 @see [[m:Time#strftime]], [[m:Logger#datetime_format=]]
 

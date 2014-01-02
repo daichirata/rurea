@@ -4,7 +4,7 @@ kind=defined
 
 --- |(other) -> bool
 
-other ¤¬¿¿¤Ê¤é true ¤ò, µ¶¤Ê¤é false ¤òÊÖ¤·¤Ş¤¹¡£
+other ãŒçœŸãªã‚‰ true ã‚’, å½ãªã‚‰ false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ÏÀÍıÏÂ¤ò¹Ô¤Ê¤¦¼°¤Ç¤¹
+@param other è«–ç†å’Œã‚’è¡Œãªã†å¼ã§ã™
 

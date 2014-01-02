@@ -4,13 +4,13 @@ kind=defined
 
 --- Boolean(value) -> OpenSSL::ASN1::Boolean
 --- Boolean(value , tag , tagging , tag_class) -> OpenSSL::ASN1::Boolean
-ASN.1 д╬ Boolean ╖┐д╬├═дЄ╔╜╕╜д╣ды OpenSSL::ASN1::Boolean еке╓е╕езепе╚дЄ
-└╕└од╖д▐д╣бг
+ASN.1 уБо Boolean хЮЛуБохАдуВТшбичП╛уБЩуВЛ OpenSSL::ASN1::Boolean уВкуГЦуВ╕уВзуВпуГИуВТ
+чФЯцИРуБЧуБ╛уБЩуАВ
 
-[[m:OpenSSL::ASN::Boolean.new]] д╚╞▒д╕д╟д╣бг
+[[m:OpenSSL::ASN::Boolean.new]] уБихРМуБШуБзуБЩуАВ
 
-@param value ASN.1 ├═дЄ╔╜д╣ Ruby д╬еке╓е╕езепе╚(true дтд╖дпд╧ false)
-@param tag е┐е░╚╓╣ц
-@param tagging е┐е░╔╒д▒д╬╩¤╦б(:IMPLICIT дтд╖дпд╧ :EXPLICIT)
-@param tag_class е┐е░епеще╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE д╬ддд║дьдл)
+@param value ASN.1 хАдуВТшбиуБЩ Ruby уБоуВкуГЦуВ╕уВзуВпуГИ(true уВВуБЧуБПуБп false)
+@param tag уВ┐уВ░чХкхП╖
+@param tagging уВ┐уВ░ф╗ШуБСуБоцЦ╣ц│Х(:IMPLICIT уВВуБЧуБПуБп :EXPLICIT)
+@param tag_class уВ┐уВ░уВпуГйуВ╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE уБоуБДуБЪуВМуБЛ)
 

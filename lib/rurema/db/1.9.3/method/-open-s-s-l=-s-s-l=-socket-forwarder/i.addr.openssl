@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- addr -> Array
-��åפ���Ƥ��륽���åȤ���³������֤��ޤ���
+ラップされているソケットの接続情報を返します。
 
-[[m:IPSocket#addr]] ��Ʊ�ͤǤ���
+[[m:IPSocket#addr]] と同様です。
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- build_self_signed_cert(email_addr, options = {}) -> Hash
 
-Ϳ����줿�᡼�륢�ɥ쥹�򸵤ˤ��Ƽ��ʽ�̾�������������ޤ���
+与えられたメールアドレスを元にして自己署名証明書を作成します。
 
-@param email_addr �᡼�륢�ɥ쥹����ꤷ�ޤ���
+@param email_addr メールアドレスを指定します。
 
-@param options ���ץ�������ꤷ�ޤ���
+@param options オプションを指定します。
 
-@return ���Ⱦ�����Ȥ�������¸�����ѥ���ɽ���ϥå�����֤��ޤ���
+@return 鍵と証明書とそれらを保存したパスを表すハッシュを返します。
 

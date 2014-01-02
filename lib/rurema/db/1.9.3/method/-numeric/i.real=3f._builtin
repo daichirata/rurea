@@ -4,8 +4,8 @@ kind=defined
 
 --- real?    -> bool
 
-���Ȥ� [[c:Complex]] �����Υ��֥��饹�Υ��󥹥��󥹤Ǥʤ�����
-true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+自身が [[c:Complex]] かそのサブクラスのインスタンスでない場合に
+true を返します。そうでない場合に false を返します。
 
-Numeric �Υ��֥��饹�ϡ����Υ᥽�åɤ�Ŭ�ڤ˺�������ʤ���Фʤ�ޤ���
+Numeric のサブクラスは、このメソッドを適切に再定義しなければなりません。
 

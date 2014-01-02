@@ -4,12 +4,12 @@ kind=defined
 
 --- seplist(list, sep = lambda { comma_breakable }, iter_method = :each){|e| ...}    -> ()
 
-�ꥹ�Ȥγ����Ǥ򲿤��Ƕ��ڤ�Ĥġ����Ȥ��ɲä��Ƥ�������˻Ȥ��ޤ���
+リストの各要素を何かで区切りつつ、自身に追加していくために使われます。
 
-list �� iter_method �ˤ�äƥ��ƥ졼�Ȥ��������Ǥ�����Ȥ��ƥ֥��å���¹Ԥ��ޤ���
-�ޤ������줾��Υ֥��å��μ¹Ԥι�֤� sep ���ƤФ�ޤ���
+list を iter_method によってイテレートし、各要素を引数としてブロックを実行します。
+また、それぞれのブロックの実行の合間に sep が呼ばれます。
 
-�Ĥޤꡢ�ʲ��Τդ��Ĥ�Ʊ�ͤǤ���
+つまり、以下のふたつは同値です。
 
   q.seplist([1,2,3]) {|v| q.pp v }
 
@@ -19,13 +19,13 @@ list �� iter_method �ˤ�äƥ��ƥ졼�Ȥ��������Ǥ�����Ȥ��ƥ֥��å���¹Ԥ��ޤ�
   q.comma_breakable
   q.pp 3
 
-@param list ���Ȥ��ɲä����������Ϳ���ޤ���iter_method ��Ŭ�ڤ˻��ꤹ��С�
-            Enumerable �Ǥʤ��Ƥ⹽���ޤ���
+@param list 自身に追加したい配列を与えます。iter_method を適切に指定すれば、
+            Enumerable でなくても構いません。
 
-@param sep ���ڤ�򼫿Ȥ��ɲä���֥��å���Ϳ���ޤ���list �����ƥ졼�Ȥ���ʤ��ʤ顢
-           sep �Ϸ褷�ƸƤФ�ޤ���
+@param sep 区切りを自身に追加するブロックを与えます。list がイテレートされないなら、
+           sep は決して呼ばれません。
 
-@param iter_method list �򥤥ƥ졼�Ȥ���᥽�åɤ򥷥�ܥ��Ϳ���ޤ���
+@param iter_method list をイテレートするメソッドをシンボルで与えます。
 
 @see [[m:PP#comma_breakable]]
 

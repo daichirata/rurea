@@ -5,20 +5,20 @@ kind=added
 --- egrep_cpp(pattern, src, opt = "") -> bool
 --- egrep_cpp(pattern, src, opt = ""){ ... } -> bool
 
-C �ץ������Υ����������� src ��ץ�ץ���������
-���η�̤�����ɽ�� pattern �˥ޥå����뤫�ɤ�����Ƚ�ꤷ�ޤ���
+C プログラムのソースコード src をプリプロセスし、
+その結果が正規表現 pattern にマッチするかどうかを判定します。
 
   CPP $CFLAGS opt | egrep pat
 
-��¹Ԥ������η�̤����狼�ɤ����� true �ޤ��� false ���֤��ޤ���
+を実行し、その結果が正常かどうかを true または false で返します。
 
-���Υ᥽�åɤϥإå��ե�����˴ؿ��ʤɤ���������뤫�ɤ���
-�������뤿��˻��Ѥ��ޤ���
+このメソッドはヘッダファイルに関数などの宣言があるかどうか
+検査するために使用します。
 
-@param pattern ��egrep �Ρ�����ɽ����ʸ����ǻ��ꤷ�ޤ���
-                Ruby ������ɽ���ǤϤ���ޤ���
+@param pattern 「egrep の」正規表現を文字列で指定します。
+                Ruby の正規表現ではありません。
 
-@param src C ����Υ����������ɤ�ʸ����ǵ��Ҥ��ޤ���
+@param src C 言語のソースコードを文字列で記述します。
 
 @see [[man:egrep(1)]]
 

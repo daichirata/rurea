@@ -5,9 +5,9 @@ kind=defined
 --- to_str         -> String
 --- to_str(len)    -> String
 
-���Ȥ��ؤ��ΰ褫��Ĺ�� len ��ʸ�����ʣ�������֤��ޤ���
+自身が指す領域から長さ len の文字列を複製して返します。
 
-len ���ά�������ϡ�self.size �򤽤�����˻Ȥ��ޤ���
+len を省略した場合は、self.size をその代わりに使います。
 
-@param len ʸ�����Ĺ���������ǻ��ꤷ�ޤ���
+@param len 文字列の長さを整数で指定します。
 

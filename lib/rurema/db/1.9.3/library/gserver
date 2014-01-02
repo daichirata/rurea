@@ -3,13 +3,14 @@ classes=GServer
 methods=
 sublibraries=
 is_sublibrary=false
+category=Network
 
-�����Ф�������뤿��Υ饤�֥��Ǥ���
+サーバを実装するためのライブラリです。
 
-��:
+例:
 
   #
-  # 1970ǯ����ηв���֤��ä��֤������Ф���Ǥ���
+  # 1970年からの経過時間を秒で返すサーバの例です。
   #
   class TimeServer < GServer
     def initialize(port=10001, *args)
@@ -20,18 +21,18 @@ is_sublibrary=false
     end
   end
   
-  # ������������ǥ����Ф򥹥����Ȥ��ޤ���
+  # ログを取る設定でサーバをスタートします。
   server = TimeServer.new
   server.audit = true                  # Turn logging on.
   server.start
   
-  # �ޤ������Ф�ư���Ƥ��뤫���ǧ���Ƥߤޤ��礦��
+  # まだサーバが動いているかを確認してみましょう。
   GServer.in_service?(10001)           # => true
   server.stopped?                      # => false
   
-  # �����Ф�ߤ�ޤ���
+  # サーバを止めます。
   server.shutdown
   
-  # �������ޥ����Ф�ߤ�뤳�Ȥ�Ǥ��ޤ���
+  # すぐさまサーバを止めることもできます。
   GServer.stop(10001)
-  # ������� server.stop �Ǥ��ǽ�Ǥ���
+  # もちろん server.stop でも可能です。

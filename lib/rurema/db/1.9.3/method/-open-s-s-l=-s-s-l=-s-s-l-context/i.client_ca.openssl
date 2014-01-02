@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- client_ca -> [OpenSSL::X509::Certificate] | OpenSSL::X509::Certificate | nil
-епещедевеєе╚╛┌╠└╜ёдЄ═╫╡сд╣ды╗■д╦епещедевеєе╚д╦┴ўды CA д╬еъе╣е╚
-дЄ╩╓д╖д▐д╣бг
+уВпуГйуВдуВвуГ│уГИши╝цШОцЫ╕уВТшжБц▒ВуБЩуВЛцЩВуБлуВпуГйуВдуВвуГ│уГИуБлщАБуВЛ CA уБоуГкуВ╣уГИ
+уВТш┐ФуБЧуБ╛уБЩуАВ
 
 
 @see [[m:OpenSSL::SSL::SSLContext#client_ca=]]

@@ -3,22 +3,23 @@ classes=OpenURI,OpenURI=OpenRead,OpenURI=Meta,OpenURI=HTTPError
 methods=Kernel/m.open.open=2duri
 sublibraries=
 is_sublibrary=false
+category=Network
 
-http/ftp ¤Ë´ÊÃ±¤Ë¥¢¥¯¥»¥¹¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
-[[m:Kernel.#open]] ¤òºÆÄêµÁ¤·¤Ş¤¹¡£
+http/ftp ã«ç°¡å˜ã«ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
+[[m:Kernel.#open]] ã‚’å†å®šç¾©ã—ã¾ã™ã€‚
 
-=== »ÈÍÑÎã
+=== ä½¿ç”¨ä¾‹
 
-http/ftp ¤Î URL ¤ò¡¢ÉáÄÌ¤Î¥Õ¥¡¥¤¥ë¤Î¤è¤¦¤Ë³«¤±¤Ş¤¹¡£
+http/ftp ã® URL ã‚’ã€æ™®é€šã®ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚ˆã†ã«é–‹ã‘ã¾ã™ã€‚
 
   require 'open-uri'
   open("http://www.ruby-lang.org/") {|f|
     f.each_line {|line| p line}
   }
 
-³«¤¤¤¿¥Õ¥¡¥¤¥ë¥ª¥Ö¥¸¥§¥¯¥È¤Ï [[c:StringIO]] ¤â¤·¤¯¤Ï [[c:Tempfile]] ¤Ç
-¤¹¤¬ [[c:OpenURI::Meta]] ¥â¥¸¥å¡¼¥ë¤Ç³ÈÄ¥¤µ¤ì¤Æ¤¤¤Æ¡¢¥á¥¿¾ğÊó¤ò³ÍÆÀ¤¹¤ë
-¥á¥½¥Ã¥É¤¬»È¤¨¤Ş¤¹¡£
+é–‹ã„ãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ [[c:StringIO]] ã‚‚ã—ãã¯ [[c:Tempfile]] ã§
+ã™ãŒ [[c:OpenURI::Meta]] ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§æ‹¡å¼µã•ã‚Œã¦ã„ã¦ã€ãƒ¡ã‚¿æƒ…å ±ã‚’ç²å¾—ã™ã‚‹
+ãƒ¡ã‚½ãƒƒãƒ‰ãŒä½¿ãˆã¾ã™ã€‚
   open("http://www.ruby-lang.org/en") {|f|
     f.each_line {|line| p line}
     p f.base_uri         # <URI::HTTP:0x40e6ef2 URL:http://www.ruby-lang.org/en/>
@@ -27,28 +28,28 @@ http/ftp ¤Î URL ¤ò¡¢ÉáÄÌ¤Î¥Õ¥¡¥¤¥ë¤Î¤è¤¦¤Ë³«¤±¤Ş¤¹¡£
     p f.content_encoding # []
     p f.last_modified    # Thu Dec 05 02:45:02 UTC 2002
   }
-¥Ï¥Ã¥·¥å°ú¿ô¤Ç¡¢ÄÉ²Ã¤Î¥Ø¥Ã¥À¥Õ¥£¡¼¥ë¥É¤ò»ØÄê¤Ç¤­¤Ş¤¹¡£
+ãƒãƒƒã‚·ãƒ¥å¼•æ•°ã§ã€è¿½åŠ ã®ãƒ˜ãƒƒãƒ€ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’æŒ‡å®šã§ãã¾ã™ã€‚
   open("http://www.ruby-lang.org/en/",
     "User-Agent" => "Ruby/#{RUBY_VERSION}",
     "From" => "foo@bar.invalid",
     "Referer" => "http://www.ruby-lang.org/") {|f|
     ...
   }
-http_proxy ¤ä ftp_proxy ¤Ê¤É¤Î´Ä¶­ÊÑ¿ô¤Ï¡¢¥Ç¥Õ¥©¥ë¥È¤ÇÍ­¸ú¤Ë¤Ê¤Ã¤Æ¤¤¤Ş¤¹¡£
-¥×¥í¥­¥·¤òÌµ¸ú¤Ë¤¹¤ë¤Ë¤Ï :proxy => nil ¤È¤·¤Ş¤¹¡£
+http_proxy ã‚„ ftp_proxy ãªã©ã®ç’°å¢ƒå¤‰æ•°ã¯ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§æœ‰åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚
+ãƒ—ãƒ­ã‚­ã‚·ã‚’ç„¡åŠ¹ã«ã™ã‚‹ã«ã¯ :proxy => nil ã¨ã—ã¾ã™ã€‚
   open("http://www.ruby-lang.org/en/raa.html",
     :proxy => nil) {|f|
     ...
   }
 
-¤Ş¤¿¡¢open-uri ¤òÆÉ¤ß¹ş¤à¤È [[c:URI::HTTP]] ¤È [[c:URI::FTP]] ¤¬
-[[c:OpenURI::OpenRead]] ¥â¥¸¥å¡¼¥ë¤ò¥¤¥ó¥¯¥ë¡¼¥É¤·¤Ş¤¹¡£¤Ç¤¹¤Î¤Ç¡¢
-URI ¥ª¥Ö¥¸¥§¥¯¥È¤â»÷¤¿¤è¤¦¤ÊÊıË¡¤Ç³«¤±¤Ş¤¹¡£
+ã¾ãŸã€open-uri ã‚’èª­ã¿è¾¼ã‚€ã¨ [[c:URI::HTTP]] ã¨ [[c:URI::FTP]] ãŒ
+[[c:OpenURI::OpenRead]] ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚’ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã—ã¾ã™ã€‚ã§ã™ã®ã§ã€
+URI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚‚ä¼¼ãŸã‚ˆã†ãªæ–¹æ³•ã§é–‹ã‘ã¾ã™ã€‚
   uri = URI.parse("http://www.ruby-lang.org/en/")
   uri.open {|f|
     ...
   }
-URI ¥ª¥Ö¥¸¥§¥¯¥È¤ÏÄ¾ÀÜÆÉ¤ß¹ş¤à¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
-Ìá¤êÃÍ¤ÎÊ¸»úÎó¤Ï¡¢[[c:OpenURI::Meta]] ¤Ç³ÈÄ¥¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
+URI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯ç›´æ¥èª­ã¿è¾¼ã‚€ã“ã¨ãŒã§ãã¾ã™ã€‚
+æˆ»ã‚Šå€¤ã®æ–‡å­—åˆ—ã¯ã€[[c:OpenURI::Meta]] ã§æ‹¡å¼µã•ã‚Œã¦ã„ã¾ã™ã€‚
   str = uri.read
   p str.base_uri

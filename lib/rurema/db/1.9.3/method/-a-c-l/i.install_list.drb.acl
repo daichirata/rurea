@@ -2,6 +2,11 @@ names=install_list
 visibility=public
 kind=defined
 
---- install_list(list)
-@todo
+--- install_list(list) -> ()
+ACL に list で指定したエントリーを追加します。
+
+  acl.install_list(["deny", "192.168.1.45"])
+
+@param list 追加するエントリー
+
 

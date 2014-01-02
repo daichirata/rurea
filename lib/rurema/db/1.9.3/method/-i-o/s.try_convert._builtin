@@ -4,8 +4,8 @@ kind=defined
 
 --- try_convert(obj) -> IO | nil
 
-obj ¤ò to_io ¥á¥½¥Ã¥É¤Ë¤è¤Ã¤Æ [[c:IO]] ¥ª¥Ö¥¸¥§¥¯¥È¤ËÊÑ´¹¤·¤Þ¤¹¡£
-ÊÑ´¹¤Ç¤­¤Ê¤«¤Ã¤¿¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+obj ã‚’ to_io ãƒ¡ã‚½ãƒƒãƒ‰ã«ã‚ˆã£ã¦ [[c:IO]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¤‰æ›ã—ã¾ã™ã€‚
+å¤‰æ›ã§ããªã‹ã£ãŸå ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
    IO.try_convert(STDOUT)     # => STDOUT
    IO.try_convert("STDOUT")   # => nil

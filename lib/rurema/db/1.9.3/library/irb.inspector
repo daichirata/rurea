@@ -3,6 +3,7 @@ classes=IRB=Inspector,IRB=INSPECTORS
 methods=IRB/s.Inspector.irb.inspector
 sublibraries=
 is_sublibrary=true
+category=
 
-irb ¥³¥Ş¥ó¥É¤Ç¼Â¹Ô·ë²Ì¤Î½ĞÎÏÊı¼°(inspect_mode)¤òÄêµÁ¤¹¤ë¤¿¤á¤Î¥µ¥Ö¥é¥¤
-¥Ö¥é¥ê¤Ç¤¹¡£
+irb ã‚³ãƒãƒ³ãƒ‰ã§å®Ÿè¡Œçµæœã®å‡ºåŠ›æ–¹å¼(inspect_mode)ã‚’å®šç¾©ã™ã‚‹ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤
+ãƒ–ãƒ©ãƒªã§ã™ã€‚

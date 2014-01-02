@@ -4,12 +4,12 @@ kind=defined
 
 --- parse(io) -> Syck::Node
 
-Ϳ����줿 io ���� YAML �ե����ޥåȤ�ʸ���ѡ�����
-[[c:Syck::Node]] �����Υ��֥��饹�Υ��֥������Ȥ��Ѵ����ޤ���
-ʣ���Υɥ�����Ȥ��ɤ߹�����ϡ�YAML.parse_documents(���Τ�
-[[m:Syck.parse_documents]]) ����Ѥ��ޤ���
+与えられた io から YAML フォーマットの文書をパースし
+[[c:Syck::Node]] かそのサブクラスのオブジェクトに変換します。
+複数のドキュメントを読み込む場合は、YAML.parse_documents(実体は
+[[m:Syck.parse_documents]]) を使用します。
 
-@param io YAML�ե����ޥåȤ�IO���֥������Ȥ⤷����ʸ����
+@param io YAMLフォーマットのIOオブジェクトもしくは文字列
 
   #!/usr/bin/env ruby
   
@@ -37,5 +37,5 @@ kind=defined
   # end of sample
   #=> "/cat/0/name"
   #=> "/cat/1/name"
-  # dog ���ɤ߹��ޤʤ�
+  # dog は読み込まない
 

@@ -4,12 +4,12 @@ kind=defined
 
 --- puts(*obj)    -> nil
 
-obj �Ȳ��Ԥ���֤˼��Ȥ˽��Ϥ��ޤ����������ʤ���в��ԤΤߤ���Ϥ��ޤ���
-�ܤ������ͤ� [[m:Kernel.#puts]] �򻲾Ȥ��Ʋ�������
+obj と改行を順番に自身に出力します。引数がなければ改行のみを出力します。
+詳しい仕様は [[m:Kernel.#puts]] を参照して下さい。
 
-@param obj �񤭹��ߤ������֥������Ȥ���ꤷ�ޤ���
+@param obj 書き込みたいオブジェクトを指定します。
 
-@raise IOError ���Ȥ��񤭹����Ѥ˥����ץ󤵤�Ƥ��ʤ����ȯ�����ޤ���
+@raise IOError 自身が書き込み用にオープンされていなければ発生します。
 
   a = StringIO.new("", 'r+')
   a.puts("hoge", "bar", "foo")

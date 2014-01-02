@@ -4,9 +4,9 @@ kind=defined
 
 --- irb_exit(ret = 0) -> object
 
-irb ��λ���ޤ���ret �ǻ��ꤷ�����֥������Ȥ��֤��ޤ���
+irb を終了します。ret で指定したオブジェクトを返します。
 
-@param ret ����ͤ���ꤷ�ޤ���
+@param ret 戻り値を指定します。
 
-�桼����ľ�ܻ��Ѥ����ΤǤϤ���ޤ���
+ユーザが直接使用するものではありません。
 

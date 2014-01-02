@@ -4,7 +4,7 @@ kind=defined
 
 --- invoke_task(task_string)
 
-Ϳ����줿ʸ�������Ϥ��ƥ�������¹Ԥ��ޤ���
+与えられた文字列を解析してタスクを実行します。
 
-@param task_string ������̾�Ȥ����Ϳ����ѥ�᡼���򤢤�魯ʸ�������ꤷ�ޤ���
+@param task_string タスク名とそれに与えるパラメータをあらわす文字列を指定します。
 

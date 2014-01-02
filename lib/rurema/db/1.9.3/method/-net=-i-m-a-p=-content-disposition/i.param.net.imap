@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- param -> { String => String } | nil
-Content-Disposition �ե�����ɤΥѥ�᡼����ϥå���ơ��֥��
-�֤��ޤ���
+Content-Disposition フィールドのパラメータをハッシュテーブルで
+返します。
 
-�ϥå���ơ��֥�Υ����ϰʲ��Τ褦���ͤ���ޤ����ܤ�����
-[[RFC:2183]] �ʤɤ򸫤Ƥ���������
+ハッシュテーブルのキーは以下のような値を取ります。詳しくは
+[[RFC:2183]] などを見てください。
   * "FILENAME"
   * "CREATION-DATE"
   * "MODIFICATION-DATE"

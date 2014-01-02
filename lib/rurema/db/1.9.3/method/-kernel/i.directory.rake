@@ -4,11 +4,11 @@ kind=added
 
 --- directory(dir) -> ()
 
-Ϳ����줿�ǥ��쥯�ȥ��������륿������������ޤ���
+与えられたディレクトリを作成するタスクを定義します。
 
-@param dir ��������ǥ��쥯�ȥ����ꤷ�ޤ���
+@param dir 作成するディレクトリを指定します。
 
-��:
+例:
   directory 'testdata/doc'
 
 

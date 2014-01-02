@@ -4,7 +4,7 @@ kind=defined
 
 --- add_specs(*gem_specs) -> Hash
 
-���Ȥ˰�����Ϳ����줿 [[c:Gem::Specification]] �Υ��󥹥��󥹤������ɲä��ޤ���
+自身に引数で与えられた [[c:Gem::Specification]] のインスタンスを全て追加します。
 
-@param gem_specs ʣ���� [[c:Gem::Specification]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param gem_specs 複数の [[c:Gem::Specification]] のインスタンスを指定します。
 

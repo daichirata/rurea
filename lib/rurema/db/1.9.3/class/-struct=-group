@@ -6,6 +6,6 @@ library=etc
 aliases=Etc=Group
 aliasof=
 
-[[m:Etc.#getgrent]] �������빽¤�Ρ�
+[[m:Etc.#getgrent]] で得られる構造体。
 
-���ι�¤�Τ��ͤ��ѹ����Ƥ⥷���ƥ�ˤ�ȿ�Ǥ���ޤ���
+この構造体の値を変更してもシステムには反映されません。

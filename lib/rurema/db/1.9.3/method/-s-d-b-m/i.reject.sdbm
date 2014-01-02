@@ -4,11 +4,11 @@ kind=defined
 
 --- reject {|key, value| ... } -> Hash
 
-¥Ö¥í¥Ã¥¯¤òÉ¾²Á¤·¤¿ÃÍ¤¬¿¿¤Ç¤¢¤ì¤Ð³ºÅö¤¹¤ëÍ×ÁÇ¤òºï½ü¤·¤Þ¤¹¡£
+ãƒ–ãƒ­ãƒƒã‚¯ã‚’è©•ä¾¡ã—ãŸå€¤ãŒçœŸã§ã‚ã‚Œã°è©²å½“ã™ã‚‹è¦ç´ ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
   self.to_hash.reject{|key, value| ... }
 
-¤ÈÆ±¤¸¤Ç¤¹¡£
+ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:Hash#reject]]
 

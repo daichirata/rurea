@@ -4,5 +4,5 @@ kind=defined
 
 --- flags -> nil
 
-���Ѥ���Ƥ��ޤ��󡣾�� nil ���֤��ޤ���
+使用されていません。常に nil を返します。
 

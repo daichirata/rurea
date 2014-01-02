@@ -4,7 +4,7 @@ kind=defined
 
 --- only_trusted=(flag)
 
-���ںѤߤ� Gem �Τߥ��󥹥ȡ��뤹�뤫�ɤ��������ꤷ�ޤ���
+検証済みの Gem のみインストールするかどうかを設定します。
 
-@param flag �����ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真、または偽を指定します。
 

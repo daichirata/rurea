@@ -4,7 +4,7 @@ kind=defined
 
 --- PLATFORM_DEFAULTS -> {}
 
-Ruby �μ����Ԥ��ǥե���Ȥ������ͤ򥻥åȤ��뤿��˻��Ѥ��ޤ���
+Ruby の実装者がデフォルトの設定値をセットするために使用します。
 
-���Ѥ���ե������ rubygems/defaults/#{RUBY_ENGINE}.rb �Ǥ���
+使用するファイルは rubygems/defaults/#{RUBY_ENGINE}.rb です。
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- USERNAME_COMPLETION_PROC -> Proc
 
-GNU Readline ¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ë´Ø¿ô¤ò»ÈÍÑ¤·¤Æ¥æ¡¼¥¶Ì¾¤ÎÊä´°¤ò¹Ô¤¦¤¿¤á¤Î
-[[c:Proc]] ¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤¹¡£
-[[m:Readline.completion_proc=]] ¤Ç»ÈÍÑ¤·¤Ş¤¹¡£
+GNU Readline ã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹é–¢æ•°ã‚’ä½¿ç”¨ã—ã¦ãƒ¦ãƒ¼ã‚¶åã®è£œå®Œã‚’è¡Œã†ãŸã‚ã®
+[[c:Proc]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
+[[m:Readline.completion_proc=]] ã§ä½¿ç”¨ã—ã¾ã™ã€‚
 
 @see [[m:Readline.completion_proc=]]
 

@@ -3,21 +3,22 @@ classes=Coverage
 methods=
 sublibraries=
 is_sublibrary=false
+category=Development
 
-���Х�å���¬�ꤹ�뤿��Υ饤�֥��Ǥ���
+カバレッジを測定するためのライブラリです。
 
-=== �Ȥ���
+=== 使い方
 
-�ʲ��Τ褦�ˤ���¬���Ԥ��ޤ���
+以下のようにして測定を行います。
 
-  (1) require "coverage" ����
-  (2) Coverage.start ��¹Ԥ���
-  (3) require �� load ��¹Ԥ���
-  (4) Coverage.result �η�̤��ǧ����
+  (1) require "coverage" する
+  (2) Coverage.start を実行する
+  (3) require か load を実行する
+  (4) Coverage.result の結果を確認する
 
-=== ��
+=== 例
 
-�ޤ�¬���оݤΥ��������Ѱդ��ޤ���
+まず測定対象のソースを用意します。
 
   # foo.rb
   s = 0
@@ -31,11 +32,11 @@ is_sublibrary=false
     p :ng
   end
 
-�ʲ��Τ褦�ˤ���¬���Ԥ��ޤ���
+以下のようにして測定を行います。
 
   require "coverage"
   Coverage.start
   require "foo"
   p Coverage.result # => {"foo.rb"=>[1, 1, 10, nil, nil, 1, 1, nil, 0, nil]}
 
-Coverage.result["foo.rb"]��������������ϳƹԤμ¹Բ���ˤʤäƤ��ޤ���
+Coverage.result["foo.rb"]から得られる配列は各行の実行回数になっています。

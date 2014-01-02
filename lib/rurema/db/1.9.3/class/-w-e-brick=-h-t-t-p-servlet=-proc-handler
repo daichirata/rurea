@@ -6,7 +6,7 @@ library=webrick.httpservlet.prochandler
 aliases=
 aliasof=
 
-[[c:Proc]] ¤ò°·¤¦¤¿¤á¤Î¥µ¡¼¥Ö¥ì¥Ã¥È¡£
+[[c:Proc]] ã‚’æ‰±ã†ãŸã‚ã®ã‚µãƒ¼ãƒ–ãƒ¬ãƒƒãƒˆã€‚
 
-[[m:WEBrick::HTTPServer#mount]] ¤Ë°ú¿ô¤È¤·¤ÆÍ¿¤¨¤ë¤³¤È¤Ï½ĞÍè¤Ş¤»¤ó¡£
-[[m:WEBrick::HTTPServer#mount_proc]]¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
+[[m:WEBrick::HTTPServer#mount]] ã«å¼•æ•°ã¨ã—ã¦ä¸ãˆã‚‹ã“ã¨ã¯å‡ºæ¥ã¾ã›ã‚“ã€‚
+[[m:WEBrick::HTTPServer#mount_proc]]ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚

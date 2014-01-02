@@ -4,9 +4,9 @@ kind=defined
 
 --- errno -> Fixnum | nil
 
-�쥷���Ф��б����륷���ƥ��¸�Υ��顼�����ɤ��֤��ޤ���
+レシーバに対応するシステム依存のエラーコードを返します。
 
-���顼�����ɤ��Ϥ��ʤ������������������� nil ���֤��ޤ���
+エラーコードを渡さない形式で生成した場合は nil を返します。
 
   begin
     raise Errno::ENOENT
@@ -22,6 +22,6 @@ kind=defined
   end
 
 
-�ʤ����㳰��ȯ���������˥��顼�����ɤ�����ˤϡ�
-[[m:Errno::EXXX::Errno]] �����Ȥ��ޤ���
+なお、例外を発生させずにエラーコードを得るには、
+[[m:Errno::EXXX::Errno]] 定数を使います。
 

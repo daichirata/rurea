@@ -4,10 +4,10 @@ kind=defined
 
 --- content_type    -> String
 
-ÂÐ¾Ý¤È¤Ê¤ë¥ê¥½¡¼¥¹¤Î Content-Type ¤òÊ¸»úÎó¤ÎÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£Content-Type ¥Ø¥Ã¥À¤Î¾ðÊó¤¬»È¤ï¤ì¤Þ¤¹¡£
-Content-Type ¥Ø¥Ã¥À¤¬¤Ê¤¤¾ì¹ç¤Ï¡¢"application/octet-stream" ¤òÊÖ¤·¤Þ¤¹¡£
+å¯¾è±¡ã¨ãªã‚‹ãƒªã‚½ãƒ¼ã‚¹ã® Content-Type ã‚’æ–‡å­—åˆ—ã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚Content-Type ãƒ˜ãƒƒãƒ€ã®æƒ…å ±ãŒä½¿ã‚ã‚Œã¾ã™ã€‚
+Content-Type ãƒ˜ãƒƒãƒ€ãŒãªã„å ´åˆã¯ã€"application/octet-stream" ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'open-uri'
   p open('http://www.ruby-lang.org/').content_type  #=> "text/html"

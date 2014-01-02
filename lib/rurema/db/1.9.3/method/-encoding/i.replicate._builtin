@@ -4,7 +4,7 @@ kind=defined
 
 --- replicate(name) -> Encoding
 
-�쥷���ФΥ��󥳡��ǥ��󥰤�ʣ��(replicate)���ޤ���
-ʣ�����줿���󥳡��ǥ��󥰤ϸ��Υ��󥳡��ǥ��󥰤�Ʊ���Х��ȹ�¤������ʤ���Фʤ�ޤ���
-name �Ȥ���̾���Υ��󥳡��ǥ��󥰤�����¸�ߤ������ [[c:ArgumentError]] ��ȯ�����ޤ���
+レシーバのエンコーディングを複製(replicate)します。
+複製されたエンコーディングは元のエンコーディングと同じバイト構造を持たなければなりません。
+name という名前のエンコーディングが既に存在する場合は [[c:ArgumentError]] を発生します。
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- NOINTERN -> Integer
-��̾���ڻ��ˡ���̾�Ԥξ�������å�������ź�դ��줿�����񤫤�õ�����ޤ���
+署名検証時に、署名者の証明書をメッセージに添付された証明書から探索しません。
 
-[[m:OpenSSL::PKCS7#verify]] �ǤΤ����Ѳ�ǽ�ʥե饰�Ǥ���
+[[m:OpenSSL::PKCS7#verify]] でのみ利用可能なフラグです。
 

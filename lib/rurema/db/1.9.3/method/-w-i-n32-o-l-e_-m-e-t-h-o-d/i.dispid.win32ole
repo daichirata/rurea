@@ -3,19 +3,18 @@ visibility=public
 kind=defined
 
 --- dispid -> Integer
-¥á¥½¥Ã¥É¤Î¥Ç¥£¥¹¥Ñ¥Ã¥ÁID¡ÊDISPID¡Ë¤ò¼èÆÀ¤·¤Þ¤¹¡£
+ãƒ¡ã‚½ãƒƒãƒ‰ã®ãƒ‡ã‚£ã‚¹ãƒ‘ãƒƒãƒIDï¼ˆDISPIDï¼‰ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-¥Ç¥£¥¹¥Ñ¥Ã¥ÁID¤Ï¥á¥½¥Ã¥É¤Î°ì°Õ¼±ÊÌ»Ò¤Ç¤¹¡£WIN32OLE¤Ç¤Ï¡¢
-[[m:WIN32OLE#_invoke]]¤Ê¤É¤Î¥á¥½¥Ã¥É¤Ç¡¢¸Æ¤Ó½Ð¤¹¥µ¡¼¥Ð¤Î¥á¥½¥Ã¥É¤ò»ØÄê
-¤¹¤ë¤Î¤ËÍøÍÑ¤·¤Þ¤¹¡£
+ãƒ‡ã‚£ã‚¹ãƒ‘ãƒƒãƒIDã¯ãƒ¡ã‚½ãƒƒãƒ‰ã®ä¸€æ„è­˜åˆ¥å­ã§ã™ã€‚WIN32OLEã§ã¯ã€
+[[m:WIN32OLE#_invoke]]ãªã©ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ã€å‘¼ã³å‡ºã™ã‚µãƒ¼ãƒã®ãƒ¡ã‚½ãƒƒãƒ‰ã‚’æŒ‡å®š
+ã™ã‚‹ã®ã«åˆ©ç”¨ã—ã¾ã™ã€‚
 
-@return ¥á¥½¥Ã¥É¤ÎDISPID¤òÊÖ¤·¤Þ¤¹¡£
+@return ãƒ¡ã‚½ãƒƒãƒ‰ã®DISPIDã‚’è¿”ã—ã¾ã™ã€‚
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Workbooks')
    method = WIN32OLE_METHOD.new(tobj, 'Add')
    puts method.dispid # => 181
 
-@see [[m:WIN32OLE#_invoke]]
-@see [[m:WIN32OLE#_getproperty]]
-@see [[m:WIN32OLE#_setproperty]]
+@see [[m:WIN32OLE#_invoke]], [[m:WIN32OLE#_getproperty]],
+     [[m:WIN32OLE#_setproperty]]
 

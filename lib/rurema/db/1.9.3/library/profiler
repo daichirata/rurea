@@ -3,7 +3,8 @@ classes=Profiler__
 methods=
 sublibraries=
 is_sublibrary=false
+category=Development
 
-¥Χ¥ν¥Υ¥΅¥¤¥ι¤ΞΌΒΑυ¤Η¤Ή΅£
-Έ½Ίί΅Ά[[lib:profile]] ¥ι¥¤¥Φ¥ι¥κ¤Ο profiler ¥ι¥¤¥Φ¥ι¥κ¤ς
-ΝψΝΡ¤·¤ΖΌΒΑυ¤µ¤μ¤Ζ¤¤¤ή¤Ή΅£
+γƒ—γƒ­γƒ•γ‚΅γ‚¤γƒ©γ®ε®θ£…γ§γ™γ€‚
+ηΎε¨γ€[[lib:profile]] γƒ©γ‚¤γƒ–γƒ©γƒªγ― profiler γƒ©γ‚¤γƒ–γƒ©γƒªγ‚’
+ε©η”¨γ—γ¦ε®θ£…γ•γ‚γ¦γ„γΎγ™γ€‚

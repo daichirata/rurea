@@ -4,12 +4,12 @@ kind=defined
 
 --- setpos(y, x) -> nil
 
-stdscr �Υ���������ɸ (x,y) �˰�ư���ޤ���
-��ɸ�ϤȤ�� 0 �������Ǥ���
+stdscr のカーソルを座標 (x,y) に移動します。
+座標はともに 0 が始点です。
 
-ʸ�����ʤ����� setpos �������ε�ư�� OS �˰�¸���ޤ���
+文字がない場所に setpos した場合の挙動は OS に依存します。
 
-@param y Y ��ɸ���ͤ���ꤷ�ޤ���
+@param y Y 座標の値を指定します。
 
-@param x X ��ɸ���ͤ���ꤷ�ޤ���
+@param x X 座標の値を指定します。
 

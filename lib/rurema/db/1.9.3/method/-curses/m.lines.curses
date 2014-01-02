@@ -4,5 +4,5 @@ kind=defined
 
 --- lines -> Integer
 
-���̤�ɽ����ǽ�ʹԿ����֤��ޤ���
+画面に表示可能な行数を返します。
 

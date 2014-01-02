@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- unused_bits=(b)
-Bit String¤Ë¥Õ¥é¥°¤òÀßÄê¤·¤Ş¤¹¡£
+Bit Stringã«ãƒ•ãƒ©ã‚°ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param b ¥Õ¥é¥°(À°¿ô)
+@param b ãƒ•ãƒ©ã‚°(æ•´æ•°)
 @see [[m:OpenSSL::ASN1::BitString#unused_bits]]
 

@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-�ʱ߶����Ź�θ������Ȥʤ�����������ɽ���ޤ���
+楕円曲線暗号の公開鍵となる曲線上の点を表します。

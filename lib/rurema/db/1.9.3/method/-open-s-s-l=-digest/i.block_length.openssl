@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- block_length -> Integer
-�ϥå���ؿ��Υ֥��å����������֤��ޤ���
+ハッシュ関数のブロックサイズを返します。
 

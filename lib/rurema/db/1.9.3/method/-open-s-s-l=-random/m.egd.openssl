@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- egd(filename) -> true
-EGD(Entropy Gathering Daemon) ¤«¤é¥¨¥ó¥È¥í¥Ô¡¼¤òÆÀ¡¢
-Íğ¿ôÀ¸À®´ï¤ËÄÉ²Ã¤·¤Ş¤¹¡£
+EGD(Entropy Gathering Daemon) ã‹ã‚‰ã‚¨ãƒ³ãƒˆãƒ­ãƒ”ãƒ¼ã‚’å¾—ã€
+ä¹±æ•°ç”Ÿæˆå™¨ã«è¿½åŠ ã—ã¾ã™ã€‚
 
-filename ¤Ç»ØÄê¤·¤¿ Unix domain socket ¤«¤é EGD ¤ËÌä¤¤¹ç¤ï¤»¡¢
-255 ¥Ğ¥¤¥ÈÊ¬¤Î¥¨¥ó¥È¥í¥Ô¡¼¤ò¼èÆÀ¤·¤Ş¤¹¡£
-[[m:OpenSSL::Random.egd_bytes]](filename, 255) ¤ÈÆ±¤¸¤Ç¤¹¡£
+filename ã§æŒ‡å®šã—ãŸ Unix domain socket ã‹ã‚‰ EGD ã«å•ã„åˆã‚ã›ã€
+255 ãƒã‚¤ãƒˆåˆ†ã®ã‚¨ãƒ³ãƒˆãƒ­ãƒ”ãƒ¼ã‚’å–å¾—ã—ã¾ã™ã€‚
+[[m:OpenSSL::Random.egd_bytes]](filename, 255) ã¨åŒã˜ã§ã™ã€‚
 
-@param filename EGD ¤Î¥½¥±¥Ã¥È¤Î¥Õ¥¡¥¤¥ëÌ¾
+@param filename EGD ã®ã‚½ã‚±ãƒƒãƒˆã®ãƒ•ã‚¡ã‚¤ãƒ«å
 @raise OpenSSL::Random::RandomError 
 

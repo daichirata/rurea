@@ -3,24 +3,24 @@ visibility=public
 kind=defined
 
 --- session_id_context=(id_context)
-���å���� ID ����ƥ����Ȥ�ʸ��������ꤷ�ޤ���
+セッション ID コンテキストを文字列で設定します。
 
-���å���� ID ����ƥ����Ȥϡ����å����򥰥롼�ײ����뤿���
-���̻Ҥǡ����å���� ID ����ƥ����Ȥȥ��å���� ID ��ξ����
-���פ������Ʊ��Υ��å����Ǥ����Ƚ�̤���ޤ���
-���� [[c:OpenSSL::SSL::SSLContext]] ���֥������Ȥ�
-�������줿���ͥ������([[c:OpenSSL::SSL::SSLSocket]])��
-��Ϣ�դ���줿���å����ϥ��å���� ID ����ƥ�����
-��ͭ���ޤ���
+セッション ID コンテキストは、セッションをグループ化するための
+識別子で、セッション ID コンテキストとセッション ID の両方が
+一致する場合に同一のセッションであると判別されます。
+この [[c:OpenSSL::SSL::SSLContext]] オブジェクトで
+生成されたコネクション([[c:OpenSSL::SSL::SSLSocket]])に
+関連付けられたセッションはセッション ID コンテキスト
+を共有します。
 
-���å���� ID ����ƥ����Ȥϥ��å����Υ��롼�פ�
-���̤��뤿��μ��̻ҤǤ��ꡢ�������å���� ID �ϳƥ��å�����
-���̤��뤿��μ��̻ҤǤ��ꡢ����2�Ĥϰۤʤ복ǰ��
-���뤳�Ȥ����դ��Ƥ���������
+セッション ID コンテキストはセッションのグループを
+識別するための識別子であり、一方セッション ID は各セッションを
+識別するための識別子であり、この2つは異なる概念で
+あることに注意してください。
 
-���饤�����¦�Ǥϰ�̣������ޤ���
+クライアント側では意味を持ちません。
 
-@param id_context ���å���� ID ����ƥ�����ʸ����(����32�Х���)
+@param id_context セッション ID コンテキスト文字列(最大32バイト)
 @see [[c:OpenSSL::SSL::Session]],
      [[m:OpenSSL::SSL::SSLContext#session_id_context]],
      [[m:OpenSSL::SSL::SSLContext#session_cache_mode=]]

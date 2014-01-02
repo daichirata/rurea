@@ -4,9 +4,9 @@ kind=defined
 
 --- detect_implicit(val) -> String
 
-�������ά�����ͤη���Ƚ�ꤷ�ޤ���
+タグを省略した値の型を判定します。
 
-@param val Ƚ�ꤵ���ʸ�������ꤷ�ޤ���
+@param val 判定される文字列を指定します。
 
   require 'yaml'
   

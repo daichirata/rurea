@@ -4,13 +4,13 @@ kind=defined
 
 --- Sequence(value) -> OpenSSL::ASN1::Sequence -> OpenSSL::ASN1::Sequence
 --- Sequence(value, tag, tagging, tag_class) -> OpenSSL::ASN1::Sequence
-ASN.1 д╬ Sequence ╖┐д╬├═дЄ╔╜╕╜д╣ды Ruby д╬еке╓е╕езепе╚дЄ
-└╕└од╖д▐д╣бг
+ASN.1 уБо Sequence хЮЛуБохАдуВТшбичП╛уБЩуВЛ Ruby уБоуВкуГЦуВ╕уВзуВпуГИуВТ
+чФЯцИРуБЧуБ╛уБЩуАВ
 
-[[m:OpenSSL::ASN1::Sequence.new]] д╚╞▒д╕д╟д╣бг
+[[m:OpenSSL::ASN1::Sequence.new]] уБихРМуБШуБзуБЩуАВ
 
-@param value ASN.1├═дЄ╔╜д╣Rubyд╬еке╓е╕езепе╚([[c:OpenSSL::ASN1::ASN1Data]]д╬╟█╬є)
-@param tag е┐е░╚╓╣ц
-@param tagging е┐е░╔╒д▒д╬╩¤╦б(:IMPLICIT дтд╖дпд╧ :EXPLICIT)
-@param tag_class е┐е░епеще╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE д╬ддд║дьдл)
+@param value ASN.1хАдуВТшбиуБЩRubyуБоуВкуГЦуВ╕уВзуВпуГИ([[c:OpenSSL::ASN1::ASN1Data]]уБощЕНхИЧ)
+@param tag уВ┐уВ░чХкхП╖
+@param tagging уВ┐уВ░ф╗ШуБСуБоцЦ╣ц│Х(:IMPLICIT уВВуБЧуБПуБп :EXPLICIT)
+@param tag_class уВ┐уВ░уВпуГйуВ╣(:UNIVERSAL, :CONTEXT_SPECIFIC, :APPLICATION, :PRIVATE уБоуБДуБЪуВМуБЛ)
 

@@ -3,5 +3,6 @@ classes=Tk=ICONS
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 ICONS support

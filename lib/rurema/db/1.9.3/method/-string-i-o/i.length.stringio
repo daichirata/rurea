@@ -5,5 +5,5 @@ kind=defined
 --- size    -> Integer
 --- length  -> Integer
 
-ʸ�����Ĺ�����֤��ޤ���
+文字列の長さを返します。
 

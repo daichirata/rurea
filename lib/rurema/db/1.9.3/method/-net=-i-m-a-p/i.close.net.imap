@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- close -> Net::IMAP::TaggedResponse
-CLOSE ���ޥ�ɤ����ꡢ������Υ᡼��ܥå������Ĥ��ޤ���
+CLOSE コマンドを送り、処理中のメールボックスを閉じます。
 
-���Υ��ޥ�ɤˤ�äơ��ɤΥ᡼��ܥå��������򤵤�Ƥ��ʤ�
-���֤˰ܹԤ��ޤ���
-������ \Deleted �ե饰���դ���줿�᡼�뤬���٤ƺ������ޤ���
+このコマンドによって、どのメールボックスも選択されていない
+状態に移行します。
+そして \Deleted フラグが付けられたメールがすべて削除されます。
 

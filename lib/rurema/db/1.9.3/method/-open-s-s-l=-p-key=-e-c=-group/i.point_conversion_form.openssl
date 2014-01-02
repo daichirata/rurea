@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- point_conversion_form -> Symbol
-���Υ��󥳡��ǥ����������֤��ޤ���
+点のエンコーディング方式を返します。
 
-�ʲ��Τ����줫���֤��ޤ���
+以下のいずれかを返します。
   * :compressed
   * :uncompressed
   * :hybrid
-�ܤ�����  X9.62 (ECDSA) �ʤɤ򻲾Ȥ��Ƥ���������
+詳しくは  X9.62 (ECDSA) などを参照してください。
 
-@raise OpenSSL::PKey::EC::Group::Error ����줿���󥳡��ǥ��󥰤�̤�Τ��ͤǤ��ä�
-       ����ȯ�����ޤ���
+@raise OpenSSL::PKey::EC::Group::Error 得られたエンコーディングが未知の値であった
+       場合に発生します。
 @see [[m:OpenSSL::PKey::EC::Group#point_conversion_form=]]
 

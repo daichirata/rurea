@@ -2,9 +2,9 @@ names=IN6MASK
 visibility=protected 
 kind=defined
 
---- IN6MASK
+--- IN6MASK -> Integer
 
-IPv6 ฅขฅษฅ์ฅนคฮพ์น็คหปศอัคนค๋ฅÞฅนฅฏรอกฃ
+IPv6 ใขใใฌในใฎๅ ดๅใซไฝฟ็”จใใใในใฏๅ€คใ€
 
   0xffffffffffffffffffffffffffffffff
 

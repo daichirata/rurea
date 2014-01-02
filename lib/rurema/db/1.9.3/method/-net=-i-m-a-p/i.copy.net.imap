@@ -3,18 +3,18 @@ visibility=public
 kind=defined
 
 --- copy(set, mailbox) -> Net::IMAP::TaggedResponse
-COPY ¥³¥Ş¥ó¥É¤òÁ÷¤ê¡¢»ØÄê¤·¤¿¥á¥Ã¥»¡¼¥¸¤ò
-»ØÄê¤·¤¿¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤ÎËöÈø¤ËÄÉ²Ã¤·¤Ş¤¹¡£
+COPY ã‚³ãƒãƒ³ãƒ‰ã‚’é€ã‚Šã€æŒ‡å®šã—ãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’
+æŒ‡å®šã—ãŸãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ã®æœ«å°¾ã«è¿½åŠ ã—ã¾ã™ã€‚
 
-set ¤Ç¥³¥Ô¡¼¤¹¤ë¥á¥Ã¥»¡¼¥¸¤ò»ØÄê¤·¤Ş¤¹¡£
-message sequence number(À°¿ô)¡¢
-message sequence number¤ÎÇÛÎó¡¢¤â¤·¤¯¤Ï [[c:Range]] ¤Ç
-»ØÄê¤·¤Ş¤¹¡£¥³¥Ô¡¼¸µ¤Î¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤Ï
-[[m:Net::IMAP#examine]] ¤â¤·¤¯¤Ï [[m:Net::IMAP#select]] ¤Ç
-»ØÄê¤·¤¿¤â¤Î¤òÍÑ¤¤¤Ş¤¹¡£
-mailbox ¤Ï¥³¥Ô¡¼Àè¤Î¥á¡¼¥ë¥Ü¥Ã¥¯¥¹¤Ç¤¹¡£
+set ã§ã‚³ãƒ”ãƒ¼ã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+message sequence number(æ•´æ•°)ã€
+message sequence numberã®é…åˆ—ã€ã‚‚ã—ãã¯ [[c:Range]] ã§
+æŒ‡å®šã—ã¾ã™ã€‚ã‚³ãƒ”ãƒ¼å…ƒã®ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ã¯
+[[m:Net::IMAP#examine]] ã‚‚ã—ãã¯ [[m:Net::IMAP#select]] ã§
+æŒ‡å®šã—ãŸã‚‚ã®ã‚’ç”¨ã„ã¾ã™ã€‚
+mailbox ã¯ã‚³ãƒ”ãƒ¼å…ˆã®ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹ã§ã™ã€‚
 
-@param set ¥³¥Ô¡¼¤¹¤ë¥á¥Ã¥»¡¼¥¸¤Î message sequence number
-@param mailbox ¥³¥Ô¡¼Àè¤Î¥á¡¼¥ë¥Ü¥Ã¥¯¥¹(Ê¸»úÎó)
+@param set ã‚³ãƒ”ãƒ¼ã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã® message sequence number
+@param mailbox ã‚³ãƒ”ãƒ¼å…ˆã®ãƒ¡ãƒ¼ãƒ«ãƒœãƒƒã‚¯ã‚¹(æ–‡å­—åˆ—)
 @see [[m:Net::IMAP#uid_copy]]
 

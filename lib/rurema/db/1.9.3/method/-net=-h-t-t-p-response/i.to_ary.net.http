@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- to_ary -> [Net::HTTPResponse, String]
-���Υ᥽�åɤ� net/http.rb 1.1 �Ȥθߴ����Τ����¸�ߤ��ޤ���
+このメソッドは net/http.rb 1.1 との互換性のために存在します。
 
-[self, self.body] ���֤��ޤ���
+[self, self.body] を返します。
 

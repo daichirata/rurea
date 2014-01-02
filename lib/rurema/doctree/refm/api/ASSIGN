@@ -19,6 +19,7 @@ _builtin/EOFError               snoozer05       done
 _builtin/Encoding               ohai            done
 _builtin/Enumerable                             done
 _builtin/Enumerator             yugui           done
+_builtin/Enumerator__Lazy       yhara
 _builtin/Exception                              done
 _builtin/FalseClass             yamane          done
 _builtin/Fiber                                  done
@@ -85,6 +86,7 @@ _builtin/Thread                                 done
 _builtin/ThreadError                            done
 _builtin/ThreadGroup                            done
 _builtin/Time                                   done
+_builtin/TracePoint             sho-h           done
 _builtin/TrueClass              yamane          done
 _builtin/TypeError              snoozer05       done
 _builtin/UnboundMethod                          done
@@ -148,10 +150,11 @@ getopts                                         done
 gserver                         okkez           done
 iconv                           sho-h           done
 importenv                       mukai           done
+io/console                      sho-h           done
 io/nonblock                     ohai            done
 io/wait                         ohai            done
 ipaddr                          okkez           done
-irb                             sho-h
+irb                             sho-h           done
 jcode                           ohai            done
 json                            okkez           done
 kconv                           ohai            done
@@ -178,14 +181,14 @@ objspace                        sho-h           done
 observer                        snoozer05       done
 open-uri                                        done
 open3                           sho-h           done
-openssl                         ohai
+openssl                         ohai            done
 optparse                        sho-h           done
 ostruct                         eklerni         done
 
 # LIBRARY_NAME                  OWNER           STATUS
 #---------------------------------------------------------
 parsearg                        okkez           done
-parsedate                       tadf            almost done
+parsedate                       tadf            done
 pathname                        mukai           done
 ping                            okkez           done
 pp                                              done
@@ -196,7 +199,6 @@ profiler                        okkez           done
 pstore                          okkez           done
 pty                             okkez           done
 rake                            okkez           done
-racc/parser
 rational                        sho-h           done
 rbconfig                        okkez           done
 rdoc                            sho-h           done
@@ -215,7 +217,7 @@ sha1                            okkez           done
 shell                           kouya           done
 shellwords                      m-kawato        done
 singleton                       snoozer05       done
-socket                          kouya
+socket                          ohai            done
 stringio                                        done
 strscan                         kouya           done
 sync                            kouya           done

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- thursday? -> bool
-�������ʤ鿿���֤��ޤ���
+木曜日なら真を返します。
 

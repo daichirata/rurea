@@ -3,27 +3,28 @@ classes=Rake=PackageTask
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-ÇÛÉÛ¤¹¤ë¥Ñ¥Ã¥±¡¼¥¸ (zip, tar, etc...) ¤òºîÀ®¤¹¤ë¤¿¤á¤Î¥¿¥¹¥¯¤òÄêµÁ¤·¤Ş¤¹¡£
+é…å¸ƒã™ã‚‹ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ (zip, tar, etc...) ã‚’ä½œæˆã™ã‚‹ãŸã‚ã®ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤ò¥í¡¼¥É¤¹¤ë¤È°Ê²¼¤Î¥¿¥¹¥¯¤¬»ÈÍÑ²ÄÇ½¤Ë¤Ê¤ê¤Ş¤¹¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ã¨ä»¥ä¸‹ã®ã‚¿ã‚¹ã‚¯ãŒä½¿ç”¨å¯èƒ½ã«ãªã‚Šã¾ã™ã€‚
 
 : package
-  ¥Ñ¥Ã¥±¡¼¥¸¤òºîÀ®¤·¤Ş¤¹¡£
+  ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½œæˆã—ã¾ã™ã€‚
 : clobber_package
-  ºîÀ®¤·¤¿¥Ñ¥Ã¥±¡¼¥¸¤òºï½ü¤·¤Ş¤¹¡£¤³¤Î¥¿¥¹¥¯¤Ï clobber ¥¿¥¹¥¯¤Ë¤âÄÉ²Ã¤µ¤ì¤Ş¤¹¡£
+  ä½œæˆã—ãŸãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’å‰Šé™¤ã—ã¾ã™ã€‚ã“ã®ã‚¿ã‚¹ã‚¯ã¯ clobber ã‚¿ã‚¹ã‚¯ã«ã‚‚è¿½åŠ ã•ã‚Œã¾ã™ã€‚
 : repackage
-  ¥Ñ¥Ã¥±¡¼¥¸¤¬¸Å¤¯¤Ê¤¤¾ì¹ç¤Ç¤â¥Ñ¥Ã¥±¡¼¥¸¤òºÆºîÀ®¤·¤Ş¤¹¡£
+  ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãŒå¤ããªã„å ´åˆã§ã‚‚ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’å†ä½œæˆã—ã¾ã™ã€‚
 : PACKAGE_DIR/NAME-VERSION.tgz
-  [[m:Rake::PackageTask#need_tar]] ¤¬¿¿¤Î¾ì¹ç gzip ¤µ¤ì¤¿ tar ¥Ñ¥Ã¥±¡¼¥¸¤òºîÀ®¤·¤Ş¤¹¡£
+  [[m:Rake::PackageTask#need_tar]] ãŒçœŸã®å ´åˆ gzip ã•ã‚ŒãŸ tar ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½œæˆã—ã¾ã™ã€‚
 : PACKAGE_DIR/NAME-VERSION.tar.gz
-  [[m:Rake::PackageTask#need_tar_gz]] ¤¬¿¿¤Î¾ì¹ç gzip ¤µ¤ì¤¿ tar ¥Ñ¥Ã¥±¡¼¥¸¤òºîÀ®¤·¤Ş¤¹¡£
+  [[m:Rake::PackageTask#need_tar_gz]] ãŒçœŸã®å ´åˆ gzip ã•ã‚ŒãŸ tar ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½œæˆã—ã¾ã™ã€‚
 : PACKAGE_DIR/NAME-VERSION.tar.bz2
-  [[m:Rake::PackageTask#need_tar_bz2]] ¤¬¿¿¤Î¾ì¹ç bzip2 ¤µ¤ì¤¿ tar ¥Ñ¥Ã¥±¡¼¥¸¤òºîÀ®¤·¤Ş¤¹¡£
+  [[m:Rake::PackageTask#need_tar_bz2]] ãŒçœŸã®å ´åˆ bzip2 ã•ã‚ŒãŸ tar ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½œæˆã—ã¾ã™ã€‚
 : PACKAGE_DIR/NAME-VERSION.zip
-  [[m:Rake::PackageTask#need_zip]] ¤¬¿¿¤Î¾ì¹ç zip ¤µ¤ì¤¿¥Ñ¥Ã¥±¡¼¥¸¤òºîÀ®¤·¤Ş¤¹¡£
+  [[m:Rake::PackageTask#need_zip]] ãŒçœŸã®å ´åˆ zip ã•ã‚ŒãŸãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’ä½œæˆã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
    Rake::PackageTask.new("rake", "1.2.3") do |t|
      t.need_tar = true
      t.package_files.include("lib/**/*.rb")

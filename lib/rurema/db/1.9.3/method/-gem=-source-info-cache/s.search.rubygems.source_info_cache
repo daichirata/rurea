@@ -4,9 +4,9 @@ kind=defined
 
 --- search(*args) -> [Gem::Specification]
 
-Ϳ����줿���������� [[c:Gem::Specification]] �Υꥹ�Ȥ��֤��ޤ���
+与えられた条件を満たす [[c:Gem::Specification]] のリストを返します。
 
-@param args ����������ꤷ�ޤ���[[m:Gem::SourceInfoCache#search]] �Ȱ������碌�Ƥ���������
+@param args 検索条件を指定します。[[m:Gem::SourceInfoCache#search]] と引数を合わせてください。
 
 @see [[m:Gem::SourceInfoCache#search]]
 

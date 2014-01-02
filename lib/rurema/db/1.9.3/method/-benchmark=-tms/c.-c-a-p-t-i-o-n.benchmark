@@ -2,9 +2,9 @@ names=CAPTION
 visibility=protected 
 kind=defined
 
---- CAPTION
+--- CAPTION -> String
 
-[[m:Benchmark.#bm]] ¤ÎÆâÉô¤Ê¤É¤Ç»ÈÍÑ¤µ¤ì¤Ş¤¹¡£
+[[m:Benchmark.#bm]] ã®å†…éƒ¨ãªã©ã§ä½¿ç”¨ã•ã‚Œã¾ã™ã€‚
 
 @see [[m:Benchmark::CAPTION]]
 

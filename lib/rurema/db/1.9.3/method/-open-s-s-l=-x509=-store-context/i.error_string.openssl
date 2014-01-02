@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- error_string -> String
-���ڤ����Ȥ��Υ��顼ʸ������֤��ޤ���
+検証したときのエラー文字列を返します。
 
-[[m:OpenSSL::X509::StoreContext#verify]] ��ƤӤ�����
-�������������γƾ�����򸡾ڤ���
-������Хå�([[m:OpenSSL::X509::Store#verify_callback=]])���ƤӽФ��졢
-StoreContext ���֥������Ȥ��Ϥ���ޤ��������Υ᥽�åɤ�Ƥ֤�
-ľ���ξ����񸡾ڷ�̤Υ��顼ʸ���������ޤ���
+[[m:OpenSSL::X509::StoreContext#verify]] を呼びだし、
+証明書チェインの各証明書を検証した
+コールバック([[m:OpenSSL::X509::Store#verify_callback=]])が呼び出され、
+StoreContext オブジェクトが渡されますが、このメソッドを呼ぶと
+直前の証明書検証結果のエラー文字列が得られます。
 
-[[m:OpenSSL::X509::StoreContext#verify]] ��ƤӽФ������ȡ�
-���Υ᥽�åɤ�Ƥ֤ȸ��ڤκǽ�Ū�ʸ��ڷ�̤Υ��顼ʸ������֤��ޤ���
+[[m:OpenSSL::X509::StoreContext#verify]] を呼び出したあと、
+このメソッドを呼ぶと検証の最終的な検証結果のエラー文字列を返します。
 
-���ڤ������������� "ok" ���֤��ޤ���
+検証に成功した場合は "ok" を返します。
 
 

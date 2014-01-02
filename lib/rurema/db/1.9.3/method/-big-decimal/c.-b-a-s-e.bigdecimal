@@ -2,6 +2,7 @@ names=BASE
 visibility=public
 kind=defined
 
---- BASE
-@todo
+--- BASE -> Fixnum
+
+ライブラリ内部で使用します。
 

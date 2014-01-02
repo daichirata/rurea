@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- cweek -> Integer
-�񽵤��֤��ޤ� (1-53)��
+暦週を返します (1-53)。
 

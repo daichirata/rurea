@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- gid -> Integer
-¥ª¡¼¥Ê¡¼¤Î¥°¥ë¡¼¥×ID¤òÊÖ¤·¤Þ¤¹¡£
+ã‚ªãƒ¼ãƒŠãƒ¼ã®ã‚°ãƒ«ãƒ¼ãƒ—IDã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.gid      #=> 0
 

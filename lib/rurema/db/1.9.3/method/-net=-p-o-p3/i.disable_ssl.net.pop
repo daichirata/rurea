@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- disable_ssl -> ()
-¤³¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤¬ SSL ¤Ë¤è¤ëÄÌ¿®¤òÍøÍÑ¤·¤Ê¤¤¤è¤¦¤ËÀßÄê¤·¤Ş¤¹¡£
+ã“ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒ SSL ã«ã‚ˆã‚‹é€šä¿¡ã‚’åˆ©ç”¨ã—ãªã„ã‚ˆã†ã«è¨­å®šã—ã¾ã™ã€‚
 
 @see [[m:Net::POP3#enable_ssl]], [[m:Net::POP3#disable_ssl]], [[m:Net::POP3#use_ssl?]], [[m:Net::POP3.enable_ssl]]
 

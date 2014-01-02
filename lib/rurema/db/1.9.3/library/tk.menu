@@ -3,5 +3,6 @@ classes=TkMenuEntryConfig,TkMenu,TkMenuClone,TkCloneMenu,TkSystemMenu,TkSysMenu_
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

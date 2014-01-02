@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- getresource(name, typeclass) -> Resolv::DNS::Resource
-name���б�����DNS�꥽�����쥳���ɤ�������ޤ���
-�ǽ�˸��Ĥ��ä��꥽�������֤��ޤ���
+nameに対応するDNSリソースレコードを取得します。
+最初に見つかったリソースを返します。
 
-typeclass �ϰʲ��Τ����줫�Ǥ���
+typeclass は以下のいずれかです。
   * [[c:Resolv::DNS::Resource::IN::ANY]]
   * [[c:Resolv::DNS::Resource::IN::NS]]
   * [[c:Resolv::DNS::Resource::IN::CNAME]]
@@ -21,11 +21,11 @@ typeclass �ϰʲ��Τ����줫�Ǥ���
   * [[c:Resolv::DNS::Resource::IN::AAAA]]
   * [[c:Resolv::DNS::Resource::IN::SRV]]
 
-��å����å׷�̤� Resolv::DNS::Resource �ʤΥ��֥��饹�ˤΥ��󥹥��󥹤Ȥʤ�ޤ���
-typeclass �� Resolv::DNS::Resource::IN::ANY �ʳ�����ꤷ�����ˤ�
-���Υ��饹�Υ��󥹥��󥹤��֤��ޤ���
+ルックアップ結果は Resolv::DNS::Resource （のサブクラス）のインスタンスとなります。
+typeclass に Resolv::DNS::Resource::IN::ANY 以外を指定した場合には
+そのクラスのインスタンスを返します。
 
-@param name ��å����å��оݤȤʤ�̾���� [[c:Resolv::DNS::Name]] �ޤ��� String �ǻ��ꤷ�ޤ���
-@param typeclass �쥳���ɼ��̤���ꤷ�ޤ���
-@raise Resolv::ResolvError ��å����åפ˼��Ԥ�������ȯ�����ޤ���
+@param name ルックアップ対象となる名前を [[c:Resolv::DNS::Name]] または String で指定します。
+@param typeclass レコード種別を指定します。
+@raise Resolv::ResolvError ルックアップに失敗した場合に発生します。
 

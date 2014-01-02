@@ -4,12 +4,12 @@ kind=defined
 
 --- <<(string) -> self
 
-[[m:Zlib::Deflate#deflate]] ��Ʊ���褦�� string ��
-���̥��ȥ꡼������Ϥ��ޤ�����Zlib::Deflate ���֥�������
-���Τ�Τ��֤��ޤ������̥��ȥ꡼�फ��ν��Ϥϡ�
-���ϥХåե�����¸����ޤ���
+[[m:Zlib::Deflate#deflate]] と同じように string を
+圧縮ストリームに入力しますが、Zlib::Deflate オブジェクト
+そのものを返します。圧縮ストリームからの出力は、
+出力バッファに保存されます。
 
-@param string  ���̤���ʸ�������ꤷ�ޤ���
+@param string  圧縮する文字列を指定します。
 
   dez = Zlib::Deflate.new
   dez << "123" * 5 << "ugougo" << "123" * 5 << "hogehoge"

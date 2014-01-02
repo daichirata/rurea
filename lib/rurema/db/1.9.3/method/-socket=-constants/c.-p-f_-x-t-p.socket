@@ -2,10 +2,10 @@ names=PF_XTP
 visibility=public
 kind=defined
 
---- PF_XTP
+--- PF_XTP -> Integer
 @todo
+eXpress Transfer Protocolã€‚
 
-[[m:Socket.open]] ¤ÎÂè»°°ú¿ô protocol ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
 
-@see [[m:Socket.open]]
+
 

@@ -2,6 +2,6 @@ names=name
 visibility=public
 kind=defined
 
---- name
-@todo
+--- name -> String
+実体の名前を返します。
 

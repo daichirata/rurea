@@ -5,7 +5,7 @@ kind=defined
 --- mu_synchronize{ ... } -> object
 --- synchronize{ ... } -> object
 
-self �Υ��å�����������֥��å���¹Ԥ��ޤ����¹Ը��ɬ�����å���������ޤ���
+self のロックを取得し、ブロックを実行します。実行後に必ずロックを解放します。
 
-�֥��å��ǺǸ��ɾ�������ͤ��֤��ޤ���
+ブロックで最後に評価した値を返します。
 

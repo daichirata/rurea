@@ -4,5 +4,5 @@ kind=defined
 
 --- MAX -> Integer
 
-curses �����Ѳ�ǽ�ʥ�����ɽ������κ����ͤǤ���
+curses で利用可能なキーを表す定数の最大値です。
 

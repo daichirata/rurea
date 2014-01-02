@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- input -> Shell::Filter | nil
-���ߤΥե��륿�����֤��ޤ���
+現在のフィルターを返します。
 

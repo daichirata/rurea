@@ -4,13 +4,13 @@ kind=defined
 
 --- unalias_command(alias) -> ()
 
-command¤Îalias¤òºï½ü¤·¤Ş¤¹.
+commandã®aliasã‚’å‰Šé™¤ã—ã¾ã™.
 
-@param alias ºï½ü¤·¤¿¤¤¥¨¥¤¥ê¥¢¥¹¤ÎÌ¾Á°¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param alias å‰Šé™¤ã—ãŸã„ã‚¨ã‚¤ãƒªã‚¢ã‚¹ã®åå‰ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise NameError alias ¤Ç»ØÄê¤·¤¿¥³¥Ş¥ó¥É¤¬Ìµ¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise NameError alias ã§æŒ‡å®šã—ãŸã‚³ãƒãƒ³ãƒ‰ãŒç„¡ã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-»ÈÍÑÎã: ls -la | sort -k 5 ¤Î¤è¤¦¤ÊÎã¡£
+ä½¿ç”¨ä¾‹: ls -la | sort -k 5 ã®ã‚ˆã†ãªä¾‹ã€‚
   Shell.def_system_command("ls")
   Shell.alias_command("lsla", "ls", "-a", "-l")
   Shell.def_system_command("sort")

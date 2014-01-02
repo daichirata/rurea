@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- pub_key -> OpenSSL::BN
-DSA ¸°¤Î¸ø³«¸°¥Ñ¥é¥á¡¼¥¿¤òÊÖ¤·¤Þ¤¹¡£
+DSA éµã®å…¬é–‹éµãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’è¿”ã—ã¾ã™ã€‚
 
-¸ø³«¸°¤Ï¤³¤ÎÃÍ¤È¡¢
+å…¬é–‹éµã¯ã“ã®å€¤ã¨ã€
 [[m:OpenSSL::PKey::DSA#p]], [[m:OpenSSL::PKey::DSA#q]], [[m:OpenSSL::PKey::DSA#g]]
-¤«¤é¹½À®¤µ¤ì¤Þ¤¹¡£
+ã‹ã‚‰æ§‹æˆã•ã‚Œã¾ã™ã€‚
 

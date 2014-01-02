@@ -4,5 +4,5 @@ kind=defined
 
 --- rfc2822 -> String
 --- rfc822 -> String
-[[RFC:2822]] ������줿�񼰤�ʸ������֤��ޤ���
+[[RFC:2822]] で定められた書式の文字列を返します。
 

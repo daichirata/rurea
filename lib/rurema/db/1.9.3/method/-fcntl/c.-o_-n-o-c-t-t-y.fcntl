@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- O_NOCTTY -> Integer
-�������ե����뤬ü���ǥХ����Ǥ⡢����ü���ˤϤʤ�ޤ���
+開いたファイルが端末デバイスでも、制御端末にはなりません。
 

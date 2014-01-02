@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- -(other) -> OpenSSL::BN
-¼«¿È¤«¤é other ¤ò°ú¤¤¤¿ÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ã‹ã‚‰ other ã‚’å¼•ã„ãŸå€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other °ú¤¯À°¿ô
-@raise OpenSSL::BNError ·×»»»ş¥¨¥é¡¼
+@param other å¼•ãæ•´æ•°
+@raise OpenSSL::BNError è¨ˆç®—æ™‚ã‚¨ãƒ©ãƒ¼
 

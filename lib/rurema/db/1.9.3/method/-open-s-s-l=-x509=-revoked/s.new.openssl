@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- new -> OpenSSL::X509::Revoked
-¶õ¤Î Revoked ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¡¢ÊÖ¤·¤Þ¤¹¡£
+ç©ºã® Revoked ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã€è¿”ã—ã¾ã™ã€‚
 

@@ -4,4 +4,4 @@ kind=defined
 
 --- encoding -> Encoding
 
-���Ȥ�ʸ�����󥳡��ǥ��󥰤��֤��ޤ���
+自身の文字エンコーディングを返します。

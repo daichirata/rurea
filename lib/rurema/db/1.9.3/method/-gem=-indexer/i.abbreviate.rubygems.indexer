@@ -4,8 +4,8 @@ kind=defined
 
 --- abbreviate(spec) -> Gem::Specification
 
-¥À¥¦¥ó¥í¡¼¥É¤òÂ®¤¯¤¹¤ë¤¿¤á¤ËÍ¿¤¨¤é¤ì¤¿ [[c:Gem::Specification]] ¤Î»ý¤Ä¥Ç¡¼¥¿¤ò
-¾®¤µ¤¯¤·¤Þ¤¹¡£
+ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã‚’é€Ÿãã™ã‚‹ãŸã‚ã«ä¸Žãˆã‚‰ã‚ŒãŸ [[c:Gem::Specification]] ã®æŒã¤ãƒ‡ãƒ¼ã‚¿ã‚’
+å°ã•ãã—ã¾ã™ã€‚
 
-@param spec [[c:Gem::Specification]] ¤ò»ØÄê¤·¤Þ¤¹¡£
+@param spec [[c:Gem::Specification]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

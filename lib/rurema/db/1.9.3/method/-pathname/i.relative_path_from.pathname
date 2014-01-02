@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- relative_path_from(base_directory) -> Pathname
-base_directory ���� self �ؤ����Хѥ����ᡢ�������Ƥο����� Pathname
-���֥������Ȥ����������֤��ޤ���
+base_directory から self への相対パスを求め、その内容の新しい Pathname
+オブジェクトを生成して返します。
 
-�ѥ�̾�β���ʸ�������ˤ�äƹԤ�졢�ե����륷���ƥ�򥢥�����
-���ޤ���
+パス名の解決は文字列操作によって行われ、ファイルシステムをアクセス
+しません。
 
-self �����Хѥ��ʤ� base_directory �����Хѥ���self �����Хѥ��ʤ�
-base_directory �����Хѥ��Ǥʤ���Фʤ�ޤ���
+self が相対パスなら base_directory も相対パス、self が絶対パスなら
+base_directory も絶対パスでなければなりません。
 
-@param base_directory �١����ǥ��쥯�ȥ��ɽ�� Pathname ���֥������Ȥ���ꤷ�ޤ���
+@param base_directory ベースディレクトリを表す Pathname オブジェクトを指定します。
 
     require 'pathname'
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- title -> String | nil
 
-section �Υ����ȥ���֤��ޤ���
+section のタイトルを返します。
 

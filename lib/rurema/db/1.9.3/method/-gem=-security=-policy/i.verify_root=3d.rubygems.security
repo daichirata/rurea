@@ -4,7 +4,7 @@ kind=defined
 
 --- verify_root=(flag)
 
-�������������Υ롼�Ȥ򸡾ڤ��뤫�ɤ��������ꤷ�ޤ���
+証明書チェーンのルートを検証するかどうかを設定します。
 
-@param flag �����ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真、または偽を指定します。
 

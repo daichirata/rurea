@@ -6,5 +6,5 @@ library=zlib
 aliases=
 aliasof=
 
-gzip ¥Õ¥¡¥¤¥ë¤ò½èÍý¤·¤Æ¤¤¤ë´Ö¤Ë¥¨¥é¡¼¤¬À¸¤¸¤¿»þ¤ËÈ¯À¸¤¹¤ëÁ´¤Æ¤ÎÎã³°¤Î
-¥¹¡¼¥Ñ¡¼¥¯¥é¥¹¤Ç¤¹¡£
+gzip ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‡¦ç†ã—ã¦ã„ã‚‹é–“ã«ã‚¨ãƒ©ãƒ¼ãŒç”Ÿã˜ãŸæ™‚ã«ç™ºç”Ÿã™ã‚‹å…¨ã¦ã®ä¾‹å¤–ã®
+ã‚¹ãƒ¼ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

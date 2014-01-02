@@ -4,5 +4,5 @@ kind=defined
 
 --- instance -> self
 
-self���֤��ޤ���(���ǤȤθߴ����Τ���)
+selfを返します。(旧版との互換性のため)
 

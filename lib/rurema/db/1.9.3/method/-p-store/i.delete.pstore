@@ -4,15 +4,15 @@ kind=defined
 
 --- delete(name) -> object
 
-�롼��name���б������ͤ������ޤ���
+ルートnameに対応する値を削除します。
 
-@param name õ������롼�ȡ�
+@param name 探索するルート。
 
-@return ��������ͤ��֤��ޤ���
+@return 削除した値を返します。
 
-@raise PStore::Error �ȥ�󥶥�����󳰤Ǥ��Υ᥽�åɤ��ƤӽФ��줿����ȯ�����ޤ���
+@raise PStore::Error トランザクション外でこのメソッドが呼び出された場合に発生します。
 
-��:
+例:
 
   require 'pstore'
   db = PStore.new("/tmp/foo")

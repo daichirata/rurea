@@ -4,12 +4,12 @@ kind=defined
 
 --- add_ruby_type(type_tag){|type, val| ...} -> nil
 
-ruby�����פΥ��饹��YAML���ɲä���
-���Υ��饹�򸫤Ĥ����Ȥ���������ꤷ�ޤ���
+rubyタイプのクラスをYAMLに追加し、
+そのクラスを見つけたときの操作を指定します。
 
-@param type_tag ruby�����פΥ��饹��ʸ����ǻ��ꤷ�ޤ���
-@param type YAML�ɥᥤ��ȥ��饹��ʸ����
-@param val YAML�ǡ�����¤
+@param type_tag rubyタイプのクラスを文字列で指定します。
+@param type YAMLドメインとクラスの文字列
+@param val YAMLデータ構造
 
   require 'syck'
   require 'yaml'

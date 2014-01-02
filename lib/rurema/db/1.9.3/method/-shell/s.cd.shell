@@ -4,14 +4,14 @@ kind=defined
 
 --- cd(path = nil, verbose = self.verbose) -> self
 
-path�򥫥��ȥǥ��쥯�ȥ�Ȥ���Shell���֥������Ȥ��������ޤ�.
+pathをカレントディレクトリとするShellオブジェクトを生成します.
 
-@param path �����ȥǥ��쥯�ȥ�Ȥ���ǥ��쥯�ȥ��ʸ����ǻ��ꤷ�ޤ���
+@param path カレントディレクトリとするディレクトリを文字列で指定します。
 
-@param verbose true ����ꤹ��Ⱦ�Ĺ�ʽ��Ϥ�Ԥ��ޤ���
+@param verbose true を指定すると冗長な出力を行います。
 
 
-������
+使用例
   require 'shell'
   sh = Shell.new
   sh.cd("/tmp")

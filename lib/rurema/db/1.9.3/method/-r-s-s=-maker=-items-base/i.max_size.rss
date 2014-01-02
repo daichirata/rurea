@@ -4,6 +4,6 @@ kind=defined
 
 --- max_size
 @todo
-���ߤ�max_size���ͤ�������ޤ����ǥե���ȤǤ�
--1�ˤʤäƤ��ޤ���
+現在のmax_sizeの値を取得します．デフォルトでは
+-1になっています．
 

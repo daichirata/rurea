@@ -4,7 +4,7 @@ kind=defined
 
 --- test_suite_file=(file)
 
-¤³¤ÎÂ°À­¤ÏÈó¿ä¾©¤Ç¤¹¡£ [[m:Gem::Specification#test_files=]] ¤ò»ÈÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®å±æ€§ã¯éæ¨å¥¨ã§ã™ã€‚ [[m:Gem::Specification#test_files=]] ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
 
-@param file ¥Æ¥¹¥È¥¹¥¤¡¼¥È¤Î¥Õ¥¡¥¤¥ë¤ò»ØÄê¤·¤Ş¤¹¡£
+@param file ãƒ†ã‚¹ãƒˆã‚¹ã‚¤ãƒ¼ãƒˆã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

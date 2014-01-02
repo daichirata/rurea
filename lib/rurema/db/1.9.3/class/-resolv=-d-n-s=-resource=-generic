@@ -6,4 +6,4 @@ library=resolv
 aliases=
 aliasof=
 
-����DNS�꥽������ݥ��饹�Ǥ���
+汎用DNSリソース抽象クラスです。

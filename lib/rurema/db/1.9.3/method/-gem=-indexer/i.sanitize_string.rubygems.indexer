@@ -4,9 +4,9 @@ kind=defined
 
 --- sanitize_string(string) -> String
 
-Ϳ����줿ʸ����򥵥˥��������ޤ���
+与えられた文字列をサニタイズします。
 
-@param string ���˥������оݤ�ʸ�������ꤷ�ޤ���
+@param string サニタイズ対象の文字列を指定します。
 
 @see [[m:Gem::Indexer#sanitize]]
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- system_dir -> String
 
-�����ƥ����Τ� Rakefile ����Ǽ����Ƥ���ǥ��쥯�ȥ���֤��ޤ���
+システム全体の Rakefile が格納されているディレクトリを返します。
 
-�Ķ��ѿ� RAKE_SYSTEM �����ꤹ�뤳�Ȥ��Ǥ��ޤ���
+環境変数 RAKE_SYSTEM で設定することができます。
 

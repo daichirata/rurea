@@ -6,14 +6,14 @@ kind=defined
 --- rmdir(path)     -> 0
 --- unlink(path)    -> 0
 
-�ǥ��쥯�ȥ�������ޤ����ǥ��쥯�ȥ�϶��Ǥʤ���Ф����ޤ�
-�󡣥ǥ��쥯�ȥ�κ������������� 0 ���֤��ޤ���
+ディレクトリを削除します。ディレクトリは空でなければいけませ
+ん。ディレクトリの削除に成功すれば 0 を返します。
 
-@param path �ǥ��쥯�ȥ�Υѥ���ʸ����ǻ��ꤷ�ޤ���
+@param path ディレクトリのパスを文字列で指定します。
 
-@raise Errno::EXXX ���Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX 失敗した場合に発生します。
 
-��:
+例:
 
   Dir.delete("/tmp/hoge-jbrYBh.tmp")
 

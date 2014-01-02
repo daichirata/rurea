@@ -4,5 +4,5 @@ kind=defined
 
 --- sources -> Array
 
-���Ȥ���¸����ե�����Υꥹ�Ȥ��֤��ޤ���
+自身が依存するファイルのリストを返します。
 

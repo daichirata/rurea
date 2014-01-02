@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- writable? -> bool
-½ñ¤­¹ş¤ß²ÄÇ½¤Ê»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+æ›¸ãè¾¼ã¿å¯èƒ½ãªæ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   p File::Stat.new($0).writable? #=> true
 

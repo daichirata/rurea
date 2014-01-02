@@ -4,7 +4,7 @@ kind=defined
 
 --- new(conf) -> IRB::ExtendCommand::Nop
 
-���Ȥ��������ޤ����桼����ľ�ܻ��Ѥ����ΤǤϤ���ޤ���
+自身を初期化します。ユーザが直接使用するものではありません。
 
-@param conf [[c:IRB::Context]] ���֥������Ȥ���ꤷ�ޤ���
+@param conf [[c:IRB::Context]] オブジェクトを指定します。
 

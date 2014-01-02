@@ -2,9 +2,7 @@ names=infinite?
 visibility=public
 kind=defined
 
---- infinite?
-@todo
+--- infinite? -> 1 | -1 | nil
 
-a.infinite? �� a ��+��ΤȤ� 1 ��-��ΤȤ��� -1��
-����ʳ��ΤȤ��� nil ���֤��ޤ��� 
+self が +∞のときに 1 、-∞のときに-1、それ以外のときに nil を返します。
 

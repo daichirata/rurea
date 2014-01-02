@@ -3,5 +3,6 @@ classes=RDoc=TokenStream
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-¥È¡¼¥¯¥ó¤ò´ÉÍı¤¹¤ë¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ãƒˆãƒ¼ã‚¯ãƒ³ã‚’ç®¡ç†ã™ã‚‹ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

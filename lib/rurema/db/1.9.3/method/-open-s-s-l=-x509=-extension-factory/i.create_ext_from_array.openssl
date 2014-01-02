@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- create_ext_from_array(ary) -> OpenSSL::X509::Extension
-[oid, value, critical] ¤â¤·¤¯¤Ï [oid, value] ¤È¤¤¤¦ÇÛÎó¤«¤é
-[[c:OpenSSL::X509::Extension]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Ş¤¹¡£
+[oid, value, critical] ã‚‚ã—ãã¯ [oid, value] ã¨ã„ã†é…åˆ—ã‹ã‚‰
+[[c:OpenSSL::X509::Extension]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param ary À¸À®¤¹¤ë³ÈÄ¥ÎÎ°è¤Î¥Ç¡¼¥¿¤ÎÇÛÎó
+@param ary ç”Ÿæˆã™ã‚‹æ‹¡å¼µé ˜åŸŸã®ãƒ‡ãƒ¼ã‚¿ã®é…åˆ—
 @see [[m:OpenSSL::X509::ExtensionFactory#create_ext]]
 

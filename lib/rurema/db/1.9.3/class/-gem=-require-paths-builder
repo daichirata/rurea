@@ -6,5 +6,5 @@ library=rubygems.require_paths_builder
 aliases=
 aliasof=
 
-É¬Í×¤Ç¤¢¤ì¤Ğ¡¢'.require_paths' ¤È¤¤¤¦¥Õ¥¡¥¤¥ë¤ò Gem ¤´¤È¤ËºîÀ®¤¹¤ë¤¿¤á¤Î
-¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+å¿…è¦ã§ã‚ã‚Œã°ã€'.require_paths' ã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ Gem ã”ã¨ã«ä½œæˆã™ã‚‹ãŸã‚ã®
+ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚

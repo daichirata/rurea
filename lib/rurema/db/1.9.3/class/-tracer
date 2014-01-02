@@ -6,4 +6,4 @@ library=tracer
 aliases=
 aliasof=
 
-�¹ԥȥ졼�����Ϥ�Ȥ뵡ǽ���󶡤��륯�饹�Ǥ���
+実行トレース出力をとる機能を提供するクラスです。

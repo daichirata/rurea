@@ -12,6 +12,7 @@ require 'strscan'
 
 module BitClust
 
+  # Superclass of Preprocessor
   class LineFilter
 
     include ParseUtils
@@ -37,13 +38,14 @@ module BitClust
   end
 
 
+  # Handle pragmas like #@todo, #@include, #@since, etc.
   class Preprocessor < LineFilter
 
     def self.read(path, params = {})
       if path.respond_to?(:gets)
         io = wrap(path, params)
       else
-        io = wrap(fopen(path, 'r:EUC-JP'), params)
+        io = wrap(fopen(path, 'r:UTF-8'), params)
       end
       ret = ""
       while s = io.gets
@@ -53,7 +55,7 @@ module BitClust
     end
 
     def Preprocessor.process(path, params = {})
-      fopen(path, 'r:EUC-JP') {|f|
+      fopen(path, 'r:UTF-8') {|f|
         return wrap(f, params).to_a
       }
     end
@@ -236,6 +238,7 @@ module BitClust
   end
 
 
+  # Used by tools/stattodo.rb
   class LineCollector < LineFilter
 
     def LineCollector.process(path)

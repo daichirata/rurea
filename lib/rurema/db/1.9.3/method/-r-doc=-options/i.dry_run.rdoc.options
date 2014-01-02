@@ -4,8 +4,8 @@ kind=defined
 
 --- dry_run -> bool
 
-���ޥ�ɥ饤������� --dry-run ���ץ�������ꤷ�Ƥ�����硢true ����
-���ޤ���--no-dry-run ���ץ�������ꤷ�Ƥ�����硢false ���֤��ޤ���
+コマンドライン引数の --dry-run オプションを指定していた場合、true を返
+します。--no-dry-run オプションを指定していた場合、false を返します。
 
-�ɤ������ꤷ�ʤ��ä����� false ���֤��ޤ���
+どちらも指定しなかった場合は false を返します。
 

@@ -4,13 +4,13 @@ kind=defined
 
 --- new(*patterns){|self| ... }
 
-Ϳ����줿�ѥ�������Ȥˤ��Ƽ��Ȥ��������ޤ���
+与えられたパターンをもとにして自身を初期化します。
 
-�֥��å���Ϳ�����Ƥ�����ϡ����Ȥ�֥��å��ѥ�᡼���Ȥ��ƥ֥��å���ɾ�����ޤ���
+ブロックが与えられている場合は、自身をブロックパラメータとしてブロックを評価します。
 
-@param patterns �ѥ��������ꤷ�ޤ���
+@param patterns パターンを指定します。
 
-��:
+例:
    file_list = FileList.new('lib/**/*.rb', 'test/test*.rb')
    
    pkg_files = FileList.new('lib/**/*') do |fl|

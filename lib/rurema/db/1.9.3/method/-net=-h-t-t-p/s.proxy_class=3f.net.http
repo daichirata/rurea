@@ -4,7 +4,7 @@ kind=defined
 
 --- proxy_class? -> bool
 
-���Ȥ� ([[m:Net::HTTP.Proxy]] �ˤ�äƺ������줿) �ץ������ѤΥ��饹�ʤ�п����֤��������Ǥʤ���е����֤��ޤ���
+自身が ([[m:Net::HTTP.Proxy]] によって作成された) プロクシ用のクラスならば真を返し、そうでなければ偽を返します。
 
 @see [[m:Net::HTTP.Proxy]]
 

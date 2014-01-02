@@ -4,4 +4,4 @@ kind=defined
 
 --- CGIRunner -> String
 
-CGI ��¹Ԥ��뤿��Υ��ޥ�ɤ��֤��ޤ���
+CGI を実行するためのコマンドを返します。

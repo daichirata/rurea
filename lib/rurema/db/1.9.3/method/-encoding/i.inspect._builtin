@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- inspect -> String
-¥×¥í¥°¥é¥Þ¤Ë¤ï¤«¤ê¤ä¤¹¤¤É½¸½¤ÎÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ—ãƒ­ã‚°ãƒ©ãƒžã«ã‚ã‹ã‚Šã‚„ã™ã„è¡¨ç¾ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
     Encoding::UTF_8.inspect       #=> "#<Encoding:UTF-8>"
     Encoding::ISO_2022_JP.inspect #=> "#<Encoding:ISO-2022-JP (dummy)>"
 

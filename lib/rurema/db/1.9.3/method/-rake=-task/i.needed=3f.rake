@@ -4,5 +4,5 @@ kind=defined
 
 --- needed? -> true
 
-���Υ�������ɬ�פʤ�п����֤��ޤ���
+このタスクが必要ならば真を返します。
 

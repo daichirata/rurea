@@ -4,6 +4,6 @@ kind=defined
 
 --- windows? -> bool
 
-���ߤΥץ�åȥե����ब Windows �ϤǤ����硢�����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+現在のプラットフォームが Windows 系である場合、真を返します。
+そうでない場合は偽を返します。
 

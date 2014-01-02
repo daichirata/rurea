@@ -3,28 +3,29 @@ classes=
 methods=Net=HTTP/i.use_ssl=3f.net.https,Net=HTTP/i.use_ssl=3d.net.https,Net=HTTP/i.ssl_timeout.net.https,Net=HTTP/i.ssl_timeout=3d.net.https,Net=HTTP/i.peer_cert.net.https,Net=HTTP/i.key.net.https,Net=HTTP/i.key=3d.net.https,Net=HTTP/i.cert.net.https,Net=HTTP/i.cert=3d.net.https,Net=HTTP/i.ca_file.net.https,Net=HTTP/i.ca_file=3d.net.https,Net=HTTP/i.ca_path.net.https,Net=HTTP/i.ca_path=3d.net.https,Net=HTTP/i.verify_mode.net.https,Net=HTTP/i.verify_mode=3d.net.https,Net=HTTP/i.verify_callback.net.https,Net=HTTP/i.verify_callback=3d.net.https,Net=HTTP/i.verify_depth.net.https,Net=HTTP/i.verify_depth=3d.net.https,Net=HTTP/i.cert_store.net.https,Net=HTTP/i.cert_store=3d.net.https,Net=HTTP/i.ssl_version.net.https,Net=HTTP/i.ssl_version=3d.net.https,Net=HTTP/i.ciphers.net.https,Net=HTTP/i.ciphers=3d.net.https
 sublibraries=
 is_sublibrary=false
+category=Network
 
-[[lib:net/http]] ¤Ë SSL/TLS ³ÈÄ¥¤ò¼ÂÁõ¤¹¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[lib:net/http]] ã« SSL/TLS æ‹¡å¼µã‚’å®Ÿè£…ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-[[c:Net::HTTP]] ¤òºÆ¥ª¡¼¥×¥ó¤·¡¢SSL/TLS ³ÈÄ¥¤òÄÉ²Ã¤·¤Ş¤¹¡£
+[[c:Net::HTTP]] ã‚’å†ã‚ªãƒ¼ãƒ—ãƒ³ã—ã€SSL/TLS æ‹¡å¼µã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
 
-=== ¥Ç¥Õ¥©¥ë¥È¥Ñ¥é¥á¡¼¥¿¤Ë¤Ä¤¤¤Æ
-net/https ¤Ï [[m:OpenSSL::SSL::SSLContext#set_params]] ¤Ç
-SSLContext ¤ò½é´ü²½¤·¤Ş¤¹¡£¤½¤Î¤¿¤á
-»ØÄê¤µ¤ì¤Ê¤«¤Ã¤¿¥Ñ¥é¥á¡¼¥¿¤Ï [[m:OpenSSL::SSL::SSLContext::DEFAULT_PARAMS]] 
-¤ÎÃÍ¤Ç½é´ü²½¤µ¤ì¤Ş¤¹¡£
-[[m:Net::HTTP#ca_file=]] ¤â [[m:Net::HTTP#ca_path=]] ¤â 
-[[m:Net::HTTP#cert_store]] ¤âÀßÄê¤·¤Ê¤«¤Ã¤¿¾ì¹ç¤Ï 
+=== ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«ã¤ã„ã¦
+net/https ã¯ [[m:OpenSSL::SSL::SSLContext#set_params]] ã§
+SSLContext ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚ãã®ãŸã‚
+æŒ‡å®šã•ã‚Œãªã‹ã£ãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¯ [[m:OpenSSL::SSL::SSLContext::DEFAULT_PARAMS]] 
+ã®å€¤ã§åˆæœŸåŒ–ã•ã‚Œã¾ã™ã€‚
+[[m:Net::HTTP#ca_file=]] ã‚‚ [[m:Net::HTTP#ca_path=]] ã‚‚ 
+[[m:Net::HTTP#cert_store]] ã‚‚è¨­å®šã—ãªã‹ã£ãŸå ´åˆã¯ 
 [[m:OpenSSL::SSL::SSLContext::DEFAULT_CERT_STORE]]
-¤¬¾ÚÌÀ½ñ¥¹¥È¥¢¤È¤·¤ÆÍÑ¤¤¤é¤ì¤Ş¤¹¡£
+ãŒè¨¼æ˜æ›¸ã‚¹ãƒˆã‚¢ã¨ã—ã¦ç”¨ã„ã‚‰ã‚Œã¾ã™ã€‚
 
 
 === Example
 
-´ÊÃ±¤ÊÎã¤òµó¤²¤Ş¤¹¡£
-verify_mode ¤Ë»ØÄê¤¹¤ëÄê¿ô¤Ë´Ø¤·¤Æ¤Ï [[c:OpenSSL::SSL]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
-É¬¤º use_ssl = true ¤ò¸Æ¤Ğ¤Ê¤±¤ì¤Ğ¤¤¤±¤Ê¤¤¤È¤³¤í¤ËÃí°Õ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ç°¡å˜ãªä¾‹ã‚’æŒ™ã’ã¾ã™ã€‚
+verify_mode ã«æŒ‡å®šã™ã‚‹å®šæ•°ã«é–¢ã—ã¦ã¯ [[c:OpenSSL::SSL]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
+å¿…ãš use_ssl = true ã‚’å‘¼ã°ãªã‘ã‚Œã°ã„ã‘ãªã„ã¨ã“ã‚ã«æ³¨æ„ã—ã¦ãã ã•ã„ã€‚
 
   require 'net/https'
   https = Net::HTTP.new('www.example.com',443)
@@ -37,8 +38,8 @@ verify_mode ¤Ë»ØÄê¤¹¤ëÄê¿ô¤Ë´Ø¤·¤Æ¤Ï [[c:OpenSSL::SSL]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
     puts response.body
   }
 
-°Ê²¼¤Ï HTTPS ¥×¥í¥¯¥··ĞÍ³¤Ç¥¢¥¯¥»¥¹¤¹¤ëÎã¤Ç¤¹¡£
-¥×¥í¥¯¥··ĞÍ³¤Ç¤âÄÌ¿®Ï©¤Ï°Å¹æ²½¤µ¤ì¤Ş¤¹¡£
+ä»¥ä¸‹ã¯ HTTPS ãƒ—ãƒ­ã‚¯ã‚·çµŒç”±ã§ã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ä¾‹ã§ã™ã€‚
+ãƒ—ãƒ­ã‚¯ã‚·çµŒç”±ã§ã‚‚é€šä¿¡è·¯ã¯æš—å·åŒ–ã•ã‚Œã¾ã™ã€‚
 
   require 'net/https'
   proxy_addr = 'proxy.example.com'

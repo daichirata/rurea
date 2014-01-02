@@ -27,7 +27,7 @@ class Rurema
   def init
     system %.svn co -rHEAD #{svn_url}/doctree/trunk #{doc_path}.
     system %.svn co -rHEAD #{svn_url}/bitclust/trunk #{bitclust_path}.
-    system %.#{bitclust_bin} -d #{db_path} init version=#{version} encoding=euc-jp.
+    system %.#{bitclust_bin} -d #{db_path} init version=#{version} encoding=utf-8.
     system %.#{bitclust_bin} -d #{db_path} update --stdlibtree=#{refm_src_path}.
   end
 
@@ -38,8 +38,6 @@ class Rurema
 
 private
   def search
-    return [STATUS[:not_found], "version #{version} does not exist."] unless db_exist?
-
     if params_valid? && (refes = search_reference) && refes.present?
       if refes.multiple?
         if @num
@@ -101,6 +99,7 @@ private
     File.join(rurema_path, 'bitclust')
   end
 
+
   def bitclust_bin
     File.join(bitclust_path, 'bin', 'bitclust')
   end
@@ -111,10 +110,6 @@ private
 
   def db_path
     File.join(rurema_path, 'db', version)
-  end
-
-  def db_exist?
-    File.exists?(File.join(rurema_path, 'db', version))
   end
 
   def refm_src_path

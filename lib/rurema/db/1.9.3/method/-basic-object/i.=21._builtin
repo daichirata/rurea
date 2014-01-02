@@ -3,18 +3,18 @@ visibility=public
 kind=defined
 
 --- ! -> bool
-���֥������Ȥ򿿵��ͤȤ���ɾ��������������������֤��ޤ���
+オブジェクトを真偽値として評価し、その論理否定を返します。
 
-���Υ᥽�åɤ� self �� nil �ޤ��� false �Ǥ���п��򡢤���ʤ��е����֤��ޤ���
-�����������ɾ����ȼ�ä������Ѥ�������������Ȥ���Ū��
-����������Τ����ꤵ��Ƥ��ޤ���
+このメソッドは self が nil または false であれば真を、さもなくば偽を返します。
+主に論理式の評価に伴って副作用を引き起こすことを目的に
+再定義するものと想定されています。
 
-���Υ᥽�åɤ��������Ƥ� Ruby �����漰�ˤ����� nil �� false �ʳ������Ȥ���
-�����뤳�ȤϤ���ޤ���
+このメソッドを再定義しても Ruby の制御式において nil や false 以外が偽として
+扱われることはありません。
 
-@return ���֥������Ȥ����Ǥ���п�������ʤ��е�
+@return オブジェクトが偽であれば真、さもなくば偽
 
-��
+例
  class NegationRecorder < BasicObject
    def initialize
      @count = 0
@@ -34,7 +34,7 @@ kind=defined
 
  puts recorder.count #=> 3
 
-��
+例
  class AnotherFalse < BasicObject
    def !
      true
@@ -42,7 +42,7 @@ kind=defined
  end
  another_false = AnotherFalse.new
 
- # another_false��*��*
+ # another_falseは*真*
  puts "another false is a truth" if another_false
    #=> "another false is a truth"
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- PARSER_EVENTS -> [Symbol]
 
-�ѡ������٥�ȤΥ��٥�� ID (����ܥ�) �Υꥹ�Ȥ��֤��ޤ���
+パーサイベントのイベント ID (シンボル) のリストを返します。
 

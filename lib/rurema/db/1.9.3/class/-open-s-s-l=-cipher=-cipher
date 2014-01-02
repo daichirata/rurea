@@ -6,6 +6,6 @@ library=openssl
 aliases=
 aliasof=
 
-���Υ��饹�ϸߴ����Τ����¸�ߤ��ޤ���
+このクラスは互換性のために存在します。
 
-[[c:OpenSSL::Cipher]] �򤫤������Ѥ��Ƥ���������
+[[c:OpenSSL::Cipher]] をかわりに利用してください。

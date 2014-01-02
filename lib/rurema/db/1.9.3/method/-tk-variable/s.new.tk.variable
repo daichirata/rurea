@@ -5,7 +5,7 @@ kind=defined
 --- new(val="")
 @todo
 
-�ͤ�val�Ǥ���TkVariable���֥������Ȥ��������ޤ���val��
-[[c:Array]] �ޤ��� [[c:Hash]] �Υ��֥������ȤǤ����硢�������줿����
-���󥹤� Tcl������Ȥ��ƿ����񤤤ޤ���
+値がvalであるTkVariableオブジェクトを生成します。valが
+[[c:Array]] または [[c:Hash]] のオブジェクトである場合、生成されたインス
+タンスは Tclの配列として振る舞います。
 

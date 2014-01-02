@@ -5,21 +5,21 @@ kind=added
 --- have_type(type, headers = nil, opt = "") -> bool
 --- have_type(type, headers = nil, opt = ""){ ... } -> bool
 
-��Ū�ʷ� type �������ƥ��¸�ߤ��뤫�ɤ����������ޤ���
+静的な型 type がシステムに存在するかどうか検査します。
 
-�� type �������ƥ��¸�ߤ�����ϡ��������Х��ѿ� [[m:$defs]] ��
-"-DHAVE_type" ���ɲä��������֤��ޤ����� type �������ƥ��¸�ߤ��ʤ���
-��ϡ������֤��ޤ���
+型 type がシステムに存在する場合は、グローバル変数 [[m:$defs]] に
+"-DHAVE_type" を追加し、真を返します。型 type がシステムに存在しない場
+合は、偽を返します。
 
-�㤨�С�
+例えば、
 
   have_type('foo') # => true
 
-�Ǥ����硢HAVE_TYPE_FOO ��Ȥ����ץ�ץ����å��ޥ����򥳥�ѥ�����Ϥ��ޤ���
+である場合、HAVE_TYPE_FOO をというプリプロセッサマクロをコンパイラに渡します。
 
-@param type ��������������̾������ꤷ�ޤ���
+@param type 検査したい型の名前を指定します。
 
-@param headers �ɲäΥإå�����ꤷ�ޤ���
+@param headers 追加のヘッダを指定します。
 
-@param opt ����ѥ�����Ϥ��ɲäΥ��ץ�������ꤷ�ޤ���
+@param opt コンパイラに渡す追加のオプションを指定します。
 

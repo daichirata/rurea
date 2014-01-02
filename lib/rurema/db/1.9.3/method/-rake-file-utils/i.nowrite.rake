@@ -4,14 +4,14 @@ kind=defined
 
 --- nowrite(value = nil){ ... }
 
-�ե������񤭹��फ�ɤ��������椷�ޤ���
+ファイルを書き込むかどうかを制御します。
 
-@param value ������ꤹ��ȥե������񤭹��ߤޤ���
+@param value 真を指定するとファイルを書き込みません。
 
-��:
-    nowrite              # ���ߤξ��֤��֤��ޤ���
-    nowrite(v)           # Ϳ����줿���֤��ѹ����ޤ���
-    nowrite(v) { code }  # �֥��å���ɾ������֤���Ϳ����줿���֤��ѹ����ޤ���
-                         # �֥��å���ɾ���������ȸ����ͤ��ᤷ�ޤ���
+例:
+    nowrite              # 現在の状態を返します。
+    nowrite(v)           # 与えられた状態に変更します。
+    nowrite(v) { code }  # ブロックを評価する間だけ与えられた状態に変更します。
+                         # ブロックの評価が終わると元の値に戻します。
 
 

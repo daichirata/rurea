@@ -1,13 +1,13 @@
 type=class
 superclass=Object
-included=Delegator=MethodDelegation
+included=
 extended=
 library=delegate
 aliases=
 aliasof=
 
-���֥��饹�˥᥽�åɰѾ��λ��Ȥߤ��󶡤�����ݥ��饹��
+サブクラスにメソッド委譲の仕組みを提供する抽象クラス。
 
-�᥽�åɰѾ���Ԥ����ϡ��ܥ��饹��Ѿ���[[m:Delegator#__getobj__]]����������ɬ�פ�����ޤ���
+メソッド委譲を行う場合は、本クラスを継承し[[m:Delegator#__getobj__]]を再定義する必要があります。
 
-����Ū�ʻ�����ˤĤ��Ƥϡ�[[c:SimpleDelegator]]�򻲾Ȥ��Ƥ���������
+具体的な使用例については、[[c:SimpleDelegator]]を参照してください。

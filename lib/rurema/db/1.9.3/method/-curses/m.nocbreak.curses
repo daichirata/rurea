@@ -5,13 +5,13 @@ kind=defined
 --- nocbreak -> nil
 --- nocrmode -> nil
 
-�̾��ü���Τ褦�ˡ������ܡ������ϤΥХåե���󥰤�ͭ���ˤ��ޤ���
-�桼�������Ϥϥ��󥿡������ʤɤ򲡤��ޤǽ����Ǥ��ޤ���
-���ξ��֤Τ��Ȥ��cooked�ץ⡼�ɤȤ����ޤ���
+通常の端末のように、キーボード入力のバッファリングを有効にします。
+ユーザの入力はエンターキーなどを押すまで処理できません。
+この状態のことを「cooked」モードといいます。
 
-���Υ᥽�åɤ���� [[m:Curses.#init_screen]] ��ƤӽФ��ޤ���
+このメソッドの中で [[m:Curses.#init_screen]] を呼び出します。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、例外 SecurityError を発生します。
 
-@see [[m:Curses.#cbreak]]��[[m:Curses.#crmode]]
+@see [[m:Curses.#cbreak]]、[[m:Curses.#crmode]]
 

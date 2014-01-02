@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- VT_USERDEFINED -> Integer
-�桼��������򼨤��ޤ���29�ˡ�
+ユーザ定義型を示します（29）。
 
-OLE�����ȥ᡼�����Ǥ����ѤǤ��ޤ��������VT_I4�����Ѥ��Ƥ���������
+OLEオートメーションでは利用できません。代わりにVT_I4を利用してください。
 

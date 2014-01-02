@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- default_internal -> Encoding | nil
-������������󥳡��ǥ��󥰤��֤��ޤ���
+規定の内部エンコーディングを返します。
 

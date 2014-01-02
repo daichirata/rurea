@@ -3,5 +3,6 @@ classes=Win32API
 methods=
 sublibraries=
 is_sublibrary=false
+category=Windows
 
-Win32 API ¤ò¸Æ¤Ó½Ğ¤¹¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Win32 API ã‚’å‘¼ã³å‡ºã™ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

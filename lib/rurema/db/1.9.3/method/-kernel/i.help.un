@@ -3,7 +3,7 @@ visibility=private
 kind=added
 
 --- help -> ()
-�إ�ץ�å�������ɽ�����ޤ���
+ヘルプメッセージを表示します。
 
 
   ruby -run -e help [COMMAND]

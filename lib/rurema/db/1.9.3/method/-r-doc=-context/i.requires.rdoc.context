@@ -4,5 +4,5 @@ kind=defined
 
 --- requires -> [RDoc::Require]
 
-�ɲä��줿 [[c:RDoc::Require]] ��������֤��ޤ���
+追加された [[c:RDoc::Require]] の配列を返します。
 

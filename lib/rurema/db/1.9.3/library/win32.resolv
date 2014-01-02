@@ -3,6 +3,7 @@ classes=Win32=Resolv
 methods=
 sublibraries=
 is_sublibrary=false
+category=Windows
 
-win32/resolv ¤Ï Win32 ¥×¥é¥Ã¥È¥Õ¥©¡¼¥à¤ÇÌ¾Á°²ò·è¤Ë´Ø¤¹¤ë¾ğÊó¤ò¼èÆÀ¤¹¤ë
-¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+win32/resolv ã¯ Win32 ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§åå‰è§£æ±ºã«é–¢ã™ã‚‹æƒ…å ±ã‚’å–å¾—ã™ã‚‹
+ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

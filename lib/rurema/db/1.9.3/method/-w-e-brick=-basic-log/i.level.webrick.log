@@ -4,7 +4,7 @@ kind=defined
 
 --- level        -> Integer
 --- level=(lv)
-¼«¿È¤Î¥í¥°¥ì¥Ù¥ë¤òÉ½¤¹¥¢¥¯¥»¥µ¤Ç¤¹¡£
+è‡ªèº«ã®ãƒ­ã‚°ãƒ¬ãƒ™ãƒ«ã‚’è¡¨ã™ã‚¢ã‚¯ã‚»ã‚µã§ã™ã€‚
 
-@param lv ¥í¥°¥ì¥Ù¥ë¤òÄê¿ô¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param lv ãƒ­ã‚°ãƒ¬ãƒ™ãƒ«ã‚’å®šæ•°ã§æŒ‡å®šã—ã¾ã™ã€‚
 

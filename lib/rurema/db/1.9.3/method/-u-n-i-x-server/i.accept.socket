@@ -2,13 +2,12 @@ names=accept
 visibility=public
 kind=defined
 
---- accept
-@todo
+--- accept -> UnixSocket
 
-���饤����Ȥ������³�׵������դ�����³����
-[[c:UNIXSocket]] �Υ��󥹥��󥹤��֤��ޤ���
+クライアントからの接続要求を [[man:accept(2)]]で待ち受け、接続した
+[[c:UNIXSocket]] のインスタンスを返します。
 
-��:
+例:
 
   UNIXServer.open("/tmp/s") {|serv|
     c = UNIXSocket.open("/tmp/s")

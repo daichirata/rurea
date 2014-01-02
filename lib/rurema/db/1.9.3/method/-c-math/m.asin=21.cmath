@@ -4,16 +4,16 @@ kind=defined
 
 --- asin!(x) -> Float
 
-�¿� x �ε������ؿ����ͤ�饸������֤��ޤ���[[m:Math.#asin]] �Υ�����
-�����Ǥ���
+実数 x の逆正弦関数の値をラジアンで返します。[[m:Math.#asin]] のエイリ
+アスです。
 
-@param x -1.0 <= x <= 1 ���ϰ���μ¿���
+@param x -1.0 <= x <= 1 の範囲内の実数。
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise Math::DomainError x ���ϰϳ��μ¿�����ꤷ������ȯ�����ޤ���
+@raise Math::DomainError x に範囲外の実数を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 
 @see [[m:Math.#asin]]
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- to_json_raw_object -> Hash
 
-¿∏§Œ ∏ª˙ŒÛ§Ú≥ «º§∑§ø•œ•√•∑•Â§Ú¿∏¿Æ§∑§ﬁ§π°£
+Áîü„ÅÆÊñáÂ≠óÂàó„ÇíÊ†ºÁ¥ç„Åó„Åü„Éè„ÉÉ„Ç∑„É•„ÇíÁîüÊàê„Åó„Åæ„Åô„ÄÇ
 
-§≥§Œ•·•Ω•√•…§œ UTF-8 §Œ ∏ª˙ŒÛ§«§œ§ §Ø¿∏§Œ ∏ª˙ŒÛ§Ú JSON §À —¥π§π§ÎæÏπÁ§Àª»Õ—§∑§∆§Ø§¿§µ§§°£
+„Åì„ÅÆ„É°„ÇΩ„ÉÉ„Éâ„ÅØ UTF-8 „ÅÆÊñáÂ≠óÂàó„Åß„ÅØ„Å™„ÅèÁîü„ÅÆÊñáÂ≠óÂàó„Çí JSON „Å´Â§âÊèõ„Åô„ÇãÂ†¥Âêà„Å´‰ΩøÁî®„Åó„Å¶„Åè„Å†„Åï„ÅÑ„ÄÇ
 
-  "§À§€§Û§¥".encode("euc-jp").to_json_raw_object
+  "„Å´„Åª„Çì„Åî".encode("euc-jp").to_json_raw_object
   # => {"json_class"=>"String", "raw"=>[164, 203, 164, 219, 164, 243, 164, 180]}
-  "§À§€§Û§¥".encode("euc-jp").to_json # source sequence is illegal/malformed (JSON::GeneratorError)
+  "„Å´„Åª„Çì„Åî".encode("euc-jp").to_json # source sequence is illegal/malformed (JSON::GeneratorError)
 

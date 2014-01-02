@@ -6,4 +6,4 @@ library=socket
 aliases=
 aliasof=
 
-[[c:TCPSocket]] ¤ò [[unknown:SOCKS|URL:http://www.sw.nec.co.jp/middle/socks/]] ÂĞ±ş¤·¤¿¥¯¥é¥¹¤Ç¤¹¡£
+[[c:TCPSocket]] ã‚’ SOCKS([[url:http://www.sw.nec.co.jp/middle/socks/]]) å¯¾å¿œã—ãŸã‚¯ãƒ©ã‚¹ã§ã™ã€‚

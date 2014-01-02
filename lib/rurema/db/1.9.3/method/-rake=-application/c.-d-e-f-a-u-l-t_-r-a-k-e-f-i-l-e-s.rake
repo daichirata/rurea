@@ -4,6 +4,6 @@ kind=defined
 
 --- DEFAULT_RAKEFILES -> Array
 
-¥Ç¥Õ¥©¥ë¥È¤Ç Rakefile ¤È¤·¤Æ°·¤¦¥Õ¥¡¥¤¥ëÌ¾¤ÎÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ Rakefile ã¨ã—ã¦æ‰±ã†ãƒ•ã‚¡ã‚¤ãƒ«åã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-'rakefile', 'Rakefile', 'rakefile.rb', 'Rakefile.rb' ¤¬»ØÄê¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
+'rakefile', 'Rakefile', 'rakefile.rb', 'Rakefile.rb' ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã™ã€‚

@@ -6,7 +6,7 @@ library=net.imap
 aliases=
 aliasof=
 
-Content-Type �� "message" �Ǥ����å�������ɽ�����饹�Ǥ���
+Content-Type が "message" であるメッセージを表すクラスです。
 
-�᡼���᡼���ź�դ������ʤɤ˻Ȥ��ޤ���
-�ܤ����� [[RFC:2045]], [[RFC:822]] �򻲾Ȥ��Ƥ���������
+メールをメールに添付した場合などに使われます。
+詳しくは [[RFC:2045]], [[RFC:822]] を参照してください。

@@ -4,7 +4,7 @@ kind=defined
 
 --- BUTTON_ALT -> Integer
 
-�ޥ��������� ALT �����򲡲����Ƥ��뤳�Ȥ�ɽ���ޥ������٥���Ѥ�����Ǥ���
+マウス操作中に ALT キーを押下していることを表すマウスイベント用の定数です。
 
 @see [[m:Curses.getmouse]]
 

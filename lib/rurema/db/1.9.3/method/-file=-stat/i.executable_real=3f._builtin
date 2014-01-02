@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- executable_real? -> bool
-¼Â¥æ¡¼¥¶/¥°¥ë¡¼¥×ID¤Ç¼Â¹Ô¤Ç¤­¤ë»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+å®Ÿãƒ¦ãƒ¼ã‚¶/ã‚°ãƒ«ãƒ¼ãƒ—IDã§å®Ÿè¡Œã§ãã‚‹æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   p File::Stat.new($0).executable_real? 
-  #Îã
+  #ä¾‹
   #=> true
 

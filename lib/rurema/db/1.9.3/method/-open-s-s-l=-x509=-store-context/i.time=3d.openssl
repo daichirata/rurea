@@ -2,12 +2,12 @@ names=time=
 visibility=public
 kind=defined
 
---- time=
-�������ͭ�����¤θ��ڤ˻Ȥ����������ꤷ�ޤ���
+--- time=(time)
+証明書の有効期限の検証に使う日時を設定します。
 
-�ǥե���ȤǤϸ��߻��郎�Ȥ��ޤ���
+デフォルトでは現在時刻が使われます。
 
-@param time ���ڤ˻Ȥ������� [[c:Time]] ���֥�������
+@param time 検証に使う日時の [[c:Time]] オブジェクト
 @see [[m:OpenSSL::X509::Store#time=]]
 
 

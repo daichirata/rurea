@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- escape(str) -> String
-ʸ����� Bourne ������Υ��ޥ�ɥ饤����ǰ����˻Ȥ���褦�˥��������פ��ޤ���
+文字列を Bourne シェルのコマンドライン中で安全に使えるようにエスケープします。
 
-���Υ᥽�åɤϡ�[[m:Shellwords.#shellescape]] ����̾�Ǥ���
+このメソッドは、[[m:Shellwords.#shellescape]] の別名です。
 
-@param str ���������פ��оݤȤʤ�ʸ�������ꤷ�ޤ���
-@return ���������פ��줿ʸ������֤��ޤ���
+@param str エスケープの対象となる文字列を指定します。
+@return エスケープされた文字列を返します。
 

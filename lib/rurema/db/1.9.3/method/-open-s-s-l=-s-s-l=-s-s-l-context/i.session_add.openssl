@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- session_add(sess) -> bool
-���å����� [[c:OpenSSL::SSL::SSLContext]] �����Υ���å����ΰ��
-�ɲä��ޤ���
+セッションを [[c:OpenSSL::SSL::SSLContext]] 内部のキャッシュ領域に
+追加します。
 
-�������ˤϿ����֤��ޤ������Ǥ˥���å����ΰ�ˤ��륻�å�����
-�ɲä��褦�Ȥ��������ɲä��줺�˵����֤��ޤ���
+成功時には真を返します。すでにキャッシュ領域にあるセッションを
+追加しようとした場合は追加されずに偽を返します。
 
-@param sess �ɲä��륻�å����([[c:OpenSSL::SSL::Session]])
+@param sess 追加するセッション([[c:OpenSSL::SSL::Session]])
 

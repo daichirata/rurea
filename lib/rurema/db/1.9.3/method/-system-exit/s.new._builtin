@@ -4,13 +4,13 @@ kind=defined
 
 --- new(status = 0, error_message = "") -> SystemExit
 
-SystemExit ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+SystemExit ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param status ½ªÎ»¥¹¥Æ¡¼¥¿¥¹¤òÀ°¿ô¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param status çµ‚äº†ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param error_message ¥¨¥é¡¼¥á¥Ã¥»¡¼¥¸¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param error_message ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   ex = SystemExit.new(1)
   p ex.status   # => 1

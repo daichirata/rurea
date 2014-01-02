@@ -5,9 +5,9 @@ kind=defined
 --- EUCJP_MS -> Encoding
 --- EucJP_ms -> Encoding
 --- EUC_JP_MS -> Encoding
-eucJP-ms¡¢Unix ·Ï¤ÇÍÑ¤¤¤é¤ì¤ë¡¢ÆüËÜ¸ì EUC °¡¼ï¤Ç¤¹¡£
+eucJP-msã€Unix ç³»ã§ç”¨ã„ã‚‰ã‚Œã‚‹ã€æ—¥æœ¬èª EUC äºœç¨®ã§ã™ã€‚
 
-EUC-JP¤Ë²Ã¤¨¡¢Windows¤Îµ¡¼ï°ÍÂ¸Ê¸»ú¤È¥æ¡¼¥¶ÄêµÁÊ¸»ú¤ò°·¤¦¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£
+EUC-JPã«åŠ ãˆã€Windowsã®æ©Ÿç¨®ä¾å­˜æ–‡å­—ã¨ãƒ¦ãƒ¼ã‚¶å®šç¾©æ–‡å­—ã‚’æ‰±ã†ã“ã¨ãŒã§ãã¾ã™ã€‚
 @see [[url:http://www2d.biglobe.ne.jp/~msyk/charcode/cp932/eucJP-ms.html]],
      [[url:http://legacy-encoding.sourceforge.jp/wiki/index.php?eucJP-ms]],
      [[url:http://blog.livedoor.jp/numa2666/archives/50980727.html]]

@@ -15,9 +15,15 @@ namespace :init do
   task "r193" do
     Rurema.new("1.9.3").init
   end
+  task "r200" do
+    Rurema.new("1.8.7").init
+  end
+  task "r210" do
+    Rurema.new("1.9.2").init
+  end
 
   task "all" do
-    %w(1.8.7 1.9.2 1.9.3).each do |v|
+    %w(1.8.7 1.9.2 1.9.3 2.0.0 2.1.0).each do |v|
       Rurema.new(v).init
     end
   end
@@ -33,11 +39,16 @@ namespace :update do
   task "r193" do
     Rurema.new("1.9.3").update
   end
+  task "r200" do
+    Rurema.new("1.9.3").update
+  end
+  task "r210" do
+    Rurema.new("1.9.3").update
+  end
 
   task "all" do
-    %w(1.8.7 1.9.2 1.9.3).each do |v|
+    %w(1.8.7 1.9.2 1.9.3 2.0.0 2.1.0).each do |v|
       Rurema.new(v).update
     end
   end
 end
-

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- proxy_pass -> String|nil
-���Ȥ� ([[m:Net::HTTP.Proxy]] �ˤ�äƺ������줿) 
-�ץ������ѤΥ��饹�ʤ�Хץ�����ǧ�ڤΥѥ���ɤ��֤��ޤ���
+自身が ([[m:Net::HTTP.Proxy]] によって作成された) 
+プロクシ用のクラスならばプロクシ認証のパスワードを返します。
 
-�����Ǥʤ���� nil ���֤��ޤ���
+そうでなければ nil を返します。
 
 @see [[m:Net::HTTP.Proxy]]
 

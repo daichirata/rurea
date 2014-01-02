@@ -2,30 +2,30 @@
 
 include Enumerable
 
-�ϰϥ��֥������ȤΥ��饹���ϰϥ��֥������Ȥ��ϰϱ黻�� .. �ޤ���
-... �ˤ�ä���������ޤ���.. �黻�Ҥˤ�ä��������줿�ϰ�
-���֥������ȤϽ�ü��ޤߡ�... �黻�Ҥˤ�ä��������줿�ϰϥ��֥���
-���ȤϽ�ü��ޤߤޤ���
+範囲オブジェクトのクラス。範囲オブジェクトは範囲演算子 .. または
+... によって生成されます。.. 演算子によって生成された範囲
+オブジェクトは終端を含み、... 演算子によって生成された範囲オブジェ
+クトは終端を含みません。
 
-=== ��
+=== 例
 
   for i in 1..5
-     # ����
+     # 処理
   end
 
-����� 1 ���� 5 �ޤǤ��ϰϥ��֥������Ȥ��������ơ����줾����ͤ��Ф���
-�����֤��ȸ�����̣�Ǥ���
+これは 1 から 5 までの範囲オブジェクトを生成して、それぞれの値に対して
+繰り返すと言う意味です。
 
-�ϰϱ黻�ҤΥ��ڥ��ɤϸߤ��� <=> ����ӤǤ���ɬ�פ�����ޤ���
-����� [[m:Range#each]] ��¹Ԥ��뤿��ˤ� succ �᥽��
-�ɤ�¹ԤǤ����ΤǤʤ���Ф����ޤ���
+範囲演算子のオペランドは互いに <=> で比較できる必要があります。
+さらに [[m:Range#each]] を実行するためには succ メソッ
+ドを実行できるものでなければいけません。
 
-=== �˲�Ū���ѹ�
+=== 破壊的な変更
 
-Ruby �� Range ���饹�� immutable �Ǥ���
-�Ĥޤꡢ���֥������ȼ��Τ��˲�Ū���ѹ����뤳�ȤϤǤ��ޤ���
-�Ǥ��Τǡ������������줿 Range �Υ��֥������Ȥλؤ������ϰϤ�
-�褷���ѹ����뤳�ȤϤǤ��ޤ���
+Ruby の Range クラスは immutable です。
+つまり、オブジェクト自体を破壊的に変更することはできません。
+ですので、一度生成された Range のオブジェクトの指し示す範囲は
+決して変更することはできません。
 
   range = 1..10
   range.first     #=> 1
@@ -35,55 +35,50 @@ Ruby �� Range ���饹�� immutable �Ǥ���
 
 --- new(first, last, exclude_end = false) -> Range
 
-first ���� last �ޤǤ��ϰϥ��֥������Ȥ����������֤���
-����
+first から last までの範囲オブジェクトを生成して返しま
+す。
 
-exclude_end �����ʤ�н�ü��ޤޤʤ��ϰϥ��֥������Ȥ���
-�����ޤ���exclude_end ��ά���ˤϽ�ü��ޤߤޤ���
+exclude_end が真ならば終端を含まない範囲オブジェクトを生
+成します。exclude_end 省略時には終端を含みます。
 
-@param first �ǽ�Υ��֥�������
-@param last �Ǹ�Υ��֥�������
-@param exclude_end ���򥻥åȤ�����罪ü��ޤޤʤ��ϰϥ��֥������Ȥ��������ޤ�
+@param first 最初のオブジェクト
+@param last 最後のオブジェクト
+@param exclude_end 真をセットした場合終端を含まない範囲オブジェクトを生成します
 
-@raise ArgumentError first <=> last �� nil �ξ���ȯ�����ޤ�
+@raise ArgumentError first <=> last が nil の場合に発生します
 
 == Instance Methods
 
 --- ===(obj) -> bool
 --- include?(obj) -> bool
 --- member?(obj) -> bool
-#@since 1.8.8
-#@until 1.9.1
---- cover?(obj) -> bool
-#@end
-#@end
 
-obj ���ϰ���˴ޤޤ�Ƥ�����˿����֤��ޤ���
+obj が範囲内に含まれている時に真を返します。
 
-[[m:Range#===]] �ϼ�� case ���Ǥ���Ӥ��Ѥ����ޤ���
+[[m:Range#===]] は主に case 式での比較に用いられます。
 
 #@since 1.9.1
-<=> �᥽�åɤˤ��黻�ˤ���ϰ��⤫�ɤ�����Ƚ�ꤹ��ˤ� [[m:Range#cover?]] ����Ѥ��Ƥ���������
+<=> メソッドによる演算により範囲内かどうかを判定するには [[m:Range#cover?]] を使用してください。
 #@else
-include? ����[[m:Enumerable#include?]],[[m:Enumerable#member?]]
-�Ȱۤʤ� <=> �᥽�åɤˤ��黻�ˤ���ϰ��⤫�ɤ�����Ƚ�ꤹ�뤳�Ȥ����դ���ɬ�פ�����ޤ���
+include? が、[[m:Enumerable#include?]],[[m:Enumerable#member?]]
+と異なり <=> メソッドによる演算により範囲内かどうかを判定することに注意する必要があります。
 #@end
 
-@param obj ����оݤΥ��֥������Ȥ���ꤷ�ޤ���
+@param obj 比較対象のオブジェクトを指定します。
 
   p (0.1 .. 0.2).include?(0.15) # => true
-  # 1.8.1 ����
+  # 1.8.1 以前
   p (0.1 .. 0.2).member?(0.15)  # => cannot iterate from Float (TypeError)
-  # 1.8.2 �ʹ�
+  # 1.8.2 以降
   p (0.1 .. 0.2).member?(0.15)  # => true
   
-  # ʸ����ξ�硢include? �ϼ�������Ӥˤʤ�
+  # 文字列の場合、include? は辞書順の比較になる
   p ("a" .. "c").include?("ba") # => true
-  # 1.8.1 ����
+  # 1.8.1 以前
   p ("a" .. "c").member?("ba")  # => false
-  # 1.8.2 �ʹ�
+  # 1.8.2 以降
   p ("a" .. "c").member?("ba")  # => true
-  # 1.9.1 �ʹ�
+  # 1.9.1 以降
   p ("a" .. "c").include?("ba") # => false
   p ("a" .. "c").member?("ba")  # => false
 
@@ -95,11 +90,11 @@ include? ����[[m:Enumerable#include?]],[[m:Enumerable#member?]]
 #@since 1.9.1
 --- cover?(obj) -> bool
 
-obj ���ϰ���˴ޤޤ�Ƥ�����˿����֤��ޤ���
+obj が範囲内に含まれている時に真を返します。
 
-[[m:Range#include?]] �Ȱۤʤ� <=> �᥽�åɤˤ��黻�ˤ���ϰ��⤫�ɤ�����Ƚ�ꤷ�ޤ���
+[[m:Range#include?]] と異なり <=> メソッドによる演算により範囲内かどうかを判定します。
 
-@param obj ����оݤΥ��֥������Ȥ���ꤷ�ޤ���
+@param obj 比較対象のオブジェクトを指定します。
 
 @see [[m:Range#include?]]
 #@end
@@ -107,54 +102,90 @@ obj ���ϰ���˴ޤޤ�Ƥ�����˿����֤��ޤ���
 --- begin -> object
 --- first -> object
 
-�ǽ�����Ǥ��֤��ޤ���
+始端の要素を返します。範囲オブジェクトが始端を含むかどうかは関係ありま
+せん。
+
+  p (1..5).begin # => 1
+  p (1..0).begin # => 1
+
+#@since 1.9.1
+--- first(n) -> [object]
+
+最初の n 要素を返します。範囲内に要素が含まれない場合は空の配列を返します。
+
+@param n 取得する要素数を整数で指定します。整数以外のオブジェクトを指定
+         した場合は to_int メソッドによる暗黙の型変換を試みます。
+
+@raise TypeError 引数に整数以外の(暗黙の型変換が行えない)オブジェクトを
+                 指定した場合に発生します。
+
+@raise ArgumentError n に負の数を指定した場合に発生します。
+
+@see [[ruby-core:12697]]
+#@end
 
 --- each {|item|  ... } -> self
 #@since 1.8.7
-#@since 1.8.8
+#@since 1.9.1
 --- each -> Enumerator
 #@else
 --- each -> Enumerable::Enumerator
 #@end
 #@end
 
-�ϰ�������Ǥ��Ф��Ʒ����֤��ޤ���
+範囲内の要素に対して繰り返します。
 
 #@since 1.8.0
-Range#each �ϳ����Ǥ� succ �᥽�åɤ���Ѥ��ƥ��ƥ졼����󤹤�褦�ˤʤ�ޤ�����
+Range#each は各要素の succ メソッドを使用してイテレーションするようになりました。
 
-@raise TypeError succ �᥽�åɤ�����ʤ����饹���ϰϥ��֥������Ȥ��Ф��Ƥ��Υ᥽�åɤ�Ƥ������ȯ�����ޤ���
+@raise TypeError succ メソッドを持たないクラスの範囲オブジェクトに対してこのメソッドを呼んだ場合に発生します。
 
 #@end
 
 --- end -> object
 --- last -> object
 
-��ü���֤��ޤ����ϰϥ��֥������Ȥ���ü��ޤफ�ɤ����ϴط�����ޤ�
-��
+終端の要素を返します。範囲オブジェクトが終端を含むかどうかは関係ありま
+せん。
 
   p (1..5).end   # => 5
   p (1...5).end  # => 5
 
+#@since 1.9.1
+--- last(n) -> [object]
+
+最後の n 要素を返します。範囲内に要素が含まれない場合は空の配列を返します。
+
+@param n 取得する要素数を整数で指定します。整数以外のオブジェクトを指定
+         した場合は to_int メソッドによる暗黙の型変換を試みます。
+
+@raise TypeError 引数に整数以外の(暗黙の型変換が行えない)オブジェクトを
+                 指定した場合に発生します。
+
+@raise ArgumentError n に負の数を指定した場合に発生します。
+
+@see [[ruby-core:12697]]
+#@end
+
 --- exclude_end? -> bool
 
-�ϰϥ��֥������Ȥ���ü��ޤޤʤ��Ȥ������֤��ޤ���
+範囲オブジェクトが終端を含まないとき真を返します。
 
 #@since 1.8.0
 --- step(s = 1) {|item| ... } -> self
 #@since 1.8.7
-#@since 1.8.8
+#@since 1.9.1
 --- step(s = 1) -> Enumerator
 #@else
 --- step(s = 1) -> Enumerable::Enumerator
 #@end
 #@end
 
-�ϰ�������Ǥ� s �����˷����֤��ޤ���
+範囲内の要素を s おきに繰り返します。
 
-@param s ������������ꤷ�ޤ���
+@param s 正の整数を指定します。
 
-@raise ArgumentError s �� 0 �ޤ�����ο�����ꤷ������ȯ�����ޤ�
+@raise ArgumentError s に 0 または負の数を指定した場合に発生します
 
   ("a" .. "f").step(2) {|v| p v}
   # => "a"
@@ -164,11 +195,11 @@ Range#each �ϳ����Ǥ� succ �᥽�åɤ���Ѥ��ƥ��ƥ졼����󤹤�褦�ˤʤ�ޤ����
 
 --- ==(other)     -> bool
 
-���ꤵ�줿 other �� Range ���饹�Υ��󥹥��󥹤Ǥ��ꡢ
-�����Ƚ����� == �᥽�åɤ���Ӥ�����������[[m:Range#exclude_end?]] ��Ʊ������
-true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+指定された other が Range クラスのインスタンスであり、
+始点と終点が == メソッドで比較して等しく、[[m:Range#exclude_end?]] が同じ場合に
+true を返します。そうでない場合に false を返します。
 
-@param other ���Ȥ���Ӥ��������֥������Ȥ���ꤷ�ޤ���
+@param other 自身と比較したいオブジェクトを指定します。
 
   p (1..2) == (1..2)               #=> true
   p (1..2) == (1...2)              #=> false
@@ -176,11 +207,11 @@ true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
 
 --- eql?(other)   -> bool
 
-���ꤵ�줿 other �� Range ���饹�Υ��󥹥��󥹤Ǥ��ꡢ
-�����Ƚ����� eql? �᥽�åɤ���Ӥ�����������[[m:Range#exclude_end?]] ��Ʊ������
-true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+指定された other が Range クラスのインスタンスであり、
+始点と終点が eql? メソッドで比較して等しく、[[m:Range#exclude_end?]] が同じ場合に
+true を返します。そうでない場合に false を返します。
 
-@param other ���Ȥ���Ӥ��������֥������Ȥ���ꤷ�ޤ���
+@param other 自身と比較したいオブジェクトを指定します。
 
   p (1..2).eql?(1..2)                 #=> true
   p (1..2).eql?(1...2)                #=> false
@@ -188,11 +219,11 @@ true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
 
 --- equal?(other)    -> bool
 
-���ꤵ�줿 other �� self ���ȤǤ�����Τ߿����֤��ޤ���
-����� [[c:Object]] ���饹��������줿�ǥե���Ȥ�ư���
-����
+指定された other が self 自身である場合のみ真を返します。
+これは [[c:Object]] クラスで定義されたデフォルトの動作で
+す。
 
-@param other ���Ȥ���Ӥ��������֥������Ȥ���ꤷ�ޤ���
+@param other 自身と比較したいオブジェクトを指定します。
 
   r = (1..2)
   p r.equal?(1..2)      #=> false
@@ -200,7 +231,110 @@ true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
 
 --- hash    -> Integer
 
-�����Ƚ����Υϥå����ͤ� [[m:Range#exclude_end?]] ���ͤ���ϥå����ͤ�׻����������Ȥ����֤��ޤ���
+始点と終点のハッシュ値と [[m:Range#exclude_end?]] の値からハッシュ値を計算して整数として返します。
 
   p (1..2).hash    #=> 5646
   p (1...2).hash   #=> 16782863
+
+#@since 1.9.1
+--- min               -> object | nil
+
+範囲内の最小の値を返します。
+
+該当する要素が存在しなければ nil を返します。
+
+--- min {|a, b| ... } -> object | nil
+
+ブロックの評価結果で範囲内の各要素の大小判定を行い、最小の要素を返しま
+す。範囲内に要素が存在しなければ nil を返します。
+
+ブロックの値は、a > b のとき正、a == b のとき 0、 a < b のとき負の整数
+を、期待しています。
+
+@raise TypeError ブロックが整数以外を返したときに発生します。
+
+@see [[m:Range#first]], [[m:Enumerable#min]]
+
+--- max               -> object | nil
+
+範囲内の最大の値を返します。
+
+該当する要素が存在しなければ nil を返します。
+
+--- max {|a, b| ... } -> object | nil
+
+ブロックの評価結果で範囲内の各要素の大小判定を行い、最大の要素を返しま
+す。範囲内に要素が存在しなければ nil を返します。
+
+ブロックの値は、a > b のとき正、 a == b のとき 0、a < b のとき負の整数
+を、期待しています。
+
+@raise TypeError ブロックが整数以外を返したときに発生します。
+
+@see [[m:Range#last]], [[m:Enumerable#max]]
+#@end
+
+#@since 2.0.0
+--- bsearch {|obj| ... } -> object | nil
+
+ブロックの評価結果で範囲内の各要素の大小判定を行い、条件を満たす値を二
+分探索(計算量は O(log n))で検索します。要素が見つからない場合は nil を
+返します。
+
+本メソッドはブロックを評価した結果により以下のいずれかのモードで動作し
+ます。
+
+ * find-minimum モード
+ * find-any モード
+
+find-minimum モード(特に理由がない限りはこのモードを使う方がいいでしょ
+う)では、条件判定の結果を以下のようにする必要があります。
+
+ * 求める値がブロックパラメータの値か前の要素の場合: true を返す
+ * 求める値がブロックパラメータより後の要素の場合: false を返す
+
+ブロックの評価結果が true になる最初の要素を返すか、nil を返します。
+
+   ary = [0, 4, 7, 10, 12]
+   (0...ary.size).bsearch {|i| ary[i] >= 4 } # => 1
+   (0...ary.size).bsearch {|i| ary[i] >= 6 } # => 2
+   (0...ary.size).bsearch {|i| ary[i] >= 8 } # => 3
+   (0...ary.size).bsearch {|i| ary[i] >= 100 } # => nil
+
+   (0.0...Float::INFINITY).bsearch {|x| Math.log(x) >= 0 } # => 1.0
+
+find-any モードは [[man:bsearch(3)]] のように動作します。ブロックは真偽値
+ではなく、以下のような数値を返す必要があります。求める値の範囲がx...y
+（x <= y）であるとします。また、ブロックパラメータの値を v とします。
+
+ * ブロックパラメータの値が求める値の範囲よりも小さい（v < x）場合: 正の数を返す
+ * ブロックパラメータの値が求める値の範囲に合致する（x <= v < y）場合: 0 を返す
+ * ブロックパラメータの値が求める値の範囲よりも大きい（y <= v）場合: 負の数を返す
+
+ブロックの評価結果が 0 になるいずれかの要素を返すか、nil を返します。
+
+   ary = [0, 100, 100, 100, 200]
+   (0..4).bsearch {|i| 100 - ary[i] } # => 1, 2 or 3
+   (0..4).bsearch {|i| 300 - ary[i] } # => nil
+   (0..4).bsearch {|i|  50 - ary[i] } # => nil
+
+上記の 2 つのモードを混在して使用しないでください(ブロックの評価結果は
+常に true/false、数値のいずれかを一貫して返すようにしてください)。
+また、二分探索の各イテレーションで値がどのような順序で選ばれるかは
+未規定です。
+
+@raise TypeError ブロックの評価結果が true、false、nil、数値以外であっ
+                 た場合に発生します。
+
+@raise LocalJumpError ブロックを指定しなかった場合に発生します。
+
+@see [[m:Array#bsearch]]
+
+--- size -> Integer | Float::INFINITY | nil
+
+範囲内の要素数を返します。始端、終端のいずれかのオブジェクトが
+[[c:Numeric]] のサブクラスのオブジェクトではない場合には nil を返します。
+
+  (10..20).size    # => 11
+  ("a".."z").size  # => nil
+#@end

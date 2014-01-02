@@ -3,5 +3,6 @@ classes=
 methods=Digest/m.bubblebabble.digest.bubblebabble
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- set_generator(generator, order, cofactor) -> self
-·²¤Î¥Ñ¥é¥á¡¼¥¿¤òÀßÄê¤·¤Ş¤¹¡£
+ç¾¤ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param generator À¸À®¸µ([[c:OpenSSL::PKey::EC::Point]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param order À¸À®¸µ¤Î°Ì¿ô([[c:OpenSSL::BN]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param cofactor Í¾°ø»Ò[[c:OpenSSL::BN]] ¥ª¥Ö¥¸¥§¥¯¥È
-@raise OpenSSL::PKey::EC::Group::Error ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param generator ç”Ÿæˆå…ƒ([[c:OpenSSL::PKey::EC::Point]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param order ç”Ÿæˆå…ƒã®ä½æ•°([[c:OpenSSL::BN]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param cofactor ä½™å› å­[[c:OpenSSL::BN]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+@raise OpenSSL::PKey::EC::Group::Error è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

@@ -6,4 +6,4 @@ library=rubygems.local_remote_options
 aliases=
 aliasof=
 
-[[c:Gem::Command]] ¤Ç»ÈÍÑ¤¹¤ë --local, --remote ¥ª¥×¥·¥ç¥ó¤Î¤¿¤á¤Î¥â¥¸¥å¡¼¥ë¤Ç¤¹¡£
+[[c:Gem::Command]] ã§ä½¿ç”¨ã™ã‚‹ --local, --remote ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®ãŸã‚ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚

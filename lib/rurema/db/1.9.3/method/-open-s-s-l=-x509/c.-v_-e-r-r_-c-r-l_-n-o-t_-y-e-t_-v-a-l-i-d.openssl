@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- V_ERR_CRL_NOT_YET_VALID -> Integer
-CRL �γ��ϻ��郎�ޤ���Ƥ��ʤ����Ȥ��̣���ޤ���
+CRL の開始時刻がまだ来ていないことを意味します。
 
-[[m:OpenSSL::X509::Store#error]] ��
-[[m:OpenSSL::X509::StoreContext#error]] �Υ��顼�����ɤȤ���
-�Ȥ��ޤ���
+[[m:OpenSSL::X509::Store#error]] や
+[[m:OpenSSL::X509::StoreContext#error]] のエラーコードとして
+使われます。
 
 

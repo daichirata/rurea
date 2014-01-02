@@ -6,28 +6,28 @@ library=curses
 aliases=
 aliasof=
 
-Curses �⥸�塼��� [[c:Curses::Window]] ���饹�ϡ�curses �饤�֥������Ѥ��ơ�
-ü���˰�¸���ʤ������ǥƥ����ȥ桼�����󥿥ե�����������Ǥ��ޤ���
-curses �饤�֥��Ȥϡ�
-C �Υץ�����फ��ü���Υǥ����ץ쥤���̤����椹�뤿��Υ饤�֥��Τ��Ȥǡ�
-���Τ褦�ʼ���������ޤ���
+Curses モジュールや [[c:Curses::Window]] クラスは、curses ライブラリを利用して、
+端末に依存しない形式でテキストユーザインタフェースを作成できます。
+curses ライブラリとは、
+C のプログラムから端末のディスプレイ画面を制御するためのライブラリのことで、
+次のような実装があります。
 
   * [[url:http://pdcurses.sourceforge.net/]]
   * [[url:http://www.gnu.org/software/ncurses/ncurses.html]]
 
-�ܥ⥸�塼���Ȥäƥƥ����ȥ桼�����󥿥ե��������������ή��ϼ��Τ褦�ˤʤ�ޤ���
+本モジュールを使ってテキストユーザインタフェースを作成する流れは次のようになります。
 
-  (1) [[m:Curses.#init_screen]] �ǽ������Ԥ��ޤ���
-  (2) [[c:Curses]] �Υ⥸�塼��ؿ���Ȥäơ�
-  ���ϤΥ�������̵���ˤ���ʤɤ� curses �������Ԥ��ޤ���
-  (3) [[m:Curses.#stdscr]] �� [[c:Curses::Window]] ���֥������Ȥ��������
-  �����Ȥäƥ��󥿥ե��������ۤ��롣
-  (4) [[m:Curses.#getch]] �� [[m:Curses.#getstr]] �ˤ�ꡢ
-  �桼����������Ϥ�������ޤ������Ϥ�������˽��äƽ�����Ԥ���
-  �����ơ����Ϥ��ԤĤȤ������Ȥ򷫤��֤��ޤ���
-  (5) �Ǹ�� [[m:Curses.#close_screen]] �ǽ�λ������Ԥ��ޤ���
+  (1) [[m:Curses.#init_screen]] で初期化を行います。
+  (2) [[c:Curses]] のモジュール関数を使って、
+  入力のエコーを無効にするなどの curses の設定を行います。
+  (3) [[m:Curses.#stdscr]] で [[c:Curses::Window]] オブジェクトを取得し、
+  それを使ってインタフェースを構築する。
+  (4) [[m:Curses.#getch]] や [[m:Curses.#getstr]] により、
+  ユーザからの入力を取得します。入力した情報に従って処理を行い、
+  そして、入力を待つということを繰り返します。
+  (5) 最後に [[m:Curses.#close_screen]] で終了処理を行います。
 
-��: ��������ˡ�Hello World!�פ�ɽ�������������Ϥ�����Ƚ�λ���롣
+例: 画面中央に「Hello World!」と表示し、何か入力があると終了する。
 
   require "curses"
   
@@ -42,14 +42,14 @@ C �Υץ�����फ��ü���Υǥ����ץ쥤���̤����椹�뤿��Υ饤�֥��Τ��Ȥǡ�
     Curses.close_screen
   end
 
-�ʤ���curses �� ncurses �򥤥󥹥ȡ��뤷�Ƥ��ʤ��Ķ��Ǥϡ�
-�ܥ⥸�塼������ѤǤ��ޤ���
-���ѤǤ��ʤ���硢require �λ����ǰʲ��Τ褦���㳰��ȯ�����ޤ���
+なお、curses や ncurses をインストールしていない環境では、
+本モジュールは利用できません。
+利用できない場合、require の時点で以下のような例外が発生します。
 
   foo:1:in `require': no such file to load -- bar (LoadError)
           from foo:1:in `<main>'
 
-�����Ĥ������ˤ����ơ����ݡ��Ȥ��Ƥ��ʤ��Ķ��Ǥϡ�
-�㳰 NotImplementedError ��ȯ�����ޤ���
+いくつかの操作において、サポートしていない環境では、
+例外 NotImplementedError が発生します。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�ۤȤ�ɤ������㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、ほとんどの操作で例外 SecurityError を発生します。

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- dmp1 -> OpenSSL::BN
-ธฐคฮ exponent1 (d mod (p-1)) ควคนกฃ
+้ตใฎ exponent1 (d mod (p-1)) ใงใใ€
 
-ศ๋ฬฉธฐคฮพ๐ส๓ควคนกฃ
+็งๅฏ้ตใฎๆ…ๅ ฑใงใใ€
 

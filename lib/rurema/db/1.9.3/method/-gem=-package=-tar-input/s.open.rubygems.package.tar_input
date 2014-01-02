@@ -4,9 +4,9 @@ kind=defined
 
 --- open(io, security_policy = nil){|is| ... }
 @todo ???
-¥Ö¥í¥Ã¥¯¤Ë [[c:Gem::Package::TarInput]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÍ¿¤¨¤ÆÉ¾²Á¤·¤Ş¤¹¡£
+ãƒ–ãƒ­ãƒƒã‚¯ã« [[c:Gem::Package::TarInput]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä¸ãˆã¦è©•ä¾¡ã—ã¾ã™ã€‚
 
-@param io ¼«¿È¤Ë´ØÏ¢ÉÕ¤±¤ë IO ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param io è‡ªèº«ã«é–¢é€£ä»˜ã‘ã‚‹ IO ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @param security_policy ???
 

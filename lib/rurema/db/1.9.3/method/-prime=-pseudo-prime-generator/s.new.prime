@@ -2,9 +2,9 @@ names=new
 visibility=public
 kind=defined
 
---- new(upper_bound = nil)
+--- new(upper_bound = nil) -> Prime::PseudoPrimeGenerator
 
-¼«¿È¤ò½é´ü²½¤·¤Ş¤¹¡£
+è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param upper_bound Îóµó¤¹¤ëÁÇ¿ô¤Î¾å³¦¤ò»ØÄê¤·¤Ş¤¹¡£
+@param upper_bound åˆ—æŒ™ã™ã‚‹ç´ æ•°ã®ä¸Šç•Œã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

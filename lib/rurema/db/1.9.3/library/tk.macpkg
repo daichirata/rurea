@@ -3,5 +3,6 @@ classes=TkMacResource
 methods=Tk/s.load_tclscript_rsrc.tk.macpkg,Tk/s.load_tclscript_rsrcid.tk.macpkg
 sublibraries=
 is_sublibrary=true
+category=
 
 

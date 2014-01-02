@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- close_on_empty_response -> bool
-�쥹�ݥ󥹤��ܥǥ�����äƤ��ʤ����˥��ͥ�������
-�Ĥ��뤫�ɤ������֤��ޤ���
+レスポンスがボディを持っていない場合にコネクションを
+閉じるかどうかを返します。
 
-�ǥե���ȤǤϵ�(�Ĥ��ʤ�)�Ǥ���
+デフォルトでは偽(閉じない)です。
 
 @see [[m:Net::HTTP#close_on_empty_response=]]
 

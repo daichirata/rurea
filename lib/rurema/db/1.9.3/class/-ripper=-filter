@@ -6,12 +6,12 @@ library=ripper.filter
 aliases=
 aliasof=
 
-���٥�ȥɥ�֥󥹥������ Ruby �ץ�������ù����뤿��Υ��饹�Ǥ���
+イベントドリブンスタイルで Ruby プログラムを加工するためのクラスです。
 
-���Υ��饹��Ѿ����ơ�ɬ�פʥ��٥�Ȥ��б�����᥽�åɤ�������ƻ��Ѥ�
-�ޤ���
+このクラスを継承して、必要なイベントに対応するメソッドを定義して使用し
+ます。
 
-=== ������
+=== 使用例
 
   require 'ripper'
   require 'cgi'
@@ -36,8 +36,8 @@ aliasof=
   
   Ruby2HTML.new(ARGF).parse('')
 
-Ruby �ץ���������Ϥ��ơ�[[m:Ripper::SCANNER_EVENTS]] �ˤ��륹�����
-���٥�Ȥ�¹Ԥ��ޤ������٥�Ȥϥץ������˽񤤤����֤Ǽ¹Ԥ���ޤ���
+Ruby プログラムを解析して、[[m:Ripper::SCANNER_EVENTS]] にあるスキャナ
+イベントを実行します。イベントはプログラムに書いた順番で実行されます。
 
-�嵭����Ǥϡ�parse �᥽�åɤ��Ϥ�����ʸ��������ͤȤ��ơ����٥�ȥ�
-��ɥ餬 ARGF ���Ϥ��줿 Ruby �ץ������� HTML �ˤ����֤��ޤ���
+上記の例では、parse メソッドに渡した空文字列を初期値として、イベントハ
+ンドラが ARGF で渡された Ruby プログラムを HTML にして返します。

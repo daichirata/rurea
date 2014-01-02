@@ -4,8 +4,8 @@ kind=defined
 
 --- group    -> ThreadGroup | nil
 
-¥¹¥ì¥Ã¥É¤¬Â°¤·¤Æ¤¤¤ë [[c:ThreadGroup]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹¡£
-»à¤ó¤Ç¤¤¤ë¥¹¥ì¥Ã¥É¤Ï nil ¤òÊÖ¤·¤Ş¤¹¡£
+ã‚¹ãƒ¬ãƒƒãƒ‰ãŒå±ã—ã¦ã„ã‚‹ [[c:ThreadGroup]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
+æ­»ã‚“ã§ã„ã‚‹ã‚¹ãƒ¬ãƒƒãƒ‰ã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
     p Thread.current.group == ThreadGroup::Default
     # => true

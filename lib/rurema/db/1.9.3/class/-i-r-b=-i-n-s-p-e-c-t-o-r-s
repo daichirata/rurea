@@ -6,4 +6,4 @@ library=irb.inspector
 aliases=
 aliasof=
 
-ÄêµÁ¤µ¤ì¤¿ inspect_mode ¤ò´ÉÍı¤¹¤ë [[c:Hash]] ¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤¹¡£
+å®šç¾©ã•ã‚ŒãŸ inspect_mode ã‚’ç®¡ç†ã™ã‚‹ [[c:Hash]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚

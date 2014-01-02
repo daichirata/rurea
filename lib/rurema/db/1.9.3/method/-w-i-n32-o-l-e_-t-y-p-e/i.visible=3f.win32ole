@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- visible? -> bool
-¤³¤Î·¿¤¬¸ø³«¤µ¤ì¤Æ¤¤¤ë¤«¤É¤¦¤«¤ò¾È²ñ¤·¤Ş¤¹¡£
+ã“ã®å‹ãŒå…¬é–‹ã•ã‚Œã¦ã„ã‚‹ã‹ã©ã†ã‹ã‚’ç…§ä¼šã—ã¾ã™ã€‚
 
-@return ¸ø³«¤µ¤ì¤Æ¤¤¤ì¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
+@return å…¬é–‹ã•ã‚Œã¦ã„ã‚Œã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Application')
   p tobj.visible?  # => true

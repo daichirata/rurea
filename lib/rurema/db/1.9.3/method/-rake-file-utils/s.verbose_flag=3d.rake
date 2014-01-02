@@ -4,9 +4,9 @@ kind=defined
 
 --- verbose_flag=(flag)
 
-�ܺ٤�ɽ�����뤫�ɤ������ꤷ�ޤ���
+詳細を表示するかどうか設定します。
 
-@param flag �ܺ٤�ɽ�����뤫�ɤ������ꤷ�ޤ���������ꤹ��Ⱦܺ٤�ɽ�����ޤ���
+@param flag 詳細を表示するかどうか指定します。真を指定すると詳細を表示します。
 
 
 

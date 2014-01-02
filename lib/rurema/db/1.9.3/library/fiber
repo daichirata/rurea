@@ -3,7 +3,8 @@ classes=
 methods=Fiber/s.current.fiber,Fiber/i.transfer.fiber,Fiber/i.alive=3f.fiber
 sublibraries=
 is_sublibrary=false
+category=
 
-·ÚÎÌ¥¹¥ì¥Ã¥É Fiber ¤ò¥³¥ë¡¼¥Á¥óÅª¤Ë°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+è»½é‡ã‚¹ãƒ¬ãƒƒãƒ‰ Fiber ã‚’ã‚³ãƒ«ãƒ¼ãƒãƒ³çš„ã«æ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
 @see [[c:Fiber]]

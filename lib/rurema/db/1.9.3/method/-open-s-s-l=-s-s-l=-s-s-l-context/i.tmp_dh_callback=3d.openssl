@@ -3,30 +3,30 @@ visibility=public
 kind=defined
 
 --- tmp_dh_callback=(cb)
-���Ū DH �����������뤿��Υ�����Хå������ꤷ�ޤ���
+一時的 DH 鍵を生成するためのコールバックを設定します。
 
-������Хå��ˤ� [[c:Proc]] �� [[c:Method]] ���Ϥ��ޤ���
+コールバックには [[c:Proc]] や [[c:Method]] を渡します。
 
-�Ź�ǰ��Ū�� DH �������Ѥ�����ˤϤ��Υ�����Хå���
-�ƤӤ����졢�ƤӤ����줿�֥��å���Ŭ�ڤʸ��ѥ�᡼�����֤��ʤ����
-�ʤ�ޤ��󡣤�������ꤹ��֥��å���
+暗号で一時的な DH 鍵を利用する場合にはこのコールバックが
+呼びだされ、呼びだされたブロックは適切な鍵パラメータを返さなければ
+なりません。これで設定するブロックは
   proc{|sslsocket, is_export, keylen| ... }
-�Ȥ�����������褦�ˤ��ޤ������줾��ΰ����ΰ�̣��
-  * sslsocket �̿��˻Ȥ��� [[c:OpenSSL::SSL::SSLSocket]] ���֥�������
-  * is_export ͢�е����Τ���Ź�����Ѥ��뤫�ɤ�����0��0�ʳ����ǻ���
-  * keylen ��Ĺ
-�Ȥʤ�ޤ����֥��å����֤��ͤˤ�Ŭ�ڤʸ��ѥ�᡼����ޤ� 
-[[c:OpenSSL::PKey::DH]] ���֥������Ȥ��֤��ޤ������ѥ�᡼����
-keylen �ǻ��ꤵ�줿��Ĺ���б�������ΤǤʤ���Фʤ�ޤ���
+という引数を取るようにします。それぞれの引数の意味は
+  * sslsocket 通信に使われる [[c:OpenSSL::SSL::SSLSocket]] オブジェクト
+  * is_export 輸出規制のある暗号を利用するかどうかを0か0以外かで指定
+  * keylen 鍵長
+となります。ブロックの返り値には適切な鍵パラメータを含む 
+[[c:OpenSSL::PKey::DH]] オブジェクトを返します。鍵パラメータは
+keylen で指定された鍵長に対応したものでなければなりません。
 
-[[c:OpenSSL::PKey::DH]] �� DH �ѥ�᡼���� DH ���Ф�
-�ݻ����Ƥ��ޤ�����������֤���륪�֥������Ȥϥѥ�᡼������
-�Ѥ����ޤ���
+[[c:OpenSSL::PKey::DH]] は DH パラメータと DH 鍵対を
+保持していますが、これで返されるオブジェクトはパラメータしか
+用いられません。
 
-cb �� nil ����ꤹ��ȥǥե���ȤΥѥ�᡼�������Ѥ���ޤ���
+cb に nil を指定するとデフォルトのパラメータが利用されます。
 
-�ǥե�����ͤ� nil �Ǥ���
+デフォルト値は nil です。
 
-@param cb ���ꤹ�륳����Хå�
+@param cb 設定するコールバック
 @see [[m:OpenSSL::SSL::SSLContext#tmp_dh_callback]]
 

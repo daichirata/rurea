@@ -4,7 +4,7 @@ kind=defined
 
 --- sync    -> bool
 
-���ߤν��Ϥ�Ʊ���⡼�ɤʤ�� true ���֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+現在の出力が同期モードならば true を返します。そうでない場合は false を返します。
 
-@raise IOError ���� close ����Ƥ�������ȯ�����ޤ��� 
+@raise IOError 既に close されていた場合に発生します。 
 

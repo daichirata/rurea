@@ -4,9 +4,9 @@ kind=defined
 
 --- realdirpath(basedir = nil) -> Pathname
 
-[[m:Pathname#realpath]] �Ȥۤ�Ʊ���ǡ��Ǹ�Υ���ݡ��ͥ�Ȥϼºݤ�
-¸�ߤ��ʤ��Ƥ⥨�顼�ˤʤ�ޤ���
+[[m:Pathname#realpath]] とほぼ同じで、最後のコンポーネントは実際に
+存在しなくてもエラーになりません。
 
-@param basedir �١����ǥ��쥯�ȥ����ꤷ�ޤ�����ά����ȥ����ȥǥ��쥯�ȥ�ˤʤ�ޤ���
+@param basedir ベースディレクトリを指定します。省略するとカレントディレクトリになります。
 
 @see [[m:Pathname#realpath]]

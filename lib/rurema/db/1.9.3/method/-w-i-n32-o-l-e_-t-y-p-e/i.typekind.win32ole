@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- typekind -> Integer
-self¤Î¼ïÎà¤ò¼¨¤¹ÃÍ¤ò¼èÆÀ¤·¤Þ¤¹¡£
+selfã®ç¨®é¡žã‚’ç¤ºã™å€¤ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-ÃÍ¤Î°ÕÌ£¤Ë¤Ä¤¤¤Æ¤Ï¡¢[[m:WIN32OLE_TYPE#ole_type]]¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+å€¤ã®æ„å‘³ã«ã¤ã„ã¦ã¯ã€[[m:WIN32OLE_TYPE#ole_type]]ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@return ·¿¤Î¼ïÎà¤ò¼¨¤¹¿ôÃÍ¤òÊÖ¤·¤Þ¤¹¡£
-@raise WIN32OLERuntimeError ·¿¤Î¼ïÎà¡ÊTYPEKIND¡Ë¤ò¼èÆÀ¤Ç¤­¤Ê¤¤¾ì¹ç¤ËÄÌÃÎ¤·¤Þ¤¹¡£
+@return åž‹ã®ç¨®é¡žã‚’ç¤ºã™æ•°å€¤ã‚’è¿”ã—ã¾ã™ã€‚
+@raise WIN32OLERuntimeError åž‹ã®ç¨®é¡žï¼ˆTYPEKINDï¼‰ã‚’å–å¾—ã§ããªã„å ´åˆã«é€šçŸ¥ã—ã¾ã™ã€‚
 
   tobj = WIN32OLE_TYPE.new('Microsoft Word 14.0 Object Library', 'Documents')
   p tobj.typekind   # => 4

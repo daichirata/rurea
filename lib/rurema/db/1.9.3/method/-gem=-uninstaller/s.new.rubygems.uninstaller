@@ -4,8 +4,8 @@ kind=defined
 
 --- new(gem, options = {})
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-@param gem ���󥤥󥹥ȡ��뤹�� Gem ����ꤷ�ޤ���
+@param gem アンインストールする Gem を指定します。
 
-@param options ���ץ�������ꤷ�ޤ���
+@param options オプションを指定します。

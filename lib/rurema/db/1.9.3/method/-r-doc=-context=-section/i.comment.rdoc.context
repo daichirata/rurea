@@ -4,5 +4,5 @@ kind=defined
 
 --- comment -> String | nil
 
-section �Υ����Ȥ��֤��ޤ���
+section のコメントを返します。
 

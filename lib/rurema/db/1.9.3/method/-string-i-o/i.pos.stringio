@@ -5,5 +5,5 @@ kind=defined
 --- pos    -> Integer
 --- tell   -> Integer
 
-���Ȥθ��ߤΰ��֤��֤��ޤ���
+自身の現在の位置を返します。
 

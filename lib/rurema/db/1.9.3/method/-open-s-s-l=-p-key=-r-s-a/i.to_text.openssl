@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- to_text -> String
-����ʹ֤��ɤ��������Ѵ����ޤ���
+鍵を人間が読める形式に変換します。
 

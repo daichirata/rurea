@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- SESSION_CACHE_SERVER -> Integer
-������¦�ǥ��å����򥭥�å��夹�뤳�Ȥ��̣���ޤ���
+サーバ側でセッションをキャッシュすることを意味します。
 
-[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] ��
-�Ϥ��ե饰�Ȥ����Ѥ��ޤ���
+[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] に
+渡すフラグとして用います。
 
-���Υե饰��Ω�äƤ���ȥ�����¦�� [[c:OpenSSL::SSL::SSLContext]] 
-�ǥ��å���󥭥�å�����ݻ��ȴ����������Ѥ�
-�Ԥ��ޤ���
+このフラグが立っているとサーバ側の [[c:OpenSSL::SSL::SSLContext]] 
+でセッションキャッシュの保持と管理、再利用が
+行われます。
 
-���Υե饰�ϥǥե���Ȥ�ͭ���ˤʤäƤ��ޤ���
+このフラグはデフォルトで有効になっています。
 

@@ -1,19 +1,21 @@
 names=singleton_class
-visibility=private 
+visibility=public
 kind=defined
 
 --- singleton_class -> Class
 
-¥ì¥·¡¼¥Ð¤ÎÆÃ°Û¥¯¥é¥¹¤òÊÖ¤·¤Þ¤¹¡£
-¤Þ¤ÀÆÃ°Û¥¯¥é¥¹¤¬¤Ê¤±¤ì¤Ð¡¢¿·¤·¤¯ºîÀ®¤·¤Þ¤¹¡£
+ãƒ¬ã‚·ãƒ¼ãƒã®ç‰¹ç•°ã‚¯ãƒ©ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
+ã¾ã ç‰¹ç•°ã‚¯ãƒ©ã‚¹ãŒãªã‘ã‚Œã°ã€æ–°ã—ãä½œæˆã—ã¾ã™ã€‚
 
-¥ì¥·¡¼¥Ð¤¬ nil ¤« true ¤« false ¤Ê¤é¡¢¤½¤ì¤¾¤ì NilClass, TrueClass,
-FalseClass ¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ¬ã‚·ãƒ¼ãƒãŒ nil ã‹ true ã‹ false ãªã‚‰ã€ãã‚Œãžã‚Œ NilClass, TrueClass,
+FalseClass ã‚’è¿”ã—ã¾ã™ã€‚
 
-@raise TypeError ¥ì¥·¡¼¥Ð¤¬ Fixnum ¤« Symbol ¤Î¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise TypeError ãƒ¬ã‚·ãƒ¼ãƒãŒ Fixnum ã‹ Symbol ã®å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
    Object.new.singleton_class  #=> #<Class:#<Object:0xb7ce1e24>>
    String.singleton_class      #=> #<Class:String>
    nil.singleton_class         #=> NilClass
 
 @see [[m:Object#class]]
+
+

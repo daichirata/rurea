@@ -4,10 +4,10 @@ kind=defined
 
 --- read    -> String | nil
 
-�ǥ��쥯�ȥꥹ�ȥ꡼�फ�鼡�����Ǥ��ɤ߽Ф����֤��ޤ����Ǹ������
-�ޤ��ɤ߽Ф��Ƥ���� nil ���֤��ޤ���
+ディレクトリストリームから次の要素を読み出して返します。最後の要素
+まで読み出していれば nil を返します。
 
-@raise Errno::EXXX �ǥ��쥯�ȥ���ɤ߽Ф��˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX ディレクトリの読み出しに失敗した場合に発生します。
 
-@raise IOError ���˼��Ȥ� close ���Ƥ������ȯ�����ޤ���
+@raise IOError 既に自身が close している場合に発生します。
 

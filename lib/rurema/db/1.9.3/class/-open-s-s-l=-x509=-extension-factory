@@ -6,35 +6,35 @@ library=openssl
 aliases=
 aliasof=
 
-[[c:OpenSSL::X509::Extension]] ¤ò´ÊÊØ¤ËÀ¸À®¤¹¤ë¤¿¤á¤Î
-¥¯¥é¥¹¤Ç¤¹¡£
+[[c:OpenSSL::X509::Extension]] ã‚’ç°¡ä¾¿ã«ç”Ÿæˆã™ã‚‹ãŸã‚ã®
+ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
 
-Îã
-  # ca_cert: CA ¤Î¾ÚÌÀ½ñ¥ª¥Ö¥¸¥§¥¯¥È
-  # req: CSR ¥ª¥Ö¥¸¥§¥¯¥È
-  # newcert: ¿·¤¿¤ËÀ¸À®¤¹¤ë¾ÚÌÀ½ñ¤Î¥ª¥Ö¥¸¥§¥¯¥È
+ä¾‹
+  # ca_cert: CA ã®è¨¼æ˜æ›¸ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+  # req: CSR ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+  # newcert: æ–°ãŸã«ç”Ÿæˆã™ã‚‹è¨¼æ˜æ›¸ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
   ca_cert = OpenSSL::X509::Certificate.new(File.read('ca_cert.pem'))
   req = OpenSSL::X509::Request.new(File.read('req.pem'))
   newcert = OpenSSL::X509::Certificate.new
-  # ¿·¤·¤¤ ExtensionFactory ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¡¢ CA ¤Î¾ÚÌÀ½ñ¥ª¥Ö¥¸¥§¥¯¥È
-  # ¤òÀßÄê
+  # æ–°ã—ã„ ExtensionFactory ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã€ CA ã®è¨¼æ˜æ›¸ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+  # ã‚’è¨­å®š
   factory = OpenSSL::X509::ExtensionFactory.new(ca_cert)
-  # CSR ¥ª¥Ö¥¸¥§¥¯¥È¤òÀßÄê
+  # CSR ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨­å®š
   factory.subject_request = req
-  # basicConstraints ³ÈÄ¥ÎÎ°è¤òÀ¸À®
+  # basicConstraints æ‹¡å¼µé ˜åŸŸã‚’ç”Ÿæˆ
   p factory.create_extension("basicConstraints", "CA:FALSE")
   # => basicConstraints = CA:FALSE
 
-  # subjectKeyIdentifier ³ÈÄ¥ÎÎ°è¤òÀ¸À®
-  # ¤³¤ÎÃÍ¤Ï CSR ¥ª¥Ö¥¸¥§¥¯¥È¤Î¸ø³«¸°¤«¤éÀ¸À®¤µ¤ì¤ë
+  # subjectKeyIdentifier æ‹¡å¼µé ˜åŸŸã‚’ç”Ÿæˆ
+  # ã“ã®å€¤ã¯ CSR ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®å…¬é–‹éµã‹ã‚‰ç”Ÿæˆã•ã‚Œã‚‹
   p factory.create_extension("subjectKeyIdentifier", "hash")
   # => subjectKeyIdentifier = 99:E7:A1:.....
   
-  # authorityKeyIdentifier ³ÈÄ¥ÎÎ°è¤òÀ¸À®
-  # ¤³¤ÎÃÍ¤Ï CA ¤Î¾ÚÌÀ½ñ¥ª¥Ö¥¸¥§¥¯¥È¤«¤éÀ¸À®¤µ¤ì¤ë
+  # authorityKeyIdentifier æ‹¡å¼µé ˜åŸŸã‚’ç”Ÿæˆ
+  # ã“ã®å€¤ã¯ CA ã®è¨¼æ˜æ›¸ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰ç”Ÿæˆã•ã‚Œã‚‹
   p factory.create_extension("authorityKeyIdentifier", "keyid,issuer:always")
   # => authorityKeyIdentifier = keyid:D1:AB:87:....
   
-  # À¸À®¤·¤¿³ÈÄ¥ÎÎ°è¥ª¥Ö¥¸¥§¥¯¥È¤ò¾ÚÌÀ½ñ¤Î³ÈÄ¥ÎÎ°è¤ËÄÉ²Ã
+  # ç”Ÿæˆã—ãŸæ‹¡å¼µé ˜åŸŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨¼æ˜æ›¸ã®æ‹¡å¼µé ˜åŸŸã«è¿½åŠ 
   newcert.add_extension(factory.create_extension("basicConstraints", "CA:FALSE"))

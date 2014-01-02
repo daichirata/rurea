@@ -4,6 +4,6 @@ kind=defined
 
 --- file_name -> String
 
-�ե�����̾��ʸ������֤��ޤ���
+ファイル名を文字列で返します。
 
 

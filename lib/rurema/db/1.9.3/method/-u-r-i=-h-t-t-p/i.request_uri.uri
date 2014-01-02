@@ -4,12 +4,12 @@ kind=defined
 
 --- request_uri     -> String
 
-¼«¿È¤Î¡Öpath + '?' + query¡×¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
-query ¤¬ nil ¤Ç¤¢¤ë¾ì¹ç¤Ï¡¢¼«¿È¤Î path ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã®ã€Œpath + '?' + queryã€ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
+query ãŒ nil ã§ã‚ã‚‹å ´åˆã¯ã€è‡ªèº«ã® path ã‚’è¿”ã—ã¾ã™ã€‚
 
-path ¤¬¶õ¤Ç¤¢¤ë¾ì¹ç¤Ë¤Ï¡¢path ¤Ï¡Ö'/'¡×¤Ç¤¢¤ë¤È¤·¤Þ¤¹¡£
+path ãŒç©ºã§ã‚ã‚‹å ´åˆã«ã¯ã€path ã¯ã€Œ'/'ã€ã§ã‚ã‚‹ã¨ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
   u = URI.parse("http://example.com/search?q=xxx")
   p u.request_uri                                  #=> "/search?q=xxx"

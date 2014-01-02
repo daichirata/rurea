@@ -4,9 +4,9 @@ kind=defined
 
 --- [](task_name, scopes = nil) -> Rake::Task
 
-Ϳ����줿������̾�˥ޥå����륿�����򸡺����ޤ���
+与えられたタスク名にマッチするタスクを検索します。
 
-@param task_name ������̾����ꤷ�ޤ���
+@param task_name タスク名を指定します。
 
-@param scopes �������פ���ꤷ�ޤ���
+@param scopes スコープを指定します。
 

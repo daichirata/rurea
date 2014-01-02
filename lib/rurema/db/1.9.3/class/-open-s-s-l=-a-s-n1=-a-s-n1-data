@@ -6,10 +6,10 @@ library=openssl
 aliases=
 aliasof=
 
-ASN.1 �ǡ�������ɽ�����饹��
+ASN.1 データ型を表すクラス。
 
-UNIVERSAL �ʥ�������� ASN.1 �ͤϤ��Υ��饹��2�ĤΥ��֥��饹��
-[[c:OpenSSL::ASN1::Primitive]] �⤷���� [[c:OpenSSL::ASN1::Constructive]]
-�Υ��󥹥��󥹤Ȥ���ɽ������ޤ���
+UNIVERSAL なタグを持つ ASN.1 値はこのクラスの2つのサブクラス、
+[[c:OpenSSL::ASN1::Primitive]] もしくは [[c:OpenSSL::ASN1::Constructive]]
+のインスタンスとして表現されます。
 
-����ʳ����ͤϤ��Υ��饹�Υ��󥹥��󥹤Ȥ���ɽ������ޤ���
+それ以外の値はこのクラスのインスタンスとして表現されます。

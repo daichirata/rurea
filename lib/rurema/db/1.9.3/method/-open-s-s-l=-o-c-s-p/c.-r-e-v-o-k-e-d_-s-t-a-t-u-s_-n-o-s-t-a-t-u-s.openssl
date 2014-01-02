@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- REVOKED_STATUS_NOSTATUS -> Integer
-[[m:OpenSSL::OCSP::BasicResponse#status]] ¤Î¼º¸úÍıÍ³¥³¡¼¥É¤Ç¡¢
-BasicResponse ¤Ë¥³¡¼¥É¤¬´Ş¤Ş¤ì¤Æ¤¤¤Ê¤¤¤³¤È¤ò°ÕÌ£¤·¤Ş¤¹¡£
+[[m:OpenSSL::OCSP::BasicResponse#status]] ã®å¤±åŠ¹ç†ç”±ã‚³ãƒ¼ãƒ‰ã§ã€
+BasicResponse ã«ã‚³ãƒ¼ãƒ‰ãŒå«ã¾ã‚Œã¦ã„ãªã„ã“ã¨ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
 

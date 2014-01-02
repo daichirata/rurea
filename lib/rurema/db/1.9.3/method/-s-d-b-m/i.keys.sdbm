@@ -4,7 +4,7 @@ kind=defined
 
 --- keys -> [String]
 
-�ǡ����١������¸�ߤ��륭�����Ƥ�ޤ�������֤��ޤ���
+データベース中に存在するキー全てを含む配列を返します。
 
   require 'sdbm'
   

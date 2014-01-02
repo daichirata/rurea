@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- new -> Prime
-���Ȥθߴ����Τ���Υ᥽�åɤǤ����������ץ������Ǥ� [[m:Prime.instance]] �䥯�饹�᥽�åɤ����Ѥ��Ƥ���������
+過去との互換性のためのメソッドです。新しいプログラムでは [[m:Prime.instance]] やクラスメソッドを利用してください。
 
-���Υ᥽�åɤ��֤����󥹥��󥹤ϡ��ǥե���ȤΥ��󥹥��󥹤Ȥϰ�ä�[[c:Prime::OldCompatibility]] �ǳ�ĥ����Ƥ��ޤ���
+このメソッドが返すインスタンスは、デフォルトのインスタンスとは違って[[c:Prime::OldCompatibility]] で拡張されています。
 

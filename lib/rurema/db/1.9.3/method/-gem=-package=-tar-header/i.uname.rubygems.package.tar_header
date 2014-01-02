@@ -4,5 +4,5 @@ kind=defined
 
 --- uname -> String
 
-tar �Υإå��˴ޤޤ��桼��̾���֤��ޤ���
+tar のヘッダに含まれるユーザ名を返します。
 

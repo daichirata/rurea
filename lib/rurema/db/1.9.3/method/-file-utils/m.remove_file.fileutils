@@ -4,9 +4,9 @@ kind=defined
 
 --- remove_file(path, force = false) -> ()
 
-�ե����� path �������ޤ���
+ファイル path を削除します。
 
-@param path �������ե����롣
+@param path 削除するファイル。
 
-@param force ���ΤȤ��Ϻ�����ȯ������ [[c:StandardError]] ��̵�뤷�ޤ���
+@param force 真のときは削除中に発生した [[c:StandardError]] を無視します。
 

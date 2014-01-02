@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- extensions=(extensions)
-CRL ¤Î³ÈÄ¥ÎÎ°è¤ò extensions ¤Ç¹¹¿·¤·¤Ş¤¹¡£
+CRL ã®æ‹¡å¼µé ˜åŸŸã‚’ extensions ã§æ›´æ–°ã—ã¾ã™ã€‚
 
-extensions ¤Ë¤Ï [[c:OpenSSL::X509::Extension]] ¤ÎÇÛÎó¤òÅÏ¤·¤Ş¤¹¡£
+extensions ã«ã¯ [[c:OpenSSL::X509::Extension]] ã®é…åˆ—ã‚’æ¸¡ã—ã¾ã™ã€‚
 
-¹¹¿·Á°¤Î³ÈÄ¥ÎÎ°è¤Î¥Ç¡¼¥¿¤ÏÇË´ş¤µ¤ì¤Ş¤¹¡£
+æ›´æ–°å‰ã®æ‹¡å¼µé ˜åŸŸã®ãƒ‡ãƒ¼ã‚¿ã¯ç ´æ£„ã•ã‚Œã¾ã™ã€‚
 
-@param extensions ³ÈÄ¥ÎÎ°è¤Î¥Ç¡¼¥¿
-@raise OpenSSL::X509::CRLError ¹¹¿·¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param extensions æ‹¡å¼µé ˜åŸŸã®ãƒ‡ãƒ¼ã‚¿
+@raise OpenSSL::X509::CRLError æ›´æ–°ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™

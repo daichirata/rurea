@@ -3,15 +3,14 @@ visibility=public
 kind=defined
 
 --- [](member) -> object
-(���Υ᥽�åɤ� Struct �β��̥��饹�ˤΤ��������Ƥ��ޤ�)
-��¤�ΤΥ��Ф��ͤ��֤��ޤ���
+構造体のメンバの値を返します。
 
-@param member [[c:Fixnum]] �ǥ��ФΥ���ǥå�������ꤷ�ޤ���
-              [[c:Symbol]], [[c:String]] �ǥ��Ф�̾������ꤷ�ޤ���
+@param member [[c:Fixnum]] でメンバのインデックスを指定します。
+              [[c:Symbol]], [[c:String]] でメンバの名前を指定します。
 
-@raise IndexError member ��������¸�ߤ��ʤ����Ф���ꤷ������ȯ�����ޤ���
+@raise IndexError member が整数で存在しないメンバを指定した場合に発生します。
 
-@raise NameError member �� [[c:String]], [[c:Symbol]] ��¸�ߤ��ʤ����Ф���ꤷ������ȯ�����ޤ���
+@raise NameError member が [[c:String]], [[c:Symbol]] で存在しないメンバを指定した場合に発生します。
 
     Foo = Struct.new(:foo, :bar)
     obj = Foo.new('FOO', 'BAR')
@@ -20,6 +19,10 @@ kind=defined
     # p obj[:baz]     # => in `[]': no member 'baz' in struct (NameError)
     p obj[0]        # => "FOO"
     p obj[1]        # => "BAR"
-    p obj[-1]       # => "BAR"    # Array �Τ褦����Υ���ǥå��������Ǥ��ޤ���
+    p obj[-1]       # => "BAR"    # Array のように負のインデックスも指定できます。
     p obj[2]        # => in `[]': offset 2 too large for struct(size:2) (IndexError)
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
 

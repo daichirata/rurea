@@ -3,11 +3,12 @@ visibility=public
 kind=defined
 
 --- prepend(other_str) -> String
-Ê¸»úÎó other_str ¤òÀèÆ¬¤ËÇË²õÅª¤ËÄÉ²Ã¤·¤Þ¤¹¡£
+æ–‡å­—åˆ— other_str ã‚’å…ˆé ­ã«ç ´å£Šçš„ã«è¿½åŠ ã—ã¾ã™ã€‚
 
-@param other_str ÄÉ²Ã¤·¤¿¤¤Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param other_str è¿½åŠ ã—ãŸã„æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   a = "world"
   a.prepend("hello ") # => "hello world"
   a                   # => "hello world"
+

@@ -4,15 +4,15 @@ kind=defined
 
 --- tojis(str) -> String
 
-ʸ���� str �Υ��󥳡��ǥ��󥰤� iso-2022-jp ���Ѵ������֤��ޤ���
+文字列 str のエンコーディングを iso-2022-jp に変換して返します。
 
-Kconv.kconv(str, Kconv::JIS) ��Ʊ���Ǥ���
+Kconv.kconv(str, Kconv::JIS) と同じです。
 
-���Υ᥽�åɤ� MIME ���󥳡��ɤ��줿ʸ�����Ÿ������
-������Ⱦ�ѥ��ʤ����Ѥ��Ѵ����ޤ���
-�������Ѵ��������ʤ����ϡ� [[m:NKF.#nkf]]('-jxm0', str)
-��ȤäƤ���������
+このメソッドは MIME エンコードされた文字列を展開し、
+いわゆる半角カナを全角に変換します。
+これらを変換したくない場合は、 [[m:NKF.#nkf]]('-jxm0', str)
+を使ってください。
 
-@param str �Ѵ�����ʸ����
+@param str 変換元の文字列
 
 @see [[m:Kconv.#kconv]], [[m:String#tojis]]

@@ -4,9 +4,9 @@ kind=defined
 
 --- rewind -> nil
 
-Îóµó¾õÂÖ¤ò´¬¤­Ìá¤·¤Þ¤¹¡£
+åˆ—æŒ™çŠ¶æ…‹ã‚’å·»ãæˆ»ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
  generator = Prime::EratosthenesGenerator.new
  p generator.next #=> 2
  p generator.next #=> 3

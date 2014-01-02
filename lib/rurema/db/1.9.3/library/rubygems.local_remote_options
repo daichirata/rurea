@@ -1,8 +1,9 @@
-requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system
+requires=rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.user_interaction,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder
 classes=Gem=LocalRemoteOptions
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:Gem::Command]] ¤Ç»ÈÍÑ¤¹¤ë --local, --remote ¥ª¥×¥·¥ç¥ó¤Î¤¿¤á¤Î¥â¥¸¥å¡¼¥ë¤ò
-ÄêµÁ¤·¤¿¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:Gem::Command]] ã§ä½¿ç”¨ã™ã‚‹ --local, --remote ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®ãŸã‚ã®ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã‚’
+å®šç¾©ã—ãŸãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

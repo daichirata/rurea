@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- attributes=(attrs)
-CSR ¤Î attribute ¤ò¥¯¥ê¥¢¤·¤Æ¿·¤·¤¤ attribute ¤òÀßÄê¤·¤Ş¤¹¡£
+CSR ã® attribute ã‚’ã‚¯ãƒªã‚¢ã—ã¦æ–°ã—ã„ attribute ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 
-@param attrs ¿·¤¿¤ËÀßÄê¤¹¤ë attribute([[c:OpenSSL::X509::Attribute]] ¤Î
-       ¥¤¥ó¥¹¥¿¥ó¥¹)¤ÎÇÛÎó
+@param attrs æ–°ãŸã«è¨­å®šã™ã‚‹ attribute([[c:OpenSSL::X509::Attribute]] ã®
+       ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹)ã®é…åˆ—
 @see [[m:OpenSSL::X509::Request#attribute]]
      [[m:OpenSSL::X509::Request#add_attribute]]
 

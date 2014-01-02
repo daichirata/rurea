@@ -3,56 +3,57 @@ classes=Net=IMAP,Net=IMAP=ContinuationRequest,Net=IMAP=UntaggedResponse,Net=IMAP
 methods=
 sublibraries=
 is_sublibrary=false
+category=Network
 
-���Υ饤�֥��� Internet Message Access Protocol (IMAP) ��
-���饤����ȥ饤�֥��Ǥ���[[RFC:2060]] �򸵤�
-��������Ƥ��ޤ���
+このライブラリは Internet Message Access Protocol (IMAP) の
+クライアントライブラリです。[[RFC:2060]] を元に
+実装されています。
 
-=== IMAP �γ���
+=== IMAP の概要
 
-IMAP�����Ѥ���ˤϡ��ޤ������Ф���³����
-[[m:Net::IMAP#authenticate]] �⤷����
-[[m:Net::IMAP#login]] ��ǧ�ڤ��ޤ���
-IMAP �Ǥϥ᡼��ܥå����Ȥ�����ǰ�����פǤ���
-�᡼��ܥå����ϳ���Ū��̾��������ޤ���
-�ƥ᡼��ܥå����ϥ᡼����ݻ����뤳�Ȥ��Ǥ��ޤ���
-�᡼��ܥå����μ����ϥ����Х��եȥ������ˤ�äưۤʤ�ޤ���
-Unix�����ƥ�Ǥϡ��ǥ��쥯�ȥ곬�ؾ��
-�ե������ġ��Υ᡼��ܥå����Ȥߤʤ��Ƽ�������뤳�Ȥ�¿���Ǥ���
+IMAPを利用するには、まずサーバに接続し、
+[[m:Net::IMAP#authenticate]] もしくは
+[[m:Net::IMAP#login]] で認証します。
+IMAP ではメールボックスという概念が重要です。
+メールボックスは階層的な名前を持ちます。
+各メールボックスはメールを保持することができます。
+メールボックスの実装はサーバソフトウェアによって異なります。
+Unixシステムでは、ディレクトリ階層上の
+ファイルを個々のメールボックスとみなして実装されることが多いです。
 
-�᡼��ܥå�����Υ�å�����(�᡼��)����������硢
-�ޤ� [[m:Net::IMAP#select]] �⤷����
-[[m:Net::IMAP#examine]] �ǽ����оݤΥ᡼��ܥå�����
-���ꤹ��ɬ�פ�����ޤ��������������������ʤ�С�
-��selected�׾��֤˰ܹԤ������Υ᡼��ܥå������ֽ����оݤΡ�
-�᡼��ܥå����Ȥʤ�ޤ������Τ褦�ˤ��ƥ᡼��ܥå�����
-���򤷤Ƥ��顢selected���֤򽪤���(�̤Υ᡼��ܥå��������򤷤��ꡢ
-��³��λ������)�ޤǤ򥻥å����ȸƤӤޤ���
+メールボックス内のメッセージ(メール)を処理する場合、
+まず [[m:Net::IMAP#select]] もしくは
+[[m:Net::IMAP#examine]] で処理対象のメールボックスを
+指定する必要があります。これらの操作が成功したならば、
+「selected」状態に移行し、そのメールボックスが「処理対象の」
+メールボックスとなります。このようにしてメールボックスを
+選択してから、selected状態を終える(別のメールボックスを選択したり、
+接続を終了したり)までをセッションと呼びます。
 
-��å������ˤ�2����μ��̻Ҥ�¸�ߤ��ޤ���message sequence number ��
-UID �Ǥ���
+メッセージには2種類の識別子が存在します。message sequence number と
+UID です。
 
-message sequence number �ϥ᡼��ܥå�����γƥ�å�������1������
-����줿�ֹ�Ǥ������å������˽����оݤΥ᡼��ܥå�����
-�����ʥ�å��������ɲä��줿��硢���Υ�å�������
-message sequence number ��
-�Ǹ�Υ�å������� message sequence number+1�Ȥʤ�ޤ���
-��å�������᡼��ܥå�������ä������ˤϡ�Ϣ�֤η������褦��
-message sequence number ���դ��ؤ����ޤ���
+message sequence number はメールボックス内の各メッセージに1から順に
+振られた番号です。セッション中に処理対象のメールボックスに
+新たなメッセージが追加された場合、そのメッセージの
+message sequence number は
+最後のメッセージの message sequence number+1となります。
+メッセージをメールボックスから消した場合には、連番の穴を埋めるように
+message sequence number が付け替えられます。
 
-������UID �ϥ��å�����ۤ��ƹ���Ū���ݻ�����ޤ���
-����᡼��ܥå�����ΰۤʤ�2�ĤΥ�å�������Ʊ��  UID 
-����Ĥ��ȤϤ���ޤ���
-����ϡ���å��������᡼��ܥå������������줿��Ǥ���Ω���ޤ���
+一方、UID はセッションを越えて恒久的に保持されます。
+あるメールボックス内の異なる2つのメッセージが同じ  UID 
+を持つことはありません。
+これは、メッセージがメールボックスから削除された後でも成立します。
 
-��������UID �ϥ᡼��ܥå�����Ǿ���Ǥ��뤳�Ȥ�
-���ʾ���������Ƥ���Τǡ�
-IMAP ��Ȥ�ʤ��᡼�륢�ץꥱ������󤬥᡼��ν��֤�
-�Ѥ��Ƥ��ޤä����ϡ�UID ������ľ����ޤ���
+しかし、UID はメールボックス内で昇順であることが
+規格上要請されているので、
+IMAP を使わないメールアプリケーションがメールの順番を
+変えてしまった場合は、UID が振り直されます。
 
-=== ��
+=== 例
 
-�ǥե���ȤΥ᡼��ܥå���(INBOX)�����긵�ȥ��֥������Ȥ�ɽ�����롣
+デフォルトのメールボックス(INBOX)の送り元とサブジェクトを表示する。
   imap = Net::IMAP.new('mail.example.com')
   imap.authenticate('LOGIN', 'joe_user', 'joes_password')
   imap.examine('INBOX')
@@ -61,7 +62,7 @@ IMAP ��Ȥ�ʤ��᡼�륢�ץꥱ������󤬥᡼��ν��֤�
     puts "#{envelope.from[0].name}: \t#{envelope.subject}"
   end
 
-2003ǯ4��Υ᡼��򤹤٤� Mail/sent-mail ���� "Mail/sent-apr03" �ذ�ư������
+2003年4月のメールをすべて Mail/sent-mail から "Mail/sent-apr03" へ移動させる
 
   imap = Net::IMAP.new('mail.example.com')
   imap.authenticate('LOGIN', 'joe_user', 'joes_password')
@@ -75,8 +76,8 @@ IMAP ��Ȥ�ʤ��᡼�륢�ץꥱ������󤬥᡼��ν��֤�
   end
   imap.expunge
 
-=== ����åɰ�����
-Net::IMAP ������¹Ԥ򥵥ݡ��Ȥ��Ƥ��ޤ�����Ȥ��ơ�
+=== スレッド安全性
+Net::IMAP は並列実行をサポートしています。例として、
 
   imap = Net::IMAP.new("imap.foo.net", "imap2")
   imap.authenticate("cram-md5", "bar", "password")
@@ -86,72 +87,72 @@ Net::IMAP ������¹Ԥ򥵥ݡ��Ȥ��Ƥ��ޤ�����Ȥ��ơ�
   fetch_result = fetch_thread.value
   imap.disconnect
 
-�Ȥ���� FETCH ���ޥ�ɤ� SEARCH ���ޥ�ɤ�����˼¹Ԥ��ޤ���
+とすると FETCH コマンドと SEARCH コマンドを並列に実行します。
 
-=== ���顼�ˤĤ���
-IMAP �����Фϰʲ���3����Υ��顼������ޤ���
+=== エラーについて
+IMAP サーバは以下の3種類のエラーを送ります。
 
 : NO
-  ���ޥ�ɤ�����˴�λ���ʤ��ä����Ȥ��̣���ޤ���
-  �㤨�С���������ǤΥ桼��̾/�ѥ���ɤ��ְ�äƤ�����
-  ���򤷤��᡼��ܥå�����¸�ߤ��ʤ����ʤɤǤ���
+  コマンドが正常に完了しなかったことを意味します。
+  例えば、ログインでのユーザ名/パスワードが間違っていた、
+  選択したメールボックスが存在しない、などです。
 
 : BAD
-  ���饤����Ȥ���Υꥯ�����Ȥ򥵡��Ф�����Ǥ��ʤ��ä�
-  ���Ȥ��̣���ޤ���
-  ���饤����Ȥθ��ߤξ��֤ǤϻȤ��ʤ����ޥ�ɤ�Ȥ����Ȥ���
-  ���ˤ�ȯ�����ޤ����㤨�С�
-  selected����(SELECT/EXAMINE�Ǥ��ξ��֤˰ܹԤ���)�ˤʤ餺��
-  SEARCH ���ޥ�ɤ�Ȥ����Ȥ�������ȯ�����ޤ���
-  �����Ф��������顼(�ǥ����������줿�ʤ�)�ξ���
-  ���Υ��顼��ȯ�����ޤ���
+  クライアントからのリクエストをサーバが理解できなかった
+  ことを意味します。
+  クライアントの現在の状態では使えないコマンドを使おうとした
+  場合にも発生します。例えば、
+  selected状態(SELECT/EXAMINEでこの状態に移行する)にならずに
+  SEARCH コマンドを使おうとした場合に発生します。
+  サーバの内部エラー(ディスクが壊れたなど)の場合も
+  このエラーが発生します。
 
 : BYE
-  �����Ф���³���ڤ����Ȥ��Ƥ��뤳�Ȥ��̣���ޤ���
-  ������̾�Υ��������Ƚ�����ȯ�����ޤ���
-  �ޤ�������������˥����Ф�(�ʤ�餫����ͳ��)��³
-  �������ʤ����ˤ�ȯ�����ޤ���
-  ����ʳ��Ǥϡ������Ф�����åȥ����󤹤��礫
-  �����Ф������ॢ���Ȥ������ȯ�����ޤ���
+  サーバが接続を切ろうとしていることを意味します。
+  これは通常のログアウト処理で発生します。
+  また、ログイン時にサーバが(なんらかの理由で)接続
+  したくない場合にも発生します。
+  それ以外では、サーバがシャットダウンする場合か
+  サーバがタイムアウトする場合に発生します。
 
-�����Υ��顼�Ϥ��줾��
+これらのエラーはそれぞれ
   * [[c:Net::IMAP::NoResponseError]]
   * [[c:Net::IMAP::BadResponseError]]
   * [[c:Net::IMAP::ByeResponseError]]
-�Ȥ����㳰���饹���б����Ƥ��ޤ���
-����Ū�ˤϡ��������㳰�ϥ����Ф˥��ޥ�ɤ����ä����ˤ�
-���ȯ�������ǽ��������ޤ��������������Υɥ�����ȤǤ�
-�褯���륨�顼�Τ߲��⤷�ޤ���
+という例外クラスに対応しています。
+原理的には、これらの例外はサーバにコマンドを送った場合には
+常に発生する可能性があります。しかし、このドキュメントでは
+よくあるエラーのみ解説します。
 
-IMAP �� Socket ���̿��򤹤뤿�ᡢIMAP���饹�Υ᥽�åɤ�
-Socket ��Ϣ�Υ��顼��ȯ�����뤫�⤷��ޤ����㤨�С�
-�̿������³���ڤ��� [[c:Errno::EPIPE]] �㳰��
-ȯ�����ޤ����ܤ����� [[c:Socket]] �ʤɤ򸫤Ƥ���������
+IMAP は Socket で通信をするため、IMAPクラスのメソッドは
+Socket 関連のエラーが発生するかもしれません。例えば、
+通信中に接続が切れると [[c:Errno::EPIPE]] 例外が
+発生します。詳しくは [[c:Socket]] などを見てください。
 
-[[c:Net::IMAP::DataFormatError]]��
-[[c:Net::IMAP::ResponseParseError]] �Ȥ����㳰���饹��
-¸�ߤ��ޤ������Ԥϥǡ����Υե����ޥåȤ��������ʤ����ˡ�
-��Ԥϥ����Ф���Υ쥹�ݥ󥹤��ѡ����Ǥ��ʤ�����ȯ�����ޤ���
-�����Υ��顼�Ϥ��Υ饤�֥��⤷���ϥ����Ф˿�������꤬
-���뤳�Ȥ��̣���ޤ���
+[[c:Net::IMAP::DataFormatError]]、
+[[c:Net::IMAP::ResponseParseError]] という例外クラスも
+存在します。前者はデータのフォーマットが正しくない場合に、
+後者はサーバからのレスポンスがパースできない場合に発生します。
+これらのエラーはこのライブラリもしくはサーバに深刻な問題が
+あることを意味します。
 
-=== tagged response �� untagged response
-IMAP �ץ��ȥ���ˤ����ƥ����Ф���α����ˤ� tagged �ʤ�Τ�
-untagged �ʤ�Τ�2�̤�¸�ߤ��ޤ���
-tagged �ʱ����ϡ����饤����Ȥ���Υ��ޥ�ɤ�
-�����⤷���ϼ��ԤΤ����줫�Ǵ�λ�������Ȥ�ɽ����ΤǤ���
-���� untagged �ʱ����Ϥ���ʳ��ξ�����Ϥ�����Τ�ΤǤ���
-untagged �ʱ����ϥ��饤����Ȥ���Υ��ޥ�ɤη�̤ξ����
-�Ϥ�����ˤ��Ѥ����ޤ����������Ǥʤ�(�����ФΥ���åȥ�����ʤ�)
-��ȯŪ�����ˤ��Ѥ����ޤ���
+=== tagged response と untagged response
+IMAP プロトコルにおいてサーバからの応答には tagged なものと
+untagged なものの2通り存在します。
+tagged な応答は、クライアントからのコマンドが
+成功もしくは失敗のいずれかで完了したことを表すものです。
+一方 untagged な応答はそれ以外の情報を渡すためのものです。
+untagged な応答はクライアントからのコマンドの結果の情報を
+渡すためにも用いられますし、そうでない(サーバのシャットダウンなど)
+自発的応答にも用いられます。
 
-����Ϥ��줾��
-[[c:Net::IMAP::TaggedResponse]] �� [[c:Net::IMAP::UntaggedResponse]]
-���б����ޤ���
+これはそれぞれ
+[[c:Net::IMAP::TaggedResponse]] と [[c:Net::IMAP::UntaggedResponse]]
+に対応します。
 
-untagged �ʱ����ϥ��ޥ�ɤ������Ȥ���Ʊ��Ū�˥����Ф��������뤿�ᡢ
-[[c:Net::IMAP]] ���֥������Ȥϥ桼���Τ��ᤳ���
-[[m:Net::IMAP#responses]] �˵�Ͽ���Ƥ����ޤ���
+untagged な応答はコマンドの送信とは非同期的にサーバから送られるため、
+[[c:Net::IMAP]] オブジェクトはユーザのためこれを
+[[m:Net::IMAP#responses]] に記録しておきます。
 
 === References
 
@@ -188,6 +189,6 @@ untagged �ʱ����ϥ��ޥ�ɤ������Ȥ���Ʊ��Ū�˥����Ф��������뤿�ᡢ
   * [RSSL]
     [[url:http://savannah.gnu.org/projects/rubypki]]
 
-�ʾ�Τ����������Ĥ��� RFC �� obsolete �ˤʤä��֤��������Ƥ��ޤ���
-[[RFC:2060]] �� [[RFC:3501]] �ˡ�[[RFC:822]] �� [[RFC:2822]] �ˡ�
-�֤��������Ƥ��ޤ���
+以上のうち、いくつかの RFC は obsolete になって置き換えられています。
+[[RFC:2060]] は [[RFC:3501]] に、[[RFC:822]] は [[RFC:2822]] に、
+置き換えられています。

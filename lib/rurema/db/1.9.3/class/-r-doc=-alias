@@ -6,7 +6,7 @@ library=rdoc.alias
 aliases=
 aliasof=
 
-alias���줿�᥽�åɤ�ɽ�����륯�饹�Ǥ���
+aliasされたメソッドを表現するクラスです。
 
 
-�饤�֥��������ǻ��Ѥ��ޤ���
+ライブラリの内部で使用します。

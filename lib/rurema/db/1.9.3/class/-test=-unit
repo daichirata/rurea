@@ -6,4 +6,4 @@ library=test.unit
 aliases=
 aliasof=
 
-��˥åȥƥ��Ȥ�Ԥ�����Υ⥸�塼��Ǥ���
+ユニットテストを行うためのモジュールです。

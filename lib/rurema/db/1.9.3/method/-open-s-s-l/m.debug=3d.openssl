@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- debug=(b)
-¥Ç¥Ğ¥Ã¥°¥â¡¼¥É¤ò on/off ¤·¤Ş¤¹¡£
+ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã‚’ on/off ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL.#debug]]
 

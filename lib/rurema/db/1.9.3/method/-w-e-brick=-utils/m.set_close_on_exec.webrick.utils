@@ -4,10 +4,10 @@ kind=defined
 
 --- set_close_on_exec(io)    -> ()
 
-���ꤵ�줿 io �� Fcntl::FD_CLOEXEC �� 1 �����ꤷ�ޤ���
-���� io �� [[m:Kernel.#exec]] �ʤɤ��¹Ԥ������� close �����褦�ˤʤ�ޤ���
+指定された io の Fcntl::FD_CLOEXEC を 1 に設定します。
+この io は [[m:Kernel.#exec]] などが実行される時に close されるようになります。
 
-@param io IO ���֥������Ȥ���ꤷ�ޤ���
+@param io IO オブジェクトを指定します。
 
 @see [[man:fcntl(2)]]
 

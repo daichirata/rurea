@@ -4,7 +4,7 @@ kind=defined
 
 --- new(path) -> IRB::FileInputMethod
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-@param path �ѥ���ʸ����ǻ��ꤷ�ޤ���
+@param path パスを文字列で指定します。
 

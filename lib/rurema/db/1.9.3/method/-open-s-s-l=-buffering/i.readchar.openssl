@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- readchar -> String
-�Хåե�����1ʸ���ɤ߹��ߡ������֤��ޤ���
+バッファから1文字読み込み、それ返します。
 
-�ɤ߹��ߤ���ü����ã���Ƥ�������㳰 EOFError ���֤��ޤ���
+読み込みが終端に到達している場合は例外 EOFError を返します。
 
-[[m:IO#readchar]] ��Ʊ�ͤǤ���
+[[m:IO#readchar]] と同様です。
 
-@raise EOFError �ɤ߹��ߤ���ü����ã��������ȯ�����ޤ���
+@raise EOFError 読み込みが終端に到達した場合に発生します。
 

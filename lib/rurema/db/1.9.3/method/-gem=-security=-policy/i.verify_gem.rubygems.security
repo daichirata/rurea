@@ -4,16 +4,16 @@ kind=defined
 
 --- verify_gem(signature, data, chain, time = Time.now) -> Array
 
-Ϳ����줿�ǡ�����Ϳ����줿��̾�Ⱦ������������Ǹ��ڤ��ޤ���
+与えられたデータを与えられた署名と証明書チェーンで検証します。
 
-@param signature ��̾����ꤷ�ޤ���
+@param signature 署名を指定します。
 
-@param data ���ڤ���ǡ�������ꤷ�ޤ���
+@param data 検証するデータを指定します。
 
-@param chain ���ڤǻ��Ѥ������������������ꤷ�ޤ���
+@param chain 検証で使用する証明書チェーンを指定します。
 
-@param time ���λ����ͭ���Ǥ��뤳�Ȥ򸡾ڤ��롣
+@param time この時刻に有効であることを検証する。
 
-@raise Gem::Security::Exception ���ڤ˼��Ԥ�������ȯ�����ޤ���
+@raise Gem::Security::Exception 検証に失敗した場合に発生します。
 
 

@@ -6,5 +6,5 @@ library=iconv
 aliases=
 aliasof=
 
-iconv �饤�֥��ΥХ��ʤɤˤ�ꡢ[[man:errno(3)]] �����ꤵ��ʤ��ä�����ȯ�����ޤ���
-(Windows �� iconv.dll �λ��Ѥ��� MSVC runtime DLL �ΥС�����󤬡�ruby ���Τ����Ѥ����ΤȰ��פ��Ƥ��ʤ�����ޤߤޤ���)
+iconv ライブラリのバグなどにより、[[man:errno(3)]] が設定されなかった場合に発生します。
+(Windows で iconv.dll の使用する MSVC runtime DLL のバージョンが、ruby 本体が使用するものと一致していない場合も含みます。)

@@ -3,5 +3,6 @@ classes=TkCheckButton,TkCheckbutton
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

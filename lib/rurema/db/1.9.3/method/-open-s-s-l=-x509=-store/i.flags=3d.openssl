@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- flags=(flags)
-CRL �˴ؤ���ե饰�����ꤷ�ޤ���
+CRL に関するフラグを設定します。
 
-�ʲ����������ɬ�פʤ�Τ������ OR ��ꡢ�Ϥ��ޤ���
+以下の定数から必要なものを選んで OR 取り、渡します。
   * [[m:OpenSSL::X509::V_FLAG_CRL_CHECK]]
   * [[m:OpenSSL::X509::V_FLAG_CRL_CHECK_ALL]]
 
-���Υե饰�� [[m:OpenSSL::X509::Store#verify]] �Ǹ��ڤ���������Ѥ���ޤ���
-[[m:OpenSSL::X509::StoreContext.new]] �Ǿ����񥹥ȥ�����ƥ����Ȥ�
-����������ˤϤ��Υ���ƥ����Ȥ˥ե饰�����ԡ�����ޤ���
+このフラグは [[m:OpenSSL::X509::Store#verify]] で検証する場合に利用されます。
+[[m:OpenSSL::X509::StoreContext.new]] で証明書ストアコンテキストを
+生成する場合にはそのコンテキストにフラグがコピーされます。
 
-�ǥե���ȤǤϥե饰�����ꤵ��Ƥ��ޤ���
+デフォルトではフラグは設定されていません。
 
-@param flags ���ꤹ��ե饰(������)
+@param flags 設定するフラグ(整数値)
 @see [[m:OpenSSL::X509::StoreContext#flags=]]

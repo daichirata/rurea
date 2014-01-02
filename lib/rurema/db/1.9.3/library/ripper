@@ -3,5 +3,6 @@ classes=Ripper
 methods=
 sublibraries=ripper.filter,ripper.lexer,ripper.sexp
 is_sublibrary=false
+category=Text
 
-Ruby ¥×¥í¥°¥é¥à¤ò²òÀÏ¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Ruby ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’è§£æã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

@@ -2,8 +2,7 @@ names=name
 visibility=public
 kind=defined
 
---- name    -> String
 --- name    -> Symbol
 
-���Υ᥽�åɤ�̾�����֤��ޤ���
+このメソッドの名前を返します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- to_a -> [Array]
 
-¥­¡¼¤ÈÃÍ¤Î¥Ú¥¢¤òÇÛÎó¤ËÊÑ´¹¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+ã‚­ãƒ¼ã¨å€¤ã®ãƒšã‚¢ã‚’é…åˆ—ã«å¤‰æ›ã—ã¦è¿”ã—ã¾ã™ã€‚
 
   require 'dbm'
   

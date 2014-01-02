@@ -3,5 +3,6 @@ classes=TopLevel,TkToplevel,Frame,TkFrame,Label,TkLabel,Button,TkButton,Radiobut
 methods=Kernel/i.Mainloop.tkclass
 sublibraries=
 is_sublibrary=true
+category=
 
 

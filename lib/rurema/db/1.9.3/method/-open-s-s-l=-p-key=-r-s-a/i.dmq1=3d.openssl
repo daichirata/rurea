@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- dmq1=(new_dmq1)
-���� exponent2 �����ꤷ�ޤ���
+鍵の exponent2 を設定します。
 
-�̾盧�Υ᥽�åɤ��ͤ��ѹ����뤳�ȤϤ���ޤ���
-�褯�ͤ���ɬ�פʾ��Τ����Ѥ��Ƥ���������
+通常このメソッドで値を変更することはありません。
+よく考えて必要な場合のみ利用してください。
 
-@param new_dmq1 ���ꤹ������
+@param new_dmq1 設定する整数
 

@@ -1,54 +1,55 @@
-requires=e2mmap,irb.slex,rdoc.code_objects,rdoc.code_object,rdoc.context,rdoc.top_level,rdoc.class_module,rdoc.normal_class,rdoc.normal_module,rdoc.anon_class,rdoc.single_class,rdoc.any_method,rdoc.alias,rdoc.ghost_method,rdoc.meta_method,rdoc.attr,rdoc.constant,rdoc.require,rdoc.include,rdoc.parser,rdoc,rdoc.stats,rdoc.parser.simple,rdoc.token_stream
+requires=e2mmap,irb.slex,irb.notifier,irb.output=2dmethod,rdoc.code_objects,rdoc.code_object,rdoc.context,rdoc.top_level,rdoc.class_module,rdoc.normal_class,rdoc.normal_module,rdoc.anon_class,rdoc.single_class,rdoc.any_method,rdoc.alias,rdoc.ghost_method,rdoc.meta_method,rdoc.attr,rdoc.constant,rdoc.require,rdoc.include,rdoc.parser,rdoc,rdoc.stats,rdoc.parser.simple,rdoc.token_stream
 classes=RDoc=RubyToken,RDoc=RubyLex,RDoc=Parser=Ruby
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Ruby ¤Î¥½¡¼¥¹¥³¡¼¥É¤ò²òÀÏ¤¹¤ë¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Ruby ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’è§£æã™ã‚‹ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-³ÈÄ¥»Ò¤¬ .rb¡¢.rbw ¤Î¥Õ¥¡¥¤¥ë¤ò²òÀÏ¤¹¤ë»ö¤¬¤Ç¤­¤Ş¤¹¡£
+æ‹¡å¼µå­ãŒ .rbã€.rbw ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è§£æã™ã‚‹äº‹ãŒã§ãã¾ã™ã€‚
 
-=== ¥á¥¿¥×¥í¥°¥é¥ß¥ó¥°¤µ¤ì¤¿¥á¥½¥Ã¥É
+=== ãƒ¡ã‚¿ãƒ—ãƒ­ã‚°ãƒ©ãƒŸãƒ³ã‚°ã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰
 
-Æ°Åª¤ËÄêµÁ¤µ¤ì¤¿¥á¥½¥Ã¥É¤ò¥É¥­¥å¥á¥ó¥È¤Ë´Ş¤á¤¿¤¤¾ì¹ç¡¢## ¤Ç¥³¥á¥ó¥È¤ò³«»Ï¤·¤Ş¤¹¡£
+å‹•çš„ã«å®šç¾©ã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ã‚’ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã«å«ã‚ãŸã„å ´åˆã€## ã§ã‚³ãƒ¡ãƒ³ãƒˆã‚’é–‹å§‹ã—ã¾ã™ã€‚
 
   ##
   # This is a meta-programmed method!
 
   add_my_method :meta_method, :arg1, :arg2
 
-[[c:RDoc::Parser::Ruby]] ¤Ï¾åµ­¤Î :meta_method ¤è¤¦¤Ë¥á¥½¥Ã¥É¤ÎÄêµÁ¤ò¹Ô
-¤¦¤è¤¦¤Ê¼±ÊÌ»Ò¤Î¸å¤ËÂ³¤¯¥È¡¼¥¯¥ó¤ò¥á¥½¥Ã¥ÉÌ¾¤È¤·¤Æ²ò¼á¤·¤Ş¤¹¡£¥á¥½¥Ã¥É
-Ì¾¤¬¸«¤Ä¤«¤é¤Ê¤«¤Ã¤¿¾ì¹ç¡¢·Ù¹ğ¤¬É½¼¨¤µ¤ì¤Ş¤¹¡£¤Ş¤¿¡¢¤³¤Î¾ì¹ç¤Ï¥á¥½¥Ã¥É
-Ì¾¤Ï 'unknown' ¤Ë¤Ê¤ê¤Ş¤¹¡£
+[[c:RDoc::Parser::Ruby]] ã¯ä¸Šè¨˜ã® :meta_method ã‚ˆã†ã«ãƒ¡ã‚½ãƒƒãƒ‰ã®å®šç¾©ã‚’è¡Œ
+ã†ã‚ˆã†ãªè­˜åˆ¥å­ã®å¾Œã«ç¶šããƒˆãƒ¼ã‚¯ãƒ³ã‚’ãƒ¡ã‚½ãƒƒãƒ‰åã¨ã—ã¦è§£é‡ˆã—ã¾ã™ã€‚ãƒ¡ã‚½ãƒƒãƒ‰
+åãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆã€è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ã¾ãŸã€ã“ã®å ´åˆã¯ãƒ¡ã‚½ãƒƒãƒ‰
+åã¯ 'unknown' ã«ãªã‚Šã¾ã™ã€‚
 
-:method: Ì¿Îá¤ò»È¤¦»ö¤Ç¥á¥½¥Ã¥ÉÌ¾¤ò»ØÄê¤¹¤ë»ö¤â¤Ç¤­¤Ş¤¹¡£
+:method: å‘½ä»¤ã‚’ä½¿ã†äº‹ã§ãƒ¡ã‚½ãƒƒãƒ‰åã‚’æŒ‡å®šã™ã‚‹äº‹ã‚‚ã§ãã¾ã™ã€‚
 
   ##
   # :method: woo_hoo!
 
-¥Ç¥Õ¥©¥ë¥È¤Ç¤ÏÆ°Åª¤ËÄêµÁ¤µ¤ì¤¿¥á¥½¥Ã¥É¤Ï¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤È¤·¤Æ²òÀÏ
-¤µ¤ì¤Ş¤¹¡£ÆÃ°Û¥á¥½¥Ã¥É¤È¤·¤¿¤¤¾ì¹ç¤Ï¡¢:singleton-method: Ì¿Îá¤ò»ØÄê¤·¤Ş
-¤¹¡£
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ã¯å‹•çš„ã«å®šç¾©ã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ã¯ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã¨ã—ã¦è§£æ
+ã•ã‚Œã¾ã™ã€‚ç‰¹ç•°ãƒ¡ã‚½ãƒƒãƒ‰ã¨ã—ãŸã„å ´åˆã¯ã€:singleton-method: å‘½ä»¤ã‚’æŒ‡å®šã—ã¾
+ã™ã€‚
 
   ##
   # :singleton-method:
 
-°Ê²¼¤Î¤è¤¦¤Ë¥á¥½¥Ã¥ÉÌ¾¤ò»ØÄê¤¹¤ë»ö¤â¤Ç¤­¤Ş¤¹¡£
+ä»¥ä¸‹ã®ã‚ˆã†ã«ãƒ¡ã‚½ãƒƒãƒ‰åã‚’æŒ‡å®šã™ã‚‹äº‹ã‚‚ã§ãã¾ã™ã€‚
 
   ##
   # :singleton-method: woo_hoo!
 
-¤Ş¤¿¡¢Â°À­¤Ë¤Ä¤¤¤Æ¤âÆ±ÍÍ¤Ë :attr:¡¢ :attr_reader:¡¢ :attr_writer:¡¢
-:attr_accessor: ¤ò»ØÄê¤¹¤ë»ö¤¬¤Ç¤­¤Ş¤¹¡£Â°À­¤ÎÌ¾Á°¤Ï¾ÊÎ¬¤Ç¤­¤Ş¤¹¡£
+ã¾ãŸã€å±æ€§ã«ã¤ã„ã¦ã‚‚åŒæ§˜ã« :attr:ã€ :attr_reader:ã€ :attr_writer:ã€
+:attr_accessor: ã‚’æŒ‡å®šã™ã‚‹äº‹ãŒã§ãã¾ã™ã€‚å±æ€§ã®åå‰ã¯çœç•¥ã§ãã¾ã™ã€‚
 
   ##
   # :attr_reader: my_attr_name
 
-=== ±£¤·¥á¥½¥Ã¥É¡¢Â°À­
+=== éš ã—ãƒ¡ã‚½ãƒƒãƒ‰ã€å±æ€§
 
-:method:¡¢ :singleton-method: ¤ä :attr: Ì¿Îá¤ò»È¤¦»ö¤Ç¼Âºİ¤Ë¤ÏÄêµÁ¤µ¤ì
-¤Æ¤¤¤Ê¤¤¥á¥½¥Ã¥É¤â¥É¥­¥å¥á¥ó¥È¤Ë´Ş¤á¤ë»ö¤¬¤Ç¤­¤Ş¤¹¡£
+:method:ã€ :singleton-method: ã‚„ :attr: å‘½ä»¤ã‚’ä½¿ã†äº‹ã§å®Ÿéš›ã«ã¯å®šç¾©ã•ã‚Œ
+ã¦ã„ãªã„ãƒ¡ã‚½ãƒƒãƒ‰ã‚‚ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã«å«ã‚ã‚‹äº‹ãŒã§ãã¾ã™ã€‚
 
   ##
   # :attr_writer: ghost_writer

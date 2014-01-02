@@ -4,16 +4,16 @@ kind=defined
 
 --- euid=(uid)
 
-�����ȥץ������μ¸��桼�� ID �� uid �����ꤷ�ޤ���
+カレントプロセスの実効ユーザ ID を uid に設定します。
 
-ư��ξܺ٤ϥץ�åȥե�����˰�¸���ޤ���
-�¸��桼�� ID �ʳ��Υ桼�� ID ���ѹ�����뤫���Τ�ޤ���
+動作の詳細はプラットフォームに依存します。
+実効ユーザ ID 以外のユーザ ID も変更されるかも知れません。
 
-@param uid �¸��桼�� ID �������ǻ��ꤷ�ޤ���
+@param uid 実効ユーザ ID を整数で指定します。
 
-@raise Errno::EXXX ���¤��ʤ�����ȯ�����ޤ���
+@raise Errno::EXXX 権限がない場合に発生します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 
 @see [[m:Process::UID.#eid=]]
 

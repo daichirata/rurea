@@ -4,10 +4,10 @@ kind=defined
 
 --- size -> Fixnum
 
-�����μ�����Υ�������Х��ȿ����֤��ޤ���
+整数の実装上のサイズをバイト数で返します。
 
-���ߤμ����Ǥ� [[c:Fixnum]] �ϡ�sizeof(long) ����(¿���� 32
-bit �ޥ���� 4 �Х���)��[[c:Bignum]]�ϡ������ƥ��¸�Ǥ���
+現在の実装では [[c:Fixnum]] は、sizeof(long) 固定(多くの 32
+bit マシンで 4 バイト)、[[c:Bignum]]は、システム依存です。
 
     p 1.size
     p 0x1_0000_0000.size

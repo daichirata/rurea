@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- aliases    -> Hash
-¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤ÎÊÌÌ¾¤ËÂÐ¤·¤Æ¸µ¤ÎÌ¾Á°¤òÂÐ±þ¤Å¤±¤ë¥Ï¥Ã¥·¥å¤òÊÖ¤·¤Þ¤¹¡£
+ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã®åˆ¥åã«å¯¾ã—ã¦å…ƒã®åå‰ã‚’å¯¾å¿œã¥ã‘ã‚‹ãƒãƒƒã‚·ãƒ¥ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   p Encoding.aliases
   #=> {"BINARY"=>"ASCII-8BIT", "ASCII"=>"US-ASCII", "ANSI_X3.4-1986"=>"US-ASCII",
       "SJIS"=>"Shift_JIS", "eucJP"=>"EUC-JP", "CP932"=>"Windows-31J"}

@@ -4,9 +4,9 @@ kind=defined
 
 --- threads -> Array
 
-Ʊ������륹��åɤΰ�����������֤��ޤ���
+同期されるスレッドの一覧を配列で返します。
 
-������
+使用例
   require 'thwait'
 
   threads = []

@@ -4,22 +4,22 @@ kind=defined
 
 --- assert_operator(operand1, operator, operand2, message = nil) -> true
 
-Ϳ����줿���֥������Ȥ���������뼰��ɾ��������̤������֤���硢�����˥ѥ��������Ȥˤʤ�ޤ���
+与えられたオブジェクトから作成する式を評価した結果が真を返す場合、検査にパスしたことになります。
 
-@param operand1 Ǥ�դΥ��֥������Ȥ���ꤷ�ޤ���
+@param operand1 任意のオブジェクトを指定します。
 
-@param operator �����ͤ��֤��᥽�åɤ���ꤷ�ޤ���
+@param operator 真偽値を返すメソッドを指定します。
 
-@param operand2 Ǥ�դΥ��֥������Ȥ���ꤷ�ޤ���
+@param operand2 任意のオブジェクトを指定します。
 
-@param message �����˼��Ԥ�������ɽ�������å���������ꤷ�ޤ���
-               ʸ���� [[c:Proc]] ����ꤷ�ޤ���[[c:Proc]] �Ǥ������ [[m:Proc#call]] ����
-               ��̤���Ѥ��ޤ���
+@param message 検査に失敗した場合に表示するメッセージを指定します。
+               文字列か [[c:Proc]] を指定します。[[c:Proc]] である場合は [[m:Proc#call]] した
+               結果を使用します。
 
-@raise MiniTest::Assertion Ϳ����줿���֥������Ȥ���������뼰��ɾ��������̤����Ǥʤ�����ȯ�����ޤ���
+@raise MiniTest::Assertion 与えられたオブジェクトから作成する式を評価した結果が真でない場合に発生します。
 
-��:
-   # �ʲ�����Ĥ�Ʊ��
+例:
+   # 以下の二つは同じ
    assert_operator('aaa', :==, 'aaa', 'message')
    assert('aaa'.__send__(:==, 'aaa'), 'message')
 

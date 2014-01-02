@@ -1,7 +1,0 @@
-requires=e2mmap
-classes=IRB=OutputMethod,IRB=StdioOutputMethod
-methods=
-sublibraries=
-is_sublibrary=true
-
-irb が出力を扱うためのサブライブラリです。

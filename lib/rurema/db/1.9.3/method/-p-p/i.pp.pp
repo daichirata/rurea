@@ -4,11 +4,11 @@ kind=defined
 
 --- pp(obj)    -> ()
 
-���ꤵ�줿���֥������� obj �� [[m:Object#pretty_print]] ��ȤäƼ��ȤΥХåե����ɲä��ޤ���
+指定されたオブジェクト obj を [[m:Object#pretty_print]] を使って自身のバッファに追加します。
 
-obj �����Ǥˡ����ߤΥΡ��ɤοƤˤ����ƽ��Ϥ���Ƥ������ˤϡ�
-���ȤΥ롼�פ�¸�ߤ��Ƥ���Τǡ�[[m:Object#pretty_print]] �������
-[[m:Object#pretty_print_cycle]] ���Ȥ��ޤ���
+obj がすでに、現在のノードの親において出力されていた場合には、
+参照のループが存在しているので、[[m:Object#pretty_print]] の代わりに
+[[m:Object#pretty_print_cycle]] が使われます。
 
-@param obj ɽ�����������֥������Ȥ���ꤷ�ޤ���
+@param obj 表示したいオブジェクトを指定します。
 

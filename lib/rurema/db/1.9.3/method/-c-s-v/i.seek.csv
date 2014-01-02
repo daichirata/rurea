@@ -4,5 +4,5 @@ kind=defined
 
 --- seek(offset, whence = IO::SEEK_SET)    -> 0
 
-[[m:IO#seek]] �˰Ѿ����ޤ���
+[[m:IO#seek]] に委譲します。
 

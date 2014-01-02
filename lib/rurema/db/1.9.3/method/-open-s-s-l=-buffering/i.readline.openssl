@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- readline(eol=$/) -> String
-�̿�ϩ�������ɤ߹���ǡ�������֤��ޤ���
+通信路から一行読み込んで、それを返します。
 
-�Զ��ڤ�� eol �ǻ��ꤷ��ʸ����/����ɽ���ˤʤ�ޤ���
+行区切りは eol で指定した文字列/正規表現になります。
 
-�ɤ߹��ߤ���ü����ã���������㳰 EOFError ��ȯ�����ޤ���
+読み込みが終端に到達した場合は例外 EOFError を発生します。
 
-[[m:IO#readline]] ��Ʊ�ͤǤ��������ڤ�ʸ�����
-"" ���Ϥ������䡢nil ���Ϥ����Ȥ��ΰ�̣���ۤʤꡢ
-�����ξ���������ư��ޤ���
+[[m:IO#readline]] と同様ですが、区切り文字列に
+"" を渡した場合や、nil を渡したときの意味が異なり、
+これらの場合は正しく動作しません。
 
-@param eol �Զ��ڤ�ʸ����/����ɽ��
-@raise EOFError �ɤ߹��ߤ���ü����ã��������ȯ�����ޤ���
+@param eol 行区切り文字列/正規表現
+@raise EOFError 読み込みが終端に到達した場合に発生します。
 

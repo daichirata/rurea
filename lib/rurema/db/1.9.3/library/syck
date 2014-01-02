@@ -3,7 +3,9 @@ classes=Syck,Syck=Resolver,Syck=Parser,Syck=Node,Syck=Scalar,Syck=Seq,Syck=Map,S
 methods=Kernel/i.y.syck
 sublibraries=syck.basenode,syck.ypath,syck.constants,syck.error,syck.rubytypes,syck.stream,syck.stringio,syck.tag,syck.yamlnode
 is_sublibrary=false
+category=FileFormat
 
-[[lib:yaml]] ¤Î¥Ğ¥Ã¥¯¥¨¥ó¥É¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£YAML ¥Ğ¡¼¥¸¥ç¥ó 1.0 ¤ò°·¤¦»ö¤¬¤Ç¤­¤Ş¤¹¡£
+[[lib:yaml]] ã®ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚YAML ãƒãƒ¼ã‚¸ãƒ§ãƒ³ 1.0 ã‚’æ‰±ã†äº‹ãŒã§ãã¾ã™ã€‚
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤Ï obsolete ¤Ç¤¹¡£[[lib:psych]] ¤ò»ÈÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¯ obsolete ã§ã™ã€‚2.0.0 ã§å‰Šé™¤ã•ã‚Œã¾ã—ãŸã€‚[[lib:psych]]
+ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚

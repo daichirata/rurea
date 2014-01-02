@@ -2,8 +2,8 @@ names=termsig
 visibility=public
 kind=defined
 
---- termsig    -> nil | Integer
+--- termsig    -> Integer | nil
 
-signaled? ¤¬¿¿¤Î¾ì¹ç¥×¥í¥»¥¹¤ò½ªÎ»¤µ¤»¤¿¥·¥°¥Ê¥ëÈÖ¹æ¤ò¡¢
-¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+signaled? ãŒçœŸã®å ´åˆãƒ—ãƒ­ã‚»ã‚¹ã‚’çµ‚äº†ã•ã›ãŸã‚·ã‚°ãƒŠãƒ«ç•ªå·ã‚’ã€
+ãã†ã§ãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 

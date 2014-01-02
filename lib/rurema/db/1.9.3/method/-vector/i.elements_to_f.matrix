@@ -3,9 +3,11 @@ visibility=public
 kind=defined
 
 --- elements_to_f -> Vector
-�٥��ȥ�γ���ʬ��[[c:Float]]���Ѵ������٥��ȥ���֤��ޤ���
+ベクトルの各成分を[[c:Float]]に変換したベクトルを返します。
 
-��:
+このメソッドは deprecated です。 map(&:to_f) を使ってください。
+
+例:
   require 'matrix'
 
   v = Vector.elements([2, 3, 5, 7, 9])

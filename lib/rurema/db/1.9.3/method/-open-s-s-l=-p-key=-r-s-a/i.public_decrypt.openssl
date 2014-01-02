@@ -3,18 +3,18 @@ visibility=public
 kind=defined
 
 --- public_decrypt(str, mode = OpenSSL::PKey::RSA::PKCS1_PADDING) -> String
-ʸ���� str ������������沽���ޤ���
+文字列 str を公開鍵で復号化します。
 
-���沽���줿�ǡ�����ʸ������֤��ޤ���
+復号化されたデータを文字列で返します。
 
-mode �ǥѥǥ��󥰥⡼�ɤ���ꤷ�ޤ����ʲ��Τ����줫��
-���Ѳ�ǽ�Ǥ����Ź沽�����Ѥ����ѥǥ��󥰥⡼�ɤ�Ʊ����Τ�
-���ꤹ��ɬ�פ�����ޤ���
+mode でパディングモードを指定します。以下のいずれかが
+利用可能です。暗号化に利用したパディングモードと同じものを
+指定する必要があります。
  * [[m:OpenSSL::PKey::RSA::PKCS1_PADDING]]
  * [[m:OpenSSL::PKey::RSA::NO_PADDING]]
 
-@param str ���沽����ʸ����
-@param mode �ѥǥ��󥰥⡼��
-@raise OpenSSL::PKey::RSAError ���沽�˼��Ԥ�������ȯ�����ޤ���
+@param str 復号化する文字列
+@param mode パディングモード
+@raise OpenSSL::PKey::RSAError 復号化に失敗した場合に発生します。
        
 

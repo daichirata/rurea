@@ -4,20 +4,20 @@ kind=defined
 
 --- new(resolv_conf = nil) -> Resolv::DNS
 
-¿·¤·¤¤ DNS ¥ê¥¾¥ë¥Ğ¤òÀ¸À®¤·¤Ş¤¹¡£
+æ–°ã—ã„ DNS ãƒªã‚¾ãƒ«ãƒã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-resolv_conf ¤¬ nil ¤Î¾ì¹ç¤Ï
-/etc/resolv.conf ¤â¤·¤¯¤Ï¥×¥é¥Ã¥È¥Õ¥©¡¼¥à¸ÇÍ­¤Î
-DNSÀßÄê¤òÍøÍÑ¤·¤Ş¤¹¡£
-resolv_conf ¤¬Ê¸»úÎó¤Î¾ì¹ç¤Ï /etc/resolv.conf ¤È
-Æ±¤¸¥Õ¥©¡¼¥Ş¥Ã¥È¤Î¥Õ¥¡¥¤¥ë¤òÀßÄê¤ËÍøÍÑ¤·¤Ş¤¹¡£
-resolv_conf ¤¬¥Ï¥Ã¥·¥å¤Î¾ì¹ç¤Ï¡¢:nameserver, :search, :ndots
-¤È¤¤¤¦¥­¡¼¤¬ÍøÍÑ²ÄÇ½¤Ç¤¹¡£
-¤½¤ì¤¾¤ì¤Î°ÕÌ£¤Ï [[man:resolv.conf(5)]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+resolv_conf ãŒ nil ã®å ´åˆã¯
+/etc/resolv.conf ã‚‚ã—ãã¯ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ å›ºæœ‰ã®
+DNSè¨­å®šã‚’åˆ©ç”¨ã—ã¾ã™ã€‚
+resolv_conf ãŒæ–‡å­—åˆ—ã®å ´åˆã¯ /etc/resolv.conf ã¨
+åŒã˜ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è¨­å®šã«åˆ©ç”¨ã—ã¾ã™ã€‚
+resolv_conf ãŒãƒãƒƒã‚·ãƒ¥ã®å ´åˆã¯ã€:nameserver, :search, :ndots
+ã¨ã„ã†ã‚­ãƒ¼ãŒåˆ©ç”¨å¯èƒ½ã§ã™ã€‚
+ãã‚Œãã‚Œã®æ„å‘³ã¯ [[man:resolv.conf(5)]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
    Resolv::DNS.new(:nameserver => ['210.251.121.21'],
                    :search => ['ruby-lang.org'],
                    :ndots => 1)
 
-@param resolv_conf DNS¤ÎÀßÄê¤òÍ¿¤¨¤Ş¤¹¡£
+@param resolv_conf DNSã®è¨­å®šã‚’ä¸ãˆã¾ã™ã€‚
 

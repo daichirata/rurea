@@ -4,7 +4,7 @@ kind=defined
 
 --- dn=(s)
 
-¼«¿È¤Î Distinguished Name ¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã® Distinguished Name ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î Distinguished Name ¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param s è‡ªèº«ã® Distinguished Name ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 

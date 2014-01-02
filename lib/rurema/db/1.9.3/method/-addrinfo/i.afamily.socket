@@ -2,6 +2,9 @@ names=afamily
 visibility=public
 kind=defined
 
---- afamily
-@todo
+--- afamily -> Integer
+アドレスファミリーを整数で返します。
+
+  Addrinfo.tcp("localhost", 80).afamily == Socket::AF_INET #=> true
+
 

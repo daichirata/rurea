@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- new_cond -> MonitorMixin::ConditionVariable
-¥â¥Ë¥¿¤Ë´ØÏ¢ÉÕ¤±¤é¤ì¤¿¡¢¿·¤·¤¤ 
-[[c:MonitorMixin::ConditionVariable]] ¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+ãƒ¢ãƒ‹ã‚¿ã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸã€æ–°ã—ã„ 
+[[c:MonitorMixin::ConditionVariable]] ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 

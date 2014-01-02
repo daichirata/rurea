@@ -4,7 +4,7 @@ kind=defined
 
 --- autoclose? -> bool
 
-auto-close ¥Õ¥é¥°¤òÊÖ¤·¤Ş¤¹¡£
+auto-close ãƒ•ãƒ©ã‚°ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:IO#autoclose=]]
 

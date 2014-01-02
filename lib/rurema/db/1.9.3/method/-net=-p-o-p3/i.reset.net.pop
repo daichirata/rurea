@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- reset -> ()
-���å�����ꥻ�åȤ��ޤ���
+セッションをリセットします。
 
-�ꥻ�åȤˤ�ä� [[m:Net::POPMail#delete]] ���դ�������ޡ��������٤�
-��������ޤ���
+リセットによって [[m:Net::POPMail#delete]] で付けた削除マークがすべて
+取り除かれます。
 
-POP3 �Ǥϥ᡼���Ĥ��������褹����ˡ�Ϥ���ޤ���
+POP3 ではメール一個だけを復活する方法はありません。
 
 

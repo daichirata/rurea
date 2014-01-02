@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- recipients -> [OpenSSL::PKCS7::RecipientInfo]
-��å�������������ξ����������֤��ޤ���
+メッセージの送信先の情報を配列で返します。
 
-����ϰŹ沽�������Τ߰�̣������ޤ���
+これは暗号化した場合のみ意味があります。
 
 

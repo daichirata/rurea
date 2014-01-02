@@ -6,19 +6,19 @@ library=win32ole
 aliases=
 aliasof=
 
-OLE�����ȥ᡼����󥵡��Фη�����饤�֥���TypeLib�ˤ����뤿���
-���饹�Ǥ���
+OLEオートメーションサーバの型情報ライブラリ（TypeLib）を操作するための
+クラスです。
 
-OLE�����ȥ᡼����󥵡��Фϥ��饤����Ȥˡ����饹�����󥿡��ե���������
-���åɤʤɤΥ᥿�ǡ������󶡤��뤿��ε���������ޤ������ξ���ϳ�ĥ��
-����TLB�ȸƤФ��饤�֥��ޤ��ϥ����ȥ᡼����󥵡��ФΥץ���������
-�꥽�����Ȥ����ݻ����졢���饤����Ȥ�����׵�ˤ�äƻ��Ȳ�ǽ�Ȥʤ��
-����
+OLEオートメーションサーバはクライアントに、クラス、インターフェイス、メ
+ソッドなどのメタデータを提供するための機構を持ちます。この情報は拡張子
+からTLBと呼ばれるライブラリまたはオートメーションサーバのプログラム内の
+リソースとして保持され、クライアントからの要求によって参照可能となりま
+す。
 
-WIN32OLE_TYPELIB���饹�ϡ�TypeLib�����ƳƼ����򻲾Ȥ��뤿��Υ���
-�������Ȥ��������ޤ���
+WIN32OLE_TYPELIBクラスは、TypeLibを操作して各種情報を参照するためのオブ
+ジェクトを生成します。
 
-=== ����ץ륳����
+=== サンプルコード
 
    require 'win32ole'
 
@@ -30,7 +30,7 @@ WIN32OLE_TYPELIB���饹�ϡ�TypeLib�����ƳƼ����򻲾Ȥ��뤿��Υ���
      puts "  #{cls.name}: PROGID=#{cls.progid}"
    end
 
-�嵭��¹Ԥ���Ȱʲ��ν��Ϥ����ޤ���
+上記を実行すると以下の出力を得ます。
 
  Guid of Excel typelib = {00020813-0000-0000-C000-000000000046}
  version = 1.7
@@ -39,5 +39,5 @@ WIN32OLE_TYPELIB���饹�ϡ�TypeLib�����ƳƼ����򻲾Ȥ��뤿��Υ���
    Chart: PROGID=Excel.Chart.8
    Worksheet: PROGID=Excel.Sheet.8
 
-�����Ǥϡ�Excel�Υ��饹�Τ�����[[m:WIN32OLE.new]]�Ǻ�����ǽ�ʥ��饹���
-���ǻ��ꤹ��̾����PROGID�ˤȶ��˼����Ƥ��ޤ���
+ここでは、Excelのクラスのうち、[[m:WIN32OLE.new]]で作成可能なクラスを引
+数で指定する名前（PROGID）と共に示しています。

@@ -4,7 +4,7 @@ kind=defined
 
 --- gets
 
-[[c:NotImplementedError]] ¤¬È¯À¸¤·¤Ş¤¹¡£
+[[c:NotImplementedError]] ãŒç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise NotImplementedError É¬¤ºÈ¯À¸¤·¤Ş¤¹¡£
+@raise NotImplementedError å¿…ãšç™ºç”Ÿã—ã¾ã™ã€‚
 

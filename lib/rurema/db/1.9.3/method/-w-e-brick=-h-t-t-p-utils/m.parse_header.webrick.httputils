@@ -4,7 +4,7 @@ kind=defined
 
 --- parse_header(raw) -> Hash
 
-HTTP �إå���ѡ������Ʒ�̤�ϥå���˳�Ǽ�����֤��ޤ���
+HTTP ヘッダをパースして結果をハッシュに格納して返します。
 
-@param raw ���Υإå���ɽ��ʸ�������ꤷ�ޤ���
+@param raw 生のヘッダを表す文字列を指定します。
 

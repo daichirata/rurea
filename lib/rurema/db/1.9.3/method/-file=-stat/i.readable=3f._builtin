@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- readable? -> bool
-ÆÉ¤ß¹ş¤ß²ÄÇ½¤Ê»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+èª­ã¿è¾¼ã¿å¯èƒ½ãªæ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   p File::Stat.new($0).readable? #=> true
 

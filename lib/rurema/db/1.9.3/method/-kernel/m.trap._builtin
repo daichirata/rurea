@@ -2,15 +2,16 @@ names=trap
 visibility=public
 kind=defined
 
---- trap(signal, command) -> object
---- trap(signal) { ... } -> object
-signal ¤Ç»ØÄê¤µ¤ì¤¿³ä¤ê¹ş¤ß¤Ë¤¿¤¤¤¹¤ë¥Ï¥ó¥É¥é¤È¤·¤Æ
-command ¤òÅĞÏ¿¤·¤Ş¤¹¡£[[m:Signal.#trap]]¤ÈÆ±¤¸¤Ç¤¹¡£
+--- trap(signal, command) -> String | Proc | nil
+--- trap(signal) { ... }  -> String | Proc | nil
 
-[[m:Signal.#trap]]¤Î»ÈÍÑ¤ò¿ä¾©¤·¤Ş¤¹¡£
+signal ã§æŒ‡å®šã•ã‚ŒãŸå‰²ã‚Šè¾¼ã¿ã«ãŸã„ã™ã‚‹ãƒãƒ³ãƒ‰ãƒ©ã¨ã—ã¦
+command ã‚’ç™»éŒ²ã—ã¾ã™ã€‚[[m:Signal.#trap]]ã¨åŒã˜ã§ã™ã€‚
 
-@param signal [[m:Signal.#trap]] »²¾È
-@param command [[m:Signal.#trap]] »²¾È
+[[m:Signal.#trap]]ã®ä½¿ç”¨ã‚’æ¨å¥¨ã—ã¾ã™ã€‚
+
+@param signal [[m:Signal.#trap]] å‚ç…§
+@param command [[m:Signal.#trap]] å‚ç…§
 
 @see [[m:Signal.#trap]],[[c:Signal]]
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- issuer=(name)
-¾ÚÌÀ½ñ¤ÎÈ¯¹Ô¼Ô¤ÎÌ¾Á°¤òÀßÄê¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã®ç™ºè¡Œè€…ã®åå‰ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param name È¯¹Ô¼Ô¤ÎÌ¾Á°¤Î [[c:OpenSSL::X509::Name]] ¥ª¥Ö¥¸¥§¥¯¥È
-@raise OpenSSL::X509::CertificateError ÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param name ç™ºè¡Œè€…ã®åå‰ã® [[c:OpenSSL::X509::Name]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+@raise OpenSSL::X509::CertificateError è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

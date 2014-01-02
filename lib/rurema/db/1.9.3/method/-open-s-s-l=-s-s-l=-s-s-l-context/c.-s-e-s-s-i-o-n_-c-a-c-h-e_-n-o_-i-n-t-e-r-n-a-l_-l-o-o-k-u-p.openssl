@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- SESSION_CACHE_NO_INTERNAL_LOOKUP -> Integer
-������¦�ǥ��å���󥭥�å��夬ɬ�פˤʤä����
-[[c:OpenSSL::SSL::SSLContext]] ���ݻ����륭��å����ΰ�
-��õ�����ʤ����Ȥ��̣���ޤ���
+サーバ側でセッションキャッシュが必要になった場合
+[[c:OpenSSL::SSL::SSLContext]] が保持するキャッシュ領域
+を探索しないことを意味します。
 
-[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] ��
-�Ϥ��ե饰�Ȥ����Ѥ��ޤ���
+[[m:OpenSSL::SSL::SSLContext#session_cache_mode=]] に
+渡すフラグとして用います。
 
-���Υե饰�� ON �ˤ���ȡ�����å����õ����ɬ�פˤʤä�
-���ɬ��������Хå�([[c:OpenSSL::SSL::SSLContext#session_get_cb=]]
-�����ꤷ�����)��Ƥ֤褦�ˤʤ�ޤ���
+このフラグを ON にすると、キャッシュの探索が必要になった
+場合必ずコールバック([[c:OpenSSL::SSL::SSLContext#session_get_cb=]]
+で設定したもの)を呼ぶようになります。
 

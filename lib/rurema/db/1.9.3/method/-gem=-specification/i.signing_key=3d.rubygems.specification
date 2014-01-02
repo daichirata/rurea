@@ -4,7 +4,7 @@ kind=defined
 
 --- signing_key=(key)
 
-���� Gem �ѥå������ν�̾�˻��Ѥ��륭���򥻥åȤ��ޤ���
+この Gem パッケージの署名に使用するキーをセットします。
 
-@param key ��̾�˻��Ѥ��륭������ꤷ�ޤ���
+@param key 署名に使用するキーを指定します。
 

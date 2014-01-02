@@ -4,8 +4,8 @@ kind=defined
 
 --- request_uri=(uri)
 
-�ꥯ�����Ȥ� URI �򥻥åȤ��ޤ���
-�ǥե���Ȥ� nil �Ǥ���
+リクエストの URI をセットします。
+デフォルトは nil です。
 
-@param uri �ꥯ�����Ȥ� URI �� [[c:URI]] ���֥������Ȥǻ��ꤷ�ޤ���
+@param uri リクエストの URI を [[c:URI]] オブジェクトで指定します。
 

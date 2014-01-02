@@ -3,12 +3,12 @@ visibility=public
 kind=added
 
 --- ssl_version=(ver)
-ÍøÍÑ¤¹¤ë¥×¥í¥È¥³¥ë¤Î¼ïÎà¤òÊ¸»úÎó¤â¤·¤¯¤Ï
-¥·¥ó¥Ü¥ë¤Ç»ØÄê¤·¤Ş¤¹¡£
+åˆ©ç”¨ã™ã‚‹ãƒ—ãƒ­ãƒˆã‚³ãƒ«ã®ç¨®é¡ã‚’æ–‡å­—åˆ—ã‚‚ã—ãã¯
+ã‚·ãƒ³ãƒœãƒ«ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-[[m:OpenSSL::SSL::SSLContext.new]] ¤Ç»ØÄê¤Ç¤­¤ë¤â¤Î¤ÈÆ±¤¸¤Ç¤¹¡£
+[[m:OpenSSL::SSL::SSLContext.new]] ã§æŒ‡å®šã§ãã‚‹ã‚‚ã®ã¨åŒã˜ã§ã™ã€‚
 
-@param ver ÍøÍÑ¤¹¤ë¥×¥í¥È¥³¥ë¤Î¼ïÎà
+@param ver åˆ©ç”¨ã™ã‚‹ãƒ—ãƒ­ãƒˆã‚³ãƒ«ã®ç¨®é¡
 @see [[m:Net::HTTP#ssl_version]], [[m:OpenSSL::SSL::SSL#ssl_version=]]
 
 

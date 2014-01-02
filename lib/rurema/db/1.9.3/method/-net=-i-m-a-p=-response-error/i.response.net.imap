@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- response -> Net::IMAP::TaggedResponse | Net::IMAP::UntaggedResponse
-���顼�Ȥʤä��쥹�ݥ󥹤�ɽ�����֥������Ȥ��֤��ޤ���
+エラーとなったレスポンスを表すオブジェクトを返します。
 

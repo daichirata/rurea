@@ -12,6 +12,10 @@ require 'bitclust/exception'
 
 module BitClust
 
+  # Abstract class for BitClust DB.
+  # Each entry is written in a file.
+  #
+  # Has subclass MethodDatabase (Ruby stuff) and FunctionDatabase (C stuff).
   class Database
 
     include NameUtils
@@ -43,7 +47,7 @@ module BitClust
       @in_transaction = false
       @properties_dirty = false
     end
-    
+
     def dummy?
       not @prefix
     end
@@ -131,7 +135,7 @@ module BitClust
 
     def load_properties(rel)
       h = {}
-      fopen(realpath(rel), 'r:EUC-JP') {|f|
+      fopen(realpath(rel), 'r:UTF-8') {|f|
         while line = f.gets
           k, v = line.strip.split('=', 2)
           break unless k

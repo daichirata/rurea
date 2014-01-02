@@ -4,7 +4,7 @@ kind=defined
 
 --- options -> Array
 
-¥ª¥×¥·¥ç¥óÌ¾¤ÎÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
+ã‚ªãƒ—ã‚·ãƒ§ãƒ³åã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
   FileUtils.options  #=> ["noop", "force", "verbose", "preserve", "mode"]
 

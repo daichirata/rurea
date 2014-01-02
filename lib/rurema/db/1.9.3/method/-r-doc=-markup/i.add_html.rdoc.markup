@@ -4,15 +4,15 @@ kind=defined
 
 --- add_html(tag, name) -> ()
 
-tag �ǻ��ꤷ��������ե����ޥåȤ��оݤˤ��ޤ���
+tag で指定したタグをフォーマットの対象にします。
 
-@param tag �ɲä��륿��̾��ʸ����ǻ��ꤷ�ޤ�����ʸ������ʸ���Τ�
-           �������ꤷ�Ƥ�Ʊ��Τ�ΤȤ��ư����ޤ���
+@param tag 追加するタグ名を文字列で指定します。大文字、小文字のど
+           ちらを指定しても同一のものとして扱われます。
 
-@param name [[c:SM::ToHtml]] �ʤɤΥե����ޥå��˼��̤��������̾����
-            [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param name [[c:SM::ToHtml]] などのフォーマッタに識別させる時の名前を
+            [[c:Symbol]] で指定します。
 
-��:
+例:
 
   require 'rdoc/markup/simple_markup'
   require 'rdoc/markup/simple_markup/to_html'
@@ -23,6 +23,6 @@ tag �ǻ��ꤷ��������ե����ޥåȤ��оݤˤ��ޤ���
   h.add_tag(:STRIKE, "<strike>", "</strike>")
   puts m.convert(input_string, h)
 
-�Ѵ����˼ºݤ˥ե����ޥåȤ�Ԥ��ˤ� [[m:SM::ToHtml#add_tag]] �Τ褦�ˡ�
-�ե����ޥå�¦�Ǥ�����Ԥ�ɬ�פ�����ޤ���
+変換時に実際にフォーマットを行うには [[m:SM::ToHtml#add_tag]] のように、
+フォーマッタ側でも操作を行う必要があります。
 

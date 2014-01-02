@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- expand_path(default_dir = '.') -> Pathname
-Pathname.new(File.expand_path(self.to_s, *args)) ¤ÈÆ±¤¸¤Ç¤¹¡£
+Pathname.new(File.expand_path(self.to_s, *args)) ã¨åŒã˜ã§ã™ã€‚
 
-@param default_dir self ¤¬ÁêÂĞ¥Ñ¥¹¤Ç¤¢¤ì¤Ğ default_dir ¤ò´ğ½à¤ËÅ¸³«¤µ¤ì¤Ş¤¹¡£
+@param default_dir self ãŒç›¸å¯¾ãƒ‘ã‚¹ã§ã‚ã‚Œã° default_dir ã‚’åŸºæº–ã«å±•é–‹ã•ã‚Œã¾ã™ã€‚
 
 @see [[m:File.expand_path]]
 

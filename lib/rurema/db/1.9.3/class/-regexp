@@ -6,17 +6,17 @@ library=_builtin
 aliases=
 aliasof=
 
-Àµµ¬É½¸½¤Î¥¯¥é¥¹¡£Àµµ¬É½¸½¤Î¥ê¥Æ¥é¥ë¤Ï¥¹¥é¥Ã¥·¥å¤Ç°Ï¤ó¤À·Á¼°
-¤Çµ­½Ò¤·¤Ş¤¹¡£
+æ­£è¦è¡¨ç¾ã®ã‚¯ãƒ©ã‚¹ã€‚æ­£è¦è¡¨ç¾ã®ãƒªãƒ†ãƒ©ãƒ«ã¯ã‚¹ãƒ©ãƒƒã‚·ãƒ¥ã§å›²ã‚“ã å½¢å¼
+ã§è¨˜è¿°ã—ã¾ã™ã€‚
 
   /^this is regexp/
 
-Regexp.new(string) ¤ò»È¤Ã¤ÆÀµµ¬É½¸½¥ª¥Ö¥¸¥§¥¯¥È¤òÆ°Åª¤ËÀ¸À®¤¹¤ë
-¤³¤È¤â¤Ç¤­¤Ş¤¹¡£
+Regexp.new(string) ã‚’ä½¿ã£ã¦æ­£è¦è¡¨ç¾ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å‹•çš„ã«ç”Ÿæˆã™ã‚‹
+ã“ã¨ã‚‚ã§ãã¾ã™ã€‚
 
   str = "this is regexp"
   rp1 = Regexp.new("^this is regexp")
   p rp1 =~ str           #=> 0
   p Regexp.last_match[0] #=> "this is regexp"
 
-[[d:spec/regexp]] ¤ä [[ref:d:spec/literal#regexp]] ¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[d:spec/regexp]] ã‚„ [[ref:d:spec/literal#regexp]] ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚

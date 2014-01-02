@@ -3,13 +3,14 @@ classes=Zlib,Zlib=Error,Zlib=StreamEnd,Zlib=NeedDict,Zlib=DataError,Zlib=StreamE
 methods=
 sublibraries=
 is_sublibrary=false
+category=FileFormat
 
-zlib ¤ò Ruby ¤«¤é»È¤¦¤¿¤á¤Î³ÈÄ¥¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
-gzip ¥Õ¥¡¥¤¥ë¤ÎÆÉ¤ß½ñ¤­¤â¥µ¥İ¡¼¥È¤·¤Ş¤¹¡£
+zlib ã‚’ Ruby ã‹ã‚‰ä½¿ã†ãŸã‚ã®æ‹¡å¼µãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
+gzip ãƒ•ã‚¡ã‚¤ãƒ«ã®èª­ã¿æ›¸ãã‚‚ã‚µãƒãƒ¼ãƒˆã—ã¾ã™ã€‚
 
-=== »²¹Í
+=== å‚è€ƒ
 
-: É¸½àÅºÉÕ¥é¥¤¥Ö¥é¥ê¾Ò²ğ ¡ÚÂè 11 ²ó¡Ûzlib 
+: æ¨™æº–æ·»ä»˜ãƒ©ã‚¤ãƒ–ãƒ©ãƒªç´¹ä»‹ ã€ç¬¬ 11 å›ã€‘zlib 
   [[url:http://jp.rubyist.net/magazine/?0018-BundledLibraries]]
 
 @see [[man:zlib(3)]]

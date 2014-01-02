@@ -3,5 +3,6 @@ classes=
 methods=Gem/c.MD5.rubygems.digest.md5
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:Digest::MD5]] ¤ò¥é¥Ã¥×¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:Digest::MD5]] ã‚’ãƒ©ãƒƒãƒ—ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

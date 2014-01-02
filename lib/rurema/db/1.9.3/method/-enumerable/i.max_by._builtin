@@ -3,21 +3,21 @@ visibility=public
 kind=defined
 
 --- max_by              -> Enumerator
---- max_by{|item| ... } -> object
+--- max_by{|item| ... } -> object | nil
 
-�����Ǥ���֤˥֥��å����Ϥ��Ƽ¹Ԥ���
-����ɾ����̤� <=> ����Ӥ��ơ�
-����Ǥ��ä��ͤ��б����븵�����Ǥ��֤��ޤ���
+各要素を順番にブロックに渡して実行し、
+その評価結果を <=> で比較して、
+最大であった値に対応する元の要素を返します。
 
-���Ǥ�¸�ߤ��ʤ��Ȥ��� nil ���֤��ޤ���
-�����������Ǥ�ʣ��¸�ߤ����硢�ɤ����Ǥ��֤���������Ǥ���
+要素が存在しないときは nil を返します。
+該当する要素が複数存在する場合、どの要素を返すかは不定です。
 
-[[m:Enumerable#max]] �� [[m:Enumerable#max_by]] ��
-�㤤�� [[m:Enumerable#sort]] �� [[m:Enumerable#sort_by]] �ΰ㤤��Ʊ���Ǥ���
+[[m:Enumerable#max]] と [[m:Enumerable#max_by]] の
+違いは [[m:Enumerable#sort]] と [[m:Enumerable#sort_by]] の違いと同じです。
 
-�֥��å����ά�������ϡ������Ǥ���֤˥֥��å����Ϥ���ɾ������
-���η�̤��Ǿ��Ȥʤ��ͤ��б��������Ǥ��֤� [[c:Enumerator]] ��
-�֤��ޤ���
+ブロックを省略した場合は、各要素を順番にブロックに渡して評価し、
+その結果が最小となる値に対応する要素を返す [[c:Enumerator]] を
+返します。
 
 @see [[m:Enumerable#sort_by]]
 

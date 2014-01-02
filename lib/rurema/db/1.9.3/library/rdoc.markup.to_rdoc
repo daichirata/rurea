@@ -3,8 +3,9 @@ classes=RDoc=Markup=ToRdoc
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-RDoc �����Υɥ�����Ȥ�ޡ������å׵�ˡ���ݻ������ޤ޽��Ϥ����뤿���
-���֥饤�֥��Ǥ���
+RDoc 形式のドキュメントをマークアップ記法を保持したまま出力させるための
+サブライブラリです。
 
-���֥��饹([[c:RDoc::Markup::ToAnsi]] �ʤ�)��������ƻȤ��ޤ���
+サブクラス([[c:RDoc::Markup::ToAnsi]] など)を作成して使います。

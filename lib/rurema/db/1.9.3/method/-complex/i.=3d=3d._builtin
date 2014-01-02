@@ -4,11 +4,11 @@ kind=defined
 
 --- ==(other) -> bool
 
-¿ôÃÍ¤È¤·¤ÆÅù¤·¤¤¤«È½Äê¤·¤Ş¤¹¡£
+æ•°å€¤ã¨ã—ã¦ç­‰ã—ã„ã‹åˆ¤å®šã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ÈÈæ³Ó¤¹¤ë¿ôÃÍ
+@param other è‡ªèº«ã¨æ¯”è¼ƒã™ã‚‹æ•°å€¤
 
-Îã:
+ä¾‹:
 
   Complex(2, 1) == Complex(1) # => false
   Complex(1, 0) == Complex(1) # => true

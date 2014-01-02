@@ -6,7 +6,11 @@ library=drb
 aliases=DRbObject
 aliasof=
 
-Object wrapping a reference to a remote drb object.
+リモートの dRuby オブジェクトを表すオブジェクトです。
 
-Method calls on this object are relayed to the remote object 
-that this object is a stub for.
+このクラスのインスタンスはプロキシとして働きます。
+つまりインスタンスへのメソッド呼び出しはリモートプロセスに送られ
+リモート側でメソッドが呼び出されます。
+
+内部的には [[m:Object#method_missing]] でメソッド呼び出しを
+hook して、それを転送します。

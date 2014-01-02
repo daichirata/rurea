@@ -3,5 +3,6 @@ classes=Shell=Filter
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:Shell::Filter]] ¤òÄêµÁ¤·¤Æ¤¤¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:Shell::Filter]] ã‚’å®šç¾©ã—ã¦ã„ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

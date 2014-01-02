@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- public_key=(pubkey)
-�������Ȥʤ��ʱ߶����������ɽ�����֥������Ȥ����ꤷ�ޤ���
+公開鍵となる楕円曲線上の点を表すオブジェクトを設定します。
 
-�̾盧�Υ᥽�åɤ��ͤ��ѹ����뤳�ȤϤ���ޤ���
-�褯�ͤ���ɬ�פʾ��Τ����Ѥ��Ƥ���������
+通常このメソッドで値を変更することはありません。
+よく考えて必要な場合のみ利用してください。
 
-@param pubkey �������Ȥʤ� [[c:OpenSSL::PKey::EC::Point]] ���֥�������
-@raise OpenSSL::PKey::ECError ��������������˥��顼������������ȯ�����ޤ�
+@param pubkey 公開鍵となる [[c:OpenSSL::PKey::EC::Point]] オブジェクト
+@raise OpenSSL::PKey::ECError 公開鍵の設定時にエラーが生じた場合に発生します
 @see [[m:OpenSSL::PKey::EC#public_key]]
 

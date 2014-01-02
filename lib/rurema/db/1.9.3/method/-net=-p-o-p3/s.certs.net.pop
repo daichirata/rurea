@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- certs -> String|nil
-SSL �Υѥ�᡼���� ca_file (�ʤ���� ca_path) ���֤��ޤ���
+SSL のパラメータの ca_file (なければ ca_path) を返します。
 
-�ɤ�������ꤵ��Ƥ��ʤ����� nil ���֤��ޤ���
+どちらも設定されていない場合は nil を返します。
 
 @see [[m:OpenSSL::SSL::SSLContext#ca_file]], [[m:OpenSSL::SSL::SSLContext#ca_path]]
 

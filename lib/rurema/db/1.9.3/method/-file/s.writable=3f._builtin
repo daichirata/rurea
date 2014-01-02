@@ -4,7 +4,7 @@ kind=defined
 
 --- writable?(path)    -> bool
 
-[[m:FileTest.#writable?]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+[[m:FileTest.#writable?]] ã¨åŒã˜ã§ã™ã€‚
 
-@param path ¥Ñ¥¹¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param path ãƒ‘ã‚¹ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

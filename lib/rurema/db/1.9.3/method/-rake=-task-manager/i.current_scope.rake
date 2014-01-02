@@ -4,5 +4,5 @@ kind=defined
 
 --- current_scope -> Array
 
-���ߤΥ������פ��֤��ޤ���
+現在のスコープを返します。
 

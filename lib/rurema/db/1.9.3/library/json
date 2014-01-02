@@ -3,7 +3,8 @@ classes=JSON,JSON=JSONError,JSON=ParserError,JSON=GeneratorError,JSON=UnparserEr
 methods=Kernel/i.j.json,Kernel/i.jj.json,Kernel/i.JSON.json,Class/i.json_creatable=3f.json
 sublibraries=json.add.core,json.editor
 is_sublibrary=false
+category=FileFormat
 
-JSON (JavaScript Object Notation)¤ò°·¤¦¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+JSON (JavaScript Object Notation)ã‚’æ‰±ã†ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-JSON ¤Î»ÅÍÍ¤Ï [[rfc:4627]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+JSON ã®ä»•æ§˜ã¯ [[rfc:4627]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚

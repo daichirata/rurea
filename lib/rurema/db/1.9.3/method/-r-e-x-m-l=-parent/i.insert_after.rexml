@@ -2,6 +2,18 @@ names=insert_after
 visibility=public
 kind=defined
 
---- insert_after(child1, child2)
-@todo
+--- insert_after(child1, child2) -> self
+child2 を child1 で指定したノードの後ろに挿入します。
+
+child1 が REXML::Child のインスタンスであるならば、その
+子ノードの後ろに挿入されます。
+child1 が 文字列であるならば、XPath で場所を指定します。
+具体的には [[m:REXML::XPath.first]](self, child1) で特定されるノードの
+後ろに挿入されます。
+
+挿入されるノード(child2)の親は self に変更されます。
+
+@param child1 挿入場所の指定
+@param child2 挿入されるノード
+
 

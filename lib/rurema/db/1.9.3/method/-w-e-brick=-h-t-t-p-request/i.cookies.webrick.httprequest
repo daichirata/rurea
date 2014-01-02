@@ -4,5 +4,5 @@ kind=defined
 
 --- cookies    -> [WEBrick::Cookie]
 
-�ꥯ�����Ȥ˴ޤޤ�� Cookie �إå����ͤ� [[c:WEBrick::Cookie]] ������Ȥ����֤��ޤ���
+リクエストに含まれる Cookie ヘッダの値を [[c:WEBrick::Cookie]] の配列として返します。
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- inspect -> String
-Encoding::Converter ���֥������Ȥξ�����ñ��ɽ�����ޤ���
+Encoding::Converter オブジェクトの情報を簡単に表示します。
 
-@return �Ѵ���ξ�����ñ�˲Ļ벽����ʸ����Ǥ���
+@return 変換器の情報を簡単に可視化した文字列です。
 

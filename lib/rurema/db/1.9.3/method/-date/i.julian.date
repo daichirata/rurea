@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- julian -> Date
-¤³¤Î¥á¥½¥Ã¥É¤Ï¡¢new_start(Date::JULIAN) ¤ÈÅù²Á¤Ç¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€new_start(Date::JULIAN) ã¨ç­‰ä¾¡ã§ã™ã€‚
 
-[[m:Date#new_start]]¡¢¤ª¤è¤Ó [[m:Date::JULIAN]] ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:Date#new_start]]ã€ãŠã‚ˆã³ [[m:Date::JULIAN]] ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 

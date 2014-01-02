@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- issuer -> OpenSSL::X509::Name
-�������ȯ�ԼԤ�̾�����֤��ޤ���
+証明書の発行者の名前を返します。
 

@@ -4,13 +4,13 @@ kind=defined
 
 --- PKCS1_PADDING -> Integer
 
-PKCS #1 v1.5 ¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ë¥Ñ¥Ç¥£¥ó¥°¥â¡¼¥É¤Ç¤¹¡£
+PKCS #1 v1.5 ã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ãƒ‘ãƒ‡ã‚£ãƒ³ã‚°ãƒ¢ãƒ¼ãƒ‰ã§ã™ã€‚
 
-¸ß´¹À­ÌÜÅª°Ê³°¤Ç¤ÎÍøÍÑ¤Ï¿ä¾©¤·¤Ş¤»¤ó¡£
+äº’æ›æ€§ç›®çš„ä»¥å¤–ã§ã®åˆ©ç”¨ã¯æ¨å¥¨ã—ã¾ã›ã‚“ã€‚
 
-[[m:OpenSSL::PKey::RSA#public_encrypt]]¡¢
-[[m:OpenSSL::PKey::RSA#public_decrypt]]¡¢
-[[m:OpenSSL::PKey::RSA#private_encrypt]]¡¢
-[[m:OpenSSL::PKey::RSA#private_decrypt]] ¤Î
-ÂèÆó°ú¿ô¤Ë»ØÄê¤Ç¤­¤Ş¤¹¡£
+[[m:OpenSSL::PKey::RSA#public_encrypt]]ã€
+[[m:OpenSSL::PKey::RSA#public_decrypt]]ã€
+[[m:OpenSSL::PKey::RSA#private_encrypt]]ã€
+[[m:OpenSSL::PKey::RSA#private_decrypt]] ã®
+ç¬¬äºŒå¼•æ•°ã«æŒ‡å®šã§ãã¾ã™ã€‚
 

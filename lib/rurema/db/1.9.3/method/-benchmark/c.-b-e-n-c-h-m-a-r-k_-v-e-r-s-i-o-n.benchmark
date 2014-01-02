@@ -2,8 +2,8 @@ names=BENCHMARK_VERSION
 visibility=public
 kind=defined
 
---- BENCHMARK_VERSION
+--- BENCHMARK_VERSION -> String
 
-benchmark ещеде╓ещеъд╬е╨б╝е╕ечеєдЄ╔╜д╖д▐д╣бг
+benchmark уГйуВдуГЦуГйуГкуБоуГРуГ╝уВ╕уГзуГ│уВТшбиуБЧуБ╛уБЩуАВ
 
 

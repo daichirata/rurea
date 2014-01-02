@@ -6,4 +6,4 @@ library=drb
 aliases=
 aliasof=
 
-Error raised when an error occurs on the underlying communication protocol.
+通信エラーが発生したことを意味する例外クラス。

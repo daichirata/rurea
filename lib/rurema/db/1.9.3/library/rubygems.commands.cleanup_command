@@ -1,25 +1,26 @@
-requires=rubygems.command,rubygems.user_interaction,rubygems.source_index,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system,rubygems.dependency_list
+requires=rubygems.command,rubygems.user_interaction,rubygems.source_index,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.dependency_list
 classes=Gem=Commands=CleanupCommand
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-¥í¡¼¥«¥ë¤Ë¥¤¥ó¥¹¥È¡¼¥ë¤µ¤ì¤Æ¤¤¤ë¸Å¤¤ Gem ¤òºï½ü¤¹¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ãƒ­ãƒ¼ã‚«ãƒ«ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹å¤ã„ Gem ã‚’å‰Šé™¤ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
   Usage: gem cleanup [GEMNAME ...] [options]
     Options:
       -d, --dryrun
     Common Options:
-      -h, --help                       ¤³¤Î¥³¥Ş¥ó¥É¤Î¥Ø¥ë¥×¤òÉ½¼¨¤·¤Ş¤¹
-      -V, --[no-]verbose               É½¼¨¤ò¾ÜºÙ¤Ë¤·¤Ş¤¹
-      -q, --quiet                      ÀÅ¤«¤Ë¼Â¹Ô¤·¤Ş¤¹
-          --config-file FILE           »ØÄê¤µ¤ì¤¿ÀßÄê¥Õ¥¡¥¤¥ë¤ò»ÈÍÑ¤·¤Ş¤¹
-          --backtrace                  ¥Ğ¥Ã¥¯¥È¥ì¡¼¥¹¤òÉ½¼¨¤·¤Ş¤¹
-          --debug                      Ruby ¼«ÂÎ¤Î¥Ç¥Ğ¥Ã¥°¥ª¥×¥·¥ç¥ó¤òÍ­¸ú¤Ë¤·¤Ş¤¹
+      -h, --help                       ã“ã®ã‚³ãƒãƒ³ãƒ‰ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã—ã¾ã™
+      -V, --[no-]verbose               è¡¨ç¤ºã‚’è©³ç´°ã«ã—ã¾ã™
+      -q, --quiet                      é™ã‹ã«å®Ÿè¡Œã—ã¾ã™
+          --config-file FILE           æŒ‡å®šã•ã‚ŒãŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ç”¨ã—ã¾ã™
+          --backtrace                  ãƒãƒƒã‚¯ãƒˆãƒ¬ãƒ¼ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™
+          --debug                      Ruby è‡ªä½“ã®ãƒ‡ãƒãƒƒã‚°ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æœ‰åŠ¹ã«ã—ã¾ã™
     Arguments:
-      GEMNAME       ºï½ü¤¹¤ë Gem ¥Ñ¥Ã¥±¡¼¥¸¤ÎÌ¾Á°¤ò»ØÄê¤·¤Ş¤¹
+      GEMNAME       å‰Šé™¤ã™ã‚‹ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™
     Summary:
-      ¥í¡¼¥«¥ë¥ê¥İ¥¸¥È¥ê¤Ë¥¤¥ó¥¹¥È¡¼¥ë¤µ¤ì¤Æ¤¤¤ë¸Å¤¤¥Ğ¡¼¥¸¥ç¥ó¤Î
-      Gem ¥Ñ¥Ã¥±¡¼¥¸¤òºï½ü¤·¤Ş¤¹
+      ãƒ­ãƒ¼ã‚«ãƒ«ãƒªãƒã‚¸ãƒˆãƒªã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹å¤ã„ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®
+      Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’å‰Šé™¤ã—ã¾ã™
     Defaults:
       --no-dryrun

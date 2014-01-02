@@ -4,9 +4,9 @@ kind=defined
 
 --- finish -> String
 
-���ȥ꡼��ؤ����Ϥ�λ�������ϥХåե���ե�å��夷�ޤ���
-������Ū�ʿ����񤤤� [[m:Zlib::Deflate#finish]],
-[[m:Zlib::Inflate#finish]] �򻲾Ȥ��Ʋ�������
+ストリームへの入力を終了し、出力バッファをフラッシュします。
+より具体的な振る舞いは [[m:Zlib::Deflate#finish]],
+[[m:Zlib::Inflate#finish]] を参照して下さい。
 
 @see  [[m:Zlib::Deflate#finish]],[[m:Zlib::Inflate#finish]] 
 

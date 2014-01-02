@@ -4,11 +4,11 @@ kind=defined
 
 --- uninstall_gem(spec, specs)
 
-Ϳ����줿 spec ���б����� Gem �򥢥󥤥󥹥ȡ��뤷�ޤ���
+与えられた spec に対応する Gem をアンインストールします。
 
-@param spec ���󥤥󥹥ȡ�����ꤵ��Ƥ��� Gem �� [[c:Gem::Specification]] ����ꤷ�ޤ���
+@param spec アンインストール指定されている Gem の [[c:Gem::Specification]] を指定します。
 
-@param specs ���󥤥󥹥ȡ��뤹�� Gem �Υꥹ�Ȥ���ꤷ�ޤ���
-             ���Υѥ�᡼�����˲�Ū���ѹ�����ޤ���
+@param specs アンインストールする Gem のリストを指定します。
+             このパラメータは破壊的に変更されます。
 
 

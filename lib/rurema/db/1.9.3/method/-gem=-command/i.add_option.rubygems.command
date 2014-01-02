@@ -4,12 +4,12 @@ kind=defined
 
 --- add_option(*opts){|value, options| ... }
 
-���ޥ�ɤ��Ф��륳�ޥ�ɥ饤�󥪥ץ����ȥϥ�ɥ���ɲä��ޤ���
+コマンドに対するコマンドラインオプションとハンドラを追加します。
 
-�֥��å��ˤϡ����ޥ�ɥ饤��������ͤȤ��Υ��ץ�����Ϥ���ޤ���
-���ץ����ϥϥå���ˤʤäƤ��ޤ���
+ブロックには、コマンドライン引数の値とそのオプションが渡されます。
+オプションはハッシュになっています。
 
-@param opts ���ץ�������ꤷ�ޤ���
+@param opts オプションを指定します。
 
 @see [[m:OptionParser#make_switch]]
 

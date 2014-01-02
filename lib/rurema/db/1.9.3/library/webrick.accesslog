@@ -3,5 +3,6 @@ classes=WEBrick=AccessLog,WEBrick=AccessLog=AccessLogError
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-WEBrick::HTTPServer д╬евепе╗е╣еэе░д╬╖┴╝░дЄ╜ш═¤д╣дыд┐дсд╦╞т╔Їд╟╗╚дядьдыещеде╓ещеъд╟д╣бг
+WEBrick::HTTPServer уБоуВвуВпуВ╗уВ╣уГнуВ░уБох╜вх╝ПуВТхЗжчРЖуБЩуВЛуБЯуВБуБлхЖЕщГиуБзф╜┐уВПуВМуВЛуГйуВдуГЦуГйуГкуБзуБЩуАВ

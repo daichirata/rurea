@@ -4,6 +4,6 @@ kind=defined
 
 --- success -> String
 
-Gem ¤ÎºîÀ®¤ËÀ®¸ù¤·¤¿¤È¤­¤ËÉ½¼¨¤¹¤ë¥á¥Ã¥»¡¼¥¸¤òÊÖ¤·¤Þ¤¹¡£
+Gem ã®ä½œæˆã«æˆåŠŸã—ãŸã¨ãã«è¡¨ç¤ºã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¿”ã—ã¾ã™ã€‚
 
 

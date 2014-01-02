@@ -1,7 +1,0 @@
-requires=
-classes=DOT
-methods=
-sublibraries=
-is_sublibrary=true
-
-モジュールやクラスの関係を描く図を作成するためのサブライブラリです。

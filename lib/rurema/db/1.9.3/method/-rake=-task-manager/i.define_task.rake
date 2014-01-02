@@ -4,9 +4,9 @@ kind=defined
 
 --- define_task(task_class, *args){ ... } -> Rake::Task
 
-¥¿¥¹¥¯¤òÄêµÁ¤·¤Þ¤¹¡£
+ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-@param task_class ¥¿¥¹¥¯¥¯¥é¥¹¤ò»ØÄê¤·¤Þ¤¹¡£
+@param task_class ã‚¿ã‚¹ã‚¯ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param args ¥¿¥¹¥¯¤ËÅÏ¤¹¥Ñ¥é¥á¡¼¥¿¤ò»ØÄê¤·¤Þ¤¹¡£
+@param args ã‚¿ã‚¹ã‚¯ã«æ¸¡ã™ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

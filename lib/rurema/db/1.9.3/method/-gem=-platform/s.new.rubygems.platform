@@ -4,7 +4,7 @@ kind=defined
 
 --- new(arch)-> Gem::Platform
 
-¼«¿È¤ò½é´ü²½¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param arch ¥¢¡¼¥­¥Æ¥¯¥Á¥ã¤ò»ØÄê¤·¤Þ¤¹¡£
+@param arch ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

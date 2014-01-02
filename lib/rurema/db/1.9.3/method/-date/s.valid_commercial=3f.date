@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- valid_commercial? (cwyear, cweek, cwday, start = Date::GREGORIAN) -> bool
-Àµ¤·¤¤Îñ½µÆüÉÕ¤Ç¤¢¤ì¤Ğ¿¿¡¢¤½¤¦¤Ç¤Ê¤¤¤Ê¤éµ¶¤òÊÖ¤·¤Ş¤¹¡£
+æ­£ã—ã„æš¦é€±æ—¥ä»˜ã§ã‚ã‚Œã°çœŸã€ãã†ã§ãªã„ãªã‚‰å½ã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:Date.jd]]¡¢¤ª¤è¤Ó [[m:Date.commercial]] ¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:Date.jd]]ã€ãŠã‚ˆã³ [[m:Date.commercial]] ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param cwyear Ç¯
-@param cweek ½µ
-@param cwday ½µ¤ÎÆü (ÍËÆü)
-@param start ¥°¥ì¥´¥ê¥ªÎñ¤ò¤Ä¤«¤¤»Ï¤á¤¿Æü¤ò¤¢¤é¤ï¤¹¥æ¥ê¥¦¥¹Æü
+@param cwyear å¹´
+@param cweek é€±
+@param cwday é€±ã®æ—¥ (æ›œæ—¥)
+@param start ã‚°ãƒ¬ã‚´ãƒªã‚ªæš¦ã‚’ã¤ã‹ã„å§‹ã‚ãŸæ—¥ã‚’ã‚ã‚‰ã‚ã™ãƒ¦ãƒªã‚¦ã‚¹æ—¥
 

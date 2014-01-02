@@ -1,37 +1,38 @@
-requires=rubygems.command,rubygems.user_interaction,rubygems.local_remote_options,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system,rubygems.version_option
+requires=rubygems.command,rubygems.user_interaction,rubygems.local_remote_options,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.version_option
 classes=Gem=Commands=QueryCommand
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¾ğÊó¤ò¸¡º÷¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®æƒ…å ±ã‚’æ¤œç´¢ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
 Usage: gem query [options]
   Options:
     -i, --[no-]installed             Check for installed gem
     -v, --version VERSION            Specify version of gem to query
-    -n, --name-matches REGEXP        Í¿¤¨¤é¤ì¤¿Àµµ¬É½¸½¤Ë¥Ş¥Ã¥Á¤¹¤ë Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò
-                                     ¸¡º÷¤·¤Ş¤¹
-    -d, --[no-]details               Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¾ÜºÙ¤òÉ½¼¨¤·¤Ş¤¹
-        --[no-]versions              Gem ¥Ñ¥Ã¥±¡¼¥¸Ì¾¤Î¤ßÉ½¼¨¤·¤Ş¤¹
-    -a, --all                        ¸«¤Ä¤«¤Ã¤¿ Gem ¥Ñ¥Ã¥±¡¼¥¸¤ÎÁ´¤Æ¤Î¥Ğ¡¼¥¸¥ç¥ó¤òÉ½¼¨¤·¤Ş¤¹
+    -n, --name-matches REGEXP        ä¸ãˆã‚‰ã‚ŒãŸæ­£è¦è¡¨ç¾ã«ãƒãƒƒãƒã™ã‚‹ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’
+                                     æ¤œç´¢ã—ã¾ã™
+    -d, --[no-]details               Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®è©³ç´°ã‚’è¡¨ç¤ºã—ã¾ã™
+        --[no-]versions              Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã®ã¿è¡¨ç¤ºã—ã¾ã™
+    -a, --all                        è¦‹ã¤ã‹ã£ãŸ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®å…¨ã¦ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¡¨ç¤ºã—ã¾ã™
     Local/Remote Options:
-      -l, --local                      Áàºî¤ò¥í¡¼¥«¥ë¤Ë¸ÂÄê¤·¤Ş¤¹
-      -r, --remote                     Áàºî¤ò¥ê¥â¡¼¥È¤Ë¸ÂÄê¤·¤Ş¤¹
-      -b, --both                       ¥í¡¼¥«¥ë¤È¥ê¥â¡¼¥È¤ÎÎ¾Êı¤ÎÁàºî¤òµö²Ä¤·¤Ş¤¹
+      -l, --local                      æ“ä½œã‚’ãƒ­ãƒ¼ã‚«ãƒ«ã«é™å®šã—ã¾ã™
+      -r, --remote                     æ“ä½œã‚’ãƒªãƒ¢ãƒ¼ãƒˆã«é™å®šã—ã¾ã™
+      -b, --both                       ãƒ­ãƒ¼ã‚«ãƒ«ã¨ãƒªãƒ¢ãƒ¼ãƒˆã®ä¸¡æ–¹ã®æ“ä½œã‚’è¨±å¯ã—ã¾ã™
       -B, --bulk-threshold COUNT       Threshold for switching to bulk
                                        synchronization (default 1000)
-          --source URL                 Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¥ê¥â¡¼¥È¥ê¥İ¥¸¥È¥ê¤Î URL ¤ò»ØÄê¤·¤Ş¤¹
-          --[no-]http-proxy [URL]      ¥ê¥â¡¼¥È¤ÎÁàºî¤Ë HTTP ¥×¥í¥¯¥·¤ò»ÈÍÑ¤·¤Ş¤¹
-      -u, --[no-]update-sources        ¥í¡¼¥«¥ë¥½¡¼¥¹¥­¥ã¥Ã¥·¥å¤ò¹¹¿·¤·¤Ş¤¹
+          --source URL                 Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®ãƒªãƒ¢ãƒ¼ãƒˆãƒªãƒã‚¸ãƒˆãƒªã® URL ã‚’æŒ‡å®šã—ã¾ã™
+          --[no-]http-proxy [URL]      ãƒªãƒ¢ãƒ¼ãƒˆã®æ“ä½œã« HTTP ãƒ—ãƒ­ã‚¯ã‚·ã‚’ä½¿ç”¨ã—ã¾ã™
+      -u, --[no-]update-sources        ãƒ­ãƒ¼ã‚«ãƒ«ã‚½ãƒ¼ã‚¹ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚’æ›´æ–°ã—ã¾ã™
     Common Options:
-      -h, --help                       ¤³¤Î¥³¥Ş¥ó¥É¤Î¥Ø¥ë¥×¤òÉ½¼¨¤·¤Ş¤¹
-      -V, --[no-]verbose               É½¼¨¤ò¾ÜºÙ¤Ë¤·¤Ş¤¹
-      -q, --quiet                      ÀÅ¤«¤Ë¼Â¹Ô¤·¤Ş¤¹
-          --config-file FILE           »ØÄê¤µ¤ì¤¿ÀßÄê¥Õ¥¡¥¤¥ë¤ò»ÈÍÑ¤·¤Ş¤¹
-          --backtrace                  ¥Ğ¥Ã¥¯¥È¥ì¡¼¥¹¤òÉ½¼¨¤·¤Ş¤¹
-          --debug                      Ruby ¼«ÂÎ¤Î¥Ç¥Ğ¥Ã¥°¥ª¥×¥·¥ç¥ó¤òÍ­¸ú¤Ë¤·¤Ş¤¹
+      -h, --help                       ã“ã®ã‚³ãƒãƒ³ãƒ‰ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã—ã¾ã™
+      -V, --[no-]verbose               è¡¨ç¤ºã‚’è©³ç´°ã«ã—ã¾ã™
+      -q, --quiet                      é™ã‹ã«å®Ÿè¡Œã—ã¾ã™
+          --config-file FILE           æŒ‡å®šã•ã‚ŒãŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ç”¨ã—ã¾ã™
+          --backtrace                  ãƒãƒƒã‚¯ãƒˆãƒ¬ãƒ¼ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™
+          --debug                      Ruby è‡ªä½“ã®ãƒ‡ãƒãƒƒã‚°ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æœ‰åŠ¹ã«ã—ã¾ã™
   Summary:
-    Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¾ğÊó¤ò¸¡º÷¤·¤Ş¤¹
+    Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®æƒ…å ±ã‚’æ¤œç´¢ã—ã¾ã™
   Defaults:
     --local --name-matches // --no-details --versions --no-installed

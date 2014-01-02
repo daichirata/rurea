@@ -1,8 +1,9 @@
-names=to_i
+names=to_i,to_int
 visibility=public
 kind=defined
 
 --- to_i    -> Integer
+--- to_int  -> Integer
 
-ผซฟศคฌปุคนฅขฅษฅ์ฅนค๒ภฐฟ๔ควสึคทคÞคนกฃ
+่ช่บซใๆใใขใใฌในใ’ๆ•ดๆ•ฐใง่ฟ”ใ—ใพใใ€
 

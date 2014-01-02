@@ -5,15 +5,15 @@ kind=defined
 --- dlopen(lib)                    -> DL::Handle
 --- dlopen(lib) {|handle| ... }    -> DL::Handle
 
-�����ʥߥå��饤�֥�� lib ������ɤ���
-[[c:DL::Handle]] �Ȥ����֤��ޤ���
+ダイナミックライブラリ lib をロードし、
+[[c:DL::Handle]] として返します。
 
-�֥��å���Ϳ�����Ƥ�����ϡ�[[c:DL::Handle]] �����Ȥ���
-Ϳ����줿�֥��å���¹Ԥ��ޤ���[[c:DL::Handle]] ���֤��ޤ���
+ブロックが与えられている場合は、[[c:DL::Handle]] 引数として
+与えられたブロックを実行します。[[c:DL::Handle]] を返します。
 
-[[m:DL::Handle.new]](lib) �������Ǥ���
+[[m:DL::Handle.new]](lib) と等価です。
 
-@param lib �����ɤ������饤�֥���ʸ�����Ϳ���ޤ���
+@param lib ロードしたいライブラリを文字列で与えます。
 
-@raise RuntimeError [[man:dlopen(3)]] �˼��Ԥ�������ȯ�����ޤ���
+@raise RuntimeError [[man:dlopen(3)]] に失敗した時に発生します。
 

@@ -3,5 +3,6 @@ classes=Shell=CommandProcessor
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:Shell]] ¤Ç»ÈÍÑ²ÄÇ½¤Ê¥³¥Ş¥ó¥É¤ÎÂçÈ¾¤òÄêµÁ¤¹¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:Shell]] ã§ä½¿ç”¨å¯èƒ½ãªã‚³ãƒãƒ³ãƒ‰ã®å¤§åŠã‚’å®šç¾©ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

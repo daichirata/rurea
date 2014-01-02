@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- blockdev? -> bool
-FileTest.blockdev?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.blockdev?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#blockdev?]]
 

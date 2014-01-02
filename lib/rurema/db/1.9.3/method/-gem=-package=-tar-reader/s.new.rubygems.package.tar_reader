@@ -4,8 +4,8 @@ kind=defined
 
 --- new(io) -> Gem::Package::TarReader
 
-io ¤Ë´ØÏ¢ÉÕ¤±¤Æ [[c:Gem::Package::TarReader]] ¤ò½é´ü²½¤·¤Ş¤¹¡£
+io ã«é–¢é€£ä»˜ã‘ã¦ [[c:Gem::Package::TarReader]] ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param io pos, eof?, read, getc, pos= ¤È¤¤¤¦¥¤¥ó¥¹¥¿¥ó¥¹¥á¥½¥Ã¥É¤ò»ı¤Ä
-          ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param io pos, eof?, read, getc, pos= ã¨ã„ã†ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã‚’æŒã¤
+          ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

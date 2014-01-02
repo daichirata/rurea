@@ -4,5 +4,5 @@ kind=defined
 
 --- display_prerequisites
 
-¥¿¥¹¥¯¤È¤½¤Î¥¿¥¹¥¯¤Ë°ÍÂ¸¤·¤Æ¤¤¤ë¥¿¥¹¥¯¤òÉ½¼¨¤·¤Þ¤¹¡£
+ã‚¿ã‚¹ã‚¯ã¨ãã®ã‚¿ã‚¹ã‚¯ã«ä¾å­˜ã—ã¦ã„ã‚‹ã‚¿ã‚¹ã‚¯ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚
 

@@ -3,5 +3,6 @@ classes=TkItemFontOptkeys,TkTreatItemFont
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

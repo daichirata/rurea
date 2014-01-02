@@ -4,9 +4,9 @@ kind=defined
 
 --- headers        -> [[String]]
 
-¼«¿È¤Î¥Ø¥Ã¥À¡¼¤òÊ¸»úÎó¤ÎÇÛÎó¤ÎÇÛÎó¤È¤·¤ÆÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã®ãƒ˜ãƒƒãƒ€ãƒ¼ã‚’æ–‡å­—åˆ—ã®é…åˆ—ã®é…åˆ—ã¨ã—ã¦è¨­å®šã—ã¾ã™ã€‚
 
-Îã: 
+ä¾‹: 
  m = URI.parse("mailto:ruby-list@ruby-lang.org?subject=subscribe&cc=myaddr")
  p m.headers #=> [["subject", "subscribe"], ["cc", "myaddr"]]
 

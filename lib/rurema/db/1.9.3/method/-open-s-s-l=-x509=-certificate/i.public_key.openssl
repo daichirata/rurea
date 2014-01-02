@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- public_key -> OpenSSL::PKey::PKey
-������˵��ܤ��줿���������֤��ޤ���
+証明書に記載された公開鍵を返します。
 
-���μ���ˤ�äưʲ��Τ����줫�Υ��饹�Υ��󥹥��󥹤��֤��ޤ���
+鍵の種類によって以下のいずれかのクラスのインスタンスを返します。
   * [[c:OpenSSL::PKey::RSA]]
   * [[c:OpenSSL::PKey::DSA]]
   * [[c:OpenSSL::PKey::DH]]
   * [[c:OpenSSL::PKey::EC]]
 
-@raise OpenSSL::X509::CertificateError ���μ����˼��Ԥ�������ȯ�����ޤ�
-@raise OpenSSL::PKey::PKeyError ���ݡ��Ȥ��Ƥ��ʤ�����θ��Ǥ������ȯ�����ޤ�
+@raise OpenSSL::X509::CertificateError 鍵の取得に失敗した場合に発生します
+@raise OpenSSL::PKey::PKeyError サポートしていない種類の鍵である場合に発生します
 

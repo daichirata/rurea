@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- sticky? -> bool
-sticky¥Ó¥Ã¥È¤¬Î©¤Ã¤Æ¤¤¤ë»þ¤Ë¿¿¤òÊÖ¤·¤Þ¤¹¡£
+stickyãƒ“ãƒƒãƒˆãŒç«‹ã£ã¦ã„ã‚‹æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   Dir.glob("/usr/bin/*") {|bd|
     begin
@@ -13,7 +13,7 @@ sticky¥Ó¥Ã¥È¤¬Î©¤Ã¤Æ¤¤¤ë»þ¤Ë¿¿¤òÊÖ¤·¤Þ¤¹¡£
     rescue
     end
   }
-  #Îã
+  #ä¾‹
   #...
   #=> /usr/bin/emacs-21.4
   #...

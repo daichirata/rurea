@@ -4,9 +4,9 @@ kind=defined
 
 --- new(type, val) -> Syck::YamlNode
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-@param type ������ʸ����ǻ��ꤷ�ޤ���
+@param type タグを文字列で指定します。
 
-@param val �ͤ�ʸ����ǻ��ꤷ�ޤ���
+@param val 値を文字列で指定します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- include?(substr) -> bool
 
-ʸ���������ʬʸ���� substr ���ޤޤ�Ƥ���п����֤��ޤ���
+文字列中に部分文字列 substr が含まれていれば真を返します。
 
-@param substr    ��������ʸ����
+@param substr    検索する文字列
 

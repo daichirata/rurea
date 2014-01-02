@@ -3,5 +3,6 @@ classes=Tk=ValidateConfigure,Tk=ItemValidateConfigure,TkValidateCommand,TkValida
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- sync_shared? -> bool
 --- shared? -> bool
-��ͭ���å�����Ƥ��뤫�ɤ������֤��ޤ���
+共有ロックされているかどうかを返します。
 

@@ -2,10 +2,10 @@ names=nonzero?
 visibility=public
 kind=defined
 
---- nonzero?
-@todo
+--- nonzero? -> self | nil
 
-a ¤¬ 0 ¤Ê¤é nil¡¢0 °Ê³°¤Ê¤é a ¤½¤Î¤â¤Î¤¬ÊÖ¤ê¤Þ¤¹¡£
+self ãŒ 0 ä»¥å¤–ã®ã¨ãã« self ã‚’è¿”ã—ã¾ã™ã€‚0 ã®ã¨ãã« nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-    c = a.nonzero? 
+  BigDecimal("0").nonzero? # => nil
+  BigDecimal("1").nonzero? # => #<BigDecimal:f7236228,'0.1E1',4(8)>
 

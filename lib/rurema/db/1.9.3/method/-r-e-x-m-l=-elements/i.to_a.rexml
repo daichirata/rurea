@@ -2,6 +2,22 @@ names=to_a
 visibility=public
 kind=defined
 
---- to_a(xpath = nil)
-@todo
+--- to_a(xpath = nil) -> [REXML::Element]
+すべての子要素の配列を返します。
+
+xpath を指定した場合は、その XPath 文字列に
+マッチする要素の配列を返します。
+
+[[m:REXML::Elements#each]] と同様、[[c:REXML::XPath.match]] などと
+異なり、要素以外の子ノードは無視されます。
+
+@param xpath XPath文字列
+
+==== 例
+  require 'rexml/document'
+  require 'rexml/xpath'
+  doc = REXML::Document.new '<a>sean<b/>elliott<c/></a>'
+  doc.root.elements.to_a   # => [<b/>, <c/>]
+  doc.root.elements.to_a("child::node()") # => [<b/>, <c/>]
+  REXML::XPath.match(doc.root, "child::node()") # => ["sean", <b/>, "elliott", <c/>]
 

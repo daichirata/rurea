@@ -4,7 +4,7 @@ kind=defined
 
 --- handles?(args) -> bool
 
-Ϳ����줿�����ꥹ�Ȥ�������뤳�Ȥ������п����֤��ޤ��������Ǥ��ʤ����ϵ����֤��ޤ���
+与えられた引数リストを処理することが出来れば真を返します。処理できない場合は偽を返します。
 
-@param args �����ꥹ�Ȥ�����������
+@param args 引数リストを指定子明日。
 

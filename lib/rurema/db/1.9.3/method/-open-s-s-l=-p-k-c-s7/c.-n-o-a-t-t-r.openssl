@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- NOATTR -> Integer
-PKCS#7 autenticatedAttributes(½ğÌ¾¤·¤¿»ş´Ö¤Ê¤É¤Î¾ğÊó)
-¤ò¾ÊÎ¬¤·¤Ş¤¹¡£
+PKCS#7 autenticatedAttributes(ç½²åã—ãŸæ™‚é–“ãªã©ã®æƒ…å ±)
+ã‚’çœç•¥ã—ã¾ã™ã€‚
 
-[[m:OpenSSL::PKCS7.sign]] ¤ÇÍøÍÑ²ÄÇ½¤Ê¥Õ¥é¥°¤Ç¤¹¡£
+[[m:OpenSSL::PKCS7.sign]] ã§åˆ©ç”¨å¯èƒ½ãªãƒ•ãƒ©ã‚°ã§ã™ã€‚
 

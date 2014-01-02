@@ -4,11 +4,11 @@ kind=defined
 
 --- [](sec) -> {String => String}
 --- section(sec) -> {String => String}
-»ØÄê¤·¤¿¥»¥¯¥·¥ç¥ó¤ÎÀßÄê¾ðÊó¤ò¥Ï¥Ã¥·¥å¤ÇÊÖ¤·¤Þ¤¹¡£
+æŒ‡å®šã—ãŸã‚»ã‚¯ã‚·ãƒ§ãƒ³ã®è¨­å®šæƒ…å ±ã‚’ãƒãƒƒã‚·ãƒ¥ã§è¿”ã—ã¾ã™ã€‚
 
-¥Ï¥Ã¥·¥å¤Î¥­¡¼¤¬ÀßÄê¾ðÊó¤Î¥­¡¼¡¢¥Ï¥Ã¥·¥å¤ÎÃÍ¤¬ÂÐ±þ¤¹¤ë¾ðÊó¤È¤Ê¤ê¤Þ¤¹¡£
+ãƒãƒƒã‚·ãƒ¥ã®ã‚­ãƒ¼ãŒè¨­å®šæƒ…å ±ã®ã‚­ãƒ¼ã€ãƒãƒƒã‚·ãƒ¥ã®å€¤ãŒå¯¾å¿œã™ã‚‹æƒ…å ±ã¨ãªã‚Šã¾ã™ã€‚
 
-section ¤Ï obsolete ¤Ç¤¹¡£[] ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
+section ã¯ obsolete ã§ã™ã€‚[] ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚
 
-@param sec ¥»¥¯¥·¥ç¥ó¤òÉ½¤¹Ê¸»úÎó
+@param sec ã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’è¡¨ã™æ–‡å­—åˆ—
 

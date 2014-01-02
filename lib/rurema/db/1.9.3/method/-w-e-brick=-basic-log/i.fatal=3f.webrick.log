@@ -4,6 +4,6 @@ kind=defined
 
 --- fatal?    -> bool
 
-���ȤΥ�����٥뤬 FATAL �ʾ�λ��� true ���֤��ޤ���
-�����Ǥʤ����� false ���֤��ޤ���
+自身のログレベルが FATAL 以上の時に true を返します。
+そうでない場合に false を返します。
 

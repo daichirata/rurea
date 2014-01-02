@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- gregorian? -> bool
-���쥴�ꥪ��ʤ鿿���֤��ޤ���
+グレゴリオ暦なら真を返します。
 

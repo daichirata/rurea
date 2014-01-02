@@ -5,15 +5,15 @@ kind=defined
 --- getopts(argv, *opts)   -> Hash
 --- getopts(*opts)         -> Hash
 
-°ú¿ô¤ò¥Ñ¡¼¥¹¤·¤¿·ë²Ì¤ò¡¢Hash ¤È¤·¤ÆÊÖ¤·¤Ş¤¹¡£(self.new.getopts ¤ÈÆ±¤¸¤Ç¤¹)
+å¼•æ•°ã‚’ãƒ‘ãƒ¼ã‚¹ã—ãŸçµæœã‚’ã€Hash ã¨ã—ã¦è¿”ã—ã¾ã™ã€‚(self.new.getopts ã¨åŒã˜ã§ã™)
 
-@param argv ¥Ñ¡¼¥¹¤·¤¿¤¤ÇÛÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param argv ãƒ‘ãƒ¼ã‚¹ã—ãŸã„é…åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param opts °ú¿ô¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param opts å¼•æ•°ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise OptionParser::ParseError ¥Ñ¡¼¥¹¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¡¢È¯À¸¤·¤Ş¤¹¡£
-                                ¼Âºİ¤Ï OptionParser::ParseError ¤Î¥µ¥Ö¥¯
-                                ¥é¥¹¤Ë¤Ê¤ê¤Ş¤¹¡£
+@raise OptionParser::ParseError ãƒ‘ãƒ¼ã‚¹ã«å¤±æ•—ã—ãŸå ´åˆã€ç™ºç”Ÿã—ã¾ã™ã€‚
+                                å®Ÿéš›ã¯ OptionParser::ParseError ã®ã‚µãƒ–ã‚¯
+                                ãƒ©ã‚¹ã«ãªã‚Šã¾ã™ã€‚
 
 @see [[m:OptionParser#getopts]]
 

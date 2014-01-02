@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- proxy_address -> String|nil
-���Ȥ� ([[m:Net::HTTP.Proxy]] �ˤ�äƺ������줿) 
-�ץ������ѤΥ��饹�ʤ�Хץ������Υ��ɥ쥹���֤��ޤ���
+自身が ([[m:Net::HTTP.Proxy]] によって作成された) 
+プロクシ用のクラスならばプロクシのアドレスを返します。
 
-�����Ǥʤ���� nil ���֤��ޤ���
+そうでなければ nil を返します。
 
 @see [[m:Net::HTTP.Proxy]]
 

@@ -6,6 +6,6 @@ library=openssl
 aliases=
 aliasof=
 
-PKCS7 ���������ɽ�����饹�Ǥ���
+PKCS7 の送信先を表すクラスです。
 
-S/MIME �Ź沽������˻��ꤷ����������̣���ޤ���
+S/MIME 暗号化する場合に指定した送信先を意味します。

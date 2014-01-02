@@ -5,14 +5,14 @@ kind=defined
 --- add_file_simple(name, mode, size) -> self
 --- add_file_simple(name, mode, size){|io| ... } -> self
 
-���Ȥ˴�Ϣ�դ���줿 IO �˥ե�������ɲä��ޤ���
+自身に関連付けられた IO にファイルを追加します。
 
-�֥��å���Ϳ����ȡ����Ȥ˴�Ϣ�դ���줿 IO ��֥��å����Ϥ��ƥ֥��å�
-��ɾ�����ޤ���
+ブロックを与えると、自身に関連付けられた IO をブロックに渡してブロック
+を評価します。
 
-@param name �ɲä���ե������̾������ꤷ�ޤ���
+@param name 追加するファイルの名前を指定します。
 
-@param mode �ɲä���ե�����Υѡ��ߥå�������ꤷ�ޤ���
+@param mode 追加するファイルのパーミッションを指定します。
 
-@param size �ɲä���ե�����Υ���������ꤷ�ޤ���
+@param size 追加するファイルのサイズを指定します。
 

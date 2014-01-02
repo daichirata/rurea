@@ -4,5 +4,5 @@ kind=defined
 
 --- DEFAULT_IGNORE_PROCS
 
-�ǥե���Ȥǽ��������³���Ǥ���
+デフォルトで除外する手続きです。
 

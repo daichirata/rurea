@@ -4,6 +4,6 @@ kind=defined
 
 --- PARSER_EVENT_TABLE -> {Symbol => Integer}
 
-�ѡ������٥�ȤΥ��٥�� ID (����ܥ�) ���б�����ϥ�ɥ�ΰ����θĿ���
-�ꥹ�Ȥ�ϥå�����֤��ޤ���
+パーサイベントのイベント ID (シンボル) と対応するハンドラの引数の個数の
+リストをハッシュで返します。
 

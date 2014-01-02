@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- error_char -> String
-¥¨¥é¡¼¤òÈ¯À¸¤µ¤»¤¿1Ê¸»ú¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+ã‚¨ãƒ©ãƒ¼ã‚’ç™ºç”Ÿã•ã›ãŸ1æ–‡å­—ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
   ec = Encoding::Converter.new("UTF-8", "EUC-JP")
   begin
-    ec.convert("\u{a0}") 
+    ec.convert("\u{a0}")
   rescue Encoding::UndefinedConversionError
     puts $!.error_char.dump   #=> "\u{a0}"
   end

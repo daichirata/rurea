@@ -3,5 +3,6 @@ classes=TkRadioButton
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

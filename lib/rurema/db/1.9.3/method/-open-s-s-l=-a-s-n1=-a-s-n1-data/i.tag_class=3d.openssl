@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- tag_class=(tag_class)
-¥¿¥°¥¯¥é¥¹¤òÀßÄê¤·¤Þ¤¹¡£
+ã‚¿ã‚°ã‚¯ãƒ©ã‚¹ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param tag_class ÀßÄê¤¹¤ë¥¿¥°¥¯¥é¥¹¡£:UNIVERSAL¡¢:ONTEXT_SPECIFIC¡¢:APPLICATION¡¢:PRIVATE ¤Î¤¤¤º¤ì¤«
+@param tag_class è¨­å®šã™ã‚‹ã‚¿ã‚°ã‚¯ãƒ©ã‚¹ã€‚:UNIVERSALã€:ONTEXT_SPECIFICã€:APPLICATIONã€:PRIVATE ã®ã„ãšã‚Œã‹
 @see [[m:OpenSSL::ASN1::ASN1Data#tag_class]]
 

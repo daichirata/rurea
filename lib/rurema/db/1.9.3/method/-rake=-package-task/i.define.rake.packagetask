@@ -4,8 +4,8 @@ kind=defined
 
 --- define -> self
 
-¥¿¥¹¥¯¤òÄêµÁ¤·¤Þ¤¹¡£
+ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-@raise RuntimeError ¥Ð¡¼¥¸¥ç¥ó¾ðÊó¤ò¥»¥Ã¥È¤·¤Æ¤¤¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
-                    ½é´ü²½»þ¤Ë :noversion ¤¬»ØÄê¤µ¤ì¤Æ¤¤¤ë¾ì¹ç¤ÏÈ¯À¸¤·¤Þ¤»¤ó¡£
+@raise RuntimeError ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ±ã‚’ã‚»ãƒƒãƒˆã—ã¦ã„ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
+                    åˆæœŸåŒ–æ™‚ã« :noversion ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ç™ºç”Ÿã—ã¾ã›ã‚“ã€‚
 

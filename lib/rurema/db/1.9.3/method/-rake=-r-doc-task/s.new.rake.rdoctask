@@ -4,9 +4,9 @@ kind=defined
 
 --- new(name = :rdoc){|pkg| ... } -> Rake::RDocTask
 
-���Ȥ��������� RDoc ��������������ޤ���
+自身を初期化して RDoc タスクを定義します。
 
-�֥��å���Ϳ����줿���ϡ����Ȥ�֥��å��ѥ�᡼���Ȥ���
-�֥��å���ɾ�����ޤ���
+ブロックが与えられた場合は、自身をブロックパラメータとして
+ブロックを評価します。
 
-@param name ��������̾������ꤷ�ޤ���
+@param name タスクの名前を指定します。

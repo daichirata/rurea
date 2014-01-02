@@ -4,5 +4,5 @@ kind=defined
 
 --- dynamic_width -> Fixnum
 
-¥¿¡¼¥ß¥Ê¥ë¤ÎÉý¤ò·×»»¤·¤Þ¤¹¡£
+ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®å¹…ã‚’è¨ˆç®—ã—ã¾ã™ã€‚
 

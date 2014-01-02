@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- BINARY -> Integer
-MIME canonical format คุคฮสัดนค๒นิคคคÞคปค๓กฃ
+MIME canonical format ใธใฎๅคๆใ’่กใใพใใ“ใ€
 
-[[m:OpenSSL::PKCS7.sign]]กข[[m:OpenSSL::PKCS7.encrypt]]
-ควอ๘อัฒฤวฝคสฅีฅ้ฅฐควคนกฃ
+[[m:OpenSSL::PKCS7.sign]]ใ€[[m:OpenSSL::PKCS7.encrypt]]
+ใงๅฉ็”จๅฏ่ฝใชใ•ใฉใฐใงใใ€
 

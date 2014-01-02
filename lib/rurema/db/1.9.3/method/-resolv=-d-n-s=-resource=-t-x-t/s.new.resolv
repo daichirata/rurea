@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- new(first_string, *rest_strings) -> Resolv::DNS::Resource::TXT
-Resolv::DNS::Resource::TXT¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+Resolv::DNS::Resource::TXTã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param first_string ¥ì¥³¡¼¥É¤ÎºÇ½é¤ÎÊ¸»úÎó
-@param rest_strings ¥ì¥³¡¼¥É¤Î»Ä¤ê¤ÎÊ¸»úÎó
+@param first_string ãƒ¬ã‚³ãƒ¼ãƒ‰ã®æœ€åˆã®æ–‡å­—åˆ—
+@param rest_strings ãƒ¬ã‚³ãƒ¼ãƒ‰ã®æ®‹ã‚Šã®æ–‡å­—åˆ—
 
 

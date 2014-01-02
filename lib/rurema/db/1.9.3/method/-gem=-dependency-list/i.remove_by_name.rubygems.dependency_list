@@ -4,11 +4,11 @@ kind=defined
 
 --- remove_by_name(full_name) -> Gem::Specification
 
-Ϳ����줿̾������� [[c:Gem::Specification]] �򼫿Ȥ��������ޤ���
+与えられた名前を持つ [[c:Gem::Specification]] を自身から削除します。
 
-���Υ᥽�åɤǤϺ����ΰ�¸�ط�������å����ޤ���
+このメソッドでは削除後の依存関係をチェックしません。
 
-@param full_name �С�������ޤ�ե�͡���� Gem ��̾������ꤷ�ޤ���
+@param full_name バージョンを含むフルネームで Gem の名前を指定します。
 
 @see [[m:Gem::Specification#full_name]], [[m:Array#delete_if]]
 

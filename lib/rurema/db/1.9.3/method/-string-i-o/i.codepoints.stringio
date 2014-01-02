@@ -7,7 +7,7 @@ kind=defined
 --- each_codepoint{|codepoint| ... } -> self
 --- each_codepoint -> Enumerator
 
-���Ȥγƥ����ɥݥ���Ȥ��Ф��Ʒ����֤��ޤ���
+自身の各コードポイントに対して繰り返します。
 
 @see [[m:IO#each_codepoint]]
 

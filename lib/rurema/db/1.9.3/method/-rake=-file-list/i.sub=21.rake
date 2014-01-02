@@ -4,6 +4,6 @@ kind=defined
 
 --- sub!(pattern, replace) -> self
 
-���Ȥ˴ޤޤ��ե�����ꥹ�ȤΤ��줾��Υ���ȥ���Ф��� [[m:String#sub]] ��¹Ԥ��ޤ���
-���Ȥ��˲�Ū���ѹ����ޤ���
+自身に含まれるファイルリストのそれぞれのエントリに対して [[m:String#sub]] を実行します。
+自身を破壊的に変更します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- terminal_width -> Fixnum
 
-�����ߥʥ�������֤��ޤ���
+ターミナルの幅を返します。
 
-�Ķ��ѿ� RAKE_COLUMNS �ǻ��ꤹ�뤳�Ȥ�����ޤ���
+環境変数 RAKE_COLUMNS で指定することが出来ます。
 

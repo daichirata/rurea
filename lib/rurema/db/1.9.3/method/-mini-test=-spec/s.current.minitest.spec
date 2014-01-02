@@ -4,5 +4,5 @@ kind=defined
 
 --- current -> MiniTest::Spec
 
-���߼¹���� [[c:MiniTest::Spec]] �Υ��󥹥��󥹤��֤��ޤ���
+現在実行中の [[c:MiniTest::Spec]] のインスタンスを返します。
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- iv=(iv) 
-IV(Initialization Vector) ¤òÀßÄê¤·¤Ş¤¹¡£
+IV(Initialization Vector) ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param iv IVÊ¸»úÎó
+@param iv IVæ–‡å­—åˆ—
 

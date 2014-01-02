@@ -6,25 +6,25 @@ library=_builtin
 aliases=
 aliasof=
 
-¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°ÊÑ´¹¸å¤ÎÊ¸»ú¤¬Â¸ºß¤·¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤¹¤ëÎã³°¡£
+ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°å¤‰æ›å¾Œã®æ–‡å­—ãŒå­˜åœ¨ã—ãªã„å ´åˆã«ç™ºç”Ÿã™ã‚‹ä¾‹å¤–ã€‚
 
-UTF-8 ¤Ë¤·¤«¤Ê¤¤Ê¸»ú¤ò EUC-JP ¤ËÊÑ´¹¤·¤è¤¦¤È¤·¤¿¾ì¹ç¤Ê¤É¤ËÈ¯À¸¤·¤Ş¤¹¡£
+UTF-8 ã«ã—ã‹ãªã„æ–‡å­—ã‚’ EUC-JP ã«å¤‰æ›ã—ã‚ˆã†ã¨ã—ãŸå ´åˆãªã©ã«ç™ºç”Ÿã—ã¾ã™ã€‚
   "\u2603".encode(Encoding::EUC_JP)
   #=> Encoding::UndefinedConversionError: U+2603 from UTF-8 to EUC-JP
 
 
-ÊÑ´¹¤¬Â¿ÃÊ³¬¤Ç¤Ê¤µ¤ì¡¢¤½¤ÎÅÓÃæ¤ÇÎã³°¤¬À¸¤¸¤¿¾ì¹ç¤Ï¡¢
-Îã³°¥ª¥Ö¥¸¥§¥¯¥È¤¬Êİ»ı¤¹¤ë¥¨¥é¡¼¾ğÊó¤Ï¤½¤ÎÃæ´Ö¤Î¤â¤Î¤Ë¤Ê¤ê¤Ş¤¹¡£
-  ec = Encoding::Converter.new("ISO-8859-1", "EUC-JP") 
+å¤‰æ›ãŒå¤šæ®µéšã§ãªã•ã‚Œã€ãã®é€”ä¸­ã§ä¾‹å¤–ãŒç”Ÿã˜ãŸå ´åˆã¯ã€
+ä¾‹å¤–ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒä¿æŒã™ã‚‹ã‚¨ãƒ©ãƒ¼æƒ…å ±ã¯ãã®ä¸­é–“ã®ã‚‚ã®ã«ãªã‚Šã¾ã™ã€‚
+  ec = Encoding::Converter.new("ISO-8859-1", "EUC-JP")
   # ISO-8859-1 -> UTF-8 -> EUC-JP
   begin
-    ec.convert("\xa0") 
+    ec.convert("\xa0")
     # NO-BREAK SPACE, which is available in UTF-8 but not in EUC-JP.
   rescue Encoding::UndefinedConversionError
     p $!.source_encoding              #=> #<Encoding:UTF-8>
     p $!.destination_encoding         #=> #<Encoding:EUC-JP>
     p $!.source_encoding_name         #=> "UTF-8"
     p $!.destination_encoding_name    #=> "EUC-JP"
-    puts $!.error_char.dump   #=> "\u{a0}" 
+    puts $!.error_char.dump   #=> "\u{a0}"
     p $!.error_char.encoding  #=> #<Encoding:UTF-8>
   end

@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- extract_entry(destdir, entry, expected_md5sum = nil)
-»ØÄê¤µ¤ì¤¿ destdir ¤Ë entry ¤òÅ¸³«¤·¤Ş¤¹¡£
+æŒ‡å®šã•ã‚ŒãŸ destdir ã« entry ã‚’å±•é–‹ã—ã¾ã™ã€‚
 
-@param destdir Å¸³«Àè¤Î¥Ç¥£¥ì¥¯¥È¥ê¤ò»ØÄê¤·¤Ş¤¹¡£
+@param destdir å±•é–‹å…ˆã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param entry ¥¨¥ó¥È¥ê¤ò»ØÄê¤·¤Ş¤¹¡£
+@param entry ã‚¨ãƒ³ãƒˆãƒªã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param expected_md5sum ´üÂÔ¤¹¤ë MD5 ¥Á¥§¥Ã¥¯¥µ¥à¤ò»ØÄê¤·¤Ş¤¹¡£
+@param expected_md5sum æœŸå¾…ã™ã‚‹ MD5 ãƒã‚§ãƒƒã‚¯ã‚µãƒ ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise Gem::Package::BadCheckSum ¥Á¥§¥Ã¥¯¥µ¥à¤¬°ìÃ×¤·¤Ê¤«¤Ã¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise Gem::Package::BadCheckSum ãƒã‚§ãƒƒã‚¯ã‚µãƒ ãŒä¸€è‡´ã—ãªã‹ã£ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

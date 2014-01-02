@@ -4,5 +4,5 @@ kind=defined
 
 --- verify_data -> bool
 
-�����ͤ����Ǥ�����ϡ��ǡ����򸡾ڤ��ޤ���
+この値が真である場合は、データを検証します。
 

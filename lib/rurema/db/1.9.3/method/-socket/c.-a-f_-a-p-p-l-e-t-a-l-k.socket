@@ -1,47 +1,12 @@
-names=AF_APPLETALK,AF_ATM,AF_AX25,AF_CCITT,AF_CHAOS,AF_CNT,AF_COIP,AF_DATAKIT,AF_DEC,AF_DLI,AF_E164,AF_ECMA,AF_HYLINK,AF_IMPLINK,AF_INET,AF_INET6,AF_IPX,AF_ISDN,AF_ISO,AF_LAT,AF_LINK,AF_LOCAL,AF_MAX,AF_NATM,AF_NDRV,AF_NETBIOS,AF_NETGRAPH,AF_NS,AF_OSI,AF_PPP,AF_PUP,AF_ROUTE,AF_SIP,AF_SNA,AF_SYSTEM,AF_UNIX,AF_UNSPEC
+names=AF_APPLETALK,PF_APPLETALK
 visibility=public
 kind=defined
 
---- AF_APPLETALK
---- AF_ATM
---- AF_AX25
---- AF_CCITT
---- AF_CHAOS
---- AF_CNT
---- AF_COIP
---- AF_DATAKIT
---- AF_DEC
---- AF_DLI
---- AF_E164
---- AF_ECMA
---- AF_HYLINK
---- AF_IMPLINK
---- AF_INET
---- AF_INET6
---- AF_IPX
---- AF_ISDN
---- AF_ISO
---- AF_LAT
---- AF_LINK
---- AF_LOCAL
---- AF_MAX
---- AF_NATM
---- AF_NDRV
---- AF_NETBIOS
---- AF_NETGRAPH
---- AF_NS
---- AF_OSI
---- AF_PPP
---- AF_PUP
---- AF_ROUTE
---- AF_SIP
---- AF_SNA
---- AF_SYSTEM
---- AF_UNIX
---- AF_UNSPEC
-@todo
+--- AF_APPLETALK -> Integer
+--- PF_APPLETALK -> Integer
 
-[[m:Socket.open]] ¤ÎÂè°ì°ú¿ô domain ¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+Apple talkã€‚
+[[m:Socket.open]] ã®ç¬¬ä¸€å¼•æ•° domain ã«ä½¿ç”¨ã—ã¾ã™ã€‚
 
-@see [[m:Socket.open]]
+@see [[man:socket(2linux)]], [[man:socket(2freebsd)]], [[man:ddp(7linux)]]
 

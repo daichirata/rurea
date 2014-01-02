@@ -4,12 +4,12 @@ kind=added
 
 --- mv -> ()
 
-�ե�������ư���ޤ� (�ե�����̾���ѹ����ޤ�)��
+ファイルを移動します (ファイル名を変更します)。
 
 
   ruby -run -e mv -- [OPTION] SOURCE DEST
 
-  -v          �ܺ�ɽ��
+  -v          詳細表示
 
 @see [[man:mv(1)]]
 

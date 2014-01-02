@@ -4,13 +4,26 @@ kind=defined
 
 --- pipeline(*cmds) -> [Process::Status]
 
-���ꤷ�����ޥ�ɤΥꥹ�Ȥ�ѥ��פǷҤ��ǽ��֤˼¹Ԥ��ޤ���
+指定したコマンドのリストをパイプで繋いで順番に実行します。
 
-@param cmds �¹Ԥ��륳�ޥ�ɤΥꥹ�Ȥ���ꤷ�ޤ���
+@param cmds 実行するコマンドのリストを指定します。それぞれのコマンドは
+            以下のように [[c:String]] か [[c:Array]] で指定します。
+            commandline にはコマンド全体(例. "nroff -man")を表す
+            [[c:String]] を指定します。
+            options には [[c:Hash]] で指定します。
+            env には環境変数を [[c:Hash]] で指定します。
+            cmdname にはコマンド名を表す [[c:String]] を指定します。
+            1、2、3 は shell 経由で実行されます。
 
-@return �¹Ԥ������ޥ�ɤν�λ���ơ�������������֤��ޤ���
+ (1) commandline
+ (2) [commandline, options]
+ (3) [env, commandline, options]
+ (4) [env, cmdname, arg1, arg2, ..., options]
+ (5) [env, [cmdname, argv0], arg1, ..., options]
 
-��:
+@return 実行したコマンドの終了ステータスを配列で返します。
+
+例1:
 
   require "open3"
   
@@ -20,8 +33,11 @@ kind=defined
   #    #<Process::Status: pid 11820 exit 0>,
   #    #<Process::Status: pid 11828 exit 0>]
 
-[[m:Open3.#popen3]]��Ʊ�ͤ˰����˴Ķ��ѿ��ȥ��ץ�������ꤷ�ƥ��ޥ��
-��¹Ԥ�������Ǥ��ޤ���
+例2:
+
+  require "open3"
+
+  Open3.pipeline([{"LANG"=>"C"}, "env"], ["grep", "LANG"], "less")
 
 @see [[m:Open3.#popen3]]
 

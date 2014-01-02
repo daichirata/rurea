@@ -4,9 +4,9 @@ kind=added
 
 --- issjis -> bool
 
-self �� Shift_JIS �ʥХ�����Ȥ��������Ǥ��뤫�ɤ�����Ƚ�ꤷ�ޤ���
+self が Shift_JIS なバイト列として正当であるかどうかを判定します。
 
 
-[[m:Kconv.#issjis]] ��Ʊ���Ǥ���
+[[m:Kconv.#issjis]] と同じです。
 
 

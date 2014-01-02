@@ -6,6 +6,6 @@ library=scanf
 aliases=
 aliasof=
 
-scanf ¥é¥¤¥Ö¥é¥ê¤Ç»ÈÍÑ¤¹¤ëÌ¾Á°¶õ´Ö¤Ç¤¹¡£
+scanf ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ä½¿ç”¨ã™ã‚‹åå‰ç©ºé–“ã§ã™ã€‚
 
 @see [[m:Kernel.#scanf]], [[m:String#scanf]], [[m:IO#scanf]], [[m:Stdin#scanf]]

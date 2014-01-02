@@ -3,6 +3,7 @@ visibility=public
 kind=defined
 
 --- FTP_PORT -> Integer
-FTP�Υǥե���ȤΥݡ����ֹ�(21)�Ǥ���
+FTPのデフォルトのポート番号(21)です。
+
 
 

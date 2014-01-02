@@ -4,15 +4,15 @@ kind=defined
 
 --- mkdir(dir, options = {}) -> ()
 
-¥Ç¥£¥ì¥¯¥È¥ê dir ¤òºîÀ®¤·¤Ş¤¹¡£
+ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª dir ã‚’ä½œæˆã—ã¾ã™ã€‚
 
-@param dir ºîÀ®¤¹¤ë¥Ç¥£¥ì¥¯¥È¥ê¡£
+@param dir ä½œæˆã™ã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
 
-@param options :mode, :noop, :verbose ¤¬»ØÄê¤Ç¤­¤Ş¤¹¡£
+@param options :mode, :noop, :verbose ãŒæŒ‡å®šã§ãã¾ã™ã€‚
                [[ref:c:FileUtils#options]]
 
 
-Îã:
+ä¾‹:
 
   FileUtils.mkdir('test')
   FileUtils.mkdir(%w( tmp data ))

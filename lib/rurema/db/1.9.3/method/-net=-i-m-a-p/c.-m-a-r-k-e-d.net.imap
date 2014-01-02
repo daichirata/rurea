@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- MARKED -> Symbol
-��:Marked�פȤ�������ܥ���֤��ޤ���
+「:Marked」というシンボルを返します。
 
-�᡼��ܥå�������interesting�פǤ���ȥ����Фˤ�ä�
-���դ����Ƥ��뤳�Ȥ��̣���ޤ����̾�᡼��ܥå�����
-�������᡼�뤬�Ϥ��Ƥ��뤳�Ȥ��̣���ޤ���
+メールボックスが「interesting」であるとサーバによって
+印付けられていることを意味します。通常メールボックスに
+新しいメールが届いていることを意味します。
 
-LIST������°��
-([[m:Net::IMAP#list]]��[[m:Net::IMAP::MailboxList#attr]])
-�Ȥ����Ѥ����ޤ���
+LIST応答の属性
+([[m:Net::IMAP#list]]、[[m:Net::IMAP::MailboxList#attr]])
+として用いられます。
 
-�ܤ����� [[RFC:2060]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] を参照してください。
 

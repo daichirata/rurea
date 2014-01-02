@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- verify_trust_dir(path, perms)
-���ꤹ��ǥ��쥯�ȥ꤬¸�ߤ��뤳�Ȥ��ǧ���ޤ���
+信頼するディレクトリが存在することを確認します。
 
-Ϳ����줿�ѥ���¸�ߤ����硢�ǥ��쥯�ȥ�Ǥ��뤳�Ȥ��ǧ���ޤ���
-�����Ǥʤ����ϡ��ǥ��쥯�ȥ��������ƥѡ��ߥå������ѹ����ޤ���
+与えられたパスが存在する場合、ディレクトリであることを確認します。
+そうでない場合は、ディレクトリを作成してパーミッションを変更します。
 
-@param path ��ǧ����ѥ�����ꤷ�ޤ���
+@param path 確認するパスを指定します。
 
-@param perms �ǥ��쥯�ȥ�����������Υѡ��ߥå�������ꤷ�ޤ���
+@param perms ディレクトリを作成する場合のパーミッションを指定します。
 
-@raise Gem::Security::Exception path ���ǥ��쥯�ȥ�Ǥʤ�����ȯ�����ޤ���
+@raise Gem::Security::Exception path がディレクトリでない場合に発生します。
 

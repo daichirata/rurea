@@ -2,8 +2,9 @@ names=prompt_i
 visibility=public
 kind=defined
 
---- prompt_i
-@todo
+--- prompt_i -> String
 
-�̾�Υץ���ץȤ�ɽ������ե����ޥå�ʸ������֤��ޤ���
+通常のプロンプトを表現するフォーマット文字列を返します。
+
+@see [[m:IRB::Context#prompt_i=]],[[ref:lib:irb#customize_prompt]]
 

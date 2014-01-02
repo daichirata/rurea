@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- line_width -> Integer
-@todo
+「好ましい」行幅を返します。
 
-Get the preferred line width.
+@see [[m:Psych::Emitter#line_width=]]
 

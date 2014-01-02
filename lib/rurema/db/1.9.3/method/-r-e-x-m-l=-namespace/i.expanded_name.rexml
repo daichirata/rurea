@@ -2,6 +2,12 @@ names=expanded_name
 visibility=public
 kind=defined
 
---- expanded_name
-@todo
+--- expanded_name -> String
+[[m:REXML::Namespace#name=]] で設定された名前を返します。
+
+name= で指定した名前が prefix を含んでいれば
+prefix を含む名前を返し、そうでなければ
+prefix を含まない名前を返します。
+
+@see [[m:REXML::Namespace#prefix]]
 

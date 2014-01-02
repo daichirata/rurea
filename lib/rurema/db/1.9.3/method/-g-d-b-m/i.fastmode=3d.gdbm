@@ -4,15 +4,15 @@ kind=defined
 
 --- fastmode=(bool)
 
-�����ץ󤷤Ƥ��� GDBM ���֥������ȤΥ⡼�ɤ��ѹ����ޤ���
+オープンしている GDBM オブジェクトのモードを変更します。
 
-���Υ��ץ����ϥǥե���Ȥ� on �Ǥ���
-���Υ��ץ����� obsolete �Ǥ���
+このオプションはデフォルトで on です。
+このオプションは obsolete です。
 
-���Υ��ץ���� on �ΤȤ��ϡ�GDBM �ϥǥ������ؤν񤭹��ߤ��Ԥ�����
-��������³���ޤ���
+このオプションが on のときは、GDBM はディスクへの書き込みを待たずに
+次の操作を続けます。
 
-@param bool �����˥��åȤ���⡼�ɡ�
+@param bool 新たにセットするモード。
 
 @see [[m:GDBM::FAST]], [[m:GDBM#syncmode=]]
 

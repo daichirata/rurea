@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- ==(ohter) -> bool
-other�ȼ��Ȥ�Ʊ��Υ��å����Ǥ���п����֤��ޤ���
+otherと自身が同一のセッションであれば真を返します。
 

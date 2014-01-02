@@ -4,5 +4,5 @@ kind=defined
 
 --- create_rule(*args){ ... } -> Rake::Task
 
-¥¿¥¹¥¯¤ò¹çÀ®¤¹¤ë¤¿¤á¤Î¥ë¡¼¥ë¤òºîÀ®¤·¤Þ¤¹¡£
+ã‚¿ã‚¹ã‚¯ã‚’åˆæˆã™ã‚‹ãŸã‚ã®ãƒ«ãƒ¼ãƒ«ã‚’ä½œæˆã—ã¾ã™ã€‚
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- id -> String
-engine ¤Î¼±ÊÌ»Ò¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+engine ã®è­˜åˆ¥å­ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::Engine#name]]
 

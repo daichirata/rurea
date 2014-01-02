@@ -4,6 +4,6 @@ kind=defined
 
 --- need_tar_bz2 -> bool
 
-¤³¤ÎÃÍ¤¬¿¿¤Ç¤¢¤ë¾ì¹ç¤Ï bzip2 ¤·¤¿ tar ¥Õ¥¡¥¤¥ë (tar.bz2) ¤òºîÀ®¤·¤Þ¤¹¡£
-¥Ç¥Õ¥©¥ë¥È¤Ïµ¶¤Ç¤¹¡£
+ã“ã®å€¤ãŒçœŸã§ã‚ã‚‹å ´åˆã¯ bzip2 ã—ãŸ tar ãƒ•ã‚¡ã‚¤ãƒ« (tar.bz2) ã‚’ä½œæˆã—ã¾ã™ã€‚
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯å½ã§ã™ã€‚
 

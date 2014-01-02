@@ -4,9 +4,9 @@ kind=defined
 
 --- __getobj__ -> object
 
-���Ȥλ�����Υ��֥������Ȥ��֤��ޤ���
+自身の参照先のオブジェクトを返します。
 
-@raise WeakRef::RefError GC �ѤߤΥ��֥������Ȥ򻲾Ȥ�������ȯ�����ޤ���
+@raise WeakRef::RefError GC 済みのオブジェクトを参照した場合に発生します。
 
 @see [[lib:delegate]]
 

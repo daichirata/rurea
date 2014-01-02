@@ -4,7 +4,7 @@ kind=defined
 
 --- path    -> String
 
-�����ץ󤷤Ƥ���ǥ��쥯�ȥ�Υѥ�̾��ʸ������֤��ޤ���
+オープンしているディレクトリのパス名を文字列で返します。
 
-@raise IOError ���˼��Ȥ� close ���Ƥ������ȯ�����ޤ���
+@raise IOError 既に自身が close している場合に発生します。
 

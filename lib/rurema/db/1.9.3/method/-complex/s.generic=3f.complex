@@ -4,11 +4,11 @@ kind=added
 
 --- generic?(other) -> bool
 
-other дм [[c:Integer]] [[c:Float]] [[c:Rational]] епеще╣д╬еке╓е╕езепе╚
-длд╔дждл╚╜─ъд╖д▐д╣бг
+other уБМ [[c:Integer]] [[c:Float]] [[c:Rational]] уВпуГйуВ╣уБоуВкуГЦуВ╕уВзуВпуГИ
+уБЛуБйуБЖуБЛхИдхоЪуБЧуБ╛уБЩуАВ
 
-@param other ╚╜─ъ┬╨╛▌д╬еке╓е╕езепе╚
+@param other хИдхоЪхп╛ш▒буБоуВкуГЦуВ╕уВзуВпуГИ
 
-@return [[c:Integer]] [[c:Float]] [[c:Rational]] епеще╣д╬еке╓е╕езепе╚д╬
-        ╗■ trueд╜дь░╩│░д╬╛ь╣чд╦д╧ false дЄ╩╓д╖д▐д╣бг
+@return [[c:Integer]] [[c:Float]] [[c:Rational]] уВпуГйуВ╣уБоуВкуГЦуВ╕уВзуВпуГИуБо
+        цЩВ trueуБЭуВМф╗ехдЦуБоха┤хРИуБлуБп false уВТш┐ФуБЧуБ╛уБЩуАВ
 

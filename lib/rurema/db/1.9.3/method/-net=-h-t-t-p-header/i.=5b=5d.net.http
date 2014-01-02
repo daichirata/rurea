@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- [](key) -> String|nil
-key �إå��ե�����ɤ��֤��ޤ���
+key ヘッダフィールドを返します。
 
-���Ȥ��Х��� 'content-length' ���Ф��Ƥ�  '2048'
-�Τ褦��ʸ���������ޤ���������¸�ߤ��ʤ���� nil ���֤��ޤ���
+たとえばキー 'content-length' に対しては  '2048'
+のような文字列が得られます。キーが存在しなければ nil を返します。
 
-�����Υإå��ե�����ɤ���ĤΥإå������ʣ��¸�ߤ���
-���ˤϤ�������� ", " ��Ϣ�뤷��ʸ������֤��ޤ���
-key ����ʸ����ʸ������̤��ޤ���
+一種類のヘッダフィールドが一つのヘッダの中に複数存在する
+場合にはそれを全て ", " で連結した文字列を返します。
+key は大文字小文字を区別しません。
 
-@param key �إå��ե�����̾��ʸ�����Ϳ���ޤ���
+@param key ヘッダフィール名を文字列で与えます。
 
 @see [[m:Net::HTTPHeader#[]=]],
      [[m:Net::HTTPHeader#add_field]],

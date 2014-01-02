@@ -4,11 +4,11 @@ kind=defined
 
 --- rewind -> ()
 
-�����֤򴬤��ᤷ�ޤ���
+列挙状態を巻き戻します。
 
-���֥��饹�Ǽ������Ƥ���������
+サブクラスで実装してください。
 
-@raise NotImplementedError ɬ��ȯ�����ޤ���
+@raise NotImplementedError 必ず発生します。
 
 @see [[m:Enumerator#rewind]]
 

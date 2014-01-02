@@ -4,7 +4,7 @@ kind=defined
 
 --- to_i -> Integer
 --- to_int -> Integer
-ผซฟศค๒ Integer คฮฅคฅ๓ฅนฅฟฅ๓ฅนคหสัดนคทคÞคนกฃ
+่ช่บซใ’ Integer ใฎใคใณในใฟใณในใซๅคๆใ—ใพใใ€
 
-@raise OpenSSL::BNError สัดนคหผบวิคทคฟพ์น็คหศฏภธคทคÞคน
+@raise OpenSSL::BNError ๅคๆใซๅคฑๆ•—ใ—ใๅ ดๅใซ็บ็”ใ—ใพใ
 

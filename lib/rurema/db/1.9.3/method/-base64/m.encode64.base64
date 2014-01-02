@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- encode64(bin) -> String
-Ϳ����줿�ǡ����� Base64 ���󥳡��ɤ���ʸ������֤��ޤ���
+与えられたデータを Base64 エンコードした文字列を返します。
 
-���Υ᥽�åɤ� [[RFC:2045]] ���б����Ƥ��ޤ���
-���󥳡��ɸ��ʸ���� 60 ʸ�����Ȥ˲��Ԥ��ɲä��ޤ���
+このメソッドは [[RFC:2045]] に対応しています。
+エンコード後の文字で 60 文字ごとに改行を追加します。
 
-@param bin Base64 ���󥳡��ɤ���ǡ�������ꤷ�ޤ���
+@param bin Base64 エンコードするデータを指定します。
 
 
     require 'base64'

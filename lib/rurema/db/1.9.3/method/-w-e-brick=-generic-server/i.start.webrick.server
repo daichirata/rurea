@@ -5,9 +5,9 @@ kind=defined
 --- start               -> ()
 --- start{|soc| ... }   -> ()
 
-�����Ф򥹥����Ȥ��ޤ���
+サーバをスタートします。
 
-�֥��å���Ϳ����줿��� [[m:WEBrick::GenericServer#run]] �᥽�åɤ�
-����˥֥��å����ºݤΥ��饤����ȤȤα�����ô���ޤ���
-�֥��å��� [[c:TCPSocket]] ���֥������Ȥ�����Ȥ��ƸƤФ�ޤ���
+ブロックが与えられた場合 [[m:WEBrick::GenericServer#run]] メソッドの
+代わりにブロックが実際のクライアントとの応答を担います。
+ブロックは [[c:TCPSocket]] オブジェクトを引数として呼ばれます。
 

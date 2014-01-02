@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- mode -> Integer
-¥Õ¥¡¥¤¥ë¥â¡¼¥É¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ãƒ¢ãƒ¼ãƒ‰ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
   printf "%o\n", fs.mode 
-  #Îã
+  #ä¾‹
   #=> 100644
 

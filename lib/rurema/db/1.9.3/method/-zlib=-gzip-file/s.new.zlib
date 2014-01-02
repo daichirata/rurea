@@ -4,9 +4,9 @@ kind=defined
 
 --- new(*args) -> ()
 
-Ä¾ÀÜ»ÈÍÑ¤·¤Ş¤»¤ó¡£
-ÄÌ¾ï¡¢¶ñÂÎÅª¤ÊÆÉ¤ß½ñ¤­¤ò¤ª¤³¤Ê¤¦¤¿¤á¤Ë¤Ï¡¢
-[[m:Zlib::GzipReader.new]] ¤â¤·¤¯¤Ï¡¢ [[m:Zlib::GzipWriter.new]] ¤ò»ÈÍÑ¤·¤Ş¤¹¡£
+ç›´æ¥ä½¿ç”¨ã—ã¾ã›ã‚“ã€‚
+é€šå¸¸ã€å…·ä½“çš„ãªèª­ã¿æ›¸ãã‚’ãŠã“ãªã†ãŸã‚ã«ã¯ã€
+[[m:Zlib::GzipReader.new]] ã‚‚ã—ãã¯ã€ [[m:Zlib::GzipWriter.new]] ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
 @see [[m:Zlib::GzipReader.new]], [[m:Zlib::GzipWriter.new]] 
 

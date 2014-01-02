@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- name -> String
-�ϥå���ؿ���̾�����֤��ޤ���
+ハッシュ関数の名前を返します。
 

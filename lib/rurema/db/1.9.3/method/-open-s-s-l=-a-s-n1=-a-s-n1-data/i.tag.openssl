@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- tag -> Integer
-�����ֹ���֤��ޤ���
+タグ番号を返します。
 
-�����ֹ�Ǥ���Universal ���ξ��� BOOLEAN = 1 ���� BMPSTRING = 30 
-�Τ����줫���ͤ�Ȥ�ޤ���
+タグ番号です。Universal 型の場合は BOOLEAN = 1 から BMPSTRING = 30 
+のいずれかの値をとります。
 
 @see [[m:OpenSSL::ASN1::ASN1Data#tag=]]

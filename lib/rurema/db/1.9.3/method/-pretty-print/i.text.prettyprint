@@ -5,9 +5,9 @@ kind=defined
 --- text(obj)           -> ()
 --- text(obj, width = obj.length)    -> ()
 
-obj �� width �����Υƥ����ȤȤ��Ƽ��Ȥ��ɲä��ޤ���
+obj を width カラムのテキストとして自身に追加します。
 
-@param obj ���Ȥ��ɲä���ƥ����Ȥ�ʸ����ǻ��ꤷ�ޤ���
+@param obj 自身に追加するテキストを文字列で指定します。
 
-@param width obj �Υ�������ꤷ�ޤ������ꤵ��ʤ��ä���硢obj.length �����Ѥ���ޤ���
+@param width obj のカラムを指定します。指定されなかった場合、obj.length が利用されます。
 

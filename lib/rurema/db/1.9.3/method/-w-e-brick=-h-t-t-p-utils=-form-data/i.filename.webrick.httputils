@@ -5,11 +5,11 @@ kind=defined
 --- filename         -> String | nil
 --- filename=(value)
 
-¥Õ¥©¡¼¥à¥Ç¡¼¥¿¤Î filename Â°À­¤òÊ¸»úÎó¤ÇÉ½¤¹¥¢¥¯¥»¥µ¤Ç¤¹¡£
+ãƒ•ã‚©ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã® filename å±žæ€§ã‚’æ–‡å­—åˆ—ã§è¡¨ã™ã‚¢ã‚¯ã‚»ã‚µã§ã™ã€‚
 
-@param value ¥Õ¥©¡¼¥à¥Ç¡¼¥¿¤Î filename Â°À­¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param value ãƒ•ã‚©ãƒ¼ãƒ ãƒ‡ãƒ¼ã‚¿ã® filename å±žæ€§ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
  require "webrick/cgi"
  class MyCGI < WEBrick::CGI

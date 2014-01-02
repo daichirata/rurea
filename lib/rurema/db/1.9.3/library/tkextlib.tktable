@@ -3,5 +3,6 @@ classes=
 methods=
 sublibraries=tkextlib.tktable.setup,tkextlib.tktable.tktable
 is_sublibrary=true
+category=
 
 

@@ -4,6 +4,6 @@ kind=defined
 
 --- T61STRING -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-T61STRING ¤Î¥¿¥°ÈÖ¹æ 20 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+T61STRING ã®ã‚¿ã‚°ç•ªå· 20 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

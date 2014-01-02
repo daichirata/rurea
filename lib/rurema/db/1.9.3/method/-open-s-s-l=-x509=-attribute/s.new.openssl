@@ -4,23 +4,23 @@ kind=defined
 
 --- new(der) -> OpenSSL::X509::Attribute
 --- new(oid, value) -> OpenSSL::X509::Attribute
-attribute ���֥������Ȥ��������ޤ���
+attribute オブジェクトを生成します。
 
-������1�Ĥǡ�ʸ����Ǥ���ʤ�С������ DER ������
-�ǡ����Ǥ���ȸ��ʤ��� attribute ���֥������Ȥ��������ޤ���
-������1�Ĥǡ�����ʳ��ξ��� to_der �᥽�åɤ� DER �������Ѵ����Ƥ���
-����� attribute ���֥������Ȥ��Ѵ����ޤ���
+引数が1個で、文字列であるならば、それを DER 形式の
+データであると見なして attribute オブジェクトを生成します。
+引数が1個で、それ以外の場合は to_der メソッドで DER 形式に変換してから
+それを attribute オブジェクトに変換します。
 
-������2�Ĥξ��ϡ����줾��� attribute �� Object ID (���̻�)��
-��(����)�ȸ��ʤ��� attribute ���֥������Ȥ��������ޤ���
-���ξ�硢oid �� Object ID ��ʸ����value �ˤ�
-[[c:OpenSSL::ASN1::ASN1Data]] �Υ��󥹥��󥹤��Ϥ��ʤ���Фʤ�ޤ���
+引数が2個の場合は、それぞれを attribute の Object ID (識別子)と
+値(内容)と見なして attribute オブジェクトを生成します。
+この場合、oid は Object ID の文字列、value には
+[[c:OpenSSL::ASN1::ASN1Data]] のインスタンスを渡さなければなりません。
 
-@param der DER ������ʸ���󡢤⤷���� to_der ����ĥ��֥�������
-@param oid Object ID ʸ����
-@param value �ͤ�ɽ�� [[c:OpenSSL::ASN1::ASN1Data]] ���󥹥���
-@raise OpenSSL::X509::AttributeError attribute���֥������Ȥ������˼��Ԥ�������
-       ȯ�����ޤ���DER ����ʸ���������Ǥ��ä���硢oid, value �������Ǥ��ä�
-       ���ʤɤ�ȯ�����ޤ���
+@param der DER 形式の文字列、もしくは to_der を持つオブジェクト
+@param oid Object ID 文字列
+@param value 値を表す [[c:OpenSSL::ASN1::ASN1Data]] インスタンス
+@raise OpenSSL::X509::AttributeError attributeオブジェクトの生成に失敗した場合に
+       発生します。DER 形式文字列が不正であった場合、oid, value が不正であった
+       場合などに発生します。
 
 

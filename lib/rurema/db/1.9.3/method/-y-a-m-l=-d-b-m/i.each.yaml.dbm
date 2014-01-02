@@ -5,7 +5,7 @@ kind=defined
 --- each                        -> YAML::DBM
 --- each_pair {|key, val| ... } -> YAML::DBM
 
-���ȤΥ������ͤ�����Ȥ��ƥ֥��å���ɾ�����ޤ���
+自身のキーと値を引数としてブロックを評価します。
 
-���Ȥ��֤��ޤ���
+自身を返します。
 

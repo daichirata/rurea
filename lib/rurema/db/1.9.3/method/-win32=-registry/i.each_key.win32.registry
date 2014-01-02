@@ -5,9 +5,9 @@ kind=defined
 --- each_key {|subkey, wtime| ... }
 @todo
 
-¥­¡¼¤Î¥µ¥Ö¥­¡¼¤òÎóµó¤·¤Ş¤¹¡£
+ã‚­ãƒ¼ã®ã‚µãƒ–ã‚­ãƒ¼ã‚’åˆ—æŒ™ã—ã¾ã™ã€‚
 
-subkey ¤Ï¥µ¥Ö¥­¡¼¤ÎÌ¾Á°¤òÉ½¤¹ String ¤Ç¤¹¡£
-wtime ¤ÏºÇ½ª¹¹¿·»ş¹ï¤òÉ½¤¹ FILETIME (64-bit À°¿ô) ¤Ç¤¹¡£
-(¢Í[[m:Win32::Registry.wtime2time]])
+subkey ã¯ã‚µãƒ–ã‚­ãƒ¼ã®åå‰ã‚’è¡¨ã™ String ã§ã™ã€‚
+wtime ã¯æœ€çµ‚æ›´æ–°æ™‚åˆ»ã‚’è¡¨ã™ FILETIME (64-bit æ•´æ•°) ã§ã™ã€‚
+(â‡’[[m:Win32::Registry.wtime2time]])
 

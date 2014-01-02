@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- system -> String
-¥µ¡¼¥Ð¡¼¤Î OS ¤Î¥¿¥¤¥×¤òÊÖ¤·¤Þ¤¹¡£
+ã‚µãƒ¼ãƒãƒ¼ã® OS ã®ã‚¿ã‚¤ãƒ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-@raise Net::FTPTempError ±þÅú¥³¡¼¥É¤¬ 4yz ¤Î¤È¤­¤ËÈ¯À¸¤·¤Þ¤¹¡£
-@raise Net::FTPPermError ±þÅú¥³¡¼¥É¤¬ 5yz ¤Î¤È¤­¤ËÈ¯À¸¤·¤Þ¤¹¡£
-@raise Net::FTPProtoError ±þÅú¥³¡¼¥É¤¬ RFC Åª¤ËÀµ¤·¤¯¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
-@raise Net::FTPReplyError ±þÅú¥³¡¼¥É¤¬¾å¤Î¾ì¹ç°Ê³°¤Ç¥¨¥é¡¼¤Ç¤¢¤ë¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Net::FTPTempError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ 4yz ã®ã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚
+@raise Net::FTPPermError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ 5yz ã®ã¨ãã«ç™ºç”Ÿã—ã¾ã™ã€‚
+@raise Net::FTPProtoError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ RFC çš„ã«æ­£ã—ããªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
+@raise Net::FTPReplyError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒä¸Šã®å ´åˆä»¥å¤–ã§ã‚¨ãƒ©ãƒ¼ã§ã‚ã‚‹å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

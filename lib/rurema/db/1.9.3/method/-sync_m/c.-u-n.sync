@@ -2,6 +2,6 @@ names=UN
 visibility=public
 kind=defined
 
---- UN
-���å�����Ƥ��ʤ����֤�ɽ������Ǥ���
+--- UN -> Symbol
+ロックされていない状態を表す定数です。
 

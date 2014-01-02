@@ -4,5 +4,5 @@ kind=defined
 
 --- predicates -> [String]
 
-self.segments ¤ÎÆ±¤¸°ÌÃÖ¤ËÂÐ±þ¤¹¤ë¸¡º÷¾ò·ï¤òÊ¸»úÎó¤ÎÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+self.segments ã®åŒã˜ä½ç½®ã«å¯¾å¿œã™ã‚‹æ¤œç´¢æ¡ä»¶ã‚’æ–‡å­—åˆ—ã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 

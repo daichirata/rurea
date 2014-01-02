@@ -5,12 +5,12 @@ kind=defined
 --- maxgroups        -> Integer
 --- maxgroups=(num)
 
-����Ǥ���������롼�� ID �ο�����ꤷ�ޤ���
+設定できる補助グループ ID の数を指定します。
 
-�ºݤ��֤����������롼�� ID �ο����⾯�ʤ��ͤ����ꤷ�Ƥ���ȡ�
-[[m:Process.#groups]] ���㳰��ȯ�����ޤ���
+実際に返される補助グループ ID の数よりも少ない値を設定していると、
+[[m:Process.#groups]] で例外が発生します。
 
-@param num ��������ꤷ�ޤ���
+@param num 整数を指定します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 

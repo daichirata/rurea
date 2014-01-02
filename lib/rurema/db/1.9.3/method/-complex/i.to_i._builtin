@@ -4,13 +4,12 @@ kind=defined
 
 --- to_i -> Integer
 
-¼«¿È¤òÀ°¿ô¤ËÊÑ´¹¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’æ•´æ•°ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-@raise RangeError µõÉô¤¬ 0 ¤Ç¤Ï¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise RangeError è™šéƒ¨ãŒå®Ÿæ•°ã‹ã€0 ã§ã¯ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
-  Complex(3).to_i    # => 3
   Complex(3).to_i    # => 3
   Complex(3.5).to_i  # => 3
   Complex(3, 2).to_i # => RangeError

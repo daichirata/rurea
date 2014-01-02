@@ -2,6 +2,14 @@ names=inject
 visibility=public
 kind=defined
 
---- inject(xpath = nil, initial = nil) {|element| ... }
-@todo
+--- inject(xpath = nil, initial = nil) {|element| ... } -> object
+[[m:Enumerable#inject]] と同様、
+各子要素に対し畳み込みをします。
+
+xpath を指定した場合は、その XPath 文字列に
+マッチする要素に対し同様の操作をします。
+
+@param xpath XPath文字列
+@see [[m:REXML::Elements#each]]
+
 

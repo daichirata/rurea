@@ -4,12 +4,12 @@ kind=defined
 
 --- finite? -> bool
 
-¿ôÃÍ¤¬ ¡ç, -¡ç, ¤¢¤ë¤¤¤Ï NaN ¤Ç¤Ê¤¤¾ì¹ç¤Ë true ¤òÊÖ¤·¤Ş¤¹¡£
-¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Ş¤¹¡£
+æ•°å€¤ãŒ âˆ, -âˆ, ã‚ã‚‹ã„ã¯ NaN ã§ãªã„å ´åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚
+ãã†ã§ãªã„å ´åˆã« false ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
-  p 3.14.finite? #=> true
+  3.14.finite? #=> true
   inf = 1.0/0
-  p inf.finite? #=> false
+  inf.finite? #=> false
 

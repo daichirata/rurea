@@ -2,11 +2,11 @@ names=CAPTION
 visibility=public
 kind=defined
 
---- CAPTION
+--- CAPTION -> String
 
-[[m:Benchmark.#bm]] ¤ÎÆâÉô¤Ê¤É¤Ç»ÈÍÑ¤µ¤ì¤Ş¤¹¡£
+[[m:Benchmark.#bm]] ã®å†…éƒ¨ãªã©ã§ä½¿ç”¨ã•ã‚Œã¾ã™ã€‚
 
-¼Âºİ¤ÎÄêµÁ¤Ï [[m:Benchmark::Tms::CAPTION]] ¤Ç¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
+å®Ÿéš›ã®å®šç¾©ã¯ [[m:Benchmark::Tms::CAPTION]] ã§ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
 @see [[m:Benchmark::Tms::CAPTION]]
 

@@ -6,7 +6,7 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 2xx (Server Error) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 5xx (Server Error) を表現するクラスです。
 
-�����Ф����顼�򵯤����Ƥ���ʤɡ�������¦�ǽ���
-��λ���뤳�Ȥ��Ǥ��ʤ����Ȥ�ɽ���Ƥ��ޤ���
+サーバがエラーを起こしているなど、サーバ側で処理
+を完了することができないことを表しています。

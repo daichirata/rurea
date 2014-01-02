@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- shutdown(how=Socket::SHUT_RDWR) -> 0
-�����åȤΰʹߤ���³��λ�����ޤ���
+ソケットの以降の接続を終了させます。
 
-�ܤ����� [[m:BasicSocket#shutdown]] �򻲾Ȥ��Ƥ���������
+詳しくは [[m:BasicSocket#shutdown]] を参照してください。
 
-@param how ��³�ν�λ�λ����� Socket::SHUT_RD, Socket::SHUT_WR, 
-           Socket::SHUT_RDWR �ʤɤǻ��ꤷ�ޤ���
+@param how 接続の終了の仕方を Socket::SHUT_RD, Socket::SHUT_WR, 
+           Socket::SHUT_RDWR などで指定します。
 
 

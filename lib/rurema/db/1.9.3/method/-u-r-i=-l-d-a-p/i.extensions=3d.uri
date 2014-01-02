@@ -4,6 +4,6 @@ kind=defined
 
 --- extensions=(s)
 
-¼«¿È¤Î extensions ¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã® extensions ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î extensions ¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Ş¤¹¡£
+@param s è‡ªèº«ã® extensions ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- F_SETLKW -> Integer
-�ե�������ϰϤΥ��å���������ޤ���ɬ�פ�����Х��å�������Ǥ���ޤ��Ԥ��ޤ���
+ファイルの範囲のロックを取得します。必要があればロックを取得できるまで待ちます。
 

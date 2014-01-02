@@ -4,5 +4,5 @@ kind=defined
 
 --- host    -> String | nil
 
-���Ȥ� host ��ʸ������֤��ޤ������ꤵ��Ƥ��ʤ����� nil ���֤��ޤ���
+自身の host を文字列で返します。設定されていない場合は nil を返します。
 

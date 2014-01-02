@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- mod_add(other, m) -> OpenSSL::BN
-(self + other) % m ¤òÊÖ¤·¤Ş¤¹¡£
+(self + other) % m ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   BN.new("7").mod_add(BN.new("3"), BN.new("6")) # => 4
 
-@param other ÏÂ¤ò¼è¤ë¿ô
-@param m ¾êÍ¾¤ò¼è¤ë¿ô
-@raise OpenSSL::BNError ·×»»»ş¥¨¥é¡¼
+@param other å’Œã‚’å–ã‚‹æ•°
+@param m å‰°ä½™ã‚’å–ã‚‹æ•°
+@raise OpenSSL::BNError è¨ˆç®—æ™‚ã‚¨ãƒ©ãƒ¼
 

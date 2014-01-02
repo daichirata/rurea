@@ -4,7 +4,7 @@ kind=defined
 
 --- finish -> String
 
-°µ½Ì¥¹¥È¥ê¡¼¥à¤ò½ªÎ»¤·¤Ş¤¹¡£deflate('', Zlib::FINISH) ¤ÈÆ±¤¸¤Ç¤¹¡£
+åœ§ç¸®ã‚¹ãƒˆãƒªãƒ¼ãƒ ã‚’çµ‚äº†ã—ã¾ã™ã€‚deflate('', Zlib::FINISH) ã¨åŒã˜ã§ã™ã€‚
 
   dez = Zlib::Deflate.new
   dez << "123" * 5 << "ugougo" << "123" * 5 << "hogehoge"

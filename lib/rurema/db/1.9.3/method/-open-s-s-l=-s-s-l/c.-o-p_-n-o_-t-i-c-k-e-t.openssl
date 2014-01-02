@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- OP_NO_TICKET -> Integer
-RFC4507bis ¥Á¥±¥Ã¥È¤Ë¤è¤ë stateless session resumption ¤ò
-Ìµ¸ú²½¤·¤Ş¤¹¡£
+RFC4507bis ãƒã‚±ãƒƒãƒˆã«ã‚ˆã‚‹ stateless session resumption ã‚’
+ç„¡åŠ¹åŒ–ã—ã¾ã™ã€‚
 
-[[m:OpenSSL::SSL::SSLContext#options=]] ¤ÇÍøÍÑ¤·¤Ş¤¹¡£
+[[m:OpenSSL::SSL::SSLContext#options=]] ã§åˆ©ç”¨ã—ã¾ã™ã€‚
 

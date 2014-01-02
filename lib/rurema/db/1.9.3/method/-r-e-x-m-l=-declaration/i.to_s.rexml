@@ -2,6 +2,6 @@ names=to_s
 visibility=public
 kind=defined
 
---- to_s
-@todo
+--- to_s -> String
+ノードを文字列化します。
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- exit!(status = false)    -> ()
 
-´Ø¿ô [[m:Kernel.#exit!]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+é–¢æ•° [[m:Kernel.#exit!]] ã¨åŒã˜ã§ã™ã€‚
 
-@param status ½ªÎ»¥¹¥Æ¡¼¥¿¥¹¤ò boolean ¤«À°¿ô¤Ç»ØÄê¤·¤Ş¤¹¡£true ¤Î¾ì¹ç¤ÏÀ®¸ù¤ò¡¢false ¤Ï¼ºÇÔ¤ò°ÕÌ£¤·¤Ş¤¹¡£
+@param status çµ‚äº†ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’ boolean ã‹æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚true ã®å ´åˆã¯æˆåŠŸã‚’ã€false ã¯å¤±æ•—ã‚’æ„å‘³ã—ã¾ã™ã€‚
 
 @see [[man:_exit(2)]]
 

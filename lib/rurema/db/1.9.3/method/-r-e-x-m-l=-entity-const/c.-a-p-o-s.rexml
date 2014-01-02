@@ -3,4 +3,5 @@ visibility=public
 kind=defined
 
 --- APOS
-@todo
+「&apos;」「'」というエンティティを表わすオブジェクト。
+

@@ -5,7 +5,7 @@ kind=defined
 --- Inflate(string) -> String
 @todo
 
-string ¤òÅ¸³«¤·¤Ş¤¹¡£
+string ã‚’å±•é–‹ã—ã¾ã™ã€‚
 
 @see [[m:Zlib::Inflate.inflate]]
 

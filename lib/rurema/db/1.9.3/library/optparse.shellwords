@@ -3,11 +3,12 @@ classes=
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[m:OptionParser#on]] ¤Ç»ÈÍÑ²ÄÇ½¤Ê°ú¿ô¤Ë [[c:Shellwords]]
-ÄÉ²Ã¤µ¤ì¤Ş¤¹¡£
-¥ª¥×¥·¥ç¥ó¤Î°ú¿ô¤Ï [[m:Shellwords.#shellwords]] ¤Ë¤è¤Ã¤ÆÇÛÎó¤ËÊÑ´¹¤µ¤ì¤Æ¤«¤é¡¢
-[[m:OptionParser#on]] ¤Î¥Ö¥í¥Ã¥¯¤ËÅÏ¤µ¤ì¤Ş¤¹¡£
+[[m:OptionParser#on]] ã§ä½¿ç”¨å¯èƒ½ãªå¼•æ•°ã« [[c:Shellwords]]
+è¿½åŠ ã•ã‚Œã¾ã™ã€‚
+ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®å¼•æ•°ã¯ [[m:Shellwords.#shellwords]] ã«ã‚ˆã£ã¦é…åˆ—ã«å¤‰æ›ã•ã‚Œã¦ã‹ã‚‰ã€
+[[m:OptionParser#on]] ã®ãƒ–ãƒ­ãƒƒã‚¯ã«æ¸¡ã•ã‚Œã¾ã™ã€‚
 
  require 'optparse/shellwords'
  opts = OptionParser.new

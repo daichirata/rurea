@@ -6,11 +6,11 @@ library=rake
 aliases=
 aliasof=
 
-½Û´Ä¤·¤¿¥¿¥¹¥¯¤Î¸Æ¤Ó½Ð¤·¤ò¸¡½Ð¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+å¾ªç’°ã—ãŸã‚¿ã‚¹ã‚¯ã®å‘¼ã³å‡ºã—ã‚’æ¤œå‡ºã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-Îã:
+ä¾‹:
   a = Rake::InvocationChain::EMPTY
   b = a.append('task_a').append('task_b')
   p b.to_s  # => "TOP => task_a => task_b"
   
-  a.append('task_a').append('task_b').append('task_a') # => Îã³°È¯À¸
+  a.append('task_a').append('task_b').append('task_a') # => ä¾‹å¤–ç™ºç”Ÿ

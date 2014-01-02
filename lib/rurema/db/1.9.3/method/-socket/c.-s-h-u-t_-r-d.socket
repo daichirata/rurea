@@ -1,12 +1,7 @@
-names=SHUT_RD,SHUT_RDWR,SHUT_WR
+names=SHUT_RD
 visibility=public
 kind=defined
 
---- SHUT_RD
---- SHUT_RDWR
---- SHUT_WR
-@todo
-
-shutdown ¤Î how:
-[[m:BasicSocket#shutdown]] ¤Î how °ú¿ô¤Ë»ÈÍÑ¤·¤Ş¤¹¡£
+--- SHUT_RD -> Integer
+[[m:BasicSocket#shutdown]] ã® how å¼•æ•°ã«ä½¿ç”¨ã—ã¾ã™ã€‚
 

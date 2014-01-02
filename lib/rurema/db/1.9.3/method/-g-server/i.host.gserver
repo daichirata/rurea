@@ -4,5 +4,5 @@ kind=defined
 
 --- host -> String
 
-�ۥ��Ȥ�ʸ������֤��ޤ���
+ホストを文字列で返します。
 

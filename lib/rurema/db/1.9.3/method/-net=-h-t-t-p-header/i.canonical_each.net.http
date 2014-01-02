@@ -5,10 +5,10 @@ kind=defined
 --- each_capitalized {|name, value| .... } -> ()
 --- canonical_each {|name, value| .... } -> ()
 
-�إå��ե�����ɤ�������̾�Ȥ����ͤΥڥ���
-�֥��å����Ϥ����ƤӤ����ޤ���
+ヘッダフィールドの正規化名とその値のペアを
+ブロックに渡し、呼びだします。
 
-������̾�� name ���Ф�
+正規化名は name に対し
   name.downcase.split(/-/).capitalize.join('-')
-�ǵ�ޤ�ʸ����Ǥ���
+で求まる文字列です。
 

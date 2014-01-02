@@ -4,16 +4,16 @@ kind=defined
 
 --- assert_match(regexp, str, message = nil) -> true
 
-Ϳ����줿ʸ����Ϳ����줿����ɽ���˥ޥå�������硢�����˥ѥ��������Ȥˤʤ�ޤ���
+与えられた文字列が与えられた正規表現にマッチした場合、検査にパスしたことになります。
 
-@param regexp ����ɽ����ʸ�������ꤷ�ޤ���ʸ�������ꤷ����������ɽ�����Ѵ����Ƥ���
-              ���Ѥ��ޤ���
+@param regexp 正規表現か文字列を指定します。文字列を指定した場合は正規表現に変換してから
+              使用します。
 
-@param str �����оݤ�ʸ�������ꤷ�ޤ���
+@param str 検査対象の文字列を指定します。
 
-@param message �����˼��Ԥ�������ɽ�������å���������ꤷ�ޤ���
-               ʸ���� [[c:Proc]] ����ꤷ�ޤ���[[c:Proc]] �Ǥ������ [[m:Proc#call]] ����
-               ��̤���Ѥ��ޤ���
+@param message 検査に失敗した場合に表示するメッセージを指定します。
+               文字列か [[c:Proc]] を指定します。[[c:Proc]] である場合は [[m:Proc#call]] した
+               結果を使用します。
 
-@raise MiniTest::Assertion Ϳ����줿ʸ����Ϳ����줿����ɽ���˥ޥå����ʤ��ä�����ȯ�����ޤ���
+@raise MiniTest::Assertion 与えられた文字列が与えられた正規表現にマッチしなかった場合に発生します。
 

@@ -4,13 +4,13 @@ kind=defined
 
 --- call(severity, time, progname, msg) -> String
 
-¥í¥°¾ğÊó¤ò¥Õ¥©¡¼¥Ş¥Ã¥È¤·¤ÆÊÖ¤·¤Ş¤¹¡£
+ãƒ­ã‚°æƒ…å ±ã‚’ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param severity ¥í¥°¥ì¥Ù¥ë¡£
+@param severity ãƒ­ã‚°ãƒ¬ãƒ™ãƒ«ã€‚
 
-@param time »ş´Ö¡£[[c:Time]] ¥¯¥é¥¹¤Î¥ª¥Ö¥¸¥§¥¯¥È¡£
+@param time æ™‚é–“ã€‚[[c:Time]] ã‚¯ãƒ©ã‚¹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã€‚
 
-@param progname ¥×¥í¥°¥é¥àÌ¾
+@param progname ãƒ—ãƒ­ã‚°ãƒ©ãƒ å
 
-@param msg ¥á¥Ã¥»¡¼¥¸¡£
+@param msg ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‚
 

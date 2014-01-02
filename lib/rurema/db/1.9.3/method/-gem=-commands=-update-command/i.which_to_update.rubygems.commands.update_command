@@ -4,5 +4,5 @@ kind=defined
 
 --- which_to_update(highest_installed_gems, gem_names) -> Array
 
-������ɬ�פ� Gem �Υꥹ�Ȥ��֤��ޤ���
+更新が必要な Gem のリストを返します。
 

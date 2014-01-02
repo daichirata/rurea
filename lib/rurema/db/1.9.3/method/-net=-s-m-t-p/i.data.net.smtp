@@ -4,14 +4,14 @@ kind=defined
 
 --- data(message) -> Net::SMTP::Response
 --- data {|f| .... } -> Net::SMTP::Response
-DATA ���ޥ�ɤ�����ޤ���
+DATA コマンドを送ります。
 
-ʸ����������Ϳ�������Ϥ������ʸ�Ȥ�������ޤ���
-�֥��å���Ϳ�������ˤϤ��Υ֥��å��˥��ȥ꡼�४�֥������Ȥ��Ϥ���ޤ�
-([[m:Net::SMTP#open_message_stream]]����)��
+文字列を引数に与えた場合はそれを本文として送ります。
+ブロックを与えた場合にはそのブロックにストリームオブジェクトが渡されます
+([[m:Net::SMTP#open_message_stream]]参考)。
 
-�̾�� [[m:Net::SMTP#send_message]], [[m:Net::SMTP#open_message_stream]] ��
-DATA �������뤿�����Ѥ���ɬ�פϤʤ��Ϥ��Ǥ���
+通常は [[m:Net::SMTP#send_message]], [[m:Net::SMTP#open_message_stream]] で
+DATA が送られるため利用する必要はないはずです。
 
-@param message �᡼�����ʸ
+@param message メールの本文
 

@@ -3,9 +3,10 @@ classes=
 methods=WEBrick=GenericServer/s.new.webrick.ssl,WEBrick=GenericServer/i.ssl_context.webrick.ssl,WEBrick=Config/c.SSL.webrick.ssl,WEBrick=Config/c.General.webrick.ssl
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:WEBrick::GenericServer]] ¤ò SSL/TLS ¤ËÂĞ±ş¤µ¤»¤ë¤¿¤á¤Î¼ÂÁõ¡£
-¤³¤Î¥Õ¥¡¥¤¥ë¤ò require ¤¹¤ë¤È WEBrick::GenericServer ¤¬ SSL/TLS ÂĞ±ş¤Ë¤Ê¤ë¡£
+[[c:WEBrick::GenericServer]] ã‚’ SSL/TLS ã«å¯¾å¿œã•ã›ã‚‹ãŸã‚ã®å®Ÿè£…ã€‚
+ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ require ã™ã‚‹ã¨ WEBrick::GenericServer ãŒ SSL/TLS å¯¾å¿œã«ãªã‚‹ã€‚
 
-ruby 1.8.3 °Ê¹ß¤Ç¤ÏÃ±¤Ë require ¤¹¤ë¤À¤±¤Ç¤Ï SSL/TLS ¤ÏÍ­¸ú¤Ç¤Ï¤Ê¤¯¡¢
-ÀßÄê¤ÇÌÀ¼¨Åª¤ËÍ­¸ú¤Ë¤¹¤ëÉ¬Í×¤¬¤¢¤ë¡£
+ruby 1.8.3 ä»¥é™ã§ã¯å˜ã« require ã™ã‚‹ã ã‘ã§ã¯ SSL/TLS ã¯æœ‰åŠ¹ã§ã¯ãªãã€
+è¨­å®šã§æ˜ç¤ºçš„ã«æœ‰åŠ¹ã«ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã€‚

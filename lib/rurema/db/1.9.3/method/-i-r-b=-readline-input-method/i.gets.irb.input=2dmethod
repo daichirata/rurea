@@ -4,5 +4,5 @@ kind=defined
 
 --- gets -> String
 
-ɸ�����Ϥ���ʸ����� 1 ���ɤ߹��ߤޤ���
+標準入力から文字列を 1 行読み込みます。
 

@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- setgid? -> bool
-setgid¤µ¤ì¤Æ¤¤¤ë»þ¤Ë¿¿¤òÊÖ¤·¤Þ¤¹¡£
+setgidã•ã‚Œã¦ã„ã‚‹æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   Dir.glob("/usr/sbin/*") {|bd|
     if File::Stat.new(bd).setgid?
       puts bd
     end
   }
-  #Îã
+  #ä¾‹
   #...
   #=> /usr/sbin/postqueue
   #...

@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- erf(x) -> Float
-x �θ����ؿ����ͤ��֤��ޤ���
+x の誤差関数の値を返します。
 
-@param x �¿�
+@param x 実数
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 

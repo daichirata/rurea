@@ -4,9 +4,9 @@ kind=added
 
 --- current -> Fiber
 
-���Υ᥽�åɤ�ɾ�����줿����ƥ����Ȥˤ����� [[c:Fiber]] �Υ��󥹥��󥹤��֤��ޤ���
+このメソッドが評価されたコンテキストにおける [[c:Fiber]] のインスタンスを返します。
 
-��:
+例:
 
    fr = Fiber.new do
      Fiber.current

@@ -3,5 +3,6 @@ classes=TkFont,TkFont=DescendantFont,TkFont=CoreMethods
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

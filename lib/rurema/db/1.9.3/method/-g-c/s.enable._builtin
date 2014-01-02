@@ -4,10 +4,10 @@ kind=defined
 
 --- enable -> bool
 
-�����١������쥯�Ȥ���Ĥ��ޤ���
+ガーベージコレクトを許可します。
 
-����ζػ߾��֤��֤��ޤ�(�ػߤ���Ƥ����ʤ� true, GC ��ͭ���Ǥ��ä��ʤ顢
-false)��
+前回の禁止状態を返します(禁止されていたなら true, GC が有効であったなら、
+false)。
 
 @see [[m:GC.disable]]
 

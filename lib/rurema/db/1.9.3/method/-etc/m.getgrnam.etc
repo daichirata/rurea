@@ -4,11 +4,11 @@ kind=defined
 
 --- getgrnam(name) -> Struct::Group
 
-name �Ȥ���̾���Υ��롼�ץ���ȥ���֤��ޤ���
+name という名前のグループエントリを返します。
 
-@param name �������륰�롼��̾��
+@param name 検索するグループ名。
 
-@raise ArgumentError ����ȥ꤬���Ĥ���ʤ��ä�����ȯ�����ޤ���
+@raise ArgumentError エントリが見つからなかった場合に発生します。
 
 @see [[man:getgrnam(3)]], [[c:Struct::Group]]
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- new -> Object
 
-Object¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+Objectã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
   some = Object.new
   p some #=> #<Object:0x2b696d8>

@@ -1,27 +1,27 @@
-title=Ruby ¤¬Æ°ºî¤¹¤ë¥×¥é¥Ã¥È¥Õ¥©¡¼¥à
+title=Ruby ãŒå‹•ä½œã™ã‚‹ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ 
 
 
-Ruby ¤ÏÍÍ¡¹¤Ê´Ä¶­¤ÇÆ°ºî¤¹¤ë¤è¤¦³ÆÊıÌÌ¤ÎÍ­»Ö¤Ë¤è¤Ã¤Æ°Ü¿¢¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
-°Ê²¼¡¢Ruby ¤ÎÆ°ºî´Ä¶­¤Ë¤Ä¤¤¤Æ OS ¤ä ³«È¯´Ä¶­¤ÇÂçÊÌ¤·¤ÆÀâÌÀ¤·¤Ş¤¹¡£
+Ruby ã¯æ§˜ã€…ãªç’°å¢ƒã§å‹•ä½œã™ã‚‹ã‚ˆã†å„æ–¹é¢ã®æœ‰å¿—ã«ã‚ˆã£ã¦ç§»æ¤ã•ã‚Œã¦ã„ã¾ã™ã€‚
+ä»¥ä¸‹ã€Ruby ã®å‹•ä½œç’°å¢ƒã«ã¤ã„ã¦ OS ã‚„ é–‹ç™ºç’°å¢ƒã§å¤§åˆ¥ã—ã¦èª¬æ˜ã—ã¾ã™ã€‚
 
-¥¤¥ó¥¹¥È¡¼¥ë¤ä¥³¥ó¥Ñ¥¤¥ë¤Ë´Ø¤·¤Æ¤Ï¡¢((<Ruby ¥¤¥ó¥¹¥È¡¼¥ë¥¬¥¤¥É|URL:http://www.ruby-lang.org/~kazu/install-ja.cgi?cmd=view;name=top>))¤ò»²¾È¡£
+ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚„ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã«é–¢ã—ã¦ã¯ã€Ruby ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚¬ã‚¤ãƒ‰([[url:http://www.ruby-lang.org/~kazu/install-ja.cgi?cmd=view;name=top]])ã‚’å‚ç…§ã€‚
 
 
-* ((<Unix>))
-* ((<Windows(Win32)|Win32>))
-  * ((<Win32¥Í¥¤¥Æ¥£¥ÖÈÇ>))
-    * ((<mswin32>))
-    * ((<MinGW>)), ((<mingw32>)))
-    * ((<bccwin32>))
-  * ((<Cygwin>))
-* ((<Mac>))
-  * ((<Mac OS X>))
-* ((<BeOS>))
+* [[d:platform/Unix]]
+* [[d:platform/Win32]]
+  * [[d:platform/Win32-native]]
+    * [[d:platform/mswin32]]
+    * [[d:platform/MinGW]], [[d:platform/mingw32]]
+    * [[d:platform/bccwin32]]
+  * [[d:platform/Cygwin]]
+* [[d:platform/Mac]]
+  * [[d:platform/MacOSX]]
+* [[d:platform/BeOS]]
 * MS-DOS
-  * ((<DJGPP>))
-* ((<OS2>))  (((<os2_emx>))), (((<emx>)))
-* ((<VMS>))
-* ((<human68k>))
-* ((<GNU>)) (((<GNU Hurd>)))
-* ((<WindowsCE>))
-  * ((<mswince>))
+  * [[d:platform/DJGPP]]
+* [[d:platform/OS2]], [[d:platform/os2_emx]], [[d:platform/emx]]
+* [[d:platform/VMS]]
+* [[d:platform/human68k]]
+* [[d:platform/GNU]], [[d:platform/GNU Hurd]]
+* [[d:platform/WindowsCE]]
+  * [[d:platform/mswince]]

@@ -4,14 +4,14 @@ kind=defined
 
 --- autoload?(const_name) -> String | nil
 
-const_name �� [[m:Kernel.#autoload]] ���ꤵ��Ƥ��뤫Ĵ�٤ޤ���
+const_name が [[m:Kernel.#autoload]] 設定されているか調べます。
 
-autoload ���ꤵ��Ƥ��ơ�autoload ������ޤ��������Ƥʤ�(�����ɤ���Ƥ��ʤ�)
-�Ȥ��ˤ��Υѥ�̾���֤��ޤ���
+autoload 設定されていて、autoload 定数がまだ定義されてない(ロードされていない)
+ときにそのパス名を返します。
 
-autoload ���ꤵ��Ƥ��ʤ����������ɺѤߤʤ� nil ���֤��ޤ���
+autoload 設定されていないか、ロード済みなら nil を返します。
 
-@param const_name �����String �ޤ��� Symbol �ǻ��ꤷ�ޤ���
+@param const_name 定数をString または Symbol で指定します。
 
     ------- /tmp/foo.rb ---------
     class Foo

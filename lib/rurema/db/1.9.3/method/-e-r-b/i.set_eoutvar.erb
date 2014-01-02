@@ -4,14 +4,14 @@ kind=defined
 
 --- set_eoutvar(compiler, eoutvar = '_erbout') -> Array
 
-ERB�����eRuby������ץȤν��Ϥ򤿤�Ƥ����ѿ������ꤷ�ޤ���
+ERBの中でeRubyスクリプトの出力をためていく変数を設定します。
 
-ERB��eRuby������ץȤν��Ϥ򤿤�Ƥ����ѿ������ꤹ�뤿��˻��Ѥ��ޤ���
-��������� ERB#new �Ǥ�Ԥ��뤿�ᡢ�̾�Ϥ��������Ѥ�����������ưפǤ���
-�ܥ᥽�åɤ���Ѥ��뤿��ˤϡ������ˤƻ��ꤹ�� eRuby ����ѥ����������������Ƥ���ɬ�פ�����ޤ���
+ERBでeRubyスクリプトの出力をためていく変数を設定するために使用します。
+この設定は ERB#new でも行えるため、通常はそちらを使用した方がより容易です。
+本メソッドを使用するためには、引数にて指定する eRuby コンパイラを事前に生成しておく必要があります。
 
-@param compiler eRuby����ѥ���
+@param compiler eRubyコンパイラ
 
-@param eoutvar eRuby������ץȤ���ǽ��Ϥ򤿤�Ƥ����ѿ�
+@param eoutvar eRubyスクリプトの中で出力をためていく変数
 
 

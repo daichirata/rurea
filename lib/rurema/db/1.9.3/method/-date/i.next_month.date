@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- next_month(n = 1) -> Date
-n ¥ö·î¸å¤òÊÖ¤·¤Ş¤¹¡£
+n ãƒ¶æœˆå¾Œã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:Date#>>]] ¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:Date#>>]] ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param n ·î¿ô
+@param n æœˆæ•°
 

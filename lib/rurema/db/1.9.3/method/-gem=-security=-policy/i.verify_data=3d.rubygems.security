@@ -4,7 +4,7 @@ kind=defined
 
 --- verify_data=(flag)
 
-�ǡ����򸡾ڤ��뤫�ɤ��������ꤷ�ޤ���
+データを検証するかどうかを設定します。
 
-@param flag �����ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真、または偽を指定します。
 

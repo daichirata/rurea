@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- VT_ARRAY -> Integer
-ÇÛÎó¡ÊSafeArray¡Ë¤ò¼¨¤·¤Ş¤¹¡Ê0x2000¡Ë¡£
+é…åˆ—ï¼ˆSafeArrayï¼‰ã‚’ç¤ºã—ã¾ã™ï¼ˆ0x2000ï¼‰ã€‚
 

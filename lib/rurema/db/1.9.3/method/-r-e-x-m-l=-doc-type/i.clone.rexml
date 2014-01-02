@@ -2,6 +2,11 @@ names=clone
 visibility=public
 kind=defined
 
---- clone
-@todo
+--- clone -> REXML::DocType
+self の複製を返します。
+
+external_id ([[m:REXML::DocType#external_id]]) と
+名前([[m:REXML::DocType#name]]) のみ複製されるため、
+結果として得られるオブジェクトはあまり有用ではないでしょう。
+
 

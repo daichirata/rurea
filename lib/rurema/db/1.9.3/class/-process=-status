@@ -1,28 +1,28 @@
-type=module
-superclass=
+type=class
+superclass=Object
 included=
 extended=
 library=_builtin
 aliases=
 aliasof=
 
-¥×¥í¥»¥¹¤Î½ªÎ»¥¹¥Æ¡¼¥¿¥¹¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
-¥á¥½¥Ã¥É [[m:Process.#wait2]] ¤Ê¤É¤ÎÊÖ¤êÃÍ¤È¤·¤Æ»È¤ï¤ì¤Ş¤¹¡£
+ãƒ—ãƒ­ã‚»ã‚¹ã®çµ‚äº†ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
+ãƒ¡ã‚½ãƒƒãƒ‰ [[m:Process.#wait2]] ãªã©ã®è¿”ã‚Šå€¤ã¨ã—ã¦ä½¿ã‚ã‚Œã¾ã™ã€‚
 
-=== »ÈÍÑÎã
+=== ä½¿ç”¨ä¾‹
 
-wait ¤ò»ÈÍÑ¤·¤¿Îã
+wait ã‚’ä½¿ç”¨ã—ãŸä¾‹
 
   fork { exit }
   Process.wait
   case
   when $?.signaled?
     p "child #{$?.pid} was killed by signal #{$?.termsig}"
-    if $?.coredump?   # ¥·¥¹¥Æ¥à¤¬¤³¤Î¥¹¥Æ¡¼¥¿¥¹¤ò¥µ¥İ¡¼¥È¤·¤Æ¤Ê¤±¤ì¤Ğ¾ï¤Ëfalse
+    if $?.coredump?   # ã‚·ã‚¹ãƒ†ãƒ ãŒã“ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’ã‚µãƒãƒ¼ãƒˆã—ã¦ãªã‘ã‚Œã°å¸¸ã«false
       p "child #{$?.pid} dumped core."
     end
   when $?.stopped?
-    # ¼Âºİ¤Ë¤Ï Process.wait ¤ò»ÈÍÑ¤·¤Æ¤¤¤ë¤Î¤Ç¡¢¤³¤³¤ËÍè¤ë¤³¤È¤Ï¤Ê¤¤
+    # å®Ÿéš›ã«ã¯ Process.wait ã‚’ä½¿ç”¨ã—ã¦ã„ã‚‹ã®ã§ã€ã“ã“ã«æ¥ã‚‹ã“ã¨ã¯ãªã„
     p "child #{$?.pid} was stopped by signal #{$?.stopsig}"
   when $?.exited?
     p "child #{$?.pid} exited normally. status=#{$?.exitstatus}"
@@ -30,13 +30,13 @@ wait ¤ò»ÈÍÑ¤·¤¿Îã
     p "unknown status %#x" % $?.to_i
   end
 
-SIGCHLD ¤ò trap ¤¹¤ëÎã
+SIGCHLD ã‚’ trap ã™ã‚‹ä¾‹
 
   trap(:SIGCHLD) {|sig|
 
     puts "interrupted by signal #{sig} at #{caller[1]}"
-    # Ê£¿ô¤Î»Ò¥×¥í¥»¥¹¤Î½ªÎ»¤ËÂĞ¤·¤Æ1¤Ä¤Î SIGCHLD ¤·¤«ÆÏ¤«¤Ê¤¤
-    # ¾ì¹ç¤¬¤¢¤ë¤Î¤Ç¥ë¡¼¥×¤µ¤»¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹
+    # è¤‡æ•°ã®å­ãƒ—ãƒ­ã‚»ã‚¹ã®çµ‚äº†ã«å¯¾ã—ã¦1ã¤ã® SIGCHLD ã—ã‹å±Šã‹ãªã„
+    # å ´åˆãŒã‚ã‚‹ã®ã§ãƒ«ãƒ¼ãƒ—ã•ã›ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™
 
     while Process.waitpid(-1, Process::WNOHANG|Process::WUNTRACED)
       case
@@ -56,13 +56,13 @@ SIGCHLD ¤ò trap ¤¹¤ëÎã
   }
 
   p pid1 = fork { sleep 1; exit }
-  p pid2 = fork { loop { sleep } } # signal ¤òÂÔ¤Ä¤¿¤á¤Î sleep
+  p pid2 = fork { loop { sleep } } # signal ã‚’å¾…ã¤ãŸã‚ã® sleep
   begin
      Process.kill :STOP, pid2
-     sleep                      # SIGCHLD ¤òÂÔ¤Ä¤¿¤á¤Î sleep
+     sleep                      # SIGCHLD ã‚’å¾…ã¤ãŸã‚ã® sleep
      Process.kill :CONT, pid2
      Process.kill :TERM, pid2
-     loop { sleep }             # SIGCHLD ¤òÂÔ¤Ä¤¿¤á¤Î sleep
+     loop { sleep }             # SIGCHLD ã‚’å¾…ã¤ãŸã‚ã® sleep
   rescue Errno::ECHILD
     puts "done"
   end

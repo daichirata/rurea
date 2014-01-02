@@ -4,14 +4,14 @@ kind=defined
 
 --- delete(index_or_header) -> object
 
-���ꤵ�줿�Ԥ�����������֤��ޤ���
+指定された行か列を削除して返します。
 
-�ǥե���ȤΥߥå����⡼�ɤǤϥ���ǥå����ˤ�륢�������Ϲ�ñ�̤Ǥλ�
-�ȤǤ���ȸ��ʤ��ޤ�����������¾����ˡ�Ǥϥإå��ˤ����ñ�̤Ǥλ��Ȥ�
-����ȸ��ʤ��ޤ���
+デフォルトのミックスモードではインデックスによるアクセスは行単位での参
+照であると見なします。しかし、他の方法ではヘッダによる列単位での参照で
+あると見なします。
 
-õ����ˡ���ѹ����������� [[m:CSV::Table#by_col!]],
-[[m:CSV::Table#by_row!]] ����Ѥ��Ƥ���������
+探索方法を変更したい場合は [[m:CSV::Table#by_col!]],
+[[m:CSV::Table#by_row!]] を使用してください。
 
 @see [[m:CSV::Table#by_col!]], [[m:CSV::Table#by_row!]]
 

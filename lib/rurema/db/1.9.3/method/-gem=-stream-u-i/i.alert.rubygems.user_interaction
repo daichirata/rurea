@@ -4,14 +4,14 @@ kind=defined
 
 --- alert(statement, question  = nil) -> String | nil
 
-INFO ��٥�Υ��顼�Ȥ�ɽ�����ޤ���
+INFO レベルのアラートを表示します。
 
-@param statement ɽ������ʸ�������ꤷ�ޤ���
+@param statement 表示する文字列を指定します。
 
-@param question ɬ�פǤ���м������ꤷ�ޤ���
+@param question 必要であれば質問を指定します。
 
-@return question ����ꤷ�����ϡ�������Ф���������֤��ޤ���
-        question ����ꤷ�ʤ����� nil ���֤��ޤ���
+@return question を指定した場合は、それに対する回答を返します。
+        question を指定しない場合は nil を返します。
 
 @see [[m:Gem::StreamUI#ask]]
 

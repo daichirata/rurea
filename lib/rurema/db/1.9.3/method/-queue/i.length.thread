@@ -5,5 +5,5 @@ kind=defined
 --- length -> Fixnum
 --- size -> Fixnum
 
-���塼��Ĺ�����֤��ޤ���
+キューの長さを返します。
 

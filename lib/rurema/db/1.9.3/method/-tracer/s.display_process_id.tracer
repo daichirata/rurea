@@ -5,6 +5,6 @@ kind=defined
 --- display_process_id -> bool
 --- display_process_id? -> bool
 
-���ʤ�С��ץ����� ID ��ɽ�����ޤ���
-�ǥե���Ȥϡ����Ǥ���
+真ならば、プロセス ID を表示します。
+デフォルトは、偽です。
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- version=(version)
-¥Ğ¡¼¥¸¥ç¥ó¤òÀßÄê¤·¤Ş¤¹¡£
+ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param version ÀßÄê¤¹¤ë¥Ğ¡¼¥¸¥ç¥ó¤ÎÀ°¿ô
+@param version è¨­å®šã™ã‚‹ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®æ•´æ•°
 @see [[m:OpenSSL::X509::Request#version]]
 

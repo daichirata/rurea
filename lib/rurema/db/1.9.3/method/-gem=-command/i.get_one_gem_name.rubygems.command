@@ -4,7 +4,7 @@ kind=defined
 
 --- get_one_gem_name -> String
 
-���ޥ�ɥ饤���Ϳ����줿 Gem ��̾�����ļ��������֤��ޤ���
+コマンドラインで与えられた Gem の名前を一つ取得して返します。
 
-@raise Gem::CommandLineError ���ޥ�ɥ饤��������� Gem ��̾�����Ĥ��������Ǥ��ʤ�����ȯ�����ޤ���
+@raise Gem::CommandLineError コマンドライン引数から Gem の名前を一つだけ取得できない場合に発生します。
 

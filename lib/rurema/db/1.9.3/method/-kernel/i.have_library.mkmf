@@ -5,14 +5,14 @@ kind=added
 --- have_library(lib, func = nil, headers = nil) -> bool
 --- have_library(lib, func = nil, headers = nil){ ... } -> bool
 
-�饤�֥�� lib �������ƥ��¸�ߤ����ؿ� func ���������Ƥ��뤫�ɤ���������å����ޤ���
-�����å������������ [[m:$libs]] �� lib ���ɲä� true ���֤��ޤ���
-�����å������Ԥ����� false ���֤��ޤ���
+ライブラリ lib がシステムに存在し、関数 func が定義されているかどうかをチェックします。
+チェックが成功すれば [[m:$libs]] に lib を追加し true を返します。
+チェックが失敗したら false を返します。
 
-@param lib �饤�֥���̾������ꤷ�ޤ���
+@param lib ライブラリの名前を指定します。
 
-@param func ��������ؿ�̾����ꤷ�ޤ���
-            nil �ޤ��϶�ʸ����ΤȤ��ϡ�"main" �ˤʤ�ޤ���
+@param func 検査する関数名を指定します。
+            nil または空文字列のときは、"main" になります。
 
-@param headers �ɲäΥإå��ե��������ꤷ�ޤ���
+@param headers 追加のヘッダファイルを指定します。
 

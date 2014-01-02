@@ -2,9 +2,9 @@ names=new
 visibility=public
 kind=defined
 
---- new(address)
-16 byte ¤ÎÊ¸»úÎó address ¤«¤é Resolv::IPv6 ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+--- new(address) -> Resolv::IPv6
+16 byte ã®æ–‡å­—åˆ— address ã‹ã‚‰ Resolv::IPv6 ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param address IPv6¥¢¥É¥ì¥¹¤òÉ½¤¹ 16 byte ¤ÎÊ¸»úÎó(¥Ğ¥¤¥ÈÎó)
+@param address IPv6ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¡¨ã™ 16 byte ã®æ–‡å­—åˆ—(ãƒã‚¤ãƒˆåˆ—)
 @see [[m:Resolv::IPv6.create]]
 

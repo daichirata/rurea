@@ -4,4 +4,4 @@ kind=defined
 
 --- userdb -> WEBrick::HTTPAuth::Htpasswd
 
-�桼��̾�ȥѥ���ɤ���¸���� [[c:WEBrick::HTTPAuth::Htpasswd]] ���֥������Ȥ��֤��ޤ���
+ユーザ名とパスワードを保存した [[c:WEBrick::HTTPAuth::Htpasswd]] オブジェクトを返します。

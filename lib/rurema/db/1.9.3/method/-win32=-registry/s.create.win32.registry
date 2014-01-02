@@ -6,13 +6,13 @@ kind=defined
 --- create(key, subkey, desired = KEY_ALL_ACCESS, opt = REG_OPTION_RESERVED) {|reg| ... }
 @todo
 
-�쥸���ȥꥭ�� key ���˥��� subkey ���������
-������������ɽ�� Win32::Registry ���֥������Ȥ��֤��ޤ���
-key �ϿƤΥ����� Win32::Registry ���֥������Ȥǻ��ꤷ�ޤ���
-�ƤΥ����ˤ�����ѥ��� HKEY_* ����ѤǤ��ޤ� (��[[c:Win32::Registry::Constants]])
+レジストリキー key 下にキー subkey を作成し，
+開いたキーを表す Win32::Registry オブジェクトを返します。
+key は親のキーを Win32::Registry オブジェクトで指定します。
+親のキーには定義済キー HKEY_* を使用できます (⇒[[c:Win32::Registry::Constants]])
 
-���֥���������¸�ߤ��Ƥ���Х����Ϥ��������졤[[m:Win32::Registry#created?]]
-�᥽�åɤ� false ���֤��ޤ���
+サブキーが既に存在していればキーはただ開かれ，[[m:Win32::Registry#created?]]
+メソッドが false を返します。
 
-�֥��å���Ϳ������ȡ������ϼ�ưŪ���Ĥ����ޤ���
+ブロックが与えられると，キーは自動的に閉じられます。
 

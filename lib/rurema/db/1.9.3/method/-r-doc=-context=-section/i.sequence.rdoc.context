@@ -4,7 +4,7 @@ kind=defined
 
 --- sequence -> String
 
-section �Υ��������ֹ��ʸ������֤��ޤ���
+section のシーケンス番号を文字列で返します。
 
-��󥯤����������˻Ȥ��ޤ���
+リンクを作成する時に使われます。
 

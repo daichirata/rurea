@@ -4,12 +4,12 @@ kind=added
 
 --- must_match(regexp) -> true
 
-���Ȥ���Ϳ����줿����ɽ���˥ޥå�������硢�����˥ѥ��������Ȥˤʤ�ޤ���
+自身がが与えられた正規表現にマッチした場合、検査にパスしたことになります。
 
-@param regexp ����ɽ����ʸ�������ꤷ�ޤ���ʸ�������ꤷ����������ɽ�����Ѵ����Ƥ���
-              ���Ѥ��ޤ���
+@param regexp 正規表現か文字列を指定します。文字列を指定した場合は正規表現に変換してから
+              使用します。
 
-@raise MiniTest::Assertion ���Ȥ�Ϳ����줿����ɽ���˥ޥå����ʤ��ä�����ȯ�����ޤ���
+@raise MiniTest::Assertion 自身が与えられた正規表現にマッチしなかった場合に発生します。
 
 @see [[m:MiniTest::Assertions#assert_match]]
 

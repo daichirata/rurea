@@ -4,7 +4,7 @@ kind=defined
 
 --- quote(str) -> String
 
-[[m:Rake::RDocTask#external]] �����ξ���Ϳ����줿ʸ����򥯥����Ȥ��ޤ���
+[[m:Rake::RDocTask#external]] が真の場合は与えられた文字列をクオートします。
 
-@param str �������Ȥ���ʸ�������ꤷ�ޤ���
+@param str クオートする文字列を指定します。
 

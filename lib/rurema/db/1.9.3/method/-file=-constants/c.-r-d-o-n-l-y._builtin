@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- RDONLY -> Integer
-�ɤ߹��ߤΤߤΥ⡼�ɤǥե�����򳫤��Ȥ��˻��ꤷ�ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+読み込みのみのモードでファイルを開くときに指定します。
+[[m:File.open]]で使用します。
 

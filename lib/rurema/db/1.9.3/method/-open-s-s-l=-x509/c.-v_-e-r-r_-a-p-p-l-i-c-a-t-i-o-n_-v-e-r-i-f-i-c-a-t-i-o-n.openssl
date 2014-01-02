@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- V_ERR_APPLICATION_VERIFICATION -> Integer
-���ץꥱ����������Ѥ��륨�顼�����ɤǤ���
+アプリケーションが利用するエラーコードです。
 
-OpenSSL �Υ饤�֥��ǤϻȤ��ʤ��Τǡ�
-���ץꥱ�������ץ�����ޤ���ͳ�����Ѥ��뤳�Ȥ���ǽ�Ǥ���
+OpenSSL のライブラリでは使われないので、
+アプリケーションプログラマが自由に利用することが可能です。
 
-[[m:OpenSSL::X509::Store#error]] ��
-[[m:OpenSSL::X509::StoreContext#error]] �Υ��顼�����ɤȤ���
-�Ȥ��ޤ���
+[[m:OpenSSL::X509::Store#error]] や
+[[m:OpenSSL::X509::StoreContext#error]] のエラーコードとして
+使われます。
 
 @see [[m:OpenSSL::X509::Store#verify_callback=]],
      [[m:OpenSSL::X509::StoreContext#error=]]

@@ -4,9 +4,9 @@ kind=defined
 
 --- inflate(string) -> String
 
-string ¤òÅ¸³«¤·¤Ş¤¹¡£
+string ã‚’å±•é–‹ã—ã¾ã™ã€‚
 
-¤Á¤Ê¤ß¤Ë¡¢¤³¤Î¥á¥½¥Ã¥É¤Ï°Ê²¼¤Î¥³¡¼¥É¤È¤Û¤ÜÆ±¤¸¤Ç¤¹:
+ã¡ãªã¿ã«ã€ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ä»¥ä¸‹ã®ã‚³ãƒ¼ãƒ‰ã¨ã»ã¼åŒã˜ã§ã™:
 
   def inflate(string)
     zstream = Zlib::Inflate.new
@@ -16,9 +16,9 @@ string ¤òÅ¸³«¤·¤Ş¤¹¡£
     buf
   end
 
-@param string Å¸³«¤¹¤ëÊ¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param string å±•é–‹ã™ã‚‹æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise Zlib::NeedDict Å¸³«¤Ë¼­½ñ¤¬É¬Í×¤Ê¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise Zlib::NeedDict å±•é–‹ã«è¾æ›¸ãŒå¿…è¦ãªå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
   require 'zlib'
 

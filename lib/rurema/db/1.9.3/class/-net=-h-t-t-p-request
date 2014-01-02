@@ -6,9 +6,9 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP еъепеие╣е╚дЄ├ъ╛▌▓╜д╣дыепеще╣д╟д╣бг
+HTTP уГкуВпуВиуВ╣уГИуВТцК╜ш▒бхМЦуБЩуВЛуВпуГйуВ╣уБзуБЩуАВ
 
-Net::HTTPRequest д╧├ъ╛▌епеще╣д╩д╬д╟╝┬║▌д╦д╧е╡е╓епеще╣д╬
+Net::HTTPRequest уБпцК╜ш▒буВпуГйуВ╣уБкуБоуБзхоЯщЪЫуБлуБпуВ╡уГЦуВпуГйуВ╣уБо
 
   * [[c:Net::HTTP::Get]]
   * [[c:Net::HTTP::Head]]
@@ -25,9 +25,9 @@ Net::HTTPRequest д╧├ъ╛▌епеще╣д╩д╬д╟╝┬║▌д╦д╧е╡е╓епеще╣д╬
   * [[c:Net::HTTP::Trace]]
   * [[c:Net::HTTP::Unlock]]
 
-дЄ╗╚═╤д╖д╞дпд└д╡ддбг
+уВТф╜┐чФиуБЧуБжуБПуБауБХуБДуАВ
 
-=== ╬у
+=== ф╛Л
 
   require 'net/http'
   http = Net::HTTP.new('www.example.com', 80)

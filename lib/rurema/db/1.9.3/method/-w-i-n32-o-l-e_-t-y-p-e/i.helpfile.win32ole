@@ -3,25 +3,25 @@ visibility=public
 kind=defined
 
 --- helpfile -> String | nil
-���֥������Ȥ˴�Ϣ�դ���줿�إ�ץե�����Υե�ѥ�̾��
+オブジェクトに関連付けられたヘルプファイルのフルパス名。
 
-�������֤��줿�إ�ץե������ɽ������ˤϡ�
-[[m:WIN32OLE#ole_show_help]]�᥽�åɤ�ƤӽФ��ޤ���
+ここで返されたヘルプファイルを表示するには、
+[[m:WIN32OLE#ole_show_help]]メソッドを呼び出します。
 
-���֥������Ȥ��إ�ץե����������ʤ�����nil���֤��ޤ���
+オブジェクトがヘルプファイルを持たない場合はnilを返します。
 
-@return ���֥������Ȥ˴�Ϣ�դ���줿�إ�ץե�����Υե�ѥ�̾��ʸ������֤��ޤ���
-        �إ�ץե����뤬̤����ξ���nil���֤��ޤ���
+@return オブジェクトに関連付けられたヘルプファイルのフルパス名を文字列で返します。
+        ヘルプファイルが未定義の場合はnilを返します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Worksheet')
    puts tobj.helpfile # => C:\...\VBAXL9.CHM
    WIN32OLE.ole_show_help tobj.helpfile, tobj.helpcontext
-   # ����WIN32OLE.ole_show_help(tobj) �θƤӽФ���˾�ޤ���
+   # 注）WIN32OLE.ole_show_help(tobj) の呼び出しが望ましい
 
-���᥽�åɤ��ե�ѥ�̾���֤��Ƥ⡢�إ�ץե����뤬���󥹥ȡ��뤵��Ƥ�
-�ʤ���礬���뤳�Ȥ����դ��Ƥ���������
+当メソッドがフルパス名を返しても、ヘルプファイルがインストールされてい
+ない場合があることに注意してください。
 
-�ޤ��������ͤ�OLE�����Ф���Ͽ�ͤ򤽤Τޤ����Ѥ��뤿�ᡢRuby�Υѥ�̾����
-�ʥǥ��쥯�ȥ���ڤ�ϡ�/�סˤǤϤʤ���Windows�Υѥ�̾�����ʥǥ��쥯��
-����ڤ�ϡ�\�סˤǤ���
+また、返送値はOLEサーバの登録値をそのまま利用するため、Rubyのパス名形式
+（ディレクトリ区切りは「/」）ではなく、Windowsのパス名形式（ディレクト
+リ区切りは「\」）です。
 

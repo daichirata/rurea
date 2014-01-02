@@ -4,17 +4,17 @@ kind=defined
 
 --- basic_word_break_characters=(string)
 
-�桼�������Ϥ��䴰��Ԥ��ݡ�
-ñ��ζ��ڤ�򼨤�ʣ����ʸ���ǹ��������ʸ���� string ����ꤷ�ޤ���
+ユーザの入力の補完を行う際、
+単語の区切りを示す複数の文字で構成される文字列 string を指定します。
 
-GNU Readline �Υǥե�����ͤϡ�Bash ���䴰�����ǻ��Ѥ��Ƥ���ʸ����
-" \t\n\"\\'`@$><=;|&{(" (���ڡ�����ޤ�) �ˤʤäƤ��ޤ���
+GNU Readline のデフォルト値は、Bash の補完処理で使用している文字列
+" \t\n\"\\'`@$><=;|&{(" (スペースを含む) になっています。
 
-@param string ʸ�������ꤷ�ޤ���
+@param string 文字列を指定します。
 
-@raise NotImplementedError ���ݡ��Ȥ��Ƥ��ʤ��Ķ���ȯ�����ޤ���
+@raise NotImplementedError サポートしていない環境で発生します。
 
-@raise SecurityError �����ե�٥� ($SAFE) �� 4 �ξ���ȯ�����ޤ���
+@raise SecurityError セーフレベル ($SAFE) が 4 の場合に発生します。
 
 @see [[m:Readline.basic_word_break_characters]]
 

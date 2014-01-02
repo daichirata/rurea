@@ -3,22 +3,24 @@ visibility=public
 kind=defined
 
 --- connect(server_sockaddr) -> 0
-@todo
 
-[[man:connect(2)]] ¤ÈÆ±¤¸Æ¯¤­¤ò¤·¤Ş¤¹¡£server_sockaddr ¤Ï¡¢
+[[man:connect(2)]] ã§ã‚½ã‚±ãƒƒãƒˆã‚’æ¥ç¶šã—ã¾ã™ã€‚
+
+server_sockaddr ã¯ã€
 [[ref:lib:socket#pack_string]]
-¤Ç¤¹¡£
+ã‚‚ã—ãã¯ [[c:Addrinfo]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+ã§ã™ã€‚
 
-0 ¤òÊÖ¤·¤Ş¤¹¡£
+0 ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param server_sockaddr ¥½¥±¥Ã¥È¥¢¥É¥ì¥¹¹½Â¤ÂÎ¤ò pack ¤·¤¿Ê¸»úÎó[[ref:lib:socket#pack_string]]¤ò»ØÄê¤·¤Ş¤¹¡£
+@param server_sockaddr æ¥ç¶šå…ˆã‚¢ãƒ‰ãƒ¬ã‚¹
+@raise Errno::EXXX [[man:connect(2)]] ãŒã‚¨ãƒ©ãƒ¼ã‚’å ±å‘Šã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚è©³ã—ãã¯
+       man ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@return 0¤òÊÖ¤·¤Ş¤¹¡£
 
+ãŸã¨ãˆã° IPv4 ã® TCP ã‚½ã‚±ãƒƒãƒˆã‚’ç”Ÿæˆã—ã€connect ã§ www.ruby-lang.org:80 ã«æ¥ç¶šã™ã‚‹ã«ã¯ä»¥ä¸‹ã®ã‚ˆã†ã«ã—ã¾ã™ã€‚
 
-¤¿¤È¤¨¤Ğ IPv4 ¤Î TCP ¥½¥±¥Ã¥È¤òÀ¸À®¤·¡¢connect ¤Ç www.ruby-lang.org:80 ¤ËÀÜÂ³¤¹¤ë¤Ë¤Ï°Ê²¼¤Î¤è¤¦¤Ë¤·¤Ş¤¹¡£
-
-Îã:
+ä¾‹:
 
   s = Socket.new(Socket::AF_INET, Socket::SOCK_STREAM, 0)
   sockaddr = Socket.sockaddr_in(80, "www.ruby-lang.org")

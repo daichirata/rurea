@@ -4,4 +4,4 @@ kind=defined
 
 --- SPECIAL_RETURN -> Array
 
-[[c:Array]] �Υ��󥹥��󥹤��֤��ΤǰѾ�������˥�åפ���ɬ�פ�����᥽�åɤΥꥹ�ȤǤ���
+[[c:Array]] のインスタンスを返すので委譲した後にラップする必要があるメソッドのリストです。

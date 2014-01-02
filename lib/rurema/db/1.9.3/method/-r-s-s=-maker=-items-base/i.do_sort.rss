@@ -4,6 +4,6 @@ kind=defined
 
 --- do_sort
 @todo
-���ߤ�do_sort���ͤ�������ޤ����ǥե���ȤǤ�
-false�ˤʤäƤ��ޤ���
+現在のdo_sortの値を取得します．デフォルトでは
+falseになっています．
 

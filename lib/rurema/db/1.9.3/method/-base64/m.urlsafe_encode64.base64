@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- urlsafe_encode64(bin) -> String
-Ϳ����줿�ǡ����� Base64 ���󥳡��ɤ���ʸ������֤��ޤ���
+与えられたデータを Base64 エンコードした文字列を返します。
 
-���Υ᥽�åɤ� [[RFC:4648]] �� "Base 64 Encoding with URL and Filename Safe Alphabet" ���б����Ƥ��ޤ���
-"+" �� "-" �� "/" �� "_" ���֤������ޤ���
+このメソッドは [[RFC:4648]] の "Base 64 Encoding with URL and Filename Safe Alphabet" に対応しています。
+"+" を "-" に "/" を "_" に置き換えます。
 
-@param bin Base64 ���󥳡��ɤ���ǡ�������ꤷ�ޤ���
+@param bin Base64 エンコードするデータを指定します。
 
 
 

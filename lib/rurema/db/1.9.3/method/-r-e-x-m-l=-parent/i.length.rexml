@@ -2,7 +2,8 @@ names=length,size
 visibility=public
 kind=defined
 
---- size
---- length
-@todo
+--- size -> Integer
+--- length -> Integer
+
+保持している子ノードの数を返します。
 

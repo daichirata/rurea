@@ -3,5 +3,6 @@ classes=Tk=BLT,Tk=BLT=GraphCommand
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 BLT support

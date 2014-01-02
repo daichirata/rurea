@@ -4,20 +4,20 @@ kind=defined
 
 --- marshal_load(obj) -> object
 
-[[m:Marshal.#load]] ¤òÀ©¸æ¤¹¤ë¥á¥½¥Ã¥É¤Ç¤¹¡£
+[[m:Marshal.#load]] ã‚’åˆ¶å¾¡ã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã§ã™ã€‚
 
-some ¤Î¥À¥ó¥×·ë²Ì¡ÊMarshal.dump(some)¡Ë ¤ò¥í¡¼¥É¤¹¤ë¡ÊMarshal.load(Marshal.dump(some))¡Ë¤Ë
-¤Ï some ¤¬¥á¥½¥Ã¥É marshal_load ¤ò»ı¤Ã¤Æ¤¤¤Ê¤±¤ì¤Ğ¤Ê¤ê¤Ş¤»¤ó¡£
-¤³¤Î¤È¤­¡¢marshal_dump ¤ÎÊÖ¤êÃÍ¤¬ marshal_load ¤Î°ú¿ô¤ËÍøÍÑ¤µ¤ì¤Ş¤¹¡£
-marshal_load »ş¤Î self ¤Ï¡¢À¸À®¤µ¤ì¤¿¤Ğ¤«¤ê¡Ê[[m:Class#allocate]] ¤µ¤ì¤¿¤Ğ¤«¤ê¡Ë ¤Î¾õÂÖ¤Ç¤¹¡£
+some ã®ãƒ€ãƒ³ãƒ—çµæœï¼ˆMarshal.dump(some)ï¼‰ ã‚’ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ï¼ˆMarshal.load(Marshal.dump(some))ï¼‰ã«
+ã¯ some ãŒãƒ¡ã‚½ãƒƒãƒ‰ marshal_load ã‚’æŒã£ã¦ã„ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚
+ã“ã®ã¨ãã€marshal_dump ã®è¿”ã‚Šå€¤ãŒ marshal_load ã®å¼•æ•°ã«åˆ©ç”¨ã•ã‚Œã¾ã™ã€‚
+marshal_load æ™‚ã® self ã¯ã€ç”Ÿæˆã•ã‚ŒãŸã°ã‹ã‚Šï¼ˆ[[m:Class#allocate]] ã•ã‚ŒãŸã°ã‹ã‚Šï¼‰ ã®çŠ¶æ…‹ã§ã™ã€‚
 
-marshal_dump/marshal_load ¤Î»ÅÁÈ¤ß¤Ï Ruby 1.8.0 ¤«¤éÆ³Æş¤µ¤ì¤Ş¤·¤¿¡£
-¤³¤ì¤«¤é½ñ¤¯¥×¥í¥°¥é¥à¤Ç¤Ï _dump/_load ¤Ç¤Ï¤Ê¤¯
-marshal_dump/marshal_load ¤ò»È¤¦¤Ù¤­¤Ç¤¹¡£
+marshal_dump/marshal_load ã®ä»•çµ„ã¿ã¯ Ruby 1.8.0 ã‹ã‚‰å°å…¥ã•ã‚Œã¾ã—ãŸã€‚
+ã“ã‚Œã‹ã‚‰æ›¸ããƒ—ãƒ­ã‚°ãƒ©ãƒ ã§ã¯ _dump/_load ã§ã¯ãªã
+marshal_dump/marshal_load ã‚’ä½¿ã†ã¹ãã§ã™ã€‚
 
-@param obj marshal_dump ¤ÎÊÖ¤êÃÍ¤Î¥³¥Ô¡¼¤Ç¤¹¡£
+@param obj marshal_dump ã®è¿”ã‚Šå€¤ã®ã‚³ãƒ”ãƒ¼ã§ã™ã€‚
 
-@return   ÊÖ¤êÃÍ¤ÏÌµ»ë¤µ¤ì¤Ş¤¹¡£
+@return   è¿”ã‚Šå€¤ã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚
 
 @see [[m:Object#marshal_dump]], [[c:Marshal]]
 

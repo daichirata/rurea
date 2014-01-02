@@ -4,9 +4,9 @@ kind=defined
 
 --- acct(account) -> nil
 
-¥µ¡¼¥Ð¡¼¤Ë ACCT ¥³¥Þ¥ó¥É¤Ç¥¢¥«¥¦¥ó¥È¾ðÊó¤òÁ÷¤ê¤Þ¤¹¡£
+ã‚µãƒ¼ãƒãƒ¼ã« ACCT ã‚³ãƒžãƒ³ãƒ‰ã§ã‚¢ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ã‚’é€ã‚Šã¾ã™ã€‚
 
-@param account Á÷¤ê¤¿¤¤¥¢¥«¥¦¥ó¥È¾ðÊó¤òÊ¸»úÎó¤ÇÍ¿¤¨¤Þ¤¹¡£
+@param account é€ã‚ŠãŸã„ã‚¢ã‚«ã‚¦ãƒ³ãƒˆæƒ…å ±ã‚’æ–‡å­—åˆ—ã§ä¸Žãˆã¾ã™ã€‚
 
-@raise Net::FTPReplyError ±þÅú¥³¡¼¥É¤¬2yz¤Ç¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@raise Net::FTPReplyError å¿œç­”ã‚³ãƒ¼ãƒ‰ãŒ2yzã§ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

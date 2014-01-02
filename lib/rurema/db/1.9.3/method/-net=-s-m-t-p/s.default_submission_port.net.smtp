@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- default_submission_port -> Integer
-�ǥե���ȤΥ��֥ߥå����ݡ����ֹ�(587)���֤��ޤ���
+デフォルトのサブミッションポート番号(587)を返します。
 

@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- new(address, port = Net::SMTP.default_port) -> Net::SMTP
-������ SMTP ���֥������Ȥ��������ޤ���
-address ��SMTP�����С���FQDN�ǡ�
-port ����³����ݡ����ֹ�Ǥ���
-�����������Υ᥽�åɤǤϤޤ�TCP����³�Ϥ��ޤ���
-[[m:Net::SMTP#start]] ����³���ޤ���
+新しい SMTP オブジェクトを生成します。
+address はSMTPサーバーのFQDNで、
+port は接続するポート番号です。
+ただし、このメソッドではまだTCPの接続はしません。
+[[m:Net::SMTP#start]] で接続します。
 
-���֥������Ȥ���������³��Ʊ���ˤ��������ˤ�
-[[m:Net::SMTP.start]] ������˻ȤäƤ���������
+オブジェクトの生成と接続を同時にしたい場合には
+[[m:Net::SMTP.start]] を代わりに使ってください。
 
-@param address ��³���SMTP�����Ф�ʸ����
-@param port ��³�ݡ����ֹ�
+@param address 接続先のSMTPサーバの文字列
+@param port 接続ポート番号
 
 @see [[m:Net::SMTP.start]], [[m:Net::SMTP#start]]
 

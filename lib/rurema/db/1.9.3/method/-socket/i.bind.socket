@@ -3,16 +3,10 @@ visibility=public
 kind=defined
 
 --- bind(my_sockaddr) -> 0
-@todo
 
-¥½¥±¥Ã¥È¤ò my_sockaddr ¤Ë·ë¹ç¤·¤Ş¤¹¡£[[man:bind(2)]]
-¤ÈÆ±¤¸Æ¯¤­¤ò¤·¤Ş¤¹¡£my_sockaddr ¤Ï
-[[ref:lib:socket#pack_string]]
-¤Ç¤¹¡£
+ã‚½ã‚±ãƒƒãƒˆã‚’ my_sockaddr ã«çµåˆã—ã¾ã™ã€‚[[man:bind(2)]]
+ã¨åŒã˜åƒãã‚’ã—ã¾ã™ã€‚
 
-0 ¤òÊÖ¤·¤Ş¤¹¡£
-
-@param my_sockaddr ¥½¥±¥Ã¥È¥¢¥É¥ì¥¹¹½Â¤ÂÎ¤ò pack ¤·¤¿Ê¸»úÎó[[ref:lib:socket#pack_string]]¤ò»ØÄê¤·¤Ş¤¹¡£
-
-@return 0 ¤òÊÖ¤·¤Ş¤¹¡£
+@param my_sockaddr ã‚½ã‚±ãƒƒãƒˆã‚¢ãƒ‰ãƒ¬ã‚¹æ§‹é€ ä½“ã‚’ pack ã—ãŸæ–‡å­—åˆ—[[ref:lib:socket#pack_string]]ã‚‚ã—ãã¯[[c:Addrinfo]]ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@return 0 ã‚’è¿”ã—ã¾ã™ã€‚
 

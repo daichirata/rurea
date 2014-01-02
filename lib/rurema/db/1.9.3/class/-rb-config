@@ -6,5 +6,5 @@ library=rbconfig
 aliases=Config
 aliasof=
 
-Ruby ���󥿥ץ꥿�����������ꤵ�줿������Ǽ�����饤�֥��Ǥ���
-RbConfig �⥸�塼���������ޤ���
+Ruby インタプリタ作成時に設定された情報を格納したライブラリです。
+RbConfig モジュールを定義します。

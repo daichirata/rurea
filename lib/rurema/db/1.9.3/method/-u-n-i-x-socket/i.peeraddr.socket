@@ -2,17 +2,18 @@ names=peeraddr
 visibility=public
 kind=defined
 
---- peeraddr
-@todo
+--- peeraddr -> [String, String]
 
-ÀÜÂ³Áê¼êÀè¥½¥±¥Ã¥È¤Î¾ðÊó¤òÉ½¤¹ÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£ÇÛÎó¤Î³ÆÍ×ÁÇ¤Ï
-[[m:UNIXSocket#addr]] ¥á¥½¥Ã¥É¤¬ÊÖ¤¹ÇÛÎó
-¤ÈÆ±¤¸¤Ç¤¹¡£
+æŽ¥ç¶šç›¸æ‰‹å…ˆã‚½ã‚±ãƒƒãƒˆã®æƒ…å ±ã‚’è¡¨ã™é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚é…åˆ—ã®å„è¦ç´ ã¯ç¬¬1è¦
+ç´ ãŒæ–‡å­—åˆ— "AF_UNIX"ã€ç¬¬2è¦ç´ ãŒãƒ‘ã‚¹ã‚’è¡¨ã™æ–‡å­—åˆ—ã§ã™ã€‚
 
-Îã:
+ä¾‹:
 
   UNIXServer.open("/tmp/s") {|serv|
     c = UNIXSocket.open("/tmp/s")
     p c.peeraddr    #=> ["AF_UNIX", "/tmp/s"]
+    p c.addr #=> ["AF_UNIX", ""]
   }
+
+@see [[m:UNIXSocket#addr]]
 

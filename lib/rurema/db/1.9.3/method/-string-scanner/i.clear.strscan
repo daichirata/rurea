@@ -4,11 +4,11 @@ kind=defined
 
 --- terminate -> self
 --- clear -> self
-¥¹¥­¥ã¥ó¥İ¥¤¥ó¥¿¤òÊ¸»úÎóËöÈø¸å¤Ş¤Ç¿Ê¤á¡¢¥Ş¥Ã¥Áµ­Ï¿¤ò¼Î¤Æ¤Ş¤¹¡£
+ã‚¹ã‚­ãƒ£ãƒ³ãƒã‚¤ãƒ³ã‚¿ã‚’æ–‡å­—åˆ—æœ«å°¾å¾Œã¾ã§é€²ã‚ã€ãƒãƒƒãƒè¨˜éŒ²ã‚’æ¨ã¦ã¾ã™ã€‚
 
-@return self ¤òÊÖ¤·¤Ş¤¹¡£
+@return self ã‚’è¿”ã—ã¾ã™ã€‚
 
-pos = self.string.size ¤ÈÆ±¤¸Æ°ºî¤Ç¤¹¡£
+pos = self.string.size ã¨åŒã˜å‹•ä½œã§ã™ã€‚
 
       s = StringScanner.new('test string')
       s.scan(/\w+/) # => "test"
@@ -20,6 +20,6 @@ pos = self.string.size ¤ÈÆ±¤¸Æ°ºî¤Ç¤¹¡£
       s[0]          # => nil
       s.pos         # => 11
 
-[[m:StringScanner#clear]] ¤Ï¾­Íè¤Î¥Ğ¡¼¥¸¥ç¥ó¤Çºï½ü¤µ¤ì¤ëÍ½Äê¤Ç¤¹¡£
-Âå¤ï¤ê¤Ë [[m:StringScanner#terminate]] ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
+[[m:StringScanner#clear]] ã¯å°†æ¥ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§å‰Šé™¤ã•ã‚Œã‚‹äºˆå®šã§ã™ã€‚
+ä»£ã‚ã‚Šã« [[m:StringScanner#terminate]] ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚
 

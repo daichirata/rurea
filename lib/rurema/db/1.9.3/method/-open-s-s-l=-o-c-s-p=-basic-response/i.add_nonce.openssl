@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- add_nonce(val=nil) -> self
-BasicResponse ╓к nonce ╓Рди╡ц╓╥╓ч╓╧║ё
+BasicResponse Ц│╚ nonce Ц┌▓Х©╫Е┼═Ц│≈Ц│╬Ц│≥Ц─┌
 
-╟З©Т╓Р╬йн╛╓╧╓К╓х║╒╔И╔С╔ю╔Ю╓й nonce ╓Рю╦ю╝╓╥мЬмя╓╥╓ч╓╧║ё
+Е╪∙Ф∙╟Ц┌▓Г°│Г∙╔Ц│≥Ц┌▀Ц│╗Ц─│Ц┐╘Ц┐ЁЦ┐─Ц┐═Ц│╙ nonce Ц┌▓Г■÷Ф┬░Ц│≈Е┬╘Г■╗Ц│≈Ц│╬Ц│≥Ц─┌
 
-дл╬О╓о╓Ё╓н╔А╔╫╔ц╔и╓Р╩х╓О╓╨ [[c:OpenSSL::OCSP::BasicResponse#copy_nonce]] ╓Р
-мя╓╓╓ч╓╧║ё
+И─ Е╦╦Ц│╞Ц│⌠Ц│╝Ц┐║Ц┌╫Ц┐┐Ц┐┴Ц┌▓Д╫©Ц┌▐Ц│  [[c:OpenSSL::OCSP::BasicResponse#copy_nonce]] Ц┌▓
+Г■╗Ц│└Ц│╬Ц│≥Ц─┌
 
-@param val ди╡ц╓╧╓К nonce ╓нцм(й╦╩ЗнС)
+@param val Х©╫Е┼═Ц│≥Ц┌▀ nonce Ц│╝Е─╓(Ф√┤Е╜≈Е┬≈)
 

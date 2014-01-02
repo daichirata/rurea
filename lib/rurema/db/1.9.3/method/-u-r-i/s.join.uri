@@ -4,20 +4,20 @@ kind=defined
 
 --- join(uri_str, *path)    -> object
 
-Ê¸»úÎó uri_str ¤È path ... ¤ò URI ¤È¤·¤ÆÏ¢·ë¤·¤ÆÆÀ¤é¤ì¤ë
-URI ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹¡£
+æ–‡å­—åˆ— uri_str ã¨ path ... ã‚’ URI ã¨ã—ã¦é€£çµã—ã¦å¾—ã‚‰ã‚Œã‚‹
+URI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-[[rfc:2396]] ¤Î Section 5.2 ¤Î
-»ÅÍÍ¤Ë½¾¤Ã¤ÆÏ¢·ë¤·¤Ş¤¹¡£
-°Ê²¼¤ÈÅù²Á¤Ç¤¹
+[[rfc:2396]] ã® Section 5.2 ã®
+ä»•æ§˜ã«å¾“ã£ã¦é€£çµã—ã¾ã™ã€‚
+ä»¥ä¸‹ã¨ç­‰ä¾¡ã§ã™
 
   URI.parse(uri_str) + path + ...
 
-@param uri_str URI Ê¸»úÎó
-@param path ¸å¤í¤ËÏ¢·ë¤¹¤ëÊ¸»úÎó
-@raise URI::InvalidURIError ¥Ñ¡¼¥¹¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@param uri_str URI æ–‡å­—åˆ—
+@param path å¾Œã‚ã«é€£çµã™ã‚‹æ–‡å­—åˆ—
+@raise URI::InvalidURIError ãƒ‘ãƒ¼ã‚¹ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'uri'
   p URI.join('http://www.ruby-lang.org/', '/ja/man-1.6/')

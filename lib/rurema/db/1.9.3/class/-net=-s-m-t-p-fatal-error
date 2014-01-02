@@ -6,5 +6,5 @@ library=net.smtp
 aliases=
 aliasof=
 
-SMTP Ã×Ì¿Åª¥¨¥é¡¼(¥¨¥é¡¼¥³¡¼¥É 5xx¡¢ ¤¿¤À¤·500½ü¤¯)¤ËÂÐ±þ¤¹¤ë
-Îã³°¥¯¥é¥¹¤Ç¤¹¡£
+SMTP è‡´å‘½çš„ã‚¨ãƒ©ãƒ¼(ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ 5xxã€ ãŸã ã—500é™¤ã)ã«å¯¾å¿œã™ã‚‹
+ä¾‹å¤–ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

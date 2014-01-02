@@ -4,9 +4,9 @@ kind=defined
 
 --- new(array_of_rows) -> CSV::Table
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-���ƤιԤ�Ʊ���إå�����Ĥ��Ȥ��ꤷ�Ƥ��ޤ���
+全ての行が同じヘッダを持つことを仮定しています。
 
-@param array_of_rows [[c:CSV::Row]] �Υ��󥹥��󥹤��������ꤷ�ޤ���
+@param array_of_rows [[c:CSV::Row]] のインスタンスの配列を指定します。
 

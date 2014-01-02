@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- session_id_context -> String | nil
-¥»¥Ã¥·¥ç¥ó ID ¥³¥ó¥Æ¥­¥¹¥ÈÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+ã‚»ãƒƒã‚·ãƒ§ãƒ³ ID ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-ÀßÄê¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+è¨­å®šã•ã‚Œã¦ã„ãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[c:OpenSSL::SSL::Session]],
      [[m:OpenSSL::SSL::SSLContext#session_id_context=]]

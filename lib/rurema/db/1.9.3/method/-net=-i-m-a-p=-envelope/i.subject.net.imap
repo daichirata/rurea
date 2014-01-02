@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- subject -> String | nil
-��å������Υ��֥������Ȥ��֤��ޤ���
+メッセージのサブジェクトを返します。
 
-����٥����פ�¸�ߤ��ʤ��Ȥ��� nil ���֤��ޤ���
+エンベロープに存在しないときは nil を返します。
 
 

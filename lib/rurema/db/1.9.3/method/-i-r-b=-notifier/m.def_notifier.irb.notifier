@@ -1,6 +1,0 @@
-names=def_notifier
-visibility=public
-kind=defined
-
---- def_notifier(prefix = "", output_method = StdioOutputMethod.new)
-

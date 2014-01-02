@@ -10,4 +10,4 @@
 #realtime	Benchmark.#realtime
 :BENCHMARK_VERSION	Benchmark::BENCHMARK_VERSION
 :CAPTION	Benchmark::CAPTION
-:FMTSTR	Benchmark::FMTSTR
+:FORMAT	Benchmark::FORMAT

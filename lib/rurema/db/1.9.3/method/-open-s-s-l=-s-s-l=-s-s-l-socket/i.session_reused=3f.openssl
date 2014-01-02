@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- session_reused? -> bool
-���Ѥ��Ƥ��� SSL ���å���󤬺����Ѥ��줿��ΤǤ���
-���˿����֤��ޤ���
+利用している SSL セッションが再利用されたものである
+場合に真を返します。
 
 @see [[c:OpenSSL::SSL::Session]],
      [[m:OpenSSL::SSL::SSLSocket#session]],

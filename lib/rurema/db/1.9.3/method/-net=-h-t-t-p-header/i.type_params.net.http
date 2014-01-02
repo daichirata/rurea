@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- type_params -> Hash
-Content-Type �Υѥ�᡼���� {"charset" => "iso-2022-jp"}
-�Ȥ������� [[c:Hash]] ���֤��ޤ���
+Content-Type のパラメータを {"charset" => "iso-2022-jp"}
+という形の [[c:Hash]] で返します。
 
-Content-Type: �إå��ե�����ɤ�¸�ߤ��ʤ����ˤ�
-���Υϥå�����֤��ޤ���
+Content-Type: ヘッダフィールドが存在しない場合には
+空のハッシュを返します。
 

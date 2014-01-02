@@ -4,6 +4,6 @@ kind=defined
 
 --- userinfo    -> String | nil
 
-¼«¿È¤Î userinfo ¤ò "username:password" ¤È¤¤¤¦·Á¼°¤ÎÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
-ÀßÄê¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã® userinfo ã‚’ "username:password" ã¨ã„ã†å½¢å¼ã®æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
+è¨­å®šã•ã‚Œã¦ã„ãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 

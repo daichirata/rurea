@@ -4,7 +4,7 @@ kind=defined
 
 --- to_s -> String
 
-Ê¸»úÎó¤ËÊÑ´¹¤·¤Þ¤¹¡£
+æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
 
   addr6 = IPAddr.new('::1')
   addr6.to_s       #=> "::1"

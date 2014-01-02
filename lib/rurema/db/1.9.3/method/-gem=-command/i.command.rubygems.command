@@ -4,5 +4,5 @@ kind=defined
 
 --- command -> String
 
-���ޥ�ɤ�̾�����֤��ޤ���
+コマンドの名前を返します。
 

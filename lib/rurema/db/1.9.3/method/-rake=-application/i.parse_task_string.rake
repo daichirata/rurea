@@ -4,7 +4,7 @@ kind=defined
 
 --- parse_task_string(string) -> [String, Array]
 
-Ϳ����줿ʸ�������Ϥ��ơ�������̾�Ȥ����Ϳ����ѥ�᡼���Υڥ����֤��ޤ���
+与えられた文字列を解析して、タスク名とそれに与えるパラメータのペアを返します。
 
-@param string ������̾�Ȥ����Ϳ����ѥ�᡼���Υڥ����֤��ޤ���
+@param string タスク名とそれに与えるパラメータのペアを返します。
 

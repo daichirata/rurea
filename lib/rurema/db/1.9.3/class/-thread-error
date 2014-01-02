@@ -6,16 +6,16 @@ library=_builtin
 aliases=
 aliasof=
 
-[[c:Thread]] ��Ϣ�Υ��顼���������Ȥ���ȯ�����ޤ���
+[[c:Thread]] 関連のエラーが起きたときに発生します。
 
-  * �����ȥ���åɤ� [[m:Thread#join]] ���褦�Ȥ����Ȥ�
-  * [[m:Thread#join]] �ǥǥåɥ��å��������ˤʤä��Ȥ�
-  * ��λ��������åɤ� [[m:Thread#wakeup]] ���뤤�� [[m:Thread#run]] ���褦�Ȥ����Ȥ�
-  * ����åɤ���Ĥ����ʤ��Τ� [[m:Thread.stop]] ���褦�Ȥ����Ȥ�
-  * [[m:Kernel.#throw]] ������å���� [[m:Kernel.#catch]] ����ʤ��Ȥ�
-  * ����åɤ��� return ���褦�Ȥ����Ȥ�
+  * カレントスレッドを [[m:Thread#join]] しようとしたとき
+  * [[m:Thread#join]] でデッドロックしそうになったとき
+  * 終了したスレッドを [[m:Thread#wakeup]] あるいは [[m:Thread#run]] しようとしたとき
+  * スレッドが一つしかないのに [[m:Thread.stop]] しようとしたとき
+  * [[m:Kernel.#throw]] がスレッド内で [[m:Kernel.#catch]] されないとき
+  * スレッドから return しようとしたとき
 
-  * ���ƥ졼����Ϳ�����˥���åɤ��������褦�Ȥ����Ȥ�
-  * �����ȥ���åɤ�°���륹��åɥ��롼�פ� freeze ����Ƥ���Ȥ��ˡ�����åɤ��������褦�Ȥ����Ȥ�
+  * イテレータを与えずにスレッドを生成しようとしたとき
+  * カレントスレッドの属するスレッドグループが freeze されているときに、スレッドを生成しようとしたとき
 
-  * freeze ���뤤�� enclose ����Ƥ��륹��åɥ��롼�פ˥���åɤ�ä��褦�Ȥ�����
+  * freeze あるいは enclose されているスレッドグループにスレッドを加えようとした時

@@ -4,6 +4,6 @@ kind=defined
 
 --- eql?(other) -> bool
 --- ==(other) -> bool
-¼«¿È¤¬ other ¤ÈÅù¤·¤¤¤Ê¤é¤Ğ true ¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ãŒ other ã¨ç­‰ã—ã„ãªã‚‰ã° true ã‚’è¿”ã—ã¾ã™ã€‚
 
-@raise OpenSSL::PKey::EC::Point::Error ¥¨¥é¡¼¤¬À¸¤¸¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@raise OpenSSL::PKey::EC::Point::Error ã‚¨ãƒ©ãƒ¼ãŒç”Ÿã˜ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™

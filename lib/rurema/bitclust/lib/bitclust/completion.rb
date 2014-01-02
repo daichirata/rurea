@@ -9,6 +9,8 @@
 
 module BitClust
 
+  # Provides completion search methods like _search_classes, _search_methods. 
+  # Included by MethodDatabase and FunctionDatabase.
   module Completion
 
     private
@@ -85,7 +87,6 @@ GC.enable; GC.start; x
       names = expand_name_narrow(method_names(), pattern.method)
 #split_time "m expandN (#{names.size})"
       records = names.map {|name|
-        spec = MethodSpec.new(nil, pattern.type, name)
         crefs = mname2crefs_narrow(name)
 #split_time "c expand  (#{crefs.size})"
         crefs.map {|cref|
@@ -396,6 +397,8 @@ $cm_comb_m += 1
   end
 
 
+  # Represents result of completion search.
+  # Has many SearchResult::Record.
   class SearchResult
 
     def SearchResult.empty(db, pattern)
@@ -446,6 +449,7 @@ $cm_comb_m += 1
       @records.sort.each(&block)
     end
 
+    # Wraps an Entry.
     class Record
       def initialize(db, spec, origin = nil, entry = nil)
         @db = db

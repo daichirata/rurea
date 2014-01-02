@@ -4,22 +4,22 @@ kind=defined
 
 --- locale=(lcid) -> nil
 
-WIN32OLE�������ȥ᡼�����ƤӽФ��������ꤹ��������뼱�̻�(LCID)����
-�ꤷ�ޤ���
+WIN32OLEがオートメーション呼び出し時に設定するロケール識別子(LCID)を設
+定します。
 
-OLE�����ȥ᡼�����Ǥϡ�UNIX�����Ѥ����"ja_JP"�ʤɤι�̾�ȸ���̾���_��
-����³����ʸ����ǤϤʤ���32�ӥå������Ǽ����ޤ���32�ӥåȤ������Ͼ��
-16�ӥåȤ�ͽ���ΰ��0������16�ӥåȤ�����ID(LANGID�ˤǤ���LANGID�ϡ�0��
-9�ӥåȤǥץ饤�ޥ����ID��10��15�ӥåȤǥ��ָ���ID�򼨤��ޤ���
+OLEオートメーションでは、UNIXで利用される"ja_JP"などの国名と言語名を「_」
+で接続した文字列ではなく、32ビット整数で示します。32ビットの内訳は上位
+16ビットが予約領域で0、下位16ビットが言語ID(LANGID）です。LANGIDは、0〜
+9ビットでプライマリ言語ID、10〜15ビットでサブ言語IDを示します。
 
-@param lcid ���������ꤹ��������뼱�̻Ҥ������ǻ��ꤷ�ޤ���
+@param lcid 新たに設定するロケール識別子を整数で指定します。
 
-@raise WIN32OLERuntimeError �����ƥ�˥��󥹥ȡ��뤵��Ƥ��ʤ���������
-                            ����ꤹ���ȯ�����ޤ���
+@raise WIN32OLERuntimeError システムにインストールされていないロケール
+                            を指定すると発生します。
 
    WIN32OLE.locale = 1033 # set locale English(U.S)
    obj = WIN32OLE_VARIANT.new("$100,000", WIN32OLE::VARIANT::VT_CY)
 
-���֥������Ȥ����ݡ��Ȥ��Ƥ��ʤ�������������ꤷ����硢���֥������ȤΥ᥽�åɸƤӽФ�����DISP_E_UNKNOWNLCID(HRESULT error code:0x8002000C)�䡢TYPE_E_INVDATAREAD(HRESULT error code:0x80028018)�ʤɤ���ͳ�Ȥ���WIN32OLERuntimeError�㳰�Ȥʤ�ޤ����ۤȤ�ɤ��٤Ƥξ��ˤ����ơ������ͤ��ѹ�����ɬ�פϤ���ޤ���
+オブジェクトがサポートしていないロケールを設定した場合、オブジェクトのメソッド呼び出し時にDISP_E_UNKNOWNLCID(HRESULT error code:0x8002000C)や、TYPE_E_INVDATAREAD(HRESULT error code:0x80028018)などを理由としたWIN32OLERuntimeError例外となります。ほとんどすべての場合において、既定値を変更する必要はありません。
 
 

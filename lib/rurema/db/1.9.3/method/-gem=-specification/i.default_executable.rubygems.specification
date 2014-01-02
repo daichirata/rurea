@@ -4,5 +4,5 @@ kind=defined
 
 --- default_executable -> String | nil
 
-Gem �ѥå�������� gem ���ޥ�ɷ�ͳ�Ǽ¹Ԥ���ե�������֤��ޤ���
+Gem パッケージ内で gem コマンド経由で実行するファイルを返します。
 

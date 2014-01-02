@@ -4,7 +4,7 @@ kind=defined
 
 --- BUTTON3_RELEASED -> Integer
 
-¥Þ¥¦¥¹¥Ü¥¿¥ó 3 ¤òÎ¥¤·¤¿¤³¤È¤òÉ½¤¹¥Þ¥¦¥¹¥¤¥Ù¥ó¥ÈÍÑ¤ÎÄê¿ô¤Ç¤¹¡£
+ãƒžã‚¦ã‚¹ãƒœã‚¿ãƒ³ 3 ã‚’é›¢ã—ãŸã“ã¨ã‚’è¡¨ã™ãƒžã‚¦ã‚¹ã‚¤ãƒ™ãƒ³ãƒˆç”¨ã®å®šæ•°ã§ã™ã€‚
 
 @see [[m:Curses.getmouse]]
 

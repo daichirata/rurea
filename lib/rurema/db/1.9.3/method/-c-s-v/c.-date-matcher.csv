@@ -4,5 +4,5 @@ kind=defined
 
 --- DateMatcher -> Regexp
 
-ÆüÉÕ (Date) ·Á¼°¤Î¥Ç¡¼¥¿¤òÈ¯¸«¤·¤¿¤êÊÑ´¹¤·¤¿¤ê¤¹¤ë¤¿¤á¤ÎÀµµ¬É½¸½¤Ç¤¹¡£
+æ—¥ä»˜ (Date) å½¢å¼ã®ãƒ‡ãƒ¼ã‚¿ã‚’ç™ºè¦‹ã—ãŸã‚Šå¤‰æ›ã—ãŸã‚Šã™ã‚‹ãŸã‚ã®æ­£è¦è¡¨ç¾ã§ã™ã€‚
 

@@ -3,8 +3,9 @@ classes=IRB=ExtendCommand=Help
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-irb ��� help ���ޥ�ɤΤ���γ�ĥ������������֥饤�֥��Ǥ���
+irb 中の help コマンドのための拡張を定義したサブライブラリです。
 
-���Υ饤�֥����������Ƥ���᥽�åɤϥ桼����ľ�ܻ��Ѥ����ΤǤϤ�
-��ޤ���
+このライブラリで定義されているメソッドはユーザが直接使用するものではあ
+りません。

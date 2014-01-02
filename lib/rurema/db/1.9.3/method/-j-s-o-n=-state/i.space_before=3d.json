@@ -4,10 +4,10 @@ kind=defined
 
 --- space_before=(string)
 
-JSON ·Á¼°¤ÎÊ¸»úÎóÃæ¤Ç JavaScript ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òÉ½¤¹ÉôÊ¬¤Ë¤¢¤ë ':' ¤Î
-Á°¤ËÁÞÆþ¤¹¤ëÊ¸»úÎó¤ò¥»¥Ã¥È¤·¤Þ¤¹¡£
+JSON å½¢å¼ã®æ–‡å­—åˆ—ä¸­ã§ JavaScript ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¡¨ã™éƒ¨åˆ†ã«ã‚ã‚‹ ':' ã®
+å‰ã«æŒ¿å…¥ã™ã‚‹æ–‡å­—åˆ—ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param string JSON ·Á¼°¤ÎÊ¸»úÎóÃæ¤Ç JavaScript ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òÉ½¤¹ÉôÊ¬¤Ë¤¢¤ë ':' ¤Î
-              Á°¤ËÁÞÆþ¤¹¤ëÊ¸»úÎó¤ò¥»¥Ã¥È¤·¤Þ¤¹¡£
+@param string JSON å½¢å¼ã®æ–‡å­—åˆ—ä¸­ã§ JavaScript ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¡¨ã™éƒ¨åˆ†ã«ã‚ã‚‹ ':' ã®
+              å‰ã«æŒ¿å…¥ã™ã‚‹æ–‡å­—åˆ—ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
 

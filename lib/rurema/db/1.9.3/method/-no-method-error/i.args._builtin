@@ -4,9 +4,9 @@ kind=defined
 
 --- args -> [object]
 
-�᥽�åɸƤӽФ��˻Ȥ�줿������������֤��ޤ���
+メソッド呼び出しに使われた引数を配列で返します。
 
-��:
+例:
 
   begin
     foobar(1,2,3)

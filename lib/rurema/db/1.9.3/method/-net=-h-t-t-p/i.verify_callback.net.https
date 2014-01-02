@@ -3,10 +3,10 @@ visibility=public
 kind=added
 
 --- verify_callback -> Proc
-���Ȥ����ꤵ��Ƥ��븡�ڤ�ե��륿���륳����Хå���
-�֤��ޤ���
+自身に設定されている検証をフィルタするコールバックを
+返します。
 
-�ǥե���ȤΥ�����Хå������ꤵ��Ƥ�����ˤ� nil ���֤��ޤ���
+デフォルトのコールバックが設定されている場合には nil を返します。
 
 @see [[m:Net::HTTP#verify_callback=]],
      [[m:OpenSSL::X509::Store#verify_callback]],

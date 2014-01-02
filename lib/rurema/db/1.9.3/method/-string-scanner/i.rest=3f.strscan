@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- rest? -> bool
-Ê¸»úÎó¤¬»Ä¤Ã¤Æ¤¤¤ë¤Ê¤é¤Ğ true¤ò¡¢
-»Ä¤Ã¤Æ¤¤¤Ê¤¤¤Ê¤é¤Ğ false ¤òÊÖ¤·¤Ş¤¹¡£
+æ–‡å­—åˆ—ãŒæ®‹ã£ã¦ã„ã‚‹ãªã‚‰ã° trueã‚’ã€
+æ®‹ã£ã¦ã„ãªã„ãªã‚‰ã° false ã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:StringScanner#eos?]] ¤ÈµÕ¤Î·ë²Ì¤òÊÖ¤·¤Ş¤¹¡£
+[[m:StringScanner#eos?]] ã¨é€†ã®çµæœã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:StringScanner#rest?]] ¤Ï¾­Íè¤Î¥Ğ¡¼¥¸¥ç¥ó¤Çºï½ü¤µ¤ì¤ëÍ½Äê¤Ç¤¹¡£
-Âå¤ï¤ê¤Ë [[m:StringScanner#eos?]] ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
+[[m:StringScanner#rest?]] ã¯å°†æ¥ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§å‰Šé™¤ã•ã‚Œã‚‹äºˆå®šã§ã™ã€‚
+ä»£ã‚ã‚Šã« [[m:StringScanner#eos?]] ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
       s = StringScanner.new('test string')
       p s.eos?        # => false
       p s.rest?       # => true

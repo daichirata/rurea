@@ -4,8 +4,8 @@ kind=defined
 
 --- private_methods(include_inherited = true) -> [Symbol]
 
-д╜д╬еке╓е╕езепе╚дм═¤▓Єд╟днды private есе╜е├е╔╠╛д╬░ь═ўдЄ╩╓д╖д▐д╣бг
+уБЭуБоуВкуГЦуВ╕уВзуВпуГИуБМчРЖшзгуБзуБНуВЛ private уГбуВ╜уГГуГЙхРНуБоф╕АшжзуВТш┐ФуБЧуБ╛уБЩуАВ
 
-@param include_inherited ╡╢д╚д╩ды├═дЄ╗╪─ъд╣дыд╚╝л┐╚д╬епеще╣д╬е╣б╝е╤б╝епеще╣д╟─ъ╡┴д╡дьд┐есе╜е├е╔дЄ╜№днд▐д╣бг
+@param include_inherited хБ╜уБиуБкуВЛхАдуВТцМЗхоЪуБЩуВЛуБишЗкш║луБоуВпуГйуВ╣уБоуВ╣уГ╝уГСуГ╝уВпуГйуВ╣уБзхоЪч╛йуБХуВМуБЯуГбуВ╜уГГуГЙуВТщЩдуБНуБ╛уБЩуАВ
 @see [[m:Module#private_instance_methods]],[[m:Object#methods]],[[m:Object#singleton_methods]]
 

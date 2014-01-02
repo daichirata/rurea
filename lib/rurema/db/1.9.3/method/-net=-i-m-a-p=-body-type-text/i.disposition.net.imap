@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- disposition -> Net::IMAP::ContentDisposition | nil
-Content-Dispotition ¤ÎÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+Content-Dispotition ã®å€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-[[c:Net::IMAP::ContentDisposition]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹¡£
+[[c:Net::IMAP::ContentDisposition]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[RFC:1806]], [[RFC:2183]]
 

@@ -2,6 +2,6 @@ names=GT
 visibility=public
 kind=defined
 
---- GT
-@todo
+--- GT -> REXML::Entity
+「&gt;」「>」というエンティティを表わすオブジェクト。
 

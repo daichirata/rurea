@@ -6,6 +6,6 @@ library=rubygems.test_utilities
 aliases=
 aliasof=
 
-[[c:Gem::RemoteFetcher]] ���֤�������ƥ����ѤΥ��饹�Ǥ���
+[[c:Gem::RemoteFetcher]] を置き換えるテスト用のクラスです。
 
-�����㤬���������ϥƥ��ȥ����ɤ򻲾Ȥ��Ƥ���������
+使用例が見たい場合はテストコードを参照してください。

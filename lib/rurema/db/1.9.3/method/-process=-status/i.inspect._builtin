@@ -4,14 +4,16 @@ kind=defined
 
 --- inspect    -> String
 
-�ץ������ξ��֤�ʲ��Υե����ޥåȤ��֤��ޤ���
+自身を人間が読みやすい形の文字列表現にして返します。
 
-: ���ｪλ�ΤȤ�
+プロセスの状態を以下のフォーマットで返します。
+
+: 正常終了のとき
  #<Process::Status: pid=18262,exited(nnn)>
-: �����ʥ�ˤ����ߤΤȤ�
+: シグナルによる停止のとき
  #<Process::Status: pid=18262,stopped(SIGxxx=nnn)>
-: �����ʥ�ˤ�뽪λ�ΤȤ�
+: シグナルによる終了のとき
  #<Process::Status: pid=18262,signaled(SIGxxx=nnn)>
-: ��������פ����Ȥ�(���Υ��ơ�������ɽ���ϥ����ƥ�˰�¸���ޤ�)
+: コアダンプしたとき(このステータスの表示はシステムに依存します)
  #<Process::Status: pid=18262,coredumped>
 

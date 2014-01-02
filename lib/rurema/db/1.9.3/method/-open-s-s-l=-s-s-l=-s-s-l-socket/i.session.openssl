@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- session -> OpenSSL::SSL::Session
-ÍøÍÑ¤·¤Æ¤¤¤ë SSL ¥»¥Ã¥·¥ç¥ó¤ò [[c:OpenSSL::SSL::Session]]
-¥ª¥Ö¥¸¥§¥¯¥È¤ÇÊÖ¤·¤Ş¤¹¡£
+åˆ©ç”¨ã—ã¦ã„ã‚‹ SSL ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‚’ [[c:OpenSSL::SSL::Session]]
+ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::SSL::SSLSocket#session=]],
      [[m:OpenSSL::SSL::SSLSocket#session_reused?]]

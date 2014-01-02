@@ -3,6 +3,7 @@ visibility=public
 kind=defined
 
 --- FNM_SYSCASE -> Integer
-case hold д╩е╒ебедеые╖е╣е╞ерд╬╛ь╣чбвFNM_CASEFOLD д╬├═д╦д╩дъбвд╜джд╟д╩д▒дьд╨е╝еэд╬├═д╦д╩дъд▐д╣бг
-[[m:File.fnmatch]], [[m:Dir.glob]]д╟╗╚═╤д╖д▐д╣бг
+case hold уБкуГХуВбуВдуГлуВ╖уВ╣уГЖуГауБоха┤хРИуАБFNM_CASEFOLD уБохАдуБлуБкуВКуАБуБЭуБЖуБзуБкуБСуВМуБ░уВ╝уГнуБохАдуБлуБкуВКуБ╛уБЩуАВ
+[[m:File.fnmatch]], [[m:Dir.glob]]уБзф╜┐чФиуБЧуБ╛уБЩуАВ
+
 

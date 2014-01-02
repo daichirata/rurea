@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- mname -> Resolv::DNS::Name
-�оݤΥ�����Υޥ�����������ե����뤬¸�ߤ���ۥ���̾���֤��ޤ���
+対象のゾーンのマスターゾーンファイルが存在するホスト名を返します。
 

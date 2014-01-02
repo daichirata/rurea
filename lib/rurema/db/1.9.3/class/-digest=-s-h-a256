@@ -6,6 +6,6 @@ library=digest.sha2
 aliases=
 aliasof=
 
-FIPS PUB 180-2¤Ëµ­½Ò¤µ¤ì¤Æ¤¤¤ëNIST (the US' National Institute of
-Standards and Technology) ¤Î SHA-256 Secure Hash Algorithm¤ò
-¼ÂÁõ¤¹¤ë¥¯¥é¥¹¤Ç¤¹¡£
+FIPS PUB 180-2ã«è¨˜è¿°ã•ã‚Œã¦ã„ã‚‹NIST (the US' National Institute of
+Standards and Technology) ã® SHA-256 Secure Hash Algorithmã‚’
+å®Ÿè£…ã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

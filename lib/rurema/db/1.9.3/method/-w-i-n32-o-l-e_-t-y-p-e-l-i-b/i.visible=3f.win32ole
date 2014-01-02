@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- visible? -> bool
-TypeLib¤Î¾ğÊó¤¬¸ø³«¾ğÊó¤«¤É¤¦¤«¤ò¾È²ñ¤·¤Ş¤¹¡£
+TypeLibã®æƒ…å ±ãŒå…¬é–‹æƒ…å ±ã‹ã©ã†ã‹ã‚’ç…§ä¼šã—ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï¡¢TypeLib¤ÎÂ°À­¡ÊTLIBATTR¡Ë¤Î¥Õ¥é¥°ÃÍ¤¬0¡¢À©¸Â
-(LIBFLAG_FRESTRICTED)¡¢¥³¥ó¥È¥í¡¼¥ëÆâÉô»ÈÍÑ(LIBFLAG_FHIDDEN)¤Î¤¤¤º¤ì¤«
-¤Ç¤¢¤ì¤ĞÈó¸ø³«TypeLib¤È¤ß¤Ê¤·¤Æµ¶¤òÊÖ¤·¤Ş¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€TypeLibã®å±æ€§ï¼ˆTLIBATTRï¼‰ã®ãƒ•ãƒ©ã‚°å€¤ãŒ0ã€åˆ¶é™
+(LIBFLAG_FRESTRICTED)ã€ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«å†…éƒ¨ä½¿ç”¨(LIBFLAG_FHIDDEN)ã®ã„ãšã‚Œã‹
+ã§ã‚ã‚Œã°éå…¬é–‹TypeLibã¨ã¿ãªã—ã¦å½ã‚’è¿”ã—ã¾ã™ã€‚
 
-@return TypeLib¤¬¸ø³«²ÄÇ½¤Ç¤¢¤ì¤Ğ¿¿¤òÊÖ¤·¤Ş¤¹¡£
-@raise WIN32OLERuntimeError TypeLib¤ÎÂ°À­¤¬ÆÉ¤ß¼è¤ì¤Ê¤¤¾ì¹ç¤ËÄÌÃÎ¤·¤Ş¤¹¡£
+@return TypeLibãŒå…¬é–‹å¯èƒ½ã§ã‚ã‚Œã°çœŸã‚’è¿”ã—ã¾ã™ã€‚
+@raise WIN32OLERuntimeError TypeLibã®å±æ€§ãŒèª­ã¿å–ã‚Œãªã„å ´åˆã«é€šçŸ¥ã—ã¾ã™ã€‚
 
    tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 14.0 Object Library')
    puts tlib.visible? # => true

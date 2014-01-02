@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- REVOKED_STATUS_SUPERSEDED -> Integer
-[[m:OpenSSL::OCSP::BasicResponse#status]] �μ�����ͳ�����ɤǡ�
-�������˴����줿���Ȥ��̣���ޤ���
+[[m:OpenSSL::OCSP::BasicResponse#status]] の失効理由コードで、
+証明書が破棄されたことを意味します。
 
-�ܤ����� [[RFC:3280]] �� X.509 �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:3280]] や X.509 を参照してください。
 

@@ -5,11 +5,11 @@ kind=defined
 --- lastresp -> String
 --- last_response_code -> String
 
-¥µ¡¼¥Ð¤«¤é¤ÎºÇ¸å¤Î±þÅú¤Î¥³¡¼¥É¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+ã‚µãƒ¼ãƒã‹ã‚‰ã®æœ€å¾Œã®å¿œç­”ã®ã‚³ãƒ¼ãƒ‰ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-Îã¤¨¤Ð¥í¥°¥¤¥ó([[m:Net::FTP#login]])¤ËÀ®¸ù¤·¤¿¾ì¹ç¤Ë¤Ï
-"230" ¤òÊÖ¤·¤Þ¤¹¡£
+ä¾‹ãˆã°ãƒ­ã‚°ã‚¤ãƒ³([[m:Net::FTP#login]])ã«æˆåŠŸã—ãŸå ´åˆã«ã¯
+"230" ã‚’è¿”ã—ã¾ã™ã€‚
 
-¿ô»ú¤Î°ÕÌ£¤Ï [[rfc:959]] »²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+æ•°å­—ã®æ„å‘³ã¯ [[rfc:959]] å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 @see [[m:Net::FTP#last_response]]

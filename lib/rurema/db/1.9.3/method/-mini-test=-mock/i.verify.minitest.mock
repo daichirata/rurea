@@ -4,7 +4,7 @@ kind=defined
 
 --- verify -> true
 
-��å��θ��ڤ�Ԥ��ޤ���
+モックの検証を行います。
 
-@raise MockExpectationError ��å��θ��ڤ˼��Ԥ�������ȯ�����ޤ���
+@raise MockExpectationError モックの検証に失敗した場合に発生します。
 

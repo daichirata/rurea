@@ -4,9 +4,9 @@ kind=defined
 
 --- last_match -> MatchData
 
-�����ȥ������פǺǸ�˹Ԥä�����ɽ���ޥå��� [[c:MatchData]] ��
-�֥������Ȥ��֤��ޤ������Υ᥽�åɤθƤӽФ��� [[m:$~]]
-�λ��Ȥ�Ʊ���Ǥ���
+カレントスコープで最後に行った正規表現マッチの [[c:MatchData]] オ
+ブジェクトを返します。このメソッドの呼び出しは [[m:$~]]
+の参照と同じです。
 
   /(.)(.)/ =~ "ab"
   p Regexp.last_match      # => #<MatchData:0x4599e58>
@@ -17,11 +17,11 @@ kind=defined
 
 --- last_match(nth) -> String | nil
 
-���� nth �� 0 �ξ�硢�ޥå�����ʸ������֤��ޤ�
-([[m:$&]])������ʳ��Ǥϡ�nth ���ܤγ�̤˥ޥå�
-������ʬʸ������֤��ޤ�([[m:$1]],[[m:$2]],...)��
-�б������̤��ʤ�����ޥå����ʤ��ä����ˤ� nil ���֤�
-�ޤ���
+整数 nth が 0 の場合、マッチした文字列を返します
+([[m:$&]])。それ以外では、nth 番目の括弧にマッチ
+した部分文字列を返します([[m:$1]],[[m:$2]],...)。
+対応する括弧がない場合やマッチしなかった場合には nil を返し
+ます。
 
   /(.)(.)/ =~ "ab"
   p Regexp.last_match      # => #<MatchData:0x4599e58>
@@ -30,22 +30,22 @@ kind=defined
   p Regexp.last_match(2)   # => "b"
   p Regexp.last_match(3)   # => nil
 
-����ɽ�����Τ��ޥå����ʤ��ä���硢�����ʤ���
-Regexp.last_match ��nil ���֤����ᡢ
-last_match[1] �η����Ǥ��㳰 [[c:NameError]] ��ȯ�����ޤ���
-�Ф��ơ�last_match(1) �� nil ���֤��ޤ���
+正規表現全体がマッチしなかった場合、引数なしの
+Regexp.last_match はnil を返すため、
+last_match[1] の形式では例外 [[c:NameError]] が発生します。
+対して、last_match(1) は nil を返します。
 
   str = "This is Regexp"
   /That is Regexp/ =~ str
   p Regexp.last_match #=> nil
   begin
-    p Regexp.last_match[1] # �㳰��ȯ������
+    p Regexp.last_match[1] # 例外が発生する
   rescue 
     puts $! #=> undefined method `[]' for nil:NilClass
   end
   p Regexp.last_match(1) #=> nil
 
-@param nth ��������ꤷ�ޤ���
-	���� nth �� 0 �ξ�硢�ޥå�����ʸ������֤��ޤ�������ʳ��Ǥϡ�nth ���ܤγ�̤˥ޥå�������ʬʸ������֤��ޤ���
+@param nth 整数を指定します。
+	整数 nth が 0 の場合、マッチした文字列を返します。それ以外では、nth 番目の括弧にマッチした部分文字列を返します。
 
 

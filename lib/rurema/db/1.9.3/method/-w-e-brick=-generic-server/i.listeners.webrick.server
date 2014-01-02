@@ -4,5 +4,5 @@ kind=defined
 
 --- listeners    -> [TCPServer]
 
-listen ¤·¤Æ¤¤¤ë [[c:TCPServer]] ¥ª¥Ö¥¸¥§¥¯¥È¤ÎÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
+listen ã—ã¦ã„ã‚‹ [[c:TCPServer]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 

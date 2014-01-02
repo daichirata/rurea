@@ -3,7 +3,8 @@ visibility=public
 kind=defined
 
 --- indentation -> Integer
-@todo
+インデントのレベルを返します。
 
-Get the indentation level.
+
+@see [[m:Psych::Emitter#indentation=]]
 

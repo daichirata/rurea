@@ -4,7 +4,7 @@ kind=defined
 
 --- new(version)    -> WEBrick::HTTPVersion
 
-HTTPVersion еке╓е╕езепе╚дЄ└╕└од╖д▐д╣бгversion д╧╩╕╗·╬єдл HTTPVersion еке╓е╕езепе╚д╟д╣бг
+HTTPVersion уВкуГЦуВ╕уВзуВпуГИуВТчФЯцИРуБЧуБ╛уБЩуАВversion уБпцЦЗхнЧхИЧуБЛ HTTPVersion уВкуГЦуВ╕уВзуВпуГИуБзуБЩуАВ
 
-@param version HTTP д╬е╨б╝е╕ечеєдЄ WEBrick::HTTPVersion еке╓е╕езепе╚дл╩╕╗·╬єд╟╗╪─ъд╖д▐д╣бг
+@param version HTTP уБоуГРуГ╝уВ╕уГзуГ│уВТ WEBrick::HTTPVersion уВкуГЦуВ╕уВзуВпуГИуБЛцЦЗхнЧхИЧуБзцМЗхоЪуБЧуБ╛уБЩуАВ
 

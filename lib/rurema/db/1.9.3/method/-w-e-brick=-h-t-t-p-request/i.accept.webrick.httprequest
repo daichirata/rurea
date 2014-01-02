@@ -4,6 +4,6 @@ kind=defined
 
 --- accept    -> [String]
 
-Accept �إå������Ƥ��ǥ��������פ�ɽ��ʸ�����������֤��ޤ���
-������ʼ�����(qvalue)�ǥ����Ȥ���Ƥ��ޤ���
+Accept ヘッダの内容をメディアタイプを表す文字列の配列で返します。
+配列は品質係数(qvalue)でソートされています。
 

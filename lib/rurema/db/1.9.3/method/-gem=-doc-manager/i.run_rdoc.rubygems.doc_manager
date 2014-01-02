@@ -4,9 +4,9 @@ kind=defined
 
 --- run_rdoc(*args)
 
-Ϳ����줿��������Ѥ��� RDoc ��¹Ԥ��ޤ���
+与えられた引数を使用して RDoc を実行します。
 
-@param args RDoc ��Ϳ�����������ꤷ�ޤ���
+@param args RDoc に与える引数を指定します。
 
-@raise Gem::FilePermissionError RDoc �ǥɥ������������˥ե�����˥�����������ʤ��ä�����ȯ�����ޤ���
+@raise Gem::FilePermissionError RDoc でドキュメント生成中にファイルにアクセス出来なかった場合に発生します。
 

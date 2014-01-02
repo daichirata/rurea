@@ -2,7 +2,15 @@ names=_load
 visibility=public
 kind=defined
 
---- _load(str)
-@todo
+--- _load(str) -> BigDecimal
+
+引数で指定された文字列を元に [[c:BigDecimal]] オブジェクトを復元します。
+[[m:Marshal.#load]] から呼び出されます。
+
+@param str 復元する値を表す文字列を指定します。
+
+@raise TypeError 引数に不正な文字が含まれる場合に発生します。
+
+@see [[m:BigDecimal#_dump]], [[m:Marshal.#dump]], [[m:Marshal.#load]]
 
 

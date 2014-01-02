@@ -4,6 +4,6 @@ kind=defined
 
 --- parsers -> [[Regexp, RDoc::Parser]]
 
-[[m:RDoc::Parser#parse_files_matching]] ¤ÇÅĞÏ¿¤·¤¿Àµµ¬É½¸½¤È¥Ñ¡¼¥µ¥¯¥é
-¥¹¤ÎÇÛÎó¤ÎÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
+[[m:RDoc::Parser#parse_files_matching]] ã§ç™»éŒ²ã—ãŸæ­£è¦è¡¨ç¾ã¨ãƒ‘ãƒ¼ã‚µã‚¯ãƒ©
+ã‚¹ã®é…åˆ—ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 

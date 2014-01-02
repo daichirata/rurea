@@ -5,10 +5,10 @@ kind=defined
 --- MacCyrillic -> Encoding
 --- MACCYRILLIC -> Encoding
 
-MacCyrillic ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+MacCyrillic ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-Mac OS ¤Ç»È¤ï¤ì¤ë 8bit single-byte ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¡¢
-¥­¥ê¥ëÊ¸»ú¤ò¼è¤ê°·¤¦¤â¤Î¤Ç¤¹¡£
+Mac OS ã§ä½¿ã‚ã‚Œã‚‹ 8bit single-byte ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã€
+ã‚­ãƒªãƒ«æ–‡å­—ã‚’å–ã‚Šæ‰±ã†ã‚‚ã®ã§ã™ã€‚
 
 @see [[url:http://en.wikipedia.org/wiki/Macintosh_Cyrillic_encoding]]
 

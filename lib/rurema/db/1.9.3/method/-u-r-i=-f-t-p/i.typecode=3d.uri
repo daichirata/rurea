@@ -4,8 +4,8 @@ kind=defined
 
 --- typecode=(t)
 
-�ե�����ž���Υ����פ�ʸ����ǻ��ꤷ�ޤ���
+ファイル転送のタイプを文字列で指定します。
 
-@param t �ե�����ž���Υ����פ�ʸ����ǻ��ꤷ�ޤ���"a" �ϥƥ����ȡ�"i" �ϥХ��ʥꡢ"d" �ϥǥ��쥯�ȥ��ɽ���ޤ���
+@param t ファイル転送のタイプを文字列で指定します。"a" はテキスト、"i" はバイナリ、"d" はディレクトリを表します。
 
-@raise URI::InvalidComponentError �����ʰ��� s ���Ф���ȯ�����ޤ���
+@raise URI::InvalidComponentError 不正な引数 s に対して発生します。

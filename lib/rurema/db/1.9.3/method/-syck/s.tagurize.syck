@@ -4,11 +4,11 @@ kind=defined
 
 --- tagurize(val) -> String
 
-val ¤Ç»ØÄê¤·¤¿¥¿¥°¤ò¸µ¤Ë¥¿¥° URI ¤òºîÀ®¤·¤Þ¤¹¡£
+val ã§æŒ‡å®šã—ãŸã‚¿ã‚°ã‚’å…ƒã«ã‚¿ã‚° URI ã‚’ä½œæˆã—ã¾ã™ã€‚
 
-@param val ¥¿¥°¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param val ã‚¿ã‚°ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'yaml'
   YAML.tagurize("str")      # => "tag:yaml.org,2002:str"

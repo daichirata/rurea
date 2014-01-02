@@ -6,5 +6,5 @@ kind=defined
 --- each_value {|name, type, value| ... }
 @todo
 
-���������ĥ쥸���ȥ��ͤ���󤷤ޤ���
+キーが持つレジストリ値を列挙します。
 

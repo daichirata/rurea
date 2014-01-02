@@ -5,8 +5,8 @@ kind=defined
 --- Tk_VARIABLE_ID
 @todo
 
-Tcl��٥���ѿ�̾�򥤥󥹥��󥹤˳�����Ƥ뤿������������Ѥ���Ƥ��ޤ���
+Tclレベルの変数名をインスタンスに割り当てるために内部で利用されています。
 
-Tk_VARIABLE_ID�ϡ�����Ǥ���0���ܤ����Ǥ����Ȥ��Ƥ��ޤ���
-Ruby�ˤ�����������ͤ��ѹ��Ǥ��ʤ�����Ǥ���
+Tk_VARIABLE_IDは、配列ですが0番目の要素しか使われていません。
+Rubyにおける定数が値を変更できないためです。
 

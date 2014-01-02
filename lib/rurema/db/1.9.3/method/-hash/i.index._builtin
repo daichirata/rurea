@@ -5,18 +5,15 @@ kind=defined
 --- key(val) -> object
 --- index(val) -> object
 
-ÃÍ val ¤ËÂÐ±þ¤¹¤ë¥­¡¼¤òÊÖ¤·¤Þ¤¹¡£ÂÐ±þ¤¹¤ëÍ×ÁÇ¤¬Â¸ºß¤·¤Ê¤¤»þ¤Ë¤Ï
-nil ¤òÊÖ¤·¤Þ¤¹¡£
+å€¤ val ã«å¯¾å¿œã™ã‚‹ã‚­ãƒ¼ã‚’è¿”ã—ã¾ã™ã€‚å¯¾å¿œã™ã‚‹è¦ç´ ãŒå­˜åœ¨ã—ãªã„æ™‚ã«ã¯
+nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-³ºÅö¤¹¤ë¥­¡¼¤¬Ê£¿ôÂ¸ºß¤¹¤ë¾ì¹ç¡¢¤É¤Î¥­¡¼¤òÊÖ¤¹¤«¤ÏÉÔÄê¤Ç¤¹¡£
+è©²å½“ã™ã‚‹ã‚­ãƒ¼ãŒè¤‡æ•°å­˜åœ¨ã™ã‚‹å ´åˆã€ã©ã®ã‚­ãƒ¼ã‚’è¿”ã™ã‹ã¯ä¸å®šã§ã™ã€‚
 
+Hash#index ã¯ obsolete ã§ã™ã€‚
+ä½¿ç”¨ã™ã‚‹ã¨è­¦å‘Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚
 
-
-Hash#index ¤Ï ¸½¥Ð¡¼¥¸¥ç¥ó¤Î1.9¤Ç¤Ï((<obsolete>)) ¤Ç¤¹¡£
-»ÈÍÑ¤¹¤ë¤È·Ù¹ð¥á¥Ã¥»¡¼¥¸¤¬É½¼¨¤µ¤ì¤Þ¤¹¡£
-
-
-@param val Ãµº÷¤ËÍÑ¤¤¤ëÃÍ¤ò»ØÄê¤·¤Þ¤¹¡£
+@param val æŽ¢ç´¢ã«ç”¨ã„ã‚‹å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   h = {:ab => "some" , :cd => "all" , :ef => "all"}
   

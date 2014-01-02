@@ -4,10 +4,10 @@ kind=defined
 
 --- ui=(new_ui)
 
-�ǥե���Ȥ� UI �򿷤������åȤ��ޤ���
+デフォルトの UI を新しくセットします。
 
-�ǥե���Ȥ� UI �����Τ˥��åȤ������Ȥ��ʤ���С�����ץ�ʥ��󥽡���١�����
-[[c:Gem::UserInteraction]] ��ưŪ�˻��Ѥ��ޤ���
+デフォルトの UI を明確にセットしたことがなければ、シンプルなコンソールベースの
+[[c:Gem::UserInteraction]] を自動的に使用します。
 
-@param new_ui ������ UI ����ꤷ�ޤ���
+@param new_ui 新しい UI を指定します。
 

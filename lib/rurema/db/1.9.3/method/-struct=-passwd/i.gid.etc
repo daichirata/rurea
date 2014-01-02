@@ -4,5 +4,5 @@ kind=defined
 
 --- gid -> Integer
 
-���Υ桼���� gid ���֤��ޤ���
+このユーザの gid を返します。
 

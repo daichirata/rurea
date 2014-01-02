@@ -4,7 +4,7 @@ kind=defined
 
 --- rubyforge_project=(project_name)
 
-¤³¤Î Gem ¤Î RubyForge ¾å¤Ç¤Î¥×¥í¥¸¥§¥¯¥ÈÌ¾¤ò¥»¥Ã¥È¤·¤Ş¤¹¡£
+ã“ã® Gem ã® RubyForge ä¸Šã§ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆåã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param project_name RubyForge ¾å¤Î¥×¥í¥¸¥§¥¯¥ÈÌ¾¤ò»ØÄê¤·¤Ş¤¹¡£
+@param project_name RubyForge ä¸Šã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆåã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

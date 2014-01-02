@@ -3,8 +3,9 @@ classes=XMLRPC=BasicServer,XMLRPC=CGIServer,XMLRPC=ModRubyServer,XMLRPC=Server,X
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-XML-RPC ¥µ¡¼¥Ğ¤Î¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+XML-RPC ã‚µãƒ¼ãƒã®ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
 ==== CGI-based Server
 

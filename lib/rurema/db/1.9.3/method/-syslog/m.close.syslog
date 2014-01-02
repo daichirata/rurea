@@ -4,11 +4,11 @@ kind=defined
 
 --- close -> nil
 
-syslog¤òÊÄ¤¸¤Ş¤¹¡£
+syslogã‚’é–‰ã˜ã¾ã™ã€‚
 
-@raise RuntimeError syslog ¤¬open ¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹çÈ¯À¸¤·¤Ş¤¹¡£
+@raise RuntimeError syslog ãŒopen ã•ã‚Œã¦ã„ãªã„å ´åˆç™ºç”Ÿã—ã¾ã™ã€‚
 
-»ÈÍÑÎã
+ä½¿ç”¨ä¾‹
   require 'syslog'
 
   Syslog.open("syslogtest")

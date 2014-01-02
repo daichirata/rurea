@@ -4,7 +4,7 @@ kind=defined
 
 --- rewind -> 0
 
-[[m:IO#rewind]] ¤Ë»÷¤Æ¤¤¤Ş¤¹¡£[[m:CSV#lineno]] ¤ò 0 ¤Ë¤·¤Ş¤¹¡£
+[[m:IO#rewind]] ã«ä¼¼ã¦ã„ã¾ã™ã€‚[[m:CSV#lineno]] ã‚’ 0 ã«ã—ã¾ã™ã€‚
 
 @see [[m:IO#rewind]]
 

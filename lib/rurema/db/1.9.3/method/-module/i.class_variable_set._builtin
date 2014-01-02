@@ -4,10 +4,10 @@ kind=defined
 
 --- class_variable_set(name, val) -> object
 
-���饹���⥸�塼��˥��饹�ѿ� name ��������ơ������ͤȤ���
-val �򥻥åȤ��ޤ���val ���֤��ޤ���
+クラス／モジュールにクラス変数 name を定義して、その値として
+val をセットします。val を返します。
 
-@param name [[c:String]] �ޤ��� [[c:Symbol]] ����ꤷ�ޤ���
+@param name [[c:String]] または [[c:Symbol]] を指定します。
 
   class Fred
     @@foo = 99

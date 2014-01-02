@@ -6,11 +6,11 @@ library=webrick.httpproxy
 aliases=
 aliasof=
 
-�ץ������ε�ǽ���󶡤��륯�饹�Ǥ���CONNECT �᥽�åɤˤ��б����Ƥ��ޤ���
+プロクシの機能を提供するクラスです。CONNECT メソッドにも対応しています。
 
  * [[url:http://jp.rubyist.net/magazine/?0002-WEBrickProxy]]
 
-�ʲ��ϴ�����ư���ץ����������Ф���Ǥ���
+以下は完全に動作するプロクシサーバの例です。
  
  require 'webrick'
  require 'webrick/httpproxy'

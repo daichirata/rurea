@@ -4,8 +4,8 @@ kind=defined
 
 --- [](key)    -> object
 
-���ꤵ�줿 key ���б��������Ȥ������ͤ��֤��ޤ���
+指定された key に対応した自身の設定値を返します。
 
-@param key ����̾�� Symbol ���֥������Ȥǻ��ꤷ�ޤ���
+@param key 設定名を Symbol オブジェクトで指定します。
 
 

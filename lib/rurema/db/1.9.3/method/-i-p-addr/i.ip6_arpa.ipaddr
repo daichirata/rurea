@@ -4,6 +4,6 @@ kind=defined
 
 --- ip6_arpa -> String
 
-IPv6 ¤Ê¤é [[RFC:3172]] ¤ÇÄêµÁ¤µ¤ì¤¿·Á¼°¤Ç DNS µÕ°ú¤­¤Î¤¿¤á¤ÎÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
-IPv4 ¤Î¾ì¹ç¤ÏÎã³°¤òÈ¯À¸¤·¤Þ¤¹¡£
+IPv6 ãªã‚‰ [[RFC:3172]] ã§å®šç¾©ã•ã‚ŒãŸå½¢å¼ã§ DNS é€†å¼•ãã®ãŸã‚ã®æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+IPv4 ã®å ´åˆã¯ä¾‹å¤–ã‚’ç™ºç”Ÿã—ã¾ã™ã€‚
 

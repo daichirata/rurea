@@ -5,15 +5,15 @@ kind=defined
 --- unescape(str)    -> String
 --- decode(str)      -> String
 
-URI Ê¸»úÎó¤ò¥Ç¥³¡¼¥É¤·¤¿Ê¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£
+URI æ–‡å­—åˆ—ã‚’ãƒ‡ã‚³ãƒ¼ãƒ‰ã—ãŸæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï obsolete ¤Ç¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ obsolete ã§ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
   puts URI.unescape('http://images.google.co.jp/images?q=%A5%E2%A5%CA%A5%EA%A5%B6&ie=EUC-JP')
 
-  #=> "http://images.google.co.jp/images?q=¥â¥Ê¥ê¥¶&ie=EUC-JP"
+  #=> "http://images.google.co.jp/images?q=ãƒ¢ãƒŠãƒªã‚¶&ie=EUC-JP"
 
-@param str URI ¤òÊ¸»úÎó¤È¤·¤ÆÍ¿¤¨¤Ş¤¹¡£
+@param str URI ã‚’æ–‡å­—åˆ—ã¨ã—ã¦ä¸ãˆã¾ã™ã€‚
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- new(dbname, mode = 0666, flags = nil) -> DBM
 
-dbname �ǻ��ꤷ���ǡ����١�����⡼�ɤ� mode �����ꤷ�ƥ����ץ󤷤ޤ���
+dbname で指定したデータベースをモードを mode に設定してオープンします。
 

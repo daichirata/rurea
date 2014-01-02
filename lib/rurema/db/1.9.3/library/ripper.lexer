@@ -3,5 +3,6 @@ classes=Ripper=Lexer
 methods=Ripper/s.lex.ripper.lexer,Ripper/s.tokenize.ripper.lexer,Ripper/s.slice.ripper.lexer,Ripper/s.token_match.ripper.lexer
 sublibraries=
 is_sublibrary=true
+category=
 
-Ruby ¥×¥í¥°¥é¥à¤ò¥È¡¼¥¯¥ó¤Î¥ê¥¹¥È¤È¤·¤Æ½èÍı¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+Ruby ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ãƒˆãƒ¼ã‚¯ãƒ³ã®ãƒªã‚¹ãƒˆã¨ã—ã¦å‡¦ç†ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

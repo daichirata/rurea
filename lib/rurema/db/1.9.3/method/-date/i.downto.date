@@ -4,9 +4,9 @@ kind=defined
 
 --- downto(min){|date| ...} -> self
 --- downto(min) -> Enumerator
-¤³¤Î¥á¥½¥Ã¥É¤Ï¡¢step(min, -1){|date| ...} ¤ÈÅù²Á¤Ç¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ã€step(min, -1){|date| ...} ã¨ç­‰ä¾¡ã§ã™ã€‚
 
-@param min ÆüÉÕ¥ª¥Ö¥¸¥§¥¯¥È
+@param min æ—¥ä»˜ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 
 @see [[m:Date#step]], [[m:Date#upto]]
 

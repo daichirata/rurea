@@ -4,8 +4,8 @@ kind=defined
 
 --- params=(hash)
 
-Ϳ����줿�ϥå����ѥ�᡼���˥��åȤ��ޤ���
+与えられたハッシュをパラメータにセットします。
 
-@param hash �ϥå������ꤷ�ޤ���
+@param hash ハッシュを指定します。
 
 

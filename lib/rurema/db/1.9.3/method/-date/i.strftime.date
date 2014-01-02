@@ -3,18 +3,18 @@ visibility=public
 kind=defined
 
 --- strftime(format = '%F') -> String
-Ϳ����줿���������դ�񼰤Ť��ޤ���
+与えられた雛型で日付を書式づけます。
 
-�Ĥ����Ѵ����ͤ򤢤Ĥ����ޤ�:
+つぎの変換仕様をあつかいます:
 
 %A, %a, %B, %b, %C, %c, %D, %d, %e, %F, %G, %g, %H, %h, %I, %j, %k, %l,
 %M, %m, %n, %P, %p, %R, %r, %S, %s, %T, %t, %U, %u, %V, %v, %W, %w, %X,
 %x, %Y, %y, %Z, %z, %%, %+
 
-1.8.6 �ʹߤǤϡ�%L, %N, %Q ��Ĥ����ޤ���
-�ޤ���GNU �Ǥˤ���褦��������ʤɤ�Ǥ��ޤ���
+1.8.6 以降では、%L, %N, %Q もつかえます。
+また、GNU 版にあるような幅指定などもできます。
 
-[[man:strftime(3)]]������� [[m:Date.strptime]] �⻲�Ȥ��Ƥ���������
+[[man:strftime(3)]]、および [[m:Date.strptime]] も参照してください。
 
-@param format ��
+@param format 書式
 

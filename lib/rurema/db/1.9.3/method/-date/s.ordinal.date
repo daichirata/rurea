@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- ordinal(year = -4712, yday = 1, start = Date::ITALY) -> Date
-ǯ���̻��� (ǯ����) �������������ե��֥������Ȥ��������ޤ���
+年間通算日 (年日付) に相当する日付オブジェクトを生成します。
 
-ǯ�������顢
-�ޤ������ο��Ǥʤ���Фʤ�ޤ��� (��ΤȤ��ϺǸ夫��ν���)��
-���Ǥ��äƤϤʤ�ޤ���
+年の日は負、
+または正の数でなければなりません (負のときは最後からの序数)。
+零であってはなりません。
 
-[[m:Date.jd]]������� [[m:Date.new]] �⻲�Ȥ��Ƥ���������
+[[m:Date.jd]]、および [[m:Date.new]] も参照してください。
 
-@param year ǯ
-@param yday ǯ����
-@param start ���쥴�ꥪ���Ĥ����Ϥ᤿���򤢤�魯��ꥦ����
-@raise ArgumentError �������ʤ����դˤʤ��Ȥ߹�碌�Ǥ������ȯ�����ޤ���
+@param year 年
+@param yday 年の日
+@param start グレゴリオ暦をつかい始めた日をあらわすユリウス日
+@raise ArgumentError 正しくない日付になる組み合わせである場合に発生します。
 

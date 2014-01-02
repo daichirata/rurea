@@ -4,7 +4,7 @@ kind=defined
 
 --- to_i    -> Integer
 
-���Ȥ�ɽ���饤�֥��ؿ��Υ��ɥ쥹���֤��ޤ���
-[[m:DL::CFunc#ptr]] ��Ʊ���Ǥ���
+自身が表すライブラリ関数のアドレスを返します。
+[[m:DL::CFunc#ptr]] と同じです。
 
 

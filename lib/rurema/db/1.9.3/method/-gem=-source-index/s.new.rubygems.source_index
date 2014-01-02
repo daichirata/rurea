@@ -4,7 +4,7 @@ kind=defined
 
 --- new(specifications = {}) -> Gem::SourceIndex
 
-Ϳ����줿�ϥå���򸵤˼��Ȥ��������ޤ���
+与えられたハッシュを元に自身を初期化します。
 
-@param specifications ������ Gem ��̾�����ͤ� [[c:Gem::Specification]] �Υ��󥹥��󥹤Ȥ���ϥå������ꤷ�ޤ���
+@param specifications キーを Gem の名前、値を [[c:Gem::Specification]] のインスタンスとするハッシュを指定します。
 

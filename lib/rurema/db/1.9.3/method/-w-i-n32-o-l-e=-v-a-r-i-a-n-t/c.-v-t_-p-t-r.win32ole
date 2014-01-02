@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- VT_PTR -> Integer
-�ݥ��󥿷��򼨤��ޤ���26�ˡ�
+ポインタ型を示します（26）。
 
-VT_PTR�ϡ�VOID*���������뤿�ᡢOLE�����ȥ᡼�����Ǥ����ѤǤ��ޤ���
+VT_PTRは、VOID*に相当するため、OLEオートメーションでは利用できません。
 

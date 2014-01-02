@@ -6,4 +6,4 @@ library=irb.cmd.help
 aliases=
 aliasof=
 
-irb ��� help ���ޥ�ɤΤ���γ�ĥ������������饹�Ǥ���
+irb 中の help コマンドのための拡張を定義したクラスです。

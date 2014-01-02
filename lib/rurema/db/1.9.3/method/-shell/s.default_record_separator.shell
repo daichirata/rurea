@@ -5,11 +5,11 @@ kind=defined
 --- default_record_separator -> String
 --- default_record_separator=(rs)
 
-��ɮ���罸
+執筆者募集
 
-Shell ���Ѥ��������ϥ쥳���ɥ��ѥ졼����ɽ��ʸ��������ꤪ��ӻ��Ȥ��ޤ���
-�ʤˤ���ꤷ�ʤ�����[[m:$/]] ���ͤ��Ѥ����ޤ���
+Shell で用いられる入力レコードセパレータを表す文字列を設定および参照します。
+なにも指定しない場合は[[m:$/]] の値が用いられます。
 
-@param rs Shell ���Ѥ��������ϥ쥳���ɥ��ѥ졼����ɽ��ʸ�������ꤷ�ޤ���
+@param rs Shell で用いられる入力レコードセパレータを表す文字列を指定します。
 
 

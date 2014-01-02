@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- digest(data) -> String
-data ¤Î¥À¥¤¥¸¥§¥¹¥È¤ò MD5 ¤Ç·×»»¤·¤Þ¤¹¡£
+data ã®ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚’ MD5 ã§è¨ˆç®—ã—ã¾ã™ã€‚
 
-@param data ¥À¥¤¥¸¥§¥¹¥È¤ò·×»»¤¹¤ëÊ¸»úÎó
+@param data ãƒ€ã‚¤ã‚¸ã‚§ã‚¹ãƒˆã‚’è¨ˆç®—ã™ã‚‹æ–‡å­—åˆ—
 

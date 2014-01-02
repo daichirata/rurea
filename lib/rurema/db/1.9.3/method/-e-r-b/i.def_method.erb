@@ -4,18 +4,18 @@ kind=defined
 
 --- def_method(mod, methodname, fname='(ERB)') -> nil
 
-�Ѵ����� Ruby ������ץȤ�᥽�åɤȤ���������ޤ���
+変換した Ruby スクリプトをメソッドとして定義します。
 
-�����Υ⥸�塼��� mod �ǻ��ꤷ���᥽�å�̾�� methodname �ǻ��ꤷ�ޤ���
-fname �ϥ�����ץȤ��������ݤΥե�����̾�Ǥ�����˥��顼���˳������ޤ���
+定義先のモジュールは mod で指定し、メソッド名は methodname で指定します。
+fname はスクリプトを定義する際のファイル名です。主にエラー時に活躍します。
 
-@param mod �᥽�åɤ��������⥸�塼��ʤޤ��ϥ��饹��
+@param mod メソッドを定義するモジュール（またはクラス）
 
-@param methodname �᥽�å�̾
+@param methodname メソッド名
 
-@param fname ������ץȤ��������ݤΥե�����̾
+@param fname スクリプトを定義する際のファイル名
 
-��:
+例:
 
   erb = ERB.new(script)
   erb.def_method(MyClass, 'foo(bar)', 'foo.erb')

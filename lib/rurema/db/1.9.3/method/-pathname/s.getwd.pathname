@@ -4,6 +4,6 @@ kind=defined
 
 --- getwd -> Pathname
 --- pwd   -> Pathname
-елеьеєе╚е╟егеьепе╚еъдЄ╕╡д╦ Pathname еке╓е╕езепе╚дЄ└╕└од╖д▐д╣бг
-Pathname.new(Dir.getwd) д╚╞▒д╕д╟д╣бг
+уВлуГмуГ│уГИуГЗуВгуГмуВпуГИуГкуВТхЕГуБл Pathname уВкуГЦуВ╕уВзуВпуГИуВТчФЯцИРуБЧуБ╛уБЩуАВ
+Pathname.new(Dir.getwd) уБихРМуБШуБзуБЩуАВ
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- replace(other) -> self
 
-self ¤ÎÆâÍÆ¤ò other ¤ÎÆâÍÆ¤ÇÃÖ¤­´¹¤¨¤Ş¤¹¡£
+self ã®å†…å®¹ã‚’ other ã®å†…å®¹ã§ç½®ãæ›ãˆã¾ã™ã€‚
 
-@param other each_pair ¥á¥½¥Ã¥É¤ò»ı¤Ä¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤Ê¤±¤ì¤Ğ¤Ê¤ê¤Ş¤»¤ó¡£
+@param other each_pair ãƒ¡ã‚½ãƒƒãƒ‰ã‚’æŒã¤ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚
 
   require 'sdbm'
   

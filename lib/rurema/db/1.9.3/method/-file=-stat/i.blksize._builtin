@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- blksize -> Integer
-Ë¾¤Þ¤·¤¤I/O¤Î¥Ö¥í¥Ã¥¯¥µ¥¤¥º¤òÊÖ¤·¤Þ¤¹¡£
+æœ›ã¾ã—ã„I/Oã®ãƒ–ãƒ­ãƒƒã‚¯ã‚µã‚¤ã‚ºã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.blksize #=> nil
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- standend -> nil
 
-��Ĵ����ʸ���ν񤭹��ߤ򽪤��ޤ���
+強調する文字の書き込みを終えます。
 
-�ʲ��Υ����ɤ�Ʊ���Ǥ���
+以下のコードと同じです。
 
   Curses.attron(A_NORMAL)
 

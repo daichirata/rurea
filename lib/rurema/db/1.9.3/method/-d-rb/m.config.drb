@@ -2,11 +2,10 @@ names=config
 visibility=public
 kind=defined
 
---- config
-@todo
+--- config -> { Symbol => Object }
+カレントサーバの設定を返します。
 
-Get the configuration of the current server.
+カレントサーバが存在しない場合は、デフォルトの設定を返します。
 
-If there is no current server, this returns the default configuration.
-See #current_server and DRbServer::make_config.
+@see [[m:DRb.#current_server]]
 

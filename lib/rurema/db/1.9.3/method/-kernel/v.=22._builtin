@@ -5,10 +5,10 @@ kind=defined
 --- $"               -> [String]
 --- $LOADED_FEATURES -> [String]
 
-[[m:Kernel.#require]] �ǥ����ɤ��줿�ե�����̾��ޤ�����Ǥ���
+[[m:Kernel.#require]] でロードされたファイル名を含む配列です。
 
-[[m:Kernel.#require]] ��Ʊ���ե������
-ʣ��������ɤ��ʤ��褦�ˤ��뤿��Υ��å��Ȥ��ƻȤ��ޤ���
+[[m:Kernel.#require]] で同じファイルを
+複数回ロードしないようにするためのロックとして使われます。
 
-�����ѿ��ϥ������Х륹�����פǤ���
+この変数はグローバルスコープです。
 

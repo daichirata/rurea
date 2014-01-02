@@ -5,7 +5,7 @@ kind=defined
 --- length -> Integer
 --- size -> Integer
 
-ʸ�����ʸ�������֤��ޤ����Х��ȿ����Τꤿ���Ȥ��� bytesize �᥽�åɤ�ȤäƤ���������
+文字列の文字数を返します。バイト数を知りたいときは bytesize メソッドを使ってください。
 
 @see [[m:String#bytesize]]
 

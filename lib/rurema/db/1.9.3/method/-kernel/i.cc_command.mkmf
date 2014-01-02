@@ -4,9 +4,9 @@ kind=added
 
 --- cc_command(opt = "") -> String
 
-�ºݤ˥���ѥ��뤹��ݤ˻��Ѥ��륳�ޥ�ɤ��֤��ޤ���
+実際にコンパイルする際に使用するコマンドを返します。
 
-@param opt ����ѥ����Ϳ�����ɲäΥ��ޥ�ɥ饤���������ꤷ�ޤ���
+@param opt コンパイラに与える追加のコマンドライン引数を指定します。
 
 @see [[m:RbConfig.expand]]
 

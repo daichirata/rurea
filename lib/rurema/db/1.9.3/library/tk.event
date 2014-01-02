@@ -3,5 +3,6 @@ classes=TkEvent,TkEvent=Event,TkEvent=Event=Grp,TkEvent=Event=StateMask,TkEvent=
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

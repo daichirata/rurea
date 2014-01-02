@@ -4,7 +4,9 @@ kind=defined
 
 --- marshal_dump -> Array
 
-[[m:Complex#marshal_load]] ¤ÇÉü¸µ²ÄÇ½¤ÊÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
+[[m:Complex#marshal_load]] ã§å¾©å…ƒå¯èƒ½ãªé…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+
+[æ³¨æ„] ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ 2.0 ã§ private ãƒ¡ã‚½ãƒƒãƒ‰ã«å¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚
 
 @see [[m:Complex#marshal_load]]
 

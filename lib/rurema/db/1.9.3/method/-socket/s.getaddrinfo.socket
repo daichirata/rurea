@@ -4,68 +4,72 @@ kind=defined
 
 --- getaddrinfo(nodename, servname, family=nil, socktype=nil, protocol=nil, flags=nil) -> Array
 
-[[RFC:2553]]¤ÇÄêµÁ¤µ¤ì¤¿
-getaddrinfo() ¤Îµ¡Ç½¤òÄó¶¡¤¹¤ë¥¯¥é¥¹¥á¥½¥Ã¥É¡£¤³¤Î´Ø¿ô¤Ï
-gethostbyname() ¤ä getservbyname() ¤ÎÂå¤ï¤ê¤È¤·¤ÆÍÑ°Õ¤µ¤ì¤Æ¤ª¤ê¡¢
-IP ¤Î¥Ð¡¼¥¸¥ç¥ó¤Ë°ÍÂ¸¤·¤Ê¤¤¥×¥í¥°¥é¥à¤ò½ñ¤¯¤¿¤á¤ÎÉ¸½àÅª¤Ê API ¤Ç¤¹¡£
+[[RFC:2553]]ã§å®šç¾©ã•ã‚ŒãŸ
+getaddrinfo() ã®æ©Ÿèƒ½ã‚’æä¾›ã™ã‚‹ã‚¯ãƒ©ã‚¹ãƒ¡ã‚½ãƒƒãƒ‰ã€‚ã“ã®é–¢æ•°ã¯
+gethostbyname() ã‚„ getservbyname() ã®ä»£ã‚ã‚Šã¨ã—ã¦ç”¨æ„ã•ã‚Œã¦ãŠã‚Šã€
+IP ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã«ä¾å­˜ã—ãªã„ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’æ›¸ããŸã‚ã®æ¨™æº–çš„ãª API ã§ã™ã€‚
 
-@param nodename ¥Û¥¹¥ÈÌ¾¤ò»ØÄê¤·¤Þ¤¹¡£ É¬¿Ü°ú¿ô¤Ç¤¹¡£ ([[ref:lib:socket#host_format]]¤ò»²¾È)
+@param nodename ãƒ›ã‚¹ãƒˆåã‚’æŒ‡å®šã—ã¾ã™ã€‚ å¿…é ˆå¼•æ•°ã§ã™ã€‚ ([[ref:lib:socket#host_format]]ã‚’å‚ç…§)
 
-@param servname ¥µ¡¼¥Ó¥¹Ì¾¤ò»ØÄê¤·¤Þ¤¹¡£ É¬¿Ü°ú¿ô¤Ç¤¹¡£ ([[ref:lib:socket#service_format]]¤ò»²¾È)
+@param servname ã‚µãƒ¼ãƒ“ã‚¹åã‚’æŒ‡å®šã—ã¾ã™ã€‚ å¿…é ˆå¼•æ•°ã§ã™ã€‚ ([[ref:lib:socket#service_format]]ã‚’å‚ç…§)
 
-@param family ¥¢¥É¥ì¥¹¥Õ¥¡¥ß¥ê¡¼¡£[[m:Socket::Constants::AF_INET]] ¤Ê¤É¡¢AF_ ¤Ç»Ï¤Þ¤ëÄê¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
+@param family ã‚¢ãƒ‰ãƒ¬ã‚¹ãƒ•ã‚¡ãƒŸãƒªãƒ¼ã€‚[[m:Socket::Constants::AF_INET]] ãªã©ã€AF_ ã§å§‹ã¾ã‚‹å®šæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param socktype ¥½¥±¥Ã¥È¥¿¥¤¥×¡£ [[m:Socket::Constants::SOCK_STREAM]] ¤Ê¤É¡¢ SOCK_ ¤Ç»Ï¤Þ¤ëÄê¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
+@param socktype ã‚½ã‚±ãƒƒãƒˆã‚¿ã‚¤ãƒ—ã€‚ [[m:Socket::Constants::SOCK_STREAM]] ãªã©ã€ SOCK_ ã§å§‹ã¾ã‚‹å®šæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param protocol ¥×¥í¥È¥³¥ë¡£[[m:Socket::Constants::IPPROTO_IP]] ¤Ê¤É¡¢IPPROTO_ ¤Ç»Ï¤Þ¤ëÄê¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
+@param protocol ãƒ—ãƒ­ãƒˆã‚³ãƒ«ã€‚[[m:Socket::Constants::IPPROTO_IP]] ãªã©ã€IPPROTO_ ã§å§‹ã¾ã‚‹å®šæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param flags [[man:getaddrinfo(3)]] ¤ÎÂè3°ú¿ô¤Ë»ØÄê¤¹¤ë addrinfo ¹½Â¤ÂÎ¤Î ai_flags ¥á¥ó¥Ð¤ËÁêÅö¤¹¤ë Fixnum¡£ Socket::AI_PASSIVE¤Ê¤É¡£
+@param flags [[man:getaddrinfo(3)]] ã®ç¬¬3å¼•æ•°ã«æŒ‡å®šã™ã‚‹ addrinfo æ§‹é€ ä½“ã® ai_flags ãƒ¡ãƒ³ãƒã«ç›¸å½“ã™ã‚‹ Fixnumã€‚ Socket::AI_PASSIVEãªã©ã€‚
 
-@return 7¤Ä¤ÎÍ×ÁÇ¤«¤é¤Ê¤ë¥¢¥É¥ì¥¹¾ðÊó¤Ë´Ø¤¹¤ëÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
+@return 7ã¤ã®è¦ç´ ã‹ã‚‰ãªã‚‹ã‚¢ãƒ‰ãƒ¬ã‚¹æƒ…å ±ã«é–¢ã™ã‚‹é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+@raise SocketError [[man:getaddrinfo(3)]]ãŒã‚¨ãƒ©ãƒ¼ã‚’è¿”ã—ãŸã¨ãã«ç™ºç”Ÿã™ã‚‹ä¾‹å¤–ã§ã™
 
-=== ¥¢¥É¥ì¥¹¾ðÊó¤Ë¤Ä¤¤¤Æ
-¥¢¥É¥ì¥¹¾ðÊó¤È¤Ï7¤Ä¤ÎÍ×ÁÇ¤«¤é¤Ê¤ë¼¡¤Î·Á¤ÎÇÛÎó¤Ç¤¹¡£
+@see [[m:Addrinfo#getaddrinfo]]
 
-  * Âè0Í×ÁÇ - ¥¢¥É¥ì¥¹¥Õ¥¡¥ß¥ê¡¼ (String)
-  * Âè1Í×ÁÇ - ¥Ý¡¼¥ÈÈÖ¹æ (Integer)
-  * Âè2Í×ÁÇ - ¥Û¥¹¥ÈÌ¾ (String)
-  * Âè3Í×ÁÇ - ¥¢¥É¥ì¥¹ (String)
-  * Âè4Í×ÁÇ - ¥¢¥É¥ì¥¹¥Õ¥¡¥ß¥ê¡¼¤ËÂÐ±þ¤¹¤ë Integer
-  * Âè5Í×ÁÇ - ¥½¥±¥Ã¥È¥¿¥¤¥×¤ËÂÐ±þ¤¹¤ë Integer
-  * Âè6Í×ÁÇ - ¥×¥í¥È¥³¥ë¤ËÂÐ±þ¤¹¤ë Integer
 
-=== É¬¿Ü°ú¿ô¤Ë¤Ä¤¤¤Æ
-É¬¿Ü°ú¿ô¤Î°ÕÌ£¤Ï°Ê²¼¤ÎÄÌ¤ê¤Ç¤¹¡£
+=== ã‚¢ãƒ‰ãƒ¬ã‚¹æƒ…å ±ã«ã¤ã„ã¦
+ã‚¢ãƒ‰ãƒ¬ã‚¹æƒ…å ±ã¨ã¯7ã¤ã®è¦ç´ ã‹ã‚‰ãªã‚‹æ¬¡ã®å½¢ã®é…åˆ—ã§ã™ã€‚
 
-  * nodename - ¥Û¥¹¥ÈÌ¾
-    ([[ref:lib:socket#host_format]]¤ò»²¾È)
-  * servname - ¥µ¡¼¥Ó¥¹Ì¾
-    ([[ref:lib:socket#service_format]]¤ò»²¾È)
+  * ç¬¬0è¦ç´  - ã‚¢ãƒ‰ãƒ¬ã‚¹ãƒ•ã‚¡ãƒŸãƒªãƒ¼ (String)
+  * ç¬¬1è¦ç´  - ãƒãƒ¼ãƒˆç•ªå· (Integer)
+  * ç¬¬2è¦ç´  - ãƒ›ã‚¹ãƒˆå (String)
+  * ç¬¬3è¦ç´  - ã‚¢ãƒ‰ãƒ¬ã‚¹ (String)
+  * ç¬¬4è¦ç´  - ã‚¢ãƒ‰ãƒ¬ã‚¹ãƒ•ã‚¡ãƒŸãƒªãƒ¼ã«å¯¾å¿œã™ã‚‹ Integer
+  * ç¬¬5è¦ç´  - ã‚½ã‚±ãƒƒãƒˆã‚¿ã‚¤ãƒ—ã«å¯¾å¿œã™ã‚‹ Integer
+  * ç¬¬6è¦ç´  - ãƒ—ãƒ­ãƒˆã‚³ãƒ«ã«å¯¾å¿œã™ã‚‹ Integer
 
-=== ¾ÊÎ¬²ÄÇ½¤Ê°ú¿ô¤Ë¤Ä¤¤¤Æ
-»Ä¤ê¤Î°ú¿ô¤Ï¾ÊÎ¬²ÄÇ½¤Ç¤¹¡£
+=== å¿…é ˆå¼•æ•°ã«ã¤ã„ã¦
+å¿…é ˆå¼•æ•°ã®æ„å‘³ã¯ä»¥ä¸‹ã®é€šã‚Šã§ã™ã€‚
 
-  * family - ¥¢¥É¥ì¥¹¥Õ¥¡¥ß¥ê¡¼¡£
-    [[m:Socket::Constants::AF_INET]] ¤Ê¤É¡¢AF_ ¤Ç»Ï¤Þ¤ëÄê¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
-  * socktype - ¥½¥±¥Ã¥È¥¿¥¤¥×¡£
-    [[m:Socket::Constants::SOCK_STREAM]] ¤Ê¤É¡¢SOCK_ ¤Ç»Ï¤Þ¤ëÄê¿ô¤ò»ØÄê
-    ¤·¤Þ¤¹¡£
-  * protocol - ¥×¥í¥È¥³¥ë¡£
-    [[m:Socket::Constants::IPPROTO_IP]] ¤Ê¤É¡¢IPPROTO_ ¤Ç»Ï¤Þ¤ëÄê¿ô¤ò»Ø
-    Äê¤·¤Þ¤¹¡£
-  * flags - [[man:getaddrinfo(3)]] ¤ÎÂè3°ú¿ô¤Ë»ØÄê¤¹¤ë addrinfo ¹½Â¤ÂÎ¤Î
-    ai_flags ¥á¥ó¥Ð¤ËÁêÅö¤¹¤ë Fixnum¡£
-    Socket::AI_PASSIVE¡¢
-    Socket::AI_CANONNAME¡¢
+  * nodename - ãƒ›ã‚¹ãƒˆå
+    ([[ref:lib:socket#host_format]]ã‚’å‚ç…§)
+  * servname - ã‚µãƒ¼ãƒ“ã‚¹å
+    ([[ref:lib:socket#service_format]]ã‚’å‚ç…§)
+
+=== çœç•¥å¯èƒ½ãªå¼•æ•°ã«ã¤ã„ã¦
+æ®‹ã‚Šã®å¼•æ•°ã¯çœç•¥å¯èƒ½ã§ã™ã€‚
+
+  * family - ã‚¢ãƒ‰ãƒ¬ã‚¹ãƒ•ã‚¡ãƒŸãƒªãƒ¼ã€‚
+    [[m:Socket::Constants::AF_INET]] ãªã©ã€AF_ ã§å§‹ã¾ã‚‹å®šæ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
+  * socktype - ã‚½ã‚±ãƒƒãƒˆã‚¿ã‚¤ãƒ—ã€‚
+    [[m:Socket::Constants::SOCK_STREAM]] ãªã©ã€SOCK_ ã§å§‹ã¾ã‚‹å®šæ•°ã‚’æŒ‡å®š
+    ã—ã¾ã™ã€‚
+  * protocol - ãƒ—ãƒ­ãƒˆã‚³ãƒ«ã€‚
+    [[m:Socket::Constants::IPPROTO_IP]] ãªã©ã€IPPROTO_ ã§å§‹ã¾ã‚‹å®šæ•°ã‚’æŒ‡
+    å®šã—ã¾ã™ã€‚
+  * flags - [[man:getaddrinfo(3)]] ã®ç¬¬3å¼•æ•°ã«æŒ‡å®šã™ã‚‹ addrinfo æ§‹é€ ä½“ã®
+    ai_flags ãƒ¡ãƒ³ãƒã«ç›¸å½“ã™ã‚‹ Fixnumã€‚
+    Socket::AI_PASSIVEã€
+    Socket::AI_CANONNAMEã€
     Socket::AI_NUMERICHOST
-    ¤¬ÍÑ°Õ¤µ¤ì¤Æ¤¤¤ë¾ì¹ç¤¬¤¢¤ê¤Þ¤¹¡£
+    ãŒç”¨æ„ã•ã‚Œã¦ã„ã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚
 
-=== Äê¿ô¤Î°ÕÌ£¤Ë¤Ä¤¤¤Æ
-°ú¿ô¤Ë»ØÄê¤Ç¤­¤ëÄê¿ô¤Î°ÕÌ£¤Ë¤Ä¤¤¤Æ¤Ï
-[[man:getaddrinfo(3)]] ¤ò»²¾È¤·¤Æ²¼¤µ¤¤¡£
+=== å®šæ•°ã®æ„å‘³ã«ã¤ã„ã¦
+å¼•æ•°ã«æŒ‡å®šã§ãã‚‹å®šæ•°ã®æ„å‘³ã«ã¤ã„ã¦ã¯
+[[man:getaddrinfo(3)]] ã‚’å‚ç…§ã—ã¦ä¸‹ã•ã„ã€‚
 
-=== »ÈÍÑÎã
-Îã:
+=== ä½¿ç”¨ä¾‹
+ä¾‹:
 
   p Socket.getaddrinfo(Socket.gethostname, "ftp")
   #=> [["AF_INET", 21, "helium.ruby-lang.org", "210.251.121.214", 2, 1, 6]]

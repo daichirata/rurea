@@ -5,9 +5,9 @@ kind=defined
 --- each_child(with_directory = true)                  -> Enumerator
 --- each_child(with_directory = true) {|pathname| ...} -> [Pathname]
 
-self.children(with_directory).each ¤ÈÆ±¤¸¤Ç¤¹¡£
+self.children(with_directory).each ã¨åŒã˜ã§ã™ã€‚
 
-@param with_directory µ¶¤ò»ØÄê¤¹¤ë¤È¥Õ¥¡¥¤¥ëÌ¾¤Î¤ßÊÖ¤·¤Ş¤¹¡£¥Ç¥Õ¥©¥ë¥È¤Ï¿¿¤Ç¤¹¡£
+@param with_directory å½ã‚’æŒ‡å®šã™ã‚‹ã¨ãƒ•ã‚¡ã‚¤ãƒ«åã®ã¿è¿”ã—ã¾ã™ã€‚ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯çœŸã§ã™ã€‚
 
 @see [[m:Pathname#children]]
 

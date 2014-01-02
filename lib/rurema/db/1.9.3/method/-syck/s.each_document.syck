@@ -5,11 +5,11 @@ kind=defined
 --- each_document(io) {|obj| ...} -> nil
 --- load_documents(io) {|obj| ...} -> nil
 
-Ϳ����줿 io ���� YAML �ե����ޥåȤ�ʸ��򤹤٤ƽ���ɤ߹���
-Ruby �Υ��֥������Ȥ��Ѵ�����
-�����������֥������Ȥ�����Ȥ��ƥ֥��å���ɾ�����Ƥ����ޤ���
+与えられた io から YAML フォーマットの文書をすべて順に読み込み
+Ruby のオブジェクトに変換し、
+生成したオブジェクトを引数としてブロックを評価していきます。
 
-@param io YAML�ե����ޥåȤ�ʸ����ɤ߹������IO���֥�������
+@param io YAMLフォーマットの文書の読み込み先のIOオブジェクト
 
   # sample.yml
   - apple
@@ -29,5 +29,5 @@ Ruby �Υ��֥������Ȥ��Ѵ�����
   #=>   {"foo"=>"bar"}
 
 
-[����] �֥��å�����ꤷ�ʤ��� NoMethodError ��ȯ������������դ��Ƥ���������
+[注意] ブロックを指定しないと NoMethodError が発生する事に注意してください。
 

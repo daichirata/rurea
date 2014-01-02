@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- language -> String | [String] | nil
-[[RFC:1766]] ���������Ƥ���ܥǥ������ɽ�魯
-ʸ����⤷����ʸ�����������֤��ޤ���
+[[RFC:1766]] で定義されているボディ言語を表わす
+文字列もしくは文字列の配列を返します。
 

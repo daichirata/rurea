@@ -4,6 +4,6 @@ kind=defined
 
 --- SJIS -> Encoding
 
-Shift_JIS ��ɽ���ޤ���
-cp932�ǤϤʤ����Ȥ����դ��Ƥ���������
+Shift_JIS を表します。
+cp932ではないことに注意してください。
 

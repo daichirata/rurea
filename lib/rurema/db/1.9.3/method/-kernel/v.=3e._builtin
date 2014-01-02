@@ -5,41 +5,41 @@ kind=defined
 --- $>      -> object
 --- $stdout -> object
 
-ɸ����ϤǤ���
+標準出力です。
 
-�Ȥ߹��ߴؿ� [[m:Kernel.#print]]��[[m:Kernel.#puts]] ��
-[[m:Kernel.#p]] �ʤɤΥǥե���Ȥν�����Ȥʤ�ޤ���
-����ͤ� [[m:Kernel::STDOUT]] �Ǥ���
-���ޥ�ɥ饤�󥪥ץ���󥪥ץ���� -i ����ꤷ�����ˤ�
-�ɤ߹��߸���Ʊ��̾���Υե������ɽ���ޤ���
+組み込み関数 [[m:Kernel.#print]]、[[m:Kernel.#puts]] や
+[[m:Kernel.#p]] などのデフォルトの出力先となります。
+初期値は [[m:Object::STDOUT]] です。
+コマンドラインオプションオプション -i を指定した場合には
+読み込み元と同じ名前のファイルを表します。
 
 
-$stdout ���������륪�֥������Ȥˤ�
-write �Ȥ���̾���Υ᥽�åɤ��������Ƥ��ʤ���Ф����ޤ���
+$stdout に代入するオブジェクトには
+write という名前のメソッドが定義されていなければいけません。
 
-���ץ�������ɸ����Ϥ������쥯�Ȥ������Ȥ��ˤϡ�
-�ʲ��Τ褦�� $stdout ����������н�ʬ�Ǥ���
+自プロセスの標準出力をリダイレクトしたいときには、
+以下のように $stdout に代入すれば十分です。
 
-    # ɸ����Ϥν������ /tmp/foo ���ѹ�
+    # 標準出力の出力先を /tmp/foo に変更
     $stdout = File.open("/tmp/foo", "w")
-    puts "foo"         # ���Ϥ���
-    $stdout = STDOUT   # �����᤹
+    puts "foo"         # 出力する
+    $stdout = STDOUT   # 元に戻す
 
-���ץ����������Ǥʤ����ҥץ�������ɸ����Ϥ������쥯�Ȥ������Ȥ���
-�ʲ��Τ褦�� [[m:IO#reopen]] ��Ȥ��ޤ���
+自プロセスだけでなく、子プロセスの標準出力もリダイレクトしたいときは
+以下のように [[m:IO#reopen]] を使います。
 
     STDOUT.reopen("/tmp/foo", "w")
 
-�ޤ���������쥯�Ȥ�������
-�������ޤ������ᤷ�������ϰʲ��Τ褦�ˤ��ޤ���
+また、リダイレクトしたあと
+出力先をまた元に戻したい場合は以下のようにします。
 
-    stdout_old = $stdout.dup        # ���� $stdout ����¸����
-    $stdout.reopen("/tmp/foo")      # $stdout �� /tmp/foo �˥�����쥯�Ȥ���
-    puts "foo"                      # /tmp/foo �˽���
-    $stdout.flush                   # ǰ�Τ���ե�å��夹��
-    $stdout.reopen stdout_old       # �����᤹
+    stdout_old = $stdout.dup        # 元の $stdout を保存する
+    $stdout.reopen("/tmp/foo")      # $stdout を /tmp/foo にリダイレクトする
+    puts "foo"                      # /tmp/foo に出力
+    $stdout.flush                   # 念のためフラッシュする
+    $stdout.reopen stdout_old       # 元に戻す
 
-$stdout �ϥ������Х륹�����פǤ���
+$stdout はグローバルスコープです。
 
 @see [[d:spec/rubycmd]]
 

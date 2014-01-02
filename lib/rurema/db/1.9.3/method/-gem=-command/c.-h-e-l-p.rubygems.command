@@ -4,5 +4,5 @@ kind=defined
 
 --- HELP -> String
 
-�إ�ץ�å�������ɽ��ʸ����Ǥ���
+ヘルプメッセージを表す文字列です。
 

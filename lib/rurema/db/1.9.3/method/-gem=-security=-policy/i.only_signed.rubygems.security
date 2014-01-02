@@ -4,5 +4,5 @@ kind=defined
 
 --- only_signed -> bool
 
-�����ͤ����Ǥ�����ϡ���̾�դ��� Gem �Τߥ��󥹥ȡ��뤷�ޤ���
+この値が真である場合は、署名付きの Gem のみインストールします。
 

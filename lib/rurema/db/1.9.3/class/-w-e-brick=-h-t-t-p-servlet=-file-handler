@@ -6,4 +6,4 @@ library=webrick.httpservlet.filehandler
 aliases=
 aliasof=
 
-�̾�Υե����륵���ФȤ��Ƥε�ǽ���󶡤��뤿��Υ����֥�åȡ�
+通常のファイルサーバとしての機能を提供するためのサーブレット。

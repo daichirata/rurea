@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- expunge -> [Integer] | nil
-EXPUNGE���ޥ�ɤ����ꡢ:Deleted�ե饰�򥻥åȤ�����å�������
-���٤ƽ�����Υ᡼��ܥå������������ޤ���
+EXPUNGEコマンドを送り、:Deletedフラグをセットしたメッセージを
+すべて処理中のメールボックスから削除します。
 
-���������å������� message sequence number ��������֤��ޤ���
+削除したメッセージの message sequence number を配列で返します。
 
-@raise Net::IMAP::NoResponseError �᡼��ܥå����� read-only �Ǥ������ȯ�����ޤ�
+@raise Net::IMAP::NoResponseError メールボックスが read-only である場合に発生します
 

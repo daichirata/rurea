@@ -2,6 +2,8 @@ names=elements_to_i
 visibility=public
 kind=defined
 
---- elements_to_i -> Array
-�����Ǥ����� [[c:Integer]] ���Ѵ�����������֤��ޤ���
+--- elements_to_i -> Matrix
+各要素を整数 [[c:Integer]] に変換した行列を返します。
+
+このメソッドは deprecated です。 map(&:to_i) を使ってください。
 

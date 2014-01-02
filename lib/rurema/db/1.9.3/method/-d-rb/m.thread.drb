@@ -2,10 +2,11 @@ names=thread
 visibility=public
 kind=defined
 
---- thread
-@todo
+--- thread -> Thread|nil
+プライマリサーバが動作しているスレッドを返します。
 
-Get the thread of the primary server.
+プライマリサーバが存在しない場合は nil を返します。
 
-This returns nil if there is no primary server. See #primary_server.
+@see [[m:DRb.#primary_server]]
+
 

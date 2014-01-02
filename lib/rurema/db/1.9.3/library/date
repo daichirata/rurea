@@ -3,5 +3,6 @@ classes=Date,DateTime
 methods=Time/i.to_date.date,Time/i.to_datetime.date,Time/i.to_time.date
 sublibraries=
 is_sublibrary=false
+category=Date/Time
 
-ÆüÉÕ¤ò¤¢¤Ä¤«¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+æ—¥ä»˜ã‚’ã‚ã¤ã‹ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

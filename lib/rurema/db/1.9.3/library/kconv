@@ -3,19 +3,20 @@ classes=Kconv
 methods=String/i.kconv.kconv,String/i.tojis.kconv,String/i.toeuc.kconv,String/i.tosjis.kconv,String/i.toutf8.kconv,String/i.toutf16.kconv,String/i.toutf32.kconv,String/i.tolocale.kconv,String/i.iseuc.kconv,String/i.issjis.kconv,String/i.isutf8.kconv,String/i.isjis.kconv
 sublibraries=
 is_sublibrary=false
+category=CharacterEncoding
 
-���ܸ�ʸ�������ɤ��Ѵ����ڤ˹Ԥ�����Υ饤�֥��Ǥ���
+日本語文字コードの変換を手軽に行うためのライブラリです。
 
-kconv �� require ����� [[c:String]] ���饹���Ѵ��ѤΥ᥽�åɤ��������ޤ���
-[[c:Kconv]] �ˤ�Ʊ���Υ᥽�åɤ��������ޤ��� [[c:Kconv]] �ˤ�
-���󥳡��ǥ��󥰤�ɽ��������������Ƥ��ޤ���
+kconv を require すると [[c:String]] クラスに変換用のメソッドが定義されます。
+[[c:Kconv]] にも同等のメソッドが定義されます。 [[c:Kconv]] には
+エンコーディングを表す定数も定義されています。
 
-1.9.1 �ʹߤǤϡ�Ruby �� m17n ��ǽ���Ѥ��ƥ��󥳡��ǥ��󥰤��Ѵ���
-�Ԥ����Ȥ��Ǥ��ޤ���1.8 �Ȥθߴ���������Ǥʤ��Τʤ�С�
-m17n ��ǽ��Ȥ��ۤ����褤�Ǥ��礦��MIME�Υǥ����������ݤ������
-�򤱤뤳�Ȥ��Ǥ��ޤ���
+1.9.1 以降では、Ruby の m17n 機能を用いてエンコーディングの変換を
+行うことができます。1.8 との互換性が問題でないのならば、
+m17n 機能を使うほうがよいでしょう。MIMEのデコード等面倒な問題を
+避けることができます。
 
-=== ������
+=== 使用例
 
   newstring = Kconv.kconv(string, Kconv::JIS, Kconv::AUTO)
   newstring = Kconv.tojis(string)
@@ -23,7 +24,7 @@ m17n ��ǽ��Ȥ��ۤ����褤�Ǥ��礦��MIME�Υǥ����������ݤ������
   newstring = Kconv.tosjis(string)
   guessed_code = Kconv.guess(string)
 
-�ޤ���
+または
 
   newstring = string.kconv(Kconv::JIS, Kconv::AUTO)
   newstring = string.tojis

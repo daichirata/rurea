@@ -4,9 +4,9 @@ kind=defined
 
 --- wrap(*args) {|gz| ... } -> ()
 
-Ä¾ÀÜ»ÈÍÑ¤·¤Ş¤»¤ó¡£
-ÄÌ¾ï¡¢¶ñÂÎÅª¤ÊÆÉ¤ß½ñ¤­¤ò¤ª¤³¤Ê¤¦¤¿¤á¤Ë¤Ï¡¢
-[[m:Zlib::GzipReader.wrap]] ¤â¤·¤¯¤Ï¡¢[[m:Zlib::GzipWriter.wrap]] ¤ò»ÈÍÑ¤·¤Ş¤¹¡£
+ç›´æ¥ä½¿ç”¨ã—ã¾ã›ã‚“ã€‚
+é€šå¸¸ã€å…·ä½“çš„ãªèª­ã¿æ›¸ãã‚’ãŠã“ãªã†ãŸã‚ã«ã¯ã€
+[[m:Zlib::GzipReader.wrap]] ã‚‚ã—ãã¯ã€[[m:Zlib::GzipWriter.wrap]] ã‚’ä½¿ç”¨ã—ã¾ã™ã€‚
 
 @see [[m:Zlib::GzipReader.wrap]],[[m:Zlib::GzipWriter.wrap]]
 

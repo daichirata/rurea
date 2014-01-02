@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- loop { ... } -> object
-(���Ǥ���ʤ��¤�)�ʱ�˥֥��å���ɾ���򷫤��֤��ޤ���
+(中断されない限り)永遠にブロックの評価を繰り返します。
 
-Ϳ����줿�֥��å���� [[c:StopIteration]] �� [[m:Kernel.#raise]] �����
-�롼�פ�λ���� nil ���֤��ޤ���
-�롼�פ�λ�������硢�̾�� break ����Ѥ��Ƥ���������
+与えられたブロック内で [[c:StopIteration]] を [[m:Kernel.#raise]] すると
+ループを終了して nil を返します。
+ループを終了させる場合、通常は break を使用してください。
 
-@return break �ΰ����ʤɡ��롼��æ�л����ͤ��֤��ޤ���
+@return break の引数など、ループ脱出時の値を返します。
 
   def try int
     n = 0

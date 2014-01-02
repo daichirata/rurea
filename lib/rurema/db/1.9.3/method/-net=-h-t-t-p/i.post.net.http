@@ -5,36 +5,36 @@ kind=defined
 --- post(path, data, header = nil, dest = nil) -> Net::HTTPResponse
 --- post(path, data, header = nil, dest = nil) {|body_segment| .... } -> Net::HTTPResponse
 
-�����о�� path �ˤ��륨��ƥ��ƥ����Ф�ʸ���� data ��
-POST ������ޤ���
+サーバ上の path にあるエンティティに対し文字列 data を
+POST で送ります。
 
-�֤��ͤ� [[c:Net::HTTPResponse]] �Υ��󥹥��󥹤Ǥ���
+返り値は [[c:Net::HTTPResponse]] のインスタンスです。
 
-�֥��å��Ȱ��˸ƤӤ����줿�Ȥ��ϥ���ƥ��ƥ��ܥǥ��򾯤�����ʸ����Ȥ���
-�֥��å���Ϳ���ޤ������ΤȤ�����ͤ� HTTPResponse ���֥������Ȥ�ͭ���� body ��
-�����ޤ���
+ブロックと一緒に呼びだされたときはエンティティボディを少しずつ文字列として
+ブロックに与えます。このとき戻り値の HTTPResponse オブジェクトは有効な body を
+持ちません。
 
-POST ������ˤϥإå��� Content-Type: ����ꤹ��ɬ�פ�����ޤ���
-�⤷ header �˻��ꤷ�ʤ��ä��ʤ�С� Content-Type �Ȥ���
-"application/x-www-form-urlencoded" ���Ѥ��ޤ���
+POST する場合にはヘッダに Content-Type: を指定する必要があります。
+もし header に指定しなかったならば、 Content-Type として
+"application/x-www-form-urlencoded" を用います。
 
-dest �ϻ����٤�ΰ����Ǥ������Ѥ��ʤ��Ǥ���������
-dest ����ꤷ�����ˤ�
-�ܥǥ��򾯤����ļ������ƽ缡
-��dest << �ܥǥ������ҡפ�¹Ԥ��ޤ���
+dest は時代遅れの引数です。利用しないでください。
+dest を指定した場合には
+ボディを少しずつ取得して順次
+「dest << ボディの断片」を実行します。
 
-@param path POST��Υѥ���ʸ����ǻ��ꤷ�ޤ���
-@param header �ꥯ�����Ȥ� HTTP �إå���ϥå���ǻ��ꤷ�ޤ���
-@param dest ���Ѥ��ʤ��Ǥ���������
+@param path POST先のパスを文字列で指定します。
+@param header リクエストの HTTP ヘッダをハッシュで指定します。
+@param dest 利用しないでください。
 
-1.1 �ߴ��⡼�ɤξ��ϡ��쥹�ݥ󥹤˱������㳰��ȯ�����ޤ���
-�ޤ����֤��ͤ� [�쥹�ݥ󥹥��֥�������, ���Υܥǥ�] �Ȥʤ�ޤ���
+1.1 互換モードの場合は、レスポンスに応じて例外が発生します。
+また、返り値が [レスポンスオブジェクト, そのボディ] となります。
 
-��:
-  # net/http version 1.1 (Ruby 1.6.x)
+例:
+  # net/http version 1.1
   response, body = http.post('/cgi-bin/search.rb', 'query=subject&target=ruby')
   
-  # version 1.2 (Ruby 1.8.x or later)
+  # version 1.2
   response = http.post('/cgi-bin/search.rb', 'query=subject&target=ruby')
   
   # using block

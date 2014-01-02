@@ -6,4 +6,4 @@ library=irb.cmd.subirb
 aliases=
 aliasof=
 
-irb ��� irb_jobs ���ޥ�ɤΤ���γ�ĥ������������饹�Ǥ���
+irb 中の irb_jobs コマンドのための拡張を定義したクラスです。

@@ -4,9 +4,13 @@ kind=defined
 
 --- equal?(other)   -> bool
 
-���ꤵ�줿 other �� self ���ȤǤ�����Τ߿����֤��ޤ���
-����� [[c:Object]] ���饹��������줿�ǥե���Ȥ�ư���
-����
+指定された other が self 自身である場合のみ真を返します。
+これは [[c:Object]] クラスで定義されたデフォルトの動作で
+す。
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
 
 @see [[m:Struct#eql?]], [[m:Struct#==]]
 

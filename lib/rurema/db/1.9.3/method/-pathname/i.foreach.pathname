@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- foreach(*args){|path| ... } -> nil
-¤³¤Î¥á¥½¥Ã¥É¤Ï obsolete ¤Ç¤¹¡£ each_line ¤« each_entry ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ obsolete ã§ã™ã€‚ each_line ã‹ each_entry ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚
 
-self ¤Î»Ø¤·¼¨¤¹¥Ñ¥¹¤¬¥Ç¥£¥ì¥¯¥È¥ê¤Ê¤é
-Dir.foreach(self.to_s, *args, &block) ¤È¡¢¤µ¤â¤Ê¤±¤ì¤Ğ
-IO.foreach(self.to_s, *args, &block) ¤ÈÆ±¤¸¤Ç¤¹¡£
+self ã®æŒ‡ã—ç¤ºã™ãƒ‘ã‚¹ãŒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãªã‚‰
+Dir.foreach(self.to_s, *args, &block) ã¨ã€ã•ã‚‚ãªã‘ã‚Œã°
+IO.foreach(self.to_s, *args, &block) ã¨åŒã˜ã§ã™ã€‚
 
 

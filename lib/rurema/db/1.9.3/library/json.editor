@@ -3,5 +3,6 @@ classes=JSON=Editor
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-Gtk2 ¤òÍÑ¤¤¤Æ½ñ¤«¤ì¤¿ JSON ¥¨¥Ç¥£¥¿¡¼¤Ç¤¹¡£
+Gtk2 ã‚’ç”¨ã„ã¦æ›¸ã‹ã‚ŒãŸ JSON ã‚¨ãƒ‡ã‚£ã‚¿ãƒ¼ã§ã™ã€‚

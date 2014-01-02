@@ -3,10 +3,10 @@ visibility=public
 kind=added
 
 --- cert=(certificate)
-епещедевеєе╚╛┌╠└╜ёдЄ└▀─ъд╖д▐д╣бг
+уВпуГйуВдуВвуГ│уГИши╝цШОцЫ╕уВТшинхоЪуБЧуБ╛уБЩуАВ
 
-е╟е╒ейеые╚д╧ nil (епещедевеєе╚╛┌╠└╜ёд╦дшды╟з╛┌дЄд╖д╩дд)д╟д╣бг
+уГЗуГХуВйуГлуГИуБп nil (уВпуГйуВдуВвуГ│уГИши╝цШОцЫ╕уБлуВИуВЛшкНши╝уВТуБЧуБкуБД)уБзуБЩуАВ
 
-@param certificate ╛┌╠└╜ёеке╓е╕езепе╚([[c:OpenSSL::X509::Certificate]])
+@param certificate ши╝цШОцЫ╕уВкуГЦуВ╕уВзуВпуГИ([[c:OpenSSL::X509::Certificate]])
 @see [[m:Net::HTTP#cert]], [[m:OpenSSL::SSL::SSLContext#cert=]]
 

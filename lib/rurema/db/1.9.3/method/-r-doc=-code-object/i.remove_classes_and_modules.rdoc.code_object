@@ -4,6 +4,6 @@ kind=defined
 
 --- remove_classes_and_modules -> ()
 
-���⤷�ޤ���[[m:RDoc::CodeObject#document_children=]] �� false �����
-�������Υ�����Хå��Ȥ��ƸƤӽФ���ޤ��������С��饤�ɤ��ƻ��Ѥ��ޤ���
+何もしません。[[m:RDoc::CodeObject#document_children=]] に false を指定
+した時のコールバックとして呼び出されます。オーバーライドして使用します。
 

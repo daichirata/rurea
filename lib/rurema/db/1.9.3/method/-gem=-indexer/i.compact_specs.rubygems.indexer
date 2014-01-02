@@ -4,8 +4,8 @@ kind=defined
 
 --- compact_specs(specs) -> Array
 
-Ϳ����줿���ڥå��򸵤˥��ڥå����դ�����Ǥ�������ξ������ä�������������
-�֤��ޤ���
+与えられたスペックを元にスペックを一意に特定できるだけの情報を持った配列を作成して
+返します。
 
-@param specs [[c:Gem::Specification]] ���������ꤷ�ޤ���
+@param specs [[c:Gem::Specification]] の配列を指定します。
 

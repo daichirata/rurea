@@ -4,17 +4,17 @@ kind=defined
 
 --- install(src, dest, options = {}) -> ()
 
-src ¤È dest ¤ÎÆâÍÆ¤¬°ã¤¦¤È¤­¤À¤± src ¤ò dest ¤Ë¥³¥Ô¡¼¤·¤Ş¤¹¡£
+src ã¨ dest ã®å†…å®¹ãŒé•ã†ã¨ãã ã‘ src ã‚’ dest ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-@param src ¥³¥Ô¡¼¸µ¡£°ì¤Ä¤Î¾ì¹ç¤ÏÊ¸»úÎó¤Ç¤â»ØÄê²ÄÇ½¤Ç¤¹¡£
-           Æó¤Ä°Ê¾å»ØÄê¤¹¤ë¾ì¹ç¤ÏÇÛÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param src ã‚³ãƒ”ãƒ¼å…ƒã€‚ä¸€ã¤ã®å ´åˆã¯æ–‡å­—åˆ—ã§ã‚‚æŒ‡å®šå¯èƒ½ã§ã™ã€‚
+           äºŒã¤ä»¥ä¸ŠæŒ‡å®šã™ã‚‹å ´åˆã¯é…åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param dest ¥³¥Ô¡¼Àè¤Î¥Õ¥¡¥¤¥ë¤«¥Ç¥£¥ì¥¯¥È¥ê¤Ç¤¹¡£
+@param dest ã‚³ãƒ”ãƒ¼å…ˆã®ãƒ•ã‚¡ã‚¤ãƒ«ã‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã§ã™ã€‚
 
-@param options :preserve, :noop, :verbose, :mode ¤¬»ØÄê¤Ç¤­¤Ş¤¹¡£
+@param options :preserve, :noop, :verbose, :mode ãŒæŒ‡å®šã§ãã¾ã™ã€‚
                [[ref:c:FileUtils#options]]
 
-Îã:
+ä¾‹:
 
   FileUtils.install('ruby', '/usr/local/bin/ruby', {:mode => 0755, :verbose => true})
   FileUtils.install('lib.rb', '/usr/local/lib/ruby/site_ruby', {:verbose => true})

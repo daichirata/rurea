@@ -4,5 +4,5 @@ kind=defined
 
 --- mtime -> Time
 
-gzip �ե�����Υإå����˵�Ͽ����Ƥ���ǽ��������֤��֤��ޤ���
+gzip ファイルのヘッダーに記録されている最終更新時間を返します。
 

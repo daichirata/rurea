@@ -4,8 +4,8 @@ kind=defined
 
 --- WRCREAT -> Fixnum
 
-[[m:GDBM.open]] ����3�����˻��ꤷ�ޤ���
+[[m:GDBM.open]] の第3引数に指定します。
 
-�񤭹��ߥ⡼�ɤǡ����Ǥ˥ե����뤬¸�ߤ��ʤ��ä�����ޤ���
+書き込みモードで、すでにファイルが存在しなかったら作ります。
 
 

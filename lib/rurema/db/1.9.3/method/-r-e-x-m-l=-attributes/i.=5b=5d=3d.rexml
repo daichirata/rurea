@@ -3,5 +3,27 @@ visibility=public
 kind=defined
 
 --- []=(name, value)
-@todo
+
+指定した属性を更新します。
+
+name で属性の名前を、value で値を更新します。
+既に同じ名前の属性がある場合は上書きされ、
+そうでない場合は属性が追加されます。
+
+==== 例
+  require 'rexml/document'
+  
+  doc = REXML::Document.new(<<-EOS)
+  <root xmlns:foo="http://example.org/foo"
+        xmlns:bar="http://example.org/bar">
+    <a foo:att='1' bar:att='2' att='&lt;'/>
+  </root>
+  EOS
+  a = doc.get_elements("/root/a").first
+  
+  a.attributes["att"] = "9"
+  a.attributes["foo:attt"] = "8"
+  a # => <a foo:att='1' bar:att='2' att='9' foo:attt='8'/>
+
+@see [[m:REXML::Attributes#add]]
 

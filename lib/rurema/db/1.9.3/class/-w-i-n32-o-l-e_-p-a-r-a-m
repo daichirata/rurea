@@ -6,12 +6,12 @@ library=win32ole
 aliases=
 aliasof=
 
-OLE�����ȥ᡼����󥵡��Ф����ĥ᥽�åɤΥѥ�᡼��������󶡤��ޤ���
+OLEオートメーションサーバが持つメソッドのパラメータ情報を提供します。
 
-WIN32OLE_PARAM�ϡ�[[c:WIN32OLE_METHOD]]�Υѥ�᡼���Υ᥿�ǡ������ݻ���
-�ޤ���
+WIN32OLE_PARAMは、[[c:WIN32OLE_METHOD]]のパラメータのメタデータを保持し
+ます。
 
-=== ����ץ륳����
+=== サンプルコード
 
      tobj = WIN32OLE_TYPE.new('Microsoft Excel 9.0 Object Library', 'Workbook')
      method = WIN32OLE_METHOD.new(tobj, 'SaveAs')

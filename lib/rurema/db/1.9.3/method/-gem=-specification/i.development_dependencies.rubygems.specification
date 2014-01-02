@@ -4,5 +4,5 @@ kind=defined
 
 --- development_dependencies -> Array
 
-���� Gem ����¸���Ƥ��� Gem �Υꥹ�Ȥ��֤��ޤ���
+この Gem が依存している Gem のリストを返します。
 

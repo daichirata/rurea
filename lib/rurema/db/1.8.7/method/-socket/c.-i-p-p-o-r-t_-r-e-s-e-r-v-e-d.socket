@@ -1,8 +1,0 @@
-names=IPPORT_RESERVED,IPPORT_USERRESERVED
-visibility=public
-kind=defined
-
---- IPPORT_RESERVED
---- IPPORT_USERRESERVED
-@todo
-

@@ -4,21 +4,21 @@ kind=defined
 
 --- <<(string) -> self
 
-¥Ò¥¹¥È¥ê¤ÎºÇ¸å¤Ë string ¤Ç»ØÄê¤·¤¿Ê¸»úÎó¤òÄÉ²Ã¤·¤Ş¤¹¡£
-self ¤òÊÖ¤·¤Ş¤¹¡£
+ãƒ’ã‚¹ãƒˆãƒªã®æœ€å¾Œã« string ã§æŒ‡å®šã—ãŸæ–‡å­—åˆ—ã‚’è¿½åŠ ã—ã¾ã™ã€‚
+self ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param string Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param string æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise SecurityError ¥»¡¼¥Õ¥ì¥Ù¥ë ($SAFE) ¤¬ 4 ¤Î¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise SecurityError ã‚»ãƒ¼ãƒ•ãƒ¬ãƒ™ãƒ« ($SAFE) ãŒ 4 ã®å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã: "foo"¤òÄÉ²Ã¤¹¤ë¡£
+ä¾‹: "foo"ã‚’è¿½åŠ ã™ã‚‹ã€‚
 
   require "readline"
 
   Readline::HISTORY << "foo"
   p Readline::HISTORY[-1] #=> "foo"
 
-Îã: "foo"¡¢"bar"¤òÄÉ²Ã¤¹¤ë¡£
+ä¾‹: "foo"ã€"bar"ã‚’è¿½åŠ ã™ã‚‹ã€‚
 
   require "readline"
 

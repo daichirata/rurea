@@ -4,10 +4,10 @@ kind=defined
 
 --- typelibs -> [WIN32OLE_TYPELIB]
 
-�����ƥ����Ͽ����Ƥ��뤹�٤Ƥ�TypeLib��������ޤ���
+システムに登録されているすべてのTypeLibを取得します。
 
-@return ��Ͽ����Ƥ��뤹�٤Ƥ�TypeLib�򸵤�WIN32OLE_TYPELIB���֥�������
-        ��������֤��ޤ���
+@return 登録されているすべてのTypeLibを元にWIN32OLE_TYPELIBオブジェクト
+        の配列を返します。
 
    tlibs = WIN32OLE_TYPELIB.typelibs
 

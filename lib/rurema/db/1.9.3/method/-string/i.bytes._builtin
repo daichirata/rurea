@@ -7,13 +7,10 @@ kind=defined
 --- each_byte -> Enumerator
 --- bytes     -> Enumerator
 
-Ê¸»úÎó¤Î³Æ¥Ð¥¤¥È¤ËÂÐ¤·¤Æ·«¤êÊÖ¤·¤Þ¤¹¡£
+æ–‡å­—åˆ—ã®å„ãƒã‚¤ãƒˆã«å¯¾ã—ã¦ç¹°ã‚Šè¿”ã—ã¾ã™ã€‚
 
-¤Ê¤ª¡¢¥Ð¥¤¥È¤´¤È¤ËÊ¬³ä¤·¤¿ÇÛÎó¤òÆÀ¤¿¤¤¤È¤­¤Ï¡¢
-Ruby 1.8 ¤Þ¤Ç¤Ê¤é unpack('C*') ¤ò¡¢
-Ruby 1.9 °Ê¹ß¤Ï String#bytes.to_a ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
 
-Îã:
+ä¾‹:
     "str".each_byte do |byte|
       p byte
     end
@@ -21,5 +18,5 @@ Ruby 1.9 °Ê¹ß¤Ï String#bytes.to_a ¤ò»È¤Ã¤Æ¤¯¤À¤µ¤¤¡£
         # => 116
         # => 114
 
-@see [[m:String#unpack]]
+
 

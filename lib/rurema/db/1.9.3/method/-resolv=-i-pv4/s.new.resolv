@@ -4,9 +4,9 @@ kind=defined
 
 --- new(address) -> Resolv::IPv4
 
-4 byte ¤ÎÊ¸»úÎó address ¤«¤é Resolv::IPv4 ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+4 byte ã®æ–‡å­—åˆ— address ã‹ã‚‰ Resolv::IPv4 ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param address 4 byte ¤Î¥Ğ¥¤¥Ê¥êÎó¤Î IPv4 ¤Î¥¢¥É¥ì¥¹
+@param address 4 byte ã®ãƒã‚¤ãƒŠãƒªåˆ—ã® IPv4 ã®ã‚¢ãƒ‰ãƒ¬ã‚¹
 @see [[m:Resolv::IPv4.create]] 
 
 

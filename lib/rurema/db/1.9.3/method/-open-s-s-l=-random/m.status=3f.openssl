@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- status? -> bool
-Íð¿ôÀ¸À®´ïÆâ¤Î¥¨¥ó¥È¥í¥Ô¡¼¤¬½½Ê¬¤Ç¤¢¤ë¾ì¹ç¤Ë true ¤òÊÖ¤·¤Þ¤¹¡£
+ä¹±æ•°ç”Ÿæˆå™¨å†…ã®ã‚¨ãƒ³ãƒˆãƒ­ãƒ”ãƒ¼ãŒååˆ†ã§ã‚ã‚‹å ´åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚
 

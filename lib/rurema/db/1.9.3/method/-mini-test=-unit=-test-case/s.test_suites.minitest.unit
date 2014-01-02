@@ -4,6 +4,6 @@ kind=defined
 
 --- test_suites -> Array
 
-�ƥ��ȥ��饹̾�Υꥹ�Ȥ��֤��ޤ���
+テストクラス名のリストを返します。
 
 

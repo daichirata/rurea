@@ -2,7 +2,17 @@ names=send_io
 visibility=public
 kind=defined
 
---- send_io(io)
-@todo
+--- send_io(io) -> nil
+IO ã‚„ Fixnum ã«å¯¾å¿œã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‡ã‚£ã‚¹ã‚¯ãƒªãƒ—ã‚¿ã‚’ã‚½ã‚±ãƒƒãƒˆã®æ¥ç¶šå…ˆã«é€ã‚Šã¾ã™ã€‚
 
-IO ¤ä Fixnum ¤ËÂĞ±ş¤¹¤ë¥Õ¥¡¥¤¥ë¥Ç¥£¥¹¥¯¥ê¥×¥¿¤ò¥½¥±¥Ã¥È¤ÎÀÜÂ³Àè¤ËÁ÷¤ê¤Ş¤¹¡£
+  s1, s2 = UNIXSocket.pair
+  
+  s1.send_io STDOUT
+  stdout = s2.recv_io
+  
+  p STDOUT.fileno #=> 1
+  p stdout.fileno #=> 6
+  
+  stdout.puts "hello" # outputs "hello\n" to standard output.
+
+@param io é€ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‡ã‚£ã‚¹ã‚¯ãƒªãƒ—ã‚¿(æ•´æ•° or [[c:IO]]ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)

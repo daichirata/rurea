@@ -4,9 +4,9 @@ kind=defined
 
 --- run_test_suites(filter = /./) -> Array
 
-���ƤΥƥ��Ȥ�¹Ԥ��ޤ���
+全てのテストを実行します。
 
-@param filter �¹Ԥ���ƥ��ȥ᥽�å�̾������ɽ���ǻ��ꤷ�ޤ���
+@param filter 実行するテストメソッド名を正規表現で指定します。
 
-@return �ƥ��ȥ��������ȥ��������������֤��ޤ���
+@return テストケース数とアサーション数を返します。
 

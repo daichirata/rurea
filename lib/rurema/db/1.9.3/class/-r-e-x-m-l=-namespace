@@ -6,4 +6,8 @@ library=rexml
 aliases=
 aliasof=
 
+XML 名前空間によって管理される「名前」を持つようなノードを
+表すモジュール。
 
+要素([[c:REXML::Element]])、属性([[c:REXML::Attribute]])
+に include されます。

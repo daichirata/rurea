@@ -5,7 +5,7 @@ kind=defined
 --- ==(other) -> bool
 --- ===(other) -> bool
 --- eql?(other) -> bool
-¼«¿È¤È other ¤¬Åù¤·¤¤¾ì¹ç¤Ë¿¿¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã¨ other ãŒç­‰ã—ã„å ´åˆã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other Èæ³Ó¤¹¤ë¿ô
+@param other æ¯”è¼ƒã™ã‚‹æ•°
 

@@ -3,21 +3,22 @@ classes=PrettyPrint
 methods=
 sublibraries=
 is_sublibrary=false
+category=
 
-pretty printing ���르�ꥺ��Τ���Υ饤�֥��Ǥ���
+pretty printing アルゴリズムのためのライブラリです。
 
-=== �Ȥ���
+=== 使い方
 
-pretty printing ���르�ꥺ����ɤߤ䤹������ǥ�ȤȲ��Ԥ���ꤹ�뤿��Υ��르�ꥺ��Ǥ���
-����ǥ�ȤȲ��Ԥϥ桼���ˤ�ä�Ϳ����줿�ĥ꡼��¤������ꤵ��ޤ���
-�Ĥޤ�桼���ϰʲ��Τ褦��ɽ�����������Ƥ��ݻ������ĥ꡼���������ɬ�פ�����ޤ���
+pretty printing アルゴリズムは読みやすいインデントと改行を決定するためのアルゴリズムです。
+インデントと改行はユーザによって与えられたツリー構造から決定されます。
+つまりユーザは以下のように表示したい内容を保持したツリーを作成する必要があります。
 
- * [[m:PrettyPrint.new]] �ǥХåե����������ޤ������ΤȤ����Хåե������Ȳ���ʸ������ꤷ�ޤ���
- * [[m:PrettyPrint#text]] ��Ȥäơ�ʸ�����Ŭ�� �������ޤ���
- * [[m:PrettyPrint#group]] ��ȤäƻҥΡ��ɤ�Ĥ���ޤ���Ʊ���˻ҥΡ��ɤΥ���ǥ�Ȥο�������ޤ���
- * [[m:PrettyPrint#breakable]] ��ȤäƲ��Ԥ��Ƥ��ɤ�������ꤷ�ޤ���
+ * [[m:PrettyPrint.new]] でバッファを生成します。このとき、バッファの幅と改行文字を指定します。
+ * [[m:PrettyPrint#text]] を使って、文字列を適宜 挿入します。
+ * [[m:PrettyPrint#group]] を使って子ノードをつくります。同時に子ノードのインデントの深さも決めます。
+ * [[m:PrettyPrint#breakable]] を使って改行しても良い場所を指定します。
 
-Ʊ���Ρ�����ǸƤФ줿 breakable �ϡ����Ԥ���ʤ������Ʊ���˲��Ԥ��ޤ���
+同じノード内で呼ばれた breakable は、改行するならば全て同時に改行します。
 
  p2 = PrettyPrint.new('', 10)
  s = 'hello'

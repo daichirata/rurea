@@ -4,10 +4,10 @@ kind=defined
 
 --- matching_file?(spec, path) -> bool
 
-Ϳ����줿 spec �� path ���ޤޤ�Ƥ����硢�����֤��ޤ���
-�����Ǥʤ����ϵ����֤��ޤ���
+与えられた spec に path が含まれている場合、真を返します。
+そうでない場合は偽を返します。
 
-@param spec [[c:Gem::Specification]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param spec [[c:Gem::Specification]] のインスタンスを指定します。
 
-@param path õ���оݤΥѥ�����ꤷ�ޤ���
+@param path 探索対象のパスを指定します。
 

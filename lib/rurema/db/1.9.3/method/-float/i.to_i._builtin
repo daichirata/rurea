@@ -5,11 +5,11 @@ kind=defined
 --- to_i -> Integer
 --- truncate -> Integer
 
-¾®¿ôÅÀ°Ê²¼¤òÀÚ¤ê¼Î¤Æ¤ÆÃÍ¤òÀ°¿ô¤ËÊÑ´¹¤·¤Þ¤¹¡£
+å°æ•°ç‚¹ä»¥ä¸‹ã‚’åˆ‡ã‚Šæ¨ã¦ã¦å€¤ã‚’æ•´æ•°ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
-   p 3.14.to_i   #=> 3
+  3.14.to_i   #=> 3
 
 @see [[m:Numeric#round]], [[m:Numeric#ceil]], [[m:Numeric#floor]]
 

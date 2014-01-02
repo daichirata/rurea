@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- V_ERR_UNABLE_TO_GET_CRL -> Integer
-CRL �����դ���ʤ����Ȥ��̣���ޤ���
+CRL が見付からないことを意味します。
 
-[[m:OpenSSL::X509::Store#flags=]] �� CRL ������å����뤳�Ȥ�
-���ꤷ���ˤ⤫����餺��Ŭ�ڤ� CRL ��
-[[m:OpenSSL::X509::Store#add_crl]] ���ɲä��ʤ��ä�����
-���Υ��顼�������ޤ���
+[[m:OpenSSL::X509::Store#flags=]] で CRL をチェックすることを
+指定したにもかかわらず、適切な CRL を
+[[m:OpenSSL::X509::Store#add_crl]] で追加しなかった場合に
+このエラーが生じます。
 
-[[m:OpenSSL::X509::Store#error]] ��
-[[m:OpenSSL::X509::StoreContext#error]] �Υ��顼�����ɤȤ���
-�Ȥ��ޤ���
+[[m:OpenSSL::X509::Store#error]] や
+[[m:OpenSSL::X509::StoreContext#error]] のエラーコードとして
+使われます。
 

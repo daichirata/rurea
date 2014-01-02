@@ -6,6 +6,6 @@ library=webrick.log
 aliases=
 aliasof=
 
-�������뵡ǽ���󶡤��륯�饹�Ǥ���
-[[c:WEBrick::BasicLog]] �Ȥΰ㤤�ϥ����γƹԤ���Ƭ��
-���߻��郎��ư��������������Ǥ���
+ログを取る機能を提供するクラスです。
+[[c:WEBrick::BasicLog]] との違いはログの各行の先頭に
+現在時刻が自動で挿入される点です。

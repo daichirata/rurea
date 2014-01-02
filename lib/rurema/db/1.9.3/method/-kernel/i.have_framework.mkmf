@@ -5,20 +5,20 @@ kind=added
 --- have_framework(framework) -> bool
 --- have_framework(framework){ ... } -> bool
 
-�ե졼���� framework �������ƥ��¸�ߤ��뤫�ɤ����������ޤ���
+フレームワーク framework がシステムに存在するかどうか検査します。
 
-�ե졼���� framework �������ƥ��¸�ߤ�����ϡ��������Х��ѿ�
-[[m:$defs]] �� "-DHAVE_FRAMEWORK_framework" ���ɲä��������֤��ޤ�����
-�����������Х��ѿ� [[m:$LDFLAGS]] �� "-framework #{framework}" ���ɲä�
-�ޤ��� �ե졼���� framework �������ƥ��¸�ߤ��ʤ����ϡ������֤�
-�ޤ���
+フレームワーク framework がシステムに存在する場合は、グローバル変数
+[[m:$defs]] に "-DHAVE_FRAMEWORK_framework" を追加し、真を返します。ま
+た、グローバル変数 [[m:$LDFLAGS]] に "-framework #{framework}" を追加し
+ます。 フレームワーク framework がシステムに存在しない場合は、偽を返し
+ます。
 
-�㤨�С�
+例えば、
 
   have_framework('Ruby') # => true
 
-�Ǥ����硢HAVE_FRAMEWORK_RUBY �Ȥ����ץ�ץ����å��ޥ����򥳥�ѥ�����Ϥ��ޤ���
+である場合、HAVE_FRAMEWORK_RUBY というプリプロセッサマクロをコンパイラに渡します。
 
-@param framework �ե졼������̾������ꤷ�ޤ���
+@param framework フレームワークの名前を指定します。
 
 

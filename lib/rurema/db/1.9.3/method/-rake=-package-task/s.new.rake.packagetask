@@ -4,12 +4,12 @@ kind=defined
 
 --- new(name = nil, version = nil){|t| ... } -> Rake::PackageTask
 
-���Ȥ��������ƥ�������������ޤ���
+自身を初期化してタスクを定義します。
 
-�֥��å���Ϳ����줿���ϡ����Ȥ�֥��å��ѥ�᡼���Ȥ���
-�֥��å���ɾ�����ޤ���
+ブロックが与えられた場合は、自身をブロックパラメータとして
+ブロックを評価します。
 
-@param name �ѥå�����̾����ꤷ�ޤ���
+@param name パッケージ名を指定します。
 
-@param version �ѥå������ΥС���������ꤷ�ޤ���
-               ':noversion' �Ȥ�������ܥ����ꤹ��ȥС���������򥻥åȤ��ޤ���
+@param version パッケージのバージョンを指定します。
+               ':noversion' というシンボルを指定するとバージョン情報をセットしません。

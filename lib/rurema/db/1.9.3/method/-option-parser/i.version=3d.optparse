@@ -4,7 +4,7 @@ kind=defined
 
 --- version=(ver)
 
-�ץ������ΥС�������ʸ����ǻ��ꤷ�ޤ���
+プログラムのバージョンを文字列で指定します。
 
-@param ver �ץ������ΥС�������ʸ����ǻ��ꤷ�ޤ���
+@param ver プログラムのバージョンを文字列で指定します。
 

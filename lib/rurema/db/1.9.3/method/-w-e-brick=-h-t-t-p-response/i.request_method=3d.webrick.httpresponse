@@ -4,8 +4,8 @@ kind=defined
 
 --- request_method=(method)
 
-�ꥯ�����Ȥ� HTTP �᥽�åɤ򥻥åȤ��ޤ���
-�ǥե���Ȥ� nil �Ǥ���
+リクエストの HTTP メソッドをセットします。
+デフォルトは nil です。
 
-@param method �ꥯ�����Ȥ� HTTP �᥽�åɤ�ʸ����ǻ��ꤷ�ޤ���
+@param method リクエストの HTTP メソッドを文字列で指定します。
 

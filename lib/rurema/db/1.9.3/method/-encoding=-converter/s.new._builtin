@@ -5,14 +5,14 @@ kind=defined
 --- new(source_encoding, destination_encoding) -> Encoding::Converter
 --- new(source_encoding, destination_encoding, options) -> Encoding::Converter
 --- new(convpath) -> Encoding::Converter
-Encoding::Converter ¥ª¥Ö¥¸¥§¥¯¥È¤òºîÀ®¤·¤Ş¤¹¡£
+Encoding::Converter ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã¾ã™ã€‚
 
-@param source_encoding ÊÑ´¹¸µ¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-@param destination_encoding ÊÑ´¹Àè¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°
-@param options ÊÑ´¹¤Î¾ÜºÙ¤ò»ØÄê¤¹¤ëÄê¿ô¤ä¥Ï¥Ã¥·¥å
-@param convpath ÊÑ´¹·ĞÏ©¤ÎÇÛÎó
+@param source_encoding å¤‰æ›å…ƒã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+@param destination_encoding å¤‰æ›å…ˆã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°
+@param options å¤‰æ›ã®è©³ç´°ã‚’æŒ‡å®šã™ã‚‹å®šæ•°ã‚„ãƒãƒƒã‚·ãƒ¥
+@param convpath å¤‰æ›çµŒè·¯ã®é…åˆ—
 
-options ¤Ç¤Ï [[m:String#encode]] ¤Ç¤Î¥Ï¥Ã¥·¥å¥ª¥×¥·¥ç¥ó¤Ë²Ã¤¨¤Æ¡¢°Ê²¼¤ÎÄê¿ô¤¬ÍøÍÑ²ÄÇ½¤Ç¤¹¡£
+options ã§ã¯ [[m:String#encode]] ã§ã®ãƒãƒƒã‚·ãƒ¥ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã«åŠ ãˆã¦ã€ä»¥ä¸‹ã®å®šæ•°ãŒåˆ©ç”¨å¯èƒ½ã§ã™ã€‚
 
   * Encoding::Converter::INVALID_REPLACE
   * Encoding::Converter::UNDEF_REPLACE

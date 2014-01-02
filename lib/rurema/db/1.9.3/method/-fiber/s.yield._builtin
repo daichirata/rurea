@@ -4,16 +4,16 @@ kind=defined
 
 --- yield(*arg = nil)   -> object
 
-���ߤΥե����С��οƤ˥���ƥ����Ȥ��ڤ��ؤ��ޤ���
+現在のファイバーの親にコンテキストを切り替えます。
 
-����ƥ����Ȥ��ڤ��ؤ��κݤ� [[m:Fiber#resume]] ��Ϳ����줿������ yield �᥽�åɤ��֤��ޤ���
+コンテキストの切り替えの際に [[m:Fiber#resume]] に与えられた引数を yield メソッドは返します。
 
-@param arg ���ߤΥե����С��οƤ��Ϥ��������֥������Ȥ���ꤷ�ޤ���
+@param arg 現在のファイバーの親に渡したいオブジェクトを指定します。
 
-@raise FiberError Fiber �ǤΥ롼�ȥե����С��ǸƤФ줿����ȯ�����ޤ���
- 
+@raise FiberError Fiber でのルートファイバーで呼ばれた場合に発生します。
 
-��:
+
+例:
 
  a = nil
  f = Fiber.new do

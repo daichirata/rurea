@@ -1,29 +1,30 @@
 requires=
 classes=
-methods=Kernel/i.xsystem.mkmf,Kernel/i.xpopen.mkmf,Kernel/i.log_src.mkmf,Kernel/i.create_tmpsrc.mkmf,Kernel/i.have_devel=3f.mkmf,Kernel/i.try_do.mkmf,Kernel/i.link_command.mkmf,Kernel/i.cc_command.mkmf,Kernel/i.cpp_command.mkmf,Kernel/i.libpathflag.mkmf,Kernel/i.with_werror.mkmf,Kernel/i.rm_f.mkmf,Kernel/i.rm_rf.mkmf,Kernel/i.modified=3f.mkmf,Kernel/i.merge_libs.mkmf,Kernel/i.try_link.mkmf,Kernel/i.try_cpp.mkmf,Kernel/i.egrep_cpp.mkmf,Kernel/i.try_run.mkmf,Kernel/i.install_rb.mkmf,Kernel/i.have_macro.mkmf,Kernel/i.have_library.mkmf,Kernel/i.find_library.mkmf,Kernel/i.find_header.mkmf,Kernel/i.have_func.mkmf,Kernel/i.have_header.mkmf,Kernel/i.have_struct_member.mkmf,Kernel/i.have_type.mkmf,Kernel/i.find_type.mkmf,Kernel/i.have_var.mkmf,Kernel/i.have_framework.mkmf,Kernel/i.check_sizeof.mkmf,Kernel/i.check_signedness.mkmf,Kernel/i.convertible_int.mkmf,Kernel/i.with_config.mkmf,Kernel/i.enable_config.mkmf,Kernel/i.create_header.mkmf,Kernel/i.dir_config.mkmf,Kernel/i.create_makefile.mkmf,Kernel/i.find_executable.mkmf,Kernel/i.dummy_makefile.mkmf,Kernel/i.depend_rules.mkmf,Kernel/i.try_compile.mkmf,Kernel/i.try_static_assert.mkmf,Kernel/i.try_constant.mkmf,Kernel/i.try_func.mkmf,Kernel/i.try_var.mkmf,Kernel/i.try_type.mkmf,Kernel/i.install_files.mkmf,Kernel/i.message.mkmf,Kernel/c.CONFIG.mkmf,Kernel/v.srcdir.mkmf,Kernel/v.libdir.mkmf,Kernel/v.archdir.mkmf,Kernel/v.sitelibdir.mkmf,Kernel/v.sitearchdir.mkmf,Kernel/v.hdrdir.mkmf,Kernel/v.topdir.mkmf,Kernel/v.defs.mkmf,Kernel/v.libs.mkmf,Kernel/v.CFLAGS.mkmf,Kernel/v.LDFLAGS.mkmf
+methods=Kernel/i.xsystem.mkmf,Kernel/i.xpopen.mkmf,Kernel/i.log_src.mkmf,Kernel/i.create_tmpsrc.mkmf,Kernel/i.have_devel=3f.mkmf,Kernel/i.try_do.mkmf,Kernel/i.link_command.mkmf,Kernel/i.cc_command.mkmf,Kernel/i.cpp_command.mkmf,Kernel/i.libpathflag.mkmf,Kernel/i.with_werror.mkmf,Kernel/i.rm_f.mkmf,Kernel/i.rm_rf.mkmf,Kernel/i.modified=3f.mkmf,Kernel/i.merge_libs.mkmf,Kernel/i.try_link.mkmf,Kernel/i.try_cpp.mkmf,Kernel/i.egrep_cpp.mkmf,Kernel/i.try_run.mkmf,Kernel/i.install_rb.mkmf,Kernel/i.have_macro.mkmf,Kernel/i.have_library.mkmf,Kernel/i.find_library.mkmf,Kernel/i.find_header.mkmf,Kernel/i.have_func.mkmf,Kernel/i.have_header.mkmf,Kernel/i.have_struct_member.mkmf,Kernel/i.have_type.mkmf,Kernel/i.find_type.mkmf,Kernel/i.have_var.mkmf,Kernel/i.have_framework.mkmf,Kernel/i.check_sizeof.mkmf,Kernel/i.check_signedness.mkmf,Kernel/i.convertible_int.mkmf,Kernel/i.arg_config.mkmf,Kernel/i.with_config.mkmf,Kernel/i.enable_config.mkmf,Kernel/i.create_header.mkmf,Kernel/i.dir_config.mkmf,Kernel/i.create_makefile.mkmf,Kernel/i.find_executable.mkmf,Kernel/i.dummy_makefile.mkmf,Kernel/i.depend_rules.mkmf,Kernel/i.try_compile.mkmf,Kernel/i.try_static_assert.mkmf,Kernel/i.try_constant.mkmf,Kernel/i.try_func.mkmf,Kernel/i.try_var.mkmf,Kernel/i.try_type.mkmf,Kernel/i.install_files.mkmf,Kernel/i.message.mkmf,Kernel/c.CONFIG.mkmf,Kernel/v.srcdir.mkmf,Kernel/v.libdir.mkmf,Kernel/v.archdir.mkmf,Kernel/v.sitelibdir.mkmf,Kernel/v.sitearchdir.mkmf,Kernel/v.hdrdir.mkmf,Kernel/v.topdir.mkmf,Kernel/v.defs.mkmf,Kernel/v.libs.mkmf,Kernel/v.CFLAGS.mkmf,Kernel/v.LDFLAGS.mkmf
 sublibraries=
 is_sublibrary=false
+category=Development
 
-Ruby д╬│╚─еещеде╓ещеъд╬д┐дсд╬ Makefile дЄ║ю└од╣дыещеде╓ещеъд╟д╣бг
+Ruby уБоцЛбх╝╡уГйуВдуГЦуГйуГкуБоуБЯуВБуБо Makefile уВТф╜ЬцИРуБЩуВЛуГйуВдуГЦуГйуГкуБзуБЩуАВ
 
-д│д╬ещеде╓ещеъд╧─╠╛ябвextconf.rb д╚дддж╠╛┴░д╬ ruby е╣епеъе╫е╚длдщ require д╡дьд▐д╣бг
-д│д╬ extconf.rb дЄ╝┬╣╘д╖д╞ Makefile дЄ║ю└од╣дыд╬дм┤╖╜мд╟д╣бг
+уБУуБоуГйуВдуГЦуГйуГкуБпщАЪх╕╕уАБextconf.rb уБиуБДуБЖхРНхЙНуБо ruby уВ╣уВпуГкуГЧуГИуБЛуВЙ require уБХуВМуБ╛уБЩуАВ
+уБУуБо extconf.rb уВТхоЯшбМуБЧуБж Makefile уВТф╜ЬцИРуБЩуВЛуБоуБМцЕгч┐ТуБзуБЩуАВ
 
-extconf.rb д╬╜ёдндлд┐д╦д─ддд╞д╧бв
-Ruby д╬евб╝еледе╓д╦┤▐д▐дьды README.EXT (╞№╦▄╕ь╚╟д╧ README.EXT.ja)
-дт╗▓╛╚д╖д╞дпд└д╡ддбг
+extconf.rb уБоцЫ╕уБНуБЛуБЯуБлуБдуБДуБжуБпуАБ
+Ruby уБоуВвуГ╝уВлуВдуГЦуБлхРлуБ╛уВМуВЛ README.EXT (цЧецЬмшкЮчЙИуБп README.EXT.ja)
+уВВхПВчЕзуБЧуБжуБПуБауБХуБДуАВ
 
-д│д╬ещеде╓ещеъд╟д╧ extconf.rb дЄ╡н╜╥д╣дыд╬д╦═н═╤д╩есе╜е├е╔дЄ─ъ╡┴д╖д╞ддд▐д╣бг
-е╪е├е└е╒ебедеыд╬┬╕║▀е┴езе├епбвещеде╓ещеъд╬┬╕║▀е┴езе├епд╩д╔бв
-е╖е╣е╞ер┤╓д╬║╣░█дЄ─┤д┘е╖е╣е╞ерд╦┼мд╖д┐ Makefile дЄ└╕└од╣дыд┐дсд╦
-д│дьдщд╬есе╜е├е╔дм╔м═╫д╚д╩дъд▐д╣бг
+уБУуБоуГйуВдуГЦуГйуГкуБзуБп extconf.rb уВТшиШш┐░уБЩуВЛуБоуБлцЬЙчФиуБкуГбуВ╜уГГуГЙуВТхоЪч╛йуБЧуБжуБДуБ╛уБЩуАВ
+уГШуГГуГАуГХуВбуВдуГлуБохнШхЬиуГБуВзуГГуВпуАБуГйуВдуГЦуГйуГкуБохнШхЬиуГБуВзуГГуВпуБкуБйуАБ
+уВ╖уВ╣уГЖуГащЦУуБох╖очХ░уВТшк┐уБ╣уВ╖уВ╣уГЖуГауБлщБйуБЧуБЯ Makefile уВТчФЯцИРуБЩуВЛуБЯуВБуБл
+уБУуВМуВЙуБоуГбуВ╜уГГуГЙуБМх┐ЕшжБуБиуБкуВКуБ╛уБЩуАВ
 
-=== ╗╚дд╩¤
+=== ф╜┐уБДцЦ╣
 
-▓═╢їд╬│╚─еещеде╓ещеъ foo.so дЄ║ю└од╣дыд│д╚дЄ╣═дид▐д╣бг
-д│д╬│╚─еещеде╓ещеъдЄ║ю└од╣дыд┐дсд╦д╧бв
-е╪е├е└е╒ебедеы bar.h д╚ещеде╓ещеъ libbar.a д╬┤╪┐Ї baz() дм╔м═╫д└д╚д╖д▐д╣бг
-д│д╬д┐дсд╬ extconf.rb д╧░╩▓╝д╬дшджд╦╜ёднд▐д╣бг
+цЮ╢чй║уБоцЛбх╝╡уГйуВдуГЦуГйуГк foo.so уВТф╜ЬцИРуБЩуВЛуБУуБиуВТшАГуБИуБ╛уБЩуАВ
+уБУуБоцЛбх╝╡уГйуВдуГЦуГйуГкуВТф╜ЬцИРуБЩуВЛуБЯуВБуБлуБпуАБ
+уГШуГГуГАуГХуВбуВдуГл bar.h уБиуГйуВдуГЦуГйуГк libbar.a уБощЦвцХ░ baz() уБМх┐ЕшжБуБауБиуБЧуБ╛уБЩуАВ
+уБУуБоуБЯуВБуБо extconf.rb уБпф╗еф╕ЛуБоуВИуБЖуБлцЫ╕уБНуБ╛уБЩуАВ
 
   require 'mkmf'
 
@@ -32,126 +33,126 @@ Ruby д╬евб╝еледе╓д╦┤▐д▐дьды README.EXT (╞№╦▄╕ь╚╟д╧ README.EXT.ja)
     create_makefile('foo')
   end
 
-│╚─еещеде╓ещеъ foo.so дЄ║ю└обведеєе╣е╚б╝еыд╣дыд╦д╧░╩▓╝д╬дшджд╦д╖д▐д╣бг
+цЛбх╝╡уГйуВдуГЦуГйуГк foo.so уВТф╜ЬцИРуАБуВдуГ│уВ╣уГИуГ╝уГлуБЩуВЛуБлуБпф╗еф╕ЛуБоуВИуБЖуБлуБЧуБ╛уБЩуАВ
 
   $ ruby extconf.rb
   $ make
   $ make site-install
 
-foo.so д╬ extconf.rb д╟д╧ dir_config('bar') дЄ╝┬╣╘д╖д╞дддыд╬д╟бв
-ецб╝е╢д╧░╩▓╝д╬дшджд╦е│е▐еєе╔ещедеєеке╫е╖ечеє --with-bar-dir
-д╩д╔дЄ╗╚д├д╞бве╪е├е└е╒ебедеыд╬е╤е╣дфещеде╓ещеъд╬е╤е╣дЄ╗╪─ъд╟днд▐д╣бг
+foo.so уБо extconf.rb уБзуБп dir_config('bar') уВТхоЯшбМуБЧуБжуБДуВЛуБоуБзуАБ
+уГжуГ╝уВ╢уБпф╗еф╕ЛуБоуВИуБЖуБлуВ│уГЮуГ│уГЙуГйуВдуГ│уВкуГЧуВ╖уГзуГ│ --with-bar-dir
+уБкуБйуВТф╜┐уБгуБжуАБуГШуГГуГАуГХуВбуВдуГлуБоуГСуВ╣уВДуГйуВдуГЦуГйуГкуБоуГСуВ╣уВТцМЗхоЪуБзуБНуБ╛уБЩуАВ
 
   $ ruby extconf.rb --with-bar-include=/usr/local/include \
                     --with-bar-lib=/usr/local/lib
 
-  д▐д┐д╧
+  уБ╛уБЯуБп
 
   $ ruby extconf.rb --with-bar-dir=/usr/local
 
-dir_config ┤╪┐Їд╬╛▄║┘д╦д─ддд╞д╧
-[[m:Kernel#dir_config]] дЄ╗▓╛╚д╖д╞дпд└д╡ддбг
+dir_config щЦвцХ░уБошй│ч┤░уБлуБдуБДуБжуБп
+[[m:Kernel#dir_config]] уВТхПВчЕзуБЧуБжуБПуБауБХуБДуАВ
 
-=== configure еке╫е╖ечеє
+=== configure уВкуГЧуВ╖уГзуГ│
 
-configure еке╫е╖ечеєд╚д╧ Ruby едеєе┐е╫еъе┐д╬е│еєе╤едеы╗■д╦╗╪─ъд╡дьд┐
-configure е╣епеъе╫е╚д╬еке╫е╖ечеєбв
-д▐д┐д╧ extconf.rb ╝┬╣╘╗■д╬еке╫е╖ечеєд╬д│д╚д╟д╣бг
+configure уВкуГЧуВ╖уГзуГ│уБиуБп Ruby уВдуГ│уВ┐уГЧуГкуВ┐уБоуВ│уГ│уГСуВдуГлцЩВуБлцМЗхоЪуБХуВМуБЯ
+configure уВ╣уВпуГкуГЧуГИуБоуВкуГЧуВ╖уГзуГ│уАБ
+уБ╛уБЯуБп extconf.rb хоЯшбМцЩВуБоуВкуГЧуВ╖уГзуГ│уБоуБУуБиуБзуБЩуАВ
 
-extconf.rb д╬║ю└о╝╘д╧╟д░╒д╬еке╫е╖ечеєдЄ─ъ╡┴д╟днд▐д╣бг
-[[m:Kernel#arg_config]] дт╗▓╛╚д╖д╞дпд└д╡ддбг
+extconf.rb уБоф╜ЬцИРшАЕуБпф╗╗цДПуБоуВкуГЧуВ╖уГзуГ│уВТхоЪч╛йуБзуБНуБ╛уБЩуАВ
+[[m:Kernel#arg_config]] уВВхПВчЕзуБЧуБжуБПуБауБХуБДуАВ
 
-д▐д┐бв░╩▓╝д╬еке╫е╖ечеєдме╟е╒ейеые╚д╟═°═╤▓─╟╜д╟д╣бг
+уБ╛уБЯуАБф╗еф╕ЛуБоуВкуГЧуВ╖уГзуГ│уБМуГЗуГХуВйуГлуГИуБзхИйчФихПпшГ╜уБзуБЩуАВ
 
 : --with-opt-include=DIR
-    е╪е├е└е╒ебедеыдЄ├╡║ўд╣дые╟егеьепе╚еъ DIR дЄ─╔▓├д╖д▐д╣бг
+    уГШуГГуГАуГХуВбуВдуГлуВТцОвч┤вуБЩуВЛуГЗуВгуГмуВпуГИуГк DIR уВТш┐╜хКауБЧуБ╛уБЩуАВ
 
 : --with-opt-lib=DIR
-    ещеде╓ещеъе╒ебедеыдЄ├╡║ўд╣дые╟егеьепе╚еъ DIR дЄ─╔▓├д╖д▐д╣бг
+    уГйуВдуГЦуГйуГкуГХуВбуВдуГлуВТцОвч┤вуБЩуВЛуГЗуВгуГмуВпуГИуГк DIR уВТш┐╜хКауБЧуБ╛уБЩуАВ
 
 : --with-opt-dir=DIR
 
-    е╪е├е└е╒ебедеыбвещеде╓ещеъе╒ебедеыдЄ├╡║ўд╣дые╟егеьепе╚еъ
-    DIR/includeбвDIR/lib дЄд╜дьд╛дь─╔▓├д╖д▐д╣бг
+    уГШуГГуГАуГХуВбуВдуГлуАБуГйуВдуГЦуГйуГкуГХуВбуВдуГлуВТцОвч┤вуБЩуВЛуГЗуВгуГмуВпуГИуГк
+    DIR/includeуАБDIR/lib уВТуБЭуВМуБЮуВМш┐╜хКауБЧуБ╛уБЩуАВ
 
 : --with-TARGET-include=DIR
 
-    е╪е├е└е╒ебедеыдЄ├╡║ўд╣дые╟егеьепе╚еъ DIR дЄ─╔▓├д╖д▐д╣бг
+    уГШуГГуГАуГХуВбуВдуГлуВТцОвч┤вуБЩуВЛуГЗуВгуГмуВпуГИуГк DIR уВТш┐╜хКауБЧуБ╛уБЩуАВ
 
-    extconf.rb д╬├цд╟ dir_config(TARGET)
-    дЄ╝┬╣╘д╖д╞дддьд╨д│д╬еке╫е╖ечеєдЄ╗╪─ъд╟днд▐д╣бг
+    extconf.rb уБоф╕нуБз dir_config(TARGET)
+    уВТхоЯшбМуБЧуБжуБДуВМуБ░уБУуБоуВкуГЧуВ╖уГзуГ│уВТцМЗхоЪуБзуБНуБ╛уБЩуАВ
 
 : --with-TARGET-lib=DIR
 
-    ещеде╓ещеъдЄ├╡║ўд╣дые╟егеьепе╚еъ DIR дЄ─╔▓├д╖д▐д╣бг
+    уГйуВдуГЦуГйуГкуВТцОвч┤вуБЩуВЛуГЗуВгуГмуВпуГИуГк DIR уВТш┐╜хКауБЧуБ╛уБЩуАВ
 
-    extconf.rb д╬├цд╟ dir_config(TARGET)
-    дЄ╝┬╣╘д╖д╞дддьд╨д│д╬еке╫е╖ечеєдЄ╗╪─ъд╟днд▐д╣бг
+    extconf.rb уБоф╕нуБз dir_config(TARGET)
+    уВТхоЯшбМуБЧуБжуБДуВМуБ░уБУуБоуВкуГЧуВ╖уГзуГ│уВТцМЗхоЪуБзуБНуБ╛уБЩуАВ
 
 : --with-TARGET-dir=DIR
 
-    е╪е├е└е╒ебедеыбвещеде╓ещеъе╒ебедеыдЄ├╡║ўд╣дые╟егеьепе╚еъ
-    DIR/includeбвDIR/lib дЄд╜дьд╛дь─╔▓├д╖д▐д╣бг
+    уГШуГГуГАуГХуВбуВдуГлуАБуГйуВдуГЦуГйуГкуГХуВбуВдуГлуВТцОвч┤вуБЩуВЛуГЗуВгуГмуВпуГИуГк
+    DIR/includeуАБDIR/lib уВТуБЭуВМуБЮуВМш┐╜хКауБЧуБ╛уБЩуАВ
 
-    extconf.rb д╬├цд╟ dir_config(TARGET)
-    дЄ╝┬╣╘д╖д╞дддьд╨д│д╬еке╫е╖ечеєдЄ╗╪─ъд╟днд▐д╣бг
+    extconf.rb уБоф╕нуБз dir_config(TARGET)
+    уВТхоЯшбМуБЧуБжуБДуВМуБ░уБУуБоуВкуГЧуВ╖уГзуГ│уВТцМЗхоЪуБзуБНуБ╛уБЩуАВ
 
-=== depend е╒ебедеы
+=== depend уГХуВбуВдуГл
 
-елеьеєе╚е╟егеьепе╚еъд╦ depend д╚дддж╠╛┴░д╬е╒ебедеыдмдвды╛ь╣чбв
-└╕└од╡дьды Makefile д╬║╟╕хд╦ depend е╒ебедеыд╬╞т═╞дм─╔▓├д╡дьд▐д╣бг
+уВлуГмуГ│уГИуГЗуВгуГмуВпуГИуГкуБл depend уБиуБДуБЖхРНхЙНуБоуГХуВбуВдуГлуБМуБВуВЛха┤хРИуАБ
+чФЯцИРуБХуВМуВЛ Makefile уБоцЬАх╛МуБл depend уГХуВбуВдуГлуБохЖЕхо╣уБМш┐╜хКауБХуВМуБ╛уБЩуАВ
 
-depend е╒ебедеыд╧е╜б╝е╣е╒ебедеыд╬░═┬╕┤╪╖╕дЄ╡н╜╥д╣дыд┐дсд╦╗╚ддд▐д╣бг
-╬удид╨│╚─еещеде╓ещеъд╬е╜б╝е╣е│б╝е╔ foo.c дм foo.h дЄедеєепеыб╝е╔д╖д╞ддды╛ь╣чбв
-foo.h дм╣╣┐╖д╡дьд┐д╚днд╦дт foo.c дЄ║╞е│еєе╤едеыд╖д┐ддд╟д╖дчджбг
-д│д╬дшджд╩░═┬╕┤╪╖╕дЄ╡н╜╥д╣дыд╦д╧ depend е╒ебедеыд╦░╩▓╝д╬ 1 ╣╘дЄ╜ёднд▐д╣бг
+depend уГХуВбуВдуГлуБпуВ╜уГ╝уВ╣уГХуВбуВдуГлуБоф╛ЭхнШщЦвф┐ВуВТшиШш┐░уБЩуВЛуБЯуВБуБлф╜┐уБДуБ╛уБЩуАВ
+ф╛ЛуБИуБ░цЛбх╝╡уГйуВдуГЦуГйуГкуБоуВ╜уГ╝уВ╣уВ│уГ╝уГЙ foo.c уБМ foo.h уВТуВдуГ│уВпуГлуГ╝уГЙуБЧуБжуБДуВЛха┤хРИуАБ
+foo.h уБМцЫ┤цЦ░уБХуВМуБЯуБиуБНуБлуВВ foo.c уВТхЖНуВ│уГ│уГСуВдуГлуБЧуБЯуБДуБзуБЧуВЗуБЖуАВ
+уБУуБоуВИуБЖуБкф╛ЭхнШщЦвф┐ВуВТшиШш┐░уБЩуВЛуБлуБп depend уГХуВбуВдуГлуБлф╗еф╕ЛуБо 1 шбМуВТцЫ╕уБНуБ╛уБЩуАВ
 
   foo.o: foo.c foo.h
 
-д│д╬дшджд╦╜ёдпд╚бвfoo.o дм foo.c д╚ foo.h д╦░═┬╕д╖д╞дддыд│д╚дЄ╝ид╖д▐д╣бг
-д─д▐дъбвfoo.c дл foo.h д╬д╔д┴дщдлдм╣╣┐╖д╡дьд┐╛ь╣чд╦
-foo.o дмеъе│еєе╤едеыд╡дьдыдшджд╦д╩дъд▐д╣бг
+уБУуБоуВИуБЖуБлцЫ╕уБПуБиуАБfoo.o уБМ foo.c уБи foo.h уБлф╛ЭхнШуБЧуБжуБДуВЛуБУуБиуВТчд║уБЧуБ╛уБЩуАВ
+уБдуБ╛уВКуАБfoo.c уБЛ foo.h уБоуБйуБбуВЙуБЛуБМцЫ┤цЦ░уБХуВМуБЯха┤хРИуБл
+foo.o уБМуГкуВ│уГ│уГСуВдуГлуБХуВМуВЛуВИуБЖуБлуБкуВКуБ╛уБЩуАВ
 
-C е│еєе╤едещд╦дшд├д╞д╧бвд│д╬дшджд╩╡н╜╥дЄ╝л╞░└╕└од╟днд▐д╣бг
-░ь╚╠д╦бвд│д╬д┐дсд╬еке╫е╖ечеєд╧б╓-Mб╫д╟д╣бг
-б╓-Mб╫еке╫е╖ечеєдЄ╗¤д─ C е│еєе╤едещдЄ╗╚д├д╞ддды╛ь╣чд╧бв
-░╩▓╝д╬е│е▐еєе╔дЄ╝┬╣╘д╣дыд└д▒д╟┼м└┌д╩ depend дм└╕└од╟днд▐д╣бг
+C уВ│уГ│уГСуВдуГйуБлуВИуБгуБжуБпуАБуБУуБоуВИуБЖуБкшиШш┐░уВТшЗкхЛХчФЯцИРуБзуБНуБ╛уБЩуАВ
+ф╕АшИмуБлуАБуБУуБоуБЯуВБуБоуВкуГЧуВ╖уГзуГ│уБпуАМ-MуАНуБзуБЩуАВ
+уАМ-MуАНуВкуГЧуВ╖уГзуГ│уВТцМБуБд C уВ│уГ│уГСуВдуГйуВТф╜┐уБгуБжуБДуВЛха┤хРИуБпуАБ
+ф╗еф╕ЛуБоуВ│уГЮуГ│уГЙуВТхоЯшбМуБЩуВЛуБауБСуБзщБйхИЗуБк depend уБМчФЯцИРуБзуБНуБ╛уБЩуАВ
 
   $ cc -M *.c > depend
 
-gcc д╦д╧бв-M еке╫е╖ечеєдЄ▓■┴▒д╖д┐ -MM д╚ддджеке╫е╖ечеєдтдвдъд▐д╣бг
-д│д╬еке╫е╖ечеєд╧бв─╠╛я╣╣┐╖д╣дыд│д╚д╬д╩дд stdio.h д╩д╔бв
-е╖е╣е╞ерд╬е╪е├е└е╒ебедеыдЄ░═┬╕┤╪╖╕д╦┤▐дсд▐д╗дєбг
-д│д╬ -MM еке╫е╖ечеєд╟д╧бвб╓#include <...>б╫д╬╖┴╝░д╟╗▓╛╚д╡дьды
-е╪е├е└е╒ебедеыдЄе╖е╣е╞ерд╬е╪е├е└е╒ебедеыд╚д▀д╩д╖д╞дддыдшджд╟д╣бг
+gcc уБлуБпуАБ-M уВкуГЧуВ╖уГзуГ│уВТцФ╣хЦДуБЧуБЯ -MM уБиуБДуБЖуВкуГЧуВ╖уГзуГ│уВВуБВуВКуБ╛уБЩуАВ
+уБУуБоуВкуГЧуВ╖уГзуГ│уБпуАБщАЪх╕╕цЫ┤цЦ░уБЩуВЛуБУуБиуБоуБкуБД stdio.h уБкуБйуАБ
+уВ╖уВ╣уГЖуГауБоуГШуГГуГАуГХуВбуВдуГлуВТф╛ЭхнШщЦвф┐ВуБлхРлуВБуБ╛уБЫуВУуАВ
+уБУуБо -MM уВкуГЧуВ╖уГзуГ│уБзуБпуАБуАМ#include <...>уАНуБох╜вх╝ПуБзхПВчЕзуБХуВМуВЛ
+уГШуГГуГАуГХуВбуВдуГлуВТуВ╖уВ╣уГЖуГауБоуГШуГГуГАуГХуВбуВдуГлуБиуБ┐уБкуБЧуБжуБДуВЛуВИуБЖуБзуБЩуАВ
 
-gcc д╬ -MM еке╫е╖ечеєдЄ╗╚дж╛ь╣чд╧бв
-░╩▓╝д╬е│е▐еєе╔дЄ╝┬╣╘д╣дьд╨┼м└┌д╩ depend дм└╕└од╟днд▐д╣бг
+gcc уБо -MM уВкуГЧуВ╖уГзуГ│уВТф╜┐уБЖха┤хРИуБпуАБ
+ф╗еф╕ЛуБоуВ│уГЮуГ│уГЙуВТхоЯшбМуБЩуВМуБ░щБйхИЗуБк depend уБМчФЯцИРуБзуБНуБ╛уБЩуАВ
 
   $ gcc -MM *.c > depend
 
-д╩дкбвdepend е╒ебедеыдЄ░═┬╕┤╪╖╕д╬╡н╜╥░╩│░д╦╗╚джд┘днд╟д╧двдъд▐д╗дєбг
-mkmf.rb дм depend е╒ебедеыдЄ Makefile д╦╧в╖ыд╣дыд╚днд╦бв
-д╜д╬╞т═╞дЄ▓├╣йд╣ды╛ь╣чдмдвдыдлдщд╟д╣бг
+уБкуБКуАБdepend уГХуВбуВдуГлуВТф╛ЭхнШщЦвф┐ВуБошиШш┐░ф╗ехдЦуБлф╜┐уБЖуБ╣уБНуБзуБпуБВуВКуБ╛уБЫуВУуАВ
+mkmf.rb уБМ depend уГХуВбуВдуГлуВТ Makefile уБлщАгч╡РуБЩуВЛуБиуБНуБлуАБ
+уБЭуБохЖЕхо╣уВТхКах╖еуБЩуВЛха┤хРИуБМуБВуВЛуБЛуВЙуБзуБЩуАВ
 
-=== extconf.rb дм└╕└од╣ды make е┐б╝е▓е├е╚
+=== extconf.rb уБМчФЯцИРуБЩуВЛ make уВ┐уГ╝уВ▓уГГуГИ
 
-extconf.rb дм└╕└од╣ды Makefile д╦д╧░╩▓╝д╬е┐б╝е▓е├е╚дм─ъ╡┴д╡дьд╞ддд▐д╣бг
+extconf.rb уБМчФЯцИРуБЩуВЛ Makefile уБлуБпф╗еф╕ЛуБоуВ┐уГ╝уВ▓уГГуГИуБМхоЪч╛йуБХуВМуБжуБДуБ╛уБЩуАВ
 
 : all
-    │╚─еещеде╓ещеъдЄ║ю└од╖д▐д╣бг
+    цЛбх╝╡уГйуВдуГЦуГйуГкуВТф╜ЬцИРуБЧуБ╛уБЩуАВ
 
 : clean
-    ║ю└од╖д┐│╚─еещеде╓ещеъбвеке╓е╕езепе╚е╒ебедеыд╩д╔дЄ║я╜№д╖д▐д╣бг
+    ф╜ЬцИРуБЧуБЯцЛбх╝╡уГйуВдуГЦуГйуГкуАБуВкуГЦуВ╕уВзуВпуГИуГХуВбуВдуГлуБкуБйуВТхЙКщЩдуБЧуБ╛уБЩуАВ
 
 : distclean
 : realclean
-    clean е┐б╝е▓е├е╚дм║я╜№д╣дые╒ебедеыд╦▓├дид╞бв
-    Makefile, extconf.h, core, ruby д╩д╔дт║я╜№д╖д▐д╣бг
+    clean уВ┐уГ╝уВ▓уГГуГИуБМхЙКщЩдуБЩуВЛуГХуВбуВдуГлуБлхКауБИуБжуАБ
+    Makefile, extconf.h, core, ruby уБкуБйуВВхЙКщЩдуБЧуБ╛уБЩуАВ
 
 : install
 : site-install
-    ║ю└од╖д┐│╚─еещеде╓ещеъдЄ $sitearchdir д╦едеєе╣е╚б╝еыд╖д▐д╣бг
-    елеьеєе╚е╟егеьепе╚еъд╦е╟егеьепе╚еъ lib дмдвдьд╨
-    д╜д╬╟█▓╝д╬ ruby е╣епеъе╫е╚ (*.rb е╒ебедеы) дЄбв
-    е╟егеьепе╚еъ│м┴╪дЄ╩▌д├д┐д▐д▐ $sitelibdir д╦едеєе╣е╚б╝еыд╖д▐д╣бг
+    ф╜ЬцИРуБЧуБЯцЛбх╝╡уГйуВдуГЦуГйуГкуВТ $sitearchdir уБлуВдуГ│уВ╣уГИуГ╝уГлуБЧуБ╛уБЩуАВ
+    уВлуГмуГ│уГИуГЗуВгуГмуВпуГИуГкуБлуГЗуВгуГмуВпуГИуГк lib уБМуБВуВМуБ░
+    уБЭуБощЕНф╕ЛуБо ruby уВ╣уВпуГкуГЧуГИ (*.rb уГХуВбуВдуГл) уВТуАБ
+    уГЗуВгуГмуВпуГИуГкщЪОх▒дуВТф┐ЭуБгуБЯуБ╛уБ╛ $sitelibdir уБлуВдуГ│уВ╣уГИуГ╝уГлуБЧуБ╛уБЩуАВ

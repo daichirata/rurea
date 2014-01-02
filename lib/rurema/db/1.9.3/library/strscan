@@ -3,5 +3,6 @@ classes=StringScanner,StringScanner=Error
 methods=
 sublibraries=
 is_sublibrary=false
+category=Text
 
-strscan ¤Ï Ê¸»úÎó¤ò¹âÂ®¤Ë¥¹¥­¥ã¥ó¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+strscan ã¯ æ–‡å­—åˆ—ã‚’é«˜é€Ÿã«ã‚¹ã‚­ãƒ£ãƒ³ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

@@ -6,5 +6,5 @@ library=net.pop
 aliases=Net=APOPSession
 aliasof=
 
-���Υ��饹�ǤϿ������᥽�åɤ�Ƴ�����Ƥ��ޤ���
-ǧ�������� APOP ���Ѥ������Ǥ���
+このクラスでは新しいメソッドは導入していません。
+認証方式が APOP に変わるだけです。

@@ -4,9 +4,9 @@ kind=defined
 
 --- delete_if {|key, val| ... } -> YAML::DBM
 
-�֥��å���ɾ�������ͤ����Ǥ���г����������Ǥ������ޤ���
+ブロックを評価した値が真であれば該当する要素を削除します。
 
-���Ȥ��֤��ޤ������Υ᥽�åɤ� self ���˲�Ū���ѹ����ޤ���
+自身を返します。このメソッドは self を破壊的に変更します。
 
-@raise DBMError ���Ǥκ���˼��Ԥ�������ȯ�����ޤ���
+@raise DBMError 要素の削除に失敗した場合に発生します。
 

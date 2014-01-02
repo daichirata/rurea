@@ -3,5 +3,6 @@ classes=TkMessage
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

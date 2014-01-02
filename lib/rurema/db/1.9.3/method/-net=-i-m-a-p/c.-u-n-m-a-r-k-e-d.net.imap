@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- UNMARKED -> Symbol
-��:Unmarked�פȤ�������ܥ���֤��ޤ���
+「:Unmarked」というシンボルを返します。
 
-�᡼��ܥå�����
-���դ����Ƥ��ʤ����Ȥ��̣���ޤ���
-�᡼��ܥå����˿������᡼�뤬�Ϥ��Ƥ��ʤ����Ȥ��̣���ޤ���
+メールボックスが
+印付けられていないことを意味します。
+メールボックスに新しいメールが届いていないことを意味します。
 
-LIST������°��
-([[m:Net::IMAP#list]]��[[m:Net::IMAP::MailboxList#attr]])
-�Ȥ����Ѥ����ޤ���
+LIST応答の属性
+([[m:Net::IMAP#list]]、[[m:Net::IMAP::MailboxList#attr]])
+として用いられます。
 
-�ܤ����� [[RFC:2060]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] を参照してください。
 

@@ -5,10 +5,10 @@ kind=defined
 --- proxy_port -> Integer|nil
 --- proxyport -> Integer|nil
 
-�ץ�������ͳ����³���� HTTP ���֥������Ȥʤ�ץ������Υݡ����ֹ�
-���֤��ޤ���
+プロクシ経由で接続する HTTP オブジェクトならプロクシのポート番号
+を返します。
 
-�����Ǥʤ��ʤ� nil ���֤��ޤ���
+そうでないなら nil を返します。
 
-proxyport �ϻ����٤�Υ᥽�åɤǤ���
+proxyport は時代遅れのメソッドです。
 @see [[m:Net::HTTP.Proxy]]

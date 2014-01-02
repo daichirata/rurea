@@ -5,6 +5,6 @@ kind=defined
 --- time2wtime(time)
 @todo
 
-Time ¥ª¥Ö¥¸¥§¥¯¥È¤Þ¤¿¤Ï Integer ¥ª¥Ö¥¸¥§¥¯¥È¤ò¼õ¤±¼è¤ê¡¤
-64bit ¤Î FILETIME ¤ËÊÑ´¹¤·¤Þ¤¹¡£
+Time ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¾ãŸã¯ Integer ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å—ã‘å–ã‚Šï¼Œ
+64bit ã® FILETIME ã«å¤‰æ›ã—ã¾ã™ã€‚
 

@@ -2,16 +2,19 @@ names=insert
 visibility=public
 kind=defined
 
---- insert(pos, other) -> ()
+--- insert(pos, other) -> self
 
-nth ÈÖÌÜ¤ÎÊ¸»ú¤ÎÄ¾Á°¤ËÊ¸»úÎó other ¤òÁÞÆþ¤·¤Þ¤¹¡£
-self[pos, 0] = other ¤ÈÆ±¤¸Áàºî¤Ç¤¹¡£
+pos ç•ªç›®ã®æ–‡å­—ã®ç›´å‰ã«æ–‡å­—åˆ— other ã‚’æŒ¿å…¥ã—ã¾ã™ã€‚
+self[pos, 0] = other ã¨åŒã˜æ“ä½œã§ã™ã€‚
 
-@param pos      Ê¸»úÎó¤òÁÞÆþ¤¹¤ë¥¤¥ó¥Ç¥Ã¥¯¥¹
-@param other    ÁÞÆþ¤¹¤ëÊ¸»úÎó
+@param pos      æ–‡å­—åˆ—ã‚’æŒ¿å…¥ã™ã‚‹ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹
+@param other    æŒ¿å…¥ã™ã‚‹æ–‡å­—åˆ—
 
-Îã:
+ä¾‹:
     str = "foobaz"
     str.insert(3, "bar")
     p str   # => "foobarbaz"
+
+@see [[m:String#[]=]]
+
 

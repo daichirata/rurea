@@ -3,13 +3,13 @@ visibility=public
 kind=added
 
 --- ca_path=(path)
-���ꤹ�� CA ������ե����뤬¸�ߤ���ǥ��쥯�ȥ�����ꤷ�ޤ���
+信頼する CA 証明書ファイルが存在するディレクトリを設定します。
 
-�ե�����̾�ϥϥå����ͤ�ʸ����ˤ��ʤ���Фʤ�ޤ���
-�ܤ����� [[m:OpenSSL::SSL::SSLContext#ca_path=]] �򸫤Ƥ���������
+ファイル名はハッシュ値の文字列にしなければなりません。
+詳しくは [[m:OpenSSL::SSL::SSLContext#ca_path=]] を見てください。
 
-�ǥե���Ȥ� nil (����ʤ�)�Ǥ���
+デフォルトは nil (指定なし)です。
 
-@param path �ǥ��쥯�ȥ�̾ʸ����
+@param path ディレクトリ名文字列
 @see [[m:Net::HTTP#ca_path]], [[m:OpenSSL::SSL::SSLContext#ca_path=]]
 

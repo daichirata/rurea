@@ -2,11 +2,9 @@ names=front
 visibility=public
 kind=defined
 
---- front
-@todo
+--- front -> object
+カレントサーバのフロントオブジェクトを返します。
 
-Get the front object of the current server.
-
-This raises a DRbServerNotFound error if there is no current
-server. See [[m:DRb.#current_server]].
+@raise DRbServerNotFound カレントサーバが存在しない場合に発生します
+@see [[m:DRb.#current_server]]
 

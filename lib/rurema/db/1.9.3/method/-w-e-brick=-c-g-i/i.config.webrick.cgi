@@ -4,7 +4,7 @@ kind=defined
 
 --- config     -> Hash
 
-¼«¿È¤ÎÀßÄê¤òÊÝ»ý¤·¤¿¥Ï¥Ã¥·¥å¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã®è¨­å®šã‚’ä¿æŒã—ãŸãƒãƒƒã‚·ãƒ¥ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:WEBrick::CGI.new]]
 

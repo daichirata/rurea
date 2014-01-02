@@ -6,6 +6,6 @@ kind=defined
 --- delete_value(name)
 @todo
 
-�쥸���ȥ��� name �������ޤ���
-(ɸ��) �쥸���ȥ��ͤ������뤳�ȤϤǤ��ޤ���
+レジストリ値 name を削除します。
+(標準) レジストリ値を削除することはできません。
 

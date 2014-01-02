@@ -4,9 +4,9 @@ kind=defined
 
 --- flush    -> self
 
-IO �ݡ��Ȥ������Хåե���ե�å��夷�ޤ���
+IO ポートの内部バッファをフラッシュします。
 
-@raise IOError ���Ȥ��񤭹����Ѥ˥����ץ󤵤�Ƥ��ʤ����ȯ�����ޤ���
+@raise IOError 自身が書き込み用にオープンされていなければ発生します。
 
-@raise Errno::EXXX [[man:fflush(3)]] �����Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX [[man:fflush(3)]] が失敗した場合に発生します。
 

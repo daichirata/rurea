@@ -4,5 +4,5 @@ kind=defined
 
 --- OPENSSL_VERSION -> String
 
-�����ƥ�˥��󥹥ȡ��뤵��Ƥ��� OpenSSL ���ΤΥС�������ɽ����ʸ����Ǥ���
+システムにインストールされている OpenSSL 本体のバージョンを表した文字列です。
 

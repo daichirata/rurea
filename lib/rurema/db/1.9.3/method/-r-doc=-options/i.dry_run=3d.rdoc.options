@@ -4,9 +4,9 @@ kind=defined
 
 --- dry_run=(val)
 
-val �� true ����ꤷ����硢���ޥ�ɥ饤������� --dry-run ���ץ�����
-Ʊ�ͤλ����Ԥ��ޤ���
+val に true を指定した場合、コマンドライン引数の --dry-run オプションと
+同様の指定を行います。
 
-@param val --dry-run ���ץ�����Ʊ�������Ԥ����� true�������Ǥʤ�
-           ���� false ����ꤷ�ޤ���
+@param val --dry-run オプションと同じ指定を行う場合は true、そうでない
+           場合は false を指定します。
 

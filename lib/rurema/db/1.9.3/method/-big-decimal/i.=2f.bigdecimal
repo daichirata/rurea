@@ -1,11 +1,16 @@
-names=/
+names=/,div,quo
 visibility=public
 kind=defined
 
---- /(other)
-@todo
+--- div(other) -> BigDecimal
+--- quo(other) -> BigDecimal
+--- /(other)   -> BigDecimal
 
-���� (c = a / b)��
+商を計算します。
 
-c �����٤ˤĤ��Ƥϡַ׻����٤ˤĤ��ơפ򻲾Ȥ��Ƥ��������� 
+@param other self を割る数を指定します。
+
+詳細は [[m:Float#quo]] を参照して下さい。
+
+計算結果の精度については[[ref:lib:bigdecimal#precision]]を参照してください。
 

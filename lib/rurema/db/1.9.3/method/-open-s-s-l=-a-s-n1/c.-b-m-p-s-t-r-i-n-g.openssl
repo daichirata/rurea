@@ -4,6 +4,6 @@ kind=defined
 
 --- BMPSTRING -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-BMPSTRING ¤Î¥¿¥°ÈÖ¹æ 30 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+BMPSTRING ã®ã‚¿ã‚°ç•ªå· 30 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

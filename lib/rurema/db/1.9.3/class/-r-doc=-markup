@@ -6,44 +6,44 @@ library=rdoc.markup
 aliases=
 aliasof=
 
-RDoc ·Á¼°¤Î¥É¥­¥å¥á¥ó¥È¤òÌÜÅª¤Î·Á¼°¤ËÊÑ´¹¤¹¤ë¤¿¤á¤Î¥¯¥é¥¹¤Ç¤¹¡£
+RDoc å½¢å¼ã®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ç›®çš„ã®å½¢å¼ã«å¤‰æ›ã™ã‚‹ãŸã‚ã®ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'rdoc/markup/to_html'
 
   h = RDoc::Markup::ToHtml.new
   puts h.convert(input_string)
 
-ÆÈ¼«¤Î¥Õ¥©¡¼¥Ş¥Ã¥È¤ò¹Ô¤¦¤è¤¦¤Ë¥Ñ¡¼¥µ¤ò³ÈÄ¥¤¹¤ë»ö¤â¤Ç¤­¤Ş¤¹¡£
+ç‹¬è‡ªã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’è¡Œã†ã‚ˆã†ã«ãƒ‘ãƒ¼ã‚µã‚’æ‹¡å¼µã™ã‚‹äº‹ã‚‚ã§ãã¾ã™ã€‚
 
 
-Îã:
+ä¾‹:
 
   require 'rdoc/markup'
   require 'rdoc/markup/to_html'
 
   class WikiHtml < RDoc::Markup::ToHtml
-    # WikiWord ¤Î¥Õ¥©¥ó¥È¤òÀÖ¤¯É½¼¨¡£
+    # WikiWord ã®ãƒ•ã‚©ãƒ³ãƒˆã‚’èµ¤ãè¡¨ç¤ºã€‚
     def handle_special_WIKIWORD(special)
       "<font color=red>" + special.text + "</font>"
     end
   end
 
   m = RDoc::Markup.new
-  # { ¡Á } ¤Ş¤Ç¤ò :STRIKE ¤Ç¥Õ¥©¡¼¥Ş¥Ã¥È¤¹¤ë¡£
+  # { ã€œ } ã¾ã§ã‚’ :STRIKE ã§ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã™ã‚‹ã€‚
   m.add_word_pair("{", "}", :STRIKE)
-  # <no> ¡Á </no> ¤Ş¤Ç¤ò :STRIKE ¤Ç¥Õ¥©¡¼¥Ş¥Ã¥È¤¹¤ë¡£
+  # <no> ã€œ </no> ã¾ã§ã‚’ :STRIKE ã§ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã™ã‚‹ã€‚
   m.add_html("no", :STRIKE)
 
-  # WikiWord ¤òÄÉ²Ã¡£
+  # WikiWord ã‚’è¿½åŠ ã€‚
   m.add_special(/\b([A-Z][a-z]+[A-Z]\w+)/, :WIKIWORD)
 
   wh = WikiHtml.new(m)
-  # :STRIKE ¤Î¥Õ¥©¡¼¥Ş¥Ã¥È¤ò <strike> ¡Á </strike> ¤Ë»ØÄê¡£
+  # :STRIKE ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‚’ <strike> ã€œ </strike> ã«æŒ‡å®šã€‚
   wh.add_tag(:STRIKE, "<strike>", "</strike>")
 
   puts "<body>#{wh.convert ARGF.read}</body>"
 
-ÊÑ´¹¤¹¤ë·Á¼°¤òÊÑ¹¹¤¹¤ë¾ì¹ç¡¢¥Õ¥©¡¼¥Ş¥Ã¥¿(Îã. [[c:RDoc::Markup::ToHtml]])
-¤òÊÑ¹¹¡¢³ÈÄ¥¤¹¤ëÉ¬Í×¤¬¤¢¤ê¤Ş¤¹¡£
+å¤‰æ›ã™ã‚‹å½¢å¼ã‚’å¤‰æ›´ã™ã‚‹å ´åˆã€ãƒ•ã‚©ãƒ¼ãƒãƒƒã‚¿(ä¾‹. [[c:RDoc::Markup::ToHtml]])
+ã‚’å¤‰æ›´ã€æ‹¡å¼µã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚

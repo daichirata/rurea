@@ -1,9 +1,0 @@
-type=class
-superclass=Object
-included=
-extended=
-library=net.ftp
-aliases=
-aliasof=
-
-全てのメソッド呼び出しに対して [[c:Net::FTPConnectionError]] を発生させます。

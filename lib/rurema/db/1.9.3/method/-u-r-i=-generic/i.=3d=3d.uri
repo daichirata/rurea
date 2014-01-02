@@ -4,12 +4,12 @@ kind=defined
 
 --- ==(uri)    -> bool
 
-°ú¿ô¤Ë»ØÄê¤·¤¿ URI (Ê¸»úÎó¤Þ¤¿¤ÏURI¥ª¥Ö¥¸¥§¥¯¥È)¤È¤Î°ìÃ×È½Äê¤ò¹Ô¤¤
-¤Þ¤¹¡£URI ¤ÏÀµµ¬²½¤·¤ÆÈæ³Ó¤µ¤ì¤Þ¤¹¡£
+å¼•æ•°ã«æŒ‡å®šã—ãŸ URI (æ–‡å­—åˆ—ã¾ãŸã¯URIã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)ã¨ã®ä¸€è‡´åˆ¤å®šã‚’è¡Œã„
+ã¾ã™ã€‚URI ã¯æ­£è¦åŒ–ã—ã¦æ¯”è¼ƒã•ã‚Œã¾ã™ã€‚
 
-@param uri Èæ³Ó¤·¤¿¤¤ URI ¤ò URI ¥ª¥Ö¥¸¥§¥¯¥È¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param uri æ¯”è¼ƒã—ãŸã„ URI ã‚’ URI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'uri'
   u1 = URI.parse('http://example.com/?hoge')
   u2 = URI.parse('http://Example.Com/?hoge')

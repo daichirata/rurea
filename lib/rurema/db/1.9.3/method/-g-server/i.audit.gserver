@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- audit -> bool
-¿¿¤Ç¤¢¤ì¤Ğ¡¢¥µ¡¼¥Ğ¤Îµ¯Æ°»ş¡¢ÀÜÂ³»ş¡¢ÀÚÃÇ»ş¡¢Ää»ß»ş¤Ë¥í¥°¤ò½ĞÎÏ¤·¤Ş¤¹¡£
+çœŸã§ã‚ã‚Œã°ã€ã‚µãƒ¼ãƒã®èµ·å‹•æ™‚ã€æ¥ç¶šæ™‚ã€åˆ‡æ–­æ™‚ã€åœæ­¢æ™‚ã«ãƒ­ã‚°ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
 
 @see [[m:GServer#starting]], [[m:GServer#connecting]], [[m:GServer#disconnecting]], [[m:GServer#stopping]]
 

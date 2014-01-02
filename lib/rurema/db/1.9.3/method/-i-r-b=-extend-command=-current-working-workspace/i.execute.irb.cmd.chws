@@ -4,7 +4,7 @@ kind=defined
 
 --- execute(*obj) -> obj
 
-irb ¤Î self ¤òÊÖ¤·¤Ş¤¹¡£
+irb ã® self ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param obj »ÈÍÑ¤·¤Ş¤»¤ó¡£
+@param obj ä½¿ç”¨ã—ã¾ã›ã‚“ã€‚
 

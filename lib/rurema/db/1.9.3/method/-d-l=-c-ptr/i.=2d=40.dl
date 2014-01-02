@@ -5,12 +5,12 @@ kind=defined
 --- ref   -> DL::CPtr
 --- -@    -> DL::CPtr
 
-���Ȥ�ؤ� CPtr ���֥������Ȥ��֤��ޤ���
-C ����ˤ�����ݥ��󥿤ؤΥ��ɥ쥹�黻�Ҥ�Ŭ�� &p ��Ʊ���Ǥ���
+自身を指す CPtr オブジェクトを返します。
+C 言語におけるポインタへのアドレス演算子の適用 &p と同じです。
 
-�����֤��ͤˤϡ�free �ؿ������åȤ���Ƥ��ޤ���
+この返り値には、free 関数がセットされていません。
 
-��:
+例:
 
  require 'dl/import'
  

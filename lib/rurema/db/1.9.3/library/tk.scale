@@ -3,5 +3,6 @@ classes=TkScale
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

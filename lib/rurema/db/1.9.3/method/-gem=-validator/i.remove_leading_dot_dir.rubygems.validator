@@ -4,5 +4,5 @@ kind=defined
 
 --- remove_leading_dot_dir(path) -> String
 
-Ϳ����줿�ѥ�����Ƭ�ΥɥåȤ��������ʸ������֤��ޤ���
+与えられたパスの先頭のドットを取り除いた文字列を返します。
 

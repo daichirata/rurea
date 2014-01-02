@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- blocks -> Integer
-³ä¤êÅö¤Æ¤é¤ì¤Æ¤¤¤ë¥Ö¥í¥Ã¥¯¿ô¤òÊÖ¤·¤Þ¤¹¡£
+å‰²ã‚Šå½“ã¦ã‚‰ã‚Œã¦ã„ã‚‹ãƒ–ãƒ­ãƒƒã‚¯æ•°ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.blocks  #=> nil
 

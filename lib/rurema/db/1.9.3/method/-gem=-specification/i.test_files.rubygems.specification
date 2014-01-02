@@ -4,6 +4,6 @@ kind=defined
 
 --- test_files -> [String]
 
-��˥åȥƥ��ȤΥե�����Υꥹ�Ȥ��֤��ޤ���
+ユニットテストのファイルのリストを返します。
 
 

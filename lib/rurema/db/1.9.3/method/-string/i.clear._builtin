@@ -2,12 +2,12 @@ names=clear
 visibility=public
 kind=defined
 
---- clear -> ()
+--- clear -> self
 
-Ê¸»úÎó¤ÎÆâÍÆ¤òºï½ü¤·¤Æ¶õ¤Ë¤·¤Þ¤¹¡£
-self ¤òÊÖ¤·¤Þ¤¹¡£
+æ–‡å­—åˆ—ã®å†…å®¹ã‚’å‰Šé™¤ã—ã¦ç©ºã«ã—ã¾ã™ã€‚
+self ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
     str = "abc"
     str.clear
     p str     # => ""

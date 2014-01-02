@@ -3,26 +3,26 @@ visibility=public
 kind=defined
 
 --- new(val, vartype = nil) -> WIN32OLE_VARIANT
-»ØÄê¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È¤òÃÍ¤È¤¹¤ëWIN32OLE_VARIANT¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
+æŒ‡å®šã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’å€¤ã¨ã™ã‚‹WIN32OLE_VARIANTã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-@param val ¥é¥Ã¥×¤¹¤ëRuby¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£
-@param vartype ¾ÊÎ¬»þ¤ÏWIN32OLE¤¬¼«Æ°·¿ÊÑ´¹¤ò¹Ô¤¤¤Þ¤¹¡£»ØÄê¤¹¤ë¾ì¹ç¤Ï
-               [[c:WIN32OLE::VARIANT]]¤ÎÄê¿ô¤ò»ØÄê¤·¤Æ¤¯¤À¤µ¤¤¡£
-@return val°ú¿ô¤òÃÍ¤È¤·¤Æ»ý¤ÄWIN32OLE_VARIANT¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+@param val ãƒ©ãƒƒãƒ—ã™ã‚‹Rubyã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
+@param vartype çœç•¥æ™‚ã¯WIN32OLEãŒè‡ªå‹•åž‹å¤‰æ›ã‚’è¡Œã„ã¾ã™ã€‚æŒ‡å®šã™ã‚‹å ´åˆã¯
+               [[c:WIN32OLE::VARIANT]]ã®å®šæ•°ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚
+@return valå¼•æ•°ã‚’å€¤ã¨ã—ã¦æŒã¤WIN32OLE_VARIANTã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-@raise TypeError val°ú¿ô¤Î·¿¤¬Array¡¢String¡¢Integer¡¢Float¡¢Time¡¢
-                 WIN32OLE¡¢WIN32OLE_VARIANT¡¢TrueClass¡¢FalseClass¡¢
-                 NilClass ¤Î¤¤¤º¤ì¤Ç¤â¤¢¤ê¤Þ¤»¤ó¡£
+@raise TypeError valå¼•æ•°ã®åž‹ãŒArrayã€Stringã€Integerã€Floatã€Timeã€
+                 WIN32OLEã€WIN32OLE_VARIANTã€TrueClassã€FalseClassã€
+                 NilClass ã®ã„ãšã‚Œã§ã‚‚ã‚ã‚Šã¾ã›ã‚“ã€‚
 
    shell = WIN32OLE.new('Shell.Application')
    folder = shell.NameSpace('C:\\Users\\Public\\Documents')
    item = folder.ParseName('test.txt')
    v = WIN32OLE_VARIANT.new('Delete')
-   item.invokeVerb(v)     # => ¥´¥ßÈ¢¤Ø¤Î°ÜÆ°¥À¥¤¥¢¥í¥°¤òÉ½¼¨
+   item.invokeVerb(v)     # => ã‚´ãƒŸç®±ã¸ã®ç§»å‹•ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚’è¡¨ç¤º
 
-¥Ð¥¤¥ÈÇÛÎó¤òÀ¸À®¤¹¤ë¤Ë¤Ï¡¢°Ê²¼¤Î¤è¤¦¤Ëvartype°ú¿ô¤ËVT_UI1 | VT_ARRAY¤ò
-ÀßÄê¤·¤Þ¤¹¡£¥Ð¥¤¥ÈÇÛÎó¤ÎÃÍ¤ÎRubyÉ½¸½¤Ï¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤òASCII-8BIT¤ËÀß
-Äê¤·¤¿Ê¸»úÎó¤È¤Ê¤ê¤Þ¤¹¡£
+ãƒã‚¤ãƒˆé…åˆ—ã‚’ç”Ÿæˆã™ã‚‹ã«ã¯ã€ä»¥ä¸‹ã®ã‚ˆã†ã«vartypeå¼•æ•°ã«VT_UI1 | VT_ARRAYã‚’
+è¨­å®šã—ã¾ã™ã€‚ãƒã‚¤ãƒˆé…åˆ—ã®å€¤ã®Rubyè¡¨ç¾ã¯ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’ASCII-8BITã«è¨­
+å®šã—ãŸæ–‡å­—åˆ—ã¨ãªã‚Šã¾ã™ã€‚
 
    include WIN32OLE::VARIANT
    bytes = WIN32OLE_VARIANT.new([1,2,3,4,5], VT_UI1 | VT_ARRAY)

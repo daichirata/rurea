@@ -4,13 +4,13 @@ kind=defined
 
 --- String(arg) -> String
 
-������ʸ����([[c:String]])���Ѵ�������̤��֤��ޤ���
+引数を文字列([[c:String]])に変換した結果を返します。
 
-arg.to_s ��ƤӽФ���ʸ������Ѵ����ޤ���
-arg ��ʸ����ξ�硢���⤻�� arg ���֤��ޤ���
+arg.to_s を呼び出して文字列に変換します。
+arg が文字列の場合、何もせず arg を返します。
 
-@param arg �Ѵ��оݤΥ��֥������ȤǤ���
-@raise TypeError to_s ���֤��ͤ�ʸ����Ǥʤ����ȯ�����ޤ���
+@param arg 変換対象のオブジェクトです。
+@raise TypeError to_s の返り値が文字列でなければ発生します。
 
   class Foo
    def to_s

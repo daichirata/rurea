@@ -4,10 +4,10 @@ kind=defined
 
 --- unshift(*obj)        -> self
 
-���ꤵ�줿 obj ����֤��������Ƭ���������ޤ���
-��������ꤷ�ʤ���в��⤷�ޤ���
+指定された obj を引数の最後から順番に配列の先頭に挿入します。
+引数を指定しなければ何もしません。
 
-@param obj ���Ȥ��ɲä��������֥������Ȥ���ꤷ�ޤ���
+@param obj 自身に追加したいオブジェクトを指定します。
 
     arr = [1,2,3]
     arr.unshift 0

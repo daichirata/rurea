@@ -4,7 +4,7 @@ kind=defined
 
 --- real? -> false
 
-¾ï¤Ë false ¤òÊÖ¤·¤Ş¤¹¡£
+å¸¸ã« false ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Numeric#real?]]
 

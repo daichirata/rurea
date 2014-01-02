@@ -4,11 +4,11 @@ kind=defined
 
 --- modifiable -> Hash
 
-���Υ᥽�åɤ�����Ū�˻��Ѥ���ޤ���
+このメソッドは内部的に使用されます。
 
-���Ȥ� [[m:Object#freeze]] ����Ƥ�����ˤ��Υ᥽�åɤ�ƤӽФ����㳰��ȯ�����ޤ���
+自身が [[m:Object#freeze]] されている場合にこのメソッドを呼び出すと例外が発生します。
 
-@raise TypeError ���Ȥ� [[m:Object#freeze]] ����Ƥ������ȯ�����ޤ���
+@raise TypeError 自身が [[m:Object#freeze]] されている場合に発生します。
 
 
 

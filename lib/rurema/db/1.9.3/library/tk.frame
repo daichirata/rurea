@@ -3,5 +3,6 @@ classes=TkFrame
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

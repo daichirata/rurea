@@ -5,20 +5,20 @@ kind=defined
 --- rm_rf(list, options = {})  -> ()
 --- rmtree(list, options = {}) -> ()
 
-�ե�����ޤ��ϥǥ��쥯�ȥ� list ��Ƶ�Ū�˾õ�ޤ���
+ファイルまたはディレクトリ list を再帰的に消去します。
 
-rm_r(list, {:force => true}) ��Ʊ���Ǥ���
+rm_r(list, {:force => true}) と同じです。
 
-@param list ��������оݡ���Ĥξ���ʸ���������ǽ�Ǥ���
-            ��İʾ���ꤹ���������ǻ��ꤷ�ޤ���
+@param list 削除する対象。一つの場合は文字列も指定可能です。
+            二つ以上指定する場合は配列で指定します。
 
-@param options :noop, :verbose, :secure ������Ǥ��ޤ���
+@param options :noop, :verbose, :secure が指定できます。
                [[ref:c:FileUtils#options]]
 
-==== ����
+==== 注意
 
-���Υ᥽�åɤˤϥ��������ȼ�����¸�ߤ��ޤ���
-�ܤ����� [[m:FileUtils.#remove_entry_secure]] �ι�򻲾Ȥ��Ƥ���������
+このメソッドにはローカル脆弱性が存在します。
+詳しくは [[m:FileUtils.#remove_entry_secure]] の項を参照してください。
 
 
 @see [[m:FileUtils.#rm]], [[m:FileUtils.#rm_r]], [[m:FileUtils.#remove_entry_secure]]

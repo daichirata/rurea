@@ -4,6 +4,6 @@ kind=defined
 
 --- garbage_collect    -> nil
 
-�ɤ�����⻲�Ȥ���ʤ��ʤä����֥������Ȥ������ޤ���
-[[m:GC.start]] ��Ʊ���Ǥ���
+どこからも参照されなくなったオブジェクトを回収します。
+[[m:GC.start]] と同じです。
 

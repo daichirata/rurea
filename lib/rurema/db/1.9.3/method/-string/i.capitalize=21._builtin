@@ -4,13 +4,13 @@ kind=defined
 
 --- capitalize! -> self | nil
 
-ʸ������Ƭ��ʸ������ʸ���ˡ��Ĥ��ʸ�����ѹ����ޤ���
-������������ե��٥åȰʳ���ʸ���ϰ��֤˴ؤ�餺�ѹ����ޤ���
+文字列先頭の文字を大文字に、残りを小文字に変更します。
+ただし、アルファベット以外の文字は位置に関わらず変更しません。
 
-@return capitalize! �� self ���ѹ������֤��ޤ�����
-        �ѹ���������ʤ��ä����� nil ���֤��ޤ���
+@return capitalize! は self を変更して返しますが、
+        変更が起こらなかった場合は nil を返します。
 
-��:
+例:
 
   str = "foobar"
   str.capitalize!

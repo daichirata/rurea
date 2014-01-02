@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- https_default_port -> Integer
-HTTPS �Υǥե���ȥݡ��� (443) ���֤��ޤ���
+HTTPS のデフォルトポート (443) を返します。
 
 
 

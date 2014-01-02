@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- open_timeout -> Integer
-��³�����Ԥĺ����ÿ����֤��ޤ���
+接続時に待つ最大秒数を返します。
 
-�����ÿ����äƤ⥳�ͥ������
-�����ʤ�����㳰 [[c:TimeoutError]] ��ȯ�����ޤ���
-�ǥե���Ȥ� 30 (��)�Ǥ���
+この秒数たってもコネクションが
+開かなければ例外 [[c:TimeoutError]] を発生します。
+デフォルトは nil(タイムアウトしない)です。
 
 @see [[m:Net::HTTP#read_timeout]], [[m:Net::HTTP#open_timeout=]]
 

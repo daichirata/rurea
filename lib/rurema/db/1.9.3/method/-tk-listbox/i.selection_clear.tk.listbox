@@ -5,7 +5,7 @@ kind=defined
 --- selection_clear(first, last = Tk::None)
 @todo
 
-((|first|))¡¢((|last|))¤Ç»ØÄê¤·¤¿((*°ÌÃÖ*))¤ÎÈÏ°Ï¤ÎÍ×ÁÇ¤¬((<ÁªÂò>))¤µ
-¤ì¤Æ¤¤¤ì¤ÐÈóÁªÂò¤Ë¤·¤Þ¤¹¡£((|last|))¤ò¾ÊÎ¬¤·¤¿¾ì¹ç¡¢((|first|))¤Î((*°Ì
-ÃÖ*))¤ÎÍ×ÁÇ¤òÈóÁªÂò¤Ë¤·¤Þ¤¹¡£
+((|first|))ã€((|last|))ã§æŒ‡å®šã—ãŸ((*ä½ç½®*))ã®ç¯„å›²ã®è¦ç´ ãŒ((<é¸æŠž>))ã•
+ã‚Œã¦ã„ã‚Œã°éžé¸æŠžã«ã—ã¾ã™ã€‚((|last|))ã‚’çœç•¥ã—ãŸå ´åˆã€((|first|))ã®((*ä½
+ç½®*))ã®è¦ç´ ã‚’éžé¸æŠžã«ã—ã¾ã™ã€‚
 

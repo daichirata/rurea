@@ -4,8 +4,8 @@ kind=defined
 
 --- esmtp? -> bool
 --- esmtp -> bool
-���� Net::SMTP ���֥������Ȥ� ESMTP ��Ȥ����˿����֤��ޤ���
-�ǥե���ȤϿ��Ǥ���
+その Net::SMTP オブジェクトが ESMTP を使う場合に真を返します。
+デフォルトは真です。
 
 @see [[m:Net::SMTP#esmtp=]]
 

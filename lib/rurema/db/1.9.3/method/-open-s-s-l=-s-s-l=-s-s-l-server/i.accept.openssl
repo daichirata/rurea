@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- accept -> OpenSSL::SSL::SSLSocket
-епещедевеєе╚длдщд╬└▄┬│дЄ╝їд▒╔╒д▒бв└▄┬│д╖д┐
-SSLSocket еке╓е╕езепе╚дЄ╩╓д╖д▐д╣бг
+уВпуГйуВдуВвуГ│уГИуБЛуВЙуБоцОеч╢ЪуВТхПЧуБСф╗ШуБСуАБцОеч╢ЪуБЧуБЯ
+SSLSocket уВкуГЦуВ╕уВзуВпуГИуВТш┐ФуБЧуБ╛уБЩуАВ
 
-[[m:OpenSSL::SSL::SSLServer#start_immediately]] дм┐┐д╩дщд╨бв
-SSLSocket#accept дЄ╕╞д╙ TLS/SSL е╧еєе╔е╖езедепдЄ╝┬╣╘д╖д╞длдщ
-SSLSocket еке╓е╕езепе╚дЄ╩╓д╖д▐д╣бг
+[[m:OpenSSL::SSL::SSLServer#start_immediately]] уБМчЬЯуБкуВЙуБ░уАБ
+SSLSocket#accept уВТхС╝уБ│ TLS/SSL уГПуГ│уГЙуВ╖уВзуВдуВпуВТхоЯшбМуБЧуБжуБЛуВЙ
+SSLSocket уВкуГЦуВ╕уВзуВпуГИуВТш┐ФуБЧуБ╛уБЩуАВ
 

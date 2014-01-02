@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- puts(string) -> ()
-²ş¹Ô¤òÉÕ²Ã¤·¤¿Ê¸»úÎó¤ò¥Û¥¹¥È¤ËÁ÷¤ê¤Ş¤¹¡£
+æ”¹è¡Œã‚’ä»˜åŠ ã—ãŸæ–‡å­—åˆ—ã‚’ãƒ›ã‚¹ãƒˆã«é€ã‚Šã¾ã™ã€‚
 
-²ş¹Ô¤ÎÉÕ²Ã°Ê³°¤Ï [[m:Net::Telnet#print]] ¤ÈÆ±¤¸¤Ç¤¹¡£
+æ”¹è¡Œã®ä»˜åŠ ä»¥å¤–ã¯ [[m:Net::Telnet#print]] ã¨åŒã˜ã§ã™ã€‚
 
-@param string ¥Û¥¹¥È¤ËÁ÷¤ëÊ¸»úÎó
+@param string ãƒ›ã‚¹ãƒˆã«é€ã‚‹æ–‡å­—åˆ—
 @see [[m:Net::Telnet#write]], [[m:Net::Telnet#print]]
 

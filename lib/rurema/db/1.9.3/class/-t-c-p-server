@@ -6,11 +6,11 @@ library=socket
 aliases=
 aliasof=
 
-TCP/IP ���ȥ꡼�෿��³�Υ�����¦�Υ����åȤΥ��饹�����Υ���
-���ˤ�äƴ�ñ�˥����åȤ����Ѥ��������ФΥץ�����ߥ󥰤���
-���ޤ���
+TCP/IP ストリーム型接続のサーバ側のソケットのクラスです。
 
-�㤨�� echo �����Фϰʲ��Τ褦�ˤʤ�ޤ���
+このクラスによって簡単にソケットを利用したサーバのプログラミングができます。
+
+例えば echo サーバは以下のようになります。
 
   require "socket"
   
@@ -40,7 +40,7 @@ TCP/IP ���ȥ꡼�෿��³�Υ�����¦�Υ����åȤΥ��饹�����Υ���
     end
   end
 
-Thread ��Ȥ��Ф�ä�û���ʤ�ޤ���
+Thread を使えばもっと短くなります。
 
   require "socket"
   

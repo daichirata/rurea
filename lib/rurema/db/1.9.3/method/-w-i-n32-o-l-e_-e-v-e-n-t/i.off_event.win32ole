@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- off_event(event = nil) -> ()
-[[m:WIN32OLE_EVENT#on_event]]¤ÇÅĞÏ¿¤·¤¿¥Ö¥í¥Ã¥¯¤ò²ò½ü¤·¤Ş¤¹¡£
+[[m:WIN32OLE_EVENT#on_event]]ã§ç™»éŒ²ã—ãŸãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤ã—ã¾ã™ã€‚
 
-@param event Ê¸»úÎó¤Ş¤¿¤Ï¥·¥ó¥Ü¥ë¤ÇÅĞÏ¿»ş¤Ë»ØÄê¤·¤¿¥¤¥Ù¥ó¥ÈÌ¾¤ò»ØÄê¤·¤Ş
-¤¹¡£nil¤Î¾ì¹ç¡¢[[m:WIN32OLE_EVENT#on_event]]¤ËÂĞ¤·¤Ænil¤ò»ØÄê¤·¤¿¥Ö¥í¥Ã
-¥¯¤ò²ò½ü¤·¤Ş¤¹¡£
+@param event æ–‡å­—åˆ—ã¾ãŸã¯ã‚·ãƒ³ãƒœãƒ«ã§ç™»éŒ²æ™‚ã«æŒ‡å®šã—ãŸã‚¤ãƒ™ãƒ³ãƒˆåã‚’æŒ‡å®šã—ã¾
+ã™ã€‚nilã®å ´åˆã€[[m:WIN32OLE_EVENT#on_event]]ã«å¯¾ã—ã¦nilã‚’æŒ‡å®šã—ãŸãƒ–ãƒ­ãƒƒ
+ã‚¯ã‚’è§£é™¤ã—ã¾ã™ã€‚
 
   ev = WIN32OLE_EVENT.new(ie, 'DWebBrowserEvents')
   ev.on_event(:NavigateComplete) {|url| puts url }

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- set_to_infinity! -> self
-¼«¿È¤òÌµ¸Â±óÅÀ¤ËÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã‚’ç„¡é™é ç‚¹ã«è¨­å®šã—ã¾ã™ã€‚
 
-@raise OpenSSL::PKey::EC::Point::Error ¥¨¥é¡¼¤¬À¸¤¸¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@raise OpenSSL::PKey::EC::Point::Error ã‚¨ãƒ©ãƒ¼ãŒç”Ÿã˜ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::PKey::EC::Point#infinity!]]
 

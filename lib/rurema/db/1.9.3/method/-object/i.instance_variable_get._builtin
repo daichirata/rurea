@@ -4,11 +4,11 @@ kind=defined
 
 --- instance_variable_get(var) -> object|nil
 
-���֥������ȤΥ��󥹥����ѿ����ͤ���������֤��ޤ���
+オブジェクトのインスタンス変数の値を取得して返します。
 
-���󥹥����ѿ����������Ƥ��ʤ���� nil ���֤��ޤ���
+インスタンス変数が定義されていなければ nil を返します。
 
-@param var ���󥹥����ѿ�̾��ʸ���� [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param var インスタンス変数名を文字列か [[c:Symbol]] で指定します。
 
     class Foo
       def initialize

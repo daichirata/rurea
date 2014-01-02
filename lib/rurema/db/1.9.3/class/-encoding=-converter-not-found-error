@@ -6,8 +6,8 @@ library=_builtin
 aliases=
 aliasof=
 
-»ØÄê¤·¤¿Ì¾Á°¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°ÊÑ´¹¤ò¤¹¤ëÊÑ´¹´ï¤¬
-Â¸ºß¤·¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤¹¤ëÎã³°¡£
+æŒ‡å®šã—ãŸåå‰ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°å¤‰æ›ã‚’ã™ã‚‹å¤‰æ›å™¨ãŒ
+å­˜åœ¨ã—ãªã„å ´åˆã«ç™ºç”Ÿã™ã‚‹ä¾‹å¤–ã€‚
 
-  "¤¢".encode("Foo")
+  "ã‚".encode("Foo")
   #=> Encoding::ConverterNotFoundError: code converter not found (UTF-8 to Foo)

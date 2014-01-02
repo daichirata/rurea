@@ -4,10 +4,10 @@ kind=added
 
 --- unescapeHTML(string) -> String
 --- unescape_html(string) -> String
-Ϳ����줿ʸ������μ��λ��ȤΤ�����&amp; &gt; &lt; &quot;
-�ȿ��ͻ��꤬����Ƥ����� (&#0ffff �ʤ�) �򸵤�ʸ������ִ����ޤ���
+与えられた文字列中の実体参照のうち、&amp; &gt; &lt; &quot;
+と数値指定がされているもの (&#0ffff など) を元の文字列に置換します。
 
-@param string ʸ�������ꤷ�ޤ���
+@param string 文字列を指定します。
 
         require "cgi"
 

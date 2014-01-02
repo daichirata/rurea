@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- public_key=(pubkey)
-SPKI ¥ª¥Ö¥¸¥§¥¯¥È¤Ë¸ø³«¸°¤òÀßÄê¤·¤Ş¤¹¡£
+SPKI ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å…¬é–‹éµã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param pubkey ÀßÄê¤¹¤ë¸ø³«¸°([[c:OpenSSL::PKey::PKey]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@raise OpenSSL::Netscape::SPKIError ¸ø³«¸°¤ÎÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param pubkey è¨­å®šã™ã‚‹å…¬é–‹éµ([[c:OpenSSL::PKey::PKey]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@raise OpenSSL::Netscape::SPKIError å…¬é–‹éµã®è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[m:OpenSSL::Netscape::SPKI#public_key]]
 

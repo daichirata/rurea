@@ -4,5 +4,5 @@ kind=defined
 
 --- to_int    -> Integer
 
-self.to_i ¤ÈÆ±¤¸¤Ç¤¹¡£
+self.to_i ã¨åŒã˜ã§ã™ã€‚
 

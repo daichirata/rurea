@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- close -> nil
-�����Υ����Х����åȤ��Ĥ��ޤ���
+内部のサーバソケットを閉じます。
 

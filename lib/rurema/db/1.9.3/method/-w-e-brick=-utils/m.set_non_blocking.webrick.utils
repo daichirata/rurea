@@ -4,7 +4,7 @@ kind=defined
 
 --- set_non_blocking(io)    -> ()
 
-���ꤵ�줿 io ��Υ�֥��å��󥰤����ꤷ�ޤ���
+指定された io をノンブロッキングに設定します。
 
-@param io IO ���֥������Ȥ���ꤷ�ޤ���
+@param io IO オブジェクトを指定します。
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- to_text -> String
-�ʹ֤��ɤ�������ʸ������Ѵ������֤��ޤ���
+人間が読める形式の文字列に変換して返します。
 
-@raise OpenSSL::X509::RequestError �Ѵ��˼��Ԥ�������ȯ�����ޤ�
+@raise OpenSSL::X509::RequestError 変換に失敗した場合に発生します
 

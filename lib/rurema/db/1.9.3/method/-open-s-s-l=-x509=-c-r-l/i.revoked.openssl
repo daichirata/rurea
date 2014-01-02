@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- revoked -> [OpenSSL::X509::Revoked]
-¼«¿È¤¬»ý¤Ã¤Æ¤¤¤ë¼º¸ú¤·¤¿¾ÚÌÀ½ñ¤ÎÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ãŒæŒã£ã¦ã„ã‚‹å¤±åŠ¹ã—ãŸè¨¼æ˜Žæ›¸ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
 

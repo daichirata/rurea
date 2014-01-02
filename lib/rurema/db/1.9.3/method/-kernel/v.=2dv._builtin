@@ -5,30 +5,30 @@ kind=defined
 --- $VERBOSE -> bool | nil
 --- $-v      -> bool | nil
 --- $-w      -> bool | nil
-��Ĺ��å������ե饰�Ǥ���Ruby���󥿥ץ꥿�ؤ�
-���ޥ�ɥ饤�󥪥ץ���� -v �ǥ��åȤ���ޤ���
+冗長メッセージフラグです。Rubyインタプリタへの
+コマンドラインオプション -v でセットされます。
 
-�ٹ��٥�ϻ��ʳ����ꡢ���줾��ʲ����̤�Ǥ���
+警告レベルは三段階あり、それぞれ以下の通りです。
 
 : nil
-    �ٹ����Ϥ��ʤ�
+    警告を出力しない
 : false
-    ���פʷٹ�Τ߽��� (�ǥե����)
+    重要な警告のみ出力 (デフォルト)
 : true
-    ���٤Ƥηٹ����Ϥ���
+    すべての警告を出力する
 
-$VERBOSE �� nil, false �ʳ�������������ͤ� true �ˤʤ�ޤ���
+$VERBOSE に nil, false 以外を代入すると値は true になります。
 
-$VERBOSE ���ͤϥ��ޥ�ɥ饤�󥪥ץ����
--W �Ǥ�����Ǥ��ޤ���
--W0 ���ץ����� nil��
--W1 ���ץ����� false��
--W2, -W ���ץ����� true �����ꤵ��ޤ���
--v ���ץ�����
--w ���ץ�������ꤷ������
-true �����ꤵ��ޤ���
+$VERBOSE の値はコマンドラインオプション
+-W でも設定できます。
+-W0 オプションで nil、
+-W1 オプションで false、
+-W2, -W オプションで true が設定されます。
+-v オプションや
+-w オプションを指定した場合は
+true が設定されます。
 
-$VERBOSE �ϥ������Х륹�����פǤ���
+$VERBOSE はグローバルスコープです。
 
 @see [[d:spec/rubycmd]]
 

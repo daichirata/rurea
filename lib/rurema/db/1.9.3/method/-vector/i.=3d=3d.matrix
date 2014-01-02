@@ -1,11 +1,13 @@
-names===,eqn?
+names===,eql?
 visibility=public
 kind=defined
 
 --- ==(v) -> bool
---- eqn?(v) -> bool
+--- eql?(v) -> bool
 
-��ʬ���ȤȰ��� v ����Ӥ���true/false ���֤��ޤ���
+自分自身と引数 v を比較し、true/false を返します。
 
-@param v ����оݥ٥��ȥ�
+@param v 比較対象ベクトル
+
+
 

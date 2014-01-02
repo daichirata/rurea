@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- sendcmd(cmd) -> String
-cmd �ǻ��ꤵ�줿���ޥ�ɤ򥵡��С������ꡢ
-�����С�����α������֤��ޤ���
+cmd で指定されたコマンドをサーバーに送り、
+サーバーからの応答を返します。
 
-@param cmd ���ޥ�ɤ�ʸ����ǻ��ꤷ�ޤ���
+@param cmd コマンドを文字列で指定します。
 
-@raise Net::FTPTempError ���������ɤ� 4yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPPermError ���������ɤ� 5yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPProtoError ���������ɤ� RFC Ū���������ʤ�����ȯ�����ޤ���
+@raise Net::FTPTempError 応答コードが 4yz のときに発生します。
+@raise Net::FTPPermError 応答コードが 5yz のときに発生します。
+@raise Net::FTPProtoError 応答コードが RFC 的に正しくない場合に発生します。
 
 

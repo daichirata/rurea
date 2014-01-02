@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- verify_mode -> Integer | nil
-���ڥ⡼�ɤ��֤��ޤ���
+検証モードを返します。
 
-�ǥե���Ȥ� nil �Ǥ���
+デフォルトは nil です。
 
 @see [[m:OpenSSL::SSL::SSLContext#verify_mode=]]

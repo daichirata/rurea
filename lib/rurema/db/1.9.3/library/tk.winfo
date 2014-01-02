@@ -3,5 +3,6 @@ classes=TkWinfo
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

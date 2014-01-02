@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- mod_sqr(m) -> OpenSSL::BN
-(self ** 2) % m ¤òÊÖ¤·¤Ş¤¹¡£
+(self ** 2) % m ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param m mod ¤ò¼è¤ë¿ô
-@raise OpenSSL::BNError ·×»»»ş¥¨¥é¡¼
+@param m mod ã‚’å–ã‚‹æ•°
+@raise OpenSSL::BNError è¨ˆç®—æ™‚ã‚¨ãƒ©ãƒ¼
 

@@ -1,19 +1,19 @@
 names=sin
 visibility=public
-kind=defined
+kind=added
 
 --- sin(x, prec) -> BigDecimal
 
-x �������ؿ��� prec �ǻ��ꤷ�����٤Ƿ׻����ޤ���ñ�̤ϥ饸����Ǥ���x
-��̵����� NaN ����ꤷ�����ˤ� NaN ���֤��ޤ���
+x の正弦関数を prec で指定した精度で計算します。単位はラジアンです。x
+に無限大や NaN を指定した場合には NaN を返します。
 
-@param x �׻��оݤ� BigDecimal ���֥������ȡ�ñ�̤ϥ饸����
+@param x 計算対象の BigDecimal オブジェクト。単位はラジアン。
 
-@param prec �׻���̤����١�
+@param prec 計算結果の精度。
 
-@raise ArgumentError prec �� 0 �ʲ������ꤵ�줿����ȯ�����ޤ���
+@raise ArgumentError prec に 0 以下が指定された場合に発生します。
 
-��:
+例:
 
 
   require "bigdecimal/math"

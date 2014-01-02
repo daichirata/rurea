@@ -4,6 +4,6 @@ kind=defined
 
 --- digest(str) -> String
 
-Ϳ����줿ʸ������Ф���ϥå����ͤ�ʸ������֤��ޤ���
-new(str).digest �������Ǥ���
+与えられた文字列に対するハッシュ値を文字列で返します。
+new(str).digest と等価です。
 

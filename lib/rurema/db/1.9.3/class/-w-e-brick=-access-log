@@ -6,56 +6,56 @@ library=webrick.accesslog
 aliases=
 aliasof=
 
-[[c:WEBrick::HTTPServer]] �Υ������������η�����������뤿��������ǻȤ���⥸�塼��Ǥ���
+[[c:WEBrick::HTTPServer]] のアクセスログの形式を処理するために内部で使われるモジュールです。
 
-�������������η����� Apache �� mod_log_config �η����˽�򤷤ޤ�����HTTP ���ơ����������ɤ�
-���ꤹ�뤳�ȤϽ���ޤ��󡣺Ǹ�Υ��ơ�������ɽ�� %>s �� %s ��Ʊ���褦�˲�ᤵ��ޤ���
+アクセスログの形式は Apache の mod_log_config の形式に準拠しますが、HTTP ステータスコードを
+指定することは出来ません。最後のステータスを表す %>s は %s と同じように解釈されます。
 
  * [[url:http://httpd.apache.org/docs/mod/mod_log_config.html#formats]]
 
  "%h %l %u %t \"%r\" %s %b"
  "%{User-Agent}i"
 
-����Ǥ�������ϰʲ��ΤȤ���Ǥ���
+指定できる形式は以下のとおりです。
 
 : %a
-  ��⡼�� IP ���ɥ쥹
+  リモート IP アドレス
 : %b
-  �쥹�ݥ󥹤ΥХ��ȿ���HTTP �إå��Ͻ�����CLF �񼰡�
-  ���ʤ����1 �Х��Ȥ������ʤ��ä��Ȥ��� 0 �ǤϤʤ��� '-' �ˤʤ�
+  レスポンスのバイト数。HTTP ヘッダは除く。CLF 書式。
+  すなわち、1 バイトも送られなかったときは 0 ではなく、 '-' になる
 : %{FOOBAR}e
-  �Ķ��ѿ� FOOBAR ������
+  環境変数 FOOBAR の内容
 : %f
-  �ե�����̾
+  ファイル名
 : %h
-  ��⡼�ȥۥ���
+  リモートホスト
 : %{Foobar}i
-  �����Ф�����줿�ꥯ�����Ȥ� Foobar:  �إå�������
+  サーバに送られたリクエストの Foobar:  ヘッダの内容
 : %l
   "-"
 : %m
-  �ꥯ�����ȥ᥽�å�
+  リクエストメソッド
 : %{Foobar}n
   req.attributes
 : %{Foobar}o
-  ������ Foobar: �إå�������
+  応答の Foobar: ヘッダの内容
 : %p
-  �ꥯ�����Ȥ򰷤äƤ��륵���Ф������ʥݡ���
+  リクエストを扱っているサーバの正式なポート
 : %q
-  ������ʸ����
+  クエリ文字列
 : %r
-  �ꥯ�����Ȥκǽ�ι�
+  リクエストの最初の行
 : %s
-  ���ơ�������"%>s" �ϥ��ݡ��Ȥ��ޤ���
+  ステータス。"%>s" はサポートしません。
 : %t
-  �ꥯ�����Ȥ���դ������ CLF �λ���ν� (ɸ��αѸ�ν�)
+  リクエストを受付けた時刻。 CLF の時刻の書式 (標準の英語の書式)
 : %{format}t
-  format ��Ϳ����줿�񼰤ˤ����format �� [[m:Time#strftime]] �� �񼰤Ǥ���ɬ�פ����롣
+  format で与えられた書式による時刻。format は [[m:Time#strftime]] の 書式である必要がある。
 : %T
-  �ꥯ�����Ȥ򰷤��Τˤ����ä����֡���ñ��
+  リクエストを扱うのにかかった時間、秒単位
 : %u
-  ��⡼�ȥ桼��
+  リモートユーザ
 : %U
-  �ꥯ�����Ȥ��줿 URL �ѥ���������ʸ����ϴޤޤʤ�
+  リクエストされた URL パス。クエリ文字列は含まない
 : %v
-  �ꥯ�����Ȥ򰷤äƤ��륵���Ф������� ServerName
+  リクエストを扱っているサーバの正式な ServerName

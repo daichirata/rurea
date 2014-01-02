@@ -3,10 +3,10 @@ visibility=public
 kind=added
 
 --- ciphers -> String | [String] | nil
-[[m:Net::HTTP#ciphers]] ¤ÇÀßÄê¤·¤¿ÃÍ¤òÊÖ¤·¤Ş¤¹¡£
+[[m:Net::HTTP#ciphers]] ã§è¨­å®šã—ãŸå€¤ã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:OpenSSL::SSL::SSLContext#ciphers]] ¤¬ÊÖ¤¹ÃÍ¤È¤Ï
-°Û¤Ê¤ë¤Î¤ÇÃí°Õ¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:OpenSSL::SSL::SSLContext#ciphers]] ãŒè¿”ã™å€¤ã¨ã¯
+ç•°ãªã‚‹ã®ã§æ³¨æ„ã—ã¦ãã ã•ã„ã€‚
 
 @see [[m:Net::HTTP#ciphers=]]
 

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- wday -> Integer
-ÍËÆü¤òÊÖ¤·¤Þ¤¹ (0-6¡¢ÆüÍËÆü¤ÏÎí)¡£
+æ›œæ—¥ã‚’è¿”ã—ã¾ã™ (0-6ã€æ—¥æ›œæ—¥ã¯é›¶)ã€‚
 

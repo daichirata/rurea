@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- chardev? -> bool
-¥­¥ã¥é¥¯¥¿¥¹¥Ú¥·¥ã¥ë¥Õ¥¡¥¤¥ë¤Î»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ã‚¹ãƒšã‚·ãƒ£ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ã®æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   Dir.glob("/dev/*") {|bd|
     if File::Stat.new(bd).chardev?
       puts bd
     end
   }
-  #Îã
+  #ä¾‹
   #...
   #=> /dev/tty1
   #=> /dev/stderr

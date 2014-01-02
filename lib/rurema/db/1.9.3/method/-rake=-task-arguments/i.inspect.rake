@@ -5,7 +5,7 @@ kind=defined
 --- inspect -> String
 --- to_s -> String
 
-���Ȥ�ʹ֤��ɤߤ䤹��ʸ����ˤ����֤��ޤ���
+自身を人間に読みやすい文字列にして返します。
 
 @see [[m:Hash#inspect]]
 

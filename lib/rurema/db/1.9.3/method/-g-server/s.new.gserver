@@ -4,17 +4,17 @@ kind=defined
 
 --- new(port, host = GServer::DEFAULT_HOST, maxConnections = 4, stdlog = $stderr, audit = false, debug = false)
 
-GServer ���֥������Ȥ��������ޤ���
+GServer オブジェクトを生成します。
 
-@param port �����Ф���å��󤹤�ݡ��Ȥ���ꤷ�ޤ���
+@param port サーバがリッスンするポートを指定します。
 
-@param host �ۥ��Ȥ���ꤷ�ޤ���
+@param host ホストを指定します。
 
-@param maxConnections ������³������ꤷ�ޤ����ǥե���Ȥ� 4 �Ǥ���
+@param maxConnections 最大接続数を指定します。デフォルトは 4 です。
 
-@param stdlog �����ν��������ꤷ�ޤ����ǥե���Ȥ�ɸ�२�顼���ϤǤ���
+@param stdlog ログの出力先を指定します。デフォルトは標準エラー出力です。
 
-@param audit ������ꤹ��ȥ����Фε�ư������³�������ǻ�����߻��˥�������Ϥ��ޤ���
+@param audit 真を指定するとサーバの起動時、接続時、切断時、停止時にログを出力します。
 
-@param debug ������ꤹ��ȥǥХå���������Ϥ��ޤ���
+@param debug 真を指定するとデバッグログを出力します。
 

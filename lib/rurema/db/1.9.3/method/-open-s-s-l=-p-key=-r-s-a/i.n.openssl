@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- n -> OpenSSL::BN
-¸°¤Î modulus ¤Ç¤¹¡£
+éµã® modulus ã§ã™ã€‚
 
-¸ø³«¸°¡¢ÈëÌ©¸°Î¾Êý¤Î°ìÉô¤Ç¤¹¡£
+å…¬é–‹éµã€ç§˜å¯†éµä¸¡æ–¹ã®ä¸€éƒ¨ã§ã™ã€‚
 

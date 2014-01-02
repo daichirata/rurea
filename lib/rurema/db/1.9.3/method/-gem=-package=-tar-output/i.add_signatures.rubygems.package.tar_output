@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- add_signatures
-gem-format ¤Ê tar ¥Õ¥¡¥¤¥ë¤Ë data.tar.gz.sig, metadata.gz.sig ¤òÄÉ²Ã¤·¤Ş¤¹¡£
+gem-format ãª tar ãƒ•ã‚¡ã‚¤ãƒ«ã« data.tar.gz.sig, metadata.gz.sig ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
 @see [[c:Gem::Security::Signer]]
 

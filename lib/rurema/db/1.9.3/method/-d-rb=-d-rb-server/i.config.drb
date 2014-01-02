@@ -2,7 +2,8 @@ names=config
 visibility=public
 kind=defined
 
---- config 
-@todo
-The configuration of this DRbServer
+--- config  -> Hash
+サーバの設定を返します。
+
+@see [[m:DRb::DRbServer.new]], [[m:DRb.#start_service]]
 

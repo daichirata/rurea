@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- close_on_exec=(bool)
-���Ȥ� close-on-exec �ե饰�����ꤷ�ޤ���
+自身に close-on-exec フラグを設定します。
 
-���Υե饰�򥻥åȤ���� [[man:exec(2)]] ���ˤ��Υե�����ǥ�����ץ���
-close ���ޤ���
+このフラグをセットすると [[man:exec(2)]] 時にそのファイルデスクリプタを
+close します。
 
 @see [[man:fcntl(2)]]
-@param bool ���Ȥ� close-on-exec �ե饰�� true �� false �ǻ��ꤷ�ޤ���
+@param bool 自身の close-on-exec フラグを true か false で指定します。
 
    f = open("/dev/null")
    f.close_on_exec = true

@@ -4,9 +4,9 @@ kind=defined
 
 --- new(io, security_policy = nil)
 @todo ???
-¤³¤Î¥¯¥é¥¹¤ò½é´ü²½¤·¤Ş¤¹¡£
+ã“ã®ã‚¯ãƒ©ã‚¹ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param io ¼«¿È¤Ë´ØÏ¢ÉÕ¤±¤ë IO ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param io è‡ªèº«ã«é–¢é€£ä»˜ã‘ã‚‹ IO ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @param security_policy ???
 

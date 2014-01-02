@@ -4,7 +4,7 @@ kind=defined
 
 --- new(io) -> Gem::Package::TarWriter::RestrictedStream
 
-¼«¿È¤ò½é´ü²½¤·¤Ş¤¹¡£
+è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param io ¥é¥Ã¥×¤¹¤ë IO ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param io ãƒ©ãƒƒãƒ—ã™ã‚‹ IO ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

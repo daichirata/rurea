@@ -4,7 +4,7 @@ kind=defined
 
 --- REPORT_MOUSE_POSITION -> Integer
 
-�ޥ����ΰ��֤�������뤿��˻��Ѥ���ޥ����Ѥ�����Ǥ���
+マウスの位置を取得するために使用するマスク用の定数です。
 
 @see [[m:Curses.getmouse]]
 

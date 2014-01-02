@@ -5,7 +5,7 @@ kind=defined
 --- UTF8_MAC -> Encoding
 --- UTF_8_MAC -> Encoding
 --- UTF_8_HFS -> Encoding
-UTF8-MAC¡¢¥¢¥Ã¥×¥ë¤Ë¤è¤Ã¤Æ½¤Àµ¤µ¤ì¤¿ Normalization Form D¡ÊÊ¬²òºÑ¤ß¡Ë¤È¤¤¤¦·Á¼°¤ÎUTF-8¤Ç¤¹¡£
+UTF8-MACã€ã‚¢ãƒƒãƒ—ãƒ«ã«ã‚ˆã£ã¦ä¿®æ­£ã•ã‚ŒãŸ Normalization Form Dï¼ˆåˆ†è§£æ¸ˆã¿ï¼‰ã¨ã„ã†å½¢å¼ã®UTF-8ã§ã™ã€‚
 
 @see [[url:http://developer.apple.com/jp/technotes/tn1150.html]],
      [[url:http://developer.apple.com/jp/technotes/tn2078.html]]

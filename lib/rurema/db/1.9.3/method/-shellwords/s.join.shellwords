@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- join(array) -> String
-����γ����ǤǤ���ʸ������Ф��ơ�Bourne ������Υ��ޥ�ɥ饤����ǰ�����
-�Ȥ��뤿��Υ��������פ�Ŭ�Ѥ�������ʸ����𤷤Ƥ�����Ϣ�뤷�����ޥ��
-�饤��ʸ������������ޤ���
+配列の各要素である文字列に対して、Bourne シェルのコマンドライン中で安全に
+使えるためのエスケープを適用し、空白文字を介してそれらを連結したコマンド
+ライン文字列を生成します。
 
-���Υ᥽�åɤϡ�[[m:Shellwords.#shelljoin]] ����̾�Ǥ���
+このメソッドは、[[m:Shellwords.#shelljoin]] の別名です。
 
-@param array �����������оݤ�ʸ��������ǤȤ����������ꤷ�ޤ���
-@return ���������׷�̤�Ϣ�뤷��ʸ������֤��ޤ���
+@param array エスケープ対象の文字列を要素とする配列を指定します。
+@return エスケープ結果を連結した文字列を返します。
 

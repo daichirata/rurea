@@ -5,7 +5,7 @@ kind=defined
 --- has_value?(val) -> bool
 --- value?(val)     -> bool
 
-val ���ͤȤ��ƻ��ĴĶ��ѿ���¸�ߤ�����������֤��ޤ���
+val を値として持つ環境変数が存在する時、真を返します。
 
-@param val  �ͤ���ꤷ�ޤ���to_str ��ʸ���󲽤���ޤ���
+@param val  値を指定します。to_str で文字列化されます。
 

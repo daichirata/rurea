@@ -6,14 +6,14 @@ kind=defined
 --- send_mail(mailsrc, from_addr, *to_addrs) -> ()
 --- sendmail(mailsrc, from_addr, *to_addrs) -> ()
 
-�᡼����������ޤ���
+メールを送信します。
 
-mailsrc ��᡼��Ȥ����������ޤ���
-mailsrc �� each ���ƥ졼�������
-���֥������Ȥʤ�ʤ�Ǥ⹽���ޤ���(���Ȥ��� String �� File)��
+mailsrc をメールとして送信します。
+mailsrc は each イテレータを持つ
+オブジェクトならなんでも構いません(たとえば String や File)。
 
-from_domain �������Υ᡼�륢�ɥ쥹 ('...@...'�Τ�����) ��
-to_addrs �ˤ�������᡼�륢�ɥ쥹��ʸ������Ϥ��ޤ���
+from_domain は送り主のメールアドレス ('...@...'のかたち) 、
+to_addrs には送信先メールアドレスを文字列で渡します。
 
   require 'net/smtp'
 
@@ -23,16 +23,16 @@ to_addrs �ˤ�������᡼�륢�ɥ쥹��ʸ������Ϥ��ޤ���
                       'to1@example.net', 'to2@example.net'
   }
 
-sendmail �� obsolete �Ǥ���
+sendmail は obsolete です。
 
-@param mailsrc �᡼�������
-@param from_addr �������Υ᡼�륢�ɥ쥹
-@param to_addrs ������Υ᡼�륢�ɥ쥹(ʣ���ġ����ʤ��Ȥ�1��)
+@param mailsrc メールの内容
+@param from_addr 送信元のメールアドレス
+@param to_addrs 送信先のメールアドレス(複数可、少なくとも1個)
 
-@raise IOError ���Ǥ˥��å���󤬽�λ���Ƥ������ȯ�����ޤ�
-@raise TimeoutError ��³�������ॢ���Ȥ�������ȯ�����ޤ�
-@raise Net::SMTPServerBusy SMTP���顼������420,450�ξ���ȯ�����ޤ�
-@raise Net::SMTPSyntaxError SMTP���顼������500�ξ���ȯ�����ޤ�
-@raise Net::SMTPFatalError SMTP���顼������5xx�ξ���ȯ�����ޤ�
-@raise Net::SMTPUnknownError SMTP���顼�����ɤ��ץ��ȥ���������ʾ���ȯ�����ޤ�
+@raise IOError すでにセッションが終了している場合に発生します
+@raise TimeoutError 接続がタイムアウトした場合に発生します
+@raise Net::SMTPServerBusy SMTPエラーコード420,450の場合に発生します
+@raise Net::SMTPSyntaxError SMTPエラーコード500の場合に発生します
+@raise Net::SMTPFatalError SMTPエラーコード5xxの場合に発生します
+@raise Net::SMTPUnknownError SMTPエラーコードがプロトコル上不正な場合に発生します
 

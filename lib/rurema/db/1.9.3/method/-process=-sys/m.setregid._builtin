@@ -4,13 +4,13 @@ kind=defined
 
 --- setregid(rid, eid)    -> nil
 
-�����ƥॳ����� [[man:setregid(2)]] ��ƤӤޤ���
+システムコールの [[man:setregid(2)]] を呼びます。
 
-@param rid �����ƥॳ����ΰ����������ǻ��ꤷ�ޤ���
+@param rid システムコールの引数を整数で指定します。
 
-@param eid �����ƥॳ����ΰ����������ǻ��ꤷ�ޤ���
+@param eid システムコールの引数を整数で指定します。
 
-@raise NotImplementedError �����ƥॳ���뤬���ߤΥץ�åȥե�������󶡤���Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError システムコールが現在のプラットフォームで提供されていない場合に発生します。
 
-@raise Errno::EXXX �����ƥॳ����˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX システムコールに失敗した場合に発生します。
 

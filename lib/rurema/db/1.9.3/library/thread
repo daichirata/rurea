@@ -3,9 +3,10 @@ classes=ConditionVariable,Queue,SizedQueue
 methods=
 sublibraries=
 is_sublibrary=false
+category=Thread
 
-¥¹¥ì¥Ã¥É´Ö¥­¥å¡¼¤ä¾õÂÖÊÑ¿ô (condition variable) ¤òÄó¶¡¤¹¤ë¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ã‚¹ãƒ¬ãƒƒãƒ‰é–“ã‚­ãƒ¥ãƒ¼ã‚„çŠ¶æ…‹å¤‰æ•° (condition variable) ã‚’æä¾›ã™ã‚‹ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤Ï [[c:Thread]] ¤ò³ÈÄ¥¤·¤Ş¤¹¡£ruby¥¤¥ó¥¿¥×¥ê¥¿¤ò
-¥Ç¥Ğ¥Ã¥°¥ª¥×¥·¥ç¥óÉÕ¤­([[m:$DEBUG]]¤ò¿¿)¤Ç¼Â¹Ô¤·¤¿¤È¤­¤Ë¤Ï¡¢
-[[m:Thread.abort_on_exception]] ¤ò true ¤Ë¤·¤Ş¤¹¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¯ [[c:Thread]] ã‚’æ‹¡å¼µã—ã¾ã™ã€‚rubyã‚¤ãƒ³ã‚¿ãƒ—ãƒªã‚¿ã‚’
+ãƒ‡ãƒãƒƒã‚°ã‚ªãƒ—ã‚·ãƒ§ãƒ³ä»˜ã([[m:$DEBUG]]ã‚’çœŸ)ã§å®Ÿè¡Œã—ãŸã¨ãã«ã¯ã€
+[[m:Thread.abort_on_exception]] ã‚’ true ã«ã—ã¾ã™ã€‚

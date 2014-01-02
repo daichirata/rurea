@@ -4,7 +4,7 @@ kind=defined
 
 --- Id -> String
 
-[[c:StringScanner]] ���饹�ξܤ����С�������ʸ������֤��ޤ���
-����ʸ����� [[m:Object#freeze]] ����Ƥ��ޤ���
+[[c:StringScanner]] クラスの詳しいバージョンを文字列で返します。
+この文字列は [[m:Object#freeze]] されています。
 
 

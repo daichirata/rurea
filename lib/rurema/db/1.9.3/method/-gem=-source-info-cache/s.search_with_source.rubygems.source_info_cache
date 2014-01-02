@@ -4,9 +4,9 @@ kind=defined
 
 --- search_with_source(*args) -> Array
 
-Ϳ����줿���������� [[c:Gem::Specification]] �� URL �Υꥹ�Ȥ��֤��ޤ���
+与えられた条件を満たす [[c:Gem::Specification]] と URL のリストを返します。
 
-@param args ����������ꤷ�ޤ���[[m:Gem::SourceInfoCache#search_with_source]] �Ȱ������碌�Ƥ���������
+@param args 検索条件を指定します。[[m:Gem::SourceInfoCache#search_with_source]] と引数を合わせてください。
 
 @see [[m:Gem::SourceInfoCache#search_with_source]]
 

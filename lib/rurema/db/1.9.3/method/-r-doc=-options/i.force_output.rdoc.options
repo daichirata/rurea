@@ -4,9 +4,9 @@ kind=defined
 
 --- force_output -> bool
 
-���ޥ�ɥ饤������� --force_output ���ץ�������ꤷ�Ƥ�����硢true
-���֤��ޤ���--no-force_output ���ץ�������ꤷ�Ƥ�����硢false ����
-���ޤ���
+コマンドライン引数の --force_output オプションを指定していた場合、true
+を返します。--no-force_output オプションを指定していた場合、false を返
+します。
 
-�ɤ������ꤷ�ʤ��ä����� true ���֤��ޤ���
+どちらも指定しなかった場合は true を返します。
 

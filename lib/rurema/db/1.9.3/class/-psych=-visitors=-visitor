@@ -2,8 +2,8 @@ type=class
 superclass=Object
 included=
 extended=
-library=psych.visitors.visitor
+library=psych
 aliases=
 aliasof=
 
-
+Psych 内部で利用する、Visitor パターンのための 抽象クラス。

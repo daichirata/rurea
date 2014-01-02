@@ -4,7 +4,7 @@ kind=defined
 
 --- superclass    -> Class | nil
 
-¼«¿È¤Î¥¹¡¼¥Ñ¡¼¥¯¥é¥¹¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã®ã‚¹ãƒ¼ãƒ‘ãƒ¼ã‚¯ãƒ©ã‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-¤¿¤À¤· [[c:BasicObject]].superclass ¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+ãŸã ã— [[c:BasicObject]].superclass ã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 

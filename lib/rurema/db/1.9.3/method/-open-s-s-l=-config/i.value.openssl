@@ -4,13 +4,13 @@ kind=defined
 
 --- value(name) -> String | nil
 --- value(section, name) -> String | nil
-���Υ᥽�åɤ� obsolete �Ǥ���
+このメソッドは obsolete です。
 
-���֥������Ȥ����äƤ������������֤��ޤ���
+オブジェクトが持っている設定情報を返します。
 
-��������Ĥξ��ϥ������Х륻�������ξ�����֤���
-2�Ĥξ��� section �ǻ��ꤷ�����������ξ�����֤��ޤ���
+引数が一つの場合はグローバルセクションの情報を返し、
+2つの場合は section で指定したセクションの情報を返します。
 
-@param section ����������ɽ��ʸ����
-@param name ������ɽ��ʸ����
+@param section セクションを表す文字列
+@param name キーを表す文字列
 

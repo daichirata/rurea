@@ -6,4 +6,4 @@ library=logger
 aliases=
 aliasof=
 
-[[lib:logger]] �ǻ��Ѥ��������٥����������⥸�塼�롣
+[[lib:logger]] で使用するログレベルを定義したモジュール。

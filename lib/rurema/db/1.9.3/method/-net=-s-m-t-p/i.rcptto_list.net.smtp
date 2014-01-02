@@ -2,11 +2,14 @@ names=rcptto_list
 visibility=public
 kind=defined
 
---- rcptto_list(to_addrs) -> Net::SMTP::Response
-RCPTTO ���ޥ�ɤ� to_addrs �Τ��٤ƤΥ᡼�륢�ɥ쥹���Ф�������ޤ���
+--- rcptto_list(to_addrs){ ... } -> object
+RCPTTO コマンドを to_addrs のすべてのメールアドレスに対して送ります。
 
-�̾�� [[m:Net::SMTP#send_message]], [[m:Net::SMTP#open_message_stream]] ��
-RCPTTO �������뤿�����Ѥ���ɬ�פϤʤ��Ϥ��Ǥ���
+コマンドを送った後、ブロックを呼び出します。
+このメソッドの返り値はブロックの返り値になります。
 
-@param to_addrs ������᡼�륢�ɥ쥹������
+通常は [[m:Net::SMTP#send_message]], [[m:Net::SMTP#open_message_stream]] で
+RCPTTO が送られるため利用する必要はないはずです。
+
+@param to_addrs 送信先メールアドレスの配列
 

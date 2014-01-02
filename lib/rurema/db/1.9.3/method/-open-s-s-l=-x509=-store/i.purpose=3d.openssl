@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- purpose=(purpose)
-������λ�����Ū�����ꤷ�ޤ���
+証明書の使用目的を設定します。
 
-�ʲ�������ͤΤ��������줫1�Ĥ��Ϥ��ޤ���
+以下の定数値のうちいずれか1つを渡します。
   * [[m:OpenSSL::X509::PURPOSE_ANY]]
   * [[m:OpenSSL::X509::PURPOSE_CRL_SIGN]]
   * [[m:OpenSSL::X509::PURPOSE_NS_SSL_SERVER]]
@@ -15,12 +15,12 @@ kind=defined
   * [[m:OpenSSL::X509::PURPOSE_SSL_SERVER]]
   * [[m:OpenSSL::X509::PURPOSE_OSCP_HELPER]]
 
-�����ͤ� [[m:OpenSSL::X509::Store#verify]] �Ǹ��ڤ���������Ѥ���ޤ���
-������˵��ܤ���Ƥ��������Ū��Ŭ�礷�Ƥ��ʤ����ˤϸ��ڤ����Ԥ��ޤ���
-[[m:OpenSSL::X509::StoreContext.new]] �Ǿ����񥹥ȥ�����ƥ����Ȥ�
-����������ˤϤ��Υ���ƥ����Ȥˤ����ͤ����ԡ�����ޤ���
+この値は [[m:OpenSSL::X509::Store#verify]] で検証する場合に利用されます。
+証明書に記載されている使用目的が適合していない場合には検証が失敗します。
+[[m:OpenSSL::X509::StoreContext.new]] で証明書ストアコンテキストを
+生成する場合にはそのコンテキストにこの値がコピーされます。
 
-@param purpose ������λ�����Ū��ɽ��������
+@param purpose 証明書の使用目的を表す整数値
 @see [[m:OpenSSL::X509::StoreContext#purpose=]]
 
 

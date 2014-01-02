@@ -3,5 +3,6 @@ classes=TkOptionDB,TkOptionDB=Priority
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

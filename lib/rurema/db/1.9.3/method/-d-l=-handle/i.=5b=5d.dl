@@ -5,13 +5,13 @@ kind=defined
 --- sym(func) -> Integer
 --- [](func)  -> Integer
 
-�ؿ��䥰�����Х��ѿ� func �ؤΥݥ��󥿤�������������Ȥ����֤��ޤ���
+関数やグローバル変数 func へのポインタを取得し、整数として返します。
 
-@param func ����������ܥ��̾����ʸ�����Ϳ���ޤ���
+@param func 得たいシンボルの名前を文字列で与えます。
 
-@raise RuntimeError ����ܥ뤬���Ĥ���ʤ��ä�����ȯ�����ޤ���
+@raise DL::DLError シンボルが見つからなかった時に発生します。
 
-��:
+例:
 
  require 'dl'
 

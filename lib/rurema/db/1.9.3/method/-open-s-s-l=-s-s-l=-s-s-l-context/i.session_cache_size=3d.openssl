@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- session_cache_size=(size)
-���Ȥ��ݻ���ǽ�ʥ��å���󥭥�å���Υ���������ꤷ�ޤ���
+自身が保持可能なセッションキャッシュのサイズを指定します。
 
-size �� 0 ���Ϥ������¤ʤ����̣���ޤ���
+size に 0 を渡すと制限なしを意味します。
 
-�ǥե���Ȥ� 1024*20 �ǡ�20000 ���å����ޤǥ���å�����ݻ��Ǥ��ޤ���
+デフォルトは 1024*20 で、20000 セッションまでキャッシュを保持できます。
 
-@param size ���å���󥭥�å���Υ�����(������)
+@param size セッションキャッシュのサイズ(整数値)
 @see [[m:OpenSSL::SSL::SSLContext#session_cache_size]]
 

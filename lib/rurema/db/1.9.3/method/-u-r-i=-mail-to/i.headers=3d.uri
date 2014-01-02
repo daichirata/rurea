@@ -4,13 +4,13 @@ kind=defined
 
 --- headers=(s)
 
-¼«¿È¤Î¥Ø¥Ã¥À¡¼¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã®ãƒ˜ãƒƒãƒ€ãƒ¼ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¥Ø¥Ã¥À¡¼¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param s ãƒ˜ãƒƒãƒ€ãƒ¼ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@raise URI::InvalidComponentError ÉÔÀµ¤Ê°ú¿ô s ¤ËÂĞ¤·¤ÆÈ¯À¸¤·¤Ş¤¹¡£
+@raise URI::InvalidComponentError ä¸æ­£ãªå¼•æ•° s ã«å¯¾ã—ã¦ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã: 
+ä¾‹: 
   m = URI.parse("mailto:nospam@example.com")
   m.headers =  URI.escape("subject=hello hello")
 

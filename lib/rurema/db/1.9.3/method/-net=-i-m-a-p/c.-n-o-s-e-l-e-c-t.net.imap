@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- NOSELECT -> Symbol
-��:Noselect�פȤ�������ܥ���֤��ޤ���
+「:Noselect」というシンボルを返します。
 
-�᡼��ܥå����������ǽ�Ǥʤ����Ȥ��̣���ޤ���
+メールボックスが選択可能でないことを意味します。
 
-LIST������°��
-([[m:Net::IMAP#list]]��[[m:Net::IMAP::MailboxList#attr]])
-�Ȥ����Ѥ����ޤ���
+LIST応答の属性
+([[m:Net::IMAP#list]]、[[m:Net::IMAP::MailboxList#attr]])
+として用いられます。
 
-�ܤ����� [[RFC:2060]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] を参照してください。

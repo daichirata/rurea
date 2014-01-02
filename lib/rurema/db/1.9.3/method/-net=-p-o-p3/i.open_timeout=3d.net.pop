@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- open_timeout=(n)
-ÀÜÂ³»ş¤ËÂÔ¤ÄºÇÂçÉÃ¿ô¤òÀßÄê¤·¤Ş¤¹¡£
+æ¥ç¶šæ™‚ã«å¾…ã¤æœ€å¤§ç§’æ•°ã‚’è¨­å®šã—ã¾ã™ã€‚
 
 @see [[m:Net::POP3#open_timeout]]
 

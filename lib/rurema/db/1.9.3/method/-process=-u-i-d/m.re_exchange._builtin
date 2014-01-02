@@ -4,11 +4,11 @@ kind=defined
 
 --- re_exchange    -> Integer
 
-�¥桼�� ID �ȼ¸��桼�� ID �Ȥ����촹���ޤ���
-��¸�桼�� ID �Ͽ������¸��桼�� ID ��Ʊ���ˤʤ�ޤ���
-�������¸��桼�� ID ���֤��ޤ���
+実ユーザ ID と実効ユーザ ID とを入れ換えます。
+保存ユーザ ID は新しい実効ユーザ ID と同じになります。
+新しい実効ユーザ ID を返します。
 
-���ѤǤ��뤫�ϥץ�åȥե�����˰�¸���ޤ���
+利用できるかはプラットフォームに依存します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 

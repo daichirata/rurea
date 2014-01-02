@@ -3,5 +3,6 @@ classes=WEBrick=Cookie
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

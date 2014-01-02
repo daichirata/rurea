@@ -6,5 +6,5 @@ library=rubygems.server
 aliases=
 aliasof=
 
-Gem �ѥå����������ۤ����� Gem �ѥå�������Ʊ������Ƥ���ɥ�����Ȥ򻲾Ȥ��뤿���
-�ʰץ����֥����Ф�ư��������Υ��饹�Ǥ���
+Gem パッケージを配布したり Gem パッケージに同梱されているドキュメントを参照するための
+簡易ウェブサーバを動かすためのクラスです。

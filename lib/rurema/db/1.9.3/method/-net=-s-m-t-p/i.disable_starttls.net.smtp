@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- disable_starttls -> ()
-¤½¤Î Net::SMTP ¥ª¥Ö¥¸¥§¥¯¥È¤¬STARTTLS¤ò¾ï¤Ë»È¤ï¤Ê¤¤¤è¤¦ÀßÄê¤·¤Ş¤¹¡£
+ãã® Net::SMTP ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒSTARTTLSã‚’å¸¸ã«ä½¿ã‚ãªã„ã‚ˆã†è¨­å®šã—ã¾ã™ã€‚
 
 @see [[m:Net::SMTP#starttls?]], [[m:Net::SMTP#enable_starttls]], [[m:Net::SMTP#enable_starttls_auto]]
 

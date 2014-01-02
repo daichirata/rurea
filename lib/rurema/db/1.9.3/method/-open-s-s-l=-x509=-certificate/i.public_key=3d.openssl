@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- public_key=(pkey)
-¾ÚÌÀ½ñ¤Ë¸ø³«¸°¤òÀßÄê¤·¤Ş¤¹¡£
+è¨¼æ˜æ›¸ã«å…¬é–‹éµã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param pkey ¸ø³«¸°([[c:OpenSSL::PKey::PKey]]¤Î¥µ¥Ö¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹)
-@raise OpenSSL::X509::CertificateError ¸°¤ÎÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param pkey å…¬é–‹éµ([[c:OpenSSL::PKey::PKey]]ã®ã‚µãƒ–ã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹)
+@raise OpenSSL::X509::CertificateError éµã®è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

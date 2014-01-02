@@ -2,6 +2,7 @@ names=element
 visibility=public
 kind=defined
 
---- element
-@todo
+--- element -> REXML::Element
+その属性が属する要素を返します。
+
 

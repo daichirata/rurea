@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- new(name, data=nil) -> OpenSSL::Digest
-�����������ȥ��֥������Ȥ��������ޤ���
+ダイジェストオブジェクトを生成します。
 
-name �ǥϥå���ؿ��μ�������Ӥޤ���
+name でハッシュ関数の種類を選びます。
 
-data ��ʸ������Ϥ��ȡ�����ʸ����ǥ��֥������Ȥ��������֤򹹿����ޤ���
+data に文字列を渡すと、その文字列でオブジェクトの内部状態を更新します。
 
-@param name �ϥå���ؿ��μ����ʸ����("md5", "sha256" �ʤ�)�ǻ���
-@param data ����ʸ����
-@raise RuntimeError ���ݡ��Ȥ���Ƥ��ʤ����르�ꥺ�����ꤷ������ȯ�����ޤ�
+@param name ハッシュ関数の種類を文字列("md5", "sha256" など)で指定
+@param data 入力文字列
+@raise RuntimeError サポートされていないアルゴリズムを指定した場合に発生します
 

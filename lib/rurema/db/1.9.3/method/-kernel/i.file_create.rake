@@ -4,7 +4,7 @@ kind=added
 
 --- file_create(*args){ ... } -> Rake::FileCreationTask
 
-¥Õ¥¡¥¤¥ë¤òºîÀ®¤¹¤ë¥¿¥¹¥¯¤òÄêµÁ¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã™ã‚‹ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-¼ç¤Ë [[m:Kernel.#directory]] ¤òÄêµÁ¤¹¤ë¤¿¤á¤Ë»ÈÍÑ¤·¤Þ¤¹¡£
+ä¸»ã« [[m:Kernel.#directory]] ã‚’å®šç¾©ã™ã‚‹ãŸã‚ã«ä½¿ç”¨ã—ã¾ã™ã€‚
 

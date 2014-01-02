@@ -4,12 +4,12 @@ kind=defined
 
 --- set_dictionary(string) -> String
 
-���̤��Ѥ��뼭�����ꤷ�ޤ���string ���֤��ޤ���
-���Υ᥽�åɤ� [[m:Zlib::Deflate.new]], [[m:Zlib::ZStream#reset]]
-��ƤӽФ���ľ��ˤΤ�ͭ���Ǥ����ܺ٤� zlib.h �򻲾Ȥ��Ʋ�������
+圧縮に用いる辞書を指定します。string を返します。
+このメソッドは [[m:Zlib::Deflate.new]], [[m:Zlib::ZStream#reset]]
+を呼び出した直後にのみ有効です。詳細は zlib.h を参照して下さい。
 
-@param string ������Ѥ���ʸ�������ꤷ�ޤ����ܤ����� zlib.h �򻲾Ȥ��Ƥ���������
-@return ������Ѥ���ʸ������֤��ޤ��� 
+@param string 辞書に用いる文字列を指定します。詳しくは zlib.h を参照してください。
+@return 辞書に用いる文字列を返します。 
 
   def case1(str)
     dez = Zlib::Deflate.new

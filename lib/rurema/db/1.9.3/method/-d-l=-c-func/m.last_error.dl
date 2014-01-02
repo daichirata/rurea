@@ -5,8 +5,8 @@ kind=defined
 --- last_error    -> Integer
 @todo 
 
-�Ǹ�˴ؿ����ƤӽФ��줿�Ȥ��� errno ���������֤��ޤ���
-�����ͤϥ���åɥ�������Ǥ���
+最後に関数が呼び出されたときの errno を整数で返します。
+この値はスレッドローカルです。
 
 @see [[man:errno(3)]]
 

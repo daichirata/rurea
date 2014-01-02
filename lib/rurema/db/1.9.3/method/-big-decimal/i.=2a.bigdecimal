@@ -2,11 +2,11 @@ names=*
 visibility=public
 kind=defined
 
---- *(other)
-@todo
+--- *(other) -> BigDecimal
 
-�軻 (c = a * b)��
+積を計算します。
 
-c �����٤� (a ������) + (b ������) ���٤Ǥ���
-�ܤ����ϡַ׻����٤ˤĤ��ơפ򻲾Ȥ��Ƥ��������� 
+@param other self に掛ける数を指定します。
+
+計算結果の精度については[[ref:lib:bigdecimal#precision]]を参照してください。
 

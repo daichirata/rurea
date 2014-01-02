@@ -4,53 +4,53 @@ kind=defined
 
 --- bstate -> Integer
 
-�ޥ����Υܥ��󤬥���å����줿�Ȥ��������äѤʤ��Ȥ��ä����֤��֤��ޤ���
+マウスのボタンがクリックされたとか、押しっぱなしといった状態を返します。
 
-����ͤγƥӥåȤ���4 �ĤΥܥ������֤�ɽ�����Ƥ��ޤ���
-���������Ȥäơ����֤�������ޤ���
+戻り値の各ビットが、4 つのボタンを状態を表現しています。
+次の定数を使って、状態を取得します。
 
 : Curses::BUTTON1_RELEASED
-  �ܥ��� 1 ��Υ��������
+  ボタン 1 を離した状態
 : Curses::BUTTON1_PRESSED
-  �ܥ��� 1 �򲡤�������
+  ボタン 1 を押した状態
 : Curses::BUTTON1_CLICKED
-  �ܥ��� 1 �򥯥�å���������
+  ボタン 1 をクリックした状態
 : Curses::BUTTON1_DOUBLE_CLICKED
-  �ܥ��� 1 ����֥륯��å���������
+  ボタン 1 をダブルクリックした状態
 : Curses::BUTTON1_TRIPLE_CLICKED
-  �ܥ��� 1 ��ȥ�ץ륯��å���������
+  ボタン 1 をトリプルクリックした状態
 : Curses::BUTTON2_RELEASED
-  �ܥ��� 2 ��Υ��������
+  ボタン 2 を離した状態
 : Curses::BUTTON2_PRESSED
-  �ܥ��� 2 �򲡤�������
+  ボタン 2 を押した状態
 : Curses::BUTTON2_CLICKED
-  �ܥ��� 2 �򥯥�å���������
+  ボタン 2 をクリックした状態
 : Curses::BUTTON2_DOUBLE_CLICKED
-  �ܥ��� 2 ����֥륯��å���������
+  ボタン 2 をダブルクリックした状態
 : Curses::BUTTON2_TRIPLE_CLICKED
-  �ܥ��� 2 ��ȥ�ץ륯��å���������
+  ボタン 2 をトリプルクリックした状態
 : Curses::BUTTON3_RELEASED
-  �ܥ��� 3 ��Υ��������
+  ボタン 3 を離した状態
 : Curses::BUTTON3_PRESSED
-  �ܥ��� 3 �򲡤�������
+  ボタン 3 を押した状態
 : Curses::BUTTON3_CLICKED
-  �ܥ��� 3 �򥯥�å���������
+  ボタン 3 をクリックした状態
 : Curses::BUTTON3_DOUBLE_CLICKED
-  �ܥ��� 3 ����֥륯��å���������
+  ボタン 3 をダブルクリックした状態
 : Curses::BUTTON3_TRIPLE_CLICKED
-  �ܥ��� 3 ��ȥ�ץ륯��å���������
+  ボタン 3 をトリプルクリックした状態
 : Curses::BUTTON4_RELEASED
-  �ܥ��� 4 ��Υ��������
+  ボタン 4 を離した状態
 : Curses::BUTTON4_PRESSED
-  �ܥ��� 4 �򲡤�������
+  ボタン 4 を押した状態
 : Curses::BUTTON4_CLICKED
-  �ܥ��� 4 �򥯥�å���������
+  ボタン 4 をクリックした状態
 : Curses::BUTTON4_DOUBLE_CLICKED
-  �ܥ��� 4 ����֥륯��å���������
+  ボタン 4 をダブルクリックした状態
 : Curses::BUTTON4_TRIPLE_CLICKED
-  �ܥ��� 4 ��ȥ�ץ륯��å���������
+  ボタン 4 をトリプルクリックした状態
 
-��:
+例:
 
   require "curses"
   
@@ -94,5 +94,5 @@ kind=defined
     Curses.close_screen
   end
 
-@see [[m:Curses.#mousemask]]��[[m:Curses.#getmouse]]
+@see [[m:Curses.#mousemask]]、[[m:Curses.#getmouse]]
 

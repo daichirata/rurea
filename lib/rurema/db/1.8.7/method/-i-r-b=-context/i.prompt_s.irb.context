@@ -1,9 +1,0 @@
-names=prompt_s
-visibility=public
-kind=defined
-
---- prompt_s
-@todo
-
-文字列中のプロンプトを表現するフォーマット文字列を返します。
-

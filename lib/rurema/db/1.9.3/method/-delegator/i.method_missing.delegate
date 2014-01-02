@@ -4,13 +4,13 @@ kind=defined
 
 --- method_missing(m, *args) -> object
 
-�Ϥ��줿�᥽�å�̾�Ȱ�����Ȥäơ�[[m:Delegator#__getobj__]] ���֤����֥������Ȥإ᥽�åɰѾ���Ԥ��ޤ���
+渡されたメソッド名と引数を使って、[[m:Delegator#__getobj__]] が返すオブジェクトへメソッド委譲を行います。
 
-@param m �᥽�åɤ�̾���ʥ���ܥ��
+@param m メソッドの名前（シンボル）
 
-@param args �᥽�åɤ��Ϥ��줿����
+@param args メソッドに渡された引数
 
-@return �Ѿ���Υ᥽�åɤ�����֤���
+@return 委譲先のメソッドからの返り値
 
-@see [[m:Object#method_missing]]
+@see [[m:BasicObject#method_missing]]
 

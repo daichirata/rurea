@@ -4,13 +4,13 @@ kind=defined
 
 --- autoload(const_name, feature) -> nil
 
-Äê¿ô const_name ¤òºÇ½é¤Ë»²¾È¤·¤¿»ş¤Ë feature ¤ò [[m:Kernel.#require]] ¤¹¤ë¤è¤¦¤ËÀßÄê¤·¤Ş¤¹¡£
+å®šæ•° const_name ã‚’æœ€åˆã«å‚ç…§ã—ãŸæ™‚ã« feature ã‚’ [[m:Kernel.#require]] ã™ã‚‹ã‚ˆã†ã«è¨­å®šã—ã¾ã™ã€‚
 
-@param const_name [[c:String]] ¤Ş¤¿¤Ï [[c:Symbol]] ¤Ç»ØÄê¤·¤Ş¤¹¡£
-       ¤Ê¤ª¡¢const_name ¤Ë¤Ï¡¢"::" ±é»»»Ò¤ò´Ş¤á¤ë¤³¤È¤Ï¤Ç¤­¤Ş¤»¤ó¡£
-       ¤Ä¤Ş¤ê¡¢¥È¥Ã¥×¥ì¥Ù¥ë¤ÎÄê¿ô¤·¤«»ØÄê¤Ç¤­¤Ş¤»¤ó¡£
+@param const_name [[c:String]] ã¾ãŸã¯ [[c:Symbol]] ã§æŒ‡å®šã—ã¾ã™ã€‚
+       ãªãŠã€const_name ã«ã¯ã€"::" æ¼”ç®—å­ã‚’å«ã‚ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚
+       ã¤ã¾ã‚Šã€ãƒˆãƒƒãƒ—ãƒ¬ãƒ™ãƒ«ã®å®šæ•°ã—ã‹æŒ‡å®šã§ãã¾ã›ã‚“ã€‚
 
-@param feature [[m:Kernel.#require]] ¤ÈÆ±ÍÍ¤ÊÊıË¡¤Ç autoload ¤¹¤ëÂĞ¾İ¤ò»ØÄê¤¹¤ë¡£
+@param feature [[m:Kernel.#require]] ã¨åŒæ§˜ãªæ–¹æ³•ã§ autoload ã™ã‚‹å¯¾è±¡ã‚’æŒ‡å®šã™ã‚‹ã€‚
 
 @see [[m:Kernel.#autoload]]
 

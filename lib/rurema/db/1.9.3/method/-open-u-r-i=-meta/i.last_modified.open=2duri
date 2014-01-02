@@ -4,10 +4,10 @@ kind=defined
 
 --- last_modified    -> Time | nil
 
-ÂÐ¾Ý¤È¤Ê¤ë URI ¤ÎºÇ½ª¹¹¿·»þ¹ï¤ò [[c:Time]] ¥ª¥Ö¥¸¥§¥¯¥È¤ÇÊÖ¤·¤Þ¤¹¡£
-Last-Modified ¥Ø¥Ã¥À¤¬¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+å¯¾è±¡ã¨ãªã‚‹ URI ã®æœ€çµ‚æ›´æ–°æ™‚åˆ»ã‚’ [[c:Time]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§è¿”ã—ã¾ã™ã€‚
+Last-Modified ãƒ˜ãƒƒãƒ€ãŒãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require 'open-uri'
   p open('http://www.rubyist.net/').last_modified    
   #=> Thu Feb 26 16:54:58 +0900 2004

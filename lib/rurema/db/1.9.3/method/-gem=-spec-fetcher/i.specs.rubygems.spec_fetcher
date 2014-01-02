@@ -4,6 +4,6 @@ kind=defined
 
 --- specs -> Hash
 
-����å��夵��Ƥ������Ƥ� gemspec ���֤��ޤ���
+キャッシュされている全ての gemspec を返します。
 
 

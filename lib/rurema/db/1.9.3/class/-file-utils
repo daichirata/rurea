@@ -6,33 +6,33 @@ library=fileutils
 aliases=
 aliasof=
 
-����Ū�ʥե��������򽸤᤿�⥸�塼��Ǥ���
+基本的なファイル操作を集めたモジュールです。
 
 
-====[a:options] ���ץ���������
+====[a:options] オプションの説明
 
-���� options �ǻ��ѤǤ��륪�ץ����������Ǥ���
-�᥽�åɤ��Ȥ˻��ѤǤ��륪�ץ����Ϸ�ޤäƤ��ޤ���
-�����ʥ��ץ�����Ϳ����� [[c:ArgumentError]] ��ȯ�����ޤ���
+引数 options で使用できるオプションの説明です。
+メソッドごとに使用できるオプションは決まっています。
+不正なオプションを与えると [[c:ArgumentError]] が発生します。
 
 : :noop
-  ������ꤹ��ȼºݤν����ϹԤ��ޤ���
+  真を指定すると実際の処理は行いません。
 : :preserve
-  ������ꤹ��ȹ�������ȡ���ǽ�ʤ��ͭ�桼������ͭ���롼�פ⥳�ԡ����ޤ���
+  真を指定すると更新時刻と、可能なら所有ユーザ・所有グループもコピーします。
 : :verbose
-  ������ꤹ��Ⱦܺ٤���Ϥ��ޤ���
+  真を指定すると詳細を出力します。
 : :mode
-  �ѡ��ߥå�����8�ʿ��ǻ��ꤷ�ޤ���
+  パーミッションを8進数で指定します。
 : :force
-  ������ꤹ��Ⱥ���椹�٤Ƥ� [[c:StandardError]] ��̵�뤷�ޤ���
+  真を指定すると作業中すべての [[c:StandardError]] を無視します。
 : :nocreate
-  ������ꤹ��ȥե������������ޤ���
+  真を指定するとファイルを作成しません。
 : :dereference_root
-  ������ꤹ��� src �ˤĤ��Ƥ�������ܥ�å���󥯤λؤ�
-  ���Ƥ򥳥ԡ����ޤ������ξ��ϥ���ܥ�å���󥯼��Τ򥳥ԡ����ޤ���
+  真を指定すると src についてだけシンボリックリンクの指す
+  内容をコピーします。偽の場合はシンボリックリンク自体をコピーします。
 : :remove_destination
-  ������ꤹ��ȥ��ԡ���¹Ԥ������˥��ԡ���������ޤ���
+  真を指定するとコピーを実行する前にコピー先を削除します。
 : :secure
-  ������ꤹ��ȥե�����κ���� [[m:FileUtils.#remove_entry_secure]] ����Ѥ��ޤ���
+  真を指定するとファイルの削除に [[m:FileUtils.#remove_entry_secure]] を使用します。
 : :mtime
-  ����� [[c:Time]] ��������������ηв��ÿ�����ͤǻ��ꤷ�ޤ���
+  時刻を [[c:Time]] か、起算時からの経過秒数を数値で指定します。

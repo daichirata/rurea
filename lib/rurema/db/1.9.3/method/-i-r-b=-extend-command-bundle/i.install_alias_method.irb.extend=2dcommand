@@ -4,16 +4,16 @@ kind=defined
 
 --- install_alias_method(to, from, override = NO_OVERRIDE)
 
-�᥽�åɤΥ����ꥢ����������ޤ����饤�֥�������ǻ��Ѥ��ޤ���
+メソッドのエイリアスを定義します。ライブラリ内部で使用します。
 
-@param to �������᥽�å�̾�� [[c:Symbol]] ��ʸ����ǻ��ꤷ�ޤ���
+@param to 新しいメソッド名を [[c:Symbol]] か文字列で指定します。
 
-@param from ���Υ᥽�å�̾�� [[c:Symbol]] ��ʸ����ǻ��ꤷ�ޤ���
+@param from 元のメソッド名を [[c:Symbol]] か文字列で指定します。
 
-@param override �������᥽�å�̾������ѤߤǤ��ä����ˤ��Υ᥽�åɤ�
-                ��񤭤��뤫�ɤ�����
-                [[m:IRB::ExtendCommandBundle::NO_OVERRIDE]]��
-                [[m:IRB::ExtendCommandBundle::OVERRIDE_PRIVATE_ONLY]]��
-                [[m:IRB::ExtendCommandBundle::OVERRIDE_ALL]] �Τ����줫
-                �ǻ��ꤷ�ޤ���
+@param override 新しいメソッド名が定義済みであった場合にそのメソッドを
+                上書きするかどうかを
+                [[m:IRB::ExtendCommandBundle::NO_OVERRIDE]]、
+                [[m:IRB::ExtendCommandBundle::OVERRIDE_PRIVATE_ONLY]]、
+                [[m:IRB::ExtendCommandBundle::OVERRIDE_ALL]] のいずれか
+                で指定します。
 

@@ -5,7 +5,7 @@ kind=defined
 --- disable_ssl -> ()
 --- disable_tls -> ()
 
-д╜д╬ Net::SMTP еке╓е╕езепе╚дм SMTPS дЄ═°═╤д╖д╩дддшдж└▀─ъд╖д▐д╣бг
+уБЭуБо Net::SMTP уВкуГЦуВ╕уВзуВпуГИуБМ SMTPS уВТхИйчФиуБЧуБкуБДуВИуБЖшинхоЪуБЧуБ╛уБЩуАВ
 
 @see [[m:Net::SMTP#disable_tls]], [[m:Net::SMTP#tls?]]
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- body -> Net::IMAP::BodyTypeBasic | Net::IMAP::BodyTypeMessage | Net::IMAP::BodyTypeText | Net::IMAP::BodyTypeMultipart
 
-¥Ü¥Ç¥£¤òÊÖ¤·¤Ş¤¹¡£
+ãƒœãƒ‡ã‚£ã‚’è¿”ã—ã¾ã™ã€‚
 

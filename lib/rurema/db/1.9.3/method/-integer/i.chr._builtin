@@ -3,15 +3,24 @@ visibility=public
 kind=defined
 
 --- chr -> String
-Ê¸»ú¥³¡¼¥É¤ËÂĞ±ş¤¹¤ë 1 ¥Ğ¥¤¥È¤ÎÊ¸»úÎó¤òÊÖ¤·¤Ş¤¹¡£
+--- chr(encoding) -> String
 
-Îã¤¨¤Ğ65.chr ¤Ï "A" ¤òÊÖ¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚° encoding ã«ãŠã„ã¦ self ã‚’æ–‡å­—ã‚³ãƒ¼ãƒ‰ã¨è¦‹ãŸæ™‚ã€ãã‚Œã«å¯¾å¿œã™ã‚‹ä¸€æ–‡å­—ã‹ã‚‰ãªã‚‹æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+å¼•æ•°ç„¡ã—ã§å‘¼ã°ã‚ŒãŸå ´åˆã¯ self ã‚’ US-ASCIIã€ASCII-8BITã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå†…éƒ¨ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã®é †ã§å„ªå…ˆçš„ã«è§£é‡ˆã—ã¾ã™ã€‚
 
-µÕ¤Ë1Ê¸»ú¤ÎÊ¸»úÎó¤«¤éÊ¸»ú¥³¡¼¥É¤òÆÀ¤ë¤Ë¤Ï "A".ord ¤È¤·¤Ş¤¹¡£
+  p 65.chr # => "A"
+  p 0x79.chr.encoding # => #<Encoding:US_ASCII>
+  p 0x80.chr.encoding # => #<Encoding:ASCII_8BIT>
+  p 12354.chr Encoding::UTF_8 # => "ã‚"
+  p 12354.chr Encoding::EUC_JP
+  # => RangeError: invalid codepoint 0x3042 in EUC-JP
+  p 12354.chr Encoding::ASCII_8BIT
+  # => RangeError: 12354 out of char range
+  p (2**32).chr
+  # => RangeError: bignum out of char range
 
-@return     1¥Ğ¥¤¥ÈÊ¸»úÎó
-
-@raise RangeError self ¤¬ 0 ¤«¤é 255 ¤ÎÈÏ°Ï³°¤Î¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
-
+@param encoding ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã‚’è¡¨ã™ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã€‚Encoding::UTF_8ã€'shift_jis' ãªã©ã€‚
+@return     ä¸€æ–‡å­—ã‹ã‚‰ãªã‚‹æ–‡å­—åˆ—
+@raise RangeError self ã‚’ä¸ãˆã‚‰ã‚ŒãŸã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§æ­£ã—ãè§£é‡ˆã§ããªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 @see [[m:String#ord]]
 

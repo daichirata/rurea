@@ -4,7 +4,7 @@ kind=defined
 
 --- rmdir(*path) -> ()
 
-Dir.rmdir��Ʊ���Ǥ��� (ʣ����)
+Dir.rmdirと同じです。 (複数可)
 
-@param path �������ǥ��쥯�ȥ�̾��ʸ����ǻ��ꤷ�ޤ���
+@param path 削除するディレクトリ名を文字列で指定します。
 

@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- REVOKED_STATUS_CESSATIONOFOPERATION -> Integer
-[[m:OpenSSL::OCSP::BasicResponse#status]] ╓н╪╨╦ЗмЩмЁ╔Ё║╪╔и╓г║╒
-╬злю╫Я╓н╠©мя╓Р╩ъ╓А╓©╓Ё╓х╓Р╟улё╓╥╓ч╓╧║ё
+[[m:OpenSSL::OCSP::BasicResponse#status]] Ц│╝Е╓╠Е┼╧Г░├Г■╠Ц┌ЁЦ┐╪Ц┐┴Ц│╖Ц─│
+Х╗╪Ф≤▌Ф⌡╦Ц│╝И│▀Г■╗Ц┌▓Ф╜╒Ц┌│Ц│÷Ц│⌠Ц│╗Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-╬э╓╥╓╞╓о [[RFC:3280]] ╓Д X.509 ╓Р╩╡╬х╓╥╓ф╓╞╓ю╓╣╓╓║ё
+Х╘ЁЦ│≈Ц│▐Ц│╞ [[RFC:3280]] Ц┌└ X.509 Ц┌▓Е▐┌Г┘╖Ц│≈Ц│╕Ц│▐Ц│═Ц│∙Ц│└Ц─┌
 

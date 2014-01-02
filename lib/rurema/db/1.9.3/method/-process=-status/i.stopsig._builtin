@@ -2,8 +2,8 @@ names=stopsig
 visibility=public
 kind=defined
 
---- stopsig    -> nil | Integer
+--- stopsig    -> Integer | nil
 
-stopped? �����ξ�礽�Υ����ʥ���ֹ�򡢤����Ǥʤ�����
-nil ���֤��ޤ���
+stopped? が真の場合そのシグナルの番号を、そうでない場合は
+nil を返します。
 

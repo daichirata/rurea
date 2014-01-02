@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- point_conversion_form=(sym)
-ÅÀ¤Î¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°Êı¼°¤òÀßÄê¤·¤Ş¤¹¡£
+ç‚¹ã®ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°æ–¹å¼ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-°Ê²¼¤Î¤¤¤º¤ì¤«¤òÀßÄê¤·¤Ş¤¹¡£
+ä»¥ä¸‹ã®ã„ãšã‚Œã‹ã‚’è¨­å®šã—ã¾ã™ã€‚
   * :compressed
   * :uncompressed
   * :hybrid
-¾Ü¤·¤¯¤Ï  X9.62 (ECDSA) ¤Ê¤É¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+è©³ã—ãã¯  X9.62 (ECDSA) ãªã©ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param sym ÀßÄê¤¹¤ëÊı¼°([[c:Symbol]])
+@param sym è¨­å®šã™ã‚‹æ–¹å¼([[c:Symbol]])
 @see [[m:OpenSSL::PKey::EC::Group#point_conversion_form]]
 

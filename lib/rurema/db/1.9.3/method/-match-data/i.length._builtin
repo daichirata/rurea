@@ -5,7 +5,7 @@ kind=defined
 --- length -> Fixnum
 --- size -> Fixnum
 
-ÉôÊ¬Ê¸»úÎó¤Î¿ô¤òÊÖ¤·¤Þ¤¹(self.to_a.size ¤ÈÆ±¤¸¤Ç¤¹)¡£
+éƒ¨åˆ†æ–‡å­—åˆ—ã®æ•°ã‚’è¿”ã—ã¾ã™(self.to_a.size ã¨åŒã˜ã§ã™)ã€‚
 
   /(foo)(bar)(BAZ)?/ =~ "foobarbaz"
   p $~.size       # => 4

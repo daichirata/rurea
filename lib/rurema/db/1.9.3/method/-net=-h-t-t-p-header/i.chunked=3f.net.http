@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- chunked? -> bool
-Transfer-Encoding: �إå��ե�����ɤ� "chunked" �Ǥ���
-���˿����֤��ޤ���
+Transfer-Encoding: ヘッダフィールドが "chunked" である
+場合に真を返します。
 
-Transfer-Encoding: �إå��ե�����ɤ�¸�ߤ��ʤ��ä��ꡢ
-"chunked" �ʳ��Ǥ�����ˤϵ����֤��ޤ���
+Transfer-Encoding: ヘッダフィールドが存在しなかったり、
+"chunked" 以外である場合には偽を返します。
 

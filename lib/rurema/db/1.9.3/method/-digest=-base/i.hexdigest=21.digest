@@ -4,21 +4,21 @@ kind=defined
 
 --- hexdigest! -> String
 
-update¤ä<<¤Ë¤è¤Ã¤ÆÄÉ²Ã¤·¤¿Ê¸»úÎó¤ËÂĞ¤¹¤ë¥Ï¥Ã¥·¥åÃÍ¤ò¡¢
-ASCII¥³¡¼¥É¤ò»È¤Ã¤Æ16¿Ê¿ô¤ÎÎó¤ò¼¨¤¹Ê¸»úÎó¤Ë¥¨¥ó¥³¡¼¥É¤·¤ÆÊÖ¤·¤Ş¤¹¡£
-[[m:Digest::Base#hexdigest]]¤È°ã¤¤¡¢
-¥á¥½¥Ã¥É¤Î½èÍı¸å¡¢
-¥ª¥Ö¥¸¥§¥¯¥È¤Î¾õÂÖ¤ò½é´ü¾õÂÖ(new¤·¤¿Ä¾¸å¤ÈÆ±ÍÍ¤Î¾õÂÖ)¤ËÌá¤·¤Ş¤¹¡£
+updateã‚„<<ã«ã‚ˆã£ã¦è¿½åŠ ã—ãŸæ–‡å­—åˆ—ã«å¯¾ã™ã‚‹ãƒãƒƒã‚·ãƒ¥å€¤ã‚’ã€
+ASCIIã‚³ãƒ¼ãƒ‰ã‚’ä½¿ã£ã¦16é€²æ•°ã®åˆ—ã‚’ç¤ºã™æ–‡å­—åˆ—ã«ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ã—ã¦è¿”ã—ã¾ã™ã€‚
+[[m:Digest::Base#hexdigest]]ã¨é•ã„ã€
+ãƒ¡ã‚½ãƒƒãƒ‰ã®å‡¦ç†å¾Œã€
+ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®çŠ¶æ…‹ã‚’åˆæœŸçŠ¶æ…‹(newã—ãŸç›´å¾Œã¨åŒæ§˜ã®çŠ¶æ…‹)ã«æˆ»ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
-  # MD5¤Î¾ì¹ç
+  # MD5ã®å ´åˆ
   require 'digest/md5'
   digest = Digest::MD5.new
   digest.update("ruby")
   p digest.hexdigest! # => "58e53d1324eef6265fdb97b08ed9aadf"
   p digest.hexdigest! # => "d41d8cd98f00b204e9800998ecf8427e"
 
-@see [[m:Digest::Base#hexdigest]]¡¢[[m:Digest::Base#digest!]]
+@see [[m:Digest::Base#hexdigest]]ã€[[m:Digest::Base#digest!]]
 
 

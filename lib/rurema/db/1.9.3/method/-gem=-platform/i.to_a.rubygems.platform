@@ -4,5 +4,5 @@ kind=defined
 
 --- to_a -> Array
 
-���Ȥ˥��åȤ���Ƥ��� CPU, OS, �С�����������Ȥ����֤��ޤ���
+自身にセットされている CPU, OS, バージョンを配列として返します。
 

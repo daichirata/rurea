@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- error_string -> String | nil
-�Ǹ�� [[m:OpenSSL::X509::Store#verify]] ��Ƥӡ�
-���ڤ����Ȥ��Υ��顼ʸ������֤��ޤ���
+最後に [[m:OpenSSL::X509::Store#verify]] を呼び、
+検証したときのエラー文字列を返します。
 
-���ڤ������������� "ok" ���֤��ޤ���
+検証に成功した場合は "ok" を返します。
 
-verify ����٤�ƤӤ����Ƥ��ʤ����� nil ���֤��ޤ���
+verify を一度も呼びだしていない場合は nil を返します。
 
-�֤��ͤ� verify ��Ƥ֤��Ȥ˹�������ޤ���
+返り値は verify を呼ぶごとに更新されます。
 

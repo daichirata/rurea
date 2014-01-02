@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- seed -> String | nil
-seed ¤òÊÖ¤·¤Ş¤¹¡£
+seed ã‚’è¿”ã—ã¾ã™ã€‚
 
-seed ¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Ş¤¹¡£
+seed ãŒè¨­å®šã•ã‚Œã¦ã„ãªã„å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::PKey::EC::Group#seed]]

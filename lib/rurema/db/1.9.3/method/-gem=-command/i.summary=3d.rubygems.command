@@ -4,7 +4,7 @@ kind=defined
 
 --- summary=(description)
 
-���ޥ�ɤ�û�������򥻥åȤ��ޤ���
+コマンドの短い説明をセットします。
 
-@param description ���ޥ�ɤ�û����������ꤷ�ޤ���
+@param description コマンドの短い説明を指定します。
 

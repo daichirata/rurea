@@ -3,5 +3,6 @@ classes=TkSelection
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

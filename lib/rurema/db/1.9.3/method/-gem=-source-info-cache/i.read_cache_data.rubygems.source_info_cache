@@ -4,9 +4,9 @@ kind=defined
 
 --- read_cache_data(file) -> Hash
 
-Ϳ����줿�ե�����̾����ǡ������ɤ߹���ǥ���å���ǡ������֤��ޤ���
+与えられたファイル名からデータを読み込んでキャッシュデータを返します。
 
-@param file ����å���Υե�����̾����ꤷ�ޤ���
+@param file キャッシュのファイル名を指定します。
 
-@return �������㳰��ȯ���������ϡ����Υϥå�����֤��ޤ���
+@return 内部で例外が発生した場合は、空のハッシュを返します。
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- store(key, val) -> [String]
 
-key ¤ËÂÐ¤·¤Æ val ¤ò³ÊÇ¼¤·¤Þ¤¹¡£
+key ã«å¯¾ã—ã¦ val ã‚’æ ¼ç´ã—ã¾ã™ã€‚
 
 @see [[m:GDBM#[]=]]
 

@@ -3,11 +3,11 @@ visibility=public
 kind=added
 
 --- must_throw(tag) -> true
-���Ȥ�ɾ����ˡ�Ϳ����줿������ [[m:Kernel.#throw]] ���줿��硢�����˥ѥ��������Ȥˤʤ�ޤ���
+自身を評価中に、与えられたタグが [[m:Kernel.#throw]] された場合、検査にパスしたことになります。
 
-@param tag ���Ȥ�ɾ����� [[m:Kernel.#throw]] ����륿����Ǥ�դΥ��֥������ȤȤ��ƻ��ꤷ�ޤ���
+@param tag 自身を評価中に [[m:Kernel.#throw]] されるタグを任意のオブジェクトとして指定します。
 
-@raise MiniTest::Assertion Ϳ����줿������ [[m:Kernel.#throw]] ����ʤ��ä�����ȯ�����ޤ���
+@raise MiniTest::Assertion 与えられたタグが [[m:Kernel.#throw]] されなかった場合に発生します。
 
 @see [[m:MiniTest::Assertions#assert_throws]]
 

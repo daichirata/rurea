@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- F_GETLK -> Integer
-Ϳ����줿�ե�������ϰϤΥ��å����֤�������ޤ���
+与えられたファイルの範囲のロック状態を取得します。
 

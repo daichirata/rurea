@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- serial -> OpenSSL::BN
-¾ÚÌÀ½ñ¤Î¼±ÊÌÈÖ¹æ¤òÊÖ¤·¤Þ¤¹¡£
+è¨¼æ˜Žæ›¸ã®è­˜åˆ¥ç•ªå·ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::X509::Certificate#serial]]
 

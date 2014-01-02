@@ -4,8 +4,8 @@ kind=defined
 
 --- eql?(other) -> bool
 
-¼«¿È¤È other ¤Î¼ÂÉô¤ÈµõÉô¤Î¥¯¥é¥¹¤¬Åù¤·¤¯¡¢¤½¤ì¤¾¤ì¤¬¿ôÃÍ¤È¤·¤ÆÅù¤·¤¤¾ì
-¹ç¤Ë true ¤òÊÖ¤·¤Þ¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ë false ¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã¨ other ã®å®Ÿéƒ¨ã¨è™šéƒ¨ã®ã‚¯ãƒ©ã‚¹ãŒç­‰ã—ãã€ãã‚Œãžã‚ŒãŒæ•°å€¤ã¨ã—ã¦ç­‰ã—ã„å ´
+åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã« false ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other ¼«¿È¤ÈÈæ³Ó¤¹¤ë¿ôÃÍ
+@param other è‡ªèº«ã¨æ¯”è¼ƒã™ã‚‹æ•°å€¤
 

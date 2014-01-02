@@ -6,5 +6,5 @@ library=_builtin
 aliases=
 aliasof=
 
-���شؿ�(module Math �Υ⥸�塼��ؿ�)��Ϳ���������������
-�˴ޤޤ�Ƥ��ʤ�����ȯ�����ޤ���
+数学関数(module Math のモジュール関数)で与えた引数が定義域
+に含まれていない場合に発生します。

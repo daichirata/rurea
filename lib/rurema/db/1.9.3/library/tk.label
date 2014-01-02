@@ -3,5 +3,6 @@ classes=TkLabel
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

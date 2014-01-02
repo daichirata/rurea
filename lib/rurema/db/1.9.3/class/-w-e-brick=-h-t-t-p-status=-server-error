@@ -6,4 +6,4 @@ library=webrick.httpstatus
 aliases=
 aliasof=
 
-HTTP �Υ��ơ����������ɥ����Х��顼 5XX �οƥ��饹�Ǥ���
+HTTP のステータスコードサーバエラー 5XX の親クラスです。

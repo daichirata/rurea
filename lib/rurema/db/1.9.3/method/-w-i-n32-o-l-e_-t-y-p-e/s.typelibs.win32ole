@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- typelibs -> [String]
-�����ƥ����Ͽ����Ƥ��뤹�٤Ƥ�TypeLib�Υɥ������ʸ�����������ޤ���
+システムに登録されているすべてのTypeLibのドキュメント文字列を取得します。
 
-@return �����ƥ����Ͽ����Ƥ��뤹�٤Ƥ�TypeLib�Υɥ������ʸ�������
-        ����֤��ޤ���
+@return システムに登録されているすべてのTypeLibのドキュメント文字列の配
+        列を返します。
 
-Ruby-1.9.1����ϡ����٤Ƥ�TypeLib�Υɥ������ʸ������������ˤϡ�
-[[c:WIN32OLE_TYPELIB]]���֥������Ȥ����Ѥ��ơ��ʲ��Τ褦�˵��Ҥ��Ƥ���
-������
+Ruby-1.9.1からは、すべてのTypeLibのドキュメント文字列を取得するには、
+[[c:WIN32OLE_TYPELIB]]オブジェクトを利用して、以下のように記述してくだ
+さい。
 
  WIN32OLE_TYPELIB.typelibs.map {|t| t.name}
 

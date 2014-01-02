@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- OP_ALL -> Integer
-SSL �̿��ǳƼ�ΥХ����򥳡��ɤ�ͭ���ˤ���ե饰�Ǥ���
+SSL 通信で各種のバグ回避コードを有効にするフラグです。
 
-[[m:OpenSSL::SSL::SSLContext#options=]] �����Ѥ��ޤ���
+[[m:OpenSSL::SSL::SSLContext#options=]] で利用します。
 

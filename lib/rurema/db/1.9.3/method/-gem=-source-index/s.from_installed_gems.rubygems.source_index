@@ -4,9 +4,9 @@ kind=defined
 
 --- from_installed_gems(*deprecated) -> Gem::SourceIndex
 
-Ϳ����줿�ѥ����Ȥˡ����󥹥��󥹤��������ե����ȥ�᥽�åɤǤ���
+与えられたパスをもとに、インスタンスを作成するファクトリメソッドです。
 
-@param deprecated ���ΰ�������侩�Ǥ��������ߴ����Τ���ˤΤ��󶡤���Ƥ���Τǻ��Ѥ��٤��ǤϤ���ޤ���
+@param deprecated この引数は非推奨です。後方互換性のためにのみ提供されているので使用すべきではありません。
 
 @see [[m:Gem::SourceIndex.from_gems_in]]
 

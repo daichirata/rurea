@@ -4,6 +4,6 @@ kind=defined
 
 --- force_update -> bool
 
-¥³¥Þ¥ó¥É¥é¥¤¥ó°ú¿ô¤Î --force_update ¤ò»ØÄê¤·¤Æ¤¤¤¿¾ì¹ç¤Ë true ¤òÊÖ¤·¤Þ
-¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ï false ¤òÊÖ¤·¤Þ¤¹¡£
+ã‚³ãƒžãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³å¼•æ•°ã® --force_update ã‚’æŒ‡å®šã—ã¦ã„ãŸå ´åˆã« true ã‚’è¿”ã—ã¾
+ã™ã€‚ãã†ã§ãªã„å ´åˆã¯ false ã‚’è¿”ã—ã¾ã™ã€‚
 

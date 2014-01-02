@@ -2,19 +2,13 @@ names=srand
 visibility=public
 kind=defined
 
---- srand(number=0) -> Integer
+--- srand -> Integer
+--- srand(number) -> Integer
 
-µ¿»÷Íð¿ôÀ¸À®´ï¤Î¼ï¤òÀßÄê¤·¤Þ¤¹¡£
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®æ“¬ä¼¼ä¹±æ•°ç”Ÿæˆå™¨ã®ç¨®ã‚’è¨­å®šã—ã€å¤ã„ç¨®ã‚’è¿”ã—ã¾ã™ã€‚
+[[m:Kernel.#srand]] ã¨åŒã˜ã§ã™ã€‚
 
-number ¤¬0¤â¤·¤¯¤Ï¾ÊÎ¬¤µ¤ì¤¿¾ì¹ç¤Ï¡¢
-¥×¥í¥»¥¹ID¡¢¸½ºß»þ´ÖÅù¤òÁÈ¤ß¹ç¤ï¤»¤¿Å¬ÀÚ¤ÊÃÍ¤¬¼ï¤È¤·¤Æ»ÈÍÑ¤µ¤ì¤Þ¤¹¡£
+@param number ç–‘ä¼¼ä¹±æ•°ç™ºç”Ÿå™¨ã®ç¨®ã‚’æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param number µ¿»÷Íð¿ôÈ¯À¸´ï¤Î¼ï¤òÀ°¿ô¤Ç»ØÄê¤·¤Þ¤¹¡£
-
-@return ÀßÄê¤µ¤ì¤ëÁ°¤Î¼ï¤òÊÖ¤·¤Þ¤¹¡£
-
-Æ°ºîÎã:
-  p Random.srand 1
-  p Random.srand 1234   # => 1
-  p [ Random.rand,  Random.rand ]            #=> [0.191519450163469, 0.49766366626136]
+@see [[m:Kernel.#rand]], [[m:Random::DEFAULT]]
 

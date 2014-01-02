@@ -4,13 +4,13 @@ kind=defined
 
 --- inherited(subclass)     -> ()
 
-���饹�Υ��֥��饹��������줿�����������������줿���֥��饹�����
-�˥��󥿥ץ꥿����ƤӽФ���ޤ������Υ᥽�åɤ��ƤФ�륿���ߥ󥰤�
-���饹���ʸ�μ¹�ľ���Ǥ���
+クラスのサブクラスが定義された時、新しく生成されたサブクラスを引数
+にインタプリタから呼び出されます。このメソッドが呼ばれるタイミングは
+クラス定義文の実行直前です。
 
-@param subclass �ץ��������ǿ�����������줿���ȤΥ��֥��饹�Ǥ���
+@param subclass プログラム内で新たに定義された自身のサブクラスです。
 
-��:
+例:
 
   class Foo
     def Foo.inherited(subclass)

@@ -6,5 +6,5 @@ library=openssl
 aliases=
 aliasof=
 
-¥»¥Ã¥·¥ç¥ó([[c:OpenSSL::SSL::Session]])´ØÏ¢¤Î¥¨¥é¡¼¤¬
-À¸¤¸¤¿¾ì¹ç¤ËÈ¯À¸¤¹¤ëÎã³°¤Ç¤¹¡£
+ã‚»ãƒƒã‚·ãƒ§ãƒ³([[c:OpenSSL::SSL::Session]])é–¢é€£ã®ã‚¨ãƒ©ãƒ¼ãŒ
+ç”Ÿã˜ãŸå ´åˆã«ç™ºç”Ÿã™ã‚‹ä¾‹å¤–ã§ã™ã€‚

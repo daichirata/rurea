@@ -4,7 +4,7 @@ kind=defined
 
 --- gem_spec=(gem_spec)
 
-gemspec ¤ò¥»¥Ã¥È¤·¤Ş¤¹¡£
+gemspec ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param gem_spec [[c:Gem::Specification]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param gem_spec [[c:Gem::Specification]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

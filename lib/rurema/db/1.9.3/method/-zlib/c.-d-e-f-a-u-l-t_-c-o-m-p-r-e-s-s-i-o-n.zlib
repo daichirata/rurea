@@ -4,6 +4,6 @@ kind=defined
 
 --- DEFAULT_COMPRESSION -> Fixnum
 
-[[m:Zlib::Deflate.new]] ¤ä [[m:Zlib::Deflate#deflate]] Åù¤ËÅÏ¤¹¡¢
-°µ½Ì¥ì¥Ù¥ë¤òÉ½¤¹À°¿ô¤Ç¤¹¡£
+[[m:Zlib::Deflate.new]] ã‚„ [[m:Zlib::Deflate#deflate]] ç­‰ã«æ¸¡ã™ã€
+åœ§ç¸®ãƒ¬ãƒ™ãƒ«ã‚’è¡¨ã™æ•´æ•°ã§ã™ã€‚
 

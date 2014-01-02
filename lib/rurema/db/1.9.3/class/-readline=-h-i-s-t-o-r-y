@@ -6,7 +6,7 @@ library=readline
 aliases=
 aliasof=
 
-Readline::HISTORY ����Ѥ��ƥҥ��ȥ�˥��������Ǥ��ޤ���
-[[c:Enumerable]] �⥸�塼��� extend ���Ƥ��ꡢ
-[[c:Array]] ���饹�Τ褦�˿����񤦤��Ȥ��Ǥ��ޤ���
-�㤨�С�HISTORY[4] �ˤ�� 5 ���ܤ����Ϥ������Ƥ���Ф����Ȥ��Ǥ��ޤ���
+Readline::HISTORY を使用してヒストリにアクセスできます。
+[[c:Enumerable]] モジュールを extend しており、
+[[c:Array]] クラスのように振る舞うことができます。
+例えば、HISTORY[4] により 5 番目に入力した内容を取り出すことができます。

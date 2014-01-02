@@ -2,19 +2,19 @@ names=sexp_raw
 visibility=public
 kind=added
 
---- Ripper.sexp_raw(src, filename = '-', lineno = 1)
+--- Ripper.sexp_raw(src, filename = '-', lineno = 1) -> object
 
-Ruby �ץ������ str ����Ϥ��� S ���Υĥ꡼�ˤ����֤��ޤ���
+Ruby プログラム str を解析して S 式のツリーにして返します。
 
-@param src Ruby �ץ�������ʸ���� IO ���֥������Ȥǻ��ꤷ�ޤ���
+@param src Ruby プログラムを文字列か IO オブジェクトで指定します。
 
-@param filename src �Υե�����̾��ʸ����ǻ��ꤷ�ޤ�����ά����� "-" �ˤʤ�ޤ���
+@param filename src のファイル名を文字列で指定します。省略すると "-" になります。
 
-@param lineno src �γ��Ϲ��ֹ����ꤷ�ޤ�����ά����� 1 �ˤʤ�ޤ���
+@param lineno src の開始行番号を指定します。省略すると 1 になります。
 
-�¹Է�̤ϡ���̤��������������ǤȤ��� S ���Υĥ꡼��ɽ�����Ƥ��ޤ���
+実行結果は、括弧の代わりに配列の要素として S 式のツリーを表現しています。
 
-��:
+例:
 
   require 'ripper'
   require 'pp'
@@ -32,6 +32,6 @@ Ruby �ץ������ str ����Ϥ��� S ���Υĥ꡼�ˤ����֤��ޤ���
              nil,
              nil]]]]
 
-Ripper.sexp_raw �� [[m:Ripper.sexp]] �Ȥϰۤʤ���Ϸ�̤�ù����ޤ���
+Ripper.sexp_raw は [[m:Ripper.sexp]] とは異なり解析結果を加工しません。
 
 @see [[m:Ripper.sexp]]

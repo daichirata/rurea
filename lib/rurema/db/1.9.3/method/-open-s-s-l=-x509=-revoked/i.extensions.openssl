@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- extensions -> [OpenSSL::X509::Extension]
-��ĥ�ΰ�Υǡ�����������֤��ޤ���
+拡張領域のデータを配列で返します。
 

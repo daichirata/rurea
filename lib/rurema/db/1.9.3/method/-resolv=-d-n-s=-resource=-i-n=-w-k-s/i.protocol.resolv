@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- protocol -> Integer
-IP�ץ��ȥ����ֹ���֤��ޤ���
+IPプロトコル番号を返します。
 
-�㤨�� 6 �� TCP ���б����ޤ���
+例えば 6 は TCP に対応します。
 

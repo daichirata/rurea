@@ -4,11 +4,11 @@ kind=defined
 
 --- __getobj__ -> object
 
-�Ѿ���Υ��֥������Ȥ��֤��ޤ���
+委譲先のオブジェクトを返します。
 
-�ܥ᥽�åɤϡ����֥��饹�Ǻ��������ɬ�פ����ꡢ
-�ǥե���ȤǤ� [[c:NotImplementedError]] ��ȯ�����ޤ���
+本メソッドは、サブクラスで再定義する必要があり、
+デフォルトでは [[c:NotImplementedError]] が発生します。
 
-@raise NotImplementedError ���֥��饹�ˤ��ܥ᥽�åɤ����������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError サブクラスにて本メソッドが再定義されていない場合に発生します。
 
 

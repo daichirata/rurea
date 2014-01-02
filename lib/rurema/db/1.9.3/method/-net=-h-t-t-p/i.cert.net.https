@@ -3,7 +3,7 @@ visibility=public
 kind=added
 
 --- cert -> OpenSSL::X509::Certificate | nil
-епещедевеєе╚╛┌╠└╜ёдЄ╩╓д╖д▐д╣бг
+уВпуГйуВдуВвуГ│уГИши╝цШОцЫ╕уВТш┐ФуБЧуБ╛уБЩуАВ
 
 @see [[m:Net::HTTP#cert=]], [[m:OpenSSL::SSL::SSLContext#cert]]
 

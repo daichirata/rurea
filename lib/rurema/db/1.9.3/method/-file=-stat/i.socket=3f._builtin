@@ -3,14 +3,14 @@ visibility=public
 kind=defined
 
 --- socket? -> bool
-¥½¥±¥Ã¥È¤Î»þ¤Ë¿¿¤òÊÖ¤·¤Þ¤¹¡£
+ã‚½ã‚±ãƒƒãƒˆã®æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   Dir.glob("/tmp/*"){|file|
     if File::Stat.new(file).socket?
       printf "%s\n", file
     end
   }
-  #Îã
+  #ä¾‹
   #=> /tmp/uimhelper-hogehoge
   #...
 

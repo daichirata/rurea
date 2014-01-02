@@ -4,7 +4,7 @@ kind=defined
 
 --- ruby_opts=(options)
 
-�ƥ��ȼ¹Ի��� Ruby ���ޥ�ɤ��Ϥ���륪�ץ����򥻥åȤ��ޤ���
+テスト実行時に Ruby コマンドに渡されるオプションをセットします。
 
-@param options ����ǥ��ץ�������ꤷ�ޤ���
+@param options 配列でオプションを指定します。
 

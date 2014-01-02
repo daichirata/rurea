@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- params -> {String => OpenSSL::BN}
-���Υѥ�᡼��([[m:OpenSSL::PKey::RSA#e]],[[m:OpenSSL::PKey::RSA#n]],
-[[m:OpenSSL::PKey::RSA#d]]�ʤ�)��{�ѥ�᡼��̾ʸ���� => �ѥ�᡼����}
-�Ȥ����ϥå�����֤��ޤ���
+鍵のパラメータ([[m:OpenSSL::PKey::RSA#e]],[[m:OpenSSL::PKey::RSA#n]],
+[[m:OpenSSL::PKey::RSA#d]]など)を{パラメータ名文字列 => パラメータ値}
+というハッシュで返します。
 
-�����������ξ�硢[[m:OpenSSL::PKey::RSA#d]] 
-�Τ褦�˸����������äƤ��ʤ��ͤ� 0 �ˤʤ�ޤ���
+鍵が公開鍵の場合、[[m:OpenSSL::PKey::RSA#d]] 
+のように公開鍵が持っていない値は 0 になります。
 

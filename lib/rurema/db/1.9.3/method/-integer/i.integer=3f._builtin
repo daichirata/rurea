@@ -4,5 +4,5 @@ kind=defined
 
 --- integer? -> true
 
-��˿����֤��ޤ���
+常に真を返します。
 

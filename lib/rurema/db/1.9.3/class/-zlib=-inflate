@@ -6,5 +6,5 @@ library=zlib
 aliases=
 aliasof=
 
-���ϥǡ�����Ÿ�����륹�ȥ꡼��Υ��饹��[[c:Zlib::Deflate]] �Ȱ㤤��
-���Υ��饹�Υ��󥹥��󥹤�ʣ�� (clone, dup) ���뤳�ȤϤǤ��ޤ���
+入力データを展開するストリームのクラス。[[c:Zlib::Deflate]] と違い、
+このクラスのインスタンスを複製 (clone, dup) することはできません。

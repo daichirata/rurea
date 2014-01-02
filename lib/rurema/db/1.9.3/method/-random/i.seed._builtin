@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- seed -> Integer
-¸½ºß¤ÎÍð¿ô¤Î¼ï¤òÊÖ¤·¤Þ¤¹¡£
+ç¾åœ¨ã®ä¹±æ•°ã®ç¨®ã‚’è¿”ã—ã¾ã™ã€‚
 
-Æ°ºîÎã:
+å‹•ä½œä¾‹:
   p Random.new(3).seed # => 3
 

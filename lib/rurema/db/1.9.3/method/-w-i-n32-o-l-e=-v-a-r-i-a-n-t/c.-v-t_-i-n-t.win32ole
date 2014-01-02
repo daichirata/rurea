@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- VT_INT -> Integer
-����դ�������int�ˤ򼨤��ޤ���22�ˡ�
+符号付き整数（int）を示します（22）。
 

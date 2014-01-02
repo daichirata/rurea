@@ -6,10 +6,10 @@ library=_builtin
 aliases=
 aliasof=
 
-����ɽ���Υޥå��˴ؤ������򰷤�����Υ��饹��
+正規表現のマッチに関する情報を扱うためのクラス。
 
-���Υ��饹�Υ��󥹥��󥹤ϡ�
+このクラスのインスタンスは、
  * [[m:Regexp.last_match]]
  * [[m:Regexp#match]], [[m:String#match]]
  * [[m:$~]]
-�ʤɤˤ�������ޤ���
+などにより得られます。

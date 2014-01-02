@@ -3,5 +3,6 @@ classes=WEBrick=HTTPAuth=BasicAuth,WEBrick=HTTPAuth=ProxyBasicAuth
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-HTTP д╬ Basic ╟з╛┌д╬д┐дсд╬ещеде╓ещеъд╟д╣бг
+HTTP уБо Basic шкНши╝уБоуБЯуВБуБоуГйуВдуГЦуГйуГкуБзуБЩуАВ

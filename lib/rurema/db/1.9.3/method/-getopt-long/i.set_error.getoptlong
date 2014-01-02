@@ -4,11 +4,11 @@ kind=defined
 
 --- set_error(type, message) -> ()
 
-������Ϳ����줿�㳰��ȯ�������ޤ���
+引数で与えられた例外を発生させます。
 
-���κݡ��Žͥ⡼�ɤǤʤ����ɸ�२�顼���Ϥ�Ϳ����줿��å���������Ϥ��ޤ���
+その際、静粛モードでなければ標準エラー出力に与えられたメッセージを出力します。
 
-@param type �㳰���饹����ꤷ�ޤ���
+@param type 例外クラスを指定します。
 
-@param message �㳰�˥��åȤ����å���������ꤷ�ޤ���
+@param message 例外にセットするメッセージを指定します。
 

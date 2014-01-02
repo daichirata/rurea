@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- subject_request=(req)
-¼«¿È¤Ë¾ÚÌÀ½ñ½ğÌ¾Í×µá¥ª¥Ö¥¸¥§¥¯¥È¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã«è¨¼æ˜æ›¸ç½²åè¦æ±‚ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param  req ÀßÄê¤¹¤ë¾ÚÌÀ½ñ½ğÌ¾Í×µá([[c:OpenSSL::X509::Request]])¥ª¥Ö¥¸¥§¥¯¥È
+@param  req è¨­å®šã™ã‚‹è¨¼æ˜æ›¸ç½²åè¦æ±‚([[c:OpenSSL::X509::Request]])ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 @see [[m:OpenSSL::X509::ExtensionFactory.new]]
 

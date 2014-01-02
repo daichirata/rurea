@@ -4,11 +4,11 @@ kind=defined
 
 --- parse(raw_cookie) -> Hash
 
-¥¯¥Ã¥­¡¼Ê¸»úÎó¤ò¥Ñ¡¼¥¹¤·¤Þ¤¹¡£
+ã‚¯ãƒƒã‚­ãƒ¼æ–‡å­—åˆ—ã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¾ã™ã€‚
 
-@param raw_cookie À¸¤Î¥¯¥Ã¥­¡¼¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param raw_cookie ç”Ÿã®ã‚¯ãƒƒã‚­ãƒ¼ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-        Îã¡§
+        ä¾‹ï¼š
         cookies = CGI::Cookie.parse("raw_cookie_string")
           # { "name1" => cookie1, "name2" => cookie2, ... }
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- verbose_flag -> bool
 
-�����ͤ����ξ�硢�ܺ٤�ɽ�����ޤ���
+この値が真の場合、詳細を表示します。
 

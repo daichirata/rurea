@@ -6,10 +6,10 @@ library=_builtin
 aliases=
 aliasof=
 
-���������ѿ��Υơ��֥�� self���⥸�塼��Υͥ��Ȥʤɤξ������
-�����륪�֥������ȤΥ��饹�Ǥ���
+ローカル変数のテーブルと self、モジュールのネストなどの情報を保
+持するオブジェクトのクラスです。
 
-�Ȥ߹��ߴؿ� [[m:Kernel.#binding]] �ˤ��
-�ƤΤ��������졢[[m:Kernel.#eval]] ���� 2 �����˻��Ѥ��ޤ���
-�ޤ��ȥåץ�٥�� Binding ���֥������ȤȤ����Ȥ߹������
-[[m:Kernel::TOPLEVEL_BINDING]] ���Ѱդ���Ƥ��ޤ���
+組み込み関数 [[m:Kernel.#binding]] によっ
+てのみ生成され、[[m:Kernel.#eval]] の第 2 引数に使用します。
+またトップレベルの Binding オブジェクトとして組み込み定数
+[[m:Object::TOPLEVEL_BINDING]] が用意されています。

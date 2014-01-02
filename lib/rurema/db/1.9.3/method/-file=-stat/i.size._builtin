@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- size -> Integer
-¥Õ¥¡¥¤¥ë¥µ¥¤¥º(¥Ð¥¤¥ÈÃ±°Ì)¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚º(ãƒã‚¤ãƒˆå˜ä½)ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.size    #=> 1548
 

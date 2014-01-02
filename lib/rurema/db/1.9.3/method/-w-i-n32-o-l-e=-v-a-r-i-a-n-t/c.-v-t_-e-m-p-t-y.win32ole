@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- VT_EMPTY -> Integer
-���ʽ�������֡ˤΥ��֥������Ȥ򼨤��ޤ���0�ˡ�
+空（初期化状態）のオブジェクトを示します（0）。
 

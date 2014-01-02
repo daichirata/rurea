@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- cmds -> [[String, String, String]]
-���� engine �����ݡ��Ȥ��Ƥ��륳�ޥ�ɤΰ�����
-������֤��ޤ���
+その engine がサポートしているコマンドの一覧を
+配列で返します。
 
-����γ����Ǥ�
-  [���ޥ��̾�����ޥ�ɤ����������ޥ�ɤΥե饰]
-�Ȥ���3�Ĥ�ʸ���������Ǥ���
+配列の各要素は
+  [コマンド名、コマンドの説明、コマンドのフラグ]
+という3つの文字列の配列です。
 
 @see [[m:OpenSSL::Engine#ctrl_cmd]]
 

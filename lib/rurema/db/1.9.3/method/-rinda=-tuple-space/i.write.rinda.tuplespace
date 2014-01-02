@@ -5,6 +5,6 @@ kind=defined
 --- write(tuple, sec = nil)
 @todo
 
-[[c:Rinda::Tuple]] ¥ª¥Ö¥¸¥§¥¯¥È tuple ¤ò¥¿¥×¥ë¥¹¥Ú¡¼¥¹¤Ë²Ã¤¨¤Ş¤¹¡£
-tuple ¤ò´ÉÍı¤¹¤ë¤¿¤á¤Î [[c:Rinda::TupleEntry]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Ş¤¹¡£
+[[c:Rinda::Tuple]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ tuple ã‚’ã‚¿ãƒ—ãƒ«ã‚¹ãƒšãƒ¼ã‚¹ã«åŠ ãˆã¾ã™ã€‚
+tuple ã‚’ç®¡ç†ã™ã‚‹ãŸã‚ã® [[c:Rinda::TupleEntry]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 

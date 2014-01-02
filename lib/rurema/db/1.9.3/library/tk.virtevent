@@ -3,5 +3,6 @@ classes=TkVirtualEvent,TkVirtualEvent=PreDefVirtEvent,TkNamedVirtualEvent
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

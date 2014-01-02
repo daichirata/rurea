@@ -4,22 +4,22 @@ kind=defined
 
 --- new(config, default = Config::BasicAuth) -> WEBrick::HTTPAuth::BasicAuth
 
-BasicAuth ���֥������Ȥ��������ޤ���config ���������¸�����ϥå���Ǥ���
+BasicAuth オブジェクトを生成します。config は設定を保存したハッシュです。
 
-config ��ͭ���ʥϥå��奭���ϰʲ����̤�Ǥ���
+config で有効なハッシュキーは以下の通りです。
 
  :Realm            =>
  :UserDB           =>
  :Logger           =>
  :AutoReloadUserDB =>
 
-realm ��ɽ��ʸ���� :Realm �ˤ�Ϳ���ޤ���:UserDB
-�ˤ� [[c:WEBrick::HTTPAuth::Htpasswd]] ���֥������Ȥ�Ϳ���ޤ���:Logger �ˤ�
-���������֥������Ȥ�Ϳ���ޤ����ޤ���:AutoReloadUserDB �ˤ�
-[[m:WEBrick::HTTPAuth::Htpasswd#get_passwd]] ��
-reload_db ���Ϥ�������Ϳ���ޤ���
+realm を表す文字列 :Realm には与えます。:UserDB
+には [[c:WEBrick::HTTPAuth::Htpasswd]] オブジェクトを与えます。:Logger には
+ロガーオブジェクトを与えます。また、:AutoReloadUserDB には
+[[m:WEBrick::HTTPAuth::Htpasswd#get_passwd]] の
+reload_db に渡す引数を与えます。
 
-@param config ������ݻ����Ƥ���ϥå������ꤷ�ޤ���
+@param config 設定を保持しているハッシュを指定します。
 
-@param default �ǥե���Ȥ� [[m:WEBrick::Config::BasicAuth]] �Ǥ���
+@param default デフォルトは [[m:WEBrick::Config::BasicAuth]] です。
 

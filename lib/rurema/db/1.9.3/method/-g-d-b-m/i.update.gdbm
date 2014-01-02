@@ -4,9 +4,9 @@ kind=defined
 
 --- update(other) -> self
 
-self �� other �����Ƥ�ޡ������ޤ���
+self と other の内容をマージします。
 
-��ʣ���륭�����б������ͤ�other �����ƤǾ�񤭤���ޤ���
+重複するキーに対応する値はother の内容で上書きされます。
 
-@param other each_pair �᥽�åɤ���ĥ��֥������ȤǤʤ���Фʤ�ޤ���
+@param other each_pair メソッドを持つオブジェクトでなければなりません。
 

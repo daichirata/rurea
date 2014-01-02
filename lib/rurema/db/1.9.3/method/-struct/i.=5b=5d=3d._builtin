@@ -3,15 +3,18 @@ visibility=public
 kind=defined
 
 --- []=(member, value)
-(���Υ᥽�åɤ� Struct �β��̥��饹�ˤΤ��������Ƥ��ޤ�)
-��¤�Τ� member �ǻ��ꤵ�줿���Ф��ͤ� value �ˤ��� value ���֤��ޤ���
+構造体の member で指定されたメンバの値を value にして value を返します。
 
-@param member [[c:Fixnum]] �ǥ��ФΥ���ǥå�������ꤷ�ޤ���
-              [[c:Symbol]], [[c:String]] �ǥ��Ф�̾������ꤷ�ޤ���
+@param member [[c:Fixnum]] でメンバのインデックスを指定します。
+              [[c:Symbol]], [[c:String]] でメンバの名前を指定します。
 
-@param value ���Ф����ꤹ���ͤ���ꤷ�ޤ���
+@param value メンバに設定する値を指定します。
 
-@raise IndexError member ��������¸�ߤ��ʤ����Ф���ꤷ������ȯ�����ޤ���
+@raise IndexError member が整数で存在しないメンバを指定した場合に発生します。
 
-@raise NameError member �� [[c:String]], [[c:Symbol]] ��¸�ߤ��ʤ����Ф���ꤷ������ȯ�����ޤ���
+@raise NameError member が [[c:String]], [[c:Symbol]] で存在しないメンバを指定した場合に発生します。
+
+[注意] 本メソッドの記述は Struct の下位クラスのインスタンスに対して呼び
+出す事を想定しています。Struct.new は Struct の下位クラスを作成する点に
+注意してください。
 

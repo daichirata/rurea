@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- NKF_RELEASE_DATE -> String
-nkf �Υ�꡼������ɽ��ʸ����Ǥ���
+nkf のリリース日を表す文字列です。
 

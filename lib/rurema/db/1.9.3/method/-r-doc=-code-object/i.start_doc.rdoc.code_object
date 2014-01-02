@@ -4,12 +4,12 @@ kind=defined
 
 --- start_doc -> ()
 
-°Ê¹ß¤Ë²òÀÏ¤·¤¿¥³¥á¥ó¥È¤ò [[m:RDoc::CodeObject#stop_doc]] ¤ò¸Æ¤Ó½Ğ¤¹¤Ş¤Ç
-¤Î´Ö¡¢¥É¥­¥å¥á¥ó¥È¤Ë´Ş¤á¤Ş¤¹¡£
+ä»¥é™ã«è§£æã—ãŸã‚³ãƒ¡ãƒ³ãƒˆã‚’ [[m:RDoc::CodeObject#stop_doc]] ã‚’å‘¼ã³å‡ºã™ã¾ã§
+ã®é–“ã€ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã«å«ã‚ã¾ã™ã€‚
 
-:startdoc: ¤ò¸«¤Ä¤±¤¿»ş¤Ë¸Æ¤Ó½Ğ¤µ¤ì¤Ş¤¹¡£
-[[m:RDoc::CodeObject#document_self]] ¤È
-[[m:RDoc::CodeObject#document_children]] ¤ò true ¤ËÀßÄê¤·¤Ş¤¹¡£
+:startdoc: ã‚’è¦‹ã¤ã‘ãŸæ™‚ã«å‘¼ã³å‡ºã•ã‚Œã¾ã™ã€‚
+[[m:RDoc::CodeObject#document_self]] ã¨
+[[m:RDoc::CodeObject#document_children]] ã‚’ true ã«è¨­å®šã—ã¾ã™ã€‚
 
 @see [[m:RDoc::CodeObject#end_doc]]
 

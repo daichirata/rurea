@@ -2,13 +2,13 @@ names=to_yaml
 visibility=public
 kind=added
 
---- to_yaml(opts = {})
+--- to_yaml(opts = {}) -> String
 
-���Ȥ� YAML �ɥ�����Ȥ��Ѵ����ޤ���
+自身を YAML ドキュメントに変換します。
 
-@param opts YAML �ɥ�����Ƚ��ϤκݤΥ��ץ�������ꤷ�ޤ���
-            ���ץ����ξܺ٤� [[m:Syck::Emitter#reset]] �򻲾Ȥ�
-            �Ƥ���������
+@param opts YAML ドキュメント出力の際のオプションを指定します。
+            オプションの詳細は [[m:Syck::Emitter#reset]] を参照し
+            てください。
 
   require 'yaml'
   

@@ -6,15 +6,26 @@ library=drb
 aliases=
 aliasof=
 
-Class wrapping a marshalled object whose type is unknown locally.
+リモートプロセスからマーシャリングされて送られてきたオブジェクトで、
+そのクラスがローカルプロセス内では不明であるようなものを
+表すクラス。
 
-If an object is returned by a method invoked over drb, but the class
-of the object is unknown in the client namespace, or the object is a
-constant unknown in the client namespace, then the still-marshalled
-object is returned wrapped in a DRbUnknown instance.
+このクラスのインスタンス内部ではマーシャリングされたバイト列を
+保持しています。DRB 経由で他のプロセスにこのオブジェクトを渡すと、
+DRbUnknown オブジェクトではなくそのマーシャリングされたデータを
+渡します。
 
-If this object is passed as an argument to a method invoked over drb,
-then the wrapped object is passed instead.
+クラス名/定数名は [[m:DRb::DRbUnknown#name]] で取得することができます。
+[[m:DRb::DRbUnknown#buf]] で保持しているマーシャリングされた
+バイト列を得ることができます。
 
-The class or constant name of the object can be read from the name
-attribute. The marshalled object is held in the buf attribute.
+このクラスのインスタンスの使い道としては、オブジェクトの中継が考えられます。
+A, B, C と3つのプロセスがあって、drb によって A <-> B <-> C と通信している
+とします。ここで A と C では定義されているが B では定義されていない
+クラスがあったとしましょう。A から B にマーシャリングされて
+オブジェクトが渡されると、B ではそのクラスの素性がわからないため
+DRbUnknown オブジェクトとして表現されます。
+それを C に送ると、マーシャリングされたバイト列が C に送られ、
+C ではそれを元のオブジェクトに復元することができます。
+このように、中継プロセス B では中継するオブジェクトのクラスについて
+知らなくとも正しく動作します。

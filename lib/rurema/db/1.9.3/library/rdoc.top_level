@@ -3,5 +3,6 @@ classes=RDoc=TopLevel
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-[[c:RDoc::TopLevel]] ¤òÄêµÁ¤¹¤ë¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+[[c:RDoc::TopLevel]] ã‚’å®šç¾©ã™ã‚‹ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

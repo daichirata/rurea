@@ -2,16 +2,17 @@ names=current_server
 visibility=public
 kind=defined
 
---- current_server
-@todo
+--- current_server -> DRb::DRbServer
+「カレントサーバ」を返します。
 
-Get the 'current' server.
+リモートメソッドが呼び出された場合、そのスレッドでは、その呼び出しを管理している
+サーバがカレントサーバとなります。そうでない場合はプライマリサーバとなります。
 
-In the context of execution taking place within the main thread
-of a dRuby server (typically, as a result of a remote call on
-the server or one of its objects), the current server is that
-server. Otherwise, the current server is the primary server.
+通常、カレントサーバとプライマリサーバは一致しますが、複数のサーバを
+異なる URI で起動した場合などにはこの2つが異なる場合があります。
 
-If the above rule fails to find a server, a DRbServerNotFound
-error is raised.
+@raise DRb::DRbServerNotFound カレントサーバが存在しない場合に発生します
+@see [[m:DRb.#primary_server]]
+
+
 

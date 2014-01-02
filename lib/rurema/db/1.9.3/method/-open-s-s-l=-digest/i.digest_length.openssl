@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- digest_length -> Integer
-�ϥå����ͤ�Ĺ��(�Х��ȿ�)���֤��ޤ���
+ハッシュ値の長さ(バイト数)を返します。
 

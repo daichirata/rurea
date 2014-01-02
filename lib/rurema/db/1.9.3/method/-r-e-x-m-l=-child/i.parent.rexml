@@ -2,6 +2,10 @@ names=parent
 visibility=public
 kind=defined
 
---- parent
-@todo
+--- parent -> REXML::Parent|nil
+親ノードを返します。
+
+ルートノードの場合は nil を返します。
+
+@see [[m:REXML::Child#parent=]]
 

@@ -2,5 +2,6 @@ names=NULL
 visibility=public
 kind=defined
 
---- NULL
+--- NULL -> DL::CPtr
+C の NULL ポインタ
 

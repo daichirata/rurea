@@ -4,9 +4,9 @@ kind=defined
 
 --- new(key, digester) -> Digest::HMAC
 
-Ϳ�����Ƹ��ȥ��르�ꥺ����Ȥˤ��Ƽ��Ȥ��������ޤ���
+与えられて鍵とアルゴリズムをもとにして自身を初期化します。
 
-@param key ��̩������ꤷ�ޤ���
+@param key 秘密鍵を指定します。
 
-@param digester �����������Ȥ��������뤿��Υ��饹����ꤷ�ޤ���
+@param digester ダイジェストを生成するためのクラスを指定します。
 

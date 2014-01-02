@@ -4,10 +4,10 @@ kind=defined
 
 --- get_path(gemname, version_req) -> String | nil
 
-�����ǻ��ꤵ�줿���˥ޥå����� Gem �ѥå���������¸���Ƥ���ѥ����֤��ޤ���
+引数で指定された条件にマッチする Gem パッケージを保存しているパスを返します。
 
-@param gemname Gem �ѥå�������̾������ꤷ�ޤ���
+@param gemname Gem パッケージの名前を指定します。
 
-@param version_req �С��������������٤�����ʸ����ǻ��ꤷ�ޤ���
+@param version_req バージョンの満たすべき条件を文字列で指定します。
 
 

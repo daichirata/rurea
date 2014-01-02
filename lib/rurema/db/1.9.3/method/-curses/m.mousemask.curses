@@ -4,7 +4,7 @@ kind=defined
 
 --- mousemask(mask) -> Integer
 
-Ϳ����줿 mask ��������ǽ�ʥ��٥�Ȥ���Ф����֤��ޤ���
+与えられた mask から報告可能なイベントを取り出して返します。
 
-@param mask �ޥ����ͤ���ꤷ�ޤ���
+@param mask マスク値を指定します。
 

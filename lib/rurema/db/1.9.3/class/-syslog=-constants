@@ -6,8 +6,8 @@ library=syslog
 aliases=
 aliasof=
 
-���Υ⥸�塼��ˤϥ����ƥ�ǻ��Ѳ�ǽ��LOG_*������������Ƥ��ޤ���
+このモジュールにはシステムで使用可能なLOG_*定数が定義されています。
 
-  ��:
+  例:
     require 'syslog'
     include Syslog::Constants

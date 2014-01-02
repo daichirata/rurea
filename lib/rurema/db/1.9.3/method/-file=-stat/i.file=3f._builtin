@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- file? -> bool
-ÄÌ¾ï¥Õ¥¡¥¤¥ë¤Î»ş¤Ë¿¿¤òÊÖ¤·¤Ş¤¹¡£
+é€šå¸¸ãƒ•ã‚¡ã‚¤ãƒ«ã®æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   p File::Stat.new($0).file? #=> true
 

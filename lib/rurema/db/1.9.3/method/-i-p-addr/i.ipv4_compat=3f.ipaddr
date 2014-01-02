@@ -4,5 +4,5 @@ kind=defined
 
 --- ipv4_compat? -> bool
 
-IPv4 �ߴ� IPv6 ���ɥ쥹�ʤ� �����֤��ޤ���
+IPv4 互換 IPv6 アドレスなら 真を返します。
 

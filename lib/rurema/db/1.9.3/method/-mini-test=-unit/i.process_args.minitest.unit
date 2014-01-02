@@ -4,9 +4,9 @@ kind=defined
 
 --- process_args(args = []) -> Hash
 
-[[lib:optparse]] ��Ȥäƥ��ޥ�ɥ饤���������Ϥ�����̤��֤��ޤ���
+[[lib:optparse]] を使ってコマンドライン引数を解析した結果を返します。
 
-@param args ���ޥ�ɥ饤���������ꤷ�ޤ���
+@param args コマンドライン引数を指定します。
 
 @see [[lib:optparse]]
 

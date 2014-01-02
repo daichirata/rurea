@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- param -> { String => String } | nil
-MIME �Υܥǥ��ѥ�᡼����ϥå���ơ��֥���֤��ޤ���
+MIME のボディパラメータをハッシュテーブルで返します。
 
-�ϥå���ơ��֥�Υ������ѥ�᡼��̾�Ȥʤ�ޤ���
+ハッシュテーブルのキーがパラメータ名となります。
 
 @see [[RFC:2045]]
 

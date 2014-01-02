@@ -5,7 +5,7 @@ kind=defined
 --- fileno    -> Integer
 --- to_i      -> Integer
 
-�ե����뵭�һҤ�ɽ���������֤��ޤ���
+ファイル記述子を表す整数を返します。
 
-@raise IOError ���� close ����Ƥ������ȯ�����ޤ���
+@raise IOError 既に close されている場合に発生します。
 

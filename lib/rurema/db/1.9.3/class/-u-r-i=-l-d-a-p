@@ -6,6 +6,6 @@ library=uri
 aliases=
 aliasof=
 
-LDAP URI §Ú…Ω§π•Ø•È•π§«§π°£[[RFC:2255]] (Obsoleted by [[RFC:4510]], [[RFC:4516]])°£
+LDAP URI „ÇíË°®„Åô„ÇØ„É©„Çπ„Åß„Åô„ÄÇ[[RFC:2255]] (Obsoleted by [[RFC:4510]], [[RFC:4516]])„ÄÇ
 
   ldap://<host>/<dn>[?<attrs>[?<scope>[?<filter>[?<extensions>]]]]

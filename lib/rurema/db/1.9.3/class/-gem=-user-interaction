@@ -6,6 +6,6 @@ library=rubygems.user_interaction
 aliases=
 aliasof=
 
-�ǥե���� UI �˥����������䤹�����뤿��Υ⥸�塼��Ǥ���
+デフォルト UI にアクセスしやすくするためのモジュールです。
 
-���Υ⥸�塼���ͳ�ǸƤӽФ��줿�᥽�åɤ����� UI �μ������饹�ؽ�����Ѿ����ޤ���
+このモジュール経由で呼び出されたメソッドは全て UI の実装クラスへ処理を委譲します。

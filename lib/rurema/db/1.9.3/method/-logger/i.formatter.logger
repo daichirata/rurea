@@ -4,8 +4,8 @@ kind=defined
 
 --- formatter -> String
 
-��������Ϥ���ݤ˻��Ѥ���ե����ޥå�����������ޤ���
+ログを出力する際に使用するフォーマッターを取得します。
 
-���Υ᥽�åɤ��֤��ͤ����� call �᥽�åɤ� 4 �Ĥΰ��� (severity, time, program name, message) ������Ȥ�ޤ���
+このメソッドの返り値が持つ call メソッドは 4 つの引数 (severity, time, program name, message) を受けとります。
 
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- to_s    -> String
 
-¼«¿È¤òÊ¸»úÎó¤ËÊÑ´¹¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¦è¿”ã—ã¾ã™ã€‚
 
   require 'webrick'
   v = WEBrick::HTTPVersion.new('1.1')

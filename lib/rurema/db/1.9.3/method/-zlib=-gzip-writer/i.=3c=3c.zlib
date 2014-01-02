@@ -4,10 +4,10 @@ kind=defined
 
 --- <<(str) -> self
 
-str ¤ò½ÐÎÏ¤·¤Þ¤¹¡£str ¤¬Ê¸»úÎó¤Ç¤Ê¤¤¾ì¹ç¤Ï to_s ¤òÍÑ¤¤¤Æ
-Ê¸»úÎó¤ËÊÑ´¹¤·¤Þ¤¹¡£
+str ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚str ãŒæ–‡å­—åˆ—ã§ãªã„å ´åˆã¯ to_s ã‚’ç”¨ã„ã¦
+æ–‡å­—åˆ—ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-@param str ½ÐÎÏ¤·¤¿¤¤¥ª¥Ö¥¸¥§¥¯¥È¤òÍ¿¤¨¤Þ¤¹¡£
+@param str å‡ºåŠ›ã—ãŸã„ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä¸Žãˆã¾ã™ã€‚
 
   require 'zlib'
 

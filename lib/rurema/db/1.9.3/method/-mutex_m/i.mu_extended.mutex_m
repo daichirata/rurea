@@ -4,6 +4,6 @@ kind=defined
 
 --- mu_extended -> Mutex
 
-[[m:Mutex_m.extend_object]] ����ƤӽФ���ޤ���
-�桼����ľ�ܻȤ����ȤϤ���ޤ���
+[[m:Mutex_m.extend_object]] から呼び出されます。
+ユーザが直接使うことはありません。
 

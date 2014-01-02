@@ -6,4 +6,4 @@ library=json
 aliases=JSON=Ext=Generator=GeneratorMethods=Integer
 aliasof=
 
-[[c:Integer]] �� JSON �ǻ��Ѥ��륤�󥹥��󥹥᥽�åɤ��ɲä��뤿��Υ⥸�塼��Ǥ���
+[[c:Integer]] に JSON で使用するインスタンスメソッドを追加するためのモジュールです。

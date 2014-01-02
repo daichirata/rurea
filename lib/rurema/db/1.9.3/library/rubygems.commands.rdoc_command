@@ -1,29 +1,30 @@
-requires=rubygems.command,rubygems.user_interaction,rubygems.version_option,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.defaults.operating_system,rubygems.doc_manager
+requires=rubygems.command,rubygems.user_interaction,rubygems.version_option,rubygems,rubygems.defaults,rubygems.exceptions,rubygems.version,rubygems.requirement,rubygems.dependency,rubygems.gem_path_searcher,rubygems.source_index,rubygems.specification,rubygems.platform,rubygems.spec_fetcher,rubygems.remote_fetcher,rubygems.digest.sha2,rubygems.source_info_cache,rubygems.source_info_cache_entry,rubygems.builder,rubygems.doc_manager
 classes=Gem=Commands=RdocCommand
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-RDoc ¤È ri ¤Î¥é¥¤¥Ö¥é¥ê¤òÀ¸À®¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+RDoc ã¨ ri ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ç”Ÿæˆã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
   Usage: gem rdoc [args] [options]
     Options:
-          --all                        ¥¤¥ó¥¹¥È¡¼¥ë¤µ¤ì¤Æ¤¤¤ëÁ´¤Æ¤Î Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î
-                                       RDoc/RI ¥É¥­¥å¥á¥ó¥È¤òÀ¸À®¤·¤Þ¤¹¡£
-          --[no-]rdoc                  RDoc ¤ò´Þ¤á¤Þ¤¹
-          --[no-]ri                    RI ¤ò´Þ¤á¤Þ¤¹
-      -v, --version VERSION            »ØÄê¤·¤¿¥Ð¡¼¥¸¥ç¥ó¤Î¥É¥­¥å¥á¥ó¥È¤òÀ¸À®¤·¤Þ¤¹
+          --all                        ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹å…¨ã¦ã® Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®
+                                       RDoc/RI ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+          --[no-]rdoc                  RDoc ã‚’å«ã‚ã¾ã™
+          --[no-]ri                    RI ã‚’å«ã‚ã¾ã™
+      -v, --version VERSION            æŒ‡å®šã—ãŸãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã—ã¾ã™
     Common Options:
-      -h, --help                       ¤³¤Î¥³¥Þ¥ó¥É¤Î¥Ø¥ë¥×¤òÉ½¼¨¤·¤Þ¤¹
-      -V, --[no-]verbose               É½¼¨¤ò¾ÜºÙ¤Ë¤·¤Þ¤¹
-      -q, --quiet                      ÀÅ¤«¤Ë¼Â¹Ô¤·¤Þ¤¹
-          --config-file FILE           »ØÄê¤µ¤ì¤¿ÀßÄê¥Õ¥¡¥¤¥ë¤ò»ÈÍÑ¤·¤Þ¤¹
-          --backtrace                  ¥Ð¥Ã¥¯¥È¥ì¡¼¥¹¤òÉ½¼¨¤·¤Þ¤¹
-          --debug                      Ruby ¼«ÂÎ¤Î¥Ç¥Ð¥Ã¥°¥ª¥×¥·¥ç¥ó¤òÍ­¸ú¤Ë¤·¤Þ¤¹
+      -h, --help                       ã“ã®ã‚³ãƒžãƒ³ãƒ‰ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã—ã¾ã™
+      -V, --[no-]verbose               è¡¨ç¤ºã‚’è©³ç´°ã«ã—ã¾ã™
+      -q, --quiet                      é™ã‹ã«å®Ÿè¡Œã—ã¾ã™
+          --config-file FILE           æŒ‡å®šã•ã‚ŒãŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½¿ç”¨ã—ã¾ã™
+          --backtrace                  ãƒãƒƒã‚¯ãƒˆãƒ¬ãƒ¼ã‚¹ã‚’è¡¨ç¤ºã—ã¾ã™
+          --debug                      Ruby è‡ªä½“ã®ãƒ‡ãƒãƒƒã‚°ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æœ‰åŠ¹ã«ã—ã¾ã™
     Arguments:
-      GEMNAME       ¥É¥­¥å¥á¥ó¥È¤òÀ¸À®¤¹¤ë Gem ¥Ñ¥Ã¥±¡¼¥¸¤ò»ØÄê¤·¤Þ¤¹¡£¾ÊÎ¬¤¹¤ë¤ÈÁ´¤Æ¤Î
-                    Gem ¥Ñ¥Ã¥±¡¼¥¸¤Î¥É¥­¥å¥á¥ó¥È¤òÀ¸À®¤·¤Þ¤¹¡£
+      GEMNAME       ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã™ã‚‹ Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨å…¨ã¦ã®
+                    Gem ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
     Summary:
-      RDoc/RI ¥É¥­¥å¥á¥ó¥È¤òÀ¸À®¤·¤Þ¤¹
+      RDoc/RI ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã—ã¾ã™
     Defaults:
       --version '>= 0' --rdoc --ri

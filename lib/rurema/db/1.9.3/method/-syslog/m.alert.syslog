@@ -11,21 +11,21 @@ kind=defined
 --- info(message, *arg) -> self
 --- debug(message, *arg) -> self
 
-Syslog#log()¤Î¥·¥ç¡¼¥È¥«¥Ã¥È¥á¥½¥Ã¥É¡£
-¥·¥¹¥Æ¥à¤Ë¤è¤Ã¤Æ¤ÏÄêµÁ¤µ¤ì¤Æ¤¤¤Ê¤¤¤â¤Î¤â¤¢¤ê¤Ş¤¹¡£
+Syslog#log()ã®ã‚·ãƒ§ãƒ¼ãƒˆã‚«ãƒƒãƒˆãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+ã‚·ã‚¹ãƒ†ãƒ ã«ã‚ˆã£ã¦ã¯å®šç¾©ã•ã‚Œã¦ã„ãªã„ã‚‚ã®ã‚‚ã‚ã‚Šã¾ã™ã€‚
 
-Îã¤¨¤Ğ¡¢Syslog.emerg(message, *arg) ¤Ï¡¢Syslog.log(Syslog::LOG_EMERG, message, *arg)
-¤ÈÆ±¤¸¤Ç¤¹¡£
+ä¾‹ãˆã°ã€Syslog.emerg(message, *arg) ã¯ã€Syslog.log(Syslog::LOG_EMERG, message, *arg)
+ã¨åŒã˜ã§ã™ã€‚
 
-@param message ¥Õ¥©¡¼¥Ş¥Ã¥ÈÊ¸»úÎó¤Ç¤¹¡£[[m:Kernel.#sprintf]] ¤ÈÆ±¤¸·Á¼°¤Î°ú¿ô¤ò»ØÄê¤·¤Ş¤¹¡£
+@param message ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆæ–‡å­—åˆ—ã§ã™ã€‚[[m:Kernel.#sprintf]] ã¨åŒã˜å½¢å¼ã®å¼•æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param arg ¥Õ¥©¡¼¥Ş¥Ã¥È¤µ¤ì¤ë°ú¿ô¤Ç¤¹¡£
+@param arg ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã•ã‚Œã‚‹å¼•æ•°ã§ã™ã€‚
 
-@raise ArgumentError °ú¿ô¤¬1¤Ä°Ê¾å¤Ç¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise ArgumentError å¼•æ•°ãŒ1ã¤ä»¥ä¸Šã§ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
-@raise RuntimeError syslog ¤¬open ¤µ¤ì¤Æ¤¤¤Ê¤¤¾ì¹çÈ¯À¸¤·¤Ş¤¹¡£
+@raise RuntimeError syslog ãŒopen ã•ã‚Œã¦ã„ãªã„å ´åˆç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   Syslog.open("syslogtest") {|syslog|
     syslog.crit("the sky is falling in %d seconds!",5)
   }

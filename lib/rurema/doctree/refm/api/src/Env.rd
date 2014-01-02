@@ -1,2 +1,4 @@
-���Υ饤�֥��� obsolete �Ǥ���
-[[lib:importenv]] �򻲾Ȥ��Ƥ���������
+category Obsolete
+
+このライブラリは obsolete です。
+[[lib:importenv]] を参照してください。

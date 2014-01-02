@@ -6,7 +6,6 @@ library=_builtin
 aliases=
 aliasof=
 
-�����ƥॳ����Υ��顼���б������㳰�򽸤᤿�⥸�塼��Ǥ���
+システムコールのエラーに対応する例外を集めたモジュールです。
 
-@see [[c:SystemCallError]]
-@see [[c:Errno::EXXX]]
+@see [[c:SystemCallError]], [[c:Errno::EXXX]]

@@ -5,5 +5,5 @@ kind=defined
 --- each {|key, value|  ...  } -> self
 --- each_pair {|key, value|  ...  } -> self
 
-�����Ǥ��Ф��륤�ƥ졼����
+各要素に対するイテレータ。
 

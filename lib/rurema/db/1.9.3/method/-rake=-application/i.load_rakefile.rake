@@ -4,5 +4,5 @@ kind=defined
 
 --- load_rakefile
 
-Rakefile ¤òÃµ¤·¤Æ¥í¡¼¥É¤·¤Ş¤¹¡£
+Rakefile ã‚’æ¢ã—ã¦ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 

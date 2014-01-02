@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- random_bytes(len) -> String
-�Ź���Ū��ͽ¬�Բ�ǽ����������������ˤ�äơ� len �Х��Ȥ�
-������ʥХ�������֤��ޤ���
+暗号論的な予測不可能性を持つ乱数生成器によって、 len バイトの
+ランダムなバイト列を返します。
 
-@param len ɬ�פʥ�����Х������Ĺ��
+@param len 必要なランダムバイト列の長さ
 

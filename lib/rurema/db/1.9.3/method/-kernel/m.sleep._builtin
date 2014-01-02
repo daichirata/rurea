@@ -5,16 +5,16 @@ kind=defined
 --- sleep -> Integer
 --- sleep(sec) -> Integer
 
-sec �ä����ץ������μ¹Ԥ���ߤ��ޤ���
+sec 秒だけプログラムの実行を停止します。
 
-sec ����ά���줿��硢¾����åɤ���� [[m:Thread#run]]
-�ʤɤ�����Ū�˵������ʤ��¤�ʵפ˥��꡼�פ��ޤ���Thread#run��Ƥ֤Ȥ��λ�����
-sleep�μ¹Ԥ����Ǥ���ޤ���
+sec が省略された場合、他スレッドからの [[m:Thread#run]]
+などで明示的に起こさない限り永久にスリープします。Thread#runを呼ぶとその時点で
+sleepの実行が中断されます。
 
-@param sec ��ߤ����ÿ�������ο��ͤǻ��ꤷ�ޤ�����ư�������������Ǥ��ޤ��� 
-           ��ά���줿��硢�ʵפ˥��꡼�פ��ޤ���
+@param sec 停止する秒数を非負の数値で指定します。浮動小数点数も指定できます。 
+           省略された場合、永久にスリープします。
 
-@return �ºݤ���ߤ��Ƥ����ÿ� (�����˴ݤ��줿��) �Ǥ���
+@return 実際に停止していた秒数 (整数に丸められた値) です。
 
   it = Thread.new do
     sleep

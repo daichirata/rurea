@@ -4,5 +4,5 @@ kind=defined
 
 --- inspect -> String
 
-���Ȥξ����ʹ֤��ɤ��������֤��ޤ���
+自身の情報を人間に読める形式で返します。
 

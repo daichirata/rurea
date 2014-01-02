@@ -5,10 +5,14 @@ kind=defined
 --- trace -> Fixnum | Float | Rational
 --- tr -> Fixnum | Float | Rational
 
-�ȥ졼�� (trace) ���֤��ޤ���
+トレース (trace) を返します。
 
-����Υȥ졼�� (trace) �Ȥϡ��г����Ǥ��¤Ǥ���
+行列のトレース (trace) とは、対角要素の和です。
 
-��:
+例:
   Matrix[[7,6], [3,9]].trace #=> 16
+
+trace は正方行列でのみ定義されます。
+
+@raise ExceptionForMatrix::ErrDimensionMismatch 行列が正方行列でない場合に発生します
 

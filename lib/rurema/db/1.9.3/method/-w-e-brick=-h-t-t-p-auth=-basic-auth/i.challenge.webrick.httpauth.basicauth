@@ -4,8 +4,8 @@ kind=defined
 
 --- challenge(request, response) -> ()
 
-���饤����Ȥ˥ѥ���ɤ��׵᤹�뤿��˥쥹�ݥ󥹤� WWW-Authenticate �إå���
-���ꤷ���㳰 WEBrick::HTTPStatus::Unauthorized ���ꤲ�ޤ���
+クライアントにパスワードを要求するためにレスポンスに WWW-Authenticate ヘッダを
+設定し、例外 WEBrick::HTTPStatus::Unauthorized を投げます。
 
-@raise WEBrick::HTTPStatus::Unauthorized ���Υ᥽�åɤ�Ƥ֤�ɬ��ȯ�����ޤ���
+@raise WEBrick::HTTPStatus::Unauthorized このメソッドを呼ぶと必ず発生します。
 

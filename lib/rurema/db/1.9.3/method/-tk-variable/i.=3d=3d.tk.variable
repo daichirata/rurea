@@ -5,6 +5,6 @@ kind=defined
 --- ==(other)
 @todo
 
-ÃÍ¤¬other¤ÈÆ±¤¸¤Ç¤¢¤ë¾ì¹ç¤Ë¿¿¤Ç¤¹¡£other¤Ï¡¢
-TkVariable, String, Integer, Float, Array¤Î¤¤¤º¤ì¤«¤Ç¤¹¡£
+å€¤ãŒotherã¨åŒã˜ã§ã‚ã‚‹å ´åˆã«çœŸã§ã™ã€‚otherã¯ã€
+TkVariable, String, Integer, Float, Arrayã®ã„ãšã‚Œã‹ã§ã™ã€‚
 

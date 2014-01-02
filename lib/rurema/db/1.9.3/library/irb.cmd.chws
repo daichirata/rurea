@@ -3,9 +3,10 @@ classes=IRB=ExtendCommand=CurrentWorkingWorkspace,IRB=ExtendCommand=ChangeWorksp
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-irb Ãæ¤Î irb_current_working_workspace¡¢irb_change_workspace ¥³¥Ş¥ó¥É¤Î
-¤¿¤á¤Î³ÈÄ¥¤òÄêµÁ¤·¤¿¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+irb ä¸­ã® irb_current_working_workspaceã€irb_change_workspace ã‚³ãƒãƒ³ãƒ‰ã®
+ãŸã‚ã®æ‹¡å¼µã‚’å®šç¾©ã—ãŸã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤ÇÄêµÁ¤µ¤ì¤Æ¤¤¤ë¥á¥½¥Ã¥É¤Ï¥æ¡¼¥¶¤¬Ä¾ÀÜ»ÈÍÑ¤¹¤ë¤â¤Î¤Ç¤Ï¤¢
-¤ê¤Ş¤»¤ó¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã¯ãƒ¦ãƒ¼ã‚¶ãŒç›´æ¥ä½¿ç”¨ã™ã‚‹ã‚‚ã®ã§ã¯ã‚
+ã‚Šã¾ã›ã‚“ã€‚

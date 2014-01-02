@@ -6,5 +6,5 @@ library=gserver
 aliases=
 aliasof=
 
-�����Ф�������뤿��Υ��饹�Ǥ���[[c:GServer]] ��Ѿ��������������饹��������ƻȤ��ޤ���
-fork �ǤϤʤ�����åɤ�ȤäƤ��ޤ���
+サーバを実装するためのクラスです。[[c:GServer]] を継承した新しいクラスを定義して使います。
+fork ではなくスレッドを使っています。

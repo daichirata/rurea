@@ -4,11 +4,11 @@ kind=defined
 
 --- cover?(obj) -> bool
 
-obj ���ϰ���˴ޤޤ�Ƥ�����˿����֤��ޤ���
+obj が範囲内に含まれている時に真を返します。
 
-[[m:Range#include?]] �Ȱۤʤ� <=> �᥽�åɤˤ��黻�ˤ���ϰ��⤫�ɤ�����Ƚ�ꤷ�ޤ���
+[[m:Range#include?]] と異なり <=> メソッドによる演算により範囲内かどうかを判定します。
 
-@param obj ����оݤΥ��֥������Ȥ���ꤷ�ޤ���
+@param obj 比較対象のオブジェクトを指定します。
 
 @see [[m:Range#include?]]
 

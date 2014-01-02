@@ -4,7 +4,7 @@ kind=defined
 
 --- remove_all(list)
 
-list ��Ϳ����줿 Gem �����ƥ��󥤥󥹥ȡ��뤷�ޤ���
+list で与えられた Gem を全てアンインストールします。
 
-@param list ���󥤥󥹥ȡ��뤹�� Gem �Υꥹ�Ȥ���ꤷ�ޤ���
+@param list アンインストールする Gem のリストを指定します。
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- find_name(gem_name, version_requirement = Gem::Requirement.default) -> Gem::Specification
 
-Ã»¤¤Ì¾Á°¤ÇÀµ³Î¤Ë¥Ş¥Ã¥Á¤¹¤ë Gem ¤òÊÖ¤·¤Ş¤¹¡£
+çŸ­ã„åå‰ã§æ­£ç¢ºã«ãƒãƒƒãƒã™ã‚‹ Gem ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param gem_name Gem ¤ÎÌ¾Á°¤ò»ØÄê¤·¤Ş¤¹¡£
+@param gem_name Gem ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
 @param version_requirement
 

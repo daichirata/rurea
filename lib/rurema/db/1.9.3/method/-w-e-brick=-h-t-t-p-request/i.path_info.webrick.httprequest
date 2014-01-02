@@ -4,5 +4,5 @@ kind=defined
 
 --- path_info          -> String
 
-�ꥯ������ URI �Υѥ���ʸ������֤��ޤ����ǥե���Ȥ� path ��Ʊ���Ǥ���
+リクエスト URI のパスを文字列で返します。デフォルトは path と同じです。
 

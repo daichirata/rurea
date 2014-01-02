@@ -4,5 +4,5 @@ kind=defined
 
 --- EVENTS -> [Symbol]
 
-ripper �ΰ������ƤΥ��٥�� ID (����ܥ�) �Υꥹ�Ȥ��֤��ޤ���
+ripper の扱う全てのイベント ID (シンボル) のリストを返します。
 

@@ -6,4 +6,4 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �إå������Ƥ������Ǥ������ȯ�������㳰�Ǥ���
+HTTP ヘッダの内容が不正である場合に発生する例外です。

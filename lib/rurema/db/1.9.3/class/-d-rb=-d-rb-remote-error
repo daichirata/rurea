@@ -6,4 +6,4 @@ library=drb
 aliases=
 aliasof=
 
-An exception wrapping an error object
+例外オブジェクトを wrap したクラス

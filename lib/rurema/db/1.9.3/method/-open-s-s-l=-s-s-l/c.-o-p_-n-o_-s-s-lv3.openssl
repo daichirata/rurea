@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- OP_NO_SSLv3 -> Integer
-SSL v3 คฮปศอัค๒ถุป฿คนค๋ฅีฅ้ฅฐควคนกฃ
-[[m:OpenSSL::SSL::SSLContext#options=]] ควอ๘อัคทคÞคนกฃ
+SSL v3 ใฎไฝฟ็”จใ’็ฆๆญขใใใ•ใฉใฐใงใใ€
+[[m:OpenSSL::SSL::SSLContext#options=]] ใงๅฉ็”จใ—ใพใใ€
 

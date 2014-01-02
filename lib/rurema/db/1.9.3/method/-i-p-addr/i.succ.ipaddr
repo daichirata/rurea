@@ -4,7 +4,7 @@ kind=defined
 
 --- succ -> IPAddr
 
-¼¡¤Î IPAddr ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+æ¬¡ã® IPAddr ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
   ipaddr = IPAddr.new('192.168.1.1')
   p ipaddr.succ.to_s #=> "192.168.1.2"

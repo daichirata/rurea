@@ -4,7 +4,7 @@ kind=defined
 
 --- message(message){ ... } -> Proc
 
-Ϳ����줿�֥��å���ɾ��������̤�Ϳ����줿��å�������Ϣ�뤷���֤��ޤ���
+与えられたブロックを評価した結果と与えられたメッセージを連結して返します。
 
-@param message ��å���������ꤷ�ޤ���
+@param message メッセージを指定します。
 

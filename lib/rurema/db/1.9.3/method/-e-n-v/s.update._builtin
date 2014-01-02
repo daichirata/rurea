@@ -4,10 +4,10 @@ kind=defined
 
 --- update(other) -> ENV
 
-�ϥå��� other �����Ƥ�Ķ��ѿ��˥ޡ������ޤ�����ʣ���륭��
-���б������ͤ� other �����ƤǾ�񤭤���ޤ���
+ハッシュ other の内容を環境変数にマージします。重複するキー
+に対応する値は other の内容で上書きされます。
 
-self ���֤��ޤ���
+self を返します。
 
-@param other  ��񤭤���ϥå������ꤷ�ޤ���
+@param other  上書きするハッシュを指定します。
 

@@ -6,21 +6,21 @@ kind=defined
 --- request_put(path, data, initheader = nil) {|response| .... } -> Net::HTTPResponse
 --- put2(path, data, initheader = nil) -> Net::HTTPResponse
 --- put2(path, data, initheader = nil) {|response| .... } -> Net::HTTPResponse
-�����о�� path �ˤ��륨��ƥ��ƥ����Ф�ʸ���� data ��
-PUT ������ޤ���
+サーバ上の path にあるエンティティに対し文字列 data を
+PUT で送ります。
 
-�֤��ͤ� [[c:Net::HTTPResponse]] �Υ��󥹥��󥹤Ǥ���
+返り値は [[c:Net::HTTPResponse]] のインスタンスです。
 
-�֥��å��ȤȤ�˸ƤӽФ��줿�Ȥ��ϡ�
-�ܥǥ��򥽥��åȤ����ɤ߽Ф����ˡ�
-��³��ݻ��������֤� [[c:Net::HTTPResponse]]
-���֥������Ȥ�֥��å����Ϥ��ޤ���
+ブロックとともに呼び出されたときは、
+ボディをソケットから読み出す前に、
+接続を維持した状態で [[c:Net::HTTPResponse]]
+オブジェクトをブロックに渡します。
 
-@param path �������륨��ƥ��ƥ��Υѥ���ʸ����ǻ��ꤷ�ޤ���
-@param data ����ǡ�����ʸ����ǻ��ꤷ�ޤ���
-@param initheader �ꥯ�����Ȥ� HTTP �إå���ϥå���ǻ��ꤷ�ޤ���
+@param path 取得するエンティティのパスを文字列で指定します。
+@param data 送るデータを文字列で指定します。
+@param initheader リクエストの HTTP ヘッダをハッシュで指定します。
 
-put2 �ϻ����٤�ʤΤǻȤ�ʤ��Ǥ���������
+put2 は時代遅れなので使わないでください。
 
 @see [[m:Net::HTTP#put]]
 

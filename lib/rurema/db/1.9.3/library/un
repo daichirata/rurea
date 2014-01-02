@@ -3,17 +3,18 @@ classes=
 methods=Kernel/i.chmod.un,Kernel/i.cp.un,Kernel/i.help.un,Kernel/i.install.un,Kernel/i.ln.un,Kernel/i.mkdir.un,Kernel/i.mv.un,Kernel/i.rm.un,Kernel/i.rmdir.un,Kernel/i.touch.un,Kernel/i.wait_writable.un,Kernel/i.mkmf.un,Kernel/i.httpd.un
 sublibraries=
 is_sublibrary=false
+category=File
 
-Unix ¤Î´ğËÜ¥³¥Ş¥ó¥É¤ÎÂåÂØ¤È¤Ê¤ë¥æ¡¼¥Æ¥£¥ê¥Æ¥£¡£
+Unix ã®åŸºæœ¬ã‚³ãƒãƒ³ãƒ‰ã®ä»£æ›¿ã¨ãªã‚‹ãƒ¦ãƒ¼ãƒ†ã‚£ãƒªãƒ†ã‚£ã€‚
 
-Makefile Æâ¤Ç¥·¥¹¥Æ¥à¤Ë°ÍÂ¸¤·¤Ê¤¤¤è¤¦¤ËÍÑ°Õ¤µ¤ì¤Ş¤·¤¿¡£
-[[lib:mkmf]] ¤¬»ÈÍÑ¤·¤Ş¤¹¡£
+Makefile å†…ã§ã‚·ã‚¹ãƒ†ãƒ ã«ä¾å­˜ã—ãªã„ã‚ˆã†ã«ç”¨æ„ã•ã‚Œã¾ã—ãŸã€‚
+[[lib:mkmf]] ãŒä½¿ç”¨ã—ã¾ã™ã€‚
 
-Windows ¤Ê¤É¥ï¥¤¥ë¥É¥«¡¼¥É¤òÇ§¼±¤·¤Ê¤¤¥·¥¹¥Æ¥à(¥·¥§¥ë)¤Î¤¿¤á¤Ë°ú¿ô¤Ï
-un¤¬¥ï¥¤¥ë¥É¥«¡¼¥ÉÅ¸³«([[m:Dir.glob]]»²¾È)¤·¤Ş¤¹(Unix ¤Ç¤Ï¥·¥§
-¥ë¤Èun¤Ë¤è¤êÆó½Å¤Ë¥ï¥¤¥ë¥É¥«¡¼¥ÉÅ¸³«¤µ¤ì¤Ş¤¹)¡£
+Windows ãªã©ãƒ¯ã‚¤ãƒ«ãƒ‰ã‚«ãƒ¼ãƒ‰ã‚’èªè­˜ã—ãªã„ã‚·ã‚¹ãƒ†ãƒ (ã‚·ã‚§ãƒ«)ã®ãŸã‚ã«å¼•æ•°ã¯
+unãŒãƒ¯ã‚¤ãƒ«ãƒ‰ã‚«ãƒ¼ãƒ‰å±•é–‹([[m:Dir.glob]]å‚ç…§)ã—ã¾ã™(Unix ã§ã¯ã‚·ã‚§
+ãƒ«ã¨unã«ã‚ˆã‚ŠäºŒé‡ã«ãƒ¯ã‚¤ãƒ«ãƒ‰ã‚«ãƒ¼ãƒ‰å±•é–‹ã•ã‚Œã¾ã™)ã€‚
 
-=== »È¤¤Êı:
+=== ä½¿ã„æ–¹:
 
    ruby -run -e cp -- [-prv] SOURCE DEST
    ruby -run -e ln -- [-sfv] TARGET LINK_NAME

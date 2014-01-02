@@ -4,9 +4,9 @@ kind=defined
 
 --- content_type=(val)
 
-Content-Type ¥Ø¥Ã¥À¤ÎÃÍ¤ò¥»¥Ã¥È¤·¤Ş¤¹¡£
+Content-Type ãƒ˜ãƒƒãƒ€ã®å€¤ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param val Content-Type ¥Ø¥Ã¥À¤ÎÃÍ¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param val Content-Type ãƒ˜ãƒƒãƒ€ã®å€¤ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
   res.content_type = "text/html"
 

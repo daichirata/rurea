@@ -4,5 +4,5 @@ kind=defined
 
 --- generate_ri
 
-���Ȥ˥��åȤ���Ƥ��� [[c:Gem::Specification]] �ξ�����Ȥ� RI �ѤΥǡ������������ޤ���
+自身にセットされている [[c:Gem::Specification]] の情報をもとに RI 用のデータを生成します。
 

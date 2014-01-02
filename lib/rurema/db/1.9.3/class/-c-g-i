@@ -6,4 +6,4 @@ library=cgi.core
 aliases=
 aliasof=
 
-CGI ������ץȤ�񤯤����ɬ�פʵ�ǽ���󶡤��륯�饹�Ǥ���
+CGI スクリプトを書くために必要な機能を提供するクラスです。

@@ -4,16 +4,16 @@ kind=defined
 
 --- group -> Struct::Group | nil
 
-/etc/group �ե����뤫���ɤ߹��������ȥ�����֤��ޤ���
+/etc/group ファイルから読み込んだエントリを一つ返します。
 
-�ǽ�θƤӽФ��Ǥϡ���Ƭ�Υ���ȥ���֤��ޤ�������ʹߤθƤӽФ��Ǥϡ�
-�ƤӽФ��٤˼��Υ���ȥ�����֤��ޤ����ե�����ν�ü��ã����� nil ���֤��ޤ���
+最初の呼び出しでは、先頭のエントリを返します。それ以降の呼び出しでは、
+呼び出す度に次のエントリを順に返します。ファイルの終端に達すると nil を返します。
 
-@raise RuntimeError /etc/group �ե����뤬���å�����Ƥ������ȯ�����ޤ���
+@raise RuntimeError /etc/group ファイルがロックされている場合に発生します。
 
 @see [[m:Etc.#getgrent]], [[man:getgrent(3)]]
 
 --- group {|gr| ... } -> ()
 
-���ƤΥ��롼�ץ���ȥ���˥����������뤿��Υ��ƥ졼���Ǥ���
+全てのグループエントリを順にアクセスするためのイテレータです。
 

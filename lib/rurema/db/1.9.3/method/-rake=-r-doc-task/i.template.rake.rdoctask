@@ -4,6 +4,6 @@ kind=defined
 
 --- template -> String
 
-���Ѥ���ƥ�ץ졼�Ȥ��֤��ޤ���
-�ǥե���Ȥ� RDoc �Υǥե���ȤǤ���
+使用するテンプレートを返します。
+デフォルトは RDoc のデフォルトです。
 

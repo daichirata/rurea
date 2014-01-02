@@ -4,6 +4,6 @@ kind=defined
 
 --- css -> String
 
-���ޥ�ɥ饤������� --style ���ץ����ǻ��ꤷ�� URL ��ʸ������֤���
-����
+コマンドライン引数の --style オプションで指定した URL を文字列で返しま
+す。
 

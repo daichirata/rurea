@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- reset -> self
-�������֤�ꥻ�åȤ��ޤ���
+内部状態をリセットします。
 
-����IV���Ź沽/���沽�Ԥ��ǡ����ʤɤ����ꥢ����ޤ���
+鍵、IV、暗号化/復号化待ちデータなどがクリアされます。
 

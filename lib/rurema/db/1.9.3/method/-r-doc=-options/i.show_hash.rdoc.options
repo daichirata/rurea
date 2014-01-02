@@ -4,6 +4,6 @@ kind=defined
 
 --- show_hash -> bool
 
-���ޥ�ɥ饤������� --show-hash ���ץ�������ꤷ�Ƥ�����硢true ��
-�֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+コマンドライン引数の --show-hash オプションを指定していた場合、true を
+返します。そうでない場合は false を返します。
 

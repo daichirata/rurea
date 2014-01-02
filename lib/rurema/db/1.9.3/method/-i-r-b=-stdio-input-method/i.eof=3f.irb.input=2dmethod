@@ -4,5 +4,5 @@ kind=defined
 
 --- eof? -> bool
 
-ÆþÎÏ¤¬ EOF(End Of File)¤ËÃ£¤·¤¿¤«¤É¤¦¤«¤òÊÖ¤·¤Þ¤¹¡£
+å…¥åŠ›ãŒ EOF(End Of File)ã«é”ã—ãŸã‹ã©ã†ã‹ã‚’è¿”ã—ã¾ã™ã€‚
 

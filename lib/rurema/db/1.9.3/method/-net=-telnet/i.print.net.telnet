@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- print(string) -> ()
-�ۥ��Ȥ�ʸ���������ޤ���
+ホストに文字列を送ります。
 
-���Ԥ��ղä���ޤ���ʸ������β��Ԥ��Ѵ�����ޤ���telnet���ޥ�ɤϥ��������פ���ޤ���
-�������Ѵ���[[m:Net::Telnet#telnetmode]], [[m:Net::Telnet#binmode]], 
-����ӥۥ��Ȥ������ꤵ�줿 telnet ���ץ����ˤ�ä�(�Ѵ����뤷�ʤ��ʤɤ�)
-���椵��ޤ���
+改行は付加されません。文字列中の改行は変換されます。telnetコマンドはエスケープされます。
+これらの変換は[[m:Net::Telnet#telnetmode]], [[m:Net::Telnet#binmode]], 
+およびホストから設定された telnet オプションによって(変換するしないなどが)
+制御されます。
 
-@param string �ۥ��Ȥ�����ʸ����
+@param string ホストに送る文字列
 @see [[m:Net::Telnet#write]], [[m:Net::Telnet#puts]]
 

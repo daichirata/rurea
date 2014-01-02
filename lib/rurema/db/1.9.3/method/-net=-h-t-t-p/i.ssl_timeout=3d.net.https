@@ -4,17 +4,17 @@ kind=added
 
 --- ssl_timeout=(sec)
 
-SSL/TLS д╬е┐едеревеже╚╔├┐ЇдЄ└▀─ъд╖д▐д╣бг
+SSL/TLS уБоуВ┐уВдуГауВвуВжуГИчзТцХ░уВТшинхоЪуБЧуБ╛уБЩуАВ
 
-HTTP е╗е├е╖ечеє│л╗╧╗■([[m:Net::HTTP#start]] д╩д╔)д╦
-[[m:OpenSSL::SSL::SSLContext#ssl_timeout=]] д╟
-е┐едеревеже╚дЄ└▀─ъд╖д▐д╣бг
+HTTP уВ╗уГГуВ╖уГзуГ│щЦЛхзЛцЩВ([[m:Net::HTTP#start]] уБкуБй)уБл
+[[m:OpenSSL::SSL::SSLContext#ssl_timeout=]] уБз
+уВ┐уВдуГауВвуВжуГИуВТшинхоЪуБЧуБ╛уБЩуАВ
 
-е╟е╒ейеые╚├═д╧ [[m:OpenSSL::SSL::SSLContext#ssl_timeout=]] д╚
-╞▒д╕д╟бвOpenSSL д╬е╟е╒ейеые╚├═(300╔├)дЄ═╤ддд▐д╣бг
+уГЗуГХуВйуГлуГИхАдуБп [[m:OpenSSL::SSL::SSLContext#ssl_timeout=]] уБи
+хРМуБШуБзуАБOpenSSL уБоуГЗуГХуВйуГлуГИхАд(300чзТ)уВТчФиуБДуБ╛уБЩуАВ
 
 
-@param sec е┐едеревеже╚╔├┐Ї
+@param sec уВ┐уВдуГауВвуВжуГИчзТцХ░
 @see [[m:Net::HTTP#ssl_timeout]],
      [[m:OpenSSL::SSL::SSLContext#ssl_timeout=]]
 

@@ -12,6 +12,7 @@ require 'bitclust/exception'
 
 module BitClust
 
+  # Entry for libraries ("_builtin", "yaml", etc.)
   class LibraryEntry < Entry
 
     include Enumerable
@@ -71,6 +72,7 @@ module BitClust
       property :source,   'String'
       property :sublibraries, '[LibraryEntry]'
       property :is_sublibrary,   'bool'
+      property :category, 'String'
     }
 
     def inspect
@@ -106,11 +108,19 @@ module BitClust
     end
 
     def error_classes
-      @error_classes ||= classes.select{|c| c.ancestors.any?{|k| k.name == 'Exception' }}
+      @error_classes ||= classes.select{|c| c.error_class? }
     end
 
     def all_error_classes
-      @all_error_classes ||= all_classes.select{|c| c.ancestors.any?{|k| k.name == 'Exception' }}
+      @all_error_classes ||= all_classes.select{|c| c.error_class? }
+    end
+
+    def all_modules
+      @all_modules ||= all_classes.select{|c| c.module? }.sort
+    end
+
+    def all_objects
+      @all_objects ||= all_classes.select{|c| c.object? }.sort
     end
 
     def require(lib)

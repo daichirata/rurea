@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- telnetmode(mode=nil) -> bool|()
-��������ꤷ�ʤ����ˤ�"Telnetmode"���ͤ��֤��ޤ���
-������Ϳ��������"Telnetmode"���ͤ��ѹ����ޤ���
+引数を指定しない場合には"Telnetmode"の値を返します。
+引数を与えた場合は"Telnetmode"の値を変更します。
 
-����� telnet ���ü�ʥХ�������᤹�뤫�ɤ�����
-��̣���ޤ���
+これは telnet の特殊なバイト列を解釈するかどうかを
+意味します。
 
 @see [[m:Net::Telnet.new]]
 

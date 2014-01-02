@@ -4,5 +4,5 @@ kind=defined
 
 --- num_methods -> Integer
 
-���Ϥ����᥽�åɤο����֤��ޤ���
+解析したメソッドの数を返します。
 

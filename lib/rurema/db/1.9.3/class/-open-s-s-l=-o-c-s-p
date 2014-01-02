@@ -6,23 +6,23 @@ library=openssl
 aliases=
 aliasof=
 
-OCSP(Online Certificate Status Protocol)���갷�������
-�⥸�塼��Ǥ���OCSP �� [[RFC:2560]] ���������Ƥ��ޤ���
+OCSP(Online Certificate Status Protocol)を取り扱うための
+モジュールです。OCSP は [[RFC:2560]] で定義されています。
 
-���Υ⥸�塼��� OCSP �Υꥯ�����Ȥȥ쥹�ݥ󥹤��갷��
-��ǽ����äƤ��ޤ���
+このモジュールは OCSP のリクエストとレスポンスを取り扱う
+機能を持っています。
 
-OCSP �쥹�ݥ�����̿����뵡ǽ�Ϥ���ޤ��󡣥桼�����㤨��
-OCSP over http �ʤɤ��������ɬ�פ�����ޤ���
+OCSP レスポンダと通信する機能はありません。ユーザが例えば
+OCSP over http などを実装する必要があります。
 
-=== ��
-OCSP �쥹�ݥ���˥ꥯ�����Ȥ����äƤ���������ɽ������
+=== 例
+OCSP レスポンダにリクエストを送ってその返答を表示する
   require 'openssl'
   require 'net/http'
   # ...
-  cert # �����оݤξ�����(Certificate ���֥�������)
-  ca_cert # cert �� CA �ξ�����(Certificate ���֥�������)
-  store # ���ꤷ�Ƥ�������񥹥ȥ�
+  cert # 検証対象の証明書(Certificate オブジェクト)
+  ca_cert # cert の CA の証明書(Certificate オブジェクト)
+  store # 信頼している証明書ストア
   cid = OpenSSL::OCSP::CertificateId(cert, ca_cert)
   req = OpenSSL::OCSP::Response.new(cid)
   req.add_nonce

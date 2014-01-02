@@ -4,6 +4,6 @@ kind=defined
 
 --- UTF8STRING -> Integer
 
-ASN.1 UNIVERSAL ¥¿¥°¤Î¡¢
-UTF8STRING ¤Î¥¿¥°ÈÖ¹æ 12 ¤òÉ½¤¹Äê¿ô¤Ç¤¹¡£
+ASN.1 UNIVERSAL ã‚¿ã‚°ã®ã€
+UTF8STRING ã®ã‚¿ã‚°ç•ªå· 12 ã‚’è¡¨ã™å®šæ•°ã§ã™ã€‚
 

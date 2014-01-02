@@ -3,22 +3,23 @@ classes=Test=Unit
 methods=
 sublibraries=test.unit.testcase,test.unit.assertions
 is_sublibrary=false
+category=Development
 
-��˥åȥƥ��Ȥ�Ԥ�����Υ饤�֥��Ǥ���
+ユニットテストを行うためのライブラリです。
 
-test/unit �� [[lib:minitest/unit]] ��ȤäƺƼ�������ޤ������������ʸ�
-�������������ǤϤ���ޤ���1.9 �Ϥ� test/unit ��Ȥ��������ϡ��ʲ���
-test-unit �� RubyGems �ǥ��󥹥ȡ��뤷�Ƥ���������(�ܥɥ�����ȤǤϡ�
-1.9 �ϤˤĤ��Ƥ� [[lib:minitest/unit]] �ǺƼ������줿 test/unit �ˤĤ�
-�Ƶ��Ҥ��Ƥ��ޤ�)
+test/unit は [[lib:minitest/unit]] を使って再実装されましたが、完全な互
+換性がある訳ではありません。1.9 以降で test/unit を使いたい場合は、以下
+のtest-unit を RubyGems でインストールしてください。(本ドキュメントでは、
+1.9 以降については [[lib:minitest/unit]] で再実装された test/unit につ
+いて記述しています)
 
-  * Test::Unit - Ruby��ñ�Υƥ��ȥե졼����: [[url:http://test-unit.rubyforge.org/index.html.ja]]
+  * Test::Unit - Ruby用単体テストフレームワーク: [[url:http://test-unit.rubyforge.org/index.html.ja]]
 
-=== �Ȥ���
+=== 使い方
 
-Test::Unit �ϰʲ��Τ褦�˻Ȥ��ޤ���
+Test::Unit は以下のように使います。
 
-�ޤ��ƥ����оݤΥ�����(foo.rb)��ɬ�פǤ���
+まずテスト対象のソース(foo.rb)が必要です。
 
     class Foo
        def foo
@@ -29,9 +30,9 @@ Test::Unit �ϰʲ��Τ褦�˻Ȥ��ޤ���
        end
     end
 
-���˥�˥åȥƥ���(test_foo.rb)��񤭤ޤ����ƥ��Ȥ�¹Ԥ���᥽�å�(�ƥ��ȥ᥽�å�)��̾����
-���� test_ �ǻϤޤ�ɬ�פ�����ޤ����ƥ��ȥ᥽�åɤ��¹Ԥ�������ˤ� setup �᥽�åɤ�ɬ��
-�ƤФ�ޤ����¹Ԥ��줿���Ȥˤϡ�teardown �᥽�åɤ�ɬ���ƤФ�ޤ���
+次にユニットテスト(test_foo.rb)を書きます。テストを実行するメソッド(テストメソッド)の名前は
+全て test_ で始まる必要があります。テストメソッドが実行される前には setup メソッドが必ず
+呼ばれます。実行されたあとには、teardown メソッドが必ず呼ばれます。
 
     require 'test/unit'
     require 'foo'
@@ -52,8 +53,8 @@ Test::Unit �ϰʲ��Τ褦�˻Ȥ��ޤ���
       end
     end
 
-�ƥ��Ȥ�¹Ԥ���ˤϾ���Ѱդ��� test_foo.rb ��¹Ԥ��ޤ���
-�ǥե���ȤǤϤ��٤ƤΥƥ��Ȥ��¹Ԥ���ޤ���
+テストを実行するには上で用意した test_foo.rb を実行します。
+デフォルトではすべてのテストが実行されます。
 
 
         $ ruby test_foo.rb
@@ -70,7 +71,7 @@ Test::Unit �ϰʲ��Τ褦�˻Ȥ��ޤ���
 
         2 tests, 2 assertions, 1 failures, 0 errors, 0 skips
 
-test_bar �����ƥ��Ȥ��������ϰʲ��Τ褦�ʥ��ץ�����Ϳ���ޤ���
+test_bar だけテストしたい場合は以下のようなオプションを与えます。
 
         $ ruby test_foo.rb --name test_bar
 
@@ -86,10 +87,10 @@ test_bar �����ƥ��Ȥ��������ϰʲ��Τ褦�ʥ��ץ�����Ϳ���ޤ���
 
         1 tests, 1 assertions, 1 failures, 0 errors, 0 skips
 
---name=test_bar�Τ褦�ʻ���ϹԤ��ޤ���
+--name=test_barのような指定は行えません。
 
 
-�ʲ��Τ褦�ˤ���� help ��ɽ������ޤ���
+以下のようにすると help も表示されます。
 
 
   $ ruby test_foo.rb --help
@@ -110,32 +111,32 @@ test_bar �����ƥ��Ȥ��������ϰʲ��Τ褦�ʥ��ץ�����Ϳ���ޤ���
           --[no-]gc-stress             Set GC.stress as true
 
 
-ʣ���Υƥ��Ȥ���٤˹Ԥ���硢�ʲ��Τ褦�˽񤤤������Υե������¹Ԥ��ޤ���
+複数のテストを一度に行う場合、以下のように書いただけのファイルを実行します。
 
  require 'test/unit'
  require 'test_foo.rb'
  require 'test_bar.rb'
 
 
-=== ���ĥƥ��Ȥϼ¹Ԥ���뤫
+=== いつテストは実行されるか
 
-�����Ǥϡ��ƥ��ȥ��饹���������������פǡ��ƥ��Ȥ��¹Ԥ���Ƥ��ޤ���
-����ϡ�require 'test/unit'��������[[m:MiniTest::Unit.autorun]]��¹Ԥ�
-�Ƥ��뤿��Ǥ������η�̡���λ���θ�����Ȥ��Ƽ¹Ԥ����褦�ˤʤäƤ�
-�ޤ���
+上の例では、テストクラスを「定義しただけ」で、テストが実行されています。
+これは、require 'test/unit'した時に[[m:MiniTest::Unit.autorun]]を実行し
+ているためです。その結果、終了時の後処理として実行されるようになってい
+ます。
 
-=== Error �� Failure �ΰ㤤
+=== Error と Failure の違い
 
 : Error
-  �ƥ��ȥ᥽�åɼ¹�����㳰��ȯ��������
+  テストメソッド実行中に例外が発生した。
 
 : Failure
-  �����������˼��Ԥ�����
+  アサーションに失敗した。
 
-=== ����¹�
+=== 並列実行
 
-1.9.3 ñ�Υƥ��Ȥι�®���Τ���ˡ�����¹Ԥ����ݡ��Ȥ���ޤ�����
+1.9.3 単体テストの高速化のために、並列実行がサポートされました。
 
-���󲽤λ��ȤߤˤĤ��Ƥϰʲ��ε�����������������
+並列化の仕組みについては以下の記事をご覧ください。
 
- * Rubyist Magazine 0033 �� �ܲ�! test-all ����: [[url:http://jp.rubyist.net/magazine/?0033-ParallelizeTestAll]]
+ * Rubyist Magazine 0033 号 詳解! test-all 並列化: [[url:http://jp.rubyist.net/magazine/?0033-ParallelizeTestAll]]

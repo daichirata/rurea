@@ -4,5 +4,5 @@ kind=defined
 
 --- active_jobs -> Array
 
-�¹���Υ���֤�������֤��ޤ���
+実行中のジョブの配列を返します。
 

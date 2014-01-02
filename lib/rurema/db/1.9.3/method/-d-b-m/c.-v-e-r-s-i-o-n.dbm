@@ -4,9 +4,9 @@ kind=defined
 
 --- VERSION -> String
 
-libdbm �ΥС�������ɽ��ʸ����Ǥ���
+libdbm のバージョンを表す文字列です。
 
-DB_VERSION_STRING �Ȥ�������� C �����٥���������Ƥ��ʤ�����
-"unknown" �ˤʤ�ޤ���
+DB_VERSION_STRING という定数が C 言語レベルで定義されていない場合は
+"unknown" になります。
 
 

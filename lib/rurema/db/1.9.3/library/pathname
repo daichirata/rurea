@@ -3,5 +3,6 @@ classes=Pathname
 methods=Kernel/i.Pathname.pathname
 sublibraries=
 is_sublibrary=false
+category=File
 
-¥Ñ¥¹Ì¾¤ò¥ª¥Ö¥¸¥§¥¯¥È»Ø¸ş¤é¤·¤¯°·¤¦¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+ãƒ‘ã‚¹åã‚’ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæŒ‡å‘ã‚‰ã—ãæ‰±ã†ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

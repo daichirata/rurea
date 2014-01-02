@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- mailbox -> String | nil
-�᡼�륢�ɥ쥹�Υ᡼��ܥå���̾���֤��ޤ���
+メールアドレスのメールボックス名を返します。
 
-���줬 nil �ʤ�Ф���� [[RFC:822]] group �ν������̣���ޤ���
-���줬 nil �Ǥʤ���[[m:Net::IMAP::Address#mailbox]] �� nil �ʤ�С�
-[[RFC:822]] �Υ��롼��̾��ɽ���ޤ���
-�ɤ�Ǥ�ʤ���С�[[RFC:822]] �� local-part ��ɽ���ޤ���
+これが nil ならばそれは [[RFC:822]] group の終わりを意味します。
+これが nil でなく、[[m:Net::IMAP::Address#mailbox]] が nil ならば、
+[[RFC:822]] のグループ名を表します。
+どれでもなければ、[[RFC:822]] の local-part を表します。
 
-�̾�ϡ��᡼�륢�ɥ쥹�Ρ�@�פμ������֤��ޤ���
+通常は、メールアドレスの「@」の手前を返します。
 

@@ -10,9 +10,9 @@ kind=defined
 --- HKEY_DYN_DATA
 @todo
 
-¤½¤ì¤¾¤ì¤ÎÄêµÁºÑ¥­¡¼¤òÉ½¤¹ Win32::Registry ¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤¹¡£
+ãã‚Œãã‚Œã®å®šç¾©æ¸ˆã‚­ãƒ¼ã‚’è¡¨ã™ Win32::Registry ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã™ã€‚
 
-¾ÜºÙ¤Ï°Ê²¼¤Î MSDN Library ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+è©³ç´°ã¯ä»¥ä¸‹ã® MSDN Library ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
  * Predefined Keys: [[url:http://msdn.microsoft.com/library/en-us/sysinfo/base/predefined_keys.asp]]
 

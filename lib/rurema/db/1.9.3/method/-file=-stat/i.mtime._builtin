@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- mtime -> Time
-ºÇ½ª¹¹¿·»þ¹ï¤òÊÖ¤·¤Þ¤¹¡£
+æœ€çµ‚æ›´æ–°æ™‚åˆ»ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.mtime   #=> Wed Sep 05 20:42:18 +0900 2007
 
 @see [[c:Time]]

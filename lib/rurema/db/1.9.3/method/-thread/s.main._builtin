@@ -4,7 +4,7 @@ kind=defined
 
 --- main    -> Thread
 
-¥á¥¤¥ó¥¹¥ì¥Ã¥É¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ¡ã‚¤ãƒ³ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’è¿”ã—ã¾ã™ã€‚
 
   p Thread.main #=> #<Thread:0x4022e6fc run>
 

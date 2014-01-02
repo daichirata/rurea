@@ -10,8 +10,8 @@ kind=defined
 --- slice!(first...last) -> String
 --- slice!(regexp, nth = 0) -> String
 
-»ØÄê¤·¤¿ÈÏ°Ï ([[m:String#[] ]] »²¾È) ¤ò
-Ê¸»úÎó¤«¤é¼è¤ê½ü¤¤¤¿¤¦¤¨¤Ç¼è¤ê½ü¤¤¤¿ÉôÊ¬Ê¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+æŒ‡å®šã—ãŸç¯„å›² ([[m:String#[] ]] å‚ç…§) ã‚’
+æ–‡å­—åˆ—ã‹ã‚‰å–ã‚Šé™¤ã„ãŸã†ãˆã§å–ã‚Šé™¤ã„ãŸéƒ¨åˆ†æ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-°ú¿ô¤¬ÈÏ°Ï³°¤ò»Ø¤¹¾ì¹ç¤Ï nil ¤òÊÖ¤·¤Þ¤¹¡£
+å¼•æ•°ãŒç¯„å›²å¤–ã‚’æŒ‡ã™å ´åˆã¯ nil ã‚’è¿”ã—ã¾ã™ã€‚
 

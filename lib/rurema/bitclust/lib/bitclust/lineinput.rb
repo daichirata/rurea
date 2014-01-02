@@ -10,6 +10,7 @@
 
 require 'stringio'
 
+# Utility class for line-wise file parsing
 class LineInput
 
   def LineInput.for_string(s)
@@ -80,12 +81,13 @@ class LineInput
     n
   end
 
-  def gets_if(re)
+  def gets_if(re, index = nil)
     line = gets()
     if not line or not (re =~ line)
       ungets line
       return nil
     end
+    return $~[index] if index
     line
   end
 

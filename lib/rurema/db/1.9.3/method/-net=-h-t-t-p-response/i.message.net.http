@@ -5,8 +5,8 @@ kind=defined
 --- message -> String
 --- msg -> String
 
-HTTP �����Ф��ꥶ��ȥ����ɤ��ղä����֤���å������Ǥ���
-�㤨�� 'Not Found' �ʤɤǤ���
+HTTP サーバがリザルトコードに付加して返すメッセージです。
+例えば 'Not Found' などです。
 
-msg �� obsolete �Ǥ����Ȥ�ʤ��Ǥ���������
+msg は obsolete です。使わないでください。
 

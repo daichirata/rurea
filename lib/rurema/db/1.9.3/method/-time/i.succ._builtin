@@ -4,7 +4,9 @@ kind=defined
 
 --- succ    -> Time
 
-self �� 1 ��­���� Time ���֥������Ȥ����������֤��ޤ���
+self に 1 秒足した Time オブジェクトを生成して返します。
+
+このメソッドは obsolete です。 self + 1 を代わりに使用してください。
 
   t = Time.now
   p t

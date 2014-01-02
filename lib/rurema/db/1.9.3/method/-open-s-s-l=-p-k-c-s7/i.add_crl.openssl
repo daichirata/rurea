@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- add_crl(crl) -> self
-╫Пл╬╓ке╨иу╓╧╓К CRL ╓Рди╡ц╓╥╓ч╓╧║ё
+Г╫╡Е░█Ц│╚Ф╥╩Д╩≤Ц│≥Ц┌▀ CRL Ц┌▓Х©╫Е┼═Ц│≈Ц│╬Ц│≥Ц─┌
 
-@param crl ди╡ц╓╧╓К CLR ([[c:OpenSSL::X509::CRL]] ╔╙╔ж╔╦╔╖╔╞╔х)
-@raise OpenSSL::PKCS7::PKCS7Error ди╡ц╓к╪╨гт╓╥╓©╬Л╧Г╓кх╞ю╦╓╥╓ч╓╧║ё
+@param crl Х©╫Е┼═Ц│≥Ц┌▀ CLR ([[c:OpenSSL::X509::CRL]] Ц┌╙Ц┐√Ц┌╦Ц┌╖Ц┌╞Ц┐┬)
+@raise OpenSSL::PKCS7::PKCS7Error Х©╫Е┼═Ц│╚Е╓╠Ф∙≈Ц│≈Ц│÷Е═╢Е░┬Ц│╚Г≥╨Г■÷Ц│≈Ц│╬Ц│≥Ц─┌
 

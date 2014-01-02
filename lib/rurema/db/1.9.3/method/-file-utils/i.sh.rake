@@ -4,14 +4,14 @@ kind=added
 
 --- sh(*cmd){|result, status| ... }
 
-Ϳ����줿���ޥ�ɤ�¹Ԥ��ޤ���
+与えられたコマンドを実行します。
 
-Ϳ����줿������ʣ���ξ�硢��������ͳ���ʤ��ǥ��ޥ�ɤ�¹Ԥ��ޤ���
+与えられた引数が複数の場合、シェルを経由しないでコマンドを実行します。
 
-@param cmd �����β��˴ؤ��Ƥ� [[m:Kernel.#exec]] �򻲾Ȥ��Ƥ���������
+@param cmd 引数の解釈に関しては [[m:Kernel.#exec]] を参照してください。
 
 
-��:
+例:
    sh %{ls -ltr}
    
    sh 'ls', 'file with spaces'

@@ -6,8 +6,8 @@ library=resolv
 aliases=
 aliasof=
 
-DNS ¥ê¥½¡¼¥¹¤Î TXT ¥ì¥³¡¼¥É
-¤òÉ½¤¹Ãê¾İ¥¯¥é¥¹¤Ç¤¹¡£
+DNS ãƒªã‚½ãƒ¼ã‚¹ã® TXT ãƒ¬ã‚³ãƒ¼ãƒ‰
+ã‚’è¡¨ã™æŠ½è±¡ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-[[m:Resolv::DNS#getresource]] ¤Ç TXT ¥ì¥³¡¼¥É¤òÆÀ¤¿¤¤¾ì¹ç¤Ï
-[[c:Resolv::DNS::Resource::IN::TXT]] ¤ò»È¤¦¤Ù¤­¤Ç¤¹¡£
+[[m:Resolv::DNS#getresource]] ã§ TXT ãƒ¬ã‚³ãƒ¼ãƒ‰ã‚’å¾—ãŸã„å ´åˆã¯
+[[c:Resolv::DNS::Resource::IN::TXT]] ã‚’ä½¿ã†ã¹ãã§ã™ã€‚

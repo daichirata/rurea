@@ -4,10 +4,10 @@ kind=defined
 
 --- SJIS_KDDI -> Encoding
 
-SJIS-KDDI ╔╗╔С╔Ё║╪╔г╔ё╔С╔╟╓г╓╧║ё
+SJIS-KDDI Ц┌╗Ц┐ЁЦ┌ЁЦ┐╪Ц┐┤Ц┌ёЦ┐ЁЦ┌╟Ц│╖Ц│≥Ц─┌
 
-Shift_JIS, CP932 ╓н╟║╪О╓г╓╧║ё
-KDDI ╓н╥хбсееоц╓г╩х╓О╓Л╓КЁ╗й╦╩З╓╛╢ч╓ч╓Л╓ф╓╓╓ч╓╧║ё
+Shift_JIS, CP932 Ц│╝Д╨°Г╗╝Ц│╖Ц│≥Ц─┌
+KDDI Ц│╝Ф░╨Е╦╞И⌡╩Х╘╠Ц│╖Д╫©Ц┌▐Ц┌▄Ц┌▀Г╣╣Ф√┤Е╜≈Ц│▄Е░╚Ц│╬Ц┌▄Ц│╕Ц│└Ц│╬Ц│≥Ц─┌
 
 @see [[url:http://www.au.kddi.com/ezfactory/tec/spec/img/typeD.pdf]]
 

@@ -4,11 +4,11 @@ kind=defined
 
 --- new -> OpenSSL::OCSP::Response
 --- new(der) -> OpenSSL::OCSP::Response
-Response ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
+Response ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-DER ·Á¼°¤ÎÊ¸»úÎó¤òÅÏ¤·¤¿¾ì¹ç¤Ï¤½¤ÎÆâÍÆ¤ò
-¥í¡¼¥É¤·¤Þ¤¹¡£°ú¿ô¤Ê¤·¤Î¾ì¹ç¤Ï¶õ¤Î¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+DER å½¢å¼ã®æ–‡å­—åˆ—ã‚’æ¸¡ã—ãŸå ´åˆã¯ãã®å†…å®¹ã‚’
+ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚å¼•æ•°ãªã—ã®å ´åˆã¯ç©ºã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-@param der DER ·Á¼°¤ÎÊ¸»úÎó
+@param der DER å½¢å¼ã®æ–‡å­—åˆ—
 @see [[m:OpenSSL::OCSP::Response.create]]
 

@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- UNSAFE -> Regexp
-URI�Ȥ��ƻ���Ǥ��ʤ�ʸ���˥ޥå���������ɽ��
+URIとして指定できない文字にマッチする正規表現
   /[^-_.!~*'()a-zA-Z\d;\/?:@&=+$,\[\]]/n
-�Ǥ���
+です。

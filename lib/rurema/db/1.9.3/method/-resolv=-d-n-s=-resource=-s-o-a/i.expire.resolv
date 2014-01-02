@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- expire -> Integer
-�ץ饤�ޥꥵ���Ф����������������򥻥�����ꥵ���Ф�
-���ô�ͭ���ʤ�ΤȤ����ݻ����뤫���֤��ޤ���
+プライマリサーバから得たゾーン情報をセカンダリサーバが
+何秒間有効なものとして保持するかを返します。
 

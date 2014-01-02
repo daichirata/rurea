@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- date -> String | nil
-���դ�ʸ������֤��ޤ���
+日付の文字列を返します。
 
-����٥����פ�¸�ߤ��ʤ��Ȥ��� nil ���֤��ޤ���
+エンベロープに存在しないときは nil を返します。
 

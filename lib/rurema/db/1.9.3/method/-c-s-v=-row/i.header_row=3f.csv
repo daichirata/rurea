@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- header_row? -> bool
-�إå��ԤǤ���п����֤��ޤ��������Ǥʤ���е����֤��ޤ���
+ヘッダ行であれば真を返します。そうでなければ偽を返します。
 

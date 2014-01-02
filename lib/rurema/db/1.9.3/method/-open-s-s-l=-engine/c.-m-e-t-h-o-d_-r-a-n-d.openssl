@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- METHOD_RAND -> Integer
-�ǥե���ȤΥ����奢����������Τ���� engine �����ꤹ�뤳�Ȥ��̣���ޤ���
+デフォルトのセキュアな乱数生成のための engine に設定することを意味します。
 
-[[m:OpenSSL::Engine#set_default]] �Υե饰�Ȥ��ƻȤ��ޤ���
+[[m:OpenSSL::Engine#set_default]] のフラグとして使います。
 

@@ -3,11 +3,12 @@ classes=
 methods=IO/i.expect.expect
 sublibraries=
 is_sublibrary=false
+category=CUI
 
-IO���֥������Ȥ�����ꤷ���ѥ������ɤ߹��ޤ��ޤ��Ԥĵ�ǽ���󶡤��ޤ���
+IOオブジェクトから指定したパターンが読み込まれるまで待つ機能を提供します。
 
 
-Expect �饤�֥��ϡ�tcl �� expect �ѥå������Ȼ����褦�ʵ�ǽ�� IO ���饹���ɲä��ޤ���
+Expect ライブラリは、tcl の expect パッケージと似たような機能を IO クラスに追加します。
 
-$expect_verbose �Ȥ����������Х��ѿ��˿��򥻥åȤ���ȡ�
-�쥷���Ф���ʸ�����ɤ߹����٤��ɤ߹����ʸ����ɸ����Ϥ�ɽ������褦�ˤʤ�ޤ���
+$expect_verbose というグローバル変数に真をセットすると、
+レシーバから文字を読み込む度に読み込んだ文字を標準出力に表示するようになります。

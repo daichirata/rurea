@@ -4,15 +4,15 @@ kind=defined
 
 --- fsync    -> 0 | nil
 
-�񤭹����Ѥ� IO ���Ф��ơ������ƥॳ���� [[man:fsync(2)]]
-��¹Ԥ��ޤ���[[m:IO#flush]] ��Ԥä����ȡ�(OS��٥��)�ޤ��ǥ�������
-�񤭹��ޤ�Ƥ��ʤ������ˤ���ǡ�����ǥ������˽񤭽Ф��ޤ���
+書き込み用の IO に対して、システムコール [[man:fsync(2)]]
+を実行します。[[m:IO#flush]] を行ったあと、(OSレベルで)まだディスクに
+書き込まれていないメモリ上にあるデータをディスクに書き出します。
 
-��������� 0 ���֤��ޤ���
-[[man:fsync(2)]] �����ݡ��Ȥ���Ƥ��ʤ����� nil ���֤��ޤ���
+成功すれば 0 を返します。
+[[man:fsync(2)]] がサポートされていない場合は nil を返します。
 
-@raise Errno::EXXX ���Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX 失敗した場合に発生します。
 
-@raise IOError ���� close ����Ƥ������ȯ�����ޤ���
+@raise IOError 既に close されている場合に発生します。
 
 

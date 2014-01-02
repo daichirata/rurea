@@ -4,7 +4,7 @@ kind=defined
 
 --- force_quotes? -> bool
 
-½ÐÎÏ¤µ¤ì¤ë¥Õ¥£¡¼¥ë¥É¤¬¥¯¥ª¡¼¥È¤µ¤ì¤ë¾ì¹ç¤Ï¡¢¿¿¤òÊÖ¤·¤Þ¤¹¡£
+å‡ºåŠ›ã•ã‚Œã‚‹ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ãŒã‚¯ã‚ªãƒ¼ãƒˆã•ã‚Œã‚‹å ´åˆã¯ã€çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:CSV.new]]
 

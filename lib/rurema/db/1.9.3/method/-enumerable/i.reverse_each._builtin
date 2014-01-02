@@ -5,10 +5,10 @@ kind=defined
 --- reverse_each -> Enumerator
 --- reverse_each {|element| ... } -> self
 
-�ս�˳����Ǥ��Ф��ƥ֥��å���ɾ�����ޤ���
+逆順に各要素に対してブロックを評価します。
 
-�����ǳ����Ǥ��ݻ������������ޤ���
+内部で各要素を保持した配列を作ります。
 
-�֥��å����ά�������ϡ������Ǥ�ս��é��
-[[c:Enumerator]] ���֤��ޤ���
+ブロックを省略した場合は、各要素を逆順に辿る
+[[c:Enumerator]] を返します。
 

@@ -6,5 +6,5 @@ kind=defined
 --- remove(elem=nil)
 @todo
 
-ÃÍ¤¬TclÇÛÎó¤Ç¤¢¤ë¤È¤­¡¢elem¤ÎÃÍ¤òºï½ü¤·¤Þ¤¹¡£
+å€¤ãŒTclé…åˆ—ã§ã‚ã‚‹ã¨ãã€elemã®å€¤ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 

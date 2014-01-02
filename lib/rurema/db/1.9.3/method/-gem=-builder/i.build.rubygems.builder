@@ -4,7 +4,7 @@ kind=defined
 
 --- build -> String
 
-¥¹¥Ú¥Ã¥¯¤«¤é Gem ¤òºîÀ®¤¹¤ë¡£
+ã‚¹ãƒšãƒƒã‚¯ã‹ã‚‰ Gem ã‚’ä½œæˆã™ã‚‹ã€‚
 
-@return ºîÀ®¤·¤¿¥Õ¥¡¥¤¥ëÌ¾¤òÊÖ¤·¤Þ¤¹¡£
+@return ä½œæˆã—ãŸãƒ•ã‚¡ã‚¤ãƒ«åã‚’è¿”ã—ã¾ã™ã€‚
 

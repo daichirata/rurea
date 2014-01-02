@@ -5,5 +5,5 @@ kind=defined
 --- requirement_list  -> [String]
 --- requirements_list -> [String]
 
-�С�������ɬ�׾���ʸ���������Ȥ����֤��ޤ���
+バージョンの必要条件を文字列の配列として返します。
 

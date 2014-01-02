@@ -5,18 +5,18 @@ kind=defined
 --- to_s -> String
 --- to_str -> String
 
-self ���֤��ޤ���
+self を返します。
 
-��:
+例:
 
     p "str".to_s     # => "str"
     p "str".to_str   # => "str"
 
-���Υ᥽�åɤϡ�ʸ�����¾�Υ��饹�Υ��󥹥��󥹤Ⱥ����ƽ����������Ȥ���ͭ���Ǥ���
-�㤨���֤��ͤ�ʸ���� nil �Ǥ���᥽�å� some_method ������Ȥ���
-to_s �᥽�åɤ�Ȥ��Ȱʲ��Τ褦������Ū�˽����Ǥ��ޤ���
+このメソッドは、文字列を他のクラスのインスタンスと混ぜて処理したいときに有効です。
+例えば返り値が文字列か nil であるメソッド some_method があるとき、
+to_s メソッドを使うと以下のように統一的に処理できます。
 
-    # some_method(5).downcase �����֤��ͤ� nil �ΤȤ���
-    # ���顼�ˤʤ�Τ� to_s ��Ϥ���
+    # some_method(5).downcase だと返り値が nil のときに
+    # エラーになるので to_s をはさむ
     p some_method(5).to_s.downcase
 

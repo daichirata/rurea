@@ -5,11 +5,11 @@ kind=defined
 --- cbreak -> nil
 --- crmode -> nil
 
-�����ܡ������ϤΥХåե���󥰤��ᡢ�桼�������Ϥ�¨�¤˽����Ǥ���褦�ˤ��ޤ���
+キーボード入力のバッファリングをやめ、ユーザの入力を即座に処理できるようにします。
 
-���Υ᥽�åɤ���� [[m:Curses.#init_screen]] ��ƤӽФ��ޤ���
+このメソッドの中で [[m:Curses.#init_screen]] を呼び出します。
 
-�����ե�٥� ($SAFE) �� 4 �ξ�硢�㳰 SecurityError ��ȯ�����ޤ���
+セーフレベル ($SAFE) が 4 の場合、例外 SecurityError を発生します。
 
-@see [[m:Curses.#nocbreak]]��[[m:Curses.#nocrmode]]
+@see [[m:Curses.#nocbreak]]、[[m:Curses.#nocrmode]]
 

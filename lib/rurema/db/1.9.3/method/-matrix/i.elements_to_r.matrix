@@ -2,8 +2,10 @@ names=elements_to_r
 visibility=public
 kind=defined
 
---- elements_to_r -> Array
-�����Ǥ�ͭ���� [[c:Rational]] ���Ѵ�����������֤��ޤ���
+--- elements_to_r -> Matrix
+各要素を有理数 [[c:Rational]] に変換した行列を返します。
+
+このメソッドは deprecated です。 map(&:to_r) を使ってください。
 
 
 

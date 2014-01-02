@@ -4,7 +4,7 @@ kind=defined
 
 --- create_id -> String
 
-json_create �᥽�åɤǻ��Ѥ��륯�饹����ꤹ�뤿��˻��Ѥ����ͤ��֤��ޤ���
+json_create メソッドで使用するクラスを決定するために使用する値を返します。
 
-�ǥե���Ȥ� "json_class" �Ǥ���
+デフォルトは "json_class" です。
 

@@ -1,10 +1,10 @@
 # LIBRARY_NAME                  OWNER           STATUS
 #---------------------------------------------------------
 Win32API
-bigdecimal                      mrkn
-bigdecimal/jacobian             mrkn
-bigdecimal/ludcmp               mrkn
-bigdecimal/newton               mrkn
+bigdecimal                      sho-h           done
+bigdecimal/jacobian             sho-h           done
+bigdecimal/ludcmp               sho-h           done
+bigdecimal/newton               sho-h           done
 complex                         bornite
 curses                          kouji
 dl                                                          
@@ -13,45 +13,14 @@ dl/import
 dl/struct                       
 dl/types                        
 dl/win32
-dl/dl2                          sheepman
-drb                             
-fiddle
+dl/dl2                          ohai            done
+drb                             ohai            done
+fiddle                          ohai            done
 mathn                           yugui
-matrix                          bornite
-psych
-rexml/attlistdecl
-rexml/attribute
-rexml/cdata
-rexml/child
-rexml/comment
-rexml/doctype
-rexml/document
-rexml/dtd
-rexml/element
-rexml/encoding
-rexml/encodings
-rexml/entity
-rexml/functions
-rexml/instruction
-rexml/light
-rexml/namespace
-rexml/node
-rexml/output
-rexml/parent
-rexml/parseexception
-rexml/parsers
-rexml/quickpath
-rexml/rexml
-rexml/sax2listener
-rexml/source
-rexml/streamlistener
-rexml/syncenumerator
-rexml/text
-rexml/validation
-rexml/xmldecl
-rexml/xmltokens
-rexml/xpath
-rexml/xpath_parser
+matrix                          ohai            done
+psych                           ohai            done
+racc/parser
+rexml                           ohai
 rinda/rinda                     
 rinda/tuplespace                
 rss

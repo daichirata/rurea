@@ -4,16 +4,16 @@ kind=defined
 
 --- new(io) -> Zlib::GzipReader
 
-io �ȴ�Ϣ�դ���줿 GzipReader ���֥������Ȥ�������ޤ���
+io と関連付けられた GzipReader オブジェクトを作成します。
 
-GzipReader ���֥������Ȥ� io ����ǡ������༡�꡼�ɤ���
-����/Ÿ����Ԥ��ޤ���io �ˤϾ��ʤ��Ȥ⡢[[m:IO#read]] ��
-Ʊ��ư��򤹤� read �᥽�åɤ��������Ƥ���ɬ�פ�����ޤ���
+GzipReader オブジェクトは io からデータを逐次リードして
+解析/展開を行います。io には少なくとも、[[m:IO#read]] と
+同じ動作をする read メソッドが定義されている必要があります。
 
-@param io IO ���֥������ȡ��⤷���Ͼ��ʤ��Ȥ� [[m:IO#read]] ��Ʊ��ư���
-          ���� read �᥽�åɤ��������Ƥ��륪�֥�������
+@param io IO オブジェクト、もしくは少なくとも [[m:IO#read]] と同じ動作を
+          する read メソッドが定義されているオブジェクト
 
-@raise Zlib::GzipFile::Error �إå����β��Ϥ˼��Ԥ������ȯ�����ޤ���
+@raise Zlib::GzipFile::Error ヘッダーの解析に失敗した場合発生します。
 
   File.open('hoge.txt', "w") { |fp|
     fp.puts 'hoge'

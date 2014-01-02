@@ -7,7 +7,7 @@ kind=defined
 
 Sets the color pair attributes to +attrs+.
 
-°Ê²¼¤Î¥³¡¼¥É¤ÈÆ±¤¸¤Ç¤¹¡£
+ä»¥ä¸‹ã®ã‚³ãƒ¼ãƒ‰ã¨åŒã˜ã§ã™ã€‚
 
   Curses.attrset(COLOR_PAIR(+attrs+))
 

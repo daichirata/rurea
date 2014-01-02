@@ -5,9 +5,9 @@ kind=added
 --- scanf(format) -> Array
 --- scanf(format) {|*ary| ...} -> Array
 
-[[m:String#scanf]]�⻲�Ȥ��Ƥ���������
+[[m:String#scanf]]も参照してください。
 
-@param format ������󤹤�ե����ޥåȤ�ʸ����ǻ��ꤷ�ޤ���
-              �ܺ٤ϡ�[[ref:m:String#scanf#format]] �򻲾Ȥ��Ƥ���������
+@param format スキャンするフォーマットを文字列で指定します。
+              詳細は、[[ref:m:String#scanf#format]] を参照してください。
 
 

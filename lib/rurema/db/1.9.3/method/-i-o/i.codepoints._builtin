@@ -1,15 +1,18 @@
-names=codepoints,each_codepoint
+names=codepoints
 visibility=public
 kind=defined
 
---- each_codepoint{|c| ... }     -> self
 --- codepoints{|c| ... }         -> self
---- each_codepoint               -> Enumerator
 --- codepoints                   -> Enumerator
 
-IO �γƥ����ɥݥ���Ȥ��Ф��Ʒ����֤��֥��å���ƤӤ����ޤ���
+このメソッドは obsolete です。
+代わりに [[m:IO#each_codepoint]] を使用してください。
 
-�֥��å��ΰ����ˤϥ����ɥݥ���Ȥ�ɽ���������Ϥ���ޤ���
+IO の各コードポイントに対して繰り返しブロックを呼びだします。
 
-�֥��å����ά�������ˤϡ�[[c:Enumerator]] ���֤��ޤ���
+ブロックの引数にはコードポイントを表す整数が渡されます。
+
+ブロックを省略した場合には、[[c:Enumerator]] を返します。
+
+@see [[m:IO#each_codepoint]]
 

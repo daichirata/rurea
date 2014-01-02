@@ -3,5 +3,6 @@ classes=TkDialogObj,TkDialog2,TkDialog,TkWarningObj,TkWarning2,TkWarning
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

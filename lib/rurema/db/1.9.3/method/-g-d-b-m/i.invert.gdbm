@@ -4,7 +4,7 @@ kind=defined
 
 --- invert -> Hash
 
-�ͤ��饭���ؤΥϥå�����֤��ޤ���
+値からキーへのハッシュを返します。
 
   require 'gdbm'
   

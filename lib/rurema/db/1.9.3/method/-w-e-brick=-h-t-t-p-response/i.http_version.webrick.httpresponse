@@ -4,7 +4,7 @@ kind=defined
 
 --- http_version    -> WEBrick::HTTPVersion
 
-¥ì¥¹¥Ý¥ó¥¹¤Î HTTP ¤Î¥Ð¡¼¥¸¥ç¥ó¤òÉ½¤¹ [[c:WEBrick::HTTPVersion]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã® HTTP ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¡¨ã™ [[c:WEBrick::HTTPVersion]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
   require 'webrick'
   res = WEBrick::HTTPResponse.new( { :HTTPVersion => "1.1" } )

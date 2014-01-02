@@ -4,8 +4,8 @@ kind=defined
 
 --- getch -> Integer
 
-ɸ�����Ϥ��� 1 �Х����ɤ߹��ߤޤ���
-����ͤ� ASCII �����ɤ�ɽ�������Ǥ���
+標準入力から 1 バイト読み込みます。
+戻り値は ASCII コードを表す整数です。
 
 @see [[c:Curses::Key]]
 

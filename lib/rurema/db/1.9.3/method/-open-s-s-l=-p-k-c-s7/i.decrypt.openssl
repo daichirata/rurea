@@ -3,18 +3,18 @@ visibility=public
 kind=defined
 
 --- decrypt(pkey, cert, flags = 0) -> String
-�Ź沽���줿�ǡ��������沽�������沽���줿�ǡ������֤��ޤ���
+暗号化されたデータを復号化し、復号化されたデータを返します。
 
-����ˤϰŹ沽�˻Ȥä����������б�������̩���ȡ����θ�������
-�ޤ������ɬ�פǤ���
+復号には暗号化に使った公開鍵に対応する秘密鍵と、その公開鍵を
+含む証明書が必要です。
 
-flags �ˤϰʲ��Τ����줫�����Ǥ��ޤ���
+flags には以下のいずれかを指定できます。
   * [[m:OpenSSL::PKCS7::TEXT]]
-      �Ź沽���줿�ǡ������դ���줿 text/plain �����פ� MIME �إå�
-      ��������ޤ����⤷�إå����ʤ���Х��顼�Ȥʤ�ޤ���
+      暗号化されたデータに付けられた text/plain タイプの MIME ヘッダ
+      を取り除きます。もしヘッダがなければエラーとなります。
 
-@param pkey ���沽�˻Ȥ���̩��([[c:OpenSSL::PKey::PKey]] ���֥�������)
-@param cert �б����������([[c:OpenSSL::X509::Certificate]] ���֥�������)
-@param flags �ե饰
-@raise OpenSSL::PKCS7::PKCS7Error ����˼��Ԥ�������ȯ�����ޤ�
+@param pkey 復号化に使う秘密鍵([[c:OpenSSL::PKey::PKey]] オブジェクト)
+@param cert 対応する証明書([[c:OpenSSL::X509::Certificate]] オブジェクト)
+@param flags フラグ
+@raise OpenSSL::PKCS7::PKCS7Error 復号に失敗した場合に発生します
 

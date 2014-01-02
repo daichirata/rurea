@@ -5,9 +5,9 @@ kind=defined
 --- wtime2time(wtime)
 @todo
 
-64bit ¤Î FILETIME ¤ò Time ¥ª¥Ö¥¸¥§¥¯¥È¤ËÊÑ´¹¤·¤Ş¤¹¡£
+64bit ã® FILETIME ã‚’ Time ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«å¤‰æ›ã—ã¾ã™ã€‚
 
-¾ÜºÙ¤Ï°Ê²¼¤Î MSDN Library ¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+è©³ç´°ã¯ä»¥ä¸‹ã® MSDN Library ã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
  * FILETIME Structure: [[url:http://msdn.microsoft.com/library/en-us/sysinfo/base/filetime_str.asp]]
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- typeflag -> String
 
-tar ¤Î¥Ø¥Ã¥À¤Ë´Ş¤Ş¤ì¤ë typeflag ¤òÊÖ¤·¤Ş¤¹¡£
+tar ã®ãƒ˜ãƒƒãƒ€ã«å«ã¾ã‚Œã‚‹ typeflag ã‚’è¿”ã—ã¾ã™ã€‚
 

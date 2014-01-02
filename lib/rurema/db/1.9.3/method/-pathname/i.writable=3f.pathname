@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- writable? -> bool
-FileTest.writable?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.writable?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#writable?]]
 

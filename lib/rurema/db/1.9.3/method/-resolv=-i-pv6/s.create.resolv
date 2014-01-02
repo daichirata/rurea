@@ -2,14 +2,16 @@ names=create
 visibility=public
 kind=defined
 
---- create(address)
-°Ê²¼¤Î¤¤¤º¤ì¤«¤Î·Á¼°¤ÎÊ¸»úÎó address ¤«¤é Resolv::IPv6 ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤òÀ¸À®¤·¤Ş¤¹¡£
+--- create(address) -> Resolv::IPv6
 
+å¼•æ•° address ã§æŒ‡å®šã—ãŸæ–‡å­—åˆ—ã‹ã‚‰ Resolv::IPv6 ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã—ã¾
+ã™ã€‚
+
+@param address human readable ãª IPv6 ã‚¢ãƒ‰ãƒ¬ã‚¹ã®æ–‡å­—åˆ—è¡¨ç¾ã‚’ä»¥ä¸‹ã®ã„ãš
+               ã‚Œã‹ã®å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚
 
   * 8Hex
   * CompressedHex
   * 6Hex4Dec
   * CompressedHex4Dec
-
-@param address human readable ¤Ê IPv6 ¥¢¥É¥ì¥¹¤ÎÊ¸»úÎóÉ½¸½
 

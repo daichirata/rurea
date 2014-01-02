@@ -3,5 +3,6 @@ classes=ACL
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-
+drb で用いる ACL(Access Control List)を定義するライブラリ。

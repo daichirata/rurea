@@ -6,4 +6,4 @@ library=cgi.session
 aliases=
 aliasof=
 
-���å���󤬽��������Ƥ��ʤ�����ȯ�������㳰�Ǥ���
+セッションが初期化されていない場合に発生する例外です。

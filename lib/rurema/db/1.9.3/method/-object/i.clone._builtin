@@ -5,16 +5,16 @@ kind=defined
 --- clone -> object
 --- dup -> object
 
-���֥������Ȥ�ʣ������������֤��ޤ���
+オブジェクトの複製を作成して返します。
 
-dup �ϥ��֥������Ȥ�����, taint ����򥳥ԡ�����
-clone �Ϥ���˲ä��� freeze, �ðۥ᥽�åɤʤɤξ����ޤ᤿������ʣ����������ޤ���
+dup はオブジェクトの内容, taint 情報をコピーし、
+clone はそれに加えて freeze, 特異メソッドなどの情報も含めた完全な複製を作成します。
 
-clone �� dup ������(shallow)���ԡ��Ǥ��뤳�Ȥ����դ��Ƥ�����������ҡ�
+clone や dup は浅い(shallow)コピーであることに注意してください。後述。
 
 @raise TypeError [[c:TrueClass]], [[c:FalseClass]], [[c:NilClass]], 
-  [[c:Symbol]], ������ [[c:Numeric]] ���饹�Υ��󥹥��󥹤ʤɰ�����
-  ���֥������Ȥ�ʣ�����褦�Ȥ����ȯ�����ޤ���
+  [[c:Symbol]], そして [[c:Numeric]] クラスのインスタンスなど一部の
+  オブジェクトを複製しようとすると発生します。
 
 
   obj = "string"
@@ -47,16 +47,16 @@ clone �� dup ������(shallow)���ԡ��Ǥ��뤳�Ȥ����դ��Ƥ�����������ҡ�
 
 @see [[m:Object#initialize_copy]]
 
-==== �������ԡ����������ԡ�
+==== 深いコピーと浅いコピー
 
-clone �� dup �ϥ��֥������ȼ��Ȥ�ʣ����������ǡ����֥������Ȥλؤ�
-�Ƥ�����(���Ȥ�����������Ǥʤ�)�ޤǤ�ʣ�����ޤ��󡣤�����������ԡ�(shallow copy)�Ȥ����ޤ���
+clone や dup はオブジェクト自身を複製するだけで、オブジェクトの指し
+ている先(たとえば配列の要素など)までは複製しません。これを浅いコピー(shallow copy)といいます。
 
-����(deep)���ԡ���ɬ�פʾ��ˤϡ�
-[[c:Marshal]]�⥸�塼������Ѥ���
+深い(deep)コピーが必要な場合には、
+[[c:Marshal]]モジュールを利用して
   Marshal.load(Marshal.dump(obj))
-���Τ褦��ʣ�������������ˡ������ޤ���������Marshal����ʤ����֥������Ȥ�
-�ޤޤ�Ƥ�����ˤϻȤ��ޤ���
+このように複製を作成する方法があります。ただしMarshal出来ないオブジェクトが
+含まれている場合には使えません。
 
   obj = ["a","b","c"]
   

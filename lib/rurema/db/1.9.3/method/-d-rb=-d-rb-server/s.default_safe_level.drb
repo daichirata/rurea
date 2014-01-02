@@ -2,6 +2,10 @@ names=default_safe_level
 visibility=public
 kind=defined
 
---- default_safe_level(level)   
-@todo
+--- default_safe_level(level) -> ()
+サーバ起動時の :safe_level オプションのデフォルト値を指定します。
+
+初期値は0です。
+
+@see [[m:DRb::DRbServer.new]], [[m:DRb.#start_service]]
 

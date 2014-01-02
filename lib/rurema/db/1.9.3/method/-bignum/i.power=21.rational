@@ -1,14 +1,12 @@
-names=power!
+names=power!,rpower
 visibility=public
 kind=added
 
---- power!(other) -> Integer | Float
+--- power!(other) -> Numeric
+--- rpower(other) -> Numeric
 
-ÑÑ(¤Ù¤­)¾è¤ò·×»»¤·¤Ş¤¹¡£
+å†ª(ã¹ã)ä¹—ã‚’è¨ˆç®—ã—ã¾ã™ã€‚
+[[m:Bignum#**]] ã®ã‚¨ã‚¤ãƒªã‚¢ã‚¹ã§ã™ã€‚
 
-@param other ¼«¿È¤ò other ¾è¤¹¤ë¿ô
-
-[[lib:rational]]¤ÇºÆÄêµÁ¤µ¤ì¤ëÁ°¤Î[[m:Bignum#**]]¤ÎÊÌÌ¾¤Ç¤¹¡£
-other ¤¬Àµ¤Ş¤¿¤Ï 0 ¤ÎÀ°¿ô (Integer) ¤Ê¤é¤Ğ¡¢À°¿ô (Integer) ¤ò¡¢¤½¤ì°Ê³°
-¤Ê¤é¡¢ÉâÆ°¾®¿ô (Float) ¤òÊÖ¤·¤Ş¤¹¡£
+@param other ã¹ãä¹—ã®æŒ‡æ•°
 

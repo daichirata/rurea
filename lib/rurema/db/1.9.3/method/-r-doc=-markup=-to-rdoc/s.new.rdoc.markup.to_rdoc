@@ -4,7 +4,7 @@ kind=defined
 
 --- new(markup = nil) -> RDoc::Markup::ToRdoc
 
-¼«¿È¤ò½é´ü²½¤·¤Þ¤¹¡£
+è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param markup [[c:RDoc::Markup]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Þ¤¹¡£¾ÊÎ¬¤·¤¿¾ì¹ç
-              ¤Ï¿·¤·¤¯ºîÀ®¤·¤Þ¤¹¡£
+@param markup [[c:RDoc::Markup]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã—ãŸå ´åˆ
+              ã¯æ–°ã—ãä½œæˆã—ã¾ã™ã€‚

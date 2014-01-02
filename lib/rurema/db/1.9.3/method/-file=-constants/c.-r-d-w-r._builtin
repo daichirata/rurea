@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- RDWR -> Integer
-�ɤ߽�ξ���Υ⡼�ɤǥե�����򳫤��Ȥ��˻��ꤷ�ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+読み書き両方のモードでファイルを開くときに指定します。
+[[m:File.open]]で使用します。
 

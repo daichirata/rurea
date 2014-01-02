@@ -4,13 +4,13 @@ kind=defined
 
 --- MacRoman -> Encoding
 --- MACROMAN -> Encoding
-MacRoman ���󥳡��ǥ��󥰡�
+MacRoman エンコーディング。
 
-Mac OS�ǻȤ���
-8bit single-byte ���󥳡��ǥ��󥰤ǡ�
-�������濴�Ȥ�����ƥ�ʸ�����Ѥ��������갷������Τ�ΤǤ���
+Mac OSで使われる
+8bit single-byte エンコーディングで、
+西欧を中心としたラテン文字を用いる諸語を取り扱うためのものです。
 
-IANA character-sets �� "macintosh" ��ɽ��������ΤǤ���
+IANA character-sets で "macintosh" で表現されるものです。
 
 @see [[url:http://en.wikipedia.org/wiki/Mac_OS_Roman]]
 

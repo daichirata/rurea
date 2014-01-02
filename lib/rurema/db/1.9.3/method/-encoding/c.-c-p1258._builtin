@@ -6,9 +6,9 @@ kind=defined
 --- CP1258 -> Encoding
 --- WINDOWS_1258 -> Encoding
 
-WINDOWS-1258 ���󥳡��ǥ��󥰡�
+WINDOWS-1258 エンコーディング。
 
-�٥ȥʥ��򰷤� 8bit single-byte���󥳡��ǥ��󥰤Ǥ���
+ベトナム語を扱う 8bit single-byteエンコーディングです。
 
 @see [[url:http://en.wikipedia.org/wiki/Windows-1258]]
 

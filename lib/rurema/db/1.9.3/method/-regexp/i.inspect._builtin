@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- inspect -> String
-[[m:Regexp#to_s]] ¤è¤ê¼«Á³¤ÊÊ¸»úÎó¤òÊÖ¤·¤Þ¤¹¡£
+[[m:Regexp#to_s]] ã‚ˆã‚Šè‡ªç„¶ãªæ–‡å­—åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
   p /^ugou.*?/i.to_s    #=> "(?i-mx:^ugou.*?)"
   p /^ugou.*?/i.inspect #=> "/^ugou.*?/i"

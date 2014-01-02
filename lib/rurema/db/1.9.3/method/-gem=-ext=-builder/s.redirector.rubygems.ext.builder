@@ -5,5 +5,5 @@ kind=defined
 --- redirector -> String
 @todo
 
-'2>&1' �Ȥ���ʸ������֤��ޤ���
+'2>&1' という文字列を返します。
 

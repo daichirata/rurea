@@ -4,10 +4,10 @@ kind=defined
 
 --- parse_set_cookie(str)    -> WEBrick::Cookie
 
-¥µ¡¼¥Ð¤«¤éÁ÷¤é¤ì¤Æ¤¯¤ë Set-Cookie ¥Ø¥Ã¥À¤ÎÃÍ str ¤ò¥Ñ¡¼¥¹¤·¡¢
-¿·¤·¤¯ [[c:WEBrick::Cookie]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·ÊÖ¤·¤Þ¤¹¡£
+ã‚µãƒ¼ãƒã‹ã‚‰é€ã‚‰ã‚Œã¦ãã‚‹ Set-Cookie ãƒ˜ãƒƒãƒ€ã®å€¤ str ã‚’ãƒ‘ãƒ¼ã‚¹ã—ã€
+æ–°ã—ã [[c:WEBrick::Cookie]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—è¿”ã—ã¾ã™ã€‚
 
-@param str Set-Cookie ¥Ø¥Ã¥À¤ÎÃÍ¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param str Set-Cookie ãƒ˜ãƒƒãƒ€ã®å€¤ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
   require 'webrick'
   include WEBrick

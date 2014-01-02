@@ -4,8 +4,8 @@ kind=defined
 
 --- off -> nil
 
-�ȥ졼�����Ϥ����Ǥ��ޤ���
-�ȥ졼�����Ϥ򳫻Ϥ���ˤϡ�[[m:Tracer.on]]����Ѥ��ޤ���
+トレース出力を中断します。
+トレース出力を開始するには、[[m:Tracer.on]]を使用します。
 
 @see [[m:Tracer.on]]
 

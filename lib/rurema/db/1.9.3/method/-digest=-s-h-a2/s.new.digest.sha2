@@ -4,10 +4,10 @@ kind=defined
 
 --- new(bitlen = 256) -> Digest::SHA2
 
-Ϳ����줿 bitlen ���б����� SHA2 �ϥå�����������뤿��Υ��֥�������
-�����������ꤷ�Ƽ��Ȥ��������ޤ���
+与えられた bitlen に対応する SHA2 ハッシュを生成するためのオブジェクト
+を内部で設定して自身を初期化します。
 
-@param bitlen �ϥå����Ĺ������ꤷ�ޤ���256, 384, 512 �������ǽ�Ǥ���
+@param bitlen ハッシュの長さを指定します。256, 384, 512 が指定可能です。
 
-@raise ArgumentError bitlen �� 256, 384, 512 �ʳ����ͤ���ꤷ������ȯ�����ޤ���
+@raise ArgumentError bitlen に 256, 384, 512 以外の値を指定した場合に発生します。
 

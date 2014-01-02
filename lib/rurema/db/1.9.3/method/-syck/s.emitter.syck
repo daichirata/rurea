@@ -4,5 +4,5 @@ kind=defined
 
 --- emitter -> Syck::Emitter
 
-YAML ����Ϥ��뤿��Υ��֥������Ȥ��֤��ޤ���
+YAML を出力するためのオブジェクトを返します。
 

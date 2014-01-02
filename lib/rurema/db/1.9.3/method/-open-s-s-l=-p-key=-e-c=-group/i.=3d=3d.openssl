@@ -4,7 +4,7 @@ kind=defined
 
 --- ==(other) -> bool
 --- eql?(other) -> bool
-¼«¿È¤¬ other ¤ÈÅù¤·¤¤¤È¤­¤Ï true ¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ãŒ other ã¨ç­‰ã—ã„ã¨ãã¯ true ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param other Èæ³ÓÂĞ¾İ¤Î [[c:OpenSSL::PKey::EC::Group]] ¥ª¥Ö¥¸¥§¥¯¥È
+@param other æ¯”è¼ƒå¯¾è±¡ã® [[c:OpenSSL::PKey::EC::Group]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 

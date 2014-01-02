@@ -4,10 +4,10 @@ kind=defined
 
 --- inner_product(v) -> Float
 
-�٥��ȥ� v �Ȥ����Ѥ��֤��ޤ���
+ベクトル v との内積を返します。
 
-@param v ���Ѥ����٥��ȥ�
+@param v 内積を求めるベクトル
 
-@raise ExceptionForMatrix::ErrDimensionMismatch ��ʬ���ȤȰ����Υ٥���
-       ������Ǥο�(����)���ۤʤäƤ����Ȥ���ȯ�����ޤ���
+@raise ExceptionForMatrix::ErrDimensionMismatch 自分自身と引数のベクト
+       ルの要素の数(次元)が異なっていたときに発生します。
 

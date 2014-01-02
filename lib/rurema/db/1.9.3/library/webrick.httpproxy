@@ -3,5 +3,6 @@ classes=WEBrick=HTTPProxyServer,WEBrick=NullReader
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-�ץ������ε�ǽ���󶡤���饤�֥��Ǥ���CONNECT �᥽�åɤˤ��б����Ƥ��ޤ���
+プロクシの機能を提供するライブラリです。CONNECT メソッドにも対応しています。

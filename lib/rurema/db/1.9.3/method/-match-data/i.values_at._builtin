@@ -4,11 +4,11 @@ kind=defined
 
 --- values_at(*index) -> [String]
 
-����ɽ����� n ���ܤγ�̤˥ޥå�������ʬʸ�����������֤��ޤ���
+正規表現中の n 番目の括弧にマッチした部分文字列の配列を返します。
 
-0 ���ܤ� [[m:$&]] �Τ褦�˥ޥå�����ʸ�������Τ�ɽ���ޤ���
+0 番目は [[m:$&]] のようにマッチした文字列全体を表します。
 
-@param index ����ǥå����������� 0 �İʾ���ꤷ�ޤ���
+@param index インデックスを整数で 0 個以上指定します。
 
   m = /(foo)(bar)(baz)/.match("foobarbaz")
   # same as m.to_a.values_at(...)

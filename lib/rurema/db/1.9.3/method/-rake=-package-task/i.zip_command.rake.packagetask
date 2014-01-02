@@ -4,7 +4,7 @@ kind=defined
 
 --- zip_command -> String
 
-zip ���ޥ�ɤȤ��ƻ��Ѥ��륳�ޥ�ɤ��֤��ޤ���
+zip コマンドとして使用するコマンドを返します。
 
-�ǥե���Ȥ� 'zip' �Ǥ���
+デフォルトは 'zip' です。
 

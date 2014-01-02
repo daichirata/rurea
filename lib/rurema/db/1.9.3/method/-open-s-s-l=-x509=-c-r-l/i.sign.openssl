@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- sign(pkey, digest) -> self
-CRL ¤ËÈëÌ©¸°¤Ç½ğÌ¾¤·¤Ş¤¹¡£
+CRL ã«ç§˜å¯†éµã§ç½²åã—ã¾ã™ã€‚
 
-@param pkey ÈëÌ©¸°([[c:OpenSSL::PKey::PKey]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param digest ¥Ï¥Ã¥·¥å¥¢¥ë¥´¥ê¥º¥à
-@raise OpenSSL::X509::CRLError ½ğÌ¾¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param pkey ç§˜å¯†éµ([[c:OpenSSL::PKey::PKey]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param digest ãƒãƒƒã‚·ãƒ¥ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ 
+@raise OpenSSL::X509::CRLError ç½²åã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

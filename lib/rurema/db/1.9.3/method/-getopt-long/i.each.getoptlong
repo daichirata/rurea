@@ -4,8 +4,8 @@ kind=defined
 
 --- each {|optname, optarg|...}
 --- each_option {|optname, optarg|...}
-get �᥽�åɤΥ��ƥ졼���ǤǤ������ץ����Ȥ��ΰ����μ�����
-�����֤��Ԥ��ޤ���
+get メソッドのイテレータ版です。オプションとその引数の取得を
+繰り返し行います。
 
 @see [[m:GetoptLong#get]]
 

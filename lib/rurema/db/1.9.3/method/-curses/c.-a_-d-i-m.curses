@@ -4,7 +4,7 @@ kind=defined
 
 --- A_DIM -> Integer
 
-ʸ�����Ⱦʬ���뤯���뤿���°���ޥ����Ѥ�����Ǥ���
+文字列を半分明るくするための属性マスク用の定数です。
 
 @see [[m:Curses.attrset]]
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- readlink(path)    -> String
 
-����ܥ�å���󥯤Υ����Υѥ���ʸ������֤��ޤ���
+シンボリックリンクのリンク先のパスを文字列で返します。
 
-@param path ����ܥ�å���󥯤�ɽ��ʸ�������ꤷ�ޤ���
+@param path シンボリックリンクを表す文字列を指定します。
 
-@raise Errno::EXXX ���ꤵ�줿 path ������ܥ�å���󥯤Ǥʤ����䡢��󥯤��ɤ߼��˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX 指定された path がシンボリックリンクでない場合や、リンクの読み取りに失敗した場合に発生します。
 

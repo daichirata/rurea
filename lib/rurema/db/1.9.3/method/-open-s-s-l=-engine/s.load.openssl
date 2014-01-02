@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- load(name = nil) -> true | nil
-Engine ¤ò¥í¡¼¥É¤·¤Þ¤¹¡£
+Engine ã‚’ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤Ï openssl ¤Î¥³¥ó¥Ñ¥¤¥ë»þ¤ËÀÅÅª¤Ë
-¥³¥ó¥Ñ¥¤¥ë¤µ¤ì¤¿¤â¤Î¤òÆÉ¤ß¹þ¤ß¤Þ¤¹¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã¯ openssl ã®ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã«é™çš„ã«
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã•ã‚ŒãŸã‚‚ã®ã‚’èª­ã¿è¾¼ã¿ã¾ã™ã€‚
 
-name ¤Ç»ØÄê¤·¤¿ engine ¤ò¥í¡¼¥É¤·¤Þ¤¹¡£°Ê²¼¤¬»ØÄê²ÄÇ½¤Ç¤¹¡£
+name ã§æŒ‡å®šã—ãŸ engine ã‚’ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚ä»¥ä¸‹ãŒæŒ‡å®šå¯èƒ½ã§ã™ã€‚
   * "dynamic"
   * "cswift"
   * "chil"
@@ -20,13 +20,13 @@ name ¤Ç»ØÄê¤·¤¿ engine ¤ò¥í¡¼¥É¤·¤Þ¤¹¡£°Ê²¼¤¬»ØÄê²ÄÇ½¤Ç¤¹¡£
   * "4758cca"
   * "openbsd_dev_crypto"
   * "openssl"
-°ú¿ô¤ò¾ÊÎ¬¤·¤¿¾ì¹ç¤Ï¥í¡¼¥É²ÄÇ½¤Ê¤¹¤Ù¤Æ¤Î engine ¤ò¥í¡¼¥É¤·¤Þ¤¹¡£
+å¼•æ•°ã‚’çœç•¥ã—ãŸå ´åˆã¯ãƒ­ãƒ¼ãƒ‰å¯èƒ½ãªã™ã¹ã¦ã® engine ã‚’ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 
-Æ°Åª¤ÊÆÉ¤ß¹þ¤ß¤ò¤·¤¿¤¤¾ì¹ç¤Ï [[m:OpenSSL::Engine#by_id]] ¤ò
-ÍÑ¤¤¤Þ¤¹¡£
+å‹•çš„ãªèª­ã¿è¾¼ã¿ã‚’ã—ãŸã„å ´åˆã¯ [[m:OpenSSL::Engine#by_id]] ã‚’
+ç”¨ã„ã¾ã™ã€‚
 
-¥í¡¼¥É¤ËÀ®¸ù¤·¤¿¾ì¹ç¤Ï true ¤òÊÖ¤·¤Þ¤¹¡£
+ãƒ­ãƒ¼ãƒ‰ã«æˆåŠŸã—ãŸå ´åˆã¯ true ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param name ¥í¡¼¥É¤¹¤ë engine ¤ÎÌ¾Á°(Ê¸»úÎó)
+@param name ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ engine ã®åå‰(æ–‡å­—åˆ—)
 @see [[m:OpenSSL::Engine.cleanup]]
 

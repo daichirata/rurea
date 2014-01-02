@@ -6,6 +6,6 @@ library=logger
 aliases=
 aliasof=
 
-�������Υե����ޥå�ʸ����򰷤����饹��
+ロガーのフォーマット文字列を扱うクラス。
 
-[[c:Logger]] �Υǥե���ȤΥե����ޥå����Ǥ���
+[[c:Logger]] のデフォルトのフォーマッターです。

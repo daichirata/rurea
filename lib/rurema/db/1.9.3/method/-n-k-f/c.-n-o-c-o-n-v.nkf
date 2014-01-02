@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- NOCONV -> nil
-�����ɤ��Ѵ����ʤ����Ȥ�ɽ���ޤ���
+コードを変換しないことを表します。
 
-NKF�⥸�塼�뼫�Τ�������Ѥ��ޤ���
+NKFモジュール自体からは利用しません。
 
 

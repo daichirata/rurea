@@ -7,23 +7,23 @@ kind=defined
 --- extract(str) {|uri_str| ... }              -> nil
 --- extract(str, schemes) {|uri_str| ... }     -> nil
 
-ʸ���� str ���Ф��ƥѥ�����ޥå��󥰤��ߡ�
-����URI�˥ޥå�������ʬʸ���󤫤�ʤ�����Ȥ����֤��ޤ���
-��Ф��� URI ���ʤ���ж���������֤��ޤ���
+文字列 str に対してパターンマッチングを試み、
+絶対URIにマッチした部分文字列からなる配列として返します。
+抽出する URI がなければ空の配列を返します。
 
-��2������ʸ��������� schemes ��Ϳ����줿����
-���Υ�����������򸡺����ޤ���
+第2引数に文字列の配列 schemes が与えられた場合は
+そのスキームだけを検索します。
 
-�֥��å���Ϳ����줿���� [[m:String#scan]] ��Ʊ�ͤǡ�
-�ޥå�������ʬ���ߤĤ��뤿�Ӥ� uri_str ��
-������ʬ���������ƥ֥��å���ɾ�����ޤ���
-���ΤȤ��� nil ���֤��ޤ���
+ブロックが与えられた場合は [[m:String#scan]] と同様で、
+マッチした部分がみつかるたびに uri_str に
+その部分を代入してブロックを評価します。
+このときは nil を返します。
 
-@param str ʸ�����Ϳ���ޤ���
+@param str 文字列を与えます。
 
-@param schemes �������оݤȤ��������������ʸ���������Ȥ���Ϳ���ޤ���
+@param schemes 検索の対象としたいスキームを、文字列の配列として与えます。
 
-��:
+例:
 
   require 'uri'
   str = "

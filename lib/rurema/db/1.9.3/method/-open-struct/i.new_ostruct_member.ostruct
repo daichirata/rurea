@@ -4,8 +4,8 @@ kind=defined
 
 --- new_ostruct_member(name) -> Symbol
 
-Ϳ����줿̾���Υ��������᥽�åɤ򼫿Ȥ�������ޤ���
+与えられた名前のアクセサメソッドを自身に定義します。
 
-@param name ʸ���󤫥���ܥ��������륢��������̾������ꤷ�ޤ���
+@param name 文字列かシンボルで定義するアクセサの名前を指定します。
 
 

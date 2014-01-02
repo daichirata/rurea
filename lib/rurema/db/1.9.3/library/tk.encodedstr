@@ -3,5 +3,6 @@ classes=Tk=EncodedString,Tk=BinaryString,Tk=UTF8_String
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- F_UNLCK -> Integer
-���Υե����뤫��꡼���������ޤ���
+そのファイルからリースを削除します。
 

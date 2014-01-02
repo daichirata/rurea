@@ -4,7 +4,7 @@ kind=defined
 
 --- alert_error(*args) -> ()
 
-ERROR ��٥�Υ��顼�Ȥ���Ϥ��ޤ���
+ERROR レベルのアラートを出力します。
 
-@param args �Ѿ���Υ᥽�åɤ�Ϳ��������Ǥ���
+@param args 委譲先のメソッドに与える引数です。
 

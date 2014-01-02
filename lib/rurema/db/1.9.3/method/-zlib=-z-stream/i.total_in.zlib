@@ -4,5 +4,5 @@ kind=defined
 
 --- total_in -> Integer
 
-���ȥ꡼������Ϥ��줿�ǡ��������Х��ȿ����֤��ޤ���
+ストリームに入力されたデータの総バイト数を返します。
 

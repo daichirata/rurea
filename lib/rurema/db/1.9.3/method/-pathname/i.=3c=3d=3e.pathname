@@ -4,14 +4,14 @@ kind=defined
 
 --- <=>(other) -> bool
 
-�ѥ�̾����Ӥ��ޤ���other ��Ʊ���ʤ� 0 ��ASCII��� self ���礭�����
-������other ���礭����������֤��ޤ�����ʸ����ʸ���϶��̤���ޤ���
-other �� Pathname ���֥������ȤǤʤ���Фʤ�ޤ���
+パス名を比較します。other と同じなら 0 を、ASCII順で self が大きい場合
+は正、other が大きい場合は負を返します。大文字小文字は区別されます。
+other は Pathname オブジェクトでなければなりません。
 
-�ѥ�̾����Ӥ�ñ��˥ѥ�ʸ�������Ӥˤ�äƹԤ���Τǡ�����Ū��
-Ʊ���ѥ��Ǥ�ѥ�ʸ���󤬰㤨�аۤʤ��Ƚ�Ǥ���ޤ���
+パス名の比較は単純にパス文字列の比較によって行われるので、論理的に
+同じパスでもパス文字列が違えば異なると判断されます。
 
-@param other ����оݤ� Pathname ���֥������Ȥ���ꤷ�ޤ���
+@param other 比較対象の Pathname オブジェクトを指定します。
 
     require 'pathname'
 

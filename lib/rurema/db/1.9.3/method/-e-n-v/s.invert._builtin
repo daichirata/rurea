@@ -4,5 +4,5 @@ kind=defined
 
 --- invert -> Hash
 
-�Ķ��ѿ����ͤ򥭡���̾�����ͤȤ��� [[c:Hash]] �����������֤��ޤ���
+環境変数の値をキー、名前を値とした [[c:Hash]] を生成して返します。
 

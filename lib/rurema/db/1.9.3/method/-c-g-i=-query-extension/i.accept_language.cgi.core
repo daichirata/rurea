@@ -4,5 +4,5 @@ kind=defined
 
 --- accept_language -> String
 
-ENV['HTTP_ACCEPT_LANGUAGE'] ค๒สึคทคÞคนกฃ
+ENV['HTTP_ACCEPT_LANGUAGE'] ใ’่ฟ”ใ—ใพใใ€
 

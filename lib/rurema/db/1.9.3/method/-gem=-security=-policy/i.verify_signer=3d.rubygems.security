@@ -4,7 +4,7 @@ kind=defined
 
 --- verify_signer=(flag)
 
-��̾�Ԥ򸡾ڤ��뤫�ɤ��������ꤷ�ޤ���
+署名者を検証するかどうかを設定します。
 
-@param flag �����ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真、または偽を指定します。
 

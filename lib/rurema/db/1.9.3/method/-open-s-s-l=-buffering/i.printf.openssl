@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- printf(format, *args) -> nil
-format �˽������� args ��ʸ������Ѵ�����
-���Ϥ��ޤ���
+format に従い引数 args を文字列に変換して
+出力します。
 
-[[m:IO#printf]] ��Ʊ�ͤǤ���
+[[m:IO#printf]] と同様です。
 
-@param format ���ϥե����ޥå�ʸ����
-@param arg ���Ϥ��륪�֥�������
+@param format 出力フォーマット文字列
+@param arg 出力するオブジェクト
 @see [[m:Kernel.#printf]]
 

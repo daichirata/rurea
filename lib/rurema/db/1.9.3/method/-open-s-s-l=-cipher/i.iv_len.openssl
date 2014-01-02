@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- iv_len -> Integer
-ɬ�פ� IV(Initialization Vector) ��Ĺ����Х��ȿ����֤��ޤ���
+必要な IV(Initialization Vector) の長さをバイト数で返します。
 

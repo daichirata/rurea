@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- cstime -> Float
-��λ�����ҥץ������Υ����ƥ� CPU ���֤ι��(��)���֤��ޤ���
+終了した子プロセスのシステム CPU 時間の合計(秒)を返します。
 
-Windows ��ǤϾ�� 0 ���֤��ޤ���
+Windows 上では常に 0 を返します。
 

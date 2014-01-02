@@ -5,9 +5,9 @@ kind=defined
 --- ISO_8859_5 -> Encoding
 --- ISO8859_5 -> Encoding
 
-ISO 8859-5 ���󥳡��ǥ��󥰡�
+ISO 8859-5 エンコーディング。
 
-�����ʸ�����Ѥ������򰷤� 8bit single-byte ���󥳡��ǥ��󥰤Ǥ���
+キリル文字を用いる言語を扱う 8bit single-byte エンコーディングです。
 
 
 

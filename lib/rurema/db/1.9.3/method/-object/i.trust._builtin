@@ -5,7 +5,7 @@ kind=defined
 --- trust -> self
 @todo
 
-¥ª¥Ö¥¸¥§¥¯¥È¤Î¡Öuntrust¥Ş¡¼¥¯¡×¤ò¼è¤ê½ü¤­¤Ş¤¹¡£
+ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã€Œuntrustãƒãƒ¼ã‚¯ã€ã‚’å–ã‚Šé™¤ãã¾ã™ã€‚
 
 @see [[m:Object#untrusted?]],[[m:Object#untrust]]
 

@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- detached=(b)
-ʿʸ�˽�̾���դ������(multipart/signed)���ɤ��������ꤷ�ޤ���
+平文に署名を付ける形式(multipart/signed)かどうかを設定します。
 
-���Υ᥽�åɤϻȤ�ʤ��Ǥ���������
-���Υ᥽�åɤ� PKCS#7 �����٥� API �Ǥ��ꡢ�������Ȥ��Τ�
-�񤷤��Ǥ��礦��
+このメソッドは使わないでください。
+このメソッドは PKCS#7 の低レベル API であり、正しく使うのは
+難しいでしょう。
 
-@param b ���ꤹ�뿿����
+@param b 設定する真偽値
 

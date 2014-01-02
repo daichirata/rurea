@@ -6,5 +6,5 @@ library=open=2duri
 aliases=
 aliasof=
 
-�����Ф�����������ǡ�����°���򰷤�����˻Ȥ���⥸�塼��Ǥ���
-�ǡ�����ɽ��ʸ����� [[c:StringIO]] �� extend ���ޤ���
+サーバから取得したデータの属性を扱うために使われるモジュールです。
+データを表す文字列や [[c:StringIO]] が extend します。

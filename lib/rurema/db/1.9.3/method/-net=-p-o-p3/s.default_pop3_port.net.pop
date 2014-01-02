@@ -4,5 +4,5 @@ kind=defined
 
 --- default_port -> Integer
 --- default_pop3_port -> Integer
-POP3 �Υǥե���ȤΥݡ����ֹ�(110)���֤��ޤ���
+POP3 のデフォルトのポート番号(110)を返します。
 

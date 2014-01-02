@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- ISO_2022_JP_KDDI -> Encoding
-ISO-2022-JP-KDDI ╔╗╔С╔Ё║╪╔г╔ё╔С╔╟╓г╓╧║ё
+ISO-2022-JP-KDDI Ц┌╗Ц┐ЁЦ┌ЁЦ┐╪Ц┐┤Ц┌ёЦ┐ЁЦ┌╟Ц│╖Ц│≥Ц─┌
 
-ISO-2022-JP ╓н╟║╪О╓г╓╧║ё
-KDDI ╓н╥хбсееоц╓г╩х╓О╓Л╓КЁ╗й╦╩З╓╛╢ч╓ч╓Л╓ф╓╓╓ч╓╧║ё
+ISO-2022-JP Ц│╝Д╨°Г╗╝Ц│╖Ц│≥Ц─┌
+KDDI Ц│╝Ф░╨Е╦╞И⌡╩Х╘╠Ц│╖Д╫©Ц┌▐Ц┌▄Ц┌▀Г╣╣Ф√┤Е╜≈Ц│▄Е░╚Ц│╬Ц┌▄Ц│╕Ц│└Ц│╬Ц│≥Ц─┌
 
 
 @see [[url:http://www.au.kddi.com/ezfactory/tec/spec/img/typeD.pdf]]

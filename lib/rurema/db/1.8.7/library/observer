@@ -1,7 +1,0 @@
-requires=
-classes=Observable
-methods=
-sublibraries=
-is_sublibrary=false
-
-Observer パターンを扱うためのライブラリです。

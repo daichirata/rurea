@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- load_private_key(id=nil, data=nil) -> OpenSSL::PKey::PKey
-ÈëÌ©¸°¤ò engine ¤Ë¥í¡¼¥É¤·¤Ş¤¹¡£
+ç§˜å¯†éµã‚’ engine ã«ãƒ­ãƒ¼ãƒ‰ã—ã¾ã™ã€‚
 
-@param id key id(Ê¸»úÎó)
-@param data Ê¸»úÎó
+@param id key id(æ–‡å­—åˆ—)
+@param data æ–‡å­—åˆ—
 

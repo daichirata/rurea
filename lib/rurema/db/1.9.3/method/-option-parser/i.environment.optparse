@@ -4,13 +4,13 @@ kind=defined
 
 --- environment(env)    -> [String]
 
-�Ķ��ѿ� env ���Ф���
-[[m:Shellwords.#shellwords]] ���
-�������ˤ��Ƥ��� parse ��Ԥʤ��ޤ���
+環境変数 env に対して
+[[m:Shellwords.#shellwords]] を呼
+んで配列にしてから parse を行ないます。
 
-@param env �Ķ��ѿ�̾��ʸ�����Ϳ���ޤ���
+@param env 環境変数名を文字列で与えます。
 
-@raise OptionParser::ParseError �ѡ����˼��Ԥ�����硢ȯ�����ޤ���
-                                �ºݤ� OptionParser::ParseError �Υ��֥�
-                                �饹�ˤʤ�ޤ���
+@raise OptionParser::ParseError パースに失敗した場合、発生します。
+                                実際は OptionParser::ParseError のサブク
+                                ラスになります。
 

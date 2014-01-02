@@ -6,6 +6,6 @@ library=net.http
 aliases=
 aliasof=
 
-HTTP �쥹�ݥ� 2xx (Success) ��ɽ�����륯�饹�Ǥ���
+HTTP レスポンス 2xx (Success) を表現するクラスです。
 
-�ꥯ�����Ȥ�����˼������������줿���Ȥ�ɽ���Ƥ��ޤ���
+リクエストが正常に受信、処理されたことを表しています。

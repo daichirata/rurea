@@ -4,7 +4,7 @@ kind=defined
 
 --- attributes=(s)
 
-¼«¿È¤Î Attribute ¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Ş¤¹¡£
+è‡ªèº«ã® Attribute ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param s ¼«¿È¤Î Attribute ¤òÊ¸»úÎó¤ÇÀßÄê¤·¤Ş¤¹¡£
+@param s è‡ªèº«ã® Attribute ã‚’æ–‡å­—åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 

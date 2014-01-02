@@ -4,8 +4,8 @@ kind=defined
 
 ---value=(value)
 
-³ÈÄ¥ÎÎ°è¤ÎÃÍ(extnValue)¤òÀßÄê¤·¤Ş¤¹¡£
+æ‹¡å¼µé ˜åŸŸã®å€¤(extnValue)ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param value ÀßÄê¤¹¤ëÃÍ¤ÎÊ¸»úÎó
-@raise OpenSSL::X509::Extension ÃÍ¤ÎÀßÄê¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param value è¨­å®šã™ã‚‹å€¤ã®æ–‡å­—åˆ—
+@raise OpenSSL::X509::Extension å€¤ã®è¨­å®šã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 @see [[c:OpenSSL::X509::Extension#value]]

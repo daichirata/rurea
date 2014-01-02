@@ -4,5 +4,5 @@ kind=defined
 
 --- port    -> String
 
-�����ФΥݡ��Ȥ�ʸ������֤��ޤ���
+サーバのポートを文字列で返します。
 

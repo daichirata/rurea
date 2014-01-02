@@ -6,11 +6,11 @@ kind=defined
 --- add_row(row) -> self
 --- puts(row)    -> self
 
-���Ȥ� row ���ɲä��ޤ���
+自身に row を追加します。
 
-�ǡ����������Ͻ񤭹����Ѥ˥����ץ󤵤�Ƥ��ʤ���Фʤ�ޤ���
+データソースは書き込み用にオープンされていなければなりません。
 
-@param row ���� [[c:CSV::Row]] �Υ��󥹥��󥹤���ꤷ�ޤ���
-           [[c:CSV::Row]] �Υ��󥹥��󥹤����ꤵ�줿���ϡ�[[m:CSV::Row#fields]] ����
-           �Τߤ��ɲä���ޤ���
+@param row 配列か [[c:CSV::Row]] のインスタンスを指定します。
+           [[c:CSV::Row]] のインスタンスが指定された場合は、[[m:CSV::Row#fields]] の値
+           のみが追加されます。
 

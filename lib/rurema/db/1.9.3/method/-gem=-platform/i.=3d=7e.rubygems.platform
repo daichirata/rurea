@@ -4,13 +4,13 @@ kind=defined
 
 --- =~(other) -> bool
 
-���Ȥ� other �Υץ�åȥե����ब���פ�����˿����֤��ޤ���
-�����Ǥʤ����ϡ������֤��ޤ���
+自身と other のプラットフォームが一致する場合に真を返します。
+そうでない場合は、偽を返します。
 
-other ��ʸ����ξ��ϡ��ޤ� [[c:Gem::Platform]] ���Ѵ����Ƥ�����Ӥ�Ԥ��ޤ���
-other ��ʸ����Ǥ� [[c:Gem::Platform]] �Ǥ�ʤ����� nil ���֤��ޤ���
+other が文字列の場合は、まず [[c:Gem::Platform]] に変換してから比較を行います。
+other が文字列でも [[c:Gem::Platform]] でもない場合は nil を返します。
 
-@param other ����оݤΥ��֥������ȤǤ���
+@param other 比較対象のオブジェクトです。
 
 @see [[m:Gem::Platform#===]]
 

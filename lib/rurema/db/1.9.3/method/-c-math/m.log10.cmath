@@ -4,9 +4,9 @@ kind=defined
 
 --- log10(z) -> Float | Complex
 
-x �ξ����п����֤��ޤ���
+x の常用対数を返します。
 
-@param x ����
+@param x 数値
 
-@raise TypeError z �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError z に数値以外を指定した場合に発生します。
 

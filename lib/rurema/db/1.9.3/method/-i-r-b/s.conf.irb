@@ -4,5 +4,5 @@ kind=defined
 
 --- conf -> Hash
 
-irb �������ϥå�����֤��ޤ���
+irb の設定をハッシュで返します。
 

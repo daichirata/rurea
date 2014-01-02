@@ -4,12 +4,12 @@ kind=defined
 
 --- intern(task_class, task_name) -> Rake::Task
 
-¥¿¥¹¥¯¤ò¸¡º÷¤·¤Þ¤¹¡£
+ã‚¿ã‚¹ã‚¯ã‚’æ¤œç´¢ã—ã¾ã™ã€‚
 
-¥¿¥¹¥¯¤¬¸«¤Ä¤«¤ì¤Ð¸«¤Ä¤«¤Ã¤¿¥¿¥¹¥¯¤òÊÖ¤·¤Þ¤¹¡£
-¸«¤Ä¤«¤é¤Ê¤±¤ì¤Ð¡¢Í¿¤¨¤é¤ì¤¿·¿¤Î¥¿¥¹¥¯¤òºîÀ®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+ã‚¿ã‚¹ã‚¯ãŒè¦‹ã¤ã‹ã‚Œã°è¦‹ã¤ã‹ã£ãŸã‚¿ã‚¹ã‚¯ã‚’è¿”ã—ã¾ã™ã€‚
+è¦‹ã¤ã‹ã‚‰ãªã‘ã‚Œã°ã€ä¸Žãˆã‚‰ã‚ŒãŸåž‹ã®ã‚¿ã‚¹ã‚¯ã‚’ä½œæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 
-@param task_class ¥¿¥¹¥¯¤Î¥¯¥é¥¹¤ò»ØÄê¤·¤Þ¤¹¡£
+@param task_class ã‚¿ã‚¹ã‚¯ã®ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param task_name ¥¿¥¹¥¯¤ÎÌ¾Á°¤ò»ØÄê¤·¤Þ¤¹¡£
+@param task_name ã‚¿ã‚¹ã‚¯ã®åå‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

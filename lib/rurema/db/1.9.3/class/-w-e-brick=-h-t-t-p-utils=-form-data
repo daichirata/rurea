@@ -6,20 +6,20 @@ library=webrick.httputils
 aliases=
 aliasof=
 
-���饤����Ȥ��ե���������Ϥ����ͤ�ɽ�����饹�Ǥ���multipart/form-data �ʥǡ�����ɽ���Τˤ�
-�Ȥ��ޤ���
+クライアントがフォームへ入力した値を表すクラスです。multipart/form-data なデータを表すのにも
+使われます。
 
-[[m:WEBrick::HTTPRequest#query]] �ϥꥯ�����ȤΥ����꡼���뤤��
-���饤����Ȥ��ե���������Ϥ����ͤ��ݻ����� Hash ���֤��ޤ�����
-���� Hash �Υ������ͤΤ����ͤ� FormData ���饹�Υ��󥹥��󥹤ˤʤ�ޤ���
-Ʊ��̾���Υե�����ɤ�ʣ�������硢[[m:WEBrick::HTTPUtils::FormData#list]] ��
-[[m:WEBrick::HTTPUtils::FormData#each_data]] �ˤ�ꤽ�줾����ͤ���Ф����Ȥ��Ǥ��ޤ���
+[[m:WEBrick::HTTPRequest#query]] はリクエストのクエリーあるいは
+クライアントがフォームへ入力した値を保持した Hash を返しますが、
+その Hash のキーと値のうち値は FormData クラスのインスタンスになります。
+同じ名前のフィールドが複数ある場合、[[m:WEBrick::HTTPUtils::FormData#list]] や
+[[m:WEBrick::HTTPUtils::FormData#each_data]] によりそれぞれの値を取り出すことができます。
 
-�̾�Υե�����ǡ���(application/x-www-form-urlencoded)�� unescape ����Ƥ��ޤ���
-������ multipart/form-data �ʥե�����ǡ����ϥ桼���� content-transfer-encoding 
-�إå��򸫤�Ŭ�ڤ˽�������ɬ�פ�����ޤ���
+通常のフォームデータ(application/x-www-form-urlencoded)は unescape されています。
+ただし multipart/form-data なフォームデータはユーザが content-transfer-encoding 
+ヘッダを見て適切に処理する必要があります。
 
-=== ���
+=== リンク
 
  * [[rfc:1867]] Form-based File Upload in HTML.
- * [[rfc:2388]] multipart/form-data ��������
+ * [[rfc:2388]] multipart/form-data の説明。

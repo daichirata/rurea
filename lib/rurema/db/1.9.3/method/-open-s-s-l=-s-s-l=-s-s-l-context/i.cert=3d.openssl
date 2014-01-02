@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- cert=(certificate)
-¼«Ê¬¼«¿È¤ò¾ÚÌÀ¤¹¤ë¤¿¤á¤Î¾ÚÌÀ½ñ¤òÀßÄê¤·¤Ş¤¹¡£
+è‡ªåˆ†è‡ªèº«ã‚’è¨¼æ˜ã™ã‚‹ãŸã‚ã®è¨¼æ˜æ›¸ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-¥Ç¥Õ¥©¥ë¥È¤Ï nil (¾ÚÌÀ½ñ¤Ê¤·)¤Ç¤¹¡£
+ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ nil (è¨¼æ˜æ›¸ãªã—)ã§ã™ã€‚
 
-@param certificate ÀßÄê¤¹¤ë¾ÚÌÀ½ñ([[c:OpenSSL::X509::Certificate]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹)
-@see [[m:OpenSSL::SSL::SSLContext#cert=]]
+@param certificate è¨­å®šã™ã‚‹è¨¼æ˜æ›¸([[c:OpenSSL::X509::Certificate]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹)
+@see [[m:OpenSSL::SSL::SSLContext#cert]]
 

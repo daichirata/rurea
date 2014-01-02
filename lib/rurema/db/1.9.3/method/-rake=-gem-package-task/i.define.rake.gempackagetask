@@ -4,7 +4,7 @@ kind=defined
 
 --- define
 
-��������������ޤ���
+タスクを定義します。
 
-[[m:GemPackageTask.new]] �˥֥��å���Ϳ�����Ƥ�����ˡ���ưŪ�˸ƤӽФ���ޤ���
+[[m:GemPackageTask.new]] にブロックが与えられている場合に、自動的に呼び出されます。
 

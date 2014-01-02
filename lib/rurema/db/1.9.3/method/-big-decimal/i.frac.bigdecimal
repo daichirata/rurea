@@ -2,8 +2,7 @@ names=frac
 visibility=public
 kind=defined
 
---- frac
-@todo
+--- frac -> BigDecimal
 
-self ��������ʬ���ڤ�Τơ�
+self の小数部分を新しい [[c:BigDecimal]] オブジェクトにして返します。
 

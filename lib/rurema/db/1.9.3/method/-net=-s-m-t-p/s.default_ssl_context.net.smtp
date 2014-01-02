@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- default_ssl_context -> OpenSSL::SSL::SSLContext
-SSL �̿��˻Ȥ��� SSL �Υ���ƥ����ȤΥǥե�����ͤ��֤��ޤ���
+SSL 通信に使われる SSL のコンテキストのデフォルト値を返します。
 

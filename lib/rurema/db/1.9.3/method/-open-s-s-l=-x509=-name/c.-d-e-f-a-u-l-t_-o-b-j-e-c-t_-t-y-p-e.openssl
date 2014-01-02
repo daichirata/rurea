@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- DEFAULT_OBJECT_TYPE -> Integer
-°���ͤΥǥե���Ȥ� ASN.1 �η��Ǥ���
+属性値のデフォルトの ASN.1 の型です。
 
-[[m:OpenSSL::X509::Name.parse]] �� [[m:OpenSSL::X509::Name.new]] ��
-template �˻��ꤵ��ʤ��ä�°���Ϥ��η��Ǥ���Ȳ��ꤷ�ƽ�������ޤ���
+[[m:OpenSSL::X509::Name.parse]] や [[m:OpenSSL::X509::Name.new]] で
+template に指定されなかった属性はこの型であると仮定して処理されます。
 
-[[m:OpenSSL::ASN1::UTF8STRING]] ���֤��ޤ���
+[[m:OpenSSL::ASN1::UTF8STRING]] を返します。
 

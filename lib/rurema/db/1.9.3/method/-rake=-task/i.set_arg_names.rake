@@ -4,7 +4,7 @@ kind=defined
 
 --- set_arg_names(args)
 
-���ȤΥѥ�᡼����̾���Υꥹ�Ȥ򥻥åȤ��ޤ���
+自身のパラメータの名前のリストをセットします。
 
-@param args ����ܥ�Υꥹ�Ȥ���ꤷ�ޤ���
+@param args シンボルのリストを指定します。
 

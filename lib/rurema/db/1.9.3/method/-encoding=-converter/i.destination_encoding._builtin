@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- destination_encoding -> Encoding
-�Ѵ���Υ��󥳡��ǥ��󥰤��֤��ޤ���
+変換先のエンコーディングを返します。
 
-@return �Ѵ���Υ��󥳡��ǥ���
+@return 変換先のエンコーディング
 

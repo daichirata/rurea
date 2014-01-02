@@ -6,19 +6,22 @@ library=matrix
 aliases=
 aliasof=
 
-�� [[c:Numeric]] �����ǤȤ���٥��ȥ�򰷤����饹�Ǥ���
+数 [[c:Numeric]] を要素とするベクトルを扱うクラスです。
+[[c:Vector]] オブジェクトは [[c:Matrix]] オブジェクトとの演算においては列ベクトルとして扱われます。
+
+ベクトルの要素のインデックスは 0 から始まることに注意してください。
 
 
 
 
 
-=== Complex���饹�Ȥ�ʻ�� Working with Complex class
+=== Complexクラスとの併用 Working with Complex class
 
-require 'complex' ���뤳�Ȥˤ�äơ�
-Vector ���֥������Ȥ����Ǥ� [[c:Complex]] ���饹�˳�ĥ����ޤ���
-¿���Υ᥽�åɤϡ����γ�ĥ���줿Vector���饹�Ǥ⡢�����̤��ư��ޤ���
+require 'complex' することによって、
+Vector オブジェクトの要素は [[c:Complex]] クラスに拡張されます。
+多くのメソッドは、この拡張されたVectorクラスでも、期待通りに動作します。
 
-������ϡ������Ǥ���ʣ�ǿ����ִ�����᥽�å� (Vector#conjugate)�Ǥ���
+次の例は、各要素を共役複素数に置換するメソッド (Vector#conjugate)です。
 
   require 'matrix'
   require 'complex'
@@ -36,14 +39,14 @@ Vector ���֥������Ȥ����Ǥ� [[c:Complex]] ���饹�˳�ĥ����ޤ���
   p v3 #=> Vector[Complex(1,0),Complex(2,0),Complex(3,0)]
 
 
-��������Complex ���Ǥ˳�ĥ���줿 Vector ���饹�ǡ�
-�����̤��ư��ʤ��᥽�åɤ⤢��ޤ���
-�㤨�С��٥��ȥ�������ͤ���� [[m:Vector#r]] �᥽�åɤϡ�
-�����Ǥ�2���¤�ʿ���� [[m:Math.#sqrt]] ����ޤ�����
-���ΤȤ��㳰��ȯ���������ǽ��������ޤ���
+しかし、Complex 要素に拡張された Vector クラスで、
+期待通りに動作しないメソッドもあります。
+例えば、ベクトルの絶対値を求める [[m:Vector#r]] メソッドは、
+各要素の2乗和の平方根 [[m:Math.#sqrt]] を求めますが、
+このとき例外を発生させる可能性があります。
 
-ʣ�ǿ������ǤȤ���٥��ȥ�������ͤ���뤿��ˤϡ�
-�����Ǥ������ͤ�2���¤�Ȥ�ʤ��ƤϤʤ�ޤ���(������ Vector#abs�᥽�åɡˡ�
+複素数を要素とするベクトルの絶対値を求めるためには、
+各要素の絶対値の2乗和をとらなくてはなりません(次の例 Vector#absメソッド）。
 
   require 'matrix'
   require 'complex'

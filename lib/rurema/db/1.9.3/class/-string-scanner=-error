@@ -6,4 +6,4 @@ library=strscan
 aliases=
 aliasof=
 
-����������ȯ���������顼�򤢤�魯�㳰�Ǥ���
+スキャン中に発生したエラーをあらわす例外です。

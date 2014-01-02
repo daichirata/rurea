@@ -4,7 +4,7 @@ kind=defined
 
 --- integer?    -> bool
 
-self �������λ��������֤��ޤ��������Ǥʤ����� false ���֤��ޤ���
+self が整数の時、真を返します。そうでない場合に false を返します。
 
-Numeric �Υ��֥��饹�ϡ����Υ᥽�åɤ�Ŭ�ڤ˺�������ʤ���Фʤ�ޤ���
+Numeric のサブクラスは、このメソッドを適切に再定義しなければなりません。
 

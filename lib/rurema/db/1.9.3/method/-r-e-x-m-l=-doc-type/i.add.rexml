@@ -2,6 +2,11 @@ names=add
 visibility=public
 kind=defined
 
---- add(child)
-@todo
+--- add(child) -> ()
+child を子ノード列の最後に追加します。
+
+[[m:REXML::Parent#add]] を内部で呼び出します。
+また、[[m:REXML::DocType#entities]] を更新します。
+
+@param child 追加するノード
 

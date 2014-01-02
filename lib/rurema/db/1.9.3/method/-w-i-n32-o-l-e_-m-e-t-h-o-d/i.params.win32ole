@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- params -> [WIN32OLE_PARAM]
-�᥽�åɤΥѥ�᡼�������������ޤ���
+メソッドのパラメータ情報を取得します。
 
-���Υ᥽�åɤΥѥ�᡼����[[c:WIN32OLE_PARAM]]������Ȥ����֤��ޤ�����
-��κǽ�����Ǥ��Ǻ�ü�Υѥ�᡼�����б����ޤ���
+このメソッドのパラメータを[[c:WIN32OLE_PARAM]]の配列として返します。配
+列の最初の要素が最左端のパラメータに対応します。
 
-@return [[c:WIN32OLE_PARAM]]������̵�����Υ᥽�åɤǤ�������ǿ�0����
-        ����֤��ޤ���
+@return [[c:WIN32OLE_PARAM]]の配列。無引数のメソッドであれば要素数0の配
+        列を返します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Workbook')
    method = WIN32OLE_METHOD.new(tobj, 'SaveAs')

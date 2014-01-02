@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- vartype -> Integer
-self¤Î·¿¾ðÊó¤ò¼èÆÀ¤·¤Þ¤¹¡£
+selfã®åž‹æƒ…å ±ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-·¿¾ðÊó¤Ï¡¢[[c:WIN32OLE::VARIANT]]¤ÎÄê¿ôÃÍ¤ÎÁÈ¤ß¹ç¤ï¤»¤Ç¤¹¡£
+åž‹æƒ…å ±ã¯ã€[[c:WIN32OLE::VARIANT]]ã®å®šæ•°å€¤ã®çµ„ã¿åˆã‚ã›ã§ã™ã€‚
 
    obj = WIN32OLE_VARIANT.new("string")
    obj.vartype   # => 8 (WIN32OLE::VARIANT::VT_BSTR)

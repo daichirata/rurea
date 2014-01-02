@@ -4,9 +4,9 @@ kind=added
 
 --- must_be_nil -> true
 
-¼«¿È¤¬ nil ¤Ç¤¢¤ë¾ì¹ç¡¢¸¡ºº¤Ë¥Ñ¥¹¤·¤¿¤³¤È¤Ë¤Ê¤ê¤Ş¤¹¡£
+è‡ªèº«ãŒ nil ã§ã‚ã‚‹å ´åˆã€æ¤œæŸ»ã«ãƒ‘ã‚¹ã—ãŸã“ã¨ã«ãªã‚Šã¾ã™ã€‚
 
-@raise MiniTest::Assertion ¼«¿È¤¬ nil ¤Ç¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise MiniTest::Assertion è‡ªèº«ãŒ nil ã§ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:MiniTest::Assertions#assert_nil]]
 

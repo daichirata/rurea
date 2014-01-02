@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- zero? -> bool
-���Ȥ�0�Ǥ�����˿����֤��ޤ���
+自身が0である場合に真を返します。
 

@@ -5,12 +5,12 @@ kind=defined
 --- each_with_object(obj) -> Enumerator
 --- each_with_object(obj) {|(*args), memo_obj| ... } -> object
 
-Ϳ����줿Ǥ�դΥ��֥������Ȥ����Ǥ�֥��å����Ϥ������֤����ǽ��Ϳ����줿���֥������Ȥ��֤��ޤ���
+与えられた任意のオブジェクトと要素をブロックに渡し繰り返し、最初に与えられたオブジェクトを返します。
 
-�֥��å����ά�������ϡ���η����֤��򤷤ơ��ǽ��Ϳ�������֥������Ȥ�
-�Ǹ���֤� [[c:Enumerator]] ���֤��ޤ���
+ブロックを省略した場合は、上の繰り返しをして、最初に与えたオブジェクトを
+最後に返す [[c:Enumerator]] を返します。
 
-@param obj Ǥ�դΥ��֥������Ȥ���ꤷ�ޤ���
+@param obj 任意のオブジェクトを指定します。
 
   evens = (1..10).each_with_object([]) {|i, a| a << i*2 }
   # => [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]

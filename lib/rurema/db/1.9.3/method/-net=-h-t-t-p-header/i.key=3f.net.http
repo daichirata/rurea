@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- key?(key) -> bool
-key �Ȥ����إå��ե�����ɤ�����п����֤��ޤ���
-key ����ʸ����ʸ������̤��ޤ���
+key というヘッダフィールドがあれば真を返します。
+key は大文字小文字を区別しません。
 
-@param key õ���إå��ե������̾��ʸ�����Ϳ���ޤ���
+@param key 探すヘッダフィールド名を文字列で与えます。
 

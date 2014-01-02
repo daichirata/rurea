@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- zero? -> bool
-FileTest.zero?(self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+FileTest.zero?(self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:FileTest.#zero?]]
 

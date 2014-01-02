@@ -4,10 +4,10 @@ kind=defined
 
 --- close_read    -> nil
 
-�ɤ߹����Ѥ� IO �� close ���ޤ�����˥ѥ��פ��ɤ߽�ξ�Ѥ˺�����
-�� IO ���֥������Ȥǻ��Ѥ��ޤ���
+読み込み用の IO を close します。主にパイプや読み書き両用に作成し
+た IO オブジェクトで使用します。
 
-@raise IOError ���Ȥ��ɤ߹����Ѥ˥����ץ󤵤�Ƥ��ʤ����ȯ�����ޤ���
+@raise IOError 自身が読み込み用にオープンされていなければ発生します。
 
-@raise Errno::EXXX close �˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX close に失敗した場合に発生します。
 

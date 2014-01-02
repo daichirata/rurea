@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- status_string -> String
-¥ì¥¹¥İ¥ó¥¹¥¹¥Æ¡¼¥¿¥¹¤ò human-readable ¤ÊÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’ human-readable ãªæ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 @see [[m:OpenSSL::OCSP::Response#status]]
 

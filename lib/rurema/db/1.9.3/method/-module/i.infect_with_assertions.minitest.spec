@@ -4,13 +4,13 @@ kind=added
 
 --- infect_with_assertions(positive_prefix, negative_prefix, skip_regexp, map = {}) -> ()
 
-BDD ���˥ƥ��Ȥ�񤯤���˻��Ѥ���᥽�åɷ���������ޤ���
+BDD 風にテストを書くために使用するメソッド群を定義します。
 
-@param positive_prefix assert ������Υץ�ե��å�������ꤷ�ޤ���
+@param positive_prefix assert の代わりのプレフィックスを指定します。
 
-@param negative_prefix refute ������Υץ�ե��å�������ꤷ�ޤ���
+@param negative_prefix refute の代わりのプレフィックスを指定します。
 
-@param skip_regexp ��������ɽ���˥ޥå������᥽�åɤ�������ޤ���
+@param skip_regexp この正規表現にマッチしたメソッドは定義しません。
 
-@param map �᥽�å�̾���Ѵ���§�Υϥå������ꤷ�ޤ���
+@param map メソッド名の変換規則のハッシュを指定します。
 

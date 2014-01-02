@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- marshal_dump -> Array
-[[m:Random#marshal_load]] ¤ÇÉü¸µ²ÄÇ½¤ÊÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
+[[m:Random#marshal_load]] ã§å¾©å…ƒå¯èƒ½ãªé…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-Æ°ºîÎã:
+å‹•ä½œä¾‹:
   r1 = Random.new(1)
   a1 = r1.marshal_dump
   r2 = Random.new(3)

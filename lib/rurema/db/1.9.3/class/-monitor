@@ -6,12 +6,12 @@ library=monitor
 aliases=
 aliasof=
 
-����åɤ�Ʊ�������Ȥ��ƤΥ�˥�����ǽ���󶡤��륯�饹�Ǥ���
-�ޤ�Ʊ������åɤ��鲿�٤� lock �Ǥ��� Mutex �Ȥ��Ƥε�ǽ���󶡤��ޤ���
+スレッドの同期機構としてのモニター機能を提供するクラスです。
+また同じスレッドから何度も lock できる Mutex としての機能も提供します。
 
-[[c:MonitorMixin]] �� include ���������Ĥ�����̾������������饹�Ǥ���
+[[c:MonitorMixin]] を include し、いくつかの別名を定義したクラスです。
 
-=== ��
+=== 例
 
   require 'monitor'
   
@@ -37,7 +37,7 @@ aliasof=
     end
   end
 
-2����å����Ƥ�ǥåɥ��å��ˤʤ�ʤ���Ǥ���
+2回ロックしてもデッドロックにならない例です。
 
    require 'monitor'
    mon = Monitor.new
@@ -47,7 +47,7 @@ aliasof=
      }
    }
 
-[[c:Mutex]] �Ǥϥǥåɥ��å��ˤʤ�ޤ���
+[[c:Mutex]] ではデッドロックになります。
 
    require 'thread'
    mx = Mutex.new

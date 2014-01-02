@@ -4,12 +4,12 @@ kind=defined
 
 --- $SAFE -> Fixnum
 
-�����ȥ���åɤΥ����ե�٥��ɽ�������Ǥ��������ե�٥�ˤĤ��Ƥ�
-[[d:spec/safelevel]] �򻲾Ȥ��Ƥ���������
+カレントスレッドのセーフレベルを表す整数です。セーフレベルについては
+[[d:spec/safelevel]] を参照してください。
 
-Thread.current.safe_level ��Ʊ���Ǥ���
-���������������褦�Ȥ���� [[c:TypeError]] ��ȯ�����ޤ���
+Thread.current.safe_level と同じです。
+非整数を代入しようとすると [[c:TypeError]] が発生します。
 
-�����ѿ��ϥ���åɥ�������Ǥ���
-Ruby��ư���ν���ͤ� 0 �Ǥ���
+この変数はスレッドローカルです。
+Ruby起動時の初期値は 0 です。
 

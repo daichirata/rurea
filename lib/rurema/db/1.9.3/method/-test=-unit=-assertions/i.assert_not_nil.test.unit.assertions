@@ -4,14 +4,14 @@ kind=defined
 
 --- assert_not_nil(object, message = "")    -> ()
 
-object ¤¬ nil ¤Ç¤Ê¤¤¤Ê¤é¤Ğ¥Ñ¥¹¤·¤Ş¤¹¡£
+object ãŒ nil ã§ãªã„ãªã‚‰ã°ãƒ‘ã‚¹ã—ã¾ã™ã€‚
 
-@param object ¸¡¾Ú¤¹¤ë¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param object æ¤œè¨¼ã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param message assert ¤¬¼ºÇÔ¤·¤¿»ş¤ËÉ½¼¨¤¹¤ë¥á¥Ã¥»¡¼¥¸¤òÊ¸»úÎó¤Ç»ØÄê¤·
-               ¤Ş¤¹¡£»ØÄê¤·¤Ê¤«¤Ã¤¿¾ì¹ç¤ÏÉ½¼¨¤·¤Ş¤»¤ó¡£
+@param message assert ãŒå¤±æ•—ã—ãŸæ™‚ã«è¡¨ç¤ºã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—
+               ã¾ã™ã€‚æŒ‡å®šã—ãªã‹ã£ãŸå ´åˆã¯è¡¨ç¤ºã—ã¾ã›ã‚“ã€‚
 
-@raise MiniTest::Assertion assert ¤¬¼ºÇÔ¤·¤¿»ş¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise MiniTest::Assertion assert ãŒå¤±æ•—ã—ãŸæ™‚ã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 @see [[m:MiniTest::Assertions#assert_nil]]
 

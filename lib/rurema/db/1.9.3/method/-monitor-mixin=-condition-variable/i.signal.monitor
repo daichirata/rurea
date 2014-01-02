@@ -4,10 +4,10 @@ kind=defined
 
 --- signal -> ()
 
-���ξ���ѿ����ԤäƤ��륹��åɤ�����м¹Ԥ�Ƴ������ޤ���
+その条件変数で待っているスレッドがあれば実行を再開させます。
 
-ʣ���Υ���åɤ��ԤäƤ�����ˤ�1�ĤΥ���åɤΤ�
-�¹Ԥ�Ƴ����ޤ���
+複数のスレッドが待っている場合には1つのスレッドのみ
+実行を再開します。
 
 @see [[m:MonitorMixin::ConditionVariable#broadcast]]
 

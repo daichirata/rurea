@@ -4,13 +4,13 @@ kind=defined
 
 --- rake_require(file_name, paths = $LOAD_PATH, loaded = $") -> bool
 
-[[m:Kernel#require]] �˻��Ƥ��ޤ�����*.rb �ե�����ǤϤʤ� *.rake �ե������õ�����ޤ���
+[[m:Kernel#require]] に似ていますが、*.rb ファイルではなく *.rake ファイルを探索します。
 
-@param file_name �����ɤ���ե�����̾����ꤷ�ޤ���
+@param file_name ロードするファイル名を指定します。
 
-@param paths �����ɥѥ�����ꤷ�ޤ���
+@param paths ロードパスを指定します。
 
-@param loaded �����ɺѤߤΥե�����ꥹ�Ȥ���ꤷ�ޤ���
+@param loaded ロード済みのファイルリストを指定します。
 
-@raise LoadError ���ꤵ�줿�ե����뤬���Ĥ���ʤ��ä�����ȯ�����ޤ���
+@raise LoadError 指定されたファイルが見つからなかった場合に発生します。
 

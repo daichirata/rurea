@@ -4,6 +4,6 @@ kind=defined
 
 --- remove_methods_etc -> ()
 
-���⤷�ޤ���[[m:RDoc::CodeObject#document_self=]] �� false ����ꤷ��
-���Υ�����Хå��Ȥ��ƸƤӽФ���ޤ��������С��饤�ɤ��ƻ��Ѥ��ޤ���
+何もしません。[[m:RDoc::CodeObject#document_self=]] に false を指定した
+時のコールバックとして呼び出されます。オーバーライドして使用します。
 

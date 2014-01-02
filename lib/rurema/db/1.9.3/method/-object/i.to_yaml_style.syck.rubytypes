@@ -4,11 +4,11 @@ kind=added
 
 --- to_yaml_style -> nil
 
-nil¤òÊÖ¤·¤Ş¤¹¡£
+nilã‚’è¿”ã—ã¾ã™ã€‚
 
-@return nil¤òÊÖ¤·¤Ş¤¹¡£
+@return nilã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   require 'yaml'
   

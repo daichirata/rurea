@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- source_encoding -> Encoding
-�Ѵ����Υ��󥳡��ǥ��󥰤��֤��ޤ���
+変換元のエンコーディングを返します。
 
-@return �Ѵ����Υ��󥳡��ǥ���
+@return 変換元のエンコーディング
 

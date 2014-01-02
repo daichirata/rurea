@@ -4,7 +4,7 @@ kind=defined
 
 --- get_one_optional_argument -> String
 
-���ޥ�ɥ饤�󤫤饪�ץ���ʥ�ʰ�������������֤��ޤ���
+コマンドラインからオプショナルな引数を取得して返します。
 
-@return ��İʾ塢���ꤷ�����Ϻǽ���ͤ��֤��ޤ�����Ĥ���ꤷ�Ƥ��ʤ����� nil ���֤��ޤ���
+@return 一つ以上、指定した場合は最初の値を返します。一つも指定していない場合は nil を返します。
 

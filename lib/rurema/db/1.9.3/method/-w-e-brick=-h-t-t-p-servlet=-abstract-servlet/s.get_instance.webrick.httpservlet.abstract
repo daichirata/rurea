@@ -4,13 +4,13 @@ kind=defined
 
 --- get_instance(server, *options)    -> WEBrick::HTTPServlet::AbstractServlet
 
-new(server, *options) ��ƤӽФ��ƥ����֥�åȤ����������֤��ޤ���
-[[c:WEBrick::HTTPServer]] ���֥������ȤϼºݤˤϤ��� get_instance �᥽�åɤ�ƤӽФ���
-�����֥�åȤ��������ޤ���
+new(server, *options) を呼び出してサーブレットを生成して返します。
+[[c:WEBrick::HTTPServer]] オブジェクトは実際にはこの get_instance メソッドを呼び出して
+サーブレットを生成します。
 
-�ä���ͳ��̵���¤� AbstractServlet �Υ��֥��饹�����Υ᥽�åɤ���������ɬ�פϤ���ޤ���
+特に理由が無い限り AbstractServlet のサブクラスがこのメソッドを再定義する必要はありません。
 
-@param server [[m:WEBrick::HTTPServer#mount]] ��3�����ʹߤ˻��ꤵ�줿�ͤ����Τޤ�Ϳ�����ޤ���
+@param server [[m:WEBrick::HTTPServer#mount]] 第3引数以降に指定された値がそのまま与えられます。
 
-@param options [[m:WEBrick::HTTPServer#mount]] ��3�����ʹߤ˻��ꤵ�줿�ͤ����Τޤ�Ϳ�����ޤ���
+@param options [[m:WEBrick::HTTPServer#mount]] 第3引数以降に指定された値がそのまま与えられます。
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- library_name -> String
-TypeLib¤Î¥Ø¥ë¥×¥Õ¥¡¥¤¥ëÍÑ¥É¥­¥å¥á¥ó¥ÈÊ¸»úÎó¤«¤éTypeLib¤ÎÌ¾Á°¤ò¼èÆÀ¤·¤Þ¤¹¡£
+TypeLibã®ãƒ˜ãƒ«ãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ç”¨ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆæ–‡å­—åˆ—ã‹ã‚‰TypeLibã®åå‰ã‚’å–å¾—ã—ã¾ã™ã€‚
 
-@return TypeLib¤ÎÌ¾Á°¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
-@raise WIN32OLERuntimeError ¥É¥­¥å¥á¥ó¥ÈÊ¸»úÎó¤¬¼èÆÀ¤Ç¤­¤Ê¤«¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤·¤Þ¤¹¡£
+@return TypeLibã®åå‰ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
+@raise WIN32OLERuntimeError ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆæ–‡å­—åˆ—ãŒå–å¾—ã§ããªã‹ã£ãŸå ´åˆã«é€šçŸ¥ã—ã¾ã™ã€‚
 
    tlib = WIN32OLE_TYPELIB.new('Microsoft Excel 14.0 Object Library')
    tlib.library_name # => Excel

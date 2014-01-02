@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- copy_nonce(request) -> Integer
-request ¤«¤é nonce ¤ÎÃÍ¤ò¥³¥Ô¡¼¤·¤Ş¤¹¡£
+request ã‹ã‚‰ nonce ã®å€¤ã‚’ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-@param request ¥³¥Ô¡¼¸µ¤Înonce¤òÊİ»ı¤·¤Æ¤¤¤ë Request ([[c:OpenSSL::OCSP::Request]] ¥ª¥Ö¥¸¥§¥¯¥È)
+@param request ã‚³ãƒ”ãƒ¼å…ƒã®nonceã‚’ä¿æŒã—ã¦ã„ã‚‹ Request ([[c:OpenSSL::OCSP::Request]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
 

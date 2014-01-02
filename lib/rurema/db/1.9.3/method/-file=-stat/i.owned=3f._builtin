@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- owned? -> bool
-¼«Ê¬¤Î¤â¤Î¤Ç¤¢¤ë»þ¤Ë¿¿¤òÊÖ¤·¤Þ¤¹¡£
+è‡ªåˆ†ã®ã‚‚ã®ã§ã‚ã‚‹æ™‚ã«çœŸã‚’è¿”ã—ã¾ã™ã€‚
 
   printf "%s %s\n", $:[0], File::Stat.new($:[0]).owned?
-  #Îã
+  #ä¾‹
   #=> /usr/local/lib/site_ruby/1.8 false
 

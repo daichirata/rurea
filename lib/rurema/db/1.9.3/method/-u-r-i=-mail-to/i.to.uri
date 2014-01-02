@@ -4,8 +4,8 @@ kind=defined
 
 --- to         -> String
 
-¼«¿È¤Î e-mail ¥¢¥É¥ì¥¹¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+è‡ªèº«ã® e-mail ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   p URI.parse("mailto:nospam@example.com").to     #=> "nospam@example.com"
 

@@ -3,5 +3,6 @@ classes=TkComposite
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

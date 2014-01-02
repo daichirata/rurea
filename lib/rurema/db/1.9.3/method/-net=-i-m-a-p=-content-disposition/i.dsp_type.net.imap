@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- dsp_type -> String
-Content-Disposition �ե�����ɤΥ����פ�ʸ������֤��ޤ���
+Content-Disposition フィールドのタイプを文字列で返します。
 
-"INLINE", "ATTACHMENT" �ʤɤ�ʸ������֤��ޤ���
+"INLINE", "ATTACHMENT" などの文字列を返します。
 
-�ܤ����� [[RFC:2183]] �ʤɤ򸫤Ƥ���������
+詳しくは [[RFC:2183]] などを見てください。
 

@@ -3,9 +3,11 @@ visibility=public
 kind=defined
 
 --- elements_to_r -> Vector
-�٥��ȥ�γ���ʬ��[[c:Rational]]���Ѵ������٥��ȥ���֤��ޤ���
+ベクトルの各成分を[[c:Rational]]に変換したベクトルを返します。
 
-��:
+このメソッドは deprecated です。 map(&:to_r) を使ってください。
+
+例:
 
   require 'matrix'
 

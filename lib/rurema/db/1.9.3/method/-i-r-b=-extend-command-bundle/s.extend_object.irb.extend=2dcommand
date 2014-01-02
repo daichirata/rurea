@@ -4,8 +4,8 @@ kind=defined
 
 --- extend_object(obj) -> IRB::ExtendCommandBundle
 
-[[c:IRB::ExtendCommandBundle]] ¤ÇÄêµÁºÑ¤ß¤Î³ÈÄ¥¤Ë»ØÄê¤µ¤ì¤¿¥¨¥¤¥ê¥¢¥¹¤ò
-obj ¤ËÄêµÁ¤·¤Ş¤¹¡£
+[[c:IRB::ExtendCommandBundle]] ã§å®šç¾©æ¸ˆã¿ã®æ‹¡å¼µã«æŒ‡å®šã•ã‚ŒãŸã‚¨ã‚¤ãƒªã‚¢ã‚¹ã‚’
+obj ã«å®šç¾©ã—ã¾ã™ã€‚
 
-@param obj [[c:IRB::ExtendCommandBundle]] ¤ò extend ¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È
+@param obj [[c:IRB::ExtendCommandBundle]] ã‚’ extend ã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
 

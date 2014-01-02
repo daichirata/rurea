@@ -4,4 +4,4 @@ kind=defined
 
 --- to_s -> String
 
-"<EARLY TIME>" �Ȥ���ʸ������֤��ޤ���
+"<EARLY TIME>" という文字列を返します。

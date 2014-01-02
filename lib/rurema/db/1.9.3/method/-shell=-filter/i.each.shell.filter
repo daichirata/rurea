@@ -4,12 +4,12 @@ kind=defined
 
 --- each(rs = nil) -> ()
 
-�ե��륿�ΰ�Ԥ��Ĥ�block���Ϥ��ޤ���
+フィルタの一行ずつをblockに渡します。
 
-@param rs �쥳���ɥ��ѥ졼������ɽ��ʸ�������ꤷ�ޤ���
-          nil �ʤ�С�[[m:Shell.record_separator]]���ͤ����Ѥ���ޤ���
+@param rs レコードセパレーターを表す文字列を指定します。
+          nil ならば、[[m:Shell.record_separator]]の値が使用されます。
 
-������
+使用例
   sh = Shell.new
   sh.cat("/etc/passwd").each { |line|
     puts line

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- Regex -> Regexp
-IPv6�Υ��ɥ쥹������ɽ���Ǥ���
+IPv6のアドレスの正規表現です。
 [[m:Resolv::IPv6::Regex_6Hex4Dec]],
 [[m:Resolv::IPv6::Regex_8Hex]],
 [[m:Resolv::IPv6::Regex_CompressedHex]],
 [[m:Resolv::IPv6::Regex_CompressedHex4Dec]],
-�Τ����줫�ȥޥå�����ʸ����ȥޥå����ޤ���
+のいずれかとマッチする文字列とマッチします。
 

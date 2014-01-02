@@ -4,9 +4,9 @@ kind=defined
 
 --- report(out = $stdout) -> nil
 
-[[m:GC::Profiler.result]] ╓н╥К╡л╓Р out ╓к╫пно╓╥╓ч╓╧║ё
+[[m:GC::Profiler.result]] Ц│╝Г╣░Ф·°Ц┌▓ out Ц│╚Е┤╨Е┼⌡Ц│≈Ц│╬Ц│≥Ц─┌
 
-@param out ╥К╡л╓н╫пноюХ╓Р╩ьдЙ╓╥╓ч╓╧║ё╔г╔у╔╘╔К╔х╓о $stdout ╓г╓╧║ё
+@param out Г╣░Ф·°Ц│╝Е┤╨Е┼⌡Е┘┬Ц┌▓Ф▄┤Е╝ Ц│≈Ц│╬Ц│≥Ц─┌Ц┐┤Ц┐∙Ц┌╘Ц┐╚Ц┐┬Ц│╞ $stdout Ц│╖Ц│≥Ц─┌
 
 @see [[m:GC::Profiler.result]]
 

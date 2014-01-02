@@ -4,12 +4,12 @@ kind=defined
 
 --- setpgrp    -> 0
 
-�����ȥץ������� ID ��Ʊ�� ID ���ĥץ��������롼�פ�������������ȥץ������򤽤Υ꡼�����ˤ��ޤ���
-[[m:Process.#setpgid]](0, 0) ��Ʊ���Ǥ���
+カレントプロセスの ID と同じ ID をもつプロセスグループを作成し、カレントプロセスをそのリーダーにします。
+[[m:Process.#setpgid]](0, 0) と同じです。
 
-@raise Errno::EXXX �ץ��������롼�פ�����˼��Ԥ�������ȯ�����ޤ���
+@raise Errno::EXXX プロセスグループの設定に失敗した場合に発生します。
 
-@raise NotImplementedError �᥽�åɤ����ߤΥץ�åȥե�����Ǽ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError メソッドが現在のプラットフォームで実装されていない場合に発生します。
 
  fork do
    p [Process.pid, Process.getpgrp]

@@ -4,7 +4,7 @@ kind=defined
 
 --- required_attribute?(name) -> bool
 
-ɬ��°���Ǥ���п����֤��ޤ���
+必須属性であれば真を返します。
 
-@param name °��̾����ꤷ�ޤ���
+@param name 属性名を指定します。
 

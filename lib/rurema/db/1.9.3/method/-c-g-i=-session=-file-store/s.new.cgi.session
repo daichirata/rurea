@@ -4,28 +4,28 @@ kind=defined
 
 --- new(session, option = {}) -> CGI::Session::FileStore
 
-���Ȥ��������ޤ���
+自身を初期化します。
 
-[[c:CGI::Session]] ���饹�����ǻ��Ѥ��ޤ���
-�桼��������Ū�˸ƤӽФ�ɬ�פϤ���ޤ���
+[[c:CGI::Session]] クラス内部で使用します。
+ユーザが明示的に呼び出す必要はありません。
 
-@param session [[c:CGI::Session]] �Υ��󥹥��󥹤���ꤷ�ޤ���
+@param session [[c:CGI::Session]] のインスタンスを指定します。
 
-@param option �ϥå������ꤷ�ޤ���
+@param option ハッシュを指定します。
 
-�ʲ���ʸ����򥭡��Ȥ��ƻ��ꤹ�뤳�Ȥ��Ǥ��ޤ���
+以下の文字列をキーとして指定することができます。
 
 : tmpdir
-    ���å����ǡ������������ǥ��쥯�ȥ��̾������ꤷ�ޤ���
-    �ǥե���Ȥ� [[m:Dir.tmpdir]] �Ǥ���
+    セッションデータを作成するディレクトリの名前を指定します。
+    デフォルトは [[m:Dir.tmpdir]] です。
 
 : prefix
-    ���å����ǡ����Υե�����̾��Ϳ����ץ�ե��å�������ꤷ�ޤ���
-    �ǥե���Ȥ϶�ʸ����Ǥ���
+    セッションデータのファイル名に与えるプレフィックスを指定します。
+    デフォルトは空文字列です。
 
 : suffix
-    ���å����ǡ����Υե�����̾��Ϳ���륵�ե��å�������ꤷ�ޤ���
-    �ǥե���Ȥ϶�ʸ����Ǥ���
+    セッションデータのファイル名に与えるサフィックスを指定します。
+    デフォルトは空文字列です。
 
-@raise CGI::Session::NoSession ���å���󤬽��������Ƥ��ʤ�����ȯ�����ޤ���
+@raise CGI::Session::NoSession セッションが初期化されていない場合に発生します。
 

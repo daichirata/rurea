@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- next_day(n = 1) -> Date
-n Æü¸å¤òÊÖ¤·¤Ş¤¹¡£
+n æ—¥å¾Œã‚’è¿”ã—ã¾ã™ã€‚
 
-[[m:Date#succ]] ¤â»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
+[[m:Date#succ]] ã‚‚å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
-@param n Æü¿ô
+@param n æ—¥æ•°
 

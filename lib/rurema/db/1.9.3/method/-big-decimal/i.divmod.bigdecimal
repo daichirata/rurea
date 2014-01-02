@@ -2,8 +2,22 @@ names=divmod
 visibility=public
 kind=defined
 
---- divmod(n)
-@todo
+--- divmod(n) -> [BigDecimal, BigDecimal]
 
-�ܺ٤� [[m:Float#divmod]] �򻲾Ȥ��Ʋ������� 
+self を other で割った商 q と余り r を、 [q, r] という 2 要素の配列にし
+て返します。
+
+商は負の無限大負方向に丸められます。
+
+@param n self を割る数を指定します。
+
+例:
+
+  require 'bigdecimal'
+
+  a = BigDecimal.new("42")
+  b = BigDecimal.new("9")
+
+  a.divmod(b)
+  # => [#<BigDecimal:f74b3a14,'0.4E1',4(16)>, #<BigDecimal:f74b3a64,'0.6E1',4(12)>]
 

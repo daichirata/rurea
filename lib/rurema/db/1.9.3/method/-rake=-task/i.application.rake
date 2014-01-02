@@ -4,5 +4,5 @@ kind=defined
 
 --- application -> Rake::Application
 
-���Ȥ��ͭ���Ƥ��� [[c:Rake::Application]] �Υ��󥹥��󥹤��֤��ޤ���
+自身を所有している [[c:Rake::Application]] のインスタンスを返します。
 

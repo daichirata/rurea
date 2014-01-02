@@ -4,10 +4,10 @@ kind=defined
 
 --- add_trace_func(pr) -> Proc
 
-����åɤ˥ȥ졼���ѥϥ�ɥ���ɲä��ޤ���
+スレッドにトレース用ハンドラを追加します。
 
-�ɲä����ϥ�ɥ���֤��ޤ���
+追加したハンドラを返します。
 
-@param pr �ȥ졼���ϥ�ɥ�([[c:Proc]] ���֥�������)
+@param pr トレースハンドラ([[c:Proc]] オブジェクト)
 @see [[m:Thread#set_trace_func]] [[m:Kernel.#set_trace_func]]
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- each_address(name) {|address| ...} -> ()
-�ۥ���̾ name �� IP ���ɥ쥹���å����åפ���
-�ƥ�å����å׷�̤Υ��ɥ쥹���Ф��ƥ֥��å���ɾ�����ޤ���
+ホスト名 name の IP アドレスをルックアップし、
+各ルックアップ結果のアドレスに対してブロックを評価します。
 
-��å����åפ� /etc/hosts, DNS �ν�ǹԤ��ޤ���
+ルックアップは /etc/hosts, DNS の順で行います。
 
-@param name �ۥ���̾��ʸ�����Ϳ���ޤ���
+@param name ホスト名を文字列で与えます。
 

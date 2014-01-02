@@ -5,11 +5,11 @@ kind=defined
 --- home          -> String | nil
 --- home(user)    -> String | nil
 
-���ߤΥ桼���ޤ��ϻ��ꤵ�줿�桼���Υۡ���ǥ��쥯�ȥ���֤��ޤ���
+現在のユーザまたは指定されたユーザのホームディレクトリを返します。
 
-Dir.home �� Dir.home("root") ��
-File.expand_path("~") �� File.expand_path("~root") ��
-�ۤ�Ʊ���Ǥ���
+Dir.home や Dir.home("root") は
+File.expand_path("~") や File.expand_path("~root") と
+ほぼ同じです。
 
 @see [[m:File.expand_path]]
 

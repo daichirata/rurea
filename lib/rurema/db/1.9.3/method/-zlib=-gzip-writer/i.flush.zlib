@@ -4,13 +4,13 @@ kind=defined
 
 --- flush(flush = Zlib::SYNC_FLUSH) -> self
 
-�ޤ��񤭽Ф���Ƥ��ʤ��ǡ�����ե�å��夷�ޤ���
+まだ書き出されていないデータをフラッシュします。
 
-flush �� [[m:Zlib::Deflate#deflate]] ��Ʊ���Ǥ���
-��ά���� [[m:Zlib::SYNC_FLUSH]] �����Ѥ���ޤ���
-flush �� [[m:Zlib::NO_FLUSH]] ����ꤹ�뤳�Ȥ�̵��̣�Ǥ���
+flush は [[m:Zlib::Deflate#deflate]] と同じです。
+省略時は [[m:Zlib::SYNC_FLUSH]] が使用されます。
+flush に [[m:Zlib::NO_FLUSH]] を指定することは無意味です。
 
-@param flush [[m:Zlib::NO_FLUSH]] [[m:Zlib::SYNC_FLUSH]] [[m:Zlib::FULL_FLUSH]] �ʤɤ���ꤷ�ޤ���
+@param flush [[m:Zlib::NO_FLUSH]] [[m:Zlib::SYNC_FLUSH]] [[m:Zlib::FULL_FLUSH]] などを指定します。
 
   require 'zlib'
  

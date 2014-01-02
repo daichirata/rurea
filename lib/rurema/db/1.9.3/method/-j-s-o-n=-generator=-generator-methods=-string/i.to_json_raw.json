@@ -4,7 +4,7 @@ kind=defined
 
 --- to_json_raw -> String
 
-¼«¿È¤ËÂĞ¤·¤Æ [[m:String#to_json_raw_object]] ¤ò¸Æ¤Ó½Ğ¤·¤Æ [[m:Hash#to_json]] ¤·¤¿·ë²Ì¤òÊÖ¤·¤Ş¤¹¡£
+è‡ªèº«ã«å¯¾ã—ã¦ [[m:String#to_json_raw_object]] ã‚’å‘¼ã³å‡ºã—ã¦ [[m:Hash#to_json]] ã—ãŸçµæœã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:String#to_json_raw_object]], [[m:Hash#to_json]]
 

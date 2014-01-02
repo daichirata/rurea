@@ -5,7 +5,7 @@ kind=defined
 --- minor      -> Integer
 --- minor=(n)
 
-HTTP �С������Υޥ��ʡ���������ɽ�����������Ǥ���
+HTTP バージョンのマイナーを整数で表すアクセサです。
 
-@param n HTTP �С������Υޥ��ʡ��������ǻ��ꤷ�ޤ���
+@param n HTTP バージョンのマイナーを整数で指定します。
 

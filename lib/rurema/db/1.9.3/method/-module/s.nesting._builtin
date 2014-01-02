@@ -4,8 +4,8 @@ kind=defined
 
 --- nesting -> [Class, Module]
 
-���Υ᥽�åɤ�ƤӽФ��������ǤΥ��饹/�⥸�塼��Υͥ��Ⱦ�
-��������������֤��ޤ���
+このメソッドを呼び出した時点でのクラス/モジュールのネスト情
+報を配列に入れて返します。
 
   module Foo
     module Bar

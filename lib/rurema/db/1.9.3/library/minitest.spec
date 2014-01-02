@@ -3,9 +3,10 @@ classes=MiniTest=Unit=TestCase,MiniTest=Spec
 methods=Module/i.infect_with_assertions.minitest.spec,Object/i.must_be_empty.minitest.spec,Object/i.must_equal.minitest.spec,Object/i.must_be_close_to.minitest.spec,Object/i.must_be_within_epsilon.minitest.spec,Object/i.must_include.minitest.spec,Object/i.must_be_instance_of.minitest.spec,Object/i.must_be_kind_of.minitest.spec,Object/i.must_match.minitest.spec,Object/i.must_be_nil.minitest.spec,Object/i.must_be.minitest.spec,Object/i.must_raise.minitest.spec,Object/i.must_respond_to.minitest.spec,Object/i.must_be_same_as.minitest.spec,Object/i.must_send.minitest.spec,Object/i.must_throw.minitest.spec,Kernel/i.describe.minitest.spec
 sublibraries=
 is_sublibrary=false
+category=Development
 
-BDD É÷¤Ë¥Æ¥¹¥È¤ò½ñ¤¯¤¿¤á¤Î¥¯¥é¥¹¤ä¥á¥½¥Ã¥É¤òÄêµÁ¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+BDD é¢¨ã«ãƒ†ã‚¹ãƒˆã‚’æ›¸ããŸã‚ã®ã‚¯ãƒ©ã‚¹ã‚„ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å®šç¾©ã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-¤³¤Î¥é¥¤¥Ö¥é¥ê¤Ï [[c:Object]] ¤Ë BDD (Behavior Driven Development) ÍÑ¤Î¸¡ºº¥á¥½¥Ã¥É¤òÄÉ²Ã¤·¤Ş¤¹¡£
-ÄÉ²Ã¤µ¤ì¤ë¥á¥½¥Ã¥É¤Ï [[c:MiniTest::Assertions]] ¤ËÄêµÁ¤µ¤ì¤Æ¤¤¤ë¥á¥½¥Ã¥É¤Ø¤Î
-Çö¤¤¥é¥Ã¥Ñ¡¼¤Ë¤Ê¤Ã¤Æ¤¤¤Ş¤¹¡£
+ã“ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã¯ [[c:Object]] ã« BDD (Behavior Driven Development) ç”¨ã®æ¤œæŸ»ãƒ¡ã‚½ãƒƒãƒ‰ã‚’è¿½åŠ ã—ã¾ã™ã€‚
+è¿½åŠ ã•ã‚Œã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã¯ [[c:MiniTest::Assertions]] ã«å®šç¾©ã•ã‚Œã¦ã„ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ã¸ã®
+è–„ã„ãƒ©ãƒƒãƒ‘ãƒ¼ã«ãªã£ã¦ã„ã¾ã™ã€‚

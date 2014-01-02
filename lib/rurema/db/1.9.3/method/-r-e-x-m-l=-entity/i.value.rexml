@@ -2,6 +2,14 @@ names=value
 visibility=public
 kind=defined
 
---- value
-@todo
+--- value -> String | nil
+実体の値を返します。
+
+パラメータ実体参照(parameter entity)のみが展開され、
+そうでない実体参照(general entity)は展開されて
+いないような値が返されます。
+
+外部実体(external enitity)宣言の場合は nil を返します。
+
+@see [[m:REXML::Entity#unnormalized]], [[m:REXML::Entity#normalized]]
 

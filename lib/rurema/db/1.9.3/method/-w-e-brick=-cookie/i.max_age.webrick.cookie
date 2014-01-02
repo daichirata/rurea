@@ -5,7 +5,7 @@ kind=defined
 --- max_age          -> Integer
 --- max_age=(value)
 
-¥¯¥Ã¥­¡¼¤Î¼÷Ì¿¤òÀ°¿ô(Ã±°Ì¤ÏÉÃ)¤ÇÉ½¤¹¥¢¥¯¥»¥µ¤Ç¤¹¡£
+ã‚¯ãƒƒã‚­ãƒ¼ã®å¯¿å‘½ã‚’æ•´æ•°(å˜ä½ã¯ç§’)ã§è¡¨ã™ã‚¢ã‚¯ã‚»ã‚µã§ã™ã€‚
 
-@param value ¥¯¥Ã¥­¡¼¤Î¼÷Ì¿¤òÀµ¤ÎÀ°¿ô¤Ç»ØÄê¤·¤Þ¤¹¡£0 ¤ÏÄ¾¤Á¤ËÇË´þ¤µ¤ì¤ë»ö¤ò°ÕÌ£¤¹¤ë¡£
+@param value ã‚¯ãƒƒã‚­ãƒ¼ã®å¯¿å‘½ã‚’æ­£ã®æ•´æ•°ã§æŒ‡å®šã—ã¾ã™ã€‚0 ã¯ç›´ã¡ã«ç ´æ£„ã•ã‚Œã‚‹äº‹ã‚’æ„å‘³ã™ã‚‹ã€‚
 

@@ -1,8 +1,9 @@
-names=abs
+names=abs,magnitude
 visibility=public
 kind=defined
 
---- abs    -> Numeric
+--- abs        -> Numeric
+--- magnitude  -> Numeric
 
-���Ȥ� 0 �ʾ�ʤ�� self �򡢤����Ǥʤ����� -self ���֤��ޤ���
+自身が 0 以上ならば self を、そうでない場合は -self を返します。
 

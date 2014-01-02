@@ -1,6 +1,0 @@
-names=ppx
-visibility=public
-kind=defined
-
---- ppx(prefix, *objs)
-

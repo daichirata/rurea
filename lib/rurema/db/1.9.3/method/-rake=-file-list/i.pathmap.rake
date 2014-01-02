@@ -4,7 +4,7 @@ kind=defined
 
 --- pathmap(spec = nil) -> Rake::FileList
 
-³ÆÍ×ÁÇ¤Ë [[m:String#pathmap]] ¤òÅ¬ÍÑ¤·¤¿¿·¤·¤¤ [[c:Rake::FileList]] ¤òÊÖ¤·¤Ş¤¹¡£
+å„è¦ç´ ã« [[m:String#pathmap]] ã‚’é©ç”¨ã—ãŸæ–°ã—ã„ [[c:Rake::FileList]] ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:String#pathmap]]
 

@@ -6,4 +6,4 @@ library=drb
 aliases=
 aliasof=
 
-
+drb ライブラリ固有の例外を表すクラス

@@ -4,18 +4,18 @@ kind=defined
 
 --- alias_method(new, original) -> self
 
-�᥽�åɤ���̾��������ޤ���
+メソッドの別名を定義します。
 
-alias �Ȥΰ㤤�ϰʲ����̤�Ǥ���
+alias との違いは以下の通りです。
 
-  * �᥽�å�̾�� [[c:String]] �ޤ��� [[c:Symbol]] �ǻ��ꤷ�ޤ�
-  * �������Х��ѿ�����̾��Ĥ��뤳�ȤϤǤ��ޤ���
+  * メソッド名は [[c:String]] または [[c:Symbol]] で指定します
+  * グローバル変数の別名をつけることはできません
 
-�ޤ������饹�᥽�åɤ��Ф��ƻ��Ѥ��뤳�ȤϤǤ��ޤ���
+また、クラスメソッドに対して使用することはできません。
 
-@param new �������᥽�å�̾��[[c:String]] �ޤ��� [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param new 新しいメソッド名。[[c:String]] または [[c:Symbol]] で指定します。
 
-@param original ���Υ᥽�å�̾��[[c:String]] �ޤ��� [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param original 元のメソッド名。[[c:String]] または [[c:Symbol]] で指定します。
 
 @see [[ref:d:spec/def#alias]]
 

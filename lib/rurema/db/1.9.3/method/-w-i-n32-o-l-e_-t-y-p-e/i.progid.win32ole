@@ -3,20 +3,20 @@ visibility=public
 kind=defined
 
 --- progid -> String | nil
-self��PROGID��������ޤ���
+selfのPROGIDを取得します。
 
-PROGID�ϡ�������ǽ��OLE�����ȥ᡼����󥵡��Ф�CoClass�ʥ���ݡ��ͥ��
-���饹�ˤ����ĥ쥸���ȥ���Ͽ̾�Ǥ���[[m:WIN32OLE.new]]�ΰ����˻��ꤷ��
-WIN32OLE���֥������Ȥ������Ǥ��ޤ���
+PROGIDは、生成可能なOLEオートメーションサーバのCoClass（コンポーネント
+クラス）が持つレジストリ登録名です。[[m:WIN32OLE.new]]の引数に指定して
+WIN32OLEオブジェクトを生成できます。
 
-@return self��PROGID��ʸ������֤��ޤ���self��PROGID������ʤ����ޤ���
-        CoClass�Ǥʤ�����nil���֤��ޤ���
+@return selfのPROGIDを文字列で返します。selfがPROGIDを持たない、または
+        CoClassでない場合はnilを返します。
 
    tobj = WIN32OLE_TYPE.new('Microsoft Excel 14.0 Object Library', 'Application')
    p tobj.progid   # => "Excel.Application.14"
 
-������ϡ�Excle��Application���饹����Excel.Application.14�פȤ���
-PROGID����Ĥ��Ȥ򼨤��ޤ���
+この例は、ExcleのApplicationクラスが「Excel.Application.14」という
+PROGIDを持つことを示します。
 
 @see [[m:WIN32OLE.new]]
 

@@ -5,8 +5,8 @@ kind=defined
 --- level=(level)
 --- sev_threshold=(level)
 
-Logger ���֥������ȤΥ�����٥�����ꤷ�ޤ���������٥뤬�������㤤��å�������
-���Ϥ���ޤ���
+Logger オブジェクトのログレベルを設定します。ログレベルがこれより低いメッセージは
+出力されません。
 
-@param level ������٥����ꤷ�ޤ���
+@param level ログレベルを指定します。
 

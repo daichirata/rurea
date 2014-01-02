@@ -4,8 +4,8 @@ kind=defined
 
 --- safe_level    -> Integer
 
-self �Υ����ե�٥���֤��ޤ��������ȥ���åɤ�
-safe_level �ϡ�[[m:$SAFE]] ��Ʊ���Ǥ���
+self のセーフレベルを返します。カレントスレッドの
+safe_level は、[[m:$SAFE]] と同じです。
 
-�����ե�٥�ˤĤ��Ƥ�[[d:spec/safelevel]]�򻲾Ȥ��Ƥ���������
+セーフレベルについては[[d:spec/safelevel]]を参照してください。
 

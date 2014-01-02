@@ -4,11 +4,11 @@ kind=defined
 
 --- parse(str)    -> [WEBrick::Cookie]
 
-¥æ¡¼¥¶¡¼¥¨¡¼¥¸¥§¥ó¥È¤«¤éÁ÷¤é¤ì¤Æ¤­¤¿ Cookie ¥Ø¥Ã¥À¤ÎÃÍ str ¤ò¥Ñ¡¼¥¹¤·¡¢
-¿·¤·¤¯ [[c:WEBrick::Cookie]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤½¤ÎÇÛÎó¤òÊÖ¤·¤Þ¤¹¡£
-³ÆÂ°À­¤Î·Á¼°¤¬»ÅÍÍ¤Ë½àµò¤·¤Æ¤¤¤ë¤«¤ò³ÎÇ§¤·¤Þ¤»¤ó¡£
+ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¨ãƒ¼ã‚¸ã‚§ãƒ³ãƒˆã‹ã‚‰é€ã‚‰ã‚Œã¦ããŸ Cookie ãƒ˜ãƒƒãƒ€ã®å€¤ str ã‚’ãƒ‘ãƒ¼ã‚¹ã—ã€
+æ–°ã—ã [[c:WEBrick::Cookie]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ãã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
+å„å±žæ€§ã®å½¢å¼ãŒä»•æ§˜ã«æº–æ‹ ã—ã¦ã„ã‚‹ã‹ã‚’ç¢ºèªã—ã¾ã›ã‚“ã€‚
 
-@param str Cookie ¤òÉ½¤¹Ê¸»úÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param str Cookie ã‚’è¡¨ã™æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   require 'webrick'
   include WEBrick

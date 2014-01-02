@@ -4,5 +4,5 @@ kind=defined
 
 --- standard_rake_options -> Array
 
-Rake ���ޥ�ɤǻ��Ѥ���ɸ��Ū�ʥ��ޥ�ɥ饤�󥪥ץ����Υꥹ�Ȥ��֤��ޤ���
+Rake コマンドで使用する標準的なコマンドラインオプションのリストを返します。
 

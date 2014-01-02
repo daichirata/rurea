@@ -4,7 +4,7 @@ kind=defined
 
 --- only_signed=(flag)
 
-��̾�դ��� Gem �Τߥ��󥹥ȡ��뤹�뤫�ɤ��������ꤷ�ޤ���
+署名付きの Gem のみインストールするかどうかを設定します。
 
-@param flag �����ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真、または偽を指定します。
 

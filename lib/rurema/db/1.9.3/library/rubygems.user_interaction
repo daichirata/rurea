@@ -1,7 +1,8 @@
 requires=
-classes=Gem=DefaultUserInteraction,Gem=UserInteraction,Gem=StreamUI,Gem=StreamUI=SilentProgressReporter,Gem=StreamUI=SimpleProgressReporter,Gem=StreamUI=VerboseProgressReporter,ConsoleUI,SilentUI
+classes=Gem=DefaultUserInteraction,Gem=UserInteraction,Gem=StreamUI,Gem=StreamUI=SilentProgressReporter,Gem=StreamUI=SimpleProgressReporter,Gem=StreamUI=VerboseProgressReporter,Gem=ConsoleUI,Gem=SilentUI
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
-•Ê°º•∂§»§Œ§‰§Í§»§Í§Úπ‘§¶•È•§•÷•È•Í§«§π°£
+„É¶„Éº„Ç∂„Å®„ÅÆ„ÇÑ„Çä„Å®„Çä„ÇíË°å„ÅÜ„É©„Ç§„Éñ„É©„É™„Åß„Åô„ÄÇ

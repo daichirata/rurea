@@ -4,6 +4,6 @@ kind=defined
 
 --- encoding
 @todo
-��������XML�Υ��󥳡��ǥ��󥰤��֤��ޤ����ǥե���Ȥ�
-UTF-8�Ǥ���
+作成するXMLのエンコーディングを返します．デフォルトは
+UTF-8です．
 

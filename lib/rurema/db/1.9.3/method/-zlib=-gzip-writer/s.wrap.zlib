@@ -5,19 +5,19 @@ kind=defined
 --- wrap(io, level = Zlib::DEFAULT_COMPRESSION, strategy = Zlib::DEFAULT_STRATEGY) -> Zlib::GzipWriter
 --- wrap(io, level = Zlib::DEFAULT_COMPRESSION, strategy = Zlib::DEFAULT_STRATEGY) {|gz| ... } -> object
 
-io �ȴ�Ϣ�դ���줿 GzipWriter ���֥������Ȥ�������ޤ���
-�֥��å���Ϳ����줿��硢
-���������Ȥ��ƥ֥��å���¹Ԥ��ޤ���
-�֥��å��μ¹Ԥ���λ����ȡ�GzipWriter ���֥������Ȥϼ�ưŪ��
-������������ޤ�����Ϣ�դ����Ƥ��� IO ���֥������Ȥޤ�
-���������������ʤ����ϡ��֥��å���� [[m:Zlib::GzipFile#finish]]
-�᥽�åɤ�ƤӽФ��Ʋ�������
+io と関連付けられた GzipWriter オブジェクトを作成します。
+ブロックが与えられた場合、
+それを引数としてブロックを実行します。
+ブロックの実行が終了すると、GzipWriter オブジェクトは自動的に
+クローズされます。関連付けられている IO オブジェクトまで
+クローズしたくない時は、ブロック中で [[m:Zlib::GzipFile#finish]]
+メソッドを呼び出して下さい。
 
-@param io  IO���֥������ȡ��⤷���Ͼ��ʤ��Ȥ⡢
-           [[m:IO#write]] �� Ʊ��ư��򤹤� write �᥽�åɤ��������Ƥ���ɬ�פ�����ޤ���
-@param level  0-9���ϰϤ���������ꤷ�ޤ����ܺ٤�zlib.h�򻲾Ȥ��Ƥ��������� 
-@param strategy [[m:Zlib::FILTERED]], [[m:Zlib::HUFFMAN_ONLY]], [[m:Zlib::DEFAULT_STRATEGY]]�ʤɻ��ꤷ�ޤ���
-                �ܺ٤�zlib.h �򻲾Ȥ��Ƥ���������
+@param io  IOオブジェクト、もしくは少なくとも、
+           [[m:IO#write]] と 同じ動作をする write メソッドが定義されている必要があります。
+@param level  0-9の範囲の整数を指定します。詳細はzlib.hを参照してください。 
+@param strategy [[m:Zlib::FILTERED]], [[m:Zlib::HUFFMAN_ONLY]], [[m:Zlib::DEFAULT_STRATEGY]]など指定します。
+                詳細はzlib.h を参照してください。
 
   require 'zlib'
   

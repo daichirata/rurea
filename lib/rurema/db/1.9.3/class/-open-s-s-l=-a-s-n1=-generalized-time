@@ -6,4 +6,4 @@ library=openssl
 aliases=
 aliasof=
 
-ASN.1 ¤Î GeneralizedTime ·¿(Universal ¥¿¥°¤Î¥¿¥°ÈÖ¹æ23)¤òÉ½¤¹¥¯¥é¥¹¤Ç¤¹¡£
+ASN.1 ã® GeneralizedTime å‹(Universal ã‚¿ã‚°ã®ã‚¿ã‚°ç•ªå·23)ã‚’è¡¨ã™ã‚¯ãƒ©ã‚¹ã§ã™ã€‚

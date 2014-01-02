@@ -6,11 +6,11 @@ library=net.imap
 aliases=
 aliasof=
 
-�����Ф���Υ쥹�ݥ󥹤����顼�򼨤��Ƥ������ȯ�������㳰
-�Υ��饹�Ǥ���
+サーバからのレスポンスがエラーを示している場合に発生する例外
+のクラスです。
 
-�ºݤˤϤ����Ѿ�����
+実際にはこれを継承した
   * [[c:Net::IMAP::NoResponseError]]
   * [[c:Net::IMAP::BadResponseError]]
   * [[c:Net::IMAP::ByeResponseError]]
-�����Υ��饹���㳰��ȯ�����ޤ���
+これらのクラスの例外が発生します。

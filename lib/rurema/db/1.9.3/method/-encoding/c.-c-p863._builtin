@@ -4,10 +4,10 @@ kind=defined
 
 --- IBM863 -> Encoding
 --- CP863 -> Encoding
-CP863 ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¡£
+CP863 ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
 
-¥Õ¥é¥ó¥¹¸ì¤ËÍÑ¤¤¤é¤ì¤ë¡¢
-8bit single-byte ¥¨¥ó¥³¡¼¥Ç¥£¥ó¥°¤Ç¤¹¡£
+ãƒ•ãƒ©ãƒ³ã‚¹èªã«ç”¨ã„ã‚‰ã‚Œã‚‹ã€
+8bit single-byte ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã§ã™ã€‚
 
 @see [[url:http://en.wikipedia.org/wiki/Code_page_863]]
 

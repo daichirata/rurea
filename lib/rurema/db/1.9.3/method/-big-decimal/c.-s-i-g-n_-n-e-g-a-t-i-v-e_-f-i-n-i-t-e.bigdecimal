@@ -2,6 +2,7 @@ names=SIGN_NEGATIVE_FINITE
 visibility=public
 kind=defined
 
---- SIGN_NEGATIVE_FINITE
-@todo
+--- SIGN_NEGATIVE_FINITE -> Fixnum
+
+負の値に対応する [[m:BigDecimal#sign]] の値を返します。
 

@@ -4,6 +4,6 @@ kind=defined
 
 --- use_registry    -> bool
 
-¹½À®Í×ÁÇ registry ¤ò¼õ¤±ÉÕ¤±¤ë¤Ê¤é true ¤òÊÖ¤·¤Ş¤¹¡£
-URI::Generic ¥¯¥é¥¹¤Ç¤Ï false ¤Ç¤¹¡£
+æ§‹æˆè¦ç´  registry ã‚’å—ã‘ä»˜ã‘ã‚‹ãªã‚‰ true ã‚’è¿”ã—ã¾ã™ã€‚
+URI::Generic ã‚¯ãƒ©ã‚¹ã§ã¯ false ã§ã™ã€‚
 

@@ -6,11 +6,11 @@ kind=defined
 --- header_convert{|field| ... }
 --- header_convert{|field, field_info| ... }
 
-[[m:CSV#convert]] �˻��Ƥ��ޤ������إå����ѤΥ᥽�åɤǤ���
+[[m:CSV#convert]] に似ていますが、ヘッダ行用のメソッドです。
 
-���Υ᥽�åɤϥإå��Ԥ��ɤ߹������˸ƤӽФ��ʤ���Фʤ�ޤ���
+このメソッドはヘッダ行を読み込む前に呼び出さなければなりません。
 
-@param name �Ѵ����̾������ꤷ�ޤ���
+@param name 変換器の名前を指定します。
 
 @see [[m:CSV#convert]]
 

@@ -4,6 +4,6 @@ kind=defined
 
 --- quiet -> bool
 
-���ޥ�ɥ饤������� --quiet ���ץ�������ꤷ�Ƥ�����硢true ���֤�
-�ޤ��������Ǥʤ����� nil ���֤��ޤ���
+コマンドライン引数の --quiet オプションを指定していた場合、true を返し
+ます。そうでない場合は nil を返します。
 

@@ -4,5 +4,5 @@ kind=defined
 
 --- reenable -> false
 
-���Ȥ�⤦���ټ¹Խ����褦�ˤ��ޤ���
+自身をもう一度実行出来るようにします。
 

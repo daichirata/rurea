@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- cert -> OpenSSL::X509::Certificate
-╪╚й╛╪╚©х╓Р╬злю╓╧╓К╓©╓А╓н╬злю╫Я╓Рйж╓╥╓ч╓╧║ё
+Х┤╙Е┬├Х┤╙Х╨╚Ц┌▓Х╗╪Ф≤▌Ц│≥Ц┌▀Ц│÷Ц┌│Ц│╝Х╗╪Ф≤▌Ф⌡╦Ц┌▓Х©■Ц│≈Ц│╬Ц│≥Ц─┌
 
-╔г╔у╔╘╔К╔х╓о nil (╬злю╫Я╓й╓╥)╓г╓╧║ё
+Ц┐┤Ц┐∙Ц┌╘Ц┐╚Ц┐┬Ц│╞ nil (Х╗╪Ф≤▌Ф⌡╦Ц│╙Ц│≈)Ц│╖Ц│≥Ц─┌
 
-@see [[m:OpenSSL::SSL::SSLContext#cert]]
+@see [[m:OpenSSL::SSL::SSLContext#cert=]]
 

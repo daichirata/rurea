@@ -3,5 +3,5 @@ visibility=private
 kind=defined
 
 --- state -> Integer
-C�����٥���������Ƥ��빽¤��MT�ξ��֤򻲾Ȥ��ޤ����ܤ�����random.c �򻲾Ȥ��Ƥ���������
+C言語レベルで定義されている構造体MTの状態を参照します。詳しくはrandom.c を参照してください。
 

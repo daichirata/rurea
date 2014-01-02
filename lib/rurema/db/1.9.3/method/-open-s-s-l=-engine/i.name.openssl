@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- name -> String
-engine ¤Î(¿Í´Ö¤ËÆÉ¤ß¤ä¤¹¤¤)Ì¾¾Î¤òÊ¸»úÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+engine ã®(äººé–“ã«èª­ã¿ã‚„ã™ã„)åç§°ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   engine.name # => "Atalla hardware engine support"
 
 @see [[m:OpenSSL::Engine#id]]

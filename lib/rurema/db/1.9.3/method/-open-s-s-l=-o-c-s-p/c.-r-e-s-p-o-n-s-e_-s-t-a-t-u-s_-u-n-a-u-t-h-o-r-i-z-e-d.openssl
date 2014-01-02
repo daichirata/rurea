@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- RESPONSE_STATUS_UNAUTHORIZED -> Integer
-[[m:OpenSSL::OCSP::Response#status]] �Υ��ơ����������ɤ� ��
-���饤����Ȥ��饵���Фؤα�����ǧ�Ĥ���Ƥ��ʤ����Ȥ��̣���ޤ���
+[[m:OpenSSL::OCSP::Response#status]] のステータスコードで 、
+クライアントからサーバへの応答が認可されていないことを意味します。
 
-�ܤ����� [[RFC:2560]] 2.3 �򸫤Ƥ���������
+詳しくは [[RFC:2560]] 2.3 を見てください。
 

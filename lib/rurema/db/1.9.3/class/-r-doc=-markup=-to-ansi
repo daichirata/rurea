@@ -6,5 +6,5 @@ library=rdoc.markup.to_ansi
 aliases=
 aliasof=
 
-RDoc �����Υɥ�����Ȥ� ANSI ���������ץ������󥹤ǿ��դ����륯�饹��
-����
+RDoc 形式のドキュメントを ANSI エスケープシーケンスで色付けするクラスで
+す。

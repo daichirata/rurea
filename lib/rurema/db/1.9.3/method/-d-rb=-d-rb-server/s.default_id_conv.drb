@@ -2,9 +2,10 @@ names=default_id_conv
 visibility=public
 kind=defined
 
---- default_id_conv(idconv)
-@todo
+--- default_id_conv(idconv) -> ()
+サーバ起動時の :id_conv オプションのデフォルト値を指定します。
 
-Set the default value for the :id_conv option.
-See #new(). The initial default value is a [[c:DRb::DRbIdConv]] instance.
+初期値は [[c:DRb::DRbIdConv]] のインスタンスです。
+
+@see [[m:DRb::DRbServer.new]], [[m:DRb.#start_service]]
 

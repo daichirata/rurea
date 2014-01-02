@@ -4,23 +4,23 @@ kind=defined
 
 --- next_values -> Array
 
-�ּ��פΥ��֥������Ȥ�������֤��ޤ���
+「次」のオブジェクトを配列で返します。
 
-[[m:Enumerator#next]] �Ȥۤ�Ʊ�ͤε�ư�򤷤ޤ�����ü�ޤ���ã��������
-[[c:StopIteration]] �㳰��ȯ�������ޤ���
+[[m:Enumerator#next]] とほぼ同様の挙動をします。終端まで到達した場合は
+[[c:StopIteration]] 例外を発生させます。
 
-���Υ᥽�åɤϡ�
+このメソッドは、
   yield
-��
+と
   yield nil
-����̤��뤿��˻Ȥ��ޤ���
+を区別するために使えます。
 
-next �᥽�åɤˤ�볰�����ξ��֤�¾�Υ��ƥ졼���᥽�åɤˤ��
-�������ˤϱƶ���Ϳ���ޤ���
-�������� [[m:IO#each_line]] �Τ褦�ˤ�����Ȥ����ᥫ�˥��ब�����Ѥ�
-ȼ�äƤ�����ˤϱƶ����������ޤ���
+next メソッドによる外部列挙の状態は他のイテレータメソッドによる
+内部列挙には影響を与えません。
+ただし、 [[m:IO#each_line]] のようにおおもとの列挙メカニズムが副作用を
+伴っている場合には影響があり得ます。
 
-  # �㡢 next �� next_values �ΰ㤤��
+  # 例、 next と next_values の違いを
   o = Object.new
   def o.each
     yield
@@ -49,6 +49,6 @@ next �᥽�åɤˤ�볰�����ξ��֤�¾�Υ��ƥ졼���᥽�åɤˤ��
   #  yield nil        [nil]            nil
   #  yield [1, 2]     [[1, 2]]         [1, 2]
 
-@raise StopIteration �����֤����˺Ǹ����ã���Ƥ���Ȥ�
+@raise StopIteration 列挙状態が既に最後へ到達しているとき
 @see [[m:Enumerator#next]], [[m:Enumerator#peek]], [[m:Enumerator#peek_values]]
 

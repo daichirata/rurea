@@ -4,6 +4,6 @@ kind=defined
 
 --- unbind -> UnboundMethod
 
-self ¤Î¥ì¥·¡¼¥Ð¤È¤Î´ØÏ¢¤ò¼è¤ê½ü¤¤¤¿ [[c:UnboundMethod]] ¥ª¥Ö
-¥¸¥§¥¯¥È¤òÀ¸À®¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+self ã®ãƒ¬ã‚·ãƒ¼ãƒã¨ã®é–¢é€£ã‚’å–ã‚Šé™¤ã„ãŸ [[c:UnboundMethod]] ã‚ªãƒ–
+ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¦è¿”ã—ã¾ã™ã€‚
 

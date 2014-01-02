@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- METHOD_ALL -> Integer
-engine ╓╛╩Щ╓ц╓ф╓╓╓К╣║г╫╓Р╓╧╓ы╓ф openssl ╓н╔г╔у╔╘╔К╔х╓к╓╧╓К╓Ё╓х
-╓Р╟улё╓╥╓ч╓╧║ё
+engine Ц│▄Ф▄│Ц│ёЦ│╕Ц│└Ц┌▀Ф╘÷Х┐╫Ц┌▓Ц│≥Ц│╧Ц│╕ openssl Ц│╝Ц┐┤Ц┐∙Ц┌╘Ц┐╚Ц┐┬Ц│╚Ц│≥Ц┌▀Ц│⌠Ц│╗
+Ц┌▓Ф└▐Е▒ЁЦ│≈Ц│╬Ц│≥Ц─┌
 
-[[m:OpenSSL::Engine#set_default]] ╓н╔у╔И╔╟╓х╓╥╓ф╩х╓╓╓ч╓╧║ё
+[[m:OpenSSL::Engine#set_default]] Ц│╝Ц┐∙Ц┐╘Ц┌╟Ц│╗Ц│≈Ц│╕Д╫©Ц│└Ц│╬Ц│≥Ц─┌
 

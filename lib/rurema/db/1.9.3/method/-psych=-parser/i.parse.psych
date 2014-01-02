@@ -2,11 +2,10 @@ names=parse
 visibility=public
 kind=defined
 
---- parse(yaml)
-@todo
+--- parse(yaml) -> self
 
-Parse the YAML document contained in yaml.  Events will be called on
-the handler set on the parser instance.
+YAML ドキュメントをパースし、イベントハンドラに
+イベントを逐次通知します。
 
-@see [[c:Psych::Parser]], [[m:Psych::Parser#handler]]
+@see [[m:Psych::Parser.new]], [[c:Psych::Handler]], [[m:Psych::Parser#handler]]
 

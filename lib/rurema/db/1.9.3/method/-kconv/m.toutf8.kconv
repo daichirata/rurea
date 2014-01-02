@@ -4,16 +4,16 @@ kind=defined
 
 --- toutf8(str) -> String
 
-ʸ���� str �Υ��󥳡��ǥ��󥰤� UTF-8 ���Ѵ������֤��ޤ���
+文字列 str のエンコーディングを UTF-8 に変換して返します。
 
-���Υ᥽�åɤ� MIME ���󥳡��ɤ��줿ʸ�����Ÿ������
-������Ⱦ�ѥ��ʤ����Ѥ��Ѵ����ޤ���
-�������Ѵ��������ʤ����ϡ� [[m:NKF.#nkf]]('-wxm0', str)
-��ȤäƤ���������
+このメソッドは MIME エンコードされた文字列を展開し、
+いわゆる半角カナを全角に変換します。
+これらを変換したくない場合は、 [[m:NKF.#nkf]]('-wxm0', str)
+を使ってください。
 
-Kconv.kconv(str, Kconv::UTF8)��Ʊ���Ǥ���
+Kconv.kconv(str, Kconv::UTF8)と同じです。
 
-@param str �Ѵ�����ʸ����
+@param str 変換元の文字列
 @see [[m:String#toutf8]]
 
 

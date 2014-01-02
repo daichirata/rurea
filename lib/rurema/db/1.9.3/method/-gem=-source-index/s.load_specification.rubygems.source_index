@@ -4,11 +4,11 @@ kind=defined
 
 --- load_specification(file_name) -> Gem::Specification | nil
 
-Ϳ����줿�ե�����̾���� Ruby ������ץȷ����� gemspec ������ɤ���
-[[c:Gem::Specification]] �Υ��󥹥��󥹤��֤��ޤ���
+与えられたファイル名から Ruby スクリプト形式の gemspec をロードして
+[[c:Gem::Specification]] のインスタンスを返します。
 
-@param file_name �ե�����̾����ꤷ�ޤ���
+@param file_name ファイル名を指定します。
 
-@raise SignalException gemspec ������ɤ��Ƥ���Ȥ���ȯ�����ޤ���
+@raise SignalException gemspec をロードしているときに発生します。
 
-@raise SystemExit gemspec ������ɤ��Ƥ���Ȥ���ȯ�����ޤ���
+@raise SystemExit gemspec をロードしているときに発生します。

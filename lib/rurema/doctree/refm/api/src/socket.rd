@@ -1,79 +1,70 @@
-socket �ϥץ����������Ȥ��̿� (�ץ��������̿����ۥ��ȴ��̿�) ��¸����ޤ���
+category Network
 
-=== ���饹
+socket はプロセス外部との通信 (プロセス間通信、ホスト間通信) を実現します。
 
- * [[c:BasicSocket]]: �����åȤ�ɽ����ݥ��饹
- * [[c:IPSocket]]: ���󥿡��ͥåȥɥᥤ�󥽥��åȤ���ݥ��饹
- * [[c:TCPSocket]]: ���󥿡��ͥåȥɥᥤ��Υ��ȥ꡼�෿�����åȤΥ��饹
- * [[c:TCPServer]]: TCP/IP���ȥ꡼�෿��³�Υ�����¦�Υ����åȤΥ��饹
- * [[c:SOCKSSocket]]: TCPSocket �� SOCKS �б��������饹
- * [[c:UDPSocket]]: ���󥿡��ͥåȥɥᥤ��Υǡ�������෿�����åȤΥ��饹
- * [[c:UNIXSocket]]: Unix�ɥᥤ��Υ��ȥ꡼�෿�����åȤΥ��饹
- * [[c:UNIXServer]]: Unix���ȥ꡼�෿��³�Υ�����¦�Υ����åȤΥ��饹
- * [[c:Socket]]: ���٥륽���åȥ��󥿡��ե�����
 
-=== �⥸�塼��
+=== ソケットアドレス
 
- * [[c:Socket::Constants]]
+ソケットというのは通信路の末端です。
+たとえば 1対1 の通信では、まず通信路の両端にひとつずつソケットをつくり、
+それらのソケットを接続することによって通信路が確立し、相互に通信できるようになります。
+この接続時に、一方のソケットにもう一方のソケットの場所を教えてやる必要がありますが、
+この場所を指定するものがソケットアドレスです。
 
-=== �����åȥ��ɥ쥹
+ソケットアドレスはソケットの種類によって中身が異なります。
+たとえば TCP では IP アドレスとポート番号ですし、
+Unix ドメインソケットではソケットファイルを指すパス名です。
 
-�����åȤȤ����Τ��̿�ϩ����ü�Ǥ���
-���Ȥ��� 1��1 ���̿��Ǥϡ��ޤ��̿�ϩ��ξü�ˤҤȤĤ��ĥ����åȤ�Ĥ��ꡢ
-�����Υ����åȤ���³���뤳�Ȥˤ�ä��̿�ϩ����Ω������ߤ��̿��Ǥ���褦�ˤʤ�ޤ���
-������³���ˡ������Υ����åȤˤ⤦�����Υ����åȤξ��򶵤��Ƥ��ɬ�פ�����ޤ�����
-���ξ�����ꤹ���Τ������åȥ��ɥ쥹�Ǥ���
+#@since 1.9.1
+ソケットアドレスを取り扱うための便利で高水準なクラスとして [[c:Addrinfo]] があります。
+#@end
 
-�����åȥ��ɥ쥹�ϥ����åȤμ���ˤ�ä���Ȥ��ۤʤ�ޤ���
-���Ȥ��� TCP �Ǥ� IP ���ɥ쥹�ȥݡ����ֹ�Ǥ�����
-Unix �ɥᥤ�󥽥��åȤǤϥ����åȥե������ؤ��ѥ�̾�Ǥ���
+[[c:IPSocket]] および [[c:UNIXSocket]] 以下のクラス階層では、
+わざわざソケットアドレスという形式にまとめなくてもよいよう、
+ソケットアドレスの中身を直接扱えるメソッドが用意されています。
 
-[[c:IPSocket]] ����� [[c:UNIXSocket]] �ʲ��Υ��饹���ؤǤϡ�
-�虜�虜�����åȥ��ɥ쥹�Ȥ��������ˤޤȤ�ʤ��Ƥ�褤�褦��
-�����åȥ��ɥ쥹����Ȥ�ľ�ܰ�����᥽�åɤ��Ѱդ���Ƥ��ޤ���
+また、[[c:IPSocket]] 以下での IP アドレスとポート番号の指定は、
+数値で表現するだけでなく、ホスト名やサービス名が使えます。
+これについては以下の「ホスト指定形式」と「サービス指定形式」を参照してください。
 
-�ޤ���[[c:IPSocket]] �ʲ��Ǥ� IP ���ɥ쥹�ȥݡ����ֹ�λ���ϡ�
-���ͤ�ɽ����������Ǥʤ����ۥ���̾�䥵���ӥ�̾���Ȥ��ޤ���
-����ˤĤ��Ƥϰʲ��Ρ֥ۥ��Ȼ�������פȡ֥����ӥ���������פ򻲾Ȥ��Ƥ���������
+また、C のレベルの「ソケットアドレス構造体を pack した文字列」も使用できます。
+これは主に低レベルソケットインターフェース ([[c:Socket]]) で用いられます。
 
-�ޤ���C �Υ�٥�Ρ֥����åȥ��ɥ쥹��¤�Τ� pack ����ʸ����פ���ѤǤ��ޤ���
-����ϼ�����٥륽���åȥ��󥿡��ե����� ([[c:Socket]]) ���Ѥ����ޤ���
+====[a:host_format] ホスト指定形式
 
-====[a:host_format] �ۥ��Ȼ������
+AF_INET なソケットにおいてホストを指定するには以下のいずれか
+の形式を指定します。
 
-AF_INET �ʥ����åȤˤ����ƥۥ��Ȥ���ꤹ��ˤϰʲ��Τ����줫
-�η�������ꤷ�ޤ���
+  * ホスト名 (例: "localhost")
+  * octet decimalによるIPアドレス(文字列) (例: "127.0.0.1")
+  * 空文字列 (""), 文字列 "<any>" - INADDR_ANYに相当
+  * 文字列 "<broadcast>" - INADDR_BROADCASTに相当
+  * IPアドレスを表す 32bit の整数 (例: 0x7f000001)
 
-  * �ۥ���̾ (��: "localhost")
-  * octet decimal�ˤ��IP���ɥ쥹(ʸ����) (��: "127.0.0.1")
-  * ��ʸ���� (""), ʸ���� "<any>" - INADDR_ANY������
-  * ʸ���� "<broadcast>" - INADDR_BROADCAST������
-  * IP���ɥ쥹��ɽ�� 32bit ������ (��: 0x7f000001)
+====[a:service_format] サービス指定形式
 
-====[a:service_format] �����ӥ��������
+サービスを指定するには以下のいずれかの形式を指定します。
 
-�����ӥ�����ꤹ��ˤϰʲ��Τ����줫�η�������ꤷ�ޤ���
+  * ポート番号(整数または文字列) (例: 21, "21")
+  * サービス名 (例: "ftp")
 
-  * �ݡ����ֹ�(�����ޤ���ʸ����) (��: 21, "21")
-  * �����ӥ�̾ (��: "ftp")
+====[a:pack_string] ソケットアドレス構造体を pack した文字列
 
-====[a:pack_string] �����åȥ��ɥ쥹��¤�Τ� pack ����ʸ����
-
-�����åȥ��ɥ쥹��¤�ΤȤϡ�C ����ι�¤�� struct sockaddr_in (IPv4)
-�� struct sockaddr_un (Unix �ɥᥤ��)��ؤ��ޤ���
-[[c:Socket]] ���饹�ʤɥ����åȤ����٥륤�󥿥ե����������Ѥ���ޤ���
+ソケットアドレス構造体とは、C 言語の構造体 struct sockaddr_in (IPv4)
+や struct sockaddr_un (Unix ドメイン)を指します。
+[[c:Socket]] クラスなどソケットの低レベルインタフェースで利用されます。
 
 #@if (version >= "1.8.0")
 [[m:Socket.pack_sockaddr_in]],
-[[m:Socket.unpack_sockaddr_in]] �Ȥ��ä��᥽�åɤˤ�ꡢ
-�㤨�С��ʲ��Τ褦�ˤ��Ƥ���ʸ��������뤳�Ȥ�����ޤ�
+[[m:Socket.unpack_sockaddr_in]] といったメソッドにより、
+例えば、以下のようにしてこの文字列を得ることが出来ます
 
   require 'socket'
   p Socket.pack_sockaddr_in("echo", "127.0.0.1")
   => "\002\000\000\a\177\000\000\001\000\000\000\000\000\000\000\000"
 
 #@else
-�ޤ���ruby 1.6 �����Ǥϡ��ʲ��Τ褦�� [[m:Array#pack]] ����ѤǤ��ޤ���
+また、ruby 1.6 以前では、以下のように [[m:Array#pack]] を使用できます。
 
   require 'socket'
   p [Socket::AF_INET,
@@ -82,25 +73,30 @@ AF_INET �ʥ����åȤˤ����ƥۥ��Ȥ���ꤹ��ˤϰʲ��Τ����줫
   => "\002\000\000\a\177\000\000\001\000\000\000\000\000\000\000\000"
 #@end
 
-=== �ۥ���̾�� IP ���ɥ쥹���Ѵ�
+=== ホスト名と IP アドレスの変換
 
-�ۥ���̾���� IP ���ɥ쥹�ؤ��Ѵ� (������) ��Ԥ��᥽�åɤϰʲ��Τ�Τ��Ѱդ���Ƥ��ޤ���
+ホスト名から IP アドレスへの変換 (正引き) を行うメソッドは以下のものが用意されています。
 
+#@since 1.9.1
+  * [[m:Addrinfo.getaddrinfo]]("www.ruby-lang.org", "http") =>  [#<Addrinfo: 221.186.184.68:80 TCP (www.ruby-lang.org:http)>]
+#@end
   * [[m:IPSocket.getaddress]]("www.ruby-lang.org") => "210.163.138.100"
   * [[m:TCPSocket.gethostbyname]]("www.ruby-lang.org") => ["beryllium.ruby-lang.org", [], 2, "210.163.138.100"]
   * [[m:Socket.gethostbyname]]("www.ruby-lang.org") => ["beryllium.ruby-lang.org", [], 2, "\322\243\212d"]
   * [[m:Socket.getaddrinfo]]("www.ruby-lang.org", "http") => [["AF_INET", 80, "beryllium.ruby-lang.org", "210.163.138.100", 2, 1, 6]]
 
-�դ� IP ���ɥ쥹����ۥ���̾�ؤ��Ѵ� (�հ���) ��Ԥ��᥽�åɤϰʲ��Τ�Τ��Ѱդ���Ƥ��ޤ���
+逆に IP アドレスからホスト名への変換 (逆引き) を行うメソッドは以下のものが用意されています。
 
 #@#* TCPSocket.gethostbyname("210.163.138.100") => ["210.163.138.100", [], 2, "210.163.138.100"]
 #@#* Socket.gethostbyaddr(host[, type])
 #@#* [[m:Socket.getnameinfo]]([Socket::AF_INET, "http", "210.163.138.100"]) => ["beryllium.ruby-lang.org", "www"]
   * [[m:Socket.getnameinfo]]([nil, nil, nil, "210.163.138.100"]) => ["beryllium.ruby-lang.org", 0]
+  * [[m:Addrinfo#getnameinfo]] Addrinfo.ip("127.0.0.1").getnameinfo => ["localhost", "0"]
 
 
-�ޤ���[[lib:resolv]] �饤�֥�����ѤǤ��ޤ���
+また、[[lib:resolv]] ライブラリも使用できます。
 
+#@include(socket/SocketError)
 #@include(socket/BasicSocket)
 #@include(socket/IPSocket)
 #@include(socket/SOCKSSocket)
@@ -117,4 +113,5 @@ AF_INET �ʥ����åȤˤ����ƥۥ��Ȥ���ꤹ��ˤϰʲ��Τ����줫
 #@end
 #@since 1.9.2
 #@include(socket/Socket__AncillaryData)
+#@include(socket/Socket__Option)
 #@end

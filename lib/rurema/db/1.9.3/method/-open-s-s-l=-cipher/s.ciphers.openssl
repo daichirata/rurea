@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- ciphers -> [String]
-ÍøÍÑ²ÄÇ½¤Ê°Å¹æÊý¼°Ì¾¤òÊ¸»úÎó¤ÎÇÛÎó¤ÇÊÖ¤·¤Þ¤¹¡£
+åˆ©ç”¨å¯èƒ½ãªæš—å·æ–¹å¼åã‚’æ–‡å­—åˆ—ã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
-  OpenSSL::Ciphers.ciphers 
+  OpenSSL::Cipher.ciphers 
   # => ["AES-128-CBC", "AES-128-CFB", "AES-128-CFB1", "AES-128-CFB8", "AES-128-ECB", "AES-128-OFB", "AES-192-CBC", ... ]
 

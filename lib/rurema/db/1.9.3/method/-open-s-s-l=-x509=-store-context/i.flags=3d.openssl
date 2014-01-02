@@ -3,12 +3,12 @@ visibility=public
 kind=defined
 
 --- flags=(flags)
-CRL �˴ؤ���ե饰�����ꤷ�ޤ���
+CRL に関するフラグを設定します。
 
-�ʲ����������ɬ�פʤ�Τ������ OR ��ꡢ�Ϥ��ޤ���
+以下の定数から必要なものを選んで OR 取り、渡します。
   * [[m:OpenSSL::X509::V_FLAG_CRL_CHECK]]
   * [[m:OpenSSL::X509::V_FLAG_CRL_CHECK_ALL]]
 
-@param flags ���ꤹ��ե饰(������)
+@param flags 設定するフラグ(整数値)
 @see [[m:OpenSSL::X509::Store#flags=]]
 

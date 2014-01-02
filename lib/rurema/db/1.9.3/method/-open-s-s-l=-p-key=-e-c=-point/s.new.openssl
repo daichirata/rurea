@@ -6,20 +6,20 @@ kind=defined
 --- new(group) -> OpenSSL::PKey::EC::Point
 --- new(group, bn) -> OpenSSL::PKey::EC::Point
 
-Point ¥ª¥Ö¥¸¥§¥¯¥È¤òÀ¸À®¤·¤Þ¤¹¡£
+Point ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
 
-°ú¿ô¤Ë OpenSSL::PKey::EC::Point ¥ª¥Ö¥¸¥§¥¯¥È¤òÅÏ¤·¤¿¾ì¹ç¤Ï
-¤½¤ì¤òÊ£À½¤·¤Þ¤¹¡£
+å¼•æ•°ã« OpenSSL::PKey::EC::Point ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¸¡ã—ãŸå ´åˆã¯
+ãã‚Œã‚’è¤‡è£½ã—ã¾ã™ã€‚
 
-°ú¿ô¤Ë OpenSSL::PKey::EC::Group ¥ª¥Ö¥¸¥§¥¯¥È¤òÅÏ¤·¤¿¾ì¹ç¤Ï
-¤½¤ì¤Ë´ØÏ¢ÉÕ¤±¤é¤ì¤¿¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+å¼•æ•°ã« OpenSSL::PKey::EC::Group ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ¸¡ã—ãŸå ´åˆã¯
+ãã‚Œã«é–¢é€£ä»˜ã‘ã‚‰ã‚ŒãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 
-°ú¿ô¤Ë OpenSSL::PKey::EC::Group ¥ª¥Ö¥¸¥§¥¯¥È¤È
-À°¿ô¤òÅÏ¤·¤¿¾ì¹ç¤Ï¡¢À°¿ô¤ÇÄêµÁ¤µ¤ì¤ëÅÀ¤òÊÖ¤·¤Þ¤¹¡£
+å¼•æ•°ã« OpenSSL::PKey::EC::Group ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨
+æ•´æ•°ã‚’æ¸¡ã—ãŸå ´åˆã¯ã€æ•´æ•°ã§å®šç¾©ã•ã‚Œã‚‹ç‚¹ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param point Ê£À½¤¹¤ë [[c:OpenSSL::PKey::EC::Point]] ¥ª¥Ö¥¸¥§¥¯¥È
-@param group ´ØÏ¢ÉÕ¤±¤ë·²([[c:OpenSSL::PKey::EC::Group]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@param bn ÅÀ¤òÉ½¤¹À°¿ô([[c:OpenSSL::BN]] ¥ª¥Ö¥¸¥§¥¯¥È)
-@raise OpenSSL::PKey::EC::Point::Error ¥ª¥Ö¥¸¥§¥¯¥È¤ÎÀ¸À®¤Ë¼ºÇÔ¤·¤¿¾ì¹ç
-       ¤ËÈ¯À¸¤·¤Þ¤¹¡£
+@param point è¤‡è£½ã™ã‚‹ [[c:OpenSSL::PKey::EC::Point]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+@param group é–¢é€£ä»˜ã‘ã‚‹ç¾¤([[c:OpenSSL::PKey::EC::Group]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@param bn ç‚¹ã‚’è¡¨ã™æ•´æ•°([[c:OpenSSL::BN]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ)
+@raise OpenSSL::PKey::EC::Point::Error ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ç”Ÿæˆã«å¤±æ•—ã—ãŸå ´åˆ
+       ã«ç™ºç”Ÿã—ã¾ã™ã€‚
 

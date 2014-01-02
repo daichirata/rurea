@@ -3,7 +3,8 @@ classes=IRB=InputMethod,IRB=StdioInputMethod,IRB=FileInputMethod,IRB=ReadlineInp
 methods=IRB/c.STDIN_FILE_NAME.irb.input=2dmethod
 sublibraries=
 is_sublibrary=true
+category=
 
-irb ¤¬ÆşÎÏ¤ò°·¤¦¤¿¤á¤Î¥µ¥Ö¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+irb ãŒå…¥åŠ›ã‚’æ‰±ã†ãŸã‚ã®ã‚µãƒ–ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚
 
-¥æ¡¼¥¶¤¬Ä¾ÀÜ»ÈÍÑ¤¹¤ë¤â¤Î¤Ç¤Ï¤¢¤ê¤Ş¤»¤ó¡£
+ãƒ¦ãƒ¼ã‚¶ãŒç›´æ¥ä½¿ç”¨ã™ã‚‹ã‚‚ã®ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚

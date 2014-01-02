@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- DEFAULT_PARAMS -> { Symbol -> object }
-[[m:OpenSSL::SSL::SSLContext#set_params]] д╟е╟е╒ейеые╚├═д╚д╖д╞╗╚дядьды
-е╤ещесб╝е┐д╟д╣бг
+[[m:OpenSSL::SSL::SSLContext#set_params]] уБзуГЗуГХуВйуГлуГИхАдуБиуБЧуБжф╜┐уВПуВМуВЛ
+уГСуГйуГбуГ╝уВ┐уБзуБЩуАВ
 

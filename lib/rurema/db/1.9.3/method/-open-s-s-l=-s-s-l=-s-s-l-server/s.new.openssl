@@ -3,17 +3,17 @@ visibility=public
 kind=defined
 
 --- new(svr, ctx) -> OpenSSL::SSL::SSLServer
-[[c:TCPServer]] еке╓е╕езепе╚дЄеще├е╫д╣ды SSLServer еке╓е╕езепе╚дЄ└╕└од╖д▐д╣бг
+[[c:TCPServer]] уВкуГЦуВ╕уВзуВпуГИуВТуГйуГГуГЧуБЩуВЛ SSLServer уВкуГЦуВ╕уВзуВпуГИуВТчФЯцИРуБЧуБ╛уБЩуАВ
 
-svr д╦д╧еще├е╫д╣ды[[c:TCPServer]] еке╓е╕езепе╚дЄбв
-ctx д╦д╧ SSL е╡б╝е╨дм═╤ддды  [[c:OpenSSL::SSL::SSLContext]]
-еке╓е╕езепе╚дЄ└╕└од╖д▐д╣бг
+svr уБлуБпуГйуГГуГЧуБЩуВЛ[[c:TCPServer]] уВкуГЦуВ╕уВзуВпуГИуВТуАБ
+ctx уБлуБп SSL уВ╡уГ╝уГРуБМчФиуБДуВЛ  [[c:OpenSSL::SSL::SSLContext]]
+уВкуГЦуВ╕уВзуВпуГИуВТчФЯцИРуБЧуБ╛уБЩуАВ
 
-[[m:OpenSSL::SSL::SSLServer#listen]] дф [[m:OpenSSL::SSL::SSLServer#accept]]
-д╧╞т╔Їд╟ svr д╟┼╧д╡дьд┐еке╓е╕езепе╚д╬
-[[m:TCPServer#listen]] дф [[m:TCPServer#accept]] дЄ╕╞д╙╜╨д╖д▐д╣бг
+[[m:OpenSSL::SSL::SSLServer#listen]] уВД [[m:OpenSSL::SSL::SSLServer#accept]]
+уБпхЖЕщГиуБз svr уБзц╕буБХуВМуБЯуВкуГЦуВ╕уВзуВпуГИуБо
+[[m:TCPServer#listen]] уВД [[m:TCPServer#accept]] уВТхС╝уБ│хЗ║уБЧуБ╛уБЩуАВ
 
-@param svr ═°═╤д╣ды [[c:TCPServer]] еке╓е╕езепе╚
-@param ctx SSL е╡б╝е╨д╚д╖д╞═╤ддды [[c:OpenSSL::SSL::SSLContext]] еке╓е╕езепе╚
+@param svr хИйчФиуБЩуВЛ [[c:TCPServer]] уВкуГЦуВ╕уВзуВпуГИ
+@param ctx SSL уВ╡уГ╝уГРуБиуБЧуБжчФиуБДуВЛ [[c:OpenSSL::SSL::SSLContext]] уВкуГЦуВ╕уВзуВпуГИ
 
 

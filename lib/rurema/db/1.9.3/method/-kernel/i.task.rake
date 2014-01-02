@@ -4,11 +4,11 @@ kind=added
 
 --- task(*args){ ... } -> Rake::Task
 
-Rake ¥¿¥¹¥¯¤òÄêµÁ¤·¤Þ¤¹¡£
+Rake ã‚¿ã‚¹ã‚¯ã‚’å®šç¾©ã—ã¾ã™ã€‚
 
-@param args ¥¿¥¹¥¯Ì¾¤È°ÍÂ¸¥¿¥¹¥¯¤ò»ØÄê¤·¤Þ¤¹¡£
+@param args ã‚¿ã‚¹ã‚¯åã¨ä¾å­˜ã‚¿ã‚¹ã‚¯ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   task :clobber => [:clean] do
     rm_rf "html"
   end

@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- rdev_minor -> Integer
-rdev ¤Î minor ÈÖ¹æÉô¤òÊÖ¤·¤Þ¤¹¡£
+rdev ã® minor ç•ªå·éƒ¨ã‚’è¿”ã—ã¾ã™ã€‚
 
   fs = File::Stat.new($0)
-  #Îã
+  #ä¾‹
   p fs.rdev_minor #=> nil
 

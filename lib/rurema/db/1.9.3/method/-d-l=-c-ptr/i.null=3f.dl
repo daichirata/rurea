@@ -4,5 +4,5 @@ kind=defined
 
 --- null?    -> bool
 
-���Ȥ� NULL �ʤ� true ���֤��ޤ��������Ǥʤ��ʤ� false ���֤��ޤ���
+自身が NULL なら true を返します。そうでないなら false を返します。
 

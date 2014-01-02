@@ -4,11 +4,11 @@ kind=defined
 
 --- fetch(key, ifnone = nil) -> object
 
-�ǡ����١������饭����õ�����б��������Ǥ��ͤ��֤��ޤ���
+データベースからキーを探して対応する要素の値を返します。
 
-�б������ͤ����Ĥ���ʤ��ä����� ifnone �ǻ��ꤷ���ͤ��֤��ޤ���
+対応する値が見つからなかった場合は ifnone で指定した値を返します。
 
-@param key ������ʸ����ǻ��ꤷ�ޤ���
+@param key キーを文字列で指定します。
 
 @see [[m:YAML::DBM#[] ]]
 

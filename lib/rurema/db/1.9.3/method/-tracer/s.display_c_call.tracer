@@ -5,6 +5,6 @@ kind=defined
 --- display_c_call -> bool
 --- display_c_call? -> bool
 
-���ʤ�С��ӥ�ȥ���᥽�åɤθƤӽФ���ɽ�����ޤ���
-�ǥե���Ȥϵ��Ǥ���
+真ならば、ビルトインメソッドの呼び出しを表示します。
+デフォルトは偽です。
 

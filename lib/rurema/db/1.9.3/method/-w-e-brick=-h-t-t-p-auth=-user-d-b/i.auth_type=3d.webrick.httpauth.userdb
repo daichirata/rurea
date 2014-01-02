@@ -4,7 +4,7 @@ kind=defined
 
 --- auth_type=(type)
 
-Ç§¾Ú¤Î¥¿¥¤¥×¤ò¥»¥Ã¥È¤·¤Ş¤¹¡£
+èªè¨¼ã®ã‚¿ã‚¤ãƒ—ã‚’ã‚»ãƒƒãƒˆã—ã¾ã™ã€‚
 
-@param type [[c:WEBrick::HTTPAuth::BasicAuth]], [[c:WEBrick::HTTPAuth::DigestAuth]] ¤Î¤¤¤º¤ì¤«¤ò»ØÄê¤·¤Ş¤¹¡£
+@param type [[c:WEBrick::HTTPAuth::BasicAuth]], [[c:WEBrick::HTTPAuth::DigestAuth]] ã®ã„ãšã‚Œã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

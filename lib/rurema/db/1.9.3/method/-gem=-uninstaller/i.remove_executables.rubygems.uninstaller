@@ -4,7 +4,7 @@ kind=defined
 
 --- remove_executables(gemspec)
 
-Í¿¤¨¤é¤ì¤¿ [[c:Gem::Specification]] ¤ËÂĞ±ş¤¹¤ë¼Â¹Ô¥Õ¥¡¥¤¥ë¤òºï½ü¤·¤Ş¤¹¡£
+ä¸ãˆã‚‰ã‚ŒãŸ [[c:Gem::Specification]] ã«å¯¾å¿œã™ã‚‹å®Ÿè¡Œãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã—ã¾ã™ã€‚
 
-@param gemspec ¥¢¥ó¥¤¥ó¥¹¥È¡¼¥ë»ØÄê¤µ¤ì¤Æ¤¤¤ë Gem ¤Î [[c:Gem::Specification]] ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param gemspec ã‚¢ãƒ³ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æŒ‡å®šã•ã‚Œã¦ã„ã‚‹ Gem ã® [[c:Gem::Specification]] ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

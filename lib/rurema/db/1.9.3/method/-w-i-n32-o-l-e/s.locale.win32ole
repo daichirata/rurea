@@ -4,18 +4,18 @@ kind=defined
 
 --- locale -> Fixnum
 
-WIN32OLE�������ȥ᡼�����ƤӽФ��������ꤹ��������뼱�̻�(LCID)���
-�����ޤ���
+WIN32OLEがオートメーション呼び出し時に設定するロケール識別子(LCID)を取
+得します。
 
-OLE�����ȥ᡼�����Ǥϡ�UNIX�����Ѥ����"ja_JP"�ʤɤι�̾�ȸ���̾���_��
-����³����ʸ����ǤϤʤ���32�ӥå������Ǽ����ޤ���32�ӥåȤ������Ͼ��
-16�ӥåȤ�ͽ���ΰ��0������16�ӥåȤ�����ID(LANGID�ˤǤ���LANGID�ϡ�0��
-9�ӥåȤǥץ饤�ޥ����ID��10��15�ӥåȤǥ��ָ���ID�򼨤��ޤ���
+OLEオートメーションでは、UNIXで利用される"ja_JP"などの国名と言語名を「_」
+で接続した文字列ではなく、32ビット整数で示します。32ビットの内訳は上位
+16ビットが予約領域で0、下位16ビットが言語ID(LANGID）です。LANGIDは、0〜
+9ビットでプライマリ言語ID、10〜15ビットでサブ言語IDを示します。
 
-�����ɻ��δ����ͤ�[[m:WIN32OLE::LOCALE_SYSTEM_DEFAULT]]�Ǥ���
+ロード時の既定値は[[m:WIN32OLE::LOCALE_SYSTEM_DEFAULT]]です。
 
-@return WIN32OLE�������ȥ᡼�����ƤӽФ��������ꤹ��������뼱�̻�
-        (LCID)���֤��ޤ���
+@return WIN32OLEがオートメーション呼び出し時に設定するロケール識別子
+        (LCID)を返します。
 
    lcid = WIN32OLE.locale
 

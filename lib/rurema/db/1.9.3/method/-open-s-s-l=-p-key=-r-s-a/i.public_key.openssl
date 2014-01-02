@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- public_key -> OpenSSL::PKey::RSA
-¸ø³«¸°¤òÊ£À½¤·¤Æ RSA ¥ª¥Ö¥¸¥§¥¯¥È¤È¤·¤ÆÊÖ¤·¤Þ¤¹¡£
+å…¬é–‹éµã‚’è¤‡è£½ã—ã¦ RSA ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨ã—ã¦è¿”ã—ã¾ã™ã€‚
 

@@ -4,7 +4,7 @@ kind=defined
 
 --- datetime_format -> String
 
-¥í¥°¤ÎÆü»þ¥Õ¥©¡¼¥Þ¥Ã¥È¤ò¼èÆÀ¤·¤Þ¤¹¡£
+ãƒ­ã‚°ã®æ—¥æ™‚ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆã‚’å–å¾—ã—ã¾ã™ã€‚
 
 @see [[m:Time#strftime]]
 

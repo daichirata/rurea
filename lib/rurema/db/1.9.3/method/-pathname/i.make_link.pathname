@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- make_link(old) -> 0
-File.link(old, self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+File.link(old, self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
 @see [[m:File.link]]
 

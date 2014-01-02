@@ -4,5 +4,5 @@ kind=defined
 
 --- deleteln -> nil
 
-stdscr �Υ������뤬����Ԥ���������ιԤ��˵ͤ�ޤ���
+stdscr のカーソルがある行を削除し、後の行を上に詰めます。
 

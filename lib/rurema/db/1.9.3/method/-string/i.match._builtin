@@ -4,7 +4,7 @@ kind=defined
 
 --- match(regexp, pos = 0) -> MatchData
 
-regexp.match(self, pos) ��Ʊ���Ǥ���
-regexp ��ʸ����ξ��ϡ�����ɽ���˥���ѥ��뤷�ޤ���
-�ܤ����� [[m:Regexp#match]] �򻲾Ȥ��Ƥ���������
+regexp.match(self, pos) と同じです。
+regexp が文字列の場合は、正規表現にコンパイルします。
+詳しくは [[m:Regexp#match]] を参照してください。
 

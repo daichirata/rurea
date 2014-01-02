@@ -4,5 +4,5 @@ kind=defined
 
 --- [](key)    -> object
 
-self.config[key] ¤ÈÆ±¤¸¤Ç¤¹¡£
+self.config[key] ã¨åŒã˜ã§ã™ã€‚
 

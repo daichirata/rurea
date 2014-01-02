@@ -3,16 +3,16 @@ visibility=public
 kind=defined
 
 --- sync=(sync)
-½ĞÎÏ¤ÎÆ±´ü¥â¡¼¥É¤òÀßÄê¤·¤Ş¤¹¡£
+å‡ºåŠ›ã®åŒæœŸãƒ¢ãƒ¼ãƒ‰ã‚’è¨­å®šã—ã¾ã™ã€‚
 
-true ¤ËÀßÄê¤¹¤ë¤ÈÆ±´ü¥â¡¼¥É¤Ë¤Ê¤ê¡¢
-[[m:OpenSSL::Buffering#write_nonblock]] ¤È
-[[m:OpenSSL::SSL::SSLSocket#syswrite]] ¤ò½ü¤¯¤¹¤Ù¤Æ¤Î½ñ¤­¹ş¤ß
-([[m:OpenSSL::Buffering#write]], [[m:OpenSSL::Buffering#print]] ¤Ê¤É)
-¤Ï¥Ğ¥Ã¥Õ¥¡¥ê¥ó¥°¤µ¤ì¤º¤Ë½ĞÎÏ¤µ¤ì¤Ş¤¹¡£
+true ã«è¨­å®šã™ã‚‹ã¨åŒæœŸãƒ¢ãƒ¼ãƒ‰ã«ãªã‚Šã€
+[[m:OpenSSL::Buffering#write_nonblock]] ã¨
+[[m:OpenSSL::SSL::SSLSocket#syswrite]] ã‚’é™¤ãã™ã¹ã¦ã®æ›¸ãè¾¼ã¿
+([[m:OpenSSL::Buffering#write]], [[m:OpenSSL::Buffering#print]] ãªã©)
+ã¯ãƒãƒƒãƒ•ã‚¡ãƒªãƒ³ã‚°ã•ã‚Œãšã«å‡ºåŠ›ã•ã‚Œã¾ã™ã€‚
 
-false ¤ËÀßÄê¤¹¤ë¤È½ñ¤­¹ş¤ß¤Ï¥Ğ¥Ã¥Õ¥¡¥ê¥ó¥°¤µ¤ì¤Ş¤¹¡£
+false ã«è¨­å®šã™ã‚‹ã¨æ›¸ãè¾¼ã¿ã¯ãƒãƒƒãƒ•ã‚¡ãƒªãƒ³ã‚°ã•ã‚Œã¾ã™ã€‚
 
-@param sync ÀßÄê¤¹¤ë¥â¡¼¥É(¿¿µ¶ÃÍ)
+@param sync è¨­å®šã™ã‚‹ãƒ¢ãƒ¼ãƒ‰(çœŸå½å€¤)
 @see [[m:OpenSSL::Buffering#sync]]
 

@@ -3,15 +3,15 @@ visibility=public
 kind=defined
 
 --- dsa_sign_asn1(data) -> String
-��̩�����Ѥ���data �� ECDSA �ǽ�̾���ޤ���
+秘密鍵を用い、data に ECDSA で署名します。
 
-��̤�ʸ����Ȥ����֤��ޤ���
+結果は文字列として返します。
 
-data �Υ����������Ȥ�������Ϥ��Υ᥽�åɤ˴ޤޤ�Ƥ��ޤ���
-���Ȥ�Ŭ���ʥ����������Ȥ���ɬ�פ�����ޤ���
+data のダイジェストを取る処理はこのメソッドに含まれていません。
+自身で適当なダイジェストを取る必要があります。
 
-@param data ��̾�оݤΥǡ���(ʸ����)
-@raise OpenSSL::PKey::ECError EC ���֥������Ȥ���̩�����ݻ����Ƥ��ʤ���硢
-                              �⤷���Ͻ�̾�˼��Ԥ�������ȯ�����ޤ�
+@param data 署名対象のデータ(文字列)
+@raise OpenSSL::PKey::ECError EC オブジェクトが秘密鍵を保持していない場合、
+                              もしくは署名に失敗した場合に発生します
 @see [[m:OpenSSL::PKey::EC#dsa_verify_asn1]]
 

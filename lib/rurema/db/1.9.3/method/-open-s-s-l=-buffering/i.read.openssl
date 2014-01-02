@@ -3,20 +3,20 @@ visibility=public
 kind=defined
 
 --- read(length=nil, buf=nil) -> String | nil
-ʸ������̿�ϩ�����ɤ߹��ߡ��֤��ޤ���
+文字列を通信路から読み込み、返します。
 
-�ɤ߹��ߤ���ü����ã���Ƥ������ nil ���֤��ޤ���
+読み込みが終端に到達している場合は nil を返します。
 
-length ���ɤ߹���Х��ȿ�����ꤷ�ޤ���
-length �� 0 ���Ϥ������϶�ʸ������֤��ޤ���
-length �� nil ���Ϥ������(��ά�������)�ϺǸ�
-�ޤǤΥǡ������ɤ߹��ߤޤ���
+length で読み込むバイト数を指定します。
+length に 0 を渡した場合は空文字列を返します。
+length に nil を渡した場合(省略した場合)は最後
+までのデータを読み込みます。
 
-buf��ʸ������Ϥ������Ϥ����ΰ褬�����ѤΥХåե��Ȥ������Ѥ���ޤ���
+bufに文字列を渡した場合はその領域が出力用のバッファとして利用されます。
 
-[[m:IO#read]] ��Ʊ�ͤǤ���
+[[m:IO#read]] と同様です。
 
-@param length �ɤ߹���Х��ȿ�
-@param buf �ɤ߹��ߥХåե�
+@param length 読み込むバイト数
+@param buf 読み込みバッファ
 
 

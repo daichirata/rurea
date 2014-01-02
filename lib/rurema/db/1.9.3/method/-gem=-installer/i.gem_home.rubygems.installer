@@ -4,5 +4,5 @@ kind=defined
 
 --- gem_home -> String
 
-Gem �Υ��󥹥ȡ�������֤��ޤ���
+Gem のインストール先を返します。
 

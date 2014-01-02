@@ -4,5 +4,5 @@ kind=defined
 
 --- required_rubygems_version -> Gem::Requirement
 
-���� Gem �ѥå�������ư�����Τ�ɬ�פ� RubyGems �ΥС��������֤��ޤ���
+この Gem パッケージを動作させるのに必要な RubyGems のバージョンを返します。
 

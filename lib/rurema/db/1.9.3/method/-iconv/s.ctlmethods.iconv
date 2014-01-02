@@ -4,6 +4,6 @@ kind=defined
 
 --- ctlmethods -> [Symbol]
 
-�����ƥ���libiconv��iconvctl()�ؿ��ǻ��Ѳ�ǽ�ʥե饰�Υꥹ�Ȥ� [[c:Symbol]] ������Ȥ����֤��ޤ���
+システム上のlibiconvのiconvctl()関数で使用可能なフラグのリストを [[c:Symbol]] の配列として返します。
 
 

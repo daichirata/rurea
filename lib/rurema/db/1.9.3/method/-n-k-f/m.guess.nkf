@@ -4,11 +4,11 @@ kind=defined
 
 --- guess(str) -> Encoding
 
-ʸ���� str �δ��������ɤ��¬�����֤��ޤ���
+文字列 str の漢字コードを推測して返します。
 
-�֤�����ͤϡ�NKF �⥸�塼��Υ⥸�塼������Ǥ���
+返される値は、NKF モジュールのモジュール定数です。
 
-�֤������(���ʤ������¬��ǽ�ʥ��󥳡��ǥ���)�ϰʲ��Τ����줫�Ǥ���
+返される値(すなわち、推測可能なエンコーディング)は以下のいずれかです。
   * NKF::JIS
   * NKF::EUC
   * NKF::SJIS
@@ -19,6 +19,6 @@ kind=defined
   * Encoding::CP51932
   * Encoding::WINDOWS_31J
 
-@param str ��¬�оݤ�ʸ����Ǥ���
+@param str 推測対象の文字列です。
 
 

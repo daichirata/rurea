@@ -4,7 +4,7 @@ kind=defined
 
 --- stdlog=(io)
 
-¥í¥°¤ò½ÐÎÏ¤¹¤ëÀè¤Î [[c:IO]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀßÄê¤·¤Þ¤¹¡£
+ãƒ­ã‚°ã‚’å‡ºåŠ›ã™ã‚‹å…ˆã® [[c:IO]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨­å®šã—ã¾ã™ã€‚
 
-@param io ¥í¥°¤ò½ÐÎÏ¤¹¤ëÀè¤Î [[c:IO]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÀßÄê¤·¤Þ¤¹¡£
+@param io ãƒ­ã‚°ã‚’å‡ºåŠ›ã™ã‚‹å…ˆã® [[c:IO]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨­å®šã—ã¾ã™ã€‚
 

@@ -5,22 +5,22 @@ kind=defined
 --- gettextfile(remotefile, localfile = File.basename(remotefile)) -> nil
 --- gettextfile(remotefile, localfile = File.basename(remotefile)){|line| ...} -> nil
 
-�����о�Υե������ƥ����ȥ⡼�ɤǼ������ޤ���
+サーバ上のファイルをテキストモードで取得します。
 
-�����С���ˤ��� remotefile �Ȥ���̾���Υե�������������
-��������� localfile �Ȥ���̾���Υե��������¸���ޤ���
+サーバー上にある remotefile という名前のファイルを取得し、
+ローカルの localfile という名前のファイルに保存します。
 
-localfile �� nil �Ǥ�����ˤ���¸�Ϥ��ޤ���
+localfile が nil である場合には保存はしません。
 
-�֥��å������ꤵ�줿����
-�ǡ�����1�Լ������뤴�Ȥˡ����ιԤ�֥��å����Ϥ��ޤ���
+ブロックが指定された場合は
+データを1行受信するごとに、その行をブロックに渡します。
 
-@param remotefile �����оݤΥ�⡼�ȤΥե�����̾��Ϳ���ޤ���
-@param localfile ���������ǡ������Ǽ�����������Υե�����̾��Ϳ���ޤ���
+@param remotefile 取得対象のリモートのファイル名を与えます。
+@param localfile 取得したデータを格納するローカルのファイル名を与えます。
 
 
-@raise Net::FTPTempError ���������ɤ� 4yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPPermError ���������ɤ� 5yz �ΤȤ���ȯ�����ޤ���
-@raise Net::FTPProtoError ���������ɤ� RFC Ū���������ʤ�����ȯ�����ޤ���
-@raise Net::FTPReplyError ���������ɤ���ξ��ʳ����������ʤ����(1xy, 3xy�����٤��Ǥʤ��Ȥ����褿���ʤ�)��ȯ�����ޤ���
+@raise Net::FTPTempError 応答コードが 4yz のときに発生します。
+@raise Net::FTPPermError 応答コードが 5yz のときに発生します。
+@raise Net::FTPProtoError 応答コードが RFC 的に正しくない場合に発生します。
+@raise Net::FTPReplyError 応答コードが上の場合以外で正しくない場合(1xy, 3xyが来るべきでないときに来た場合など)に発生します。
 

@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- delete(key) -> String | nil
-key �إå��ե�����ɤ������ޤ���
+key ヘッダフィールドを削除します。
 
-@param key �������ե������̾
-@return �������줿�ե�����ɤ��ͤ��֤��ޤ���
-        key �إå��ե�����ɤ�¸�ߤ��ʤ��ä����ˤ�
-        nil ���֤��ޤ���
+@param key 削除するフィールド名
+@return 取り除かれたフィールドの値を返します。
+        key ヘッダフィールドが存在しなかった場合には
+        nil を返します。
 

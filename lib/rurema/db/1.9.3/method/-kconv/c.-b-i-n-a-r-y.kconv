@@ -4,6 +4,6 @@ kind=defined
 
 --- BINARY -> Encoding
 
-JIS EUC SJIS �ʳ���ɽ���ޤ���
-�����ͤ�[[m:Kconv.#guess]]���֤��ͤȤ��ƤΤ��Ѥ����ޤ���
+JIS EUC SJIS 以外を表します。
+この値は[[m:Kconv.#guess]]の返り値としてのみ用いられます。
 

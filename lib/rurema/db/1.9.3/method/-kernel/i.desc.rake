@@ -4,11 +4,11 @@ kind=added
 
 --- desc(description) -> String
 
-Ä¾¸å¤Î Rake ¥¿¥¹¥¯¤ÎÀâÌÀ¤òÅĞÏ¿¤·¤Ş¤¹¡£
+ç›´å¾Œã® Rake ã‚¿ã‚¹ã‚¯ã®èª¬æ˜ã‚’ç™»éŒ²ã—ã¾ã™ã€‚
 
-@param description Ä¾¸å¤Î¥¿¥¹¥¯¤ÎÀâÌÀ¤ò»ØÄê¤·¤Ş¤¹¡£
+@param description ç›´å¾Œã®ã‚¿ã‚¹ã‚¯ã®èª¬æ˜ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
    desc "Run the Unit Tests"
    task :test => [:build]
      runtests

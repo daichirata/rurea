@@ -4,12 +4,12 @@ kind=defined
 
 --- BIG5_UAO -> Encoding
 --- Big5_UAO -> Encoding
-Big5_UAO ���󥳡��ǥ��󥰤Ǥ���
+Big5_UAO エンコーディングです。
 
-Big5 �ΰ���(�����Ū��ĥ)�Ǥ���
+Big5 の亜種(非公式的拡張)です。
 
-Unicode�Ȥ��б�ɽ��
+Unicodeとの対応表が
 [[url:http://moztw.org/docs/big5/table/big5_2003-b2u.txt]]
-�ˤ���ޤ���
+にあります。
 
 

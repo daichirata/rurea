@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- zone -> String
-�����ॾ������֤��ޤ���
+タイムゾーンを返します。
 
-����ϡ����Τˤϻ����򤢤�魯ʸ����Ǥ���
+これは、正確には時差をあらわす文字列です。

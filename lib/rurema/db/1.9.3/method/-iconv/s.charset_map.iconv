@@ -4,5 +4,5 @@ kind=defined
 
 --- charset_map -> {String => String}
 
-ʸ�������ɥ��å�̾���饷���ƥ��¸��ʸ�������ɥ��å�̾�ؤ� [[c:Hash]] ���֤��ޤ���
+文字コードセット名からシステム依存の文字コードセット名への [[c:Hash]] を返します。
 

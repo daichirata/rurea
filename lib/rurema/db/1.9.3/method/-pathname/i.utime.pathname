@@ -3,11 +3,11 @@ visibility=public
 kind=defined
 
 --- utime(atime, mtime) -> Integer
-File.utime(atime, mtime, self.to_s) ¤ÈÆ±¤¸¤Ç¤¹¡£
+File.utime(atime, mtime, self.to_s) ã¨åŒã˜ã§ã™ã€‚
 
-@param atime ºÇ½ª¥¢¥¯¥»¥¹»ş¹ï¤ò [[c:Time]] ¤«¡¢µ¯»»»ş¤«¤é¤Î·Ğ²áÉÃ¿ô¤ò¿ôÃÍ¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param atime æœ€çµ‚ã‚¢ã‚¯ã‚»ã‚¹æ™‚åˆ»ã‚’ [[c:Time]] ã‹ã€èµ·ç®—æ™‚ã‹ã‚‰ã®çµŒéç§’æ•°ã‚’æ•°å€¤ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-@param utime ¹¹¿·»ş¹ï¤ò [[c:Time]] ¤«¡¢µ¯»»»ş¤«¤é¤Î·Ğ²áÉÃ¿ô¤ò¿ôÃÍ¤Ç»ØÄê¤·¤Ş¤¹¡£
+@param utime æ›´æ–°æ™‚åˆ»ã‚’ [[c:Time]] ã‹ã€èµ·ç®—æ™‚ã‹ã‚‰ã®çµŒéç§’æ•°ã‚’æ•°å€¤ã§æŒ‡å®šã—ã¾ã™ã€‚
 
 @see [[m:File.utime]]
 

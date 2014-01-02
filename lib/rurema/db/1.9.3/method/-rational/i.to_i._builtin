@@ -5,13 +5,13 @@ kind=defined
 --- to_i -> Integer
 --- truncate(precision = 0) -> Rational | Integer
 
-0 ¤«¤é ¼«¿È¤Þ¤Ç¤ÎÀ°¿ô¤Ç¡¢¼«¿È¤Ë¤â¤Ã¤È¤â¶á¤¤À°¿ô¤òÊÖ¤·¤Þ¤¹¡£
+å°æ•°ç‚¹ä»¥ä¸‹ã‚’åˆ‡ã‚Šæ¨ã¦ã¦å€¤ã‚’æ•´æ•°ã«å¤‰æ›ã—ã¾ã™ã€‚
 
-@param precision ·×»»·ë²Ì¤ÎÀºÅÙ
+@param precision è¨ˆç®—çµæžœã®ç²¾åº¦
 
-@raise TypeError precision ¤ËÀ°¿ô°Ê³°¤Î¤â¤Î¤ò»ØÄê¤¹¤ë¤ÈÈ¯À¸¤·¤Þ¤¹¡£
+@raise TypeError precision ã«æ•´æ•°ä»¥å¤–ã®ã‚‚ã®ã‚’æŒ‡å®šã™ã‚‹ã¨ç™ºç”Ÿã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Rational(2, 3).to_i   # => 0
   Rational(3).to_i      # => 3
@@ -19,10 +19,10 @@ kind=defined
   Rational(98, 71).to_i # => 1
   Rational(-30, 2).to_i # => -15
 
-precision ¤ò»ØÄê¤·¤¿¾ì¹ç¤Ï»ØÄê¤·¤¿·å¿ô¤Î¿ôÃÍ¤È¡¢¾å½Ò¤ÎÀ­¼Á¤ËºÇ¤â¶á¤¤À°
-¿ô¤« [[c:Rational]] ¤òÊÖ¤·¤Þ¤¹¡£
+precision ã‚’æŒ‡å®šã—ãŸå ´åˆã¯æŒ‡å®šã—ãŸæ¡æ•°ã§åˆ‡ã‚Šæ¨ã¦ãŸæ•´æ•°ã‹
+[[c:Rational]] ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
 
   Rational('-123.456').truncate(+1)       # => (-617/5)
   Rational('-123.456').truncate(+1).to_f  # => -123.4

@@ -4,9 +4,9 @@ kind=defined
 
 --- init(name, version)
 
-���Ȥγ�°���˥ǥե�����ͤ򥻥åȤ��ޤ���
+自身の各属性にデフォルト値をセットします。
 
-@param name �ѥå�������̾������ꤷ�ޤ���
+@param name パッケージの名前を指定します。
 
-@param version �ѥå������ΥС���������ꤷ�ޤ���
+@param version パッケージのバージョンを指定します。
 

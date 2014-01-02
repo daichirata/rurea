@@ -3,5 +3,6 @@ classes=
 methods=
 sublibraries=tkextlib.itcl.setup,tkextlib.itcl.incr_tcl
 is_sublibrary=true
+category=
 
 

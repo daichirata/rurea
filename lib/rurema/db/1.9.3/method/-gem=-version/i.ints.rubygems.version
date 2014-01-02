@@ -4,7 +4,7 @@ kind=defined
 
 --- ints -> [Integer]
 
-¥Ğ¡¼¥¸¥ç¥ó¤ò¿ôÃÍ¤ÎÇÛÎó¤ÇÊÖ¤·¤Ş¤¹¡£
+ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’æ•°å€¤ã®é…åˆ—ã§è¿”ã—ã¾ã™ã€‚
 
 @see [[m:Gem::Version#build_array_from_version_string]]
 

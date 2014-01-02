@@ -7,7 +7,7 @@ $LOAD_PATH.unshift((bindir + '../lib').realpath)
 
 unless defined?(::Encoding)
   # Ruby 1.8
-  $KCODE = 'EUC'
+  $KCODE = 'UTF-8'
 end
 
 require 'bitclust/searcher'
@@ -23,7 +23,7 @@ end
 def _main
   refe = BitClust::Searcher.new
   refe.parse ARGV
-  refe.exec nil, ARGV
+  refe.exec ARGV
 rescue OptionParser::ParseError => err
   $stderr.puts err.message
   $stderr.puts refe.parser.help

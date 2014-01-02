@@ -6,7 +6,7 @@ library=_builtin
 aliases=
 aliasof=
 
-MT19937¤Ë´ğ¤Å¤¯µ¿»÷Íğ¿ôÀ¸À®´ï¤òÄó¶¡¤¹¤ë¥¯¥é¥¹¤Ç¤¹¡£
+MT19937ã«åŸºã¥ãç–‘ä¼¼ä¹±æ•°ç”Ÿæˆå™¨ã‚’æä¾›ã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
 
-=== »²¹Í
-¥ª¥ê¥¸¥Ê¥ëÈÇ [[url:http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/mt.html]]
+=== å‚è€ƒ
+ã‚ªãƒªã‚¸ãƒŠãƒ«ç‰ˆ [[url:http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/mt.html]]

@@ -4,7 +4,7 @@ kind=added
 
 --- mkmf -> ()
 
-[[lib:mkmf]] ¤ò»È¤Ã¤Æ Makefile ¤òºîÀ®¤·¤Ş¤¹¡£
+[[lib:mkmf]] ã‚’ä½¿ã£ã¦ Makefile ã‚’ä½œæˆã—ã¾ã™ã€‚
 
   ruby -run -e mkmf -- [OPTION] EXTNAME [OPTION]
 

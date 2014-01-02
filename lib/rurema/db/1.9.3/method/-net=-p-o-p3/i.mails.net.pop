@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- mails -> [Net::POPMail]
-�����о�����ƤΥ᡼���[[c:Net::POPMail]]���֥������Ȥ�����Ȥ����֤��ޤ���
+サーバ上の全てのメールを、[[c:Net::POPMail]]オブジェクトの配列として返します。
 
-��������ϥ᡼���ǽ�˼������褦�Ȥ����Ȥ����������졢���å����δ�
-����å��夵��ޤ���
+この配列はメールを最初に取得しようとしたときに生成され、セッションの間
+キャッシュされます。
 
-@raise TimeoutError ��³�������ॢ���Ȥ�������ȯ�����ޤ�
-@raise Net::POPError �����Ф����顼����𤷤�����ȯ�����ޤ�
-@raise Net::POPBadResponse �����Ф���α������ץ��ȥ���������Ǥ��ä�����ȯ�����ޤ�
+@raise TimeoutError 接続がタイムアウトした場合に発生します
+@raise Net::POPError サーバがエラーを報告した場合に発生します
+@raise Net::POPBadResponse サーバからの応答がプロトコル上不正であった場合に発生します
 
 

@@ -6,9 +6,9 @@ kind=defined
 --- Regex_8Hex -> Regexp
 --- Regex_CompressedHex -> Regexp
 --- Regex_CompressedHex4Dec -> Regexp
-IPv6�γ�ʸ����ɽ���ȥޥå���������ɽ���Ǥ������
+IPv6の各文字列表記とマッチする正規表現です。順に
   * a:b:c:d:e:f:w.x.y.z
   * a:b:c:d:e:f:g:h
   * a::b
   * a::b:w.x.y.z
-�Ȥ���ʸ����ȥޥå����ޤ���
+という文字列とマッチします。

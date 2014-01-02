@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- VT_UI1 -> Integer
-Éä¹æ¤Ê¤·8¥Ó¥Ã¥ÈÀ°¿ô¡Êunsigned char¡Ë¤ò¼¨¤·¤Ş¤¹¡Ê17¡Ë¡£
+ç¬¦å·ãªã—8ãƒ“ãƒƒãƒˆæ•´æ•°ï¼ˆunsigned charï¼‰ã‚’ç¤ºã—ã¾ã™ï¼ˆ17ï¼‰ã€‚
 

@@ -2,6 +2,7 @@ names=new
 visibility=public
 kind=defined
 
---- new(source)
-@todo
+--- new(source) -> REXML::AttlistDecl
+このメソッドは内部用なので使わないでください。
+
 

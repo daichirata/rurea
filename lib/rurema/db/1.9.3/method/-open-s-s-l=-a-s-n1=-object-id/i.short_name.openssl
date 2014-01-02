@@ -4,9 +4,9 @@ kind=defined
 
 --- sn -> String | nil
 --- short_name -> String | nil
-¥ª¥Ö¥¸¥§¥¯¥È¼±ÊÌ»Ò¤ËÂÐ±þ¤¹¤ë short name ¤òÊÖ¤·¤Þ¤¹¡£
+ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè­˜åˆ¥å­ã«å¯¾å¿œã™ã‚‹ short name ã‚’è¿”ã—ã¾ã™ã€‚
 
-Îã:
+ä¾‹:
   require "openssl"
   oid = OpenSSL::ASN1::ObjectId.new("subjectAltName")
   p oid.sn   #=> "subjectAltName"

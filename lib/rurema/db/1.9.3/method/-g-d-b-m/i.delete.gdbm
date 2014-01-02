@@ -5,13 +5,13 @@ kind=defined
 --- delete(key) -> object | nil
 --- delete(key) {|key| ... } -> object
 
-Ϳ����줿 key ���б�������ܤ������ޤ���
+与えられた key に対応する項目を削除します。
 
-@param key ��������ꤷ�ޤ���
+@param key キーを指定します。
 
-@return ���ꤷ��������¸�ߤ�����ϡ��������б������ͤ��֤��ޤ���
-        ���ꤷ��������¸�ߤ��ʤ����ϡ� nil ���֤��ޤ���
-        �ޤ���������¸�ߤ��ʤ����˥֥��å���Ϳ���Ƥ�����ϡ��֥��å���ɾ��������̤��֤��ޤ���
+@return 指定したキーが存在する場合は、キーに対応する値を返します。
+        指定したキーが存在しない場合は、 nil を返します。
+        また、キーが存在しない場合にブロックを与えている場合は、ブロックを評価した結果を返します。
 
   require 'gdbm'
   GDBM.open("a.db") do |db|

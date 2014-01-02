@@ -4,5 +4,5 @@ kind=defined
 
 --- runtime_dependencies -> Array
 
-���� Gem �ѥå���������¸���Ƥ��� Gem �ѥå������Υꥹ�Ȥ��֤��ޤ���
+この Gem パッケージが依存している Gem パッケージのリストを返します。
 

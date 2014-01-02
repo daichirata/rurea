@@ -4,7 +4,7 @@ kind=defined
 
 --- sources=(sources)
 
-���Ȥ���¸����ե�����Υꥹ�Ȥ򥻥åȤ��ޤ���
+自身が依存するファイルのリストをセットします。
 
-@param sources ���Ȥ���¸����ե�����Υꥹ�Ȥ���ꤷ�ޤ���
+@param sources 自身が依存するファイルのリストを指定します。
 

@@ -5,6 +5,6 @@ kind=defined
 --- disposition
 @todo
 
-¥­¡¼¤Î disposition ÃÍ¤òÊÖ¤·¤Þ¤¹¡£
-(REG_CREATED_NEW_KEY ¤Þ¤¿¤Ï REG_OPENED_EXISTING_KEY)
+ã‚­ãƒ¼ã® disposition å€¤ã‚’è¿”ã—ã¾ã™ã€‚
+(REG_CREATED_NEW_KEY ã¾ãŸã¯ REG_OPENED_EXISTING_KEY)
 

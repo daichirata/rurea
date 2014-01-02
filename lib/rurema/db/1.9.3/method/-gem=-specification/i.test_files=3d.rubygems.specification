@@ -4,7 +4,7 @@ kind=defined
 
 --- test_files=(files)
 
-��˥åȥƥ��ȤΥե�����Υꥹ�Ȥ򥻥åȤ��ޤ���
+ユニットテストのファイルのリストをセットします。
 
-@param files ��˥åȥƥ��ȤΥե�����Υꥹ�Ȥ���ꤷ�ޤ���
+@param files ユニットテストのファイルのリストを指定します。
 

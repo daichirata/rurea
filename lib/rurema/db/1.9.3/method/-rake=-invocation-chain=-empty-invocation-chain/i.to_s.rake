@@ -4,4 +4,4 @@ kind=defined
 
 --- to_s -> String
 
-'TOP' �Ȥ���ʸ������֤��ޤ���
+'TOP' という文字列を返します。

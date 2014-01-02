@@ -4,7 +4,7 @@ kind=defined
 
 --- find_all(path) -> [Gem::Specification]
 
-อฟคจค้ค์คฟฅัฅนคหฅÞฅรฅมคนค๋ [[c:Gem::Specification]] ค๒มดคฦสึคทคÞคนกฃ
+ไธใใใใใ‘ในใซใใใใใ [[c:Gem::Specification]] ใ’ๅ…จใฆ่ฟ”ใ—ใพใใ€
 
 @see [[m:Array#find_all]]
 

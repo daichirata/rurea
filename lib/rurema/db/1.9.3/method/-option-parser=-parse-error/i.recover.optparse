@@ -4,11 +4,11 @@ kind=defined
 
 --- recover(argv) -> Array
 
-argv ¤ÎÀèÆ¬¤Ë self.args ¤òÌá¤·¤Ş¤¹¡£
+argv ã®å…ˆé ­ã« self.args ã‚’æˆ»ã—ã¾ã™ã€‚
 
-argv ¤òÊÖ¤·¤Ş¤¹¡£
+argv ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param argv [[m:OptionParser#parse]] ¤ËÅÏ¤·¤¿¥ª¥Ö¥¸¥§¥¯¥È¤Ê¤É¤ÎÇÛÎó¤ò»ØÄê¤·¤Ş¤¹¡£
+@param argv [[m:OptionParser#parse]] ã«æ¸¡ã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãªã©ã®é…åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@return argv ¤òÊÖ¤·¤Ş¤¹¡£
+@return argv ã‚’è¿”ã—ã¾ã™ã€‚
 

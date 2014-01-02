@@ -6,11 +6,11 @@ library=_builtin
 aliases=
 aliasof=
 
-UNIX �Υץ��������������⥸�塼��Ǥ���
+UNIX のプロセスを管理するモジュールです。
 
-Process ���ץ�������ɽ�����륯�饹�ǤϤʤ����ץ��������Ф������
-��ޤȤ᤿�⥸�塼��Ǥ��뤳�Ȥ����դ��Ƥ���������
+Process がプロセスを表現するクラスではなく、プロセスに対する操作
+をまとめたモジュールであることに注意してください。
 
-�桼�� ID�����롼�� ID �����륷���ƥॳ�����ľ�ܸƤ֤���� [[c:Process::Sys]] ���󶡤���Ƥ��ޤ���
-�ݡ����֥�˥桼�� ID�����롼�� ID �����뤿��Υ⥸�塼�� [[c:Process::UID]], [[c:Process::GID]] 
-���󶡤���Ƥ��ޤ���
+ユーザ ID・グループ ID を操作するシステムコールを直接呼ぶために [[c:Process::Sys]] が提供されています。
+ポータブルにユーザ ID・グループ ID を操作するためのモジュール [[c:Process::UID]], [[c:Process::GID]] 
+も提供されています。

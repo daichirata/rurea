@@ -1,11 +1,9 @@
-names=verbose,verbose=
+names=verbose
 visibility=public
 kind=defined
 
---- verbose
---- verbose=
-@todo
+--- verbose -> bool
+サーバが verbose mode ならば真を返します。
 
-Get whether the server is in verbose mode.
-In verbose mode, failed calls are logged to stdout.
+@see [[m:DRb::DRbObject#verbose=]]
 

@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- VT_I1 -> Integer
-����դ�8�ӥå�������char�ˤ򼨤��ޤ���16�ˡ�
+符号付き8ビット整数（char）を示します（16）。
 
-OLE�����ȥ᡼�����λ��;�����ѤǤ��ޤ���
+OLEオートメーションの仕様上は利用できません。
 

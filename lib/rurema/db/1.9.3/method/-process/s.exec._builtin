@@ -4,31 +4,31 @@ kind=defined
 
 --- exec(command, *args) -> ()
 
-�����ȥץ�������Ϳ����줿�������ޥ�ɤ��֤������ޤ���
+カレントプロセスを与えられた外部コマンドで置き換えます。
 
 
-==== �����β��
+==== 引数の解釈
 
-��������Ĥ���Ϳ����줿��硢command �� shell �Υ᥿ʸ��
+引数が一つだけ与えられた場合、command が shell のメタ文字
 //emlist{
   * ? {} [] <> () ~ & | \ $ ; ' ` " \n
 //}
-��ޤ��硢shell ��ͳ�Ǽ¹Ԥ���ޤ���
-�����Ǥʤ���Х��󥿥ץ꥿����ľ�ܼ¹Ԥ���ޤ���
+を含む場合、shell 経由で実行されます。
+そうでなければインタプリタから直接実行されます。
 
-������ʣ��Ϳ����줿��硢�� 2 �����ʹߤ� command ��ľ���Ϥ��졢
-���󥿥ץ꥿����ľ�ܼ¹Ԥ���ޤ���
+引数が複数与えられた場合、第 2 引数以降は command に直接渡され、
+インタプリタから直接実行されます。
 
-�� 1 ������ 2 ���Ǥ�����ξ�硢�� 1 ���Ǥ�ʸ���󤬼ºݤ˵�ư����
-�ץ������Υѥ��ǡ��� 2 ���Ǥ��֤ߤ������פΥץ������̾�ˤʤ�ޤ���
+第 1 引数が 2 要素の配列の場合、第 1 要素の文字列が実際に起動する
+プログラムのパスで、第 2 要素が「みせかけ」のプログラム名になります。
 
-MSDOS �Ķ��ξ�硢command �ϥ��֥������ͳ�Ǽ¹Ԥ���ޤ���
-�����Ǥʤ���硢command �� [[man:exec(2)]] ����Ѥ��Ƽ¹Ԥ����ΤǸ���
-�ץ�����फ�餤���Ĥ��δĶ�������Ѥ��ޤ���
+MSDOS 環境の場合、command はサブシェル経由で実行されます。
+そうでない場合、command は [[man:exec(2)]] を使用して実行されるので元の
+プログラムからいくつかの環境を引き継ぎます。
 
-@param command �¹Ԥ��볰�����ޥ�ɡ�
+@param command 実行する外部コマンド。
 
-@param args command ���Ϥ�������
+@param args command に渡す引数。
 
    exec "echo *"       # echoes list of files in current directory
    # never get here

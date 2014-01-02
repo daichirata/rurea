@@ -5,14 +5,14 @@ kind=defined
 --- default_system_path -> Array
 --- default_system_path=(path)
 
-Shell¤Ç¤â¤Á¤¤¤é¤ì¤ë¥³¥Þ¥ó¥É¤ò¸¡º÷¤¹¤ëÂÐ¾Ý¤Î¥Ñ¥¹¤òÀßÄê¤ª¤è¤Ó¡¢»²¾È¤·¤Þ¤¹¡£
+Shellã§ã‚‚ã¡ã„ã‚‰ã‚Œã‚‹ã‚³ãƒžãƒ³ãƒ‰ã‚’æ¤œç´¢ã™ã‚‹å¯¾è±¡ã®ãƒ‘ã‚¹ã‚’è¨­å®šãŠã‚ˆã³ã€å‚ç…§ã—ã¾ã™ã€‚
 
-@param path Shell¤Ç¤â¤Á¤¤¤é¤ì¤ë¥³¥Þ¥ó¥É¤ò¸¡º÷¤¹¤ëÂÐ¾Ý¤Î¥Ñ¥¹¤òÊ¸»úÎó¤Ç»ØÄê¤·¤Þ¤¹¡£
+@param path Shellã§ã‚‚ã¡ã„ã‚‰ã‚Œã‚‹ã‚³ãƒžãƒ³ãƒ‰ã‚’æ¤œç´¢ã™ã‚‹å¯¾è±¡ã®ãƒ‘ã‚¹ã‚’æ–‡å­—åˆ—ã§æŒ‡å®šã—ã¾ã™ã€‚
 
-Æ°ºîÎã
+å‹•ä½œä¾‹
   require 'shell'
   p Shell.default_system_path 
-  # Îã
+  # ä¾‹
   #=> [ "/opt/local/bin", "/opt/local/sbin", "/usr/bin", "/bin", "/usr/sbin", "/sbin", "/usr/local/bin", "/usr/X11/bin", "/Users/kouya/bin"]
   Shell.default_system_path = ENV["HOME"] + "/bin"
   p Shell.default_system_path

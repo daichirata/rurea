@@ -4,10 +4,10 @@ kind=defined
 
 --- ==(other)    -> bool
 
-Ʊ�����ơ������ξ��˿����֤��ޤ���
+同じステータスの場合に真を返します。
 
-other �����ͤξ�硢self.to_i �Ȥ���Ӥ��Ԥ��ޤ�����
-��ϸ����ߴ����Τ���Ǥ���
+other が数値の場合、self.to_i との比較が行われます。こ
+れは後方互換性のためです。
 
-@param other ���Ȥ���Ӥ��������֥������Ȥ���ꤷ�ޤ���
+@param other 自身と比較したいオブジェクトを指定します。
 

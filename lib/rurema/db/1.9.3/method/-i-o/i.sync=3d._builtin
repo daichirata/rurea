@@ -4,9 +4,9 @@ kind=defined
 
 --- sync=(newstate)
 
-���Ȥ�Ʊ���⡼�ɤ����ꤹ��ȡ����ϴؿ��θƽ���˥Хåե����ե�å��夵��ޤ���
+自身を同期モードに設定すると、出力関数の呼出毎にバッファがフラッシュされます。
 
-@param newstate ���Ȥ�Ʊ���⡼�ɤ����ꤹ�뤫�� boolean �ǻ��ꤷ�ޤ���
+@param newstate 自身を同期モードに設定するかを boolean で指定します。
 
-@raise IOError ���� close ����Ƥ�������ȯ�����ޤ��� 
+@raise IOError 既に close されていた場合に発生します。 
 

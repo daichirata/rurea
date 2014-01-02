@@ -1,7 +1,0 @@
-requires=e2mmap,irb.output=2dmethod
-classes=IRB=Notifier,IRB=Notifier=AbstructNotifier,IRB=Notifier=CompositeNotifier,IRB=Notifier=LeveledNotifier,IRB=Notifier=NoMsgNotifier
-methods=
-sublibraries=
-is_sublibrary=true
-
-

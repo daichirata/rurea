@@ -1,29 +1,14 @@
-names=on_head,on_tail
+names=on_head
 visibility=public
 kind=defined
 
---- on_head(*arg, &block)
---- on_tail(*arg, &block)
+--- on_head(*arg, &block) -> self
 
-[[m:OptionParser#on]]¤ÈÆ±ÍÍ¡¢¥ª¥×¥·¥ç¥ó¤ò¼è¤ê°·¤¦¤¿¤á¤Î¥Ö¥í¥Ã¥¯¤ò¼«¿È¤ËÅĞÏ¿¤·¤Ş¤¹¡£
-on ¥á¥½¥Ã¥É¤È°ã¤¦ÅÀ¤Ï¡¢OptionParser ¥ª¥Ö¥¸¥§¥¯¥È¤¬Êİ»ı¤·¤Æ¤¤¤ë
-¥ê¥¹¥È¤ÎºÇ½é¤«¤¢¤ë¤¤¤ÏºÇ¸å¤Ë¥Ö¥í¥Ã¥¯¤òÅĞÏ¿¤¹¤ëÅÀ¤Ç¤¹¡£
+ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’å–ã‚Šæ‰±ã†ãŸã‚ã®ãƒ–ãƒ­ãƒƒã‚¯ã‚’è‡ªèº«ã®æŒã¤ãƒªã‚¹ãƒˆã®æœ€åˆã«ç™»éŒ²ã—ã¾ã™ã€‚
 
---version ¤ä --help ¤ÎÀâÌÀ¤ò¥µ¥Ş¥ê¤ÎºÇ¸å¤ËÉ½¼¨¤·¤¿¤¤»ş¤ËÊØÍø¤Ç¤¹¡£
+@param arg [[m:OptionParser#on]] ã¨åŒæ§˜ã§ã™ã€‚
 
-@param arg [[m:OptionParser#on]] ¤ÈÆ±ÍÍ¤Ç¤¹¡£
+@param block [[m:OptionParser#on]] ã¨åŒæ§˜ã§ã™ã€‚
 
-@param block [[m:OptionParser#on]] ¤ÈÆ±ÍÍ¤Ç¤¹¡£
-
-Îã:
-
-  opts.on_tail("-h", "--help", "Show this message") do
-    puts opts
-    exit
-  end
-
-  opts.on_tail("--version", "Show version") do
-    puts OptionParser::Version.join('.')
-    exit
-  end
+@see [[m:OptionParser#on]], [[m:OptionParser#on_tail]]
 

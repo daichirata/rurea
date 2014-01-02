@@ -5,6 +5,6 @@ kind=defined
 --- trace_vdelete(opts, cmd)
 @todo
 
-[[m:TkVariable#trace]] ¤ÇÀßÄê¤·¤¿cmd¤òºï½ü¤·¤Ş¤¹¡£opts ¤¬ TkVariable#trace ¤Ç
-ÀßÄê¤·¤¿¤È¤­¤È°ìÃ×¤·¤Ê¤±¤ì¤Ğ²¿¤â¤·¤Ş¤»¤ó¡£
+[[m:TkVariable#trace]] ã§è¨­å®šã—ãŸcmdã‚’å‰Šé™¤ã—ã¾ã™ã€‚opts ãŒ TkVariable#trace ã§
+è¨­å®šã—ãŸã¨ãã¨ä¸€è‡´ã—ãªã‘ã‚Œã°ä½•ã‚‚ã—ã¾ã›ã‚“ã€‚
 

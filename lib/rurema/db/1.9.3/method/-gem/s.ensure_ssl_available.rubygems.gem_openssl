@@ -4,8 +4,8 @@ kind=added
 
 --- ensure_ssl_available
 
-OpenSSL ¤¬»ÈÍÑ²ÄÇ½¤Ç¤Ê¤¤¾ì¹ç¤ÏÎã³°¤òÈ¯À¸¤µ¤»¤Ş¤¹¡£
+OpenSSL ãŒä½¿ç”¨å¯èƒ½ã§ãªã„å ´åˆã¯ä¾‹å¤–ã‚’ç™ºç”Ÿã•ã›ã¾ã™ã€‚
 
-@raise Gem::Exception OpenSSL ¤¬Í­¸ú¤Ç¤Ê¤¤¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹¡£
+@raise Gem::Exception OpenSSL ãŒæœ‰åŠ¹ã§ãªã„å ´åˆã«ç™ºç”Ÿã—ã¾ã™ã€‚
 
 

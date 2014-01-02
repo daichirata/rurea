@@ -3,5 +3,6 @@ classes=TkMenuSpec
 methods=
 sublibraries=
 is_sublibrary=true
+category=
 
 

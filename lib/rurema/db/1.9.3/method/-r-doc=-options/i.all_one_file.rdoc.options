@@ -4,7 +4,7 @@ kind=defined
 
 --- all_one_file -> bool
 
-¥³¥Þ¥ó¥É¥é¥¤¥ó°ú¿ô¤Î --one-file ¤ò»ØÄê¤·¤Æ¤¤¤¿¾ì¹ç¡¢¤â¤·¤¯¤Ï --fmt ¥ª¥×
-¥·¥ç¥ó¤Ë xml »ØÄê¤·¤¿¾ì¹ç¤Ë true ¤òÊÖ¤·¤Þ¤¹¡£¤½¤¦¤Ç¤Ê¤¤¾ì¹ç¤Ï false ¤ò
-ÊÖ¤·¤Þ¤¹¡£
+ã‚³ãƒžãƒ³ãƒ‰ãƒ©ã‚¤ãƒ³å¼•æ•°ã® --one-file ã‚’æŒ‡å®šã—ã¦ã„ãŸå ´åˆã€ã‚‚ã—ãã¯ --fmt ã‚ªãƒ—
+ã‚·ãƒ§ãƒ³ã« xml æŒ‡å®šã—ãŸå ´åˆã« true ã‚’è¿”ã—ã¾ã™ã€‚ãã†ã§ãªã„å ´åˆã¯ false ã‚’
+è¿”ã—ã¾ã™ã€‚
 

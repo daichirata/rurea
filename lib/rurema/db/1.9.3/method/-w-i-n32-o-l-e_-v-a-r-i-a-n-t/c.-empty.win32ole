@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- Empty -> WIN32OLE_VARIANT
-EMPTY����WIN32OLE_VARIANT���֥������ȤǤ���
+EMPTY型のWIN32OLE_VARIANTオブジェクトです。
 
-���Υ��֥������Ȥϡ�VOID��������ͤ䡢�ͤ����ʤ��Ȥ��������ʤ���Фʤ�
-�ʤ��ü�ʰ��������Ѥ��ޤ���
+このオブジェクトは、VOID型の戻り値や、値が空なことを明示しなければなら
+ない特殊な引数に利用します。
 
 @see [[m:WIN32OLE::VARIANT::VT_EMPTY]]
 

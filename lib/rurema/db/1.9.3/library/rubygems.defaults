@@ -1,7 +1,8 @@
 requires=
 classes=
 methods=Gem/s.default_sources.rubygems.defaults,Gem/s.default_dir.rubygems.defaults,Gem/s.user_dir.rubygems.defaults,Gem/s.default_path.rubygems.defaults,Gem/s.default_exec_format.rubygems.defaults,Gem/s.default_bindir.rubygems.defaults,Gem/s.default_system_source_cache_dir.rubygems.defaults,Gem/s.default_user_source_cache_dir.rubygems.defaults,Gem/s.ruby_engine.rubygems.defaults
-sublibraries=rubygems.defaults.operating_system
+sublibraries=
 is_sublibrary=true
+category=
 
-RubyGems ¥é¥¤¥Ö¥é¥ê¤Ç»ÈÍÑ¤¹¤ë¥Ç¥Õ¥©¥ë¥ÈÃÍ¤òÊÖ¤¹¥á¥½¥Ã¥É¤òÄêµÁ¤·¤¿¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+RubyGems ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ä½¿ç”¨ã™ã‚‹ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’è¿”ã™ãƒ¡ã‚½ãƒƒãƒ‰ã‚’å®šç¾©ã—ãŸãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

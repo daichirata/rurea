@@ -3,9 +3,9 @@ visibility=public
 kind=defined
 
 --- symlink? -> false
-����ܥ�å���󥯤Ǥ�����˿����֤��ޤ���
-��������File::Stat�ϼ�ưŪ�˥���ܥ�å���󥯤򤿤ɤäƤ����Τ�
-���false���֤��ޤ���
+シンボリックリンクである時に真を返します。
+ただし、File::Statは自動的にシンボリックリンクをたどっていくので
+常にfalseを返します。
 
 
   require 'fileutils'

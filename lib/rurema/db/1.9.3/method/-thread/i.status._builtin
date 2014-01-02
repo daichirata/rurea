@@ -4,9 +4,9 @@ kind=defined
 
 --- status    -> String | false | nil
 
-�����Ƥ��륹��åɤξ��֤�ʸ���� "run"��"sleep", "aborting" �Τ���
-�줫���֤��ޤ������ｪλ��������åɤ��Ф��� false���㳰�ˤ�
-�꽪λ��������åɤ��Ф��� nil ���֤��ޤ���
+生きているスレッドの状態を文字列 "run"、"sleep", "aborting" のいず
+れかで返します。正常終了したスレッドに対して false、例外によ
+り終了したスレッドに対して nil を返します。
 
-[[m:Thread#alive?]] �������֤��ʤ顢���Υ᥽�åɤ⿿�Ǥ���
+[[m:Thread#alive?]] が真を返すなら、このメソッドも真です。
 

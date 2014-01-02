@@ -2,11 +2,11 @@ names=row_vectors
 visibility=public
 kind=defined
 
---- row_vectors -> Array
+--- row_vectors -> [Vector]
 
-��ʬ���Ȥ�ԥ٥��ȥ������Ȥ����֤��ޤ���
+自分自身を行ベクトルの配列として返します。
 
-��:
+例:
   a1 = [ 1,  2,  3]
   a2 = [10, 15, 20]
   a3 = [-1, -2, 1.5]

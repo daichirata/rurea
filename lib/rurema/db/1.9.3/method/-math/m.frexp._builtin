@@ -4,11 +4,11 @@ kind=defined
 
 --- frexp(x) -> [Float, Fixnum]
 
-�¿� x �β������Ȼؿ�����������֤��ޤ���
+実数 x の仮数部と指数部の配列を返します。
 
-@param x �¿�
+@param x 実数
 
-@raise TypeError x �˿��Ͱʳ�����ꤷ������ȯ�����ޤ���
+@raise TypeError x に数値以外を指定した場合に発生します。
 
-@raise RangeError x �˼¿��ʳ��ο��ͤ���ꤷ������ȯ�����ޤ���
+@raise RangeError x に実数以外の数値を指定した場合に発生します。
 

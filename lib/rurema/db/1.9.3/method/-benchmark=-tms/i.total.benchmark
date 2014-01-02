@@ -4,5 +4,5 @@ kind=defined
 
 --- total -> Float
 
-¹ç·×»ş´Ö¡£(utime + stime + cutime + cstime)
+åˆè¨ˆæ™‚é–“ã€‚(utime + stime + cutime + cstime)
 

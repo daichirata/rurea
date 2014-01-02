@@ -2,14 +2,15 @@ names=+
 visibility=public
 kind=defined
 
---- +(v) -> Vector
+--- +(v) -> Vector | Matrix
 
-�٥��ȥ� v ��ä����٥��ȥ���֤��ޤ���
+self にベクトル v を加えたベクトルを返します。
 
-��ʬ���ȤȰ��� v �����Ǥ򤽤줾��û��������η�̤�[[c:Vector]]���饹�Υ��֥������ȤȤ����֤��ޤ���
+v には column_size が 1 の [[c:Matrix]] オブジェクトも指定できます。
+その場合は返り値も [[c:Matrix]] オブジェクトになります。
 
-@param v �û��򤹤�٥��ȥ�
+@param v 加算するベクトル。加算可能な行列やベクトルを指定します。
 
-@raise ExceptionForMatrix::ErrDimensionMismatch ��ʬ���ȤȰ����Υ٥���
-       ������Ǥο�(����)���ۤʤäƤ����Ȥ���ȯ�����ޤ���
+@raise ExceptionForMatrix::ErrDimensionMismatch 自分自身と引数のベクト
+       ルの要素の数(次元)が異なっていたときに発生します。
 

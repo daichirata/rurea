@@ -4,11 +4,11 @@ kind=defined
 
 --- include(*filenames) -> self
 
-Ϳ����줿�ѥ�����򼫿Ȥ��ɲä��ޤ���
+与えられたパターンを自身に追加します。
 
-@param filenames �ɲä���ե�����̾�Υѥ��������ꤷ�ޤ���
+@param filenames 追加するファイル名のパターンを指定します。
 
-��:
+例:
    file_list.include("*.java", "*.cfg")
    file_list.include %w( math.c lib.h *.o )
 

@@ -4,9 +4,9 @@ kind=defined
 
 --- test_methods -> Array
 
-�ƥ��ȥ᥽�åɤΥꥹ�Ȥ��֤��ޤ���
+テストメソッドのリストを返します。
 
-[[m:MiniTest::Unit::TestCase.test_order]] ���ͤ� :random �Ǥ������
-�֤����᥽�åɥꥹ�Ȥν��֤ϥ�����Ǥ���
-�����Ǥʤ����ϡ�ʸ�������ɽ�˥����Ȥ���ޤ���
+[[m:MiniTest::Unit::TestCase.test_order]] の値が :random である場合は
+返されるメソッドリストの順番はランダムです。
+そうでない場合は、文字コード順にソートされます。
 

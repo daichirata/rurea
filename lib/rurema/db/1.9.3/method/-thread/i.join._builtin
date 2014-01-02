@@ -5,17 +5,17 @@ kind=defined
 --- join           -> self
 --- join(limit)    -> self | nil
 
-����å� self �μ¹Ԥ���λ����ޤǡ������ȥ���åɤ���ߤ�
-�ޤ���self ���㳰�ˤ�꽪λ���Ƥ���С������㳰�������ȥ�
-��åɤ��Ф���ȯ�����ޤ���
+スレッド self の実行が終了するまで、カレントスレッドを停止し
+ます。self が例外により終了していれば、その例外がカレントス
+レッドに対して発生します。
 
-limit ����ꤷ�ơ�limit �ò᤮�Ƥ⼫�Ȥ���λ���ʤ���硢nil ���֤��ޤ���
+limit を指定して、limit 秒過ぎても自身が終了しない場合、nil を返します。
 
-@param limit �����ॢ���Ȥ�����֤������������ǻ��ꤷ�ޤ���ñ�̤��äǤ���
+@param limit タイムアウトする時間を整数か小数で指定します。単位は秒です。
 
-@raise ThreadError join ��¹Ԥ��뤳�Ȥˤ�äƥǥåɥ��å������������ȯ�����ޤ����ޤ������ȥ���åɤ� join �����Ȥ��ˤ�ȯ�����ޤ���
+@raise ThreadError join を実行することによってデッドロックが起きる場合に発生します。またカレントスレッドを join したときにも発生します。
 
-�ʲ��ϡ������������٤ƤΥ���åɤν�λ���Ԥ���Ǥ���
+以下は、生成したすべてのスレッドの終了を待つ例です。
 
    threads = []
    threads.push(Thread.new { n = rand(5); sleep n; n })

@@ -1,8 +1,9 @@
-names=prefix,prefix=
+names=prefix
 visibility=public
 kind=defined
 
---- prefix
---- prefix=(value)
-@todo
+--- prefix -> String
+prefix (前置修飾子) を返します。
+
+@see [[m:REXML::Namespace#prefix=]]
 

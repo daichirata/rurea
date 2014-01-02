@@ -3,13 +3,13 @@ visibility=public
 kind=defined
 
 --- DELETED -> Symbol
-��:Deleted�פȤ�������ܥ���֤��ޤ���
+「:Deleted」というシンボルを返します。
 
-��å��������������Ƥ��뤳�Ȥ��̣���ޤ���
-EXPUNGE �Ǵ����˽����ޤ���
+メッセージが削除されていることを意味します。
+EXPUNGE で完全に除去されます。
 
-�ե饰��å�����°���Ȥ����Ѥ����ޤ�
-([[m:Net::IMAP::FetchData#attr]])��
+フラグメッセージ属性として用いられます
+([[m:Net::IMAP::FetchData#attr]])。
 
-�ܤ����� [[RFC:2060]] �򻲾Ȥ��Ƥ���������
+詳しくは [[RFC:2060]] を参照してください。
 

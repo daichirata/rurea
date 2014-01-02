@@ -4,8 +4,8 @@ kind=defined
 
 --- keep_alive=(flag)
 
-���򥻥åȤ���ȥ쥹�ݥ󥹤� keep_alive ��ͭ���ˤʤ�ޤ���
-�ǥե���ȤϿ��Ǥ���
+真をセットするとレスポンスの keep_alive が有効になります。
+デフォルトは真です。
 
-@param flag ������ꤹ��� Keep-Alive ��ͭ���ˤ��ޤ���
+@param flag 真を指定すると Keep-Alive を有効にします。
 

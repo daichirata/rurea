@@ -4,6 +4,6 @@ kind=defined
 
 --- VERSION -> String
 
-Readline¥â¥¸¥å¡¼¥ë¤¬»ÈÍÑ¤·¤Æ¤¤¤ë GNU Readline ¤ä libedit ¤Î¥Ğ¡¼¥¸¥ç¥ó¤ò
-¼¨¤¹Ê¸»úÎó¤Ç¤¹¡£
+Readlineãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ãŒä½¿ç”¨ã—ã¦ã„ã‚‹ GNU Readline ã‚„ libedit ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’
+ç¤ºã™æ–‡å­—åˆ—ã§ã™ã€‚
 

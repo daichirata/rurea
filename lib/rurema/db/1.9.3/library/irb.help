@@ -3,5 +3,6 @@ classes=
 methods=IRB/s.print_usage.irb.help
 sublibraries=
 is_sublibrary=true
+category=
 
-irb ¥³¥Ş¥ó¥É¤Î¥Ø¥ë¥×¤òÉ½¼¨¤¹¤ë¤¿¤á¤Î¥é¥¤¥Ö¥é¥ê¤Ç¤¹¡£
+irb ã‚³ãƒãƒ³ãƒ‰ã®ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã™ã‚‹ãŸã‚ã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™ã€‚

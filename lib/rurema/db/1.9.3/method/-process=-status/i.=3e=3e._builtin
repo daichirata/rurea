@@ -4,9 +4,9 @@ kind=defined
 
 --- >>(num)    -> Integer
 
-self.to_i >> num ¤ÈÆ±¤¸¤Ç¤¹¡£
+self.to_i >> num ã¨åŒã˜ã§ã™ã€‚
 
-@param num À°¿ô¤ò»ØÄê¤·¤Þ¤¹¡£
+@param num æ•´æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
    fork { exit 99 }   #=> 26563
    Process.wait       #=> 26563

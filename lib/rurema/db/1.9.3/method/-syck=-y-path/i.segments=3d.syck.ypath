@@ -4,7 +4,7 @@ kind=defined
 
 --- segments=(val)
 
-¸¡º÷¤¹¤ë¥Ñ¥¹¤òÊ¸»úÎó¤ÎÇÛÎó¤ÇÀßÄê¤·¤Þ¤¹¡£
+æ¤œç´¢ã™ã‚‹ãƒ‘ã‚¹ã‚’æ–‡å­—åˆ—ã®é…åˆ—ã§è¨­å®šã—ã¾ã™ã€‚
 
-@param val Ê¸»úÎó¤ÎÇÛÎó¤ò»ØÄê¤·¤Þ¤¹¡£
+@param val æ–‡å­—åˆ—ã®é…åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 

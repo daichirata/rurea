@@ -4,5 +4,5 @@ kind=redefined
 
 --- ssl_context -> OpenSSL::SSL::SSLContext | nil
 
-¥µ¡¼¥Ð¤¬ÊÝ»ý¤¹¤ë [[c:OpenSSL::SSL::SSLContext]] ¥ª¥Ö¥¸¥§¥¯¥È¤òÊÖ¤·¤Þ¤¹¡£
+ã‚µãƒ¼ãƒãŒä¿æŒã™ã‚‹ [[c:OpenSSL::SSL::SSLContext]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¿”ã—ã¾ã™ã€‚
 

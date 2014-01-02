@@ -4,9 +4,9 @@ kind=defined
 
 --- [](name)    -> object | nil
 
-name ���б���������åɤ˸�ͭ�Υǡ�������Ф��ޤ���
-name ���б����륹��åɸ�ͭ�ǡ������ʤ���� nil ���֤�
-�ޤ���
+name に対応したスレッドに固有のデータを取り出します。
+name に対応するスレッド固有データがなければ nil を返し
+ます。
 
-@param name ����åɸ�ͭ�ǡ����Υ�����ʸ���� [[c:Symbol]] �ǻ��ꤷ�ޤ���
+@param name スレッド固有データのキーを文字列か [[c:Symbol]] で指定します。
 

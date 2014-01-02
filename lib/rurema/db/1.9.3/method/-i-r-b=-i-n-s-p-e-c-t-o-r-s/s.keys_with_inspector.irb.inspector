@@ -4,9 +4,9 @@ kind=defined
 
 --- keys_with_inspector(inspector) -> Array
 
-°ú¿ô¤Ç»ØÄê¤·¤¿ [[c:IRB::Inspector]] ¤ËÂĞ±ş¤¹¤ë key ¤ÎÇÛÎó¤òÊÖ¤·¤Ş¤¹¡£
+å¼•æ•°ã§æŒ‡å®šã—ãŸ [[c:IRB::Inspector]] ã«å¯¾å¿œã™ã‚‹ key ã®é…åˆ—ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param inspector [[c:IRB::Inspector]] ¥ª¥Ö¥¸¥§¥¯¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param inspector [[c:IRB::Inspector]] ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
   IRB::INSPECTORS.keys_with_inspector(IRB::INSPECTORS[true])
   # => [true, :p, "p", :inspect, "inspect"]

@@ -4,5 +4,5 @@ kind=defined
 
 --- Version -> String
 
-ripper �ΥС�������ʸ������֤��ޤ���
+ripper のバージョンを文字列で返します。
 

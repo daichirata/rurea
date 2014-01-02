@@ -5,14 +5,14 @@ kind=defined
 --- test(command, file1, file2 = nil) -> bool | Time | Integer | nil
 --- [](command, file1, file2 = nil) -> bool | Time | Integer | nil
 
-[[m:Kernel.#test]] �� [[c:FileTest]] �Υ᥽�åɤ˽�����Ѿ����ޤ���
+[[m:Kernel.#test]] や [[c:FileTest]] のメソッドに処理を委譲します。
 
-@param command ���͡��ޤ��ϥ������� 1 ��ʸ����ξ��� [[m:Kernel.#test]] �˽����Ѿ����ޤ���
-               2 ʸ���ʾ��ʸ����ξ��� [[c:FileTest]] �Υ᥽�åɤȤ��Ƽ¹Ԥ��ޤ���
+@param command 数値、またはサイズが 1 の文字列の場合は [[m:Kernel.#test]] に処理委譲します。
+               2 文字以上の文字列の場合は [[c:FileTest]] のメソッドとして実行します。
 
-@param file1 ʸ����ǥե�����ؤΥѥ�����ꤷ�ޤ���
+@param file1 文字列でファイルへのパスを指定します。
 
-@param file2 ʸ����ǥե�����ؤΥѥ�����ꤷ�ޤ���
+@param file2 文字列でファイルへのパスを指定します。
 
   require 'shell'
   Shell.verbose = false

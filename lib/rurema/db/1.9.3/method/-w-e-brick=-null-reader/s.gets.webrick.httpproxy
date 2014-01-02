@@ -5,5 +5,5 @@ kind=defined
 --- read(*args) -> nil
 --- gets(*args) -> nil
 
-¾ï¤Ë nil ¤òÊÖ¤·¤Þ¤¹¡£
+å¸¸ã« nil ã‚’è¿”ã—ã¾ã™ã€‚
 

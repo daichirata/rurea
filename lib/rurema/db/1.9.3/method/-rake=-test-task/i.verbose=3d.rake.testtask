@@ -4,7 +4,7 @@ kind=defined
 
 --- verbose=(flag)
 
-�ƥ��Ȥμ¹Է�̤�ܺ٤�ɽ�����뤫�ɤ����򥻥åȤ��ޤ���
+テストの実行結果を詳細に表示するかどうかをセットします。
 
-@param flag ���ޤ��ϵ�����ꤷ�ޤ���
+@param flag 真または偽を指定します。
 

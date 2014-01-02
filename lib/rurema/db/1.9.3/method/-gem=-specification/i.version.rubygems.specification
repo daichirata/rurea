@@ -4,5 +4,5 @@ kind=defined
 
 --- version -> Gem::Version
 
-���� Gem �ѥå������ΥС��������֤��ޤ���
+この Gem パッケージのバージョンを返します。
 

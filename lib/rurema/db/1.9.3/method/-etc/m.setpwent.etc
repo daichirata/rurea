@@ -4,9 +4,9 @@ kind=defined
 
 --- setpwent -> nil
 
-/etc/passwd ����Ƭ�����ޤ���
+/etc/passwd の先頭に戻ります。
 
-���Υ᥽�åɤ�ƤӽФ����� [[m:Etc.#getpwent]] ��ƤӽФ�����Ƭ�Υ���ȥ���֤��ޤ���
+このメソッドを呼び出した後 [[m:Etc.#getpwent]] を呼び出すと先頭のエントリを返します。
 
 @see [[man:getpwent(3)]]
 

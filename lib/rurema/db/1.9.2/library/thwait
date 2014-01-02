@@ -1,7 +1,0 @@
-requires=
-classes=ThreadsWait,ThWait,ThreadsWait=ErrNoFinishedThread,ThreadsWait=ErrNoWaitingThread
-methods=
-sublibraries=
-is_sublibrary=false
-
-複数スレッドの終了を待つ機能を提供します。

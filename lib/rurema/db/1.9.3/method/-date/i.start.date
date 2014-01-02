@@ -3,7 +3,7 @@ visibility=public
 kind=defined
 
 --- start -> Integer
-�������򤢤�魯��ꥦ�������֤��ޤ���
+改暦日をあらわすユリウス日を返します。
 
-[[m:Date.new]] �⻲�Ȥ��Ƥ���������
+[[m:Date.new]] も参照してください。
 

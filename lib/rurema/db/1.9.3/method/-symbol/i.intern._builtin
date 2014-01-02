@@ -4,7 +4,7 @@ kind=defined
 
 --- intern -> self
 --- to_sym -> self
-self ¤òÊÖ¤·¤Ş¤¹¡£
+self ã‚’è¿”ã—ã¾ã™ã€‚
 
 @see [[m:String#intern]]
 

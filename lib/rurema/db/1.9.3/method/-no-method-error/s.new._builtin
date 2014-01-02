@@ -4,16 +4,16 @@ kind=defined
 
 --- new(error_message = "", name = nil, args = nil) -> NoMethodError
 
-�㳰���֥������Ȥ����������֤��ޤ���
+例外オブジェクトを生成して返します。
 
-@param error_message ���顼��å�������ɽ��ʸ����Ǥ�
+@param error_message エラーメッセージを表す文字列です
 
-@param name ̤������ä�����ܥ�Ǥ�
+@param name 未定義だったシンボルです
 
-@param args �᥽�åɸƤӽФ��˻Ȥ�줿�����Ǥ�
+@param args メソッド呼び出しに使われた引数です
 
 
-��:
+例:
 
   nom = NoMethodError.new("message", "foo", [1,2,3])
   p nom.name

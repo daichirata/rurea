@@ -4,7 +4,7 @@ kind=defined
 
 --- setup_rdoc
 
-RDoc ��¹Ԥ��뤿��ν�����Ԥ��ޤ���
+RDoc を実行するための準備を行います。
 
-@raise Gem::FilePermissionError RDoc ����¸����ǥ��쥯�ȥ�˥����������븢�¤��ʤ�����ȯ�����ޤ���
+@raise Gem::FilePermissionError RDoc を保存するディレクトリにアクセスする権限がない場合に発生します。
 

@@ -4,11 +4,12 @@ kind=defined
 
 --- listen(backlog) -> 0
 
-[[man:listen(2)]] ¤ÈÆ±¤¸Æ¯¤­¤ò¤·¤Ş¤¹¡£
+[[man:listen(2)]] ã¨åŒã˜åƒãã‚’ã—ã¾ã™ã€‚
 
-0 ¤òÊÖ¤·¤Ş¤¹¡£
+0 ã‚’è¿”ã—ã¾ã™ã€‚
 
-@param the maximum length of the queue for pending connections.
+@param backlog æ¥ç¶šã‚’ä¿ç•™ã§ãã‚‹æœ€å¤§æ•°
 
-@return 0 ¤òÊÖ¤·¤Ş¤¹¡£
+@return 0 ã‚’è¿”ã—ã¾ã™ã€‚
+
 

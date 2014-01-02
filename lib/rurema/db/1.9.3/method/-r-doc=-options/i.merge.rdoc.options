@@ -4,6 +4,6 @@ kind=defined
 
 --- merge -> true | nil
 
-���ޥ�ɥ饤������� --merge ���ץ�������ꤷ�Ƥ�����硢true ���֤�
-�ޤ��������Ǥʤ����� nil ���֤��ޤ���
+コマンドライン引数の --merge オプションを指定していた場合、true を返し
+ます。そうでない場合は nil を返します。
 

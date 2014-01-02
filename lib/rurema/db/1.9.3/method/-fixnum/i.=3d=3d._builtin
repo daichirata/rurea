@@ -4,9 +4,9 @@ kind=defined
 
 --- ==(other) -> bool
 
-��ӱ黻�ҡ����ͤȤ�����������Ƚ�ꤷ�ޤ���
+比較演算子。数値として等しいか判定します。
 
-@param other ����оݤο���
-@return      self �� other ����������� true ���֤��ޤ���
-             �����Ǥʤ���� false ���֤��ޤ���
+@param other 比較対象の数値
+@return      self と other が等しい場合 true を返します。
+             そうでなければ false を返します。
 

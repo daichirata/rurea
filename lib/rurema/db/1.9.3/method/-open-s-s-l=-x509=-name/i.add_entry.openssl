@@ -3,10 +3,10 @@ visibility=public
 kind=defined
 
 --- add_entry(oid, value, type = nil)
-¿·¤·¤¤Â°À­¤òÄÉ²Ã¤·¤Ş¤¹¡£
+æ–°ã—ã„å±æ€§ã‚’è¿½åŠ ã—ã¾ã™ã€‚
 
-@param oid Â°À­·¿Ê¸»úÎó
-@param value Â°À­ÃÍÊ¸»úÎó
-@param type Â°À­ÃÍ¤Î(ASN.1¤Î)·¿¡¢¾ÊÎ¬»ş¤Ï [[c:OpenSSL::X509::Name::OBJECT_TYPE_TEMPLATE]] ¤È oid ¤«¤é·¿¤¬·è¤Ş¤ë
-@raise OpenSSL::X509::NameError Â°À­¤ÎÄÉ²Ã¤Ë¼ºÇÔ¤·¤¿¾ì¹ç¤ËÈ¯À¸¤·¤Ş¤¹
+@param oid å±æ€§å‹æ–‡å­—åˆ—
+@param value å±æ€§å€¤æ–‡å­—åˆ—
+@param type å±æ€§å€¤ã®(ASN.1ã®)å‹ã€çœç•¥æ™‚ã¯ [[c:OpenSSL::X509::Name::OBJECT_TYPE_TEMPLATE]] ã¨ oid ã‹ã‚‰å‹ãŒæ±ºã¾ã‚‹
+@raise OpenSSL::X509::NameError å±æ€§ã®è¿½åŠ ã«å¤±æ•—ã—ãŸå ´åˆã«ç™ºç”Ÿã—ã¾ã™
 

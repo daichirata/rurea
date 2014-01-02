@@ -7,10 +7,11 @@ kind=defined
 --- each_char -> Enumerator
 --- chars     -> Enumerator
 
-ʸ����γ�ʸ�����Ф��Ʒ����֤��ޤ���
+文字列の各文字に対して繰り返します。
 
-���Ȥ��С�
-  "hello����".each_char {|c| print c, ' ' }
-�ϼ��Τ褦�˽��Ϥ���ޤ���
-  h e l l o �� ��
+たとえば、
+  "hello世界".each_char {|c| print c, ' ' }
+は次のように出力されます。
+  h e l l o 世 界
+
 

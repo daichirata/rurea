@@ -4,5 +4,5 @@ kind=defined
 
 --- original_dir -> String
 
-Rake ���ץꥱ�������򳫻Ϥ����ǥ��쥯�ȥ���֤��ޤ���
+Rake アプリケーションを開始したディレクトリを返します。
 

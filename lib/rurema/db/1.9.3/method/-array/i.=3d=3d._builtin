@@ -4,8 +4,10 @@ kind=defined
 
 --- ==(other)    -> bool
 
-���Ȥ� other �γ����Ǥ򤽤줾���� == ����Ӥ�
-�ơ������Ǥ���������� true ���֤��ޤ��������Ǥʤ����ˤ� false ���֤��ޤ���
+自身と other の各要素をそれぞれ順に == で比較し
+て、全要素が等しければ true を返します。そうでない場合には false を返します。
 
-@param other ���Ȥ���Ӥ������������ꤷ�ޤ���
+@param other 自身と比較したい配列を指定します。
+
+@see [[m:Object#==]]
 

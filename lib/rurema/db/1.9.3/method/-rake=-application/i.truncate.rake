@@ -4,5 +4,5 @@ kind=defined
 
 --- truncate(string, width) -> String
 
-Ϳ����줿ʸ�����Ϳ����줿�����ڤ�ͤ�ޤ���
+与えられた文字列を与えられた幅で切り詰めます。
 

@@ -6,7 +6,7 @@ library=rubygems.test_utilities
 aliases=
 aliasof=
 
-�ƥ����Ѥ� [[c:Tempfile]] ���åפ��ޤ���
+テスト用に [[c:Tempfile]] をラップします。
 
-[[c:StringIO]] ��Ʊ�����󥿥ե���������äƤ��ޤ�����
-�ǡ�����񤭹������ [[c:Tempfile]] �ˤʤäƤ��ޤ���
+[[c:StringIO]] と同じインタフェイスを持っていますが、
+データを書き込む先は [[c:Tempfile]] になっています。

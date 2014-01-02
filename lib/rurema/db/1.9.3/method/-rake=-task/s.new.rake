@@ -4,10 +4,10 @@ kind=defined
 
 --- new(task_name, app)
 
-Í¿¤¨¤é¤ì¤¿¥¿¥¹¥¯Ì¾¤È¥¢¥×¥ê¥±¡¼¥·¥ç¥ó¤Ç¼«¿È¤ò½é´ü²½¤·¤Þ¤¹¡£
+ä¸Žãˆã‚‰ã‚ŒãŸã‚¿ã‚¹ã‚¯åã¨ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã§è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-¤³¤Î¥á¥½¥Ã¥É¤ÇºîÀ®¤·¤¿¥¿¥¹¥¯¤Ï¡¢¥¢¥¯¥·¥ç¥ó¤ä»öÁ°¥¿¥¹¥¯¤ò»ý¤Ã¤Æ¤¤¤Þ¤»¤ó¡£
-¤½¤ì¤é¤òÄÉ²Ã¤¹¤ë¾ì¹ç¤Ï [[m:Rake::Task#enhance]] ¤ò»ÈÍÑ¤·¤Æ¤¯¤À¤µ¤¤¡£
+ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§ä½œæˆã—ãŸã‚¿ã‚¹ã‚¯ã¯ã€ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚„äº‹å‰ã‚¿ã‚¹ã‚¯ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚
+ãã‚Œã‚‰ã‚’è¿½åŠ ã™ã‚‹å ´åˆã¯ [[m:Rake::Task#enhance]] ã‚’ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚
 
 @see [[m:Rake::Task#enhance]]
 

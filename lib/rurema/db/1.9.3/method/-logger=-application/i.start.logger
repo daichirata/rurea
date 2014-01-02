@@ -4,9 +4,9 @@ kind=defined
 
 --- start -> ()
 
-���ץꥱ�������򥹥����Ȥ����ޤ���
+アプリケーションをスタートさせます。
 
-@return run �᥽�åɤ����ͤ��֤��ޤ���
+@return run メソッドの返値を返します。
 
-@raise RuntimeError ���֥��饹�� run �᥽�åɤ�������Ƥ��ʤ�����ȯ�����ޤ���
+@raise RuntimeError サブクラスで run メソッドを定義していない場合に発生します。
 

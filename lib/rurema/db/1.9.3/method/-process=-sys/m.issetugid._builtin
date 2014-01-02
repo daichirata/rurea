@@ -4,9 +4,9 @@ kind=defined
 
 --- issetugid    -> bool
 
-�����ƥॳ����� issetugid() ��ƤӤޤ���
+システムコールの issetugid() を呼びます。
 
-�ץ������� setuid �⤷���� setgid �ӥåȤ�Ȥä�
-��ư����Ƥ�����˿����֤��ޤ���
+プロセスが setuid もしくは setgid ビットを使って
+起動されている場合に真を返します。
 
-@raise NotImplementedError �����ƥॳ���뤬���ߤΥץ�åȥե�������󶡤���Ƥ��ʤ�����ȯ�����ޤ���
+@raise NotImplementedError システムコールが現在のプラットフォームで提供されていない場合に発生します。

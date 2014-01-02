@@ -4,5 +4,5 @@ kind=defined
 
 --- inspect() -> String 
 
-���֥������Ȥ����Ƥ�ʸ���󲽤��ޤ���
+オブジェクトの内容を文字列化します。
 

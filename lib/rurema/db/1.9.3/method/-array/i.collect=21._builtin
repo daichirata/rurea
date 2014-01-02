@@ -7,13 +7,13 @@ kind=defined
 --- collect!                -> Enumerator
 --- map!                    -> Enumerator
 
-�����Ǥ���֤˥֥��å����Ϥ���ɾ���������η�̤����Ǥ�
-�֤������ޤ���
+各要素を順番にブロックに渡して評価し、その結果で要素を
+置き換えます。
 
-�֥��å���Ϳ�����ʤ��ä����ϡ����Ȥ� map! ������������
-[[c:Enumerator]] ���֥������Ȥ��֤��ޤ���
+ブロックが与えられなかった場合は、自身と map! から生成した
+[[c:Enumerator]] オブジェクトを返します。
 
-��:
+例:
 
     ary = [1, 2, 3]
     ary.map! {|i| i * 3 }

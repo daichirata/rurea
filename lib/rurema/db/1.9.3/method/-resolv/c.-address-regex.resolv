@@ -3,5 +3,5 @@ visibility=public
 kind=defined
 
 --- AddressRegex -> Regexp
-IP���ɥ쥹�˥ޥå���������ɽ���Ǥ���
+IPアドレスにマッチする正規表現です。
 

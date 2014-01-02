@@ -4,10 +4,10 @@ kind=defined
 
 --- public_instance_methods(inherited_too = true) -> [Symbol]
 
-���Υ⥸�塼����������Ƥ��� public �᥽�å�̾
-�ΰ�����������֤��ޤ���
+そのモジュールで定義されている public メソッド名
+の一覧を配列で返します。
 
-@param inherited_too false ����ꤹ��Ȥ��Υ⥸�塼����������Ƥ���᥽�åɤΤ��֤��ޤ���
+@param inherited_too false を指定するとそのモジュールで定義されているメソッドのみ返します。
 
 @see [[m:Object#public_methods]], [[m:Module#instance_methods]]
 

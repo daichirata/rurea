@@ -4,8 +4,8 @@ kind=defined
 
 --- new(task_manager, scope_list)
 
-¼«¿È¤ò½é´ü²½¤·¤Ş¤¹¡£
+è‡ªèº«ã‚’åˆæœŸåŒ–ã—ã¾ã™ã€‚
 
-@param task_manager [[c:Rake::Application]] ¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤ò»ØÄê¤·¤Ş¤¹¡£
+@param task_manager [[c:Rake::Application]] ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-@param scope_list Ì¾Á°¶õ´Ö¤Î¥ê¥¹¥È¤ò»ØÄê¤·¤Ş¤¹¡£
+@param scope_list åå‰ç©ºé–“ã®ãƒªã‚¹ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚

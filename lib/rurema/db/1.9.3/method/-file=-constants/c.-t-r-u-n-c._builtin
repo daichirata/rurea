@@ -3,6 +3,6 @@ visibility=public
 kind=defined
 
 --- TRUNC -> Integer
-�⤷�ե����뤬¸�ߤ���ʤ顢��Ȥ����ä��ƥ������򥼥��ˤ��ޤ���
-[[m:File.open]]�ǻ��Ѥ��ޤ���
+もしファイルが存在するなら、中身を抹消してサイズをゼロにします。
+[[m:File.open]]で使用します。
 

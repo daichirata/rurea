@@ -3,8 +3,8 @@ visibility=public
 kind=defined
 
 --- Version -> String
-[[c:StringScanner]] ¥¯¥é¥¹¤Î¥Ğ¡¼¥¸¥ç¥ó¤òÊ¸»úÎó¤ÇÊÖ¤·¤Ş¤¹¡£
-¤³¤ÎÊ¸»úÎó¤Ï [[m:Object#freeze]] ¤µ¤ì¤Æ¤¤¤Ş¤¹¡£
+[[c:StringScanner]] ã‚¯ãƒ©ã‚¹ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’æ–‡å­—åˆ—ã§è¿”ã—ã¾ã™ã€‚
+ã“ã®æ–‡å­—åˆ—ã¯ [[m:Object#freeze]] ã•ã‚Œã¦ã„ã¾ã™ã€‚
 
       StringScanner::Version           # => "0.7.0"
       StringScanner::Version.frozen?   # => true

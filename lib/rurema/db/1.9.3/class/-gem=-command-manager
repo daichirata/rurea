@@ -6,4 +6,4 @@ library=rubygems.command_manager
 aliases=
 aliasof=
 
-gem ���ޥ�ɤˤ�äƥ��ݡ��Ȥ���Ƥ��륵�֥��ޥ�ɤ�������륯�饹�Ǥ���
+gem コマンドによってサポートされているサブコマンドを管理するクラスです。

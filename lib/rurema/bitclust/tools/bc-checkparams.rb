@@ -2,6 +2,7 @@
 
 require 'optparse'
 require 'pathname'
+require 'set'
 
 bindir = Pathname.new(__FILE__).realpath.dirname
 $LOAD_PATH.unshift((bindir + '../lib').realpath)
@@ -30,7 +31,7 @@ def main
   end
   unless ARGV.size == 1
     $stderr.puts "wrong number of arguments"
-    $stderr.puts opts.help
+    $stderr.puts option.help
     exit 1
   end
   filename = ARGV[0]
@@ -60,14 +61,16 @@ module BitClust
     end
 
     def method_entry_chunk
+      method_signatures = []
       @f.while_match(/\A---/) do |line|
-        method_signature line
+        method_signatures << method_signature(line)
       end
       props = {}
       @f.while_match(/\A:/) do |line|
         k, v = line.sub(/\A:/, '').split(':', 2)
         props[k.strip] = v.strip
       end
+      params = Set.new
       while @f.next?
         case @f.peek
         when /\A===+/
@@ -93,7 +96,9 @@ module BitClust
         when /@see/
           see
         when /\A@[a-z]/
-          method_info
+          method_info.each do |param|
+            params << param
+          end
         else
           if @f.peek.strip.empty?
             @f.gets
@@ -102,6 +107,7 @@ module BitClust
           end
         end
       end
+      check_parameters(method_signatures, params)
     end
 
     def headline(line)
@@ -200,27 +206,20 @@ module BitClust
         @f.ungets(header)
         case cmd
         when '@param', '@arg'
-          name = header.slice!(/\A\s*\w+/n) || '?'
-          params << name
+          name = header.slice!(/\A\s*\w+/) || '?'
+          params << name.strip
         when '@raise'
           # nop
         when '@return'
+          # nop
+        when '@todo'
           # nop
         else
           $stderr.puts "[UNKNOWN_META_INFO] #{cmd}"
         end
         dd_without_p
       end
-      # check parameters
-      params.map(&:strip).each{|param|
-        unless @sig.params.split(',').map(&:strip).any?{|v|
-            param == v.tr('*', '').gsub(/\s*=\s*.+/, '')
-          }
-          $stderr.puts "#{@f.lineno}: #{@sig.friendly_string}"
-          $stderr.puts params.inspect
-          $stderr.puts @sig.params.inspect
-        end
-      }
+      params
     rescue
       $stderr.puts "#{@f.lineno}: #{@sig.friendly_string}"
       $stderr.puts params.inspect
@@ -239,6 +238,33 @@ module BitClust
 
     def method_signature(sig_line)
       @sig = MethodSignature.parse(sig_line)
+    end
+
+    private
+
+    def check_parameters(method_signatures, params)
+      params_in_signature = extract_params(method_signatures)
+      unless params_in_signature == params
+        puts "#{@f.lineno}:"
+        method_signatures.each do |signature|
+          puts signature.friendly_string
+          puts "signature: #{signature.params}"
+        end
+        puts "@params: #{params.to_a.join(", ")}"
+        puts "-" * 72
+      end
+    end
+
+    def extract_params(method_signatures)
+      method_signatures.map do |signature|
+        next unless signature.params
+        signature.params.split(",").map do |param|
+          param = param.tr("*&", "")
+          param = param.gsub(/\=.*/, "")
+          param = param.gsub(/.*:/, "")
+          param.strip
+        end
+      end.compact.flatten.to_set
     end
   end
 end

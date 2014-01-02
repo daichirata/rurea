@@ -4,10 +4,10 @@ kind=defined
 
 --- add_loader(ext, loader)
 
-Ϳ����줿��ĥ�Ҥǽ����ե�����̾�Υե����������ɤ��뤿��Υ���������
-���Ȥ��ɲä��ޤ���
+与えられた拡張子で終わるファイル名のファイルをロードするためのローダーを
+自身に追加します。
 
-@param ext ��ĥ�Ҥ���ꤷ�ޤ���
+@param ext 拡張子を指定します。
 
-@param loader ������������ꤷ�ޤ���
+@param loader ローダーを指定します。
 
